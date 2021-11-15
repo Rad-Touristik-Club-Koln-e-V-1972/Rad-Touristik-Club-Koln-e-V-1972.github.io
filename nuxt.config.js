@@ -4,12 +4,14 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  ssr: false, // Disable Server Side rendering since the targeted webserver doesn't run Node.JS
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Rad-Touristik-Club-Koln-e-V-1972.github.io',
     title: 'Rad-Touristik-Club-Koln-e-V-1972.github.io',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'de'
     },
     meta: [
       { charset: 'utf-8' },
