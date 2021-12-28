@@ -25,5 +25,10 @@ jobs:
       - name: Run static website generator
         run: npm run generate
       - name: Deploy to github branch
-        run: npm run deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+
 
