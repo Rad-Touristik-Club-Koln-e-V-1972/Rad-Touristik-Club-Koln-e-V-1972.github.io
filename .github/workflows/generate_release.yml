@@ -1,0 +1,15 @@
+name: CI Production
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.4.0
+      - name: Release
+        uses: softprops/action-gh-release@v0.1.14
+        with:
+          generate_release_notes: true
