@@ -2,7 +2,7 @@ name: CI Production
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 jobs:
   ci:
     runs-on: ubuntu-latest

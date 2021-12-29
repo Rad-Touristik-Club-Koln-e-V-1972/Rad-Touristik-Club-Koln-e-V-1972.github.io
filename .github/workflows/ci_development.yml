@@ -8,7 +8,11 @@ on:
       - master
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2.4.0
@@ -17,7 +21,7 @@ jobs:
         with:
           cache: 'npm'
           check-latest: true
-          node-version: 16
+          node-version: ${{ matrix.node }}
       - name: Install dependencies
         run: npm install
       - name: Run linter
@@ -30,5 +34,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: dist
-
-
