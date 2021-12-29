@@ -1,4 +1,4 @@
-name: CI Production
+name: Generate Release
 on:
   push:
     tags:
