@@ -1,5 +1,11 @@
 # Rad-Touristik-Club-Koln-e-V-1972.github.io
 
+[![pages-build-deployment](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/pages/pages-build-deployment)
+[![CI Production](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/ci_production.yml/badge.svg)](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/ci_production.yml)
+[![CI Development](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/ci_development.yml/badge.svg)](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/ci_development.yml)
+[![CodeQL](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/codeql-analysis.yml)
+[![Generate Release](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/generate_release.yml/badge.svg)](https://github.com/Rad-Touristik-Club-Koln-e-V-1972/Rad-Touristik-Club-Koln-e-V-1972.github.io/actions/workflows/generate_release.yml)
+
 ## Build Setup
 
 ```bash
