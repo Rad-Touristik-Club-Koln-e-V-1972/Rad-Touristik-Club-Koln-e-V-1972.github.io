@@ -1,15 +1,15 @@
 <!--
-  - Created by Martin Dünkelmann on 30.12.21, 23:11
+  - Created by Martin Dünkelmann on 30.12.21, 23:19
   - Copyright (c) 2021. All rights reserved.
   -
-  - Last modified 30.12.21, 23:11
+  - Last modified 30.12.21, 23:19
   -->
 
 <template>
   <v-app id="DefaultView">
     <v-navigation-drawer v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" app fixed>
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" exact router>
+        <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
