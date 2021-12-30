@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 30.12.21, 22:55
+  - Created by Martin Dünkelmann on 30.12.21, 22:59
   - Copyright (c) 2021. All rights reserved.
   -
-  - Last modified 30.12.21, 22:55
+  - Last modified 30.12.21, 22:59
   -->
 
 <template>
@@ -37,7 +37,7 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
+      <v-container fluid>
         <Nuxt />
       </v-container>
     </v-main>
