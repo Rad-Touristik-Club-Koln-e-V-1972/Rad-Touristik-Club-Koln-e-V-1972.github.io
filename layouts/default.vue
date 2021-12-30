@@ -64,11 +64,6 @@ export default class Index extends Vue {
       title: 'Welcome',
       to: '/',
     },
-    {
-      icon: 'mdi-chart-bubble',
-      title: 'Inspire',
-      to: '/inspire',
-    },
   ]
 
   miniVariant = false
