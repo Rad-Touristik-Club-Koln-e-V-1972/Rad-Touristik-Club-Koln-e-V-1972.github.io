@@ -6,7 +6,7 @@
         <CVuetifyLogo />
       </v-card>
       <v-card>
-        <v-card-title class="headline"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
+        <v-card-title class="text-h5"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
           <p>
@@ -22,7 +22,7 @@
             <a href="https://github.com/vuetifyjs/vuetify/issues" rel="noopener noreferrer" target="_blank" title="contribute"> issue board </a>.
           </p>
           <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
+          <div class="text-right">
             <em><small>&mdash; John Leider</small></em>
           </div>
           <hr class="my-3" />
