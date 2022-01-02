@@ -1,12 +1,18 @@
+<!--
+  - Created by Martin Dünkelmann on 02.01.22, 11:58
+  - Copyright (c) 2022. All rights reserved.
+  -
+  - Last modified 02.01.22, 11:58
+  -->
+
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col cols="12" md="6" sm="8">
       <v-card class="logo py-4 d-flex justify-center">
-        <CNuxtLogo />
-        <CVuetifyLogo />
+        <img id="CVuetifyLogo" alt="Vuetify Logo" class="vuetify-logo" src="/logo720px.png" />
       </v-card>
       <v-card>
-        <v-card-title class="text-h5"> Welcome to the Vuetify + Nuxt.js template </v-card-title>
+        <v-card-title class="text-h5"> Welcome to the Vuetify + Nuxt.js template</v-card-title>
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
           <p>
@@ -40,13 +46,23 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class IndexView extends Vue {}
 </script>
 
-<!--
 <style scoped>
+.vuetify-logo {
+  height: 180px;
+  width: 180px;
+  transform: rotateY(560deg);
+  animation: turn 2.5s ease-out forwards;
+}
+
+@keyframes turn {
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 </style>
--->
