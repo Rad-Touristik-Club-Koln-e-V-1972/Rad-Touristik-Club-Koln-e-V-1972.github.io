@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 30.12.21, 23:12
- * Copyright (c) 2021. All rights reserved.
+ * Created by Martin Dünkelmann on 03.01.22, 00:47
+ * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 30.12.21, 23:12
+ * Last modified 03.01.22, 00:46
  */
 
 import colors from 'vuetify/es5/util/colors'
@@ -77,6 +77,7 @@ export default {
         },
       },
     },
+    treeShake: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

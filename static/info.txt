@@ -1,0 +1,7 @@
+Farbe
+RTC-Orange
+RGB 237 / 87 / 0
+Web: #ED5700
+
+Text
+Tactic-sans Bold und Regular
