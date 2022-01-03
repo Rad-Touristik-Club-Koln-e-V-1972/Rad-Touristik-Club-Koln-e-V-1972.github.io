@@ -1,18 +1,18 @@
 <!--
-  - Created by Martin Dünkelmann on 03.01.22, 00:47
+  - Created by Martin Dünkelmann on 08.01.22, 21:22
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 03.01.22, 00:47
+  - Last modified 08.01.22, 21:22
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="white" mini-variant permanent right>
+    <v-navigation-drawer app color="#ed5700" mini-variant mini-variant-width="30px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
     </v-navigation-drawer>
-    <v-navigation-drawer v-model="drawer" app bottom>
+    <v-navigation-drawer :mini-variant="miniDrawer" app permanent style="border-left: #ed5700 solid 10px" touchless>
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
           <v-list-item-action>
@@ -25,12 +25,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app dense flat>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon>
-        <v-avatar @click="drawer = !drawer">
-          <v-img alt="logo" src="/logo720px.png" />
-        </v-avatar>
-      </v-btn>
+      <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
       <v-app-bar-title>Homepage des RTC Köln 1972 e.V.</v-app-bar-title>
       <v-spacer />
@@ -40,18 +35,18 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app>
+    <v-footer app style="border-left: #ed5700 solid 10px; border-right: #ed5700 solid 30px">
       <span>&copy; {{ new Date().getFullYear() }} RTC Köln 1972 e.V.</span>
     </v-footer>
   </v-app>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class DefaultView extends Vue {
-  drawer = true
+  miniDrawer = false
   items = [
     {
       icon: 'mdi-human-greeting',
@@ -60,8 +55,12 @@ export default class DefaultView extends Vue {
     },
   ]
 
-  right = true
-  rightDrawer = false
+  @Watch('$vuetify.breakpoint.smAndDown')
+  onMobileViewChanged(val: boolean) {
+    if (val) {
+      this.miniDrawer = true
+    }
+  }
 }
 </script>
 
