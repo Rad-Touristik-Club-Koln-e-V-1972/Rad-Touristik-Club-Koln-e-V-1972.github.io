@@ -1,15 +1,17 @@
 <!--
-  - Created by Martin Dünkelmann on 02.01.22, 11:58
+  - Created by Martin Dünkelmann on 06.01.22, 23:15
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 02.01.22, 11:58
+  - Last modified 06.01.22, 23:15
   -->
 
 <template>
   <v-row id="IndexView" align="center" justify="center">
-    <v-col cols="12" md="6" sm="8">
-      <v-card class="logo py-4 d-flex justify-center">
-        <img id="CVuetifyLogo" alt="Vuetify Logo" class="vuetify-logo" src="/logo720px.png" />
+    <v-col>
+      <v-card class="d-flex justify-center">
+        <v-carousel cycle height="200px">
+          <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" contain />
+        </v-carousel>
       </v-card>
       <v-card>
         <v-card-title class="text-h5"> Welcome to the Vuetify + Nuxt.js template</v-card-title>
@@ -49,20 +51,28 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class IndexView extends Vue {}
+export default class IndexView extends Vue {
+  carouselItems = [
+    {
+      src: '/logo720px.png',
+    },
+    {
+      src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+    },
+    {
+      src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+    },
+    {
+      src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+    },
+    {
+      src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+    },
+  ]
+}
 </script>
 
+<!--
 <style scoped>
-.vuetify-logo {
-  height: 180px;
-  width: 180px;
-  transform: rotateY(560deg);
-  animation: turn 2.5s ease-out forwards;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateY(0deg);
-  }
-}
 </style>
+-->
