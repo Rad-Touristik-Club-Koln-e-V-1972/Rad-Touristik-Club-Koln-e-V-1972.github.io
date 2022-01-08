@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 21:22
+  - Created by Martin Dünkelmann on 08.01.22, 21:32
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 21:22
+  - Last modified 08.01.22, 21:32
   -->
 
 <template>
@@ -55,7 +55,7 @@ export default class DefaultView extends Vue {
     },
   ]
 
-  @Watch('$vuetify.breakpoint.smAndDown')
+  @Watch('$vuetify.breakpoint.smAndDown', { immediate: true })
   onMobileViewChanged(val: boolean) {
     if (val) {
       this.miniDrawer = true
