@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 03.01.22, 00:47
+ * Created by Martin Dünkelmann on 08.01.22, 22:45
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 03.01.22, 00:46
+ * Last modified 08.01.22, 22:45
  */
 
 import colors from 'vuetify/es5/util/colors'
@@ -56,20 +56,21 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
+      options: { customProperties: true },
       themes: {
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          primary: colors.shades.black,
+          accent: '#ed5700',
+          secondary: colors.shades.white,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
         light: {
-          primary: colors.blue.lighten2,
-          accent: colors.grey.lighten3,
-          secondary: colors.amber.lighten3,
+          primary: colors.shades.white,
+          accent: '#ed5700',
+          secondary: colors.shades.black,
           info: colors.teal.darken1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

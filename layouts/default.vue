@@ -1,13 +1,13 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 21:32
+  - Created by Martin Dünkelmann on 08.01.22, 22:45
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 21:32
+  - Last modified 08.01.22, 22:45
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="#ed5700" mini-variant mini-variant-width="30px" permanent right touchless>
+    <v-navigation-drawer app color="accent" mini-variant mini-variant-width="30px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
@@ -27,7 +27,10 @@
     <v-app-bar app dense flat>
       <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
-      <v-app-bar-title>Homepage des RTC Köln 1972 e.V.</v-app-bar-title>
+      <v-app-bar-title style="flex-wrap: wrap">
+        <span class="font-weight-bold text-subtitle-2 text-sm-h6 text-no-wrap">Herzlich willkommen beim</span>
+        <div class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="club-color-accent">1972</span></div>
+      </v-app-bar-title>
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -64,7 +67,8 @@ export default class DefaultView extends Vue {
 }
 </script>
 
-<!--
-<style scoped>
+<style lang="scss">
+.club-color-accent {
+  color: var(--v-accent-base);
+}
 </style>
--->
