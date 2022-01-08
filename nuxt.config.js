@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 03.01.22, 00:47
+ * Created by Martin Dünkelmann on 10.01.22, 00:40
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 03.01.22, 00:46
+ * Last modified 10.01.22, 00:40
  */
 
 import colors from 'vuetify/es5/util/colors'
@@ -15,8 +15,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Rad-Touristik-Club-Koln-e-V-1972.github.io',
-    title: 'Rad-Touristik-Club-Koln-e-V-1972.github.io',
+    titleTemplate: '%s - Rad-Touristik-Club Köln e.V. 1972',
+    title: 'Rad-Touristik-Club Köln e.V. 1972',
     htmlAttrs: {
       lang: 'de',
     },
@@ -56,20 +56,21 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
+      options: { customProperties: true },
       themes: {
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          primary: colors.shades.black,
+          accent: '#ed5700',
+          secondary: colors.shades.white,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
         light: {
-          primary: colors.blue.lighten2,
-          accent: colors.grey.lighten3,
-          secondary: colors.amber.lighten3,
+          primary: colors.shades.white,
+          accent: '#ed5700',
+          secondary: colors.shades.black,
           info: colors.teal.darken1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

@@ -1,13 +1,13 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 21:22
+  - Created by Martin Dünkelmann on 10.01.22, 00:25
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 21:22
+  - Last modified 10.01.22, 00:25
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="#ed5700" mini-variant mini-variant-width="30px" permanent right touchless>
+    <v-navigation-drawer app color="accent" mini-variant mini-variant-width="30px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
@@ -27,7 +27,11 @@
     <v-app-bar app dense flat>
       <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
-      <v-app-bar-title>Homepage des RTC Köln 1972 e.V.</v-app-bar-title>
+      <v-app-bar-title style="flex-wrap: wrap">
+        <span class="font-weight-bold text-subtitle-2 text-sm-h6 text-no-wrap">Herzlich willkommen beim</span>
+        <br v-if="$vuetify.breakpoint.smAndDown" />
+        <span class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="club-color-accent">1972</span></span>
+      </v-app-bar-title>
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -36,7 +40,7 @@
       </v-container>
     </v-main>
     <v-footer app style="border-left: #ed5700 solid 10px; border-right: #ed5700 solid 30px">
-      <span>&copy; {{ new Date().getFullYear() }} RTC Köln 1972 e.V.</span>
+      <span>&copy; {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972</span>
     </v-footer>
   </v-app>
 </template>
@@ -55,7 +59,7 @@ export default class DefaultView extends Vue {
     },
   ]
 
-  @Watch('$vuetify.breakpoint.smAndDown')
+  @Watch('$vuetify.breakpoint.smAndDown', { immediate: true })
   onMobileViewChanged(val: boolean) {
     if (val) {
       this.miniDrawer = true
@@ -64,7 +68,8 @@ export default class DefaultView extends Vue {
 }
 </script>
 
-<!--
-<style scoped>
+<style lang="scss">
+.club-color-accent {
+  color: var(--v-accent-base);
+}
 </style>
--->

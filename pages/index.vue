@@ -1,15 +1,15 @@
 <!--
-  - Created by Martin Dünkelmann on 06.01.22, 23:15
+  - Created by Martin Dünkelmann on 10.01.22, 00:46
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.01.22, 23:15
+  - Last modified 10.01.22, 00:46
   -->
 
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col>
       <v-card class="d-flex justify-center">
-        <v-carousel cycle height="200px">
+        <v-carousel cycle height="200px" hide-delimiters>
           <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" contain />
         </v-carousel>
       </v-card>
@@ -40,7 +40,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue</v-btn>
+          <v-btn color="accent" nuxt to="/inspire">Continue</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -54,19 +54,49 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class IndexView extends Vue {
   carouselItems = [
     {
-      src: '/logo720px.png',
+      src: 'https://content.rtc-koeln.de/index/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.JPG',
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_0037.JPG',
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_2225.jpg',
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4226.jpg',
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4235.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4241.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4252.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4256.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4483.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4495.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4497.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4502.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4507.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4508.jpg',
+    },
+    {
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4515.jpg',
     },
   ]
 }
