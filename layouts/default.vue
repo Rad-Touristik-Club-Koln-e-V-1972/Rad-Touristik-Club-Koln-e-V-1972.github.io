@@ -1,18 +1,18 @@
 <!--
-  - Created by Martin Dünkelmann on 04.01.22, 00:06
+  - Created by Martin Dünkelmann on 08.01.22, 21:22
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 04.01.22, 00:06
+  - Last modified 08.01.22, 21:22
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="#ed5700" mini-variant mini-variant-width="30px" permanent right>
+    <v-navigation-drawer app color="#ed5700" mini-variant mini-variant-width="30px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
     </v-navigation-drawer>
-    <v-navigation-drawer :mini-variant="$vuetify.breakpoint.smAndDown" app permanent style="border-left: #ed5700 solid 10px">
+    <v-navigation-drawer :mini-variant="miniDrawer" app permanent style="border-left: #ed5700 solid 10px" touchless>
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
           <v-list-item-action>
@@ -25,6 +25,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app dense flat>
+      <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
       <v-app-bar-title>Homepage des RTC Köln 1972 e.V.</v-app-bar-title>
       <v-spacer />
@@ -41,10 +42,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class DefaultView extends Vue {
+  miniDrawer = false
   items = [
     {
       icon: 'mdi-human-greeting',
@@ -52,6 +54,13 @@ export default class DefaultView extends Vue {
       to: '/',
     },
   ]
+
+  @Watch('$vuetify.breakpoint.smAndDown')
+  onMobileViewChanged(val: boolean) {
+    if (val) {
+      this.miniDrawer = true
+    }
+  }
 }
 </script>
 
