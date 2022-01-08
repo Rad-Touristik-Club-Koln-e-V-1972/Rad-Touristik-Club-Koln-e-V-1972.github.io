@@ -1,15 +1,15 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 21:56
+  - Created by Martin Dünkelmann on 08.01.22, 22:47
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 21:56
+  - Last modified 08.01.22, 22:47
   -->
 
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col>
       <v-card class="d-flex justify-center">
-        <v-carousel cycle height="200px">
+        <v-carousel cycle height="200px" hide-delimiters>
           <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" contain />
         </v-carousel>
       </v-card>
