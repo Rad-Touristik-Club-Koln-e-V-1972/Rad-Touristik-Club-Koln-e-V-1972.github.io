@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxi build",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "dev": "nuxt",
-    "generate": "nuxt generate",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
     "prepare": "husky install",
-    "start": "nuxt start"
+    "start": "nuxi preview"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "core-js": "^3.20.2",
-    "nuxt": "^2.15.8",
+    "nuxt-edge": "latest",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
@@ -35,8 +35,8 @@
     "@babel/eslint-parser": "^7.16.5",
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27356801.e9128f3",
     "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.1.0",
@@ -52,6 +52,7 @@
     "postcss-html": "^1.3.0",
     "prettier": "^2.5.1",
     "push-dir": "^0.4.1",
+    "std-env": "^3.0.1",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-vue": "^1.1.0",
