@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 09.01.22, 12:49
+  - Created by Martin Dünkelmann on 10.01.22, 00:25
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 09.01.22, 12:49
+  - Last modified 10.01.22, 00:25
   -->
 
 <template>
@@ -40,7 +40,7 @@
       </v-container>
     </v-main>
     <v-footer app style="border-left: #ed5700 solid 10px; border-right: #ed5700 solid 30px">
-      <span>&copy; {{ new Date().getFullYear() }} RTC Köln 1972 e.V.</span>
+      <span>&copy; {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972</span>
     </v-footer>
   </v-app>
 </template>
