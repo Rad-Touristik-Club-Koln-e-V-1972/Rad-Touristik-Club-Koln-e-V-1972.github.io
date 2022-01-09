@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 22:45
+  - Created by Martin Dünkelmann on 09.01.22, 12:49
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 22:45
+  - Last modified 09.01.22, 12:49
   -->
 
 <template>
@@ -29,7 +29,8 @@
       <v-spacer />
       <v-app-bar-title style="flex-wrap: wrap">
         <span class="font-weight-bold text-subtitle-2 text-sm-h6 text-no-wrap">Herzlich willkommen beim</span>
-        <div class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="club-color-accent">1972</span></div>
+        <br v-if="$vuetify.breakpoint.smAndDown" />
+        <span class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="club-color-accent">1972</span></span>
       </v-app-bar-title>
       <v-spacer />
     </v-app-bar>
