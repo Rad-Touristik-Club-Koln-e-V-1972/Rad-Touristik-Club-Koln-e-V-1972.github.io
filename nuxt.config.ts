@@ -1,13 +1,14 @@
 /*
- * Created by Martin Dünkelmann on 10.01.22, 00:40
+ * Created by Martin Dünkelmann on 10.01.22, 00:36
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 10.01.22, 00:40
+ * Last modified 10.01.22, 00:36
  */
 
+import { defineNuxtConfig } from '@nuxt/bridge'
 import colors from 'vuetify/es5/util/colors'
 
-export default {
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -40,8 +41,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
@@ -83,4 +82,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+})
