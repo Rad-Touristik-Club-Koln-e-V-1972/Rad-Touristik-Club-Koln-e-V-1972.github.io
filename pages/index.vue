@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 08.01.22, 22:47
+  - Created by Martin Dünkelmann on 10.01.22, 00:46
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 08.01.22, 22:47
+  - Last modified 10.01.22, 00:46
   -->
 
 <template>
@@ -40,7 +40,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue</v-btn>
+          <v-btn color="accent" nuxt to="/inspire">Continue</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
