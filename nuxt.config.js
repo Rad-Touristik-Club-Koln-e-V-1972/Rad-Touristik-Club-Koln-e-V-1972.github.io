@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 08.01.22, 22:45
+ * Created by Martin Dünkelmann on 10.01.22, 00:40
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 08.01.22, 22:45
+ * Last modified 10.01.22, 00:40
  */
 
 import colors from 'vuetify/es5/util/colors'
@@ -15,8 +15,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Rad-Touristik-Club-Koln-e-V-1972.github.io',
-    title: 'Rad-Touristik-Club-Koln-e-V-1972.github.io',
+    titleTemplate: '%s - Rad-Touristik-Club Köln e.V. 1972',
+    title: 'Rad-Touristik-Club Köln e.V. 1972',
     htmlAttrs: {
       lang: 'de',
     },
