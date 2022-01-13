@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 10.01.22, 00:36
+ * Created by Martin Dünkelmann on 13.01.22, 02:10
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 10.01.22, 00:36
+ * Last modified 13.01.22, 02:10
  */
 
 import { defineNuxtConfig } from '@nuxt/bridge'
@@ -12,7 +12,9 @@ export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  ssr: false, // Disable Server Side rendering since the targeted webserver doesn't run Node.JS
+  // TODO WORKAROUND FOR https://github.com/nuxt/framework/issues/886 https://github.com/nuxt/framework/pull/2652
+  ssr: true,
+  // ssr: false, // Disable Server Side rendering since the targeted webserver doesn't run Node.JS
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
