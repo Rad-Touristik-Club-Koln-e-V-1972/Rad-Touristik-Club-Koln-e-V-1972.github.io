@@ -23,17 +23,13 @@ jobs:
           check-latest: true
           node-version: ${{ matrix.node }}
       - name: Install dependencies
-        run: |
-          echo "TEST"
-          echo "${{ github.event.action }}"
-          echo "${{ github.event.issue }}"
-          npm install
+        run: npm install
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
         run: npm run generate
       - name: Deploy to github branch
-        if: ${{ !github.event.issue.check_run }}
+        if: ${{ !github.event.issue.pull_request && github.event.action != 'synchronize' }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
