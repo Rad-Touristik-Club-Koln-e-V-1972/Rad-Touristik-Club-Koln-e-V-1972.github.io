@@ -24,6 +24,13 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Install dependencies
         run: npm install
+      - name: Commit dependency changes
+        if: ${{ !github.event.issue.pull_request && github.event.action != 'synchronize' }}
+        run: |
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email '${{ github.actor }}@users.noreply.github.com'
+          git commit -am "build: update dependencies"
+          git push
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
