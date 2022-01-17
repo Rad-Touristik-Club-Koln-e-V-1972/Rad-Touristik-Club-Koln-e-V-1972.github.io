@@ -29,7 +29,7 @@ jobs:
       - name: Run static website generator
         run: npm run generate
       - name: Deploy to github branch
-        if: ${{ !github.event.issue.pull_request }}
+        if: ${{ !github.event.issue.check_run }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
