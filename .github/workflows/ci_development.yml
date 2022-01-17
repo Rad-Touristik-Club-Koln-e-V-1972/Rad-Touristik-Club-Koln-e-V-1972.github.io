@@ -25,8 +25,9 @@ jobs:
         run: |
           git config --global user.name 'Github Actions'
           git config --global user.email 'github.actions@users.noreply.github.com'
-          git commit -am "build: update dependencies"
-          git push
+          git add . || true
+          git commit -am "build: update dependencies" || true
+          git push || true
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
