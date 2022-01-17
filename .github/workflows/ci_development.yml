@@ -23,7 +23,11 @@ jobs:
           check-latest: true
           node-version: ${{ matrix.node }}
       - name: Install dependencies
-        run: npm install
+        run: |
+          echo "TEST"
+          echo "${{ github.event.action }}"
+          echo "${{ github.event.issue }}"
+          npm install
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
