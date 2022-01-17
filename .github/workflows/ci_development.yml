@@ -8,11 +8,7 @@ on:
       - master
 jobs:
   ci_dev:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [16]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2.4.0
@@ -21,7 +17,7 @@ jobs:
         with:
           cache: 'npm'
           check-latest: true
-          node-version: ${{ matrix.node }}
+          node-version: 16
       - name: Install dependencies
         run: npm install
       - name: Commit dependency changes
