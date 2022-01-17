@@ -7,7 +7,7 @@ on:
     branches:
       - master
 jobs:
-  ci:
+  ci_dev:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
