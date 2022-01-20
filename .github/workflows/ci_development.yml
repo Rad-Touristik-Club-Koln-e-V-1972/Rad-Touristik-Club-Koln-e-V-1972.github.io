@@ -21,12 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Commit dependency changes
-        if: ${{ !github.event.issue.pull_request && github.event.action != 'synchronize' }}
+        if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         run: |
-          echo "START: Reasons why it fails if it fails"
-          echo "github.event.issue.pull_request: ${{ github.event.issue.pull_request }}"
-          echo "github.event.action: ${{ github.event.action }}"
-          echo "Reasons why it fails if it fails :END"
           git config --global user.name 'Github Actions'
           git config --global user.email 'github.actions@users.noreply.github.com'
           git add . || true
@@ -37,7 +33,7 @@ jobs:
       - name: Run static website generator
         run: npm run generate
       - name: Deploy to github branch
-        if: ${{ !github.event.issue.pull_request && github.event.action != 'synchronize' }}
+        if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
