@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 10.01.22, 00:46
+  - Created by Martin Dünkelmann on 02.02.22, 10:01
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 10.01.22, 00:46
+  - Last modified 02.02.22, 10:01
   -->
 
 <template>
@@ -54,10 +54,10 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class IndexView extends Vue {
   carouselItems = [
     {
-      src: 'https://content.rtc-koeln.de/index/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.JPG',
+      src: 'https://content.rtc-koeln.de/index/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
     },
     {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_0037.JPG',
+      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_0037.jpg',
     },
     {
       src: 'https://content.rtc-koeln.de/index/slideshow/IMG_2225.jpg',
