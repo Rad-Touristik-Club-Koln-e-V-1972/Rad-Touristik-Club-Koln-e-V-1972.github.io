@@ -1,12 +1,11 @@
 /*
- * Created by Martin Dünkelmann on 13.01.22, 02:10
+ * Created by Martin Dünkelmann on 06.02.22, 15:57
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 13.01.22, 02:10
+ * Last modified 06.02.22, 15:57
  */
 
 import { defineNuxtConfig } from '@nuxt/bridge'
-import colors from 'vuetify/es5/util/colors'
 
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
@@ -52,36 +51,16 @@ export default defineNuxtConfig({
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
+  // TODO ERROR REPORTED https://github.com/nuxt-community/vuetify-module/issues/492
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
-      options: { customProperties: true },
-      themes: {
-        dark: {
-          primary: colors.shades.black,
-          accent: '#ed5700',
-          secondary: colors.shades.white,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-        light: {
-          primary: colors.shades.white,
-          accent: '#ed5700',
-          secondary: colors.shades.black,
-          info: colors.teal.darken1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
+    customVariables: ['@/assets/variables.scss'],
+    optionsPath: '@/vuetify.options.ts',
     treeShake: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: [/vuetify/],
+  },
 })
