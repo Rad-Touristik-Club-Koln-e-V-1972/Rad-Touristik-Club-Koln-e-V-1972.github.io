@@ -6,7 +6,7 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "types": ["@nuxt/types"]
+    "types": ["@nuxt/types", "vuetify"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
   "extends": "./.nuxt/tsconfig.json"
