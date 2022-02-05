@@ -1,12 +1,12 @@
 <!--
-  - Created by Martin Dünkelmann on 30.12.21, 23:21
-  - Copyright (c) 2021. All rights reserved.
+  - Created by Martin Dünkelmann on 05.02.22, 14:35
+  - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 30.12.21, 23:21
+  - Last modified 05.02.22, 14:35
   -->
 
 <template>
-  <v-app id="Error">
+  <v-app id="ErrorView">
     <div class="d-flex justify-center">
       <v-card min-width="300px">
         <v-card-title>{{ title }}</v-card-title>
@@ -21,15 +21,17 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HTTP from '~/models/enums/HTTP'
+import { NuxtError } from '@nuxt/types'
+import { Prop } from 'vue/types/options'
+import HTTP from '@/models/enums/HTTP'
 
 @Component
-export default class Error extends Vue.extend({
+export default class ErrorView extends Vue.extend({
   props: {
-    error: { default: null, type: Object },
+    error: { default: null, type: Object as Prop<NuxtError> },
   },
 }) {
-  title = `Fehlercode ${this.error.statusCode}`
+  title = `Fehlercode ${this.error?.statusCode}`
 
   get text() {
     let text = 'Ein unbekannter Fehler trat auf.'
