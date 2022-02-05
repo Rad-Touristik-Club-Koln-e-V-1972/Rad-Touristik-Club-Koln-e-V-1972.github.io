@@ -1,8 +1,8 @@
 /*
- * Created by Martin Dünkelmann on 30.12.21, 22:53
- * Copyright (c) 2021. All rights reserved.
+ * Created by Martin Dünkelmann on 05.02.22, 14:35
+ * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 30.12.21, 22:53
+ * Last modified 05.02.22, 14:34
  */
 
 module.exports = {
@@ -15,11 +15,6 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'vue/multi-word-component-names': [
-      'error',
-      {
-        ignores: ['error'],
-      },
-    ],
+    'vue/multi-word-component-names': 'warn',
   },
 }
