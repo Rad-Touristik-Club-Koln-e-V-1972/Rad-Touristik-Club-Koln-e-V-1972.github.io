@@ -1,13 +1,13 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 16:33
+  - Created by Martin Dünkelmann on 06.02.22, 16:43
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 16:33
+  - Last modified 06.02.22, 16:43
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="secondary" mini-variant mini-variant-width="40px" permanent right touchless>
+    <v-navigation-drawer app color="primary" mini-variant mini-variant-width="40px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
