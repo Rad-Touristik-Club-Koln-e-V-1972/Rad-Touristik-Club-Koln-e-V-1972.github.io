@@ -41,11 +41,11 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid 40px">
+    <v-footer app class="text-caption text-sm-body-1" style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid 40px">
       <span v-text="'Copyright'" />
-      <v-icon left right v-text="'mdi-copyright'" />
+      <v-icon :small="$vuetify.breakpoint.smAndDown" left right v-text="'mdi-copyright'" />
       <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
-      <span class="" v-text="`2021 durch Rad-Touristik-Club Köln e.V. 1972`" />
+      <span v-text="`2021 durch Rad-Touristik-Club Köln e.V. 1972`" />
     </v-footer>
   </v-app>
 </template>
