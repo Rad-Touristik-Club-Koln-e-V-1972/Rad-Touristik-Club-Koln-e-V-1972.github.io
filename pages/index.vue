@@ -1,18 +1,14 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 13:50
+  - Created by Martin Dünkelmann on 06.02.22, 16:51
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 13:50
+  - Last modified 06.02.22, 16:51
   -->
 
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col>
-      <v-card class="d-flex justify-center">
-        <v-carousel cycle height="200px" hide-delimiters>
-          <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" contain />
-        </v-carousel>
-      </v-card>
+      <CSlideshow />
       <v-card>
         <v-card-title class="text-h5" v-text="'Welcome to the Vuetify + Nuxt.js template'" />
         <v-card-text>
@@ -49,57 +45,10 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import CSlideshow from '@/components/index/CSlideshow.vue'
 
-@Component
-export default class IndexView extends Vue {
-  carouselItems = [
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_0037.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_2225.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4226.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4235.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4241.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4252.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4256.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4483.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4495.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4497.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4502.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4507.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4508.jpg',
-    },
-    {
-      src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4515.jpg',
-    },
-  ]
-}
+@Component({ components: { CSlideshow } })
+export default class IndexView extends Vue {}
 </script>
 
 <style lang="scss" scoped></style>
