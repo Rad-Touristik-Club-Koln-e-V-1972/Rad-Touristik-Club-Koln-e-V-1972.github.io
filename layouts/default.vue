@@ -1,13 +1,13 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 23:21
+  - Created by Martin Dünkelmann on 07.02.22, 00:08
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 23:21
+  - Last modified 07.02.22, 00:08
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="primary" mini-variant mini-variant-width="40px" permanent right touchless>
+    <v-navigation-drawer :mini-variant-width="`${$vuetify.breakpoint.smAndDown ? '30' : '40'}px`" app color="primary" mini-variant permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
@@ -51,7 +51,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app class="text-caption text-sm-body-1" style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid 40px">
+    <v-footer app class="border-right text-caption text-sm-body-1" style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid">
       <span v-text="'Copyright'" />
       <v-icon :small="$vuetify.breakpoint.smAndDown" left right v-text="'mdi-copyright'" />
       <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
@@ -82,4 +82,18 @@ export default class DefaultView extends Vue {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '~vuetify/src/styles/styles.sass';
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  .border-right {
+    border-right-width: 30px !important;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'md-and-up')} {
+  .border-right {
+    border-right-width: 40px !important;
+  }
+}
+</style>
