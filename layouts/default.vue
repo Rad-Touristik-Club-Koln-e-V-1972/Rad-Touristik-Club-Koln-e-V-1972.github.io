@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 16:43
+  - Created by Martin Dünkelmann on 06.02.22, 17:27
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 16:43
+  - Last modified 06.02.22, 17:27
   -->
 
 <template>
@@ -28,13 +28,23 @@
       <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
       <v-app-bar-title>
-        <span class="d-inline-block" style="text-align-last: justify">
+        <div class="d-inline-block" style="text-align-last: justify">
           <span class="font-weight-bold text-sm-h5 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
           <br />
           <span class="font-weight-bold text-sm-h4 text-h6">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
-        </span>
+        </div>
       </v-app-bar-title>
       <v-spacer />
+      <template #extension>
+        <v-tabs :show-arrows="$vuetify.breakpoint.smAndDown" align-with-title>
+          <v-tab>Startseite</v-tab>
+          <v-tab>Über uns</v-tab>
+          <v-tab>Kontakt</v-tab>
+          <v-tab>RTF/CTF</v-tab>
+          <v-tab>Galerie</v-tab>
+          <v-tab>Touren-Tipps</v-tab>
+        </v-tabs>
+      </template>
     </v-app-bar>
     <v-main>
       <v-container fluid>
