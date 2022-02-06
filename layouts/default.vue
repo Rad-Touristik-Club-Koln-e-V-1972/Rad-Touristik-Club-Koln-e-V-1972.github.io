@@ -1,13 +1,13 @@
 <!--
-  - Created by Martin Dünkelmann on 13.01.22, 02:32
+  - Created by Martin Dünkelmann on 06.02.22, 13:50
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 13.01.22, 02:32
+  - Last modified 06.02.22, 13:50
   -->
 
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer app color="accent" mini-variant mini-variant-width="30px" permanent right touchless>
+    <v-navigation-drawer app color="secondary" mini-variant mini-variant-width="30px" permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
@@ -16,7 +16,7 @@
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon v-text="item.icon" />
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -28,9 +28,9 @@
       <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
       <v-spacer />
       <v-app-bar-title style="flex-wrap: wrap">
-        <span class="font-weight-bold text-subtitle-2 text-sm-h6 text-no-wrap">Herzlich willkommen beim</span>
+        <span class="font-weight-bold text-subtitle-2 text-sm-h6 text-no-wrap" v-text="'Herzlich willkommen beim'" />
         <br v-if="$vuetify.breakpoint.smAndDown" />
-        <span class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="club-color-accent">1972</span></span>
+        <span class="font-weight-bold text-subtitle-1 text-sm-h5 text-no-wrap">RTC KÖLN e.V. <span class="secondary--text" v-text="'1972'" /></span>
       </v-app-bar-title>
       <v-spacer />
     </v-app-bar>
@@ -40,7 +40,10 @@
       </v-container>
     </v-main>
     <v-footer app style="border-left: #ed5700 solid 10px; border-right: #ed5700 solid 30px">
-      <span>&copy; {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972</span>
+      <span v-text="'Copyright'" />
+      <v-icon left right v-text="'mdi-copyright'" />
+      <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
+      <span v-text="`2021 durch Rad-Touristik-Club Köln e.V. 1972`" />
     </v-footer>
   </v-app>
 </template>
@@ -66,8 +69,4 @@ export default class DefaultView extends Vue {
 }
 </script>
 
-<style lang="scss">
-.club-color-accent {
-  color: var(--v-accent-base);
-}
-</style>
+<style lang="scss" scoped></style>

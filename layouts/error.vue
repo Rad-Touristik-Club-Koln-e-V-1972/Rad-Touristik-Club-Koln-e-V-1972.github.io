@@ -1,18 +1,18 @@
 <!--
-  - Created by Martin Dünkelmann on 05.02.22, 14:35
+  - Created by Martin Dünkelmann on 06.02.22, 13:50
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 05.02.22, 14:35
+  - Last modified 06.02.22, 13:50
   -->
 
 <template>
   <v-app id="ErrorView">
     <div class="d-flex justify-center">
       <v-card min-width="300px">
-        <v-card-title>{{ title }}</v-card-title>
-        <v-card-text>{{ text }}</v-card-text>
+        <v-card-title v-text="title" />
+        <v-card-text v-text="text" />
         <v-card-actions>
-          <v-btn :to="{ name: 'index' }">Homepage</v-btn>
+          <v-btn :to="{ name: 'index' }" v-text="'Homepage'" />
         </v-card-actions>
       </v-card>
     </div>
@@ -34,16 +34,19 @@ export default class ErrorView extends Vue.extend({
   title = `Fehlercode ${this.error?.statusCode}`
 
   get text() {
-    let text = 'Ein unbekannter Fehler trat auf.'
+    let text
 
-    if (this.error.statusCode === HTTP.NOT_FOUND) text = 'Diese Seite existiert nicht.'
+    switch (this.error.statusCode) {
+      case HTTP.NOT_FOUND:
+        text = 'Diese Seite existiert nicht.'
+        break
+      default:
+        text = 'Ein unbekannter Fehler trat auf.'
+    }
 
     return text
   }
 }
 </script>
 
-<!--
-<style scoped>
-</style>
--->
+<style lang="scss" scoped></style>

@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 02.02.22, 10:01
+  - Created by Martin Dünkelmann on 06.02.22, 13:50
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 02.02.22, 10:01
+  - Last modified 06.02.22, 13:50
   -->
 
 <template>
@@ -14,7 +14,7 @@
         </v-carousel>
       </v-card>
       <v-card>
-        <v-card-title class="text-h5"> Welcome to the Vuetify + Nuxt.js template</v-card-title>
+        <v-card-title class="text-h5" v-text="'Welcome to the Vuetify + Nuxt.js template'" />
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
           <p>
@@ -40,7 +40,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="accent" nuxt to="/inspire">Continue</v-btn>
+          <v-btn color="secondary" nuxt to="/inspire" v-text="'Continue'" />
         </v-card-actions>
       </v-card>
     </v-col>
@@ -102,7 +102,4 @@ export default class IndexView extends Vue {
 }
 </script>
 
-<!--
-<style scoped>
-</style>
--->
+<style lang="scss" scoped></style>

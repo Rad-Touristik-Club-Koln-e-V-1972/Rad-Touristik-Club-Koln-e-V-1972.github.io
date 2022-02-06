@@ -1,8 +1,8 @@
 /*!
- * Created by Martin Dünkelmann on 06.02.22, 14:07
+ * Created by Martin Dünkelmann on 06.02.22, 13:50
  * Copyright (c) 2022. All rights reserved.
  *
- * Last modified 06.02.22, 14:07
+ * Last modified 06.02.22, 13:49
  */
 
 // Ref: https://github.com/nuxt-community/vuetify-module#customvariables
@@ -35,4 +35,8 @@ $font-family: 'TacticSans';
   }
 
   font-family: $font-family, sans-serif !important;
+}
+
+.v-icon {
+  color: var(--v-accent-base) !important;
 }
