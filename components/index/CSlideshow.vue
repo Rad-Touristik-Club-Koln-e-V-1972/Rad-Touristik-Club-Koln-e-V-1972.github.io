@@ -1,14 +1,14 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 16:51
+  - Created by Martin Dünkelmann on 06.02.22, 16:52
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 16:51
+  - Last modified 06.02.22, 16:52
   -->
 
 <template>
   <v-card id="CSlideshow" class="d-flex justify-center">
     <v-carousel cycle height="200px" hide-delimiters>
-      <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" contain />
+      <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" />
     </v-carousel>
   </v-card>
 </template>
