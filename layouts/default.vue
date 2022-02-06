@@ -1,8 +1,8 @@
 <!--
-  - Created by Martin Dünkelmann on 06.02.22, 17:27
+  - Created by Martin Dünkelmann on 06.02.22, 23:21
   - Copyright (c) 2022. All rights reserved.
   -
-  - Last modified 06.02.22, 17:27
+  - Last modified 06.02.22, 23:21
   -->
 
 <template>
@@ -29,9 +29,9 @@
       <v-spacer />
       <v-app-bar-title>
         <div class="d-inline-block" style="text-align-last: justify">
-          <span class="font-weight-bold text-sm-h5 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
+          <span class="font-weight-bold text-sm-h5 text-subtitle-2" v-text="'Herzlich willkommen beim'" />
           <br />
-          <span class="font-weight-bold text-sm-h4 text-h6">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
+          <span class="font-weight-bold text-sm-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
         </div>
       </v-app-bar-title>
       <v-spacer />
