@@ -65,7 +65,6 @@ import { Component, Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class DefaultView extends Vue {
-  miniDrawer = false
   items = [
     {
       icon: 'mdi-human-greeting',
@@ -73,6 +72,8 @@ export default class DefaultView extends Vue {
       to: '/',
     },
   ]
+
+  miniDrawer = false
 
   @Watch('$vuetify.breakpoint.smAndDown', { immediate: true })
   onMobileViewChanged(val: boolean) {
