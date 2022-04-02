@@ -1,10 +1,3 @@
-/*
- * Created by Martin Dünkelmann on 05.02.22, 14:35
- * Copyright (c) 2022. All rights reserved.
- *
- * Last modified 05.02.22, 14:34
- */
-
 module.exports = {
   root: true,
   env: {

@@ -1,10 +1,3 @@
-<!--
-  - Created by Martin Dünkelmann on 06.02.22, 16:51
-  - Copyright (c) 2022. All rights reserved.
-  -
-  - Last modified 06.02.22, 16:51
-  -->
-
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col>

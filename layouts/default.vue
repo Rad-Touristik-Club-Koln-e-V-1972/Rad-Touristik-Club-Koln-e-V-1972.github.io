@@ -1,10 +1,3 @@
-<!--
-  - Created by Martin Dünkelmann on 07.02.22, 00:08
-  - Copyright (c) 2022. All rights reserved.
-  -
-  - Last modified 07.02.22, 00:08
-  -->
-
 <template>
   <v-app id="DefaultView">
     <v-navigation-drawer :mini-variant-width="`${$vuetify.breakpoint.smAndDown ? '30' : '40'}px`" app color="primary" mini-variant permanent right touchless>

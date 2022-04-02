@@ -1,10 +1,3 @@
-/*
- * Created by Martin Dünkelmann on 02.04.22, 13:19
- * Copyright (c) 2022. All rights reserved.
- *
- * Last modified 02.04.22, 13:19
- */
-
 import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({

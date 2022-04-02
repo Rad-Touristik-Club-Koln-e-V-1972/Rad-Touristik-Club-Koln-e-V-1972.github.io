@@ -1,10 +1,3 @@
-<!--
-  - Created by Martin Dünkelmann on 06.02.22, 13:50
-  - Copyright (c) 2022. All rights reserved.
-  -
-  - Last modified 06.02.22, 13:50
-  -->
-
 <template>
   <v-app id="ErrorView">
     <div class="d-flex justify-center">

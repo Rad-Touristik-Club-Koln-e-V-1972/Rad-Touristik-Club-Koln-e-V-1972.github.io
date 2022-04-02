@@ -1,10 +1,3 @@
-<!--
-  - Created by Martin Dünkelmann on 06.02.22, 16:52
-  - Copyright (c) 2022. All rights reserved.
-  -
-  - Last modified 06.02.22, 16:52
-  -->
-
 <template>
   <v-card id="CSlideshow" class="d-flex justify-center">
     <v-carousel cycle height="200px" hide-delimiters>
