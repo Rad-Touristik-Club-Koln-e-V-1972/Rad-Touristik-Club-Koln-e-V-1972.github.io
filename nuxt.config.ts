@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // TODO WORKAROUND FOR https://github.com/nuxt/framework/issues/886 https://github.com/nuxt/framework/pull/2652
+  // TODO WORKAROUND FOR https://github.com/nuxt/framework/issues/886
   ssr: true,
   // ssr: false, // Disable Server Side rendering since the targeted webserver doesn't run Node.JS
 
