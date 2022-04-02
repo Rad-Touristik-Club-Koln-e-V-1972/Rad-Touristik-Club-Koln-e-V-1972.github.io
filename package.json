@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nuxi build",
+    "build": "nuxi generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "dev": "nuxi dev",
-    "generate": "nuxi generate",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
-    "prepare": "husky install",
-    "start": "nuxi preview"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache",

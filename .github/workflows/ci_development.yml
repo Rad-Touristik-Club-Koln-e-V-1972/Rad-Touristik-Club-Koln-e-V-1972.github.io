@@ -35,7 +35,7 @@ jobs:
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
-        run: npm run generate
+        run: npm run build
       - name: Deploy to github branch
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
