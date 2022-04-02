@@ -1,12 +1,9 @@
 {
   "compilerOptions": {
     "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
-    "esModuleInterop": true,
     "sourceMap": true,
     "strict": true,
-    "noEmit": true,
-    "experimentalDecorators": true,
-    "types": ["@nuxt/types", "vuetify"]
+    "types": ["@nuxt/types", "node", "vuetify"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
   "extends": "./.nuxt/tsconfig.json"
