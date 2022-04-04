@@ -42,7 +42,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: .output/public
+          FOLDER: dist
   auto-merge:
     needs: ci_dev
     permissions:
