@@ -20,7 +20,7 @@ jobs:
       - name: Run linter
         run: npm run lint
       - name: Run static website generator
-        run: npm run build
+        run: npm run generate
       - name: Deploy to website
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
