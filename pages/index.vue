@@ -1,7 +1,6 @@
 <template>
   <v-row id="IndexView" align="center" justify="center">
     <v-col>
-      <c-slideshow />
       <v-card>
         <v-card-title class="text-h5" v-text="'Welcome to the Vuetify + Nuxt.js template'" />
         <v-card-text>
@@ -38,9 +37,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import CSlideshow from '@/components/pages/index/CSlideshow.vue'
 
-@Component({ components: { CSlideshow } })
+@Component
 export default class IndexView extends Vue {}
 </script>
 

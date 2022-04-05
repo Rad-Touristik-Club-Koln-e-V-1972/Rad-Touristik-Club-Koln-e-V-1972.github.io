@@ -44,7 +44,14 @@
     </v-app-bar>
     <v-main>
       <v-container fluid>
-        <Nuxt />
+        <v-row>
+          <v-col>
+            <c-slideshow />
+          </v-col>
+        </v-row>
+        <v-row no-gutters>
+          <v-col><Nuxt /></v-col>
+        </v-row>
       </v-container>
     </v-main>
     <v-footer :style="`border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid ${rightBannerWidth}`" app class="text-caption text-sm-body-1">
@@ -59,8 +66,9 @@
 <script lang="ts">
 import { mdiCopyright, mdiHumanGreeting, mdiMenu } from '@mdi/js'
 import { Component, Vue, Watch } from 'vue-property-decorator'
+import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 
-@Component
+@Component({ components: { CSlideshow } })
 export default class DefaultView extends Vue {
   icons = { mdiCopyright, mdiMenu }
 

@@ -11,7 +11,7 @@ import { mdiChevronLeft, mdiChevronRight } from '@mdi/js'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class CVuetifyLogo extends Vue {
+export default class CSlideshow extends Vue {
   icons = { mdiChevronLeft, mdiChevronRight }
 
   images = [
