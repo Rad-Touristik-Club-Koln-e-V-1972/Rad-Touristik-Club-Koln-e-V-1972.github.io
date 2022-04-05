@@ -8,7 +8,17 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    [
+      '@nuxtjs/vuetify',
+      {
+        // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+        customVariables: ['@/assets/variables.scss'],
+        defaultAssets: false,
+        iconfont: 'mdiSvg',
+        optionsPath: '@/plugins/vuetify.options.ts',
+        treeShake: true,
+      },
+    ],
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,10 +44,4 @@ export default {
   ssr: false,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-  vuetify: {
-    customVariables: ['@/assets/variables.scss'],
-    optionsPath: '@/plugins/vuetify.options.ts',
-    treeShake: true,
-  },
 }

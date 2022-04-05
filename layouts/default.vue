@@ -18,7 +18,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app color="secondary" flat>
-      <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer" />
+      <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer">
+        <v-icon>{{ icons.mdiMenu }}</v-icon>
+      </v-app-bar-nav-icon>
       <v-spacer />
       <v-app-bar-title>
         <div class="d-inline-block" style="text-align-last: justify">
@@ -46,7 +48,7 @@
     </v-main>
     <v-footer app class="border-right text-caption text-sm-body-1" style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid">
       <span v-text="'Copyright'" />
-      <v-icon :small="$vuetify.breakpoint.smAndDown" left right v-text="'mdi-copyright'" />
+      <v-icon :small="$vuetify.breakpoint.smAndDown" left right>{{ icons.mdiCopyright }}</v-icon>
       <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
       <span v-text="`2021 durch Rad-Touristik-Club Köln e.V. 1972`" />
     </v-footer>
@@ -54,13 +56,16 @@
 </template>
 
 <script lang="ts">
+import { mdiCopyright, mdiHumanGreeting, mdiMenu } from '@mdi/js'
 import { Component, Vue, Watch } from 'vue-property-decorator'
 
 @Component
 export default class DefaultView extends Vue {
+  icons = { mdiCopyright, mdiMenu }
+
   items = [
     {
-      icon: 'mdi-human-greeting',
+      icon: mdiHumanGreeting,
       title: 'Willkommen',
       to: '/',
     },
