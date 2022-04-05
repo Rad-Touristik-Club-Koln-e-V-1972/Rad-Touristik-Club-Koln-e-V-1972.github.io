@@ -2,7 +2,7 @@
   <v-app id="DefaultView">
     <v-navigation-drawer :mini-variant-width="rightBannerWidth" app color="primary" mini-variant permanent right touchless>
       <template #img>
-        <img alt="vertikales Banner" src="/banner_vertikal.svg" />
+        <img alt="vertikales Banner" src="@/assets/img/banner_vertikal.svg" />
       </template>
     </v-navigation-drawer>
     <v-navigation-drawer :mini-variant="miniNavDrawer" app permanent style="border-left: var(--v-primary-base) solid 10px" touchless>
