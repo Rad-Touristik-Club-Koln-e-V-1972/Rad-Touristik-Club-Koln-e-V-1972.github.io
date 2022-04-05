@@ -46,6 +46,7 @@
         </v-row>
         <v-row no-gutters>
           <v-col><Nuxt /></v-col>
+          <v-col cols="3"><c-sponsors /></v-col>
         </v-row>
       </v-container>
     </v-main>
@@ -63,8 +64,9 @@
 import { mdiCopyright, mdiHumanGreeting, mdiMenu } from '@mdi/js'
 import { Component, Vue } from 'vue-property-decorator'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
+import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
-@Component({ components: { CSlideshow } })
+@Component({ components: { CSlideshow, CSponsors } })
 export default class DefaultView extends Vue {
   icons = { mdiCopyright, mdiMenu }
 
