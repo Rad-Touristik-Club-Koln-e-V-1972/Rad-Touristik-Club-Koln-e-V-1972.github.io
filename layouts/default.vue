@@ -1,11 +1,11 @@
 <template>
   <v-app id="DefaultView">
-    <v-navigation-drawer :mini-variant-width="`${$vuetify.breakpoint.smAndDown ? '30' : '40'}px`" app color="primary" mini-variant permanent right touchless>
+    <v-navigation-drawer :mini-variant-width="rightBannerWidth" app color="primary" mini-variant permanent right touchless>
       <template #img>
         <img alt="vertikales Banner" src="/banner_vertikal.svg" />
       </template>
     </v-navigation-drawer>
-    <v-navigation-drawer :mini-variant="miniDrawer" app permanent style="border-left: var(--v-primary-base) solid 10px" touchless>
+    <v-navigation-drawer :mini-variant="miniNavDrawer" app permanent style="border-left: var(--v-primary-base) solid 10px" touchless>
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
           <v-list-item-action>
@@ -18,8 +18,8 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app color="secondary" flat>
-      <v-app-bar-nav-icon @click.stop="miniDrawer = !miniDrawer">
-        <v-icon>{{ icons.mdiMenu }}</v-icon>
+      <v-app-bar-nav-icon @click.stop="miniNavDrawer = !miniNavDrawer">
+        <v-icon v-text="icons.mdiMenu" />
       </v-app-bar-nav-icon>
       <v-spacer />
       <v-app-bar-title>
@@ -31,7 +31,7 @@
       </v-app-bar-title>
       <v-spacer />
       <template #extension>
-        <v-tabs :show-arrows="$vuetify.breakpoint.smAndDown" align-with-title>
+        <v-tabs :show-arrows="isMobileScreen" align-with-title>
           <v-tab>Startseite</v-tab>
           <v-tab>Über uns</v-tab>
           <v-tab>Kontakt</v-tab>
@@ -46,9 +46,9 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app class="border-right text-caption text-sm-body-1" style="border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid">
+    <v-footer :style="`border-left: var(--v-primary-base) solid 10px; border-right: var(--v-primary-base) solid ${rightBannerWidth}`" app class="text-caption text-sm-body-1">
       <span v-text="'Copyright'" />
-      <v-icon :small="$vuetify.breakpoint.smAndDown" left right>{{ icons.mdiCopyright }}</v-icon>
+      <v-icon :small="isMobileScreen" left right v-text="icons.mdiCopyright" />
       <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
       <span v-text="`2021 durch Rad-Touristik-Club Köln e.V. 1972`" />
     </v-footer>
@@ -63,6 +63,8 @@ import { Component, Vue, Watch } from 'vue-property-decorator'
 export default class DefaultView extends Vue {
   icons = { mdiCopyright, mdiMenu }
 
+  isMobileScreen = false
+
   items = [
     {
       icon: mdiHumanGreeting,
@@ -71,27 +73,18 @@ export default class DefaultView extends Vue {
     },
   ]
 
-  miniDrawer = false
+  miniNavDrawer = false
+
+  rightBannerWidth = '30px'
 
   @Watch('$vuetify.breakpoint.smAndDown', { immediate: true })
   onMobileViewChanged(val: boolean) {
-    this.miniDrawer = val
+    this.isMobileScreen = val
+    this.miniNavDrawer = val
+    // noinspection MagicNumberJS
+    this.rightBannerWidth = `${val ? 30 : 40}px`
   }
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~vuetify/src/styles/styles.sass';
-
-@media #{map-get($display-breakpoints, 'sm-and-down')} {
-  .border-right {
-    border-right-width: 30px !important;
-  }
-}
-
-@media #{map-get($display-breakpoints, 'md-and-up')} {
-  .border-right {
-    border-right-width: 40px !important;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
