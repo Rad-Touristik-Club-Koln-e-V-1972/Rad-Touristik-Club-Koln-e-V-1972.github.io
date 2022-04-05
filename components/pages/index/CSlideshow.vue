@@ -1,7 +1,7 @@
 <template>
   <v-card id="CSlideshow" class="d-flex justify-center">
     <v-carousel :next-icon="icons.mdiChevronRight" :prev-icon="icons.mdiChevronLeft" cycle height="200px" hide-delimiters>
-      <v-carousel-item v-for="(item, i) in carouselItems" :key="i" :src="item.src" />
+      <v-carousel-item v-for="(item, i) in images" :key="i" :src="item.src" />
     </v-carousel>
   </v-card>
 </template>
@@ -12,7 +12,9 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class CVuetifyLogo extends Vue {
-  carouselItems = [
+  icons = { mdiChevronLeft, mdiChevronRight }
+
+  images = [
     {
       src: 'https://content.rtc-koeln.de/index/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
     },
@@ -59,8 +61,6 @@ export default class CVuetifyLogo extends Vue {
       src: 'https://content.rtc-koeln.de/index/slideshow/IMG_4515.jpg',
     },
   ]
-
-  icons = { mdiChevronLeft, mdiChevronRight }
 }
 </script>
 
