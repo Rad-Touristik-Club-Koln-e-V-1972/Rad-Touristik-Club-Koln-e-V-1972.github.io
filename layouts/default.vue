@@ -22,13 +22,14 @@
         <v-icon v-text="icons.mdiMenu" />
       </v-app-bar-nav-icon>
       <v-spacer />
-      <v-app-bar-title>
+      <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
+      <v-toolbar-title>
         <div class="d-inline-block" style="text-align-last: justify">
           <span class="font-weight-bold text-sm-h5 text-subtitle-2" v-text="'Herzlich willkommen beim'" />
           <br />
           <span class="font-weight-bold text-sm-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
         </div>
-      </v-app-bar-title>
+      </v-toolbar-title>
       <v-spacer />
       <template #extension>
         <v-tabs :show-arrows="isMobileScreen" align-with-title>
