@@ -33,3 +33,7 @@ $font-family: 'TacticSans';
 .v-icon {
   color: var(--v-accent-base) !important;
 }
+
+.v-card--link:before {
+  background: none;
+}
