@@ -79,4 +79,9 @@
     </option>
     <option name="configurationPath" value="" />
   </component>
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
+  </component>
 </project>
