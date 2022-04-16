@@ -1,19 +1,17 @@
 <template>
-  <v-card id="CSlideshow" class="d-flex justify-center">
-    <v-carousel cycle height="200px" hide-delimiters show-arrows-on-hover>
-      <template #prev="{ on, attrs }">
-        <v-btn icon style="background-color: var(--v-accent-base)" v-bind="attrs" v-on="on">
-          <v-icon color="secondary" x-large v-text="icons.mdiChevronLeft" />
-        </v-btn>
-      </template>
-      <template #next="{ on, attrs }">
-        <v-btn icon style="background-color: var(--v-accent-base)" v-bind="attrs" v-on="on">
-          <v-icon color="secondary" x-large v-text="icons.mdiChevronRight" />
-        </v-btn>
-      </template>
-      <v-carousel-item v-for="(item, i) in images" :key="i" :src="item.src" />
-    </v-carousel>
-  </v-card>
+  <v-carousel id="CSlideshow" cycle height="200px" hide-delimiters show-arrows-on-hover>
+    <template #prev="{ on, attrs }">
+      <v-btn icon style="background-color: var(--v-accent-base)" v-bind="attrs" v-on="on">
+        <v-icon color="secondary" x-large v-text="icons.mdiChevronLeft" />
+      </v-btn>
+    </template>
+    <template #next="{ on, attrs }">
+      <v-btn icon style="background-color: var(--v-accent-base)" v-bind="attrs" v-on="on">
+        <v-icon color="secondary" x-large v-text="icons.mdiChevronRight" />
+      </v-btn>
+    </template>
+    <v-carousel-item v-for="(item, i) in images" :key="i" :src="item.src" />
+  </v-carousel>
 </template>
 
 <script lang="ts">

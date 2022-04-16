@@ -38,17 +38,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-main class="border main">
-      <v-container fluid>
-        <v-row>
-          <v-col>
-            <c-slideshow />
-          </v-col>
-        </v-row>
-        <v-row no-gutters>
-          <v-col><Nuxt /></v-col>
-          <v-col cols="2"><c-sponsors /></v-col>
-        </v-row>
-      </v-container>
+      <c-slideshow />
+      <v-row dense>
+        <v-col><Nuxt /></v-col>
+        <v-col cols="2"><c-sponsors /></v-col>
+      </v-row>
     </v-main>
     <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
       <div class="text-no-wrap">

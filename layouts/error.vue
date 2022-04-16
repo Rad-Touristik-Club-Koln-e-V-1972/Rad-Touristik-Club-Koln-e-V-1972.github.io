@@ -1,15 +1,13 @@
 <template>
-  <v-app id="ErrorView">
-    <div class="d-flex justify-center">
-      <v-card min-width="300px">
-        <v-card-title v-text="title" />
-        <v-card-text v-text="text" />
-        <v-card-actions>
-          <v-btn :to="{ name: 'index' }" v-text="'Homepage'" />
-        </v-card-actions>
-      </v-card>
-    </div>
-  </v-app>
+  <div id="ErrorView" class="d-flex justify-center">
+    <v-card min-width="300px">
+      <v-card-title v-text="title" />
+      <v-card-text v-text="text" />
+      <v-card-actions>
+        <v-btn :to="{ name: 'index' }" v-text="'Homepage'" />
+      </v-card-actions>
+    </v-card>
+  </div>
 </template>
 
 <script lang="ts">
