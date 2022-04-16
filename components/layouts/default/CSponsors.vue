@@ -1,17 +1,13 @@
 <template>
-  <v-container id="CSponsors" fluid>
-    <v-card flat>
-      <v-card-title class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h5 text-xl-h4" v-text="'Unsere Partner'" />
-      <v-row dense>
-        <v-col v-for="(sponsor, i) in sponsors" :key="i">
-          <v-card :href="sponsor.url" :ripple="false" click target="_blank">
-            <v-img v-if="sponsor.src" :src="sponsor.src" contain max-height="100px" />
-            <v-card-text v-if="sponsor.text" v-text="sponsor.text" />
-          </v-card>
-        </v-col>
-      </v-row>
+  <v-card id="CSponsors" flat>
+    <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Sponsoren'" />
+    <v-card v-for="(sponsor, i) in sponsors" :key="i" :href="sponsor.url" :ripple="false" flat target="_blank">
+      <v-card-text>
+        <span v-if="sponsor.text" v-text="sponsor.text"></span>
+        <v-img v-if="sponsor.src" :src="sponsor.src" contain max-height="100px" />
+      </v-card-text>
     </v-card>
-  </v-container>
+  </v-card>
 </template>
 
 <script lang="ts">

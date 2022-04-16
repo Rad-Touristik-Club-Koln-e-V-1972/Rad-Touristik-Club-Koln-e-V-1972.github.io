@@ -25,12 +25,11 @@ $font-family: 'TacticSans';
 .v-application {
   [class*='text-'] {
     font-family: $font-family, sans-serif !important;
+    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+    word-break: normal !important;
   }
 
   font-family: $font-family, sans-serif !important;
-
-  // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-  word-break: normal;
 }
 
 .v-icon {

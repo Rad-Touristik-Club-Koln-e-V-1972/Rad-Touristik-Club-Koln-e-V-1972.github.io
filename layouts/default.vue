@@ -46,7 +46,7 @@
         </v-row>
         <v-row no-gutters>
           <v-col><Nuxt /></v-col>
-          <v-col cols="3"><c-sponsors /></v-col>
+          <v-col cols="2"><c-sponsors /></v-col>
         </v-row>
       </v-container>
     </v-main>
