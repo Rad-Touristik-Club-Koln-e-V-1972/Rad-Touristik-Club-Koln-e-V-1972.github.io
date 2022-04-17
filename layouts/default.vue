@@ -25,18 +25,7 @@
         </v-tabs>
       </template>
     </v-app-bar>
-    <v-navigation-drawer v-model="navDrawer" bottom app temporary>
-      <v-list nav dense>
-        <v-list-item v-for="(item, index) in items" :key="index" :to="item.to" exact router>
-          <v-list-item-action>
-            <v-icon v-text="item.icon" />
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <c-navigation-drawer v-model="navDrawer" />
     <v-main class="border main">
       <c-slideshow />
       <v-row dense>
@@ -55,22 +44,15 @@
 </template>
 
 <script lang="ts">
-import { mdiCopyright, mdiHumanGreeting, mdiMenu } from '@mdi/js'
+import { mdiCopyright, mdiMenu } from '@mdi/js'
 import { Component, Vue } from 'vue-property-decorator'
+import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
-@Component({ components: { CSlideshow, CSponsors } })
+@Component({ components: { CNavigationDrawer, CSlideshow, CSponsors } })
 export default class DefaultView extends Vue {
   icons = { mdiCopyright, mdiMenu }
-
-  items = [
-    {
-      icon: mdiHumanGreeting,
-      title: 'Willkommen',
-      to: '/',
-    },
-  ]
 
   navDrawer = false
 }
