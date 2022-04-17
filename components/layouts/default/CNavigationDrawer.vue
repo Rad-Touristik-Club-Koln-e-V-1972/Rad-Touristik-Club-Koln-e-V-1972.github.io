@@ -66,12 +66,12 @@ export default class CNavigationDrawer extends Vue.extend({
     {
       icon: mdiCalendarHeart,
       title: 'Breitensportkalender BDR',
-      to: '/',
+      to: 'https://breitensport.rad-net.de/breitensportkalender/',
     },
     {
       icon: mdiWeatherPartlyRainy,
       title: 'Wetter live in Köln + Regenradar',
-      to: '/',
+      to: 'https://www.koeln.de/wetter/regenradar/',
     },
     {
       icon: mdiMessageDraw,
