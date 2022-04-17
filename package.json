@@ -18,11 +18,10 @@
     "*.**": "prettier --ignore-unknown --write"
   },
   "dependencies": {
+    "@nuxtjs/composition-api": "^0.32.0",
     "core-js": "^3.21.1",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "vuetify": "^2.6.4",

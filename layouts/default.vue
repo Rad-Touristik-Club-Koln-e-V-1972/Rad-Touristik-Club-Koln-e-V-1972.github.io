@@ -45,17 +45,24 @@
 
 <script lang="ts">
 import { mdiCopyright, mdiMenu } from '@mdi/js'
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from '@nuxtjs/composition-api'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
-@Component({ components: { CNavigationDrawer, CSlideshow, CSponsors } })
-export default class DefaultView extends Vue {
-  icons = { mdiCopyright, mdiMenu }
-
-  navDrawer = false
-}
+export default defineComponent({
+  components: {
+    CNavigationDrawer,
+    CSlideshow,
+    CSponsors,
+  },
+  setup() {
+    return {
+      icons: { mdiCopyright, mdiMenu },
+      navDrawer: false,
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>

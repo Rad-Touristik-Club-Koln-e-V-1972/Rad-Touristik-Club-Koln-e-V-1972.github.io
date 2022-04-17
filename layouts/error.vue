@@ -2,7 +2,7 @@
   <div id="ErrorView" class="d-flex justify-center">
     <v-card min-width="300px">
       <v-card-title v-text="title" />
-      <v-card-text v-text="text" />
+      <v-card-text v-text="text()" />
       <v-card-actions>
         <v-btn :to="{ name: 'index' }" v-text="'Homepage'" />
       </v-card-actions>
@@ -11,33 +11,33 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
 import { NuxtError } from '@nuxt/types'
-import { Prop } from 'vue/types/options'
-import HTTP from '@/models/enums/HTTP'
+import HTTP from '~/models/enums/HTTP'
 
-@Component
-export default class ErrorView extends Vue.extend({
+export default defineComponent({
   props: {
-    error: { default: null, type: Object as Prop<NuxtError> },
+    error: { default: null, type: Object as PropType<NuxtError> },
   },
-}) {
-  title = `Fehlercode ${this.error?.statusCode}`
+  setup(props) {
+    return {
+      text: () => {
+        let text
 
-  get text() {
-    let text
+        switch (props.error.statusCode) {
+          case HTTP.NOT_FOUND:
+            text = 'Diese Seite existiert nicht.'
+            break
+          default:
+            text = 'Ein unbekannter Fehler trat auf.'
+        }
 
-    switch (this.error.statusCode) {
-      case HTTP.NOT_FOUND:
-        text = 'Diese Seite existiert nicht.'
-        break
-      default:
-        text = 'Ein unbekannter Fehler trat auf.'
+        return text
+      },
+      title: `Fehlercode ${props.error?.statusCode}`,
     }
-
-    return text
-  }
-}
+  },
+})
 </script>
 
 <style lang="scss" scoped></style>

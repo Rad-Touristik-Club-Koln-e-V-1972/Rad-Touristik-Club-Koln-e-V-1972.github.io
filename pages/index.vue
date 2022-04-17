@@ -36,10 +36,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from '@nuxtjs/composition-api'
 
-@Component
-export default class IndexView extends Vue {}
+export default defineComponent({
+  setup() {
+    return {}
+  },
+})
 </script>
 
 <style lang="scss" scoped></style>
