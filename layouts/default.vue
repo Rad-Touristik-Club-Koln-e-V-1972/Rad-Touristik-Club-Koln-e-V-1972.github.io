@@ -46,9 +46,9 @@
 <script lang="ts">
 import { mdiCopyright, mdiMenu } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
-import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
-import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
-import CSponsors from '~/components/layouts/default/CSponsors.vue'
+import CNavigationDrawer from '@/components/layouts/default/CNavigationDrawer.vue'
+import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
+import CSponsors from '@/components/layouts/default/CSponsors.vue'
 
 export default defineComponent({
   components: {

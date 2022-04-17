@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
 import { NuxtError } from '@nuxt/types'
-import HTTP from '~/models/enums/HTTP'
+import HTTP from '@/models/enums/HTTP'
 
 export default defineComponent({
   props: {
