@@ -3,7 +3,15 @@
     <v-row>
       <v-col>
         <v-list nav dense>
-          <v-list-item v-for="(item, index) in navigationItems" :key="index" :to="item.to" exact router>
+          <v-list-item
+            v-for="(item, index) in navigationItems"
+            :key="index"
+            :href="item.url || undefined"
+            :nuxt="!!item.to"
+            :target="item.url ? '_blank' : undefined"
+            :to="item.to || undefined"
+            exact
+          >
             <v-list-item-action>
               <v-icon v-text="item.icon" />
             </v-list-item-action>
@@ -56,32 +64,32 @@ export default class CNavigationDrawer extends Vue.extend({
     {
       icon: mdiCalendarClockOutline,
       title: 'Veranstaltungen & Termine',
-      to: '/',
+      to: { name: 'index' },
     },
     {
       icon: mdiBike,
       title: "Empfohlene RTF's",
-      to: '/',
+      to: { name: 'index' },
     },
     {
       icon: mdiCalendarHeart,
       title: 'Breitensportkalender BDR',
-      to: 'https://breitensport.rad-net.de/breitensportkalender/',
+      url: 'https://breitensport.rad-net.de/breitensportkalender/',
     },
     {
       icon: mdiWeatherPartlyRainy,
       title: 'Wetter live in Köln + Regenradar',
-      to: 'https://www.koeln.de/wetter/regenradar/',
+      url: 'https://www.koeln.de/wetter/regenradar/',
     },
     {
       icon: mdiMessageDraw,
       title: 'Gästebuch',
-      to: '/',
+      to: { name: 'index' },
     },
     {
       icon: mdiNewspaperVariantMultiple,
       title: 'Presseberichte über uns',
-      to: '/',
+      to: { name: 'index' },
     },
   ]
 
