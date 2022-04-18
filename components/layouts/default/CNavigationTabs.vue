@@ -1,16 +1,21 @@
 <template>
-  <v-tabs :show-arrows="$vuetify.breakpoint.mobile" align-with-title>
+  <v-tabs :prev-icon="icons.mdiChevronLeft" :next-icon="icons.mdiChevronRight" :show-arrows="$vuetify.breakpoint.mobile" align-with-title>
     <v-tab v-for="(item, index) in navigationItems" :key="index" :to="item.to" exact nuxt v-text="item.title" />
   </v-tabs>
 </template>
 
 <script lang="ts">
+import { mdiChevronLeft, mdiChevronRight } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   emits: ['input'],
   setup() {
     return {
+      icons: {
+        mdiChevronLeft,
+        mdiChevronRight,
+      },
       navigationItems: [
         {
           title: 'Startseite',
