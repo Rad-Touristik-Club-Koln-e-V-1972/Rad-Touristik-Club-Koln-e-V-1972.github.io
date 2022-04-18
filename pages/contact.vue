@@ -1,9 +1,14 @@
 <template>
-  <v-row id="ContactView" dense>
-    <v-col v-for="(item, index) in contactItems" :key="index">
-      <c-contact :description="item.description" :e-mail="item.eMail" :image-src="item.imageSrc" :name="item.name" :position="item.position" />
-    </v-col>
-  </v-row>
+  <v-card flat>
+    <v-card-title class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4" v-text="'Kontakte'" />
+    <v-card-text>
+      <v-row id="ContactView" dense>
+        <v-col v-for="(item, index) in contactItems" :key="index">
+          <c-contact :description="item.description" :e-mail="item.eMail" :image-src="item.imageSrc" :name="item.name" :position="item.position" />
+        </v-col>
+      </v-row>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">

@@ -1,15 +1,15 @@
 <template>
-  <v-card id="CContact" max-width="280">
+  <v-card id="CContact" :max-width="$vuetify.breakpoint.mobile ? 160 : 280">
     <v-img :src="props.imageSrc" contain />
-    <v-card-title v-text="name" />
-    <v-card-subtitle v-text="props.position" />
+    <v-card-title class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="name" />
+    <v-card-subtitle class="text-caption text-md-subtitle-2 text-lg-subtitle-1" v-text="props.position" />
     <v-card-actions>
       <v-btn :href="'mailto:' + props.eMail" icon>
         <v-icon v-text="icons.mdiEmailSend" />
       </v-btn>
       <v-spacer />
       <v-spacer />
-      <v-btn text @click="showText = !showText">
+      <v-btn class="text-caption text-sm-body-2" text @click="showText = !showText">
         Über mich
         <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
       </v-btn>
