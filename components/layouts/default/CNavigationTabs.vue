@@ -22,7 +22,7 @@ export default defineComponent({
         },
         {
           title: 'Kontakt',
-          to: { name: 'index' },
+          to: { name: 'contact' },
         },
         {
           title: 'RTF/CTF',
