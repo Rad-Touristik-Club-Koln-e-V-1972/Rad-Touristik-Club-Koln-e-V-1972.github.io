@@ -22,7 +22,7 @@
     <v-main class="border main">
       <c-slideshow />
       <v-row dense>
-        <v-col><Nuxt /></v-col>
+        <v-col cols="10"><Nuxt /></v-col>
         <v-col cols="2"><c-sponsors /></v-col>
       </v-row>
     </v-main>
