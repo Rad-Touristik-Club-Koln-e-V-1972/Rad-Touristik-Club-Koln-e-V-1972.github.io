@@ -27,8 +27,8 @@
         <v-card flat>
           <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Folge uns!'" />
           <v-card-text class="text-center">
-            <v-btn v-for="(social, i) in socials" :key="i" :href="social.url" fab icon target="_blank">
-              <v-icon :color="social.color" large v-text="social.icon" />
+            <v-btn v-for="(item, index) in socialItems" :key="index" :href="item.url" fab icon target="_blank">
+              <v-icon :color="item.color" large v-text="item.icon" />
             </v-btn>
           </v-card-text>
         </v-card>
@@ -95,7 +95,7 @@ export default defineComponent({
         },
       ],
       props,
-      socials: [
+      socialItems: [
         {
           color: 'indigo',
           icon: mdiFacebook,
