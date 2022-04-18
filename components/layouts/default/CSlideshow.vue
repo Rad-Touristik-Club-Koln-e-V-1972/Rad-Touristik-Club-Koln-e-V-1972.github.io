@@ -21,7 +21,10 @@ import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   setup() {
     return {
-      icons: { mdiChevronLeft, mdiChevronRight },
+      icons: {
+        mdiChevronLeft,
+        mdiChevronRight,
+      },
       images: [
         {
           src: 'https://content.rtc-koeln.de/layouts/default/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',

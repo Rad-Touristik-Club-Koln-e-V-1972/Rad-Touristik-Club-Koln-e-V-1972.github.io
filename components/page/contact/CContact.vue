@@ -5,13 +5,13 @@
     <v-card-subtitle v-text="props.position" />
     <v-card-actions>
       <v-btn :href="'mailto:' + props.eMail" icon>
-        <v-icon v-text="mdiEmailSend" />
+        <v-icon v-text="icons.mdiEmailSend" />
       </v-btn>
       <v-spacer />
       <v-spacer />
       <v-btn text @click="showText = !showText">
         Über mich
-        <v-icon right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
+        <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
       </v-btn>
     </v-card-actions>
     <v-expand-transition>
@@ -38,9 +38,11 @@ export default defineComponent({
   emits: ['input'],
   setup(props) {
     return {
-      mdiChevronDown,
-      mdiChevronUp,
-      mdiEmailSend,
+      icons: {
+        mdiChevronDown,
+        mdiChevronUp,
+        mdiEmailSend,
+      },
       props,
       showText: false,
     }

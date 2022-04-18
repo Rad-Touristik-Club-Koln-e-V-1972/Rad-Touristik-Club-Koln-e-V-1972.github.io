@@ -40,7 +40,7 @@
 import { mdiCopyright, mdiMenu } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CNavigationDrawer from '@/components/layouts/default/CNavigationDrawer.vue'
-import CNavigationTabs from '~/components/layouts/default/CNavigationTabs.vue'
+import CNavigationTabs from '@/components/layouts/default/CNavigationTabs.vue'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
 import CSponsors from '@/components/layouts/default/CSponsors.vue'
 
@@ -53,7 +53,10 @@ export default defineComponent({
   },
   setup() {
     return {
-      icons: { mdiCopyright, mdiMenu },
+      icons: {
+        mdiCopyright,
+        mdiMenu,
+      },
       navDrawer: false,
     }
   },
