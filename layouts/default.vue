@@ -15,14 +15,7 @@
       </v-toolbar-title>
       <v-spacer />
       <template #extension>
-        <v-tabs :show-arrows="$vuetify.breakpoint.mobile" align-with-title>
-          <v-tab>Startseite</v-tab>
-          <v-tab>Über uns</v-tab>
-          <v-tab>Kontakt</v-tab>
-          <v-tab>RTF/CTF</v-tab>
-          <v-tab>Galerie</v-tab>
-          <v-tab>Touren-Tipps</v-tab>
-        </v-tabs>
+        <c-navigation-tabs />
       </template>
     </v-app-bar>
     <c-navigation-drawer v-model="navDrawer" />
@@ -47,12 +40,14 @@
 import { mdiCopyright, mdiMenu } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CNavigationDrawer from '@/components/layouts/default/CNavigationDrawer.vue'
+import CNavigationTabs from '~/components/layouts/default/CNavigationTabs.vue'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
 import CSponsors from '@/components/layouts/default/CSponsors.vue'
 
 export default defineComponent({
   components: {
     CNavigationDrawer,
+    CNavigationTabs,
     CSlideshow,
     CSponsors,
   },
