@@ -1,4 +1,5 @@
 <template>
+  <!--TODO https://github.com/vuetifyjs/vuetify/issues/13550 -->
   <v-tabs :prev-icon="icons.mdiChevronLeft" :next-icon="icons.mdiChevronRight" :show-arrows="$vuetify.breakpoint.mobile" align-with-title>
     <v-tab v-for="(item, index) in navigationItems" :key="index" :to="item.to" exact nuxt v-text="item.title" />
   </v-tabs>
