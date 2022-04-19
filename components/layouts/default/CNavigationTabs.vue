@@ -9,7 +9,6 @@ import { mdiChevronLeft, mdiChevronRight } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  emits: ['input'],
   setup() {
     return {
       icons: {

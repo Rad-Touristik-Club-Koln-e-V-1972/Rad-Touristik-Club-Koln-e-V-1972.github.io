@@ -35,7 +35,6 @@ export default defineComponent({
     name: { required: true, type: String },
     position: { required: true, type: String },
   },
-  emits: ['input'],
   setup(props) {
     return {
       icons: {
