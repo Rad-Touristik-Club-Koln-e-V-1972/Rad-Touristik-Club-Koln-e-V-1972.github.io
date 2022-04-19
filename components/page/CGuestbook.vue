@@ -1,5 +1,5 @@
 <template>
-  <v-card id="CGuestbook" :max-width="getWidth" :min-width="getWidth / 2">
+  <v-card id="CGuestbook">
     <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="`${props.item.date}, ${props.item.name}, ${Source[props.item.source]}`" />
     <v-divider />
     <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="props.item.title" />
@@ -30,22 +30,6 @@ export default defineComponent({
       showText: false,
       Source,
     }
-  },
-  computed: {
-    getWidth(): number {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'sm':
-          return 600 - 107
-        case 'md':
-          return 960 - 107
-        case 'lg':
-          return 1264 - 107
-        case 'xl':
-          return 1904 - 107
-        default:
-          return 360 - 107
-      }
-    },
   },
 })
 </script>

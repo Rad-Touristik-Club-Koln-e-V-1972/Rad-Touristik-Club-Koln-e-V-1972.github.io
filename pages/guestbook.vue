@@ -14,7 +14,7 @@
     </v-card-actions>
     <v-card-text>
       <v-row dense>
-        <v-col v-for="(item, index) in items" :key="index">
+        <v-col v-for="(item, index) in items" :key="index" :cols="$vuetify.breakpoint.mobile ? 12 : 6">
           <c-guestbook :item="item" />
         </v-col>
       </v-row>
