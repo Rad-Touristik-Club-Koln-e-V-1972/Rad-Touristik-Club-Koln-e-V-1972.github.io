@@ -90,7 +90,7 @@ export default defineComponent({
         {
           icon: mdiMessageDraw,
           title: 'Gästebuch',
-          to: { name: 'index' },
+          to: { name: 'guestbook' },
         },
         {
           icon: mdiNewspaperVariantMultiple,
