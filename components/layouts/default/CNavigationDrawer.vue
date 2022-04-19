@@ -27,9 +27,13 @@
         <v-card flat>
           <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Folge uns!'" />
           <v-card-text class="text-center">
-            <v-btn v-for="(item, index) in socialItems" :key="index" :href="item.url" fab icon target="_blank">
-              <v-icon :color="item.color" large v-text="item.icon" />
-            </v-btn>
+            <v-row>
+              <v-col v-for="(item, index) in socialItems" :key="index">
+                <v-btn :href="item.url" fab icon target="_blank">
+                  <v-icon :color="item.color" large v-text="item.icon" />
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-card-text>
         </v-card>
       </v-col>
