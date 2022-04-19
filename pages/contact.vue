@@ -5,7 +5,7 @@
     <v-card-text>
       <v-row id="ContactView" dense>
         <v-col v-for="(item, index) in items" :key="index">
-          <c-contact :description="item.description" :e-mail="item.eMail" :image-src="item.imageSrc" :name="item.name" :position="item.position" />
+          <c-contact :item="item" />
         </v-col>
       </v-row>
     </v-card-text>
@@ -15,47 +15,48 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import CContact from '@/components/page/CContact.vue'
+import Contact from '@/models/Contact'
 
 export default defineComponent({
   components: { CContact },
   setup() {
     return {
       items: [
-        {
-          description: 'Hier könnte seine Beschreibung stehen.',
-          eMail: 'erster.vorsitzender@rtc-koeln.de',
-          imageSrc: 'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
-          name: 'Wolfgang Dünkelmann',
-          position: 'Erster Vorsitzender',
-        },
-        {
-          description: 'Hier könnte seine Beschreibung stehen.',
-          eMail: 'erster.sportwart@rtc-koeln.de',
-          imageSrc: 'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
-          name: 'Klaus Dünkelmann',
-          position: 'Erster Sportwart',
-        },
-        {
-          description: 'Hier könnte seine Beschreibung stehen.',
-          eMail: 'PR@rtc-koeln.de',
-          imageSrc: 'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
-          name: 'Diana Vialon',
-          position: 'Pressewart',
-        },
-        {
-          description: 'Hier könnte seine Beschreibung stehen.',
-          eMail: 'geschaeftsfuehrung@rtc-koeln.de',
-          imageSrc: 'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
-          name: 'Burghild Liedtke',
-          position: 'Geschäftsführung',
-        },
-        {
-          description: 'Hier könnte seine Beschreibung stehen.',
-          eMail: 'webmaster@rtc-koeln.de',
-          imageSrc: 'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
-          name: 'Martin Dünkelmann',
-          position: 'Webmaster',
-        },
+        new Contact(
+          'Hier könnte seine Beschreibung stehen.',
+          'erster.vorsitzender@rtc-koeln.de',
+          'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
+          'Wolfgang Dünkelmann',
+          'Erster Vorsitzender'
+        ),
+        new Contact(
+          'Hier könnte seine Beschreibung stehen.',
+          'erster.sportwart@rtc-koeln.de',
+          'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
+          'Klaus Dünkelmann',
+          'Erster Sportwart'
+        ),
+        new Contact(
+          'Hier könnte seine Beschreibung stehen.',
+          'PR@rtc-koeln.de',
+          'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
+          'Diana Vialon',
+          'Pressewart'
+        ),
+        new Contact(
+          'Hier könnte seine Beschreibung stehen.',
+          'geschaeftsfuehrung@rtc-koeln.de',
+          'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
+          'Burghild Liedtke',
+          'Geschäftsführung'
+        ),
+        new Contact(
+          'Hier könnte seine Beschreibung stehen.',
+          'webmaster@rtc-koeln.de',
+          'https://www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png',
+          'Martin Dünkelmann',
+          'Webmaster'
+        ),
       ],
     }
   },
