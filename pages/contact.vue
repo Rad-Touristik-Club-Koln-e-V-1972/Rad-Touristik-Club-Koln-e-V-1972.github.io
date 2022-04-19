@@ -4,7 +4,7 @@
     <v-card-subtitle class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln'" />
     <v-card-text>
       <v-row id="ContactView" dense>
-        <v-col v-for="(item, index) in contactItems" :key="index">
+        <v-col v-for="(item, index) in items" :key="index">
           <c-contact :description="item.description" :e-mail="item.eMail" :image-src="item.imageSrc" :name="item.name" :position="item.position" />
         </v-col>
       </v-row>
@@ -20,7 +20,7 @@ export default defineComponent({
   components: { CContact },
   setup() {
     return {
-      contactItems: [
+      items: [
         {
           description: 'Hier könnte seine Beschreibung stehen.',
           eMail: 'erster.vorsitzender@rtc-koeln.de',

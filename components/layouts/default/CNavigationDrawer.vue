@@ -4,7 +4,7 @@
       <v-col>
         <v-list nav dense>
           <v-list-item
-            v-for="(item, index) in navigationItems"
+            v-for="(item, index) in items"
             :key="index"
             :href="item.url || undefined"
             :nuxt="!!item.to"
@@ -28,7 +28,7 @@
           <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Folge uns!'" />
           <v-card-text class="text-center">
             <v-row>
-              <v-col v-for="(item, index) in socialItems" :key="index">
+              <v-col v-for="(item, index) in socialMediaItems" :key="index">
                 <v-btn :href="item.url" fab icon target="_blank">
                   <v-icon :color="item.color" large v-text="item.icon" />
                 </v-btn>
@@ -66,7 +66,7 @@ export default defineComponent({
       handleInput: (event: Boolean) => {
         ctx.emit('input', event)
       },
-      navigationItems: [
+      items: [
         {
           icon: mdiCalendarClockOutline,
           title: 'Veranstaltungen & Termine',
@@ -99,7 +99,7 @@ export default defineComponent({
         },
       ],
       props,
-      socialItems: [
+      socialMediaItems: [
         {
           color: 'indigo',
           icon: mdiFacebook,
