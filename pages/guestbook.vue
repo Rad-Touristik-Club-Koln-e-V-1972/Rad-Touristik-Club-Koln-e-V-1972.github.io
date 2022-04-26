@@ -53,7 +53,7 @@ export default defineComponent({
 Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr nett und hilfsbereit, die Verpflegung ist der Knaller.
 
 Da nimmt man beim Marathon noch zu :-)
-          https://rtc-koeln.de/content/pics/guestbook/rtc-gb-150531.jpg`,
+https://rtc-koeln.de/content/pics/guestbook/rtc-gb-150531.jpg`,
           '... da nimmt man beim Marathon noch zu'
         ),
         new Guestbook(
