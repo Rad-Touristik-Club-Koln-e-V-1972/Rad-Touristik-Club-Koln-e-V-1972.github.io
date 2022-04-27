@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" :value="props.value" app bottom temporary @input="handleInput">
+    <v-navigation-drawer id="CNavigationDrawer" :value="value" app bottom temporary @input="handleInput">
         <v-row>
             <v-col>
                 <v-list nav dense>

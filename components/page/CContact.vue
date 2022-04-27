@@ -1,10 +1,10 @@
 <template>
     <v-card id="CContact">
-        <v-img :src="props.item.imageSrc" contain />
-        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="props.item.name" />
-        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="props.item.position" />
+        <v-img :src="item.imageSrc" contain />
+        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.name" />
+        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="item.position" />
         <v-card-actions>
-            <v-btn :href="'mailto:' + props.item.eMail" icon>
+            <v-btn :href="'mailto:' + item.eMail" icon>
                 <v-icon v-text="icons.mdiEmailSend" />
             </v-btn>
             <v-spacer />
@@ -17,7 +17,7 @@
         <v-expand-transition>
             <div v-show="showText">
                 <v-divider></v-divider>
-                <v-card-text v-text="props.item.description" />
+                <v-card-text v-text="item.description" />
             </div>
         </v-expand-transition>
     </v-card>

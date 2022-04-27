@@ -1,10 +1,10 @@
 <template>
     <v-card id="CGuestbook">
-        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="`${props.item.date}, ${props.item.name}, ${Source[props.item.source]}`" />
+        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="`${item.date}, ${item.name}, ${Source[item.source]}`" />
         <v-divider />
-        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="props.item.title" />
+        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-card-text>
-            <v-textarea v-if="props.item.text" class="text-caption text-md-body-2 text-lg-body-1" :value="props.item.text" dense readonly />
+            <v-textarea v-if="item.text" class="text-caption text-md-body-2 text-lg-body-1" :value="item.text" dense readonly />
         </v-card-text>
     </v-card>
 </template>
