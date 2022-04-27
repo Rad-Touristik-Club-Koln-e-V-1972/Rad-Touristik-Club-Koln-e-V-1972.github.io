@@ -4,7 +4,7 @@
     <v-divider />
     <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="props.item.title" />
     <v-card-text>
-      <v-textarea class="text-caption text-md-body-2 text-lg-body-1" :value="props.item.text" flat readonly />
+      <v-textarea v-if="props.item.text" class="text-caption text-md-body-2 text-lg-body-1" :value="props.item.text" dense readonly />
     </v-card-text>
   </v-card>
 </template>
