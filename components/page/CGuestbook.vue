@@ -12,12 +12,12 @@
 <script lang="ts">
 import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
-import Guestbook from '@/models/entities/Guestbook'
+import GuestbookEntry from '@/models/entities/guestbook/Entry'
 import Source from '@/models/enums/guestbook/Source'
 
 export default defineComponent({
     props: {
-        item: { required: true, type: Guestbook },
+        item: { required: true, type: GuestbookEntry },
     },
     setup(props) {
         return {
