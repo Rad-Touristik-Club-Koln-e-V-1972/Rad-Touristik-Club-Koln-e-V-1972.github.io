@@ -191,7 +191,7 @@ Auch wenn am Ende alles ausging, aus nachvollziehbarem Grund, die Veranstaltung 
 
 mit sportlich fairen Grüßen
 Norbert`,
-          'XXX'
+          '42. Forsbach-Tour, 25.05.2014: Feedback auf die Generalkritk ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder'
         ),
         new Guestbook(
           '26. Mai 2014, 20:16',
