@@ -1,5 +1,5 @@
 enum HTTP {
-  NOT_FOUND = 404,
+    NOT_FOUND = 404,
 }
 
 export default HTTP

@@ -1,30 +1,30 @@
 name: CI Production
 on:
-  push:
-    tags:
-      - '*'
+    push:
+        tags:
+            - '*'
 jobs:
-  ci_prod:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-      - name: Setup node env
-        uses: actions/setup-node@v3.1.1
-        with:
-          cache: 'npm'
-          check-latest: true
-          node-version: 16
-      - name: Install dependencies
-        run: npm install
-      - name: Run linter
-        run: npm run lint
-      - name: Run static website generator
-        run: npm run generate
-      - name: Deploy to website
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          local-dir: dist/
-          password: ${{ secrets.OVH_SFTP_PASSWORD }}
-          server: ${{ secrets.OVH_SFTP_SERVER }}
-          username: ${{ secrets.OVH_SFTP_USERNAME }}
+    ci_prod:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+            - name: Setup node env
+              uses: actions/setup-node@v3.1.1
+              with:
+                  cache: 'npm'
+                  check-latest: true
+                  node-version: 16
+            - name: Install dependencies
+              run: npm install
+            - name: Run linter
+              run: npm run lint
+            - name: Run static website generator
+              run: npm run generate
+            - name: Deploy to website
+              uses: SamKirkland/FTP-Deploy-Action@4.3.0
+              with:
+                  local-dir: dist/
+                  password: ${{ secrets.OVH_SFTP_PASSWORD }}
+                  server: ${{ secrets.OVH_SFTP_SERVER }}
+                  username: ${{ secrets.OVH_SFTP_USERNAME }}

@@ -9,35 +9,35 @@ $font-dir: '@/assets/fonts/';
 $font-family: 'TacticSans';
 
 @font-face {
-  font-family: $font-family;
-  src: url('#{$font-dir}#{$font-family}-Reg.otf') format('opentype');
-  font-style: normal;
-  font-weight: normal;
+    font-family: $font-family;
+    src: url('#{$font-dir}#{$font-family}-Reg.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: $font-family;
-  src: url('#{$font-dir}#{$font-family}-Bld.otf') format('opentype');
-  font-style: normal;
-  font-weight: bold;
+    font-family: $font-family;
+    src: url('#{$font-dir}#{$font-family}-Bld.otf') format('opentype');
+    font-style: normal;
+    font-weight: bold;
 }
 
 .v-application {
-  [class*='text-'] {
-    font-family: $font-family, sans-serif !important;
-    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-    white-space: normal;
-    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-    word-break: normal;
-  }
+    [class*='text-'] {
+        font-family: $font-family, sans-serif !important;
+        // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+        white-space: normal;
+        // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+        word-break: normal;
+    }
 
-  font-family: $font-family, sans-serif !important;
+    font-family: $font-family, sans-serif !important;
 }
 
 .v-icon {
-  color: var(--v-accent-base) !important;
+    color: var(--v-accent-base) !important;
 }
 
 .v-card--link:before {
-  background: none;
+    background: none;
 }
