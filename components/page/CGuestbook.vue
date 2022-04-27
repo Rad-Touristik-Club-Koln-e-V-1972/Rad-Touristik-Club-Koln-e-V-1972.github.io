@@ -12,7 +12,7 @@
 <script lang="ts">
 import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
-import Guestbook from '@/models/Guestbook'
+import Guestbook from '@/models/entities/Guestbook'
 import Source from '@/models/enums/guestbook/Source'
 
 export default defineComponent({

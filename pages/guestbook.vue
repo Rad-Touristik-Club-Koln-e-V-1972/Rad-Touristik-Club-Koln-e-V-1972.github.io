@@ -26,7 +26,7 @@
 import { mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CGuestbook from '@/components/page/CGuestbook.vue'
-import Guestbook from '@/models/Guestbook'
+import Guestbook from '@/models/entities/Guestbook'
 import Source from '@/models/enums/guestbook/Source'
 
 export default defineComponent({

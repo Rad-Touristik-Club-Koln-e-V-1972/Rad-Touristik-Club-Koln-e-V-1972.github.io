@@ -15,7 +15,7 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import CContact from '@/components/page/CContact.vue'
-import Contact from '@/models/Contact'
+import Contact from '@/models/entities/Contact'
 
 export default defineComponent({
   components: { CContact },

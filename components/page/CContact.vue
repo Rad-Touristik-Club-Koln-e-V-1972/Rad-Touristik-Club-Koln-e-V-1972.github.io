@@ -26,7 +26,7 @@
 <script lang="ts">
 import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
-import Contact from '@/models/Contact'
+import Contact from '@/models/entities/Contact'
 
 export default defineComponent({
   props: {
