@@ -164,8 +164,7 @@ VIELEN DANK
                         `
 Hallo RTC-Köln, ich fahr seit grob 2 Jahren erst MTB, eure CTF war meine erste die ich gefahren bin.<br/>
 Ich möchte mich ganz herzlich bei euch für diese Tour bedanken, vor allem an das Team K1/K3.<br/>
-Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war,<br/>
-habe ich doch einen bekommen, echt kreativ dieses Team.<br/>
+Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war, habe ich doch einen bekommen, echt kreativ dieses Team.<br/>
 2 TUC Kekse und dazwischen eine Scheibe Käse. Lecker. Bis zum nächstem Jahr.<br/>
                 `
                     )
@@ -248,7 +247,7 @@ Hat wieder alles gepasst.
                         `
 ... es war meine erste CTF und ich bin begeistert.<br/>
 <br/>
-Nachdem wir früh auf die "Beschilderung" mit den Bändern aufmerksam gemacht wurden, hatten wir keine Probleme mit der 35er Strecke,<br/>
+Nachdem wir früh auf die "Beschilderung" mit den Bändern aufmerksam gemacht wurden, hatten wir keine Probleme mit der 35er Strecke,
 obwohl wir nur mit normalen Trekkingrädern unterwegs waren!<br/>
 Man konnte immer wieder merken, dass hier Leute am Werk waren, die etwas vom Fach verstehen!<br/>
 <br/>
@@ -315,10 +314,10 @@ Vielen Dank an das Orga-Team!!!
                     .source(Source.Facebook)
                     .text(
                         `
-Wenn ich mal was konstruktives sagen darf, es war eine super spannende CTF, sehr abwechslungsreich,<br/>
-die spärliche Beschilderung im Wald mit rotweißem Absperrband möchte ich garnicht kritisieren,<br/>
+Wenn ich mal was konstruktives sagen darf, es war eine super spannende CTF, sehr abwechslungsreich,
+die spärliche Beschilderung im Wald mit rotweißem Absperrband möchte ich garnicht kritisieren,
 ich fand es sehr spannend und man kam dadurch mit den Kollegen ins Gespräch.<br/>
-Also, wie gewohnt vom RTC , eine tolle Veranstaltung.
+Also, wie gewohnt vom RTC, eine tolle Veranstaltung.
 `
                     )
                     .build(),
@@ -365,15 +364,15 @@ Ihr ward alle total lieb und ich verzeihe euch, uns keinen Espresso zum Croissan
 Alles super und eine toll ausgearbeitete Strecke (bezogen auf den Marathon, die anderen bin ich ja nicht gefahren).<br/>
 <br/>
 Ihr wollt Kritik, meine wäre diese:<br/>
-Ganz am Anfang Kreuzung Hermann-Löss-Straße / Frankfurter Straße habt ihr zusätzlich zu den beiden Verkehrszeichen "Stopp" einen eigenen Warnhinweis angebracht,<br/>
+Ganz am Anfang Kreuzung Hermann-Löss-Straße / Frankfurter Straße habt ihr zusätzlich zu den beiden Verkehrszeichen "Stopp" einen eigenen Warnhinweis angebracht,
 damit durchdringt ihr ein einheitliches System und müsstet eigentlich jedes weitere Verkehrszeichen welches auf eine Gefahr hinweist bzw. ein Gebot vorgibt doppeln.<br/>
 Macht man aber nicht weil solche Sicherheitssysteme einfach und verständlich gehalten werden sollen.<br/>
-So könnte es dazu führen dass am nächsten Stoppschild wo kein zusätzliches Schild hängt,<br/>
+So könnte es dazu führen dass am nächsten Stoppschild wo kein zusätzliches Schild hängt,
 man von keiner Relevanz für einen selbst ausgeht und man einfach drüber fährt ("vor allem wenn er schon im Tunnel fährt").<br/>
 Ich glaube ein klarer Hinweis auf die StVO und deren Einhaltung reicht aus, da sie ein erprobtes System darstellt.<br/>
 <br/>
-Anders sieht es jetzt aus, wenn z.B. eine Abfahrt kommt und darin Schlaglöcher oder sonstige Gefahren für Radfahrer verborgen sind<br/>
-und auch kein Verkehrszeichen darauf hinweist, dann ist ein Hinweis "Gefährliche Kurven", "Starkes Gefälle" oder "Straßenschäden" schon sinnvoll,<br/>
+Anders sieht es jetzt aus, wenn z.B. eine Abfahrt kommt und darin Schlaglöcher oder sonstige Gefahren für Radfahrer verborgen sind
+und auch kein Verkehrszeichen darauf hinweist, dann ist ein Hinweis "Gefährliche Kurven", "Starkes Gefälle" oder "Straßenschäden" schon sinnvoll,
 man sollte aber bei dem Jargon der StVO bleiben.<br/>
 <br/>
 Natürlich habe ich auch nichts gegen aufmunternde motivierende Sprüche einzuwenden, welche ich farblich aber anders gestalten würde.<br/>
@@ -424,16 +423,15 @@ LG Martin
                     .text(
                         `
 Ihr habt eine tolle Marathon Strecke mit schönen Varianten erarbeitet.<br/>
-An 2 bis 3 Stellen hätte ein zusätzliches Schild ganz gut getan,<br/>
+An 2 bis 3 Stellen hätte ein zusätzliches Schild ganz gut getan,
 denn bei flotter Fahrt fehlte manchmal eine eindeutige Orientierung und Verfahrer und Umdreher kosten Zeit und Kraft (war wohl nicht der einzige).<br/>
 <br/>
-Die Wettervorhersage, die in Eurem Falle dann einmal nicht gestimmt hat (sonst hat sie uns dieses Jahr bei LBL und Röhn das vorausgesagte Mistwetter auch beschert)<br/>
+Die Wettervorhersage, die in Eurem Falle dann einmal nicht gestimmt hat (sonst hat sie uns dieses Jahr bei LBL und Röhn das vorausgesagte Mistwetter auch beschert)
 hat Euch leider die Teilnehmerzahlen verhagelt.<br/>
 Jedenfalls bin ich noch nie einen Marathon gefahren, bei dem ich die ersten Mit-Teilnehmer bei Km 180 getroffen habe.<br/>
 Insofern einen ganz neue Erfahrung.<br/>
 <br/>
-Nicht verzagen, ein Sportlerherz übersteht dies und nächstes Jahr wird die Wettervorhersage dann sicherlich auch stimmen,<br/>
-wie auch immer sie dann sein wird.<br/>
+Nicht verzagen, ein Sportlerherz übersteht dies und nächstes Jahr wird die Wettervorhersage dann sicherlich auch stimmen, wie auch immer sie dann sein wird.<br/>
 <br/>
 Mit sportlichen Grüßen<br/>
 Martin Poettgen, Ruhrstadt Bochum
@@ -495,7 +493,7 @@ Nächstes Jahr wird wieder die 1000er Marke geknackt 😀
                     .source(Source.Facebook)
                     .text(
                         `
-Wer sich heute trotz der besch... Wettervorhersage der "bergischen Herausforderung des RTC Köln" mit 2700hm auf knappen 200km gestellt hat,<br/>
+Wer sich heute trotz der besch... Wettervorhersage der "bergischen Herausforderung des RTC Köln" mit 2700hm auf knappen 200km gestellt hat,
 wurde bei herrlichem Wetter mit einer traumhaften Tour durch die wunderschöne Landschaft des Bergischen Landes belohnt.<br/>
 <br/>
 Die Sportler wurden von sehr freundlichen Helfern an den Kontrollstellen empfangen.<br/>
@@ -515,11 +513,9 @@ Bis nächstes Jahr!
                     .text(
                         `
 Ich bedanke mich bei allen Beteiligten, die diese wunderbare Veranstaltung wieder möglich gemacht haben:<br/>
-Klasse Ausschilderung, super Verpflegung, schöne, verkehrsberuhigte Streckenführungen, herrliche Landschaften,<br/>
-nette Orga und Helfer - was will man mehr !<br/>
+Klasse Ausschilderung, super Verpflegung, schöne, verkehrsberuhigte Streckenführungen, herrliche Landschaften, nette Orga und Helfer - was will man mehr !<br/>
 <br/>
-Ich freute mich, dass ich heute weder auf der 160 km Strecke noch auf dem anschl. Weg nach Hause von Gewitter<br/>
-oder Regen überrascht wurde - sondern eher von der Sonne.
+Ich freute mich, dass ich heute weder auf der 160 km Strecke noch auf dem anschl. Weg nach Hause von Gewitter oder Regen überrascht wurde - sondern eher von der Sonne.
 `
                     )
                     .title('Fabelhaft ...')
@@ -533,8 +529,7 @@ oder Regen überrascht wurde - sondern eher von der Sonne.
                         `
 Vielen vielen vielen lieben Dank RTC Köln e. V. 1972.<br/>
 Das war wirklich spitzenmässig organisiert und das kann auch mal gesagt werden.<br/>
-Tolle Stullen, selbstgebackene Kuchen, leckeres Kölsch, überall super freundliche, gut gelaunte Menschen<br/>
-und die schönste ausgearbeitete Route der letzten 12 Monate!<br/>
+Tolle Stullen, selbstgebackene Kuchen, leckeres Kölsch, überall super freundliche, gut gelaunte Menschen und die schönste ausgearbeitete Route der letzten 12 Monate!<br/>
 <br/>
 Chapeau!
 `
@@ -688,9 +683,9 @@ Vielen Dank
                         `
 Auch von meiner Seite einen großen Dank an den Veranstalter, der einen enormen Aufwand betrieben hat.<br/>
 <br/>
-Obwohl es die erste Veranstaltung dieser Art für den Verein war, wurde an Alles gedacht und es war eine sehr gelungene CTF,<br/>
+Obwohl es die erste Veranstaltung dieser Art für den Verein war, wurde an Alles gedacht und es war eine sehr gelungene CTF,
 bei der die Teilnehmer einen Riesenspaß haben konnten.<br/>
-Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung stattfinden kann<br/>
+Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung stattfinden kann
 und dass auch vielleicht noch einige andere Vereine aus der Region die für Viele noch etwas unbekannte Veranstaltung in Angriff nehmen ...
 `
                     )
@@ -966,7 +961,7 @@ Da taten die Beine doch schon ein bisschen weh.<br/>
 Die Landschaft um Eitorf und Much ist sehr schön.<br/>
 Alle Leute im K-Bereich waren sehr nett und zuvorkommend.<br/>
 <br/>
-An dieser Stelle nochmals besten Dank an Harald für mein gefundenes Handy,<br/>
+An dieser Stelle nochmals besten Dank an Harald für mein gefundenes Handy,
 <br/>
 schöne Grüße aus Troisdorf, Frank 😊
 `
@@ -1064,7 +1059,7 @@ Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Ansti
 Was mich allerdings schon wundert ist eure Angabe der Hm für die Marathonstrecke:<br/>
 also mein Garmin hat knappe 2300 hm aufgezeichnet, mit topografischen Korrekturen könnte man vielleicht noch knappe 2400 hm rausschlagen.<br/>
 Aber 2700 hm sind einfach nicht drin.<br/>
-Nicht, dass ich mehr bräuchte, aber es ist schon unterwegs irritierend, weil man zum Gulasch (55% der Strecke) gerade mal 1100 hm (40% von 2700 hm) hat<br/>
+Nicht, dass ich mehr bräuchte, aber es ist schon unterwegs irritierend, weil man zum Gulasch (55% der Strecke) gerade mal 1100 hm (40% von 2700 hm) hat
 und denkt, was denn da wohl noch alles von einem liegen soll?<br/>
 <br/>
 Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war 😉).<br/>
@@ -1073,9 +1068,8 @@ Ob ihr das wohl bitte im kommenden Jahr deutlicher ausschildern könntet?<br/>
 Wie stellt ihr die Streckenlänge eigentlich so genau fest?<br/>
 Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt ...<br/>
 Aber gut, wir reden hier von einem Prozent Abweichung.<br/>
-Ich fand euer 200km-Schild jedenfalls sehr schön (auch wenn mir da noch gute 2km auf dem Tacho fehlten)<br/>
-und auch euer "1km bis zum Ziel" Schild steht was früh auf der Strecke, aber es steigt ja keiner 400m vor dem Ziel ab und beruft sich<br/>
-auf das Schild 😉.<br/>
+Ich fand euer 200km-Schild jedenfalls sehr schön (auch wenn mir da noch gute 2km auf dem Tacho fehlten)
+und auch euer "1km bis zum Ziel" Schild steht was früh auf der Strecke, aber es steigt ja keiner 400m vor dem Ziel ab und beruft sich auf das Schild 😉.<br/>
 <br/>
 Nochmals danke und bis zum nächsten Mal!<br/>
 <br/>
@@ -1091,8 +1085,7 @@ Marc
                     .source(Source.Facebook)
                     .text(
                         `
-Für den Regen am Schluss könnt ihr ja nichts,<br/>
-ansonsten Top Veranstaltung, da können sich andere Veranstalter mal 'ne Scheibe von abschneiden.
+Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da können sich andere Veranstalter mal 'ne Scheibe von abschneiden.
 `
                     )
                     .title('Top Veranstaltung')
@@ -1150,7 +1143,7 @@ Die Kontrollen waren mit einer anderen sehr auffallenden Auswahl versehen: Brot,
 Endlich mal nicht die üblichen Waffeln, Bananen, oder sogar nur Waffeln, oder nur Bananen.<br/>
 <br/>
 Bei der Streckenführung haben sich die Verantwortlichen sehr viel Mühe gegeben.<br/>
-Die zweitlängste Strecke war für mich mit 1653 hm ziemlich anstrengend,<br/>
+Die zweitlängste Strecke war für mich mit 1653 hm ziemlich anstrengend,
 aber der tolle Ausblick, die gut positionierten Kontrollstellen, das schöne Wetter und die abgelegenen Wege waren das Ganze mehr als Wert.<br/>
 Der Ansturm an Teilnehmern riss auch am späten Nachmittag nicht ab.<br/>
 Der Grill war durch seine große Auswahl an selbstgemachten Salaten und Grillwürstchen ununterbrochen stark besucht.<br/>
@@ -1175,15 +1168,15 @@ Hallo RTC,<br/>
 <br/>
 das war ein sehr schöner Radmarathon am Sonntag.<br/>
 <br/>
-Eine tolle Strecke, weitgehend verkehrsarm und überwiegend recht gute Oberflächen (in der gewählten Richtung keine Selbstverständlichkeit),<br/>
+Eine tolle Strecke, weitgehend verkehrsarm und überwiegend recht gute Oberflächen (in der gewählten Richtung keine Selbstverständlichkeit),
 nettes Personal, sehr gute Ausschilderung und eine prima Verpflegung.<br/>
-Allein der Nudeltopf in Bebbingen war sensationell gut, auch wenn ich eigentlich kein Fan der warmen Verpflegung unterwegs bin,<br/>
+Allein der Nudeltopf in Bebbingen war sensationell gut, auch wenn ich eigentlich kein Fan der warmen Verpflegung unterwegs bin,
 die liegt so schwer im Magen an den Folgenhügeln...<br/>
 (daher lieber nicht sooo lecker kochen oder - noch besser - im Ziel servieren)<br/>
 <br/>
 Auch davor und danach waren die Tische (bei uns) reich gedeckt.<br/>
 Vielleicht sollte mancher "Schlemmermeier" einfach etwas früher losfahren, dann gibt's auch noch mehr.<br/>
-Da sind wir auch schon bei meinem einzigen Kritikpunkt: Wenn eine Startzeit angegeben wird, würde ich es gut finden,<br/>
+Da sind wir auch schon bei meinem einzigen Kritikpunkt: Wenn eine Startzeit angegeben wird, würde ich es gut finden,
 wenn diese auch konsequent eingehalten würde und nicht bereits eine Viertelstunde (oder mehr) eher losgefahren wird.<br/>
 Sollte doch kein Problem sein.<br/>
 <br/>
@@ -1219,8 +1212,7 @@ Helmut Hane
 Hallo RTC,<br/>
 <br/>
 ich war am Sonntag auf der Marathon-Strecke unterwegs.<br/>
-Die Strecke war wirklich sehr sehenswert und gut<br/>
-ausgeschildert (auch wenn ich mich einmal verfahren habe, was aber an eigener Blindheit gelegen hat).<br/>
+Die Strecke war wirklich sehr sehenswert und gut ausgeschildert (auch wenn ich mich einmal verfahren habe, was aber an eigener Blindheit gelegen hat).<br/>
 <br/>
 Orga und Verpflegung waren Tiptop, da kann man nicht meckern!<br/>
 <br/>
@@ -1239,18 +1231,18 @@ Marco Gerlach
                     .source(Source['E-Mail'])
                     .text(
                         `
-Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.<br/>
+Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
 - aber auch ein schöner Tag!<br/>
 <br/>
-Bereits um 5:10 Uhr, mit kurzer Verspätung, öffneten sich die Türen der Sporthalle in der Heerstraße in Zündorf und blitzartig verteilten sich die helfenden Hände,<br/>
-um mit den letzten Vorkehrungen ihre Stationen für den Andrang der Sportler vorzubereiten - und die kamen dann (wie üblich) sogar schon lange vor Öffnung der Anmeldung<br/>
+Bereits um 5:10 Uhr, mit kurzer Verspätung, öffneten sich die Türen der Sporthalle in der Heerstraße in Zündorf und blitzartig verteilten sich die helfenden Hände,
+um mit den letzten Vorkehrungen ihre Stationen für den Andrang der Sportler vorzubereiten - und die kamen dann (wie üblich) sogar schon lange vor Öffnung der Anmeldung
 und warteten mehr oder weniger geduldig auf Kaffee und Startkarten.<br/>
 <br/>
-Neben den fünf herkömmlichen Anmeldetischen war auch scan&bike mit am Start, um die Athleten schnell auf die Strecke zu schicken - und das ging auch wieder richtig zügig,<br/>
-nach dem Scannen des auf http://scan.bike vorab gedruckten oder aufs Smartphone gespeicherten QR Codes und dem Bezahlen des Startgelds trägt der Laptop den Fahrer<br/>
+Neben den fünf herkömmlichen Anmeldetischen war auch scan&bike mit am Start, um die Athleten schnell auf die Strecke zu schicken - und das ging auch wieder richtig zügig,
+nach dem Scannen des auf http://scan.bike vorab gedruckten oder aufs Smartphone gespeicherten QR Codes und dem Bezahlen des Startgelds trägt der Laptop den Fahrer
 (ob Marathon oder kürzer, ob mit oder ohne Wertungskarte und sogar Trimmfahrer)<br/>
-per Mausklick im Bruchteil einer Sekunde in die Teilnehmerliste ein und sofort kommt der nächste an die Reihe<br/>
-- zeitraubende Handarbeit übernimmt der Computer und der einmal erzeugte<br/>
+per Mausklick im Bruchteil einer Sekunde in die Teilnehmerliste ein und sofort kommt der nächste an die Reihe
+- zeitraubende Handarbeit übernimmt der Computer und der einmal erzeugte
 QR Code gilt die ganze Saison - mit dem Laserdrucker ausgedruckt kann man ihn bis auf eine Kantenlänge von 2,5 cm verkleinern und auf die Wertungskarte kleben
 oder laminieren und dadurch für die vielen RTF-/CTF-Teilnahmen konservieren - denn eines kann der Code nicht vertragen und das ist wenn er verwischt und undeutlich wird.<br/>
 Auch für den Veranstalter wird es leichter, wenn nach und nach immer mehr Sportler mit QR Code zur Einschreibung kommen kann eh schon knappes Personal reduziert werden
@@ -1277,7 +1269,7 @@ Jetzt muss man hier aber mal einen Punkt machen und in die Bresche springen.<br/
 Kritik ist durchaus erlaubt, aber man muss, wenn man das macht, auch alle Umstände mit einbeziehen.<br/>
 Hier wird aber in dem Beitrag alles, aber auch alles schlecht geredet.<br/>
 Der RTC-Köln organisiert eine solche Veranstaltung nicht zum ersten Mal.<br/>
-Am Sonntag war für den ausrichtenden Verein eine Rekordbeteiligung zu verzeichnen,<br/>
+Am Sonntag war für den ausrichtenden Verein eine Rekordbeteiligung zu verzeichnen,
 mit der man -bei all der Erfahrung- nicht gerechnet hat und in dem Ausmaß auch nicht rechnen konnte.<br/>
 Fast 1.300 Teilnehmer und man ist wahrscheinlich von einem Spitzenwert von 900 - 1.000 ausgegangen.<br/>
 Und an einem Sonntag können ausgegangene Nahrungsmittel nicht mal so eben nachgeordert werden.<br/>
@@ -1287,7 +1279,7 @@ Und mal ehrlich Herr General-Kritiker, wofür seid ihr denn überhaupt zur RTF g
 Doch nicht etwa wegen eurer Radsportbegeisterung.<br/>
 Nein, ich hätte euch gleich nach dem Start ein schickes Cafe empfehlen können oder alternativ ein gutes Restaurant.<br/>
 Echten Radsportlern geht es doch vielmehr um den Radsport und das damit verbundene Erleben schöner Strecken.<br/>
-Und wenn dann mal wirklich an einer Kontrolle was fehlt, was nicht der Regelfall sein sollte aber nachvollziehbar passieren kann,<br/>
+Und wenn dann mal wirklich an einer Kontrolle was fehlt, was nicht der Regelfall sein sollte aber nachvollziehbar passieren kann,
 ja dann fährt man zur nächsten Tanke und zieht sich da was rein.<br/>
 Wie macht man das denn auf den Trainingsrunden, die länger ausfallen als geplant?<br/>
 Ich nehme an, ihr seid schon große, selbständige Jungs; ansonsten empfehle ich euch einen Verein für betreutes Rennradfahren zu gründen.<br/>
@@ -1396,7 +1388,7 @@ Die Strecke war wirklich schön,<br/>
 <br/>
 **ABER:**<br/>
 eure Verpflegung war m. E. gesagt, das Allerletzte!<br/>
-Es gab keine Bananen (nur an 2 Kontrollen), keine Müsli-Riegel, keine Waffeln, keine Joghurts und die Getränke waren nicht isotonisch,<br/>
+Es gab keine Bananen (nur an 2 Kontrollen), keine Müsli-Riegel, keine Waffeln, keine Joghurts und die Getränke waren nicht isotonisch,
 da hätte man auch das Wasser aus der Sieg nehmen können.<br/>
 Eure letzte Kontrolle war ein Totalausfall, da gab es gar nur Wurstscheiben, die den ganzen Tag schon von der Sonne "gebleicht" wurden.<br/>
 Dabei braucht man nach 170km schon nochmal einen "Energieschub" durch Bananen, Müsli-Riegel, Waffeln oder ähnlichem.<br/>
@@ -1595,7 +1587,7 @@ ganz herzlichen Dank für die schöne RTF am Sonntag!<br/>
 <br/>
 Was Ihr da auf die Beine gestellt habt war super!<br/>
 <br/>
-Eine landschaftlich tolle Strecke, Verpflegung vom Feinsten auf der 125er Strecke,<br/>
+Eine landschaftlich tolle Strecke, Verpflegung vom Feinsten auf der 125er Strecke,
 immer gut gelaunte Helfer u. selbst die angekündigten Gewitter hatten ein Einsehen mit Eurer Veranstaltung!<br/>
 Auch wenn auf den ersten Kilometern nachgeschildert werden musste (Spiel"kinder" gibt's immer), habt Ihr versucht uns eine perfekte RTF zu bieten!<br/>
 Und Dank dem Track, den ich mir sicherheitshalber von Euer Homepage runter geladen hatte, ging auch orientierungsmäßig alles glatt.<br/>
@@ -1615,7 +1607,7 @@ Ursula Koepp
 Hallo Diana,<br/>
 <br/>
 hatte Norbert am Sonntag noch getroffen und ihm gesagt, dass es mir sehr gut gefallen hatte.<br/>
-Obwohl ich ja etwas unmotiviert war und es vor der ersten Kontrolle noch ein kleines Scharmützel mit "Kollegen" gab,<br/>
+Obwohl ich ja etwas unmotiviert war und es vor der ersten Kontrolle noch ein kleines Scharmützel mit "Kollegen" gab,
 wurde es ein wirklich schöner Tag, der nicht so schnell zu topen ist!!!<br/>
 <br/>
 Also nochmals: 10 Punkte und die Krone für eure schöne RTF!!!<br/>
@@ -1669,7 +1661,7 @@ Hallo liebe RTCler,<br/>
 <br/>
 herzlichen Dank für eine tolle Forsbachtour 2012.<br/>
 Der Tip unserer Freundin Marlies, unbedingt teil zu nehmen, hat sich wahrlich als Volltreffer erwiesen.<br/>
-Eine sensationelle Streckenführung, gepaart mit der ausgesprochen guten Verpflegung<br/>
+Eine sensationelle Streckenführung, gepaart mit der ausgesprochen guten Verpflegung
 und ergänzt durch das schöne Frühsommerwetter waren die Zutaten für einen sehr schönen RTF-Sonntag.<br/>
 <br/>
 Nochmal herzlichen Dank an alle RTCler.<br/>
@@ -1688,11 +1680,11 @@ Elke und Dieter
                         `
 Guten Morgen,<br/>
 <br/>
-ich bin gestern die 151 Strecke gefahren und wie ich um ca. 15.30 Uhr im Ziel wieder war wollte ich und meine drei anderen Radkollegen ein Grillwürstchen essen,<br/>
+ich bin gestern die 151 Strecke gefahren und wie ich um ca. 15.30 Uhr im Ziel wieder war wollte ich und meine drei anderen Radkollegen ein Grillwürstchen essen,
 aber leider waren keine mehr da nur noch für die Jungs und Mädels vom Marathon das war sehr schade.<br/>
 Da wir den ganzen Morgen nur Waffeln und Riegel gegessen hatten.<br/>
 <br/>
-Für nächstes Jahr muss ich entweder schneller fahren oder eine kleinere Runde fahren damit ich noch ein Würstchen bekomme<br/>
+Für nächstes Jahr muss ich entweder schneller fahren oder eine kleinere Runde fahren damit ich noch ein Würstchen bekomme
 oder ich bringe mir ein Paar mit die dann gegrillt werden können.<br/>
 <br/>
 An der ein oder anderen Kontrolle habe ich die Bananen vermiest schade.<br/>
@@ -1731,9 +1723,9 @@ das ist ein übler Scherz wenn man denn 200 KM radeln möchte.<br/>
 Da kommt eine Wegsuche nicht gut.<br/>
 Ich hatte das Glück einen Garmin dabei zu haben.<br/>
 Ich hatte mir die Strecke Tags zuvor aufgeladen und konnte so die Streckenführung erkennen.<br/>
-Das wiederum hatte aber zu Folge, dass ich, anstatt wie geplant ganz locker anfangen, eine "Meute" hinter mir hatte die die Strecke nicht kannte<br/>
+Das wiederum hatte aber zu Folge, dass ich, anstatt wie geplant ganz locker anfangen, eine "Meute" hinter mir hatte die die Strecke nicht kannte
 und auch so ein Gerät nicht besaßen.<br/>
-Da fühlte man sich dann schon ein wenig "auf der Jagd" wenn die jungen Burschen hinter einem fröhlich Quatschen<br/>
+Da fühlte man sich dann schon ein wenig "auf der Jagd" wenn die jungen Burschen hinter einem fröhlich Quatschen
 und spaß haben und man selber bei 85% der Maximalen HF die Strecke abfährt ;-)<br/>
 Zum Glück war der Spuk nach 10 km erledigt und die Wegbezeichnung waren wieder sichtbar angebracht.<br/>
 So konnte ich es dann ganz entspannt angehen lassen ...<br/>
@@ -1746,8 +1738,7 @@ Bei KM 60/65 passierte mir dann leider eine Panne :-) Mein Vorderreifen hatte ei
 da habe ich Glück gehabt, das es mich nicht zerbröselt hat.<br/>
 Zu diesem Zeitpunkt waren wir mit einem kleinen Pulk unterwegs.<br/>
 Mein Kollege bekam von meinem Dilemma nichts mit.<br/>
-Und so stand ich da mit einem Platten - Flickzeug hatte ich, aber leider keine Ahnung wie ich so einen Schlauch auch repariere bzw.<br/>
-austausche.<br/>
+Und so stand ich da mit einem Platten - Flickzeug hatte ich, aber leider keine Ahnung wie ich so einen Schlauch auch repariere bzw. austausche.<br/>
 Und da gilt dann ganz klar der Spruch: "Ich bin so froh, das ich ein Mädchen bin"<br/>
 Keine 2 Minuten später kam ein Mitfahrer vom RTC Rodenkirchen und hat mir anstandslos geholfen.<br/>
 Kurz darauf kam auch ein Wagen Vom RTC Köln und fragte ob er auch helfen könnte ...<br/>
@@ -1781,7 +1772,7 @@ Sehr geehrte Damen und Herren,<br/>
 Ich freue mich sehr wenn der Breitensport immer noch großen Zulauf findet.<br/>
 Überhaupt keine Freude empfinde ich wenn Radsportbegeisterte ihre Freude widerrum schon Morgens um kurz nach 7 in reinen Wohngebieten lautstark zum Ausdruck bringen.<br/>
 So geschehen heute Morgen in Libur (Freiheit/Stockumer Weg) Seit diesem Zeitpunkt war ich leider wach und konnte den Hochgenüssen der lautstarken Artikulation bestens folgen.<br/>
-Ein weiterer Kritikpunkt ist: in den an Libur angrenzenden Feldern genießen viele ihre Freizeit, Hundehalter, Jogger, Walker<br/>
+Ein weiterer Kritikpunkt ist: in den an Libur angrenzenden Feldern genießen viele ihre Freizeit, Hundehalter, Jogger, Walker
 und andere sind massivst durch unangemessene Geschwindigkeit Ihrer Fahrer gestört.<br/>
 Auch in Libur selber, sie kennen die Strassen wahrscheinlich, sind Ihre Teilnehmer unangemessen schnell unterwegs.<br/>
 Ich selber durfte eine Gruppe "vorbeifliegender" Radler genießen.<br/>
