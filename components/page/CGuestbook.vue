@@ -11,6 +11,12 @@
             <div v-if="getText(item)" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item)" />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
         </v-card-text>
+        <v-expand-transition>
+            <div v-if="item.answer">
+                <v-divider></v-divider>
+                <v-card-text class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getAnswer(item)" />
+            </div>
+        </v-expand-transition>
     </v-card>
 </template>
 
@@ -40,6 +46,7 @@ export default defineComponent({
         }
     },
     computed: {
+        getAnswer: () => (item: GuestbookEntry) => marked.parse(`**RTC Köln:** *${item.answer}*`),
         getText: () => (item: GuestbookEntry) => marked.parse(item.text),
     },
 })

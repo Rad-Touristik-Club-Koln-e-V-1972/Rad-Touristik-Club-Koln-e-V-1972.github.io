@@ -8,6 +8,11 @@ export default class EntryBuilder {
         this.value = new Entry()
     }
 
+    answer(value: string): EntryBuilder {
+        this.value.answer = value
+        return this
+    }
+
     date(value: string): EntryBuilder {
         this.value.date = value
         return this

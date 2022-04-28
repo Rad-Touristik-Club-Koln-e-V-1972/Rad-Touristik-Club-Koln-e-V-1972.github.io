@@ -41,6 +41,25 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .answer('Dem Dieter kann geholfen werden, Brille ist da, Kontakt wird aufgenommen ...')
+                    .date('11.11.2017, 17:01')
+                    .name('Dieter Roggensack')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+... eure CTF war wieder einmal sehr schön und ausgezeichnet organisiert.<br/>
+Wenn ich auch nicht unbedingt begeistert von den 2 Downhill-Strecken war (ich bin dafür zu alt und zu ängstlich), so war der übrige Teil der 55er Runde wunderbar.<br/>
+Vielen Dank für all Eure Mühen.<br/>
+<br/>
+Seit der CTF bei Euch vermisse ich meine Radbrille. Ich kann mir nur noch vorstellen, sie beim Ziel innen oder draußen liegen gelassen zu haben.<br/>
+Es handelt sich um die Marke Eagle Five mit eingebautem Leseteil.<br/>
+Sollte sie gefunden sein, bitte ich um Kontakt per email.<br/>
+<br/>
+Viele Grüße, Dieter Roggensack`
+                    )
+                    .title('Hallo RTC ...')
+                    .build(),
+                new GuestbookEntryBuilder()
                     .date('30.10.2017, 09:48')
                     .name('Herwig Barthes')
                     .source(Source.Facebook)
@@ -145,7 +164,7 @@ VIELEN DANK
                         `
 Hallo RTC-Köln, ich fahr seit grob 2 Jahren erst MTB, eure CTF war meine erste die ich gefahren bin.<br/>
 Ich möchte mich ganz herzlich bei euch für diese Tour bedanken, vor allem an das Team K1/K3.<br/>
-Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war,
+Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war,<br/>
 habe ich doch einen bekommen, echt kreativ dieses Team.<br/>
 2 TUC Kekse und dazwischen eine Scheibe Käse. Lecker. Bis zum nächstem Jahr.<br/>
                 `
@@ -239,6 +258,7 @@ Ich freue mich schon auf das nächste Jahr!
                     .title('Hallo RTC ...')
                     .build(),
                 new GuestbookEntryBuilder()
+                    .answer(`310 Teilnehmer waren's`)
                     .date('30.10.2016, 20:30')
                     .location('Hürth Berrenrath')
                     .name('Stefan Schneider')
@@ -248,14 +268,12 @@ Ich freue mich schon auf das nächste Jahr!
                         `
 Die CTF war gestern erste Sahne, nur bei den Flatterbändern hättet ihr das eine oder andere mehr aufhängen können.<br/>
 Ich war ganz froh meinen Garmin dabei gehabt zu haben.<br/>
-Wie viele Teilnehmer hattet ihr eigentlich?<br/>
-<br/>
-<br/>
-**RTC Köln:** *310 Teilnehmer waren's*
+Wie viele Teilnehmer hattet ihr eigentlich?
 `
                     )
                     .build(),
                 new GuestbookEntryBuilder()
+                    .answer('Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.)auch schon zurück bekommen ...')
                     .date(' 29.10.2016, 19:21')
                     .name('Jörg Moritz')
                     .source(Source['E-Mail'])
@@ -274,8 +292,6 @@ Jörg Moritz<br/>
 <br/>
 <br/>
 *Falls also jemand den Radcomputer zufällig gefunden hat, bitte hier melden, RTC Köln*<br/>
-<br/>
-*Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.)auch schon zurück bekommen ...*
 `
                     )
                     .title('Hallo RTC ...')

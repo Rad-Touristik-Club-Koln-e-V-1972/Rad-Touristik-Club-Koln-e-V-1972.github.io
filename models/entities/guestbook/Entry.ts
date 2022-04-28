@@ -1,6 +1,7 @@
 import Source from '@/models/enums/guestbook/Source'
 
 export default class Entry {
+    answer: string = ``
     date: string = ''
     location: string = ''
     name: string = ''
