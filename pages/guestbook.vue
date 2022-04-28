@@ -4,7 +4,9 @@
         <v-card-subtitle class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4" v-text="'Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln'" />
         <v-card-actions>
             <v-btn
-                href="mailto:PR@rtc-koeln.de?subject=G%C3%A4stebuch%20-%20Thema&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0APlatzhalter%20f%C3%BCr%20den%20G%C3%A4stebucheintrag%0D%0A%0D%0A--%0D%0AViele%20Gr%C3%BC%C3%9Fe%0D%0AMax%20Mustermann%0D%0AAus%20K%C3%B6ln"
+                href="mailto:PR@rtc-koeln.de?subject=G%C3%A4stebuch%20-%20Thema
+                &body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0APlatzhalter%20f%C3%BCr%20den%20G%C3%A4stebucheintrag%0D%0A%0D%0A
+                --%0D%0AViele%20Gr%C3%BC%C3%9Fe%0D%0AMax%20Mustermann%0D%0AAus%20K%C3%B6ln"
                 class="text-caption text-sm-body-2 text-lg-body-1"
                 style="background-color: var(--v-primary-base); color: var(--v-secondary-base)"
             >
