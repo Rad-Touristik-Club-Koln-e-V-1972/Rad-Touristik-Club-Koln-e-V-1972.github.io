@@ -41,6 +41,118 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .date('30.10.2017, 09:48')
+                    .name('Herwig Barthes')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Die CTF an der Wahnbachtalsperre war großartig und hat großen Spaß gemacht.<br/>
+Ein Riesenkompliment an alle Helfer und Organisatoren. Super Service auf der Strecke und am Klubhaus.<br/>
+Besonders gut gefallen hat mir der Grill, die Waschstation und die Erbsensuppe.<br/>
+<br/>
+Einen kleinen Verbesserungsvorschlag hätte ich:<br/>
+Vielleicht könnte man in den GPSies-Track beim nächsten Mal Abbiegehinweise einbauen.<br/>
+Ich weiß, das ist eine ziemliche Fummelei, würde aber die Navigation erleichtern.<br/>
+<br/>
+Ansonsten alles top!!<br/>
+<br/>
+Vielen Dank!<br/>
+Gruß H. Barthes
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.10.2017, 18:00')
+                    .name('Wilfried Goesgens')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Hallo liebes RTC Team,<br/>
+Super Tour, hat viel Spaß gemacht.<br/>
+Wie gestern schon persönlich erzählt, war ein Abzweig auf Lohmar zu in der Abfahrt schwer zu sehen - einige haben sich verfahren ...<br/>
+Da wir gestern den Punkt nicht genau festmachen konnten, hier mein Strava Track, bei KM 73,3 ist es passiert ...<br/>
+Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von oben kommend sah man die Markierung quasi nicht.
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.10.2017, 18:00')
+                    .name('Jan Koza')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Eine tolle Strecke ...<br/>
+Herzlichen Dank!
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.10.2017, 18:00')
+                    .name('Birgit Frings-Salz')
+                    .source(Source.Facebook)
+                    .text(`Uns, als Gruppe Säuwätz, hat es auch super gut gefallen. Grosses Lob ...`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2017, 21:30')
+                    .name('Christoph Werner')
+                    .source(Source.Facebook)
+                    .text(`War eine schöne Veranstaltung. Gerne nächstes Jahr wieder.`)
+                    .build(),
+                new GuestbookEntryBuilder().date('28.10.2017, 21:30').name('Mika Kali').source(Source.Facebook).text(`Wie immer: Klasse CTF ...`).build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2017, 21:30')
+                    .name('Thomas Zengerle')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Hallo,<br/>
+das war heute eine tolle Runde. Ihr habt eine klasse Orga gehabt.<br/>
+Hoffentlich geht es dem Verletzten bald wieder gut.<br/>
+Schönen Gruß Thomas
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder().date('28.10.2017, 21:30').name('Andreas Diehl').source(Source.Facebook).text(`Schön war's ...`).build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2017, 21:30')
+                    .name('Jürgen Em')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Tolle Veranstaltung; tolle Verpflegung; tolle Strecke;<br/>
+Ausschilderung hätte etwas besser sein können, aber irgendwas ist immer.<br/>
+Bin nächstes Jahr gerne wieder dabei!
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2017, 21:30')
+                    .name('Bernd Doelp')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+... dieses Jahr hat wirklich alles perfekt gepasst.<br/>
+Super ausgeschildert, Verpflegung mehr als genug ...<br/>
+VIELEN DANK
+                `
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2017, 21:30')
+                    .name('Konstantin Sakellaris')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Hallo RTC-Köln, ich fahr seit grob 2 Jahren erst MTB, eure CTF war meine erste die ich gefahren bin.<br/>
+Ich möchte mich ganz herzlich bei euch für diese Tour bedanken, vor allem an das Team K1/K3.<br/>
+Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war,
+habe ich doch einen bekommen, echt kreativ dieses Team.<br/>
+2 TUC Kekse und dazwischen eine Scheibe Käse. Lecker. Bis zum nächstem Jahr.<br/>
+                `
+                    )
+                    .build(),
+                new GuestbookEntryBuilder().date('28.10.2017, 21:30').name('Mischa Breuer').source(Source.Facebook).text(`War echt super. Hoffentlich 2018 wieder ...`).build(),
+                new GuestbookEntryBuilder()
                     .date('28./29.05.2017, 20:30')
                     .name('Jochen Güttes')
                     .organization('Präsident des RTC Mehlem')
