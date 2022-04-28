@@ -6,6 +6,12 @@
         <v-card-text>
             <v-textarea v-if="item.text" :value="item.text" class="text-caption text-md-body-2 text-lg-body-1" dense readonly />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
+            <div v-if="item.links.length">
+                <v-divider v-if="item.pictures.length" />
+                <v-list dense>
+                    <v-list-item v-for="(it, i) in item.links" :key="i" :href="it" class="primary--text" nuxt target="_blank" v-text="it" />
+                </v-list>
+            </div>
         </v-card-text>
     </v-card>
 </template>

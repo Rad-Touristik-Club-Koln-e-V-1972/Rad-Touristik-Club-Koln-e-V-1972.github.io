@@ -39,6 +39,13 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .date('18.10.2015, 14:23')
+                    .links(['https://www.youtube.com/v/Z2MqTVOeZMM'])
+                    .name('Schonneb Aus Lev')
+                    .source(Source.Facebook)
+                    .title('... kleines Video von gestern')
+                    .build(),
+                new GuestbookEntryBuilder()
                     .date('18.10.2015, 14:22')
                     .name('Jür Jen')
                     .source(Source.Facebook)
