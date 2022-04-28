@@ -1,9 +1,9 @@
 <template>
     <v-card id="CGuestbook">
-        <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="getSubtitle(item)" />
+        <v-card-subtitle v-if="getSubtitle(item)" class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="getSubtitle(item)" />
         <v-divider />
-        <v-card-title class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
-        <v-card-text>
+        <v-card-title v-if="item.title" class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
+        <v-card-text v-if="item.text || item.links.length || item.pictures.length">
             <v-textarea v-if="item.text" :value="item.text" class="text-caption text-md-body-2 text-lg-body-1" dense readonly />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
             <div v-if="item.links.length">
