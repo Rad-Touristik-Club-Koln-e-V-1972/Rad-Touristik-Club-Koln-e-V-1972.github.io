@@ -39,6 +39,102 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .date('29.05.2016')
+                    .name('Mario Schmitt')
+                    .source(Source.Facebook)
+                    .text(
+                        `Super Organisation.
+Die Strecke war klar und deutlich ausgeschildert und die Verpflegung war reichlich.
+
+Top! 👍`
+                    )
+                    .title('Top! , die 2.')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.05.2016')
+                    .name('Volker Schmitz')
+                    .source(Source.Facebook)
+                    .text(
+                        `Tolles Event, klasse Orga!
+
+Mich hat am meisten beeindruckt wie gut die Strecke ausgeschildert war!
+
+Top! 👍`
+                    )
+                    .title('Top!')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.05.2016')
+                    .name('Se Sandra')
+                    .source(Source.Facebook)
+                    .text(
+                        `War 'ne schöne Strecke und Verpflegung war reichlich da an den Kontrollstellen! 👍 👍
+
+Wettervorhersage?
+Was ist das? 😉`
+                    )
+                    .title('Tadel gibt es keinen!')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.05.2016, 14:36')
+                    .name('Ros Si')
+                    .source(Source.Facebook)
+                    .text(
+                        `War eine super 158er RTF.
+Alles klasse, sogar das Wetter.
+
+Vielen Dank an den RTC.`
+                    )
+                    .title('Alles klasse ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.05.2016, 14:00')
+                    .name('Patrock Cyclista')
+                    .source(Source.Facebook)
+                    .text(`Danke für heute. Super Orga, schöne Strecke, gerne wieder.`)
+                    .title('... gerne wieder')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.05.2016, 13:52')
+                    .name('Jochen Güttes')
+                    .source(Source.Facebook)
+                    .text(
+                        `Das mit das mit dem Wettergott hat hervorragend funktioniert.
+Leider verlassen sich mehr Leute auf ihre Wetterapp am Tag zuvor als morgens einmal aus dem Fenster zu schauen.
+Ich bin trocken geblieben und es war eine tolle Veranstaltung.
+Vielen Dank`
+                    )
+                    .title('Ihr habt mehr Teilnehmer verdient gehabt. Vor allem beim Marathon ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('19.10.2015, 12:55')
+                    .name('Claude-Antoine Berger de Leon')
+                    .source(Source.Facebook)
+                    .text(
+                        `Auch von meiner Seite einen großen Dank an den Veranstalter, der einen enormen Aufwand betrieben hat.
+
+Obwohl es die erste Veranstaltung dieser Art für den Verein war, wurde an Alles gedacht und es war eine sehr gelungene CTF, bei der die Teilnehmer einen Riesenspaß haben konnten.
+Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung stattfinden kann und dass auch vielleicht noch einige andere Vereine aus der Region die für Viele noch etwas unbekannte Veranstaltung in Angriff nehmen ...`
+                    )
+                    .title('... es war eine sehr gelungene CTF')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('18. Oktober 2015, 18:43')
+                    .name('Helmut Kanthak')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Hallo RTC,
+
+wir wollten nur sagen, dass eure Orga perfekt war und wir vom RSC Nievenheim beim nächsten mal wieder dabei sind.
+Verpflegung war super.
+Und auch das man das Rad kurz abspülen konnte war toll.
+Danke für eine so schöne Tour.
+
+Helmut vom RSC Nievenheim`
+                    )
+                    .title('RSC Nievenheim ist wieder dabei ...')
+                    .build(),
+                new GuestbookEntryBuilder()
                     .date('18.10.2015, 14:23')
                     .links(['https://www.youtube.com/v/Z2MqTVOeZMM'])
                     .name('Schonneb Aus Lev')
