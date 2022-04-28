@@ -41,6 +41,109 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .date('28./29.05.2017, 20:30')
+                    .name('Jochen Güttes')
+                    .organization('Präsident des RTC Mehlem')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Danke für die TOP Organisation, die gute Beschilderung und die abwechslungsreiche Verpflegung an den Kontrollen und im Ziel.<br/>
+Es war wieder super bei euch.
+                `
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28./29.05.2017, 20:30')
+                    .name('Roland Liffers')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Schliesse mich meinem Sportskamerad Jochen Güttes vollumfänglich an.<br/>
+Der RTC Köln hat trotz immer schwerer werdenden Rahmenbedingungen eine Super-Veranstaltung auf die Beine gestellt.<br/>
+Danke dafür!
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28./29.05.2017, 20:30')
+                    .name('Horst Voll')
+                    .source(Source.Facebook)
+                    .text(`Vielen Dank für die heutige Betreuung.... war TippiToppi.`)
+                    .build(),
+                new GuestbookEntryBuilder().date('28./29.05.2017, 20:30').name('Uli Fritzsche').source(Source.Facebook).text(`Und wir danken für die tolle Orga!`).build(),
+                new GuestbookEntryBuilder()
+                    .date('28./29.05.2017, 20:30')
+                    .name('Frank Müller')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Ausschilderung gut, Strecke perfekt, Verpflegung ausgezeichnet (das Gulasch mit Nudeln sehr lecker).<br/>
+Vielen Dank
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28./29.05.2017, 20:30')
+                    .name('Mika Kali')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Hallo, danke nochmal für die tolle RTF gestern!<br/>
+Ich habe nur einen kleinen Kritikpunkt:<br/>
+Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Autofahrer genötigt, was das Zeug hält ...
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2017, 20:57')
+                    .name('Dirk Oliver Heppert')
+                    .organization('RSV Staubwolke Refrath')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+Eure RTF war wieder bestens organisiert.<br/>
+Schöne anspruchsvolle Strecken, gute Verpflegung und präzise Ausschilderung.<br/>
+Hat wieder alles gepasst.
+`
+                    )
+                    .title('Hat wieder alles gepasst ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('31.10.2016')
+                    .name('Rolf Müller')
+                    .organization('Cito Hennef-Geistingen')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+... es war meine erste CTF und ich bin begeistert.<br/>
+<br/>
+Nachdem wir früh auf die "Beschilderung" mit den Bändern aufmerksam gemacht wurden, hatten wir keine Probleme mit der 35er Strecke,<br/>
+obwohl wir nur mit normalen Trekkingrädern unterwegs waren!<br/>
+Man konnte immer wieder merken, dass hier Leute am Werk waren, die etwas vom Fach verstehen!<br/>
+<br/>
+Ich freue mich schon auf das nächste Jahr!
+`
+                    )
+                    .title('Hallo RTC ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('30.10.2016, 20:30')
+                    .location('Hürth Berrenrath')
+                    .name('Stefan Schneider')
+                    .organization('RV Morgenstern')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Die CTF war gestern erste Sahne, nur bei den Flatterbändern hättet ihr das eine oder andere mehr aufhängen können.<br/>
+Ich war ganz froh meinen Garmin dabei gehabt zu haben.<br/>
+Wie viele Teilnehmer hattet ihr eigentlich?<br/>
+<br/>
+<br/>
+**RTC Köln:** *310 Teilnehmer waren's*
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
                     .date(' 29.10.2016, 19:21')
                     .name('Jörg Moritz')
                     .source(Source['E-Mail'])
@@ -66,7 +169,7 @@ Jörg Moritz<br/>
                     .title('Hallo RTC ...')
                     .build(),
                 new GuestbookEntryBuilder()
-                    .date('29.10.2016')
+                    .date('29.10.2016, 20:30')
                     .name('Jürgen Rohr')
                     .source(Source.Facebook)
                     .text(
@@ -78,7 +181,7 @@ Vielen Dank an das Orga-Team!!!
                     )
                     .build(),
                 new GuestbookEntryBuilder()
-                    .date('29.10.2016')
+                    .date('29.10.2016, 20:30')
                     .location('RSC Erftstadt')
                     .name('Horst Paesch')
                     .source(Source.Facebook)
@@ -92,7 +195,7 @@ Also, wie gewohnt vom RTC , eine tolle Veranstaltung.
                     )
                     .build(),
                 new GuestbookEntryBuilder()
-                    .date('29.10.2016')
+                    .date('29.10.2016, 20:30')
                     .location('RTV Lohmar')
                     .name('Se Sandra')
                     .source(Source.Facebook)
@@ -103,9 +206,14 @@ Sollte mehr davon bei uns hier geben 😊
 `
                     )
                     .build(),
-                new GuestbookEntryBuilder().date('29.10.2016').name('Bernd Doelp').source(Source.Facebook).text(`Vielen Dank für die schöne Tour und bis nächstes Jahr`).build(),
                 new GuestbookEntryBuilder()
-                    .date('29.10.2016')
+                    .date('29.10.2016, 20:30')
+                    .name('Bernd Doelp')
+                    .source(Source.Facebook)
+                    .text(`Vielen Dank für die schöne Tour und bis nächstes Jahr`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('29.10.2016, 20:30')
                     .name('Jörg Marso')
                     .source(Source.Facebook)
                     .text(
@@ -116,7 +224,7 @@ Wir sehen uns dann 2017.
 `
                     )
                     .build(),
-                new GuestbookEntryBuilder().date('29.10.2016').name('Marcus Wilden').source(Source.Facebook).title('Schöne Tour bei bestem Wetter').build(),
+                new GuestbookEntryBuilder().date('29.10.2016, 20:30').name('Marcus Wilden').source(Source.Facebook).title('Schöne Tour bei bestem Wetter').build(),
                 new GuestbookEntryBuilder()
                     .date('31.05.2016, 01:34')
                     .name('Gunter Maier')
