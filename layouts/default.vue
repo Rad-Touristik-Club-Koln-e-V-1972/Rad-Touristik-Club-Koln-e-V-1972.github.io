@@ -20,7 +20,7 @@
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" />
         <v-main class="border main">
-            <c-slideshow />
+            <c-slideshow :items="slideshowItems" />
             <v-row dense>
                 <v-col cols="10"><Nuxt /></v-col>
                 <v-col cols="2"><c-sponsors /></v-col>
@@ -58,6 +58,23 @@ export default defineComponent({
                 mdiMenu,
             },
             navDrawer: false,
+            slideshowItems: [
+                'https://content.rtc-koeln.de/layouts/default/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_0037.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_2225.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4226.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4235.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4241.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4252.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4256.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4483.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4495.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4497.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4502.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4507.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4508.jpg',
+                'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4515.jpg',
+            ],
         }
     },
 })

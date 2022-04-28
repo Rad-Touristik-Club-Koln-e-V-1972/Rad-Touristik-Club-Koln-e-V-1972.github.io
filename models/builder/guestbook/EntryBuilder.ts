@@ -18,6 +18,11 @@ export default class EntryBuilder {
         return this
     }
 
+    pictures(value: String[]): EntryBuilder {
+        this.value.pictures = value
+        return this
+    }
+
     source(value: Source): EntryBuilder {
         this.value.source = value
         return this

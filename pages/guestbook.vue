@@ -49,13 +49,13 @@ export default defineComponent({
                 new GuestbookEntryBuilder()
                     .date('31.05.2015, 19:29')
                     .name('Horst Paesch')
+                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-150531.jpg'])
                     .source(Source.Facebook)
                     .text(
                         `Danke für ein perfekt organisierten Marathon, die Strecke war super ausgesucht, viele ruhige Straßen, tolle Ausblicke!
 Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr nett und hilfsbereit, die Verpflegung ist der Knaller.
 
-Da nimmt man beim Marathon noch zu :-)
-https://rtc-koeln.de/content/pics/guestbook/rtc-gb-150531.jpg`
+Da nimmt man beim Marathon noch zu :-)`
                     )
                     .title('... da nimmt man beim Marathon noch zu')
                     .build(),
