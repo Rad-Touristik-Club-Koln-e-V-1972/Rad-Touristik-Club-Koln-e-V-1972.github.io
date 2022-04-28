@@ -1,7 +1,7 @@
 export default class Contact {
-    description: String = ''
-    eMail: String = ''
-    imageSrc: String = ''
-    name: String = ''
-    position: String = ''
+    description: string = ''
+    eMail: string = ''
+    imageSrc: string = ''
+    name: string = ''
+    position: string = ''
 }

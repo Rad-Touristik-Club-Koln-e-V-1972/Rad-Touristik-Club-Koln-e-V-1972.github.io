@@ -17,7 +17,7 @@ import HTTP from '@/models/enums/HTTP'
 
 export default defineComponent({
     props: {
-        error: { default: null, type: Object as PropType<NuxtError> },
+        error: { default: null, type: {} as PropType<NuxtError> },
     },
     setup(props) {
         return {

@@ -18,7 +18,7 @@ export default class EntryBuilder {
         return this
     }
 
-    pictures(value: String[]): EntryBuilder {
+    pictures(value: string[]): EntryBuilder {
         this.value.pictures = value
         return this
     }

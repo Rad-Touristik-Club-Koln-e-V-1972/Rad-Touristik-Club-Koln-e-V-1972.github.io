@@ -20,7 +20,7 @@ import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     props: {
-        items: { required: true, type: Array as PropType<string[]> },
+        items: { required: true, type: [] as PropType<string[]> },
     },
     setup() {
         return {

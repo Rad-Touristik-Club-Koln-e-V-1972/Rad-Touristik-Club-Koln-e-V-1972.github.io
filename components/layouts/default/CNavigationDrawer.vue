@@ -63,7 +63,7 @@ export default defineComponent({
     emits: ['input'],
     setup(props, ctx) {
         return {
-            handleInput: (event: Boolean) => {
+            handleInput: (event: boolean) => {
                 ctx.emit('input', event)
             },
             items: [
