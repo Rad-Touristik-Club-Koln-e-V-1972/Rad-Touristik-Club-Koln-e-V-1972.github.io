@@ -4,7 +4,7 @@
         <v-card-subtitle class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4" v-text="'Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln'" />
         <v-card-text>
             <v-row dense>
-                <v-col v-for="(item, index) in items" :key="index" :cols="getCols">
+                <v-col v-for="(item, index) in items" :key="index" cols="auto">
                     <c-contact :item="item" />
                 </v-col>
             </v-row>
@@ -59,22 +59,6 @@ export default defineComponent({
                     .build(),
             ],
         }
-    },
-    computed: {
-        getCols(): number {
-            switch (this.$vuetify.breakpoint.name) {
-                case 'sm':
-                    return 6
-                case 'md':
-                    return 5
-                case 'lg':
-                    return 3
-                case 'xl':
-                    return 2
-                default:
-                    return 12
-            }
-        },
     },
 })
 </script>
