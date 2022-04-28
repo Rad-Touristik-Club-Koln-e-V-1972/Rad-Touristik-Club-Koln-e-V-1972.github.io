@@ -13,11 +13,6 @@ export default class EntryBuilder {
         return this
     }
 
-    links(value: string[]): EntryBuilder {
-        this.value.links = value
-        return this
-    }
-
     location(value: string): EntryBuilder {
         this.value.location = value
         return this
