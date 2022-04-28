@@ -18,8 +18,18 @@ export default class EntryBuilder {
         return this
     }
 
+    location(value: string): EntryBuilder {
+        this.value.location = value
+        return this
+    }
+
     name(value: string): EntryBuilder {
         this.value.name = value
+        return this
+    }
+
+    organization(value: string): EntryBuilder {
+        this.value.organization = value
         return this
     }
 

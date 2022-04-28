@@ -39,6 +39,20 @@ export default defineComponent({
             items: [
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder()
+                    .date('29.05.2016, 16:06')
+                    .name('Horst Paesch')
+                    .organization('RSC Erftstadt')
+                    .source(Source.Facebook)
+                    .text(
+                        `Sitzen noch im Ziel und besaufen uns mit Alkoholfreiem Weizen ...
+
+...super Veranstaltung
+
+...super Wetter!`
+                    )
+                    .title('Sitzen noch im Ziel !')
+                    .build(),
+                new GuestbookEntryBuilder()
                     .date('29.05.2016')
                     .name('Mario Schmitt')
                     .source(Source.Facebook)
@@ -121,6 +135,7 @@ Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung sta
                 new GuestbookEntryBuilder()
                     .date('18. Oktober 2015, 18:43')
                     .name('Helmut Kanthak')
+                    .organization('RSC Nievenheim')
                     .source(Source['E-Mail'])
                     .text(
                         `Hallo RTC,
@@ -332,6 +347,7 @@ Stephan`
                 new GuestbookEntryBuilder()
                     .date('03. Juni 2015, 20:16')
                     .name('Guido Faßbender')
+                    .organization('Grenzfahrer e.V.')
                     .source(Source['E-Mail'])
                     .text(
                         `Vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.
@@ -388,7 +404,7 @@ Danke Euch für die tolle Organisation.`
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('01. Juni 2015, 20:33')
-                    .name('1. RTW-Sankt Augustin-Menden')
+                    .organization('1. RTW-Sankt Augustin-Menden')
                     .source(Source['E-Mail'])
                     .text(
                         `Nach der ersten Kontrolle haben wir uns aufgeteilt und in Gruppen die 70er, 100er und die 150er Strecke unter die Räder genommen.
@@ -556,13 +572,13 @@ velotoerist`
                 new GuestbookEntryBuilder()
                     .date('27. Mai 2014, 13:00')
                     .name('Helmut Hane')
+                    .organization('www.sportlich-radeln.de')
                     .source(Source['E-Mail'])
                     .text(
                         `Prima RTF am vergangenen Sonntag.
 Bericht über meine Fahrt auf der 150er Strecke jetzt auf meiner Website www.sportlich-radeln.de
 
-Helmut Hane
-www.sportlich-radeln.de`
+Helmut Hane`
                     )
                     .title('42. Forsbach-Tour, 25.05.2014: ... Prima RTF')
                     .build(),
@@ -589,6 +605,7 @@ Marco Gerlach`
                 new GuestbookEntryBuilder()
                     .date('27. Mai 2014, 09:26')
                     .name('Jörg Homann')
+                    .organization('www.scan.bike`')
                     .source(Source['E-Mail'])
                     .text(
                         `Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
@@ -655,6 +672,7 @@ Jörg`
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 16:57')
                     .name('Markus Reckter')
+                    .organization('www.rtf-koblenz.de')
                     .source(Source['E-Mail'])
                     .text(
                         `Sehr geehrtes Team,
@@ -669,13 +687,14 @@ Vielleicht sollte, wie bei den Radmarathon Deutschland Veranstaltungen, die Verp
 
 Liebe Grüße aus Koblenz
 M. Reckter
-www.rtf-koblenz.de`
+RTF Koblenz`
                     )
                     .title('42. Forsbach-Tour, 25.05.2014: ... Streckenwahl sehr schön, die Verpflegung für die Marathonfahrer sollte separat sein')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 13:08')
                     .name('Claudia Braun')
+                    .organization('Union Biesfeld Triathlon')
                     .source(Source['E-Mail'])
                     .text(
                         `Das war eine RTF wie aus dem Bilderbuch.
@@ -694,6 +713,7 @@ Union Biesfeld Triathlon`
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 12:50')
                     .name('Angela Schmilewski')
+                    .organization('VfB Polch Abtl. Radsport')
                     .source(Source['E-Mail'])
                     .text(
                         `Liebe Orga des RTC Köln,
@@ -706,8 +726,7 @@ Ich fand reichhaltige Verpflegungsstellen vor - von der 1. bis zur 4. - sowie fr
 Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regeneration - die habt Ihr Euch jetzt verdient ...
 
 Viele Grüße von Angela
-Fachwart RTC Mehlem
-RTC Mehlem`
+Fachwart RTC Mehlem`
                     )
                     .title('42. Forsbach-Tour, 25.05.2014: ... ein herzliches Dankeschön an Orga und Helfer')
                     .build(),
@@ -746,7 +765,8 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder`
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 10:49')
-                    .name('Michaela Packebusch, VfB Polch Abtl. Radsport')
+                    .name('Michaela Packebusch')
+                    .organization('VfB Polch Abtl. Radsport')
                     .source(Source['E-Mail'])
                     .text(
                         `Vielen Dank für die tolle Organisation und Verpflegung auf dem Marathon (besonders erwähnenswert fand ich den klasse Reiskuchen von Silvana).
@@ -810,6 +830,7 @@ Nächstes Jahr will ich wieder meine Banane bekommen ... 😏`
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 07:24')
                     .name('Stefan Schneider')
+                    .organization('www.rv-morgenstern.de')
                     .source(Source['E-Mail'])
                     .text(
                         `Hallo Sportskollegen vom RTC Köln.
@@ -822,14 +843,14 @@ So macht es Spaß Marathon zu fahren.
 Mit Sportlichem Gruß,
 
 Stefan Schneider
-1.Vorsitzender RV Morgenstern Berrenrath
-www.rv-morgenstern.de`
+1.Vorsitzender RV Morgenstern Berrenrath`
                     )
                     .title('42. Forsbach-Tour, 25.05.2014: ... ein großes Lob')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 07:06')
                     .name('Norbert Priefert')
+                    .organization('www.rtc-rodenkirchen.de')
                     .source(Source['E-Mail'])
                     .text(
                         `Hallo RTC Köln'ner,
@@ -850,8 +871,7 @@ Also dann, bis Samstag, 14.06.2014 am Bildungswerk in Köln-Sürth, mit ebenfall
 
 Bis denne,
 
-Norbert
-www.rtc-rodenkirchen.de`
+Norbert`
                     )
                     .title('42. Forsbach-Tour, 25.05.2014: ... eigentlich kann man das gar nicht toppen')
                     .build(),
@@ -873,6 +893,7 @@ Jürgen Ruttkowski`
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
                     .name('Wolfgang Alberg')
+                    .organization('www.cardiofitness.de')
                     .source(Source['E-Mail'])
                     .text(
                         `Hallo Sportfreunde,
@@ -893,6 +914,7 @@ www.cardiofitness.de`
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
                     .name('Ursula Koepp')
+                    .organization('TSV Weiss-Köln')
                     .source(Source['E-Mail'])
                     .text(
                         `Liebe Radsportfreunde,
@@ -906,8 +928,7 @@ Auch wenn auf den ersten Kilometern nachgeschildert werden musste (Spiel"kinder"
 Und Dank dem Track, den ich mir sicherheitshalber von Euer Homepage runter geladen hatte, ging auch orientierungsmäßig alles glatt.
 
 Herzliche Grüße aus Rondorf,
-Ursula Koepp
-TSV Weiss-Köln`
+Ursula Koepp`
                     )
                     .title('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
                     .build(),
@@ -941,6 +962,7 @@ Günter`
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
                     .name('Dieter Reich')
+                    .organization('ISB-Team-Cologne')
                     .source(Source['E-Mail'])
                     .text(
                         `Hallo Radsportler des RTC-Köln,
@@ -953,13 +975,13 @@ Schön, dass es noch Radsportler gibt, die ihre Freizeit für diesen schönen Ev
 Es freut sich auf die nächste Veranstaltung, das benachbarte ISB-Team-Cologne
 
 Sportliche Grüße
-Dieter Reich
-ISB-Team-Cologne`
+Dieter Reich`
                     )
                     .title('Danke für die gut ausgearbeitete Tour am 20.05.12')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
+                    .location('Monheim')
                     .name('Elke und Dieter')
                     .source(Source['E-Mail'])
                     .text(
@@ -972,8 +994,7 @@ Eine sensationelle Streckenführung, gepaart mit der ausgesprochen guten Verpfle
 Nochmal herzlichen Dank an alle RTCler.
 
 Viele Grüße aus Monheim am Rhein
-Elke und Dieter
-Aus Monheim`
+Elke und Dieter`
                     )
                     .title('... eine tolle Forsbachtour 2012')
                     .build(),
@@ -1002,6 +1023,7 @@ Josef Witt`
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
+                    .location('Kierspe')
                     .name('Michaela Bäcker')
                     .source(Source['E-Mail'])
                     .text(
@@ -1059,6 +1081,7 @@ Aus Kierspe`
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
+                    .location('Libur')
                     .name('Matthias Zimmer')
                     .source(Source['E-Mail'])
                     .text(
@@ -1088,6 +1111,7 @@ Matthias Zimmer`
                 new GuestbookEntryBuilder()
                     .date('Mai/Juni 2012')
                     .name('Monika und Helmut Moosmann')
+                    .organization('RSG Ford')
                     .source(Source['E-Mail'])
                     .text(
                         `Liebe RTCler,
