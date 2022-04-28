@@ -1,8 +1,8 @@
 <template>
     <v-card id="CGuestbook">
-        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="`${item.date}, ${item.name}, ${Source[item.source]}`" />
+        <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="`${item.date}, ${item.name}, ${Source[item.source]}`" />
         <v-divider />
-        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
+        <v-card-title class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-card-text>
             <v-textarea v-if="item.text" :value="item.text" class="text-caption text-md-body-2 text-lg-body-1" dense readonly />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
