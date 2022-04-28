@@ -37,13 +37,333 @@ export default defineComponent({
                 mdiEmailSend,
             },
             items: [
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
+                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
+                new GuestbookEntryBuilder()
+                    .date('18.10.2015, 14:22')
+                    .name('Jür Jen')
+                    .source(Source.Facebook)
+                    .text(
+                        `... die sich die Zeit genommen haben und die tolle Arbeit für uns Teilnehmer gemacht habt!!
+Strecke war prima, leckere Verpflegung (Wurstbrote 😉) auch der Wasserschlauch fürs Rädchen war gut!
+
+Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei .....`
+                    )
+                    .title('Besten Dank an ALLE Helfer ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('18.10.2015, 13:49')
+                    .name("Manuela 'Ela' Huber")
+                    .source(Source.Facebook)
+                    .text(
+                        `total nette Crew - super Strecke - hat viel Spaß gemacht!!
+gerne wieder!!`
+                    )
+                    .title('total nette Crew')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('18.10.2015, 10:33')
+                    .name('Jo Di')
+                    .source(Source.Facebook)
+                    .text(
+                        `Ihr seid ein richtig nettes Team und ein toller Verein, da konnte das Wetter doch nur mitmachen.
+Strecke war toll und an den Kontrollstellen gab's immer lekker Verpflegung (Klasse die wärmende Brühe und Liebe-Wurst-Käse belegten Brote) und immer ein nettes Gespräch.
+Hat uns viel Spaß gemacht.
+Danke
+
+Ps. Dank suuuuper Waschmöglichkeit vor Ort konnten wir uns zuhause gleich aufs Sofa hauen.
+
+Ps.Ps. Schmalzbrotgrüsse`
+                    )
+                    .title('... und immer ein nettes Gespräch')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('18. Oktober 2015, 08:22')
+                    .name('Guido Faßbender')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Eure 1. CTF war eine klasse Veranstaltung.
+Vielen Dank für die Mühe, die Ihr Euch damit gemacht habt.
+Die Streckenführung war sehr gut gewählt.
+Euro Verpflegung war -wie offenbar bei Euch üblich- sehr gut.
+An der entferntesten Kontrolle wären vielleicht ein paar Schmalzbrote ganz okay gewesen 😉
+
+Ich fand Eure Ausschilderung sehr gut gemacht.
+In Kombination mit den aktualisierten Tracks konnte da eigentlich nichts mehr schief gehen.
+Obwohl das Zusammenspiel mit Fußgängern/Joggern mehr als in Ordnung war, könnte ich mir vorstellen, dass die eine oder andere Markierung verschwunden ist.
+
+Alles in allem eine tolle Veranstaltung.
+Bin nächstes Jahr wieder dabei. `
+                    )
+                    .title('Eure 1. CTF war eine klasse Veranstaltung ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 21:02')
+                    .name('Schonneb Aus Lev')
+                    .source(Source.Facebook)
+                    .text(
+                        `Hallo Zusammen,
+vielen Dank an das OrgTeam und die fleissigen Helfer.
+Mir hat die Strecke sehr gut gefallen, Verpflegung super, Rad war zum Schluß auch noch sauber (meine Frau fragte, ob ich überhaupt gefahren bin) - also rundum gelungen.
+
+Ich würde mich auf ein nächstes Mal sehr freuen.`
+                    )
+                    .title('... also rundum gelungen')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17. Oktober 2015, 20:45')
+                    .name('Henning Rudolph')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Vielen Dank für die Organisation der CTF.
+Die Verpflegung an euren Kontrollstellen und die freundlichen Helfer überall waren top!
+Vor allem der warme Tee und die heiße Brühe waren heute klasse.
+Auch im Zielbereich hat es an nichts gefehlt.
+Einzig die Ausschilderung bis zur ersten Kontrolle war teilweise nicht vorhanden oder sehr schwer zu sehen.
+Danach hat es gepasst.
+Dank GPS-Gerät und Track von Euch ging es aber.
+
+Macht weiter so!
+Für nächstes Jahr wünsche ich Euch etwas Sonnenschein, damit noch mehr Biker kommen.
+
+Sportliche Grüße,
+Henning`
+                    )
+                    .title('Macht weiter so!')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 20:01')
+                    .name('Wilfried Goesgens')
+                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-151017-2.jpg'])
+                    .source(Source.Facebook)
+                    .text(
+                        `Auch wenn ich das Startfenster leicht gerissen habe und nur die kurze Tour nehmen konnte 😕
+Superrunde und hoffentlich nächstes Jahr wieder ...`
+                    )
+                    .title('... hoffentlich nächstes Jahr wieder')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 19:38')
+                    .name('Thorsten Klein')
+                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-151017-1.jpg'])
+                    .source(Source.Facebook)
+                    .text(
+                        `Tolle Strecke.
+Hat Spaß gemacht.
+Danke für die Orga.
+Es sollte mehr CTF geben.
+
+Die Möglichkeit das Rad direkt vor Ort zu reinigen fand ich auch klasse.
+
+Hier auch noch ein Bild von dem Ausblick auf der Strecke. `
+                    )
+                    .title('Es sollte mehr CTF geben')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 19:03')
+                    .name('Sabine Riehl')
+                    .source(Source.Facebook)
+                    .text(`Superschöne Strecke, tolle Verpflegung: hat total Spaß gemacht - vielen Dank für diese CTF und allen, die Sie möglich gemacht haben ...`)
+                    .title('Hat total Spaß gemacht')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 18:57')
+                    .name('Jörg Hengster')
+                    .source(Source.Facebook)
+                    .text(
+                        `Super Tour heute!
+Schöne Strecke, direkt in den Wald, leckere Verpflegung.
+Gute Idee, hier mal eine CTF anzubieten.
+Danke RTC!`
+                    )
+                    .title('Super Tour heute!')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17. Oktober 2015, 17:52')
+                    .name('Bernd Doelp')
+                    .source(Source.Facebook)
+                    .text(
+                        `Hallo RTC,
+
+vielen Dank für eure heutige Veranstaltung.
+Ihr habt eine wunderschöne Strecke und perfekte Kontrollstellen auf die Beine gestellt.
+Gerade in Zeiten schwindender Radveranstaltungen, geht Ihr den anderen Weg und organisiert eine Zweite.
+RESPEKT!!
+Ich hoffe, dass Ihr es auch nächstes Jahr schafft diese Event zu veranstalten.
+Also bitte weiter so.
+
+Und nun den einzigen Kritikpunkt, an der Ausschilderung müsst Ihr echt noch arbeiten.
+Ein Kontrollfahrer am Morgen würde hier Wunder wirken.
+Ich für meinen Teil freue mich jetzt schon auf's nächste Jahr.
+
+Mit sportlichem Gruß
+Bernd Doelp`
+                    )
+                    .title('Respekt, aber ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17.10.2015, 16:45')
+                    .name('Ben Feld')
+                    .source(Source.Facebook)
+                    .text(
+                        `Danke für die schöne Veranstaltung! Die Strecke war ausgesprochen schön und überall, wo nicht irgendwelche Deppen die Schilder umgedreht oder abgerissen haben, prima ausgezeichnet.
+
+Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.`
+                    )
+                    .title('Wiederholung ausdrücklich erwünscht ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('17. Oktober 2015, 16:07')
+                    .name('Stephan Schwarz')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Hallo,
+
+die CTF heute hat mir sehr gut gefallen.
+Tolle Strecke, sehr gute Verpflegung, sehr nette Personen an den Verpflegungspunkten.
+
+Danke aus Hennef
+Stephan`
+                    )
+                    .title('Tolle Strecke ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('03. Juni 2015, 20:16')
+                    .name('Guido Faßbender')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.
+Bin nächstes Jahr sicher wieder dabei. Nix ändern 😊 😊
+
+Sportliche Grüße
+
+Guido Faßbender
+Grenzfahrer e.V.`
+                    )
+                    .title('... nix ändern')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('03. Juni 2015, 09:31')
+                    .name('Frank Koch')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Guten Morgen,
+kann mich da meinen Vorrednern nur anschließen: eine sehr schöne RTF war das.
+Bin die 118er Runde gefahren, die es ja auch schon mit ihren 1600 Hm in sich hatte.
+Da taten die Beine doch schon ein bisschen weh.
+Die Landschaft um Eitorf und Much ist sehr schön.
+Alle Leute im K-Bereich waren sehr nett und zuvorkommend.
+
+An dieser Stelle nochmals besten Dank an Harald für mein gefundenes Handy,
+
+schöne Grüße aus Troisdorf, Frank 😊`
+                    )
+                    .title('... eine sehr schöne RTF')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('02.06.2015, 10:45')
+                    .name('Frank Oesterheld')
+                    .source(Source.Facebook)
+                    .text(
+                        `Die Versorgungen an allen "K" super und vor allem die Supporter hilfsbereit, nett und gut gelaunt ...
+Das ist nicht selbstverständlich und nicht auf allen Veranstaltungen so.
+Das spricht für ein tolles Klima im Team RTC Köln e. V. 1972 !!
+Bis zum nächsten Jahr 😊`
+                    )
+                    .title('Kommentar zu Schnappschüssen / Impressionen von der K5 auf der Forsbach-Tour 2015')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('01.06.2015, 22:47')
+                    .name('Gerhard Veeh')
+                    .source(Source.Facebook)
+                    .text(
+                        `Wir, der RTC-Mehlem 1984 e. V., waren nur zu zweit am Start wg. der Terminkollision mit ByBike.
+Nächstes Mal sind wir wieder mehr und beim Marathon dabei ...
+
+Danke Euch für die tolle Organisation.`
+                    )
+                    .title('... nur zu zweit am Start')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('01. Juni 2015, 20:33')
+                    .name('1. RTW-Sankt Augustin-Menden')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Nach der ersten Kontrolle haben wir uns aufgeteilt und in Gruppen die 70er, 100er und die 150er Strecke unter die Räder genommen.
+Im Ziel waren wir uns einig - es war wieder eine tolle Veranstaltung bei euch - DANKE an ALLE Helfer, Freunde und Sponsoren des RTC !!!!
+
+Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden`
+                    )
+                    .title('Danke ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('01. Juni 2015, 15:57')
+                    .name('Christof Mourikis')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Die Strecke: 150 von 100 möglichen Punkten
+Höhenmeter: reichlich!
+Ausschilderung: 150 von 100 möglichen Punkten
+Verpflegung: 150 von 100 möglichen Punkten
+
+Was will der Radsportler mehr??
+Ketten-Checks, für den der es braucht!
+
+Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht wenige!)
+`
+                    )
+                    .title('SENSATIONELL!!!!!')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('01.06.2015, 14:14')
+                    .name('Yvonne Basinski')
+                    .source(Source.Facebook)
+                    .text(
+                        `Total schöne Tour. Top Verpflegung und Beschilderung.
+Vielen Dank an das Orga Team!
+Wir sind nächstes Jahr wieder dabei.`
+                    )
+                    .title('Total schöne Tour ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('01. Juni 2015, 09:05')
+                    .name('Marc Grewe')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `Hallo RTC,
+
+danke mal wieder für die tolle Tour!
+Man glaubt ja manchmal gar nicht, wie schön wir es im Bergischen haben.
+Ich komme gerne wieder!!
+Vielleicht gelingt es euch ja sogar den Termin von der BN-Eupen-BN Tour zu trennen, die will ich nämlich auch mal angehen.
+Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Anstiegen noch mal Hallo sagen wollte 😉.
+
+Was mich allerdings schon wundert ist eure Angabe der Hm für die Marathonstrecke: also mein Garmin hat knappe 2300 hm aufgezeichnet, mit topografischen Korrekturen könnte man vielleicht noch knappe 2400 hm rausschlagen.
+Aber 2700 hm sind einfach nicht drin.
+Nicht, dass ich mehr bräuchte, aber es ist schon unterwegs irritierend, weil man zum Gulasch (55% der Strecke) gerade mal 1100 hm (40% von 2700 hm) hat und denkt, was denn da wohl noch alles von einem liegen soll?
+
+Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war 😉).
+Ob ihr das wohl bitte im kommenden Jahr deutlicher ausschildern könntet?
+
+Wie stellt ihr die Streckenlänge eigentlich so genau fest?
+Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt ...
+Aber gut, wir reden hier von einem Prozent Abweichung.
+Ich fand euer 200km-Schild jedenfalls sehr schön (auch wenn mir da noch gute 2km auf dem Tacho fehlten) und auch euer "1km bis zum Ziel" Schild steht was früh auf der Strecke, aber es steigt ja keiner 400m vor dem Ziel ab und beruft sich
+auf das Schild 😉.
+
+Nochmals danke und bis zum nächsten Mal!
+
+Marc`
+                    )
+                    .title('... ich komme gerne wieder!!')
+                    .build(),
+                new GuestbookEntryBuilder().date('31.05.2015, 20:30').name('Petra Ak').source(Source.Facebook).title("Vielen Dank für's Organisieren, war super !").build(),
+                new GuestbookEntryBuilder()
+                    .date('31.05.2015, 20:19')
+                    .name('Thomas Mühl')
+                    .source(Source.Facebook)
+                    .text(`Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da können sich andere Veranstalter mal 'ne Scheibe von abschneiden.`)
+                    .title('Top Veranstaltung')
+                    .build(),
                 new GuestbookEntryBuilder().date('31.05.2015, 20:11').name('Michael Kalisch').source(Source.Facebook).title('top top top 😊').build(),
                 new GuestbookEntryBuilder().date('31.05.2015, 20:10').name('Horst Voll').source(Source.Facebook).title('War geil und sehr anstrengend ! 👍').build(),
                 new GuestbookEntryBuilder()
@@ -82,7 +402,8 @@ Helga`
                     .text(
                         `Hallo RTC,
 
-was für ein Andrang schon um 6 Uhr?! Ich gehörte nicht zu den Marathonfahrern, wollte eine der kleineren Strecken abfahren und stand plötzlich schon in einer anderen Warteschlange.
+was für ein Andrang schon um 6 Uhr?!
+Ich gehörte nicht zu den Marathonfahrern, wollte eine der kleineren Strecken abfahren und stand plötzlich schon in einer anderen Warteschlange.
 Es kamen immer mehr und mehr Radfahrer, die genau so wie ich bei dem schönen Wetter früh starten wollten.
 Alle Kassenbetreuer gaben ihr Bestes, um die Anmeldungen so schnell wie möglich aufzunehmen.
 Bei so einem Ansturm musste schon in den frühen Morgenstunden improvisiert werden.
@@ -96,7 +417,8 @@ Der Ansturm an Teilnehmern riss auch am späten Nachmittag nicht ab.
 Der Grill war durch seine große Auswahl an selbstgemachten Salaten und Grillwürstchen ununterbrochen stark besucht.
 Nach Sonntag kann ich nun selbst mitreden und für mich war es ein tolles Erlebnis, endlich diese bekannte RTF kennengelernt zu haben.
 Das frühe Aufstehen an einem Sonntag hatte sich definitiv gelohnt.
-Insgesamt hieß es für den Veranstalter bei so vielen Besuchern den Überblick zu bewahren, was ihm und den fleißigen Helfern auch gut gelungen war. Ein großes Kompliment an das Team, das trotz des großen Ansturms, sehr gut in dieser Situation reagiert hat.
+Insgesamt hieß es für den Veranstalter bei so vielen Besuchern den Überblick zu bewahren, was ihm und den fleißigen Helfern auch gut gelungen war.
+Ein großes Kompliment an das Team, das trotz des großen Ansturms, sehr gut in dieser Situation reagiert hat.
 
 Bis zum nächsten Jahr
 Jessica`
@@ -197,7 +519,8 @@ Fast 1.300 Teilnehmer und man ist wahrscheinlich von einem Spitzenwert von 900 -
 Und an einem Sonntag können ausgegangene Nahrungsmittel nicht mal so eben nachgeordert werden.
 
 Sich jetzt an allem aufzuhängen und die Umstände die dazu geführt haben nicht zu berücksichtigen, ist gegenüber dem Veranstalter nicht fair.
-Und mal ehrlich Herr General-Kritiker, wofür seid ihr denn überhaupt zur RTF gekommen? Doch nicht etwa wegen eurer Radsportbegeisterung.
+Und mal ehrlich Herr General-Kritiker, wofür seid ihr denn überhaupt zur RTF gekommen?
+Doch nicht etwa wegen eurer Radsportbegeisterung.
 Nein, ich hätte euch gleich nach dem Start ein schickes Cafe empfehlen können oder alternativ ein gutes Restaurant.
 Echten Radsportlern geht es doch vielmehr um den Radsport und das damit verbundene Erleben schöner Strecken.
 Und wenn dann mal wirklich an einer Kontrolle was fehlt, was nicht der Regelfall sein sollte aber nachvollziehbar passieren kann, ja dann fährt man zur nächsten Tanke und zieht sich da was rein.
@@ -256,7 +579,8 @@ www.rtf-koblenz.de`
 Strecke (150), Verpflegung, Helfer, Wetter, alles passte.
 
 Vielen lieben Dank für die hervorragende Organisation.
-Im nächsten Jahr gerne wieder! Dank an die Jungs vom RC Schmitter für's Ziehen 😊
+Im nächsten Jahr gerne wieder!
+Dank an die Jungs vom RC Schmitter für's Ziehen 😊
 
 Sportliche Grüße
 Claudia Braun
@@ -407,9 +731,11 @@ www.rv-morgenstern.de`
                     .text(
                         `Hallo RTC Köln'ner,
 
-das war wirklich super Klasse!! Tolle Organisation, freundliches und hilfsbereites Team, eine sehr schöne und interessante Streckenführung und -Gott sei Dank- das Wetter phantastisch.
+das war wirklich super Klasse!!
+Tolle Organisation, freundliches und hilfsbereites Team, eine sehr schöne und interessante Streckenführung und -Gott sei Dank- das Wetter phantastisch.
 Über 1200 Teilnehmer haben's euch gedankt.
-Klasse! Nach der Wasserschlacht von vergangenem Jahr habt ihr euch das auch wirklich verdient!
+Klasse!
+Nach der Wasserschlacht von vergangenem Jahr habt ihr euch das auch wirklich verdient!
 
 Eigentlich kann man das gar nicht toppen ... Eigentlich ...
 
@@ -473,7 +799,8 @@ ganz herzlichen Dank für die schöne RTF am Sonntag!
 Was Ihr da auf die Beine gestellt habt war super!
 
 Eine landschaftlich tolle Strecke, Verpflegung vom Feinsten auf der 125er Strecke, immer gut gelaunte Helfer u. selbst die angekündigten Gewitter hatten ein Einsehen mit Eurer Veranstaltung!
-Auch wenn auf den ersten Kilometern nachgeschildert werden musste (Spiel"kinder" gibt's immer), habt Ihr versucht uns eine perfekte RTF zu bieten! Und Dank dem Track, den ich mir sicherheitshalber von Euer Homepage runter geladen hatte, ging auch orientierungsmäßig alles glatt.
+Auch wenn auf den ersten Kilometern nachgeschildert werden musste (Spiel"kinder" gibt's immer), habt Ihr versucht uns eine perfekte RTF zu bieten!
+Und Dank dem Track, den ich mir sicherheitshalber von Euer Homepage runter geladen hatte, ging auch orientierungsmäßig alles glatt.
 
 Herzliche Grüße aus Rondorf,
 Ursula Koepp
@@ -610,9 +937,11 @@ austausche.
 Und da gilt dann ganz klar der Spruch: "Ich bin so froh, das ich ein Mädchen bin"
 Keine 2 Minuten später kam ein Mitfahrer vom RTC Rodenkirchen und hat mir anstandslos geholfen.
 Kurz darauf kam auch ein Wagen Vom RTC Köln und fragte ob er auch helfen könnte ...
-Das war unglaublich nett !!!!! Schön, das es solche Menschen gibt !!!!
+Das war unglaublich nett !!!!!
+Schön, das es solche Menschen gibt !!!!
 Bei der nächsten Verpflegung wartete dann mein "Kollege" auch schon auf mich ;-)
-Die Verpflegungsstellen waren allesamt klasse !!! Es gab Kuchen, Rosinenstuten, Kekse, Weingummi, Riegel, und und und ...
+Die Verpflegungsstellen waren allesamt klasse !!!
+Es gab Kuchen, Rosinenstuten, Kekse, Weingummi, Riegel, und und und ...
 Für die Marathon'is gab es sogar noch eine warme Mahlzeit.
 Das Wetter war auch absolut in Ordnung.
 Es kamen nur ein paar Tropfen runter und die konnte man genießen wurde es doch zum Ende der Tour mächtig warm mit Sonne !!!!
@@ -660,12 +989,19 @@ Matthias Zimmer`
                     .text(
                         `Liebe RTCler,
 
-CHAPEAU!!! Wir sind zwar nur die 75-er (eigentlich waren es 84 km) gefahren, aber es war ein Traum!
+CHAPEAU!!!
+Wir sind zwar nur die 75-er (eigentlich waren es 84 km) gefahren, aber es war ein Traum!
 Und besonders möchten wir die Verpflegung - hier besonders an der 1. Kontrolle - hervorheben.
-Ein Genuss par excellence! Das Beste, was wir in unserer 8-jährigen RTF-Erfahrung erleben durften!
+Ein Genuss par excellence!
+Das Beste, was wir in unserer 8-jährigen RTF-Erfahrung erleben durften!
 Als Feinschmeckerin kann ich dies sehr wohl beurteilen: die tollen Kuchen, die liebevoll zubereiteten Brötchen mit Frischkäse und Garnitur und natürlich das Schmalzbrot.
-Und keine WAFFELN! Toll! Ihr könnt auf eure Frauen stolz sein, super! Und später am Ziel dann die wunderbare Quiche mit den zahlreichen Salaten habe ich genossen!
-Vielen Dank nochmals für diese wunderbare Tour! Hier spürt man euer Herzblut in aller Gänze! Macht weiter so.
+Und keine WAFFELN!
+Toll!
+Ihr könnt auf eure Frauen stolz sein, super!
+Und später am Ziel dann die wunderbare Quiche mit den zahlreichen Salaten habe ich genossen!
+Vielen Dank nochmals für diese wunderbare Tour!
+Hier spürt man euer Herzblut in aller Gänze!
+Macht weiter so.
 
 Herzlichst grüßen die RSGler (Ford)
 
