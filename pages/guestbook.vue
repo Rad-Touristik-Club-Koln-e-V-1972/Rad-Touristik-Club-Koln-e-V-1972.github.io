@@ -39,7 +39,201 @@ export default defineComponent({
                 mdiEmailSend,
             },
             items: [
-                new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source.Facebook).text(`XXX`).title('XXX').build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Franz Böhm')
+                    .source(Source.Facebook)
+                    .text(`Ihr macht das richtig gut! Freue mich auf nächstes Jahr.`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Martin Rupp')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Sehr schöne Strecken ...<br/>
+super Verpflegung ...<br/>
+schöne Lounge im Ziel ...<br/>
+mit Grill und Bierchen ...<br/>
+weiter so.
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Andreas Schäfer')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Sehr schöne Tour bei tollem Sonnenschein<br/>
+Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.<br/>
+Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Dirk Weinbörner')
+                    .source(Source.Facebook)
+                    .text(`Tolle Tour, klasse Verpflegung - richtig gut gemacht - nächstes Jahr auf jeden Fall wieder.`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Matthes Heise')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.<br/>
+Einfach gesagt, ich freu mich schon auf's nächste Jahr!
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder().date('28.10.2019, 20:00').name('Stephanie Hilton').source(Source.Facebook).text(`Tolle Tour! Hat Spass gemacht!!!`).build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2019, 20:00')
+                    .name('Jochen Güttes')
+                    .source(Source.Facebook)
+                    .text(`Eine top organisierte Veranstaltung. Hat riesen Spaß gemacht.`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2018, 00:00')
+                    .name('Andreas Reineke')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.<br/>
+<br/>
+Den Vereinsmitgliedern tat es total leid, aber die konnten nicht so schnell nachschildern bzw. Flaggen, wie die Markierungen geklaut worden sind.<br/>
+Es waren alle super nett!!<br/>
+Es war eine sehr schöne Veranstaltung.
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.10.2018, 00:00')
+                    .name('Vamos Bala')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...<br/>
+Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('27.10.2018, 16:36')
+                    .name('Bernd Doelp')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+genau wie letztes Jahr war alles wieder perfekt.
+<br/>
+Vielen Dank und bis nächstes Jahr, diese Veranstaltung ist auf jeden Fall gesetzt.<br/>
+<br/>
+Ich freue mich jetzt schon ...<br/>
+Viele Grüße<br/>
+<br/>
+Bernd`
+                    )
+                    .title('Hallo RTC,')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2018, 17:00')
+                    .name('Profitrise Sports')
+                    .source(Source.Facebook)
+                    .text(`Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!`)
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2018, 17:00')
+                    .name('Petra Humbach')
+                    .source(Source.Facebook)
+                    .text(`... da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
+                    .title('Schade ...')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2018, 17:00')
+                    .name('Jochen Güttes')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Wir Teilnehmer sind begeistert.<br/>
+Streckenführung, Verpflegung, Personal ... alles TOP.<br/>
+Danke für die Gastfreundschaft.
+                `
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2018, 17:00')
+                    .name('Ros Si')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Die Fahrt hat Tradition.<br/>
+Und Tradition hat auch die perfekte Organisation.<br/>
+Super Ausschilderung, super Getränke und natürlich die obligatorischen RTF Nutellabrote.<br/>
+Und vieles mehr an den Kontrollen.<br/>
+Riesen Dankeschön.<br/>
+Hat riesig Spaß gemacht bei euch zu fahren.<br/>
+Nächstes Jahr wieder.
+`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('28.05.2018, 17:00')
+                    .name('Angela Maja')
+                    .source(Source.Facebook)
+                    .text(
+                        `
+Es war wunderbar 😊<br/>
+Vielen Dank für tolle Streckenführung, Verpflegung, freundliche Orga und Helfer!<br/>
+Alles bestens.<br/>
+<br/>
+161 km RTF Strecke und dann nach Hause waren dann für mich bei meiner ersten RTF in diesem Jahr ein Marathon ... 😊`
+                    )
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('27.05.2018, 17:01')
+                    .name('Harald Seidenberg')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+Hallo RTC, heute bin ich nach 25 Jahren wieder mal eine RTF gefahren.<br/>
+<br/>
+Mir hat die RTF heute -Kurzstrecke- sehr gut gefallen.<br/>
+<br/>
+Wetter schön, Temperatur wunderbar, gut ausgeschildert.<br/>
+Was ich gegenüber damals vermisst habe, waren Verkaufstand mit Trikots oder ähnliches ...<br/>
+<br/>
+Vielleicht hat sich in der Zeit da was verändert.<br/>
+Sollte keine Kritik sein.<br/>
+Nur eine Anmerkung.<br/>
+<br/>
+Harry
+`
+                    )
+                    .title('RTF 27.05.2018')
+                    .build(),
+                new GuestbookEntryBuilder()
+                    .date('27.05.2018, 13:54')
+                    .name('Dirk Heppert')
+                    .organization('RSV Staubwolke Refrath')
+                    .source(Source['E-Mail'])
+                    .text(
+                        `
+... ich wollte nur sagen, dass ich wieder total begeistert bin von Eurer RTF.<br/>
+<br/>
+Wie immer Toporganisation, präzise Ausschilderung und interessante Streckenführung.<br/>
+Bin heute nur die 51er Schleife mit meinem Kollegen gefahren, da ich noch von gestern die Höhenmeter der RTF in Wuppertal in den Beinen habe.<br/>
+Aber auch die kurze Schleife hat ihre Reize.<br/>
+<br/>
+Kenne jetzt auf jeden Fall alle Strecken.<br/>
+Eure RTF gehört zu den Besten im Bezirk Köln-Bonn.<br/>
+<br/>
+LG Dirk Heppert - RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
+                `
+                    )
+                    .title('Hallo RTC ...')
+                    .build(),
                 new GuestbookEntryBuilder()
                     .answer('Dem Dieter kann geholfen werden, Brille ist da, Kontakt wird aufgenommen ...')
                     .date('11.11.2017, 17:01')
