@@ -1,10 +1,14 @@
 <template>
-    <v-card id="CGuestbook">
-        <v-card-subtitle v-if="getSubtitle(item)" class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="getSubtitle(item)" />
+    <v-card id="CGuestbook" max-width="40em">
+        <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
+            <span class="text-no-wrap" v-text="`${item.date}, `"></span>
+            <span class="text-no-wrap" v-text="`${[item.name, item.organization, item.location].filter((it) => it).join(', ')} `"></span>
+            <span class="text-no-wrap" v-text="`via ${Source[item.source]}`"></span>
+        </v-card-subtitle>
         <v-card-title v-if="item.title" class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
-            <div v-if="getText(item)" class="text-caption text-md-body-2 text-lg-body-1" v-html="getText(item)" />
+            <div v-if="getText(item)" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item)" />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
         </v-card-text>
     </v-card>
@@ -36,7 +40,6 @@ export default defineComponent({
         }
     },
     computed: {
-        getSubtitle: () => (item: GuestbookEntry) => `${[item.date, item.name, item.organization, item.location].filter((it) => it).join(', ')} via ${Source[item.source]}`,
         getText: () => (item: GuestbookEntry) => marked.parse(item.text),
     },
 })
