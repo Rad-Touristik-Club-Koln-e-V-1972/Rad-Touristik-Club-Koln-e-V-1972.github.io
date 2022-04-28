@@ -44,8 +44,8 @@ export default defineComponent({
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
                 new GuestbookEntryBuilder().date('XXX').name('XXX').source(Source['E-Mail']).text(`XXX`).title('XXX').build(),
-                new GuestbookEntryBuilder().date('31.05.2015, 20:11').name('Michael Kalisch').source(Source.Facebook).title('top top top :-)').build(),
-                new GuestbookEntryBuilder().date('31.05.2015, 20:10').name('Horst Voll').source(Source.Facebook).title('War geil und sehr anstrengend ! :)').build(),
+                new GuestbookEntryBuilder().date('31.05.2015, 20:11').name('Michael Kalisch').source(Source.Facebook).title('top top top 😊').build(),
+                new GuestbookEntryBuilder().date('31.05.2015, 20:10').name('Horst Voll').source(Source.Facebook).title('War geil und sehr anstrengend ! 👍').build(),
                 new GuestbookEntryBuilder()
                     .date('31.05.2015, 19:29')
                     .name('Horst Paesch')
@@ -55,7 +55,7 @@ export default defineComponent({
                         `Danke für ein perfekt organisierten Marathon, die Strecke war super ausgesucht, viele ruhige Straßen, tolle Ausblicke!
 Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr nett und hilfsbereit, die Verpflegung ist der Knaller.
 
-Da nimmt man beim Marathon noch zu :-)`
+Da nimmt man beim Marathon noch zu 😊`
                     )
                     .title('... da nimmt man beim Marathon noch zu')
                     .build(),
@@ -112,7 +112,7 @@ Jessica`
 
 das war ein sehr schöner Radmarathon am Sonntag.
 
-Eine tolle Strecke, weitgehend verkehrsarm und Ã¼berwiegend recht gute Oberflächen (in der gewählten Richtung keine Selbstverständlichkeit), nettes Personal, sehr gute Ausschilderung und eine prima Verpflegung.
+Eine tolle Strecke, weitgehend verkehrsarm und überwiegend recht gute Oberflächen (in der gewählten Richtung keine Selbstverständlichkeit), nettes Personal, sehr gute Ausschilderung und eine prima Verpflegung.
 Allein der Nudeltopf in Bebbingen war sensationell gut, auch wenn ich eigentlich kein Fan der warmen Verpflegung unterwegs bin, die liegt so schwer im Magen an den Folgenhügeln...
 (daher lieber nicht sooo lecker kochen oder - noch besser - im Ziel servieren)
 
@@ -121,7 +121,7 @@ Vielleicht sollte mancher "Schlemmermeier" einfach etwas früher losfahren, dann
 Da sind wir auch schon bei meinem einzigen Kritikpunkt: Wenn eine Startzeit angegeben wird, würde ich es gut finden, wenn diese auch konsequent eingehalten würde und nicht bereits eine Viertelstunde (oder mehr) eher losgefahren wird.
 Sollte doch kein Problem sein.
 
-Ansonsten: Weiter so!
+Ansonsten: Weiter so! 😊
 
 Beste Grüße
 velotoerist`
@@ -134,7 +134,7 @@ velotoerist`
                     .source(Source['E-Mail'])
                     .text(
                         `Prima RTF am vergangenen Sonntag.
-Bericht Ã¼ber meine Fahrt auf der 150er Strecke jetzt auf meiner Website www.sportlich-radeln.de
+Bericht über meine Fahrt auf der 150er Strecke jetzt auf meiner Website www.sportlich-radeln.de
 
 Helmut Hane
 www.sportlich-radeln.de`
@@ -167,16 +167,16 @@ Marco Gerlach`
                     .source(Source['E-Mail'])
                     .text(
                         `Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
-â€� aber auch ein schöner Tag!
+- aber auch ein schöner Tag!
 
-Bereits um 5:10 Uhr, mit kurzer Verspätung, öffneten sich die Türen der Sporthalle in der Heerstraße in Zündorf und blitzartig verteilten sich die helfenden Hände um mit den letzten Vorkehrungen ihre Stationen für den Andrang der Sportler vorzubereiten â€� und die kamen dann (wie üblich) sogar schon lange vor Öffnung der Anmeldung und warteten mehr oder weniger geduldig auf Kaffee und Startkarten.
+Bereits um 5:10 Uhr, mit kurzer Verspätung, öffneten sich die Türen der Sporthalle in der Heerstraße in Zündorf und blitzartig verteilten sich die helfenden Hände um mit den letzten Vorkehrungen ihre Stationen für den Andrang der Sportler vorzubereiten - und die kamen dann (wie üblich) sogar schon lange vor Öffnung der Anmeldung und warteten mehr oder weniger geduldig auf Kaffee und Startkarten.
 
-Neben den fünf herkömmlichen Anmeldetischen war auch scan&bike mit am Start, um die Athleten schnell auf die Strecke zu schicken â€� und das ging auch wieder richtig zügig, nach dem Scannen des auf http://scan.bike vorab gedruckten oder aufs Smartphone gespeicherten QR Codes und dem Bezahlen des Startgelds trägt der Laptop den Fahrer (ob Marathon oder kürzer, ob mit oder ohne Wertungskarte und sogar Trimmfahrer) per Mausklick im Bruchteil einer Sekunde in die Teilnehmerliste ein und sofort kommt der nächste an die Reihe â€� zeitraubende Handarbeit übernimmt der Computer und der einmal erzeugte
-QR Code gilt die ganze Saison â€� mit dem Laserdrucker ausgedruckt kann man ihn bis auf eine Kantenlänge von 2,5 cm verkleinern und auf die Wertungskarte kleben oder laminieren und dadurch für die vielen RTF-/CTF-Teilnahmen konservieren â€� denn eines kann der Code nicht vertragen und das ist wenn er verwischt und undeutlich wird.
+Neben den fünf herkömmlichen Anmeldetischen war auch scan&bike mit am Start, um die Athleten schnell auf die Strecke zu schicken - und das ging auch wieder richtig zügig, nach dem Scannen des auf http://scan.bike vorab gedruckten oder aufs Smartphone gespeicherten QR Codes und dem Bezahlen des Startgelds trägt der Laptop den Fahrer (ob Marathon oder kürzer, ob mit oder ohne Wertungskarte und sogar Trimmfahrer) per Mausklick im Bruchteil einer Sekunde in die Teilnehmerliste ein und sofort kommt der nächste an die Reihe - zeitraubende Handarbeit übernimmt der Computer und der einmal erzeugte
+QR Code gilt die ganze Saison - mit dem Laserdrucker ausgedruckt kann man ihn bis auf eine Kantenlänge von 2,5 cm verkleinern und auf die Wertungskarte kleben oder laminieren und dadurch für die vielen RTF-/CTF-Teilnahmen konservieren - denn eines kann der Code nicht vertragen und das ist wenn er verwischt und undeutlich wird.
 Auch für den Veranstalter wird es leichter, wenn nach und nach immer mehr Sportler mit QR Code zur Einschreibung kommen kann eh schon knappes Personal reduziert werden und auch die langen Schlangen bei der Anmeldung entfallen durch die um ein Vielfaches kürzere Zeit des Einzelnen am Schalter.
-Scannen, Kassieren, Klicken â€� Scannen, Kassieren, Klicken â€� Scannen, Kassieren, Klicken,â€¦ so geht scan&bike!
+Scannen, Kassieren, Klicken - Scannen, Kassieren, Klicken - Scannen, Kassieren, Klicken,â€¦ so geht scan&bike!
 
-Die jährliche Forsbach-Tour ist immer ein weiteres Highlight im RTF Kalender, bei besonders gutem Wetter wird die viele professionelle Arbeit des Vereins und seiner Mitglieder auch mit hohen Teilnehmerzahlen belohnt â€� mit scan&bike sind wir auf dem richtigen Weg die morgendliche Wartezeit zu minimieren und mit zum guten Gelingen einer Veranstaltung beizutragen.
+Die jährliche Forsbach-Tour ist immer ein weiteres Highlight im RTF Kalender, bei besonders gutem Wetter wird die viele professionelle Arbeit des Vereins und seiner Mitglieder auch mit hohen Teilnehmerzahlen belohnt - mit scan&bike sind wir auf dem richtigen Weg die morgendliche Wartezeit zu minimieren und mit zum guten Gelingen einer Veranstaltung beizutragen.
 
 Jörg Homann
 http://scan.bike`
@@ -193,7 +193,7 @@ Kritik ist durchaus erlaubt, aber man muss, wenn man das macht, auch alle Umstä
 Hier wird aber in dem Beitrag alles, aber auch alles schlecht geredet.
 Der RTC-Köln organisiert eine solche Veranstaltung nicht zum ersten Mal.
 Am Sonntag war für den ausrichtenden Verein eine Rekordbeteiligung zu verzeichnen, mit der man -bei all der Erfahrung- nicht gerechnet hat und in dem Ausmaß auch nicht rechnen konnte.
-Fast 1.300 Teilnehmer und man ist wahrscheinlich von einem Spitzenwert von 900 bis 1.000 ausgegangen.
+Fast 1.300 Teilnehmer und man ist wahrscheinlich von einem Spitzenwert von 900 - 1.000 ausgegangen.
 Und an einem Sonntag können ausgegangene Nahrungsmittel nicht mal so eben nachgeordert werden.
 
 Sich jetzt an allem aufzuhängen und die Umstände die dazu geführt haben nicht zu berücksichtigen, ist gegenüber dem Veranstalter nicht fair.
@@ -256,7 +256,7 @@ www.rtf-koblenz.de`
 Strecke (150), Verpflegung, Helfer, Wetter, alles passte.
 
 Vielen lieben Dank für die hervorragende Organisation.
-Im nächsten Jahr gerne wieder! Dank an die Jungs vom RC Schmitter für's Ziehen
+Im nächsten Jahr gerne wieder! Dank an die Jungs vom RC Schmitter für's Ziehen 😊
 
 Sportliche Grüße
 Claudia Braun
@@ -374,11 +374,11 @@ Frank`
                         `Die RTF gestern war mal wieder klasse was die Strecke und das Wetter anging.
 Für den schlechten Straßenbelag teilweise könnt ihr ja nix.
 
-Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaaaar nicht ;)
+Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaaaar nicht 😉
 
-Nächstes Jahr will ich wieder meine Banane bekommen ... :D`
+Nächstes Jahr will ich wieder meine Banane bekommen ... 😏`
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... klasse Strecke, aber keine Bananen :)')
+                    .title('42. Forsbach-Tour, 25.05.2014: ... klasse Strecke, aber keine Bananen 😔')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date('26. Mai 2014, 07:24')
