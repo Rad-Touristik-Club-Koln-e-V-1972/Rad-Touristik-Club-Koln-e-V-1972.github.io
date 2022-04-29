@@ -1,7 +1,7 @@
 <template>
     <v-card id="CGuestbook" max-width="40em">
         <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
-            <span class="text-no-wrap" v-text="`${item.date}, `"></span>
+            <span v-if="getDate(item)" class="text-no-wrap" v-text="`${getDate(item)}, `"></span>
             <span class="text-no-wrap" v-text="`${[item.name, item.organization, item.location].filter((it) => it).join(', ')} `"></span>
             <span class="text-no-wrap" v-text="`via ${Source[item.source]}`"></span>
         </v-card-subtitle>
@@ -47,6 +47,7 @@ export default defineComponent({
     },
     computed: {
         getAnswer: () => (item: GuestbookEntry) => marked.parse(`**RTC Köln:** *${item.answer}*`),
+        getDate: () => (item: GuestbookEntry) => item.date ? item.date.toLocaleString('De-de') : '',
         getText: () => (item: GuestbookEntry) => marked.parse(item.text),
     },
 })

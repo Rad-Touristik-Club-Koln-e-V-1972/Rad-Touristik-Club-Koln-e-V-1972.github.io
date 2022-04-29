@@ -13,8 +13,9 @@ export default class EntryBuilder {
         return this
     }
 
-    date(value: string): EntryBuilder {
-        this.value.date = value
+    date(year: number, month: number, date?: number, hours?: number, minutes?: number): EntryBuilder {
+        // The month value is 0-11. We need an offset.
+        this.value.date = new Date(year, month - 1, date, hours, minutes)
         return this
     }
 
