@@ -1018,7 +1018,7 @@ Henning
                 new GuestbookEntryBuilder()
                     .date('17.10.2015, 20:01')
                     .name('Wilfried Goesgens')
-                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-151017-2.jpg'])
+                    .pictures(['https://content.rtc-koeln.de/pages/guestbook/2015-10-17_20-01.jpg'])
                     .source(Source.Facebook)
                     .text(
                         `
@@ -1031,7 +1031,7 @@ Superrunde und hoffentlich nächstes Jahr wieder ...
                 new GuestbookEntryBuilder()
                     .date('17.10.2015, 19:38')
                     .name('Thorsten Klein')
-                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-151017-1.jpg'])
+                    .pictures(['https://content.rtc-koeln.de/pages/guestbook/2015-10-17_19-38.jpg'])
                     .source(Source.Facebook)
                     .text(
                         `
@@ -1289,7 +1289,7 @@ Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da 
                 new GuestbookEntryBuilder()
                     .date('31.05.2015, 19:29')
                     .name('Horst Paesch')
-                    .pictures(['https://rtc-koeln.de/content/pics/guestbook/rtc-gb-150531.jpg'])
+                    .pictures(['https://content.rtc-koeln.de/pages/guestbook/2015-05-31_19-29.jpg'])
                     .source(Source.Facebook)
                     .text(
                         `
