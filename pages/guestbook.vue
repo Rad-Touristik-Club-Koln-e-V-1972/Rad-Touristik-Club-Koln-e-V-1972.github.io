@@ -142,16 +142,17 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
                     .source(Source['E-Mail'])
                     .text(
                         `
-genau wie letztes Jahr war alles wieder perfekt.
+Hallo RTC,<br/>
+genau wie letztes Jahr war alles wieder perfekt.<br/>
 <br/>
 Vielen Dank und bis nächstes Jahr, diese Veranstaltung ist auf jeden Fall gesetzt.<br/>
 <br/>
 Ich freue mich jetzt schon ...<br/>
 Viele Grüße<br/>
 <br/>
-Bernd`
+Bernd
+`
                     )
-                    .title('Hallo RTC,')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2018, 5, 28, 17, 0)
@@ -165,8 +166,7 @@ Bernd`
                     .event(Event.RTF)
                     .name('Petra Humbach')
                     .source(Source.Facebook)
-                    .text(`... da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
-                    .title('Schade ...')
+                    .text(`Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2018, 5, 28, 17, 0)
@@ -219,21 +219,19 @@ Alles bestens.<br/>
                     .source(Source['E-Mail'])
                     .text(
                         `
-Hallo RTC, heute bin ich nach 25 Jahren wieder mal eine RTF gefahren.<br/>
+Hallo RTC,<br/>
 <br/>
-Mir hat die RTF heute -Kurzstrecke- sehr gut gefallen.<br/>
-<br/>
-Wetter schön, Temperatur wunderbar, gut ausgeschildert.<br/>
-Was ich gegenüber damals vermisst habe, waren Verkaufstand mit Trikots oder ähnliches ...<br/>
-<br/>
+Ich/wir wollte/n nur sagen, dass ...  ich heute nach 25 Jahren wieder mal eine RTF gefahren bin.<br/>
+Mir hat die RTF heute Kurzstrecke sehr gut gefallen hat. Wetter schön, Temperatur wunderbar.<br/>
+gut ausgeschildert.<br/>
+Was ich gegenüber damals vermisst habe waren Verkaufstand  mit Trikots oder…. .<br/>
 Vielleicht hat sich in der Zeit da was verändert.<br/>
 Sollte keine Kritik sein.<br/>
 Nur eine Anmerkung.<br/>
-<br/>
 Harry
 `
                     )
-                    .title('RTF 27.05.2018')
+                    .title('Feedback wegen ... RTF 27.05.2018')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2018, 5, 27, 13, 54)
@@ -243,19 +241,17 @@ Harry
                     .source(Source['E-Mail'])
                     .text(
                         `
-... ich wollte nur sagen, dass ich wieder total begeistert bin von Eurer RTF.<br/>
-<br/>
+Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.<br/>
 Wie immer Toporganisation, präzise Ausschilderung und interessante Streckenführung.<br/>
 Bin heute nur die 51er Schleife mit meinem Kollegen gefahren, da ich noch von gestern die Höhenmeter der RTF in Wuppertal in den Beinen habe.<br/>
 Aber auch die kurze Schleife hat ihre Reize.<br/>
-<br/>
 Kenne jetzt auf jeden Fall alle Strecken.<br/>
 Eure RTF gehört zu den Besten im Bezirk Köln-Bonn.<br/>
 <br/>
-LG Dirk Heppert - RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
-                `
+LG Dirk Heppert- RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
+`
                     )
-                    .title('Hallo RTC ...')
+                    .title('Feedback wegen ...RTF 2018')
                     .build(),
                 new GuestbookEntryBuilder()
                     .answer(`Dem Dieter kann geholfen werden, Brille ist da, Kontakt wird aufgenommen ...`)
@@ -265,17 +261,16 @@ LG Dirk Heppert - RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
                     .source(Source['E-Mail'])
                     .text(
                         `
-... eure CTF war wieder einmal sehr schön und ausgezeichnet organisiert.<br/>
-Wenn ich auch nicht unbedingt begeistert von den 2 Downhill-Strecken war (ich bin dafür zu alt und zu ängstlich), so war der übrige Teil der 55er Runde wunderbar.<br/>
-Vielen Dank für all Eure Mühen.<br/>
-<br/>
-Seit der CTF bei Euch vermisse ich meine Radbrille. Ich kann mir nur noch vorstellen, sie beim Ziel innen oder draußen liegen gelassen zu haben.<br/>
+Hallo RTC, ich/wir wollte/n nur sagen, dass Eure CTF einmal wieder sehr schön und ausgezeichnet organisiert war.<br/>
+Wenn ich auch nicht unbedingt begeistert von den 2 Downhill-Strecken war (ich bin dafür zu alt und zu ängstlich), so war der übrige Teil der 55-er Runde wunderbar.<br/>
+Vielen Dank  für all Eure Mühen.<br/>
+Seit der CTF bei Euch vermisse ich meine Radbrille.<br/>
+Ich kann mir nur noch vorstellen, sie beim Ziel innen oder draußen liegen gelassen zu haben.<br/>
 Es handelt sich um die Marke Eagle Five mit eingebautem Leseteil.<br/>
 Sollte sie gefunden sein, bitte ich um Kontakt per email.<br/>
-<br/>
-Viele Grüße, Dieter Roggensack`
+Viele Grüße, Dieter Roggensack...`
                     )
-                    .title('Hallo RTC ...')
+                    .title('Feedback wegen ...CTF Wahnbachtour')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2017, 10, 30, 9, 48)
@@ -476,12 +471,15 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
                     .source(Source['E-Mail'])
                     .text(
                         `
-Eure RTF war wieder bestens organisiert.<br/>
-Schöne anspruchsvolle Strecken, gute Verpflegung und präzise Ausschilderung.<br/>
-Hat wieder alles gepasst.
+Hallo RTC,<br/>
+<br/>
+ich/wir wollte/n nur sagen, dass ... Eure RTF war wieder bestens organisiert. Schöne anspruchsvolle Strecken, gute Verpflegung und präzise Ausschilderung.<br/>
+Hat wieder alles gepasst.<br/>
+<br/>
+VG<br/>
+Dirk Oliver Heppert RSV Staubwolke Refrath
 `
                     )
-                    .title('Hat wieder alles gepasst ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 10, 31)
@@ -491,16 +489,18 @@ Hat wieder alles gepasst.
                     .source(Source['E-Mail'])
                     .text(
                         `
-... es war meine erste CTF und ich bin begeistert.<br/>
+Hallo RTC,<br/>
 <br/>
-Nachdem wir früh auf die "Beschilderung" mit den Bändern aufmerksam gemacht wurden, hatten wir keine Probleme mit der 35er Strecke,
+es war meine erste CTF und ich bin begeistert.<br/>
+Nachdem wir früh auf die „Beschilderung“ mit den Bändern aufmerksam gemacht wurden, hatten wir keine Probleme mit der 35er Strecke,
 obwohl wir nur mit normalen Trekkingrädern unterwegs waren!<br/>
 Man konnte immer wieder merken, dass hier Leute am Werk waren, die etwas vom Fach verstehen!<br/>
 <br/>
-Ich freue mich schon auf das nächste Jahr!
+Ich freue mich schon auf das nächste Jahr!<br/>
+<br/>
+Rolf Müller, Cito Hennef-Geistingen
 `
                     )
-                    .title('Hallo RTC ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .answer(`310 Teilnehmer waren's`)
@@ -519,29 +519,27 @@ Wie viele Teilnehmer hattet ihr eigentlich?
                     )
                     .build(),
                 new GuestbookEntryBuilder()
-                    .answer('Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.)auch schon zurück bekommen ...')
+                    .answer(`Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.) auch schon zurück bekommen ...`)
                     .date(2016, 10, 29, 19, 21)
                     .event(Event.CTF)
                     .name('Jörg Moritz')
                     .source(Source['E-Mail'])
                     .text(
                         `
-... ich wollte nur sagen, dass euch die CTF sehr gut gelungen ist.<br/>
+Hallo RTC,<br/>
 <br/>
+ich wollte nur sagen, dass euch die CTF sehr gut gelungen ist.<br/>
 Vor allem die zweite Beschilderung nach einer Abzweigung gibt einem Sicherheit, dass man richtig ist.<br/>
 <br/>
-**Mir ist im Startbereich leider ein Mißgeschick passiert.**<br/>
-**Auf den ersten ca. 200m habe ich meinen Radcomputer verloren.**<br/>
+Mir ist im Startbereich leider ein Mißgeschick passiert.<br/>
+Auf den ersten ca. 200m habe ich meinen Radcomputer verloren.<br/>
 Falls also jemand einen Sigma ROX 6.0 CAD gefunden hat, wäre es schön, wenn der Kontakt hergestellt werden könnte.<br/>
 <br/>
 Grüße<br/>
-Jörg Moritz<br/>
-<br/>
-<br/>
-*Falls also jemand den Radcomputer zufällig gefunden hat, bitte hier melden, RTC Köln*<br/>
+Jörg Moritz
 `
                     )
-                    .title('Hallo RTC ...')
+                    .title('Feedback wegen CTF')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 10, 29, 20, 30)
@@ -604,13 +602,7 @@ Wir sehen uns dann 2017.
 `
                     )
                     .build(),
-                new GuestbookEntryBuilder()
-                    .date(2016, 10, 29, 20, 30)
-                    .event(Event.CTF)
-                    .name('Marcus Wilden')
-                    .source(Source.Facebook)
-                    .title('Schöne Tour bei bestem Wetter')
-                    .build(),
+                new GuestbookEntryBuilder().date(2016, 10, 29, 20, 30).event(Event.CTF).name('Marcus Wilden').source(Source.Facebook).text('Schöne Tour bei bestem Wetter').build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 31, 1, 34)
                     .event(Event.RTF)
@@ -642,7 +634,6 @@ Klar ist das eine kleine Kritik, die eher einen Denkanstoss geben soll und wobei
 Ich wollte es trotzdem loswerden, da wir uns gestern schon auf der Strecke darüber unterhalten haben.
 `
                     )
-                    .title('Ihr wollt Kritik? Meine wäre diese ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 30)
@@ -658,7 +649,7 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
                     )
                     .title('Wo bleiben die Vegetarier?')
                     .build(),
-                new GuestbookEntryBuilder().date(2016, 5, 30).event(Event.RTF).name('Andreas Klemt').source(Source.Facebook).title('Sehr gut: Der Reiskuchen!').build(),
+                new GuestbookEntryBuilder().date(2016, 5, 30).event(Event.RTF).name('Andreas Klemt').source(Source.Facebook).text('Sehr gut: Der Reiskuchen!').build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 30, 14, 46)
                     .event(Event.RTF)
@@ -666,16 +657,15 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
                     .source(Source['E-Mail'])
                     .text(
                         `
-... ich bin die 158km-Runde gefahren!<br/>
+Hallo RTC,<br/>
 <br/>
-Sehr schöne, verkehrsarme Straßen (vor allem von Rosbach zur Vierbuchenmühle) - nettes Verpflegungsteam!<br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
 <br/>
-Schade, dass das vorhersagte Wetter eine niedrige Teilnehmerzahl beschert hat, sogar auf Internet ist kein Verlass!!<br/>
-<br/>
+ich bin die 158km Runde gefahren!  Sehr schöne, verkehrsarme Straßen (vor allem von Rosbach zur Vierbuchenmühle) nettes Verpflegungsteam!<br/>
+Schade, daß das vorhersagte Wetter eine niedrigeTeilnehmerzahl beschert hat, sogar auf Internet ist kein Verlaß!!<br/>
 LG Martin
 `
                     )
-                    .title('Hallo RTC ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 30, 13, 4)
@@ -685,22 +675,27 @@ LG Martin
                     .source(Source['E-Mail'])
                     .text(
                         `
-Ihr habt eine tolle Marathon Strecke mit schönen Varianten erarbeitet.<br/>
-An 2 bis 3 Stellen hätte ein zusätzliches Schild ganz gut getan,
-denn bei flotter Fahrt fehlte manchmal eine eindeutige Orientierung und Verfahrer und Umdreher kosten Zeit und Kraft (war wohl nicht der einzige).<br/>
+Hallo RTC,<br/>
 <br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
+<br/>
+Ihr habt eine tolle Marathon Strecke mit schönen Varianten erarbeitet.<br/>
+An 2 – 3 Stellen hätte ein zusätzliches Schild ganz gut getan,
+denn bei flotter Fahrt fehlte manchmal eine eindeutige Orientierung
+und Verfahrer und Umdreher kosten Zeit und Kraft (war wohl nicht der einzige).<br/>
 Die Wettervorhersage, die in Eurem Falle dann einmal nicht gestimmt hat (sonst hat sie uns dieses Jahr bei LBL und Röhn das vorausgesagte Mistwetter auch beschert)
 hat Euch leider die Teilnehmerzahlen verhagelt.<br/>
 Jedenfalls bin ich noch nie einen Marathon gefahren, bei dem ich die ersten Mit-Teilnehmer bei Km 180 getroffen habe.<br/>
 Insofern einen ganz neue Erfahrung.<br/>
-<br/>
 Nicht verzagen, ein Sportlerherz übersteht dies und nächstes Jahr wird die Wettervorhersage dann sicherlich auch stimmen, wie auch immer sie dann sein wird.<br/>
 <br/>
 Mit sportlichen Grüßen<br/>
-Martin Poettgen, Ruhrstadt Bochum
+<br/>
+Martin Poettgen,<br/>
+<br/>
+Ruhrstadt Bochum
 `
                     )
-                    .title('Der einsamste bisher erlebte Marathon ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 23, 0)
@@ -715,7 +710,6 @@ Beste Warm-Verpflegung seit langem.<br/>
 Ohne Nachschlag gingen Hermann und ich da nicht wieder auf die Strecke.
 `
                     )
-                    .title('Nachschlag!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 21, 21)
@@ -730,7 +724,6 @@ Bin den Marathon gefahren und es hat einfach Spaß gemacht.<br/>
 Danke an alle Helfer und das Orga Team!
 `
                     )
-                    .title('Es war alles top top!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 20, 50)
@@ -738,7 +731,7 @@ Danke an alle Helfer und das Orga Team!
                     .name('Alexandra Raj')
                     .organization('FB-Gruppe RTF und CTF - Radtourenfahrten des BDR (Bund Deutscher Radfahrer e.V.)')
                     .source(Source.Facebook)
-                    .title('Herrliche Strecke ')
+                    .text('Herrliche Strecke ')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 20, 33)
@@ -772,7 +765,6 @@ Ein großes Lob und DANKE an alle Helfer des RTC Köln für diesen tollen Tag.<b
 Bis nächstes Jahr!
 `
                     )
-                    .title('Bis nächstes Jahr!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 19, 46)
@@ -813,17 +805,15 @@ Chapeau!
                     .name('Stefan Schneider')
                     .organization('RV Morgenstern')
                     .source(Source.Facebook)
-                    .text(`... dass ich den Apps heute nicht getraut habe und bei euch war 😀`)
-                    .title('Wie gut,')
+                    .text(`Wie gut ,dass ich den Apps heute nicht getraut habe und bei euch war 😀`)
                     .build(),
-                new GuestbookEntryBuilder().date(2016, 5, 29).event(Event.RTF).name('Petra Ba').source(Source.Facebook).title('Ein super Tag, und super Wetter ...').build(),
+                new GuestbookEntryBuilder().date(2016, 5, 29).event(Event.RTF).name('Petra Ba').source(Source.Facebook).text('Ein super Tag, und super Wetter ...').build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 17, 38)
                     .event(Event.RTF)
                     .name('Bernd Doelp')
                     .source(Source.Facebook)
                     .text(`Das war eine schöne und anspruchsvolle Veranstaltung, vielen Dank.`)
-                    .title('... vielen Dank')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29)
@@ -838,7 +828,6 @@ Einfach nur Top und alle die nur nach dem Wetterbericht gehen sind selber schuld
 Super Wetter mit reichlich Sonne auf knapp 200km ...
 `
                     )
-                    .title('Einfach nur Top ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 16, 12)
@@ -849,10 +838,9 @@ Super Wetter mit reichlich Sonne auf knapp 200km ...
                         `
 War echt stark ...<br/>
 <br/>
-Die 200er war geil und: Nudeln mit Gulasch waren echt lecker ...
+Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
 `
                     )
-                    .title('Nudeln mit Gulasch 👍')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 16, 6)
@@ -869,7 +857,6 @@ Sitzen noch im Ziel und besaufen uns mit Alkoholfreiem Weizen ...<br/>
 ...super Wetter!
 `
                     )
-                    .title('Sitzen noch im Ziel !')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29)
@@ -884,7 +871,6 @@ Die Strecke war klar und deutlich ausgeschildert und die Verpflegung war reichli
 Top! 👍
 `
                     )
-                    .title('Top! , die 2.')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29)
@@ -901,7 +887,6 @@ Mich hat am meisten beeindruckt wie gut die Strecke ausgeschildert war!<br/>
 Top! 👍
 `
                     )
-                    .title('Top!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29)
@@ -931,7 +916,6 @@ Alles klasse, sogar das Wetter.<br/>
 Vielen Dank an den RTC.
 `
                     )
-                    .title('Alles klasse ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 14, 0)
@@ -939,7 +923,6 @@ Vielen Dank an den RTC.
                     .name('Patrock Cyclista')
                     .source(Source.Facebook)
                     .text(`Danke für heute. Super Orga, schöne Strecke, gerne wieder.`)
-                    .title('... gerne wieder')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2016, 5, 29, 13, 52)
@@ -971,7 +954,6 @@ Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung sta
 und dass auch vielleicht noch einige andere Vereine aus der Region die für Viele noch etwas unbekannte Veranstaltung in Angriff nehmen ...
 `
                     )
-                    .title('... es war eine sehr gelungene CTF')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 18, 18, 43)
@@ -983,15 +965,14 @@ und dass auch vielleicht noch einige andere Vereine aus der Region die für Viel
                         `
 Hallo RTC,<br/>
 <br/>
-wir wollten nur sagen, dass eure Orga perfekt war und wir vom RSC Nievenheim beim nächsten mal wieder dabei sind.<br/>
-Verpflegung war super.<br/>
-Und auch das man das Rad kurz abspülen konnte war toll.<br/>
+ich/wir wollte/n nur sagen, dass ...eure Orga perfekt war und wir vom RSC Nievenheim beim nächsten mal wieder dabei sind.<br/>
+Verpflegung war superund auch das man das Rad kurz abspülen konnte war toll.<br/>
 Danke für eine so schöne Tour.<br/>
-<br/>
+8-)<br/>
 Helmut vom RSC Nievenheim
 `
                     )
-                    .title('RSC Nievenheim ist wieder dabei ...')
+                    .title('Feedback wegen ...CTF 1. Wahnbach - Tour')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 18, 14, 23)
@@ -1027,7 +1008,6 @@ total nette Crew - super Strecke - hat viel Spaß gemacht!!<br/>
 gerne wieder!!
 `
                     )
-                    .title('total nette Crew')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 18, 10, 33)
@@ -1046,7 +1026,6 @@ Ps. Dank suuuuper Waschmöglichkeit vor Ort konnten wir uns zuhause gleich aufs 
 Ps.Ps. Schmalzbrotgrüsse
 `
                     )
-                    .title('... und immer ein nettes Gespräch')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 18, 8, 22)
@@ -1055,21 +1034,24 @@ Ps.Ps. Schmalzbrotgrüsse
                     .source(Source['E-Mail'])
                     .text(
                         `
+Hallo RTC,<br/>
+<br/>
 Eure 1. CTF war eine klasse Veranstaltung.<br/>
 Vielen Dank für die Mühe, die Ihr Euch damit gemacht habt.<br/>
 Die Streckenführung war sehr gut gewählt.<br/>
 Euro Verpflegung war -wie offenbar bei Euch üblich- sehr gut.<br/>
-An der entferntesten Kontrolle wären vielleicht ein paar Schmalzbrote ganz okay gewesen 😉<br/>
+An der entferntesten Kontrolle wären vielleicht ein paar Schmalzbrote ganz okay gewesen ;-)<br/>
 <br/>
 Ich fand Eure Ausschilderung sehr gut gemacht.<br/>
 In Kombination mit den aktualisierten Tracks konnte da eigentlich nichts mehr schief gehen.<br/>
 Obwohl das Zusammenspiel mit Fußgängern/Joggern mehr als in Ordnung war, könnte ich mir vorstellen, dass die eine oder andere Markierung verschwunden ist.<br/>
 <br/>
 Alles in allem eine tolle Veranstaltung.<br/>
-Bin nächstes Jahr wieder dabei.
+Bin nächstes Jahr wieder dabei.<br/>
+<br/>
+Guido Faßbender
 `
                     )
-                    .title('Eure 1. CTF war eine klasse Veranstaltung ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 21, 2)
@@ -1085,7 +1067,6 @@ Mir hat die Strecke sehr gut gefallen, Verpflegung super, Rad war zum Schluß au
 Ich würde mich auf ein nächstes Mal sehr freuen.
 `
                     )
-                    .title('... also rundum gelungen')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 20, 45)
@@ -1094,7 +1075,9 @@ Ich würde mich auf ein nächstes Mal sehr freuen.
                     .source(Source['E-Mail'])
                     .text(
                         `
-Vielen Dank für die Organisation der CTF.<br/>
+Hallo RTC,<br/>
+<br/>
+vielen Dank für die Organisation der CTF.<br/>
 Die Verpflegung an euren Kontrollstellen und die freundlichen Helfer überall waren top!<br/>
 Vor allem der warme Tee und die heiße Brühe waren heute klasse.<br/>
 Auch im Zielbereich hat es an nichts gefehlt.<br/>
@@ -1109,7 +1092,6 @@ Sportliche Grüße,<br/>
 Henning
 `
                     )
-                    .title('Macht weiter so!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 20, 1)
@@ -1123,7 +1105,6 @@ Auch wenn ich das Startfenster leicht gerissen habe und nur die kurze Tour nehme
 Superrunde und hoffentlich nächstes Jahr wieder ...
 `
                     )
-                    .title('... hoffentlich nächstes Jahr wieder')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 19, 38)
@@ -1143,7 +1124,6 @@ Die Möglichkeit das Rad direkt vor Ort zu reinigen fand ich auch klasse.<br/>
 Hier auch noch ein Bild von dem Ausblick auf der Strecke.
 `
                     )
-                    .title('Es sollte mehr CTF geben')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 19, 3)
@@ -1151,7 +1131,6 @@ Hier auch noch ein Bild von dem Ausblick auf der Strecke.
                     .name('Sabine Riehl')
                     .source(Source.Facebook)
                     .text(`Superschöne Strecke, tolle Verpflegung: hat total Spaß gemacht - vielen Dank für diese CTF und allen, die Sie möglich gemacht haben ...`)
-                    .title('Hat total Spaß gemacht')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 18, 57)
@@ -1166,7 +1145,6 @@ Gute Idee, hier mal eine CTF anzubieten.<br/>
 Danke RTC!
 `
                     )
-                    .title('Super Tour heute!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 17, 52)
@@ -1181,7 +1159,7 @@ vielen Dank für eure heutige Veranstaltung.<br/>
 Ihr habt eine wunderschöne Strecke und perfekte Kontrollstellen auf die Beine gestellt.<br/>
 Gerade in Zeiten schwindender Radveranstaltungen, geht Ihr den anderen Weg und organisiert eine Zweite.<br/>
 RESPEKT!!<br/>
-Ich hoffe, dass Ihr es auch nächstes Jahr schafft diese Event zu veranstalten.<br/>
+Ich hoffe, dass Ihr es auch nächstes Jahr schafft dieses Event zu veranstalten.<br/>
 Also bitte weiter so.<br/>
 <br/>
 Und nun den einzigen Kritikpunkt, an der Ausschilderung müsst Ihr echt noch arbeiten.<br/>
@@ -1192,7 +1170,7 @@ Mit sportlichem Gruß<br/>
 Bernd Doelp
 `
                     )
-                    .title('Respekt, aber ...')
+                    .title('Feedback vom CTF')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 16, 45)
@@ -1207,7 +1185,6 @@ Die Strecke war ausgesprochen schön und überall, wo nicht irgendwelche Deppen 
 Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
 `
                     )
-                    .title('Wiederholung ausdrücklich erwünscht ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 10, 17, 16, 7)
@@ -1218,14 +1195,14 @@ Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
                         `
 Hallo,<br/>
 <br/>
-die CTF heute hat mir sehr gut gefallen.<br/>
+der CTF heute hat mir sehr gut gefallen.<br/>
 Tolle Strecke, sehr gute Verpflegung, sehr nette Personen an den Verpflegungspunkten.<br/>
 <br/>
 Danke aus Hennef<br/>
 Stephan
 `
                     )
-                    .title('Tolle Strecke ...')
+                    .title('Wahnbachtal Tour')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 3, 20, 16)
@@ -1235,8 +1212,11 @@ Stephan
                     .source(Source['E-Mail'])
                     .text(
                         `
-Vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.<br/>
-Bin nächstes Jahr sicher wieder dabei. Nix ändern 😊 😊<br/>
+Hallo RTC,<br/>
+<br/>
+vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.<br/>
+Bin nächstes Jahr sicher wieder dabei.<br/>
+Nix ändern :-))<br/>
 <br/>
 Sportliche Grüße<br/>
 <br/>
@@ -1244,7 +1224,7 @@ Guido Faßbender<br/>
 Grenzfahrer e.V.
 `
                     )
-                    .title('... nix ändern')
+                    .title('Feedback wegen Marathon')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 3, 12, 36)
@@ -1253,19 +1233,14 @@ Grenzfahrer e.V.
                     .source(Source['E-Mail'])
                     .text(
                         `
-Guten Morgen,<br/>
-kann mich da meinen Vorrednern nur anschließen: eine sehr schöne RTF war das.<br/>
-Bin die 118er Runde gefahren, die es ja auch schon mit ihren 1600 Hm in sich hatte.<br/>
-Da taten die Beine doch schon ein bisschen weh.<br/>
-Die Landschaft um Eitorf und Much ist sehr schön.<br/>
-Alle Leute im K-Bereich waren sehr nett und zuvorkommend.<br/>
-<br/>
-An dieser Stelle nochmals besten Dank an Harald für mein gefundenes Handy,
-<br/>
-schöne Grüße aus Troisdorf, Frank 😊
+Reiskuchen,<br/>
+der Reiskuchen von Silvana war wieder mal der Knaller.<br/>
+Kann mir evtl einer das Rezept verraten????<br/>
+Für eure Mühe und Antwort danke ich im voraus<br/>
+mfg Frank
 `
                     )
-                    .title('... eine sehr schöne RTF')
+                    .title('Re: RTF')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 3, 9, 31)
@@ -1315,7 +1290,6 @@ Nächstes Mal sind wir wieder mehr und beim Marathon dabei ...<br/>
 Danke Euch für die tolle Organisation.
 `
                     )
-                    .title('... nur zu zweit am Start')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 1, 20, 33)
@@ -1340,18 +1314,27 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
                     .source(Source['E-Mail'])
                     .text(
                         `
-Die Strecke: 150 von 100 möglichen Punkten<br/>
-Höhenmeter: reichlich!<br/>
-Ausschilderung: 150 von 100 möglichen Punkten<br/>
-Verpflegung: 150 von 100 möglichen Punkten<br/>
+Hallo RTC,<br/>
+<br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
+<br/>
+SENSATIONELL!!!!!<br/>
+<br/>
+Die Strecke    150 von 100 möglichen  Punkte<br/>
+Höhenmeter   reichlich!<br/>
+<br/>
+Ausschilderung  150 von 100 möglichen  Punkte<br/>
+<br/>
+Verpflegung 150 von 100 möglichen  Punkte<br/>
 <br/>
 Was will der Radsportler mehr??<br/>
+<br/>
 Ketten-Checks, für den der es braucht!<br/>
 <br/>
 Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht wenige!)
 `
                     )
-                    .title('SENSATIONELL!!!!!')
+                    .title('Feedback wegen 43. Marathon am 31.05.2015')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 1, 14, 14)
@@ -1360,12 +1343,12 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
                     .source(Source.Facebook)
                     .text(
                         `
-Total schöne Tour. Top Verpflegung und Beschilderung.<br/>
+Total schöne Tour.<br/>
+Top Verpflegung und Beschilderung.<br/>
 Vielen Dank an das Orga Team!<br/>
 Wir sind nächstes Jahr wieder dabei.
 `
                     )
-                    .title('Total schöne Tour ...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 6, 1, 9, 5)
@@ -1380,7 +1363,7 @@ danke mal wieder für die tolle Tour!<br/>
 Man glaubt ja manchmal gar nicht, wie schön wir es im Bergischen haben.<br/>
 Ich komme gerne wieder!!<br/>
 Vielleicht gelingt es euch ja sogar den Termin von der BN-Eupen-BN Tour zu trennen, die will ich nämlich auch mal angehen.<br/>
-Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Anstiegen noch mal Hallo sagen wollte 😉.<br/>
+Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Anstiegen noch mal Hallo sagen wollte ;-)<br/>
 <br/>
 Was mich allerdings schon wundert ist eure Angabe der Hm für die Marathonstrecke:<br/>
 also mein Garmin hat knappe 2300 hm aufgezeichnet, mit topografischen Korrekturen könnte man vielleicht noch knappe 2400 hm rausschlagen.<br/>
@@ -1388,11 +1371,11 @@ Aber 2700 hm sind einfach nicht drin.<br/>
 Nicht, dass ich mehr bräuchte, aber es ist schon unterwegs irritierend, weil man zum Gulasch (55% der Strecke) gerade mal 1100 hm (40% von 2700 hm) hat
 und denkt, was denn da wohl noch alles von einem liegen soll?<br/>
 <br/>
-Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war 😉).<br/>
+Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war ;-)).<br/>
 Ob ihr das wohl bitte im kommenden Jahr deutlicher ausschildern könntet?<br/>
 <br/>
 Wie stellt ihr die Streckenlänge eigentlich so genau fest?<br/>
-Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt ...<br/>
+Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt…<br/>
 Aber gut, wir reden hier von einem Prozent Abweichung.<br/>
 Ich fand euer 200km-Schild jedenfalls sehr schön J (auch wenn mir da noch gute 2km auf dem Tacho fehlten)
 und auch euer "1km bis zum Ziel" Schild steht was früh auf der Strecke,
@@ -1403,14 +1386,13 @@ Nochmals danke und bis zum nächsten Mal!<br/>
 Marc
 `
                     )
-                    .title('... ich komme gerne wieder!!')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 5, 31, 20, 30)
                     .event(Event.RTF)
                     .name('Petra Ak')
                     .source(Source.Facebook)
-                    .title("Vielen Dank für's Organisieren, war super !")
+                    .text("Vielen Dank für's Organisieren, war super !")
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 5, 31, 20, 19)
@@ -1422,7 +1404,6 @@ Marc
 Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da können sich andere Veranstalter mal 'ne Scheibe von abschneiden.
 `
                     )
-                    .title('Top Veranstaltung')
                     .build(),
                 new GuestbookEntryBuilder().date(2015, 5, 31, 20, 11).event(Event.RTF).name('Michael Kalisch').source(Source.Facebook).title('top top top 😊').build(),
                 new GuestbookEntryBuilder()
@@ -1430,7 +1411,7 @@ Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da 
                     .event(Event.RTF)
                     .name('Horst Voll')
                     .source(Source.Facebook)
-                    .title('War geil und sehr anstrengend ! 👍')
+                    .text('War geil und sehr anstrengend ! 👍')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2015, 5, 31, 19, 29)
@@ -1446,7 +1427,6 @@ Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr n
 Da nimmt man beim Marathon noch zu 😊
 `
                     )
-                    .title('... da nimmt man beim Marathon noch zu')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 6, 19, 18, 43)
@@ -1456,15 +1436,14 @@ Da nimmt man beim Marathon noch zu 😊
                         `
 Hallo RTC,<br/>
 <br/>
-ich/wir wollten nur sagen, dass ...ich heute nach langer Zeit mal bei euch im Internet zu Gast war.<br/>
-Erinnerungen wurden wach.<br/>
-Ich wünsche euch weiterhin für die Zukunft viel Erfolg und bei allen Touren gutes Gelingen.<br/>
+ich/wir wollte/n nur sagen, dass ...ich heute nach langer Zeit mal bei euch im Internet zu Gast war.<br/>
+Erinnerungen wurden wach.<br/>Ich wünsche euch weiterhin für die Zukunft viel Erfolg und bei allen Touren gutes Gelingen.<br/>
 <br/>
 Viele liebe Grüße<br/>
+<br/>
 Helga
 `
                     )
-                    .title('... weiterhin viel Erfolg')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 28, 12, 36)
@@ -1475,22 +1454,31 @@ Helga
                         `
 Hallo RTC,<br/>
 <br/>
-was für ein Andrang schon um 6 Uhr?!<br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
+<br/>
+<br/>
+Was für ein Andrang schon um 6 Uhr?!<br/>
 Ich gehörte nicht zu den Marathonfahrern, wollte eine der kleineren Strecken abfahren und stand plötzlich schon in einer anderen Warteschlange.<br/>
 Es kamen immer mehr und mehr Radfahrer, die genau so wie ich bei dem schönen Wetter früh starten wollten.<br/>
 Alle Kassenbetreuer gaben ihr Bestes, um die Anmeldungen so schnell wie möglich aufzunehmen.<br/>
 Bei so einem Ansturm musste schon in den frühen Morgenstunden improvisiert werden.<br/>
+<br/>
 So ein großes Kuchenbuffet mit hausgemachten Kuchen kannte ich bis dahin noch nicht.<br/>
 Die Kontrollen waren mit einer anderen sehr auffallenden Auswahl versehen: Brot, Marmelade, Weckchen, Hörnchen und Kekse.<br/>
 Endlich mal nicht die üblichen Waffeln, Bananen, oder sogar nur Waffeln, oder nur Bananen.<br/>
 <br/>
+<br/>
+<br/>
 Bei der Streckenführung haben sich die Verantwortlichen sehr viel Mühe gegeben.<br/>
 Die zweitlängste Strecke war für mich mit 1653 hm ziemlich anstrengend,
 aber der tolle Ausblick, die gut positionierten Kontrollstellen, das schöne Wetter und die abgelegenen Wege waren das Ganze mehr als Wert.<br/>
+<br/>
 Der Ansturm an Teilnehmern riss auch am späten Nachmittag nicht ab.<br/>
 Der Grill war durch seine große Auswahl an selbstgemachten Salaten und Grillwürstchen ununterbrochen stark besucht.<br/>
+<br/>
 Nach Sonntag kann ich nun selbst mitreden und für mich war es ein tolles Erlebnis, endlich diese bekannte RTF kennengelernt zu haben.<br/>
 Das frühe Aufstehen an einem Sonntag hatte sich definitiv gelohnt.<br/>
+<br/>
 Insgesamt hieß es für den Veranstalter bei so vielen Besuchern den Überblick zu bewahren, was ihm und den fleißigen Helfern auch gut gelungen war.<br/>
 Ein großes Kompliment an das Team, das trotz des großen Ansturms, sehr gut in dieser Situation reagiert hat.<br/>
 <br/>
@@ -1498,7 +1486,6 @@ Bis zum nächsten Jahr<br/>
 Jessica
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... ein tolles Erlebnis und ein großes Kompliment')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 27, 13, 10)
@@ -1513,23 +1500,24 @@ das war ein sehr schöner Radmarathon am Sonntag.<br/>
 <br/>
 Eine tolle Strecke, weitgehend verkehrsarm und überwiegend recht gute Oberflächen (in der gewählten Richtung keine Selbstverständlichkeit),
 nettes Personal, sehr gute Ausschilderung und eine prima Verpflegung.<br/>
-Allein der Nudeltopf in Bebbingen war sensationell gut, auch wenn ich eigentlich kein Fan der warmen Verpflegung unterwegs bin,
-die liegt so schwer im Magen an den Folgenhügeln...<br/>
+Allein der Nudeltopf in Bebbingen war sensationell gut,
+auch wenn ich eigentlich kein Fan der warmen Verpflegung unterwegs bin, die liegt so schwer im Magen an den Folgenhügeln...<br/>
 (daher lieber nicht sooo lecker kochen oder - noch besser - im Ziel servieren)<br/>
 <br/>
 Auch davor und danach waren die Tische (bei uns) reich gedeckt.<br/>
 Vielleicht sollte mancher "Schlemmermeier" einfach etwas früher losfahren, dann gibt's auch noch mehr.<br/>
-Da sind wir auch schon bei meinem einzigen Kritikpunkt: Wenn eine Startzeit angegeben wird, würde ich es gut finden,
+Da sind wir auch schon bei meinem einzigen Kritikpunkt:<br/>
+Wenn eine Startzeit angegeben wird, würde ich es gut finden,
 wenn diese auch konsequent eingehalten würde und nicht bereits eine Viertelstunde (oder mehr) eher losgefahren wird.<br/>
 Sollte doch kein Problem sein.<br/>
 <br/>
-Ansonsten: Weiter so! 😊<br/>
+Ansonsten: Weiter so! :-)<br/>
 <br/>
 Beste Grüße<br/>
 velotoerist
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... sehr schöner Radmarathon')
+                    .title('RM')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 27, 12, 59)
@@ -1545,7 +1533,7 @@ Bericht über meine Fahrt auf der 150er Strecke jetzt auf meiner Website www.spo
 Helmut Hane
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... Prima RTF')
+                    .title('Prima RTF')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 27, 9, 28)
@@ -1567,7 +1555,6 @@ Gruß<br/>
 Marco Gerlach
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... Tiptop')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 27, 9, 26)
@@ -1603,7 +1590,7 @@ Jörg Homann<br/>
 http://scan.bike
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... erfolgreicher Einsatz von scan&bike')
+                    .title('erfolgreicher Einsatz von scan&bike')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 27, 6, 49)
@@ -1636,7 +1623,7 @@ mit sportlich fairen Grüßen<br/>
 Norbert
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: Feedback auf die Generalkritk ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder')
+                    .title('Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder .')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 20, 16)
@@ -1649,14 +1636,13 @@ Norbert
 Hallo lieber RTC,<br/>
 <br/>
 ich möchte mich bedanken für eine so tolle Tour.<br/>
-Es war eine sehr sehenswerte Strecke, ausreichend Verpflegung und sehr nette Stationshelfer.<br/>
-Mir hat es sehr gut gefallen und ich werde auf jeden Fall wiederkommen.<br/>
-<br/>
+Es war eine sehr sehenswerte Strecke, ausrechend Verpflegung und sehr nette Stationshelfer.<br/>
+Mir hat sehr gut gefallen und ich werde auf jeden Fall wiederkommen.<br/>
 Gruß aus Recklinghausen<br/>
 Jörg
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: Marathon... mir hat es sehr gut gefallen')
+                    .title('Marathon')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 16, 57)
@@ -1667,21 +1653,17 @@ Jörg
                     .text(
                         `
 Sehr geehrtes Team,<br/>
-<br/>
 die Streckenwahl des Marathon war sehr schön, über verkehrsarme Straßen und durch landschaftliche Highlights perfekt gewählt.<br/>
 Auch das Profil war sportlich anspruchsvoll und ließ keine Wünsche offen.<br/>
-<br/>
 Leider war bei den letzten 2 Kontrollstellen keine Verpflegung mehr vorhanden.<br/>
 Bis zur Warmverpflegung war diese sehr gut, danach wahrscheinlich durch die Fahrer auf den kürzeren schon verbraucht.<br/>
+Vielleicht sollte, wie bei den Radmarathon Deutschland Veranstaltungen, die Verpflegung für die Marathonfahrer seperat sein.<br/>
 <br/>
-Vielleicht sollte, wie bei den Radmarathon Deutschland Veranstaltungen, die Verpflegung für die Marathonfahrer separat sein.<br/>
-<br/>
-Liebe Grüße aus Koblenz<br/>
-M. Reckter<br/>
+liebe Grüße aus Koblenz<br/>
+M.Reckter<br/>
 RTF Koblenz
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... Streckenwahl sehr schön, die Verpflegung für die Marathonfahrer sollte separat sein')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 13, 8)
@@ -1691,42 +1673,40 @@ RTF Koblenz
                     .source(Source['E-Mail'])
                     .text(
                         `
-Das war eine RTF wie aus dem Bilderbuch.<br/>
-Strecke (150), Verpflegung, Helfer, Wetter, alles passte.<br/>
+Hallo RTC,<br/>
 <br/>
+das war eine RTF wie aus dem Bilderbuch.<br/>
+Strecke (150), Verpflegung, Helfer, Wetter, alles passte.<br/>
 Vielen lieben Dank für die hervorragende Organisation.<br/>
 Im nächsten Jahr gerne wieder!<br/>
-Dank an die Jungs vom RC Schmitter für's Ziehen 😊<br/>
+Dank an die Jungs vom RC Schmitter fürs Ziehen :-)<br/>
 <br/>
-Sportliche Grüße<br/>
+Sportliche Grüsse<br/>
 Claudia Braun<br/>
 Union Biesfeld Triathlon
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... eine RTF wie aus dem Bilderbuch')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 12, 50)
                     .event(Event.RTF)
                     .name('Angela Schmilewski')
-                    .organization('VfB Polch Abtl. Radsport')
+                    .organization('Fachwart RTC Mehlem')
                     .source(Source['E-Mail'])
                     .text(
                         `
 Liebe Orga des RTC Köln,<br/>
 <br/>
 ich startete recht früh, da ich mich für die 156 km entschieden hatte.<br/>
-Landschaftlich einfach nur herrlich und sehr verkehrsberuhigte Strecken bei wunderbarem Wetter - besser ging es nicht!<br/>
 <br/>
-Ich fand reichhaltige Verpflegungsstellen vor - von der 1. bis zur 4. - sowie freundliche Orga und Helfer - sowohl auf der Strecke als auch im Start- und Zielbereich.<br/>
+Landschaftlich einfach nur herrlich und sehr verkehrsberuhigte Strecken bei wunderbarem Wetter – besser ging es nicht !<br/>
 <br/>
-Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regeneration - die habt Ihr Euch jetzt verdient ...<br/>
+Ich fand reichhaltige Verpflegungsstellen vor – von der 1. bis zur 4. - sowie freundliche Orga und Helfer – sowohl auf der Strecke als auch im Start- und Zielbereich.<br/>
 <br/>
-Viele Grüße von Angela<br/>
-Fachwart RTC Mehlem
+Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regeneration – die habt Ihr Euch jetzt verdient….
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... ein herzliches Dankeschön an Orga und Helfer')
+                    .title('Wunderbare Veranstaltung')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 12, 43)
@@ -1770,23 +1750,27 @@ Eure letzte Kontrolle war ein Totalausfall, da gab es gar nur Wurstscheiben, die
 Dabei braucht man nach 170km schon nochmal einen "Energieschub" durch Bananen, Müsli-Riegel, Waffeln oder ähnlichem.<br/>
 Von Ernährung für Radsportler habt ihr wirklich keine Ahnung.<br/>
 <br/>
+<br/>
 Getränke und Nahrung war das, was ihr insgesamt angeboten habt, eine Frechheit, da solltet ihr euch ein Beispiel an anderen Anbietern nehmen.<br/>
 Da tröstet auch das mittelmäßige Gulasch-Nudel-Angebot an einer Kontrolle nicht darüber hinweg, wobei Gulasch eh schwer im Magen liegt und ungeeignet ist.<br/>
 Euer gesamtes Verpflegungs-Angebot an den Kontrollen war nach dem Strickmuster "schön billig" zusammen gestellt und dafür 12 Euro zu verlangen, war eine Frechheit.<br/>
+<br/>
 <br/>
 Euer Ambiente am Start-/Zielplatz solltet ihr auch mal überdenken, bei jeder anderen RTF sind auch Anbieter für "Rad-Klamotten".<br/>
 <br/>
 Es war schlichtweg keine Atmosphäre, nur "Baller-Baller-Musik".<br/>
 <br/>
-Eure Mitarbieter bei der An-/Abmeldung schienen mit allem etwas überfordert.<br/>
+<br/>
+Eure Mitarbeiter bei der An-/Abmeldung schienen mit allem etwas überfordert.<br/>
 Es dauerte eine Ewigkeit, um nach der Tour unsere Serien-Karten zurück zubekommen, dabei saßen sie doch alle nur dumm rum und hatten nichts zu tun.<br/>
 Nachdem wir alle von eurem Team angesprochen hatten und alle Mitarbeiter suchten, wurden die Karten dann gefunden.<br/>
 <br/>
-Fazit:<br/>
-Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder
+<br/>
+<u>**Fazit:**</u><br/>
+
+Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 10, 49)
@@ -1796,14 +1780,15 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder
                     .source(Source['E-Mail'])
                     .text(
                         `
-Vielen Dank für die tolle Organisation und Verpflegung auf dem Marathon (besonders erwähnenswert fand ich den klasse Reiskuchen von Silvana).<br/>
+Hallo RTC,<br/>
 <br/>
-Nochmals vielen Dank an den Fahrer des Besenwagens, in dem ich leider sitzen musste, als mein Material defekt war.<br/>
-<br/>
-LG Michaela
+ich/wir wollte/n nur sagen, dass ... vielen Dank für die tolle Organisation und Verpflegung auf dem Marathon
+(besonders erwähnenswert fand ich den klasse Reiskuchen von Silvana J.<br/>
+Nochmals vielen Dank an den Fahrer des Besenwagens, in dem ich leider sitzen musste als mein Material defekt war.<br/>
+LG Michaela<br/>
+vom VfB Polch Abtl. Radsport.
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... tolle Organisation und Verpflegung auf dem Marathon')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 10, 33)
@@ -1814,18 +1799,17 @@ LG Michaela
                         `
 Hallo RTC,<br/>
 <br/>
-eigentlich eine schöne Tour gestern, gut ausgesucht und bestens ausgeschildert.<br/>
-ABER:<br/>
-keine Parkpätze mehr in der Nähe, keine Startnummern mehr ( 9.45 Uhr ! ) und bei der ersten Kontrolle kaum noch was zu essen.<br/>
+eigentlich eine schöne Tour gesten , gut ausgesucht und bestens ausgeschildert .<br/>
+<br/>
+ABER: keine Parkpätze mehr in der Nähe , keine Startnummern mehr ( 9.45 Uhr ! )  und bei der ersten Kontolle kaum noch was zu essen .<br/>
 Nur noch Brotscheiben und trockene Keksreste.<br/>
-Kein Obst, Riegel ...<br/>
-NICHTS MEHR.<br/>
+Kein Obst, Riegel  NICHTS MEHR.<br/>
 <br/>
-Auch die Kollegen an der ersten Kontrolle waren genervt und nicht mit der besten Laune da .......<br/>
+Auch die Kollegen an der ersten Kontrolle waren genervt und nicht mit der besten Laune da.......<br/>
 <br/>
-Zitat aus Euerm Flyer "Sehr gute Verpflegung an allen Kontrollstellen und am Ziel"<br/>
+Zitat aus Euerm Flyer " Sehr gute Verpflegung an allen Kontollstellen und am Ziel"<br/>
 <br/>
-Bei der 2. Kontrolle wieder kein Obst oder Riegel - die Kekse waren besser und ein bisschen Gebäck mit Sirup.<br/>
+Bei der 2. Kontrolle wieder kein Obst oder Riegel - die Kekse waren besser und ein bischen Gebäck mit Sirup .<br/>
 Getränke nur Tee.<br/>
 <br/>
 Im Ziel - Ihr könnt es Euch denken auch ziemlich tote Hose.<br/>
@@ -1835,15 +1819,23 @@ Das ist für 12,- Euro für 2 Personen ein bisschen dürftig und hätte zumindes
 Frank
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... eigentlich eine schöne Tour gestern, ABER')
+                    .title('Feedback wegen Forsbach Tour 24.05.14')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 8, 54)
                     .event(Event.RTF)
                     .name('Reiche')
                     .source(Source['E-Mail'])
-                    .text(`Vielen Dank für die Orga und die Auswahl der schönen Strecke.`)
-                    .title('42. Forsbach-Tour, 25.05.2014: ... vielen Dank')
+                    .text(
+                        `
+Hallo RTC,<br/>
+<br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
+<br/>
+<br/>
+vielen Dank für die Orga und die Auswahl der schönen Strecke.
+`
+                    )
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 8, 15)
@@ -1852,31 +1844,28 @@ Frank
                     .source(Source['E-Mail'])
                     .text(
                         `
+Hallo RTC,<br/>
 Die RTF gestern war mal wieder klasse was die Strecke und das Wetter anging.<br/>
 Für den schlechten Straßenbelag teilweise könnt ihr ja nix.<br/>
-<br/>
-Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaaaar nicht 😉<br/>
-<br/>
-Nächstes Jahr will ich wieder meine Banane bekommen ... 😏
+Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaaaar nicht :D:D<br/>
+nächstes Jahr will ich wieder meine Banane bekommen ;)
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... klasse Strecke, aber keine Bananen 😔')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 7, 24)
                     .event(Event.RTF)
                     .location('Berrenrath')
                     .name('Stefan Schneider')
-                    .organization('www.rv-morgenstern.de')
+                    .organization('RV Morgenstern')
                     .source(Source['E-Mail'])
                     .text(
                         `
 Hallo Sportskollegen vom RTC Köln.<br/>
-<br/>
 Ich möchte euch ein großes Lob zu eurer gestrigen Veranstaltung aussprechen.<br/>
-<br/>
 Es passte einfach alles, Wetter, Verpflegung, Strecke.<br/>
 So macht es Spaß Marathon zu fahren.<br/>
+<br/>
 <br/>
 Mit Sportlichem Gruß,<br/>
 <br/>
@@ -1884,7 +1873,6 @@ Stefan Schneider<br/>
 1.Vorsitzender RV Morgenstern Berrenrath
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... ein großes Lob')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 26, 7, 6)
@@ -1894,28 +1882,24 @@ Stefan Schneider<br/>
                     .source(Source['E-Mail'])
                     .text(
                         `
-Hallo RTC Köln'ner,<br/>
+Hallo RTC Köln´ner,<br/>
 <br/>
 das war wirklich super Klasse!!<br/>
 Tolle Organisation, freundliches und hilfsbereites Team, eine sehr schöne und interessante Streckenführung und -Gott sei Dank- das Wetter phantastisch.<br/>
-Über 1200 Teilnehmer haben's euch gedankt.<br/>
+Über 1200 Teilnehmer haben\`s euch gedankt.<br/>
 Klasse!<br/>
 Nach der Wasserschlacht von vergangenem Jahr habt ihr euch das auch wirklich verdient!<br/>
-<br/>
-Eigentlich kann man das gar nicht toppen ... Eigentlich ...<br/>
-<br/>
+Eigentlich kann man das gar nicht toppen…eigentlich..<br/>
 Die Messlatte habt ihr wirklich hoch aufgehängt, aber, wir vom RTC-Rodenkirchen nehmen dies als Herausforderung an.<br/>
 Wir werden unser Bestes geben um zumindest annähernd euer Niveau zu erreichen.<br/>
 Versprochen!<br/>
-<br/>
 Also dann, bis Samstag, 14.06.2014 am Bildungswerk in Köln-Sürth, mit ebenfalls tollen Strecken, motiviertem Team und hoffentlich grandiosem Wetter.<br/>
 <br/>
 Bis denne,<br/>
-<br/>
 Norbert
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... eigentlich kann man das gar nicht toppen')
+                    .title('Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen...')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 5, 25, 19, 44)
@@ -1926,14 +1910,17 @@ Norbert
                         `
 Hallo RTC,<br/>
 <br/>
-die Forsbachtour am 25.05.2014, bei bestem Wetter, war ein voller Erfolg und die Strecke (115 km) hervorragend ausgesucht.<br/>
+ich/wir wollte/n nur sagen, dass ...<br/>
 <br/>
-Viele Grüße und den besten Dank an alle, die zum Gelingen beigetragen haben.<br/>
+die Forsbachtour am 25.05.2014, bei bestem Wetter, ein voller Erfolg war und die Strecke (115 km) hervorragend ausgesucht ist.<br/>
+<br/>
+<br/>
+<br/>
+Viele Grüße und den besten Dank an alle die zum Gelingen beigetragen haben<br/>
 <br/>
 Jürgen Ruttkowski
 `
                     )
-                    .title('42. Forsbach-Tour, 25.05.2014: ... ein voller Erfolg')
                     .build(),
                 new GuestbookEntryBuilder()
                     .date(2014, 1, 17, 11, 9)
