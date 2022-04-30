@@ -9,13 +9,13 @@
         <v-card-title v-if="item.title" class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
-            <div v-if="getText(item)" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item)" />
+            <div v-if="item.text" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="item.answer">
                 <v-divider></v-divider>
-                <v-card-text class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getAnswer(item)" />
+                <v-card-text class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getAnswer(item.answer)" />
             </div>
         </v-expand-transition>
     </v-card>
@@ -52,9 +52,9 @@ export default defineComponent({
         }
     },
     computed: {
-        getAnswer: () => (item: GuestbookEntry) => marked.parse(`**RTC Köln:** *${item.answer}*`),
+        getAnswer: () => (answer: string) => marked.parse(`**RTC Köln:** *${answer}*`),
         getDate: () => (date: Date) => dateFormatter.format(date),
-        getText: () => (item: GuestbookEntry) => marked.parse(item.text),
+        getText: () => (text: string) => marked.parse(text),
     },
 })
 </script>
