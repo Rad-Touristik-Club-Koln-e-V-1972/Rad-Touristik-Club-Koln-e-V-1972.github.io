@@ -15,7 +15,7 @@
             </v-btn>
         </v-card-actions>
         <v-card-text>
-            <v-row dense>
+            <v-row class="d-flex justify-center" dense>
                 <v-col v-for="(item, index) in items" :key="index" cols="auto">
                     <c-guestbook :item="item" />
                 </v-col>

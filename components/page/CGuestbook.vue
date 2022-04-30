@@ -1,9 +1,9 @@
 <template>
     <v-card id="CGuestbook" max-width="40em">
         <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
-            <span v-if="getDate(item)" class="text-no-wrap" v-text="`${getDate(item)}, `"></span>
-            <span class="text-no-wrap" v-text="`${[item.name, item.organization, item.location].filter((it) => it).join(', ')} `"></span>
-            <span class="text-no-wrap" v-text="`via ${Source[item.source]}`"></span>
+            <div v-if="getDate(item)" v-text="`${getDate(item)}`" />
+            <div v-text="`${item.name} via ${Source[item.source]}`" />
+            <div v-text="`${[item.organization, item.location].filter((it) => it).join(', ')} `" />
         </v-card-subtitle>
         <v-card-title v-if="item.title" class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
