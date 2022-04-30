@@ -1,7 +1,7 @@
 <template>
     <v-card id="CGuestbook" max-width="40em">
         <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
-            <div v-if="getDate(item)" v-text="`${getDate(item)}`" />
+            <div v-if="item.date" v-text="getDate(item.date)" />
             <div v-text="`${item.name} via ${Source[item.source]}`" />
             <div v-text="`${[item.organization, item.location].filter((it) => it).join(', ')} `" />
             <div v-if="item.event !== Event.Standard" v-text="`Event: ${Event[item.event]}`" />
@@ -30,6 +30,9 @@ import Event from '@/models/enums/guestbook/Event'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
 import Source from '@/models/enums/guestbook/Source'
 
+// For a better performance and to remove the seconds.
+const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+
 export default defineComponent({
     components: { CSlideshow },
     props: {
@@ -50,7 +53,7 @@ export default defineComponent({
     },
     computed: {
         getAnswer: () => (item: GuestbookEntry) => marked.parse(`**RTC Köln:** *${item.answer}*`),
-        getDate: () => (item: GuestbookEntry) => item.date ? item.date.toLocaleString('De-de') : '',
+        getDate: () => (date: Date) => dateFormatter.format(date),
         getText: () => (item: GuestbookEntry) => marked.parse(item.text),
     },
 })
