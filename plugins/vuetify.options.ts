@@ -10,9 +10,9 @@ export default {
         options: { customProperties: true },
         themes: {
             light: {
-                accent: colors.shades.black,
+                accent: colors.shades.white,
                 primary: '#ed5700',
-                secondary: colors.shades.white,
+                secondary: colors.shades.black,
             },
         },
     },

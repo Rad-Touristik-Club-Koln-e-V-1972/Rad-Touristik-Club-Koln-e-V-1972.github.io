@@ -1,12 +1,12 @@
 <template>
     <v-card id="CGuestbook" max-width="40em">
-        <v-card-subtitle class="accent secondary--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
+        <v-card-subtitle class="secondary accent--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
             <div v-if="item.date" v-text="getDate(item.date)" />
             <div v-text="`${item.name} via ${Source[item.source]}`" />
             <div v-text="`${[item.organization, item.location].filter((it) => it).join(', ')} `" />
             <div v-if="item.event !== Event.Standard" v-text="`Event: ${Event[item.event]}`" />
         </v-card-subtitle>
-        <v-card-title v-if="item.title" class="primary secondary--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
+        <v-card-title v-if="item.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
             <div v-if="item.text" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />

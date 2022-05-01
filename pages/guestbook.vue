@@ -8,7 +8,7 @@
                 &body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0APlatzhalter%20f%C3%BCr%20den%20G%C3%A4stebucheintrag%0D%0A%0D%0A
                 --%0D%0AViele%20Gr%C3%BC%C3%9Fe%0D%0AMax%20Mustermann%0D%0AAus%20K%C3%B6ln"
                 class="text-caption text-sm-body-2 text-lg-body-1"
-                style="background-color: var(--v-primary-base); color: var(--v-secondary-base)"
+                style="background-color: var(--v-primary-base); color: var(--v-accent-base)"
             >
                 Gästebucheintrag hinzufügen
                 <v-icon right v-text="icons.mdiEmailSend" />

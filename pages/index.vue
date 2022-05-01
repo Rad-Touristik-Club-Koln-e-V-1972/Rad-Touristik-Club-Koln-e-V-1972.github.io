@@ -28,7 +28,7 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer />
-                    <v-btn color="secondary" nuxt to="/inspire" v-text="'Continue'" />
+                    <v-btn nuxt to="/inspire" v-text="'Continue'" />
                 </v-card-actions>
             </v-card>
         </v-col>
