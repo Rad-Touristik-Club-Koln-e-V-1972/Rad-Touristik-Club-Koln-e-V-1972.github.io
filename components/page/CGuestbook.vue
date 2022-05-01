@@ -9,7 +9,7 @@
         <v-card-title v-if="item.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
-            <div v-if="item.text" class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />
+            <div v-if="item.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
         </v-card-text>
         <v-expand-transition>
