@@ -1,4 +1,4 @@
-import EEvent from '@/models/enums/guestbook/EEvent'
+import EEvent from '@/models/enums/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 
 export default class Entry {

@@ -74,7 +74,7 @@ export default defineComponent({
                 {
                     icon: mdiCalendarClockOutline,
                     title: 'Veranstaltungen & Termine',
-                    to: { name: 'index' },
+                    to: { name: 'calendar' },
                 },
                 {
                     icon: mdiBike,

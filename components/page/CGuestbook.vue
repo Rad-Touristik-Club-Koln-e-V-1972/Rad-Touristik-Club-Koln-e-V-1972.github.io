@@ -30,7 +30,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 import { marked } from 'marked'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
 import DateTime from '@/utils/DateTime'
-import EEvent from '@/models/enums/guestbook/EEvent'
+import EEvent from '@/models/enums/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
 
