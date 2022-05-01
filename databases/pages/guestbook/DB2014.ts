@@ -1,12 +1,12 @@
-import Event from '@/models/enums/guestbook/Event'
+import EventType from '@/models/enums/guestbook/EventType'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-import Source from '@/models/enums/guestbook/Source'
+import SourceType from '@/models/enums/guestbook/SourceType'
 
 export default [
     new GuestbookEntryBuilder()
         .date(2014, 6, 19, 18, 43)
         .name('Helga Hasberg')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -22,9 +22,9 @@ Helga
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 28, 12, 36)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Jessica Bosen')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -64,9 +64,9 @@ Jessica
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 27, 13, 10)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('velotoerist')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -96,10 +96,10 @@ velotoerist
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 27, 12, 59)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Helmut Hane')
         .organization('www.sportlich-radeln.de')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Prima RTF am vergangenen Sonntag.<br/>
@@ -112,9 +112,9 @@ Helmut Hane
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 27, 9, 28)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Marco Gerlach')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -133,10 +133,10 @@ Marco Gerlach
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 27, 9, 26)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Jörg Homann')
         .organization('www.scan.bike`')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
@@ -169,9 +169,9 @@ http://scan.bike
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 27, 6, 49)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Norbert Priefert')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Jetzt muss man hier aber mal einen Punkt machen und in die Bresche springen.<br/>
@@ -202,10 +202,10 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 20, 16)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .location('Recklinghausen')
         .name('Jörg Freitag')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo lieber RTC,<br/>
@@ -221,10 +221,10 @@ Jörg
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 16, 57)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Markus Reckter')
         .organization('www.rtf-koblenz.de')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Sehr geehrtes Team,<br/>
@@ -242,10 +242,10 @@ RTF Koblenz
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 13, 8)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Claudia Braun')
         .organization('Union Biesfeld Triathlon')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -264,10 +264,10 @@ Union Biesfeld Triathlon
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 12, 50)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Angela Schmilewski')
         .organization('Fachwart RTC Mehlem')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Liebe Orga des RTC Köln,<br/>
@@ -285,9 +285,9 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 12, 43)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Dirk Brieden')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -308,9 +308,9 @@ PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Me
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 10, 55)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Dirk Brieden')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Wir sind gestern euren Marathon gefahren.<br/>
@@ -349,10 +349,10 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 10, 49)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Michaela Packebusch')
         .organization('VfB Polch Abtl. Radsport')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -367,9 +367,9 @@ vom VfB Polch Abtl. Radsport.
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 10, 33)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Frank Stöcker')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -398,9 +398,9 @@ Frank
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 8, 54)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Reiche')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -414,9 +414,9 @@ vielen Dank für die Orga und die Auswahl der schönen Strecke.
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 8, 15)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Max Christian Obst')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -429,11 +429,11 @@ nächstes Jahr will ich wieder meine Banane bekommen ;)
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 7, 24)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .location('Berrenrath')
         .name('Stefan Schneider')
         .organization('RV Morgenstern')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo Sportskollegen vom RTC Köln.<br/>
@@ -451,10 +451,10 @@ Stefan Schneider<br/>
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 26, 7, 6)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Norbert Priefert')
         .organization('www.rtc-rodenkirchen.de')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC Köln´ner,<br/>
@@ -478,9 +478,9 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .date(2014, 5, 25, 19, 44)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Jürgen Ruttkowski')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -500,7 +500,7 @@ Jürgen Ruttkowski
     new GuestbookEntryBuilder()
         .date(2014, 1, 17, 11, 9)
         .name('Roland Schultz')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>

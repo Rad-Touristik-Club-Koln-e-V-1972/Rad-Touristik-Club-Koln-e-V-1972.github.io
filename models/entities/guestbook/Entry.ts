@@ -1,15 +1,15 @@
-import Event from '@/models/enums/guestbook/Event'
-import Source from '@/models/enums/guestbook/Source'
+import EventType from '@/models/enums/guestbook/EventType'
+import SourceType from '@/models/enums/guestbook/SourceType'
 
 export default class Entry {
     answer = ``
     date?: Date
-    event = Event.Standard
+    event = EventType.Standard
     location = ''
     name = ''
     organization = ''
     pictures: string[] = []
-    source = Source['E-Mail']
+    source = SourceType['E-Mail']
     text = ``
     title = ''
 }

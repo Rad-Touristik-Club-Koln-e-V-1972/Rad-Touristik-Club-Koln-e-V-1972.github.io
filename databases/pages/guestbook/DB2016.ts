@@ -1,14 +1,14 @@
-import Event from '@/models/enums/guestbook/Event'
+import EventType from '@/models/enums/guestbook/EventType'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-import Source from '@/models/enums/guestbook/Source'
+import SourceType from '@/models/enums/guestbook/SourceType'
 
 export default [
     new GuestbookEntryBuilder()
         .date(2016, 10, 31)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .name('Rolf Müller')
         .organization('Cito Hennef-Geistingen')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -27,11 +27,11 @@ Rolf Müller, Cito Hennef-Geistingen
     new GuestbookEntryBuilder()
         .answer(`310 Teilnehmer waren's`)
         .date(2016, 10, 30, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .location('Hürth Berrenrath')
         .name('Stefan Schneider')
         .organization('RV Morgenstern')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Die CTF war gestern erste Sahne, nur bei den Flatterbändern hättet ihr das eine oder andere mehr aufhängen können.<br/>
@@ -43,9 +43,9 @@ Wie viele Teilnehmer hattet ihr eigentlich?
     new GuestbookEntryBuilder()
         .answer(`Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.) auch schon zurück bekommen ...`)
         .date(2016, 10, 29, 19, 21)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .name('Jörg Moritz')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -65,9 +65,9 @@ Jörg Moritz
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 10, 29, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .name('Jürgen Rohr')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Schöne Runde bei gutem Wetter und sehr guter Verpflegung.<br/>
@@ -78,10 +78,10 @@ Vielen Dank an das Orga-Team!!!
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 10, 29, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .location('RSC Erftstadt')
         .name('Horst Paesch')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Wenn ich mal was konstruktives sagen darf, es war eine super spannende CTF, sehr abwechslungsreich,
@@ -93,10 +93,10 @@ Also, wie gewohnt vom RTC, eine tolle Veranstaltung.
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 10, 29, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .location('RTV Lohmar')
         .name('Se Sandra')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Ich fands geil!<br/>
@@ -106,16 +106,16 @@ Sollte mehr davon bei uns hier geben 😊
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 10, 29, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .name('Bernd Doelp')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(`Vielen Dank für die schöne Tour und bis nächstes Jahr`)
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 10, 29, 20, 30)
-        .event(Event.CTF)
+        .event(EventType.CTF)
         .name('Jörg Marso')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Es hat super viel Spaß gemacht und die Verpflegung war Spitze.<br/>
@@ -124,12 +124,12 @@ Wir sehen uns dann 2017.
 `
         )
         .build(),
-    new GuestbookEntryBuilder().date(2016, 10, 29, 20, 30).event(Event.CTF).name('Marcus Wilden').source(Source.Facebook).text('Schöne Tour bei bestem Wetter').build(),
+    new GuestbookEntryBuilder().date(2016, 10, 29, 20, 30).event(EventType.CTF).name('Marcus Wilden').source(SourceType.Facebook).text('Schöne Tour bei bestem Wetter').build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 31, 1, 34)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Gunter Maier')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Mir kommt es auch so vor als ob ich zugenommen habe, trotz der drei Varianten die wir gefahren sind (welche sich mMn auch sehr gelohnt haben).<br/>
@@ -159,9 +159,9 @@ Ich wollte es trotzdem loswerden, da wir uns gestern schon auf der Strecke darü
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 30)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Lutz Schröder')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Und im nächsten Jahr gibt's bei der Warmverpflegung für die Vegetarier wenigstens ein Ketchup als Alternative zum Gulasch ??<br/>
@@ -171,12 +171,12 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
         )
         .title('Wo bleiben die Vegetarier?')
         .build(),
-    new GuestbookEntryBuilder().date(2016, 5, 30).event(Event.RTF).name('Andreas Klemt').source(Source.Facebook).text('Sehr gut: Der Reiskuchen!').build(),
+    new GuestbookEntryBuilder().date(2016, 5, 30).event(EventType.RTF).name('Andreas Klemt').source(SourceType.Facebook).text('Sehr gut: Der Reiskuchen!').build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 30, 14, 46)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Martin Holtzmann')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -191,10 +191,10 @@ LG Martin
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 30, 13, 4)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .location('Ruhrstadt Bochum')
         .name('Martin Poettgen')
-        .source(Source['E-Mail'])
+        .source(SourceType['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -221,10 +221,10 @@ Ruhrstadt Bochum
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 23, 0)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Andreas Tilles')
         .organization('FB-Gruppe RTF und CTF - Radtourenfahrten des BDR (Bund Deutscher Radfahrer e.V.)')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Beste Warm-Verpflegung seit langem.<br/>
@@ -235,9 +235,9 @@ Ohne Nachschlag gingen Hermann und ich da nicht wieder auf die Strecke.
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 21, 21)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Volker Pütz')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Es war alles top top!<br/>
@@ -249,17 +249,17 @@ Danke an alle Helfer und das Orga Team!
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 20, 50)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Alexandra Raj')
         .organization('FB-Gruppe RTF und CTF - Radtourenfahrten des BDR (Bund Deutscher Radfahrer e.V.)')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text('Herrliche Strecke ')
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 20, 33)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Roland Liffers')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 ... schließe mich dem Lob von David Pandya vollumfänglich an, man kann es tendenziell nicht besser machen ...<br/>
@@ -270,10 +270,10 @@ Nächstes Jahr wird wieder die 1000er Marke geknackt 😀
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 20, 20)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Ludger Thier')
         .organization('FB-Gruppe RTF und CTF - Radtourenfahrten des BDR (Bund Deutscher Radfahrer e.V.)')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Wer sich heute trotz der besch... Wettervorhersage der "bergischen Herausforderung des RTC Köln" mit 2700hm auf knappen 200km gestellt hat,
@@ -290,9 +290,9 @@ Bis nächstes Jahr!
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 19, 46)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Angela Maja')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Ich bedanke mich bei allen Beteiligten, die diese wunderbare Veranstaltung wieder möglich gemacht haben:<br/>
@@ -305,10 +305,10 @@ Ich freute mich, dass ich heute weder auf der 160 km Strecke noch auf dem anschl
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 19, 11)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('David Pandya')
         .organization('The Racing Club Rush (Gemeinschaft via Facebook)')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Vielen vielen vielen lieben Dank RTC Köln e. V. 1972.<br/>
@@ -322,26 +322,26 @@ Chapeau!
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .location('Hürth Berrenrath')
         .name('Stefan Schneider')
         .organization('RV Morgenstern')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(`Wie gut ,dass ich den Apps heute nicht getraut habe und bei euch war 😀`)
         .build(),
-    new GuestbookEntryBuilder().date(2016, 5, 29).event(Event.RTF).name('Petra Ba').source(Source.Facebook).text('Ein super Tag, und super Wetter ...').build(),
+    new GuestbookEntryBuilder().date(2016, 5, 29).event(EventType.RTF).name('Petra Ba').source(SourceType.Facebook).text('Ein super Tag, und super Wetter ...').build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 17, 38)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Bernd Doelp')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(`Das war eine schöne und anspruchsvolle Veranstaltung, vielen Dank.`)
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Steffi Brockenhexe')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Es wurde alles gesagt.<br/>
@@ -353,9 +353,9 @@ Super Wetter mit reichlich Sonne auf knapp 200km ...
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 16, 12)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Horst Voll')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 War echt stark ...<br/>
@@ -366,10 +366,10 @@ Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 16, 6)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Horst Paesch')
         .organization('RSC Erftstadt')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Sitzen noch im Ziel und besaufen uns mit Alkoholfreiem Weizen ...<br/>
@@ -382,9 +382,9 @@ Sitzen noch im Ziel und besaufen uns mit Alkoholfreiem Weizen ...<br/>
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Mario Schmitt')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Super Organisation.<br/>
@@ -396,9 +396,9 @@ Top! 👍
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Volker Schmitz')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 
@@ -412,9 +412,9 @@ Top! 👍
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Se Sandra')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 War 'ne schöne Strecke und Verpflegung war reichlich da an den Kontrollstellen! 👍 👍<br/>
@@ -427,9 +427,9 @@ Was ist das? 😉
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 14, 36)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Ros Si')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 War eine super 158er RTF.<br/>
@@ -441,16 +441,16 @@ Vielen Dank an den RTC.
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 14, 0)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Patrock Cyclista')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(`Danke für heute. Super Orga, schöne Strecke, gerne wieder.`)
         .build(),
     new GuestbookEntryBuilder()
         .date(2016, 5, 29, 13, 52)
-        .event(Event.RTF)
+        .event(EventType.RTF)
         .name('Jochen Güttes')
-        .source(Source.Facebook)
+        .source(SourceType.Facebook)
         .text(
             `
 Das mit das mit dem Wettergott hat hervorragend funktioniert.<br/>
