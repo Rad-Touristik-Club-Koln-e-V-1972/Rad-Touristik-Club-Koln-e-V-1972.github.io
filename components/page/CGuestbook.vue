@@ -15,7 +15,7 @@
         <v-expand-transition>
             <div v-if="item.answer">
                 <v-divider></v-divider>
-                <v-card-text class="text-caption text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getAnswer(item.answer)" />
+                <v-card-text class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getAnswer(item.answer)" />
             </div>
         </v-expand-transition>
     </v-card>
