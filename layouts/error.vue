@@ -4,7 +4,7 @@
             <v-card-title v-text="title" />
             <v-card-text v-text="text()" />
             <v-card-actions>
-                <v-btn :to="{ name: 'index' }" v-text="'Homepage'" />
+                <v-btn :to="{ name: 'contact' }" v-text="'Kontakt'" />
             </v-card-actions>
         </v-card>
     </div>
@@ -27,6 +27,9 @@ export default defineComponent({
                 switch (props.error.statusCode) {
                     case EHTTP.NOT_FOUND:
                         text = 'Diese Seite existiert nicht.'
+                        break
+                    case EHTTP.INTERNAL_SERVER_ERROR:
+                        text = 'Ein unbekannter Serverfehler trat auf.'
                         break
                     default:
                         text = 'Ein unbekannter Fehler trat auf.'
