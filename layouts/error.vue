@@ -17,7 +17,7 @@ import EHTTP from '@/models/enums/EHTTP'
 
 export default defineComponent({
     props: {
-        error: { default: null, type: {} as PropType<NuxtError> },
+        error: { default: null, type: String as PropType<NuxtError> },
     },
     setup(props) {
         return {
