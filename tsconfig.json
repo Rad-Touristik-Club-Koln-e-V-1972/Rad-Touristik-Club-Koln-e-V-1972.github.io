@@ -15,7 +15,7 @@
         "sourceMap": true,
         "strict": true,
         "target": "ESNext",
-        "types": ["@nuxt/types", "@types/node", "vuetify"]
+        "types": ["@nuxt/types", "@nuxt/vue-app", "@nuxtjs/vuetify", "@types/node"]
     },
     "exclude": [".nuxt", "dist", "node_modules"]
 }
