@@ -1,6 +1,6 @@
+import EEvent from '@/models/enums/guestbook/EEvent'
 import Entry from '@/models/entities/guestbook/Entry'
-import EventType from '@/models/enums/guestbook/EventType'
-import SourceType from '@/models/enums/guestbook/SourceType'
+import ESource from '@/models/enums/guestbook/ESource'
 
 export default class EntryBuilder {
     private readonly value: Entry
@@ -21,7 +21,7 @@ export default class EntryBuilder {
         return this
     }
 
-    event(value: EventType): EntryBuilder {
+    event(value: EEvent): EntryBuilder {
         this.value.event = value
         return this
     }
@@ -46,7 +46,7 @@ export default class EntryBuilder {
         return this
     }
 
-    source(value: SourceType): EntryBuilder {
+    source(value: ESource): EntryBuilder {
         this.value.source = value
         return this
     }

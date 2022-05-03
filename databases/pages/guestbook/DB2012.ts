@@ -1,13 +1,13 @@
-import EventType from '@/models/enums/guestbook/EventType'
+import EEvent from '@/models/enums/guestbook/EEvent'
+import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-import SourceType from '@/models/enums/guestbook/SourceType'
 
 export default [
     new GuestbookEntryBuilder()
         .date(2012, 6)
         .name('Wolfgang Alberg')
         .organization('www.cardiofitness.de')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo Sportfreunde,<br/>
@@ -28,10 +28,10 @@ www.cardiofitness.de
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 6)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Ursula Koepp')
         .organization('TSV Weiss-Köln')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Liebe Radsportfreunde,<br/>
@@ -53,9 +53,9 @@ Ursula Koepp
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 6)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Günter')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo Diana,<br/>
@@ -84,10 +84,10 @@ Günter
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 6)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Dieter Reich')
         .organization('ISB-Team-Cologne')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo Radsportler des RTC-Köln,<br/>
@@ -107,10 +107,10 @@ Dieter Reich
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 6)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .location('Monheim')
         .name('Elke und Dieter')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo liebe RTCler,<br/>
@@ -130,9 +130,9 @@ Elke und Dieter
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 5)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Josef Witt')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Guten Morgen,<br/>
@@ -158,10 +158,10 @@ Josef Witt
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 5)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .location('Kierspe')
         .name('Michaela Bäcker')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Der Tag danach ...<br/>
@@ -220,10 +220,10 @@ Aus Kierspe
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 5)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .location('Libur')
         .name('Matthias Zimmer')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Sehr geehrte Damen und Herren,<br/>
@@ -254,10 +254,10 @@ Matthias Zimmer
         .build(),
     new GuestbookEntryBuilder()
         .date(2012, 5)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Monika und Helmut Moosmann')
         .organization('RSG Ford')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Liebe RTCler,<br/>

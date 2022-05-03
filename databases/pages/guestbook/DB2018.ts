@@ -1,13 +1,13 @@
-import EventType from '@/models/enums/guestbook/EventType'
+import EEvent from '@/models/enums/guestbook/EEvent'
+import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-import SourceType from '@/models/enums/guestbook/SourceType'
 
 export default [
     new GuestbookEntryBuilder()
         .date(2018, 10, 28, 0, 0)
-        .event(EventType.CTF)
+        .event(EEvent.CTF)
         .name('Andreas Reineke')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(
             `
 Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.<br/>
@@ -20,9 +20,9 @@ Es war eine sehr schöne Veranstaltung.
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 10, 28, 0, 0)
-        .event(EventType.CTF)
+        .event(EEvent.CTF)
         .name('Vamos Bala')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(
             `
 Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...<br/>
@@ -32,9 +32,9 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 10, 27, 16, 36)
-        .event(EventType.CTF)
+        .event(EEvent.CTF)
         .name('Bernd Doelp')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -51,23 +51,23 @@ Bernd
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 28, 17, 0)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Profitrise Sports')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(`Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!`)
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 28, 17, 0)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Petra Humbach')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(`Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 28, 17, 0)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Jochen Güttes')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(
             `
 Wir Teilnehmer sind begeistert.<br/>
@@ -78,9 +78,9 @@ Danke für die Gastfreundschaft.
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 28, 17, 0)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Ros Si')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(
             `
 Die Fahrt hat Tradition.<br/>
@@ -95,9 +95,9 @@ Nächstes Jahr wieder.
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 28, 17, 0)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Angela Maja')
-        .source(SourceType.Facebook)
+        .source(ESource.Facebook)
         .text(
             `
 Es war wunderbar 😊<br/>
@@ -109,9 +109,9 @@ Alles bestens.<br/>
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 27, 17, 1)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Harald Seidenberg')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo RTC,<br/>
@@ -130,10 +130,10 @@ Harry
         .build(),
     new GuestbookEntryBuilder()
         .date(2018, 5, 27, 13, 54)
-        .event(EventType.RTF)
+        .event(EEvent.RTF)
         .name('Dirk Oliver Heppert')
         .organization('RSV Staubwolke Refrath')
-        .source(SourceType['E-Mail'])
+        .source(ESource['E-Mail'])
         .text(
             `
 Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.<br/>

@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
 import { NuxtError } from '@nuxt/types'
-import HTTP from '@/models/enums/HTTP'
+import EHTTP from '@/models/enums/EHTTP'
 
 export default defineComponent({
     props: {
@@ -25,7 +25,7 @@ export default defineComponent({
                 let text
 
                 switch (props.error.statusCode) {
-                    case HTTP.NOT_FOUND:
+                    case EHTTP.NOT_FOUND:
                         text = 'Diese Seite existiert nicht.'
                         break
                     default:

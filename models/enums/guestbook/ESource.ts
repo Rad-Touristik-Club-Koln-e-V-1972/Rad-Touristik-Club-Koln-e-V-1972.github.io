@@ -1,4 +1,4 @@
-enum SourceType {
+enum ESource {
     Brief,
     'E-Mail',
     Facebook,
@@ -6,4 +6,4 @@ enum SourceType {
     Google,
 }
 
-export default SourceType
+export default ESource

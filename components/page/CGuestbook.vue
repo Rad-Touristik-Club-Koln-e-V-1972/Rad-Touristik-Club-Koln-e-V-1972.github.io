@@ -4,7 +4,7 @@
             <div v-if="item.date" v-text="getDate(item.date)" />
             <div v-text="`${item.name} via ${Source[item.source]}`" />
             <div v-text="`${[item.organization, item.location].filter((it) => it).join(', ')} `" />
-            <div v-if="item.event !== Event.Standard" v-text="`EventType: ${Event[item.event]}`" />
+            <div v-if="item.event !== Event.Standard" v-text="`Event: ${Event[item.event]}`" />
         </v-card-subtitle>
         <v-card-title v-if="item.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.title" />
         <v-divider />
@@ -26,9 +26,9 @@ import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { marked } from 'marked'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
-import EventType from '@/models/enums/guestbook/EventType'
+import EEvent from '@/models/enums/guestbook/EEvent'
+import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
-import SourceType from '@/models/enums/guestbook/SourceType'
 
 // For a better performance and to remove the seconds.
 const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
@@ -40,7 +40,7 @@ export default defineComponent({
     },
     setup(props) {
         return {
-            Event: EventType,
+            Event: EEvent,
             icons: {
                 mdiChevronDown,
                 mdiChevronUp,
@@ -48,7 +48,7 @@ export default defineComponent({
             },
             props,
             showText: false,
-            Source: SourceType,
+            Source: ESource,
         }
     },
     computed: {
