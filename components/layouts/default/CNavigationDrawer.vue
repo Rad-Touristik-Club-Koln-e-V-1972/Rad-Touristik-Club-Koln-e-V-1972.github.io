@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" :value="value" app bottom temporary @input="handleInput">
+    <v-navigation-drawer id="CNavigationDrawer" :value="value" app bottom temporary @input="(event) => $emit('input', event)">
         <v-row>
             <v-col>
                 <v-list nav dense>
@@ -61,11 +61,8 @@ export default defineComponent({
         value: { required: true, type: Boolean },
     },
     emits: ['input'],
-    setup(props, ctx) {
+    setup() {
         return {
-            handleInput: (event: boolean) => {
-                ctx.emit('input', event)
-            },
             items: [
                 {
                     icon: mdiCalendarClockOutline,
@@ -98,7 +95,6 @@ export default defineComponent({
                     to: { name: 'index' },
                 },
             ],
-            props,
             socialMediaItems: [
                 {
                     color: 'indigo',
