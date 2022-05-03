@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CContact" max-width="20em">
+    <v-card id="CContact" max-width="24em">
         <v-img :src="item.imageSrc" contain />
         <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5" v-text="item.name" />
         <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6" v-text="item.position" />
