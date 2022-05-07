@@ -41,6 +41,9 @@ export default defineComponent({
     setup(props) {
         return {
             Event: EEvent,
+            getAnswer: (answer: string) => marked.parse(`**RTC Köln:** *${answer}*`),
+            getDate: (date: Date) => dateFormatter.format(date),
+            getText: (text: string) => marked.parse(text),
             icons: {
                 mdiChevronDown,
                 mdiChevronUp,
@@ -50,11 +53,6 @@ export default defineComponent({
             showText: false,
             Source: ESource,
         }
-    },
-    computed: {
-        getAnswer: () => (answer: string) => marked.parse(`**RTC Köln:** *${answer}*`),
-        getDate: () => (date: Date) => dateFormatter.format(date),
-        getText: () => (text: string) => marked.parse(text),
     },
 })
 </script>
