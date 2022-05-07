@@ -32,14 +32,13 @@ export default defineComponent({
     props: {
         item: { required: true, type: Contact },
     },
-    setup(props) {
+    setup() {
         return {
             icons: {
                 mdiChevronDown,
                 mdiChevronUp,
                 mdiEmailSend,
             },
-            props,
             showText: false,
         }
     },

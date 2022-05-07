@@ -35,7 +35,7 @@ export default defineComponent({
     props: {
         item: { required: true, type: GuestbookEntry },
     },
-    setup(props) {
+    setup() {
         // For a better performance and to remove the seconds.
         const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
 
@@ -49,7 +49,6 @@ export default defineComponent({
                 mdiChevronUp,
                 mdiEmailSend,
             },
-            props,
             showText: false,
             Source: ESource,
         }
