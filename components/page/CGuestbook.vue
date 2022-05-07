@@ -30,15 +30,15 @@ import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
 
-// For a better performance and to remove the seconds.
-const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
-
 export default defineComponent({
     components: { CSlideshow },
     props: {
         item: { required: true, type: GuestbookEntry },
     },
     setup(props) {
+        // For a better performance and to remove the seconds.
+        const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+
         return {
             Event: EEvent,
             getAnswer: (answer: string) => marked.parse(`**RTC Köln:** *${answer}*`),
