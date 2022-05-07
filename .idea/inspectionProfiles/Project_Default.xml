@@ -675,7 +675,6 @@
     <inspection_tool class="NestedAssignmentJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedConditionalExpression" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedConditionalExpressionJS" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="NestedFunctionCallJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedMethodCall" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="m_ignoreFieldInitializations" value="true" />
     </inspection_tool>
