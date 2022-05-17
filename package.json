@@ -31,7 +31,7 @@
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.0",
-        "@commitlint/config-conventional": "^16.2.4",
+        "@commitlint/config-conventional": "^17.0.0",
         "@mdi/js": "^6.6.96",
         "@nuxt/types": "^2.15.8",
         "@nuxt/typescript-build": "^2.1.0",
