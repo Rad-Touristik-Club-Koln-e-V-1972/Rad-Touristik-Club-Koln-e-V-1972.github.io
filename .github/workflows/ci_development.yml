@@ -17,7 +17,7 @@ jobs:
               with:
                   cache: 'npm'
                   check-latest: true
-                  node-version: 16
+                  node-version: 'lts/*'
             - name: Install dependencies
               run: npm install
             - name: Commit dependency changes
