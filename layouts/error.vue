@@ -1,10 +1,10 @@
 <template>
     <div id="ErrorView" class="d-flex justify-center">
         <v-card min-width="300px">
-            <v-card-title v-text="`Fehlercode ${error.statusCode}`" />
-            <v-card-text v-text="getText()" />
+            <v-card-title>Fehlercode {{ error.statusCode }}</v-card-title>
+            <v-card-text>{{ getText() }}</v-card-text>
             <v-card-actions>
-                <v-btn :to="{ name: 'contact' }" v-text="'Kontakt'" />
+                <v-btn :to="{ name: 'contact' }">Kontakt</v-btn>
             </v-card-actions>
         </v-card>
     </div>

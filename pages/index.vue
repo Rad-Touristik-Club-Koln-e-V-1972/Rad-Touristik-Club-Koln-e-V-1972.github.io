@@ -2,7 +2,7 @@
     <v-row id="IndexView" align="center" justify="center">
         <v-col>
             <v-card>
-                <v-card-title class="text-h5" v-text="'Welcome to the Vuetify + Nuxt.js template'" />
+                <v-card-title class="text-h5">Welcome to the Vuetify + Nuxt.js template</v-card-title>
                 <v-card-text>
                     <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
                     <p>
@@ -28,7 +28,7 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer />
-                    <v-btn nuxt to="/inspire" v-text="'Continue'" />
+                    <v-btn nuxt to="/inspire">Continue</v-btn>
                 </v-card-actions>
             </v-card>
         </v-col>
