@@ -1,7 +1,7 @@
 <template>
     <v-card id="GuestbookView" flat>
-        <v-card-title class="text-body-1 text-sm-h6 text-md-h5 text-lg-h4 text-xl-h3" v-text="'Gästebuch'" />
-        <v-card-subtitle class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4" v-text="'Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln'" />
+        <v-card-title class="text-body-1 text-sm-h6 text-md-h5 text-lg-h4 text-xl-h3">Gästebuch</v-card-title>
+        <v-card-subtitle class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>
         <v-card-actions>
             <v-btn
                 href="mailto:PR@rtc-koeln.de?subject=G%C3%A4stebuch%20-%20Thema
@@ -11,7 +11,7 @@
                 style="background-color: var(--v-primary-base); color: var(--v-accent-base)"
             >
                 Gästebucheintrag hinzufügen
-                <v-icon right v-text="icons.mdiEmailSend" />
+                <v-icon right>{{ icons.mdiEmailSend }}</v-icon>
             </v-btn>
         </v-card-actions>
         <v-card-text>

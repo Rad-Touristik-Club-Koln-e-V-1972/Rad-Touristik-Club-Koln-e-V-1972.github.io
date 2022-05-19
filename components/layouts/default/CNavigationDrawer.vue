@@ -13,10 +13,10 @@
                         exact
                     >
                         <v-list-item-action>
-                            <v-icon v-text="item.icon" />
+                            <v-icon>{{ item.icon }}</v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
-                            <v-list-item-title style="white-space: normal" v-text="item.title" />
+                            <v-list-item-title style="white-space: normal">{{ item.title }}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
                 </v-list>
@@ -25,12 +25,12 @@
         <v-row>
             <v-col>
                 <v-card flat>
-                    <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Folge uns!'" />
+                    <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Folge uns!</v-card-title>
                     <v-card-text class="text-center">
                         <v-row>
                             <v-col v-for="(item, index) in socialMediaItems" :key="index">
                                 <v-btn :href="item.url" fab icon target="_blank">
-                                    <v-icon :color="item.color" large v-text="item.icon" />
+                                    <v-icon :color="item.color" large>{{ item.icon }}</v-icon>
                                 </v-btn>
                             </v-col>
                         </v-row>

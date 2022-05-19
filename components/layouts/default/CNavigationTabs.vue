@@ -1,6 +1,6 @@
 <template>
     <v-tabs id="CNavigationTabs" :prev-icon="icons.mdiChevronLeft" :next-icon="icons.mdiChevronRight" :show-arrows="$vuetify.breakpoint.mobile" centered>
-        <v-tab v-for="(item, index) in items" :key="index" :to="item.to" exact nuxt v-text="item.title" />
+        <v-tab v-for="(item, index) in items" :key="index" :to="item.to" exact nuxt>{{ item.title }}</v-tab>
     </v-tabs>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <v-card id="CSponsors" flat>
-        <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-text="'Sponsoren'" />
+        <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Sponsoren</v-card-title>
         <v-card v-for="(sponsor, i) in sponsors" :key="i" :href="sponsor.url" :ripple="false" flat target="_blank">
             <v-card-text>
                 <span v-if="sponsor.text" v-text="sponsor.text"></span>
