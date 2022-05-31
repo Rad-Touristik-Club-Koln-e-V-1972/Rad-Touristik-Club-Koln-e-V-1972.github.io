@@ -1,10 +1,10 @@
 <template>
     <v-card id="CSponsors" flat>
         <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Sponsoren</v-card-title>
-        <v-card v-for="(sponsor, i) in sponsors" :key="i" :href="sponsor.url" :ripple="false" flat target="_blank">
+        <v-card v-for="(sponsor, i) in sponsors" :key="i" flat :href="sponsor.url" :ripple="false" target="_blank">
             <v-card-text>
                 <span v-if="sponsor.text" v-text="sponsor.text"></span>
-                <v-img v-if="sponsor.imageSrc" :src="sponsor.imageSrc" contain max-height="100px" />
+                <v-img v-if="sponsor.imageSrc" contain max-height="100px" :src="sponsor.imageSrc" />
             </v-card-text>
         </v-card>
     </v-card>
@@ -14,6 +14,7 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+    name: 'CSponsors',
     setup() {
         return {
             sponsors: [

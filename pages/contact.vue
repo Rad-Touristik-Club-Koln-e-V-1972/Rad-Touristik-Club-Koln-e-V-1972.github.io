@@ -18,6 +18,7 @@ import CContact from '@/components/page/CContact.vue'
 import ContactBuilder from '@/models/builder/ContactBuilder'
 
 export default defineComponent({
+    name: 'ContactView',
     components: { CContact },
     setup() {
         return {

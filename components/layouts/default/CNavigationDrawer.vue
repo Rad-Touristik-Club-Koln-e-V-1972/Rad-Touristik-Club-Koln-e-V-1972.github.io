@@ -1,22 +1,26 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" :value="value" app bottom temporary @input="(event) => $emit('input', event)">
+    <v-navigation-drawer id="CNavigationDrawer" app bottom temporary :value="value" @input="(event) => $emit('input', event)">
         <v-row>
             <v-col>
-                <v-list nav dense>
+                <v-list dense nav>
                     <v-list-item
                         v-for="(item, index) in items"
                         :key="index"
+                        exact
                         :href="item.url || undefined"
                         :nuxt="!!item.to"
                         :target="item.url ? '_blank' : undefined"
                         :to="item.to || undefined"
-                        exact
                     >
                         <v-list-item-action>
-                            <v-icon>{{ item.icon }}</v-icon>
+                            <v-icon>
+                                {{ item.icon }}
+                            </v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
-                            <v-list-item-title style="white-space: normal">{{ item.title }}</v-list-item-title>
+                            <v-list-item-title style="white-space: normal">
+                                {{ item.title }}
+                            </v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
                 </v-list>
@@ -29,8 +33,10 @@
                     <v-card-text class="text-center">
                         <v-row>
                             <v-col v-for="(item, index) in socialMediaItems" :key="index">
-                                <v-btn :href="item.url" fab icon target="_blank">
-                                    <v-icon :color="item.color" large>{{ item.icon }}</v-icon>
+                                <v-btn fab :href="item.url" icon target="_blank">
+                                    <v-icon :color="item.color" large>
+                                        {{ item.icon }}
+                                    </v-icon>
                                 </v-btn>
                             </v-col>
                         </v-row>
@@ -57,6 +63,7 @@ import {
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+    name: 'CNavigationDrawer',
     props: {
         value: { required: true, type: Boolean },
     },

@@ -3,7 +3,9 @@
         <v-app-bar app class="border" color="accent" flat>
             <template #default>
                 <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer">
-                    <v-icon>{{ icons.mdiMenu }}</v-icon>
+                    <v-icon>
+                        {{ icons.mdiMenu }}
+                    </v-icon>
                 </v-app-bar-nav-icon>
                 <v-spacer />
                 <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
@@ -30,7 +32,9 @@
         </v-main>
         <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
             <div class="text-no-wrap">
-                <v-icon :small="$vuetify.breakpoint.mobile">{{ icons.mdiCopyright }}</v-icon>
+                <v-icon :small="$vuetify.breakpoint.mobile">
+                    {{ icons.mdiCopyright }}
+                </v-icon>
                 <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
                 2021 Rad-Touristik-Club Köln e.V. 1972
             </div>
@@ -47,6 +51,7 @@ import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
 import CSponsors from '@/components/layouts/default/CSponsors.vue'
 
 export default defineComponent({
+    name: 'DefaultView',
     components: {
         CNavigationDrawer,
         CNavigationTabs,

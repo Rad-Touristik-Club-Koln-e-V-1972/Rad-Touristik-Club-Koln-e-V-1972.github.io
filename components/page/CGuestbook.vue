@@ -6,7 +6,9 @@
             <div v-text="`${[item.organization, item.location].filter((it) => it).join(', ')} `" />
             <div v-if="item.event !== Event.Standard" v-text="`Event: ${Event[item.event]}`" />
         </v-card-subtitle>
-        <v-card-title v-if="item.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5">{{ item.title }}</v-card-title>
+        <v-card-title v-if="item.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5">
+            {{ item.title }}
+        </v-card-title>
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
             <div v-if="item.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />
@@ -14,8 +16,10 @@
         </v-card-text>
         <v-expand-transition>
             <div v-if="item.answer">
-                <v-divider></v-divider>
-                <v-card-text class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">{{ getAnswer(item.answer) }}</v-card-text>
+                <v-divider />
+                <v-card-text class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">
+                    {{ getAnswer(item.answer) }}
+                </v-card-text>
             </div>
         </v-expand-transition>
     </v-card>
@@ -31,6 +35,7 @@ import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
 
 export default defineComponent({
+    name: 'CGuestbook',
     components: { CSlideshow },
     props: {
         item: { required: true, type: GuestbookEntry },

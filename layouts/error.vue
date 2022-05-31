@@ -2,7 +2,9 @@
     <div id="ErrorView" class="d-flex justify-center">
         <v-card min-width="300px">
             <v-card-title>Fehlercode {{ error.statusCode }}</v-card-title>
-            <v-card-text>{{ getText() }}</v-card-text>
+            <v-card-text>
+                {{ getText() }}
+            </v-card-text>
             <v-card-actions>
                 <v-btn :to="{ name: 'contact' }">Kontakt</v-btn>
             </v-card-actions>
@@ -16,6 +18,7 @@ import { NuxtError } from '@nuxt/types'
 import EHTTP from '@/models/enums/EHTTP'
 
 export default defineComponent({
+    name: 'ErrorView',
     props: {
         error: { required: true, type: Object as PropType<NuxtError> },
     },
