@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['@nuxtjs/eslint-config-typescript', 'plugin:vue/recommended', 'plugin:nuxt/recommended', 'plugin:prettier/recommended'],
+    extends: ['@nuxtjs/eslint-config-typescript', 'plugin:vue/recommended', 'plugin:vuetify/recommended', 'plugin:nuxt/recommended', 'plugin:prettier/recommended'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
