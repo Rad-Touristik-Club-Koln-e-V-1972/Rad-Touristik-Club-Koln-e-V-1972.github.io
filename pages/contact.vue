@@ -1,7 +1,9 @@
 <template>
     <v-card id="ContactView" flat>
-        <v-card-title class="text-body-1 text-sm-h6 text-md-h5 text-lg-h4 text-xl-h3">Kontakte</v-card-title>
-        <v-card-subtitle class="text-body-2 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h4">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>
+        <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Kontakte</v-card-title>
+        <v-card-subtitle class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">
+            Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln
+        </v-card-subtitle>
         <v-card-text>
             <v-row class="d-flex justify-center" dense>
                 <v-col v-for="(item, index) in items" :key="index" cols="auto">
