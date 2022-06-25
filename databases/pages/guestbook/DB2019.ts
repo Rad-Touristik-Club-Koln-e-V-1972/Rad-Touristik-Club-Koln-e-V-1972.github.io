@@ -1,6 +1,7 @@
 import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
+
 export default [
     new GuestbookEntryBuilder()
         .date(2019, 10, 28, 20, 0)
