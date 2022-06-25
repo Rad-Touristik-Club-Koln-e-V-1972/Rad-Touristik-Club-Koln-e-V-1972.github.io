@@ -1,7 +1,6 @@
 import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-
 export default [
     new GuestbookEntryBuilder()
         .date(2018, 10, 28, 0, 0)
@@ -10,10 +9,13 @@ export default [
         .source(ESource.Facebook)
         .text(
             `
-Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.<br/>
-<br/>
-Den Vereinsmitgliedern tat es total leid, aber die konnten nicht so schnell nachschildern bzw. Flaggen, wie die Markierungen geklaut worden sind.<br/>
-Es waren alle super nett!!<br/>
+Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.
+\\
+\\
+Den Vereinsmitgliedern tat es total leid, aber die konnten nicht so schnell nachschildern bzw. Flaggen, wie die Markierungen geklaut worden sind.
+\\
+Es waren alle super nett!!
+\\
 Es war eine sehr schöne Veranstaltung.
 `
         )
@@ -25,7 +27,8 @@ Es war eine sehr schöne Veranstaltung.
         .source(ESource.Facebook)
         .text(
             `
-Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...<br/>
+Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...
+\\
 Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
 `
         )
@@ -37,14 +40,19 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-genau wie letztes Jahr war alles wieder perfekt.<br/>
-<br/>
-Vielen Dank und bis nächstes Jahr, diese Veranstaltung ist auf jeden Fall gesetzt.<br/>
-<br/>
-Ich freue mich jetzt schon ...<br/>
-Viele Grüße<br/>
-<br/>
+Hallo RTC,
+\\
+genau wie letztes Jahr war alles wieder perfekt.
+\\
+\\
+Vielen Dank und bis nächstes Jahr, diese Veranstaltung ist auf jeden Fall gesetzt.
+\\
+\\
+Ich freue mich jetzt schon ...
+\\
+Viele Grüße
+\\
+\\
 Bernd
 `
         )
@@ -70,8 +78,10 @@ Bernd
         .source(ESource.Facebook)
         .text(
             `
-Wir Teilnehmer sind begeistert.<br/>
-Streckenführung, Verpflegung, Personal ... alles TOP.<br/>
+Wir Teilnehmer sind begeistert.
+\\
+Streckenführung, Verpflegung, Personal ... alles TOP.
+\\
 Danke für die Gastfreundschaft.
                 `
         )
@@ -83,12 +93,18 @@ Danke für die Gastfreundschaft.
         .source(ESource.Facebook)
         .text(
             `
-Die Fahrt hat Tradition.<br/>
-Und Tradition hat auch die perfekte Organisation.<br/>
-Super Ausschilderung, super Getränke und natürlich die obligatorischen RTF Nutellabrote.<br/>
-Und vieles mehr an den Kontrollen.<br/>
-Riesen Dankeschön.<br/>
-Hat riesig Spaß gemacht bei euch zu fahren.<br/>
+Die Fahrt hat Tradition.
+\\
+Und Tradition hat auch die perfekte Organisation.
+\\
+Super Ausschilderung, super Getränke und natürlich die obligatorischen RTF Nutellabrote.
+\\
+Und vieles mehr an den Kontrollen.
+\\
+Riesen Dankeschön.
+\\
+Hat riesig Spaß gemacht bei euch zu fahren.
+\\
 Nächstes Jahr wieder.
 `
         )
@@ -100,10 +116,13 @@ Nächstes Jahr wieder.
         .source(ESource.Facebook)
         .text(
             `
-Es war wunderbar 😊<br/>
-Vielen Dank für tolle Streckenführung, Verpflegung, freundliche Orga und Helfer!<br/>
-Alles bestens.<br/>
-<br/>
+Es war wunderbar 😊
+\\
+Vielen Dank für tolle Streckenführung, Verpflegung, freundliche Orga und Helfer!
+\\
+Alles bestens.
+\\
+\\
 161 km RTF Strecke und dann nach Hause waren dann für mich bei meiner ersten RTF in diesem Jahr ein Marathon ... 😊`
         )
         .build(),
@@ -114,15 +133,23 @@ Alles bestens.<br/>
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-Ich/wir wollte/n nur sagen, dass ...  ich heute nach 25 Jahren wieder mal eine RTF gefahren bin.<br/>
-Mir hat die RTF heute Kurzstrecke sehr gut gefallen hat. Wetter schön, Temperatur wunderbar.<br/>
-gut ausgeschildert.<br/>
-Was ich gegenüber damals vermisst habe waren Verkaufstand  mit Trikots oder…. .<br/>
-Vielleicht hat sich in der Zeit da was verändert.<br/>
-Sollte keine Kritik sein.<br/>
-Nur eine Anmerkung.<br/>
+Hallo RTC,
+\\
+\\
+Ich/wir wollte/n nur sagen, dass ...  ich heute nach 25 Jahren wieder mal eine RTF gefahren bin.
+\\
+Mir hat die RTF heute Kurzstrecke sehr gut gefallen hat. Wetter schön, Temperatur wunderbar.
+\\
+gut ausgeschildert.
+\\
+Was ich gegenüber damals vermisst habe waren Verkaufstand  mit Trikots oder…. .
+\\
+Vielleicht hat sich in der Zeit da was verändert.
+\\
+Sollte keine Kritik sein.
+\\
+Nur eine Anmerkung.
+\\
 Harry
 `
         )
@@ -136,13 +163,19 @@ Harry
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.<br/>
-Wie immer Toporganisation, präzise Ausschilderung und interessante Streckenführung.<br/>
-Bin heute nur die 51er Schleife mit meinem Kollegen gefahren, da ich noch von gestern die Höhenmeter der RTF in Wuppertal in den Beinen habe.<br/>
-Aber auch die kurze Schleife hat ihre Reize.<br/>
-Kenne jetzt auf jeden Fall alle Strecken.<br/>
-Eure RTF gehört zu den Besten im Bezirk Köln-Bonn.<br/>
-<br/>
+Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.
+\\
+Wie immer Toporganisation, präzise Ausschilderung und interessante Streckenführung.
+\\
+Bin heute nur die 51er Schleife mit meinem Kollegen gefahren, da ich noch von gestern die Höhenmeter der RTF in Wuppertal in den Beinen habe.
+\\
+Aber auch die kurze Schleife hat ihre Reize.
+\\
+Kenne jetzt auf jeden Fall alle Strecken.
+\\
+Eure RTF gehört zu den Besten im Bezirk Köln-Bonn.
+\\
+\\
 LG Dirk Heppert- RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
 `
         )

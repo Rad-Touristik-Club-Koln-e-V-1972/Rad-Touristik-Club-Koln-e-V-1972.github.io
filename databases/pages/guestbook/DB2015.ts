@@ -1,7 +1,6 @@
 import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-
 export default [
     new GuestbookEntryBuilder()
         .date(2015, 10, 19, 12, 55)
@@ -10,10 +9,12 @@ export default [
         .source(ESource.Facebook)
         .text(
             `
-Auch von meiner Seite einen großen Dank an den Veranstalter, der einen enormen Aufwand betrieben hat.<br/>
-<br/>
+Auch von meiner Seite einen großen Dank an den Veranstalter, der einen enormen Aufwand betrieben hat.
+\\
+\\
 Obwohl es die erste Veranstaltung dieser Art für den Verein war, wurde an Alles gedacht und es war eine sehr gelungene CTF,
-bei der die Teilnehmer einen Riesenspaß haben konnten.<br/>
+bei der die Teilnehmer einen Riesenspaß haben konnten.
+\\
 Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung stattfinden kann
 und dass auch vielleicht noch einige andere Vereine aus der Region die für Viele noch etwas unbekannte Veranstaltung in Angriff nehmen ...
 `
@@ -27,12 +28,17 @@ und dass auch vielleicht noch einige andere Vereine aus der Region die für Viel
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-ich/wir wollte/n nur sagen, dass ...eure Orga perfekt war und wir vom RSC Nievenheim beim nächsten mal wieder dabei sind.<br/>
-Verpflegung war superund auch das man das Rad kurz abspülen konnte war toll.<br/>
-Danke für eine so schöne Tour.<br/>
-8-)<br/>
+Hallo RTC,
+\\
+\\
+ich/wir wollte/n nur sagen, dass ...eure Orga perfekt war und wir vom RSC Nievenheim beim nächsten mal wieder dabei sind.
+\\
+Verpflegung war superund auch das man das Rad kurz abspülen konnte war toll.
+\\
+Danke für eine so schöne Tour.
+\\
+8-)
+\\
 Helmut vom RSC Nievenheim
 `
         )
@@ -53,9 +59,11 @@ Helmut vom RSC Nievenheim
         .source(ESource.Facebook)
         .text(
             `
-... die sich die Zeit genommen haben und die tolle Arbeit für uns Teilnehmer gemacht habt!!<br/>
-Strecke war prima, leckere Verpflegung (Wurstbrote 😉) auch der Wasserschlauch fürs Rädchen war gut!<br/>
-<br/>
+... die sich die Zeit genommen haben und die tolle Arbeit für uns Teilnehmer gemacht habt!!
+\\
+Strecke war prima, leckere Verpflegung (Wurstbrote 😉) auch der Wasserschlauch fürs Rädchen war gut!
+\\
+\\
 Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei .....
 `
         )
@@ -68,7 +76,8 @@ Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei ..
         .source(ESource.Facebook)
         .text(
             `
-total nette Crew - super Strecke - hat viel Spaß gemacht!!<br/>
+total nette Crew - super Strecke - hat viel Spaß gemacht!!
+\\
 gerne wieder!!
 `
         )
@@ -80,13 +89,18 @@ gerne wieder!!
         .source(ESource.Facebook)
         .text(
             `
-Ihr seid ein richtig nettes Team und ein toller Verein, da konnte das Wetter doch nur mitmachen.<br/>
-Strecke war toll und an den Kontrollstellen gab's immer lekker Verpflegung (Klasse die wärmende Brühe und Liebe-Wurst-Käse belegten Brote) und immer ein nettes Gespräch.<br/>
-Hat uns viel Spaß gemacht.<br/>
-Danke<br/>
-<br/>
-Ps. Dank suuuuper Waschmöglichkeit vor Ort konnten wir uns zuhause gleich aufs Sofa hauen.<br/>
-<br/>
+Ihr seid ein richtig nettes Team und ein toller Verein, da konnte das Wetter doch nur mitmachen.
+\\
+Strecke war toll und an den Kontrollstellen gab's immer lekker Verpflegung (Klasse die wärmende Brühe und Liebe-Wurst-Käse belegten Brote) und immer ein nettes Gespräch.
+\\
+Hat uns viel Spaß gemacht.
+\\
+Danke
+\\
+\\
+Ps. Dank suuuuper Waschmöglichkeit vor Ort konnten wir uns zuhause gleich aufs Sofa hauen.
+\\
+\\
 Ps.Ps. Schmalzbrotgrüsse
 `
         )
@@ -98,21 +112,32 @@ Ps.Ps. Schmalzbrotgrüsse
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-Eure 1. CTF war eine klasse Veranstaltung.<br/>
-Vielen Dank für die Mühe, die Ihr Euch damit gemacht habt.<br/>
-Die Streckenführung war sehr gut gewählt.<br/>
-Euro Verpflegung war -wie offenbar bei Euch üblich- sehr gut.<br/>
-An der entferntesten Kontrolle wären vielleicht ein paar Schmalzbrote ganz okay gewesen ;-)<br/>
-<br/>
-Ich fand Eure Ausschilderung sehr gut gemacht.<br/>
-In Kombination mit den aktualisierten Tracks konnte da eigentlich nichts mehr schief gehen.<br/>
-Obwohl das Zusammenspiel mit Fußgängern/Joggern mehr als in Ordnung war, könnte ich mir vorstellen, dass die eine oder andere Markierung verschwunden ist.<br/>
-<br/>
-Alles in allem eine tolle Veranstaltung.<br/>
-Bin nächstes Jahr wieder dabei.<br/>
-<br/>
+Hallo RTC,
+\\
+\\
+Eure 1. CTF war eine klasse Veranstaltung.
+\\
+Vielen Dank für die Mühe, die Ihr Euch damit gemacht habt.
+\\
+Die Streckenführung war sehr gut gewählt.
+\\
+Euro Verpflegung war -wie offenbar bei Euch üblich- sehr gut.
+\\
+An der entferntesten Kontrolle wären vielleicht ein paar Schmalzbrote ganz okay gewesen ;-)
+\\
+\\
+Ich fand Eure Ausschilderung sehr gut gemacht.
+\\
+In Kombination mit den aktualisierten Tracks konnte da eigentlich nichts mehr schief gehen.
+\\
+Obwohl das Zusammenspiel mit Fußgängern/Joggern mehr als in Ordnung war, könnte ich mir vorstellen, dass die eine oder andere Markierung verschwunden ist.
+\\
+\\
+Alles in allem eine tolle Veranstaltung.
+\\
+Bin nächstes Jahr wieder dabei.
+\\
+\\
 Guido Faßbender
 `
         )
@@ -124,10 +149,13 @@ Guido Faßbender
         .source(ESource.Facebook)
         .text(
             `
-Hallo Zusammen,<br/>
-vielen Dank an das OrgTeam und die fleissigen Helfer.<br/>
-Mir hat die Strecke sehr gut gefallen, Verpflegung super, Rad war zum Schluß auch noch sauber (meine Frau fragte, ob ich überhaupt gefahren bin) - also rundum gelungen.<br/>
-<br/>
+Hallo Zusammen,
+\\
+vielen Dank an das OrgTeam und die fleissigen Helfer.
+\\
+Mir hat die Strecke sehr gut gefallen, Verpflegung super, Rad war zum Schluß auch noch sauber (meine Frau fragte, ob ich überhaupt gefahren bin) - also rundum gelungen.
+\\
+\\
 Ich würde mich auf ein nächstes Mal sehr freuen.
 `
         )
@@ -139,20 +167,31 @@ Ich würde mich auf ein nächstes Mal sehr freuen.
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-vielen Dank für die Organisation der CTF.<br/>
-Die Verpflegung an euren Kontrollstellen und die freundlichen Helfer überall waren top!<br/>
-Vor allem der warme Tee und die heiße Brühe waren heute klasse.<br/>
-Auch im Zielbereich hat es an nichts gefehlt.<br/>
-Einzig die Ausschilderung bis zur ersten Kontrolle war teilweise nicht vorhanden oder sehr schwer zu sehen.<br/>
-Danach hat es gepasst.<br/>
-Dank GPS-Gerät und Track von Euch ging es aber.<br/>
-<br/>
-Macht weiter so!<br/>
-Für nächstes Jahr wünsche ich Euch etwas Sonnenschein, damit noch mehr Biker kommen.<br/>
-<br/>
-Sportliche Grüße,<br/>
+Hallo RTC,
+\\
+\\
+vielen Dank für die Organisation der CTF.
+\\
+Die Verpflegung an euren Kontrollstellen und die freundlichen Helfer überall waren top!
+\\
+Vor allem der warme Tee und die heiße Brühe waren heute klasse.
+\\
+Auch im Zielbereich hat es an nichts gefehlt.
+\\
+Einzig die Ausschilderung bis zur ersten Kontrolle war teilweise nicht vorhanden oder sehr schwer zu sehen.
+\\
+Danach hat es gepasst.
+\\
+Dank GPS-Gerät und Track von Euch ging es aber.
+\\
+\\
+Macht weiter so!
+\\
+Für nächstes Jahr wünsche ich Euch etwas Sonnenschein, damit noch mehr Biker kommen.
+\\
+\\
+Sportliche Grüße,
+\\
 Henning
 `
         )
@@ -165,7 +204,8 @@ Henning
         .source(ESource.Facebook)
         .text(
             `
-Auch wenn ich das Startfenster leicht gerissen habe und nur die kurze Tour nehmen konnte 😕<br/>
+Auch wenn ich das Startfenster leicht gerissen habe und nur die kurze Tour nehmen konnte 😕
+\\
 Superrunde und hoffentlich nächstes Jahr wieder ...
 `
         )
@@ -178,13 +218,18 @@ Superrunde und hoffentlich nächstes Jahr wieder ...
         .source(ESource.Facebook)
         .text(
             `
-Tolle Strecke.<br/>
-Hat Spaß gemacht.<br/>
-Danke für die Orga.<br/>
-Es sollte mehr CTF geben.<br/>
-<br/>
-Die Möglichkeit das Rad direkt vor Ort zu reinigen fand ich auch klasse.<br/>
-<br/>
+Tolle Strecke.
+\\
+Hat Spaß gemacht.
+\\
+Danke für die Orga.
+\\
+Es sollte mehr CTF geben.
+\\
+\\
+Die Möglichkeit das Rad direkt vor Ort zu reinigen fand ich auch klasse.
+\\
+\\
 Hier auch noch ein Bild von dem Ausblick auf der Strecke.
 `
         )
@@ -203,9 +248,12 @@ Hier auch noch ein Bild von dem Ausblick auf der Strecke.
         .source(ESource.Facebook)
         .text(
             `
-Super Tour heute!<br/>
-Schöne Strecke, direkt in den Wald, leckere Verpflegung.<br/>
-Gute Idee, hier mal eine CTF anzubieten.<br/>
+Super Tour heute!
+\\
+Schöne Strecke, direkt in den Wald, leckere Verpflegung.
+\\
+Gute Idee, hier mal eine CTF anzubieten.
+\\
 Danke RTC!
 `
         )
@@ -217,20 +265,31 @@ Danke RTC!
         .source(ESource.Facebook)
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-vielen Dank für eure heutige Veranstaltung.<br/>
-Ihr habt eine wunderschöne Strecke und perfekte Kontrollstellen auf die Beine gestellt.<br/>
-Gerade in Zeiten schwindender Radveranstaltungen, geht Ihr den anderen Weg und organisiert eine Zweite.<br/>
-RESPEKT!!<br/>
-Ich hoffe, dass Ihr es auch nächstes Jahr schafft dieses Event zu veranstalten.<br/>
-Also bitte weiter so.<br/>
-<br/>
-Und nun den einzigen Kritikpunkt, an der Ausschilderung müsst Ihr echt noch arbeiten.<br/>
-Ein Kontrollfahrer am Morgen würde hier Wunder wirken.<br/>
-Ich für meinen Teil freue mich jetzt schon auf's nächste Jahr.<br/>
-<br/>
-Mit sportlichem Gruß<br/>
+Hallo RTC,
+\\
+\\
+vielen Dank für eure heutige Veranstaltung.
+\\
+Ihr habt eine wunderschöne Strecke und perfekte Kontrollstellen auf die Beine gestellt.
+\\
+Gerade in Zeiten schwindender Radveranstaltungen, geht Ihr den anderen Weg und organisiert eine Zweite.
+\\
+RESPEKT!!
+\\
+Ich hoffe, dass Ihr es auch nächstes Jahr schafft dieses Event zu veranstalten.
+\\
+Also bitte weiter so.
+\\
+\\
+Und nun den einzigen Kritikpunkt, an der Ausschilderung müsst Ihr echt noch arbeiten.
+\\
+Ein Kontrollfahrer am Morgen würde hier Wunder wirken.
+\\
+Ich für meinen Teil freue mich jetzt schon auf's nächste Jahr.
+\\
+\\
+Mit sportlichem Gruß
+\\
 Bernd Doelp
 `
         )
@@ -243,9 +302,11 @@ Bernd Doelp
         .source(ESource.Facebook)
         .text(
             `
-Danke für die schöne Veranstaltung!<br/>
-Die Strecke war ausgesprochen schön und überall, wo nicht irgendwelche Deppen die Schilder umgedreht oder abgerissen haben, prima ausgezeichnet.<br/>
-<br/>
+Danke für die schöne Veranstaltung!
+\\
+Die Strecke war ausgesprochen schön und überall, wo nicht irgendwelche Deppen die Schilder umgedreht oder abgerissen haben, prima ausgezeichnet.
+\\
+\\
 Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
 `
         )
@@ -257,12 +318,16 @@ Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo,<br/>
-<br/>
-der CTF heute hat mir sehr gut gefallen.<br/>
-Tolle Strecke, sehr gute Verpflegung, sehr nette Personen an den Verpflegungspunkten.<br/>
-<br/>
-Danke aus Hennef<br/>
+Hallo,
+\\
+\\
+der CTF heute hat mir sehr gut gefallen.
+\\
+Tolle Strecke, sehr gute Verpflegung, sehr nette Personen an den Verpflegungspunkten.
+\\
+\\
+Danke aus Hennef
+\\
 Stephan
 `
         )
@@ -276,15 +341,21 @@ Stephan
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.<br/>
-Bin nächstes Jahr sicher wieder dabei.<br/>
-Nix ändern :-))<br/>
-<br/>
-Sportliche Grüße<br/>
-<br/>
-Guido Faßbender<br/>
+Hallo RTC,
+\\
+\\
+vielen Dank für die tolle Marathonstrecke, die sehr gute und ausreichende Verpflegung und überhaupt für die ganze Veranstaltung.
+\\
+Bin nächstes Jahr sicher wieder dabei.
+\\
+Nix ändern :-))
+\\
+\\
+Sportliche Grüße
+\\
+\\
+Guido Faßbender
+\\
 Grenzfahrer e.V.
 `
         )
@@ -297,10 +368,14 @@ Grenzfahrer e.V.
         .source(ESource['E-Mail'])
         .text(
             `
-Reiskuchen,<br/>
-der Reiskuchen von Silvana war wieder mal der Knaller.<br/>
-Kann mir evtl einer das Rezept verraten????<br/>
-Für eure Mühe und Antwort danke ich im voraus<br/>
+Reiskuchen,
+\\
+der Reiskuchen von Silvana war wieder mal der Knaller.
+\\
+Kann mir evtl einer das Rezept verraten????
+\\
+Für eure Mühe und Antwort danke ich im voraus
+\\
 mfg Frank
 `
         )
@@ -313,14 +388,21 @@ mfg Frank
         .source(ESource['E-Mail'])
         .text(
             `
-guten Mogen,<br/>
-kann mich da meinen Vorrednern nur anschließen eine sehr schöne RTF war das.<br/>
-Bin die 118er Runde gefahren die es ja auch schon mit ihren 1600 Hm in sich hatte.<br/>
-Da taten die Beine doch schon ein bisschen weh.<br/>
-Die Landschaft um Eitorf und Much ist sehr schön.<br/>
-Alle Leute im K Bereich waren sehr nett und zuvorkommend.<br/>
-An dieser Stelle noch mals besten Dank an Harald für mein gefundenes Handy.<br/>
-<br/>
+guten Mogen,
+\\
+kann mich da meinen Vorrednern nur anschließen eine sehr schöne RTF war das.
+\\
+Bin die 118er Runde gefahren die es ja auch schon mit ihren 1600 Hm in sich hatte.
+\\
+Da taten die Beine doch schon ein bisschen weh.
+\\
+Die Landschaft um Eitorf und Much ist sehr schön.
+\\
+Alle Leute im K Bereich waren sehr nett und zuvorkommend.
+\\
+An dieser Stelle noch mals besten Dank an Harald für mein gefundenes Handy.
+\\
+\\
 schöne Grüße aus Troisdorf Frank 😊
 `
         )
@@ -333,9 +415,12 @@ schöne Grüße aus Troisdorf Frank 😊
         .source(ESource.Facebook)
         .text(
             `
-Die Versorgungen an allen "K" super und vor allem die Supporter hilfsbereit, nett und gut gelaunt ...<br/>
-Das ist nicht selbstverständlich und nicht auf allen Veranstaltungen so.<br/>
-Das spricht für ein tolles Klima im Team RTC Köln e. V. 1972 !!<br/>
+Die Versorgungen an allen "K" super und vor allem die Supporter hilfsbereit, nett und gut gelaunt ...
+\\
+Das ist nicht selbstverständlich und nicht auf allen Veranstaltungen so.
+\\
+Das spricht für ein tolles Klima im Team RTC Köln e. V. 1972 !!
+\\
 Bis zum nächsten Jahr 😊
 `
         )
@@ -348,9 +433,11 @@ Bis zum nächsten Jahr 😊
         .source(ESource.Facebook)
         .text(
             `
-Wir, der RTC-Mehlem 1984 e. V., waren nur zu zweit am Start wg. der Terminkollision mit ByBike.<br/>
-Nächstes Mal sind wir wieder mehr und beim Marathon dabei ...<br/>
-<br/>
+Wir, der RTC-Mehlem 1984 e. V., waren nur zu zweit am Start wg. der Terminkollision mit ByBike.
+\\
+Nächstes Mal sind wir wieder mehr und beim Marathon dabei ...
+\\
+\\
 Danke Euch für die tolle Organisation.
 `
         )
@@ -363,9 +450,11 @@ Danke Euch für die tolle Organisation.
         .source(ESource['E-Mail'])
         .text(
             `
-Nach der ersten Kontrolle haben wir uns aufgeteilt und in Gruppen die 70er, 100er und die 150er Strecke unter die Räder genommen.<br/>
-Im Ziel waren wir uns einig - es war wieder eine tolle Veranstaltung bei euch - DANKE an ALLE Helfer, Freunde und Sponsoren des RTC !!!!<br/>
-<br/>
+Nach der ersten Kontrolle haben wir uns aufgeteilt und in Gruppen die 70er, 100er und die 150er Strecke unter die Räder genommen.
+\\
+Im Ziel waren wir uns einig - es war wieder eine tolle Veranstaltung bei euch - DANKE an ALLE Helfer, Freunde und Sponsoren des RTC !!!!
+\\
+\\
 Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
 `
         )
@@ -378,23 +467,32 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-ich/wir wollte/n nur sagen, dass ...<br/>
-<br/>
-SENSATIONELL!!!!!<br/>
-<br/>
-Die Strecke    150 von 100 möglichen  Punkte<br/>
-Höhenmeter   reichlich!<br/>
-<br/>
-Ausschilderung  150 von 100 möglichen  Punkte<br/>
-<br/>
-Verpflegung 150 von 100 möglichen  Punkte<br/>
-<br/>
-Was will der Radsportler mehr??<br/>
-<br/>
-Ketten-Checks, für den der es braucht!<br/>
-<br/>
+Hallo RTC,
+\\
+\\
+ich/wir wollte/n nur sagen, dass ...
+\\
+\\
+SENSATIONELL!!!!!
+\\
+\\
+Die Strecke    150 von 100 möglichen  Punkte
+\\
+Höhenmeter   reichlich!
+\\
+\\
+Ausschilderung  150 von 100 möglichen  Punkte
+\\
+\\
+Verpflegung 150 von 100 möglichen  Punkte
+\\
+\\
+Was will der Radsportler mehr??
+\\
+\\
+Ketten-Checks, für den der es braucht!
+\\
+\\
 Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht wenige!)
 `
         )
@@ -407,9 +505,12 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
         .source(ESource.Facebook)
         .text(
             `
-Total schöne Tour.<br/>
-Top Verpflegung und Beschilderung.<br/>
-Vielen Dank an das Orga Team!<br/>
+Total schöne Tour.
+\\
+Top Verpflegung und Beschilderung.
+\\
+Vielen Dank an das Orga Team!
+\\
 Wir sind nächstes Jahr wieder dabei.
 `
         )
@@ -421,32 +522,49 @@ Wir sind nächstes Jahr wieder dabei.
         .source(ESource['E-Mail'])
         .text(
             `
-Hallo RTC,<br/>
-<br/>
-danke mal wieder für die tolle Tour!<br/>
-Man glaubt ja manchmal gar nicht, wie schön wir es im Bergischen haben.<br/>
-Ich komme gerne wieder!!<br/>
-Vielleicht gelingt es euch ja sogar den Termin von der BN-Eupen-BN Tour zu trennen, die will ich nämlich auch mal angehen.<br/>
-Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Anstiegen noch mal Hallo sagen wollte ;-)<br/>
-<br/>
-Was mich allerdings schon wundert ist eure Angabe der Hm für die Marathonstrecke:<br/>
-also mein Garmin hat knappe 2300 hm aufgezeichnet, mit topografischen Korrekturen könnte man vielleicht noch knappe 2400 hm rausschlagen.<br/>
-Aber 2700 hm sind einfach nicht drin.<br/>
+Hallo RTC,
+\\
+\\
+danke mal wieder für die tolle Tour!
+\\
+Man glaubt ja manchmal gar nicht, wie schön wir es im Bergischen haben.
+\\
+Ich komme gerne wieder!!
+\\
+Vielleicht gelingt es euch ja sogar den Termin von der BN-Eupen-BN Tour zu trennen, die will ich nämlich auch mal angehen.
+\\
+Verpflegung fand' ich angemessen gut, auch wenn das Gulasch später an den Anstiegen noch mal Hallo sagen wollte ;-)
+\\
+\\
+Was mich allerdings schon wundert ist eure Angabe der Hm für die Marathonstrecke:
+\\
+also mein Garmin hat knappe 2300 hm aufgezeichnet, mit topografischen Korrekturen könnte man vielleicht noch knappe 2400 hm rausschlagen.
+\\
+Aber 2700 hm sind einfach nicht drin.
+\\
 Nicht, dass ich mehr bräuchte, aber es ist schon unterwegs irritierend, weil man zum Gulasch (55% der Strecke) gerade mal 1100 hm (40% von 2700 hm) hat
-und denkt, was denn da wohl noch alles von einem liegen soll?<br/>
-<br/>
-Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war ;-)).<br/>
-Ob ihr das wohl bitte im kommenden Jahr deutlicher ausschildern könntet?<br/>
-<br/>
-Wie stellt ihr die Streckenlänge eigentlich so genau fest?<br/>
-Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt…<br/>
-Aber gut, wir reden hier von einem Prozent Abweichung.<br/>
+und denkt, was denn da wohl noch alles von einem liegen soll?
+\\
+\\
+Leider habe ich auch alle Abzweigungen zum "Kettencheck" verpasst (was mir zum Ende hin wohl auch ganz recht war ;-)).
+\\
+Ob ihr das wohl bitte im kommenden Jahr deutlicher ausschildern könntet?
+\\
+\\
+Wie stellt ihr die Streckenlänge eigentlich so genau fest?
+\\
+Ich hatte jetzt zum zweiten Mal die 200km gerade erst auf dem Schulhof geknackt…
+\\
+Aber gut, wir reden hier von einem Prozent Abweichung.
+\\
 Ich fand euer 200km-Schild jedenfalls sehr schön J (auch wenn mir da noch gute 2km auf dem Tacho fehlten)
 und auch euer "1km bis zum Ziel" Schild steht was früh auf der Strecke,
-aber es steigt ja keiner 400m vor dem Ziel ab und beruft sich auf das Schild ;-).<br/>
-<br/>
-Nochmals danke und bis zum nächsten Mal!<br/>
-<br/>
+aber es steigt ja keiner 400m vor dem Ziel ab und beruft sich auf das Schild ;-).
+\\
+\\
+Nochmals danke und bis zum nächsten Mal!
+\\
+\\
 Marc
 `
         )
@@ -473,9 +591,11 @@ Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da 
         .source(ESource.Facebook)
         .text(
             `
-Danke für ein perfekt organisierten Marathon, die Strecke war super ausgesucht, viele ruhige Straßen, tolle Ausblicke!<br/>
-Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr nett und hilfsbereit, die Verpflegung ist der Knaller.<br/>
-<br/>
+Danke für ein perfekt organisierten Marathon, die Strecke war super ausgesucht, viele ruhige Straßen, tolle Ausblicke!
+\\
+Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr nett und hilfsbereit, die Verpflegung ist der Knaller.
+\\
+\\
 Da nimmt man beim Marathon noch zu 😊
 `
         )

@@ -1,7 +1,6 @@
 import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
-
 export default [
     new GuestbookEntryBuilder()
         .date(2019, 10, 28, 20, 0)
@@ -17,10 +16,14 @@ export default [
         .source(ESource.Facebook)
         .text(
             `
-Sehr schöne Strecken ...<br/>
-super Verpflegung ...<br/>
-schöne Lounge im Ziel ...<br/>
-mit Grill und Bierchen ...<br/>
+Sehr schöne Strecken ...
+\\
+super Verpflegung ...
+\\
+schöne Lounge im Ziel ...
+\\
+mit Grill und Bierchen ...
+\\
 weiter so.
 `
         )
@@ -32,8 +35,10 @@ weiter so.
         .source(ESource.Facebook)
         .text(
             `
-Sehr schöne Tour bei tollem Sonnenschein<br/>
-Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.<br/>
+Sehr schöne Tour bei tollem Sonnenschein
+\\
+Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.
+\\
 Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
 `
         )
@@ -52,7 +57,8 @@ Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
         .source(ESource.Facebook)
         .text(
             `
-War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.<br/>
+War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.
+\\
 Einfach gesagt, ich freu mich schon auf's nächste Jahr!
 `
         )
