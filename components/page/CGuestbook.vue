@@ -30,6 +30,7 @@ import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { marked } from 'marked'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
+import DateTime from '@/utils/DateTime'
 import EEvent from '@/models/enums/guestbook/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 import GuestbookEntry from '@/models/entities/guestbook/Entry'
@@ -41,12 +42,9 @@ export default defineComponent({
         item: { required: true, type: GuestbookEntry },
     },
     setup() {
-        // For a better performance and to remove the seconds.
-        const dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
-
         return {
             Event: EEvent,
-            getDate: (date: Date) => dateFormatter.format(date),
+            getDate: (date: Date) => DateTime.format(date),
             getHTML: (text: string) => marked.parseInline(text),
             icons: {
                 mdiChevronDown,
