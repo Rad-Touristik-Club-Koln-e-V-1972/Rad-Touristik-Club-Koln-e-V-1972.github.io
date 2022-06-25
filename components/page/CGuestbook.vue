@@ -26,7 +26,6 @@
 </template>
 
 <script lang="ts">
-import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import { marked } from 'marked'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
@@ -46,11 +45,6 @@ export default defineComponent({
             Event: EEvent,
             getDate: (date: Date) => DateTime.format(date),
             getHTML: (text: string) => marked.parseInline(text),
-            icons: {
-                mdiChevronDown,
-                mdiChevronUp,
-                mdiEmailSend,
-            },
             showText: false,
             Source: ESource,
         }

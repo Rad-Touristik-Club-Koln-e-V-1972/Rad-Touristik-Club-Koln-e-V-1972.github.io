@@ -2,11 +2,7 @@
     <v-app id="DefaultView">
         <v-app-bar app class="border" color="accent" flat>
             <template #default>
-                <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer">
-                    <v-icon>
-                        {{ icons.mdiMenu }}
-                    </v-icon>
-                </v-app-bar-nav-icon>
+                <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
                 <v-spacer />
                 <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
                 <v-toolbar-title>
@@ -41,7 +37,7 @@
 </template>
 
 <script lang="ts">
-import { mdiCopyright, mdiMenu } from '@mdi/js'
+import { mdiCopyright } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CNavigationDrawer from '@/components/layouts/default/CNavigationDrawer.vue'
 import CNavigationTabs from '@/components/layouts/default/CNavigationTabs.vue'
@@ -60,7 +56,6 @@ export default defineComponent({
         return {
             icons: {
                 mdiCopyright,
-                mdiMenu,
             },
             navDrawer: false,
             slideshowItems: [
