@@ -11,14 +11,14 @@
         </v-card-title>
         <v-divider />
         <v-card-text v-if="item.text || item.pictures.length">
-            <div v-if="item.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getText(item.text)" />
+            <div v-if="item.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getHTML(item.text)" />
             <c-slideshow v-if="item.pictures.length" :items="item.pictures" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="item.answer">
                 <v-divider />
                 <v-card-text class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">
-                    {{ getAnswer(item.answer) }}
+                    <div v-html="getHTML(`**RTC Köln:** *${item.answer}*`)"></div>
                 </v-card-text>
             </div>
         </v-expand-transition>
@@ -46,9 +46,8 @@ export default defineComponent({
 
         return {
             Event: EEvent,
-            getAnswer: (answer: string) => marked.parse(`**RTC Köln:** *${answer}*`),
             getDate: (date: Date) => dateFormatter.format(date),
-            getText: (text: string) => marked.parse(text),
+            getHTML: (text: string) => marked.parseInline(text),
             icons: {
                 mdiChevronDown,
                 mdiChevronUp,
