@@ -1,7 +1,7 @@
 <template>
     <v-card id="CList">
         <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Zukünftige Termine</v-card-title>
-        <v-data-table :custom-sort="sort" :headers="headers" :item-class="getColor" :items="futureEvents">
+        <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" show-group-by sort-by="datetime">
             <template #item.name="{ item }">{{ item.name }}</template>
             <template #item.datetime="{ item }"><div v-html="getDate(item)" /></template>
         </v-data-table>
@@ -25,24 +25,27 @@ export default defineComponent({
             headers: [
                 {
                     align: 'start',
+                    groupable: true,
                     sortable: true,
                     text: 'Art',
                     value: 'category',
                 },
                 {
                     align: 'start',
+                    groupable: false,
                     sortable: true,
                     text: 'Event',
                     value: 'name',
                 },
                 {
                     align: 'start',
+                    groupable: false,
                     sortable: true,
                     text: 'Termin',
                     value: 'datetime',
                 },
             ],
-            sort: (items: Event[], sortBy: string[], sortDesc: boolean[]) => {
+            sortBy: (items: Event[], sortBy: string[], sortDesc: boolean[]): Event[] => {
                 function compareDateTime(a: Event, b: Event) {
                     let comp = new Date(a.start).getTime() - new Date(b.start).getTime()
 
@@ -55,13 +58,14 @@ export default defineComponent({
                     return comp
                 }
 
-                return items.sort((a, b) => {
-                    let ret
+                function sortHelper(a: Event, b: Event, sortBy: String, sortDesc: boolean): number {
+                    let ret: number
                     let tempA = a
                     let tempB = b
-                    if (sortDesc[0]) [tempA, tempB] = [tempB, tempA]
 
-                    switch (sortBy[0]) {
+                    if (sortDesc) [tempA, tempB] = [tempB, tempA]
+
+                    switch (sortBy) {
                         case 'category':
                             ret = tempA.category.localeCompare(tempB.category)
                             break
@@ -74,6 +78,14 @@ export default defineComponent({
                         default:
                             ret = 0
                     }
+
+                    return ret
+                }
+
+                return items.sort((a: Event, b: Event) => {
+                    let ret = 0
+
+                    for (let i = 0; i < sortBy.length; i++) if (ret === 0) ret = sortHelper(a, b, sortBy[i], sortDesc[i])
 
                     return ret
                 })
