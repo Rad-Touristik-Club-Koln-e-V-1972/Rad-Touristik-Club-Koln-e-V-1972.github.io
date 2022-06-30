@@ -9,7 +9,7 @@ import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     name: 'CSlideshow',
-    props: { items: { required: true, type: Array as PropType<string[]> } },
+    props: { items: { required: true, type: [] as PropType<string[]> } },
     setup() {
         return {}
     },
