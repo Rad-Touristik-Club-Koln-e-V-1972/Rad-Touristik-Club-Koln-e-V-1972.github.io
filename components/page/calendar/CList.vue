@@ -14,6 +14,7 @@ import Event from '@/models/entities/calendar/Event'
 import DateTime from '@/utils/DateTime'
 
 export default defineComponent({
+    name: 'CList',
     props: {
         events: { required: true, type: [] as PropType<Event[]> },
     },
