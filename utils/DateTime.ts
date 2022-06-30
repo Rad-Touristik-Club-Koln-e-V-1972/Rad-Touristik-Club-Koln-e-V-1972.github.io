@@ -18,5 +18,16 @@ export default class DateTime {
         return marked.parseInline(dateTime)
     }
 
+    static isBetween = (date: Date, start: Date, end: Date) => {
+        let tempStart = start
+        let tempEnd = end
+
+        if (tempStart.getTime() > tempEnd.getTime()) [tempStart, tempEnd] = [tempEnd, tempStart]
+
+        return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
+    }
+
     static isFuture = (it: Date) => it.getTime() > Date.now()
+
+    static isSameDay = (date: Date, start: Date) => date.getFullYear() === start.getFullYear() && date.getMonth() === start.getMonth() && date.getDate() === start.getDate()
 }

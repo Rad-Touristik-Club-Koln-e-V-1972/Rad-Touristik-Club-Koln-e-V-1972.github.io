@@ -4,7 +4,7 @@ import ESource from '@/models/enums/guestbook/ESource'
 export default class Entry {
     answer = ``
     date?: Date
-    event = EEvent.Standard
+    event = EEvent.RTC
     location = ''
     name = ''
     organization = ''

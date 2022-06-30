@@ -1,7 +1,15 @@
 <template>
     <v-card id="CList">
-        <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Zukünftige Termine</v-card-title>
-        <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" show-group-by sort-by="datetime">
+        <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">
+            Zukünftige Termine
+            <v-spacer />
+            <c-date-range v-model="filter.dateRange.value" />
+            <v-spacer />
+            <c-categories v-model="filter.categories.value" />
+            <v-spacer />
+            <c-search v-model="filter.search.value" />
+        </v-card-title>
+        <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
             <template #item.name="{ item }">{{ item.name }}</template>
             <template #item.datetime="{ item }"><div v-html="getDate(item)" /></template>
         </v-data-table>
@@ -9,21 +17,54 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, PropType } from '@nuxtjs/composition-api'
+import { computed, defineComponent, PropType, ref } from '@nuxtjs/composition-api'
+import CCategories from '@/components/page/calendar/list/filter/CCategories.vue'
+import CDateRange from '@/components/page/calendar/list/filter/CDateRange.vue'
+import CSearch from '@/components/page/calendar/list/CSearch.vue'
 import Event from '@/models/entities/calendar/Event'
+import EEvent from '@/models/enums/EEvent'
 import DateTime from '@/utils/DateTime'
 
 export default defineComponent({
     name: 'CList',
+    components: { CDateRange, CCategories, CSearch },
     props: { events: { required: true, type: [] as PropType<Event[]> } },
     setup(props) {
+        const filter = {
+            categories: ref([] as EEvent[]),
+            dateRange: ref([] as string[]),
+            search: ref(''),
+        }
+
+        function filterDate(date: Date, dateRange: string[]) {
+            let ret = DateTime.isFuture(date)
+
+            if (ret && dateRange?.length > 0) {
+                const start = new Date(dateRange[0])
+
+                if (dateRange.length === 1) ret = DateTime.isSameDay(date, start)
+                else ret = DateTime.isBetween(date, start, new Date(dateRange[1]))
+            }
+
+            return ret
+        }
+
         return {
-            futureEvents: computed(() => props.events.filter((it) => DateTime.isFuture(it.start))),
+            filter,
+            futureEvents: computed(() => props.events.filter((it) => filterDate(it.start, filter.dateRange.value))),
             getColor: (event: Event) => `${event.color} accent--text`,
             getDate: (event: Event) => DateTime.format(event.start, event.end),
-            headers: [
+            headers: computed(() => [
                 {
                     align: 'start',
+                    filter: (value: EEvent) => {
+                        const categories = filter.categories.value
+                        let ret = true
+
+                        if (categories.length > 0) ret = categories.includes(value)
+
+                        return ret
+                    },
                     groupable: true,
                     sortable: true,
                     text: 'Art',
@@ -43,7 +84,7 @@ export default defineComponent({
                     text: 'Termin',
                     value: 'datetime',
                 },
-            ],
+            ]),
             sortBy: (items: Event[], sortBy: string[], sortDesc: boolean[]): Event[] => {
                 function compareDateTime(a: Event, b: Event) {
                     let comp = new Date(a.start).getTime() - new Date(b.start).getTime()

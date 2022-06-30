@@ -3,7 +3,7 @@ enum EEvent {
     Mitgliederversammlung = 'Mitgliederversammlung',
     Permanente = 'Permanente',
     RTF = 'RTF',
-    Standard = 'RTC',
+    RTC = 'RTC',
     Veranstaltung = 'Veranstaltung',
     Vereinsfahrt = 'Vereinsfahrt',
     Vorstandsversammlung = 'Vorstandsversammlung',
