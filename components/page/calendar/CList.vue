@@ -57,7 +57,7 @@ export default defineComponent({
                     return comp
                 }
 
-                function sortHelper(a: Event, b: Event, sortBy: String, sortDesc: boolean): number {
+                function sortHelper(a: Event, b: Event, sortBy: string, sortDesc: boolean): number {
                     let ret: number
                     let tempA = a
                     let tempB = b
