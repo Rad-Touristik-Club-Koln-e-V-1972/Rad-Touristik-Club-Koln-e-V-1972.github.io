@@ -72,9 +72,7 @@ export default defineComponent({
 
         return {
             getDate: (event: Event) => DateTime.format(event.start, event.end),
-            icons: {
-                mdiClose,
-            },
+            icons: { mdiClose },
             selectedElement,
             selectedEvent,
             selectedOpen,

@@ -2,9 +2,7 @@ import colors from 'vuetify/src/util/colors'
 import de from 'vuetify/src/locale/de'
 
 export default {
-    icons: {
-        iconfont: 'mdiSvg',
-    },
+    icons: { iconfont: 'mdiSvg' },
     lang: {
         locales: { de },
         current: 'de',

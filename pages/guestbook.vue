@@ -46,9 +46,7 @@ export default defineComponent({
     components: { CGuestbook },
     setup() {
         return {
-            icons: {
-                mdiEmailSend,
-            },
+            icons: { mdiEmailSend },
             items: ([] as Entry[]).concat(DB2019, DB2018, DB2017, DB2016, DB2015, DB2014, DB2012),
         }
     },
