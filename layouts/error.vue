@@ -19,9 +19,7 @@ import EHTTP from '@/models/enums/EHTTP'
 
 export default defineComponent({
     name: 'ErrorView',
-    props: {
-        error: { required: true, type: Object as PropType<NuxtError> },
-    },
+    props: { error: { required: true, type: Object as PropType<NuxtError> } },
     setup(props) {
         return {
             getText: () => {

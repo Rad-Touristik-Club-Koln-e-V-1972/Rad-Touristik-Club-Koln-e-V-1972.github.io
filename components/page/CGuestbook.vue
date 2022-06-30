@@ -37,9 +37,7 @@ import GuestbookEntry from '@/models/entities/guestbook/Entry'
 export default defineComponent({
     name: 'CGuestbook',
     components: { CSlideshow },
-    props: {
-        item: { required: true, type: GuestbookEntry },
-    },
+    props: { item: { required: true, type: GuestbookEntry } },
     setup() {
         return {
             Event: EEvent,

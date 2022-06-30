@@ -40,9 +40,7 @@ import Contact from '@/models/entities/Contact'
 
 export default defineComponent({
     name: 'CContact',
-    props: {
-        item: { required: true, type: Contact },
-    },
+    props: { item: { required: true, type: Contact } },
     setup() {
         return {
             icons: {

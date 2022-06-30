@@ -15,9 +15,7 @@ import DateTime from '@/utils/DateTime'
 
 export default defineComponent({
     name: 'CList',
-    props: {
-        events: { required: true, type: [] as PropType<Event[]> },
-    },
+    props: { events: { required: true, type: [] as PropType<Event[]> } },
     setup(props) {
         return {
             futureEvents: computed(() => props.events.filter((it) => DateTime.isFuture(it.start))),

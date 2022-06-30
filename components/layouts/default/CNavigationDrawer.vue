@@ -64,9 +64,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     name: 'CNavigationDrawer',
-    props: {
-        value: { required: true, type: Boolean },
-    },
+    props: { value: { required: true, type: Boolean } },
     emits: ['input'],
     setup() {
         return {
