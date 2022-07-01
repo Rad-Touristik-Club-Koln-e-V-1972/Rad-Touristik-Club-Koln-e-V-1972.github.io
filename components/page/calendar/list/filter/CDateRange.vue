@@ -24,7 +24,6 @@
 <script lang="ts">
 import { mdiCalendar } from '@mdi/js'
 import { defineComponent, PropType, ref } from '@nuxtjs/composition-api'
-import EEvent from '@/models/enums/EEvent'
 
 export default defineComponent({
     name: 'CDateRange',
@@ -44,7 +43,6 @@ export default defineComponent({
                 items.value = []
                 close()
             },
-            categories: Object.values(EEvent),
             icons: { mdiCalendar },
             isOpen,
             items,
