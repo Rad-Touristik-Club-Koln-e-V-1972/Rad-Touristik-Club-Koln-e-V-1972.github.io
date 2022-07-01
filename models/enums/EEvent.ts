@@ -1,6 +1,7 @@
 enum EEvent {
     Abgesagt = 'Abgesagt',
     CTF = 'CTF',
+    Feiertag = 'Feiertag',
     Mitgliederversammlung = 'Mitgliederversammlung',
     Permanente = 'Permanente',
     RTF = 'RTF',

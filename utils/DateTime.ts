@@ -4,18 +4,22 @@ export default class DateTime {
     // For a better performance and to remove the seconds.
     static dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
 
-    static format(start: Date, end?: Date): string {
-        let dateTime = DateTime.dateFormatter.format(start)
+    static format(start: Date, end?: Date, allDay: boolean = false): string {
+        let ret: string
+        const startPair: string[] = DateTime.dateFormatter.format(start).split(',')
 
         if (end) {
-            const startPair: string[] = dateTime.split(',')
             const endPair: string[] = DateTime.dateFormatter.format(end).split(',')
 
-            dateTime = `${startPair[0]} - ${endPair[0]}
-            \\
+            ret = `${startPair[0]} - ${endPair[0]}${
+                allDay
+                    ? ''
+                    : `\\
             ${startPair[1]} - ${endPair[1]}`
-        }
-        return marked.parseInline(dateTime)
+            }`
+        } else ret = startPair[0]
+
+        return marked.parseInline(ret)
     }
 
     static isBetween: (date: Date, start: Date, end: Date) => boolean = (date: Date, start: Date, end: Date) => {

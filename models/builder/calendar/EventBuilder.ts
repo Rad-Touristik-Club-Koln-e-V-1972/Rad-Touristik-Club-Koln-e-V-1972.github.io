@@ -28,6 +28,11 @@ export default class EventBuilder {
         return this
     }
 
+    endDate(value: Date): EventBuilder {
+        this.value.end = value
+        return this
+    }
+
     // If some dates are not saved with hh:mm they'll trigger a NaN-error.
     // noinspection FunctionNamingConventionJS
     end(year: number, month: number, date: number, hours: number = 0, minutes: number = 0): EventBuilder {
@@ -43,6 +48,11 @@ export default class EventBuilder {
 
     name(value: string): EventBuilder {
         this.value.name = value
+        return this
+    }
+
+    startDate(value: Date): EventBuilder {
+        this.value.start = value
         return this
     }
 
@@ -68,6 +78,9 @@ export default class EventBuilder {
                 break
             case EEvent.CTF:
                 color = 'blue'
+                break
+            case EEvent.Feiertag:
+                color = 'secondary'
                 break
             case EEvent.Mitgliederversammlung:
                 color = 'green'

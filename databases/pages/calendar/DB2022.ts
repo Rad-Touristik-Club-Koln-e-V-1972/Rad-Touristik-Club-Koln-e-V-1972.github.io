@@ -1,5 +1,6 @@
 import EventBuilder from '@/models/builder/calendar/EventBuilder'
 import EEvent from '@/models/enums/EEvent'
+import Calendar from '@/utils/Calendar'
 
 export default [
     new EventBuilder()
@@ -211,4 +212,4 @@ export default [
         .name('Dezember / Weihnachtsfeier')
         .start(2022, 12, 2, 19)
         .build(),
-]
+].concat(Calendar.getHolidays(2022))

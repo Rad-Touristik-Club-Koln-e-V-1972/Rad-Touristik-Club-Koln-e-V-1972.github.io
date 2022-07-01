@@ -32,13 +32,13 @@
                             <div v-html="getDate(selectedEvent)" />
                         </v-list-item-content>
                     </v-list-item>
-                    <v-list-item>
+                    <v-list-item v-if="selectedEvent.contact">
                         <v-list-item-content>Ansprechpartner:</v-list-item-content>
                         <v-list-item-content class="align-end">
                             {{ selectedEvent.contact }}
                         </v-list-item-content>
                     </v-list-item>
-                    <v-list-item>
+                    <v-list-item v-if="selectedEvent.clubPoints">
                         <v-list-item-content>VP:</v-list-item-content>
                         <v-list-item-content class="align-end">
                             {{ selectedEvent.clubPoints }}
@@ -83,7 +83,7 @@ export default defineComponent({
         }
 
         return {
-            getDate: (event: Event) => DateTime.format(event.start, event.end),
+            getDate: (event: Event) => DateTime.format(event.start, event.end, !event.timed),
             icons: { mdiClose },
             selectedElement,
             selectedEvent,

@@ -18,7 +18,7 @@
             <template #item.contact="{ item }">
                 <a v-if="item.contact" class="accent--text" href="/contacts" :style="getStyle(item)" target="_self" v-text="item.contact" />
             </template>
-            <template #item.clubPoints="{ item }"><div :style="getStyle(item)" v-text="item.clubPoints" /></template>
+            <template #item.clubPoints="{ item }"><div v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>
     </v-card>
 </template>
@@ -60,7 +60,7 @@ export default defineComponent({
             filter,
             futureEvents: computed(() => props.events.filter((it) => filterDate(it.start, filter.dateRange.value))),
             getColor: (event: Event) => `${event.color} accent--text`,
-            getDate: (event: Event) => DateTime.format(event.start, event.end),
+            getDate: (event: Event) => DateTime.format(event.start, event.end, !event.timed),
             getStyle: (event: Event) => event.category === EEvent.Abgesagt && 'text-decoration: double line-through',
             headers: computed(() => [
                 {

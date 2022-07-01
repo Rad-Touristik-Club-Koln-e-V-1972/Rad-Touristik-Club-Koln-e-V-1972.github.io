@@ -3,7 +3,7 @@ import EEvent from '@/models/enums/EEvent'
 
 export default class Event {
     category = EEvent.RTC
-    clubPoints = 0
+    clubPoints?: number
     color = 'primary'
     contact = ''
     end?: Date

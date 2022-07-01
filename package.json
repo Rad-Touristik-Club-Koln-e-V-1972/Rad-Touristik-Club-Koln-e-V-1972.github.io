@@ -17,10 +17,11 @@
         "*.**": "prettier --ignore-unknown --write"
     },
     "dependencies": {
-        "@rushstack/eslint-patch": "^1.1.4",
         "@nuxtjs/composition-api": "^0.32.0",
+        "@rushstack/eslint-patch": "^1.1.4",
         "@types/marked": "^4.0.3",
         "core-js": "^3.23.3",
+        "date-holidays": "^3.16.2",
         "marked": "^4.0.17",
         "nuxt": "^2.15.8",
         "vue": "^2.6.14",
