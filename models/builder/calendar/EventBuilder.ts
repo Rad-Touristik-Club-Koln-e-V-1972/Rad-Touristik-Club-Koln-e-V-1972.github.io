@@ -69,9 +69,20 @@ export default class EventBuilder {
             case EEvent.CTF:
                 color = 'blue'
                 break
+            case EEvent.Mitgliederversammlung:
+                color = 'green'
+                break
+            case EEvent.Permanente:
+                color = 'red'
+                break
             case EEvent.RTF:
                 color = 'deep-purple'
                 break
+            case EEvent.Veranstaltung:
+                color = 'pink darken-3'
+                break
+            case EEvent.RTC:
+            case EEvent.Vereinsfahrt:
             default:
                 color = 'primary'
         }
