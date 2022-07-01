@@ -1,15 +1,18 @@
+// TODO Workaround for https://github.com/vuejs/eslint-config-prettier/issues/7#issuecomment-1006761992
+//  remove package @rushstack/eslint-patch if fixed
+require('@rushstack/eslint-patch/modern-module-resolution')
+
 module.exports = {
-    extends: ['@nuxtjs/eslint-config-typescript', 'plugin:vue/recommended', 'plugin:vuetify/recommended', 'plugin:nuxt/recommended', 'plugin:prettier/recommended'],
+    env: {
+        browser: true,
+        node: false,
+    },
+    extends: ['eslint:recommended', '@nuxtjs/eslint-config-typescript', 'plugin:vuetify/recommended', 'plugin:nuxt/recommended', '@vue/eslint-config-prettier'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['vue'],
     root: true,
     // add your custom rules here
-    rules: {
-        'vue/multi-word-component-names': 'off',
-        // We neither use SSR nor allow users to dynamical add content.
-        'vue/no-v-html': 'off',
-    },
+    rules: {},
 }

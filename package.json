@@ -5,11 +5,10 @@
     "scripts": {
         "dev": "nuxt",
         "generate": "nuxt generate",
-        "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
-        "lint:prettier": "prettier --check .",
-        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+        "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
+        "lint:prettier": "prettier --write --list-different .",
+        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
         "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
-        "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
         "prepare": "husky install"
     },
     "lint-staged": {
@@ -18,16 +17,14 @@
         "*.**": "prettier --ignore-unknown --write"
     },
     "dependencies": {
+        "@rushstack/eslint-patch": "^1.1.4",
         "@nuxtjs/composition-api": "^0.32.0",
         "@types/marked": "^4.0.3",
         "core-js": "^3.23.3",
         "marked": "^4.0.17",
         "nuxt": "^2.15.8",
         "vue": "^2.6.14",
-        "vue-server-renderer": "^2.6.14",
-        "vue-template-compiler": "^2.6.14",
-        "vuetify": "^2.6.7",
-        "webpack": "^4.46.0"
+        "vuetify": "^2.6.7"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
@@ -39,10 +36,9 @@
         "@nuxtjs/eslint-module": "^3.1.0",
         "@nuxtjs/stylelint-module": "^4.1.0",
         "@nuxtjs/vuetify": "^1.12.3",
+        "@vue/eslint-config-prettier": "^7.0.0",
         "eslint": "^8.18.0",
-        "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-nuxt": "^3.2.0",
-        "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-vue": "^9.1.1",
         "eslint-plugin-vuetify": "^1.1.0",
         "husky": "^8.0.1",
