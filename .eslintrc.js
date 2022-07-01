@@ -14,5 +14,8 @@ module.exports = {
     },
     root: true,
     // add your custom rules here
-    rules: {},
+    rules: {
+        // We neither use SSR nor allow users to dynamical add content.
+        'vue/no-v-html': 'off',
+    },
 }
