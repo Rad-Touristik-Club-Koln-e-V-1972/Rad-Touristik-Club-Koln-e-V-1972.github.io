@@ -10,8 +10,8 @@
             <c-search v-model="filter.search.value" />
         </v-card-title>
         <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
-            <template #item.name="{ item }">{{ item.name }}</template>
-            <template #item.datetime="{ item }"><div v-html="getDate(item)" /></template>
+            <template #item.name="{ item }"><div :style="getStyle(item)" v-text="item.name" /></template>
+            <template #item.datetime="{ item }"><div :style="getStyle(item)" v-html="getDate(item)" /></template>
         </v-data-table>
     </v-card>
 </template>
@@ -54,6 +54,7 @@ export default defineComponent({
             futureEvents: computed(() => props.events.filter((it) => filterDate(it.start, filter.dateRange.value))),
             getColor: (event: Event) => `${event.color} accent--text`,
             getDate: (event: Event) => DateTime.format(event.start, event.end),
+            getStyle: (event: Event) => event.category === EEvent.Abgesagt && 'text-decoration: double line-through',
             headers: computed(() => [
                 {
                     align: 'start',

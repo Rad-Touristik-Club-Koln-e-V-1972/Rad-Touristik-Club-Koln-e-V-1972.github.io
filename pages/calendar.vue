@@ -8,7 +8,7 @@
                 v-model="getFocus().value"
                 color="primary"
                 :event-color="getEventColor"
-                :events="events"
+                :events="events.filter((it) => it.category !== EEvent.Abgesagt)"
                 show-week
                 :type="getTypeString(type)"
                 @click:date="switchToDayView"
@@ -27,8 +27,9 @@ import CControl from '@/components/page/calendar/CControl.vue'
 import CEvent from '@/components/page/calendar/CEvent.vue'
 import CList from '@/components/page/calendar/CList.vue'
 import DB2022 from '@/databases/pages/calendar/DB2022'
-import ECalendar from '@/models/enums/ECalendar'
 import Event from '@/models/entities/calendar/Event'
+import ECalendar from '@/models/enums/ECalendar'
+import EEvent from '@/models/enums/EEvent'
 
 export default defineComponent({
     name: 'CalendarView',
@@ -54,6 +55,7 @@ export default defineComponent({
         return {
             calendar,
             ECalendar,
+            EEvent,
             event,
             events: ([] as Event[]).concat(DB2022),
             getEventColor: (event: Event) => event.color,

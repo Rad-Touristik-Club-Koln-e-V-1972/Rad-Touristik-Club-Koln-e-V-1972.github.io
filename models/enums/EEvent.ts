@@ -1,4 +1,5 @@
 enum EEvent {
+    Abgesagt = 'Abgesagt',
     CTF = 'CTF',
     Mitgliederversammlung = 'Mitgliederversammlung',
     Permanente = 'Permanente',
