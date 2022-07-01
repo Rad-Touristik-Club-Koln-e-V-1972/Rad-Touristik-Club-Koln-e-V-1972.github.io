@@ -10,9 +10,14 @@
             <c-search v-model="filter.search.value" />
         </v-card-title>
         <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
-            <template #item.name="{ item }"><div :style="getStyle(item)" v-text="item.name" /></template>
+            <template #item.name="{ item }">
+                <a v-if="item.url" class="accent--text" :href="item.url" :style="getStyle(item)" target="_blank" v-text="item.name" />
+                <span v-else :style="getStyle(item)" v-text="item.name" />
+            </template>
             <template #item.datetime="{ item }"><div :style="getStyle(item)" v-html="getDate(item)" /></template>
-            <template #item.contact="{ item }"><div :style="getStyle(item)" v-text="item.contact" /></template>
+            <template #item.contact="{ item }">
+                <a v-if="item.contact" class="accent--text" href="/contacts" :style="getStyle(item)" target="_self" v-text="item.contact" />
+            </template>
             <template #item.clubPoints="{ item }"><div :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>
     </v-card>

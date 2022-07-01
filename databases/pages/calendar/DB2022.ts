@@ -8,6 +8,7 @@ export default [
         .end(2022, 6, 27, 15, 1)
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
+        .link('rtc-koeln.de')
         .name('50. Forsbach – Tour - Marathon/RTF')
         .start(2022, 6, 27, 9, 36)
         .build(),
@@ -17,6 +18,7 @@ export default [
         .end(2022, 6, 5, 15, 2)
         .clubPoints(2)
         .contact('Klaus Dünkelmann')
+        .link('rtc-koeln.de')
         .name('7. Wahnbach – Tour - CTF/Gravel')
         .start(2022, 6, 1, 9, 37)
         .build(),
@@ -26,6 +28,7 @@ export default [
         .end(2022, 6, 5, 15, 3)
         .clubPoints(3)
         .contact('Wolfgang Dünkelmann')
+        .link('rtc-koeln.de')
         .name('Mitgliederversammlung')
         .start(2022, 6, 1, 9, 38)
         .build(),
@@ -35,6 +38,7 @@ export default [
         .end(2022, 6, 23, 20, 4)
         .clubPoints(4)
         .contact('Klaus Dünkelmann')
+        .link('rtc-koeln.de')
         .name('Veranstaltung')
         .start(2022, 6, 20, 2, 39)
         .build(),
@@ -44,16 +48,27 @@ export default [
         .end(2022, 6, 5, 15, 5)
         .clubPoints(5)
         .contact('Wolfgang Dünkelmann')
+        .link('rtc-koeln.de')
         .name('Vereinsfahrt')
         .start(2022, 6, 1, 9, 40)
         .build(),
-    new EventBuilder().allDay(true).category(EEvent.Permanente).end(2022, 6, 23, 20, 6).clubPoints(6).contact('Klaus Dünkelmann').name('Allday').start(2022, 6, 20, 2, 41).build(),
+    new EventBuilder()
+        .allDay(true)
+        .category(EEvent.Permanente)
+        .end(2022, 6, 23, 20, 6)
+        .clubPoints(6)
+        .contact('Klaus Dünkelmann')
+        .link('rtc-koeln.de')
+        .name('Allday')
+        .start(2022, 6, 20, 2, 41)
+        .build(),
     new EventBuilder()
         .allDay(false)
         .category(EEvent.Vorstandsversammlung)
         .end(2022, 6, 5, 15, 7)
         .clubPoints(7)
         .contact('Wolfgang Dünkelmann')
+        .link('rtc-koeln.de')
         .name('Timing')
         .start(2022, 6, 1, 9, 42)
         .build(),
