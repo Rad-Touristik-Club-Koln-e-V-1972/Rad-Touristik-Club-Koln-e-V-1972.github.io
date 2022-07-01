@@ -7,7 +7,6 @@ enum EEvent {
     RTC = 'RTC',
     Veranstaltung = 'Veranstaltung',
     Vereinsfahrt = 'Vereinsfahrt',
-    Vorstandsversammlung = 'Vorstandsversammlung',
 }
 
 export default EEvent
