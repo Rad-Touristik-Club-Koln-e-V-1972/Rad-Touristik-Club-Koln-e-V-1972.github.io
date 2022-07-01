@@ -2,9 +2,9 @@ import { marked } from 'marked'
 
 export default class DateTime {
     // For a better performance and to remove the seconds.
-    static dateFormatter = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+    static dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
 
-    static format(start: Date, end?: Date) {
+    static format(start: Date, end?: Date): string {
         let dateTime = DateTime.dateFormatter.format(start)
 
         if (end) {
@@ -18,7 +18,7 @@ export default class DateTime {
         return marked.parseInline(dateTime)
     }
 
-    static isBetween = (date: Date, start: Date, end: Date) => {
+    static isBetween: (date: Date, start: Date, end: Date) => boolean = (date: Date, start: Date, end: Date) => {
         let tempStart = start
         let tempEnd = end
 
@@ -27,7 +27,8 @@ export default class DateTime {
         return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
     }
 
-    static isFuture = (it: Date) => it.getTime() > Date.now()
+    static isFuture: (it: Date) => boolean = (it: Date) => it.getTime() > Date.now()
 
-    static isSameDay = (date: Date, start: Date) => date.getFullYear() === start.getFullYear() && date.getMonth() === start.getMonth() && date.getDate() === start.getDate()
+    static isSameDay: (date: Date, start: Date) => boolean = (date: Date, start: Date) =>
+        date.getFullYear() === start.getFullYear() && date.getMonth() === start.getMonth() && date.getDate() === start.getDate()
 }
