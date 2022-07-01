@@ -32,6 +32,18 @@
                             <div v-html="getDate(selectedEvent)" />
                         </v-list-item-content>
                     </v-list-item>
+                    <v-list-item>
+                        <v-list-item-content>Ansprechpartner:</v-list-item-content>
+                        <v-list-item-content class="align-end">
+                            {{ selectedEvent.contact }}
+                        </v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-content>VP:</v-list-item-content>
+                        <v-list-item-content class="align-end">
+                            {{ selectedEvent.clubPoints }}
+                        </v-list-item-content>
+                    </v-list-item>
                 </v-list>
             </v-card-text>
         </v-card>

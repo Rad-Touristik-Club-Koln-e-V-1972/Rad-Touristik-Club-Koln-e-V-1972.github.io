@@ -85,6 +85,20 @@ export default defineComponent({
                     text: 'Termin',
                     value: 'datetime',
                 },
+                {
+                    align: 'start',
+                    groupable: true,
+                    sortable: true,
+                    text: 'Ansprechpartner',
+                    value: 'contact',
+                },
+                {
+                    align: 'start',
+                    groupable: false,
+                    sortable: true,
+                    text: 'VP',
+                    value: 'clubPoints',
+                },
             ]),
             sortBy: (items: Event[], sortBy: string[], sortDesc: boolean[]): Event[] => {
                 function compareDateTime(a: Event, b: Event) {

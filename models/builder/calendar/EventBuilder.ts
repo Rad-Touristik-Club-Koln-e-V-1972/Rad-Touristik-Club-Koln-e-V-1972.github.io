@@ -18,6 +18,16 @@ export default class EventBuilder {
         return this
     }
 
+    clubPoints(value: number): EventBuilder {
+        this.value.clubPoints = value
+        return this
+    }
+
+    contact(value: string): EventBuilder {
+        this.value.contact = value
+        return this
+    }
+
     // If some dates are not saved with hh:mm they'll trigger a NaN-error.
     // noinspection FunctionNamingConventionJS
     end(year: number, month: number, date: number, hours: number = 0, minutes: number = 0): EventBuilder {
