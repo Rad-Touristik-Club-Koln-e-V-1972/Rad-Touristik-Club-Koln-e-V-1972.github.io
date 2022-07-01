@@ -12,6 +12,8 @@
         <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
             <template #item.name="{ item }"><div :style="getStyle(item)" v-text="item.name" /></template>
             <template #item.datetime="{ item }"><div :style="getStyle(item)" v-html="getDate(item)" /></template>
+            <template #item.contact="{ item }"><div :style="getStyle(item)" v-text="item.contact" /></template>
+            <template #item.clubPoints="{ item }"><div :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>
     </v-card>
 </template>

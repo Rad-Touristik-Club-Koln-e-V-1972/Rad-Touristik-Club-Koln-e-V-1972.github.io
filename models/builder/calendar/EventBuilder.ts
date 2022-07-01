@@ -55,10 +55,21 @@ export default class EventBuilder {
     }
 
     private static getColor(value: EEvent) {
-        let color: string = 'primary'
+        let color
 
-        if (value === EEvent.CTF) color = 'blue'
-        else if (value === EEvent.RTF) color = 'deep-purple'
+        switch (value) {
+            case EEvent.Abgesagt:
+                color = 'grey'
+                break
+            case EEvent.CTF:
+                color = 'blue'
+                break
+            case EEvent.RTF:
+                color = 'deep-purple'
+                break
+            default:
+                color = 'primary'
+        }
 
         return color
     }
