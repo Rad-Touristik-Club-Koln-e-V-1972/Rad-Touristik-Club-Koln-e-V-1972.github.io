@@ -31,8 +31,6 @@ export default class DateTime {
         return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
     }
 
-    static isFuture: (it: Date) => boolean = (it: Date) => it.getTime() > Date.now()
-
     static isSameDay: (date: Date, start: Date) => boolean = (date: Date, start: Date) =>
         date.getFullYear() === start.getFullYear() && date.getMonth() === start.getMonth() && date.getDate() === start.getDate()
 }

@@ -24,19 +24,19 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, PropType, ref } from '@nuxtjs/composition-api'
+import { computed, defineComponent, ref } from '@nuxtjs/composition-api'
 import CCategories from '@/components/page/calendar/list/filter/CCategories.vue'
 import CDateRange from '@/components/page/calendar/list/filter/CDateRange.vue'
 import CSearch from '@/components/page/calendar/list/CSearch.vue'
+import Database from '@/databases/pages/calendar/Database'
 import Event from '@/models/entities/calendar/Event'
 import EEvent from '@/models/enums/EEvent'
 import DateTime from '@/utils/DateTime'
 
 export default defineComponent({
     name: 'CList',
-    components: { CDateRange, CCategories, CSearch },
-    props: { events: { required: true, type: [] as PropType<Event[]> } },
-    setup(props) {
+    components: { CCategories, CDateRange, CSearch },
+    setup() {
         const filter = {
             categories: ref([] as EEvent[]),
             dateRange: ref([] as string[]),
@@ -44,9 +44,9 @@ export default defineComponent({
         }
 
         function filterDate(date: Date, dateRange: string[]) {
-            let ret = DateTime.isFuture(date)
+            let ret = true
 
-            if (ret && dateRange?.length > 0) {
+            if (dateRange?.length > 0) {
                 const start = new Date(dateRange[0])
 
                 if (dateRange.length === 1) ret = DateTime.isSameDay(date, start)
@@ -58,7 +58,7 @@ export default defineComponent({
 
         return {
             filter,
-            futureEvents: computed(() => props.events.filter((it) => filterDate(it.start, filter.dateRange.value))),
+            futureEvents: computed(() => Database.instance.allFuture.filter((it) => filterDate(it.start, filter.dateRange.value))),
             getColor: (event: Event) => `${event.color} accent--text`,
             getDate: (event: Event) => DateTime.format(event.start, event.end, !event.timed),
             getStyle: (event: Event) => event.category === EEvent.Abgesagt && 'text-decoration: double line-through',

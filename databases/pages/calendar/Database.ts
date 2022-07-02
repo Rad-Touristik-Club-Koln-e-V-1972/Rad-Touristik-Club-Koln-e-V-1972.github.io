@@ -4,6 +4,7 @@ import Event from '@/models/entities/calendar/Event'
 export default class Database {
     private static _instance?: Database
     private db2022 = DB2022
+    private today = new Date(Date.now())
 
     private constructor() {
         if (Database._instance) throw new Error('Use Database.instance instead of new.')
@@ -21,5 +22,9 @@ export default class Database {
 
     get all(): Event[] {
         return this['2022']
+    }
+
+    get allFuture(): Event[] {
+        return this.all.filter((it) => it.start.getTime() > this.today.getTime())
     }
 }

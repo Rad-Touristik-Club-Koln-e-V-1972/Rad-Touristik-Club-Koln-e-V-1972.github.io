@@ -15,7 +15,7 @@
                 @click:event="event.showEvent"
                 @click:more="switchToDayView"
             />
-            <c-list v-if="type === ECalendar.list" :events="events" />
+            <c-list v-if="type === ECalendar.list" />
             <c-event ref="event" />
         </v-col>
     </v-row>
@@ -36,8 +36,6 @@ export default defineComponent({
     components: { CControl, CEvent, CList },
     setup() {
         const currentInstance = getCurrentInstance()
-        const calendar = ref('')
-        const event = ref('')
         const focus = ref('')
         const title = ref('')
         const type: Ref<ECalendar> = ref(ECalendar.month)
@@ -53,11 +51,11 @@ export default defineComponent({
         })
 
         return {
-            calendar,
+            calendar: ref(''),
             ECalendar,
             EEvent,
-            event,
-            events: ([] as Event[]).concat(Database.instance.all),
+            event: ref(''),
+            events: Database.instance.all,
             getEventColor: (event: Event) => event.color,
             getFocus: () => focus,
             getTypeString: (ec: ECalendar) => Object.entries(ECalendar).find((it) => it[1] === ec)?.[0] ?? '',
