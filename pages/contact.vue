@@ -17,15 +17,15 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import CContact from '@/components/page/CContact.vue'
+import Database from '@/databases/pages/contact/Database'
 import Contact from '@/models/entities/Contact'
-import DB from '@/databases/pages/contact/DB'
 
 export default defineComponent({
     name: 'ContactView',
     components: { CContact },
     setup() {
         return {
-            items: ([] as Contact[]).concat(DB),
+            items: ([] as Contact[]).concat(Database.instance.all),
         }
     },
 })

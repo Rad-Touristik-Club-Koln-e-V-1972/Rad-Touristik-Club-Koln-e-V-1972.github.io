@@ -32,14 +32,7 @@
 import { mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CGuestbook from '@/components/page/CGuestbook.vue'
-import DB2012 from '@/databases/pages/guestbook/DB2012'
-import DB2014 from '@/databases/pages/guestbook/DB2014'
-import DB2015 from '@/databases/pages/guestbook/DB2015'
-import DB2016 from '@/databases/pages/guestbook/DB2016'
-import DB2017 from '@/databases/pages/guestbook/DB2017'
-import DB2018 from '@/databases/pages/guestbook/DB2018'
-import DB2019 from '@/databases/pages/guestbook/DB2019'
-import Entry from '@/models/entities/guestbook/Entry'
+import Database from '@/databases/pages/guestbook/Database'
 
 export default defineComponent({
     name: 'GuestbookView',
@@ -47,7 +40,7 @@ export default defineComponent({
     setup() {
         return {
             icons: { mdiEmailSend },
-            items: ([] as Entry[]).concat(DB2019, DB2018, DB2017, DB2016, DB2015, DB2014, DB2012),
+            items: Database.instance.all,
         }
     },
 })
