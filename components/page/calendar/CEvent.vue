@@ -66,7 +66,7 @@ export default defineComponent({
         const showEvent = ({ event, nativeEvent }: { event: Event; nativeEvent: any }) => {
             const open = () => {
                 selectedEvent.value = event
-                selectedElement.value = nativeEvent.target
+                selectedElement.value = nativeEvent?.target
                 requestAnimationFrame(() =>
                     requestAnimationFrame(() => {
                         selectedOpen.value = true
@@ -79,7 +79,7 @@ export default defineComponent({
                 requestAnimationFrame(() => requestAnimationFrame(() => open()))
             } else open()
 
-            nativeEvent.stopPropagation()
+            nativeEvent?.stopPropagation()
         }
 
         return {

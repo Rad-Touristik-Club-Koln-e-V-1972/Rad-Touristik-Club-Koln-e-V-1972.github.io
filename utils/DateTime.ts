@@ -22,6 +22,10 @@ export default class DateTime {
         return marked.parseInline(ret)
     }
 
+    static getDaysInMonth(month: number, year: number) {
+        return new Date(year, month, 0).getDate()
+    }
+
     static isBetween: (date: Date, start: Date, end: Date) => boolean = (date: Date, start: Date, end: Date) => {
         let tempStart = start
         let tempEnd = end
