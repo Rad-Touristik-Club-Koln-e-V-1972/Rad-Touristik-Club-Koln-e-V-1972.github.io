@@ -14,7 +14,7 @@
                             </div>
                         </v-toolbar-title>
                     </v-col>
-                    <v-col cols="auto"><c-countdown /></v-col>
+                    <v-col v-show="!$vuetify.breakpoint.xsOnly" cols="auto"><c-countdown /></v-col>
                 </v-row>
             </template>
             <template #extension>
