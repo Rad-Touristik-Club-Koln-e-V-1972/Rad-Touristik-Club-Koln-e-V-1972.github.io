@@ -2,16 +2,16 @@
     <div v-if="nextEvent" id="CCountdown">
         <v-row class="text-center" dense style="cursor: pointer" @click="event.showEvent({ event: nextEvent, nativeEvent: undefined })">
             <v-col>
-                <v-progress-circular color="primary" rotate="0" size="60" :value="getPercentageSeconds(seconds)">{{ seconds }}s</v-progress-circular>
-            </v-col>
-            <v-col>
-                <v-progress-circular color="primary lighten-1" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}m</v-progress-circular>
+                <v-progress-circular color="primary lighten-5" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
             </v-col>
             <v-col>
                 <v-progress-circular color="primary lighten-3" rotate="180" size="60" :value="getPercentageHours(hours)">{{ hours }}h</v-progress-circular>
             </v-col>
             <v-col>
-                <v-progress-circular color="primary lighten-5" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
+                <v-progress-circular color="primary lighten-1" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}m</v-progress-circular>
+            </v-col>
+            <v-col>
+                <v-progress-circular color="primary" rotate="0" size="60" :value="getPercentageSeconds(seconds)">{{ seconds }}s</v-progress-circular>
             </v-col>
         </v-row>
         <v-row class="text-center" no-gutters>
