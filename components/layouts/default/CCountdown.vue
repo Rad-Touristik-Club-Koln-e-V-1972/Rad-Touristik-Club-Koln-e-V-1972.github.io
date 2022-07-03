@@ -24,13 +24,15 @@
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref } from '@nuxtjs/composition-api'
 import CEvent from '@/components/page/calendar/CEvent.vue'
-import Database from '@/databases/pages/calendar/Database'
 import DateTime from '@/utils/DateTime'
+import { useCalendarStore } from '@/store/Calendar'
 
 export default defineComponent({
     name: 'CCountdown',
     components: { CEvent },
     setup() {
+        const calendarStore = useCalendarStore()
+
         const _millisecondsSecond = 1000
         const _millisecondsMinute = 60 * _millisecondsSecond
         const _millisecondsHour = 60 * _millisecondsMinute
@@ -41,16 +43,17 @@ export default defineComponent({
         const minutes = ref(0)
         const seconds = ref(0)
 
-        let interval: NodeJS.Timeout
-        const nextEvent = Database.instance.nextEvent
+        const nextEvent = calendarStore.nextEvent()
         const daysOfMonth = nextEvent ? DateTime.getDaysInMonth(nextEvent.start.getMonth(), nextEvent.start.getFullYear()) : 30
+
+        let interval: NodeJS.Timeout
 
         const getPercentage = (max: number, value: number) => Math.round((100 / max) * value)
 
         onMounted(() => {
             if (nextEvent) {
                 interval = setInterval(() => {
-                    const milliseconds = Math.abs(Database.today.getTime() - nextEvent.start.getTime())
+                    const milliseconds = Math.abs(calendarStore.today().getTime() - nextEvent.start.getTime())
                     days.value = Math.floor(milliseconds / _millisecondsDay)
                     hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)
                     minutes.value = Math.floor((milliseconds % _millisecondsHour) / _millisecondsMinute)

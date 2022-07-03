@@ -21,6 +21,8 @@ export default {
                 treeShake: true,
             },
         ],
+        // https://github.com/vuejs/pinia/tree/v2/packages/nuxt
+        ['@pinia/nuxt', { disableVuex: true }],
     ],
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

@@ -32,7 +32,7 @@
 import { mdiEmailSend } from '@mdi/js'
 import { defineComponent } from '@nuxtjs/composition-api'
 import CGuestbook from '@/components/page/CGuestbook.vue'
-import Database from '@/databases/pages/guestbook/Database'
+import { useGuestbookStore } from '@/store/Guestbook'
 
 export default defineComponent({
     name: 'GuestbookView',
@@ -40,7 +40,7 @@ export default defineComponent({
     setup() {
         return {
             icons: { mdiEmailSend },
-            items: Database.instance.all,
+            items: useGuestbookStore().all,
         }
     },
 })

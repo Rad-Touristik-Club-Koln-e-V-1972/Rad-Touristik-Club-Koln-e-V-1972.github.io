@@ -28,10 +28,10 @@ import { computed, defineComponent, ref } from '@nuxtjs/composition-api'
 import CCategories from '@/components/page/calendar/list/filter/CCategories.vue'
 import CDateRange from '@/components/page/calendar/list/filter/CDateRange.vue'
 import CSearch from '@/components/page/calendar/list/CSearch.vue'
-import Database from '@/databases/pages/calendar/Database'
 import Event from '@/models/entities/calendar/Event'
 import EEvent from '@/models/enums/EEvent'
 import DateTime from '@/utils/DateTime'
+import { useCalendarStore } from '@/store/Calendar'
 
 export default defineComponent({
     name: 'CList',
@@ -58,7 +58,11 @@ export default defineComponent({
 
         return {
             filter,
-            futureEvents: computed(() => Database.instance.allFuture.filter((it) => filterDate(it.start, filter.dateRange.value))),
+            futureEvents: computed(() =>
+                useCalendarStore()
+                    .allFuture()
+                    .filter((it) => filterDate(it.start, filter.dateRange.value))
+            ),
             getColor: (event: Event) => `${event.color} accent--text`,
             getDate: (event: Event) => DateTime.format(event.start, event.end, !event.timed),
             getStyle: (event: Event) => event.category === EEvent.Abgesagt && 'text-decoration: double line-through',

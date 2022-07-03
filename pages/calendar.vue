@@ -26,10 +26,10 @@ import { defineComponent, getCurrentInstance, nextTick, Ref, ref, watch } from '
 import CControl from '@/components/page/calendar/CControl.vue'
 import CEvent from '@/components/page/calendar/CEvent.vue'
 import CList from '@/components/page/calendar/CList.vue'
-import Database from '@/databases/pages/calendar/Database'
 import Event from '@/models/entities/calendar/Event'
 import ECalendar from '@/models/enums/ECalendar'
 import EEvent from '@/models/enums/EEvent'
+import { useCalendarStore } from '@/store/Calendar'
 
 export default defineComponent({
     name: 'CalendarView',
@@ -55,7 +55,7 @@ export default defineComponent({
             ECalendar,
             EEvent,
             event: ref(''),
-            events: Database.instance.all,
+            events: useCalendarStore().all,
             getEventColor: (event: Event) => event.color,
             getFocus: () => focus,
             getTypeString: (ec: ECalendar) => Object.entries(ECalendar).find((it) => it[1] === ec)?.[0] ?? '',
