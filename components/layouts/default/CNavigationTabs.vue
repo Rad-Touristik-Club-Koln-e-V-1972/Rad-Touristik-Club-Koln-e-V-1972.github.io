@@ -30,7 +30,7 @@ export default defineComponent({
                 },
                 {
                     title: 'Galerie',
-                    to: { name: 'index' },
+                    to: { name: 'gallery' },
                 },
                 {
                     title: 'Touren-Tipps',
