@@ -5,7 +5,7 @@ export default class Entry {
     answer = ``
     date?: Date
     event = EEvent.RTC
-    imageUrls: string[] = []
+    imageUrls = [] as string[]
     location = ''
     name = ''
     organization = ''

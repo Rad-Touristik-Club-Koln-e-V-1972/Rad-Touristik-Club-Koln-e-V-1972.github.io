@@ -6,10 +6,10 @@ export default class DateTime {
 
     static format(start: Date, end?: Date, allDay: boolean = false): string {
         let ret: string
-        const startPair: string[] = DateTime.dateFormatter.format(start).split(',')
+        const startPair = DateTime.dateFormatter.format(start).split(',')
 
         if (end) {
-            const endPair: string[] = DateTime.dateFormatter.format(end).split(',')
+            const endPair = DateTime.dateFormatter.format(end).split(',')
 
             ret = `${startPair[0]} - ${endPair[0]}${
                 allDay
