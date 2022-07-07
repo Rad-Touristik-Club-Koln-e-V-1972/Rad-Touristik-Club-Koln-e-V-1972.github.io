@@ -31,7 +31,7 @@
         </v-main>
         <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
             <div class="text-no-wrap">
-                <v-icon>{{ icons.mdiCopyright }}</v-icon>
+                <v-icon v-text="icons.mdiCopyright" />
                 <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
                 2021 Rad-Touristik-Club Köln e.V. 1972
             </div>

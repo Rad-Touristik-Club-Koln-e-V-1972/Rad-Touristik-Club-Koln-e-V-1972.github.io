@@ -13,9 +13,7 @@
                 style="background-color: var(--v-primary-base); color: var(--v-accent-base)"
             >
                 Gästebucheintrag hinzufügen
-                <v-icon right>
-                    {{ icons.mdiEmailSend }}
-                </v-icon>
+                <v-icon right v-text="icons.mdiEmailSend" />
             </v-btn>
         </v-card-actions>
         <v-card-text>

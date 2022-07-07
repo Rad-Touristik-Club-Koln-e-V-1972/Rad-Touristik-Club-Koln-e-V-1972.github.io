@@ -9,17 +9,13 @@
         </v-card-subtitle>
         <v-card-actions>
             <v-btn icon :href="'mailto:' + value.eMail">
-                <v-icon>
-                    {{ icons.mdiEmailSend }}
-                </v-icon>
+                <v-icon v-text="icons.mdiEmailSend" />
             </v-btn>
             <v-spacer />
             <v-spacer />
             <v-btn text @click="showText = !showText">
                 Über mich
-                <v-icon right>
-                    {{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}
-                </v-icon>
+                <v-icon right v-text="showText ? icons.mdiChevronUp : icons.mdiChevronDown" />
             </v-btn>
         </v-card-actions>
         <v-expand-transition>
