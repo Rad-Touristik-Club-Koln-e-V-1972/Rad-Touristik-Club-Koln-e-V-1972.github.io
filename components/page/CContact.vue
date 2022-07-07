@@ -1,14 +1,14 @@
 <template>
     <v-card id="CContact" max-width="24em">
-        <v-img contain :src="item.imageSrc" />
+        <v-img contain :src="value.imageSrc" />
         <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5">
-            {{ item.name }}
+            {{ value.name }}
         </v-card-title>
         <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6">
-            {{ item.position }}
+            {{ value.position }}
         </v-card-subtitle>
         <v-card-actions>
-            <v-btn icon :href="'mailto:' + item.eMail">
+            <v-btn icon :href="'mailto:' + value.eMail">
                 <v-icon>
                     {{ icons.mdiEmailSend }}
                 </v-icon>
@@ -26,7 +26,7 @@
             <div v-show="showText">
                 <v-divider />
                 <v-card-text>
-                    {{ item.description }}
+                    {{ value.description }}
                 </v-card-text>
             </div>
         </v-expand-transition>
@@ -40,7 +40,7 @@ import Contact from '@/models/entities/Contact'
 
 export default defineComponent({
     name: 'CContact',
-    props: { item: { required: true, type: Contact } },
+    props: { value: { required: true, type: Contact } },
     setup() {
         return {
             icons: {

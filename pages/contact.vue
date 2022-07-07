@@ -7,7 +7,7 @@
         <v-card-text>
             <v-row class="d-flex justify-center" dense>
                 <v-col v-for="(item, index) in items" :key="index" cols="auto">
-                    <c-contact :item="item" />
+                    <c-contact :value="item" />
                 </v-col>
             </v-row>
         </v-card-text>
