@@ -1,5 +1,5 @@
 <template>
-    <v-dialog id="CDateRange" ref="dialog" v-model="isOpen" persistent width="290px">
+    <v-dialog id="CDateRange" v-model="isOpen" persistent width="290px">
         <template #activator="{ attrs, on }">
             <v-text-field
                 v-model="items"
