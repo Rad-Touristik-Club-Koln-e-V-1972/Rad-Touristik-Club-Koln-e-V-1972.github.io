@@ -8,7 +8,7 @@ export default class Entry {
     location = ''
     name = ''
     organization = ''
-    pictures: string[] = []
+    pictureUrls: string[] = []
     source = ESource['E-Mail']
     text = ``
     title = ''
