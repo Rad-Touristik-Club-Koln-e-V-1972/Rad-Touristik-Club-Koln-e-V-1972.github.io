@@ -16,7 +16,7 @@ $ npm install
 $ npm run dev
 
 # generate static project
-$ npm run generate
+$ npm run build
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).

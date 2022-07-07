@@ -12,20 +12,11 @@
     </v-card>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+<script lang="ts" setup>
 import CGallery from '@/components/page/CGallery.vue'
 import { useGalleryStore } from '@/store/Gallery'
 
-export default defineComponent({
-    name: 'GalleryView',
-    components: { CGallery },
-    setup() {
-        return {
-            items: useGalleryStore().all,
-        }
-    },
-})
+const items = useGalleryStore().all
 </script>
 
 <style lang="scss" scoped />

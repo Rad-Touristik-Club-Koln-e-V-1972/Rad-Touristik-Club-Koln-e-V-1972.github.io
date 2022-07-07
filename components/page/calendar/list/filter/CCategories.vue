@@ -1,33 +1,27 @@
 <template>
     <v-autocomplete
         id="CCategories"
-        :value="value"
+        :value="props.value"
         :append-icon="icons.mdiFilter"
         clearable
         hide-details
         :items="Object.values(EEvent)"
         label="Kategorien"
         multiple
-        @input="(it) => $emit('input', it)"
+        @input="(it) => emits('input', it)"
     />
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { mdiFilter } from '@mdi/js'
-import { defineComponent } from '@nuxtjs/composition-api'
 import EEvent from '@/models/enums/EEvent'
 
-export default defineComponent({
-    name: 'CCategories',
-    props: { value: { required: true, type: Array } },
-    emits: ['input'],
-    setup() {
-        return {
-            EEvent,
-            icons: { mdiFilter },
-        }
-    },
-})
+const emits = defineEmits<{
+    (e: 'input', value: EEvent): void
+}>()
+const props = defineProps<{ value: EEvent[] }>()
+
+const icons = { mdiFilter }
 </script>
 
 <style lang="scss" scoped />

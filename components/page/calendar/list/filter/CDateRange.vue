@@ -21,35 +21,28 @@
     </v-dialog>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
+import { ref } from 'vue'
 import { mdiCalendar } from '@mdi/js'
-import { defineComponent, PropType, ref } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-    name: 'CDateRange',
-    props: { value: { required: true, type: [] as PropType<string[]> } },
-    emits: ['input'],
-    setup(props, ctx) {
-        const isOpen = ref(false)
-        const items = ref(props.value)
+const emits = defineEmits<{
+    (e: 'input', value: string[]): void
+}>()
+const props = defineProps<{ value: string[] }>()
 
-        function close() {
-            ctx.emit('input', items.value)
-            isOpen.value = false
-        }
+const icons = { mdiCalendar }
+const isOpen = ref(false)
+let items = props.value
 
-        return {
-            abort: () => {
-                items.value = []
-                close()
-            },
-            icons: { mdiCalendar },
-            isOpen,
-            items,
-            save: () => close(),
-        }
-    },
-})
+const abort = () => {
+    items = []
+    close()
+}
+const close = () => {
+    emits('input', items)
+    isOpen.value = false
+}
+const save = () => close()
 </script>
 
 <style lang="scss" scoped />

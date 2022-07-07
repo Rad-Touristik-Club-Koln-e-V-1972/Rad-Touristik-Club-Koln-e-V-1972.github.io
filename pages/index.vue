@@ -28,22 +28,13 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer />
-                    <v-btn nuxt to="/inspire">Continue</v-btn>
+                    <v-btn nuxt :to="{ name: 'index' }">Continue</v-btn>
                 </v-card-actions>
             </v-card>
         </v-col>
     </v-row>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
-
-export default defineComponent({
-    name: 'IndexView',
-    setup() {
-        return {}
-    },
-})
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped />

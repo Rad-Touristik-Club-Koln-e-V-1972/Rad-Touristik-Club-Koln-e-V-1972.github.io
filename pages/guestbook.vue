@@ -26,22 +26,13 @@
     </v-card>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { mdiEmailSend } from '@mdi/js'
-import { defineComponent } from '@nuxtjs/composition-api'
 import CGuestbook from '@/components/page/CGuestbook.vue'
 import { useGuestbookStore } from '@/store/Guestbook'
 
-export default defineComponent({
-    name: 'GuestbookView',
-    components: { CGuestbook },
-    setup() {
-        return {
-            icons: { mdiEmailSend },
-            items: useGuestbookStore().all,
-        }
-    },
-})
+const icons = { mdiEmailSend }
+const items = useGuestbookStore().all
 </script>
 
 <style lang="scss" scoped />

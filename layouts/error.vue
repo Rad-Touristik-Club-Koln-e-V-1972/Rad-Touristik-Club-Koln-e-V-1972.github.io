@@ -2,9 +2,7 @@
     <div id="ErrorView" class="d-flex justify-center">
         <v-card min-width="300px">
             <v-card-title>Fehlercode {{ error.statusCode }}</v-card-title>
-            <v-card-text>
-                {{ getText() }}
-            </v-card-text>
+            <v-card-text>{{ getText() }}</v-card-text>
             <v-card-actions>
                 <v-btn :to="{ name: 'contact' }">Kontakt</v-btn>
             </v-card-actions>
@@ -12,35 +10,28 @@
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from '@nuxtjs/composition-api'
+<script lang="ts" setup>
 import { NuxtError } from '@nuxt/types'
 import EHTTP from '@/models/enums/EHTTP'
 
-export default defineComponent({
-    name: 'ErrorView',
-    props: { error: { required: true, type: Object as PropType<NuxtError> } },
-    setup(props) {
-        return {
-            getText: () => {
-                let text
+const props = defineProps<{ error: NuxtError }>()
 
-                switch (props.error.statusCode) {
-                    case EHTTP.NOT_FOUND:
-                        text = 'Diese Seite existiert nicht.'
-                        break
-                    case EHTTP.INTERNAL_SERVER_ERROR:
-                        text = 'Ein unbekannter Serverfehler trat auf.'
-                        break
-                    default:
-                        text = 'Ein unbekannter Fehler trat auf.'
-                }
+const getText = () => {
+    let text
 
-                return text
-            },
-        }
-    },
-})
+    switch (props.error.statusCode) {
+        case EHTTP.NOT_FOUND:
+            text = 'Diese Seite existiert nicht.'
+            break
+        case EHTTP.INTERNAL_SERVER_ERROR:
+            text = 'Ein unbekannter Serverfehler trat auf.'
+            break
+        default:
+            text = 'Ein unbekannter Fehler trat auf.'
+    }
+
+    return text
+}
 </script>
 
 <style lang="scss" scoped />

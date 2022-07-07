@@ -14,20 +14,11 @@
     </v-card>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+<script lang="ts" setup>
 import CContact from '@/components/page/CContact.vue'
 import { useContactsStore } from '@/store/Contacts'
 
-export default defineComponent({
-    name: 'ContactView',
-    components: { CContact },
-    setup() {
-        return {
-            items: useContactsStore().contacts,
-        }
-    },
-})
+const items = useContactsStore().contacts
 </script>
 
 <style lang="scss" scoped />

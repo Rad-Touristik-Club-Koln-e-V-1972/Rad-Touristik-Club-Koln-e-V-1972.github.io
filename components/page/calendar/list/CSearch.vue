@@ -1,21 +1,16 @@
 <template>
-    <v-text-field id="CSearch" :value="value" :append-icon="icons.mdiMagnify" clearable hide-details label="Suche" @input="(it) => $emit('input', it)" />
+    <v-text-field id="CSearch" :value="props.value" :append-icon="icons.mdiMagnify" clearable hide-details label="Suche" @input="(it) => emits('input', it)" />
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { mdiMagnify } from '@mdi/js'
-import { defineComponent } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-    name: 'CSearch',
-    props: { value: { required: true, type: String } },
-    emits: ['input'],
-    setup() {
-        return {
-            icons: { mdiMagnify },
-        }
-    },
-})
+const emits = defineEmits<{
+    (e: 'input', value: string): void
+}>()
+const props = defineProps<{ value: string }>()
+
+const icons = { mdiMagnify }
 </script>
 
 <style lang="scss" scoped />

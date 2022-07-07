@@ -1,12 +1,10 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-        // https://go.nuxtjs.dev/typescript
-        '@nuxt/typescript-build',
-        // https://composition-api.nuxtjs.org
-        '@nuxtjs/composition-api/module',
         // https://go.nuxtjs.dev/stylelint
         '@nuxtjs/stylelint-module',
         // https://go.nuxtjs.dev/vuetify
@@ -22,7 +20,7 @@ export default {
             },
         ],
         // https://github.com/vuejs/pinia/tree/v2/packages/nuxt
-        ['@pinia/nuxt', { disableVuex: true }],
+        ['@pinia/nuxt'],
     ],
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -31,15 +29,7 @@ export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         htmlAttrs: { lang: 'de' },
-        link: [{ href: '/favicon.ico', rel: 'icon', type: 'image/x-icon' }],
-        meta: [
-            { charset: 'utf-8' },
-            { content: 'width=device-width, initial-scale=1', name: 'viewport' },
-            { content: '', hid: 'description', name: 'description' },
-            { content: 'telephone=no', name: 'format-detection' },
-        ],
         title: 'Rad-Touristik-Club Köln e.V. 1972',
-        titleTemplate: '%s - Rad-Touristik-Club Köln e.V. 1972',
     },
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [],
@@ -48,4 +38,4 @@ export default {
     ssr: false,
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
-}
+})

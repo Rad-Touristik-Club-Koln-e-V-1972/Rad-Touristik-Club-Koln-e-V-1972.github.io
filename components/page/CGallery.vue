@@ -1,15 +1,15 @@
 <template>
     <v-card id="CGallery" class="text-center" max-width="20em">
         <v-card-title class="justify-center text-subtitle-1 text-lg-h6">
-            {{ value.title }}
+            {{ props.value.title }}
         </v-card-title>
         <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-body-1">
-            {{ value.subtitle }}
+            {{ props.value.subtitle }}
         </v-card-subtitle>
         <v-card-text>
-            <v-dialog v-model="isOpen" :fullscreen="$vuetify.breakpoint.mobile" persistent scrollable>
+            <v-dialog v-model="isOpen" :fullscreen="vuetify.breakpoint.mobile" persistent scrollable>
                 <template #activator="{ attrs, on }">
-                    <v-img :src="value.titleImageUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
+                    <v-img :src="props.value.titleImageUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
                 </template>
                 <v-card class="text-center">
                     <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
@@ -18,8 +18,8 @@
                             <v-icon color="accent" v-text="icons.mdiClose" />
                         </v-btn>
                         <v-toolbar-title class="accent--text">
-                            {{ value.title }}
-                            <div class="text-subtitle-1" v-text="value.subtitle" />
+                            {{ props.value.title }}
+                            <div class="text-subtitle-1" v-text="props.value.subtitle" />
                         </v-toolbar-title>
                         <v-spacer />
                         <v-btn color="accent" text @click="showText = !showText">
@@ -30,13 +30,13 @@
                     <v-expand-transition>
                         <div v-show="showText">
                             <v-card-text>
-                                {{ value.description }}
+                                {{ props.value.description }}
                             </v-card-text>
                         </div>
                     </v-expand-transition>
                     <v-card-text>
                         <v-row class="d-flex justify-center" no-gutters>
-                            <v-col v-for="(it, index) in value.images" :key="index" cols="auto">
+                            <v-col v-for="(it, index) in props.value.images" :key="index" cols="auto">
                                 <d-view :value="it" />
                             </v-col>
                         </v-row>
@@ -55,35 +55,31 @@
             <div v-show="showText">
                 <v-divider />
                 <v-card-text>
-                    {{ value.description }}
+                    {{ props.value.description }}
                 </v-card-text>
             </div>
         </v-expand-transition>
     </v-card>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
+import { getCurrentInstance, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
-import { defineComponent, ref } from '@nuxtjs/composition-api'
-import Gallery from '@/models/entities/Gallery'
 import DView from '@/components/page/gallery/DView.vue'
+import Gallery from '@/models/entities/Gallery'
 
-export default defineComponent({
-    name: 'CGallery',
-    components: { DView },
-    props: { value: { required: true, type: Gallery } },
-    setup() {
-        return {
-            icons: {
-                mdiChevronDown,
-                mdiChevronUp,
-                mdiClose,
-            },
-            isOpen: ref(false),
-            showText: ref(false),
-        }
-    },
-})
+const props = defineProps<{ value: Gallery }>()
+
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
+
+const icons = {
+    mdiChevronDown,
+    mdiChevronUp,
+    mdiClose,
+}
+const isOpen = ref(false)
+const showText = ref(false)
 </script>
 
 <style lang="scss" scoped />

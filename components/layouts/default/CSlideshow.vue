@@ -1,21 +1,15 @@
 <template>
-    <v-carousel id="CSlideshow" cycle :height="height" hide-delimiters :show-arrows="items.length > 1" show-arrows-on-hover>
-        <v-carousel-item v-for="(item, i) in items" :key="i" contain :src="item" />
+    <v-carousel id="CSlideshow" cycle :height="props.height" hide-delimiters :show-arrows="props.items.length > 1" show-arrows-on-hover>
+        <v-carousel-item v-for="(item, i) in props.items" :key="i" contain :src="item" />
     </v-carousel>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from '@nuxtjs/composition-api'
+<script lang="ts" setup>
+import { PropType } from 'vue'
 
-export default defineComponent({
-    name: 'CSlideshow',
-    props: {
-        height: { default: '100%', type: String },
-        items: { required: true, type: [] as PropType<string[]> },
-    },
-    setup() {
-        return {}
-    },
+const props = defineProps({
+    height: { default: '100%', type: String },
+    items: { required: true, type: Array as PropType<string[]> },
 })
 </script>
 
