@@ -1,10 +1,10 @@
 <template>
-    <v-card id="CContact" max-width="24em">
+    <v-card id="CContact" max-width="20em">
         <v-img contain :src="value.imageSrc" />
-        <v-card-title class="text-subtitle-1 text-md-h6 text-lg-h5">
+        <v-card-title class="text-subtitle-1 text-lg-h6">
             {{ value.name }}
         </v-card-title>
-        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-h6">
+        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-body-1">
             {{ value.position }}
         </v-card-subtitle>
         <v-card-actions>
