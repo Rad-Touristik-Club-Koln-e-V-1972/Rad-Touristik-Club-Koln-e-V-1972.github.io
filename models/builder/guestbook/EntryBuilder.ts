@@ -41,8 +41,8 @@ export default class EntryBuilder {
         return this
     }
 
-    pictures(value: string[]): EntryBuilder {
-        this.value.pictures = value
+    picture(value: string): EntryBuilder {
+        this.value.pictures.push(value)
         return this
     }
 
