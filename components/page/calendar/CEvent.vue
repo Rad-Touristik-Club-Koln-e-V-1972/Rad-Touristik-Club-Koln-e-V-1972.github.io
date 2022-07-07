@@ -7,7 +7,7 @@
                 </v-toolbar-title>
                 <v-spacer />
                 <v-btn icon @click="selectedOpen = false">
-                    <v-icon class="accent--text" v-text="icons.mdiClose" />
+                    <v-icon color="accent" v-text="icons.mdiClose" />
                 </v-btn>
             </v-toolbar>
             <v-card-text>
