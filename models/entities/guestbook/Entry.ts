@@ -5,10 +5,10 @@ export default class Entry {
     answer = ``
     date?: Date
     event = EEvent.RTC
+    imageUrls: string[] = []
     location = ''
     name = ''
     organization = ''
-    pictureUrls: string[] = []
     source = ESource['E-Mail']
     text = ``
     title = ''

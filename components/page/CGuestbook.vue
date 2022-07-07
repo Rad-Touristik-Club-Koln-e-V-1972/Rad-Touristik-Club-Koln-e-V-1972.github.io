@@ -10,9 +10,9 @@
             {{ value.title }}
         </v-card-title>
         <v-divider />
-        <v-card-text v-if="value.text || value.pictureUrls.length">
+        <v-card-text v-if="value.text || value.imageUrls.length">
             <div v-if="value.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="getHTML(value.text)" />
-            <c-slideshow v-if="value.pictureUrls.length" :items="value.pictureUrls" />
+            <c-slideshow v-if="value.imageUrls.length" :items="value.imageUrls" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="value.answer">

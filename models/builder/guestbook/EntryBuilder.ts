@@ -26,6 +26,11 @@ export default class EntryBuilder {
         return this
     }
 
+    imageUrl(value: string): EntryBuilder {
+        this.value.imageUrls.push(value)
+        return this
+    }
+
     location(value: string): EntryBuilder {
         this.value.location = value
         return this
@@ -38,11 +43,6 @@ export default class EntryBuilder {
 
     organization(value: string): EntryBuilder {
         this.value.organization = value
-        return this
-    }
-
-    pictureUrl(value: string): EntryBuilder {
-        this.value.pictureUrls.push(value)
         return this
     }
 
