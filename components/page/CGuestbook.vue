@@ -4,7 +4,7 @@
             <div v-if="value.date" v-text="getDate(value.date)" />
             <div v-text="`${value.name} via ${Source[value.source]}`" />
             <div v-text="`${[value.organization, value.location].filter((it) => it).join(', ')} `" />
-            <div v-if="value.event !== Event.Standard" v-text="`Event: ${Event[value.event]}`" />
+            <div v-if="value.category !== Event.RTC" v-text="`Event: ${Event[value.category]}`" />
         </v-card-subtitle>
         <v-card-title v-if="value.title" class="primary accent--text text-subtitle-1 text-md-h6 text-lg-h5">
             {{ value.title }}
