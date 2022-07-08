@@ -35,7 +35,7 @@
                         </div>
                     </v-expand-transition>
                     <v-card-text>
-                        <v-row class="d-flex justify-center" dense>
+                        <v-row class="d-flex justify-center" no-gutters>
                             <v-col v-for="(it, index) in value.images" :key="index" cols="auto">
                                 <d-view :value="it" />
                             </v-col>
