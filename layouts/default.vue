@@ -3,18 +3,20 @@
         <v-app-bar app class="border" color="accent" flat height="100%">
             <template #default>
                 <v-row class="justify-space-between">
-                    <v-col cols="auto"><v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" /></v-col>
+                    <v-col cols="auto">
+                        <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
+                    </v-col>
                     <v-col cols="auto">
                         <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-                        <v-toolbar-title>
-                            <div class="d-inline-block" style="text-align-last: justify">
-                                <span class="font-weight-bold text-sm-h6 text-md-h5 text-subtitle-2" v-text="'Herzlich willkommen beim'" />
-                                <br />
-                                <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
-                            </div>
+                        <v-toolbar-title class="d-inline-block" style="text-align-last: justify">
+                            <span class="font-weight-bold text-sm-h6 text-md-h5 text-subtitle-2" v-text="'Herzlich willkommen beim'" />
+                            <br />
+                            <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text" v-text="'1972'" /></span>
                         </v-toolbar-title>
                     </v-col>
-                    <v-col v-show="!$vuetify.breakpoint.xsOnly" cols="auto"><c-countdown /></v-col>
+                    <v-col v-show="!$vuetify.breakpoint.xsOnly" cols="auto">
+                        <c-countdown />
+                    </v-col>
                 </v-row>
             </template>
             <template #extension>
@@ -25,8 +27,12 @@
         <v-main class="border main">
             <c-slideshow height="200" :items="slideshowItems" />
             <v-row dense>
-                <v-col cols="10"><Nuxt /></v-col>
-                <v-col cols="2"><c-sponsors /></v-col>
+                <v-col cols="10">
+                    <Nuxt />
+                </v-col>
+                <v-col cols="2">
+                    <c-sponsors />
+                </v-col>
             </v-row>
         </v-main>
         <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">

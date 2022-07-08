@@ -1,5 +1,5 @@
-import EEvent from '@/models/enums/EEvent'
 import Entry from '@/models/entities/guestbook/Entry'
+import EEvent from '@/models/enums/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
 
 export default class EntryBuilder {

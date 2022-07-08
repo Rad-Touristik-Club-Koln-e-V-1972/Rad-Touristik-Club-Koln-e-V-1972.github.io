@@ -29,15 +29,15 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import { marked } from 'marked'
 import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
-import DateTime from '@/utils/DateTime'
+import Entry from '@/models/entities/guestbook/Entry'
 import EEvent from '@/models/enums/EEvent'
 import ESource from '@/models/enums/guestbook/ESource'
-import GuestbookEntry from '@/models/entities/guestbook/Entry'
+import DateTime from '@/utils/DateTime'
 
 export default defineComponent({
     name: 'CGuestbook',
     components: { CSlideshow },
-    props: { value: { required: true, type: GuestbookEntry } },
+    props: { value: { required: true, type: Entry } },
     setup() {
         return {
             Event: EEvent,
