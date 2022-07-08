@@ -33,8 +33,8 @@ www.cardiofitness.de
         .title('Ein großes Dankeschöööööön')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 6)
-        .event(EEvent.RTF)
         .name('Ursula Koepp')
         .organization('TSV Weiss-Köln')
         .source(ESource['E-Mail'])
@@ -65,8 +65,8 @@ Ursula Koepp
         .title('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 6)
-        .event(EEvent.RTF)
         .name('Günter')
         .source(ESource['E-Mail'])
         .text(
@@ -109,8 +109,8 @@ Günter
         .title('10 Punkte und die Krone für eure schöne RTF!!!')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 6)
-        .event(EEvent.RTF)
         .name('Dieter Reich')
         .organization('ISB-Team-Cologne')
         .source(ESource['E-Mail'])
@@ -139,8 +139,8 @@ Dieter Reich
         .title('Danke für die gut ausgearbeitete Tour am 20.05.12')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 6)
-        .event(EEvent.RTF)
         .location('Monheim')
         .name('Elke und Dieter')
         .source(ESource['E-Mail'])
@@ -168,8 +168,8 @@ Elke und Dieter
         .title('... eine tolle Forsbachtour 2012')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 5)
-        .event(EEvent.RTF)
         .name('Josef Witt')
         .source(ESource['E-Mail'])
         .text(
@@ -204,8 +204,8 @@ Josef Witt
         .title('Verpflegungsengpässe, sonst war es eine sehr gute Veranstaltung!')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 5)
-        .event(EEvent.RTF)
         .location('Kierspe')
         .name('Michaela Bäcker')
         .source(ESource['E-Mail'])
@@ -309,8 +309,8 @@ Aus Kierspe
         .title('... eine super gelungene RTF !!!')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 5)
-        .event(EEvent.RTF)
         .location('Libur')
         .name('Matthias Zimmer')
         .source(ESource['E-Mail'])
@@ -352,8 +352,8 @@ Matthias Zimmer
         .title('Lärmbelästigung und Raserei')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2012, 5)
-        .event(EEvent.RTF)
         .name('Monika und Helmut Moosmann')
         .organization('RSG Ford')
         .source(ESource['E-Mail'])

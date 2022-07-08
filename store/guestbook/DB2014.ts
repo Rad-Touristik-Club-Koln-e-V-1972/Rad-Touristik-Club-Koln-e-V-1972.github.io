@@ -25,8 +25,8 @@ Helga
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 28, 12, 36)
-        .event(EEvent.RTF)
         .name('Jessica Bosen')
         .source(ESource['E-Mail'])
         .text(
@@ -86,8 +86,8 @@ Jessica
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 27, 13, 10)
-        .event(EEvent.RTF)
         .name('velotoerist')
         .source(ESource['E-Mail'])
         .text(
@@ -130,8 +130,8 @@ velotoerist
         .title('RM')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 27, 12, 59)
-        .event(EEvent.RTF)
         .name('Helmut Hane')
         .organization('www.sportlich-radeln.de')
         .source(ESource['E-Mail'])
@@ -148,8 +148,8 @@ Helmut Hane
         .title('Prima RTF')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 27, 9, 28)
-        .event(EEvent.RTF)
         .name('Marco Gerlach')
         .source(ESource['E-Mail'])
         .text(
@@ -175,8 +175,8 @@ Marco Gerlach
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 27, 9, 26)
-        .event(EEvent.RTF)
         .name('Jörg Homann')
         .organization('www.scan.bike`')
         .source(ESource['E-Mail'])
@@ -219,8 +219,8 @@ http://scan.bike
         .title('erfolgreicher Einsatz von scan&bike')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 27, 6, 49)
-        .event(EEvent.RTF)
         .name('Norbert Priefert')
         .source(ESource['E-Mail'])
         .text(
@@ -269,8 +269,8 @@ Norbert
         .title('Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder .')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 20, 16)
-        .event(EEvent.RTF)
         .location('Recklinghausen')
         .name('Jörg Freitag')
         .source(ESource['E-Mail'])
@@ -293,8 +293,8 @@ Jörg
         .title('Marathon')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 16, 57)
-        .event(EEvent.RTF)
         .name('Markus Reckter')
         .organization('www.rtf-koblenz.de')
         .source(ESource['E-Mail'])
@@ -322,8 +322,8 @@ RTF Koblenz
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 13, 8)
-        .event(EEvent.RTF)
         .name('Claudia Braun')
         .organization('Union Biesfeld Triathlon')
         .source(ESource['E-Mail'])
@@ -352,8 +352,8 @@ Union Biesfeld Triathlon
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 12, 50)
-        .event(EEvent.RTF)
         .name('Angela Schmilewski')
         .organization('Fachwart RTC Mehlem')
         .source(ESource['E-Mail'])
@@ -377,8 +377,8 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
         .title('Wunderbare Veranstaltung')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 12, 43)
-        .event(EEvent.RTF)
         .name('Dirk Brieden')
         .source(ESource['E-Mail'])
         .text(
@@ -405,8 +405,8 @@ PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Me
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 10, 55)
-        .event(EEvent.RTF)
         .name('Dirk Brieden')
         .source(ESource['E-Mail'])
         .text(
@@ -462,8 +462,8 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 10, 49)
-        .event(EEvent.RTF)
         .name('Michaela Packebusch')
         .organization('VfB Polch Abtl. Radsport')
         .source(ESource['E-Mail'])
@@ -484,8 +484,8 @@ vom VfB Polch Abtl. Radsport.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 10, 33)
-        .event(EEvent.RTF)
         .name('Frank Stöcker')
         .source(ESource['E-Mail'])
         .text(
@@ -526,8 +526,8 @@ Frank
         .title('Feedback wegen Forsbach Tour 24.05.14')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 8, 54)
-        .event(EEvent.RTF)
         .name('Reiche')
         .source(ESource['E-Mail'])
         .text(
@@ -544,8 +544,8 @@ vielen Dank für die Orga und die Auswahl der schönen Strecke.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 8, 15)
-        .event(EEvent.RTF)
         .name('Max Christian Obst')
         .source(ESource['E-Mail'])
         .text(
@@ -563,8 +563,8 @@ nächstes Jahr will ich wieder meine Banane bekommen ;)
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 7, 24)
-        .event(EEvent.RTF)
         .location('Berrenrath')
         .name('Stefan Schneider')
         .organization('RV Morgenstern')
@@ -591,8 +591,8 @@ Stefan Schneider
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 26, 7, 6)
-        .event(EEvent.RTF)
         .name('Norbert Priefert')
         .organization('www.rtc-rodenkirchen.de')
         .source(ESource['E-Mail'])
@@ -630,8 +630,8 @@ Norbert
         .title('Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen...')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2014, 5, 25, 19, 44)
-        .event(EEvent.RTF)
         .name('Jürgen Ruttkowski')
         .source(ESource['E-Mail'])
         .text(

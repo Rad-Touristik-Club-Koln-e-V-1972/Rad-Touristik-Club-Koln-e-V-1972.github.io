@@ -4,8 +4,8 @@ import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
 
 export default [
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 19, 12, 55)
-        .event(EEvent.CTF)
         .name('Claude-Antoine Berger de Leon')
         .source(ESource.Facebook)
         .text(
@@ -22,8 +22,8 @@ und dass auch vielleicht noch einige andere Vereine aus der Region die für Viel
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 18, 43)
-        .event(EEvent.CTF)
         .name('Helmut Kanthak')
         .organization('RSC Nievenheim')
         .source(ESource['E-Mail'])
@@ -46,16 +46,16 @@ Helmut vom RSC Nievenheim
         .title('Feedback wegen ...CTF 1. Wahnbach - Tour')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 14, 23)
-        .event(EEvent.CTF)
         .name('Schonneb Aus Lev')
         .source(ESource.Facebook)
         .text('<a href="https://www.youtube.com/v/Z2MqTVOeZMM" target="_blank">https://www.youtube.com/v/Z2MqTVOeZMM<a/>')
         .title('... kleines Video von gestern')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 14, 22)
-        .event(EEvent.CTF)
         .name('Jür Jen')
         .source(ESource.Facebook)
         .text(
@@ -71,8 +71,8 @@ Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei ..
         .title('Besten Dank an ALLE Helfer ...')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 13, 49)
-        .event(EEvent.CTF)
         .name("Manuela 'Ela' Huber")
         .source(ESource.Facebook)
         .text(
@@ -84,8 +84,8 @@ gerne wieder!!
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 10, 33)
-        .event(EEvent.CTF)
         .name('Jo Di')
         .source(ESource.Facebook)
         .text(
@@ -107,8 +107,8 @@ Ps.Ps. Schmalzbrotgrüsse
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 18, 8, 22)
-        .event(EEvent.CTF)
         .name('Guido Faßbender')
         .source(ESource['E-Mail'])
         .text(
@@ -144,8 +144,8 @@ Guido Faßbender
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 21, 2)
-        .event(EEvent.CTF)
         .name('Schonneb Aus Lev')
         .source(ESource.Facebook)
         .text(
@@ -162,8 +162,8 @@ Ich würde mich auf ein nächstes Mal sehr freuen.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 20, 45)
-        .event(EEvent.CTF)
         .name('Henning Rudolph')
         .source(ESource['E-Mail'])
         .text(
@@ -198,8 +198,8 @@ Henning
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 20, 1)
-        .event(EEvent.CTF)
         .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-10-17_20-01.jpg')
         .name('Wilfried Goesgens')
         .source(ESource.Facebook)
@@ -212,8 +212,8 @@ Superrunde und hoffentlich nächstes Jahr wieder ...
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 19, 38)
-        .event(EEvent.CTF)
         .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-10-17_19-38.jpg')
         .name('Thorsten Klein')
         .source(ESource.Facebook)
@@ -236,15 +236,15 @@ Hier auch noch ein Bild von dem Ausblick auf der Strecke.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 19, 3)
-        .event(EEvent.CTF)
         .name('Sabine Riehl')
         .source(ESource.Facebook)
         .text(`Superschöne Strecke, tolle Verpflegung: hat total Spaß gemacht - vielen Dank für diese CTF und allen, die Sie möglich gemacht haben ...`)
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 18, 57)
-        .event(EEvent.CTF)
         .name('Jörg Hengster')
         .source(ESource.Facebook)
         .text(
@@ -260,8 +260,8 @@ Danke RTC!
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 17, 52)
-        .event(EEvent.CTF)
         .name('Bernd Doelp')
         .source(ESource.Facebook)
         .text(
@@ -297,8 +297,8 @@ Bernd Doelp
         .title('Feedback vom CTF')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 16, 45)
-        .event(EEvent.CTF)
         .name('Ben Feld')
         .source(ESource.Facebook)
         .text(
@@ -313,8 +313,8 @@ Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2015, 10, 17, 16, 7)
-        .event(EEvent.CTF)
         .name('Stephan Schwarz')
         .source(ESource['E-Mail'])
         .text(
@@ -335,8 +335,8 @@ Stephan
         .title('Wahnbachtal Tour')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 3, 20, 16)
-        .event(EEvent.RTF)
         .name('Guido Faßbender')
         .organization('Grenzfahrer e.V.')
         .source(ESource['E-Mail'])
@@ -363,8 +363,8 @@ Grenzfahrer e.V.
         .title('Feedback wegen Marathon')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 3, 12, 36)
-        .event(EEvent.RTF)
         .name('Frank Koch')
         .source(ESource['E-Mail'])
         .text(
@@ -383,8 +383,8 @@ mfg Frank
         .title('Re: RTF')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 3, 9, 31)
-        .event(EEvent.RTF)
         .name('Frank Koch')
         .source(ESource['E-Mail'])
         .text(
@@ -410,8 +410,8 @@ schöne Grüße aus Troisdorf Frank 😊
         .title('RTF')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 2, 10, 45)
-        .event(EEvent.RTF)
         .name('Frank Oesterheld')
         .source(ESource.Facebook)
         .text(
@@ -428,8 +428,8 @@ Bis zum nächsten Jahr 😊
         .title('Kommentar zu Schnappschüssen / Impressionen von der K5 auf der Forsbach-Tour 2015')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 1, 22, 47)
-        .event(EEvent.RTF)
         .name('Gerhard Veeh')
         .source(ESource.Facebook)
         .text(
@@ -444,8 +444,8 @@ Danke Euch für die tolle Organisation.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 1, 20, 33)
-        .event(EEvent.RTF)
         .name('Fam Rossol')
         .organization('1. RTW-Sankt Augustin-Menden')
         .source(ESource['E-Mail'])
@@ -462,8 +462,8 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
         .title('Danke ...')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 1, 15, 57)
-        .event(EEvent.RTF)
         .name('Christof Mourikis')
         .source(ESource['E-Mail'])
         .text(
@@ -500,8 +500,8 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
         .title('Feedback wegen 43. Marathon am 31.05.2015')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 1, 14, 14)
-        .event(EEvent.RTF)
         .name('Yvonne Basinski')
         .source(ESource.Facebook)
         .text(
@@ -517,8 +517,8 @@ Wir sind nächstes Jahr wieder dabei.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 6, 1, 9, 5)
-        .event(EEvent.RTF)
         .name('Marc Grewe')
         .source(ESource['E-Mail'])
         .text(
@@ -570,10 +570,16 @@ Marc
 `
         )
         .build(),
-    new GuestbookEntryBuilder().date(2015, 5, 31, 20, 30).event(EEvent.RTF).name('Petra Ak').source(ESource.Facebook).text("Vielen Dank für's Organisieren, war super !").build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
+        .date(2015, 5, 31, 20, 30)
+        .name('Petra Ak')
+        .source(ESource.Facebook)
+        .text("Vielen Dank für's Organisieren, war super !")
+        .build(),
+    new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 5, 31, 20, 19)
-        .event(EEvent.RTF)
         .name('Thomas Mühl')
         .source(ESource.Facebook)
         .text(
@@ -582,11 +588,11 @@ Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da 
 `
         )
         .build(),
-    new GuestbookEntryBuilder().date(2015, 5, 31, 20, 11).event(EEvent.RTF).name('Michael Kalisch').source(ESource.Facebook).title('top top top 😊').build(),
-    new GuestbookEntryBuilder().date(2015, 5, 31, 20, 10).event(EEvent.RTF).name('Horst Voll').source(ESource.Facebook).text('War geil und sehr anstrengend ! 👍').build(),
+    new GuestbookEntryBuilder().category(EEvent.RTF).date(2015, 5, 31, 20, 11).name('Michael Kalisch').source(ESource.Facebook).title('top top top 😊').build(),
+    new GuestbookEntryBuilder().category(EEvent.RTF).date(2015, 5, 31, 20, 10).name('Horst Voll').source(ESource.Facebook).text('War geil und sehr anstrengend ! 👍').build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2015, 5, 31, 19, 29)
-        .event(EEvent.RTF)
         .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-05-31_19-29.jpg')
         .name('Horst Paesch')
         .source(ESource.Facebook)

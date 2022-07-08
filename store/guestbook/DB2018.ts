@@ -4,8 +4,8 @@ import GuestbookEntryBuilder from '@/models/builder/guestbook/EntryBuilder'
 
 export default [
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2018, 10, 28, 0, 0)
-        .event(EEvent.CTF)
         .name('Andreas Reineke')
         .source(ESource.Facebook)
         .text(
@@ -22,8 +22,8 @@ Es war eine sehr schöne Veranstaltung.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2018, 10, 28, 0, 0)
-        .event(EEvent.CTF)
         .name('Vamos Bala')
         .source(ESource.Facebook)
         .text(
@@ -35,8 +35,8 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.CTF)
         .date(2018, 10, 27, 16, 36)
-        .event(EEvent.CTF)
         .name('Bernd Doelp')
         .source(ESource['E-Mail'])
         .text(
@@ -59,22 +59,22 @@ Bernd
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 28, 17, 0)
-        .event(EEvent.RTF)
         .name('Profitrise Sports')
         .source(ESource.Facebook)
         .text(`Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!`)
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 28, 17, 0)
-        .event(EEvent.RTF)
         .name('Petra Humbach')
         .source(ESource.Facebook)
         .text(`Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 28, 17, 0)
-        .event(EEvent.RTF)
         .name('Jochen Güttes')
         .source(ESource.Facebook)
         .text(
@@ -88,8 +88,8 @@ Danke für die Gastfreundschaft.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 28, 17, 0)
-        .event(EEvent.RTF)
         .name('Ros Si')
         .source(ESource.Facebook)
         .text(
@@ -111,8 +111,8 @@ Nächstes Jahr wieder.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 28, 17, 0)
-        .event(EEvent.RTF)
         .name('Angela Maja')
         .source(ESource.Facebook)
         .text(
@@ -128,8 +128,8 @@ Alles bestens.
         )
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 27, 17, 1)
-        .event(EEvent.RTF)
         .name('Harald Seidenberg')
         .source(ESource['E-Mail'])
         .text(
@@ -157,8 +157,8 @@ Harry
         .title('Feedback wegen ... RTF 27.05.2018')
         .build(),
     new GuestbookEntryBuilder()
+        .category(EEvent.RTF)
         .date(2018, 5, 27, 13, 54)
-        .event(EEvent.RTF)
         .name('Dirk Oliver Heppert')
         .organization('RSV Staubwolke Refrath')
         .source(ESource['E-Mail'])
