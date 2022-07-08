@@ -1,5 +1,5 @@
 <template>
-    <v-carousel id="CSlideshow" cycle height="200" hide-delimiters :show-arrows="items.length > 1" show-arrows-on-hover>
+    <v-carousel id="CSlideshow" cycle :height="height" hide-delimiters :show-arrows="items.length > 1" show-arrows-on-hover>
         <v-carousel-item v-for="(item, i) in items" :key="i" contain :src="item" />
     </v-carousel>
 </template>
@@ -9,7 +9,10 @@ import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     name: 'CSlideshow',
-    props: { items: { required: true, type: [] as PropType<string[]> } },
+    props: {
+        height: { default: '100%', type: String },
+        items: { required: true, type: [] as PropType<string[]> },
+    },
     setup() {
         return {}
     },

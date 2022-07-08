@@ -23,7 +23,7 @@
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" />
         <v-main class="border main">
-            <c-slideshow :items="slideshowItems" />
+            <c-slideshow height="200" :items="slideshowItems" />
             <v-row dense>
                 <v-col cols="10"><Nuxt /></v-col>
                 <v-col cols="2"><c-sponsors /></v-col>
