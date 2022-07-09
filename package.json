@@ -6,7 +6,7 @@
         "build": "nuxi generate",
         "dev": "nuxi dev",
         "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
-        "lint:prettier": "prettier --write --list-different .",
+        "lint:prettier": "prettier --write --list-different --ignore-path .gitignore .",
         "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
         "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
         "prepare": "husky install"
