@@ -22,7 +22,9 @@
         "core-js": "^3.23.3",
         "date-holidays": "^3.16.2",
         "marked": "^4.0.17",
-        "nuxt-edge": "latest"
+        "nuxt-edge": "latest",
+        "vue": "*",
+        "vuetify": "*"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
