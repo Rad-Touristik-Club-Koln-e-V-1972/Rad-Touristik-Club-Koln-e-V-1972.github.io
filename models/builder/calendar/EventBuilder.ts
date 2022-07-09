@@ -35,7 +35,7 @@ export default class EventBuilder {
 
     // If some dates are not saved with hh:mm they'll trigger a NaN-error.
     // noinspection FunctionNamingConventionJS
-    end(year: number, month: number, date: number, hours: number = 0, minutes: number = 0): EventBuilder {
+    end(year: number, month: number, date: number, hours = 0, minutes = 0): EventBuilder {
         // The month value is 0-11. We need an offset.
         this.value.end = new Date(year, month - 1, date, hours, minutes)
         return this
@@ -57,7 +57,7 @@ export default class EventBuilder {
     }
 
     // If some dates are not saved with hh:mm they'll trigger a NaN-error.
-    start(year: number, month: number, date: number, hours: number = 0, minutes: number = 0): EventBuilder {
+    start(year: number, month: number, date: number, hours = 0, minutes = 0): EventBuilder {
         // The month value is 0-11. We need an offset.
         this.value.start = new Date(year, month - 1, date, hours, minutes)
         return this

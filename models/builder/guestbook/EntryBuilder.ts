@@ -20,7 +20,7 @@ export default class EntryBuilder {
     }
 
     // If some dates are not saved with hh:mm they'll trigger a NaN-error.
-    date(year: number, month: number, date: number = 1, hours: number = 0, minutes: number = 0): EntryBuilder {
+    date(year: number, month: number, date = 1, hours = 0, minutes = 0): EntryBuilder {
         // The month value is 0-11. We need an offset.
         this.value.date = new Date(year, month - 1, date, hours, minutes)
         return this

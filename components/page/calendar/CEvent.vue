@@ -1,6 +1,6 @@
 <template>
-    <v-menu id="CEvent" v-model="selectedOpen" :activator="selectedElement" :close-on-content-click="false" offset-x>
-        <v-card flat min-width="350px">
+    <v-dialog id="CEvent" v-model="selectedOpen" :activator="selectedElement" :fullscreen="vuetify.breakpoint.mobile" width="auto">
+        <v-card flat>
             <v-toolbar :color="selectedEvent?.color">
                 <v-toolbar-title class="accent--text">
                     {{ selectedEvent?.name }}
@@ -11,48 +11,49 @@
                 </v-btn>
             </v-toolbar>
             <v-card-text>
-                <v-list dense>
-                    <v-list-item>
-                        <v-list-item-content>Art:</v-list-item-content>
-                        <v-list-item-content class="align-end">
-                            {{ selectedEvent?.category }}
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item>
-                        <v-list-item-content>Event:</v-list-item-content>
-                        <v-list-item-content class="align-end">
-                            {{ selectedEvent?.name }}
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item>
-                        <v-list-item-content>Termin:</v-list-item-content>
-                        <v-list-item-content class="align-end">
-                            <div v-html="getDate(selectedEvent)" />
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item v-if="selectedEvent?.contact">
-                        <v-list-item-content>Ansprechpartner:</v-list-item-content>
-                        <v-list-item-content class="align-end">
-                            {{ selectedEvent?.contact }}
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item v-if="selectedEvent?.clubPoints">
-                        <v-list-item-content>VP:</v-list-item-content>
-                        <v-list-item-content class="align-end">
-                            {{ selectedEvent?.clubPoints }}
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list>
+                <!-- TODO "pointer-events: none" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/5787 -->
+                <v-simple-table style="pointer-events: none">
+                    <template #default>
+                        <tbody>
+                            <tr>
+                                <td class="align-end">Art:</td>
+                                <td>{{ selectedEvent?.category }}</td>
+                            </tr>
+                            <tr>
+                                <td>Event:</td>
+                                <td>
+                                    <a v-if="selectedEvent?.url" :href="selectedEvent?.url" target="_blank" v-text="selectedEvent?.name" />
+                                    <span v-else v-text="selectedEvent?.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Termin:</td>
+                                <td><div v-html="getDate(selectedEvent)" /></td>
+                            </tr>
+                            <tr v-if="selectedEvent?.contact">
+                                <td>Ansprechpartner:</td>
+                                <td>{{ selectedEvent.contact }}</td>
+                            </tr>
+                            <tr v-if="selectedEvent?.clubPoints">
+                                <td>Vereinspunkte:</td>
+                                <td>{{ selectedEvent.clubPoints }}</td>
+                            </tr>
+                        </tbody>
+                    </template>
+                </v-simple-table>
             </v-card-text>
         </v-card>
-    </v-menu>
+    </v-dialog>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { getCurrentInstance, ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import Event from '@/models/entities/calendar/Event'
 import DateTime from '@/utils/DateTime'
+
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiClose }
 const selectedElement = ref<EventTarget | null>()

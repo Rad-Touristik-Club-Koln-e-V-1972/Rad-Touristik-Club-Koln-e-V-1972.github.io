@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-import { nextTick, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import CControl from '@/components/page/calendar/CControl.vue'
 import CEvent from '@/components/page/calendar/CEvent.vue'
 import CList from '@/components/page/calendar/CList.vue'
@@ -49,14 +49,12 @@ const switchToDayView = ({ date }: { date: string }) => {
     type.value = ECalendar.day
 }
 
-nextTick(() =>
-    watch(
-        () => calendar.value.title,
-        (currentValue) => {
-            title.value = currentValue
-        },
-        { immediate: true }
-    )
+watch(
+    () => calendar.value?.title,
+    (currentValue) => {
+        title.value = currentValue ?? ''
+    },
+    { immediate: true }
 )
 </script>
 

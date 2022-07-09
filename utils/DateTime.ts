@@ -4,7 +4,7 @@ export default class DateTime {
     // For a better performance and to remove the seconds.
     static dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
 
-    static format(start: Date, end?: Date, allDay: boolean = false): string {
+    static format(start: Date, end?: Date, allDay = false): string {
         let ret: string
         const startPair = DateTime.dateFormatter.format(start).split(',')
 

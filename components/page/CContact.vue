@@ -30,6 +30,7 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
 import Contact from '@/models/entities/Contact'
 
@@ -40,7 +41,7 @@ const icons = {
     mdiChevronUp,
     mdiEmailSend,
 }
-const showText = false
+const showText = ref(false)
 </script>
 
 <style lang="scss" scoped />

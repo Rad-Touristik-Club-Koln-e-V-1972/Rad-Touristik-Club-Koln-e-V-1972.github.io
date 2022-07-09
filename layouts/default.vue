@@ -58,7 +58,7 @@ import CSponsors from '@/components/layouts/default/CSponsors.vue'
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiCopyright }
-const navDrawer = false
+const navDrawer = ref(false)
 const slideshowItems = [
     'https://content.rtc-koeln.de/layouts/default/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
     'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_0037.jpg',
