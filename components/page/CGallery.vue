@@ -44,7 +44,7 @@
                 </v-card>
             </v-dialog>
         </v-card-text>
-        <v-card-actions>
+        <v-card-actions v-if="props.value.description">
             <v-spacer />
             <v-btn text @click="showText = !showText">
                 Details
