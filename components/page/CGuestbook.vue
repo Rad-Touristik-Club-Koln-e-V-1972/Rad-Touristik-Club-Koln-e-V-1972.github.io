@@ -12,7 +12,7 @@
         <v-divider />
         <v-card-text v-if="props.value.text || props.value.imageUrls.length">
             <div v-if="props.value.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="marked.parseInline(props.value.text)" />
-            <c-slideshow v-if="props.value.imageUrls.length" :items="props.value.imageUrls" />
+            <c-slideshow v-if="props.value.imageUrls.length" :value="props.value.imageUrls" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="props.value.answer">

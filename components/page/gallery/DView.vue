@@ -1,20 +1,18 @@
+<!-- TODO WORKAROUND UNTIL VUETIFY GETS A NATIVE IMAGE GALLERY IN https://github.com/vuetifyjs/vuetify/issues/11177
+      OR USE https://github.com/sachinchoolur/lightgallery.js/ WITH VUE/NUXT 3 -->
 <template>
     <v-sheet id="DView">
         <v-card-text>
-            <v-dialog v-model="isOpen" persistent scrollable>
+            <v-dialog v-model="isOpen" fullscreen>
                 <template #activator="{ attrs, on }">
-                    <v-img :max-width="`${vuetify.breakpoint.mobile ? 10 : 20}em`" :src="props.value.previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
+                    <v-img :max-width="`${vuetify.breakpoint.mobile ? 10 : 20}em`" :src="props.value[startIndex].previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
                 </template>
-                <v-card class="text-center">
-                    <v-toolbar color="primary" flat>
-                        <v-btn icon dark @click="isOpen = false">
-                            <v-icon color="accent" v-text="icons.mdiClose" />
-                        </v-btn>
-                        <v-spacer />
-                    </v-toolbar>
-                    <v-card-text>
-                        <v-img :src="props.value.srcUrl" />
-                    </v-card-text>
+                <v-card height="100%">
+                    <v-btn absolute color="primary" style="right: 0; z-index: 1" @click="isOpen = false">
+                        <v-icon color="accent" v-text="icons.mdiClose" />
+                    </v-btn>
+                    <!-- TODO KEYBOARD SUPPORT COMES WITH VUETIFY 3.x https://github.com/vuetifyjs/vuetify/issues/11544 -->
+                    <c-slideshow :cycle="false" :value="props.value.flatMap((it) => it.srcUrl)" :start-index="startIndex" />
                 </v-card>
             </v-dialog>
         </v-card-text>
@@ -24,9 +22,13 @@
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
 import { mdiClose } from '@mdi/js'
+import CSlideshow from '@/components/layouts/default/CSlideshow.vue'
 import Entry from '@/models/entities/gallery/Entry'
 
-const props = defineProps<{ value: Entry }>()
+const props = defineProps<{
+    value: Entry[]
+    startIndex: number
+}>()
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)

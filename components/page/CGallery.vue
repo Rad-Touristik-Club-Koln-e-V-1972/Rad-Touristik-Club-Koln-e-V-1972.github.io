@@ -36,8 +36,8 @@
                     </v-expand-transition>
                     <v-card-text>
                         <v-row class="d-flex justify-center" no-gutters>
-                            <v-col v-for="(it, index) in props.value.images" :key="index" cols="auto">
-                                <d-view :value="it" />
+                            <v-col v-for="(_, index) in props.value.images" :key="index" cols="auto">
+                                <d-view :value="props.value.images" :start-index="index" />
                             </v-col>
                         </v-row>
                     </v-card-text>
