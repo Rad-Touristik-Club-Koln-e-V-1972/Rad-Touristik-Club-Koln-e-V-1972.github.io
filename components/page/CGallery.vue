@@ -35,7 +35,10 @@
                         </div>
                     </v-expand-transition>
                     <v-card-text>
-                        <v-row class="d-flex justify-center" no-gutters>
+                        <v-toolbar v-if="value.youtubeVideoIds.length" color="accent--text primary" flat>
+                            <v-toolbar-title>Bilder</v-toolbar-title>
+                        </v-toolbar>
+                        <v-row class="justify-center my-1" dense>
                             <v-col v-for="(_, index) in props.value.images" :key="index" cols="auto">
                                 <d-view :value="props.value.images" :start-index="index" />
                             </v-col>
