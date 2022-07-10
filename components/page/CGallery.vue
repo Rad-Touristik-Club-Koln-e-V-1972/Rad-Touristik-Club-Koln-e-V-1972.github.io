@@ -43,6 +43,26 @@
                                 <d-view :value="props.value.images" :start-index="index" />
                             </v-col>
                         </v-row>
+                        <v-toolbar v-if="value.youtubeVideoIds.length" color="accent--text primary" flat>
+                            <v-toolbar-title>Videos</v-toolbar-title>
+                        </v-toolbar>
+                        <v-row class="justify-center my-1" dense>
+                            <v-col v-for="(it, index) in props.value.youtubeVideoIds" :key="index" cols="auto">
+                                <iframe
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                    :src="`https://www.youtube-nocookie.com/embed/${it}`"
+                                    style="
+                                        border: 0;
+                                        border-radius: 4px;
+                                        box-shadow: 0 3px 1px -2px rgba(0 0 0 / 20%), 0 2px 2px 0 rgba(0 0 0 / 14%), 0 1px 5px 0 rgba(0 0 0 / 12%);
+                                        width: 20em;
+                                    "
+                                    title="YouTube video player"
+                                    height="100%"
+                                />
+                            </v-col>
+                        </v-row>
                     </v-card-text>
                 </v-card>
             </v-dialog>

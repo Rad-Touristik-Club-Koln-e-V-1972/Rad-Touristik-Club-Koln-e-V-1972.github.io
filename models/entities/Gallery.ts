@@ -8,4 +8,5 @@ export default class Gallery {
     subtitle = ''
     title = ''
     titleImageUrl = ''
+    youtubeVideoIds = [] as string[]
 }

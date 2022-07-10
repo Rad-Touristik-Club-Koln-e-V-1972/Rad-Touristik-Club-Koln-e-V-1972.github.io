@@ -39,6 +39,11 @@ export default class GalleryBuilder {
         return this
     }
 
+    youtubeVideoId(value: string): GalleryBuilder {
+        this.value.youtubeVideoIds.push(value)
+        return this
+    }
+
     build(): Gallery {
         return this.value
     }
