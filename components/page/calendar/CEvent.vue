@@ -1,42 +1,35 @@
 <template>
-    <v-dialog id="CEvent" v-model="selectedOpen" :activator="selectedElement" :fullscreen="vuetify.breakpoint.mobile" width="auto">
+    <v-dialog id="CEvent" v-model="isOpen" width="auto">
         <v-card flat>
-            <v-toolbar :color="selectedEvent?.color">
-                <v-toolbar-title class="accent--text">
+            <v-toolbar class="accent--text" :color="selectedEvent?.color" flat>
+                <v-toolbar-title>
                     {{ selectedEvent?.name }}
                 </v-toolbar-title>
                 <v-spacer />
-                <v-btn icon @click="selectedOpen = false">
+                <v-btn icon @click="isOpen = false">
                     <v-icon color="accent" v-text="icons.mdiClose" />
                 </v-btn>
             </v-toolbar>
             <v-card-text>
                 <!-- TODO "pointer-events: none" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/5787 -->
-                <v-simple-table style="pointer-events: none">
+                <v-simple-table class="mt-2" style="pointer-events: none">
                     <template #default>
                         <tbody>
-                            <tr>
-                                <td class="align-end">Art:</td>
-                                <td>{{ selectedEvent?.category }}</td>
+                            <tr v-if="selectedEvent?.category !== EEvent.Mitgliederversammlung">
+                                <td class="text-end" v-text="'Art:'" />
+                                <td v-text="selectedEvent?.category" />
                             </tr>
                             <tr>
-                                <td>Event:</td>
-                                <td>
-                                    <a v-if="selectedEvent?.url" :href="selectedEvent?.url" target="_blank" v-text="selectedEvent?.name" />
-                                    <span v-else v-text="selectedEvent?.name" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Termin:</td>
-                                <td><div v-html="getDate(selectedEvent)" /></td>
+                                <td class="text-end" v-text="'Termin:'" />
+                                <td v-html="getDate(selectedEvent)" />
                             </tr>
                             <tr v-if="selectedEvent?.contact">
-                                <td>Ansprechpartner:</td>
-                                <td>{{ selectedEvent.contact }}</td>
+                                <td class="text-end" v-text="'Ansprechpartner:'" />
+                                <td v-text="selectedEvent.contact" />
                             </tr>
                             <tr v-if="selectedEvent?.clubPoints">
-                                <td>Vereinspunkte:</td>
-                                <td>{{ selectedEvent.clubPoints }}</td>
+                                <td class="text-end" v-text="'Vereinspunkte:'" />
+                                <td v-text="selectedEvent.clubPoints" />
                             </tr>
                         </tbody>
                     </template>
@@ -50,38 +43,21 @@
 import { getCurrentInstance, ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import Event from '@/models/entities/calendar/Event'
+import EEvent from '@/models/enums/EEvent'
 import DateTime from '@/utils/DateTime'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiClose }
-const selectedElement = ref<EventTarget | null>()
+const isOpen = ref(false)
 const selectedEvent = ref<Event>()
-const selectedOpen = ref(false)
 
 const getDate = (event: Event) => DateTime.format(event?.start, event?.end, !event?.timed)
-const showEvent = ({ event, nativeEvent }: { event: Event; nativeEvent: MouseEvent | TouchEvent | null }) => {
-    const open = () => {
-        selectedEvent.value = event
-        selectedElement.value = nativeEvent?.target
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                selectedOpen.value = true
-            })
-        })
-    }
-
-    if (selectedOpen) {
-        selectedOpen.value = false
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                open()
-            })
-        })
-    } else open()
-
-    nativeEvent?.stopPropagation()
+// TODO nur event parameter ohne objekt kapselung?
+const showEvent = ({ event }: { event: Event }) => {
+    selectedEvent.value = event
+    isOpen.value = true
 }
 
 defineExpose({ showEvent })

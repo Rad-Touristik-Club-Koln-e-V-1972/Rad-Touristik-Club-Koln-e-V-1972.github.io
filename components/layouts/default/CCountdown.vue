@@ -1,6 +1,6 @@
 <template>
     <div v-if="nextEvent" id="CCountdown" class="text-center">
-        <v-row dense style="cursor: pointer" @click="event.showEvent({ event: nextEvent, nativeEvent: null })">
+        <v-row dense style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
             <v-col>
                 <v-progress-circular color="primary lighten-5" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
             </v-col>
@@ -64,10 +64,10 @@ onUnmounted(() => {
     clearInterval(interval)
 })
 
-const getPercentageSeconds = (value: number) => getPercentage(60, value)
-const getPercentageMinutes = (value: number) => getPercentage(60, value)
-const getPercentageHours = (value: number) => getPercentage(24, value)
 const getPercentageDays = (value: number) => getPercentage(daysOfMonth, value)
+const getPercentageHours = (value: number) => getPercentage(24, value)
+const getPercentageMinutes = (value: number) => getPercentage(60, value)
+const getPercentageSeconds = (value: number) => getPercentage(60, value)
 </script>
 
 <style lang="scss" scoped />
