@@ -9,7 +9,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 2, 4, 22)
-        .name('Februar')
+        .name('Mitgliederversammlung')
         .start(2022, 2, 4, 20)
         .build(),
     new EventBuilder().allDay(true).category(EEvent.Veranstaltung).clubPoints(1).contact('Wolfgang Dünkelmann').name('Start in das Jubiläumsjahr').start(2022, 3, 5).build(),
@@ -28,7 +28,7 @@ export default [
         .clubPoints(0)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 3, 18, 21)
-        .name('März / Jahreshauptversammlung')
+        .name('Jahreshauptversammlung')
         .start(2022, 3, 18, 19)
         .build(),
     new EventBuilder()
@@ -37,7 +37,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 4, 1, 22)
-        .name('April')
+        .name('Mitgliederversammlung')
         .start(2022, 4, 1, 20)
         .build(),
     new EventBuilder().allDay(true).category(EEvent.Permanente).clubPoints(1).contact('Klaus Dünkelmann').name('RTC Permanente').start(2022, 4, 9).build(),
@@ -56,7 +56,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 5, 6, 22)
-        .name('Mai')
+        .name('Mitgliederversammlung')
         .start(2022, 5, 6, 20)
         .build(),
     new EventBuilder().allDay(true).category(EEvent.RTF).clubPoints(2).contact('Klaus Dünkelmann').name('50. Forsbach – Tour - Marathon - Vortour').start(2022, 5, 7).build(),
@@ -77,7 +77,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 6, 3, 22)
-        .name('Juni')
+        .name('Mitgliederversammlung')
         .start(2022, 6, 3, 20)
         .build(),
     new EventBuilder()
@@ -123,7 +123,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 7, 1, 22)
-        .name('Juli')
+        .name('Mitgliederversammlung')
         .start(2022, 7, 1, 20)
         .build(),
     new EventBuilder()
@@ -169,7 +169,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 9, 2, 22)
-        .name('September')
+        .name('Mitgliederversammlung')
         .start(2022, 9, 2, 20)
         .build(),
     new EventBuilder()
@@ -196,7 +196,7 @@ export default [
         .clubPoints(1)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 10, 7, 22)
-        .name('Oktober')
+        .name('Mitgliederversammlung')
         .start(2022, 10, 7, 20)
         .build(),
     new EventBuilder().allDay(true).category(EEvent.CTF).clubPoints(4).contact('Klaus Dünkelmann').name('7. Wahnbach – Tour - Gravel - Vortour').start(2022, 10, 16).build(),
@@ -209,7 +209,7 @@ export default [
         .clubPoints(0)
         .contact('Wolfgang Dünkelmann')
         .end(2022, 12, 2, 22)
-        .name('Dezember / Weihnachtsfeier')
+        .name('Weihnachtsfeier')
         .start(2022, 12, 2, 19)
         .build(),
 ].concat(Calendar.getHolidays(2022))
