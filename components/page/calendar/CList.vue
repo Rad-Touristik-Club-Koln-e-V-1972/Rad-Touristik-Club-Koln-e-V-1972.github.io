@@ -47,7 +47,7 @@ const futureEvents = computed(() =>
 const filterDate = (date: Date, dateRange: string[]) => {
     let ret = true
 
-    if (dateRange?.length > 0) {
+    if (dateRange?.length) {
         const start = new Date(dateRange[0])
 
         if (dateRange.length === 1) ret = DateTime.isSameDay(date, start)
@@ -66,7 +66,7 @@ const headers = computed(() => [
             const categories = filter.categories
             let ret = true
 
-            if (categories.length > 0) ret = categories.includes(value)
+            if (categories.length) ret = categories.includes(value)
 
             return ret
         },
