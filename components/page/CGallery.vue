@@ -35,39 +35,42 @@
                         </div>
                     </v-expand-transition>
                     <v-card-text>
-                        <v-toolbar v-if="value.youtubeVideoIds.length" color="accent--text primary" flat>
-                            <v-toolbar-title>Bilder</v-toolbar-title>
-                        </v-toolbar>
-                        <v-row class="justify-center my-1" dense>
-                            <v-col v-for="(_, index) in props.value.images" :key="index" cols="auto">
-                                <d-view :value="props.value.images" :start-index="index" />
-                            </v-col>
-                        </v-row>
-                        <v-toolbar v-if="value.youtubeVideoIds.length" color="accent--text primary" flat>
-                            <v-toolbar-title>Videos</v-toolbar-title>
-                        </v-toolbar>
-                        <v-row class="justify-center my-1" dense>
-                            <v-col
-                                v-for="(it, index) in props.value.youtubeVideoIds"
-                                :key="index"
-                                cols="auto"
-                                :style="`height: ${vuetify.breakpoint.mobile ? 10 : 20}em; width: ${vuetify.breakpoint.mobile ? 20 : 40}em`"
-                            >
-                                <iframe
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen
-                                    :src="`https://www.youtube-nocookie.com/embed/${it}`"
-                                    style="
-                                        border: 0;
-                                        border-radius: 4px;
-                                        box-shadow: 0 3px 1px -2px rgba(0 0 0 / 20%), 0 2px 2px 0 rgba(0 0 0 / 14%), 0 1px 5px 0 rgba(0 0 0 / 12%);
-                                    "
-                                    title="YouTube video player"
-                                    height="100%"
-                                    width="100%"
-                                />
-                            </v-col>
-                        </v-row>
+                        <v-tabs id="CNavigationTabs" v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
+                            <v-tab v-for="(item, index) in ['Bilder', 'Videos']" :key="index" exact nuxt :to="item.to">{{ item }}</v-tab>
+                        </v-tabs>
+                        <v-tabs-items v-model="tabModel">
+                            <v-tab-item key="Bilder">
+                                <v-row class="justify-center my-1" dense>
+                                    <v-col v-for="(_, index) in props.value.images" :key="index" cols="auto">
+                                        <d-view :value="props.value.images" :start-index="index" />
+                                    </v-col>
+                                </v-row>
+                            </v-tab-item>
+                            <v-tab-item key="Videos">
+                                <v-row class="justify-center my-1" dense>
+                                    <v-col
+                                        v-for="(it, index) in props.value.youtubeVideoIds"
+                                        :key="index"
+                                        cols="auto"
+                                        :style="`height: ${vuetify.breakpoint.mobile ? 10 : 20}em; width: ${vuetify.breakpoint.mobile ? 20 : 40}em`"
+                                    >
+                                        <iframe
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen
+                                            :src="`https://www.youtube-nocookie.com/embed/${it}`"
+                                            style="
+                                                border: 0;
+                                                border-radius: 4px;
+                                                box-shadow: 0 3px 1px -2px rgba(0 0 0 / 20%), 0 2px 2px 0 rgba(0 0 0 / 14%), 0 1px 5px 0 rgba(0 0 0 / 12%);
+                                            "
+                                            title="YouTube video player"
+                                            height="100%"
+                                            width="100%"
+                                        />
+                                    </v-col>
+                                </v-row>
+                            </v-tab-item>
+                        </v-tabs-items>
                     </v-card-text>
                 </v-card>
             </v-dialog>
@@ -108,6 +111,7 @@ const icons = {
 }
 const isOpen = ref(false)
 const showText = ref(false)
+const tabModel = ref('')
 </script>
 
 <style lang="scss" scoped />
