@@ -36,7 +36,7 @@
                     </v-expand-transition>
                     <v-card-text>
                         <v-tabs id="CNavigationTabs" v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
-                            <v-tab v-for="(item, index) in ['Bilder', 'Videos']" :key="index" exact nuxt :to="item.to">{{ item }}</v-tab>
+                            <v-tab v-for="(item, index) in tabs" :key="index" exact nuxt :to="item.to">{{ item }}</v-tab>
                         </v-tabs>
                         <v-tabs-items v-model="tabModel">
                             <v-tab-item key="Bilder">
@@ -94,7 +94,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { computed, getCurrentInstance, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '@/components/page/gallery/DView.vue'
 import Gallery from '@/models/entities/Gallery'
@@ -112,6 +112,13 @@ const icons = {
 const isOpen = ref(false)
 const showText = ref(false)
 const tabModel = ref('')
+const tabs = computed(() => {
+    const tabs = ['Bilder']
+
+    if (props.value.youtubeVideoIds.length) tabs.push('Videos')
+
+    return tabs
+})
 </script>
 
 <style lang="scss" scoped />
