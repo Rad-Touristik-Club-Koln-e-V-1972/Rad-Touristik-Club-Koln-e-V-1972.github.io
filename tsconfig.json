@@ -1,13 +1,11 @@
 {
     "compilerOptions": {
         "allowJs": false,
-        "baseUrl": ".",
         "esModuleInterop": true,
         "experimentalDecorators": true,
-        "lib": ["DOM", "ESNext", "ESNext.AsyncIterable"],
         "sourceMap": true,
         "strict": true,
-        "types": ["@types/node", "@nuxt/types", "@nuxtjs/vuetify"]
+        "types": ["node", "@types/node", "@nuxt/types", "@nuxtjs/vuetify", "@pinia/nuxt"]
     },
     "exclude": [".nuxt", "dist", "node_modules"],
     "extends": "./.nuxt/tsconfig.json"
