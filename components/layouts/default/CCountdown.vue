@@ -10,9 +10,6 @@
             <v-col>
                 <v-progress-circular color="primary lighten-1" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}m</v-progress-circular>
             </v-col>
-            <v-col>
-                <v-progress-circular color="primary" rotate="0" size="60" :value="getPercentageSeconds(seconds)">{{ seconds }}s</v-progress-circular>
-            </v-col>
         </v-row>
         <v-row no-gutters>
             <v-col>{{ nextEvent.name }}</v-col>
@@ -24,8 +21,9 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import CEvent from '@/components/page/calendar/CEvent.vue'
-import DateTime from '@/utils/DateTime'
+import Event from '@/models/entities/calendar/Event'
 import { useCalendarStore } from '@/store/Calendar'
+import DateTime from '@/utils/DateTime'
 
 const event = ref()
 
@@ -39,24 +37,24 @@ const _millisecondsDay = 24 * _millisecondsHour
 const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
-const seconds = ref(0)
 
 const nextEvent = calendarStore.nextEvent()
 const daysOfMonth = nextEvent ? DateTime.getDaysInMonth(nextEvent.start.getMonth(), nextEvent.start.getFullYear()) : 30
 
 let interval: NodeJS.Timeout
 
+const calcCountdown = (nextEvent: Event) => {
+    const milliseconds = Math.abs(calendarStore.today().getTime() - nextEvent.start.getTime())
+    days.value = Math.floor(milliseconds / _millisecondsDay)
+    hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)
+    minutes.value = Math.floor((milliseconds % _millisecondsHour) / _millisecondsMinute)
+}
 const getPercentage = (max: number, value: number) => Math.round((100 / max) * value)
 
 onMounted(() => {
     if (nextEvent) {
-        interval = setInterval(() => {
-            const milliseconds = Math.abs(calendarStore.today().getTime() - nextEvent.start.getTime())
-            days.value = Math.floor(milliseconds / _millisecondsDay)
-            hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)
-            minutes.value = Math.floor((milliseconds % _millisecondsHour) / _millisecondsMinute)
-            seconds.value = Math.floor((milliseconds % _millisecondsMinute) / _millisecondsSecond)
-        }, 1000)
+        calcCountdown(nextEvent)
+        interval = setInterval(() => calcCountdown(nextEvent), 60000)
     }
 })
 
@@ -67,7 +65,6 @@ onUnmounted(() => {
 const getPercentageDays = (value: number) => getPercentage(daysOfMonth, value)
 const getPercentageHours = (value: number) => getPercentage(24, value)
 const getPercentageMinutes = (value: number) => getPercentage(60, value)
-const getPercentageSeconds = (value: number) => getPercentage(60, value)
 </script>
 
 <style lang="scss" scoped />
