@@ -40,14 +40,11 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import Event from '@/models/entities/calendar/Event'
 import EEvent from '@/models/enums/EEvent'
 import DateTime from '@/utils/DateTime'
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiClose }
 const isOpen = ref(false)
