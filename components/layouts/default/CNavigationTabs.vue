@@ -5,11 +5,6 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
-
 const items = [
     {
         title: 'Startseite',
