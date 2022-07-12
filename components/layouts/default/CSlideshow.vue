@@ -1,5 +1,14 @@
 <template>
-    <v-carousel id="CSlideshow" :value="startIndex" :cycle="props.cycle" :height="props.height" hide-delimiters :show-arrows="props.value.length > 1" show-arrows-on-hover>
+    <v-carousel
+        id="CSlideshow"
+        :value="startIndex"
+        :cycle="props.cycle"
+        :height="props.height"
+        hide-delimiters
+        interval="12000"
+        :show-arrows="props.value.length > 1"
+        show-arrows-on-hover
+    >
         <v-carousel-item v-for="(item, i) in props.value" :key="i" contain :src="item" />
     </v-carousel>
 </template>
