@@ -1,5 +1,5 @@
 <template>
-    <v-tabs id="CNavigationTabs" centered :show-arrows="vuetify.breakpoint.mobile">
+    <v-tabs id="CNavigationTabs" centered show-arrows>
         <v-tab v-for="(item, index) in items" :key="index" exact nuxt :to="item.to">{{ item.title }}</v-tab>
     </v-tabs>
 </template>
