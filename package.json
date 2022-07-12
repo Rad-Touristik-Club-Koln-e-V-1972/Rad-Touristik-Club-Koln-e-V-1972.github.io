@@ -2,6 +2,7 @@
     "name": "rad-touristik-club-koln-e-v-1972.github.io",
     "version": "1.0.0",
     "private": true,
+    "TODO": "TODO DEPENDENCY 'vue-demi' IS A WORKAROUND FOR https://github.com/vueuse/vue-demi/issues/174 . REMOVE AFTER!",
     "scripts": {
         "build": "nuxi generate",
         "dev": "nuxi dev",
@@ -24,6 +25,7 @@
         "marked": "^4.0.18",
         "nuxt-edge": "latest",
         "vue": "*",
+        "vue-demi": "^0.13.4",
         "vuetify": "*"
     },
     "devDependencies": {
