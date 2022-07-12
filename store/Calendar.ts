@@ -6,7 +6,7 @@ import db2022 from '@/store/calendar/DB2022'
 export const useCalendarStore = defineStore('calendar', {
     state: () => ({ db2022 }),
     getters: {
-        all: (state): Event[] => ([] as Event[]).concat(state.db2022),
+        all: (state): Event[] => state.db2022,
     },
     actions: {
         allFuture(): Event[] {

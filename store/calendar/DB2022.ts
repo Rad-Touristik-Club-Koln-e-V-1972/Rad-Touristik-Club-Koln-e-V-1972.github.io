@@ -212,4 +212,4 @@ export default [
         .name('Weihnachtsfeier')
         .start(2022, 12, 2, 19)
         .build(),
-].concat(Calendar.getHolidays(2022))
+].concat(Calendar.getHolidays(new Date().getFullYear()))
