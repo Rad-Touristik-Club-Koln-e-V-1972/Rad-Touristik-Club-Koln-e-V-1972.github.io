@@ -5,7 +5,7 @@
         "experimentalDecorators": true,
         "sourceMap": true,
         "strict": true,
-        "types": ["node", "@types/node", "@nuxt/types", "@nuxtjs/vuetify", "@pinia/nuxt"]
+        "types": ["node", "@nuxt/types", "@nuxtjs/vuetify", "@pinia/nuxt"]
     },
     "exclude": [".nuxt", "dist", "node_modules"],
     "extends": "./.nuxt/tsconfig.json"
