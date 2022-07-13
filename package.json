@@ -2,37 +2,32 @@
     "name": "rad-touristik-club-koln-e-v-1972.github.io",
     "version": "1.0.0",
     "private": true,
-    "TODO": "TODO DEPENDENCY 'vue-demi' IS A WORKAROUND FOR https://github.com/vueuse/vue-demi/issues/174 . REMOVE AFTER!",
+    "TODO": "TODO WORKAROUND 'bash -c' IS NEEDED IN lint-staged UNTIL https://github.com/johnsoncodehk/volar/issues/1153 IS FIXED AFTER MY COMMENT",
     "scripts": {
         "build": "nuxi generate",
         "dev": "nuxi dev",
+        "lint": "npm run lint:markup && npm run lint:js && npm run lint:style && npm run lint:prettier",
         "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
+        "lint:markup": "vue-tsc --noEmit",
         "lint:prettier": "prettier --write --list-different --ignore-path .gitignore .",
         "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
-        "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
-        "prepare": "husky install"
-    },
-    "lint-staged": {
-        "*.{js,ts,vue}": "eslint --fix",
-        "*.{css,scss,sass,html,vue}": "stylelint --fix",
-        "*.**": "prettier --ignore-unknown --write"
+        "predev": "npm run lint",
+        "prepare": "husky install && nuxi prepare"
     },
     "dependencies": {
-        "@pinia/nuxt": "^0.2.1",
+        "@pinia/nuxt": "^0.3.0",
         "@types/marked": "^4.0.3",
-        "core-js": "^3.23.4",
         "date-holidays": "^3.16.2",
         "marked": "^4.0.18",
         "nuxt-edge": "latest",
-        "vue": "*",
-        "vue-demi": "^0.13.4",
-        "vuetify": "*"
+        "vue": "2.7.5",
+        "vuetify": "2.6.7"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
         "@mdi/js": "^6.9.96",
-        "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27621666.ee600b4",
+        "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27628751.3df21c7",
         "@nuxt/types": "^2.15.8",
         "@nuxtjs/eslint-config-typescript": "^10.0.0",
         "@nuxtjs/eslint-module": "^3.1.0",
@@ -41,17 +36,23 @@
         "@rushstack/eslint-patch": "^1.1.4",
         "@vue/eslint-config-prettier": "^7.0.0",
         "@vue/eslint-config-typescript": "^11.0.0",
-        "eslint": "^8.19.0",
         "eslint-plugin-nuxt": "^3.2.0",
-        "eslint-plugin-vue": "^9.2.0",
         "eslint-plugin-vuetify": "^1.1.0",
         "husky": "^8.0.1",
         "lint-staged": "^13.0.3",
-        "postcss-html": "^1.5.0",
-        "prettier": "^2.7.1",
-        "stylelint": "^14.9.1",
         "stylelint-config-prettier": "^9.0.3",
         "stylelint-config-recommended-vue": "^1.4.0",
-        "stylelint-config-standard": "^26.0.0"
+        "stylelint-config-standard": "^26.0.0",
+        "typescript": "^4.7.4",
+        "vue-tsc": "^0.38.5"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.vue": "bash -c vue-tsc --noEmit",
+        "*.{js,ts,vue}": "eslint --fix",
+        "*.{css,scss,sass,html,vue}": "stylelint --fix",
+        "*.**": "prettier --ignore-unknown --write"
     }
 }

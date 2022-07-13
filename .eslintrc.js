@@ -15,20 +15,19 @@ module.exports = {
         'plugin:vuetify/recommended',
         '@vue/eslint-config-prettier',
     ],
+    parser: 'vue-eslint-parser',
     parserOptions: {
         ecmaVersion: 'latest',
+        parser: '@typescript-eslint/parser',
         sourceType: 'module',
     },
     root: true,
     // add your custom rules here
     rules: {
+        // TODO WORKAROUND WITH AN app.vue TO layouts/app.vue AND error.vue TO layouts/error.vue UNTIL NUXT3 WITH NATIVE app.vue AND error.vue SUPPORT AND VUE-ROUTER IS USABLE
+        //  SEE https://github.com/nuxt/bridge/issues/34 & https://github.com/nuxt/bridge/issues/415
+        'vue/multi-word-component-names': 'off',
         // We neither use SSR nor allow users to dynamical add content.
         'vue/no-v-html': 'off',
-        // https://palantir.github.io/tslint/rules/no-use-before-declare/
-        // Since most modern TypeScript doesn’t use var,
-        //  this rule is generally discouraged and is kept around for legacy purposes.
-        //  It is slow to compute, is not enabled in the built-in configuration presets,
-        //  and should not be used to inform TSLint design decisions.
-        'no-use-before-define': 'off',
     },
 }

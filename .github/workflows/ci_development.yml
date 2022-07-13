@@ -33,7 +33,7 @@ jobs:
                   git commit -am "build: update dependencies" || true
                   git push || true
             - name: Run linter
-              run: npm run lint
+              run: npm run prepare && npm run lint
             - name: Run static website generator
               run: npm run build
             - name: Deploy to github branch

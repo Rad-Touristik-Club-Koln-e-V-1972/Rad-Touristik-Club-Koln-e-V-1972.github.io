@@ -12,10 +12,10 @@ export default defineNuxtConfig({
             '@nuxtjs/vuetify',
             {
                 // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-                customVariables: ['@/assets/variables.scss'],
+                customVariables: ['~/assets/variables.scss'],
                 defaultAssets: false,
                 iconfont: 'mdiSvg',
-                optionsPath: '@/plugins/vuetify.options.ts',
+                optionsPath: '~/plugins/vuetify.options.ts',
                 treeShake: true,
             },
         ],
@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     modules: [],
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
+    srcDir: 'src/',
     ssr: false,
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
