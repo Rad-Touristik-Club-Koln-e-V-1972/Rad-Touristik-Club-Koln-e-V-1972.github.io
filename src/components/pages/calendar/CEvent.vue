@@ -44,13 +44,13 @@ import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import Event from '~/models/entities/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
-import DateTime from '~/utils/DateTime'
+import useDateTime from '~/utils/DateTime'
 
 const icons = { mdiClose }
 const isOpen = ref(false)
 const selectedEvent = ref<Event>()
 
-const getDate = (event: Event) => DateTime.format(event?.start, event?.end, !event?.timed)
+const getDate = (event: Event) => useDateTime().format(event?.start, event?.end, !event?.timed)
 // TODO nur event parameter ohne objekt kapselung?
 const showEvent = ({ event }: { event: Event }) => {
     selectedEvent.value = event

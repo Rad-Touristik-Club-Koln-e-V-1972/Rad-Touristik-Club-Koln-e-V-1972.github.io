@@ -30,8 +30,10 @@ import CCategories from '~/components/pages/calendar/list/filter/CCategories.vue
 import CDateRange from '~/components/pages/calendar/list/filter/CDateRange.vue'
 import Event from '~/models/entities/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
-import DateTime from '~/utils/DateTime'
 import { useCalendarStore } from '~/store/Calendar'
+import useDateTime from '~/utils/DateTime'
+
+const dateTime = useDateTime()
 
 const filter = {
     categories: [] as EEvent[],
@@ -50,14 +52,14 @@ const filterDate = (date: Date, dateRange: string[]) => {
     if (dateRange?.length) {
         const start = new Date(dateRange[0])
 
-        if (dateRange.length === 1) ret = DateTime.isSameDay(date, start)
-        else ret = DateTime.isBetween(date, start, new Date(dateRange[1]))
+        if (dateRange.length === 1) ret = dateTime.isSameDay(date, start)
+        else ret = dateTime.isBetween(date, start, new Date(dateRange[1]))
     }
 
     return ret
 }
 const getColor = (event: Event) => `${event.color} accent--text`
-const getDate = (event: Event) => DateTime.format(event.start, event.end, !event.timed)
+const getDate = (event: Event) => dateTime.format(event.start, event.end, !event.timed)
 const getStyle = (event: Event) => (event.category === EEvent.Abgesagt ? 'text-decoration: double line-through' : '')
 const headers = computed(() => [
     {

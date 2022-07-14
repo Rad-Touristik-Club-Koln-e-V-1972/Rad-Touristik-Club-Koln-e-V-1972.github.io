@@ -23,7 +23,7 @@ import { onMounted, onUnmounted, ref } from 'vue'
 import CEvent from '~/components/pages/calendar/CEvent.vue'
 import Event from '~/models/entities/calendar/Event'
 import { useCalendarStore } from '~/store/Calendar'
-import DateTime from '~/utils/DateTime'
+import useDateTime from '~/utils/DateTime'
 
 const event = ref()
 
@@ -39,7 +39,7 @@ const hours = ref(0)
 const minutes = ref(0)
 
 const nextEvent = calendarStore.nextEvent()
-const daysOfMonth = nextEvent ? DateTime.getDaysInMonth(nextEvent.start.getMonth(), nextEvent.start.getFullYear()) : 30
+const daysOfMonth = nextEvent ? useDateTime().getDaysInMonth(nextEvent.start.getMonth(), nextEvent.start.getFullYear()) : 30
 
 let interval: NodeJS.Timeout
 

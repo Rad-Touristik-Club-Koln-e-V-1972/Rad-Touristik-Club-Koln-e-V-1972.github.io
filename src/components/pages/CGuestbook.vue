@@ -1,7 +1,7 @@
 <template>
     <v-card id="CGuestbook" max-width="40em">
         <v-card-subtitle class="secondary accent--text text-subtitle-2 text-md-subtitle-1 text-lg-h6">
-            <div v-if="props.value.date" v-text="DateTime.format(props.value.date)" />
+            <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
             <div v-text="`${props.value.name} via ${ESource[props.value.source]}`" />
             <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
             <div v-if="props.value.category !== EEvent.RTC" v-text="`Event: ${EEvent[props.value.category]}`" />
@@ -31,7 +31,7 @@ import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import Entry from '~/models/entities/guestbook/Entry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/guestbook/ESource'
-import DateTime from '~/utils/DateTime'
+import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Entry }>()
 </script>
