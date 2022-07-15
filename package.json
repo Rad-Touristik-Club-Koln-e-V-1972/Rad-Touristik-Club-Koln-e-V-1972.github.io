@@ -8,7 +8,7 @@
         "dev": "nuxi dev",
         "lint": "npm run lint:markup && npm run lint:js && npm run lint:style && npm run lint:prettier",
         "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
-        "lint:markup": "vue-tsc --noEmit",
+        "lint:markup": "vue-tsc",
         "lint:prettier": "prettier --write --list-different --ignore-path .gitignore .",
         "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
         "predev": "npm run lint",
@@ -50,7 +50,7 @@
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "*.vue": "bash -c vue-tsc --noEmit",
+        "*.vue": "bash -c vue-tsc",
         "*.{js,ts,vue}": "eslint --fix",
         "*.{css,scss,sass,html,vue}": "stylelint --fix",
         "*.**": "prettier --ignore-unknown --write"
