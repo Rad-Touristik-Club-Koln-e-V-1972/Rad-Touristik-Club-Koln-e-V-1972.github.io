@@ -13,7 +13,7 @@
                 style="background-color: var(--v-primary-base); color: var(--v-accent-base)"
             >
                 Gästebucheintrag hinzufügen
-                <v-icon right v-text="icons.mdiEmailSend" />
+                <v-icon right v-text="icons.mdiEmailArrowRight" />
             </v-btn>
         </v-card-actions>
         <v-card-text>
@@ -27,11 +27,11 @@
 </template>
 
 <script lang="ts" setup>
-import { mdiEmailSend } from '@mdi/js'
+import { mdiEmailArrowRight } from '@mdi/js'
 import CGuestbook from '~/components/pages/CGuestbook.vue'
 import { useGuestbookStore } from '~/store/Guestbook'
 
-const icons = { mdiEmailSend }
+const icons = { mdiEmailArrowRight }
 const items = useGuestbookStore().all
 </script>
 

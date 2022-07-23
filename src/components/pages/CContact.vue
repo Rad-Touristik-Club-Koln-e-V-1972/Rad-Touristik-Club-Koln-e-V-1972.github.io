@@ -9,7 +9,7 @@
         </v-card-subtitle>
         <v-card-actions>
             <v-btn icon :href="'mailto:' + props.value.eMail">
-                <v-icon v-text="icons.mdiEmailSend" />
+                <v-icon v-text="icons.mdiEmailArrowRight" />
             </v-btn>
             <v-spacer />
             <v-spacer />
@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { mdiChevronDown, mdiChevronUp, mdiEmailSend } from '@mdi/js'
+import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
 import Contact from '~/models/entities/Contact'
 
 const props = defineProps<{ value: Contact }>()
@@ -39,7 +39,7 @@ const props = defineProps<{ value: Contact }>()
 const icons = {
     mdiChevronDown,
     mdiChevronUp,
-    mdiEmailSend,
+    mdiEmailArrowRight,
 }
 const showText = ref(false)
 </script>
