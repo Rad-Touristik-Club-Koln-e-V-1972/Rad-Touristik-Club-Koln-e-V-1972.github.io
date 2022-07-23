@@ -21,7 +21,9 @@
             </v-toolbar>
             <v-expand-transition v-if="props.value.description">
                 <div v-show="showText" class="align-self-center" style="max-width: 20em">
-                    <pre>{{ props.value.description }}</pre>
+                    <v-card-text>
+                        <pre>{{ props.value.description }}</pre>
+                    </v-card-text>
                 </div>
             </v-expand-transition>
             <v-card-text>

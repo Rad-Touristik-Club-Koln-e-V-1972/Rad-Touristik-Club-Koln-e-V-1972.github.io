@@ -19,9 +19,11 @@ Ort: {{ props.value.location }}
             </v-btn>
         </v-card-actions>
         <v-expand-transition>
-            <div v-show="showText" class="text-start">
+            <div v-show="showText">
                 <v-divider />
-                <pre>{{ props.value.description }}</pre>
+                <v-card-text>
+                    <pre>{{ props.value.description }}</pre>
+                </v-card-text>
             </div>
         </v-expand-transition>
     </v-card>
