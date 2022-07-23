@@ -10,21 +10,13 @@ export default [
         .name('Dieter Roggensack')
         .source(ESource['E-Mail'])
         .text(
-            `
-Hallo RTC, ich/wir wollte/n nur sagen, dass Eure CTF einmal wieder sehr schön und ausgezeichnet organisiert war.
-\\
+            `Hallo RTC, ich/wir wollte/n nur sagen, dass Eure CTF einmal wieder sehr schön und ausgezeichnet organisiert war.
 Wenn ich auch nicht unbedingt begeistert von den 2 Downhill-Strecken war (ich bin dafür zu alt und zu ängstlich), so war der übrige Teil der 55-er Runde wunderbar.
-\\
 Vielen Dank  für all Eure Mühen.
-\\
 Seit der CTF bei Euch vermisse ich meine Radbrille.
-\\
 Ich kann mir nur noch vorstellen, sie beim Ziel innen oder draußen liegen gelassen zu haben.
-\\
 Es handelt sich um die Marke Eagle Five mit eingebautem Leseteil.
-\\
 Sollte sie gefunden sein, bitte ich um Kontakt per email.
-\\
 Viele Grüße, Dieter Roggensack...`
         )
         .title('Feedback wegen ...CTF Wahnbachtour')
@@ -35,26 +27,17 @@ Viele Grüße, Dieter Roggensack...`
         .name('Herwig Barthes')
         .source(ESource.Facebook)
         .text(
-            `
-Die CTF an der Wahnbachtalsperre war großartig und hat großen Spaß gemacht.
-\\
+            `Die CTF an der Wahnbachtalsperre war großartig und hat großen Spaß gemacht.
 Ein Riesenkompliment an alle Helfer und Organisatoren. Super Service auf der Strecke und am Klubhaus.
-\\
 Besonders gut gefallen hat mir der Grill, die Waschstation und die Erbsensuppe.
-\\
-\\
+
 Einen kleinen Verbesserungsvorschlag hätte ich:
-\\
 Vielleicht könnte man in den GPSies-Track beim nächsten Mal Abbiegehinweise einbauen.
-\\
 Ich weiß, das ist eine ziemliche Fummelei, würde aber die Navigation erleichtern.
-\\
-\\
+
 Ansonsten alles top!!
-\\
-\\
+
 Vielen Dank!
-\\
 Gruß H. Barthes
 `
         )
@@ -65,15 +48,10 @@ Gruß H. Barthes
         .name('Wilfried Goesgens')
         .source(ESource.Facebook)
         .text(
-            `
-Hallo liebes RTC Team,
-\\
+            `Hallo liebes RTC Team,
 Super Tour, hat viel Spaß gemacht.
-\\
 Wie gestern schon persönlich erzählt, war ein Abzweig auf Lohmar zu in der Abfahrt schwer zu sehen - einige haben sich verfahren ...
-\\
 Da wir gestern den Punkt nicht genau festmachen konnten, hier mein Strava Track, bei KM 73,3 ist es passiert ...
-\\
 Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von oben kommend sah man die Markierung quasi nicht.
 `
         )
@@ -84,9 +62,7 @@ Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von
         .name('Jan Koza')
         .source(ESource.Facebook)
         .text(
-            `
-Eine tolle Strecke ...
-\\
+            `Eine tolle Strecke ...
 Herzlichen Dank!
 `
         )
@@ -112,13 +88,9 @@ Herzlichen Dank!
         .name('Thomas Zengerle')
         .source(ESource.Facebook)
         .text(
-            `
-Hallo,
-\\
+            `Hallo,
 das war heute eine tolle Runde. Ihr habt eine klasse Orga gehabt.
-\\
 Hoffentlich geht es dem Verletzten bald wieder gut.
-\\
 Schönen Gruß Thomas
 `
         )
@@ -130,11 +102,8 @@ Schönen Gruß Thomas
         .name('Jürgen Em')
         .source(ESource.Facebook)
         .text(
-            `
-Tolle Veranstaltung; tolle Verpflegung; tolle Strecke;
-\\
+            `Tolle Veranstaltung; tolle Verpflegung; tolle Strecke;
 Ausschilderung hätte etwas besser sein können, aber irgendwas ist immer.
-\\
 Bin nächstes Jahr gerne wieder dabei!
 `
         )
@@ -145,11 +114,8 @@ Bin nächstes Jahr gerne wieder dabei!
         .name('Bernd Doelp')
         .source(ESource.Facebook)
         .text(
-            `
-... dieses Jahr hat wirklich alles perfekt gepasst.
-\\
+            `... dieses Jahr hat wirklich alles perfekt gepasst.
 Super ausgeschildert, Verpflegung mehr als genug ...
-\\
 VIELEN DANK
                 `
         )
@@ -160,15 +126,10 @@ VIELEN DANK
         .name('Konstantin Sakellaris')
         .source(ESource.Facebook)
         .text(
-            `
-Hallo RTC-Köln, ich fahr seit grob 2 Jahren erst MTB, eure CTF war meine erste die ich gefahren bin.
-\\
+            `Hallo RTC-Köln, ich fahr seit grob 2 Jahren erst MTB, eure CTF war meine erste die ich gefahren bin.
 Ich möchte mich ganz herzlich bei euch für diese Tour bedanken, vor allem an das Team K1/K3.
-\\
 Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritten Kontrolle wieder da war, habe ich doch einen bekommen, echt kreativ dieses Team.
-\\
 2 TUC Kekse und dazwischen eine Scheibe Käse. Lecker. Bis zum nächstem Jahr.
-\\
                 `
         )
         .build(),
@@ -186,9 +147,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
         .organization('Präsident des RTC Mehlem')
         .source(ESource.Facebook)
         .text(
-            `
-Danke für die TOP Organisation, die gute Beschilderung und die abwechslungsreiche Verpflegung an den Kontrollen und im Ziel.
-\\
+            `Danke für die TOP Organisation, die gute Beschilderung und die abwechslungsreiche Verpflegung an den Kontrollen und im Ziel.
 Es war wieder super bei euch.
                 `
         )
@@ -199,11 +158,8 @@ Es war wieder super bei euch.
         .name('Roland Liffers')
         .source(ESource.Facebook)
         .text(
-            `
-Schliesse mich meinem Sportskamerad Jochen Güttes vollumfänglich an.
-\\
+            `Schliesse mich meinem Sportskamerad Jochen Güttes vollumfänglich an.
 Der RTC Köln hat trotz immer schwerer werdenden Rahmenbedingungen eine Super-Veranstaltung auf die Beine gestellt.
-\\
 Danke dafür!
 `
         )
@@ -222,9 +178,7 @@ Danke dafür!
         .name('Frank Müller')
         .source(ESource.Facebook)
         .text(
-            `
-Ausschilderung gut, Strecke perfekt, Verpflegung ausgezeichnet (das Gulasch mit Nudeln sehr lecker).
-\\
+            `Ausschilderung gut, Strecke perfekt, Verpflegung ausgezeichnet (das Gulasch mit Nudeln sehr lecker).
 Vielen Dank
 `
         )
@@ -235,11 +189,8 @@ Vielen Dank
         .name('Mika Kali')
         .source(ESource.Facebook)
         .text(
-            `
-Hallo, danke nochmal für die tolle RTF gestern!
-\\
+            `Hallo, danke nochmal für die tolle RTF gestern!
 Ich habe nur einen kleinen Kritikpunkt:
-\\
 Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Autofahrer genötigt, was das Zeug hält ...
 `
         )
@@ -251,17 +202,12 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
         .organization('RSV Staubwolke Refrath')
         .source(ESource['E-Mail'])
         .text(
-            `
-Hallo RTC,
-\\
-\\
+            `Hallo RTC,
+
 ich/wir wollte/n nur sagen, dass ... Eure RTF war wieder bestens organisiert. Schöne anspruchsvolle Strecken, gute Verpflegung und präzise Ausschilderung.
-\\
 Hat wieder alles gepasst.
-\\
-\\
+
 VG
-\\
 Dirk Oliver Heppert RSV Staubwolke Refrath
 `
         )

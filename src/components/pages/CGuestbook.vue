@@ -11,14 +11,16 @@
         </v-card-title>
         <v-divider />
         <v-card-text v-if="props.value.text || props.value.imageUrls.length">
-            <div v-if="props.value.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5" v-html="marked.parseInline(props.value.text)" />
+            <div v-if="props.value.text" class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">
+                <pre class="text-pre-wrap">{{ props.value.text }}</pre>
+            </div>
             <c-slideshow v-if="props.value.imageUrls.length" :value="props.value.imageUrls" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="props.value.answer">
                 <v-divider />
                 <v-card-text class="text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">
-                    <div v-html="marked.parseInline(`**RTC Köln:** *${props.value.answer}*`)"></div>
+                    <pre class="text-pre-wrap"><b>RTC Köln:</b> <i>{{props.value.answer}}</i></pre>
                 </v-card-text>
             </div>
         </v-expand-transition>
@@ -26,7 +28,6 @@
 </template>
 
 <script lang="ts" setup>
-import { marked } from 'marked'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import Entry from '~/models/entities/guestbook/Entry'
 import EEvent from '~/models/enums/EEvent'

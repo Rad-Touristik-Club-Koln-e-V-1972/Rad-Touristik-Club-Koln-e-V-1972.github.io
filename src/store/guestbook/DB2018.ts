@@ -9,14 +9,10 @@ export default [
         .name('Andreas Reineke')
         .source(ESource.Facebook)
         .text(
-            `
-Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.
-\\
-\\
+            `Schöne Strecke - aber die Markierungsdiebe waren zu aktiv.
+
 Den Vereinsmitgliedern tat es total leid, aber die konnten nicht so schnell nachschildern bzw. Flaggen, wie die Markierungen geklaut worden sind.
-\\
 Es waren alle super nett!!
-\\
 Es war eine sehr schöne Veranstaltung.
 `
         )
@@ -27,9 +23,7 @@ Es war eine sehr schöne Veranstaltung.
         .name('Vamos Bala')
         .source(ESource.Facebook)
         .text(
-            `
-Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...
-\\
+            `Orga an Start/Ziel super und sehr nette motivierte Helfertruppe ...
 Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
 `
         )
@@ -40,20 +34,14 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
         .name('Bernd Doelp')
         .source(ESource['E-Mail'])
         .text(
-            `
-Hallo RTC,
-\\
+            `Hallo RTC,
 genau wie letztes Jahr war alles wieder perfekt.
-\\
-\\
+
 Vielen Dank und bis nächstes Jahr, diese Veranstaltung ist auf jeden Fall gesetzt.
-\\
-\\
+
 Ich freue mich jetzt schon ...
-\\
 Viele Grüße
-\\
-\\
+
 Bernd
 `
         )
@@ -78,11 +66,8 @@ Bernd
         .name('Jochen Güttes')
         .source(ESource.Facebook)
         .text(
-            `
-Wir Teilnehmer sind begeistert.
-\\
+            `Wir Teilnehmer sind begeistert.
 Streckenführung, Verpflegung, Personal ... alles TOP.
-\\
 Danke für die Gastfreundschaft.
                 `
         )
@@ -93,19 +78,12 @@ Danke für die Gastfreundschaft.
         .name('Ros Si')
         .source(ESource.Facebook)
         .text(
-            `
-Die Fahrt hat Tradition.
-\\
+            `Die Fahrt hat Tradition.
 Und Tradition hat auch die perfekte Organisation.
-\\
 Super Ausschilderung, super Getränke und natürlich die obligatorischen RTF Nutellabrote.
-\\
 Und vieles mehr an den Kontrollen.
-\\
 Riesen Dankeschön.
-\\
 Hat riesig Spaß gemacht bei euch zu fahren.
-\\
 Nächstes Jahr wieder.
 `
         )
@@ -116,14 +94,10 @@ Nächstes Jahr wieder.
         .name('Angela Maja')
         .source(ESource.Facebook)
         .text(
-            `
-Es war wunderbar 😊
-\\
+            `Es war wunderbar 😊
 Vielen Dank für tolle Streckenführung, Verpflegung, freundliche Orga und Helfer!
-\\
 Alles bestens.
-\\
-\\
+
 161 km RTF Strecke und dann nach Hause waren dann für mich bei meiner ersten RTF in diesem Jahr ein Marathon ... 😊`
         )
         .build(),
@@ -133,24 +107,15 @@ Alles bestens.
         .name('Harald Seidenberg')
         .source(ESource['E-Mail'])
         .text(
-            `
-Hallo RTC,
-\\
-\\
+            `Hallo RTC,
+
 Ich/wir wollte/n nur sagen, dass ...  ich heute nach 25 Jahren wieder mal eine RTF gefahren bin.
-\\
 Mir hat die RTF heute Kurzstrecke sehr gut gefallen hat. Wetter schön, Temperatur wunderbar.
-\\
 gut ausgeschildert.
-\\
 Was ich gegenüber damals vermisst habe waren Verkaufstand  mit Trikots oder…. .
-\\
 Vielleicht hat sich in der Zeit da was verändert.
-\\
 Sollte keine Kritik sein.
-\\
 Nur eine Anmerkung.
-\\
 Harry
 `
         )
@@ -163,20 +128,13 @@ Harry
         .organization('RSV Staubwolke Refrath')
         .source(ESource['E-Mail'])
         .text(
-            `
-Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.
-\\
+            `Hallo RTC, ich/wir wollte/n nur sagen, dass ... ich wieder total begeistert bin von Eurer RTF.
 Wie immer Toporganisation, präzise Ausschilderung und interessante Streckenführung.
-\\
 Bin heute nur die 51er Schleife mit meinem Kollegen gefahren, da ich noch von gestern die Höhenmeter der RTF in Wuppertal in den Beinen habe.
-\\
 Aber auch die kurze Schleife hat ihre Reize.
-\\
 Kenne jetzt auf jeden Fall alle Strecken.
-\\
 Eure RTF gehört zu den Besten im Bezirk Köln-Bonn.
-\\
-\\
+
 LG Dirk Heppert- RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
 `
         )

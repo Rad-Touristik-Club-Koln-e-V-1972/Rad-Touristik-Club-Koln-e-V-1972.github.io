@@ -16,15 +16,10 @@ export default [
         .name('Martin Rupp')
         .source(ESource.Facebook)
         .text(
-            `
-Sehr schöne Strecken ...
-\\
+            `Sehr schöne Strecken ...
 super Verpflegung ...
-\\
 schöne Lounge im Ziel ...
-\\
 mit Grill und Bierchen ...
-\\
 weiter so.
 `
         )
@@ -35,11 +30,8 @@ weiter so.
         .name('Andreas Schäfer')
         .source(ESource.Facebook)
         .text(
-            `
-Sehr schöne Tour bei tollem Sonnenschein
-\\
+            `Sehr schöne Tour bei tollem Sonnenschein
 Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.
-\\
 Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
 `
         )
@@ -57,9 +49,7 @@ Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
         .name('Matthes Heise')
         .source(ESource.Facebook)
         .text(
-            `
-War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.
-\\
+            `War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.
 Einfach gesagt, ich freu mich schon auf's nächste Jahr!
 `
         )
