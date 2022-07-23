@@ -14,6 +14,16 @@ export default class GalleryBuilder {
         return this
     }
 
+    dateFrom(value: Date): GalleryBuilder {
+        this.value.dateFrom = value
+        return this
+    }
+
+    dateTo(value: Date): GalleryBuilder {
+        this.value.dateTo = value
+        return this
+    }
+
     description(value: string): GalleryBuilder {
         this.value.description = value
         return this
@@ -24,8 +34,8 @@ export default class GalleryBuilder {
         return this
     }
 
-    subtitle(value: string): GalleryBuilder {
-        this.value.subtitle = value
+    location(value: string): GalleryBuilder {
+        this.value.location = value
         return this
     }
 

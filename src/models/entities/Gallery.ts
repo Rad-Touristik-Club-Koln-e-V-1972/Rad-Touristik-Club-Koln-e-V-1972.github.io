@@ -3,9 +3,11 @@ import Entry from '~/models/entities/gallery/Entry'
 
 export default class Gallery {
     category = EEvent.RTC
+    dateFrom = new Date()
+    dateTo?: Date
     description = ''
     images: Entry[] = []
-    subtitle = ''
+    location = ''
     title = ''
     titleImageUrl = ''
     youtubeVideoIds: string[] = []

@@ -4,7 +4,13 @@ import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
 
 export default new GalleryBuilder()
     .category(EEvent.RTF)
-    .description(`Example of a Gallery`)
+    .dateFrom(new Date())
+    .description(
+        `Example of a Gallery
+With a
+Multiline
+`
+    )
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=1').srcUrl('https://picsum.photos/800/600?image=1').build())
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=2').srcUrl('https://picsum.photos/800/600?image=2').build())
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=3').srcUrl('https://picsum.photos/800/600?image=3').build())
@@ -35,8 +41,8 @@ export default new GalleryBuilder()
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=28').srcUrl('https://picsum.photos/800/600?image=28').build())
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=29').srcUrl('https://picsum.photos/800/600?image=29').build())
     .image(new EntryBuilder().previewUrl('https://picsum.photos/150/113?image=30').srcUrl('https://picsum.photos/800/600?image=30').build())
-    .subtitle(`Untertitel`)
-    .title(`DBExample`)
+    .location('Köln')
+    .title('DBExample')
     .titleImageUrl('https://picsum.photos/500/300?image=3')
     .youtubeVideoId('M_UgsLKdwG0')
     .youtubeVideoId('GNpmt6Y_ymU')
