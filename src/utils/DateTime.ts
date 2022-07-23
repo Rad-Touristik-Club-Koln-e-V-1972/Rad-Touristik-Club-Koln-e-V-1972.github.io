@@ -1,30 +1,14 @@
-import { marked } from 'marked'
-
 export default function useDateTime() {
-    // For a better performance and to remove the seconds.
-    const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+    const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' })
+    const dateTimeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
 
     return {
         format: (start: Date, end?: Date, allDay = false) => {
-            let ret: string
-            const startPair = dateFormatter.format(start).split(',')
+            const formatter = allDay ? dateFormatter : dateTimeFormatter
 
-            if (end) {
-                const endPair = dateFormatter.format(end).split(',')
-
-                ret = `${startPair[0]} - ${endPair[0]}${
-                    allDay
-                        ? ''
-                        : `\\
-            ${startPair[1]} - ${endPair[1]}`
-                }`
-            } else ret = startPair[0]
-
-            return marked.parseInline(ret)
+            return end ? formatter.formatRange(start, end) : formatter.format(start)
         },
-        getDaysInMonth: (month: number, year: number) => {
-            return new Date(year, month, 0).getDate()
-        },
+        getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
         isBetween: (date: Date, start: Date, end: Date) => {
             let tempStart = start
             let tempEnd = end
@@ -33,6 +17,6 @@ export default function useDateTime() {
 
             return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
         },
-        isSameDay: (date: Date, start: Date) => date.getFullYear() === start.getFullYear() && date.getMonth() === start.getMonth() && date.getDate() === start.getDate(),
+        isSameDay: (start: Date, end: Date) => end.getFullYear() === start.getFullYear() && end.getMonth() === start.getMonth() && end.getDate() === start.getDate(),
     }
 }

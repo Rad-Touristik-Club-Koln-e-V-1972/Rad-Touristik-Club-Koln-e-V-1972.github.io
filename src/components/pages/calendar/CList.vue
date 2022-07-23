@@ -14,7 +14,7 @@
                 <a v-if="item.url" class="accent--text" :href="item.url" :style="getStyle(item)" target="_blank" v-text="item.name" />
                 <span v-else :style="getStyle(item)" v-text="item.name" />
             </template>
-            <template #item.datetime="{ item }"><div :style="getStyle(item)" v-html="getDate(item)" /></template>
+            <template #item.datetime="{ item }"><div :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
                 <router-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'contact' }" v-text="item.contact" />
             </template>

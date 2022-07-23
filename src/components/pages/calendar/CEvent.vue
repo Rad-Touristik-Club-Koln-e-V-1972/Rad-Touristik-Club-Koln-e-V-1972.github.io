@@ -21,7 +21,7 @@
                             </tr>
                             <tr v-if="selectedEvent">
                                 <td class="text-end" v-text="'Termin:'" />
-                                <td v-html="getDate(selectedEvent)" />
+                                <td v-text="getDate(selectedEvent)" />
                             </tr>
                             <tr v-if="selectedEvent?.contact">
                                 <td class="text-end" v-text="'Ansprechpartner:'" />

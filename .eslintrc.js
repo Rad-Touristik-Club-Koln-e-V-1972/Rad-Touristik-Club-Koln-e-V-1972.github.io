@@ -27,7 +27,5 @@ module.exports = {
         // TODO WORKAROUND WITH AN app.vue TO layouts/app.vue AND error.vue TO layouts/error.vue UNTIL NUXT3 WITH NATIVE app.vue AND error.vue SUPPORT AND VUE-ROUTER IS USABLE
         //  SEE https://github.com/nuxt/bridge/issues/34 & https://github.com/nuxt/bridge/issues/415
         'vue/multi-word-component-names': 'off',
-        // We neither use SSR nor allow users to dynamical add content.
-        'vue/no-v-html': 'off',
     },
 }
