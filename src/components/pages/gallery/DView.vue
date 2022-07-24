@@ -2,7 +2,7 @@
       OR USE https://github.com/sachinchoolur/lightgallery.js/ WITH VUE/NUXT 3 -->
 <template>
     <v-card id="DView">
-        <v-dialog v-model="isOpen" fullscreen>
+        <v-dialog v-model="isOpen" fullscreen persistent>
             <template #activator="{ attrs, on }">
                 <v-img :src="props.value[startIndex].previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
             </template>
