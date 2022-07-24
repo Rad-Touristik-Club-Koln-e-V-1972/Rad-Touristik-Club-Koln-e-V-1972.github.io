@@ -11,11 +11,13 @@ export default class EntryBuilder {
 
     answer(value: string): EntryBuilder {
         this.value.answer = value
+
         return this
     }
 
     category(value: EEvent): EntryBuilder {
         this.value.category = value
+
         return this
     }
 
@@ -23,41 +25,49 @@ export default class EntryBuilder {
     date(year: number, month: number, date = 1, hours = 0, minutes = 0): EntryBuilder {
         // The month value is 0-11. We need an offset.
         this.value.date = new Date(year, month - 1, date, hours, minutes)
+
         return this
     }
 
     imageUrl(value: string): EntryBuilder {
         this.value.imageUrls.push(value)
+
         return this
     }
 
     location(value: string): EntryBuilder {
         this.value.location = value
+
         return this
     }
 
     name(value: string): EntryBuilder {
         this.value.name = value
+
         return this
     }
 
     organization(value: string): EntryBuilder {
         this.value.organization = value
+
         return this
     }
 
     source(value: ESource): EntryBuilder {
         this.value.source = value
+
         return this
     }
 
     text(value: string): EntryBuilder {
         this.value.text = value
+
         return this
     }
 
     title(value: string): EntryBuilder {
         this.value.title = value
+
         return this
     }
 
