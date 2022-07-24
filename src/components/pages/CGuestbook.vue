@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGuestbook" max-width="40em">
+    <v-card id="CGuestbook" :max-width="`${vuetify?.breakpoint.mobile ? 2 : 4}0em`">
         <v-card-title v-if="props.value.title" class="primary accent--text">{{ props.value.title }}</v-card-title>
         <v-card-subtitle class="secondary accent--text">
             <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
@@ -26,6 +26,7 @@
 </template>
 
 <script lang="ts" setup>
+import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import Entry from '~/models/entities/guestbook/Entry'
 import EEvent from '~/models/enums/EEvent'
@@ -33,6 +34,9 @@ import ESource from '~/models/enums/guestbook/ESource'
 import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Entry }>()
+
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 </script>
 
 <style lang="scss" scoped />
