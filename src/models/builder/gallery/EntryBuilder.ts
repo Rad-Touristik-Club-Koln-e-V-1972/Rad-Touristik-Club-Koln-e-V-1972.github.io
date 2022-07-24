@@ -13,6 +13,7 @@ export default class EntryBuilder {
     }
 
     previewUrl(value?: string): EntryBuilder {
+        // eslint-disable-next-line no-console
         if (!value && !this.value.srcUrl) console.error('EntryBuilder.previewUrl: srcUrl is not set')
 
         this.value.previewUrl = value || createPreviewURL(this.value.srcUrl)

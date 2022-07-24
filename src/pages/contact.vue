@@ -19,7 +19,7 @@
 import CContact from '~/components/pages/CContact.vue'
 import { useContactsStore } from '~/store/Contacts'
 
-const items = useContactsStore().contacts
+const items = useContactsStore().all
 </script>
 
 <style lang="scss" scoped />

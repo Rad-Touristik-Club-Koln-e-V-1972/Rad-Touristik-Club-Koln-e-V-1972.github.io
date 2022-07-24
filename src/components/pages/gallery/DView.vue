@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
 import Entry from '~/models/entities/gallery/Entry'
@@ -27,9 +27,6 @@ const props = defineProps<{
     value: Entry[]
     startIndex: number
 }>()
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiClose }
 const isOpen = ref(false)
