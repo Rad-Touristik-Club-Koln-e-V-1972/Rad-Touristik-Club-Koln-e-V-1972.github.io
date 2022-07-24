@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" max-width="20em">
+    <v-card id="CGallery" max-width="21em">
         <v-card-title>{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
             <pre>
