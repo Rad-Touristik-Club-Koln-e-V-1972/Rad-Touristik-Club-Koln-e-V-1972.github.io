@@ -53,6 +53,7 @@
                                 <iframe
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen
+                                    :height="`${vuetify?.breakpoint.mobile ? 2 : 4}00`"
                                     :src="`https://www.youtube-nocookie.com/embed/${item}`"
                                     style="
                                         border: 0;
@@ -60,7 +61,6 @@
                                         box-shadow: 0 3px 1px -2px rgba(0 0 0 / 20%), 0 2px 2px 0 rgba(0 0 0 / 14%), 0 1px 5px 0 rgba(0 0 0 / 12%);
                                     "
                                     title="YouTube video player"
-                                    :height="`${vuetify?.breakpoint.mobile ? 2 : 4}00`"
                                     :width="`${vuetify?.breakpoint.mobile ? 4 : 8}00`"
                                 />
                             </template>
@@ -97,7 +97,7 @@ const showText = ref(false)
 const tabModel = ref()
 const tabModelPictures = ref()
 const tabs = computed(() => {
-    const tabs = ['Bilder']
+    const tabs = []
 
     if (Object.keys(props.value.images).length) tabs.push('Bilder')
     if (props.value.youtubeVideoIds.length) tabs.push('Videos')
