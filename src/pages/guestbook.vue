@@ -17,11 +17,12 @@
             </v-btn>
         </v-card-actions>
         <v-card-text>
-            <v-row class="d-flex justify-center" dense>
-                <v-col v-for="(item, index) in items" :key="index" cols="auto">
+            <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+            <masonry-wall :items="items" :gap="10">
+                <template #default="{ item }">
                     <c-guestbook :value="item" />
-                </v-col>
-            </v-row>
+                </template>
+            </masonry-wall>
         </v-card-text>
     </v-card>
 </template>

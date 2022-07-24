@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "TODO": "TODO WORKAROUND 'bash -c' IS NEEDED IN lint-staged UNTIL https://github.com/johnsoncodehk/volar/issues/1153 IS FIXED AFTER MY COMMENT",
+    "TODO0": "TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177",
     "scripts": {
         "build": "nuxi generate",
         "dev": "nuxi dev",
@@ -16,6 +17,7 @@
     },
     "dependencies": {
         "@pinia/nuxt": "^0.3.0",
+        "@yeger/vue2-masonry-wall": "^2.0.39",
         "date-holidays": "^3.16.2",
         "nuxt-edge": "latest",
         "pinia": "^2.0.16",
