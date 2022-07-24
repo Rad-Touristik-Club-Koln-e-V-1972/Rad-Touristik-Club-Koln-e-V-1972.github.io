@@ -1,0 +1,26 @@
+import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
+import GalleryBuilder from '~/models/builder/GalleryBuilder'
+import EEvent from '~/models/enums/EEvent'
+
+export default new GalleryBuilder()
+    .category(EEvent.RTC)
+    .dateFrom(new Date('2017-12-31'))
+    .location('Köln')
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/170305.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/170311.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/170504.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/171029-1.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/171029-2.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/171217.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/180106.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/180116.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/180202a.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/180202b.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/180202c.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/191206.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/rtc-971-intro-2017.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/rtc-972-intro-2017.jpg').previewUrl().build())
+    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/rtc-976-intro-2017.jpg').previewUrl().build())
+    .title('Fotogalerie')
+    .titleImageUrl('https://content.rtc-koeln.de/pages/gallery/2017/Fotogalerie/preview/preview.171029-2.jpg')
+    .build()

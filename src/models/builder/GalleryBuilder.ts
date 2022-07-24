@@ -41,6 +41,16 @@ export default class GalleryBuilder {
         return this
     }
 
+    images(value: Record<string, Entry[]>): GalleryBuilder {
+        const key = Object.keys(value)[0]
+
+        if (!this.value.images[key]) this.value.images[key] = []
+
+        this.value.images[key].push(...value[key])
+
+        return this
+    }
+
     location(value: string): GalleryBuilder {
         this.value.location = value
 
