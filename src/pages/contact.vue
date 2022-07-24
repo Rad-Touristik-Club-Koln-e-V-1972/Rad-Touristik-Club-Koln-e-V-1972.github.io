@@ -5,11 +5,12 @@
             Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln
         </v-card-subtitle>
         <v-card-text>
-            <v-row class="d-flex justify-center" dense>
-                <v-col v-for="(item, index) in items" :key="index" cols="auto">
+            <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+            <masonry-wall :column-width="250" :gap="20" :items="items">
+                <template #default="{ item }">
                     <c-contact :value="item" />
-                </v-col>
-            </v-row>
+                </template>
+            </masonry-wall>
         </v-card-text>
     </v-card>
 </template>
