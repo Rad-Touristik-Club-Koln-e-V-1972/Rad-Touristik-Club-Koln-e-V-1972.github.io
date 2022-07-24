@@ -28,10 +28,10 @@
             </v-expand-transition>
             <v-card-text>
                 <v-tabs id="CNavigationTabs" v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
-                    <v-tab v-for="(item, index) in tabs" :key="index">{{ item }}</v-tab>
+                    <v-tab v-for="item in tabs" :key="item" :href="`#tab-${item}`">{{ item }}</v-tab>
                 </v-tabs>
                 <v-tabs-items v-model="tabModel">
-                    <v-tab-item key="Bilder">
+                    <v-tab-item key="Bilder" value="tab-Bilder">
                         <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
                         <masonry-wall :column-width="200" :gap="5" :items="props.value.images">
                             <template #default="{ index }">
@@ -39,9 +39,9 @@
                             </template>
                         </masonry-wall>
                     </v-tab-item>
-                    <v-tab-item key="Videos">
+                    <v-tab-item key="Videos" value="tab-Videos">
                         <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-                        <masonry-wall :items="props.value.youtubeVideoIds" :gap="5">
+                        <masonry-wall :column-width="200" :items="props.value.youtubeVideoIds" :gap="5">
                             <template #default="{ item }">
                                 <iframe
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -85,7 +85,7 @@ const icons = {
 }
 const isOpen = ref(false)
 const showText = ref(false)
-const tabModel = ref('')
+const tabModel = ref()
 const tabs = computed(() => {
     const tabs = ['Bilder']
 
