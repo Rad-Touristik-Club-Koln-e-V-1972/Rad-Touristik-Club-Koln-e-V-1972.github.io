@@ -22,7 +22,6 @@ export default class EntryBuilder {
 
     srcUrl(value: string): EntryBuilder {
         this.value.srcUrl = value
-        this.value.previewUrl = createPreviewURL(value)
 
         return this
     }
