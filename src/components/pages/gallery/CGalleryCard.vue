@@ -27,17 +27,24 @@
                 </div>
             </v-expand-transition>
             <v-card-text>
-                <v-tabs id="CNavigationTabs" v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
+                <v-tabs v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
                     <v-tab v-for="item in tabs" :key="item" :href="`#tab-${item}`">{{ item }}</v-tab>
                 </v-tabs>
                 <v-tabs-items v-model="tabModel">
                     <v-tab-item key="Bilder" value="tab-Bilder">
-                        <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-                        <masonry-wall :column-width="200" :gap="5" :items="props.value.images">
-                            <template #default="{ index }">
-                                <d-view :start-index="index" :value="props.value.images" />
-                            </template>
-                        </masonry-wall>
+                        <v-tabs v-model="tabModelPictures" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
+                            <v-tab v-for="(item, key) in props.value.images" :key="key" :href="`#tab-${key}`">{{ key || 'Ohne Album' }}</v-tab>
+                        </v-tabs>
+                        <v-tabs-items v-model="tabModelPictures">
+                            <v-tab-item v-for="(item, key) in props.value.images" :key="key" :value="`tab-${key}`">
+                                <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+                                <masonry-wall :column-width="200" :gap="5" :items="item">
+                                    <template #default="{ index }">
+                                        <d-view :start-index="index" :value="item" />
+                                    </template>
+                                </masonry-wall>
+                            </v-tab-item>
+                        </v-tabs-items>
                     </v-tab-item>
                     <v-tab-item key="Videos" value="tab-Videos">
                         <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
@@ -74,21 +81,25 @@ import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Gallery }>()
 
-const dateTime = useDateTime()
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
+
+const dateTime = useDateTime()
 
 const icons = {
     mdiChevronDown,
     mdiChevronUp,
     mdiClose,
 }
+
 const isOpen = ref(false)
 const showText = ref(false)
 const tabModel = ref()
+const tabModelPictures = ref()
 const tabs = computed(() => {
     const tabs = ['Bilder']
 
+    if (Object.keys(props.value.images).length) tabs.push('Bilder')
     if (props.value.youtubeVideoIds.length) tabs.push('Videos')
 
     return tabs

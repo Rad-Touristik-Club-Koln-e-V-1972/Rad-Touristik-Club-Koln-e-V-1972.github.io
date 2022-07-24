@@ -6,7 +6,7 @@ export default class Gallery {
     dateFrom = new Date()
     dateTo?: Date
     description = ''
-    images: Entry[] = []
+    images: Record<string, Entry[]> = {}
     location = ''
     title = ''
     titleImageUrl = ''

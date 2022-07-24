@@ -33,8 +33,10 @@ export default class GalleryBuilder {
         return this
     }
 
-    image(value: Entry): GalleryBuilder {
-        this.value.images.push(value)
+    image(value: Entry, album = ''): GalleryBuilder {
+        if (!this.value.images[album]) this.value.images[album] = []
+
+        this.value.images[album].push(value)
 
         return this
     }
