@@ -51,7 +51,7 @@
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "*.vue": "bash -c vue-tsc",
+        "*.vue": "vue-tsc",
         "*.{js,ts,vue}": "eslint --fix",
         "*.{css,scss,sass,html,vue}": "stylelint --fix",
         "*.**": "prettier --ignore-unknown --write"
