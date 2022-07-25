@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     build: {},
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
+        // https://github.com/nuxt-community/router-module
+        '@nuxtjs/router',
         // https://go.nuxtjs.dev/stylelint
         '@nuxtjs/stylelint-module',
         // https://go.nuxtjs.dev/vuetify

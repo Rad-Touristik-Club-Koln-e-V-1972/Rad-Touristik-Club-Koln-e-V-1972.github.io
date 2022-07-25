@@ -13,7 +13,7 @@
                         :to="item.to || undefined"
                     >
                         <v-list-item-action>
-                            <v-icon v-text="item.icon" />
+                            <v-icon>{{ item.icon }}</v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
                             <v-list-item-title style="white-space: normal">
@@ -32,7 +32,7 @@
                         <v-row>
                             <v-col v-for="(item, index) in socialMediaItems" :key="index">
                                 <v-btn fab :href="item.url" icon target="_blank">
-                                    <v-icon :color="item.color" large v-text="item.icon" />
+                                    <v-icon :color="item.color" large>{{ item.icon }}</v-icon>
                                 </v-btn>
                             </v-col>
                         </v-row>

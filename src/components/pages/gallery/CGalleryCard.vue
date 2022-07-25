@@ -7,7 +7,7 @@
             <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
             <v-toolbar color="primary" flat max-height="64px">
                 <v-btn icon dark @click="isOpen = false">
-                    <v-icon color="accent" v-text="icons.mdiClose" />
+                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
                 </v-btn>
                 <v-toolbar-title class="accent--text">
                     {{ props.value.title }}
@@ -16,13 +16,13 @@
                 <v-spacer />
                 <v-btn v-if="props.value.description" color="accent" text @click="showText = !showText">
                     Details
-                    <v-icon color="accent" right v-text="showText ? icons.mdiChevronUp : icons.mdiChevronDown" />
+                    <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
                 </v-btn>
             </v-toolbar>
             <v-expand-transition v-if="props.value.description">
                 <div v-show="showText" class="align-self-center" style="max-width: 20em">
                     <v-card-text>
-                        <pre>{{ props.value.description }}</pre>
+                        <pre v-text="props.value.description" />
                     </v-card-text>
                 </div>
             </v-expand-transition>

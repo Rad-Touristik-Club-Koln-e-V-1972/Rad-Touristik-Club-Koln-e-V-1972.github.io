@@ -15,14 +15,14 @@ Ort: {{ props.value.location }}
             <v-spacer />
             <v-btn text @click="showText = !showText">
                 Details
-                <v-icon right v-text="showText ? icons.mdiChevronUp : icons.mdiChevronDown" />
+                <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
             </v-btn>
         </v-card-actions>
         <v-expand-transition>
             <div v-show="showText">
                 <v-divider />
                 <v-card-text>
-                    <pre>{{ props.value.description }}</pre>
+                    <pre v-text="props.value.description" />
                 </v-card-text>
             </div>
         </v-expand-transition>

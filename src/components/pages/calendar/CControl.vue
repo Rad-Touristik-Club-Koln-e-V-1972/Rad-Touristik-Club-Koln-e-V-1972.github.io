@@ -2,13 +2,13 @@
     <v-sheet id="CControl">
         <v-toolbar flat>
             <v-btn v-if="props.value !== ECalendar.list" class="mr-0 mr-lg-4 mr-sm-2 mr-xl-8" fab text @click="emits('prev')">
-                <v-icon v-text="icons.mdiChevronLeft" />
+                <v-icon>{{ icons.mdiChevronLeft }}</v-icon>
             </v-btn>
             <v-btn v-if="props.value !== ECalendar.list" class="text-button text-sm-button text-md-body-2 text-lg-body-1 text-xl-h6" outlined @click="emits('showToday')">
                 Heute
             </v-btn>
             <v-btn v-if="props.value !== ECalendar.list" class="ml-0 ml-lg-4 ml-sm-2 ml-xl-8" fab text @click="emits('next')">
-                <v-icon v-text="icons.mdiChevronRight" />
+                <v-icon>{{ icons.mdiChevronRight }}</v-icon>
             </v-btn>
             <v-toolbar-title v-if="props.value !== ECalendar.list" class="text-button text-sm-button text-md-body-2 text-lg-body-1 text-xl-h6">
                 {{ props.title }}
@@ -18,7 +18,7 @@
                 <template #activator="{ on, attrs }">
                     <v-btn class="text-button text-sm-button text-md-body-2 text-lg-body-1 text-xl-h6" outlined v-bind="attrs" v-on="on">
                         {{ value }}
-                        <v-icon right v-text="icons.mdiMenuDown" />
+                        <v-icon right>{{ icons.mdiMenuDown }}</v-icon>
                     </v-btn>
                 </template>
                 <v-list>

@@ -16,7 +16,7 @@
             </template>
             <template #item.datetime="{ item }"><div :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
-                <router-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'contact' }" v-text="item.contact" />
+                <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'contact' }" v-text="item.contact" />
             </template>
             <template #item.clubPoints="{ item }"><div v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>

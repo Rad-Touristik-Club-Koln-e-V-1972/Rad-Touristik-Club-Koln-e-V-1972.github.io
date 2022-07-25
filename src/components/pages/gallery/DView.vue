@@ -8,7 +8,7 @@
             </template>
             <v-sheet height="100%">
                 <v-btn absolute color="primary" style="right: 0; z-index: 1" @click="isOpen = false">
-                    <v-icon color="accent" v-text="icons.mdiClose" />
+                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
                 </v-btn>
                 <!-- TODO KEYBOARD SUPPORT COMES WITH VUETIFY 3.x https://github.com/vuetifyjs/vuetify/issues/11544 -->
                 <c-slideshow :cycle="false" :start-index="startIndex" :value="props.value.flatMap((it) => it.srcUrl)" />

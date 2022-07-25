@@ -9,13 +9,13 @@
         </v-card-subtitle>
         <v-card-actions>
             <v-btn icon :href="'mailto:' + props.value.eMail">
-                <v-icon v-text="icons.mdiEmailArrowRight" />
+                <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
             </v-btn>
             <v-spacer />
             <v-spacer />
             <v-btn text @click="showText = !showText">
                 Über mich
-                <v-icon right v-text="showText ? icons.mdiChevronUp : icons.mdiChevronDown" />
+                <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
             </v-btn>
         </v-card-actions>
         <v-expand-transition>
