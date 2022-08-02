@@ -1,9 +1,7 @@
 import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
 import GalleryBuilder from '~/models/builder/GalleryBuilder'
-import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
-    .category(EEvent.RTC)
     .dateFrom(new Date('2012-04-08'))
     .dateTo(new Date('2012-12-11'))
     .location('Köln & Düsseldorf')

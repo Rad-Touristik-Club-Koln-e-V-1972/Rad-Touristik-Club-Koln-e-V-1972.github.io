@@ -1,9 +1,7 @@
 import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
 import GalleryBuilder from '~/models/builder/GalleryBuilder'
-import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
-    .category(EEvent.RTC)
     .dateFrom(new Date('2016-01-16'))
     .location('Poller Haus, Köln')
     .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-001.jpg').previewUrl().build())

@@ -1,9 +1,7 @@
 import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
 import GalleryBuilder from '~/models/builder/GalleryBuilder'
-import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
-    .category(EEvent.RTC)
     .dateFrom(new Date('2021-12-31'))
     .location('Köln')
     .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2021/RTC_Rueckblick/022d591e-89e2-4202-9226-8c9ec683c2d8.jpeg').previewUrl().build())

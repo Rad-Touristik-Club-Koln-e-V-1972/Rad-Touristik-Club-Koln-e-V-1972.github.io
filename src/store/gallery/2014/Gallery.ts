@@ -6,7 +6,7 @@ import _20140504Luelsdorf from '~/store/gallery/2014/05_04_Luelsdorf'
 import _20140514KoelnRodenkirchen from '~/store/gallery/2014/05_14_Koeln_Rodenkirchen'
 import _2014_05_25_RTF_42 from '~/store/gallery/2014/05_25_RTF_42'
 import _20140531Euskirchen from '~/store/gallery/2014/05_31_Euskirchen'
-import _20140608GroßenluederBimbach from '~/store/gallery/2014/06_08_Großenlueder_Bimbach'
+import _20140608GrossenluederBimbach from '~/store/gallery/2014/06_08_Großenlueder_Bimbach'
 import _20140619Erkelenz from '~/store/gallery/2014/06_19_Erkelenz'
 import _20140621RTFErftstadt from '~/store/gallery/2014/06_21_RTF_Erftstadt'
 import _20140629RTFNiederlande from '~/store/gallery/2014/06_29_RTF_Niederlande'
@@ -35,7 +35,7 @@ export default [
     _20140629RTFNiederlande,
     _20140621RTFErftstadt,
     _20140619Erkelenz,
-    _20140608GroßenluederBimbach,
+    _20140608GrossenluederBimbach,
     _20140531Euskirchen,
     _2014_05_25_RTF_42,
     _20140514KoelnRodenkirchen,

@@ -33,7 +33,7 @@
                 <v-tabs-items v-model="tabModel">
                     <v-tab-item key="Bilder" value="tab-Bilder">
                         <v-tabs v-model="tabModelPictures" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
-                            <v-tab v-for="(item, key) in props.value.images" :key="key" :href="`#tab-${key}`">{{ key || 'Ohne Album' }}</v-tab>
+                            <v-tab v-for="key in Object.keys(props.value.images)" :key="key" :href="`#tab-${key}`">{{ key || 'Ohne Album' }}</v-tab>
                         </v-tabs>
                         <v-tabs-items v-model="tabModelPictures">
                             <v-tab-item v-for="(item, key) in props.value.images" :key="key" :value="`tab-${key}`">

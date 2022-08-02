@@ -1,9 +1,7 @@
 import EntryBuilder from '~/models/builder/gallery/EntryBuilder'
 import GalleryBuilder from '~/models/builder/GalleryBuilder'
-import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
-    .category(EEvent.RTC)
     .dateFrom(new Date('2014-04-03'))
     .location('Erich Fischer')
     .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2014/04_03_Geburtstag_Erich_Fischer/140403b.jpg').previewUrl().build())
