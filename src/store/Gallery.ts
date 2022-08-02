@@ -15,9 +15,32 @@ import _2020 from '~/store/gallery/2020/Gallery'
 import _2021 from '~/store/gallery/2021/Gallery'
 import _2022 from '~/store/gallery/2022/Gallery'
 
+const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => a.dateFrom.getTime() - b.dateFrom.getTime())
+
 export const useGalleryStore = defineStore('gallery', {
-    state: () => ({ galleries: [..._2022, ..._2021, ..._2020, ..._2019, ..._2018, ..._2017, ..._2016, ..._2015, ..._2014, ..._2013, ..._2012, ..._2011, ..._2010, ..._2009] }),
+    state: () => ({
+        galleries: {
+            2022: sortByDate(_2022),
+            2021: sortByDate(_2021),
+            2020: sortByDate(_2020),
+            2019: sortByDate(_2019),
+            2018: sortByDate(_2018),
+            2017: sortByDate(_2017),
+            2016: sortByDate(_2016),
+            2015: sortByDate(_2015),
+            2014: sortByDate(_2014),
+            2013: sortByDate(_2013),
+            2012: sortByDate(_2012),
+            2011: sortByDate(_2011),
+            2010: sortByDate(_2010),
+            2009: sortByDate(_2009),
+        } as Record<string, Gallery[]>,
+    }),
     getters: {
-        all: (state): Gallery[] => state.galleries.sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime()),
+        all: (state): Gallery[] =>
+            Object.values(state.galleries)
+                .flatMap((it) => it.flatMap((it) => it))
+                .reverse(),
+        getGroupedByYear: (state): Record<string, Gallery[]> => state.galleries,
     },
 })

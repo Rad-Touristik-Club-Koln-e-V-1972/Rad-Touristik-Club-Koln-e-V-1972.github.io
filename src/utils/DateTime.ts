@@ -18,5 +18,6 @@ export default function useDateTime() {
             return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
         },
         isSameDay: (start: Date, end: Date) => end.getFullYear() === start.getFullYear() && end.getMonth() === start.getMonth() && end.getDate() === start.getDate(),
+        sort: (a: Date, b: Date) => a.getTime() - b.getTime(),
     }
 }
