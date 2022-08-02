@@ -1,12 +1,9 @@
 <template>
-    <v-card id="CGallery" max-width="25em">
-        <v-card-title>{{ props.value.title }}</v-card-title>
+    <v-card id="CGallery" :max-width="`${vuetify?.breakpoint.mobile ? 2 : 4}0em`">
+        <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
-            <pre>
-Datum: {{ dateTime.format(props.value.dateFrom, props.value.dateTo, true) }}
-Ort: {{ props.value.location }}
-</pre
-            >
+            <div v-text="`Datum: ${dateTime.format(props.value.dateFrom, props.value.dateTo, true)}`" />
+            <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
         <v-card-text>
             <c-gallery-card :value="props.value" />
@@ -30,7 +27,7 @@ Ort: {{ props.value.location }}
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { getCurrentInstance, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import CGalleryCard from '~/components/pages/gallery/CGalleryCard.vue'
 import Gallery from '~/models/entities/Gallery'
@@ -45,6 +42,9 @@ const icons = {
     mdiChevronUp,
 }
 const showText = ref(false)
+
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 </script>
 
 <style lang="scss" scoped />
