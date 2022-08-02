@@ -1,12 +1,8 @@
 <template>
-    <v-card id="CContact" max-width="20em">
+    <v-card id="CContact" width="20em">
         <v-img contain :src="props.value.imageSrc" />
-        <v-card-title class="text-subtitle-1 text-lg-h6">
-            {{ props.value.name }}
-        </v-card-title>
-        <v-card-subtitle class="text-subtitle-2 text-md-subtitle-1 text-lg-body-1">
-            {{ props.value.position }}
-        </v-card-subtitle>
+        <v-card-title>{{ props.value.name }}</v-card-title>
+        <v-card-subtitle>{{ props.value.position }}</v-card-subtitle>
         <v-card-actions>
             <v-btn icon :href="'mailto:' + props.value.eMail">
                 <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
@@ -21,9 +17,7 @@
         <v-expand-transition>
             <div v-show="showText">
                 <v-divider />
-                <v-card-text>
-                    {{ props.value.description }}
-                </v-card-text>
+                <v-card-text>{{ props.value.description }}</v-card-text>
             </div>
         </v-expand-transition>
     </v-card>

@@ -8,7 +8,7 @@
                     <v-toolbar-title>{{ key }}</v-toolbar-title>
                 </v-toolbar>
                 <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-                <masonry-wall :items="items[key]" :gap="5">
+                <masonry-wall :column-width="400" :gap="16" :items="items[key]">
                     <template #default="{ item }">
                         <c-gallery :value="item" />
                     </template>

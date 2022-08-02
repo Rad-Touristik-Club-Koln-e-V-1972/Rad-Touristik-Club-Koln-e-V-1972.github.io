@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" :max-width="`${vuetify?.breakpoint.mobile ? 2 : 4}0em`">
+    <v-card id="CGallery" :width="400">
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
             <div v-text="`Datum: ${dateTime.format(props.value.dateFrom, props.value.dateTo, true)}`" />
