@@ -1,7 +1,11 @@
 <template>
     <v-dialog id="CGalleryCard" v-model="isOpen" fullscreen persistent scrollable>
         <template #activator="{ attrs, on }">
-            <v-img :src="props.value.titleImageUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
+            <v-img :src="props.value.titleImageUrl" style="cursor: pointer" v-bind="attrs" v-on="on">
+                <template #placeholder>
+                    <c-loading-skeleton />
+                </template>
+            </v-img>
         </template>
         <v-card class="text-center">
             <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
@@ -75,6 +79,7 @@
 <script lang="ts" setup>
 import { computed, getCurrentInstance, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
+import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import DView from '~/components/pages/gallery/DView.vue'
 import Gallery from '~/models/entities/Gallery'
 import useDateTime from '~/utils/DateTime'
