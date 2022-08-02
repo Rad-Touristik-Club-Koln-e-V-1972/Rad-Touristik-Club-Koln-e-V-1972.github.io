@@ -17,12 +17,17 @@
             </v-btn>
         </v-card-actions>
         <v-card-text>
-            <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-            <masonry-wall :items="items" :gap="10">
-                <template #default="{ item }">
-                    <c-guestbook :value="item" />
-                </template>
-            </masonry-wall>
+            <div v-for="key in Object.keys(items).reverse()" :key="key">
+                <v-toolbar class="mt-1" flat>
+                    <v-toolbar-title>{{ key }}</v-toolbar-title>
+                </v-toolbar>
+                <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+                <masonry-wall :items="items[key]" :gap="10">
+                    <template #default="{ item }">
+                        <c-guestbook :value="item" />
+                    </template>
+                </masonry-wall>
+            </div>
         </v-card-text>
     </v-card>
 </template>
@@ -33,7 +38,7 @@ import CGuestbook from '~/components/pages/CGuestbook.vue'
 import { useGuestbookStore } from '~/store/Guestbook'
 
 const icons = { mdiEmailArrowRight }
-const items = useGuestbookStore().all
+const items = useGuestbookStore().getGroupedByYear
 </script>
 
 <style lang="scss" scoped />
