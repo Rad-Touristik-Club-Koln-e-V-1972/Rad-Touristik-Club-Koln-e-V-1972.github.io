@@ -5,9 +5,7 @@
 <script lang="ts" setup>
 import { mdiMagnify } from '@mdi/js'
 
-const emits = defineEmits<{
-    (e: 'input', value: string): void
-}>()
+const emits = defineEmits<{ (e: 'input', value: string): void }>()
 const props = defineProps<{ value: string }>()
 
 const icons = { mdiMagnify }

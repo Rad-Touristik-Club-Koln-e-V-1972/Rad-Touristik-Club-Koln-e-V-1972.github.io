@@ -25,9 +25,7 @@
 import { ref } from 'vue'
 import { mdiCalendar } from '@mdi/js'
 
-const emits = defineEmits<{
-    (e: 'input', value: string[]): void
-}>()
+const emits = defineEmits<{ (e: 'input', value: string[]): void }>()
 const props = defineProps<{ value: string[] }>()
 
 const icons = { mdiCalendar }

@@ -16,9 +16,7 @@
 import { mdiFilter } from '@mdi/js'
 import EEvent from '~/models/enums/EEvent'
 
-const emits = defineEmits<{
-    (e: 'input', value: EEvent): void
-}>()
+const emits = defineEmits<{ (e: 'input', value: EEvent): void }>()
 const props = defineProps<{ value: EEvent[] }>()
 
 const icons = { mdiFilter }

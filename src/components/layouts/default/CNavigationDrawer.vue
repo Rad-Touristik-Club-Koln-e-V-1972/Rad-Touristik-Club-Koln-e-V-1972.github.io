@@ -57,9 +57,7 @@ import {
     mdiYoutube,
 } from '@mdi/js'
 
-const emits = defineEmits<{
-    (e: 'input', value: boolean): void
-}>()
+const emits = defineEmits<{ (e: 'input', value: boolean): void }>()
 const props = defineProps<{ value: boolean }>()
 
 const items = [
