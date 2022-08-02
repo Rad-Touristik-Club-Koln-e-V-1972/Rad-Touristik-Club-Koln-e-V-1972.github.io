@@ -13,26 +13,24 @@
             <v-card-text>
                 <!-- TODO "pointer-events: none" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/5787 -->
                 <v-simple-table class="mt-2" style="pointer-events: none">
-                    <template #default>
-                        <tbody>
-                            <tr v-if="selectedEvent?.category !== EEvent.Mitgliederversammlung">
-                                <td class="text-end">Art:</td>
-                                <td v-text="selectedEvent?.category" />
-                            </tr>
-                            <tr v-if="selectedEvent">
-                                <td class="text-end">Termin:</td>
-                                <td v-text="getDate(selectedEvent)" />
-                            </tr>
-                            <tr v-if="selectedEvent?.contact">
-                                <td class="text-end">Ansprechpartner:</td>
-                                <td v-text="selectedEvent.contact" />
-                            </tr>
-                            <tr v-if="selectedEvent?.clubPoints">
-                                <td class="text-end">Vereinspunkte:</td>
-                                <td v-text="selectedEvent.clubPoints" />
-                            </tr>
-                        </tbody>
-                    </template>
+                    <tbody>
+                        <tr v-if="selectedEvent?.category !== EEvent.Mitgliederversammlung">
+                            <td class="text-end">Art:</td>
+                            <td v-text="selectedEvent?.category" />
+                        </tr>
+                        <tr v-if="selectedEvent">
+                            <td class="text-end">Termin:</td>
+                            <td v-text="getDate(selectedEvent)" />
+                        </tr>
+                        <tr v-if="selectedEvent?.contact">
+                            <td class="text-end">Ansprechpartner:</td>
+                            <td v-text="selectedEvent.contact" />
+                        </tr>
+                        <tr v-if="selectedEvent?.clubPoints">
+                            <td class="text-end">Vereinspunkte:</td>
+                            <td v-text="selectedEvent.clubPoints" />
+                        </tr>
+                    </tbody>
                 </v-simple-table>
             </v-card-text>
         </v-card>

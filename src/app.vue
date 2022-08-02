@@ -1,24 +1,22 @@
 <template>
     <v-app id="app">
         <v-app-bar app class="border" color="accent" flat height="100%">
-            <template #default>
-                <v-row class="justify-space-between">
-                    <v-col cols="auto">
-                        <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
-                    </v-col>
-                    <v-col cols="auto">
-                        <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-                        <v-toolbar-title class="d-inline-block" style="text-align-last: justify">
-                            <span class="font-weight-bold text-sm-h6 text-md-h5 text-subtitle-2">Herzlich willkommen beim</span>
-                            <br />
-                            <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text">1972</span></span>
-                        </v-toolbar-title>
-                    </v-col>
-                    <v-col v-show="!vuetify?.breakpoint.xsOnly" cols="auto">
-                        <c-countdown />
-                    </v-col>
-                </v-row>
-            </template>
+            <v-row class="justify-space-between">
+                <v-col cols="auto">
+                    <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
+                </v-col>
+                <v-col cols="auto">
+                    <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
+                    <v-toolbar-title class="d-inline-block" style="text-align-last: justify">
+                        <span class="font-weight-bold text-sm-h6 text-md-h5 text-subtitle-2">Herzlich willkommen beim</span>
+                        <br />
+                        <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text">1972</span></span>
+                    </v-toolbar-title>
+                </v-col>
+                <v-col v-show="!vuetify?.breakpoint.xsOnly" cols="auto">
+                    <c-countdown />
+                </v-col>
+            </v-row>
             <template #extension>
                 <c-navigation-tabs />
             </template>
