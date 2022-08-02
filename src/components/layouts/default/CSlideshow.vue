@@ -9,7 +9,15 @@
         show-arrows-on-hover
         :value="startIndex"
     >
-        <v-carousel-item v-for="(item, i) in props.value" :key="i" contain :src="item" />
+        <v-carousel-item v-for="(item, i) in props.value" :key="i" contain :src="item">
+            <template #placeholder>
+                <v-row align="center" class="fill-height" justify="center">
+                    <v-skeleton-loader>
+                        <v-progress-circular color="primary" indeterminate />
+                    </v-skeleton-loader>
+                </v-row>
+            </template>
+        </v-carousel-item>
     </v-carousel>
 </template>
 
