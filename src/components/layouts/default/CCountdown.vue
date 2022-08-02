@@ -66,5 +66,3 @@ const getPercentageDays = (value: number) => getPercentage(daysOfMonth, value)
 const getPercentageHours = (value: number) => getPercentage(24, value)
 const getPercentageMinutes = (value: number) => getPercentage(60, value)
 </script>
-
-<style lang="scss" scoped />

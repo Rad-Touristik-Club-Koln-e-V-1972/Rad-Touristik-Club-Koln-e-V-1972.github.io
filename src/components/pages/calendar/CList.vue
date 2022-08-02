@@ -151,5 +151,3 @@ const sortBy = (items: Event[], sortBy: string[], sortDesc: boolean[]) => {
     })
 }
 </script>
-
-<style lang="scss" scoped />

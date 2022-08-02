@@ -21,5 +21,3 @@ import { useContactsStore } from '~/store/Contacts'
 
 const items = useContactsStore().all
 </script>
-
-<style lang="scss" scoped />

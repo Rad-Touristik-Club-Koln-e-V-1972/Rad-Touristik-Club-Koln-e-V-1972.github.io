@@ -16,5 +16,3 @@ const emitInput = (value: string) => {
     emits('input', value)
 }
 </script>
-
-<style lang="scss" scoped />

@@ -121,5 +121,3 @@ const emitInput = (value: boolean) => {
     emits('input', value)
 }
 </script>
-
-<style lang="scss" scoped />

@@ -27,5 +27,3 @@ const emitInput = (value: EEvent) => {
     emits('input', value)
 }
 </script>
-
-<style lang="scss" scoped />

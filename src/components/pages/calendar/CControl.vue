@@ -54,5 +54,3 @@ const icons = {
     mdiMenuDown,
 }
 </script>
-
-<style lang="scss" scoped />

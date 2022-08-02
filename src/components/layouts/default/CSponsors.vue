@@ -59,5 +59,3 @@ const sponsors = [
     },
 ]
 </script>
-
-<style lang="scss" scoped />

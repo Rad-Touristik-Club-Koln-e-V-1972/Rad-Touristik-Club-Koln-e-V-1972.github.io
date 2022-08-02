@@ -40,5 +40,3 @@ import { useGuestbookStore } from '~/store/Guestbook'
 const icons = { mdiEmailArrowRight }
 const items = useGuestbookStore().getGroupedByYear
 </script>
-
-<style lang="scss" scoped />

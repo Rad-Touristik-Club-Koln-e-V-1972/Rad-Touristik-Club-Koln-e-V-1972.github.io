@@ -110,5 +110,3 @@ const tabs = computed(() => {
     return tabs
 })
 </script>
-
-<style lang="scss" scoped />

@@ -24,5 +24,3 @@ import { useGalleryStore } from '~/store/Gallery'
 
 const items = useGalleryStore().getGroupedByYear
 </script>
-
-<style lang="scss" scoped />

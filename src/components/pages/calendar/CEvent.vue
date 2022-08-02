@@ -57,5 +57,3 @@ const showEvent = ({ event }: { event: Event }) => {
 
 defineExpose({ showEvent })
 </script>
-
-<style lang="scss" scoped />

@@ -33,5 +33,3 @@ const getText = () => {
     return text
 }
 </script>
-
-<style lang="scss" scoped />

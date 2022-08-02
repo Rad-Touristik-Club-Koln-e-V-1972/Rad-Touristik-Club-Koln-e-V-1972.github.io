@@ -37,5 +37,3 @@ const icons = {
 }
 const showText = ref(false)
 </script>
-
-<style lang="scss" scoped />

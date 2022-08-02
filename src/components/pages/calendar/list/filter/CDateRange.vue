@@ -44,5 +44,3 @@ const close = () => {
 }
 const save = () => close()
 </script>
-
-<style lang="scss" scoped />

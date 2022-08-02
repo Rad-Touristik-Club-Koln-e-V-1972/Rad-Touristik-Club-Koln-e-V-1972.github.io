@@ -46,5 +46,3 @@ const showText = ref(false)
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 </script>
-
-<style lang="scss" scoped />
