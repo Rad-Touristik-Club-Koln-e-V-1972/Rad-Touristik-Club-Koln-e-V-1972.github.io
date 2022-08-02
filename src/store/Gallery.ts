@@ -15,7 +15,7 @@ import _2020 from '~/store/gallery/2020/Gallery'
 import _2021 from '~/store/gallery/2021/Gallery'
 import _2022 from '~/store/gallery/2022/Gallery'
 
-const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => a.dateFrom.getTime() - b.dateFrom.getTime())
+const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime())
 
 export const useGalleryStore = defineStore('gallery', {
     state: () => ({
