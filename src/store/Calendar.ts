@@ -7,7 +7,7 @@ export const useCalendarStore = defineStore('calendar', {
     state: () => ({
         events: {
             2022: _2022,
-        } as Record<number, Event[]>,
+        } as Record<string, Event[]>,
     }),
     getters: {
         all: (state): Event[] => Object.values(state.events).flatMap((it) => it.flatMap((it) => it)),

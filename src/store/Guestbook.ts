@@ -20,13 +20,13 @@ export const useGuestbookStore = defineStore('guestbook', {
             2015: sortByDate(_2015),
             2014: sortByDate(_2014),
             2012: sortByDate(_2012),
-        } as Record<number, Entry[]>,
+        } as Record<string, Entry[]>,
     }),
     getters: {
         all: (state): Entry[] =>
             Object.values(state.guestbook)
                 .flatMap((it) => it.flatMap((it) => it))
                 .reverse(),
-        getGroupedByYear: (state): Record<number, Entry[]> => state.guestbook,
+        getGroupedByYear: (state): Record<string, Entry[]> => state.guestbook,
     },
 })
