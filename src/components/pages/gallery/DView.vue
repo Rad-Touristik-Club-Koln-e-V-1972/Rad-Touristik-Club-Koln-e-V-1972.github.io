@@ -11,6 +11,7 @@
                 </v-img>
             </template>
             <v-sheet height="100%">
+                <d-view-original style="left: 0; z-index: 1" :value="props.value[startIndex].srcUrl" />
                 <v-btn absolute color="primary" style="right: 0; z-index: 1" @click="isOpen = false">
                     <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
                 </v-btn>
@@ -26,6 +27,7 @@ import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
+import DViewOriginal from '~/components/pages/gallery/DViewOriginal.vue'
 import Entry from '~/models/entities/gallery/Entry'
 
 const props = defineProps<{
@@ -36,5 +38,3 @@ const props = defineProps<{
 const icons = { mdiClose }
 const isOpen = ref(false)
 </script>
-
-<style lang="scss" scoped />
