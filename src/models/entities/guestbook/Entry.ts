@@ -4,7 +4,7 @@ import ESource from '~/models/enums/guestbook/ESource'
 export default class Entry {
     answer = ``
     category = EEvent.RTC
-    date?: Date
+    date = new Date()
     imageUrls: string[] = []
     location = ''
     name = ''
