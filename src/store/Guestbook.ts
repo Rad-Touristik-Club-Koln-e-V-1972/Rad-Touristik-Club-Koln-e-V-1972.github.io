@@ -7,11 +7,8 @@ import _2016 from '~/store/guestbook/2016'
 import _2017 from '~/store/guestbook/2017'
 import _2018 from '~/store/guestbook/2018'
 import _2019 from '~/store/guestbook/2019'
-import useDateTime from '~/utils/DateTime'
 
-const dateTime = useDateTime()
-
-const sortByDate = (entries: Entry[]) => entries.sort((a, b) => dateTime.sort(a.date, b.date))
+const sortByDate = (entries: Entry[]) => entries.sort((a, b) => a.date.getTime() - b.date.getTime())
 
 export const useGuestbookStore = defineStore('guestbook', {
     state: () => ({
