@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGuestbook" :max-width="`${vuetify?.breakpoint.mobile ? 2 : 4}0em`">
+    <v-card id="CGuestbook">
         <v-card-title v-if="props.value.title" class="accent--text primary text-wrap">{{ props.value.title }}</v-card-title>
         <v-divider />
         <v-card-subtitle class="secondary accent--text">

@@ -8,7 +8,6 @@
                 <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
             </v-btn>
             <v-spacer />
-            <v-spacer />
             <v-btn text @click="showText = !showText">
                 Über mich
                 <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
