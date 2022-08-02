@@ -9,13 +9,7 @@ import _2018 from '~/store/guestbook/2018'
 import _2019 from '~/store/guestbook/2019'
 import useDateTime from '~/utils/DateTime'
 
-const dateTime: {
-    getDaysInMonth: (month: number, year: number) => number
-    format: (start: Date, end?: Date, allDay?: boolean) => string
-    isBetween: (date: Date, start: Date, end: Date) => boolean
-    sort: (a: Date, b: Date) => number
-    isSameDay: (start: Date, end: Date) => boolean
-} = useDateTime()
+const dateTime = useDateTime()
 
 const sortByDate = (entries: Entry[]) => entries.sort((a, b) => dateTime.sort(a.date, b.date))
 
