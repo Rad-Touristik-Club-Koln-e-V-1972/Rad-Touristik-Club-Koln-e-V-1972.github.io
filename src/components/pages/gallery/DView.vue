@@ -4,7 +4,15 @@
     <v-card id="DView" width="400">
         <v-dialog v-model="isOpen" fullscreen persistent>
             <template #activator="{ attrs, on }">
-                <v-img :src="props.value[startIndex].previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
+                <v-img :src="props.value[startIndex].previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on">
+                    <template #placeholder>
+                        <v-row align="center" class="fill-height" justify="center">
+                            <v-skeleton-loader>
+                                <v-progress-circular color="primary" indeterminate />
+                            </v-skeleton-loader>
+                        </v-row>
+                    </template>
+                </v-img>
             </template>
             <v-sheet height="100%">
                 <v-btn absolute color="primary" style="right: 0; z-index: 1" @click="isOpen = false">
