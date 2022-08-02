@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
-import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
+import CSlideshow from '~/components/CSlideshow.vue'
 import Entry from '~/models/entities/guestbook/Entry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/guestbook/ESource'

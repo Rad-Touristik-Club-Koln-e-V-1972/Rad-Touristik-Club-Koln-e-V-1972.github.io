@@ -6,11 +6,7 @@
             <template #activator="{ attrs, on }">
                 <v-img :src="props.value[startIndex].previewUrl" style="cursor: pointer" v-bind="attrs" v-on="on">
                     <template #placeholder>
-                        <v-row align="center" class="fill-height" justify="center">
-                            <v-skeleton-loader>
-                                <v-progress-circular color="primary" indeterminate />
-                            </v-skeleton-loader>
-                        </v-row>
+                        <c-loading-skeleton />
                     </template>
                 </v-img>
             </template>
@@ -28,7 +24,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
-import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
+import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
+import CSlideshow from '~/components/CSlideshow.vue'
 import Entry from '~/models/entities/gallery/Entry'
 
 const props = defineProps<{

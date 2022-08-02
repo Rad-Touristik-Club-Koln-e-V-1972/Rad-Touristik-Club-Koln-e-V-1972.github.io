@@ -49,7 +49,7 @@ import { mdiCopyright } from '@mdi/js'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CNavigationTabs from '~/components/layouts/default/CNavigationTabs.vue'
-import CSlideshow from '~/components/layouts/default/CSlideshow.vue'
+import CSlideshow from '~/components/CSlideshow.vue'
 import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
