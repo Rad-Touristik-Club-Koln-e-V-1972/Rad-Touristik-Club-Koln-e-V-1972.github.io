@@ -1,12 +1,16 @@
 import { defineStore } from 'pinia'
 import Event from '~/models/entities/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
-import db2022 from '~/store/calendar/DB2022'
+import _2022 from '~/store/calendar/2022'
 
 export const useCalendarStore = defineStore('calendar', {
-    state: () => ({ db2022 }),
+    state: () => ({
+        events: {
+            2022: _2022,
+        } as Record<number, Event[]>,
+    }),
     getters: {
-        all: (state): Event[] => state.db2022,
+        all: (state): Event[] => Object.values(state.events).flatMap((it) => it.flatMap((it) => it)),
     },
     actions: {
         allFuture(): Event[] {
