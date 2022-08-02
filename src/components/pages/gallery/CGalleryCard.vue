@@ -1,5 +1,5 @@
 <template>
-    <v-dialog id="CGalleryCard" v-model="isOpen" :fullscreen="vuetify?.breakpoint.mobile" persistent scrollable>
+    <v-dialog id="CGalleryCard" v-model="isOpen" fullscreen persistent scrollable>
         <template #activator="{ attrs, on }">
             <v-img :src="props.value.titleImageUrl" style="cursor: pointer" v-bind="attrs" v-on="on" />
         </template>
