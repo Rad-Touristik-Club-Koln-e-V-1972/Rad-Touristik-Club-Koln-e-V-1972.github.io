@@ -1,8 +1,11 @@
 <template>
-    <v-card id="VAlbum">
+    <v-card id="VAlbum" :loading="isLoading">
+        <template #progress>
+            <v-progress-linear color="primary" height="15" indeterminate>Bitte warten</v-progress-linear>
+        </template>
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
         <v-toolbar color="primary" flat max-height="64px">
-            <v-btn exact icon @click="proxy?.$router.go(-1)">
+            <v-btn exact icon @click="close">
                 <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
             </v-btn>
             <v-toolbar-title v-if="value" class="accent--text">
@@ -64,7 +67,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, getCurrentInstance, ref } from 'vue'
+import { computed, getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '~/components/pages/gallery/album/DView.vue'
 import { useGalleryStore } from '~/store/Gallery'
@@ -77,11 +80,20 @@ const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
+const close = () => {
+    isLoading.value = true
+    nextTick(() => {
+        setTimeout(() => {
+            proxy?.$router.go(-1)
+        }, 100)
+    })
+}
 const icons = {
     mdiChevronDown,
     mdiChevronUp,
     mdiClose,
 }
+const isLoading = ref(false)
 const showText = ref(false)
 const tabModel = ref()
 const tabModelPictures = ref()

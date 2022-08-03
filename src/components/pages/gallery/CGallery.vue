@@ -1,18 +1,19 @@
 <template>
-    <v-card id="CGallery" width="30em">
+    <v-card id="CGallery" :loading="isLoading" width="30em">
+        <template #progress>
+            <v-progress-linear color="primary" height="15" indeterminate>Bitte warten</v-progress-linear>
+        </template>
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
             <div v-text="`Datum: ${dateTime.format(props.value.dateFrom, props.value.dateTo, true)}`" />
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
         <v-card-text>
-            <nuxt-link :to="{ name: 'gallery-album', params: { value: props.value.id } }">
-                <v-img eager :src="props.value.titleImageUrl" style="cursor: pointer">
-                    <template #placeholder>
-                        <c-loading-skeleton />
-                    </template>
-                </v-img>
-            </nuxt-link>
+            <v-img eager :src="props.value.titleImageUrl" style="cursor: pointer" @click="open">
+                <template #placeholder>
+                    <c-loading-skeleton />
+                </template>
+            </v-img>
         </v-card-text>
         <v-card-actions v-if="props.value.description">
             <v-spacer />
@@ -33,18 +34,30 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
+import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import Gallery from '~/models/entities/Gallery'
 import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Gallery }>()
+
+const router = getCurrentInstance()?.proxy.$router
 
 const dateTime = useDateTime()
 
 const icons = {
     mdiChevronDown,
     mdiChevronUp,
+}
+const isLoading = ref(false)
+const open = () => {
+    isLoading.value = true
+    nextTick(() => {
+        setTimeout(() => {
+            router?.push({ name: 'gallery-album', params: { value: props.value.id } })
+        }, 100)
+    })
 }
 const showText = ref(false)
 </script>
