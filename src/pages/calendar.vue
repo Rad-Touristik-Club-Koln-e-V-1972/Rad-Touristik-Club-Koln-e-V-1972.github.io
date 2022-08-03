@@ -1,5 +1,5 @@
 <template>
-    <v-row id="calendar" class="fill-height">
+    <v-row id="VCalendar" class="fill-height">
         <v-col>
             <c-control v-model="type" :title="title" @next="calendar.next()" @prev="calendar.prev()" @showToday="setFocus('')" />
             <v-calendar

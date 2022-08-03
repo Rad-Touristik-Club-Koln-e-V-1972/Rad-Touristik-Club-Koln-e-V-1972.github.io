@@ -1,5 +1,5 @@
 <template>
-    <v-row id="index" align="center" justify="center">
+    <v-row id="VIndex" align="center" justify="center">
         <v-col>
             <v-card>
                 <v-card-title class="text-h5">Welcome to the Vuetify + Nuxt.js template</v-card-title>

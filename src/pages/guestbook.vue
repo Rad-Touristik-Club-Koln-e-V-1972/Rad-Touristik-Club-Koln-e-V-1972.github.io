@@ -1,5 +1,5 @@
 <template>
-    <v-card id="guestbook" flat>
+    <v-card id="VGuestbook" flat>
         <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Gästebuch</v-card-title>
         <v-card-subtitle class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">
             Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln
