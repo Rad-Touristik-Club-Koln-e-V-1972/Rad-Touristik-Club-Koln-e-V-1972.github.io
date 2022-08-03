@@ -1,6 +1,9 @@
 <template>
     <v-app id="app">
         <v-app-bar app class="border" color="accent" flat height="100%">
+            <template #extension>
+                <c-navigation-tabs />
+            </template>
             <v-row class="justify-space-between">
                 <v-col cols="auto">
                     <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
@@ -17,9 +20,6 @@
                     <c-countdown />
                 </v-col>
             </v-row>
-            <template #extension>
-                <c-navigation-tabs />
-            </template>
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" />
         <v-main class="border main">
