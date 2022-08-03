@@ -1,7 +1,7 @@
 <template>
     <v-card id="VAlbum" :loading="isLoading">
         <template #progress>
-            <v-progress-linear color="primary" height="15" indeterminate>Bitte warten</v-progress-linear>
+            <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
         <v-toolbar color="primary" flat max-height="64px">
@@ -85,7 +85,7 @@ const close = () => {
     nextTick(() => {
         setTimeout(() => {
             proxy?.$router.go(-1)
-        }, 100)
+        }, 0)
     })
 }
 const icons = {

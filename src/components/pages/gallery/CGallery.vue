@@ -1,7 +1,7 @@
 <template>
     <v-card id="CGallery" :loading="isLoading" width="30em">
         <template #progress>
-            <v-progress-linear color="primary" height="15" indeterminate>Bitte warten</v-progress-linear>
+            <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
@@ -56,7 +56,7 @@ const open = () => {
     nextTick(() => {
         setTimeout(() => {
             router?.push({ name: 'gallery-album', params: { value: props.value.id } })
-        }, 100)
+        }, 0)
     })
 }
 const showText = ref(false)
