@@ -1,9 +1,6 @@
 <template>
     <v-app id="app">
         <v-app-bar app class="border" color="accent" flat height="100%">
-            <template #extension>
-                <c-navigation-tabs />
-            </template>
             <v-row class="justify-space-between">
                 <v-col cols="auto">
                     <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
@@ -48,7 +45,6 @@ import { getCurrentInstance, ref } from 'vue'
 import { mdiCopyright } from '@mdi/js'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
-import CNavigationTabs from '~/components/layouts/default/CNavigationTabs.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
 import CSponsors from '~/components/layouts/default/CSponsors.vue'
 

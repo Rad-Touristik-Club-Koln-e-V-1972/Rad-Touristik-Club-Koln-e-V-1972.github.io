@@ -1,26 +1,48 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" app bottom temporary :value="props.value" @input="emitInput">
+    <v-navigation-drawer id="CNavigationDrawer" app bottom temporary :value="props.value" width="auto" @input="emitInput">
         <v-row>
             <v-col>
                 <v-list dense nav>
-                    <v-list-item
-                        v-for="it in items"
-                        :key="it.id"
-                        exact
-                        :href="it.url || undefined"
-                        :nuxt="!!it.to"
-                        :target="it.url ? '_blank' : undefined"
-                        :to="it.to || undefined"
-                    >
-                        <v-list-item-action>
-                            <v-icon>{{ it.icon }}</v-icon>
-                        </v-list-item-action>
-                        <v-list-item-content>
-                            <v-list-item-title style="white-space: normal">
-                                {{ it.title }}
-                            </v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
+                    <template v-for="it in navigationStore.allNavigation">
+                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon">
+                            <template #activator>
+                                <v-list-item-title style="white-space: normal">{{ it.title }}</v-list-item-title>
+                            </template>
+                            <template v-for="childIt in it.children">
+                                <v-list-group v-if="childIt.children.length" :key="childIt.id" no-action sub-group>
+                                    <template #activator>
+                                        <v-list-item-title style="white-space: normal">{{ childIt.title }}</v-list-item-title>
+                                    </template>
+                                    <v-list-item
+                                        v-for="childChildIt in childIt.children"
+                                        :key="childChildIt.id"
+                                        exact
+                                        :href="childChildIt.url"
+                                        :nuxt="childChildIt.nuxt"
+                                        :target="childChildIt.target"
+                                        :to="childChildIt.to"
+                                    >
+                                        <v-list-item-icon>
+                                            <v-icon>{{ childChildIt.icon }}</v-icon>
+                                        </v-list-item-icon>
+                                        <v-list-item-title style="white-space: normal">{{ childChildIt.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list-group>
+                                <v-list-item v-else :key="childIt.id" class="ml-4" exact :href="childIt.url" :nuxt="childIt.nuxt" :target="childIt.target" :to="childIt.to">
+                                    <v-list-item-icon>
+                                        <v-icon>{{ childIt.icon }}</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-title class="ml-n4" style="white-space: normal">{{ childIt.title }}</v-list-item-title>
+                                </v-list-item>
+                            </template>
+                        </v-list-group>
+                        <v-list-item v-else :key="it.id" exact :href="it.url" :nuxt="it.nuxt" :target="it.target" :to="it.to">
+                            <v-list-item-icon>
+                                <v-icon>{{ it.icon }}</v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-title>{{ it.title }}</v-list-item-title>
+                        </v-list-item>
+                    </template>
                 </v-list>
             </v-col>
         </v-row>
@@ -30,8 +52,8 @@
                     <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Folge uns!</v-card-title>
                     <v-card-text class="text-center">
                         <v-row>
-                            <v-col v-for="it in socialMediaItems" :key="it.id">
-                                <v-btn fab :href="it.url" icon target="_blank">
+                            <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
+                                <v-btn fab :href="it.url" icon :target="it.target">
                                     <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
                                 </v-btn>
                             </v-col>
@@ -44,87 +66,12 @@
 </template>
 
 <script lang="ts" setup>
-import {
-    mdiBike,
-    mdiCalendarClockOutline,
-    mdiCalendarHeart,
-    mdiFacebook,
-    mdiGoogle,
-    mdiInstagram,
-    mdiMessageDraw,
-    mdiNewspaperVariantMultiple,
-    mdiWeatherPartlyRainy,
-    mdiYoutube,
-} from '@mdi/js'
-import { v4 as uuid } from 'uuid'
+import { useNavigationStore } from '~/store/Navigation'
 
 const emits = defineEmits<{ (e: 'input', value: boolean): void }>()
 const props = defineProps<{ value: boolean }>()
 
-const items = [
-    {
-        icon: mdiCalendarClockOutline,
-        id: uuid(),
-        title: 'Veranstaltungen & Termine',
-        to: { name: 'calendar' },
-    },
-    {
-        icon: mdiBike,
-        id: uuid(),
-        title: "Empfohlene RTF's",
-        to: { name: 'index' },
-    },
-    {
-        icon: mdiCalendarHeart,
-        id: uuid(),
-        title: 'Breitensportkalender BDR',
-        url: 'https://breitensport.rad-net.de/breitensportkalender/',
-    },
-    {
-        icon: mdiWeatherPartlyRainy,
-        id: uuid(),
-        title: 'Wetter live in Köln + Regenradar',
-        url: 'https://www.koeln.de/wetter/regenradar/',
-    },
-    {
-        icon: mdiMessageDraw,
-        id: uuid(),
-        title: 'Gästebuch',
-        to: { name: 'guestbook' },
-    },
-    {
-        icon: mdiNewspaperVariantMultiple,
-        id: uuid(),
-        title: 'Presseberichte über uns',
-        to: { name: 'index' },
-    },
-]
-const socialMediaItems = [
-    {
-        color: 'indigo',
-        icon: mdiFacebook,
-        id: uuid(),
-        url: 'https://www.facebook.com/RTC.Koeln/',
-    },
-    {
-        color: 'red lighten-2',
-        icon: mdiInstagram,
-        id: uuid(),
-        url: 'https://www.instagram.com/rtckoeln/',
-    },
-    {
-        color: 'red lighten-2',
-        icon: mdiGoogle,
-        id: uuid(),
-        url: 'https://www.google.de/search?q=RTC+Köln+e.V.+1972/',
-    },
-    {
-        color: 'red lighten-2',
-        icon: mdiYoutube,
-        id: uuid(),
-        url: 'https://www.youtube.com/channel/UCC5YG6J73hWEdPoMbdjGG1w/',
-    },
-]
+const navigationStore = useNavigationStore()
 
 const emitInput = (value: boolean) => {
     emits('input', value)
