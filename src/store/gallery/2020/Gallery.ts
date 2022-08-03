@@ -1,3 +1,3 @@
-import Fotogalerie from '~/store/gallery/2020/Fotogalerie'
+import _2020Rueckblick from '~/store/gallery/2020/Rueckblick'
 
-export default [Fotogalerie]
+export default [_2020Rueckblick]

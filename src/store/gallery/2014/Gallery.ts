@@ -19,10 +19,10 @@ import _20141019Ahrwanderung from '~/store/gallery/2014/10_19_Ahrwanderung'
 import _20141025HarryBrot from '~/store/gallery/2014/10_25_Harry_Brot'
 import _20141128Weihnachtsfeier from '~/store/gallery/2014/11_28_Weihnachtsfeier'
 import _20141202SiegerehrungMannschaftswertungBezirkKoeln from '~/store/gallery/2014/12_02_Siegerehrung_Mannschaftswertung_Bezirk_Koeln'
-import _2014Fotogalerie from '~/store/gallery/2014/Fotogalerie'
+import _2014Rueckblick from '~/store/gallery/2014/Rueckblick'
 
 export default [
-    _2014Fotogalerie,
+    _2014Rueckblick,
     _20141202SiegerehrungMannschaftswertungBezirkKoeln,
     _20141128Weihnachtsfeier,
     _20141025HarryBrot,
