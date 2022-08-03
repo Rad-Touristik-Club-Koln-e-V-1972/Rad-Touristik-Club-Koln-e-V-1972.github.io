@@ -4,14 +4,6 @@ import EEvent from '~/models/enums/EEvent'
 import _2022 from '~/store/calendar/2022'
 
 export const useCalendarStore = defineStore('calendar', {
-    state: () => ({
-        events: {
-            2022: _2022,
-        } as Record<string, Event[]>,
-    }),
-    getters: {
-        all: (state): Event[] => Object.values(state.events).flatMap((it) => it.flatMap((it) => it)),
-    },
     actions: {
         allFuture(): Event[] {
             return this.all.filter((it) => it.start.getTime() > this.today().getTime())
@@ -27,4 +19,12 @@ export const useCalendarStore = defineStore('calendar', {
         },
         today: (): Date => new Date(Date.now()),
     },
+    getters: {
+        all: (state): Event[] => Object.values(state.events).flatMap((it) => it.flatMap((it) => it)),
+    },
+    state: () => ({
+        events: {
+            2022: _2022,
+        } as Record<string, Event[]>,
+    }),
 })

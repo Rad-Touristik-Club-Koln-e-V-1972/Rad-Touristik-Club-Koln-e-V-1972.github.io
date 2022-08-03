@@ -18,6 +18,13 @@ import _2022 from '~/store/gallery/2022/Gallery'
 const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime())
 
 export const useGalleryStore = defineStore('gallery', {
+    getters: {
+        all: (state): Gallery[] =>
+            Object.values(state.galleries)
+                .flatMap((it) => it.flatMap((it) => it))
+                .reverse(),
+        getGroupedByYear: (state): Record<string, Gallery[]> => state.galleries,
+    },
     state: () => ({
         galleries: {
             2022: sortByDate(_2022),
@@ -36,11 +43,4 @@ export const useGalleryStore = defineStore('gallery', {
             2009: sortByDate(_2009),
         } as Record<string, Gallery[]>,
     }),
-    getters: {
-        all: (state): Gallery[] =>
-            Object.values(state.galleries)
-                .flatMap((it) => it.flatMap((it) => it))
-                .reverse(),
-        getGroupedByYear: (state): Record<string, Gallery[]> => state.galleries,
-    },
 })

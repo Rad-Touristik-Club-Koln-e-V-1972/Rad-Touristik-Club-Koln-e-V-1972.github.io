@@ -11,6 +11,13 @@ import _2019 from '~/store/guestbook/2019'
 const sortByDate = (entries: Entry[]) => entries.sort((a, b) => b.date.getTime() - a.date.getTime())
 
 export const useGuestbookStore = defineStore('guestbook', {
+    getters: {
+        all: (state): Entry[] =>
+            Object.values(state.guestbook)
+                .flatMap((it) => it.flatMap((it) => it))
+                .reverse(),
+        getGroupedByYear: (state): Record<string, Entry[]> => state.guestbook,
+    },
     state: () => ({
         guestbook: {
             2019: sortByDate(_2019),
@@ -22,11 +29,4 @@ export const useGuestbookStore = defineStore('guestbook', {
             2012: sortByDate(_2012),
         } as Record<string, Entry[]>,
     }),
-    getters: {
-        all: (state): Entry[] =>
-            Object.values(state.guestbook)
-                .flatMap((it) => it.flatMap((it) => it))
-                .reverse(),
-        getGroupedByYear: (state): Record<string, Entry[]> => state.guestbook,
-    },
 })
