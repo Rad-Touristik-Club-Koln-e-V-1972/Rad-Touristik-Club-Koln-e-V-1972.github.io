@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import Gallery from '~/models/entities/Gallery'
 import useDateTime from '~/utils/DateTime'
@@ -47,7 +47,4 @@ const icons = {
     mdiChevronUp,
 }
 const showText = ref(false)
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 </script>

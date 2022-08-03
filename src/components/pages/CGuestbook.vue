@@ -27,7 +27,6 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/CSlideshow.vue'
 import Entry from '~/models/entities/guestbook/Entry'
 import EEvent from '~/models/enums/EEvent'
@@ -35,7 +34,4 @@ import ESource from '~/models/enums/guestbook/ESource'
 import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Entry }>()
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 </script>
