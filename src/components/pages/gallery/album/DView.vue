@@ -27,7 +27,7 @@ import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
-import DViewOriginal from '~/components/pages/gallery/DViewOriginal.vue'
+import DViewOriginal from '~/components/pages/gallery/album/DViewOriginal.vue'
 import Entry from '~/models/entities/gallery/Entry'
 
 const props = defineProps<{

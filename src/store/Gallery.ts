@@ -18,6 +18,11 @@ import _2022 from '~/store/gallery/2022/Gallery'
 const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => b.dateFrom.getTime() - a.dateFrom.getTime())
 
 export const useGalleryStore = defineStore('gallery', {
+    actions: {
+        findById(id?: string): Gallery | undefined {
+            return id ? this.all.find((gallery) => gallery.id === id) : undefined
+        },
+    },
     getters: {
         all: (state): Gallery[] =>
             Object.values(state.galleries)

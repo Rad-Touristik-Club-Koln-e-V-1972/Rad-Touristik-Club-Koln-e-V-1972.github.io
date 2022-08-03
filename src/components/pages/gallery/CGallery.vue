@@ -6,7 +6,13 @@
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
         <v-card-text>
-            <c-gallery-card :value="props.value" />
+            <nuxt-link :to="{ name: 'gallery-album', params: { value: props.value.id } }">
+                <v-img eager :src="props.value.titleImageUrl" style="cursor: pointer">
+                    <template #placeholder>
+                        <c-loading-skeleton />
+                    </template>
+                </v-img>
+            </nuxt-link>
         </v-card-text>
         <v-card-actions v-if="props.value.description">
             <v-spacer />
@@ -29,7 +35,6 @@
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
-import CGalleryCard from '~/components/pages/gallery/CGalleryCard.vue'
 import Gallery from '~/models/entities/Gallery'
 import useDateTime from '~/utils/DateTime'
 

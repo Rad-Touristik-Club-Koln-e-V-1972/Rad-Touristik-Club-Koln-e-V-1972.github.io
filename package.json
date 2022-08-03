@@ -21,6 +21,7 @@
         "date-holidays": "^3.16.3",
         "nuxt-edge": "latest",
         "pinia": "^2.0.17",
+        "uuid": "^8.3.2",
         "vue": "2.7.8",
         "vuetify": "2.6.8"
     },
@@ -36,6 +37,7 @@
         "@nuxtjs/stylelint-module": "^4.1.0",
         "@nuxtjs/vuetify": "^1.12.3",
         "@rushstack/eslint-patch": "^1.1.4",
+        "@types/uuid": "^8.3.4",
         "@vue/eslint-config-prettier": "^7.0.0",
         "@vue/eslint-config-typescript": "^11.0.0",
         "eslint-plugin-nuxt": "^3.2.0",
