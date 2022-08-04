@@ -4,6 +4,18 @@
         <v-card-subtitle class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">
             Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln
         </v-card-subtitle>
+        <v-card-text>
+            Lob, nette Grüße, positive oder konstruktive Kritik, Anregungen oder was auch immer ihr uns schon immer sagen wolltet, werden 1:1 mit Eurem Namen veröffentlicht.
+            <br />
+            Wir behalten uns allerdings vor, unangemessene Beiträge nicht zu veröffentlichen.
+            <br />
+            Also: Wir freuen uns auf Eure Einträge in unser Gästebuch.
+            <br />
+            <br />
+            Herzliche Grüße,
+            <br />
+            RTC Köln
+        </v-card-text>
         <v-card-actions>
             <v-btn
                 class="text-body-2 text-sm-body-2 text-lg-body-1"
