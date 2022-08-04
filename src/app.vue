@@ -66,7 +66,7 @@ const slideshowItems = [
 </script>
 
 <style lang="scss" scoped>
-#DefaultView {
+#app {
     background-attachment: fixed;
     background-color: var(--v-primary-base);
     background-image: url('@/assets/img/banner_vertikal.svg');
