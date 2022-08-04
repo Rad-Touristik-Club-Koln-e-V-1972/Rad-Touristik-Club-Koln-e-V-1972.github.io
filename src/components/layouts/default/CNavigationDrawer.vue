@@ -2,7 +2,7 @@
     <v-navigation-drawer id="CNavigationDrawer" app bottom temporary :value="props.value" width="auto" @input="emitInput">
         <v-row>
             <v-col>
-                <v-list dense nav>
+                <v-list nav>
                     <template v-for="it in navigationStore.allNavigation">
                         <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon">
                             <template #activator>
@@ -49,7 +49,7 @@
         <v-row>
             <v-col>
                 <v-card flat>
-                    <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Folge uns!</v-card-title>
+                    <v-card-title class="justify-center">Folge uns!</v-card-title>
                     <v-card-text class="text-center">
                         <v-row>
                             <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
