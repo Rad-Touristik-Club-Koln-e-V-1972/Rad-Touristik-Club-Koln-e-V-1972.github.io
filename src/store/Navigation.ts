@@ -5,6 +5,7 @@ import {
     mdiCalendarClockOutline,
     mdiDomain,
     mdiFacebook,
+    mdiGithub,
     mdiGoogle,
     mdiHome,
     mdiHumanGreetingProximity,
@@ -59,6 +60,7 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder().color('red lighten-2').icon(mdiInstagram).url('https://www.instagram.com/rtckoeln').build(),
             new NavigationBuilder().color('red lighten-2').icon(mdiGoogle).url('https://www.google.de/search?q=RTC+Köln+e.V.+1972').build(),
             new NavigationBuilder().color('red lighten-2').icon(mdiYoutube).url('https://www.youtube.com/channel/UCC5YG6J73hWEdPoMbdjGG1w').build(),
+            new NavigationBuilder().icon(mdiGithub).url('https://github.com/Rad-Touristik-Club-Koln-e-V-1972').build(),
         ],
     }),
 })
