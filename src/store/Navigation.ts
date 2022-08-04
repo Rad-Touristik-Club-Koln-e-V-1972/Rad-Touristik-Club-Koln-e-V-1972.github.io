@@ -24,11 +24,11 @@ import ChildBuilder from '~/models/builder/navigation/ChildBuilder'
 
 export const useNavigationStore = defineStore('navigation', {
     getters: {
-        allNavigation: (state): Navigation[] => state.navigation,
-        allSocialMedia: (state): Navigation[] => state.socialMedia,
+        allNavigation: (state): Navigation[] => state.navigations,
+        allSocialMedia: (state): Navigation[] => state.socialMedias,
     },
     state: () => ({
-        navigation: [
+        navigations: [
             new NavigationBuilder().icon(mdiHome).title('Startseite').to('index').build(),
             new NavigationBuilder()
                 .children(
@@ -55,7 +55,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .title('Über den RTC Köln')
                 .build(),
         ],
-        socialMedia: [
+        socialMedias: [
             new NavigationBuilder().color('indigo').icon(mdiFacebook).url('https://www.facebook.com/RTC.Koeln').build(),
             new NavigationBuilder().color('red lighten-2').icon(mdiInstagram).url('https://www.instagram.com/rtckoeln').build(),
             new NavigationBuilder().color('red lighten-2').icon(mdiGoogle).url('https://www.google.de/search?q=RTC+Köln+e.V.+1972').build(),
