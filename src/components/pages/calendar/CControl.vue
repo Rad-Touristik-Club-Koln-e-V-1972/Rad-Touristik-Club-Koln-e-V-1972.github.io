@@ -22,9 +22,9 @@
                     </v-btn>
                 </template>
                 <v-list>
-                    <v-list-item v-for="(item, index) in ECalendar" :key="index" @click="emits('input', item)">
+                    <v-list-item v-for="it in ECalendar" :key="it" @click="emits('input', it)">
                         <v-list-item-title class="text-button text-sm-button text-md-body-2 text-lg-body-1 text-xl-h6">
-                            {{ item }}
+                            {{ it }}
                         </v-list-item-title>
                     </v-list-item>
                 </v-list>

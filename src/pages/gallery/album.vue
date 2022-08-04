@@ -27,12 +27,12 @@
         </v-expand-transition>
         <v-card-text v-if="value">
             <v-tabs v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
-                <v-tab v-for="item in tabs" :key="item" :href="`#tab-${item}`">{{ item }}</v-tab>
+                <v-tab v-for="it in tabs" :key="it" :href="`#tab-${it}`">{{ it }}</v-tab>
             </v-tabs>
             <v-tabs-items v-model="tabModel">
                 <v-tab-item key="Bilder" value="tab-Bilder">
                     <v-tabs v-model="tabModelPictures" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
-                        <v-tab v-for="key in Object.keys(value.images)" :key="key" :href="`#tab-${key}`">{{ key || 'Ohne Album' }}</v-tab>
+                        <v-tab v-for="it in Object.keys(value.images)" :key="it" :href="`#tab-${it}`">{{ it || 'Ohne Album' }}</v-tab>
                     </v-tabs>
                     <v-tabs-items v-model="tabModelPictures">
                         <v-tab-item v-for="(item, key) in value.images" :key="key" :value="`tab-${key}`">

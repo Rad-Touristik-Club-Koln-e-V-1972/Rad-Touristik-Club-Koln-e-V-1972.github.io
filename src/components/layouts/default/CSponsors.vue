@@ -1,10 +1,10 @@
 <template>
     <v-card id="CSponsors" flat>
         <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Sponsoren</v-card-title>
-        <v-card v-for="(sponsor, i) in sponsors" :key="i" flat :href="sponsor.url" :ripple="false" target="_blank">
+        <v-card v-for="it in sponsors" :key="it.text + it.url" flat :href="it.url" :ripple="false" target="_blank">
             <v-card-text>
-                <span v-if="sponsor.text" v-text="sponsor.text" />
-                <v-img v-if="sponsor.imageSrc" contain max-height="100px" :src="sponsor.imageSrc" />
+                <span v-if="it.text" v-text="it.text" />
+                <v-img v-if="it.imageSrc" contain max-height="100px" :src="it.imageSrc" />
             </v-card-text>
         </v-card>
     </v-card>

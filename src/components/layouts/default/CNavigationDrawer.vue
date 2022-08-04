@@ -4,20 +4,20 @@
             <v-col>
                 <v-list dense nav>
                     <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
+                        v-for="it in items"
+                        :key="it.to ?? '' + it.url ?? ''"
                         exact
-                        :href="item.url || undefined"
-                        :nuxt="!!item.to"
-                        :target="item.url ? '_blank' : undefined"
-                        :to="item.to || undefined"
+                        :href="it.url || undefined"
+                        :nuxt="!!it.to"
+                        :target="it.url ? '_blank' : undefined"
+                        :to="it.to || undefined"
                     >
                         <v-list-item-action>
-                            <v-icon>{{ item.icon }}</v-icon>
+                            <v-icon>{{ it.icon }}</v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
                             <v-list-item-title style="white-space: normal">
-                                {{ item.title }}
+                                {{ it.title }}
                             </v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
@@ -30,9 +30,9 @@
                     <v-card-title class="justify-center text-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Folge uns!</v-card-title>
                     <v-card-text class="text-center">
                         <v-row>
-                            <v-col v-for="(item, index) in socialMediaItems" :key="index">
-                                <v-btn fab :href="item.url" icon target="_blank">
-                                    <v-icon :color="item.color" large>{{ item.icon }}</v-icon>
+                            <v-col v-for="it in socialMediaItems" :key="it.url">
+                                <v-btn fab :href="it.url" icon target="_blank">
+                                    <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
                                 </v-btn>
                             </v-col>
                         </v-row>
