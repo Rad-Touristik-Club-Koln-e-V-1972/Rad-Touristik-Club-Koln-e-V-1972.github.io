@@ -30,7 +30,7 @@
                 </v-col>
             </v-row>
         </v-main>
-        <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
+        <v-footer class="border text-body-2 text-sm-body-1 text-xl-h6">
             <div class="text-no-wrap">
                 <v-icon>{{ icons.mdiCopyright }}</v-icon>
                 <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
