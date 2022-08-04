@@ -3,6 +3,7 @@ import {
     mdiBike,
     mdiBikeFast,
     mdiCalendarClockOutline,
+    mdiCurrencyEur,
     mdiDomain,
     mdiFacebook,
     mdiGithub,
@@ -54,6 +55,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .icon(mdiDomain)
                 .title('Über den RTC Köln')
                 .build(),
+            new NavigationBuilder().icon(mdiCurrencyEur).title('Sponsoren').to('sponsor').build(),
         ],
         socialMedias: [
             new NavigationBuilder().color('indigo').icon(mdiFacebook).url('https://www.facebook.com/RTC.Koeln').build(),

@@ -21,14 +21,7 @@
         <c-navigation-drawer v-model="navDrawer" />
         <v-main class="border main">
             <c-slideshow height="200" :value="slideshowItems" />
-            <v-row dense>
-                <v-col cols="10">
-                    <Nuxt />
-                </v-col>
-                <v-col cols="2">
-                    <c-sponsors />
-                </v-col>
-            </v-row>
+            <Nuxt />
         </v-main>
         <v-footer class="border text-body-2 text-sm-body-1 text-xl-h6">
             <div class="text-no-wrap">
@@ -46,7 +39,6 @@ import { mdiCopyright } from '@mdi/js'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
-import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
