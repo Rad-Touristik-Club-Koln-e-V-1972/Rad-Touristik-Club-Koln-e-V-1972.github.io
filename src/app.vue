@@ -1,5 +1,6 @@
 <template>
     <v-app id="app">
+        <v-system-bar app class="font-weight-bold justify-center" color="accent--text primary">Vorschau der neuen Website</v-system-bar>
         <v-app-bar app class="border" color="accent" flat height="100%">
             <v-row class="justify-space-between">
                 <v-col cols="auto">
