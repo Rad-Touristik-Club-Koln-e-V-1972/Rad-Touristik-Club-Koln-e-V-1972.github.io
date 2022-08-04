@@ -13,7 +13,7 @@
                     <v-card flat :href="item.url" max-width="200" target="_blank">
                         <v-card-text>
                             <div v-if="item.text" v-text="item.text" />
-                            <v-img v-if="item.imageSrc" :src="item.imageSrc" />
+                            <v-img v-if="item.imageSrc" contain :src="item.imageSrc" />
                         </v-card-text>
                     </v-card>
                 </template>
