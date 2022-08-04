@@ -1,7 +1,7 @@
 <template>
     <v-card id="CSponsors" flat>
         <v-card-title class="justify-center text-body-2 text-sm-body-2 text-md-body-1 text-lg-h6 text-xl-h5">Sponsoren</v-card-title>
-        <v-card v-for="it in sponsors" :key="it.text + it.url" flat :href="it.url" :ripple="false" target="_blank">
+        <v-card v-for="it in sponsors" :key="it.id" flat :href="it.url" :ripple="false" target="_blank">
             <v-card-text>
                 <span v-if="it.text" v-text="it.text" />
                 <v-img v-if="it.imageSrc" contain max-height="100px" :src="it.imageSrc" />
@@ -11,48 +11,59 @@
 </template>
 
 <script lang="ts" setup>
+import { v4 as uuid } from 'uuid'
+
 const sponsors = [
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/RheinEnergie.svg',
         text: '',
         url: 'https://www.rheinenergie.com',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/Volksbank_Köln_Bonn_eG.jpg',
         text: '',
         url: 'https://www.volksbank-koeln-bonn.de',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/dm-drogerie_markt_GmbH_+_Co._KG.jpg',
         text: '',
         url: 'https://www.dm.de',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/Auto_Laukat_KG.jpg',
         text: '',
         url: 'https://www.laukat.de',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/Radio_Meller_GmbH.jpg',
         text: '',
         url: 'https://www.euronics.de/K%C3%B6ln-meller/ueber-uns',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/Autohaus_Ulmer.jpg',
         text: '',
         url: 'https://www.autohaus-ulmer.de',
     },
     {
+        id: uuid(),
         imageSrc: 'https://content.rtc-koeln.de/layouts/default/sponsors/Mühlhäuser.jpg',
         text: '',
         url: 'https://www.muehlhaeuser.biz',
     },
     {
+        id: uuid(),
         imageSrc: '',
         text: 'Gisbert Reinhold Objektbeschriftung Industrie- und Werbeschilder',
         url: '',
     },
     {
+        id: uuid(),
         imageSrc: '',
         text: 'Auch all denjenigen, die um Diskretion gebeten haben, sind wir sehr verbunden!',
         url: '',
