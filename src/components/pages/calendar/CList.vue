@@ -14,11 +14,11 @@
                 <a v-if="item.url" class="accent--text" :href="item.url" :style="getStyle(item)" target="_blank" v-text="item.name" />
                 <span v-else :style="getStyle(item)" v-text="item.name" />
             </template>
-            <template #item.datetime="{ item }"><div :style="getStyle(item)" v-text="getDate(item)" /></template>
+            <template #item.datetime="{ item }"><span :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
                 <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'contact' }" v-text="item.contact" />
             </template>
-            <template #item.clubPoints="{ item }"><div v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
+            <template #item.clubPoints="{ item }"><span v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>
     </v-card>
 </template>
