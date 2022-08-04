@@ -43,7 +43,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .icon(mdiBike)
                 .title('Veranstaltungen & Termine')
                 .build(),
-            new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('https://www.koeln.de/wetter/regenradar').title('Wetter live in Köln + Regenradar').build(),
+            new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('https://www.koeln.de/wetter/regenradar/').title('Wetter live in Köln + Regenradar').build(),
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiInformation).title('Über uns').to('index').build(),
