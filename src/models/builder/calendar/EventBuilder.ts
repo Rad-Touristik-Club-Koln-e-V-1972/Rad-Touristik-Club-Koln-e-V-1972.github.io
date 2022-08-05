@@ -81,12 +81,6 @@ export default class EventBuilder {
         return this
     }
 
-    url(value: string): EventBuilder {
-        this.value.url = new URL(`https://${value}`)
-
-        return this
-    }
-
     name(value: string): EventBuilder {
         this.value.name = value
 
@@ -103,6 +97,12 @@ export default class EventBuilder {
     start(year: number, month: number, date: number, hours = 0, minutes = 0): EventBuilder {
         // The month value is 0-11. We need an offset.
         this.value.start = new Date(year, month - 1, date, hours, minutes)
+
+        return this
+    }
+
+    url(value: string): EventBuilder {
+        this.value.url = new URL(`https://${value}`)
 
         return this
     }
