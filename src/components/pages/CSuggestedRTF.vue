@@ -2,11 +2,13 @@
     <v-card id="CGallery" width="30em">
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-text>
-            <v-img eager :src="props.value.imageUrl" style="cursor: pointer">
-                <template #placeholder>
-                    <c-loading-skeleton />
-                </template>
-            </v-img>
+            <a :href="props.value.url" target="_blank">
+                <v-img eager :src="props.value.imageUrl" style="cursor: pointer">
+                    <template #placeholder>
+                        <c-loading-skeleton />
+                    </template>
+                </v-img>
+            </a>
         </v-card-text>
     </v-card>
 </template>
