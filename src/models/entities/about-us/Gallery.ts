@@ -1,5 +1,5 @@
 import AEntity from '~/models/entities/AEntity'
-import Entry from '~/models/entities/about-us/gallery/Entry'
+import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 import EEvent from '~/models/enums/EEvent'
 
 export default class Gallery extends AEntity {
@@ -7,9 +7,9 @@ export default class Gallery extends AEntity {
     dateFrom = new Date()
     dateTo?: Date
     description = ''
-    images: Record<string, Entry[]> = {}
+    images: Record<string, GalleryEntry[]> = {}
     location = ''
     title = ''
-    titleImageUrl = ''
+    titleImageUrl: URL = new URL('https://rtc-koeln.de')
     youtubeVideoIds: string[] = []
 }

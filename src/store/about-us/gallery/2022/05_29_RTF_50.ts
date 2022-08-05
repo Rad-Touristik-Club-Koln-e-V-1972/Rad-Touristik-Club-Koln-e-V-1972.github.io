@@ -1,4 +1,4 @@
-import EntryBuilder from '~/models/builder/about-us/gallery/EntryBuilder'
+import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 import K1 from '~/store/about-us/gallery/2022/05_29_RTF_50/K1'
@@ -12,9 +12,9 @@ export default new GalleryBuilder()
     .category(EEvent.RTF)
     .dateFrom(new Date('2022-05-29'))
     .location('Rösrath-Forsbach')
-    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer1-2022.png').previewUrl().build())
-    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer2-2022.png').previewUrl().build())
-    .image(new EntryBuilder().srcUrl('https://content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Zugbeutel.jpeg').previewUrl().build())
+    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer1-2022.png').previewUrl().build())
+    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer2-2022.png').previewUrl().build())
+    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Zugbeutel.jpeg').previewUrl().build())
     .images(K1)
     .images(K2)
     .images(K3_K5)
@@ -22,5 +22,5 @@ export default new GalleryBuilder()
     .images(K6)
     .images(StartZiel)
     .title('50. Forsbach-Tour')
-    .titleImageUrl('https://content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/preview/preview.rtc-forsbach-tour-flyer1-2022.png')
+    .titleImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/preview/preview.rtc-forsbach-tour-flyer1-2022.png')
     .build()

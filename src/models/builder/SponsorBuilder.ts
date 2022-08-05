@@ -3,8 +3,8 @@ import Sponsor from '~/models/entities/Sponsor'
 export default class SponsorBuilder {
     protected readonly value = new Sponsor()
 
-    imageSrc(value: string): SponsorBuilder {
-        this.value.imageSrc = value
+    imageUrl(value: string): SponsorBuilder {
+        this.value.imageUrl = new URL(`https://${value}`)
 
         return this
     }
@@ -16,7 +16,7 @@ export default class SponsorBuilder {
     }
 
     url(value: string): SponsorBuilder {
-        this.value.url = value
+        this.value.url = new URL(`https://${value}`)
 
         return this
     }

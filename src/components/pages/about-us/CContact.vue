@@ -1,6 +1,6 @@
 <template>
     <v-card id="CContact" max-width="20em">
-        <v-img contain :src="props.value.imageSrc" />
+        <v-img contain :src="props.value.imageUrl.toString()" />
         <v-card-title>{{ props.value.name }}</v-card-title>
         <v-card-subtitle>{{ props.value.position }}</v-card-subtitle>
         <v-card-actions>

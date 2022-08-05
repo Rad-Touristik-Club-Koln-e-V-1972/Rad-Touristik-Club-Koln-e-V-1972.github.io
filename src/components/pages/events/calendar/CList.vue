@@ -11,12 +11,12 @@
         </v-card-title>
         <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
             <template #item.name="{ item }">
-                <a v-if="item.url" class="accent--text" :href="item.url" :style="getStyle(item)" target="_blank" v-text="item.name" />
+                <a v-if="item.url.toString()" class="accent--text" :href="item.url.toString()" :style="getStyle(item)" target="_blank" v-text="item.name" />
                 <span v-else :style="getStyle(item)" v-text="item.name" />
             </template>
             <template #item.datetime="{ item }"><span :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
-                <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'contact' }" v-text="item.contact" />
+                <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'about-us-contacts' }" v-text="item.contact" />
             </template>
             <template #item.clubPoints="{ item }"><span v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>

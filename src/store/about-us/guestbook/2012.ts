@@ -1,6 +1,6 @@
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
-import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/EntryBuilder'
+import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/GuestbookEntryBuilder'
 
 export default [
     new GuestbookEntryBuilder()

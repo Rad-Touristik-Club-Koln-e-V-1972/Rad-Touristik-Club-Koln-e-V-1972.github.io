@@ -9,7 +9,7 @@
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
         <v-card-text>
-            <v-img eager :src="props.value.titleImageUrl" style="cursor: pointer" @click="open">
+            <v-img eager :src="props.value.titleImageUrl.toString()" style="cursor: pointer" @click="open">
                 <template #placeholder>
                     <c-loading-skeleton />
                 </template>

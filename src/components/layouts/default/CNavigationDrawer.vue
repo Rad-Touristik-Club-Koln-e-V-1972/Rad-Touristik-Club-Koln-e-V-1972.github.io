@@ -17,7 +17,7 @@
                                         v-for="childChildIt in childIt.children"
                                         :key="childChildIt.id"
                                         exact
-                                        :href="childChildIt.url"
+                                        :href="childChildIt.url?.toString()"
                                         :nuxt="childChildIt.nuxt"
                                         :target="childChildIt.target"
                                         :to="childChildIt.to"
@@ -28,7 +28,16 @@
                                         <v-list-item-title style="white-space: normal">{{ childChildIt.title }}</v-list-item-title>
                                     </v-list-item>
                                 </v-list-group>
-                                <v-list-item v-else :key="childIt.id" class="ml-4" exact :href="childIt.url" :nuxt="childIt.nuxt" :target="childIt.target" :to="childIt.to">
+                                <v-list-item
+                                    v-else
+                                    :key="childIt.id"
+                                    class="ml-4"
+                                    exact
+                                    :href="childIt.url?.toString()"
+                                    :nuxt="childIt.nuxt"
+                                    :target="childIt.target"
+                                    :to="childIt.to"
+                                >
                                     <v-list-item-icon>
                                         <v-icon>{{ childIt.icon }}</v-icon>
                                     </v-list-item-icon>
@@ -36,7 +45,7 @@
                                 </v-list-item>
                             </template>
                         </v-list-group>
-                        <v-list-item v-else :key="it.id" exact :href="it.url" :nuxt="it.nuxt" :target="it.target" :to="it.to">
+                        <v-list-item v-else :key="it.id" exact :href="it.url?.toString()" :nuxt="it.nuxt" :target="it.target" :to="it.to">
                             <v-list-item-icon>
                                 <v-icon>{{ it.icon }}</v-icon>
                             </v-list-item-icon>
@@ -53,7 +62,7 @@
                     <v-card-text class="text-center">
                         <v-row>
                             <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
-                                <v-btn fab :href="it.url" icon :target="it.target">
+                                <v-btn fab :href="it.url?.toString()" icon :target="it.target">
                                     <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
                                 </v-btn>
                             </v-col>

@@ -1,6 +1,6 @@
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
-import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/EntryBuilder'
+import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/GuestbookEntryBuilder'
 
 export default [
     new GuestbookEntryBuilder()
@@ -41,7 +41,7 @@ Helmut vom RSC Nievenheim
         .date(2015, 10, 18, 14, 23)
         .name('Schonneb Aus Lev')
         .source(ESource.Facebook)
-        .text('<a href="https://www.youtube.com/v/Z2MqTVOeZMM" target="_blank">https://www.youtube.com/v/Z2MqTVOeZMM<a/>')
+        .text('<a href="www.youtube.com/v/Z2MqTVOeZMM" target="_blank">www.youtube.com/v/Z2MqTVOeZMM<a/>')
         .title('... kleines Video von gestern')
         .build(),
     new GuestbookEntryBuilder()
@@ -152,7 +152,7 @@ Henning
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
         .date(2015, 10, 17, 20, 1)
-        .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-10-17_20-01.jpg')
+        .imageUrl('content.rtc-koeln.de/pages/guestbook/2015-10-17_20-01.jpg')
         .name('Wilfried Goesgens')
         .source(ESource.Facebook)
         .text(
@@ -164,7 +164,7 @@ Superrunde und hoffentlich nächstes Jahr wieder ...
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
         .date(2015, 10, 17, 19, 38)
-        .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-10-17_19-38.jpg')
+        .imageUrl('content.rtc-koeln.de/pages/guestbook/2015-10-17_19-38.jpg')
         .name('Thorsten Klein')
         .source(ESource.Facebook)
         .text(
@@ -450,7 +450,7 @@ Marc
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
         .date(2015, 5, 31, 19, 29)
-        .imageUrl('https://content.rtc-koeln.de/pages/guestbook/2015-05-31_19-29.jpg')
+        .imageUrl('content.rtc-koeln.de/pages/guestbook/2015-05-31_19-29.jpg')
         .name('Horst Paesch')
         .source(ESource.Facebook)
         .text(

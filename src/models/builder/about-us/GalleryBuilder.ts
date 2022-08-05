@@ -1,6 +1,6 @@
 import Gallery from '~/models/entities/about-us/Gallery'
 import EEvent from '~/models/enums/EEvent'
-import Entry from '~/models/entities/about-us/gallery/Entry'
+import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 export default class GalleryBuilder {
     private readonly value: Gallery
@@ -33,7 +33,7 @@ export default class GalleryBuilder {
         return this
     }
 
-    image(value: Entry, album = ''): GalleryBuilder {
+    image(value: GalleryEntry, album = ''): GalleryBuilder {
         if (!this.value.images[album]) this.value.images[album] = []
 
         this.value.images[album].push(value)
@@ -41,7 +41,7 @@ export default class GalleryBuilder {
         return this
     }
 
-    images(value: Record<string, Entry[]>): GalleryBuilder {
+    images(value: Record<string, GalleryEntry[]>): GalleryBuilder {
         const key = Object.keys(value)[0]
 
         if (!this.value.images[key]) this.value.images[key] = []
@@ -64,7 +64,7 @@ export default class GalleryBuilder {
     }
 
     titleImageUrl(value: string): GalleryBuilder {
-        this.value.titleImageUrl = value
+        this.value.titleImageUrl = new URL(`https://${value}`)
 
         return this
     }

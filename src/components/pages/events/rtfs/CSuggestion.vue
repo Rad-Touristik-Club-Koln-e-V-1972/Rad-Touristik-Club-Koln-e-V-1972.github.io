@@ -2,8 +2,8 @@
     <v-card id="CSuggestion" max-width="20em">
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-text>
-            <a :href="props.value.url" target="_blank">
-                <v-img eager :src="props.value.imageUrl" style="cursor: pointer">
+            <a :href="props.value.url?.toString()" target="_blank">
+                <v-img eager :src="props.value.imageUrl?.toString()" style="cursor: pointer">
                     <template #placeholder>
                         <c-loading-skeleton />
                     </template>

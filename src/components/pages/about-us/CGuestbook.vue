@@ -28,10 +28,10 @@
 
 <script lang="ts" setup>
 import CSlideshow from '~/components/CSlideshow.vue'
-import Entry from '~/models/entities/about-us/guestbook/Entry'
+import GuestbookEntry from '~/models/entities/about-us/guestbook/GuestbookEntry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
 import useDateTime from '~/utils/DateTime'
 
-const props = defineProps<{ value: Entry }>()
+const props = defineProps<{ value: GuestbookEntry }>()
 </script>

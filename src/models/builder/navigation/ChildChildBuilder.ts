@@ -16,7 +16,7 @@ export default class ChildChildBuilder {
     }
 
     imageUrl(value: string): ChildChildBuilder {
-        this.value.imageUrl = value
+        this.value.imageUrl = new URL(`https://${value}`)
 
         return this
     }
@@ -35,7 +35,7 @@ export default class ChildChildBuilder {
     }
 
     url(value: string): ChildChildBuilder {
-        this.value.url = value
+        this.value.url = new URL(`https://${value}`)
         this.value.target = '_blank'
 
         return this

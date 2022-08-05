@@ -1,7 +1,7 @@
 import AEntity from '~/models/entities/AEntity'
 
 export default class Sponsor extends AEntity {
-    imageSrc?: string
+    imageUrl?: URL
     text?: string
-    url?: string
+    url?: URL
 }

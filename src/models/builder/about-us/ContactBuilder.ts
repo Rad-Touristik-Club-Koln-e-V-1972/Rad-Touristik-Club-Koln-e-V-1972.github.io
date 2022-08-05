@@ -19,8 +19,8 @@ export default class ContactBuilder {
         return this
     }
 
-    imageSrc(value: string): ContactBuilder {
-        this.value.imageSrc = value
+    imageUrl(value: string): ContactBuilder {
+        this.value.imageUrl = new URL(`https://${value}`)
 
         return this
     }

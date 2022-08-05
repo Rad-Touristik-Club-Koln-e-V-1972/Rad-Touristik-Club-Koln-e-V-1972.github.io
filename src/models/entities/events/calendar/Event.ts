@@ -1,4 +1,3 @@
-import * as URL from 'url'
 import EEvent from '~/models/enums/EEvent'
 
 export default class Event {

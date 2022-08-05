@@ -21,7 +21,7 @@
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" />
         <v-main class="border main">
-            <c-slideshow height="200" :value="slideshowItems" />
+            <c-slideshow height="200" :value="useSlideshowStore().all" />
             <Nuxt />
         </v-main>
         <v-footer class="border text-body-2 text-sm-body-1 text-xl-h6">
@@ -40,29 +40,13 @@ import { mdiCopyright } from '@mdi/js'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
+import { useSlideshowStore } from '~/store/Slideshow'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiCopyright }
 const navDrawer = ref(false)
-const slideshowItems = [
-    'https://content.rtc-koeln.de/layouts/default/slideshow/b0a3d468-828d-474d-9380-e568a38fad89.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_0037.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_2225.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4226.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4235.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4241.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4252.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4256.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4483.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4495.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4497.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4502.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4507.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4508.jpg',
-    'https://content.rtc-koeln.de/layouts/default/slideshow/IMG_4515.jpg',
-]
 </script>
 
 <style lang="scss" scoped>

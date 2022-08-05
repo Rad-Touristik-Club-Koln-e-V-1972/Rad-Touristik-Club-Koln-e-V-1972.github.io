@@ -9,7 +9,7 @@
         show-arrows-on-hover
         :value="startIndex"
     >
-        <v-carousel-item v-for="it in props.value" :key="it" contain :src="it">
+        <v-carousel-item v-for="it in props.value" :key="it.imageUrl.toString()" contain :src="it.imageUrl.toString()">
             <template #placeholder>
                 <c-loading-skeleton />
             </template>
@@ -20,11 +20,12 @@
 <script lang="ts" setup>
 import { PropType } from 'vue'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
+import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 const props = defineProps({
     cycle: { default: true, type: Boolean },
     height: { default: '100%', type: String },
     startIndex: { default: 0, type: Number },
-    value: { required: true, type: Array as PropType<string[]> },
+    value: { required: true, type: Array as PropType<GalleryEntry[]> },
 })
 </script>
