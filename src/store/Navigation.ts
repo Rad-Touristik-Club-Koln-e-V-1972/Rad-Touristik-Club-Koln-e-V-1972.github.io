@@ -22,6 +22,7 @@ import {
 import Navigation from '~/models/entities/Navigation'
 import NavigationBuilder from '~/models/builder/NavigationBuilder'
 import ChildBuilder from '~/models/builder/navigation/ChildBuilder'
+import ChildChildBuilder from '~/models/builder/navigation/ChildChildBuilder'
 
 export const useNavigationStore = defineStore('navigation', {
     getters: {
@@ -33,9 +34,12 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder().icon(mdiHome).title('Startseite').to('index').build(),
             new NavigationBuilder()
                 .children(
-                    new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('calendar').build(),
-                    new ChildBuilder().icon(mdiBikeFast).title('RTF/CTF').to('index').build(),
-                    new ChildBuilder().icon(mdiBike).title("Empfohlene RTF's außerhalb NRW").to('events-rtfs-suggestions').build(),
+                    new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('events-calendar').build(),
+                    new ChildBuilder().icon(mdiBikeFast).title('CTF').to('index').build(),
+                    new ChildBuilder()
+                        .children(new ChildChildBuilder().icon(mdiBike).title('Empfehlungen außerhalb NRWs').to('events-rtfs-suggestions').build())
+                        .title('RTFs')
+                        .build(),
                     new ChildBuilder().icon(mdiBike).title('Touren-Tipps').to('index').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
@@ -47,10 +51,10 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiInformation).title('Über uns').to('index').build(),
-                    new ChildBuilder().icon(mdiImageMultiple).title('Galerie').to('galleries').build(),
-                    new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('guestbook').build(),
+                    new ChildBuilder().icon(mdiImageMultiple).title('Galerien').to('about-us-galleries').build(),
+                    new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('about-us-guestbook').build(),
                     new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('Presseberichte').to('index').build(),
-                    new ChildBuilder().icon(mdiHumanGreetingProximity).title('Kontakt').to('contacts').build()
+                    new ChildBuilder().icon(mdiHumanGreetingProximity).title('Kontakte').to('about-us-contacts').build()
                 )
                 .icon(mdiDomain)
                 .title('Über den RTC Köln')

@@ -1,6 +1,6 @@
-import EventBuilder from '~/models/builder/calendar/EventBuilder'
+import EventBuilder from '~/models/builder/events/calendar/EventBuilder'
 import EEvent from '~/models/enums/EEvent'
-import useCalendar from '~/utils/Calendar'
+import useCalendar from '~/utils/events/Calendar'
 
 export default [
     new EventBuilder()
