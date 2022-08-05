@@ -35,7 +35,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .children(
                     new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('calendar').build(),
                     new ChildBuilder().icon(mdiBikeFast).title('RTF/CTF').to('index').build(),
-                    new ChildBuilder().icon(mdiBike).title("Empfohlene RTF's").to('index').build(),
+                    new ChildBuilder().icon(mdiBike).title("Empfohlene RTF's außerhalb NRW").to('suggestedRTF').build(),
                     new ChildBuilder().icon(mdiBike).title('Touren-Tipps').to('index').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
