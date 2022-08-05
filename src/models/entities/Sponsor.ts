@@ -1,7 +1,6 @@
-import { v4 as uuid } from 'uuid'
+import AEntity from '~/models/entities/AEntity'
 
-export default class Sponsor {
-    id = uuid()
+export default class Sponsor extends AEntity {
     imageSrc?: string
     text?: string
     url?: string

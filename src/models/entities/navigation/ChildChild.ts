@@ -1,9 +1,8 @@
-import { v4 as uuid } from 'uuid'
+import AEntity from '~/models/entities/AEntity'
 
-export default class ChildChild {
+export default class ChildChild extends AEntity {
     color?: string
     icon?: string
-    id = uuid()
     nuxt = false
     target?: string
     title?: string
