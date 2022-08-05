@@ -15,6 +15,12 @@ export default class ChildChildBuilder {
         return this
     }
 
+    imageUrl(value: string): ChildChildBuilder {
+        this.value.imageUrl = value
+
+        return this
+    }
+
     title(value: string): ChildChildBuilder {
         this.value.title = value
 

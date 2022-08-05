@@ -23,6 +23,12 @@ export default class NavigationBuilder extends ChildBuilder {
         return this
     }
 
+    imageUrl(value: string): NavigationBuilder {
+        super.imageUrl(value)
+
+        return this
+    }
+
     title(value: string): NavigationBuilder {
         super.title(value)
 

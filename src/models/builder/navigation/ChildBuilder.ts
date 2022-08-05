@@ -23,6 +23,12 @@ export default class ChildBuilder extends ChildChildBuilder {
         return this
     }
 
+    imageUrl(value: string): ChildBuilder {
+        super.imageUrl(value)
+
+        return this
+    }
+
     title(value: string): ChildBuilder {
         super.title(value)
 
