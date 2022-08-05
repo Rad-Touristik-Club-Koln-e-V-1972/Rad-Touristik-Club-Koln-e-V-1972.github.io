@@ -81,7 +81,7 @@ export default class EventBuilder {
         return this
     }
 
-    link(value: string): EventBuilder {
+    url(value: string): EventBuilder {
         this.value.url = new URL(`https://${value}`)
 
         return this
