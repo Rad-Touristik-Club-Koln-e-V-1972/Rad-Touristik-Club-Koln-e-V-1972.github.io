@@ -69,7 +69,7 @@
 <script lang="ts" setup>
 import { computed, getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
-import DView from '~/components/pages/gallery/album/DView.vue'
+import DView from '~/components/pages/galleries/album/DView.vue'
 import { useGalleryStore } from '~/store/Gallery'
 import useDateTime from '~/utils/DateTime'
 

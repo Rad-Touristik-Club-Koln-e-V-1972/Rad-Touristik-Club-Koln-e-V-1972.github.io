@@ -1,5 +1,5 @@
 <template>
-    <v-card id="VSuggestedRTF" flat>
+    <v-card id="VSuggestions" flat>
         <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Empfohlene RTF's außerhalb NRW</v-card-title>
         <v-card-subtitle class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">
             Viele unserer Vereinsmitglieder sind diese Radsportveranstaltungen außerhalb von NRW in den vergangenen Jahren gefahren und fanden sie sehr schön.
@@ -10,9 +10,9 @@
         </v-card-subtitle>
         <v-card-text>
             <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-            <masonry-wall :column-width="312" :gap="5" :items="useSuggestedRTFStore().all">
+            <masonry-wall :column-width="312" :gap="5" :items="useSuggestionStore().all">
                 <template #default="{ item }">
-                    <c-suggested-r-t-f :value="item" />
+                    <c-suggestion :value="item" />
                 </template>
             </masonry-wall>
         </v-card-text>
@@ -20,6 +20,6 @@
 </template>
 
 <script lang="ts" setup>
-import CSuggestedRTF from '~/components/pages/CSuggestedRTF.vue'
-import { useSuggestedRTFStore } from '~/store/events/SuggestedRTF'
+import CSuggestion from '~/components/pages/events/rtfs/CSuggestion.vue'
+import { useSuggestionStore } from '~/store/events/rtfs/Suggestion'
 </script>

@@ -35,7 +35,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .children(
                     new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('calendar').build(),
                     new ChildBuilder().icon(mdiBikeFast).title('RTF/CTF').to('index').build(),
-                    new ChildBuilder().icon(mdiBike).title("Empfohlene RTF's außerhalb NRW").to('suggestedRTF').build(),
+                    new ChildBuilder().icon(mdiBike).title("Empfohlene RTF's außerhalb NRW").to('events-rtfs-suggestions').build(),
                     new ChildBuilder().icon(mdiBike).title('Touren-Tipps').to('index').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                     new ChildBuilder().icon(mdiWeb).url('https://breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
@@ -47,15 +47,15 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiInformation).title('Über uns').to('index').build(),
-                    new ChildBuilder().icon(mdiImageMultiple).title('Galerie').to('gallery').build(),
+                    new ChildBuilder().icon(mdiImageMultiple).title('Galerie').to('galleries').build(),
                     new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('guestbook').build(),
                     new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('Presseberichte').to('index').build(),
-                    new ChildBuilder().icon(mdiHumanGreetingProximity).title('Kontakt').to('contact').build()
+                    new ChildBuilder().icon(mdiHumanGreetingProximity).title('Kontakt').to('contacts').build()
                 )
                 .icon(mdiDomain)
                 .title('Über den RTC Köln')
                 .build(),
-            new NavigationBuilder().icon(mdiCurrencyEur).title('Sponsoren').to('sponsor').build(),
+            new NavigationBuilder().icon(mdiCurrencyEur).title('Sponsoren').to('sponsors').build(),
         ],
         socialMedias: [
             new NavigationBuilder().color('indigo').icon(mdiFacebook).url('https://www.facebook.com/RTC.Koeln').build(),

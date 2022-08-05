@@ -55,7 +55,7 @@ const open = () => {
     isLoading.value = true
     nextTick(() => {
         setTimeout(() => {
-            router?.push({ name: 'gallery-album', params: { value: props.value.id } })
+            router?.push({ name: 'galleries-album', params: { value: props.value.id } })
         }, 0)
     })
 }

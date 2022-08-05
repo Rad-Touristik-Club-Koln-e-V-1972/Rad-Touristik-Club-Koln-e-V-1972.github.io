@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" width="22em">
+    <v-card id="CSuggestion" width="22em">
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-text>
             <a :href="props.value.url" target="_blank">

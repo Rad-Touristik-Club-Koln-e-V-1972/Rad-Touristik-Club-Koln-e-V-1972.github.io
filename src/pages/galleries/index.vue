@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import CGallery from '~/components/pages/gallery/CGallery.vue'
+import CGallery from '~/components/pages/galleries/CGallery.vue'
 import { useGalleryStore } from '~/store/Gallery'
 
 const items = useGalleryStore().getGroupedByYear

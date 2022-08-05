@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import NavigationBuilder from '~/models/builder/NavigationBuilder'
 import Navigation from '~/models/entities/Navigation'
 
-export const useSuggestedRTFStore = defineStore('suggestedRTF', {
+export const useSuggestionStore = defineStore('suggestion', {
     getters: {
         all: (state): Navigation[] => state.navigations,
     },
