@@ -1,10 +1,10 @@
 <template>
-    <v-card id="VAlbum" :loading="isLoading">
+    <v-card id="VAlbum" flat :loading="isLoading">
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
-        <v-toolbar color="primary" flat max-height="64px">
+        <v-toolbar color="primary" flat max-height="64px" rounded="0">
             <v-btn exact icon @click="close">
                 <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
             </v-btn>

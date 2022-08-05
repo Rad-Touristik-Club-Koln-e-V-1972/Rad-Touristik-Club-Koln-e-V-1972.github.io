@@ -1,6 +1,6 @@
 <template>
-    <v-row id="VCalendar" class="fill-height">
-        <v-col>
+    <v-card id="VCalendar" flat>
+        <v-card-text>
             <c-control v-model="type" :title="title" @next="calendar.next()" @prev="calendar.prev()" @showToday="setFocus('')" />
             <v-calendar
                 v-if="type !== ECalendar.list && event"
@@ -17,8 +17,8 @@
             />
             <c-list v-if="type === ECalendar.list" />
             <c-event ref="event" />
-        </v-col>
-    </v-row>
+        </v-card-text>
+    </v-card>
 </template>
 
 <script lang="ts" setup>
