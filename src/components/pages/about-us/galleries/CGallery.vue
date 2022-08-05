@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" :loading="isLoading" width="30em">
+    <v-card id="CGallery" :loading="isLoading" max-width="20em">
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>

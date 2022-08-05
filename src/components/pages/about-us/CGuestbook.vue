@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGuestbook">
+    <v-card id="CGuestbook" max-width="20em">
         <v-card-title v-if="props.value.title" class="accent--text primary text-wrap">{{ props.value.title }}</v-card-title>
         <v-divider />
         <v-card-subtitle class="secondary accent--text">

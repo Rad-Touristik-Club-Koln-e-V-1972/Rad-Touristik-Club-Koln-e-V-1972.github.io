@@ -4,7 +4,7 @@
             <v-card-title>Fehlercode {{ error.statusCode }}</v-card-title>
             <v-card-text>{{ getText() }}</v-card-text>
             <v-card-actions>
-                <v-btn :to="{ name: 'contact' }">Kontakt</v-btn>
+                <v-btn :to="{ name: 'contact' }">Kontakte</v-btn>
             </v-card-actions>
         </v-card>
     </div>
