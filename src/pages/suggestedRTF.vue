@@ -10,7 +10,7 @@
         </v-card-subtitle>
         <v-card-text>
             <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-            <masonry-wall :column-width="420" :gap="16" :items="useSuggestedRTFStore().all">
+            <masonry-wall :column-width="312" :gap="5" :items="useSuggestedRTFStore().all">
                 <template #default="{ item }">
                     <c-suggested-r-t-f :value="item" />
                 </template>
