@@ -1,11 +1,13 @@
 import { defineStore } from 'pinia'
 import {
     mdiBikeFast,
+    mdiCalendarAlert,
     mdiCalendarClockOutline,
     mdiCurrencyEur,
     mdiDomain,
     mdiFacebook,
     mdiGithub,
+    mdiGoKartTrack,
     mdiGoogle,
     mdiHome,
     mdiHumanGreetingProximity,
@@ -22,7 +24,6 @@ import {
 import Navigation from '~/models/entities/Navigation'
 import NavigationBuilder from '~/models/builder/NavigationBuilder'
 import ChildBuilder from '~/models/builder/navigation/ChildBuilder'
-import ChildChildBuilder from '~/models/builder/navigation/ChildChildBuilder'
 
 export const useNavigationStore = defineStore('navigation', {
     getters: {
@@ -35,11 +36,9 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('events-calendar').build(),
-                    new ChildBuilder().icon(mdiBikeFast).title('(WIP) CTF').to('index').build(),
-                    new ChildBuilder()
-                        .children(new ChildChildBuilder().icon(mdiHumanMaleBoard).title('Empfehlungen außerhalb NRWs').to('events-rtfs-suggestions').build())
-                        .title('RTFs')
-                        .build(),
+                    new ChildBuilder().icon(mdiCalendarAlert).title('RTF / Forsbach-Tour').to('events-tours-events-rtfs').build(),
+                    new ChildBuilder().icon(mdiGoKartTrack).title('Permanente').to('events-tours-permanents').build(),
+                    new ChildBuilder().icon(mdiHumanMaleBoard).title('RTF-Empfehlungen außerhalb NRWs').to('events-tours-events-rtfs-suggestions').build(),
                     new ChildBuilder().icon(mdiHumanMaleBoard).title('(WIP) Touren-Tipps').to('index').build(),
                     new ChildBuilder().icon(mdiWeb).url('www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                     new ChildBuilder().icon(mdiWeb).url('breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()

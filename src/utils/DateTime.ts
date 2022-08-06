@@ -1,6 +1,7 @@
 export default function useDateTime() {
     const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' })
     const dateTimeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+    const timeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit' })
 
     return {
         format: (start: Date, end?: Date, allDay = false) => {
@@ -8,6 +9,7 @@ export default function useDateTime() {
 
             return end ? formatter.formatRange(start, end) : formatter.format(start)
         },
+        formatTime: (start: Date, end?: Date) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
         getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
         isBetween: (date: Date, start: Date, end: Date) => {
             let tempStart = start
