@@ -4,8 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom('2011-03-27')
-    .dateTo('2011-08-06')
+    .date('2011-03-27', '2011-08-06')
     .location('Düren-Merken, Düsseldorf & Lülsdorf')
     .images({
         '': [new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2011/01_01_Rueckblick.gif').build()],

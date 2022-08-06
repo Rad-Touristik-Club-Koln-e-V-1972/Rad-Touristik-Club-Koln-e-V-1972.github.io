@@ -6,7 +6,7 @@ import Tour from '~/store/about-us/gallery/2014/05_25_RTF_42/Tour'
 
 export default new GalleryBuilder()
     .category(EEvent.RTF)
-    .dateFrom('2014-05-25')
+    .date('2014-05-25')
     .location('Köln')
     .images({
         '': [

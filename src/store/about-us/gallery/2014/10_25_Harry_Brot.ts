@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Veranstaltung)
-    .dateFrom('2014-10-25')
+    .date('2014-10-25')
     .location('Hamburg')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/10_25_Harry_Brot/DSC01103.JPG').build(),

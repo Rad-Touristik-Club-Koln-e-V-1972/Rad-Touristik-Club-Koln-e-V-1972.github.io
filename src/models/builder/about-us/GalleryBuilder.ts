@@ -15,14 +15,9 @@ export default class GalleryBuilder {
         return this
     }
 
-    dateFrom(value: string): GalleryBuilder {
-        this.value.dateFrom = new Date(value)
-
-        return this
-    }
-
-    dateTo(value: string): GalleryBuilder {
-        this.value.dateTo = new Date(value)
+    date(start: string, end?: string): GalleryBuilder {
+        this.value.start = new Date(start)
+        if (end) this.value.end = new Date(end)
 
         return this
     }

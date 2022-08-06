@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom('2014-05-04')
+    .date('2014-05-04')
     .location('Niederkassel-Lülsdorf')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/05_04_Luelsdorf/DSCF4901.JPG').build(),

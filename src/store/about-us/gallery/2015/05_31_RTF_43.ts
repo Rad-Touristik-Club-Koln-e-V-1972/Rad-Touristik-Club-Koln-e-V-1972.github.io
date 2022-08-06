@@ -11,7 +11,7 @@ import Tour from '~/store/about-us/gallery/2015/05_31_RTF_43/Tour'
 
 export default new GalleryBuilder()
     .category(EEvent.RTF)
-    .dateFrom('2015-05-31')
+    .date('2015-05-31')
     .location('Rösrath-Forsbach')
     .images({
         '': [

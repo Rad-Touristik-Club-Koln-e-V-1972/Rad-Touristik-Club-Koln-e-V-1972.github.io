@@ -10,7 +10,7 @@
             </v-btn>
             <v-toolbar-title v-if="value" class="accent--text">
                 {{ value.title }}
-                <div class="text-subtitle-1" v-text="`${dateTime.format(value.dateFrom, value.dateTo, true)} bei ${value.location}`" />
+                <div class="text-subtitle-1" v-text="`${dateTime.format(value.start, value.end, true)} bei ${value.location}`" />
             </v-toolbar-title>
             <v-spacer />
             <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">

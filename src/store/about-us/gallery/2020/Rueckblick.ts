@@ -2,7 +2,7 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom('2020-12-31')
+    .date('2020-12-31')
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/rtc-957-intro-2020.jpg').build(),

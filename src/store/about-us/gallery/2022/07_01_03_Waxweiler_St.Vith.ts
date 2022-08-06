@@ -4,8 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom('2022-07-01')
-    .dateTo('2022-07-03')
+    .date('2022-07-01', '2022-07-03')
     .location('Waxweiler & St.Vith')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2022/07_01_03_Waxweiler_St.Vith/04e96195-6654-4b31-9601-53f8f4864aa4.jpeg').build(),

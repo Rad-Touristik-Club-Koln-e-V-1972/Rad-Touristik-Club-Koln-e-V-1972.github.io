@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Permanente)
-    .dateFrom('2014-06-08')
+    .date('2014-06-08')
     .location('Großenlüder-Bimbach')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/06_08_Grossenlueder_Bimbach/CIMG0277.JPG').build(),

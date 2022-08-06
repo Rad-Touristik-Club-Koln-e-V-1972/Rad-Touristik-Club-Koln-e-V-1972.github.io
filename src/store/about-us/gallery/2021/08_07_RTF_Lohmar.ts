@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom('2021-08-07')
+    .date('2021-08-07')
     .location('Lohmar')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2021/08_07_RTF_Lohmar/signal-2021-12-09-122557_001.jpeg').build(),

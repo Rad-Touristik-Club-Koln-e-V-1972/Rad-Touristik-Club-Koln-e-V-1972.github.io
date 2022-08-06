@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Veranstaltung)
-    .dateFrom('2014-10-19')
+    .date('2014-10-19')
     .location('Ahrtal')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/10_19_Ahrwanderung/1.JPG').build(),

@@ -2,7 +2,7 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom('2018-04-08')
+    .date('2018-04-08')
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2018/04_08_Wintergrillen/rtc-180300-wg-001int.jpg').build(),

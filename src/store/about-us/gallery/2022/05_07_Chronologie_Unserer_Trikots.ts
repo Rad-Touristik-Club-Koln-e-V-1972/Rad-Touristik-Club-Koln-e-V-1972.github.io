@@ -3,7 +3,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom('2022-05-07')
+    .date('2022-05-07')
     .location('Köln')
     .title('Chronologie unserer Trikots')
     .titleImageUrl('i.ytimg.com/vi/GNpmt6Y_ymU/hqdefault.jpg')

@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.RTF)
-    .dateFrom('2016-05-29')
+    .date('2016-05-29')
     .location('Rösrath-Forsbach')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2016/05_29_RTF_44/44-Forsbach-Tour-2016-Parken.jpg').build(),

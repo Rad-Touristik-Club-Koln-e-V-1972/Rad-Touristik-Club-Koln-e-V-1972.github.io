@@ -6,7 +6,7 @@ import StartZiel from '~/store/about-us/gallery/2015/10_17_CTF_1/Start_Ziel'
 
 export default new GalleryBuilder()
     .category(EEvent.CTF)
-    .dateFrom('2015-10-17')
+    .date('2015-10-17')
     .location('Wahnbach')
     .images({
         '': [

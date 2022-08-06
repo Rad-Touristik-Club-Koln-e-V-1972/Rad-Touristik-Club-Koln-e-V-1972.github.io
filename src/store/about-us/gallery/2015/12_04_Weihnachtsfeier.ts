@@ -2,7 +2,7 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom('2015-12-04')
+    .date('2015-12-04')
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2015/12_04_Weihnachtsfeier/rtc-151204-wf-001int.jpg').build(),

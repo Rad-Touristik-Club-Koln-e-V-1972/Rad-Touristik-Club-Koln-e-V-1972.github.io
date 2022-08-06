@@ -5,7 +5,7 @@
         </template>
         <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
-            <div v-text="`Datum: ${dateTime.format(props.value.dateFrom, props.value.dateTo, true)}`" />
+            <div v-text="`Datum: ${dateTime.format(props.value.start, props.value.end, true)}`" />
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
         <v-card-text>

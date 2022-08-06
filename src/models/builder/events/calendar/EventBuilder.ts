@@ -66,20 +66,15 @@ export default class EventBuilder {
         return this
     }
 
-    end(value: Date | string): EventBuilder {
-        this.value.end = new Date(value)
+    date(start: Date | string, end?: Date | string): EventBuilder {
+        this.value.start = new Date(start)
+        if (end) this.value.end = new Date(end)
 
         return this
     }
 
     name(value: string): EventBuilder {
         this.value.name = value
-
-        return this
-    }
-
-    start(value: Date | string): EventBuilder {
-        this.value.start = new Date(value)
 
         return this
     }

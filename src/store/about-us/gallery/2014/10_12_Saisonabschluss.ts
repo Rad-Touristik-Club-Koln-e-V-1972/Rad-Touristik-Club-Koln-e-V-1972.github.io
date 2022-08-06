@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Veranstaltung)
-    .dateFrom('2014-10-12')
+    .date('2014-10-12')
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/10_12_Saisonabschluss/DSCF5699.JPG').build(),
