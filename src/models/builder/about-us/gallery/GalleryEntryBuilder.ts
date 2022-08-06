@@ -1,9 +1,8 @@
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 const createPreviewURL = (value: URL) => {
-    const strings = value.pathname.split('/')
-    value.pathname = `${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`
-    return value
+    const strings = value.href.split('/')
+    return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
 }
 
 export default class GalleryEntryBuilder {
