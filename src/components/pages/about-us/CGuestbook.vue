@@ -11,7 +11,7 @@
         <v-divider />
         <v-card-text v-if="props.value.text || props.value.imageUrls.length">
             <div v-if="props.value.text">
-                <pre class="text-pre-wrap" v-text="props.value.text" />
+                <pre class="text-pre-wrap" v-html="props.value.text" />
             </div>
             <c-slideshow v-if="props.value.imageUrls.length" :value="props.value.imageUrls" />
         </v-card-text>
