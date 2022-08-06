@@ -18,16 +18,15 @@ export default class GalleryEntryBuilder {
         return this
     }
 
-    previewUrl(value?: string): GalleryEntryBuilder {
-        // eslint-disable-next-line no-console
-        if (!value && !this.value.imageUrl) console.error('EntryBuilder.previewUrl: imageUrl is not set')
-
-        this.value.previewUrl = value ? new URL(`https://${value}`) : createPreviewURL(this.value.imageUrl)
+    previewUrl(value: string): GalleryEntryBuilder {
+        this.value.previewUrl = new URL(`https://${value}`)
 
         return this
     }
 
     build(): GalleryEntry {
+        if (this.value.previewUrl.href === 'https://rtc-koeln.de/') this.value.previewUrl = createPreviewURL(this.value.imageUrl)
+
         return this.value
     }
 }

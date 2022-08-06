@@ -10,6 +10,6 @@ export default class Gallery extends AEntity {
     images: Record<string, GalleryEntry[]> = {}
     location = ''
     title = ''
-    titleImageUrl: URL = new URL('https://rtc-koeln.de')
+    titleImageUrl: URL = new URL('https://rtc-koeln.de/')
     youtubeVideoIds: string[] = []
 }

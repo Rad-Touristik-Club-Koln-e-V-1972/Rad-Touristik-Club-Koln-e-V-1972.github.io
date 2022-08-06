@@ -30,8 +30,8 @@ export default class GuestbookEntryBuilder {
         return this
     }
 
-    imageUrl(value: string): GuestbookEntryBuilder {
-        this.value.imageUrls.push(new GalleryEntryBuilder().imageUrl(value).build())
+    imageUrls(...value: string[]): GuestbookEntryBuilder {
+        this.value.imageUrls = value.map((it) => new GalleryEntryBuilder().imageUrl(it).build())
 
         return this
     }

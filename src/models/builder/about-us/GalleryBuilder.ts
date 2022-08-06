@@ -33,20 +33,10 @@ export default class GalleryBuilder {
         return this
     }
 
-    image(value: GalleryEntry, album = ''): GalleryBuilder {
-        if (!this.value.images[album]) this.value.images[album] = []
-
-        this.value.images[album].push(value)
-
-        return this
-    }
-
-    images(value: Record<string, GalleryEntry[]>): GalleryBuilder {
-        const key = Object.keys(value)[0]
-
-        if (!this.value.images[key]) this.value.images[key] = []
-
-        this.value.images[key].push(...value[key])
+    images(value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): GalleryBuilder {
+        if (value instanceof Array) this.value.images = { '': value }
+        else if (value.constructor === GalleryEntry) this.value.images = { '': [value] }
+        else this.value.images = value as Record<string, GalleryEntry[]>
 
         return this
     }
@@ -69,8 +59,8 @@ export default class GalleryBuilder {
         return this
     }
 
-    youtubeVideoId(value: string): GalleryBuilder {
-        this.value.youtubeVideoIds.push(value)
+    youtubeVideoIds(...value: string[]): GalleryBuilder {
+        this.value.youtubeVideoIds = value
 
         return this
     }

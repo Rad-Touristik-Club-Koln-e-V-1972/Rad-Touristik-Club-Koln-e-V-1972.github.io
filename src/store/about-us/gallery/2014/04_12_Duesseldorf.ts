@@ -6,14 +6,16 @@ export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
     .dateFrom(new Date('2014-04-12'))
     .location('Düsseldorf')
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4855.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4857.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4858.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4865.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4868.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4869.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4871.JPG').previewUrl().build())
-    .image(new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4874.JPG').previewUrl().build())
+    .images([
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4855.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4857.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4858.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4865.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4868.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4869.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4871.JPG').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4874.JPG').build(),
+    ])
     .title('Düsseldorf')
     .titleImageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/preview/preview.DSCF4874.JPG')
     .build()
