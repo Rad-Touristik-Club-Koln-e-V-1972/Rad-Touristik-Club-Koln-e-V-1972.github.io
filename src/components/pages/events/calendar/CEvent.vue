@@ -12,7 +12,7 @@
             </v-toolbar>
             <v-card-text>
                 <!-- TODO "pointer-events: none" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/5787 -->
-                <v-simple-table class="mt-2" style="pointer-events: none">
+                <v-simple-table style="pointer-events: none">
                     <tbody>
                         <tr v-if="selectedEvent?.category !== EEvent.Mitgliederversammlung">
                             <td class="text-end">Art:</td>
