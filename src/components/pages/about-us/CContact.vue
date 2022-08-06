@@ -4,7 +4,7 @@
         <v-card-title>{{ props.value.name }}</v-card-title>
         <v-card-subtitle>{{ props.value.position }}</v-card-subtitle>
         <v-card-actions>
-            <v-btn icon :href="'mailto:' + props.value.eMail">
+            <v-btn icon :href="`mailto:${props.value.eMail}`">
                 <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
             </v-btn>
             <v-spacer />
