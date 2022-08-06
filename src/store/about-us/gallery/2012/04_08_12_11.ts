@@ -2,8 +2,8 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom(new Date('2012-04-08'))
-    .dateTo(new Date('2012-12-11'))
+    .dateFrom('2012-04-08')
+    .dateTo('2012-12-11')
     .location('Köln & Düsseldorf')
     .images({
         '': [new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2012/08_15_Rueckblick.gif').build()],

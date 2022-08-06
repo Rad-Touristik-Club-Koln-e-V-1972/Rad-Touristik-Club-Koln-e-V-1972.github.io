@@ -5,7 +5,7 @@ import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/Guestbook
 export default [
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2018, 10, 28, 0, 0)
+        .date('2018-10-28 0:00')
         .name('Andreas Reineke')
         .source(ESource.Facebook)
         .text(
@@ -19,7 +19,7 @@ Es war eine sehr schöne Veranstaltung.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2018, 10, 28, 0, 0)
+        .date('2018-10-28 0:00')
         .name('Vamos Bala')
         .source(ESource.Facebook)
         .text(
@@ -30,7 +30,7 @@ Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2018, 10, 27, 16, 36)
+        .date('2018-10-27 16:36')
         .name('Bernd Doelp')
         .source(ESource['E-Mail'])
         .text(
@@ -48,21 +48,21 @@ Bernd
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 28, 17, 0)
+        .date('2018-5-28 17:00')
         .name('Profitrise Sports')
         .source(ESource.Facebook)
         .text(`Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!`)
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 28, 17, 0)
+        .date('2018-5-28 17:00')
         .name('Petra Humbach')
         .source(ESource.Facebook)
         .text(`Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 28, 17, 0)
+        .date('2018-5-28 17:00')
         .name('Jochen Güttes')
         .source(ESource.Facebook)
         .text(
@@ -74,7 +74,7 @@ Danke für die Gastfreundschaft.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 28, 17, 0)
+        .date('2018-5-28 17:00')
         .name('Ros Si')
         .source(ESource.Facebook)
         .text(
@@ -90,7 +90,7 @@ Nächstes Jahr wieder.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 28, 17, 0)
+        .date('2018-5-28 17:00')
         .name('Angela Maja')
         .source(ESource.Facebook)
         .text(
@@ -103,7 +103,7 @@ Alles bestens.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 27, 17, 1)
+        .date('2018-5-27 17:01')
         .name('Harald Seidenberg')
         .source(ESource['E-Mail'])
         .text(
@@ -123,7 +123,7 @@ Harry
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2018, 5, 27, 13, 54)
+        .date('2018-5-27 13:54')
         .name('Dirk Oliver Heppert')
         .organization('RSV Staubwolke Refrath')
         .source(ESource['E-Mail'])

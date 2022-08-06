@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Permanente)
-    .dateFrom(new Date('2014-03-29'))
+    .dateFrom('2014-03-29')
     .location('Köln - Lindlar')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/03_29_Bergisches_Karussell/Bergische Karussell(10).JPG').build(),

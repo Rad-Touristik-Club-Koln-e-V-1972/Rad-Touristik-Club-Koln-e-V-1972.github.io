@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom(new Date('2014-04-12'))
+    .dateFrom('2014-04-12')
     .location('Düsseldorf')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_12_Duesseldorf/DSCF4855.JPG').build(),

@@ -4,7 +4,7 @@ import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/Guestbook
 
 export default [
     new GuestbookEntryBuilder()
-        .date(2012, 6)
+        .date('2012-6-1')
         .name('Wolfgang Alberg')
         .organization('www.cardiofitness.de')
         .source(ESource['E-Mail'])
@@ -27,7 +27,7 @@ www.cardiofitness.de
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 6)
+        .date('2012-6-1')
         .name('Ursula Koepp')
         .organization('TSV Weiss-Köln')
         .source(ESource['E-Mail'])
@@ -51,7 +51,7 @@ Ursula Koepp
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 6)
+        .date('2012-6-1')
         .name('Günter')
         .source(ESource['E-Mail'])
         .text(
@@ -81,7 +81,7 @@ Günter
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 6)
+        .date('2012-6-1')
         .name('Dieter Reich')
         .organization('ISB-Team-Cologne')
         .source(ESource['E-Mail'])
@@ -103,7 +103,7 @@ Dieter Reich
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 6)
+        .date('2012-6-1')
         .location('Monheim')
         .name('Elke und Dieter')
         .source(ESource['E-Mail'])
@@ -125,7 +125,7 @@ Elke und Dieter
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 5)
+        .date('2012-5-1')
         .name('Josef Witt')
         .source(ESource['E-Mail'])
         .text(
@@ -152,7 +152,7 @@ Josef Witt
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 5)
+        .date('2012-5-1')
         .location('Kierspe')
         .name('Michaela Bäcker')
         .source(ESource['E-Mail'])
@@ -213,7 +213,7 @@ Aus Kierspe
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 5)
+        .date('2012-5-1')
         .location('Libur')
         .name('Matthias Zimmer')
         .source(ESource['E-Mail'])
@@ -245,7 +245,7 @@ Matthias Zimmer
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2012, 5)
+        .date('2012-5-1')
         .name('Monika und Helmut Moosmann')
         .organization('RSG Ford')
         .source(ESource['E-Mail'])

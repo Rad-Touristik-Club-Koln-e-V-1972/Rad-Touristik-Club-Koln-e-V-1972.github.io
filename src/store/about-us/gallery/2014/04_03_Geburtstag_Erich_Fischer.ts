@@ -2,7 +2,7 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom(new Date('2014-04-03'))
+    .dateFrom('2014-04-03')
     .location('Erich Fischer')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/04_03_Geburtstag_Erich_Fischer/140403b.jpg').build(),

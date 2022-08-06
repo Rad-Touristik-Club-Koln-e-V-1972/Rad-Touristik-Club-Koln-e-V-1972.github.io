@@ -6,7 +6,7 @@ export default [
     new GuestbookEntryBuilder()
         .answer(`Dem Dieter kann geholfen werden, Brille ist da, Kontakt wird aufgenommen ...`)
         .category(EEvent.CTF)
-        .date(2017, 11, 11, 17, 1)
+        .date('2017-11-11 17:01')
         .name('Dieter Roggensack')
         .source(ESource['E-Mail'])
         .text(
@@ -23,7 +23,7 @@ Viele Grüße, Dieter Roggensack...`
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 30, 9, 48)
+        .date('2017-10-30 9:48')
         .name('Herwig Barthes')
         .source(ESource.Facebook)
         .text(
@@ -44,7 +44,7 @@ Gruß H. Barthes
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 29, 18, 0)
+        .date('2017-10-29 18:00')
         .name('Wilfried Goesgens')
         .source(ESource.Facebook)
         .text(
@@ -58,7 +58,7 @@ Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 29, 18, 0)
+        .date('2017-10-29 18:00')
         .name('Jan Koza')
         .source(ESource.Facebook)
         .text(
@@ -69,22 +69,22 @@ Herzlichen Dank!
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 29, 18, 0)
+        .date('2017-10-29 18:00')
         .name('Birgit Frings-Salz')
         .source(ESource.Facebook)
         .text(`Uns, als Gruppe Säuwätz, hat es auch super gut gefallen. Grosses Lob ...`)
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Christoph Werner')
         .source(ESource.Facebook)
         .text(`War eine schöne Veranstaltung. Gerne nächstes Jahr wieder.`)
         .build(),
-    new GuestbookEntryBuilder().category(EEvent.CTF).date(2017, 10, 28, 21, 30).name('Mika Kali').source(ESource.Facebook).text(`Wie immer: Klasse CTF ...`).build(),
+    new GuestbookEntryBuilder().category(EEvent.CTF).date('2017-10-28 21:30').name('Mika Kali').source(ESource.Facebook).text(`Wie immer: Klasse CTF ...`).build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Thomas Zengerle')
         .source(ESource.Facebook)
         .text(
@@ -95,10 +95,10 @@ Schönen Gruß Thomas
 `
         )
         .build(),
-    new GuestbookEntryBuilder().category(EEvent.CTF).date(2017, 10, 28, 21, 30).name('Andreas Diehl').source(ESource.Facebook).text(`Schön war's ...`).build(),
+    new GuestbookEntryBuilder().category(EEvent.CTF).date('2017-10-28 21:30').name('Andreas Diehl').source(ESource.Facebook).text(`Schön war's ...`).build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Jürgen Em')
         .source(ESource.Facebook)
         .text(
@@ -110,7 +110,7 @@ Bin nächstes Jahr gerne wieder dabei!
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Bernd Doelp')
         .source(ESource.Facebook)
         .text(
@@ -122,7 +122,7 @@ VIELEN DANK
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Konstantin Sakellaris')
         .source(ESource.Facebook)
         .text(
@@ -135,14 +135,14 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.CTF)
-        .date(2017, 10, 28, 21, 30)
+        .date('2017-10-28 21:30')
         .name('Mischa Breuer')
         .source(ESource.Facebook)
         .text(`War echt super. Hoffentlich 2018 wieder ...`)
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 29, 20, 30)
+        .date('2017-5-29 20:30')
         .name('Jochen Güttes')
         .organization('Präsident des RTC Mehlem')
         .source(ESource.Facebook)
@@ -154,7 +154,7 @@ Es war wieder super bei euch.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 29, 20, 30)
+        .date('2017-5-29 20:30')
         .name('Roland Liffers')
         .source(ESource.Facebook)
         .text(
@@ -166,15 +166,15 @@ Danke dafür!
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 29, 20, 30)
+        .date('2017-5-29 20:30')
         .name('Horst Voll')
         .source(ESource.Facebook)
         .text(`Vielen Dank für die heutige Betreuung.... war TippiToppi.`)
         .build(),
-    new GuestbookEntryBuilder().category(EEvent.RTF).date(2017, 5, 29, 20, 30).name('Uli Fritzsche').source(ESource.Facebook).text(`Und wir danken für die tolle Orga!`).build(),
+    new GuestbookEntryBuilder().category(EEvent.RTF).date('2017-5-29 20:30').name('Uli Fritzsche').source(ESource.Facebook).text(`Und wir danken für die tolle Orga!`).build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 28, 20, 30)
+        .date('2017-5-28 20:30')
         .name('Frank Müller')
         .source(ESource.Facebook)
         .text(
@@ -185,7 +185,7 @@ Vielen Dank
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 28, 20, 30)
+        .date('2017-5-28 20:30')
         .name('Mika Kali')
         .source(ESource.Facebook)
         .text(
@@ -197,7 +197,7 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2017, 5, 28, 20, 57)
+        .date('2017-5-28 20:57')
         .name('Dirk Oliver Heppert')
         .organization('RSV Staubwolke Refrath')
         .source(ESource['E-Mail'])

@@ -22,10 +22,8 @@ export default class GuestbookEntryBuilder {
         return this
     }
 
-    // If some dates are not saved with hh:mm they'll trigger a NaN-error.
-    date(year: number, month: number, date = 1, hours = 0, minutes = 0): GuestbookEntryBuilder {
-        // The month value is 0-11. We need an offset.
-        this.value.date = new Date(year, month - 1, date, hours, minutes)
+    date(value: string): GuestbookEntryBuilder {
+        this.value.date = new Date(value)
 
         return this
     }

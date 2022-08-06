@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Veranstaltung)
-    .dateFrom(new Date('2018-10-14'))
+    .dateFrom('2018-10-14')
     .location('BSG Stadt Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2018/10_14_Saisonabschluss/20181014_134037_44800649975_o.jpg').build(),

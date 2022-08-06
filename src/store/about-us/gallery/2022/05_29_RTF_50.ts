@@ -10,7 +10,7 @@ import StartZiel from '~/store/about-us/gallery/2022/05_29_RTF_50/Start_Ziel'
 
 export default new GalleryBuilder()
     .category(EEvent.RTF)
-    .dateFrom(new Date('2022-05-29'))
+    .dateFrom('2022-05-29')
     .location('Rösrath-Forsbach')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer1-2022.png').build(),

@@ -2,8 +2,8 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom(new Date('2013-05-26'))
-    .dateTo(new Date('2013-12-23'))
+    .dateFrom('2013-05-26')
+    .dateTo('2013-12-23')
     .location('Rösrath-Forsbach & Köln')
     .images({
         '': [new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2013/07_23_Rueckblick.gif').build()],

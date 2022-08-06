@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.CTF)
-    .dateFrom(new Date('2016-10-29'))
+    .dateFrom('2016-10-29')
     .location('Wahnbach')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2016/10_29_CTF_2/rtc-161029-wbt-001.jpg').build(),

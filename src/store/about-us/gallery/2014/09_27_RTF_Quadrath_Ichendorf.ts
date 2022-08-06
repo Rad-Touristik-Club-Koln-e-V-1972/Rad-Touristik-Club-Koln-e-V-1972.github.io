@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Vereinsfahrt)
-    .dateFrom(new Date('2014-09-27'))
+    .dateFrom('2014-09-27')
     .location('Quadrath-Ichendorf')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-01.jpg').build(),

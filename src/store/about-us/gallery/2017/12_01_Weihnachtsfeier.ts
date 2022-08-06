@@ -2,7 +2,7 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .dateFrom(new Date('2017-12-01'))
+    .dateFrom('2017-12-01')
     .location('Mercure Hotels, Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/rtc-171201-wf-001int.jpg').build(),

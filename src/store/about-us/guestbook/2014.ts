@@ -4,7 +4,7 @@ import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/Guestbook
 
 export default [
     new GuestbookEntryBuilder()
-        .date(2014, 6, 19, 18, 43)
+        .date('2014-6-19 18:43')
         .name('Helga Hasberg')
         .source(ESource['E-Mail'])
         .text(
@@ -22,7 +22,7 @@ Helga
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 28, 12, 36)
+        .date('2014-5-28 12:36')
         .name('Jessica Bosen')
         .source(ESource['E-Mail'])
         .text(
@@ -61,7 +61,7 @@ Jessica
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 27, 13, 10)
+        .date('2014-5-27 13:10')
         .name('velotoerist')
         .source(ESource['E-Mail'])
         .text(
@@ -92,7 +92,7 @@ velotoerist
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 27, 12, 59)
+        .date('2014-5-27 12:59')
         .name('Helmut Hane')
         .organization('www.sportlich-radeln.de')
         .source(ESource['E-Mail'])
@@ -107,7 +107,7 @@ Helmut Hane
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 27, 9, 28)
+        .date('2014-5-27 9:28')
         .name('Marco Gerlach')
         .source(ESource['E-Mail'])
         .text(
@@ -127,7 +127,7 @@ Marco Gerlach
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 27, 9, 26)
+        .date('2014-5-27 9:26')
         .name('Jörg Homann')
         .organization('www.scan.bike`')
         .source(ESource['E-Mail'])
@@ -162,7 +162,7 @@ http://scan.bike
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 27, 6, 49)
+        .date('2014-5-27 6:49')
         .name('Norbert Priefert')
         .source(ESource['E-Mail'])
         .text(
@@ -194,7 +194,7 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 20, 16)
+        .date('2014-5-26 20:16')
         .location('Recklinghausen')
         .name('Jörg Freitag')
         .source(ESource['E-Mail'])
@@ -212,7 +212,7 @@ Jörg
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 16, 57)
+        .date('2014-5-26 16:57')
         .name('Markus Reckter')
         .organization('www.rtf-koblenz.de')
         .source(ESource['E-Mail'])
@@ -232,7 +232,7 @@ RTF Koblenz
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 13, 8)
+        .date('2014-5-26 13:08')
         .name('Claudia Braun')
         .organization('Union Biesfeld Triathlon')
         .source(ESource['E-Mail'])
@@ -253,7 +253,7 @@ Union Biesfeld Triathlon
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 12, 50)
+        .date('2014-5-26 12:50')
         .name('Angela Schmilewski')
         .organization('Fachwart RTC Mehlem')
         .source(ESource['E-Mail'])
@@ -273,7 +273,7 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 12, 43)
+        .date('2014-5-26 12:43')
         .name('Dirk Brieden')
         .source(ESource['E-Mail'])
         .text(
@@ -294,7 +294,7 @@ PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Me
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 10, 55)
+        .date('2014-5-26 10:55')
         .name('Dirk Brieden')
         .source(ESource['E-Mail'])
         .text(
@@ -329,7 +329,7 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 10, 49)
+        .date('2014-5-26 10:49')
         .name('Michaela Packebusch')
         .organization('VfB Polch Abtl. Radsport')
         .source(ESource['E-Mail'])
@@ -346,7 +346,7 @@ vom VfB Polch Abtl. Radsport.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 10, 33)
+        .date('2014-5-26 10:33')
         .name('Frank Stöcker')
         .source(ESource['E-Mail'])
         .text(
@@ -376,7 +376,7 @@ Frank
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 8, 54)
+        .date('2014-5-26 8:54')
         .name('Reiche')
         .source(ESource['E-Mail'])
         .text(
@@ -390,7 +390,7 @@ vielen Dank für die Orga und die Auswahl der schönen Strecke.
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 8, 15)
+        .date('2014-5-26 8:15')
         .name('Max Christian Obst')
         .source(ESource['E-Mail'])
         .text(
@@ -404,7 +404,7 @@ nächstes Jahr will ich wieder meine Banane bekommen ;)
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 7, 24)
+        .date('2014-5-26 7:24')
         .location('Berrenrath')
         .name('Stefan Schneider')
         .organization('RV Morgenstern')
@@ -424,7 +424,7 @@ Stefan Schneider
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 26, 7, 6)
+        .date('2014-5-26 7:06')
         .name('Norbert Priefert')
         .organization('www.rtc-rodenkirchen.de')
         .source(ESource['E-Mail'])
@@ -450,7 +450,7 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .category(EEvent.RTF)
-        .date(2014, 5, 25, 19, 44)
+        .date('2014-5-25 19:44')
         .name('Jürgen Ruttkowski')
         .source(ESource['E-Mail'])
         .text(
@@ -468,7 +468,7 @@ Jürgen Ruttkowski
         )
         .build(),
     new GuestbookEntryBuilder()
-        .date(2014, 1, 17, 11, 9)
+        .date('2014-1-17 11:09')
         .name('Roland Schultz')
         .source(ESource['E-Mail'])
         .text(

@@ -4,7 +4,7 @@ import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()
     .category(EEvent.Veranstaltung)
-    .dateFrom(new Date('2014-12-02'))
+    .dateFrom('2014-12-02')
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/12_02_Siegerehrung_Mannschaftswertung_Bezirk_Koeln/DSC01754.JPG').build(),
