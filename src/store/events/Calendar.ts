@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import Event from '~/models/entities/events/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
-import _2022 from '~/store/calendar/2022'
+import _2022 from '~/store/events/calendar/2022'
 
 export const useCalendarStore = defineStore('calendar', {
     actions: {
