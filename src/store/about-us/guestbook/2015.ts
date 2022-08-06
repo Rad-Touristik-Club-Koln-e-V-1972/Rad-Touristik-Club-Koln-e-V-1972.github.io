@@ -41,7 +41,7 @@ Helmut vom RSC Nievenheim
         .date('2015-10-18 14:23')
         .name('Schonneb Aus Lev')
         .source(ESource.Facebook)
-        .text('<a href="www.youtube.com/v/Z2MqTVOeZMM" target="_blank" v-text="www.youtube.com/v/Z2MqTVOeZMM"/>')
+        .text('<a href="www.youtube.com/v/Z2MqTVOeZMM" target="_blank">www.youtube.com/v/Z2MqTVOeZMM<a/>')
         .title('... kleines Video von gestern')
         .build(),
     new GuestbookEntryBuilder()
