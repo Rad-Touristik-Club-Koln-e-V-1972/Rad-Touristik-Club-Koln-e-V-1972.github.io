@@ -36,12 +36,12 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('events-calendar').build(),
-                    new ChildBuilder().icon(mdiBikeFast).title('CTF').to('index').build(),
+                    new ChildBuilder().icon(mdiBikeFast).title('(WIP) CTF').to('index').build(),
                     new ChildBuilder()
                         .children(new ChildChildBuilder().icon(mdiHumanMaleBoard).title('Empfehlungen außerhalb NRWs').to('events-rtfs-suggestions').build())
                         .title('RTFs')
                         .build(),
-                    new ChildBuilder().icon(mdiHumanMaleBoard).title('Touren-Tipps').to('index').build(),
+                    new ChildBuilder().icon(mdiHumanMaleBoard).title('(WIP) Touren-Tipps').to('index').build(),
                     new ChildBuilder().icon(mdiWeb).url('www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                     new ChildBuilder().icon(mdiWeb).url('breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
                 )
@@ -51,10 +51,10 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('www.koeln.de/wetter/regenradar/').title('Wetter live in Köln + Regenradar').build(),
             new NavigationBuilder()
                 .children(
-                    new ChildBuilder().icon(mdiInformation).title('Über uns').to('index').build(),
+                    new ChildBuilder().icon(mdiInformation).title('(WIP) Über uns').to('index').build(),
                     new ChildBuilder().icon(mdiImageMultiple).title('Galerien').to('about-us-galleries').build(),
                     new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('about-us-guestbook').build(),
-                    new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('Presseberichte').to('index').build(),
+                    new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('(WIP) Presseberichte').to('index').build(),
                     new ChildBuilder().icon(mdiHumanGreetingProximity).title('Kontakte').to('about-us-contacts').build()
                 )
                 .icon(mdiDomain)
