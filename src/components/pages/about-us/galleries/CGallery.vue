@@ -15,21 +15,23 @@
                 </template>
             </v-img>
         </v-card-text>
-        <v-card-actions v-if="props.value.description">
-            <v-spacer />
-            <v-btn text @click="showText = !showText">
-                Details
-                <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
-            </v-btn>
-        </v-card-actions>
-        <v-expand-transition>
-            <div v-show="showText">
-                <v-divider />
-                <v-card-text>
-                    <pre v-text="props.value.description" />
-                </v-card-text>
-            </div>
-        </v-expand-transition>
+        <div v-if="props.value.description">
+            <v-divider />
+            <v-card-actions>
+                <v-spacer />
+                <v-btn text @click="showText = !showText">
+                    Details
+                    <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+                </v-btn>
+            </v-card-actions>
+            <v-expand-transition>
+                <div v-show="showText">
+                    <v-card-text>
+                        <pre v-text="props.value.description" />
+                    </v-card-text>
+                </div>
+            </v-expand-transition>
+        </div>
     </v-card>
 </template>
 

@@ -3,6 +3,7 @@
         <v-img contain :src="props.value.imageUrl.toString()" />
         <v-card-title>{{ props.value.name }}</v-card-title>
         <v-card-subtitle>{{ props.value.position }}</v-card-subtitle>
+        <v-divider />
         <v-card-actions>
             <v-btn icon :href="`mailto:${props.value.eMail}`">
                 <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
@@ -15,7 +16,6 @@
         </v-card-actions>
         <v-expand-transition>
             <div v-show="showText">
-                <v-divider />
                 <v-card-text>{{ props.value.description }}</v-card-text>
             </div>
         </v-expand-transition>
