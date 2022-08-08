@@ -2,7 +2,7 @@
     <v-card id="VSuggestions" flat>
         <v-card-title>
             <v-toolbar color="primary" flat>
-                <v-toolbar-title class="accent--text text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4"> Empfohlene RTF's außerhalb NRW </v-toolbar-title>
+                <v-toolbar-title class="accent--text text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Empfohlene RTF's außerhalb NRW</v-toolbar-title>
             </v-toolbar>
         </v-card-title>
         <v-card-subtitle class="my-1 text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">
