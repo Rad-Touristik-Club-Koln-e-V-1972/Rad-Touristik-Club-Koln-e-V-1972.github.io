@@ -11,8 +11,7 @@
         </v-card-title>
         <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
             <template #item.name="{ item }">
-                <a v-if="item.url.toString()" class="accent--text" :href="item.url.toString()" :style="getStyle(item)" target="_blank" v-text="item.name" />
-                <span v-else :style="getStyle(item)" v-text="item.name" />
+                <a class="accent--text" :href="item.url?.toString()" :style="getStyle(item)" target="_blank" v-text="item.name" />
             </template>
             <template #item.datetime="{ item }"><span :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
@@ -60,7 +59,14 @@ const filterDate = (date: Date, dateRange: string[]) => {
 }
 const getColor = (event: Event) => `${event.color} accent--text`
 const getDate = (event: Event) => dateTime.format(event.start, event.end, !event.timed)
-const getStyle = (event: Event) => (event.category === EEvent.Abgesagt ? 'text-decoration: double line-through' : '')
+const getStyle = (event: Event) => {
+    let style = ''
+
+    if (event.category === EEvent.Abgesagt) style += 'text-decoration: double line-through '
+    if (!event.url) style += 'pointer-events: none '
+
+    return style
+}
 const headers = computed(() => [
     {
         align: 'start',
