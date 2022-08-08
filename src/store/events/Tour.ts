@@ -78,7 +78,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
                         .build(),
                     new TrackBuilder()
                         .controls(1)
-                        .height(480)
+                        .height(390)
                         .length(51)
                         .name('Die 51er')
                         .text(
@@ -96,7 +96,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .build(),
                     new TrackBuilder()
                         .controls(2)
-                        .height(875)
+                        .height(740)
                         .length(78)
                         .name('Die 78er')
                         .profile(EProfile.wellig)
@@ -129,7 +129,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .build(),
                     new TrackBuilder()
                         .controls(3)
-                        .height(1700)
+                        .height(1440)
                         .length(118)
                         .name('Die 118er')
                         .profile(EProfile.huegelig)
@@ -182,7 +182,7 @@ Dort trennen sich dann auch Marathon und 159er:
                         .build(),
                     new TrackBuilder()
                         .controls(4)
-                        .height(2050)
+                        .height(1750)
                         .important(true)
                         .length(159)
                         .name('Die 159er')
@@ -200,7 +200,7 @@ Von dort folgen wir den Straßen entlang der Homburger Bröl.`
                         .build(),
                     new TrackBuilder()
                         .controls(6)
-                        .height(3000)
+                        .height(2610)
                         .important(true)
                         .length(212)
                         .name('Der Marathon')
