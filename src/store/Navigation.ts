@@ -6,7 +6,6 @@ import {
     mdiDomain,
     mdiFacebook,
     mdiGithub,
-    mdiGoKartTrack,
     mdiGoogle,
     mdiHome,
     mdiHumanGreetingProximity,

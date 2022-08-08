@@ -4,29 +4,31 @@
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
-        <v-toolbar color="primary" flat max-height="64px" rounded="0">
-            <v-btn exact icon @click="close">
-                <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
-            </v-btn>
-            <v-toolbar-title v-if="value" class="accent--text">
-                {{ value.title }}
-                <div class="text-subtitle-1" v-text="`${dateTime.format(value.start, value.end, true)} bei ${value.location}`" />
-            </v-toolbar-title>
-            <v-spacer />
-            <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
-                Details
-                <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
-            </v-btn>
-        </v-toolbar>
+        <v-card-title>
+            <v-toolbar color="primary" flat max-height="64px" rounded="0">
+                <v-btn exact icon @click="close">
+                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
+                </v-btn>
+                <v-toolbar-title v-if="value" class="accent--text">
+                    {{ value.title }}
+                    <div class="text-subtitle-1" v-text="`${dateTime.format(value.start, value.end, true)} bei ${value.location}`" />
+                </v-toolbar-title>
+                <v-spacer />
+                <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
+                    Details
+                    <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+                </v-btn>
+            </v-toolbar>
+        </v-card-title>
         <v-expand-transition v-if="value?.description">
-            <div v-show="showText" class="align-self-center" style="max-width: 20em">
+            <div v-show="showText">
                 <v-card-text>
-                    <pre v-text="value.description" />
+                    <pre class="text-pre-wrap" v-text="value.description" />
                 </v-card-text>
             </div>
         </v-expand-transition>
         <v-card-text v-if="value">
-            <v-tabs v-model="tabModel" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
+            <v-tabs v-model="tabModel" background-color="primary" centered color="accent" show-arrows slider-color="secondary">
                 <v-tab v-for="it in tabs" :key="it" :href="`#tab-${it}`">{{ it }}</v-tab>
             </v-tabs>
             <v-tabs-items v-model="tabModel">

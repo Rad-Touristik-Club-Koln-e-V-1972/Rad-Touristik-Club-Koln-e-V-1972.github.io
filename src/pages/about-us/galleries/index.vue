@@ -1,7 +1,13 @@
 <template>
     <v-card id="VIndex" flat>
-        <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">Galerien</v-card-title>
-        <v-card-subtitle class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5">Fotos und Videos des RTC-Köln</v-card-subtitle>
+        <v-card-title>
+            <v-toolbar color="primary" flat>
+                <v-toolbar-title class="accent--text text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">
+                    Galerien
+                    <div class="text-body-2 text-sm-subtitle-2 text-md-subtitle-1 text-lg-h6 text-xl-h5" v-text="'Fotos und Videos des RTC-Köln'" />
+                </v-toolbar-title>
+            </v-toolbar>
+        </v-card-title>
         <v-card-text>
             <div v-for="it in Object.keys(items).reverse()" :key="it">
                 <v-toolbar class="mt-1" flat>
