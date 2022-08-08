@@ -17,6 +17,7 @@ import {
     mdiInstagram,
     mdiMessageDraw,
     mdiNewspaperVariantMultiple,
+    mdiSnowman,
     mdiWeatherPartlyRainy,
     mdiWeb,
     mdiYoutube,
@@ -44,6 +45,7 @@ export const useNavigationStore = defineStore('navigation', {
                         )
                         .title('Touren')
                         .build(),
+                    new ChildBuilder().children(new ChildChildBuilder().icon(mdiSnowman).title('Wintertraining').to('events-training-winter').build()).title('Training').build(),
                     new ChildBuilder()
                         .children(
                             new ChildChildBuilder().icon(mdiHumanMaleBoard).title('RTF-Empfehlungen außerhalb NRWs').to('events-tours-events-rtfs-suggestions').build(),
