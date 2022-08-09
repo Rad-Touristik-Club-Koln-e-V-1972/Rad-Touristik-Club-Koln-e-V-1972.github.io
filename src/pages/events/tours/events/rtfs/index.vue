@@ -12,7 +12,7 @@
         </v-card-title>
         <v-card-text>
             <v-row class="justify-center">
-                <v-col v-for="(it, index) in value.images" :key="it.imageUrl" cols="auto">
+                <v-col v-for="(it, index) in value.images" :key="it.imageUrl.toString()" cols="auto">
                     <d-view :start-index="index" :value="value.images" />
                 </v-col>
             </v-row>
