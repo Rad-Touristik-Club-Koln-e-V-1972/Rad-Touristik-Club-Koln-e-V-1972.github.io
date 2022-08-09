@@ -6,10 +6,9 @@
                     {{ value.title }}
                     <div class="text-subtitle-1" v-text="value.subtitle" />
                 </v-toolbar-title>
-                <v-spacer />
-                <span class="accent--text">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</span>
             </v-toolbar>
         </v-card-title>
+        <v-card-subtitle class="text-subtitle-1">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
         <v-card-text>
             <v-row class="justify-center">
                 <v-col v-for="(it, index) in value.images" :key="it.imageUrl.toString()" cols="auto">
