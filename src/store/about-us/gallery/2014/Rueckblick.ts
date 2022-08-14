@@ -29,6 +29,7 @@ export default new GalleryBuilder()
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-993-intro-2014.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-994-intro-2014.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-995-intro-2014.jpg').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/IMG-20140605-00479_Ersatz_Permanente_Schmitzebud.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-a.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-b.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-c.jpg').build(),

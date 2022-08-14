@@ -5,6 +5,7 @@ export default new GalleryBuilder()
     .date('2017-12-01')
     .location('Mercure Hotels, Köln')
     .images([
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/Weihnachtsfeier.png').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/rtc-171201-wf-001int.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/rtc-171201-wf-002int.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/rtc-171201-wf-003int.jpg').build(),
@@ -38,5 +39,5 @@ export default new GalleryBuilder()
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/rtc-171201-wf-031int.jpg').build(),
     ])
     .title('Weihnachtsfeier')
-    .titleImageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/preview/preview.rtc-171201-wf-019int.jpg')
+    .titleImageUrl('content.rtc-koeln.de/pages/gallery/2017/12_01_Weihnachtsfeier/preview/preview.Weihnachtsfeier.png')
     .build()

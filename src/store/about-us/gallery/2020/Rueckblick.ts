@@ -6,6 +6,7 @@ export default new GalleryBuilder()
     .location('Köln')
     .images([
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/rtc-957-intro-2020.jpg').build(),
+        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/Ostern_Coronavirus.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/rtc-958-intro-2020.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/rtc-959-intro-2020.jpg').build(),
         new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2020/Rueckblick/rtc-forsbach-tour-flyer1-2020.jpg').build(),
