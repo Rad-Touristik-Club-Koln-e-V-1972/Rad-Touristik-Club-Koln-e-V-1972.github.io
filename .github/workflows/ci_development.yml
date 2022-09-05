@@ -38,11 +38,10 @@ jobs:
               run: npm run build
             - name: Deploy to github branch
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: JamesIves/github-pages-deploy-action@releases/v3
+              uses: JamesIves/github-pages-deploy-action@v4.4.0
               with:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  BRANCH: gh-pages
-                  FOLDER: .output/public
+                  branch: gh-pages
+                  folder: .output/public
     auto-merge:
         needs: ci_dev
         permissions:
@@ -50,7 +49,6 @@ jobs:
             pull-requests: write
         runs-on: ubuntu-latest
         steps:
-            - uses: fastify/github-action-merge-dependabot@v3.2
+            - uses: fastify/github-action-merge-dependabot@v3.3.0
               with:
-                  github-token: ${{ secrets.GITHUB_TOKEN }}
                   target: minor
