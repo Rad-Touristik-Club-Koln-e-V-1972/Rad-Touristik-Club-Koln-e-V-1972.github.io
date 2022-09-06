@@ -21,7 +21,7 @@
         "date-holidays": "^3.16.5",
         "nuxt-edge": "latest",
         "pinia": "^2.0.21",
-        "uuid": "^8.3.2",
+        "uuid": "^9.0.0",
         "vue": "^2.7.10",
         "vuetify": "^2.6.9"
     },
