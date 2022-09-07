@@ -20,7 +20,7 @@
         "@yeger/vue2-masonry-wall": "^2.0.51",
         "date-holidays": "^3.16.5",
         "nuxt-edge": "latest",
-        "pinia": "^2.0.21",
+        "pinia": "^2.0.22",
         "uuid": "^9.0.0",
         "vue": "^2.7.10",
         "vuetify": "^2.6.9"
