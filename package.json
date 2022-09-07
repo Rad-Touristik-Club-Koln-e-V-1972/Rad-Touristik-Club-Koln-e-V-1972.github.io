@@ -16,7 +16,7 @@
         "prepare": "husky install && nuxi prepare"
     },
     "dependencies": {
-        "@pinia/nuxt": "^0.4.1",
+        "@pinia/nuxt": "^0.4.2",
         "@yeger/vue2-masonry-wall": "^2.0.51",
         "date-holidays": "^3.16.5",
         "nuxt-edge": "latest",
