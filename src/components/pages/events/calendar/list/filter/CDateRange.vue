@@ -30,14 +30,14 @@ const props = defineProps<{ value: string[] }>()
 
 const icons = { mdiCalendar }
 const isOpen = ref(false)
-let items = props.value
+const items = ref(props.value)
 
 const abort = () => {
-    items = []
+    items.value = []
     close()
 }
 const close = () => {
-    emits('input', items)
+    emits('input', items.value)
     isOpen.value = false
 }
 const save = () => close()
