@@ -3,13 +3,22 @@
         <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">
             Zukünftige Termine
             <v-spacer />
-            <c-date-range v-model="filter.dateRange" />
+            <c-date-range v-model="filter.dateRange" @input="triggerFilter" />
             <v-spacer />
-            <c-categories v-model="filter.categories" />
+            <c-categories v-model="filter.categories" @input="triggerFilter" />
             <v-spacer />
-            <c-search v-model="filter.search.value" />
+            <c-search v-model="filter.search.value" @input="triggerFilter" />
         </v-card-title>
-        <v-data-table :custom-sort="sortBy" :headers="headers" :item-class="getColor" :items="futureEvents" :search="filter.search.value" show-group-by sort-by="datetime">
+        <v-data-table
+            :custom-filter="filterBy"
+            :custom-sort="sortBy"
+            :headers="headers"
+            :item-class="getColor"
+            :items="futureEvents"
+            :search="filter.trigger.value.toString()"
+            show-group-by
+            sort-by="datetime"
+        >
             <template #item.name="{ item }">
                 <a class="accent--text" :href="item.url?.toString()" :style="getStyle(item)" target="_blank" v-text="item.name" />
             </template>
@@ -38,25 +47,24 @@ const filter = {
     categories: [] as EEvent[],
     dateRange: [] as string[],
     search: ref(''),
+    trigger: ref(false),
 }
-const futureEvents = computed(() =>
-    useCalendarStore()
-        .allFuture()
-        .filter((it) => filterDate(it.start, filter.dateRange))
-)
-
-const filterDate = (date: Date, dateRange: string[]) => {
+const filterBy = (_: string, __: string | null, item: Event) => {
     let ret = true
 
-    if (dateRange?.length) {
-        const start = new Date(dateRange[0])
+    if (filter.categories?.length) ret = filter.categories.includes(item.category)
 
-        if (dateRange.length === 1) ret = dateTime.isSameDay(date, start)
-        else ret = dateTime.isBetween(date, start, new Date(dateRange[1]))
+    if (ret && filter.dateRange?.length) {
+        const start = new Date(filter.dateRange[0])
+
+        ret = filter.dateRange.length === 1 ? dateTime.isSameDay(item.start, start) : dateTime.isBetween(item.start, start, new Date(filter.dateRange[1]))
     }
+
+    if (ret && filter.search.value) ret = (item.clubPoints + item.contact.toLowerCase() + item.name.toLowerCase()).includes(filter.search.value.toLowerCase())
 
     return ret
 }
+const futureEvents = computed(() => useCalendarStore().allFuture())
 const getColor = (event: Event) => `${event.color} accent--text`
 const getDate = (event: Event) => dateTime.format(event.start, event.end, !event.timed)
 const getStyle = (event: Event) => {
@@ -70,14 +78,6 @@ const getStyle = (event: Event) => {
 const headers = computed(() => [
     {
         align: 'start',
-        filter: (value: EEvent) => {
-            const categories = filter.categories
-            let ret = true
-
-            if (categories.length) ret = categories.includes(value)
-
-            return ret
-        },
         groupable: true,
         sortable: true,
         text: 'Art',
@@ -156,4 +156,5 @@ const sortBy = (items: Event[], sortBy: string[], sortDesc: boolean[]) => {
         return ret
     })
 }
+const triggerFilter = () => (filter.trigger.value = !filter.trigger.value)
 </script>
