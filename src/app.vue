@@ -19,12 +19,12 @@
                 </v-col>
             </v-row>
         </v-app-bar>
-        <c-navigation-drawer v-model="navDrawer" />
+        <c-navigation-drawer v-model="navDrawer" :class="vuetify?.breakpoint.mobile ? '' : 'border'" />
         <v-main class="border main">
             <c-slideshow height="200" :value="useSlideshowStore().all" />
             <Nuxt />
         </v-main>
-        <v-footer class="border text-body-2 text-sm-body-1 text-xl-h6">
+        <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
             <div class="text-no-wrap">
                 <v-icon left>{{ icons.mdiCopyright }}</v-icon>
                 <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
@@ -46,7 +46,7 @@ import { useSlideshowStore } from '~/store/Slideshow'
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
 const icons = { mdiCopyright }
-const navDrawer = ref(false)
+const navDrawer = ref(!vuetify.value?.breakpoint.mobile ?? false)
 </script>
 
 <style lang="scss" scoped>

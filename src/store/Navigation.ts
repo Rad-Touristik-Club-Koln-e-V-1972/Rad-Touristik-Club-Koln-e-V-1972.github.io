@@ -61,6 +61,7 @@ export const useNavigationStore = defineStore('navigation', {
                         .title('Extern')
                         .build()
                 )
+                .expanded()
                 .icon(mdiBikeFast)
                 .title('Veranstaltungen & Termine')
                 .build(),

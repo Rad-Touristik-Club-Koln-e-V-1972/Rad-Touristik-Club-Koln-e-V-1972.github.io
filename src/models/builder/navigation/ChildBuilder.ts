@@ -17,6 +17,12 @@ export default class ChildBuilder extends ChildChildBuilder {
         return this
     }
 
+    expanded(): ChildBuilder {
+        this.value.expanded = true
+
+        return this
+    }
+
     icon(value: string): ChildBuilder {
         super.icon(value)
 

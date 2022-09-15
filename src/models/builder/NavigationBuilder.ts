@@ -17,6 +17,12 @@ export default class NavigationBuilder extends ChildBuilder {
         return this
     }
 
+    expanded(): NavigationBuilder {
+        super.expanded()
+
+        return this
+    }
+
     icon(value: string): NavigationBuilder {
         super.icon(value)
 

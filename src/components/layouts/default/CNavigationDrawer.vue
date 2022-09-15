@@ -1,10 +1,10 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" app bottom temporary :value="props.value" width="auto" @input="emitInput">
+    <v-navigation-drawer id="CNavigationDrawer" app bottom :value="props.value" width="auto" @input="emitInput">
         <v-row>
             <v-col>
                 <v-list nav>
                     <template v-for="it in navigationStore.allNavigation">
-                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon">
+                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded">
                             <template #activator>
                                 <v-list-item-title style="white-space: normal">{{ it.title }}</v-list-item-title>
                             </template>
