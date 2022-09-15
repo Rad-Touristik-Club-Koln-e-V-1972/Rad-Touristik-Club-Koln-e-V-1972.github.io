@@ -50,18 +50,38 @@ const navDrawer = ref(false)
 </script>
 
 <style lang="scss" scoped>
+@import '~vuetify/src/styles/styles.sass';
+
+@media #{map-get($display-breakpoints, 'lg-and-down')} {
+    #app {
+        background-size: 30px;
+    }
+
+    .border {
+        margin-right: 30px;
+    }
+}
+
+@media #{map-get($display-breakpoints, 'lg-and-up')} {
+    #app {
+        background-size: 40px;
+    }
+
+    .border {
+        margin-right: 40px;
+    }
+}
+
 #app {
     background-attachment: fixed;
     background-color: var(--v-primary-base);
     background-image: url('@/assets/img/banner_vertikal.svg');
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 30px;
 }
 
 .border {
     margin-left: 10px;
-    margin-right: 30px;
 }
 
 .main {
