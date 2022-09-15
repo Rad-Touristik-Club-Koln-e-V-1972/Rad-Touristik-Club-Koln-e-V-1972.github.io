@@ -9,9 +9,9 @@
                 <v-col cols="auto">
                     <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
                     <v-toolbar-title class="d-inline-block" style="text-align-last: justify">
-                        <span class="font-weight-bold text-sm-h6 text-md-h5 text-subtitle-2" v-text="'Herzlich willkommen beim'" />
+                        <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
                         <br />
-                        <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
+                        <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
                     </v-toolbar-title>
                 </v-col>
                 <v-col v-show="!vuetify?.breakpoint.xsOnly" cols="auto">
