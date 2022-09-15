@@ -23,7 +23,7 @@
         "pinia": "^2.0.22",
         "uuid": "^9.0.0",
         "vue": "^2.7.10",
-        "vuetify": "^2.6.9"
+        "vuetify": "^2.6.10"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.1.2",
