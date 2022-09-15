@@ -9,7 +9,7 @@ export const useCalendarStore = defineStore('calendar', {
             return this.all.filter((it) => it.start.getTime() > this.today().getTime())
         },
         nextEvent(): Event | undefined {
-            this.allFuture().filter((it) => it.category === EEvent.Feiertag)
+            this.allFuture().filter((it) => [EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung, EEvent.Vereinsfahrt].includes(it.category))
             const nextStartTime = Math.min(
                 ...this.allFuture()
                     .filter((it) => it.category !== EEvent.Feiertag)
