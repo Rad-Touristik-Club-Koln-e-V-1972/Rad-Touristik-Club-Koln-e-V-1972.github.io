@@ -8,7 +8,7 @@
                 </v-col>
                 <v-col cols="auto">
                     <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-                    <v-toolbar-title class="d-inline-block" style="text-align-last: justify">
+                    <v-toolbar-title class="d-inline-block" style="text-align-last: center">
                         <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
                         <br />
                         <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
