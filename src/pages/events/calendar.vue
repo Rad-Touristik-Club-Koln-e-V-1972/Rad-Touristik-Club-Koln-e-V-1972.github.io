@@ -1,7 +1,7 @@
 <template>
     <v-card id="VCalendar" flat>
+        <c-control v-model="type" :title="title" @next="calendar.next()" @prev="calendar.prev()" @showToday="setFocus('')" />
         <v-card-text>
-            <c-control v-model="type" :title="title" @next="calendar.next()" @prev="calendar.prev()" @showToday="setFocus('')" />
             <v-calendar
                 v-if="type !== ECalendar.list && event"
                 ref="calendar"
