@@ -18,7 +18,6 @@
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" :class="vuetify?.breakpoint.mobile ? '' : 'border'" />
         <v-main class="border main">
-            <c-slideshow height="200" :value="useSlideshowStore().all" />
             <Nuxt />
         </v-main>
         <v-footer app class="border text-body-2 text-sm-body-1 text-xl-h6">
@@ -35,8 +34,6 @@
 import { getCurrentInstance, ref } from 'vue'
 import { mdiCopyright } from '@mdi/js'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
-import CSlideshow from '~/components/CSlideshow.vue'
-import { useSlideshowStore } from '~/store/Slideshow'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
