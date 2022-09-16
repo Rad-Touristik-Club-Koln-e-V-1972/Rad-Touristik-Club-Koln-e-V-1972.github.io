@@ -55,5 +55,6 @@ Klaus
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 import { getCurrentInstance, ref } from 'vue'
 
+// TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 </script>
