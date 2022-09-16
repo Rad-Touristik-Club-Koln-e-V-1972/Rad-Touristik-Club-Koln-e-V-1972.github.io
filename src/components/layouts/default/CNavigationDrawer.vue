@@ -1,5 +1,10 @@
 <template>
     <v-navigation-drawer id="CNavigationDrawer" app bottom :value="props.value" width="auto" @input="emitInput">
+        <v-row class="ma-5">
+            <v-col>
+                <c-countdown />
+            </v-col>
+        </v-row>
         <v-row>
             <v-col>
                 <v-list nav>
@@ -75,6 +80,7 @@
 </template>
 
 <script lang="ts" setup>
+import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import { useNavigationStore } from '~/store/Navigation'
 
 const emits = defineEmits<{ (e: 'input', value: boolean): void }>()

@@ -14,9 +14,6 @@
                         <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
                     </v-toolbar-title>
                 </v-col>
-                <v-col v-show="!vuetify?.breakpoint.xsOnly" cols="auto">
-                    <c-countdown />
-                </v-col>
             </v-row>
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" :class="vuetify?.breakpoint.mobile ? '' : 'border'" />
@@ -37,7 +34,6 @@
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
 import { mdiCopyright } from '@mdi/js'
-import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import CSlideshow from '~/components/CSlideshow.vue'
 import { useSlideshowStore } from '~/store/Slideshow'

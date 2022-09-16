@@ -1,21 +1,21 @@
 <template>
-    <div v-if="nextEvent" id="CCountdown" class="text-center">
-        <v-row dense style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
+    <v-sheet v-if="nextEvent" id="CCountdown" class="text-center">
+        <v-row style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
             <v-col>
-                <v-progress-circular color="primary lighten-5" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
+                <v-progress-circular color="primary" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
             </v-col>
             <v-col>
-                <v-progress-circular color="primary lighten-3" rotate="180" size="60" :value="getPercentageHours(hours)">{{ hours }}h</v-progress-circular>
+                <v-progress-circular color="primary darken-1" rotate="180" size="60" :value="getPercentageHours(hours)">{{ hours }}h</v-progress-circular>
             </v-col>
             <v-col>
-                <v-progress-circular color="primary lighten-1" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}m</v-progress-circular>
+                <v-progress-circular color="primary darken-2" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}m</v-progress-circular>
             </v-col>
         </v-row>
-        <v-row no-gutters>
+        <v-row>
             <v-col>{{ nextEvent.name }}</v-col>
         </v-row>
         <c-event ref="event" />
-    </div>
+    </v-sheet>
 </template>
 
 <script lang="ts" setup>
