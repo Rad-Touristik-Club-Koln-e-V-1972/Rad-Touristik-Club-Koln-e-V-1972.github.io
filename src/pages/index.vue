@@ -7,42 +7,42 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-card>
-                    <v-card-title class="text-h5">Welcome to the Vuetify + Nuxt.js template</v-card-title>
+                <v-sheet>
                     <v-card-text>
-                        <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-                        <p>
-                            For more information on Vuetify, check out the
-                            <a href="https://vuetifyjs.com" rel="noopener noreferrer" target="_blank">documentation</a>.
-                        </p>
-                        <p>
-                            If you have questions, please join the official
-                            <a href="https://chat.vuetifyjs.com/" rel="noopener noreferrer" target="_blank" title="chat">discord</a>.
-                        </p>
-                        <p>
-                            Find a bug? Report it on the github
-                            <a href="https://github.com/vuetifyjs/vuetify/issues" rel="noopener noreferrer" target="_blank" title="contribute">issue board</a>.
-                        </p>
-                        <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-                        <div class="text-right">
-                            <em><small>&mdash; John Leider</small></em>
-                        </div>
-                        <hr class="my-3" />
-                        <a href="https://nuxtjs.org/" rel="noopener noreferrer" target="_blank">Nuxt Documentation</a>
-                        <br />
-                        <a href="https://github.com/nuxt/nuxt.js" rel="noopener noreferrer" target="_blank">Nuxt GitHub</a>
+                        <v-timeline :dense="vuetify?.breakpoint.mobile">
+                            <v-timeline-item v-for="it in value" :key="it.title + it.date">
+                                <template #opposite>
+                                    <span class="font-weight-bold text-h5 primary--text" v-text="dateTime.format(it.date, undefined, true)" />
+                                </template>
+                                <v-card>
+                                    <v-toolbar color="primary" dense flat>
+                                        <v-toolbar-title class="accent--text">{{ it.title }}</v-toolbar-title>
+                                    </v-toolbar>
+                                    <v-card-text>
+                                        <pre class="black--text text-pre-wrap" v-html="it.text" />
+                                    </v-card-text>
+                                </v-card>
+                            </v-timeline-item>
+                        </v-timeline>
                     </v-card-text>
-                    <v-card-actions>
-                        <v-spacer />
-                        <v-btn nuxt :to="{ name: 'index' }">Continue</v-btn>
-                    </v-card-actions>
-                </v-card>
+                </v-sheet>
             </v-col>
         </v-row>
     </div>
 </template>
 
 <script lang="ts" setup>
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/CSlideshow.vue'
+import { useBlogStore } from '~/store/index/Blog'
 import { useSlideshowStore } from '~/store/index/Slideshow'
+import useDateTime from '~/utils/DateTime'
+
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
+
+const dateTime = useDateTime()
+
+const value = useBlogStore().all
 </script>
