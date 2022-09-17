@@ -3,7 +3,7 @@ import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
 
 export default class GuestbookEntry {
-    answer = ``
+    answer = ''
     category = EEvent.RTC
     date = new Date()
     imageUrls: GalleryEntry[] = []
@@ -11,6 +11,6 @@ export default class GuestbookEntry {
     name = ''
     organization = ''
     source = ESource['E-Mail']
-    text = ``
+    text = ''
     title = ''
 }
