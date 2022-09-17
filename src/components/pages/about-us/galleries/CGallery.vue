@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" :loading="isLoading" max-width="20em">
+    <v-card id="CGallery" :loading="isLoading" :max-width="`${vuetify?.breakpoint.mobile ? 15 : 20}em`">
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
@@ -44,7 +44,10 @@ import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Gallery }>()
 
-const router = getCurrentInstance()?.proxy.$router
+const proxy = getCurrentInstance()?.proxy
+const router = proxy?.$router
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
