@@ -55,6 +55,16 @@ const navDrawer = ref(!vuetify.value?.breakpoint.mobile ?? false)
     }
 }
 
+@media #{map-get($display-breakpoints, 'xs-only')} {
+    #app {
+        background-size: 20px;
+    }
+
+    .border {
+        margin-right: 20px;
+    }
+}
+
 @media #{map-get($display-breakpoints, 'lg-and-up')} {
     #app {
         background-size: 40px;
