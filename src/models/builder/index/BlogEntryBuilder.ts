@@ -1,7 +1,10 @@
+import ABuilder from '~/models/builder/ABuilder'
 import BlogEntry from '~/models/entities/index/BlogEntry'
 
-export default class BlogEntryBuilder {
-    protected readonly value = new BlogEntry()
+export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
+    constructor() {
+        super(new BlogEntry())
+    }
 
     date(value: string): BlogEntryBuilder {
         this.value.date = new Date(value)
@@ -19,9 +22,5 @@ export default class BlogEntryBuilder {
         this.value.title = value
 
         return this
-    }
-
-    build(): BlogEntry {
-        return this.value
     }
 }

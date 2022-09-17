@@ -1,8 +1,11 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Track from '~/models/entities/events/tours/events/Track'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
-export default class TrackBuilder {
-    protected readonly value = new Track()
+export default class TrackBuilder extends ABuilder<Track> {
+    constructor() {
+        super(new Track())
+    }
 
     controls(value: number): TrackBuilder {
         this.value.controls = value
@@ -57,9 +60,5 @@ export default class TrackBuilder {
         this.value.urls = value
 
         return this
-    }
-
-    build(): Track {
-        return this.value
     }
 }

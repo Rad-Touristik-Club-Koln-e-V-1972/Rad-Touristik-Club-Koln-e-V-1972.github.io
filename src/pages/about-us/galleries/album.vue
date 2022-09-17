@@ -1,5 +1,5 @@
 <template>
-    <v-card id="VAlbum" flat :loading="isLoading">
+    <v-card v-if="value" id="VAlbum" flat :loading="isLoading">
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
@@ -9,7 +9,7 @@
                 <v-btn exact icon @click="close">
                     <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
                 </v-btn>
-                <v-toolbar-title v-if="value" class="accent--text">
+                <v-toolbar-title class="accent--text">
                     {{ value.title }}
                     <div class="text-subtitle-1" v-text="`${dateTime.format(value.start, value.end, true)} bei ${value.location}`" />
                 </v-toolbar-title>
@@ -20,14 +20,14 @@
                 </v-btn>
             </v-toolbar>
         </v-card-title>
-        <v-expand-transition v-if="value?.description">
+        <v-expand-transition v-if="value.description">
             <div v-show="showText">
                 <v-card-text>
                     <pre class="text-pre-wrap" v-text="value.description" />
                 </v-card-text>
             </div>
         </v-expand-transition>
-        <v-card-text v-if="value">
+        <v-card-text>
             <v-tabs v-model="tabModel" background-color="primary" centered color="accent" show-arrows slider-color="secondary">
                 <v-tab v-for="it in tabs" :key="it" :href="`#tab-${it}`">{{ it }}</v-tab>
             </v-tabs>
@@ -76,11 +76,13 @@ import { useGalleryStore } from '~/store/about-us/Gallery'
 import useDateTime from '~/utils/DateTime'
 
 const proxy = getCurrentInstance()?.proxy
-
 // TODO WORKAROUND UNTIL VUETIFY 2.7
+
 const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
+
+const value = useGalleryStore().findById(proxy?.$route.params.value)
 
 const close = () => {
     isLoading.value = true
@@ -102,12 +104,9 @@ const tabModelPictures = ref()
 const tabs = computed(() => {
     const tabs = []
 
-    if (value) {
-        if (Object.keys(value.images).length) tabs.push('Bilder')
-        if (value.youtubeVideoIds.length) tabs.push('Videos')
-    }
+    if (value && Object.keys(value.images).length) tabs.push('Bilder')
+    if (value?.youtubeVideoIds?.length) tabs.push('Videos')
 
     return tabs
 })
-const value = useGalleryStore().findById(proxy?.$route.params.value)
 </script>

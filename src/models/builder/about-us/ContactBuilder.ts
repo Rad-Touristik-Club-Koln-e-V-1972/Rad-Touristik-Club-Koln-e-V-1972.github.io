@@ -1,10 +1,9 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Contact from '~/models/entities/about-us/Contact'
 
-export default class ContactBuilder {
-    private readonly value: Contact
-
+export default class ContactBuilder extends ABuilder<Contact> {
     constructor() {
-        this.value = new Contact()
+        super(new Contact())
     }
 
     description(value: string): ContactBuilder {
@@ -35,9 +34,5 @@ export default class ContactBuilder {
         this.value.position = value
 
         return this
-    }
-
-    build(): Contact {
-        return this.value
     }
 }

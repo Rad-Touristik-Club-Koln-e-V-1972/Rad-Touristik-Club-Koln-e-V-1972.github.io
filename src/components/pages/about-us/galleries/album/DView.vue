@@ -4,7 +4,7 @@
     <v-card id="DView" max-width="20em" min-height="100">
         <v-dialog v-model="isOpen" fullscreen persistent>
             <template #activator="{ attrs, on }">
-                <v-img :src="props.value[startIndex].previewUrl.toString()" style="cursor: pointer" v-bind="attrs" v-on="on">
+                <v-img :src="props.value[startIndex].previewUrl?.toString()" style="cursor: pointer" v-bind="attrs" v-on="on">
                     <template #placeholder>
                         <c-loading-skeleton />
                     </template>

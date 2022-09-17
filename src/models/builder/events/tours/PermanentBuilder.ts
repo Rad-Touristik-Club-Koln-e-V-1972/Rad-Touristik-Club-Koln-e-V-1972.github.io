@@ -4,9 +4,7 @@ import Control from '~/models/entities/events/tours/Control'
 import Permanent from '~/models/entities/events/tours/Permanent'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
-export default class PermanentBuilder extends TourBuilder {
-    protected readonly value = new Permanent()
-
+export default class PermanentBuilder extends TourBuilder<Permanent> {
     controls(...value: Control[]): PermanentBuilder {
         super.controls(...value)
 
@@ -59,9 +57,5 @@ export default class PermanentBuilder extends TourBuilder {
         super.urls(value)
 
         return this
-    }
-
-    build(): Permanent {
-        return this.value
     }
 }

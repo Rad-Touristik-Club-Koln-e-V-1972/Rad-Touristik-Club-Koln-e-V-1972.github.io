@@ -2,8 +2,10 @@ import ChildBuilder from '~/models/builder/navigation/ChildBuilder'
 import Navigation from '~/models/entities/Navigation'
 import Child from '~/models/entities/navigation/Child'
 
-export default class NavigationBuilder extends ChildBuilder {
-    protected readonly value = new Navigation()
+export default class NavigationBuilder extends ChildBuilder<Navigation> {
+    constructor() {
+        super(new Navigation())
+    }
 
     children(...value: Child[]): NavigationBuilder {
         this.value.children = value
@@ -41,6 +43,7 @@ export default class NavigationBuilder extends ChildBuilder {
         return this
     }
 
+    // noinspection FunctionNamingConventionJS
     to(name: string): NavigationBuilder {
         super.to(name)
 
@@ -51,9 +54,5 @@ export default class NavigationBuilder extends ChildBuilder {
         super.url(value)
 
         return this
-    }
-
-    build(): Navigation {
-        return this.value
     }
 }

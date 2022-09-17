@@ -1,3 +1,4 @@
+import ABuilder from '~/models/builder/ABuilder'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 const createPreviewURL = (value: URL) => {
@@ -5,11 +6,9 @@ const createPreviewURL = (value: URL) => {
     return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
 }
 
-export default class GalleryEntryBuilder {
-    private readonly value: GalleryEntry
-
+export default class GalleryEntryBuilder extends ABuilder<GalleryEntry> {
     constructor() {
-        this.value = new GalleryEntry()
+        super(new GalleryEntry())
     }
 
     imageUrl(value: string): GalleryEntryBuilder {
@@ -25,7 +24,7 @@ export default class GalleryEntryBuilder {
     }
 
     build(): GalleryEntry {
-        if (this.value.previewUrl.href === 'https://rtc-koeln.de/') this.value.previewUrl = createPreviewURL(this.value.imageUrl)
+        if (!this.value.previewUrl) this.value.previewUrl = createPreviewURL(this.value.imageUrl)
 
         return this.value
     }

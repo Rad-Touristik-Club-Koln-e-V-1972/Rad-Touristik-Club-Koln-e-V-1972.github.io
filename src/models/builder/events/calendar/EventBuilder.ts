@@ -1,3 +1,4 @@
+import ABuilder from '~/models/builder/ABuilder'
 import EEvent from '~/models/enums/EEvent'
 import Event from '~/models/entities/events/calendar/Event'
 
@@ -35,11 +36,9 @@ const getColor = (value: EEvent) => {
     return color
 }
 
-export default class EventBuilder {
-    private readonly value: Event
-
+export default class EventBuilder extends ABuilder<Event> {
     constructor() {
-        this.value = new Event()
+        super(new Event())
     }
 
     allDay(value: boolean): EventBuilder {

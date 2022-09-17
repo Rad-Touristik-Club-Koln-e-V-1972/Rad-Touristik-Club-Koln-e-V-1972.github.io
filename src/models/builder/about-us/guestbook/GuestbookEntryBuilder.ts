@@ -1,13 +1,12 @@
+import ABuilder from '~/models/builder/ABuilder'
 import GuestbookEntry from '~/models/entities/about-us/guestbook/GuestbookEntry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
 
-export default class GuestbookEntryBuilder {
-    private readonly value: GuestbookEntry
-
+export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
     constructor() {
-        this.value = new GuestbookEntry()
+        super(new GuestbookEntry())
     }
 
     answer(value: string): GuestbookEntryBuilder {
@@ -68,9 +67,5 @@ export default class GuestbookEntryBuilder {
         this.value.title = value
 
         return this
-    }
-
-    build(): GuestbookEntry {
-        return this.value
     }
 }

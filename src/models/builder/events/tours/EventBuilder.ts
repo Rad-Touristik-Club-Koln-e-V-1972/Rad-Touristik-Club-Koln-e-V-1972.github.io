@@ -6,8 +6,10 @@ import Track from '~/models/entities/events/tours/events/Track'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
-export default class EventBuilder extends TourBuilder {
-    protected readonly value = new Event()
+export default class EventBuilder extends TourBuilder<Event> {
+    constructor() {
+        super(new Event())
+    }
 
     category(value: EEvent): EventBuilder {
         super.category(value)
@@ -67,9 +69,5 @@ export default class EventBuilder extends TourBuilder {
         super.urls(value)
 
         return this
-    }
-
-    build(): Event {
-        return this.value
     }
 }

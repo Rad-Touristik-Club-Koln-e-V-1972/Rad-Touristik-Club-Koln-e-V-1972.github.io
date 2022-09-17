@@ -1,7 +1,10 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Control from '~/models/entities/events/tours/Control'
 
-export default class ControlBuilder {
-    protected readonly value = new Control()
+export default class ControlBuilder extends ABuilder<Control> {
+    constructor() {
+        super(new Control())
+    }
 
     city(value: string): ControlBuilder {
         this.value.city = value
@@ -31,9 +34,5 @@ export default class ControlBuilder {
         this.value.zipCode = value
 
         return this
-    }
-
-    build(): Control {
-        return this.value
     }
 }

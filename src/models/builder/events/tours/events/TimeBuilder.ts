@@ -1,7 +1,10 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Time from '~/models/entities/events/tours/events/Time'
 
-export default class TimeBuilder {
-    protected readonly value = new Time()
+export default class TimeBuilder extends ABuilder<Time> {
+    constructor() {
+        super(new Time())
+    }
 
     name(value: string): TimeBuilder {
         this.value.name = value
@@ -14,9 +17,5 @@ export default class TimeBuilder {
         if (end) this.value.end = new Date(`1970-01-01 ${end}`)
 
         return this
-    }
-
-    build(): Time {
-        return this.value
     }
 }

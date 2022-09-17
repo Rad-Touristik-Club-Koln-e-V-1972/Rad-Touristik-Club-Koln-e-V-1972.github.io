@@ -1,7 +1,12 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Fee from '~/models/entities/events/tours/events/Fee'
 import EEvent from '~/models/enums/EEvent'
 
-export default class FeeBuilder {
+export default class FeeBuilder extends ABuilder<Fee> {
+    constructor() {
+        super(new Fee())
+    }
+
     protected readonly value = new Fee()
 
     category(value: EEvent): FeeBuilder {
@@ -20,9 +25,5 @@ export default class FeeBuilder {
         this.value.price = value
 
         return this
-    }
-
-    build(): Fee {
-        return this.value
     }
 }

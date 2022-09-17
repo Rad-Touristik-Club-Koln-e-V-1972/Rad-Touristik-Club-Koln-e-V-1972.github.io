@@ -1,7 +1,10 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Sponsor from '~/models/entities/Sponsor'
 
-export default class SponsorBuilder {
-    protected readonly value = new Sponsor()
+export default class SponsorBuilder extends ABuilder<Sponsor> {
+    constructor() {
+        super(new Sponsor())
+    }
 
     imageUrl(value: string): SponsorBuilder {
         this.value.imageUrl = new URL(`https://${value}`)
@@ -19,9 +22,5 @@ export default class SponsorBuilder {
         this.value.url = new URL(`https://${value}`)
 
         return this
-    }
-
-    build(): Sponsor {
-        return this.value
     }
 }

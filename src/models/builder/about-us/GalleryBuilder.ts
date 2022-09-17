@@ -1,12 +1,11 @@
+import ABuilder from '~/models/builder/ABuilder'
 import Gallery from '~/models/entities/about-us/Gallery'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
-export default class GalleryBuilder {
-    private readonly value: Gallery
-
+export default class GalleryBuilder extends ABuilder<Gallery> {
     constructor() {
-        this.value = new Gallery()
+        super(new Gallery())
     }
 
     category(value: EEvent): GalleryBuilder {
@@ -58,9 +57,5 @@ export default class GalleryBuilder {
         this.value.youtubeVideoIds = value
 
         return this
-    }
-
-    build(): Gallery {
-        return this.value
     }
 }
