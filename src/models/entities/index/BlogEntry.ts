@@ -1,7 +1,9 @@
 import AEntity from '~/models/entities/AEntity'
 
 export default class BlogEntry extends AEntity {
-    date = new Date()
+    albumIDs: string[] = []
+    end?: Date
+    start = new Date()
     text = ''
     title = ''
 }

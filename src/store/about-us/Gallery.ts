@@ -19,8 +19,11 @@ const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => b.start.ge
 
 export const useGalleryStore = defineStore('gallery', {
     actions: {
-        findById(id?: string): Gallery | undefined {
-            return id ? this.all.find((gallery) => gallery.id === id) : undefined
+        findById(id: string): Gallery | undefined {
+            return this.all.find((gallery) => gallery.id === id)
+        },
+        findByIds(...ids: string[]): Gallery[] {
+            return this.all.filter((gallery) => ids.includes(gallery.id))
         },
     },
     getters: {

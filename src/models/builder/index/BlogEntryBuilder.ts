@@ -6,8 +6,15 @@ export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
         super(new BlogEntry())
     }
 
-    date(value: string): BlogEntryBuilder {
-        this.value.date = new Date(value)
+    albumIDs(...value: string[]): BlogEntryBuilder {
+        this.value.albumIDs = value
+
+        return this
+    }
+
+    date(start: string, end?: string): BlogEntryBuilder {
+        this.value.start = new Date(start)
+        if (end) this.value.end = new Date(end)
 
         return this
     }
