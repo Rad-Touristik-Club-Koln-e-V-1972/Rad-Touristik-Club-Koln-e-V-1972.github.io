@@ -22,12 +22,7 @@
                                         <pre class="black--text text-pre-wrap" v-html="it.text" />
                                     </v-card-text>
                                     <v-card-actions v-if="it.albumIDs.length">
-                                        <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
-                                        <masonry-wall :column-width="250" :gap="1" :items="galleryStore.findByIds(...it.albumIDs)">
-                                            <template #default="{ item }">
-                                                <c-gallery :value="item" />
-                                            </template>
-                                        </masonry-wall>
+                                        <c-gallery v-for="gallery in galleryStore.findByIds(...it.albumIDs)" :key="gallery.id" :value="gallery" />
                                     </v-card-actions>
                                 </v-card>
                             </v-timeline-item>
