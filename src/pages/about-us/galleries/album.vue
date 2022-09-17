@@ -76,13 +76,13 @@ import { useGalleryStore } from '~/store/about-us/Gallery'
 import useDateTime from '~/utils/DateTime'
 
 const proxy = getCurrentInstance()?.proxy
-// TODO WORKAROUND UNTIL VUETIFY 2.7
 
+// TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
-const value = useGalleryStore().findById(proxy?.$route.params.value)
+const value = useGalleryStore().findById(proxy?.$route.params.value ?? '')
 
 const close = () => {
     isLoading.value = true

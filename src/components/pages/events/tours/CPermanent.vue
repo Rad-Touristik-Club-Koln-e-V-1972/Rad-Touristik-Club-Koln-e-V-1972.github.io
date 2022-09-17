@@ -22,7 +22,7 @@
                         <td class="text-right" v-text="'Kontrollen:'" />
                         <td>
                             <dl class="my-1">
-                                <div v-for="it in props.value.controls" :key="it.title">
+                                <div v-for="it in props.value.controls" :key="it.id">
                                     <dt>
                                         <a :href="it.url?.toString()" target="_blank" v-text="it.title" />
                                     </dt>

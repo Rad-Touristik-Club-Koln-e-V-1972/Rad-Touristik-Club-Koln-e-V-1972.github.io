@@ -11,7 +11,7 @@
         <v-card-subtitle class="text-subtitle-1">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
         <v-card-text>
             <v-row class="justify-center">
-                <v-col v-for="(it, index) in value.images" :key="it.imageUrl.toString()" cols="auto">
+                <v-col v-for="(it, index) in value.images" :key="it.id" cols="auto">
                     <d-view :start-index="index" :value="value.images" />
                 </v-col>
             </v-row>
@@ -34,7 +34,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="it in value.tracks.filter((it) => it.controls)" :key="it.name" :class="it.important ? 'primary--text' : ''">
+                                    <tr v-for="it in value.tracks.filter((it) => it.controls)" :key="it.id" :class="it.important ? 'primary--text' : ''">
                                         <td v-text="dateTime.formatTime(it.start, it.end)" />
                                         <td v-text="`${it.length} km`" />
                                         <td v-text="it.height" />
@@ -68,7 +68,7 @@
                                                     <th colspan="2" v-text="'RTF'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((it) => it.category !== EEvent.Marathon)" :key="it.name">
+                                                    <tr v-for="it in value.fees.filter((it) => it.category !== EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="`${it.price} €`" />
                                                     </tr>
@@ -81,7 +81,7 @@
                                                     <th colspan="2" v-text="'Marathon'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((it) => it.category === EEvent.Marathon)" :key="it.name">
+                                                    <tr v-for="it in value.fees.filter((it) => it.category === EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="`${it.price} €`" />
                                                     </tr>
@@ -102,7 +102,7 @@
                                         <v-col cols="auto">
                                             <v-simple-table dense>
                                                 <tbody>
-                                                    <tr v-for="it in value.times" :key="it.name">
+                                                    <tr v-for="it in value.times" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
                                                     </tr>
@@ -131,9 +131,9 @@
             <v-row>
                 <v-col>
                     <v-timeline :dense="vuetify?.breakpoint.mobile">
-                        <v-timeline-item v-for="it in value.tracks" :key="it.name">
+                        <v-timeline-item v-for="it in value.tracks" :key="it.id">
                             <template #opposite>
-                                <span class="font-weight-bold text-h5 primary--text" v-text="it.name" />
+                                <span class="font-weight-bold text-h5 primary--text" v-text="it.id" />
                             </template>
                             <v-card>
                                 <v-toolbar color="primary" dense flat>
