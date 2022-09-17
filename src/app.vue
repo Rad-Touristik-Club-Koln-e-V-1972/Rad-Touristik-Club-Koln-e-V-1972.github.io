@@ -73,10 +73,6 @@ const navDrawer = ref(!vuetify.value?.breakpoint.mobile ?? false)
     background-repeat: no-repeat;
 }
 
-.border {
-    margin-left: 10px;
-}
-
 .main {
     background-color: white;
 }
