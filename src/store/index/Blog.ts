@@ -28,8 +28,7 @@ Wo ward ihr alle?
 Ein herzliches Dankeschön an die Veranstalter der RTF RheinEnergie für die schönen Strecken und die gute Verpflegung. 👍
 
 ➡️ Aber das absolute ✨Highlight✨ auf dieser RTF war für uns, dass Jürgen nach seinem Unfall im Mai wieder Deine erste 70er gefahren ist.
-Richtig toll, lieber Jürgen. 💪🚴
-`
+Richtig toll, lieber Jürgen. 💪🚴`
                 )
                 .title('RTF GEW RheinEnergie')
                 .build(),
@@ -46,8 +45,7 @@ Die große Hitze (immer weit über 30 Grad) war anstrengend, aber umso leckerer 
 Getränk im Ziel.
 
 Ein herzliches Dankeschön geht unsererseits an beide Vereine.
-👍👍 Wir kommen wieder.
-`
+👍👍 Wir kommen wieder.`
                 )
                 .title('RTF Hennefer Hitzetage')
                 .build(),
