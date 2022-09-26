@@ -9,6 +9,12 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .albumIDs('4a0c9096-eeae-4bee-9eca-068e616feed4')
+                .date('2022-09-25')
+                .text(`Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️`)
+                .title('Herbsttour - Lohmar-Wahlscheid')
+                .build(),
+            new BlogEntryBuilder()
                 .albumIDs('284dae72-4bf4-49fc-9ff1-a7b1263946f0')
                 .date('2022-08-27')
                 .text(
