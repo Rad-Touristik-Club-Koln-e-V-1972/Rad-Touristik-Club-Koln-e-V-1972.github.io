@@ -21,7 +21,7 @@
                                     <v-card-text>
                                         <pre class="black--text text-pre-wrap" v-html="it.text" />
                                     </v-card-text>
-                                    <v-card-actions v-if="it.albumIDs.length">
+                                    <v-card-actions v-if="it.albumIDs.length" class="justify-center">
                                         <c-gallery v-for="gallery in galleryStore.findByIds(...it.albumIDs)" :key="gallery.id" :value="gallery" />
                                     </v-card-actions>
                                 </v-card>
