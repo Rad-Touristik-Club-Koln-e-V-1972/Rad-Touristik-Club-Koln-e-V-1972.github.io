@@ -2,19 +2,13 @@
     <v-app id="app">
         <v-system-bar app class="font-weight-bold justify-center" color="accent--text primary">Vorschau der neuen Website</v-system-bar>
         <v-app-bar app class="border" color="accent" flat height="100%">
-            <v-row class="justify-space-between">
-                <v-col cols="auto">
-                    <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
-                </v-col>
-                <v-col cols="auto">
-                    <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-                    <v-toolbar-title class="d-inline-block" style="text-align-last: center">
-                        <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
-                        <br />
-                        <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
-                    </v-toolbar-title>
-                </v-col>
-            </v-row>
+            <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
+            <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
+            <v-toolbar-title class="text-center" style="width: 100%">
+                <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
+                <br />
+                <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
+            </v-toolbar-title>
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" :class="vuetify?.breakpoint.mobile ? '' : 'border'" />
         <v-main class="border main">
