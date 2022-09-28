@@ -7,6 +7,22 @@
         </v-row>
         <v-row>
             <v-col>
+                <v-card flat>
+                    <v-card-title class="justify-center">Folge uns auf</v-card-title>
+                    <v-card-text class="text-center">
+                        <v-row>
+                            <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
+                                <v-btn fab :href="it.url?.toString()" icon :target="it.target">
+                                    <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
+                                </v-btn>
+                            </v-col>
+                        </v-row>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
                 <v-list nav>
                     <template v-for="it in navigationStore.allNavigation">
                         <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded">
@@ -58,22 +74,6 @@
                         </v-list-item>
                     </template>
                 </v-list>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-card flat>
-                    <v-card-title class="justify-center">Folge uns!</v-card-title>
-                    <v-card-text class="text-center">
-                        <v-row>
-                            <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
-                                <v-btn fab :href="it.url?.toString()" icon :target="it.target">
-                                    <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
-                                </v-btn>
-                            </v-col>
-                        </v-row>
-                    </v-card-text>
-                </v-card>
             </v-col>
         </v-row>
     </v-navigation-drawer>
