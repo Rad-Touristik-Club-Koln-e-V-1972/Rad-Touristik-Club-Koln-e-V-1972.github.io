@@ -25,12 +25,14 @@
             <v-col>
                 <v-list nav>
                     <template v-for="it in navigationStore.allNavigation">
-                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded">
+                        <!-- TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531 -->
+                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded" @click="workaround">
                             <template #activator>
                                 <v-list-item-title style="white-space: normal">{{ it.title }}</v-list-item-title>
                             </template>
                             <template v-for="childIt in it.children">
-                                <v-list-group v-if="childIt.children.length" :key="childIt.id" no-action sub-group>
+                                <!-- TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531 -->
+                                <v-list-group v-if="childIt.children.length" :key="childIt.id" no-action sub-group @click="workaround">
                                     <template #activator>
                                         <v-list-item-title style="white-space: normal">{{ childIt.title }}</v-list-item-title>
                                     </template>
@@ -90,5 +92,11 @@ const navigationStore = useNavigationStore()
 
 const emitInput = (value: boolean) => {
     emits('input', value)
+}
+
+// TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531
+const workaround = () => {
+    setTimeout(() => emits('input', !props.value), 350)
+    setTimeout(() => emits('input', !props.value), 350)
 }
 </script>
