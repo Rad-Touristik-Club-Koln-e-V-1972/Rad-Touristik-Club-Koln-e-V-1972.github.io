@@ -1,7 +1,7 @@
 <template>
     <v-app id="app">
         <v-system-bar app class="font-weight-bold justify-center" color="accent--text primary">Vorschau der neuen Website</v-system-bar>
-        <v-app-bar app class="border" color="accent" flat height="100%">
+        <v-app-bar app class="border" clipped-left color="accent" flat height="100%">
             <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
             <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
             <v-toolbar-title class="text-center" style="width: 100%">
