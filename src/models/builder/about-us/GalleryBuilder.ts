@@ -28,9 +28,13 @@ export default class GalleryBuilder extends ABuilder<Gallery> {
     }
 
     images(value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): GalleryBuilder {
-        if (value instanceof Array) this.value.images = { '': value }
-        else if (value.constructor === GalleryEntry) this.value.images = { '': [value] }
-        else this.value.images = value as Record<string, GalleryEntry[]>
+        let tmp
+
+        if (value instanceof Array) tmp = { '': value }
+        else if (value.constructor === GalleryEntry) tmp = { '': [value] }
+        else tmp = value as Record<string, GalleryEntry[]>
+
+        Object.assign(this.value.images, tmp)
 
         return this
     }
