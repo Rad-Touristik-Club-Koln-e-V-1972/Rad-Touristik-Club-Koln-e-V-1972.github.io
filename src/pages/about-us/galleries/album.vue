@@ -28,15 +28,32 @@
             </div>
         </v-expand-transition>
         <v-card-text>
-            <v-tabs v-model="tabModel" background-color="primary" centered color="accent" show-arrows slider-color="secondary">
+            <v-tabs
+                v-show="Object.keys(value.images).length && value.youtubeVideoIds.length"
+                v-model="tabModel"
+                background-color="primary"
+                centered
+                color="accent"
+                show-arrows
+                slider-color="secondary"
+            >
                 <v-tab v-for="it in tabs" :key="it" :href="`#tab-${it}`">{{ it }}</v-tab>
             </v-tabs>
             <v-tabs-items v-model="tabModel">
                 <v-tab-item key="Bilder" value="tab-Bilder">
-                    <v-tabs v-model="tabModelPictures" background-color="primary" centered class="my-1" color="accent" show-arrows slider-color="secondary">
+                    <v-tabs
+                        v-show="Object.keys(value.images).length > 1"
+                        v-model="tabModelPictures"
+                        background-color="primary"
+                        centered
+                        class="mt-1"
+                        color="accent"
+                        show-arrows
+                        slider-color="secondary"
+                    >
                         <v-tab v-for="it in Object.keys(value.images)" :key="it" :href="`#tab-${it}`">{{ it || 'Ohne Album' }}</v-tab>
                     </v-tabs>
-                    <v-tabs-items v-model="tabModelPictures">
+                    <v-tabs-items v-model="tabModelPictures" class="mt-1">
                         <v-tab-item v-for="(item, key) in value.images" :key="key" :value="`tab-${key}`">
                             <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
                             <masonry-wall :column-width="280" :gap="16" :items="item">
@@ -47,7 +64,7 @@
                         </v-tab-item>
                     </v-tabs-items>
                 </v-tab-item>
-                <v-tab-item key="Videos" value="tab-Videos">
+                <v-tab-item key="Videos" value="tab-Videos" class="mt-1">
                     <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
                     <masonry-wall :column-width="vuetify?.breakpoint.mobile ? 280 : 560" :gap="16" :items="value.youtubeVideoIds">
                         <template #default="{ item }">
