@@ -9,9 +9,25 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .albumIDs('24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7')
+                .date('2022-10-08')
+                .text(
+                    `Saisonabschluss beim VfR Büttgen:
+500 RTFler:innen nutzen das eigentlich perfekte Herbstwetter, um noch einmal eine Runde mit Freunden zu drehen.
+8 RTCler waren am Start. Anfangs ging uns die Luft aus, am Ende hatten wir aber noch genug Puste, um ein leckeres Altbier zu trinken.
+
+Ein Highlight war die K1, die komplett vegan war und super leckere, selbst belegte Crêpes mit Hummus, Tomaten und Gurken anbot.
+Mega! 😋
+
+Ein großes Dankeschön an die Veranstalter, die uns eine so schöne Abschlusstour geboten haben. 🙏
+Wir kommen nächstes Jahr wieder. 😘️`
+                )
+                .title('Saisonabschluss - VfR Büttgen')
+                .build(),
+            new BlogEntryBuilder()
                 .albumIDs('4a0c9096-eeae-4bee-9eca-068e616feed4')
                 .date('2022-09-25')
-                .text(`Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️`)
+                .text('Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️')
                 .title('Herbsttour - Lohmar-Wahlscheid')
                 .build(),
             new BlogEntryBuilder()
