@@ -38,7 +38,7 @@ jobs:
               run: npm run build
             - name: Deploy to github branch
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: JamesIves/github-pages-deploy-action@v4.4.0
+              uses: JamesIves/github-pages-deploy-action@v4.4.1
               with:
                   branch: gh-pages
                   folder: .output/public
