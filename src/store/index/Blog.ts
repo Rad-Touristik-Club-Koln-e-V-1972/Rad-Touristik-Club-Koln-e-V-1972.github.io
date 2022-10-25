@@ -23,7 +23,7 @@ Wir sehen uns. 😃
 
 Euer RTC Köln e.V.`
                 )
-                .title('7. RTF')
+                .title('7. CTF')
                 .build(),
             new BlogEntryBuilder()
                 .albumIDs('24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7')
