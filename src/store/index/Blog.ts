@@ -9,6 +9,23 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .albumIDs('cda4c7e0-a266-44e4-923d-afe6dc11deb4')
+                .date('2022-10-22')
+                .text(
+                    `Bei schönstem Herbstwetter nahmen gestern ca. 170 Gravel- und MTB-Fahrer:innen Waldboden, Matsch und Laub bei der 7. Wahnbachtour unter die Reifen. Die Zufriedenheit der Teilnehmer:innen über die Strecken und die Verpflegung sieht man in den glücklichen Gesichtern. 😃
+
+Wir bedanken uns herzlich beim RTA Lülsdorf für die tatkräftige Kooperation 👍 und beim Tennisverein Siegburger TV für die Location. 👍
+
+Und nicht vergessen: Unsere nächste RTF - die Forsbachtour - steht Ende Mai 2023 an. 🚴‍♂️🚴
+🚴‍♂️🚴🚴‍♀️🚴‍♂️🚴‍♀️🚴
+
+Wir sehen uns. 😃
+
+Euer RTC Köln e.V.`
+                )
+                .title('7. RTF')
+                .build(),
+            new BlogEntryBuilder()
                 .albumIDs('24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7')
                 .date('2022-10-08')
                 .text(
