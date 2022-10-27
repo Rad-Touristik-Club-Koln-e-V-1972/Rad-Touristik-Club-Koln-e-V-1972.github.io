@@ -1,7 +1,7 @@
 import AEntity from '~/models/entities/AEntity'
 
 export default class BlogEntry extends AEntity {
-    albumIDs: string[] = []
+    albumIDs: Record<string, string> = {}
     end?: Date
     start = new Date()
     text = ''

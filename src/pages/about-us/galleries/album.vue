@@ -117,7 +117,8 @@ const icons = {
 const isLoading = ref(false)
 const showText = ref(false)
 const tabModel = ref()
-const tabModelPictures = ref()
+const tabModelPictures = ref(`tab-${proxy?.$route.params.album}`)
+
 const tabs = computed(() => {
     const tabs = []
 

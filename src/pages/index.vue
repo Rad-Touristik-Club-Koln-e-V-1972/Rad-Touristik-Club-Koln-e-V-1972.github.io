@@ -21,8 +21,13 @@
                                     <v-card-text>
                                         <pre class="black--text text-pre-wrap" v-html="it.text" />
                                     </v-card-text>
-                                    <v-card-actions v-if="it.albumIDs.length" class="justify-center">
-                                        <c-gallery v-for="gallery in galleryStore.findByIds(...it.albumIDs)" :key="gallery.id" :value="gallery" />
+                                    <v-card-actions v-if="Object.keys(it.albumIDs).length" class="justify-center">
+                                        <c-gallery
+                                            v-for="gallery in galleryStore.findByIds(...Object.keys(it.albumIDs))"
+                                            :key="gallery.id"
+                                            :value="gallery"
+                                            :album="it.albumIDs[gallery.id]"
+                                        />
                                     </v-card-actions>
                                 </v-card>
                             </v-timeline-item>

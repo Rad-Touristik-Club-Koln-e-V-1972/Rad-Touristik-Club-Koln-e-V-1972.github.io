@@ -6,8 +6,14 @@ export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
         super(new BlogEntry())
     }
 
-    albumIDs(...value: string[]): BlogEntryBuilder {
-        this.value.albumIDs = value
+    albumIDs(value: string[] | Record<string, string>): BlogEntryBuilder {
+        this.value.albumIDs =
+            value instanceof Array
+                ? value.reduce((map, it) => {
+                      map[it] = ''
+                      return map
+                  }, {} as Record<string, string>)
+                : value
 
         return this
     }

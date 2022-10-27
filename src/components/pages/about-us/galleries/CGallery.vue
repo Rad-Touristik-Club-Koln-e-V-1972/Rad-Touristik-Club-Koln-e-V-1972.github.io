@@ -42,7 +42,10 @@ import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import Gallery from '~/models/entities/about-us/Gallery'
 import useDateTime from '~/utils/DateTime'
 
-const props = defineProps<{ value: Gallery }>()
+const props = defineProps({
+    album: { default: '', type: String },
+    value: { required: true, type: Gallery },
+})
 
 const proxy = getCurrentInstance()?.proxy
 const router = proxy?.$router
@@ -60,7 +63,7 @@ const open = () => {
     isLoading.value = true
     nextTick(() => {
         setTimeout(() => {
-            router?.push({ name: 'about-us-galleries-album', params: { value: props.value.id } })
+            router?.push({ name: 'about-us-galleries-album', params: { album: props.album, value: props.value.id } })
         }, 0)
     })
 }
