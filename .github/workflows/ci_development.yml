@@ -17,7 +17,15 @@ jobs:
               with:
                   cache: 'npm'
                   check-latest: true
-                  node-version: 'lts/*'
+                  node-version: '16'
+                  # node-version: 'lts/*'
+                  # WORKAROUND ISSUE https://github.com/nuxt/bridge/discussions/601
+                  # It seems that Webpack 5 or vite are needed.
+                  # Webpack 4 is not compatible with NodeJS >= 17 and OpenSSL 3
+                  # But
+                  # Webpack 5 is not compatible with NuxtJS 2.x
+                  # Vite is not compatible with vuetify 2.x
+                  # So maybe wait for nuxt 3.0 / vuetify 3.x
             - name: Install dependencies
               run: npm install
             - name: Commit dependency changes
