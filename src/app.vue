@@ -37,7 +37,7 @@ const navDrawer = ref(!vuetify.value?.breakpoint.mobile ?? false)
 </script>
 
 <style lang="scss" scoped>
-@import '~vuetify/src/styles/styles.sass';
+@import 'vuetify/src/styles/styles.sass';
 
 @media #{map-get($display-breakpoints, 'lg-and-down')} {
     #app {

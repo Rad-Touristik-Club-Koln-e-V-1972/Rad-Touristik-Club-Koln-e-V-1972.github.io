@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
+    bridge: {
+        vite: true,
+    },
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
