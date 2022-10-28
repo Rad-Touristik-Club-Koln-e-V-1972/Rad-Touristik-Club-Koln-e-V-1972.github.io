@@ -2,17 +2,18 @@
     "name": "rad-touristik-club-koln-e-v-1972.github.io",
     "version": "1.0.0",
     "private": true,
-    "TODO": "TODO WORKAROUND 'bash -c' IS NEEDED IN lint-staged UNTIL https://github.com/johnsoncodehk/volar/issues/1153 IS FIXED AFTER MY COMMENT",
-    "TODO0": "TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177",
+    "packageManager": "pnpm@latest",
+    "TODO": "TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177",
     "scripts": {
         "build": "nuxi generate",
         "dev": "nuxi dev",
-        "lint": "npm run lint:markup && npm run lint:js && npm run lint:style && npm run lint:prettier",
+        "lint": "pnpm lint:markup && pnpm lint:js && pnpm lint:style && pnpm lint:prettier",
         "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
         "lint:markup": "vue-tsc",
         "lint:prettier": "prettier --write --list-different --ignore-path .gitignore .",
         "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
-        "predev": "npm run lint",
+        "predev": "pnpm lint",
+        "preinstall": "npx only-allow pnpm",
         "prepare": "husky install && nuxi prepare"
     },
     "dependencies": {
@@ -26,6 +27,7 @@
         "vuetify": "^2.6.12"
     },
     "devDependencies": {
+        "@babel/core": "^7.19.6",
         "@commitlint/cli": "^17.1.2",
         "@commitlint/config-conventional": "^17.1.0",
         "@mdi/js": "^7.0.96",
@@ -37,24 +39,33 @@
         "@nuxtjs/stylelint-module": "^4.1.0",
         "@nuxtjs/vuetify": "^1.12.3",
         "@rushstack/eslint-patch": "^1.2.0",
+        "@types/node": "^18.11.7",
         "@types/uuid": "^8.3.4",
         "@vue/eslint-config-prettier": "^7.0.0",
         "@vue/eslint-config-typescript": "^11.0.2",
+        "buffer": "^6.0.3",
+        "consola": "^2.15.3",
+        "eslint": "^8.26.0",
         "eslint-plugin-nuxt": "^4.0.0",
+        "eslint-plugin-vue": "^9.6.0",
         "eslint-plugin-vuetify": "^1.1.0",
-        "husky": "^8.0.1",
+        "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
+        "postcss-html": "^1.5.0",
+        "prettier": "^2.7.1",
+        "stylelint": "^14.14.0",
         "stylelint-config-prettier": "^9.0.3",
         "stylelint-config-recommended-vue": "^1.4.0",
         "stylelint-config-standard": "^29.0.0",
         "typescript": "^4.8.4",
-        "vue-tsc": "^1.0.9"
+        "vue-tsc": "^1.0.9",
+        "webpack": "^4.46.0"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "*.vue": "bash -c vue-tsc",
+        "*.vue": "vue-tsc",
         "*.{js,ts,vue}": "eslint --fix",
         "*.{css,scss,sass,html,vue}": "stylelint --fix",
         "*.**": "prettier --ignore-unknown --write"

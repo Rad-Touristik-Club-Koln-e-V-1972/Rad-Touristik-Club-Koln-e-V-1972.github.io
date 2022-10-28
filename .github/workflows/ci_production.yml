@@ -9,10 +9,12 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v3
+            - name: Install PNPM
+              uses: pnpm/action-setup@v2
             - name: Setup node env
               uses: actions/setup-node@v3.5.1
               with:
-                  cache: 'npm'
+                  cache: 'pnpm'
                   check-latest: true
                   node-version: '16'
                   # node-version: 'lts/*'
@@ -24,11 +26,11 @@ jobs:
                   # Vite is not compatible with vuetify 2.x
                   # So maybe wait for nuxt 3.0 / vuetify 3.x
             - name: Install dependencies
-              run: npm install
+              run: pnpm install --frozen-lockfile
             - name: Run linter
-              run: npm run prepare && npm run lint
+              run: pnpm prepare && pnpm lint
             - name: Run static website generator
-              run: npm run build
+              run: pnpm build
             - name: Deploy to website
               uses: SamKirkland/FTP-Deploy-Action@4.3.2
               with:
