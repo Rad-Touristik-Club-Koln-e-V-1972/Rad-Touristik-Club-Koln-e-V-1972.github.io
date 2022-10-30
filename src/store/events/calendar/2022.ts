@@ -177,4 +177,12 @@ export default [
         .date('2022-10-29 18:00', '2022-10-29 22:00')
         .name('Weihnachtsfeier')
         .build(),
+    new EventBuilder()
+        .allDay(false)
+        .category(EEvent.Mitgliederversammlung)
+        .clubPoints(1)
+        .contact('Wolfgang Dünkelmann')
+        .date('2022-11-4 19:00', '2022-11-4 21:00')
+        .name('Mitgliederversammlung')
+        .build(),
 ].concat(useCalendar().getHolidays(new Date().getFullYear()))
