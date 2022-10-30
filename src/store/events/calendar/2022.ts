@@ -174,7 +174,7 @@ export default [
         .category(EEvent.Mitgliederversammlung)
         .clubPoints(0)
         .contact('Wolfgang Dünkelmann')
-        .date('2022-12-2 19:00', '2022-12-2 22:00')
+        .date('2022-10-29 18:00', '2022-10-29 22:00')
         .name('Weihnachtsfeier')
         .build(),
 ].concat(useCalendar().getHolidays(new Date().getFullYear()))
