@@ -12,12 +12,12 @@ export const useBlogStore = defineStore('blog', {
                 .albumIDs(['8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb'])
                 .date('2022-11-29')
                 .text(
-                    `An 30.10. vor 50 Jahren gründeten 28 Radsportler den RTC Köln e.V.. 🎉
+                    `An 30.10. vor 50 Jahren gründeten 28 Radsportler den RTC Köln e.V. 🎉
 
-Zu diesem Ehrentag organisierte der Vorstand - mit der Unterstützung der Deko-Queen Ulla sowie mit Jutta - am 29.10.2022 einen schönes und würdiges Fest. 🥰
+Zu diesem Ehrentag organisierte der Vorstand - mit der Unterstützung von Ulla und Jutta - am 29.10.2022 einen schönes und würdiges Fest. 🥰
 
 Der 1. Vorsitzende, Wolfgang Dünkelmann, führte kurzweilig durch den Abend. Wir begrüßten u.a. Gründungsmitglieder und den 1. Vorsitzenden des Radsportverbands Bezirk Köln/Bonn (BDR).
-Es wurde historisch eingetaucht, vorgestellt, erzählt, geehrt (1. Dame: Burghild Lidtke, 1. Herr: Klaus Dünkelmann) lecker gegessen und getrunken sowie gelacht. 😃
+Es wurde historisch eingetaucht, vorgestellt, erzählt, geehrt (1. Dame: Burghild Liedtke, 1. Herr: Klaus Dünkelmann) lecker gegessen und getrunken sowie gelacht. 😃
 
 Der RTC Köln e.V. hat mit dieser Abschlussveranstaltung sein Jubiläumsjahr würdig beendet. 🍾❤️
 🤗 Danke an alle, die uns immer fleißig bei unseren Veranstaltungen unterstützen.️
