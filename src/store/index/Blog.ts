@@ -24,7 +24,7 @@ Der RTC Köln e.V. hat mit dieser Abschlussveranstaltung sein Jubiläumsjahr wü
 
 Euer RTC Köln e.V. ☺️`
                 )
-                .title('RTC Weihnachtsfeier')
+                .title('RTC-Feier zum 50. Jubiläum')
                 .build(),
             new BlogEntryBuilder()
                 .albumIDs({ 'cda4c7e0-a266-44e4-923d-afe6dc11deb4': 'Start & Ziel' })
