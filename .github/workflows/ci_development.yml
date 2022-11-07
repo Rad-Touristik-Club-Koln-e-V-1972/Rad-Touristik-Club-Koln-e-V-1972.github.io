@@ -52,13 +52,3 @@ jobs:
               with:
                   branch: gh-pages
                   folder: .output/public
-    auto-merge:
-        needs: ci_dev
-        permissions:
-            contents: write
-            pull-requests: write
-        runs-on: ubuntu-latest
-        steps:
-            - uses: fastify/github-action-merge-dependabot@v3.4.2
-              with:
-                  target: minor
