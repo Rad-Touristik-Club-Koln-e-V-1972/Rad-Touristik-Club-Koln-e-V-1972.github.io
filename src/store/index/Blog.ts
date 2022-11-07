@@ -9,6 +9,19 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .albumIDs(['32ade59b-0ba1-47f5-b20e-54d872a9e524'])
+                .date('2022-11-06')
+                .text(
+                    `Nach der RTF-Saison hat nun das Wintertraining für den RTC Köln begonnen.
+An beiden Tagen trotzen wir - in unterschiedlichen Gruppen - den 10 Grad Celsius und fuhren samstags 90 km nach Rheinbach.
+Dorthin lockte uns die Schwarzwälder Kirschtorte. 😋 Am Sonntag ging es nach Wahlscheid.
+Dank einiger Höhenmeter ist es einem dann auch bei kühlen Temperaturen wohlig warm.
+➡️ IHR SEID WILLKOMMEN!
+Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schreibt mir gerne ➡️ Diana.vialon@rtc-koeln.de 😃`
+                )
+                .title('Wintertraining 2022')
+                .build(),
+            new BlogEntryBuilder()
                 .albumIDs(['8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb'])
                 .date('2022-10-29')
                 .text(
