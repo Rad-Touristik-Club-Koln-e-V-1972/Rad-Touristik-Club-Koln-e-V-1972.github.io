@@ -6,12 +6,12 @@ import _20220827RTFGEWRheinEnergie from '~/store/about-us/gallery/2022/08_27_RTF
 import _20220925HerbsttourLohmarWahlscheid from '~/store/about-us/gallery/2022/09_25_Herbsttour_Lohmar_Wahlscheid'
 import _20221008SaisonabschlussVfRBuettgen from '~/store/about-us/gallery/2022/10_08_Saisonabschluss_VfR_Buettgen'
 import _20221022CTF7 from '~/store/about-us/gallery/2022/10_22_CTF_7'
-import _20221129Weihnachtsfeier from '~/store/about-us/gallery/2022/11_29_Weihnachtsfeier'
+import _20221029Weihnachtsfeier from '~/store/about-us/gallery/2022/10_29_Weihnachtsfeier'
 import _2022Rueckblick from '~/store/about-us/gallery/2022/Rueckblick'
 
 export default [
     _2022Rueckblick,
-    _20221129Weihnachtsfeier,
+    _20221029Weihnachtsfeier,
     _20221022CTF7,
     _20221008SaisonabschlussVfRBuettgen,
     _20220925HerbsttourLohmarWahlscheid,
