@@ -45,7 +45,7 @@
         "@vue/eslint-config-typescript": "^11.0.2",
         "buffer": "^6.0.3",
         "consola": "^2.15.3",
-        "eslint": "^8.26.0",
+        "eslint": "^8.27.0",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-vue": "^9.6.0",
         "eslint-plugin-vuetify": "^1.1.0",
