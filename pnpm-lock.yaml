@@ -24,7 +24,7 @@ importers:
       '@yeger/vue2-masonry-wall': ^2.0.68
       buffer: ^6.0.3
       consola: ^2.15.3
-      date-holidays: ^3.16.8
+      date-holidays: ^3.16.9
       eslint: ^8.26.0
       eslint-plugin-nuxt: ^4.0.0
       eslint-plugin-vue: ^9.6.0
@@ -48,7 +48,7 @@ importers:
     dependencies:
       '@pinia/nuxt': 0.4.3_xjcbg5znturqejtkpd33hx726m
       '@yeger/vue2-masonry-wall': 2.0.68_vue@2.7.13
-      date-holidays: 3.16.8
+      date-holidays: 3.16.9
       nuxt-edge: 2.16.0-27720022.54e852f_lmwbsgeacobrcxpxpe2q5okucq
       pinia: 2.0.23_xjcbg5znturqejtkpd33hx726m
       uuid: 9.0.0
@@ -5583,8 +5583,8 @@ packages:
       moment-timezone: 0.5.38
     dev: false
 
-  /date-holidays/3.16.8:
-    resolution: {integrity: sha512-EUjFFP0V2XyjCF17ieT4HsKVGGWWNZaFZ07gRgn0gj9np911U99ihFtfwyxvqxJnlMA1uJYrPGrN5iL122FaEw==}
+  /date-holidays/3.16.9:
+    resolution: {integrity: sha512-Z29Gi/LyKahs3m/EaZaA60m0HMHwC2j+R7bbTC+qqEuYmlaMo8cRKrjgJBHh4Hi9vTN9fVKF3M7Obkok5itz0A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
