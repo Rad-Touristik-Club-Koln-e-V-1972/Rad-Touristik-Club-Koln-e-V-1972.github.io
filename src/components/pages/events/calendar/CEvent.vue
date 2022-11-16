@@ -2,9 +2,7 @@
     <v-dialog id="CEvent" v-model="isOpen" width="auto">
         <v-card flat>
             <v-toolbar class="accent--text" :color="selectedEvent?.color" flat>
-                <v-toolbar-title>
-                    {{ selectedEvent?.name }}
-                </v-toolbar-title>
+                <v-toolbar-title>{{ selectedEvent?.name }}</v-toolbar-title>
                 <v-spacer />
                 <v-btn icon @click="isOpen = false">
                     <v-icon color="accent">{{ icons.mdiClose }}</v-icon>

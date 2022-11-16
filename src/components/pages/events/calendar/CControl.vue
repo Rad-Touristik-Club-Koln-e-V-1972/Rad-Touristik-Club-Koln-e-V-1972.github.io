@@ -15,9 +15,7 @@
         <v-btn v-if="props.value !== ECalendar.list" class="ml-0 ml-lg-4 ml-sm-2 ml-xl-8" fab :small="vuetify?.breakpoint.xs" text @click="emits('next')">
             <v-icon>{{ icons.mdiChevronRight }}</v-icon>
         </v-btn>
-        <v-toolbar-title v-if="props.value !== ECalendar.list && !vuetify?.breakpoint.xs" class="text-lg-body-1 text-xl-h6">
-            {{ props.title }}
-        </v-toolbar-title>
+        <v-toolbar-title v-if="props.value !== ECalendar.list && !vuetify?.breakpoint.xs" class="text-lg-body-1 text-xl-h6">{{ props.title }}</v-toolbar-title>
         <v-spacer />
         <v-menu bottom right>
             <template #activator="{ on, attrs }">
