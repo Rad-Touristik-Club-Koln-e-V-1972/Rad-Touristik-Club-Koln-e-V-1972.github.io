@@ -5,6 +5,10 @@ import Permanent from '~/models/entities/events/tours/Permanent'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
 export default class PermanentBuilder extends TourBuilder<Permanent> {
+    constructor() {
+        super(new Permanent())
+    }
+
     controls(...value: Control[]): PermanentBuilder {
         super.controls(...value)
 
