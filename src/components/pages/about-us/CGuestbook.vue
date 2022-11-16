@@ -11,7 +11,7 @@
         <v-divider />
         <v-card-text v-if="props.value.text || props.value.imageUrls.length">
             <div v-if="props.value.text">
-                <pre class="text-pre-wrap" v-html="props.value.text" />
+                <pre class="black--text text-pre-wrap" v-html="props.value.text" />
             </div>
             <c-slideshow v-if="props.value.imageUrls.length" :value="props.value.imageUrls" />
         </v-card-text>
@@ -19,7 +19,7 @@
             <div v-if="props.value.answer">
                 <v-divider />
                 <v-card-text>
-                    <pre class="text-pre-wrap"><b>RTC Köln:</b> <i>{{props.value.answer}}</i></pre>
+                    <pre class="black--text text-pre-wrap"><b>RTC Köln:</b> <i>{{props.value.answer}}</i></pre>
                 </v-card-text>
             </div>
         </v-expand-transition>

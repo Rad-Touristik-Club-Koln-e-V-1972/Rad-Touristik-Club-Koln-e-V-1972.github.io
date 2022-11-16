@@ -60,7 +60,7 @@
         <v-expand-transition>
             <div v-show="showText">
                 <v-card-text>
-                    <pre class="text-pre-wrap" v-html="props.value.text" />
+                    <pre class="black--text text-pre-wrap" v-html="props.value.text" />
                 </v-card-text>
             </div>
         </v-expand-transition>

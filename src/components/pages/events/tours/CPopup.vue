@@ -5,7 +5,7 @@
                 <v-toolbar-title>{{ props.value.title }}</v-toolbar-title>
             </v-toolbar>
             <v-card-text>
-                <pre class="text-pre-wrap" v-html="props.value.text" />
+                <pre class="black--text text-pre-wrap" v-html="props.value.text" />
             </v-card-text>
             <v-card-actions>
                 <v-spacer />

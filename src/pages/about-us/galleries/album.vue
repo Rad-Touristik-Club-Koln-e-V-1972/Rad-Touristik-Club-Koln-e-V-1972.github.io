@@ -23,7 +23,7 @@
         <v-expand-transition v-if="value.description">
             <div v-show="showText">
                 <v-card-text>
-                    <pre class="text-pre-wrap" v-text="value.description" />
+                    <pre class="black--text text-pre-wrap" v-text="value.description" />
                 </v-card-text>
             </div>
         </v-expand-transition>

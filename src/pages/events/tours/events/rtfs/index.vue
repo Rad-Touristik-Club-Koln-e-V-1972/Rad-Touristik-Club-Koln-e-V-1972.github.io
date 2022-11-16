@@ -17,7 +17,7 @@
                             <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
-                            <pre class="text-pre-wrap" v-html="value.text" />
+                            <pre class="black--text text-pre-wrap" v-html="value.text" />
                         </v-card-text>
                     </v-card>
                 </v-col>
