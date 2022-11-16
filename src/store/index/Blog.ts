@@ -113,6 +113,37 @@ Ein herzliches Dankeschön geht unsererseits an beide Vereine.
                 )
                 .title('RTF Hennefer Hitzetage')
                 .build(),
+            new BlogEntryBuilder()
+                .date('2022-01-15')
+                .text(
+                    `Heute trafen sich fünf dick verpackte Unentwegte (Albert, Jürgen, Manni, Robert und ich) vom RTC Köln,
+um ihren während der Weihnachtszeit angesetzten überflüssigen Pfunden den Kampf anzusagen.
+Das Wetter sollte trocken bleiben, mit ein paar sonnigen Abschnitten – aber halt kalt.
+
+Los ging es um 11:00 Uhr an Gulaschkanone unter der Rodenkirchener Brücke.
+Das Thermometer zeigte +2° Grad….
+Das Ziel war Heimerzheim und dort die Bäckerei Voigt.
+
+Es ging über Rondorf, Mechernich, Berzdorf und am Entenfang vorbei, über Sechtem nach Waldorf.
+Dort wartete der erste und einzige Anstieg auf uns, der bei der Kälte das Atmen schwer machte.
+Die Anzeige im Garmin zeigte, oben angekommen, -1°Grad.
+Um so größer wurde die Sehnsucht nach einem warmen Ort, den wir kurz darauf erreichten.
+Angekommen, ging die Eincheckprozedur los.
+Maske auf, Hände desinfizieren, Impfnachweis raus, Personalausweis.
+Ein Glück, das wir alle dreifach gedopt waren… Bestellt wurde teilweise dann allerdings, als ob der Hungertod sehr nahe wäre….
+
+Nach dem die Kohlehydratspeicher wieder gut gefüllt waren, ging es zurück durch die Felder nach Rösberg.
+Die rasante Abfahrt wurde für vier von uns mittendrin abrupt durch eine rote Ampel gestoppt.
+Nur einer kam bei grün durch – Manni, weil er oben richtig Schwung genommen hatte…
+Über Merten ging es dann nach Sechtem zurück auf den Hinweg.
+
+Fazit: Es wehte zwar ein kalter Ostwind, die Sonne hat sich auch nicht blicken lassen.
+Aber es hat uns Spaß gemacht, sich wieder gemeinsam mit dem Rad zu bewegen, in einem Café zu sitzen, das kaum belegt war und miteinander zu reden.
+
+Klaus`
+                )
+                .title('Wintertraining')
+                .build(),
         ],
     }),
 })
