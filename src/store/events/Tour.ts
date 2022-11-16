@@ -310,7 +310,8 @@ Klaus Dünkelmann - Stand 12.01.2022`
                 )
                 .title('Bergische Karussell')
                 .urls({
-                    'GPX-Datei': new URL('https://www.alltrails.com/de/explore/map/bergisches-karussel-toure-des-rtc-koln-cefb500'),
+                    'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
+                    ALLTrails: new URL('https://www.alltrails.com/de/explore/map/bergisches-karussel-permanente-des-rtc-koln-cefb500'),
                     'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
                 })
                 .build(),
@@ -371,7 +372,8 @@ Klaus Dünkelmann – Stand 12.02.2022`
                 )
                 .title('Schmitzebud')
                 .urls({
-                    'GPX-Datei': new URL('https://www.alltrails.com/de/explore/map/toure-schmitze-bud-rtc-koln-e-v-d5cec10'),
+                    'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
+                    ALLTrails: new URL('https://www.alltrails.com/de/explore/map/permanente-schmitze-bud-rtc-koln-e-v-d5cec10'),
                     'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
                 })
                 .build(),
