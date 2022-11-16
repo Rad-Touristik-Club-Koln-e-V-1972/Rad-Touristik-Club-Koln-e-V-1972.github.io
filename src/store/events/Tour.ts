@@ -270,6 +270,7 @@ Bei Alefeld verlassen wir das Bröltal und fahren über Marienfeld nach Much, wo
                         .build()
                 )
                 .height(700)
+                .lastChange('2022-01-12')
                 .length(71)
                 .profile(EProfile.wellig)
                 .text(
@@ -306,7 +307,7 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
-Klaus Dünkelmann - Stand 12.01.2022`
+Klaus Dünkelmann`
                 )
                 .title('Bergische Karussell')
                 .urls({
@@ -326,6 +327,7 @@ Klaus Dünkelmann - Stand 12.01.2022`
                         .build()
                 )
                 .height(700)
+                .lastChange('2022-02-12')
                 .length(72)
                 .profile(EProfile.wellig)
                 .text(
@@ -368,7 +370,7 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
-Klaus Dünkelmann – Stand 12.02.2022`
+Klaus Dünkelmann`
                 )
                 .title('Schmitzebud')
                 .urls({

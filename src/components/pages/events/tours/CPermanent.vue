@@ -46,6 +46,10 @@
                             </ul>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="text-no-wrap text-right" v-text="'Letzte Änderung:'" />
+                        <td v-text="dateTime.format(props.value.lastChange, undefined, true)" />
+                    </tr>
                 </tbody>
             </v-simple-table>
         </v-card-subtitle>
@@ -70,8 +74,11 @@
 import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import Permanent from '~/models/entities/events/tours/Permanent'
+import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: Permanent }>()
+
+const dateTime = useDateTime()
 
 const icons = {
     mdiChevronDown,
