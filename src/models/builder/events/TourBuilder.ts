@@ -1,8 +1,9 @@
 import ABuilder from '~/models/builder/ABuilder'
+import PopupBuilder from '~/models/builder/PopupBuilder'
+import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 import Tour from '~/models/entities/events/Tour'
 import Control from '~/models/entities/events/tours/Control'
-import EEvent from '~/models/enums/EEvent'
 
 export default class TourBuilder<T extends Tour> extends ABuilder<T> {
     constructor(value: T = new Tour() as T) {
@@ -29,6 +30,12 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
 
     lastChange(value: string): TourBuilder<T> {
         this.value.lastChange = new Date(value)
+
+        return this
+    }
+
+    popup(text: string, title: string): TourBuilder<T> {
+        this.value.popup = new PopupBuilder().text(text).title(title).build()
 
         return this
     }

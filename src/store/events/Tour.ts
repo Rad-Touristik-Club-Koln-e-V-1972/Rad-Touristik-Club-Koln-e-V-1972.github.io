@@ -33,7 +33,17 @@ export const useTourStore = defineStore('tour', {
                     new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 2.png').build(),
                     new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Zugbeutel.jpeg').build()
                 )
-                .lastChange('2022-01-12')
+                .lastChange('2022-11-15')
+                .popup(
+                    `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
+
+Notiert Euch schon mal den Termin.
+
+Wir freuen uns auf Euch!
+
+Euer RTC Köln e.V.`,
+                    'NICHT VERPASSEN'
+                )
                 .subtitle('RTF "Rad Touristik Fahrt"')
                 .text(
                     `Wir haben uns bemüht, die Anregungen von den TeilnehmerInnen unserer vorherigen Forsbach-Tour umzusetzen und haben Teile der Strecken umgeplant.

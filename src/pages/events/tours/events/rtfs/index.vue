@@ -148,6 +148,7 @@
                 </v-col>
             </v-row>
         </v-card-text>
+        <c-popup v-if="value.popup" :value="value.popup" />
     </v-card>
 </template>
 
@@ -157,6 +158,7 @@ import DView from '~/components/pages/about-us/galleries/album/DView.vue'
 import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
+import CPopup from '~/components/pages/events/tours/CPopup.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)

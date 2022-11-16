@@ -1,10 +1,10 @@
 import TourBuilder from '~/models/builder/events/TourBuilder'
+import EEvent from '~/models/enums/EEvent'
+import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 import Event from '~/models/entities/events/tours/Event'
 import Fee from '~/models/entities/events/tours/events/Fee'
 import Time from '~/models/entities/events/tours/events/Time'
 import Track from '~/models/entities/events/tours/events/Track'
-import EEvent from '~/models/enums/EEvent'
-import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 export default class EventBuilder extends TourBuilder<Event> {
     constructor() {
@@ -31,6 +31,12 @@ export default class EventBuilder extends TourBuilder<Event> {
 
     lastChange(value: string): EventBuilder {
         super.lastChange(value)
+
+        return this
+    }
+
+    popup(text: string, title: string): EventBuilder {
+        super.popup(text, title)
 
         return this
     }
