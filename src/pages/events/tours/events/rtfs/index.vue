@@ -11,6 +11,18 @@
         <v-card-subtitle class="text-subtitle-1">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
         <v-card-text>
             <v-row class="justify-center">
+                <v-col cols="auto">
+                    <v-card max-width="40em">
+                        <v-toolbar color="primary" dense flat>
+                            <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
+                        </v-toolbar>
+                        <v-card-text>
+                            <pre class="text-pre-wrap" v-html="value.text" />
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+            </v-row>
+            <v-row class="justify-center">
                 <v-col v-for="(it, index) in value.images" :key="it.id" cols="auto">
                     <d-view :start-index="index" :value="value.images" />
                 </v-col>
@@ -114,18 +126,6 @@
                             </v-card>
                         </v-col>
                     </v-row>
-                </v-col>
-            </v-row>
-            <v-row class="justify-center">
-                <v-col cols="auto">
-                    <v-card max-width="40em">
-                        <v-toolbar color="primary" dense flat>
-                            <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <pre class="text-pre-wrap" v-html="value.text" />
-                        </v-card-text>
-                    </v-card>
                 </v-col>
             </v-row>
             <v-row>
