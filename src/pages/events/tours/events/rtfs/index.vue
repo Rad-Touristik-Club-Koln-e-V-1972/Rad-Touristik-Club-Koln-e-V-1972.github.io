@@ -133,7 +133,7 @@
                     <v-timeline :dense="vuetify?.breakpoint.mobile">
                         <v-timeline-item v-for="it in value.tracks" :key="it.id">
                             <template #opposite>
-                                <span class="font-weight-bold text-h5 primary--text" v-text="it.id" />
+                                <span class="font-weight-bold text-h5 primary--text" v-text="it.name" />
                             </template>
                             <v-card>
                                 <v-toolbar color="primary" dense flat>
