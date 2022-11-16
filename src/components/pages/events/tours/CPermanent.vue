@@ -37,10 +37,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-right" v-text="'Dateien:'" />
+                        <td class="text-right" v-text="'Links:'" />
                         <td>
                             <ul class="mt-1">
-                                <li v-for="(it, key) in props.value.urls" :key="key">
+                                <li v-for="(it, key) in props.value.urls" :key="key" class="mb-1">
                                     <a :href="it.toString()" target="_blank" v-text="key" />
                                 </li>
                             </ul>
