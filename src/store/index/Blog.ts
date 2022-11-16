@@ -17,7 +17,7 @@ An beiden Tagen trotzen wir - in unterschiedlichen Gruppen - den 10 Grad Celsius
 Dorthin lockte uns die Schwarzwälder Kirschtorte. 😋 Am Sonntag ging es nach Wahlscheid.
 Dank einiger Höhenmeter ist es einem dann auch bei kühlen Temperaturen wohlig warm.
 ➡️ IHR SEID WILLKOMMEN!
-Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schreibt mir gerne ➡️ Diana.vialon@rtc-koeln.de 😃`
+Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schreibt mir gerne ➡️ <a href="mailto:PR@rtc-koeln.de">PR@rtc-koeln.de</a> 😃`
                 )
                 .title('Wintertraining 2022')
                 .build(),
