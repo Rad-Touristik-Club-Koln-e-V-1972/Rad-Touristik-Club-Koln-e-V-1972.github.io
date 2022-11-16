@@ -10,7 +10,7 @@ importers:
       '@mdi/js': ^7.0.96
       '@nuxt/bridge': npm:@nuxt/bridge-edge@^3.0.0-27778503.de9e5c2
       '@nuxt/types': ^2.15.8
-      '@nuxtjs/eslint-config-typescript': ^11.0.0
+      '@nuxtjs/eslint-config-typescript': ^12.0.0
       '@nuxtjs/eslint-module': ^3.1.0
       '@nuxtjs/router': ^1.7.0
       '@nuxtjs/stylelint-module': ^4.1.0
@@ -61,7 +61,7 @@ importers:
       '@mdi/js': 7.0.96
       '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27778503.de9e5c2_5rcrikc6ruk4er5robn5zztt2a
       '@nuxt/types': 2.15.8_webpack@4.46.0
-      '@nuxtjs/eslint-config-typescript': 11.0.0_e3uo4sehh4zr4i6m57mkkxxv7y
+      '@nuxtjs/eslint-config-typescript': 12.0.0_e3uo4sehh4zr4i6m57mkkxxv7y
       '@nuxtjs/eslint-module': 3.1.0_szf2qjar5o2l2pcxhosg45fxdq
       '@nuxtjs/router': 1.7.0
       '@nuxtjs/stylelint-module': 4.1.0_pal3i2rufo2wll7yvsysry47jq
@@ -2448,25 +2448,26 @@ packages:
       - whiskers
     dev: false
 
-  /@nuxtjs/eslint-config-typescript/11.0.0_e3uo4sehh4zr4i6m57mkkxxv7y:
-    resolution: {integrity: sha512-hmFjGtXT524ql8eTbK8BaRkamcXB6Z8YOW8nSQhosTP6oBw9WtOFUeWr7holyE278UhOmx+wDFG90BnyM9D+UA==}
+  /@nuxtjs/eslint-config-typescript/12.0.0_e3uo4sehh4zr4i6m57mkkxxv7y:
+    resolution: {integrity: sha512-HJR0ho5MYuOCFjkL+eMX/VXbUwy36J12DUMVy+dj3Qz1GYHwX92Saxap3urFzr8oPkzzFiuOknDivfCeRBWakg==}
     peerDependencies:
       eslint: ^8.23.0
     dependencies:
-      '@nuxtjs/eslint-config': 11.0.0_gbipkkcbnjmysmpjttq6vkmfqq
+      '@nuxtjs/eslint-config': 12.0.0_gbipkkcbnjmysmpjttq6vkmfqq
       '@typescript-eslint/eslint-plugin': 5.42.1_a76fwnskzo2n3ynumjbqxmyj7i
       '@typescript-eslint/parser': 5.42.1_e3uo4sehh4zr4i6m57mkkxxv7y
       eslint: 8.27.0
       eslint-import-resolver-typescript: 3.5.2_dcpv4nbdr5ks2h5677xdltrk6e
       eslint-plugin-import: 2.26.0_gbipkkcbnjmysmpjttq6vkmfqq
+      eslint-plugin-vue: 9.7.0_eslint@8.27.0
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
 
-  /@nuxtjs/eslint-config/11.0.0_gbipkkcbnjmysmpjttq6vkmfqq:
-    resolution: {integrity: sha512-o4zFOpU8gJgwrC/gLE7c2E0XEjkv2fEixCGG1y+dZYzBPyzTorkQmfxskSF3WRXcZkpkS9uUYlRkeOSdYB7z0w==}
+  /@nuxtjs/eslint-config/12.0.0_gbipkkcbnjmysmpjttq6vkmfqq:
+    resolution: {integrity: sha512-ewenelo75x0eYEUK+9EBXjc/OopQCvdkmYmlZuoHq5kub/vtiRpyZ/autppwokpHUq8tiVyl2ejMakoiHiDTrg==}
     peerDependencies:
       eslint: ^8.23.0
     dependencies:
@@ -2476,8 +2477,9 @@ packages:
       eslint-plugin-n: 15.5.1_eslint@8.27.0
       eslint-plugin-node: 11.1.0_eslint@8.27.0
       eslint-plugin-promise: 6.1.1_eslint@8.27.0
-      eslint-plugin-unicorn: 43.0.2_eslint@8.27.0
+      eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
       eslint-plugin-vue: 9.7.0_eslint@8.27.0
+      local-pkg: 0.4.2
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-typescript
@@ -3364,7 +3366,7 @@ packages:
     resolution: {integrity: sha512-aNmNHyLPsw+sVvlQFQ2/8sjNuLtK54TC6cuKnVzAY93ks4ZBrvwQSnkkIh7bsbNhum5hJBS00wSDipQ937f5DA==}
     dependencies:
       '@babel/parser': 7.20.3
-      postcss: 8.4.18
+      postcss: 8.4.19
       source-map: 0.6.1
 
   /@vue/compiler-sfc/3.2.44:
@@ -6337,11 +6339,11 @@ packages:
       eslint: 8.27.0
     dev: true
 
-  /eslint-plugin-unicorn/43.0.2_eslint@8.27.0:
-    resolution: {integrity: sha512-DtqZ5mf/GMlfWoz1abIjq5jZfaFuHzGBZYIeuJfEoKKGWRHr2JiJR+ea+BF7Wx2N1PPRoT/2fwgiK1NnmNE3Hg==}
+  /eslint-plugin-unicorn/44.0.2_eslint@8.27.0:
+    resolution: {integrity: sha512-GLIDX1wmeEqpGaKcnMcqRvMVsoabeF0Ton0EX4Th5u6Kmf7RM9WBl705AXFEsns56ESkEs0uyelLuUTvz9Tr0w==}
     engines: {node: '>=14.18'}
     peerDependencies:
-      eslint: '>=8.18.0'
+      eslint: '>=8.23.1'
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
       ci-info: 3.5.0
@@ -10725,6 +10727,7 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /postcss/8.4.19:
     resolution: {integrity: sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==}
@@ -10733,7 +10736,6 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
