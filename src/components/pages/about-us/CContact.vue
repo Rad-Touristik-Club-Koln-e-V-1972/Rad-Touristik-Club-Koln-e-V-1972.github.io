@@ -9,21 +9,11 @@
                 <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
             </v-btn>
             <v-spacer />
-            <v-btn text @click="showText = !showText">
-                Über mich
-                <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
-            </v-btn>
         </v-card-actions>
-        <v-expand-transition>
-            <div v-show="showText">
-                <v-card-text>{{ props.value.description }}</v-card-text>
-            </div>
-        </v-expand-transition>
     </v-card>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
 import Contact from '~/models/entities/about-us/Contact'
 
@@ -34,5 +24,4 @@ const icons = {
     mdiChevronUp,
     mdiEmailArrowRight,
 }
-const showText = ref(false)
 </script>

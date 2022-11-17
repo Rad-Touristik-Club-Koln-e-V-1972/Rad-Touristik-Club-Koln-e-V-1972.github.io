@@ -6,12 +6,6 @@ export default class ContactBuilder extends ABuilder<Contact> {
         super(new Contact())
     }
 
-    description(value: string): ContactBuilder {
-        this.value.description = value
-
-        return this
-    }
-
     eMail(value: string): ContactBuilder {
         this.value.eMail = value
 
