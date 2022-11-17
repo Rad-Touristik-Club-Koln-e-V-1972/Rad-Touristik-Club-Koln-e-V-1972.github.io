@@ -46,13 +46,7 @@ export const useNavigationStore = defineStore('navigation', {
                         .title('Touren')
                         .build(),
                     new ChildBuilder().children(new ChildChildBuilder().icon(mdiSnowman).title('Wintertraining').to('events-training-winter').build()).title('Training').build(),
-                    new ChildBuilder()
-                        .children(
-                            new ChildChildBuilder().icon(mdiHumanMaleBoard).title('RTF-Empfehlungen außerhalb NRWs').to('events-tours-events-rtfs-suggestions').build(),
-                            new ChildChildBuilder().icon(mdiHumanMaleBoard).title('(WIP) Touren-Tipps').to('index').build()
-                        )
-                        .title('Empfehlungen')
-                        .build(),
+                    new ChildBuilder().icon(mdiHumanMaleBoard).title('RTF-Empfehlungen außerhalb NRWs').to('events-tours-events-rtfs-suggestions').build(),
                     new ChildBuilder()
                         .children(
                             new ChildChildBuilder().icon(mdiWeb).url('www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
