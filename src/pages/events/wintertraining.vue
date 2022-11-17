@@ -49,13 +49,8 @@
 </template>
 
 <script lang="ts" setup>
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-import { getCurrentInstance, ref } from 'vue'
 import { useTrainingStore } from '~/store/events/Training'
 import useDateTime from '~/utils/DateTime'
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
