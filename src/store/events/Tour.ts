@@ -101,7 +101,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .time('7:30', '11:00')
                         .urls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 51km.gpx'),
-                            'Komoot-Link': new URL('https://www.komoot.de/tour/676899286'),
+                            Komoot: new URL('https://www.komoot.de/tour/676899286'),
                         })
                         .build(),
                     new TrackBuilder()
@@ -134,7 +134,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .time('7:30', '11:00')
                         .urls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 78km.gpx'),
-                            'Komoot-Link': new URL('https://www.komoot.de/tour/676927332'),
+                            Komoot: new URL('https://www.komoot.de/tour/676927332'),
                         })
                         .build(),
                     new TrackBuilder()
@@ -172,7 +172,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .time('7:30', '11:00')
                         .urls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 118km.gpx'),
-                            'Komoot-Link': new URL('https://www.komoot.de/tour/676930729'),
+                            Komoot: new URL('https://www.komoot.de/tour/676930729'),
                         })
                         .build(),
                     new TrackBuilder()
@@ -205,7 +205,7 @@ Von dort folgen wir den Straßen entlang der Homburger Bröl.`
                         .time('7:30', '8:30')
                         .urls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 159km.gpx'),
-                            'Komoot-Link': new URL('https://www.komoot.de/tour/676931597'),
+                            Komoot: new URL('https://www.komoot.de/tour/676931597'),
                         })
                         .build(),
                     new TrackBuilder()
@@ -245,7 +245,7 @@ Hinter Brüchermühle geht es über eine leicht geänderte Strecke zur Kontrolle
                         .time('6:30', '7:30')
                         .urls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Marathon 212km.gpx'),
-                            'Komoot-Link': new URL('https://www.komoot.de/tour/676932743'),
+                            Komoot: new URL('https://www.komoot.de/tour/676932743'),
                         })
                         .build(),
                     new TrackBuilder()
