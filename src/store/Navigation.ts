@@ -62,7 +62,6 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('www.koeln.de/wetter/regenradar/').title('Wetter live in Köln + Regenradar').build(),
             new NavigationBuilder()
                 .children(
-                    new ChildBuilder().icon(mdiInformation).title('(WIP) Der RTC Köln').to('index').build(),
                     new ChildBuilder().icon(mdiImageMultiple).title('Galerien').to('about-us-galleries').build(),
                     new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('about-us-guestbook').build(),
                     new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('(WIP) Presseberichte').to('index').build(),
