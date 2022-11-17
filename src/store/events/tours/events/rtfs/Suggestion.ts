@@ -38,6 +38,7 @@ export const useSuggestionStore = defineStore('suggestion', {
                 .title('Wendelsteinrundfahrt')
                 .url('wendelsteinrundfahrt.de')
                 .build(),
+            new NavigationBuilder().imageUrl('www.radsport-schrecksbach.de/s/cc_images/cache_82242603.jpg').title('Schrecksbach').url('www.radsport-schrecksbach.de').build(),
             new NavigationBuilder()
                 .imageUrl(
                     'www.oetztaler-radmarathon.com/.imaging/mte/jcr/soelden/324x674/dam/Sommer/SOELDEN/Veranstaltungen/Oetztaler-Radmarathon/2021/soel_oerm_160_21.jpg/jcr:content/soel_oerm_160_21.jpg'
