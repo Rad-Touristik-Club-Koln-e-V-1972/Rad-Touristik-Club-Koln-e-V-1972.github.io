@@ -52,7 +52,7 @@ export const useNavigationStore = defineStore('navigation', {
                             new ChildChildBuilder().icon(mdiWeb).url('www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
                             new ChildChildBuilder().icon(mdiWeb).url('breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
                         )
-                        .title('Extern')
+                        .title('Breitensportkalender & andere Events')
                         .build()
                 )
                 .expanded()
