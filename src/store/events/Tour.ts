@@ -307,7 +307,7 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
-Klaus Dünkelmann`
+Euer RTC Köln e.V. 1972`
                 )
                 .title('Bergische Karussell')
                 .urls({
@@ -331,7 +331,7 @@ Klaus Dünkelmann`
                 .length(72)
                 .profile(EProfile.wellig)
                 .text(
-                    `Diese Toure startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
+                    `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
 
 Nach dem Start geht es erst mal über den Rather Mauspfad Richtung Norden.
@@ -370,7 +370,7 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
-Klaus Dünkelmann`
+Euer RTC Köln e.V. 1972`
                 )
                 .title('Schmitzebud')
                 .urls({
