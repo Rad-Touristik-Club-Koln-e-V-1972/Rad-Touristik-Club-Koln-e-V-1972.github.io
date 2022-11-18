@@ -3,5 +3,12 @@ import EEvent from '~/models/enums/EEvent'
 import useCalendar from '~/utils/events/Calendar'
 
 export default [
-    new EventBuilder().allDay(true).category(EEvent.RTF).clubPoints(5).contact('Klaus Dünkelmann').date('2023-5-28').name('51. Forsbach – Tour - Durchführung').build(),
+    new EventBuilder()
+        .setallDay(true)
+        .setCategory(EEvent.RTF)
+        .setClubPoints(5)
+        .setContact('Klaus Dünkelmann')
+        .setDate('2023-5-28')
+        .setName('51. Forsbach – Tour - Durchführung')
+        .build(),
 ].concat(useCalendar().getHolidays(new Date().getFullYear()))

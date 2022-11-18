@@ -4,14 +4,14 @@ import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/about-us/guestbook/ESource'
 
 export default class GuestbookEntry extends AEntity {
-    answer = ''
+    answer!: string
     category = EEvent.RTC
-    date = new Date()
-    imageUrls: GalleryEntry[] = []
-    location = ''
-    name = ''
-    organization = ''
+    date!: Date
+    imageUrls?: GalleryEntry[]
+    location!: string
+    name!: string
+    organization!: string
     source = ESource['E-Mail']
-    text = ''
-    title = ''
+    text!: string
+    title!: string
 }

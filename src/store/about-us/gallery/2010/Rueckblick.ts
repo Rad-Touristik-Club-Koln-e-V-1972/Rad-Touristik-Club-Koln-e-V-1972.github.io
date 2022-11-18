@@ -2,13 +2,13 @@ import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryB
 import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
-    .date('2010-12-31')
-    .location('Köln')
-    .images([
-        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2010/01_27/Rueckblick.jpg').build(),
-        new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/gallery/2010/09_05_Hennef_news.gif').build(),
+    .setDate('2010-12-31')
+    .setLocation('Köln')
+    .setImages([
+        new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2010/01_27/Rueckblick.jpg').build(),
+        new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2010/09_05_Hennef_news.gif').build(),
     ])
-    .title('Rückblick')
-    .titleImageUrl('content.rtc-koeln.de/pages/gallery/2010/01_27/preview/preview.Rueckblick.jpg')
-    .youtubeVideoIds('AFjAyuWpGQ4')
+    .setTitle('Rückblick')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2010/01_27/preview/preview.Rueckblick.jpg')
+    .setYoutubeVideoIds('AFjAyuWpGQ4')
     .build()

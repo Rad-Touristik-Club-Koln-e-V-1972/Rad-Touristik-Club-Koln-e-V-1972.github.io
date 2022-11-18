@@ -1,9 +1,9 @@
 import AEntity from '~/models/entities/AEntity'
 
 export default class Control extends AEntity {
-    city = ''
-    street = ''
+    city!: string
+    street!: string
     url?: URL
-    title = ''
-    zipCode = ''
+    title!: string
+    zipCode!: string
 }

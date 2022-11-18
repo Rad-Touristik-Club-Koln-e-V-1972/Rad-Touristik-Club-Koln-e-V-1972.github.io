@@ -1,46 +1,71 @@
 import ABuilder from '~/models/builder/ABuilder'
+import AEntity from '~/models/entities/AEntity'
 import ChildChild from '~/models/entities/navigation/ChildChild'
 
 export default class ChildChildBuilder<T extends ChildChild> extends ABuilder<T> {
-    constructor(value: T = new ChildChild() as T) {
-        super(value)
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    protected color?: string
+    protected icon?: string
+    protected imageUrl?: string
+    protected nuxt = false
+    protected target?: string
+    protected title?: string
+    protected to?: object
+    protected url?: URL
+
+    build() {
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return Object.assign(
+            {
+                color: this.color,
+                icon: this.icon,
+                imageUrl: new URL(`https://${this.imageUrl}`),
+                nuxt: this.nuxt,
+                target: this.target,
+                title: this.title,
+                to: this.to,
+                url: this.url,
+            },
+            new AEntity(this.id)
+        ) as T
     }
 
-    color(value: string): ChildChildBuilder<T> {
-        this.value.color = value
+    setColor(value: string): ChildChildBuilder<T> {
+        this.color = value
 
         return this
     }
 
-    icon(value: string): ChildChildBuilder<T> {
-        this.value.icon = value
+    setIcon(value: string): ChildChildBuilder<T> {
+        this.icon = value
 
         return this
     }
 
-    imageUrl(value: string): ChildChildBuilder<T> {
-        this.value.imageUrl = new URL(`https://${value}`)
+    setImageUrl(value: string): ChildChildBuilder<T> {
+        this.imageUrl = value
 
         return this
     }
 
-    title(value: string): ChildChildBuilder<T> {
-        this.value.title = value
+    setTitle(value: string): ChildChildBuilder<T> {
+        this.title = value
 
         return this
     }
 
-    // noinspection FunctionNamingConventionJS
-    to(name: string): ChildChildBuilder<T> {
-        this.value.to = { name }
-        this.value.nuxt = true
+    setTo(name: string): ChildChildBuilder<T> {
+        this.to = { name }
+        this.nuxt = true
 
         return this
     }
 
-    url(value: string): ChildChildBuilder<T> {
-        this.value.url = new URL(`https://${value}`)
-        this.value.target = '_blank'
+    setUrl(value: string): ChildChildBuilder<T> {
+        this.url = new URL(`https://${value}`)
+        this.target = '_blank'
 
         return this
     }

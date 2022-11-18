@@ -1,31 +1,49 @@
 import ABuilder from '~/models/builder/ABuilder'
+import AEntity from '~/models/entities/AEntity'
 import Contact from '~/models/entities/about-us/Contact'
 
 export default class ContactBuilder extends ABuilder<Contact> {
-    constructor() {
-        super(new Contact())
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    private eMail!: string
+    private imageUrl!: string
+    private name!: string
+    private position!: string
+
+    build() {
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return Object.assign(
+            {
+                eMail: this.eMail,
+                imageUrl: new URL(`https://${this.imageUrl}`),
+                name: this.name,
+                position: this.position,
+            },
+            new AEntity(this.id)
+        ) as Contact
     }
 
-    eMail(value: string): ContactBuilder {
-        this.value.eMail = value
+    setEMail(value: string): ContactBuilder {
+        this.eMail = value
 
         return this
     }
 
-    imageUrl(value: string): ContactBuilder {
-        this.value.imageUrl = new URL(`https://${value}`)
+    setImageUrl(value: string): ContactBuilder {
+        this.imageUrl = value
 
         return this
     }
 
-    name(value: string): ContactBuilder {
-        this.value.name = value
+    setName(value: string): ContactBuilder {
+        this.name = value
 
         return this
     }
 
-    position(value: string): ContactBuilder {
-        this.value.position = value
+    setPosition(value: string): ContactBuilder {
+        this.position = value
 
         return this
     }

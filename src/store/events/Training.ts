@@ -10,11 +10,11 @@ export const useTrainingStore = defineStore('training', {
     state: () => ({
         trainings: [
             new TrainingBuilder()
-                .height('300-1000')
-                .lastChange('2022-11-16')
-                .length('60-130')
-                .speed('21-22')
-                .text(
+                .setHeight('300-1000')
+                .setLastChange('2022-11-16')
+                .setLength('60-130')
+                .setSpeed('21-22')
+                .setText(
                     `Möchtet Ihr in den Wintermonaten nicht alleine trainieren?
 Dann kommt zum RTC Köln e.V.
 Ihr seid herzlich willkommen!
@@ -30,7 +30,7 @@ Meldet Euch bei Interesse bei <a href="mailto:PR@rtc-koeln.de">PR@rtc-koeln.de</
 Wir freuen uns auf Euch!
 Euer RTC Köln e.V.`
                 )
-                .title('Wintertraining')
+                .setTitle('Wintertraining')
                 .build(),
         ],
     }),

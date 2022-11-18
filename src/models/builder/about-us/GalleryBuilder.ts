@@ -1,64 +1,88 @@
 import ABuilder from '~/models/builder/ABuilder'
+import AEntity from '~/models/entities/AEntity'
 import Gallery from '~/models/entities/about-us/Gallery'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 
 export default class GalleryBuilder extends ABuilder<Gallery> {
-    constructor() {
-        super(new Gallery())
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    private category = EEvent.RTC
+    private description!: string
+    private end?: string
+    private images!: Record<string, GalleryEntry[]>
+    private location!: string
+    private start!: string
+    private title!: string
+    private titleImageUrl!: string
+    private youtubeVideoIds!: string[]
+
+    build() {
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return Object.assign(
+            {
+                category: this.category,
+                description: this.description,
+                end: this.end ? new Date(this.end) : undefined,
+                images: this.images ?? {},
+                location: this.location,
+                start: new Date(this.start),
+                title: this.title,
+                titleImageUrl: new URL(`https://${this.titleImageUrl}`),
+                youtubeVideoIds: this.youtubeVideoIds ?? [],
+            },
+            new AEntity(this.id)
+        ) as Gallery
     }
 
-    category(value: EEvent): GalleryBuilder {
-        this.value.category = value
+    setCategory(value: EEvent): GalleryBuilder {
+        this.category = value
 
         return this
     }
 
-    date(start: string, end?: string): GalleryBuilder {
-        this.value.start = new Date(start)
-        if (end) this.value.end = new Date(end)
+    setDate(start: string, end?: string): GalleryBuilder {
+        this.start = start
+        this.end = end
 
         return this
     }
 
-    description(value: string): GalleryBuilder {
-        this.value.description = value
+    setDescription(value: string): GalleryBuilder {
+        this.description = value
 
         return this
     }
 
-    images(value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): GalleryBuilder {
-        let tmp
-
-        if (value instanceof Array) tmp = { '': value }
-        else if (value.constructor === GalleryEntry) tmp = { '': [value] }
-        else tmp = value as Record<string, GalleryEntry[]>
-
-        Object.assign(this.value.images, tmp)
+    setImages(value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): GalleryBuilder {
+        if (value instanceof Array) this.images = { '': value }
+        else if (value.constructor === GalleryEntry) this.images = { '': [value] }
+        else this.images = value as Record<string, GalleryEntry[]>
 
         return this
     }
 
-    location(value: string): GalleryBuilder {
-        this.value.location = value
+    setLocation(value: string): GalleryBuilder {
+        this.location = value
 
         return this
     }
 
-    title(value: string): GalleryBuilder {
-        this.value.title = value
+    setTitle(value: string): GalleryBuilder {
+        this.title = value
 
         return this
     }
 
-    titleImageUrl(value: string): GalleryBuilder {
-        this.value.titleImageUrl = new URL(`https://${value}`)
+    setTitleImageUrl(value: string): GalleryBuilder {
+        this.titleImageUrl = value
 
         return this
     }
 
-    youtubeVideoIds(...value: string[]): GalleryBuilder {
-        this.value.youtubeVideoIds = value
+    setYoutubeVideoIds(...value: string[]): GalleryBuilder {
+        this.youtubeVideoIds = value
 
         return this
     }

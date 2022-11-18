@@ -2,14 +2,14 @@ import AEntity from '~/models/entities/AEntity'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
 export default class Track extends AEntity {
-    controls = 0
-    end = new Date()
-    height = 0
+    controls!: number
+    end!: Date
+    height!: number
     important = false
-    length = 0
-    name = ''
+    length!: number
+    name!: string
     profile = EProfile.normal
-    start = new Date()
-    text = ''
-    urls: Record<string, URL> = {}
+    start!: Date
+    text!: string
+    urls!: Record<string, URL>
 }

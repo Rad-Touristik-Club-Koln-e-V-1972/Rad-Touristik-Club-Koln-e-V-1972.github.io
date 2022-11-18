@@ -9,11 +9,11 @@
             <div v-if="props.value.category !== EEvent.RTC" v-text="`Event: ${EEvent[props.value.category]}`" />
         </v-card-subtitle>
         <v-divider />
-        <v-card-text v-if="props.value.text || props.value.imageUrls.length">
+        <v-card-text v-if="props.value.text || props.value.imageUrls?.length">
             <div v-if="props.value.text">
                 <pre class="black--text text-pre-wrap" v-html="props.value.text" />
             </div>
-            <c-slideshow v-if="props.value.imageUrls.length" :value="props.value.imageUrls" />
+            <c-slideshow v-if="props.value.imageUrls?.length" :value="props.value.imageUrls" />
         </v-card-text>
         <v-expand-transition>
             <div v-if="props.value.answer">

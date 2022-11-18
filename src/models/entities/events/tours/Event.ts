@@ -6,8 +6,8 @@ import EEvent from '~/models/enums/EEvent'
 
 export default class Event extends Tour {
     category = EEvent.RTF
-    fees: Fee[] = []
-    times: Time[] = []
-    subtitle = ''
-    tracks: Track[] = []
+    fees!: Fee[]
+    subtitle!: string
+    times!: Time[]
+    tracks!: Track[]
 }

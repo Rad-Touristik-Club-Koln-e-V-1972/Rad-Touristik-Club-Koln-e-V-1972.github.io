@@ -19,53 +19,25 @@ export const useTourStore = defineStore('tour', {
     state: () => ({
         tours: [
             new EventBuilder()
-                .fees(
-                    new FeeBuilder().name('Jugendliche bis 18 Jahre').price(0).build(),
-                    new FeeBuilder().name('BDR-Mitglieder mit Wertungskarte').price(5).build(),
-                    new FeeBuilder().name('sonstige BDR-Mitglieder').price(7).build(),
-                    new FeeBuilder().name('Gastfahrer').price(9).build(),
-                    new FeeBuilder().category(EEvent.Marathon).name('BDR-Mitglieder mit Wertungskarte').price(15).build(),
-                    new FeeBuilder().category(EEvent.Marathon).name('sonstige BDR-Mitglieder').price(17).build(),
-                    new FeeBuilder().category(EEvent.Marathon).name('Gastfahrer').price(19).build()
+                .setFees(
+                    new FeeBuilder().setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
+                    new FeeBuilder().setName('BDR-Mitglieder mit Wertungskarte').setPrice(5).build(),
+                    new FeeBuilder().setName('sonstige BDR-Mitglieder').setPrice(7).build(),
+                    new FeeBuilder().setName('Gastfahrer').setPrice(9).build(),
+                    new FeeBuilder().setCategory(EEvent.Marathon).setName('BDR-Mitglieder mit Wertungskarte').setPrice(15).build(),
+                    new FeeBuilder().setCategory(EEvent.Marathon).setName('sonstige BDR-Mitglieder').setPrice(17).build(),
+                    new FeeBuilder().setCategory(EEvent.Marathon).setName('Gastfahrer').setPrice(19).build()
                 )
-                .images(
-                    new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 1.png').build(),
-                    new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 2.png').build(),
-                    new GalleryEntryBuilder().imageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Zugbeutel.jpeg').build()
+                .setSubtitle('RTF "Rad Touristik Fahrt"')
+                .setTimes(
+                    new TimeBuilder().setName('Frühstück').setTime('6:00', '6:30').build(),
+                    new TimeBuilder().setName('Start').setTime('6:30', '11:00').build(),
+                    new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('18:00').build()
                 )
-                .lastChange('2022-11-15')
-                .popup(
-                    `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
-
-Notiert Euch schon mal den Termin.
-
-Wir freuen uns auf Euch!
-
-Euer RTC Köln e.V.`,
-                    'NICHT VERPASSEN'
-                )
-                .subtitle('RTF "Rad Touristik Fahrt"')
-                .text(
-                    `Wir haben uns bemüht, die Anregungen von den TeilnehmerInnen unserer vorherigen Forsbach-Tour umzusetzen und haben Teile der Strecken umgeplant.
-
-So haben wir Kontrollstellen mit der Möglichkeit der WC-Nutzung gefunden und die letzte Kontrolle liegt nicht mehr unmittelbar an der Straße.
-
-Die Entfernungen zwischen den Kontrollen haben wir gleichmäßiger aufgeteilt, die längste Strecke mit 38 km liegt nicht mehr am Schluss, sondern hinter der Kontrollstelle 2 in Bourauel.
-
-Auch dem Trend zu mehr Höhenmetern sind wir nicht gefolgt, haben die Strecke an einigen Stellen entschärft, ohne ihr die typische Charakteristik zu nehmen.
-
-Die Teilstrecken führen ausschließlich über wenig befahrene Nebenstraßen.`
-                )
-                .times(
-                    new TimeBuilder().name('Frühstück').time('6:00', '6:30').build(),
-                    new TimeBuilder().name('Start').time('6:30', '11:00').build(),
-                    new TimeBuilder().name('Kontrollschluss am Ziel').time('18:00').build()
-                )
-                .title('Die Forsbach-Tour')
-                .tracks(
+                .setTracks(
                     new TrackBuilder()
-                        .name('Alle Strecken')
-                        .text(
+                        .setName('Alle Strecken')
+                        .setText(
                             `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
 „Frühstarter“ können dort ab sechs Uhr frühstücken, während die „Langschläfer“ noch bis elf Uhr auf den kurzen Strecken starten können.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
@@ -87,30 +59,30 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
                         )
                         .build(),
                     new TrackBuilder()
-                        .controls(1)
-                        .height(390)
-                        .length(51)
-                        .name('Die 51er')
-                        .text(
+                        .setControls(1)
+                        .setHeight(390)
+                        .setLength(51)
+                        .setName('Die 51er')
+                        .setText(
                             `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
 
 Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .time('7:30', '11:00')
-                        .urls({
+                        .setTime('7:30', '11:00')
+                        .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 51km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676899286'),
                         })
                         .build(),
                     new TrackBuilder()
-                        .controls(2)
-                        .height(740)
-                        .length(78)
-                        .name('Die 78er')
-                        .profile(EProfile.wellig)
-                        .text(
+                        .setControls(2)
+                        .setHeight(740)
+                        .setLength(78)
+                        .setName('Die 78er')
+                        .setProfile(EProfile.wellig)
+                        .setText(
                             `Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
 Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 51er.
 <figure>
@@ -131,19 +103,19 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .time('7:30', '11:00')
-                        .urls({
+                        .setTime('7:30', '11:00')
+                        .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 78km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676927332'),
                         })
                         .build(),
                     new TrackBuilder()
-                        .controls(3)
-                        .height(1440)
-                        .length(118)
-                        .name('Die 118er')
-                        .profile(EProfile.huegelig)
-                        .text(
+                        .setControls(3)
+                        .setHeight(1440)
+                        .setLength(118)
+                        .setName('Die 118er')
+                        .setProfile(EProfile.huegelig)
+                        .setText(
                             `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle vor zwei Jahren verdanken wir den folgenden Anstieg nach Winterscheid.
@@ -169,15 +141,15 @@ Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen hab
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         )
-                        .time('7:30', '11:00')
-                        .urls({
+                        .setTime('7:30', '11:00')
+                        .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 118km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676930729'),
                         })
                         .build(),
                     new TrackBuilder()
-                        .name('Marathon und 159er')
-                        .text(
+                        .setName('Marathon und 159er')
+                        .setText(
                             `Beide Strecken führen nach der Kontrolle in Bourauel zunächst das Siegtal entlang.
 In Müllenacker folgen wir, anders als in den letzten Jahren, der Sieg.
 Wer Höhenmeter sammeln will, kann aber gerne über den Hügel auf der Herchener Straße abkürzen und trifft in Herchen wieder auf die Strecke.
@@ -191,31 +163,31 @@ Dort trennen sich dann auch Marathon und 159er:
                         )
                         .build(),
                     new TrackBuilder()
-                        .controls(4)
-                        .height(1750)
-                        .important(true)
-                        .length(159)
-                        .name('Die 159er')
-                        .profile(EProfile.bergisch)
-                        .text(
+                        .setControls(4)
+                        .setHeight(1750)
+                        .setImportant(true)
+                        .setLength(159)
+                        .setName('Die 159er')
+                        .setProfile(EProfile.bergisch)
+                        .setText(
                             `In Hülstert geht es für die 159er-Strecke nicht über eine der drei Haupststraßen weiter, sondern am besten über den Parkplatz neben der Imbissbude zur Straße „Auf der Stippe“.
 Auf Nebenstrecken geht es dann durch Geiringen nach Hermesdorf.
 Von dort folgen wir den Straßen entlang der Homburger Bröl.`
                         )
-                        .time('7:30', '8:30')
-                        .urls({
+                        .setTime('7:30', '8:30')
+                        .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 159km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676931597'),
                         })
                         .build(),
                     new TrackBuilder()
-                        .controls(6)
-                        .height(2610)
-                        .important(true)
-                        .length(212)
-                        .name('Der Marathon')
-                        .profile(EProfile.bergisch)
-                        .text(
+                        .setControls(6)
+                        .setHeight(2610)
+                        .setImportant(true)
+                        .setLength(212)
+                        .setName('Der Marathon')
+                        .setProfile(EProfile.bergisch)
+                        .setText(
                             `Nach der Streckenteilung in Hülstert folgt eine geschmeidige Abfahrt hinunter nach Morsbach.
 Weiter geht es auf der L278.
 Kurz hinter der Systembaufirma ALHO verlassen wir Nordrhein-Westfalen und fahren die nächsten zehn Kilometer durch Rheinland-Pfalz.
@@ -242,15 +214,15 @@ Der Parkplatz mit dem „Krombacher“ Ausblick bietet sich natürlich für das 
 </figure>
 Hinter Brüchermühle geht es über eine leicht geänderte Strecke zur Kontrolle nach Hülstert zurück.`
                         )
-                        .time('6:30', '7:30')
-                        .urls({
+                        .setTime('6:30', '7:30')
+                        .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Marathon 212km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676932743'),
                         })
                         .build(),
                     new TrackBuilder()
-                        .name('159er und Marathon')
-                        .text(
+                        .setName('159er und Marathon')
+                        .setText(
                             `An der Kontrollstelle in Hülstert treffen die 159er und die Marathon-Strecke aufeinander.
 Wegen der verlängerten Startzeit für die 159er bietet die Kontrolle an, sich dort zu verabreden und gemeinsam weiterzufahren.
 Von dort geht es flacher durch das Bröltal weiter.
@@ -258,22 +230,40 @@ Bei Alefeld verlassen wir das Bröltal und fahren über Marienfeld nach Much, wo
                         )
                         .build()
                 )
+                .setImages(
+                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 1.png').build(),
+                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 2.png').build(),
+                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Zugbeutel.jpeg').build()
+                )
+                .setLastChange('2022-11-15')
+                .setPopup(
+                    `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
+
+Notiert Euch schon mal den Termin.
+
+Wir freuen uns auf Euch!
+
+Euer RTC Köln e.V.`,
+                    'NICHT VERPASSEN'
+                )
+                .setText(
+                    `Wir haben uns bemüht, die Anregungen von den TeilnehmerInnen unserer vorherigen Forsbach-Tour umzusetzen und haben Teile der Strecken umgeplant.
+
+So haben wir Kontrollstellen mit der Möglichkeit der WC-Nutzung gefunden und die letzte Kontrolle liegt nicht mehr unmittelbar an der Straße.
+
+Die Entfernungen zwischen den Kontrollen haben wir gleichmäßiger aufgeteilt, die längste Strecke mit 38 km liegt nicht mehr am Schluss, sondern hinter der Kontrollstelle 2 in Bourauel.
+
+Auch dem Trend zu mehr Höhenmetern sind wir nicht gefolgt, haben die Strecke an einigen Stellen entschärft, ohne ihr die typische Charakteristik zu nehmen.
+
+Die Teilstrecken führen ausschließlich über wenig befahrene Nebenstraßen.`
+                )
+                .setTitle('Die Forsbach-Tour')
                 .build(),
             new PermanentBuilder()
-                .controls(
-                    new ControlBuilder()
-                        .city('Lindlar')
-                        .street('Kölner Straße 23')
-                        .title('Aral-Tankstelle')
-                        .url('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
-                        .zipCode('51789')
-                        .build()
-                )
-                .height(700)
-                .lastChange('2022-01-12')
-                .length(71)
-                .profile(EProfile.wellig)
-                .text(
+                .setHeight(700)
+                .setLength(71)
+                .setProfile(EProfile.wellig)
+                .setText(
                     `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
 Es handelt sich um landschaftlich schöne Strecken mit herrlichen Rundblicken über Köln und das Bergische Land.
 
@@ -309,28 +299,28 @@ Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`
                 )
-                .title('Bergische Karussell')
-                .urls({
+                .setTitle('Bergische Karussell')
+                .setUrls({
                     'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
                     Komoot: new URL('https://www.komoot.de/tour/678486665'),
                     'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
                 })
-                .build(),
-            new PermanentBuilder()
-                .controls(
+                .setControls(
                     new ControlBuilder()
-                        .city('Kürten')
-                        .street('Wipperfürther Straße 360')
-                        .title('Esso-Tankstelle')
-                        .url('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
-                        .zipCode('51515')
+                        .setCity('Lindlar')
+                        .setStreet('Kölner Straße 23')
+                        .setTitle('Aral-Tankstelle')
+                        .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
+                        .setZipCode('51789')
                         .build()
                 )
-                .height(700)
-                .lastChange('2022-02-12')
-                .length(72)
-                .profile(EProfile.wellig)
-                .text(
+                .setLastChange('2022-01-12')
+                .build(),
+            new PermanentBuilder()
+                .setHeight(700)
+                .setLength(72)
+                .setProfile(EProfile.wellig)
+                .setText(
                     `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
 
@@ -372,12 +362,22 @@ Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`
                 )
-                .title('Schmitzebud')
-                .urls({
+                .setTitle('Schmitzebud')
+                .setUrls({
                     'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
                     Komoot: new URL('https://www.komoot.de/tour/678483689'),
                     'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
                 })
+                .setControls(
+                    new ControlBuilder()
+                        .setCity('Kürten')
+                        .setStreet('Wipperfürther Straße 360')
+                        .setTitle('Esso-Tankstelle')
+                        .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
+                        .setZipCode('51515')
+                        .build()
+                )
+                .setLastChange('2022-02-12')
                 .build(),
         ],
     }),

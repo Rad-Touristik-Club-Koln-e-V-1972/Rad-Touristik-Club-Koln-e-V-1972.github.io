@@ -1,92 +1,113 @@
 import ABuilder from '~/models/builder/ABuilder'
+import AEntity from '~/models/entities/AEntity'
 import EEvent from '~/models/enums/EEvent'
 import Event from '~/models/entities/events/calendar/Event'
 
-const getColor = (value: EEvent) => {
-    let color
-
-    switch (value) {
-        case EEvent.Abgesagt:
-            color = 'grey'
-            break
-        case EEvent.CTF:
-            color = 'blue'
-            break
-        case EEvent.Feiertag:
-            color = 'secondary'
-            break
-        case EEvent.Mitgliederversammlung:
-            color = 'green'
-            break
-        case EEvent.Permanente:
-            color = 'red'
-            break
-        case EEvent.RTF:
-            color = 'deep-purple'
-            break
-        case EEvent.Veranstaltung:
-            color = 'pink darken-3'
-            break
-        case EEvent.RTC:
-        case EEvent.Vereinsfahrt:
-        default:
-            color = 'primary'
-    }
-
-    return color
-}
-
 export default class EventBuilder extends ABuilder<Event> {
-    constructor() {
-        super(new Event())
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    private category = EEvent.RTC
+    private clubPoints?: number
+    private contact!: string
+    private end?: string | Date
+    private name!: string
+    private start!: string | Date
+    private timed = false
+    private url?: string
+
+    build() {
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return Object.assign(
+            {
+                category: this.category,
+                clubPoints: this.clubPoints,
+                color: this.getColor(this.category),
+                contact: this.contact,
+                end: this.end ? new Date(this.end) : undefined,
+                name: this.name,
+                start: new Date(this.start),
+                timed: this.timed,
+                url: new URL(`https://${this.url}`),
+            },
+            new AEntity(this.id)
+        ) as Event
     }
 
-    allDay(value: boolean): EventBuilder {
-        this.value.timed = !value
+    setallDay(value: boolean): EventBuilder {
+        this.timed = !value
 
         return this
     }
 
-    category(value: EEvent): EventBuilder {
-        this.value.category = value
+    setCategory(value: EEvent): EventBuilder {
+        this.category = value
 
         return this
     }
 
-    clubPoints(value: number): EventBuilder {
-        this.value.clubPoints = value
+    setClubPoints(value: number): EventBuilder {
+        this.clubPoints = value
 
         return this
     }
 
-    contact(value: string): EventBuilder {
-        this.value.contact = value
+    setContact(value: string): EventBuilder {
+        this.contact = value
 
         return this
     }
 
-    date(start: Date | string, end?: Date | string): EventBuilder {
-        this.value.start = new Date(start)
-        if (end) this.value.end = new Date(end)
+    setDate(start: Date | string, end?: Date | string): EventBuilder {
+        this.start = start
+        this.end = end
 
         return this
     }
 
-    name(value: string): EventBuilder {
-        this.value.name = value
+    setName(value: string): EventBuilder {
+        this.name = value
 
         return this
     }
 
-    url(value: string): EventBuilder {
-        this.value.url = new URL(`https://${value}`)
+    setUrl(value: string): EventBuilder {
+        this.url = value
 
         return this
     }
 
-    build(): Event {
-        this.value.color = getColor(this.value.category)
+    private getColor = (value: EEvent) => {
+        let color
 
-        return this.value
+        switch (value) {
+            case EEvent.Abgesagt:
+                color = 'grey'
+                break
+            case EEvent.CTF:
+                color = 'blue'
+                break
+            case EEvent.Feiertag:
+                color = 'secondary'
+                break
+            case EEvent.Mitgliederversammlung:
+                color = 'green'
+                break
+            case EEvent.Permanente:
+                color = 'red'
+                break
+            case EEvent.RTF:
+                color = 'deep-purple'
+                break
+            case EEvent.Veranstaltung:
+                color = 'pink darken-3'
+                break
+            case EEvent.RTC:
+            case EEvent.Vereinsfahrt:
+            default:
+                color = 'primary'
+        }
+
+        return color
     }
 }

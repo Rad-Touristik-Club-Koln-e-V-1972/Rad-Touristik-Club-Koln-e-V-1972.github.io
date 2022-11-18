@@ -34,51 +34,51 @@ export const useNavigationStore = defineStore('navigation', {
     },
     state: () => ({
         navigations: [
-            new NavigationBuilder().icon(mdiHome).title('Startseite').to('index').build(),
+            new NavigationBuilder().setIcon(mdiHome).setTitle('Startseite').setTo('index').build(),
             new NavigationBuilder()
-                .children(
-                    new ChildBuilder().icon(mdiCalendarClockOutline).title('Vereinskalender').to('events-calendar').build(),
+                .setChildren(
+                    new ChildBuilder().setIcon(mdiCalendarClockOutline).setTitle('Vereinskalender').setTo('events-calendar').build(),
                     new ChildBuilder()
-                        .children(
-                            new ChildChildBuilder().icon(mdiCalendarAlert).title('RTF / Forsbach-Tour').to('events-tours-events-rtfs').build(),
-                            new ChildChildBuilder().icon(mdiGoKartTrack).title('Permanente').to('events-tours-permanents').build()
+                        .setChildren(
+                            new ChildChildBuilder().setIcon(mdiCalendarAlert).setTitle('RTF / Forsbach-Tour').setTo('events-tours-events-rtfs').build(),
+                            new ChildChildBuilder().setIcon(mdiGoKartTrack).setTitle('Permanente').setTo('events-tours-permanents').build()
                         )
-                        .title('Touren')
+                        .setTitle('Touren')
                         .build(),
-                    new ChildBuilder().icon(mdiSnowman).title('Wintertraining').to('events-wintertraining').build(),
-                    new ChildBuilder().icon(mdiHumanMaleBoard).title('RTF-Empfehlungen außerhalb NRWs').to('events-tours-events-rtfs-suggestions').build(),
+                    new ChildBuilder().setIcon(mdiSnowman).setTitle('Wintertraining').setTo('events-wintertraining').build(),
+                    new ChildBuilder().setIcon(mdiHumanMaleBoard).setTitle('RTF-Empfehlungen außerhalb NRWs').setTo('events-tours-events-rtfs-suggestions').build(),
                     new ChildBuilder()
-                        .children(
-                            new ChildChildBuilder().icon(mdiWeb).url('www.radsport-events.de/termine/rennrad-events').title('Empfohlene Radsport Events').build(),
-                            new ChildChildBuilder().icon(mdiWeb).url('breitensport.rad-net.de/breitensportkalender').title('Breitensportkalender BDR').build()
+                        .setChildren(
+                            new ChildChildBuilder().setIcon(mdiWeb).setUrl('www.radsport-events.de/termine/rennrad-events').setTitle('Empfohlene Radsport Events').build(),
+                            new ChildChildBuilder().setIcon(mdiWeb).setUrl('breitensport.rad-net.de/breitensportkalender').setTitle('Breitensportkalender BDR').build()
                         )
-                        .title('Breitensportkalender & andere Events')
+                        .setTitle('Breitensportkalender & andere Events')
                         .build()
                 )
-                .expanded()
-                .icon(mdiBikeFast)
-                .title('Veranstaltungen & Termine')
+                .setExpanded()
+                .setIcon(mdiBikeFast)
+                .setTitle('Veranstaltungen & Termine')
                 .build(),
-            new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('www.koeln.de/wetter/regenradar/').title('Wetter live in Köln + Regenradar').build(),
-            new NavigationBuilder().icon(mdiWeatherWindy).url('www.windy.com/station?50.866,7.143,8').title('Windradar in Köln').build(),
+            new NavigationBuilder().setIcon(mdiWeatherPartlyRainy).setUrl('www.koeln.de/wetter/regenradar/').setTitle('Wetter live in Köln + Regenradar').build(),
+            new NavigationBuilder().setIcon(mdiWeatherWindy).setUrl('www.windy.com/station?50.866,7.143,8').setTitle('Windradar in Köln').build(),
             new NavigationBuilder()
-                .children(
-                    new ChildBuilder().icon(mdiImageMultiple).title('Galerien').to('about-us-galleries').build(),
-                    new ChildBuilder().icon(mdiMessageDraw).title('Gästebuch').to('about-us-guestbook').build(),
-                    new ChildBuilder().icon(mdiNewspaperVariantMultiple).title('(WIP) Presseberichte').to('index').build(),
-                    new ChildBuilder().icon(mdiHumanGreetingProximity).title('Ansprechpartner').to('about-us-contacts').build()
+                .setChildren(
+                    new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('about-us-galleries').build(),
+                    new ChildBuilder().setIcon(mdiMessageDraw).setTitle('Gästebuch').setTo('about-us-guestbook').build(),
+                    new ChildBuilder().setIcon(mdiNewspaperVariantMultiple).setTitle('Presseberichte').setTo('about-us-press-reports').build(),
+                    new ChildBuilder().setIcon(mdiHumanGreetingProximity).setTitle('Ansprechpartner').setTo('about-us-contacts').build()
                 )
-                .icon(mdiDomain)
-                .title('Über uns')
+                .setIcon(mdiDomain)
+                .setTitle('Über uns')
                 .build(),
-            new NavigationBuilder().icon(mdiCurrencyEur).title('Sponsoren').to('sponsors').build(),
+            new NavigationBuilder().setIcon(mdiCurrencyEur).setTitle('Sponsoren').setTo('sponsors').build(),
         ],
         socialMedias: [
-            new NavigationBuilder().color('indigo').icon(mdiFacebook).url('www.facebook.com/RTC.Koeln').build(),
-            new NavigationBuilder().color('red lighten-2').icon(mdiInstagram).url('www.instagram.com/rtckoeln').build(),
-            new NavigationBuilder().color('red lighten-2').icon(mdiGoogle).url('www.google.de/search?q=RTC+Köln+e.V.+1972').build(),
-            new NavigationBuilder().color('red lighten-2').icon(mdiYoutube).url('www.youtube.com/channel/UCC5YG6J73hWEdPoMbdjGG1w').build(),
-            new NavigationBuilder().icon(mdiGithub).url('github.com/Rad-Touristik-Club-Koln-e-V-1972').build(),
+            new NavigationBuilder().setColor('indigo').setIcon(mdiFacebook).setUrl('www.facebook.com/RTC.Koeln').build(),
+            new NavigationBuilder().setColor('red lighten-2').setIcon(mdiInstagram).setUrl('www.instagram.com/rtckoeln').build(),
+            new NavigationBuilder().setColor('red lighten-2').setIcon(mdiGoogle).setUrl('www.google.de/search?q=RTC+Köln+e.V.+1972').build(),
+            new NavigationBuilder().setColor('red lighten-2').setIcon(mdiYoutube).setUrl('www.youtube.com/channel/UCC5YG6J73hWEdPoMbdjGG1w').build(),
+            new NavigationBuilder().setIcon(mdiGithub).setUrl('github.com/Rad-Touristik-Club-Koln-e-V-1972').build(),
         ],
     }),
 })

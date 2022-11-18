@@ -3,10 +3,10 @@ import ETraining from '~/models/enums/events/ETraining'
 
 export default class Training extends AEntity {
     category = ETraining.wintertraining
-    height = ''
-    lastChange: Date = new Date()
-    length = ''
-    speed = ''
-    text = ''
-    title = ''
+    height!: string
+    lastChange!: Date
+    length!: string
+    speed!: string
+    text!: string
+    title!: string
 }

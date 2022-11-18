@@ -4,11 +4,11 @@ import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/Guestbook
 
 export default [
     new GuestbookEntryBuilder()
-        .date('2012-6-1')
-        .name('Wolfgang Alberg')
-        .organization('www.cardiofitness.de')
-        .source(ESource['E-Mail'])
-        .text(
+        .setDate('2012-6-1')
+        .setName('Wolfgang Alberg')
+        .setOrganization('www.cardiofitness.de')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Hallo Sportfreunde,
 
 leider finde ich auf euer Homepage kein Gästebuch, möchte mich, auch im Namen weiterer 8 Mitfahrer unserer Gruppe bei euch für die Tour ab Zündorf bedanken.
@@ -23,15 +23,15 @@ Wolfgang Alberg
 www.cardiofitness.de
 `
         )
-        .title('Ein großes Dankeschöööööön')
+        .setTitle('Ein großes Dankeschöööööön')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-6-1')
-        .name('Ursula Koepp')
-        .organization('TSV Weiss-Köln')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-6-1')
+        .setName('Ursula Koepp')
+        .setOrganization('TSV Weiss-Köln')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Liebe Radsportfreunde,
 
 ganz herzlichen Dank für die schöne RTF am Sonntag!
@@ -47,14 +47,14 @@ Herzliche Grüße aus Rondorf,
 Ursula Koepp
 `
         )
-        .title('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
+        .setTitle('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-6-1')
-        .name('Günter')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-6-1')
+        .setName('Günter')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Hallo Diana,
 
 hatte Norbert am Sonntag noch getroffen und ihm gesagt, dass es mir sehr gut gefallen hatte.
@@ -77,15 +77,15 @@ Viele Grüße
 Günter
 `
         )
-        .title('10 Punkte und die Krone für eure schöne RTF!!!')
+        .setTitle('10 Punkte und die Krone für eure schöne RTF!!!')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-6-1')
-        .name('Dieter Reich')
-        .organization('ISB-Team-Cologne')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-6-1')
+        .setName('Dieter Reich')
+        .setOrganization('ISB-Team-Cologne')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Hallo Radsportler des RTC-Köln,
 
 danke für die gut ausgearbeitete Tour am 20.05.12.
@@ -99,15 +99,15 @@ Sportliche Grüße
 Dieter Reich
 `
         )
-        .title('Danke für die gut ausgearbeitete Tour am 20.05.12')
+        .setTitle('Danke für die gut ausgearbeitete Tour am 20.05.12')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-6-1')
-        .location('Monheim')
-        .name('Elke und Dieter')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-6-1')
+        .setLocation('Monheim')
+        .setName('Elke und Dieter')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Hallo liebe RTCler,
 
 herzlichen Dank für eine tolle Forsbachtour 2012.
@@ -121,14 +121,14 @@ Viele Grüße aus Monheim am Rhein
 Elke und Dieter
 `
         )
-        .title('... eine tolle Forsbachtour 2012')
+        .setTitle('... eine tolle Forsbachtour 2012')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-5-1')
-        .name('Josef Witt')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-5-1')
+        .setName('Josef Witt')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Guten Morgen,
 
 ich bin gestern die 151 Strecke gefahren und wie ich um ca. 15.30 Uhr im Ziel wieder war wollte ich und meine drei anderen Radkollegen ein Grillwürstchen essen,
@@ -148,15 +148,15 @@ Mit freundlichen Grüßen
 Josef Witt
 `
         )
-        .title('Verpflegungsengpässe, sonst war es eine sehr gute Veranstaltung!')
+        .setTitle('Verpflegungsengpässe, sonst war es eine sehr gute Veranstaltung!')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-5-1')
-        .location('Kierspe')
-        .name('Michaela Bäcker')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-5-1')
+        .setLocation('Kierspe')
+        .setName('Michaela Bäcker')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Der Tag danach ...
 
 So, ich hatte gestern das große Vergnügen an dem Forstbach-Marathon 2012 teilzunehmen.
@@ -209,15 +209,15 @@ Michaela Bäcker
 Aus Kierspe
 `
         )
-        .title('... eine super gelungene RTF !!!')
+        .setTitle('... eine super gelungene RTF !!!')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-5-1')
-        .location('Libur')
-        .name('Matthias Zimmer')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-5-1')
+        .setLocation('Libur')
+        .setName('Matthias Zimmer')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Sehr geehrte Damen und Herren,
 
 Ich freue mich sehr wenn der Breitensport immer noch großen Zulauf findet.
@@ -241,15 +241,15 @@ mit freundlichen Grüssen
 Matthias Zimmer
 `
         )
-        .title('Lärmbelästigung und Raserei')
+        .setTitle('Lärmbelästigung und Raserei')
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.RTF)
-        .date('2012-5-1')
-        .name('Monika und Helmut Moosmann')
-        .organization('RSG Ford')
-        .source(ESource['E-Mail'])
-        .text(
+        .setCategory(EEvent.RTF)
+        .setDate('2012-5-1')
+        .setName('Monika und Helmut Moosmann')
+        .setOrganization('RSG Ford')
+        .setSource(ESource['E-Mail'])
+        .setText(
             `Liebe RTCler,
 
 CHAPEAU!!!
@@ -271,6 +271,6 @@ Herzlichst grüßen die RSGler (Ford)
 Monika u. Helmut Moosmann
 `
         )
-        .title('CHAPEAU !!!')
+        .setTitle('CHAPEAU !!!')
         .build(),
 ]

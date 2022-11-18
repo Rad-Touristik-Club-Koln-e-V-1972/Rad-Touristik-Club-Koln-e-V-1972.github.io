@@ -4,18 +4,18 @@ import GuestbookEntryBuilder from '~/models/builder/about-us/guestbook/Guestbook
 
 export default [
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Franz Böhm')
-        .source(ESource.Facebook)
-        .text(`Ihr macht das richtig gut! Freue mich auf nächstes Jahr.`)
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Franz Böhm')
+        .setSource(ESource.Facebook)
+        .setText(`Ihr macht das richtig gut! Freue mich auf nächstes Jahr.`)
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Martin Rupp')
-        .source(ESource.Facebook)
-        .text(
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Martin Rupp')
+        .setSource(ESource.Facebook)
+        .setText(
             `Sehr schöne Strecken ...
 super Verpflegung ...
 schöne Lounge im Ziel ...
@@ -25,11 +25,11 @@ weiter so.
         )
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Andreas Schäfer')
-        .source(ESource.Facebook)
-        .text(
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Andreas Schäfer')
+        .setSource(ESource.Facebook)
+        .setText(
             `Sehr schöne Tour bei tollem Sonnenschein
 Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.
 Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
@@ -37,29 +37,35 @@ Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
         )
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Dirk Weinbörner')
-        .source(ESource.Facebook)
-        .text(`Tolle Tour, klasse Verpflegung - richtig gut gemacht - nächstes Jahr auf jeden Fall wieder.`)
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Dirk Weinbörner')
+        .setSource(ESource.Facebook)
+        .setText(`Tolle Tour, klasse Verpflegung - richtig gut gemacht - nächstes Jahr auf jeden Fall wieder.`)
         .build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Matthes Heise')
-        .source(ESource.Facebook)
-        .text(
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Matthes Heise')
+        .setSource(ESource.Facebook)
+        .setText(
             `War eine sehr schöne Tour. Die Kontroll- und Verpflegungspunkte waren super.
 Einfach gesagt, ich freu mich schon auf's nächste Jahr!
 `
         )
         .build(),
-    new GuestbookEntryBuilder().category(EEvent.CTF).date('2019-10-28 20:00').name('Stephanie Hilton').source(ESource.Facebook).text(`Tolle Tour! Hat Spass gemacht!!!`).build(),
     new GuestbookEntryBuilder()
-        .category(EEvent.CTF)
-        .date('2019-10-28 20:00')
-        .name('Jochen Güttes')
-        .source(ESource.Facebook)
-        .text(`Eine top organisierte Veranstaltung. Hat riesen Spaß gemacht.`)
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Stephanie Hilton')
+        .setSource(ESource.Facebook)
+        .setText(`Tolle Tour! Hat Spass gemacht!!!`)
+        .build(),
+    new GuestbookEntryBuilder()
+        .setCategory(EEvent.CTF)
+        .setDate('2019-10-28 20:00')
+        .setName('Jochen Güttes')
+        .setSource(ESource.Facebook)
+        .setText(`Eine top organisierte Veranstaltung. Hat riesen Spaß gemacht.`)
         .build(),
 ]

@@ -3,54 +3,30 @@ import Child from '~/models/entities/navigation/Child'
 import ChildChild from '~/models/entities/navigation/ChildChild'
 
 export default class ChildBuilder<T extends Child> extends ChildChildBuilder<T> {
-    constructor(value: T = new Child() as T) {
-        super(value)
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    protected children!: ChildChild[]
+    protected expanded = false
+
+    build() {
+        const value = super.build()
+
+        value.children = this.children ?? []
+        value.expanded = this.expanded
+
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return value as T
     }
 
-    children(...value: ChildChild[]): ChildBuilder<T> {
-        this.value.children = value
+    setChildren(...value: ChildChild[]): ChildBuilder<T> {
+        this.children = value
 
         return this
     }
 
-    color(value: string): ChildBuilder<T> {
-        super.color(value)
-
-        return this
-    }
-
-    expanded(): ChildBuilder<T> {
-        this.value.expanded = true
-
-        return this
-    }
-
-    icon(value: string): ChildBuilder<T> {
-        super.icon(value)
-
-        return this
-    }
-
-    imageUrl(value: string): ChildBuilder<T> {
-        super.imageUrl(value)
-
-        return this
-    }
-
-    title(value: string): ChildBuilder<T> {
-        super.title(value)
-
-        return this
-    }
-
-    to(name: string): ChildBuilder<T> {
-        super.to(name)
-
-        return this
-    }
-
-    url(value: string): ChildBuilder<T> {
-        super.url(value)
+    setExpanded(): ChildBuilder<T> {
+        this.expanded = true
 
         return this
     }

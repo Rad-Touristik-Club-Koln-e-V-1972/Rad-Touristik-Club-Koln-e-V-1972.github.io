@@ -4,7 +4,7 @@ import EProfile from '~/models/enums/events/tours/EProfile'
 
 export default class Permanent extends Tour {
     category = EEvent.Permanente
-    height = 0
-    length = 0
+    height!: number
+    length!: number
     profile = EProfile.wellig
 }

@@ -1,64 +1,42 @@
 import TourBuilder from '~/models/builder/events/TourBuilder'
-import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
-import Control from '~/models/entities/events/tours/Control'
 import Permanent from '~/models/entities/events/tours/Permanent'
 import EProfile from '~/models/enums/events/tours/EProfile'
+import EEvent from '~/models/enums/EEvent'
 
 export default class PermanentBuilder extends TourBuilder<Permanent> {
-    constructor() {
-        super(new Permanent())
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    private height!: number
+    private length!: number
+    private profile = EProfile.wellig
+
+    build() {
+        const value = super.build()
+
+        value.category = EEvent.Permanente
+        value.height = this.height
+        value.length = this.length
+        value.profile = this.profile
+
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return value as Permanent
     }
 
-    controls(...value: Control[]): PermanentBuilder {
-        super.controls(...value)
+    setHeight(value: number): PermanentBuilder {
+        this.height = value
 
         return this
     }
 
-    height(value: number): PermanentBuilder {
-        this.value.height = value
+    setLength(value: number): PermanentBuilder {
+        this.length = value
 
         return this
     }
 
-    images(...value: GalleryEntry[]): PermanentBuilder {
-        super.images(...value)
-
-        return this
-    }
-
-    lastChange(value: string): PermanentBuilder {
-        super.lastChange(value)
-
-        return this
-    }
-
-    length(value: number): PermanentBuilder {
-        this.value.length = value
-
-        return this
-    }
-
-    profile(value: EProfile): PermanentBuilder {
-        this.value.profile = value
-
-        return this
-    }
-
-    text(value: string): PermanentBuilder {
-        super.text(value)
-
-        return this
-    }
-
-    title(value: string): PermanentBuilder {
-        super.title(value)
-
-        return this
-    }
-
-    urls(value: Record<string, URL>): PermanentBuilder {
-        super.urls(value)
+    setProfile(value: EProfile): PermanentBuilder {
+        this.profile = value
 
         return this
     }

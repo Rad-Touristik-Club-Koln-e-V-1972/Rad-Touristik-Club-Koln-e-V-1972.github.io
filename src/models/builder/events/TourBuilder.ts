@@ -1,59 +1,86 @@
 import ABuilder from '~/models/builder/ABuilder'
+import AEntity from '~/models/entities/AEntity'
 import PopupBuilder from '~/models/builder/PopupBuilder'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 import Tour from '~/models/entities/events/Tour'
 import Control from '~/models/entities/events/tours/Control'
+import Popup from '~/models/entities/Popup'
 
 export default class TourBuilder<T extends Tour> extends ABuilder<T> {
-    constructor(value: T = new Tour() as T) {
-        super(value)
+    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    protected category = EEvent.Vereinsfahrt
+    protected controls!: Control[]
+    protected images!: GalleryEntry[]
+    protected lastChange!: string
+    protected popup?: Popup
+    protected text!: string
+    protected title!: string
+    protected urls!: Record<string, URL>
+
+    build() {
+        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
+        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+        return Object.assign(
+            {
+                category: this.category,
+                controls: this.controls ?? [],
+                images: this.images ?? [],
+                lastChange: new Date(this.lastChange),
+                popup: this.popup,
+                text: this.text,
+                title: this.title,
+                urls: this.urls ?? {},
+            },
+            new AEntity(this.id)
+        ) as T
     }
 
-    category(value: EEvent): TourBuilder<T> {
-        this.value.category = value
+    setCategory(value: EEvent): TourBuilder<T> {
+        this.category = value
 
         return this
     }
 
-    controls(...value: Control[]): TourBuilder<T> {
-        this.value.controls = value
+    setControls(...value: Control[]): TourBuilder<T> {
+        this.controls = value
 
         return this
     }
 
-    images(...value: GalleryEntry[]): TourBuilder<T> {
-        this.value.images = value
+    setImages(...value: GalleryEntry[]): TourBuilder<T> {
+        this.images = value
 
         return this
     }
 
-    lastChange(value: string): TourBuilder<T> {
-        this.value.lastChange = new Date(value)
+    setLastChange(value: string): TourBuilder<T> {
+        this.lastChange = value
 
         return this
     }
 
-    popup(text: string, title: string): TourBuilder<T> {
-        this.value.popup = new PopupBuilder().text(text).title(title).build()
+    setPopup(text: string, title: string): TourBuilder<T> {
+        this.popup = new PopupBuilder().setText(text).setTitle(title).build()
 
         return this
     }
 
-    text(value: string): TourBuilder<T> {
-        this.value.text = value
+    setText(value: string): TourBuilder<T> {
+        this.text = value
 
         return this
     }
 
-    title(value: string): TourBuilder<T> {
-        this.value.title = value
+    setTitle(value: string): TourBuilder<T> {
+        this.title = value
 
         return this
     }
 
-    urls(value: Record<string, URL>): TourBuilder<T> {
-        this.value.urls = value
+    setUrls(value: Record<string, URL>): TourBuilder<T> {
+        this.urls = value
 
         return this
     }

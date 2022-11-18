@@ -5,9 +5,9 @@ export default class Event extends AEntity {
     category = EEvent.RTC
     clubPoints?: number
     color = 'primary'
-    contact = ''
+    contact!: string
     end?: Date
-    name = ''
+    name!: string
     start!: Date
     timed = false
     url?: URL

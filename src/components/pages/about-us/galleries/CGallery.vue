@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, nextTick, ref } from 'vue'
+import { getCurrentInstance, nextTick, PropType, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import Gallery from '~/models/entities/about-us/Gallery'
@@ -44,7 +44,9 @@ import useDateTime from '~/utils/DateTime'
 
 const props = defineProps({
     album: { default: '', type: String },
-    value: { required: true, type: Gallery },
+    // TODO WORKAROUND replace "Object as PropType<Gallery>" by "Gallery" after "@typescript-eslint/parser" "v5.43.1" got released.
+    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    value: { required: true, type: Object as PropType<Gallery> },
 })
 
 const proxy = getCurrentInstance()?.proxy
