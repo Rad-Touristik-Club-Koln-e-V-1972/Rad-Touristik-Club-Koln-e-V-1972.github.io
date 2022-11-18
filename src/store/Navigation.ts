@@ -13,12 +13,12 @@ import {
     mdiHumanGreetingProximity,
     mdiHumanMaleBoard,
     mdiImageMultiple,
-    mdiInformation,
     mdiInstagram,
     mdiMessageDraw,
     mdiNewspaperVariantMultiple,
     mdiSnowman,
     mdiWeatherPartlyRainy,
+    mdiWeatherWindy,
     mdiWeb,
     mdiYoutube,
 } from '@mdi/js'
@@ -60,6 +60,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .title('Veranstaltungen & Termine')
                 .build(),
             new NavigationBuilder().icon(mdiWeatherPartlyRainy).url('www.koeln.de/wetter/regenradar/').title('Wetter live in Köln + Regenradar').build(),
+            new NavigationBuilder().icon(mdiWeatherWindy).url('www.windy.com/station?50.866,7.143,8').title('Windradar in Köln').build(),
             new NavigationBuilder()
                 .children(
                     new ChildBuilder().icon(mdiImageMultiple).title('Galerien').to('about-us-galleries').build(),
