@@ -46,7 +46,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="it in value.tracks.filter((it) => it.controls)" :key="it.id" :class="it.important ? 'primary--text' : ''">
+                                    <tr v-for="it in value.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'primary--text' : ''">
                                         <td v-text="dateTime.formatTime(it.start, it.end)" />
                                         <td v-text="`${it.length} km`" />
                                         <td v-text="it.height" />
@@ -80,7 +80,7 @@
                                                     <th colspan="2" v-text="'RTF'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((it) => it.category !== EEvent.Marathon)" :key="it.id">
+                                                    <tr v-for="it in value.fees.filter((f) => f.category !== EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="`${it.price} €`" />
                                                     </tr>
@@ -93,7 +93,7 @@
                                                     <th colspan="2" v-text="'Marathon'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((it) => it.category === EEvent.Marathon)" :key="it.id">
+                                                    <tr v-for="it in value.fees.filter((f) => f.category === EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="`${it.price} €`" />
                                                     </tr>
