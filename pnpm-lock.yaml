@@ -24,7 +24,7 @@ importers:
       '@yeger/vue2-masonry-wall': ^2.0.73
       buffer: ^6.0.3
       consola: ^2.15.3
-      date-holidays: ^3.16.10
+      date-holidays: ^3.16.11
       eslint: ^8.28.0
       eslint-plugin-nuxt: ^4.0.0
       eslint-plugin-vue: ^9.7.0
@@ -48,7 +48,7 @@ importers:
     dependencies:
       '@pinia/nuxt': 0.4.4_7owqlnkudyip2hyk53gqm5x7a4
       '@yeger/vue2-masonry-wall': 2.0.73_vue@2.7.14
-      date-holidays: 3.16.10
+      date-holidays: 3.16.11
       nuxt-edge: 2.16.0-27720022.54e852f_sozjgaexylfusjlqcxdwrwpmai
       pinia: 2.0.24_7owqlnkudyip2hyk53gqm5x7a4
       uuid: 9.0.0
@@ -4416,11 +4416,11 @@ packages:
       webpack: 4.46.0
     dev: false
 
-  /caldate/2.0.3:
-    resolution: {integrity: sha512-5YqrhvP/4lVmg6JlyFff0RXUxwWY8E2B6L6AfAsABMOL/eJ60o7bRnxys847bdjxxYXxHurYMqSRDc62+vrgyQ==}
+  /caldate/2.0.4:
+    resolution: {integrity: sha512-EtSyLpXDMAfc2PorMuQCvvfO4QP1H+uTuonzmtvk23sWNB/1oCj+skskw1GEQMlzcGvQrVCFIt58/4BVRWhGdw==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      moment-timezone: 0.5.38
+      moment-timezone: 0.5.39
     dev: false
 
   /call-bind/1.0.2:
@@ -5462,26 +5462,26 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
-  /date-holidays-parser/3.4.1:
-    resolution: {integrity: sha512-mXoTd8Cp2OAyf1PSimCWmWUpQYJDCxB6j2c6SpFXHYi8natxlE0boGb+5S+X52OyzExzO9RbxSi3FvcV3GqT3g==}
+  /date-holidays-parser/3.4.2:
+    resolution: {integrity: sha512-nNHTlTq84neQt3S5pNRBCx3/0PAwpBA+YdUfRUinFdtgxu670mxksZxvsAy8W0JWvZRUW7NSsbQ2FCMr2/QEgw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       astronomia: 4.1.1
-      caldate: 2.0.3
+      caldate: 2.0.4
       date-bengali-revised: 2.0.2
       date-chinese: 2.1.4
       date-easter: 1.0.2
       deepmerge: 4.2.2
       jalaali-js: 1.2.6
-      moment-timezone: 0.5.38
+      moment-timezone: 0.5.39
     dev: false
 
-  /date-holidays/3.16.10:
-    resolution: {integrity: sha512-TnBDst6Gz1wjT1wspV3I7wsRuvUoIdWbA5OnKZAuD6f2YcklZq2ZdlMQHZLAkULKQbMH03PRtDpKHLmg4LQ9ig==}
+  /date-holidays/3.16.11:
+    resolution: {integrity: sha512-yZdPgh9qadWz7u1mlO9Jp/ZZQVYqvQnbZWsiNYB/5acLf+z78+WsoXVzBtkRLWHpMEbnMfP+XSio+drzMdrQ6w==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      date-holidays-parser: 3.4.1
+      date-holidays-parser: 3.4.2
       js-yaml: 4.1.0
       lodash.omit: 4.5.0
       lodash.pick: 4.4.0
@@ -8784,8 +8784,8 @@ packages:
       ufo: 1.0.0
     dev: false
 
-  /moment-timezone/0.5.38:
-    resolution: {integrity: sha512-nMIrzGah4+oYZPflDvLZUgoVUO4fvAqHstvG3xAUnMolWncuAiLDWNnJZj6EwJGMGfb1ZcuTFE6GI3hNOVWI/Q==}
+  /moment-timezone/0.5.39:
+    resolution: {integrity: sha512-hoB6suq4ISDj7BDgctiOy6zljBsdYT0++0ZzZm9rtxIvJhIbQ3nmbgSWe7dNFGurl6/7b1OUkHlmN9JWgXVz7w==}
     dependencies:
       moment: 2.29.4
     dev: false
