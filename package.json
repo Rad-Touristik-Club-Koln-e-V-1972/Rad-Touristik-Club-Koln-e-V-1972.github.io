@@ -28,8 +28,8 @@
     },
     "devDependencies": {
         "@babel/core": "^7.20.2",
-        "@commitlint/cli": "^17.2.0",
-        "@commitlint/config-conventional": "^17.2.0",
+        "@commitlint/cli": "^17.3.0",
+        "@commitlint/config-conventional": "^17.3.0",
         "@mdi/js": "^7.0.96",
         "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27778503.de9e5c2",
         "@nuxt/types": "^2.15.8",
