@@ -21,7 +21,7 @@ importers:
       '@types/uuid': ^8.3.4
       '@vue/eslint-config-prettier': ^7.0.0
       '@vue/eslint-config-typescript': ^11.0.2
-      '@yeger/vue2-masonry-wall': ^2.0.73
+      '@yeger/vue2-masonry-wall': ^2.0.75
       buffer: ^6.0.3
       consola: ^2.15.3
       date-holidays: ^3.16.11
@@ -47,7 +47,7 @@ importers:
       webpack: ^4.46.0
     dependencies:
       '@pinia/nuxt': 0.4.5_7owqlnkudyip2hyk53gqm5x7a4
-      '@yeger/vue2-masonry-wall': 2.0.73_vue@2.7.14
+      '@yeger/vue2-masonry-wall': 2.0.75_vue@2.7.14
       date-holidays: 3.16.11
       nuxt-edge: 2.16.0-27720022.54e852f_sozjgaexylfusjlqcxdwrwpmai
       pinia: 2.0.26_7owqlnkudyip2hyk53gqm5x7a4
@@ -3638,8 +3638,8 @@ packages:
   /@xtuc/long/4.2.2:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
 
-  /@yeger/vue2-masonry-wall/2.0.73_vue@2.7.14:
-    resolution: {integrity: sha512-EVrvuso2ee12zDGbZ++85mULxj1EPzZxDxJdVrjz1Nzy7b5gb5IGhVTPltLzVdBYxFaU8rzrnaK12Y7UMmY8Gw==}
+  /@yeger/vue2-masonry-wall/2.0.75_vue@2.7.14:
+    resolution: {integrity: sha512-o1AwGhiaiCjRZc78QYQ0DednTkwvSpFY6+vFcYofKsmKNJSnnUi3wTmSvS40PhFFL3YRT6qYi5aPYG7cd+q8Vg==}
     engines: {node: '>=12'}
     peerDependencies:
       vue: ^2.0.0
