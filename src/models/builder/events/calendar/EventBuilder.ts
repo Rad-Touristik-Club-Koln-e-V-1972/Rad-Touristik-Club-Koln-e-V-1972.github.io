@@ -28,7 +28,7 @@ export default class EventBuilder extends ABuilder<Event> {
                 name: this.name,
                 start: new Date(this.start),
                 timed: this.timed,
-                url: new URL(`https://${this.url}`),
+                url: this.url ? new URL(`https://${this.url}`) : undefined,
             },
             new AEntity(this.id)
         ) as Event

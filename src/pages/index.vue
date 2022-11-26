@@ -12,11 +12,11 @@
                         <v-timeline :dense="vuetify?.breakpoint.mobile">
                             <v-timeline-item v-for="it in value" :key="it.id">
                                 <template #opposite>
-                                    <span class="font-weight-bold text-h5 primary--text" v-text="dateTime.format(it.start, it.end, true)" />
+                                    <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.start, it.end, true)" />
                                 </template>
                                 <v-card max-width="40em">
                                     <v-toolbar color="primary" dense flat>
-                                        <v-toolbar-title class="accent--text">{{ it.title }}</v-toolbar-title>
+                                        <v-toolbar-title class="accent--text text-title">{{ it.title }}</v-toolbar-title>
                                     </v-toolbar>
                                     <v-card-text>
                                         <pre class="black--text text-pre-wrap" v-html="it.text" />

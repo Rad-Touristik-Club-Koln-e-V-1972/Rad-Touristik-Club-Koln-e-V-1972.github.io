@@ -4,22 +4,18 @@
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
-        <v-card-title>
-            <v-toolbar color="primary" flat max-height="64px" rounded="0">
-                <v-btn exact icon @click="close">
-                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
-                </v-btn>
-                <v-toolbar-title class="accent--text">
-                    {{ value.title }}
-                    <div class="text-subtitle-1" v-text="`${dateTime.format(value.start, value.end, true)} bei ${value.location}`" />
-                </v-toolbar-title>
-                <v-spacer />
-                <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
-                    Details
-                    <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
-                </v-btn>
-            </v-toolbar>
-        </v-card-title>
+        <v-toolbar color="primary" dense flat max-height="64px">
+            <v-btn exact icon @click="close">
+                <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
+            </v-btn>
+            <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
+            <v-spacer />
+            <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
+                Details
+                <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+            </v-btn>
+        </v-toolbar>
+        <v-card-subtitle class="text-title">{{ dateTime.format(value.start, value.end, true) }} bei {{ value.location }}</v-card-subtitle>
         <v-expand-transition v-if="value.description">
             <div v-show="showText">
                 <v-card-text>

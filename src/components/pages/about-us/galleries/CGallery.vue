@@ -3,8 +3,8 @@
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
-        <v-card-title class="text-wrap">{{ props.value.title }}</v-card-title>
-        <v-card-subtitle>
+        <v-card-title>{{ props.value.title }}</v-card-title>
+        <v-card-subtitle class="text-title">
             <div v-text="`Datum: ${dateTime.format(props.value.start, props.value.end, true)}`" />
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>

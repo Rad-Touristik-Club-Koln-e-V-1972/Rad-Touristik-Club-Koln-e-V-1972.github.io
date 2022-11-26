@@ -1,11 +1,9 @@
 <template>
     <div id="error" class="d-flex justify-center">
         <v-card min-width="300px">
-            <v-card-title>
-                <v-toolbar color="primary" flat>
-                    <v-toolbar-title class="accent--text">Fehlercode {{ error.statusCode }}</v-toolbar-title>
-                </v-toolbar>
-            </v-card-title>
+            <v-toolbar color="primary" dense flat>
+                <v-toolbar-title class="accent--text text-title">Fehlercode {{ error.statusCode }}</v-toolbar-title>
+            </v-toolbar>
             <v-card-text>{{ getText() }}</v-card-text>
             <v-card-actions>
                 <v-btn :to="{ name: 'about-us-contacts' }">Support</v-btn>

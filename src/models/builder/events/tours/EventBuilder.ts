@@ -9,7 +9,6 @@ export default class EventBuilder extends TourBuilder<Event> {
     // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private fees!: Fee[]
-    private subtitle!: string
     private times!: Time[]
     private tracks!: Track[]
 
@@ -18,7 +17,6 @@ export default class EventBuilder extends TourBuilder<Event> {
 
         value.category = EEvent.RTF
         value.fees = this.fees ?? []
-        value.subtitle = this.subtitle
         value.times = this.times ?? []
         value.tracks = this.tracks ?? []
 
@@ -29,12 +27,6 @@ export default class EventBuilder extends TourBuilder<Event> {
 
     setFees(...value: Fee[]): EventBuilder {
         this.fees = value
-
-        return this
-    }
-
-    setSubtitle(value: string): EventBuilder {
-        this.subtitle = value
 
         return this
     }

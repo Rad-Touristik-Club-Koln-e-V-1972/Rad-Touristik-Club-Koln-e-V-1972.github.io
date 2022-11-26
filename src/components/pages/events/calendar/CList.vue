@@ -1,14 +1,14 @@
 <template>
     <v-card id="CList">
-        <v-card-title class="text-body-1 text-sm-body-2 text-md-h6 text-lg-h5 text-xl-h4">
-            Zukünftige Termine
+        <v-toolbar flat>
+            <v-toolbar-title class="text-title">Zukünftige Termine</v-toolbar-title>
             <v-spacer />
             <c-date-range v-model="filter.dateRange" @input="triggerFilter" />
             <v-spacer />
             <c-categories v-model="filter.categories" @input="triggerFilter" />
             <v-spacer />
             <c-search v-model="filter.search.value" @input="triggerFilter" />
-        </v-card-title>
+        </v-toolbar>
         <v-data-table
             :custom-filter="filterBy"
             :custom-sort="sortBy"

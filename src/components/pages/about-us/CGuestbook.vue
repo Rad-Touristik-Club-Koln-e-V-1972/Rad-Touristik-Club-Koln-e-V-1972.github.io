@@ -1,15 +1,16 @@
 <template>
     <v-card id="CGuestbook" max-width="20em">
-        <v-card-title v-if="props.value.title" class="accent--text primary text-wrap">{{ props.value.title }}</v-card-title>
-        <v-divider />
-        <v-card-subtitle class="secondary accent--text">
+        <v-card-subtitle class="accent--text secondary">
             <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
             <div v-text="`${props.value.name} via ${ESource[props.value.source]}`" />
             <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
             <div v-if="props.value.category !== EEvent.RTC" v-text="`Event: ${EEvent[props.value.category]}`" />
         </v-card-subtitle>
-        <v-divider />
-        <v-card-text v-if="props.value.text || props.value.imageUrls?.length">
+        <v-toolbar v-if="props.value.title" color="primary" flat>
+            <v-toolbar-title class="accent--text text-title">{{ props.value.title }}</v-toolbar-title>
+        </v-toolbar>
+        <!-- TODO style="padding: 16px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/12170 -->
+        <v-card-text v-if="props.value.text || props.value.imageUrls?.length" style="padding: 16px">
             <div v-if="props.value.text">
                 <pre class="black--text text-pre-wrap" v-html="props.value.text" />
             </div>

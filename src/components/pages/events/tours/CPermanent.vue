@@ -1,9 +1,9 @@
 <template>
     <v-card id="CTour" max-width="37em">
         <v-toolbar color="primary" dense flat>
-            <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
+            <v-toolbar-title class="accent--text text-title">{{ props.value.title }}</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle>
+        <v-card-subtitle class="text-title">
             <v-simple-table dense>
                 <tbody>
                     <tr>

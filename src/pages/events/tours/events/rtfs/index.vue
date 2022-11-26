@@ -1,20 +1,15 @@
 <template>
     <v-card id="VIndex" flat>
-        <v-card-title>
-            <v-toolbar color="primary" flat>
-                <v-toolbar-title class="accent--text">
-                    {{ value.title }}
-                    <div class="text-subtitle-1" v-text="value.subtitle" />
-                </v-toolbar-title>
-            </v-toolbar>
-        </v-card-title>
-        <v-card-subtitle class="text-subtitle-1">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
+        <v-toolbar color="primary" dense flat>
+            <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
+        </v-toolbar>
+        <v-card-subtitle class="text-title">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
         <v-card-text>
-            <v-row class="justify-center">
+            <v-row class="justify-center" no-gutters>
                 <v-col cols="auto">
                     <v-card max-width="40em">
                         <v-toolbar color="primary" dense flat>
-                            <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
+                            <v-toolbar-title class="accent--text text-title">Vorwort</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
                             <pre class="black--text text-pre-wrap" v-html="value.text" />
@@ -31,7 +26,7 @@
                 <v-col cols="auto">
                     <v-card class="text-no-wrap">
                         <v-toolbar color="primary" dense flat>
-                            <v-toolbar-title class="accent--text">Strecken</v-toolbar-title>
+                            <v-toolbar-title class="accent--text text-title">Strecken</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
                             <v-simple-table dense>
@@ -66,14 +61,14 @@
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-row>
+                    <v-row dense>
                         <v-col cols="auto">
                             <v-card>
                                 <v-toolbar color="primary" dense flat>
-                                    <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text text-title">Gebühren</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
-                                    <v-row>
+                                    <v-row dense>
                                         <v-col>
                                             <v-simple-table dense>
                                                 <thead>
@@ -107,37 +102,33 @@
                         <v-col cols="auto">
                             <v-card>
                                 <v-toolbar color="primary" dense flat>
-                                    <v-toolbar-title class="accent--text">Zeiten</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text text-title">Zeiten</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
-                                    <v-row>
-                                        <v-col cols="auto">
-                                            <v-simple-table dense>
-                                                <tbody>
-                                                    <tr v-for="it in value.times" :key="it.id">
-                                                        <td v-text="it.name" />
-                                                        <td class="text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
-                                                    </tr>
-                                                </tbody>
-                                            </v-simple-table>
-                                        </v-col>
-                                    </v-row>
+                                    <v-simple-table dense>
+                                        <tbody>
+                                            <tr v-for="it in value.times" :key="it.id">
+                                                <td v-text="it.name" />
+                                                <td class="text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
+                                            </tr>
+                                        </tbody>
+                                    </v-simple-table>
                                 </v-card-text>
                             </v-card>
                         </v-col>
                     </v-row>
                 </v-col>
             </v-row>
-            <v-row>
+            <v-row no-gutters>
                 <v-col>
                     <v-timeline :dense="vuetify?.breakpoint.mobile">
                         <v-timeline-item v-for="it in value.tracks" :key="it.id">
                             <template #opposite>
-                                <span class="font-weight-bold text-h5 primary--text" v-text="it.name" />
+                                <span class="font-weight-bold primary--text text-h5" v-text="it.name" />
                             </template>
                             <v-card>
                                 <v-toolbar color="primary" dense flat>
-                                    <v-toolbar-title class="accent--text">{{ it.name }}</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text text-title">{{ it.name }}</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
                                     <pre class="black--text text-pre-wrap" v-html="it.text" />

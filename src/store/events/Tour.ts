@@ -28,7 +28,6 @@ export const useTourStore = defineStore('tour', {
                     new FeeBuilder().setCategory(EEvent.Marathon).setName('sonstige BDR-Mitglieder').setPrice(17).build(),
                     new FeeBuilder().setCategory(EEvent.Marathon).setName('Gastfahrer').setPrice(19).build()
                 )
-                .setSubtitle('RTF "Rad Touristik Fahrt"')
                 .setTimes(
                     new TimeBuilder().setName('Frühstück').setTime('6:00', '6:30').build(),
                     new TimeBuilder().setName('Start').setTime('6:30', '11:00').build(),

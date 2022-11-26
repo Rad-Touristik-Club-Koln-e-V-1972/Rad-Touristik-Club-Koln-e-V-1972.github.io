@@ -1,12 +1,13 @@
 <template>
     <v-card id="CContact" max-width="20em">
         <v-img contain :src="props.value.imageUrl.toString()" />
-        <v-card-title>{{ props.value.name }}</v-card-title>
-        <v-card-subtitle>{{ props.value.position }}</v-card-subtitle>
+        <v-card-title class="text-title">{{ props.value.name }}</v-card-title>
+        <v-card-subtitle class="text-title">{{ props.value.position }}</v-card-subtitle>
         <v-divider />
         <v-card-actions>
-            <v-btn icon :href="`mailto:${props.value.eMail}`">
-                <v-icon>{{ icons.mdiEmailArrowRight }}</v-icon>
+            <v-btn :href="`mailto:${props.value.eMail}`" text>
+                <v-icon left>{{ icons.mdiEmailArrowRight }}</v-icon>
+                E-Mail senden
             </v-btn>
             <v-spacer />
         </v-card-actions>
