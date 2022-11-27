@@ -15,7 +15,7 @@ importers:
       '@nuxtjs/router': ^1.7.0
       '@nuxtjs/stylelint-module': ^4.1.0
       '@nuxtjs/vuetify': ^1.12.3
-      '@pinia/nuxt': ^0.4.5
+      '@pinia/nuxt': ^0.4.6
       '@rushstack/eslint-patch': ^1.2.0
       '@types/node': ^18.11.9
       '@types/uuid': ^8.3.4
@@ -46,7 +46,7 @@ importers:
       vuetify: ^2.6.12
       webpack: ^4.46.0
     dependencies:
-      '@pinia/nuxt': 0.4.5_7owqlnkudyip2hyk53gqm5x7a4
+      '@pinia/nuxt': 0.4.6_7owqlnkudyip2hyk53gqm5x7a4
       '@yeger/vue2-masonry-wall': 2.0.75_vue@2.7.14
       date-holidays: 3.16.11
       nuxt-edge: 2.16.0-27720022.54e852f_sozjgaexylfusjlqcxdwrwpmai
@@ -2551,11 +2551,11 @@ packages:
       stack-trace: 0.0.10
     dev: false
 
-  /@pinia/nuxt/0.4.5_7owqlnkudyip2hyk53gqm5x7a4:
-    resolution: {integrity: sha512-lnJdZkpySxBArpiOLTJZtA+QSbODl6xIk4psgGWzrWiEwPjUSup/RmQ7zlWz7dmQTONA/mttR0j4V1Zh0b5NKA==}
+  /@pinia/nuxt/0.4.6_7owqlnkudyip2hyk53gqm5x7a4:
+    resolution: {integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A==}
     dependencies:
       '@nuxt/kit': 3.0.0
-      pinia: 2.0.26_7owqlnkudyip2hyk53gqm5x7a4
+      pinia: 2.0.27_7owqlnkudyip2hyk53gqm5x7a4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -9649,6 +9649,24 @@ packages:
 
   /pinia/2.0.26_7owqlnkudyip2hyk53gqm5x7a4:
     resolution: {integrity: sha512-tSxZNUcMGxQOvKZRjPKXxd2+/2NZhRF/CoYVE/+K6uE/Z3v1Oi4fcQFpxu5nMB1dCchjXUZ+lz0tBxV5ntwmQQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.4.5
+      typescript: 4.9.3
+      vue: 2.7.14
+      vue-demi: 0.13.11_vue@2.7.14
+    dev: false
+
+  /pinia/2.0.27_7owqlnkudyip2hyk53gqm5x7a4:
+    resolution: {integrity: sha512-nOnXP0OFeL8R4WjAHsterU+11vptda643gH02xKNtSCDPiRzVfRYodOLihLDoa0gL1KKuQKV+KOzEgdt3YvqEw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
