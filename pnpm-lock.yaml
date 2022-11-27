@@ -32,7 +32,7 @@ importers:
       husky: ^8.0.2
       lint-staged: ^13.0.4
       nuxt-edge: latest
-      pinia: ^2.0.26
+      pinia: ^2.0.27
       postcss-html: ^1.5.0
       prettier: ^2.8.0
       stylelint: ^14.15.0
@@ -50,7 +50,7 @@ importers:
       '@yeger/vue2-masonry-wall': 2.0.75_vue@2.7.14
       date-holidays: 3.16.11
       nuxt-edge: 2.16.0-27720022.54e852f_sozjgaexylfusjlqcxdwrwpmai
-      pinia: 2.0.26_7owqlnkudyip2hyk53gqm5x7a4
+      pinia: 2.0.27_7owqlnkudyip2hyk53gqm5x7a4
       uuid: 9.0.0
       vue: 2.7.14
       vuetify: 2.6.12_vue@2.7.14
@@ -9645,24 +9645,6 @@ packages:
   /pify/5.0.0:
     resolution: {integrity: sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==}
     engines: {node: '>=10'}
-    dev: false
-
-  /pinia/2.0.26_7owqlnkudyip2hyk53gqm5x7a4:
-    resolution: {integrity: sha512-tSxZNUcMGxQOvKZRjPKXxd2+/2NZhRF/CoYVE/+K6uE/Z3v1Oi4fcQFpxu5nMB1dCchjXUZ+lz0tBxV5ntwmQQ==}
-    peerDependencies:
-      '@vue/composition-api': ^1.4.0
-      typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@vue/devtools-api': 6.4.5
-      typescript: 4.9.3
-      vue: 2.7.14
-      vue-demi: 0.13.11_vue@2.7.14
     dev: false
 
   /pinia/2.0.27_7owqlnkudyip2hyk53gqm5x7a4:
