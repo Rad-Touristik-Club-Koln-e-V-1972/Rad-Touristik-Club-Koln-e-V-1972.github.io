@@ -27,7 +27,7 @@
         "vuetify": "^2.6.12"
     },
     "devDependencies": {
-        "@babel/core": "^7.20.2",
+        "@babel/core": "^7.20.5",
         "@commitlint/cli": "^17.3.0",
         "@commitlint/config-conventional": "^17.3.0",
         "@mdi/js": "^7.0.96",
