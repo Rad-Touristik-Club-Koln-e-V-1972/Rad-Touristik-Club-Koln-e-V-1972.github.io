@@ -41,11 +41,11 @@ export const useNavigationStore = defineStore('navigation', {
                     new ChildBuilder()
                         .setChildren(
                             new ChildChildBuilder().setIcon(mdiCalendarAlert).setTitle('RTF / Forsbach-Tour').setTo('events-tours-events-rtfs').build(),
+                            new ChildChildBuilder().setIcon(mdiSnowman).setTitle('Wintertraining').setTo('events-wintertraining').build(),
                             new ChildChildBuilder().setIcon(mdiGoKartTrack).setTitle('Permanente').setTo('events-tours-permanents').build()
                         )
-                        .setTitle('Touren')
+                        .setTitle('RTF, Training & Permanente')
                         .build(),
-                    new ChildBuilder().setIcon(mdiSnowman).setTitle('Wintertraining').setTo('events-wintertraining').build(),
                     new ChildBuilder().setIcon(mdiHumanMaleBoard).setTitle('RTF-Empfehlungen außerhalb NRWs').setTo('events-tours-events-rtfs-suggestions').build(),
                     new ChildBuilder()
                         .setChildren(
