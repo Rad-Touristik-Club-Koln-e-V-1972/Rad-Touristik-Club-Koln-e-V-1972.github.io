@@ -1,3 +1,4 @@
+import mimeTypes from 'mime-types'
 import ABuilder from '~/models/builder/ABuilder'
 import AEntity from '~/models/entities/AEntity'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
@@ -16,6 +17,7 @@ export default class GalleryEntryBuilder extends ABuilder<GalleryEntry> {
         return Object.assign(
             {
                 imageUrl: _imageUrl,
+                mimeType: mimeTypes.lookup(this.imageUrl),
                 previewUrl: this.previewUrl ? new URL(`https://${this.previewUrl}`) : this.createPreviewURL(_imageUrl),
             },
             new AEntity(this.id)

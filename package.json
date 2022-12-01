@@ -39,6 +39,7 @@
         "@nuxtjs/stylelint-module": "^4.1.0",
         "@nuxtjs/vuetify": "^1.12.3",
         "@rushstack/eslint-patch": "^1.2.0",
+        "@types/mime-types": "^2.1.1",
         "@types/node": "^18.11.10",
         "@types/uuid": "^9.0.0",
         "@vue/eslint-config-prettier": "^7.0.0",

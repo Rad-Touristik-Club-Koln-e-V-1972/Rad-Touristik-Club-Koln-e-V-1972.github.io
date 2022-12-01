@@ -1,5 +1,5 @@
 <template>
-    <v-card id="DViewOriginal">
+    <v-card id="DViewImageOriginal">
         <v-dialog v-model="isOpen" fullscreen persistent>
             <template #activator="{ attrs, on }">
                 <v-btn absolute color="primary" v-bind="attrs" v-on="on">

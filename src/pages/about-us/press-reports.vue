@@ -33,6 +33,7 @@ import { getCurrentInstance, ref } from 'vue'
 import DView from '~/components/pages/about-us/galleries/album/DView.vue'
 import { usePressReportsStore } from '~/store/about-us/PressReports'
 import useDateTime from '~/utils/DateTime'
+import DPDFView from '~/components/pages/about-us/galleries/album/DPDFView.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)

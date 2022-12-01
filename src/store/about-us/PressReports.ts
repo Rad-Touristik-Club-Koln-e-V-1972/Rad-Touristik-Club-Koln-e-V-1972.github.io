@@ -16,7 +16,12 @@ export const usePressReportsStore = defineStore('about-us-press-reports', {
                 .build(),
             new PressReportBuilder()
                 .setDate('2022-04-05')
-                .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.jpeg').build())
+                .setImages(
+                    new GalleryEntryBuilder()
+                        .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.pdf')
+                        .setPreviewUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/preview/preview.2022-05_roadbike.jpeg')
+                        .build()
+                )
                 .setTitle('Roadbike')
                 .build(),
         ],
