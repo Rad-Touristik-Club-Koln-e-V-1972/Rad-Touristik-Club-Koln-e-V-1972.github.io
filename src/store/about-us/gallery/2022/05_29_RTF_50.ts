@@ -1,5 +1,5 @@
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 import K1 from '~/store/about-us/gallery/2022/05_29_RTF_50/K1'
 import K2 from '~/store/about-us/gallery/2022/05_29_RTF_50/K2'

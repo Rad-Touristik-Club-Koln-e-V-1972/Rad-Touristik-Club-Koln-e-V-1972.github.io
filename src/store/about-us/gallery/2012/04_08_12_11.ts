@@ -1,5 +1,5 @@
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 
 export default new GalleryBuilder()
     .setDate('2012-04-08', '2012-12-11')

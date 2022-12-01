@@ -1,4 +1,4 @@
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 
 export default new GalleryBuilder()

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import Gallery from '~/models/entities/about-us/Gallery'
+import Gallery from '~/models/entities/about-us/gallery/Gallery'
 import _2009 from '~/store/about-us/gallery/2009/Gallery'
 import _2010 from '~/store/about-us/gallery/2010/Gallery'
 import _2011 from '~/store/about-us/gallery/2011/Gallery'

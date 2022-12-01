@@ -1,6 +1,6 @@
 import ABuilder from '~/models/builder/ABuilder'
 import AEntity from '~/models/entities/AEntity'
-import Gallery from '~/models/entities/about-us/Gallery'
+import Gallery from '~/models/entities/about-us/gallery/Gallery'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
 

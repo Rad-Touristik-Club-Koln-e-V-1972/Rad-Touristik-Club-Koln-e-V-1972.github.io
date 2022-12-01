@@ -39,7 +39,7 @@
 import { getCurrentInstance, nextTick, PropType, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
-import Gallery from '~/models/entities/about-us/Gallery'
+import Gallery from '~/models/entities/about-us/gallery/Gallery'
 import useDateTime from '~/utils/DateTime'
 
 const props = defineProps({

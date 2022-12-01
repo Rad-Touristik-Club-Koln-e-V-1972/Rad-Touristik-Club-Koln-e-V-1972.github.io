@@ -1,5 +1,5 @@
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 import _0330Streckenbesichtigung from '~/store/about-us/gallery/2014/05_25_RTF_42/03_30_Streckenbesichtigung'
 import Tour from '~/store/about-us/gallery/2014/05_25_RTF_42/Tour'

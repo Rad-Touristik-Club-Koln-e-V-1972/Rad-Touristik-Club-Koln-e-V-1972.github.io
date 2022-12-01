@@ -1,5 +1,5 @@
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 import _0516Vortour from '~/store/about-us/gallery/2015/05_31_RTF_43/05_16_Vortour'
 import _75erAlternative from '~/store/about-us/gallery/2015/05_31_RTF_43/75er_Alternative'

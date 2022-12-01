@@ -1,5 +1,5 @@
+import GalleryBuilder from '~/models/builder/about-us/gallery/GalleryBuilder'
 import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
-import GalleryBuilder from '~/models/builder/about-us/GalleryBuilder'
 import EEvent from '~/models/enums/EEvent'
 import K2 from '~/store/about-us/gallery/2015/10_17_CTF_1/K2'
 import StartZiel from '~/store/about-us/gallery/2015/10_17_CTF_1/Start_Ziel'
