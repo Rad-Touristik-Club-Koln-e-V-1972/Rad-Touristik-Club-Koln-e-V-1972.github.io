@@ -21,7 +21,8 @@ $font-family: 'TacticSans';
 }
 
 .v-application {
-    [class*='text-'] {
+    [class*='text'] {
+        font-family: 'Segoe UI', Calibri, sans-serif !important;
         // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
         white-space: normal;
         // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
