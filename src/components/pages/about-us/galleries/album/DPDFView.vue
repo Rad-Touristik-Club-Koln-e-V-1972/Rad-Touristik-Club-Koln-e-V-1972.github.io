@@ -1,6 +1,6 @@
 <template>
     <v-card id="DPDFView">
-        <v-img :src="props.value.previewUrl?.toString()" style="cursor: pointer" @click="open">
+        <v-img :src="props.value.previewUrl.toString()" style="cursor: pointer" @click="open">
             <template #placeholder>
                 <c-loading-skeleton />
             </template>
