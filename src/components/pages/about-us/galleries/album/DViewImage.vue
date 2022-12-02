@@ -1,7 +1,7 @@
 <!-- TODO WORKAROUND UNTIL VUETIFY GETS A NATIVE IMAGE GALLERY IN https://github.com/vuetifyjs/vuetify/issues/11177
       OR USE https://github.com/sachinchoolur/lightgallery.js/ WITH VUE/NUXT 3 -->
 <template>
-    <v-card id="DViewImage" max-width="20em" min-height="100">
+    <v-card id="DViewImage">
         <v-dialog v-model="isOpen" fullscreen persistent>
             <template #activator="{ attrs, on }">
                 <v-img :src="props.value[startIndex].previewUrl?.toString()" style="cursor: pointer" v-bind="attrs" v-on="on">

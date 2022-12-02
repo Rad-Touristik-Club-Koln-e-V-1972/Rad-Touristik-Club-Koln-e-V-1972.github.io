@@ -5,11 +5,11 @@
         </v-toolbar>
         <v-card-text>
             <v-timeline :dense="vuetify?.breakpoint.mobile">
-                <v-timeline-item v-for="it in value" :key="it.id" right>
+                <v-timeline-item v-for="it in value" :key="it.id">
                     <template #opposite>
                         <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.date, undefined, true)" />
                     </template>
-                    <v-card max-width="22em">
+                    <v-card max-width="40em">
                         <v-toolbar color="primary" dense flat>
                             <v-toolbar-title class="accent--text text-title">{{ it.title }}</v-toolbar-title>
                         </v-toolbar>
@@ -33,7 +33,6 @@ import { getCurrentInstance, ref } from 'vue'
 import DView from '~/components/pages/about-us/galleries/album/DView.vue'
 import { usePressReportsStore } from '~/store/about-us/PressReports'
 import useDateTime from '~/utils/DateTime'
-import DPDFView from '~/components/pages/about-us/galleries/album/DPDFView.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)

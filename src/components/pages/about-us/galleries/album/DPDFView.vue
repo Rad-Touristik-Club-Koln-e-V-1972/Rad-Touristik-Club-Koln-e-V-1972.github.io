@@ -1,5 +1,5 @@
 <template>
-    <v-card id="DPDFView" max-width="20em" min-height="100">
+    <v-card id="DPDFView">
         <v-img :src="props.value.previewUrl?.toString()" style="cursor: pointer" @click="open">
             <template #placeholder>
                 <c-loading-skeleton />

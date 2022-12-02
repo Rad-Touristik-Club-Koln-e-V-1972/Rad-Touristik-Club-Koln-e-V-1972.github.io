@@ -1,5 +1,5 @@
 <template>
-    <v-card id="CGallery" :loading="isLoading" :max-width="`${vuetify?.breakpoint.mobile ? 15 : 20}em`">
+    <v-card id="CGallery" :loading="isLoading">
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
@@ -49,10 +49,7 @@ const props = defineProps({
     value: { required: true, type: Object as PropType<Gallery> },
 })
 
-const proxy = getCurrentInstance()?.proxy
-const router = proxy?.$router
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(proxy?.$vuetify)
+const router = getCurrentInstance()?.proxy?.$router
 
 const dateTime = useDateTime()
 
