@@ -70,13 +70,13 @@ export const useNavigationStore = defineStore('navigation', {
                 .build(),
             new NavigationBuilder()
                 .setChildren(
-                    new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('about-us-galleries').build(),
-                    new ChildBuilder().setIcon(mdiMessageDraw).setTitle('Gästebuch').setTo('about-us-guestbook').build(),
-                    new ChildBuilder().setIcon(mdiNewspaperVariantMultiple).setTitle('Presseberichte').setTo('about-us-press-reports').build(),
-                    new ChildBuilder().setIcon(mdiHumanGreetingProximity).setTitle('Ansprechpartner').setTo('about-us-contacts').build()
+                    new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('rtc-cologne-galleries').build(),
+                    new ChildBuilder().setIcon(mdiMessageDraw).setTitle('Gästebuch').setTo('rtc-cologne-guestbook').build(),
+                    new ChildBuilder().setIcon(mdiNewspaperVariantMultiple).setTitle('Presseberichte').setTo('rtc-cologne-press-reports').build(),
+                    new ChildBuilder().setIcon(mdiHumanGreetingProximity).setTitle('Ansprechpartner').setTo('rtc-cologne-contacts').build()
                 )
                 .setIcon(mdiDomain)
-                .setTitle('Über uns')
+                .setTitle('Der RTC Köln')
                 .build(),
             new NavigationBuilder().setIcon(mdiCurrencyEur).setTitle('Sponsoren').setTo('sponsors').build(),
         ],
