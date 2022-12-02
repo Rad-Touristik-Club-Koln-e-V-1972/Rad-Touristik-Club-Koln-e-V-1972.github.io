@@ -13,6 +13,13 @@
             <template #placeholder>
                 <c-loading-skeleton />
             </template>
+            <template #default>
+                <v-img height="100%" :src="it.previewUrl.toString()" style="filter: blur(20px); z-index: -2">
+                    <template #placeholder>
+                        <c-loading-skeleton />
+                    </template>
+                </v-img>
+            </template>
         </v-carousel-item>
     </v-carousel>
 </template>
