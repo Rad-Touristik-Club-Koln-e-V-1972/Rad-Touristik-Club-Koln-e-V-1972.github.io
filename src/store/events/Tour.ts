@@ -229,12 +229,8 @@ Bei Alefeld verlassen wir das Bröltal und fahren über Marienfeld nach Much, wo
                         )
                         .build()
                 )
-                .setImages(
-                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 1.png').build(),
-                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Flyer 2.png').build(),
-                    new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Zugbeutel.jpeg').build()
-                )
-                .setLastChange('2022-11-15')
+                .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build())
+                .setLastChange('2022-12-02')
                 .setPopup(
                     `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
 
