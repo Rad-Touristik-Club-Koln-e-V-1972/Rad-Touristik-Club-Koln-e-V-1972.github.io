@@ -13,6 +13,7 @@ import {
     mdiHumanGreetingProximity,
     mdiHumanMaleBoard,
     mdiImageMultiple,
+    mdiInformationOutline,
     mdiInstagram,
     mdiMessageDraw,
     mdiNewspaperVariantMultiple,
@@ -70,6 +71,7 @@ export const useNavigationStore = defineStore('navigation', {
                 .build(),
             new NavigationBuilder()
                 .setChildren(
+                    new ChildBuilder().setIcon(mdiInformationOutline).setTitle('Über uns').setTo('rtc-cologne-about-us').build(),
                     new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('rtc-cologne-galleries').build(),
                     new ChildBuilder().setIcon(mdiMessageDraw).setTitle('Gästebuch').setTo('rtc-cologne-guestbook').build(),
                     new ChildBuilder().setIcon(mdiNewspaperVariantMultiple).setTitle('Presseberichte').setTo('rtc-cologne-press-reports').build(),
