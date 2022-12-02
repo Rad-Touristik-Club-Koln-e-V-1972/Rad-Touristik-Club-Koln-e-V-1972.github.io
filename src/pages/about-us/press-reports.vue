@@ -1,6 +1,6 @@
 <template>
     <v-card id="VPressReports" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Presseberichte</v-toolbar-title>
         </v-toolbar>
         <v-card-text>
@@ -10,7 +10,7 @@
                         <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.date, undefined, true)" />
                     </template>
                     <v-card max-width="40em">
-                        <v-toolbar color="primary" dense flat>
+                        <v-toolbar color="primary" flat>
                             <v-toolbar-title class="accent--text text-title">{{ it.title }}</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>

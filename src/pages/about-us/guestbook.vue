@@ -1,6 +1,6 @@
 <template>
     <v-card id="VGuestbook" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Gästebuch</v-toolbar-title>
             <v-spacer />
             <v-btn color="accent" text @click="showText = !showText">

@@ -1,6 +1,6 @@
 <template>
     <v-card id="CTour" max-width="37em">
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">{{ props.value.title }}</v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle class="text-title">

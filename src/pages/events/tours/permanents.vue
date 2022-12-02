@@ -1,6 +1,6 @@
 <template>
     <v-card id="VPermanents" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Der RTC Köln e.V. bietet Euch zwei Permanente</v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle class="text-title">

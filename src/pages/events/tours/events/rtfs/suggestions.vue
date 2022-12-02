@@ -1,6 +1,6 @@
 <template>
     <v-card id="VSuggestions" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Empfohlene RTF's außerhalb NRW</v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle class="text-title">

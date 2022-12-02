@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar id="CControl" dense flat>
+    <v-toolbar id="CControl" flat>
         <v-btn v-if="props.value !== ECalendar.list" fab :small="vuetify?.breakpoint.xs" text @click="emits('prev')">
             <v-icon>{{ icons.mdiChevronLeft }}</v-icon>
         </v-btn>

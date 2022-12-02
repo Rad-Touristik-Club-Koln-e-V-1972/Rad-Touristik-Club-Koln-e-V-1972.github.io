@@ -1,7 +1,7 @@
 <template>
     <v-dialog id="CPopup" v-model="dialog" scrollable width="auto">
         <v-card>
-            <v-toolbar color="primary" dense flat>
+            <v-toolbar color="primary" flat>
                 <v-toolbar-title class="accent--text text-title">{{ props.value.title }}</v-toolbar-title>
             </v-toolbar>
             <!-- TODO style="padding: 16px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/12170 -->

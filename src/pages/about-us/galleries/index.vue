@@ -1,6 +1,6 @@
 <template>
     <v-card id="VIndex" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Galerien</v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle class="text-title">Fotos und Videos des RTC-Köln</v-card-subtitle>

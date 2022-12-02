@@ -1,13 +1,13 @@
 <template>
     <v-card id="VWinter" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
         <v-card-text>
             <v-row class="justify-center">
                 <v-col cols="auto">
                     <v-card max-width="40em">
-                        <v-toolbar color="primary" dense flat>
+                        <v-toolbar color="primary" flat>
                             <v-toolbar-title class="accent--text text-title">Details</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>

@@ -1,6 +1,6 @@
 <template>
     <v-card id="VContact" flat>
-        <v-toolbar color="primary" dense flat>
+        <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text text-title">Kontakte</v-toolbar-title>
         </v-toolbar>
         <v-card-subtitle class="text-title">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>

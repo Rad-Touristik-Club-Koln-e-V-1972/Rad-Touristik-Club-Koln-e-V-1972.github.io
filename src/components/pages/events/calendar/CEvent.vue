@@ -1,7 +1,7 @@
 <template>
     <v-dialog id="CEvent" v-model="isOpen" width="auto">
         <v-card flat>
-            <v-toolbar class="accent--text" :color="selectedEvent?.color" dense flat>
+            <v-toolbar class="accent--text" :color="selectedEvent?.color" flat>
                 <v-toolbar-title class="text-title">{{ selectedEvent?.name }}</v-toolbar-title>
                 <v-spacer />
                 <v-btn icon @click="isOpen = false">
