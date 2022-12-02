@@ -18,6 +18,7 @@ import {
     mdiNewspaperVariantMultiple,
     mdiSnowman,
     mdiWeatherPartlyRainy,
+    mdiWeatherSunny,
     mdiWeatherWindy,
     mdiWeb,
     mdiYoutube,
@@ -59,8 +60,14 @@ export const useNavigationStore = defineStore('navigation', {
                 .setIcon(mdiBikeFast)
                 .setTitle('Veranstaltungen & Termine')
                 .build(),
-            new NavigationBuilder().setIcon(mdiWeatherPartlyRainy).setUrl('www.koeln.de/wetter/regenradar/').setTitle('Wetter live in Köln + Regenradar').build(),
-            new NavigationBuilder().setIcon(mdiWeatherWindy).setUrl('www.windy.com/station?50.866,7.143,8').setTitle('Windradar in Köln').build(),
+            new NavigationBuilder()
+                .setChildren(
+                    new ChildBuilder().setIcon(mdiWeatherPartlyRainy).setUrl('www.koeln.de/wetter/regenradar/').setTitle('Wetter live in Köln + Regenradar').build(),
+                    new ChildBuilder().setIcon(mdiWeatherWindy).setUrl('www.windy.com/station?50.866,7.143,8').setTitle('Windradar in Köln').build()
+                )
+                .setIcon(mdiWeatherSunny)
+                .setTitle('Wetter')
+                .build(),
             new NavigationBuilder()
                 .setChildren(
                     new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('about-us-galleries').build(),
