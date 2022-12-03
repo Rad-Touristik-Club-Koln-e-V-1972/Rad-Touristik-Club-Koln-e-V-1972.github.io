@@ -93,7 +93,7 @@ export default [
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
         .setDate('2022-5-29')
-        .setName('50. Forsbach – Tour - Marathon - Durchführung')
+        .setName('50. Forsbach – Tour - Marathon')
         .build(),
     new EventBuilder()
         .setallDay(false)
@@ -233,14 +233,7 @@ export default [
         .setDate('2022-10-21')
         .setName('7. Wahnbach – Tour - Gravel - Ausschildern')
         .build(),
-    new EventBuilder()
-        .setallDay(true)
-        .setCategory(EEvent.CTF)
-        .setClubPoints(5)
-        .setContact('Klaus Dünkelmann')
-        .setDate('2022-10-22')
-        .setName('7. Wahnbach – Tour - Gravel - Durchführung')
-        .build(),
+    new EventBuilder().setallDay(true).setCategory(EEvent.CTF).setClubPoints(5).setContact('Klaus Dünkelmann').setDate('2022-10-22').setName('7. Wahnbach – Tour - Gravel').build(),
     new EventBuilder()
         .setallDay(true)
         .setCategory(EEvent.CTF)
