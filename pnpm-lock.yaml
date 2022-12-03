@@ -36,7 +36,7 @@ importers:
       pinia: ^2.0.27
       postcss-html: ^1.5.0
       prettier: ^2.8.0
-      stylelint: ^14.15.0
+      stylelint: ^14.16.0
       stylelint-config-prettier: ^9.0.4
       stylelint-config-recommended-vue: ^1.4.0
       stylelint-config-standard: ^29.0.0
@@ -65,7 +65,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 12.0.0_s5ps7njkmjlaqajutnox5ntcla
       '@nuxtjs/eslint-module': 3.1.0_6jsmz2zc5xaew2sfvnugwmshty
       '@nuxtjs/router': 1.7.0
-      '@nuxtjs/stylelint-module': 4.1.0_pal3i2rufo2wll7yvsysry47jq
+      '@nuxtjs/stylelint-module': 4.1.0_sygruky7nqwwton67tsf5kyopm
       '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
       '@rushstack/eslint-patch': 1.2.0
       '@types/mime-types': 2.1.1
@@ -83,10 +83,10 @@ importers:
       lint-staged: 13.0.4
       postcss-html: 1.5.0
       prettier: 2.8.0
-      stylelint: 14.15.0
-      stylelint-config-prettier: 9.0.4_stylelint@14.15.0
-      stylelint-config-recommended-vue: 1.4.0_qendsqix7hqecpnpx4fjs6qry4
-      stylelint-config-standard: 29.0.0_stylelint@14.15.0
+      stylelint: 14.16.0
+      stylelint-config-prettier: 9.0.4_stylelint@14.16.0
+      stylelint-config-recommended-vue: 1.4.0_bto6pmslw3cibsiuq6smxboytq
+      stylelint-config-standard: 29.0.0_stylelint@14.16.0
       typescript: 4.9.3
       vue-tsc: 1.0.11_typescript@4.9.3
       webpack: 4.46.0
@@ -1478,9 +1478,9 @@ packages:
     peerDependencies:
       postcss: ^8.2
     dependencies:
-      '@csstools/selector-specificity': 2.0.2_45y636a2vqremknoajyxd5nkzy
+      '@csstools/selector-specificity': 2.0.2_tbwh2mpcdwdeb2slx6bobindua
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /@csstools/postcss-color-function/1.1.1_postcss@8.4.19:
@@ -1531,9 +1531,9 @@ packages:
     peerDependencies:
       postcss: ^8.2
     dependencies:
-      '@csstools/selector-specificity': 2.0.2_45y636a2vqremknoajyxd5nkzy
+      '@csstools/selector-specificity': 2.0.2_tbwh2mpcdwdeb2slx6bobindua
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /@csstools/postcss-nested-calc/1.0.0_postcss@8.4.19:
@@ -1616,7 +1616,7 @@ packages:
       postcss: 8.4.19
     dev: true
 
-  /@csstools/selector-specificity/2.0.2_45y636a2vqremknoajyxd5nkzy:
+  /@csstools/selector-specificity/2.0.2_tbwh2mpcdwdeb2slx6bobindua:
     resolution: {integrity: sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==}
     engines: {node: ^12 || ^14 || >=16}
     peerDependencies:
@@ -1624,7 +1624,7 @@ packages:
       postcss-selector-parser: ^6.0.10
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /@esbuild/android-arm/0.15.16:
@@ -1653,7 +1653,7 @@ packages:
       debug: 4.3.4
       espree: 9.4.1
       globals: 13.17.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -1929,7 +1929,7 @@ packages:
       fs-extra: 10.1.0
       glob: 7.2.3
       hash-sum: 2.0.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       lodash: 4.17.21
       pify: 5.0.0
       serialize-javascript: 6.0.0
@@ -2116,7 +2116,7 @@ packages:
       defu: 6.1.1
       globby: 13.1.2
       hash-sum: 2.0.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       jiti: 1.16.0
       knitwork: 1.0.0
       lodash.template: 4.5.0
@@ -2494,15 +2494,15 @@ packages:
       defu: 5.0.1
     dev: true
 
-  /@nuxtjs/stylelint-module/4.1.0_pal3i2rufo2wll7yvsysry47jq:
+  /@nuxtjs/stylelint-module/4.1.0_sygruky7nqwwton67tsf5kyopm:
     resolution: {integrity: sha512-XeUZobXlSVW5VDbZBDktB3oFkBm+4JhYlyvZqu4tD7F3Qf4IU5aFwlELbK+VLVewbGgKSEg4QaT5nZdWpgXQBw==}
     peerDependencies:
       stylelint: ^13.0.0 || ^14.0.0
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       consola: 2.15.3
-      stylelint: 14.15.0
-      stylelint-webpack-plugin: 2.4.0_pal3i2rufo2wll7yvsysry47jq
+      stylelint: 14.16.0
+      stylelint-webpack-plugin: 2.4.0_sygruky7nqwwton67tsf5kyopm
       webpack: 4.46.0
     dev: true
 
@@ -3480,7 +3480,7 @@ packages:
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
       postcss: 7.0.39
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       source-map: 0.6.1
       vue-template-es2015-compiler: 1.9.1
     optionalDependencies:
@@ -5244,7 +5244,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /css-color-names/0.0.4:
@@ -5281,7 +5281,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /css-loader/4.3.0_webpack@4.46.0:
@@ -6365,7 +6365,7 @@ packages:
       eslint: 8.29.0
       eslint-plugin-es: 4.1.0_eslint@8.29.0
       eslint-utils: 3.0.0_eslint@8.29.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       is-core-module: 2.11.0
       minimatch: 3.1.2
       resolve: 1.22.1
@@ -6381,7 +6381,7 @@ packages:
       eslint: 8.29.0
       eslint-plugin-es: 3.0.1_eslint@8.29.0
       eslint-utils: 2.1.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       minimatch: 3.1.2
       resolve: 1.22.1
       semver: 6.3.0
@@ -7275,7 +7275,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.2.12
-      ignore: 5.2.0
+      ignore: 5.2.1
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -7285,7 +7285,7 @@ packages:
     dependencies:
       dir-glob: 3.0.1
       fast-glob: 3.2.12
-      ignore: 5.2.0
+      ignore: 5.2.1
       merge2: 1.4.1
       slash: 4.0.0
 
@@ -7643,6 +7643,11 @@ packages:
 
   /ignore/5.2.0:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
+    engines: {node: '>= 4'}
+    dev: true
+
+  /ignore/5.2.1:
+    resolution: {integrity: sha512-d2qQLzTJ9WxQftPAuEQpSPmKqzxePjzVbpAVv62AQ64NTL+wR4JkrVqR/LqFsFEUsHDAiId52mJteHDFuDkElA==}
     engines: {node: '>= 4'}
 
   /import-cwd/2.1.0:
@@ -9795,7 +9800,7 @@ packages:
     resolution: {integrity: sha512-clkFxk/9pcdb4Vkn0hAHq3YnxBQ2p0CGD1dy24jN+reBck+EWxMbxSUqN4Yj7t0w8csl87K6p0gxBe1utkJsYA==}
     dependencies:
       postcss: 7.0.39
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: false
 
   /postcss-attribute-case-insensitive/5.0.2_postcss@8.4.19:
@@ -9805,14 +9810,14 @@ packages:
       postcss: ^8.2
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-calc/7.0.5:
     resolution: {integrity: sha512-1tKHutbGtLtEZF6PT4JSihCHfIVldU72mZ8SdZHIYriIZ9fh9k9aWSppaT8rHsyI3dX+KSR+W+Ix9BMY3AODrg==}
     dependencies:
       postcss: 7.0.39
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
     dev: false
 
@@ -9967,7 +9972,7 @@ packages:
       postcss: ^8.3
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-dir-pseudo-class/5.0.0:
@@ -9985,7 +9990,7 @@ packages:
       postcss: ^8.2
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-discard-comments/4.0.2:
@@ -10067,7 +10072,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-focus-within/3.0.0:
@@ -10084,7 +10089,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-font-variant/4.0.1:
@@ -10372,7 +10377,7 @@ packages:
     dependencies:
       icss-utils: 4.1.1
       postcss: 7.0.39
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
     dev: false
 
@@ -10384,7 +10389,7 @@ packages:
     dependencies:
       icss-utils: 5.1.0_postcss@8.4.19
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -10393,7 +10398,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       postcss: 7.0.39
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: false
 
   /postcss-modules-scope/3.0.0_postcss@8.4.19:
@@ -10403,7 +10408,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-modules-values/3.0.0:
@@ -10429,9 +10434,9 @@ packages:
     peerDependencies:
       postcss: ^8.2
     dependencies:
-      '@csstools/selector-specificity': 2.0.2_45y636a2vqremknoajyxd5nkzy
+      '@csstools/selector-specificity': 2.0.2_tbwh2mpcdwdeb2slx6bobindua
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-nesting/7.0.1:
@@ -10701,7 +10706,7 @@ packages:
       postcss: ^8.2
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-reduce-initial/4.0.3:
@@ -10781,7 +10786,7 @@ packages:
       postcss: ^8.2
     dependencies:
       postcss: 8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: true
 
   /postcss-selector-parser/3.1.2:
@@ -10804,6 +10809,14 @@ packages:
 
   /postcss-selector-parser/6.0.10:
     resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: true
+
+  /postcss-selector-parser/6.0.11:
+    resolution: {integrity: sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==}
     engines: {node: '>=4'}
     dependencies:
       cssesc: 3.0.0
@@ -12123,7 +12136,7 @@ packages:
       postcss-selector-parser: 3.1.2
     dev: false
 
-  /stylelint-config-html/1.1.0_qendsqix7hqecpnpx4fjs6qry4:
+  /stylelint-config-html/1.1.0_bto6pmslw3cibsiuq6smxboytq:
     resolution: {integrity: sha512-IZv4IVESjKLumUGi+HWeb7skgO6/g4VMuAYrJdlqQFndgbj6WJAXPhaysvBiXefX79upBdQVumgYcdd17gCpjQ==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12131,20 +12144,20 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 14.15.0
+      stylelint: 14.16.0
     dev: true
 
-  /stylelint-config-prettier/9.0.4_stylelint@14.15.0:
+  /stylelint-config-prettier/9.0.4_stylelint@14.16.0:
     resolution: {integrity: sha512-38nIGTGpFOiK5LjJ8Ma1yUgpKENxoKSOhbDNSemY7Ep0VsJoXIW9Iq/2hSt699oB9tReynfWicTAoIHiq8Rvbg==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>=11.0.0'
     dependencies:
-      stylelint: 14.15.0
+      stylelint: 14.16.0
     dev: true
 
-  /stylelint-config-recommended-vue/1.4.0_qendsqix7hqecpnpx4fjs6qry4:
+  /stylelint-config-recommended-vue/1.4.0_bto6pmslw3cibsiuq6smxboytq:
     resolution: {integrity: sha512-DVJqyX2KvMCn9U0+keL12r7xlsH26K4Vg8NrIZuq5MoF7g82DpMp326Om4E0Q+Il1o+bTHuUyejf2XAI0iD04Q==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12153,29 +12166,29 @@ packages:
     dependencies:
       postcss-html: 1.5.0
       semver: 7.3.8
-      stylelint: 14.15.0
-      stylelint-config-html: 1.1.0_qendsqix7hqecpnpx4fjs6qry4
-      stylelint-config-recommended: 9.0.0_stylelint@14.15.0
+      stylelint: 14.16.0
+      stylelint-config-html: 1.1.0_bto6pmslw3cibsiuq6smxboytq
+      stylelint-config-recommended: 9.0.0_stylelint@14.16.0
     dev: true
 
-  /stylelint-config-recommended/9.0.0_stylelint@14.15.0:
+  /stylelint-config-recommended/9.0.0_stylelint@14.16.0:
     resolution: {integrity: sha512-9YQSrJq4NvvRuTbzDsWX3rrFOzOlYBmZP+o513BJN/yfEmGSr0AxdvrWs0P/ilSpVV/wisamAHu5XSk8Rcf4CQ==}
     peerDependencies:
       stylelint: ^14.10.0
     dependencies:
-      stylelint: 14.15.0
+      stylelint: 14.16.0
     dev: true
 
-  /stylelint-config-standard/29.0.0_stylelint@14.15.0:
+  /stylelint-config-standard/29.0.0_stylelint@14.16.0:
     resolution: {integrity: sha512-uy8tZLbfq6ZrXy4JKu3W+7lYLgRQBxYTUUB88vPgQ+ZzAxdrvcaSUW9hOMNLYBnwH+9Kkj19M2DHdZ4gKwI7tg==}
     peerDependencies:
       stylelint: ^14.14.0
     dependencies:
-      stylelint: 14.15.0
-      stylelint-config-recommended: 9.0.0_stylelint@14.15.0
+      stylelint: 14.16.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.16.0
     dev: true
 
-  /stylelint-webpack-plugin/2.4.0_pal3i2rufo2wll7yvsysry47jq:
+  /stylelint-webpack-plugin/2.4.0_sygruky7nqwwton67tsf5kyopm:
     resolution: {integrity: sha512-MhXDqd8HPXdY51nGeDeUEXToximoIbc0Z5TQC1M0ApR0ejrOwj9dRZKiL/00MDRrQfuAGkjcJ6sOVvc4gRzbgQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -12188,16 +12201,16 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       schema-utils: 3.1.1
-      stylelint: 14.15.0
+      stylelint: 14.16.0
       webpack: 4.46.0
     dev: true
 
-  /stylelint/14.15.0:
-    resolution: {integrity: sha512-JOgDAo5QRsqiOZPZO+B9rKJvBm64S0xasbuRPAbPs6/vQDgDCnZLIiw6XcAS6GQKk9k1sBWR6rmH3Mfj8OknKg==}
+  /stylelint/14.16.0:
+    resolution: {integrity: sha512-X6uTi9DcxjzLV8ZUAjit1vsRtSwcls0nl07c9rqOPzvpA8IvTX/xWEkBRowS0ffevRrqkHa/ThDEu86u73FQDg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@csstools/selector-specificity': 2.0.2_45y636a2vqremknoajyxd5nkzy
+      '@csstools/selector-specificity': 2.0.2_tbwh2mpcdwdeb2slx6bobindua
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 7.1.0
@@ -12210,7 +12223,7 @@ packages:
       globby: 11.1.0
       globjoin: 0.1.4
       html-tags: 3.2.0
-      ignore: 5.2.0
+      ignore: 5.2.1
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
@@ -12224,7 +12237,7 @@ packages:
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
       postcss-safe-parser: 6.0.0_postcss@8.4.19
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
       string-width: 4.2.3
