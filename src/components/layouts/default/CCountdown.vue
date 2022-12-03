@@ -1,6 +1,6 @@
 <template>
-    <v-sheet v-if="nextEvent" id="CCountdown" class="text-center">
-        <v-row style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
+    <v-sheet v-if="nextEvent" id="CCountdown" class="text-center" style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
+        <v-row>
             <v-col>
                 <v-progress-circular color="primary" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}d</v-progress-circular>
             </v-col>
