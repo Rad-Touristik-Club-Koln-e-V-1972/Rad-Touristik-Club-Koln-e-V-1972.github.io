@@ -18,6 +18,7 @@ import {
     mdiMessageDraw,
     mdiNewspaperVariantMultiple,
     mdiSnowman,
+    mdiTimelineClockOutline,
     mdiWeatherPartlyRainy,
     mdiWeatherSunny,
     mdiWeatherWindy,
@@ -72,6 +73,7 @@ export const useNavigationStore = defineStore('navigation', {
             new NavigationBuilder()
                 .setChildren(
                     new ChildBuilder().setIcon(mdiInformationOutline).setTitle('Über uns').setTo('rtc-cologne-about-us').build(),
+                    new ChildBuilder().setIcon(mdiTimelineClockOutline).setTitle('Unsere Geschichte').setTo('rtc-cologne-our-story').build(),
                     new ChildBuilder().setIcon(mdiImageMultiple).setTitle('Galerien').setTo('rtc-cologne-galleries').build(),
                     new ChildBuilder().setIcon(mdiMessageDraw).setTitle('Gästebuch').setTo('rtc-cologne-guestbook').build(),
                     new ChildBuilder().setIcon(mdiNewspaperVariantMultiple).setTitle('Presseberichte').setTo('rtc-cologne-press-reports').build(),
