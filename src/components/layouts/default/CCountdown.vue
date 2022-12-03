@@ -12,7 +12,10 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col>{{ nextEvent.name }}</v-col>
+            <v-col>Nächstes Event:</v-col>
+        </v-row>
+        <v-row no-gutters>
+            <v-col class="font-weight-bold">{{ nextEvent.name }}</v-col>
         </v-row>
         <c-event ref="event" />
     </v-sheet>
