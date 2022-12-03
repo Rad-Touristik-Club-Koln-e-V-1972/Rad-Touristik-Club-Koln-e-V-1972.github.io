@@ -19,6 +19,8 @@
                 <v-icon left>{{ icons.mdiCopyright }}</v-icon>
                 2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
             </div>
+            <v-spacer />
+            <v-btn text :to="{ name: 'imprint' }">Impressum</v-btn>
         </v-footer>
     </v-app>
 </template>
