@@ -17,8 +17,7 @@
         <v-footer class="border text-caption text-sm-body-2 text-xl-h6">
             <div class="text-no-wrap">
                 <v-icon left>{{ icons.mdiCopyright }}</v-icon>
-                <!-- Datum muss der Jahreszahl der erstmaligen veröffentlichung entsprechen!-->
-                2021 Rad-Touristik-Club Köln e.V. 1972
+                2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
             </div>
         </v-footer>
     </v-app>
