@@ -14,7 +14,7 @@
         <v-main class="border main">
             <Nuxt />
         </v-main>
-        <v-footer class="border text-caption text-sm-body-2 text-xl-h6">
+        <v-footer app class="border text-caption text-sm-body-2 text-xl-h6">
             <div class="text-no-wrap">
                 <v-icon left>{{ icons.mdiCopyright }}</v-icon>
                 2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
