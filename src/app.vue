@@ -21,6 +21,7 @@
             </div>
             <v-spacer />
             <v-btn text :to="{ name: 'imprint' }">Impressum</v-btn>
+            <v-btn text :to="{ name: 'privacyandsecurity' }">Datenschutz</v-btn>
         </v-footer>
     </v-app>
 </template>
