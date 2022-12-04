@@ -1,6 +1,6 @@
 <template>
     <v-card id="CGuestbook" max-width="20em">
-        <v-card-subtitle class="accent--text secondary">
+        <v-card-subtitle class="accent--text secondary text-title">
             <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
             <div v-text="`${props.value.name} via ${ESource[props.value.source]}`" />
             <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
