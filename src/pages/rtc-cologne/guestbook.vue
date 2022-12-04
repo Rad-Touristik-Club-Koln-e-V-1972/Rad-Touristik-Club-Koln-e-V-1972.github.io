@@ -23,17 +23,19 @@
         <v-expand-transition>
             <div v-show="showText">
                 <v-card-text>
-                    Lob, nette Grüße, positive oder konstruktive Kritik, Anregungen oder was auch immer ihr uns schon immer sagen wolltet, werden 1:1 mit Eurem Namen
-                    veröffentlicht.
-                    <br />
-                    Wir behalten uns allerdings vor, unangemessene Beiträge nicht zu veröffentlichen.
-                    <br />
-                    Also: Wir freuen uns auf Eure Einträge in unser Gästebuch.
-                    <br />
-                    <br />
-                    Herzliche Grüße,
-                    <br />
-                    RTC Köln
+                    <p>
+                        Lob, nette Grüße, positive oder konstruktive Kritik, Anregungen oder was auch immer ihr uns schon immer sagen wolltet, werden 1:1 mit Eurem Namen
+                        veröffentlicht.
+                        <br />
+                        Wir behalten uns allerdings vor, unangemessene Beiträge nicht zu veröffentlichen.
+                        <br />
+                        Also: Wir freuen uns auf Eure Einträge in unser Gästebuch.
+                    </p>
+                    <p>
+                        Herzliche Grüße,
+                        <br />
+                        RTC Köln
+                    </p>
                 </v-card-text>
             </div>
         </v-expand-transition>
