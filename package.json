@@ -19,7 +19,7 @@
     "dependencies": {
         "@pinia/nuxt": "^0.4.6",
         "@yeger/vue2-masonry-wall": "^2.3.1",
-        "date-holidays": "^3.16.12",
+        "date-holidays": "^3.16.13",
         "nuxt-edge": "latest",
         "pinia": "^2.0.28",
         "uuid": "^9.0.0",
