@@ -4,7 +4,6 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "sourceMap": true,
-        "strict": true,
         "types": ["node", "@nuxt/types", "vue", "@nuxtjs/vuetify", "@pinia/nuxt"]
     },
     // TODO "app.html" IS A WORKAROUND FOR https://github.com/nuxt/bridge/issues/20
