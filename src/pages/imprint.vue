@@ -52,7 +52,7 @@
             <v-card flat>
                 <v-card-title>Redaktionell verantwortlich</v-card-title>
                 <v-card-text>
-                    Diana Vialon<br />
+                    Wolfgang Dünkelmann<br />
                     Turmhofstraße 2<br />
                     51143 Köln
                 </v-card-text>
