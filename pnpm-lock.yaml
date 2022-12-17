@@ -25,7 +25,7 @@ importers:
       '@yeger/vue2-masonry-wall': ^2.3.1
       buffer: ^6.0.3
       consola: ^2.15.3
-      date-holidays: ^3.16.12
+      date-holidays: ^3.16.13
       eslint: ^8.30.0
       eslint-plugin-nuxt: ^4.0.0
       eslint-plugin-vue: ^9.8.0
@@ -49,7 +49,7 @@ importers:
     dependencies:
       '@pinia/nuxt': 0.4.6_vj744rb3neneiaeb3oalctaenu
       '@yeger/vue2-masonry-wall': 2.3.1_vue@2.7.14
-      date-holidays: 3.16.12
+      date-holidays: 3.16.13
       nuxt-edge: 2.16.0-27720022.54e852f_eysuqgu5nztkf5ojlybu5krrwm
       pinia: 2.0.28_vj744rb3neneiaeb3oalctaenu
       uuid: 9.0.0
@@ -3451,7 +3451,7 @@ packages:
     resolution: {integrity: sha512-aNmNHyLPsw+sVvlQFQ2/8sjNuLtK54TC6cuKnVzAY93ks4ZBrvwQSnkkIh7bsbNhum5hJBS00wSDipQ937f5DA==}
     dependencies:
       '@babel/parser': 7.20.5
-      postcss: 8.4.19
+      postcss: 8.4.20
       source-map: 0.6.1
 
   /@vue/compiler-sfc/3.2.45:
@@ -5526,8 +5526,8 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
-  /date-holidays-parser/3.4.2:
-    resolution: {integrity: sha512-nNHTlTq84neQt3S5pNRBCx3/0PAwpBA+YdUfRUinFdtgxu670mxksZxvsAy8W0JWvZRUW7NSsbQ2FCMr2/QEgw==}
+  /date-holidays-parser/3.4.3:
+    resolution: {integrity: sha512-o2GYEQC1Ytypz7svRFwKO9DEyg3yc2ZwMJnIVIUU6NDOpsknsewt+QilU/z/nHzI1qj13zVIvFIHgEnjg6neVA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       astronomia: 4.1.1
@@ -5540,12 +5540,12 @@ packages:
       moment-timezone: 0.5.39
     dev: false
 
-  /date-holidays/3.16.12:
-    resolution: {integrity: sha512-vFwtn8qNBDGPTkfNQQMvAF/oQP246LxkvHjHbBmvgqgTvPX7MeajgVwGvxZEwQGxbddWVehhz06YydRJE6EfCQ==}
+  /date-holidays/3.16.13:
+    resolution: {integrity: sha512-mNeVNi/DjooC47gNR7u5vPcKiq0oPIW9oUocIrA5oUSLzOd1Sr6zkMhDFAxqUkcX09YjeoO/nqAgiJY6XueFlQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      date-holidays-parser: 3.4.2
+      date-holidays-parser: 3.4.3
       js-yaml: 4.1.0
       lodash.omit: 4.5.0
       lodash.pick: 4.4.0
@@ -10892,6 +10892,7 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /postcss/8.4.20:
     resolution: {integrity: sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==}
@@ -10900,7 +10901,6 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
