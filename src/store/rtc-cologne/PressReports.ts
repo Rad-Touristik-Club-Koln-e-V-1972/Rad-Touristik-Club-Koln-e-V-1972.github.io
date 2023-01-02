@@ -10,8 +10,8 @@ export const usePressReportsStore = defineStore('rtc-cologne-press-reports', {
     state: () => ({
         pressReports: [
             new PressReportBuilder()
-                .setDate('2022-12-01')
-                .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022_12_porz-im-blick.jpg').build())
+                .setDate('2022-12-06')
+                .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-12-06_porz-im-blick.jpg').build())
                 .setTitle('Porz im Blick')
                 .build(),
             new PressReportBuilder()

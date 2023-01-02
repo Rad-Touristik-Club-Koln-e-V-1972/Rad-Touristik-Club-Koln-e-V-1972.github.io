@@ -11,7 +11,7 @@ export default new GalleryBuilder()
             .setPreviewUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/preview/preview.2022-05_roadbike.jpeg')
             .build(),
         new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-11-14_porz-am-montag.jpg').build(),
-        new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022_12_porz-im-blick.jpg').build(),
+        new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-12-06_porz-im-blick.jpg').build(),
     ])
     .setTitle('Rückblick')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/preview/preview.2022-05_roadbike.jpeg')
