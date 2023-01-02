@@ -43,8 +43,8 @@
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/CSlideshow.vue'
-import CGallery from '~/components/pages/about-us/galleries/CGallery.vue'
-import { useGalleryStore } from '~/store/about-us/Gallery'
+import CGallery from '~/components/pages/rtc-cologne/galleries/CGallery.vue'
+import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
 import { useBlogStore } from '~/store/index/Blog'
 import { useSlideshowStore } from '~/store/index/Slideshow'
 import useDateTime from '~/utils/DateTime'

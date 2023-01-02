@@ -27,7 +27,7 @@
 <script lang="ts" setup>
 import { PropType } from 'vue'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
-import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
+import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps({
     cycle: { default: true, type: Boolean },

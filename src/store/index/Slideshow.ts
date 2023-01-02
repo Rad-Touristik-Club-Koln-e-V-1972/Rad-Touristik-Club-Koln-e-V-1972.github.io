@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
-import GalleryEntry from '~/models/entities/about-us/gallery/GalleryEntry'
-import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
+import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export const useSlideshowStore = defineStore('slideshow', {
     getters: {

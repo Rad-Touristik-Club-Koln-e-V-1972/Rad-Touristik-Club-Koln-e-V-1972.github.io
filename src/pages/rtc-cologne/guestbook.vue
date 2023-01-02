@@ -56,8 +56,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
-import CGuestbook from '~/components/pages/about-us/CGuestbook.vue'
-import { useGuestbookStore } from '~/store/about-us/Guestbook'
+import CGuestbook from '~/components/pages/rtc-cologne/CGuestbook.vue'
+import { useGuestbookStore } from '~/store/rtc-cologne/Guestbook'
 
 const icons = { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight }
 const items = useGuestbookStore().getGroupedByYear

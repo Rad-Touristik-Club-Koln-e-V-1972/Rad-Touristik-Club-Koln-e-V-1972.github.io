@@ -6,7 +6,7 @@
             </v-toolbar>
             <v-card-text>{{ getText() }}</v-card-text>
             <v-card-actions>
-                <v-btn :to="{ name: 'about-us-contacts' }">Support</v-btn>
+                <v-btn :to="{ name: 'rtc-cologne-contacts' }">Support</v-btn>
             </v-card-actions>
         </v-card>
     </div>

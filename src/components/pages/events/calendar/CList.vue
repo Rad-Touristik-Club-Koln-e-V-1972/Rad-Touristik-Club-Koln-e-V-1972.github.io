@@ -24,7 +24,7 @@
             </template>
             <template #item.datetime="{ item }"><span :style="getStyle(item)" v-text="getDate(item)" /></template>
             <template #item.contact="{ item }">
-                <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'about-us-contacts' }">{{ item.contact }}</nuxt-link>
+                <nuxt-link v-if="item.contact" class="accent--text" :style="getStyle(item)" :to="{ name: 'rtc-cologne-contacts' }">{{ item.contact }}</nuxt-link>
             </template>
             <template #item.clubPoints="{ item }"><span v-if="item.clubPoints" :style="getStyle(item)" v-text="item.clubPoints" /></template>
         </v-data-table>

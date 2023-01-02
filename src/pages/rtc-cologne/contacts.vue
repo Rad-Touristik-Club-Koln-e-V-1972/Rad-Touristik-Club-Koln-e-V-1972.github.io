@@ -16,6 +16,6 @@
 </template>
 
 <script lang="ts" setup>
-import CContact from '~/components/pages/about-us/CContact.vue'
-import { useContactsStore } from '~/store/about-us/Contacts'
+import CContact from '~/components/pages/rtc-cologne/CContact.vue'
+import { useContactsStore } from '~/store/rtc-cologne/Contacts'
 </script>

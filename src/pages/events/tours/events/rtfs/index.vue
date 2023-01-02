@@ -145,7 +145,7 @@
 
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
-import DView from '~/components/pages/about-us/galleries/album/DView.vue'
+import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'

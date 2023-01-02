@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import GalleryEntryBuilder from '~/models/builder/about-us/gallery/GalleryEntryBuilder'
+import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import ControlBuilder from '~/models/builder/events/tours/ControlBuilder'
 import FeeBuilder from '~/models/builder/events/tours/events/FeeBuilder'
 import TimeBuilder from '~/models/builder/events/tours/events/TimeBuilder'
