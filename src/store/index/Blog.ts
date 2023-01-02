@@ -9,6 +9,20 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['f3f172c2-e6f3-4fbd-beaf-8ca4c69b126b'])
+                .setDate('2023-01-01')
+                .setText(
+                    `🎉 8 RTCler:innen haben das neue Jahr mit einer gemeinsamen Ausfahrt begrüßt.
+
+Bei milden 14 Grad Celsius ging es von der - unter Radsportlern bekannten - Schmitzebud ins Bergische Land und zurück,
+wo wir uns, nach dem 1. Platten des Jahres eine kleine gemeinsame Auszeit genommen hatten.
+
+Ein schöner sportlicher Start ins neue Jahr.
+🚴‍♀️🚴‍♂️🚴🚴‍♂️🚴‍♀️🚴🚴‍♀️🚴‍♂️`
+                )
+                .setTitle('Erste Ausfahrt 2023')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['32ade59b-0ba1-47f5-b20e-54d872a9e524'])
                 .setDate('2022-11-06')
                 .setText(
