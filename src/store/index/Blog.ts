@@ -9,6 +9,21 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['bd6f7533-efaa-45f9-895f-11a419363bfa'])
+                .setDate('2023-01-07')
+                .setText(
+                    `😊 Es ist erst der 7. Januar und einige vom RTC Köln haben schon 180 km auf dem Tacho.
+😃 Das Wetter muss man einfach ausnutzen. 🚴‍♀️🚴‍♂️🚴🚴‍♂️🚴‍♀️🚴‍♂️
+Unser Wintertraining führte uns heute nach Heimerzheim.
+Nach einer Pause im Café ging es über Metternich und Rösberg zurück.
+Nach 60 km waren wir wieder glücklich zu Hause.
+🆕 ➡️ Sobald wir eine Ausfahrt machen, kündigen wir sie jetzt immer hier an.
+Kommt und fahrt mit dem RTC Köln e.V.!
+Wir freuen uns auf Euch. 😊`
+                )
+                .setTitle('Wintertraining 2023')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['f3f172c2-e6f3-4fbd-beaf-8ca4c69b126b'])
                 .setDate('2023-01-01')
                 .setText(
