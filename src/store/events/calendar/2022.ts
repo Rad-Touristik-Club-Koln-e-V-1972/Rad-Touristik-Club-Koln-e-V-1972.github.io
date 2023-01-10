@@ -1,6 +1,5 @@
 import EventBuilder from '~/models/builder/events/calendar/EventBuilder'
 import EEvent from '~/models/enums/EEvent'
-import useCalendar from '~/utils/Calendar'
 
 export default [
     new EventBuilder()
@@ -258,4 +257,4 @@ export default [
         .setDate('2022-11-4 19:00', '2022-11-4 21:00')
         .setName('Mitgliederversammlung')
         .build(),
-].concat(useCalendar().getHolidays(new Date().getFullYear()))
+]
