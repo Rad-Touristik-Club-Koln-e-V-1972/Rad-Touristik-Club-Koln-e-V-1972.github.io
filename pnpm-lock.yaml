@@ -28,7 +28,7 @@ importers:
       date-holidays: ^3.16.15
       eslint: ^8.31.0
       eslint-plugin-nuxt: ^4.0.0
-      eslint-plugin-vue: ^9.8.0
+      eslint-plugin-vue: ^9.9.0
       eslint-plugin-vuetify: ^1.1.0
       husky: ^8.0.3
       lint-staged: ^13.1.0
@@ -72,12 +72,12 @@ importers:
       '@types/node': 18.11.18
       '@types/uuid': 9.0.0
       '@vue/eslint-config-prettier': 7.0.0_k3hr3m6agcryggk5vamhhr56wi
-      '@vue/eslint-config-typescript': 11.0.2_6bpdc6aekjtktp4whh3ygv32oi
+      '@vue/eslint-config-typescript': 11.0.2_r2ofcm3a3mosf6mtxm5d53nciq
       buffer: 6.0.3
       consola: 2.15.3
       eslint: 8.31.0
       eslint-plugin-nuxt: 4.0.0_eslint@8.31.0
-      eslint-plugin-vue: 9.8.0_eslint@8.31.0
+      eslint-plugin-vue: 9.9.0_eslint@8.31.0
       eslint-plugin-vuetify: 1.1.0_ilkxk5m4npevcfmfa5m4wxsqn4
       husky: 8.0.3
       lint-staged: 13.1.0
@@ -2461,7 +2461,7 @@ packages:
       eslint: 8.31.0
       eslint-import-resolver-typescript: 3.5.2_ol7jqilc3wemtdbq3nzhywgxq4
       eslint-plugin-import: 2.26.0_cyazhkcjevaa2emdgqvngug52e
-      eslint-plugin-vue: 9.8.0_eslint@8.31.0
+      eslint-plugin-vue: 9.9.0_eslint@8.31.0
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
@@ -2480,7 +2480,7 @@ packages:
       eslint-plugin-node: 11.1.0_eslint@8.31.0
       eslint-plugin-promise: 6.1.1_eslint@8.31.0
       eslint-plugin-unicorn: 44.0.2_eslint@8.31.0
-      eslint-plugin-vue: 9.8.0_eslint@8.31.0
+      eslint-plugin-vue: 9.9.0_eslint@8.31.0
       local-pkg: 0.4.2
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
@@ -3559,7 +3559,7 @@ packages:
       prettier: 2.8.2
     dev: true
 
-  /@vue/eslint-config-typescript/11.0.2_6bpdc6aekjtktp4whh3ygv32oi:
+  /@vue/eslint-config-typescript/11.0.2_r2ofcm3a3mosf6mtxm5d53nciq:
     resolution: {integrity: sha512-EiKud1NqlWmSapBFkeSrE994qpKx7/27uCGnhdqzllYDpQZroyX/O6bwjEpeuyKamvLbsGdO6PMR2faIf+zFnw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -3573,7 +3573,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.42.1_5mc5ffm3di66f6sqllzogghvw4
       '@typescript-eslint/parser': 5.42.1_iukboom6ndih5an6iafl45j2fe
       eslint: 8.31.0
-      eslint-plugin-vue: 9.8.0_eslint@8.31.0
+      eslint-plugin-vue: 9.9.0_eslint@8.31.0
       typescript: 4.9.4
       vue-eslint-parser: 9.1.0_eslint@8.31.0
     transitivePeerDependencies:
@@ -6395,7 +6395,7 @@ packages:
   /eslint-plugin-nuxt/4.0.0_eslint@8.31.0:
     resolution: {integrity: sha512-v3Vwdk8YKe52bAz8eSIDqQuTtfL/T1r9dSl1uhC5SyR5pgLxgKkQdxXVf/Bf6Ax7uyd9rHqiAuYVdqqDb7ILdA==}
     dependencies:
-      eslint-plugin-vue: 9.8.0_eslint@8.31.0
+      eslint-plugin-vue: 9.9.0_eslint@8.31.0
       semver: 7.3.8
       vue-eslint-parser: 9.1.0_eslint@8.31.0
     transitivePeerDependencies:
@@ -6467,8 +6467,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vue/9.8.0_eslint@8.31.0:
-    resolution: {integrity: sha512-E/AXwcTzunyzM83C2QqDHxepMzvI2y6x+mmeYHbVDQlKFqmKYvRrhaVixEeeG27uI44p9oKDFiyCRw4XxgtfHA==}
+  /eslint-plugin-vue/9.9.0_eslint@8.31.0:
+    resolution: {integrity: sha512-YbubS7eK0J7DCf0U2LxvVP7LMfs6rC6UltihIgval3azO3gyDwEGVgsCMe1TmDiEkl6GdMKfRpaME6QxIYtzDQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -6477,7 +6477,7 @@ packages:
       eslint-utils: 3.0.0_eslint@8.31.0
       natural-compare: 1.4.0
       nth-check: 2.1.1
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
       semver: 7.3.8
       vue-eslint-parser: 9.1.0_eslint@8.31.0
       xml-name-validator: 4.0.0
@@ -10788,14 +10788,6 @@ packages:
       indexes-of: 1.0.1
       uniq: 1.0.1
     dev: false
-
-  /postcss-selector-parser/6.0.10:
-    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-    dev: true
 
   /postcss-selector-parser/6.0.11:
     resolution: {integrity: sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==}
