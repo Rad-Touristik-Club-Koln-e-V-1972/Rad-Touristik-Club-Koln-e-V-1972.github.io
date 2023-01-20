@@ -9,6 +9,22 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['52c09122-f041-4b5b-8ae1-a581ccf77dd4'])
+                .setDate('2023-01-19')
+                .setText(
+                    `Ehre wem Ehre gebührt:
+
+Manfred Marquardt hat vor 50 Jahren mit seinen Sportfreunden den traditionsreichen Breitensportverein „RTC Köln e.V.“ gegründet.
+Aus diesem Anlass überreichte ihm Wolfgang Dünkelmann, 1. Vorsitzender des RTC Köln, am 19.1.2023 die Urkunde und die Ehrennadel für langjährige Mitgliedschaft beim Bund Deutscher Radfahrer (BDR).
+Manfred Marquardt ist ein Pionier der Breitensportszene, denn bis zur Gründung des RTC Köln gab es nur Rennrad-Vereine, die sich auf Rennen – und nicht auf den Breitensport – konzentriert hatten.
+
+Aber auch Manfreds Frau, Hanni Marquardt, wurde für ihre 40-jährige Mitgliedschaft beim BDR geehrt und erhielt von Wolfgang Dünkelmann die Urkunde sowie die BDR-Ehrennadel überreicht.
+
+Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren Pioniergeist.`
+                )
+                .setTitle('Ehrung Manfred & Hanni Marquardt')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['bd6f7533-efaa-45f9-895f-11a419363bfa'])
                 .setDate('2023-01-07')
                 .setText(
