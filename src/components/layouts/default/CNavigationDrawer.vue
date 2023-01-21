@@ -1,6 +1,6 @@
 <template>
     <v-navigation-drawer id="CNavigationDrawer" app bottom clipped :value="props.value" width="auto" @input="emitInput">
-        <v-row class="ma-5">
+        <v-row class="ma-auto">
             <v-col>
                 <c-countdown />
             </v-col>
