@@ -9,6 +9,22 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['c8136f59-6fea-468d-914d-31a828e1a184'])
+                .setDate('2023-01-22')
+                .setText(
+                    `Richtige Radsportler:innen lassen sich von nichts stoppen.
+So auch nicht Burghild vom RTC Köln.
+„Ich habe heute die BDR-App erfolgreich getestet“, schreibt sie den restlichen RTClern fröhlich in den Chat, die aufgrund des Wetters lieber die Räder putzen, statt sie zu benutzen.
+Für Burghild ist die „Westfalen-Winterbike-Trophy“ einfach Kult.
+Und gestern, beim 3. Lauf 2023 in Waltrop, war bei -1 Grad und Schneefall jede Menge los.
+Den insgesamt 505 Teilnehmer:innen - mit MTB / Crosser / Gravelbike etc. - wurden tolle Strecken über Wald- und Feldwege, Halden mit fiesen Rampen und eine perfekte Orga vom RC Sprinter Waltrop geboten.
+Ihr Fazit: „Hat sehr viel Spaß gemacht und das Rad ist auch wieder sauber geworden!“
+
+Toll gemacht, Burghild! Starke Leistung. 💪`
+                )
+                .setTitle('Sonntag, Schnee, Kälte')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['52c09122-f041-4b5b-8ae1-a581ccf77dd4'])
                 .setDate('2023-01-19')
                 .setText(
