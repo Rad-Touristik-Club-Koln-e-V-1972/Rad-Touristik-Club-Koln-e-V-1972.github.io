@@ -1,9 +1,9 @@
 <template>
     <v-card id="VSponsor" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Unsere Sponsoren</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Unsere Sponsoren</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle class="text-title">
+        <v-card-subtitle>
             Ein herzliches Dankeschön für all die Unterstützung, ohne die unsere Veranstaltungen nicht machbar wären.
             <br />
             Auch all denjenigen, die um Diskretion gebeten haben, sind wir sehr verbunden!

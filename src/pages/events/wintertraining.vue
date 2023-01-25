@@ -1,14 +1,14 @@
 <template>
     <v-card id="VWinter" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
+            <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
         <v-card-text>
             <v-row class="justify-center">
                 <v-col cols="auto">
                     <v-card max-width="40em">
                         <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text text-title">Details</v-toolbar-title>
+                            <v-toolbar-title class="accent--text">Details</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
                             <v-simple-table dense>
@@ -37,7 +37,7 @@
                 <v-col cols="auto">
                     <v-card max-width="40em">
                         <v-card-text>
-                            <pre class="black--text text-pre-wrap" v-html="value.text" />
+                            <span class="black--text text-pre-wrap" v-html="value.text" />
                         </v-card-text>
                     </v-card>
                 </v-col>

@@ -1,7 +1,7 @@
 <template>
     <v-card id="VPressReports" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Presseberichte</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Presseberichte</v-toolbar-title>
         </v-toolbar>
         <v-card-text>
             <v-timeline :dense="vuetify?.breakpoint.mobile">
@@ -11,7 +11,7 @@
                     </template>
                     <v-card max-width="40em">
                         <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text text-title">{{ it.title }}</v-toolbar-title>
+                            <v-toolbar-title class="accent--text">{{ it.title }}</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
                             <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->

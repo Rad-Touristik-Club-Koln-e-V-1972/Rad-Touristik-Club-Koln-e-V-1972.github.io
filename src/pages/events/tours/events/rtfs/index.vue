@@ -1,18 +1,18 @@
 <template>
     <v-card id="VIndex" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
+            <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle class="text-title">Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
+        <v-card-subtitle>Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
         <v-card-text>
             <v-row class="justify-center" no-gutters>
                 <v-col cols="auto">
                     <v-card max-width="40em">
                         <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text text-title">Vorwort</v-toolbar-title>
+                            <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
-                            <pre class="black--text text-pre-wrap" v-html="value.text" />
+                            <span class="black--text text-pre-wrap" v-html="value.text" />
                         </v-card-text>
                     </v-card>
                 </v-col>
@@ -26,7 +26,7 @@
                 <v-col cols="auto">
                     <v-card class="text-no-wrap">
                         <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text text-title">Strecken</v-toolbar-title>
+                            <v-toolbar-title class="accent--text">Strecken</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
                             <v-simple-table dense>
@@ -65,7 +65,7 @@
                         <v-col cols="auto">
                             <v-card>
                                 <v-toolbar color="primary" flat>
-                                    <v-toolbar-title class="accent--text text-title">Gebühren</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
                                     <v-row dense>
@@ -102,7 +102,7 @@
                         <v-col cols="auto">
                             <v-card>
                                 <v-toolbar color="primary" flat>
-                                    <v-toolbar-title class="accent--text text-title">Zeiten</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text">Zeiten</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
                                     <v-simple-table dense>
@@ -128,10 +128,10 @@
                             </template>
                             <v-card>
                                 <v-toolbar color="primary" flat>
-                                    <v-toolbar-title class="accent--text text-title">{{ it.name }}</v-toolbar-title>
+                                    <v-toolbar-title class="accent--text">{{ it.name }}</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
-                                    <pre class="black--text text-pre-wrap" v-html="it.text" />
+                                    <span class="black--text text-pre-wrap" v-html="it.text" />
                                 </v-card-text>
                             </v-card>
                         </v-timeline-item>

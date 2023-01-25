@@ -4,11 +4,12 @@
         <v-app-bar app class="border" clipped-left color="accent" flat height="100%">
             <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
             <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-            <v-toolbar-title class="text-center text-title" style="width: 100%">
-                <span class="font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
+            <v-toolbar-title class="text-center" style="width: 100%">
+                <span class="accessibility font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
                 <br />
-                <span class="font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
+                <span class="accessibility font-weight-bold text-sm-h4 text-md-h3 text-h6"> RTC Köln e.V. <span class="primary--text" v-text="1972" /> </span>
             </v-toolbar-title>
+            <c-accessibility />
         </v-app-bar>
         <c-navigation-drawer v-model="navDrawer" :class="vuetify?.breakpoint.mobile ? '' : 'border'" />
         <v-main class="border main">
@@ -29,6 +30,7 @@
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
 import { mdiCopyright } from '@mdi/js'
+import CAccessibility from '~/components/layouts/default/CAccessibility.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7

@@ -16,10 +16,10 @@
                                 </template>
                                 <v-card max-width="40em">
                                     <v-toolbar color="primary" flat>
-                                        <v-toolbar-title class="accent--text text-title">{{ it.title }}</v-toolbar-title>
+                                        <v-toolbar-title class="accent--text">{{ it.title }}</v-toolbar-title>
                                     </v-toolbar>
                                     <v-card-text>
-                                        <pre class="black--text text-pre-wrap" v-html="it.text" />
+                                        <span class="black--text text-pre-wrap" v-html="it.text" />
                                     </v-card-text>
                                     <v-card-actions v-if="Object.keys(it.albumIDs).length" class="justify-center">
                                         <c-gallery

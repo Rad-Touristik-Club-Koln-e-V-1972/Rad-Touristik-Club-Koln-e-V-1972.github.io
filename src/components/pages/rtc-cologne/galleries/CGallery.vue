@@ -4,7 +4,7 @@
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
         <v-card-title>{{ props.value.title }}</v-card-title>
-        <v-card-subtitle class="text-title">
+        <v-card-subtitle>
             <div v-text="`Datum: ${dateTime.format(props.value.start, props.value.end, true)}`" />
             <div v-text="`Ort: ${props.value.location}`" />
         </v-card-subtitle>
@@ -27,7 +27,7 @@
             <v-expand-transition>
                 <div v-show="showText">
                     <v-card-text>
-                        <pre class="black--text text-pre-wrap" v-text="props.value.description" />
+                        <span class="black--text text-pre-wrap" v-text="props.value.description" />
                     </v-card-text>
                 </div>
             </v-expand-transition>

@@ -1,7 +1,7 @@
 <template>
     <v-card id="CList">
         <v-toolbar flat>
-            <v-toolbar-title class="text-title">Zukünftige Termine</v-toolbar-title>
+            <v-toolbar-title>Zukünftige Termine</v-toolbar-title>
             <template #extension>
                 <v-row>
                     <v-col><c-date-range v-model="filter.dateRange" @input="triggerFilter" /></v-col>

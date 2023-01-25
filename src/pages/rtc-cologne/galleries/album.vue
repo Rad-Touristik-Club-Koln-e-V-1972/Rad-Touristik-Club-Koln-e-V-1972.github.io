@@ -8,18 +8,18 @@
             <v-btn exact icon @click="close">
                 <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
             </v-btn>
-            <v-toolbar-title class="accent--text text-title">{{ value.title }}</v-toolbar-title>
+            <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
             <v-spacer />
             <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
                 Details
                 <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
             </v-btn>
         </v-toolbar>
-        <v-card-subtitle class="text-title">{{ dateTime.format(value.start, value.end, true) }} bei {{ value.location }}</v-card-subtitle>
+        <v-card-subtitle>{{ dateTime.format(value.start, value.end, true) }} bei {{ value.location }}</v-card-subtitle>
         <v-expand-transition v-if="value.description">
             <div v-show="showText">
                 <v-card-text>
-                    <pre class="black--text text-pre-wrap" v-text="value.description" />
+                    <span class="black--text text-pre-wrap" v-text="value.description" />
                 </v-card-text>
             </div>
         </v-expand-transition>

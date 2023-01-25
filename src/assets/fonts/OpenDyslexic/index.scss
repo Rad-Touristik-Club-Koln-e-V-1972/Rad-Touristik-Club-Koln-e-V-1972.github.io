@@ -1,0 +1,30 @@
+$font-dir: '~/assets/fonts/';
+$font-family: 'OpenDyslexic';
+
+@font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    src: url('#{$font-dir}#{$font-family}/#{$font-family}-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    src: url('#{$font-dir}#{$font-family}/#{$font-family}-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: normal;
+    src: url('#{$font-dir}#{$font-family}/#{$font-family}-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: bold;
+    src: url('#{$font-dir}#{$font-family}/#{$font-family}-Bold-Italic.woff2') format('woff2');
+}

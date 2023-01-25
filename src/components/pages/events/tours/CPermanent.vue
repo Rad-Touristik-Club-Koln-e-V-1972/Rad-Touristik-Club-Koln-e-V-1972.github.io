@@ -1,9 +1,9 @@
 <template>
     <v-card id="CTour" max-width="37em">
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">{{ props.value.title }}</v-toolbar-title>
+            <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle class="text-title">
+        <v-card-subtitle>
             <v-simple-table dense>
                 <tbody>
                     <tr>
@@ -64,7 +64,7 @@
         <v-expand-transition>
             <div v-show="showText">
                 <v-card-text>
-                    <pre class="black--text text-pre-wrap" v-html="props.value.text" />
+                    <span class="black--text text-pre-wrap" v-html="props.value.text" />
                 </v-card-text>
             </div>
         </v-expand-transition>

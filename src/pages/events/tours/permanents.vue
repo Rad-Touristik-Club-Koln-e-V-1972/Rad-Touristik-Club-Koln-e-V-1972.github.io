@@ -1,9 +1,9 @@
 <template>
     <v-card id="VPermanents" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Der RTC Köln e.V. bietet Euch zwei Permanente</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Der RTC Köln e.V. bietet Euch zwei Permanente</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle class="text-title">
+        <v-card-subtitle>
             Wir haben zwei anspruchsvolle und landschaftlich reizvolle Strecken ausgearbeitet, die in der Rennradsaison (auch im Winter) alleine oder in der Gruppe und nach eigenem
             Einschätzungsvermögen abgefahren werden können.
         </v-card-subtitle>

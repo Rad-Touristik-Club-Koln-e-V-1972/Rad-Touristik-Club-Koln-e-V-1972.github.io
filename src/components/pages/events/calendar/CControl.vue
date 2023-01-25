@@ -3,15 +3,15 @@
         <v-btn v-if="props.value !== ECalendar.list" fab :small="vuetify?.breakpoint.xs" text @click="emits('prev')">
             <v-icon>{{ icons.mdiChevronLeft }}</v-icon>
         </v-btn>
-        <v-btn v-if="props.value !== ECalendar.list" outlined :small="vuetify?.breakpoint.xs" class="text-title" @click="emits('showToday')">Heute</v-btn>
+        <v-btn v-if="props.value !== ECalendar.list" outlined :small="vuetify?.breakpoint.xs" @click="emits('showToday')">Heute</v-btn>
         <v-btn v-if="props.value !== ECalendar.list" fab :small="vuetify?.breakpoint.xs" text @click="emits('next')">
             <v-icon>{{ icons.mdiChevronRight }}</v-icon>
         </v-btn>
-        <v-toolbar-title v-if="props.value !== ECalendar.list && !vuetify?.breakpoint.xs" class="text-title">{{ props.title }}</v-toolbar-title>
+        <v-toolbar-title v-if="props.value !== ECalendar.list && !vuetify?.breakpoint.xs">{{ props.title }}</v-toolbar-title>
         <v-spacer />
         <v-menu bottom right>
             <template #activator="{ on, attrs }">
-                <v-btn class="text-title" outlined :small="vuetify?.breakpoint.xs" v-bind="attrs" v-on="on">
+                <v-btn outlined :small="vuetify?.breakpoint.xs" v-bind="attrs" v-on="on">
                     {{ value }}
                     <v-icon right>{{ icons.mdiMenuDown }}</v-icon>
                 </v-btn>

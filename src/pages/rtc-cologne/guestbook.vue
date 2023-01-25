@@ -1,14 +1,14 @@
 <template>
     <v-card id="VGuestbook" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Gästebuch</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Gästebuch</v-toolbar-title>
             <v-spacer />
             <v-btn color="accent" text @click="showText = !showText">
                 Details
                 <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
             </v-btn>
         </v-toolbar>
-        <v-card-subtitle class="text-title">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>
+        <v-card-subtitle>Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>
         <v-card-actions>
             <v-btn
                 href="mailto:PR@rtc-koeln.de?subject=G%C3%A4stebuch%20-%20Thema

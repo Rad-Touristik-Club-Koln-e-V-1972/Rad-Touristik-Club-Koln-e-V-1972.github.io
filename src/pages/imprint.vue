@@ -1,9 +1,9 @@
 <template>
     <v-card id="VImprint" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Impressum</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Impressum</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle class="text-title">Angaben gemäß § 5 TMG</v-card-subtitle>
+        <v-card-subtitle>Angaben gemäß § 5 TMG</v-card-subtitle>
         <v-card-text class="black--text">
             <v-card flat>
                 <v-card-title>Anschrift</v-card-title>

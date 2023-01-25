@@ -3,35 +3,14 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 
-$font-dir: '~/assets/fonts/';
-$font-family: 'TacticSans';
+@import 'fonts/CharisSil/index';
+@import 'fonts/OpenDyslexic/index';
 
-@font-face {
-    font-family: $font-family;
-    src: url('#{$font-dir}#{$font-family}-Reg.otf') format('opentype');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: $font-family;
-    src: url('#{$font-dir}#{$font-family}-Bld.otf') format('opentype');
-    font-style: normal;
-    font-weight: bold;
-}
-
-.v-application {
-    [class*='text'] {
-        font-family: 'Segoe UI', Calibri, sans-serif !important;
-        // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-        white-space: normal;
-        // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-        word-break: normal;
-    }
-
-    .text-title {
-        font-family: $font-family, sans-serif !important;
-    }
+[class*='text'] {
+    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+    white-space: normal;
+    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+    word-break: normal;
 }
 
 .v-card--link:before {
@@ -42,4 +21,4 @@ $font-family: 'TacticSans';
     color: var(--v-secondary-base) !important;
 }
 
-@import 'node_modules/vuetify/src/styles/styles';
+$body-font-family: 'CharisSil';

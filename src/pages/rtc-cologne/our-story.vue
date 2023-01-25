@@ -1,7 +1,7 @@
 <template>
     <v-card id="VClub" flat>
         <v-toolbar color="primary" flat>
-            <v-toolbar-title class="accent--text text-title">Unsere Geschichte</v-toolbar-title>
+            <v-toolbar-title class="accent--text">Unsere Geschichte</v-toolbar-title>
         </v-toolbar>
         <v-card-text class="black--text">
             <p>
