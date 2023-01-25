@@ -31,7 +31,7 @@
         "@commitlint/cli": "^17.4.2",
         "@commitlint/config-conventional": "^17.4.2",
         "@mdi/js": "^7.1.96",
-        "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27889410.9247608",
+        "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27909973.a4c5d19",
         "@nuxt/types": "^2.15.8",
         "@nuxtjs/eslint-config-typescript": "^12.0.0",
         "@nuxtjs/eslint-module": "^3.1.0",
