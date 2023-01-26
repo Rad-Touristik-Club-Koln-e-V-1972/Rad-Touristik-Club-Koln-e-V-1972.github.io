@@ -53,6 +53,6 @@ export default new GalleryBuilder()
         new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2014/03_29_Bergisches_Karussell/Bergische Karussell(8).JPG').build(),
         new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/gallery/2014/03_29_Bergisches_Karussell/Bergische Karussell(9).JPG').build(),
     ])
-    .setTitle('Permanente "Bergisches Karussell"')
+    .setTitle('Permanente "Das Bergische Karussell"')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2014/03_29_Bergisches_Karussell/preview/preview.Bergische Karussell(35).JPG')
     .build()

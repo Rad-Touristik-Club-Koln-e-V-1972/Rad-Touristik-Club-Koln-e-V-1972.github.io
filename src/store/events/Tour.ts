@@ -294,7 +294,7 @@ Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`
                 )
-                .setTitle('Bergische Karussell')
+                .setTitle('Das Bergische Karussell')
                 .setUrls({
                     'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
                     Komoot: new URL('https://www.komoot.de/tour/678486665'),

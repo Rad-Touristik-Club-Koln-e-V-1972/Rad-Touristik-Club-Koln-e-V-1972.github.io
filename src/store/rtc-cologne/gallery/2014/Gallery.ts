@@ -1,4 +1,4 @@
-import _20140329BergischesKarussell from '~/store/rtc-cologne/gallery/2014/03_29_Bergisches_Karussell'
+import _20140329BergischeKarussell from '~/store/rtc-cologne/gallery/2014/03_29_Bergische_Karussell'
 import _20140403GeburtstagErichFischer from '~/store/rtc-cologne/gallery/2014/04_03_Geburtstag_Erich_Fischer'
 import _20140408FlandernBelgien from '~/store/rtc-cologne/gallery/2014/04_08_Flandern_Belgien'
 import _20140412Duesseldorf from '~/store/rtc-cologne/gallery/2014/04_12_Duesseldorf'
@@ -43,5 +43,5 @@ export default [
     _20140412Duesseldorf,
     _20140408FlandernBelgien,
     _20140403GeburtstagErichFischer,
-    _20140329BergischesKarussell,
+    _20140329BergischeKarussell,
 ]
