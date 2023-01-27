@@ -200,11 +200,12 @@ Auf der Rücktour könnt ihr genug Speed machen, um die überflüssigen Kalorien
 Wer dann trotzdem noch Platz hat, dem kann ich nur das Eiscafé Piccola Gelateria empfehlen.
 Hier kann man die Runde mit Freunden bei einem vorzüglichen selbstgemachten cremigen Speiseeis abschließen.
 
-...und wenn du eine Wertungskarte hast, nicht vergessen, die Tour eintragen zu lassen…
+...und wenn du eine Breitensportlizenz hast, nicht vergessen, deine Email-Adresse in der Liste einzutragen.
+Am Schluss der Saison werden wir dir die notwendigen QR-Codes zusenden, damit du die Permanente in die BDR-App eintragen kannst.
 
 Das Startgeld beträgt 3 €.
-Wertungskarteninhaber mit dem Vermerk "Schüler" sind zum Start zugelassen und vom Startgeld befreit.
-Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrerinnen und Radfahrer nach der Eintragung in die Teilnehmerliste ausgehändigt bekommen.
+Breitensportlizenzinhaber mit dem Vermerk "Schüler" sind zum Start zugelassen und vom Startgeld befreit.
+Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrerinnen und Radfahrer nach der Eintragung in die Teilnehmerliste (Email-Adresse nicht vergessen) ausgehändigt bekommen.
 An der ARAL-Tankstelle in Lindlar (ungefähr die Hälfte der insgesamt 71 km) erfolgt der Kontrollstempel in die Startkarte, als Nachweis, um sich nach der Rückkehr (Öffnungszeiten beachten) einmalig 2 Punkte in die Wertungskarte eintragen zu lassen.
 Bei den Touren wird entsprechend der Vorgabe des BDR der Sternfahrt-Modus nicht durchgeführt.
 Die Anmeldung am Start ist von den Öffnungszeiten abhängig.
