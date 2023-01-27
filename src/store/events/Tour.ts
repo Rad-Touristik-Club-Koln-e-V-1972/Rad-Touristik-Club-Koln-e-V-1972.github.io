@@ -237,6 +237,7 @@ Euer RTC Köln e.V. 1972`
                 .setHeight(700)
                 .setLength(72)
                 .setProfile(EProfile.wellig)
+                .setActive(false)
                 .setText(
                     `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
@@ -294,7 +295,7 @@ Euer RTC Köln e.V. 1972`
                         .setZipCode('51515')
                         .build()
                 )
-                .setLastChange('2022-02-12')
+                .setLastChange('2023-01-27')
                 .build(),
         ],
     }),

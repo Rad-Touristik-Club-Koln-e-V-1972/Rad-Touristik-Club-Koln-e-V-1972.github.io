@@ -10,6 +10,7 @@ import Popup from '~/models/entities/Popup'
 export default class TourBuilder<T extends Tour> extends ABuilder<T> {
     // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
+    protected active = true
     protected category = EEvent.Vereinsfahrt
     protected controls!: Control[]
     protected images!: GalleryEntry[]
@@ -24,6 +25,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
         //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
         return Object.assign(
             {
+                active: this.active,
                 category: this.category,
                 controls: this.controls ?? [],
                 images: this.images ?? [],
@@ -35,6 +37,12 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
             },
             new AEntity(this.id)
         ) as T
+    }
+
+    setActive(value: boolean): TourBuilder<T> {
+        this.active = value
+
+        return this
     }
 
     setCategory(value: EEvent): TourBuilder<T> {
