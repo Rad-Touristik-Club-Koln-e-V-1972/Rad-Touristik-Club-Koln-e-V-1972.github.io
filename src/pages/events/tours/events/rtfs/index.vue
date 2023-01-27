@@ -82,7 +82,7 @@
                                                 </tbody>
                                             </v-simple-table>
                                         </v-col>
-                                        <v-col>
+                                        <v-col v-if="value.fees.filter((f) => f.category === EEvent.Marathon).length">
                                             <v-simple-table dense>
                                                 <thead>
                                                     <th colspan="2" v-text="'Marathon'" />
