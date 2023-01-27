@@ -25,7 +25,7 @@ export const useTourStore = defineStore('tour', {
                     new FeeBuilder().setName('sonstige BDR-Mitglieder').setPrice(7).build(),
                     new FeeBuilder().setName('Gastfahrer').setPrice(9).build()
                 )
-                .setTimes(new TimeBuilder().setName('Start').setTime('8').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
+                .setTimes(new TimeBuilder().setName('Start').setTime('8:00').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
                 .setTracks(
                     new TrackBuilder()
                         .setName('Alle Strecken')
