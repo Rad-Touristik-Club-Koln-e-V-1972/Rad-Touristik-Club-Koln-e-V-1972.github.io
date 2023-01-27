@@ -21,26 +21,22 @@ export const useTourStore = defineStore('tour', {
             new EventBuilder()
                 .setFees(
                     new FeeBuilder().setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
-                    new FeeBuilder().setName('BDR-Mitglieder mit Wertungskarte').setPrice(5).build(),
+                    new FeeBuilder().setName('BDR-Mitglieder mit Breitensportlizenz').setPrice(5).build(),
                     new FeeBuilder().setName('sonstige BDR-Mitglieder').setPrice(7).build(),
-                    new FeeBuilder().setName('Gastfahrer').setPrice(9).build(),
-                    new FeeBuilder().setCategory(EEvent.Marathon).setName('BDR-Mitglieder mit Wertungskarte').setPrice(15).build(),
-                    new FeeBuilder().setCategory(EEvent.Marathon).setName('sonstige BDR-Mitglieder').setPrice(17).build(),
-                    new FeeBuilder().setCategory(EEvent.Marathon).setName('Gastfahrer').setPrice(19).build()
+                    new FeeBuilder().setName('Gastfahrer').setPrice(9).build()
                 )
-                .setTimes(
-                    new TimeBuilder().setName('Frühstück').setTime('6:00', '6:30').build(),
-                    new TimeBuilder().setName('Start').setTime('6:30', '11:00').build(),
-                    new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('18:00').build()
-                )
+                .setTimes(new TimeBuilder().setName('Start').setTime('8').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
                 .setTracks(
                     new TrackBuilder()
                         .setName('Alle Strecken')
                         .setText(
                             `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
-„Frühstarter“ können dort ab sechs Uhr frühstücken, während die „Langschläfer“ noch bis elf Uhr auf den kurzen Strecken starten können.
+„Frühaufsteher“ können dort ab acht Uhr, während die „Langschläfer“ noch bis elf Uhr starten können.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
-Selbstverständlich kann sich auch bei uns mit Scan&Bike angemeldet werden.
+Wegen des hohen Andrangs im letzten Jahr bemühen wir und derzeit um eine größere Parkfläche in der unmittelbaren Umgebung.
+Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
+Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
+Da die App zur Zeit noch in der Testphase ist und noch weiter angepasst wird, werden wir zeitnah zum 28.05.2023 noch nähere Informationen auf unserer Webseite bekannt geben.
 Vom Start weg fahren wir durch eine Spielstraße, die sich leider nicht sinnvoll umgehen lässt.
 Hier bitten wir die FahrerInnen um besondere Rücksichtnahme.
 Zum Einrollen geht es zunächst flach durch die Felder und den südlichsten Stadtteil von Köln, Porz-Libur.
@@ -71,7 +67,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         )
                         .setTime('7:30', '11:00')
                         .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 51km.gpx'),
+                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676899286'),
                         })
                         .build(),
@@ -98,21 +94,21 @@ Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Ag
 Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 <i>Auf diesem Streckenteil sollte unbedingt der Radweg benutzt werden.</i>
-Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
+Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sic^h der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
                         .setTime('7:30', '11:00')
                         .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 78km.gpx'),
+                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676927332'),
                         })
                         .build(),
                     new TrackBuilder()
                         .setControls(3)
                         .setHeight(1440)
-                        .setLength(118)
-                        .setName('Die 118er')
+                        .setLength(117)
+                        .setName('Die 117er')
                         .setProfile(EProfile.huegelig)
                         .setText(
                             `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
@@ -130,11 +126,11 @@ Leider finden sich in dieser Abfahrt einige Straßenschäden, sodass besondere V
     <figcaption>Kontrolle 2 - Eitdorf-Bourauel</figcaption>
 </figure>
 Von der Kontrollstelle auf dem Dorfplatz in Bourauel geht es das Siegtal hinauf.
-Recht schnell verlässt die 118er das Siegtal wieder und führt über Rieferath nach Ruppichteroth.
+Recht schnell verlässt die 117er das Siegtal wieder und führt über Rieferath nach Ruppichteroth.
 Auf diesem Teilstück wird ein erheblicher Anteil der Höhenmeter auf der anspruchsvollen Strecke überwunden.
-Über Hambuchen und Retscheroth geht es weiter nach Marienfeld, wo die drei langen Strecken aufeinander treffen und bis Much gemeinsam geführt werden.
+Über Hambuchen und Retscheroth geht es weiter nach Marienfeld, bis nach Much.
 Von Much geht es durch wenig befahrene ländliche Straßen über Hetzenholz, Nackhausen und Seelscheid nach Ingersauel, wo die nächste Herausforderung wartet:
-der Anstieg zu unserer neuen Kontrolle auf dem Betriebshof von Fullwood Blockhaus in Oberstehöhe.
+der Anstieg zu unserer Kontrolle auf dem Betriebshof von Fullwood Blockhaus in Oberstehöhe.
 Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Aggertal erreicht wird.
 Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
@@ -142,95 +138,13 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         )
                         .setTime('7:30', '11:00')
                         .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 118km.gpx'),
+                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 117km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676930729'),
                         })
-                        .build(),
-                    new TrackBuilder()
-                        .setName('Marathon und 159er')
-                        .setText(
-                            `Beide Strecken führen nach der Kontrolle in Bourauel zunächst das Siegtal entlang.
-In Müllenacker folgen wir, anders als in den letzten Jahren, der Sieg.
-Wer Höhenmeter sammeln will, kann aber gerne über den Hügel auf der Herchener Straße abkürzen und trifft in Herchen wieder auf die Strecke.
-Erst hinter Schladern ist es dann vorbei mit der gemütlichen Rollerei.
-Über Vierbuchermühle, Schnörringen und Lützingen geht es stetig aufwärts zur Kontrolle in Hülstert.
-Dort trennen sich dann auch Marathon und 159er:
-<figure>
-    <img alt="Kontrolle 3 / 5 - Hülstert" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/K3_K5_Hülstert.jpg' style='width: 100%' />
-    <figcaption>Kontrolle 3 / 5 - Hülstert</figcaption>
-</figure>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setControls(4)
-                        .setHeight(1750)
-                        .setImportant(true)
-                        .setLength(159)
-                        .setName('Die 159er')
-                        .setProfile(EProfile.bergisch)
-                        .setText(
-                            `In Hülstert geht es für die 159er-Strecke nicht über eine der drei Haupststraßen weiter, sondern am besten über den Parkplatz neben der Imbissbude zur Straße „Auf der Stippe“.
-Auf Nebenstrecken geht es dann durch Geiringen nach Hermesdorf.
-Von dort folgen wir den Straßen entlang der Homburger Bröl.`
-                        )
-                        .setTime('7:30', '8:30')
-                        .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Tour 159km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/676931597'),
-                        })
-                        .build(),
-                    new TrackBuilder()
-                        .setControls(6)
-                        .setHeight(2610)
-                        .setImportant(true)
-                        .setLength(212)
-                        .setName('Der Marathon')
-                        .setProfile(EProfile.bergisch)
-                        .setText(
-                            `Nach der Streckenteilung in Hülstert folgt eine geschmeidige Abfahrt hinunter nach Morsbach.
-Weiter geht es auf der L278.
-Kurz hinter der Systembaufirma ALHO verlassen wir Nordrhein-Westfalen und fahren die nächsten zehn Kilometer durch Rheinland-Pfalz.
-<figure>
-    <img alt="Gut Crottorf" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Gut_Crottorf.jpg' style='width: 100%' />
-    <figcaption>Gut Crottorf</figcaption>
-</figure>
-Vorbei an Gut Crottorf geht es über wenig befahrene Nebenstrecken geradeaus weiter über Hilchenbach und Trömbach zur Warmverpflegung nach Bebbingen.
-<figure>
-    <img alt="Kontrolle 4 Marathon - Bebbingen" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/K4_Marathon_Bebbingen.jpg' style='width: 100%' />
-    <figcaption>Kontrolle 4 Marathon - Bebbingen</figcaption>
-</figure>
-Wer hier den Versuchungen unserer (Fast-) Sterneköche erliegt, wird die Kalorien auch gleich wieder los; bis zur Unterquerung der A4 geht es stetig hinauf.
-Nach der folgenden Abfahrt wird in Iseringhausen der nördlichste Punkt auf unserer Strecke erreicht.
-Relativ flach geht es nun über Husten und Halbhusten weiter zum langen Anstieg nach Blockhütte.
-Auch hier werden die Mühen wieder mit einem grandiosen Ausblick belohnt.
-Nach Abfahrt erfolgt in Eckenhagen die nächste Streckenänderung:
-Da einige FahrerInnen sich dort im letzten Jahr verfahren haben, biegt die Strecke jetzt an der Hauptstraße rechts ab, um dem „intuitiven“ Streckenverlauf zu folgen.
-Nachdem die A4 wieder überquert wird, geht es an der Wiehltalsperre vorbei.
-Der Parkplatz mit dem „Krombacher“ Ausblick bietet sich natürlich für das ein oder andere „Selfie“ an.
-<figure>
-    <img alt="Blick auf die Wieltalsperre, aktuell ohne Kontrolle " src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Wieltalsperre.jpg' style='width: 100%' />
-    <figcaption>Blick auf die Wieltalsperre, aktuell ohne Kontrolle </figcaption>
-</figure>
-Hinter Brüchermühle geht es über eine leicht geänderte Strecke zur Kontrolle nach Hülstert zurück.`
-                        )
-                        .setTime('6:30', '7:30')
-                        .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2022 Marathon 212km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/676932743'),
-                        })
-                        .build(),
-                    new TrackBuilder()
-                        .setName('159er und Marathon')
-                        .setText(
-                            `An der Kontrollstelle in Hülstert treffen die 159er und die Marathon-Strecke aufeinander.
-Wegen der verlängerten Startzeit für die 159er bietet die Kontrolle an, sich dort zu verabreden und gemeinsam weiterzufahren.
-Von dort geht es flacher durch das Bröltal weiter.
-Bei Alefeld verlassen wir das Bröltal und fahren über Marienfeld nach Much, wo, bis auf die 51er, alle Strecken aufeinander treffen.`
-                        )
                         .build()
                 )
                 .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build())
-                .setLastChange('2022-12-02')
+                .setLastChange('2023-01-27')
                 .setPopup(
                     `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
 
@@ -242,15 +156,23 @@ Euer RTC Köln e.V.`,
                     'NICHT VERPASSEN'
                 )
                 .setText(
-                    `Wir haben uns bemüht, die Anregungen von den TeilnehmerInnen unserer vorherigen Forsbach-Tour umzusetzen und haben Teile der Strecken umgeplant.
+                    `Liebe Radsportlerinnen und Radsportler,
 
-So haben wir Kontrollstellen mit der Möglichkeit der WC-Nutzung gefunden und die letzte Kontrolle liegt nicht mehr unmittelbar an der Straße.
+wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
+Wie ihr wisst, liegt ein ereignisreiches und intensives Jubiläumsjahr hinter uns.
+Um uns eine Verschnaufpause zu gönnen, haben wir uns entschlossen, in diesem Jahr nur drei Strecken anzubieten.
+Aber auch diese Strecken sind wunderschön und lohnen sich, unter die Räder genommen zu werden.
 
-Die Entfernungen zwischen den Kontrollen haben wir gleichmäßiger aufgeteilt, die längste Strecke mit 38 km liegt nicht mehr am Schluss, sondern hinter der Kontrollstelle 2 in Bourauel.
+Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung.
+Dies gilt für die Kontrollstellen genauso wie für den Start-/Zielbereich.
+Wir möchten den früheren Kontrollschluss dafür nutzen, mit Euch den Nachmittag auf dem Schulhof zu genießen.
+Bringt also Zeit und Hunger mit.
 
-Auch dem Trend zu mehr Höhenmetern sind wir nicht gefolgt, haben die Strecke an einigen Stellen entschärft, ohne ihr die typische Charakteristik zu nehmen.
+Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
 
-Die Teilstrecken führen ausschließlich über wenig befahrene Nebenstraßen.`
+Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
+
+Eurer RTC Köln e.V.`
                 )
                 .setTitle('Die Forsbach-Tour')
                 .build(),
