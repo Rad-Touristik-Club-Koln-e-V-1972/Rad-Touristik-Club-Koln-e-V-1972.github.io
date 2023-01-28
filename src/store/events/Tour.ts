@@ -33,7 +33,6 @@ export const useTourStore = defineStore('tour', {
                             `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
 „Frühaufsteher“ können dort ab acht Uhr, während die „Langschläfer“ noch bis elf Uhr starten können.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
-Wegen des hohen Andrangs im letzten Jahr bemühen wir und derzeit um eine größere Parkfläche in der unmittelbaren Umgebung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
 Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
 Da die App zur Zeit noch in der Testphase ist und noch weiter angepasst wird, werden wir zeitnah zum 28.05.2023 noch nähere Informationen auf unserer Webseite bekannt geben.
@@ -94,7 +93,7 @@ Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Ag
 Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 <i>Auf diesem Streckenteil sollte unbedingt der Radweg benutzt werden.</i>
-Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sic^h der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
+Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
@@ -113,7 +112,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .setText(
                             `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
-Einer Baustelle vor zwei Jahren verdanken wir den folgenden Anstieg nach Winterscheid.
+Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
 Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
 <figure>
     <img alt="Wahnbachtal" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Wahnbachtal.jpg' style='width: 100%' />
@@ -144,7 +143,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .build()
                 )
                 .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build())
-                .setLastChange('2023-01-27')
+                .setLastChange('2023-01-28')
                 .setPopup(
                     `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
 
