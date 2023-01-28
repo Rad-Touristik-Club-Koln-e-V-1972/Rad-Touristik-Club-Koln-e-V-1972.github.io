@@ -35,7 +35,7 @@ export const useTourStore = defineStore('tour', {
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
 Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
-Da die App zur Zeit noch in der Testphase ist und noch weiter angepasst wird, werden wir zeitnah zum 28.05.2023 noch nähere Informationen auf unserer Webseite bekannt geben.
+Da die App zurzeit noch in der Testphase ist und noch weiter angepasst wird, werden wir zeitnah zum 28.05.2023 noch nähere Informationen auf unserer Webseite bekannt geben.
 Vom Start weg fahren wir durch eine Spielstraße, die sich leider nicht sinnvoll umgehen lässt.
 Hier bitten wir die FahrerInnen um besondere Rücksichtnahme.
 Zum Einrollen geht es zunächst flach durch die Felder und den südlichsten Stadtteil von Köln, Porz-Libur.
@@ -255,7 +255,7 @@ Ab hier kannst du richtig Speed machen – es geht kontinuierlich 26 km, unterbr
 Vorher ist ein Boxenstopp in Kürten angesagt.
 Hier holst du dir deinen Kontrollstempel an der Esso-Tankstelle.
 Vor- oder nachher kannst du dir hier deinen Kohlehydratspeicher wieder auffüllen.
-Dazu gibt es Gelegenheit bei der <a href='https://landbaeckerei-bauer.de/' target='_blank'>Landbäckerei Bauer</a>, Marktfeld 2, bei der <a href='http://www.baeckerei-fritzen.de/' target='_blank'>Kürtener Landbäckerei Mario Fritzen</a>, Wipperfürther Str. 389, oder <a href='https://www.engels-baeckerei.de/newpage10' target='_blank'>Felder´s Engelsbäckerei (im Rewe)</a>, Wipperfürther Str. 400.
+Dazu gibt es Gelegenheit bei der <a href='https://landbaeckerei-bauer.de/' target='_blank'>Landbäckerei Bauer</a>, Marktfeld 2, bei der <a href='https://www.baeckerei-fritzen.de/' target='_blank'>Kürtener Landbäckerei Mario Fritzen</a>, Wipperfürther Str. 389, oder <a href='https://www.engels-baeckerei.de/newpage10' target='_blank'>Felder´s Engelsbäckerei (im Rewe)</a>, Wipperfürther Str. 400.
 Wer lieber auf Eis steht, der ist mit dem <a href='https://de-de.facebook.com/eiscafe.veneziakurten' target='_blank'>Eiscafé Venezia</a>, Talblick 2, gut bedient.
 
 Frisch aufgetankt geht es dann weiter über Hommerich und Brombach nach Obersteeg.
