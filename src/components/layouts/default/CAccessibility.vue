@@ -36,7 +36,7 @@ const dialog = ref(false)
 const legasthenie = ref(false)
 // noinspection FunctionWithMultipleLoopsJS
 const switchFont = () => {
-    const font = legasthenie.value ? 'OpenDyslexic' : 'CharisSil'
+    const font = legasthenie.value ? 'OpenDyslexic' : 'Bahnschrift'
 
     document.getElementById('app')?.style?.setProperty('font-family', font)
 

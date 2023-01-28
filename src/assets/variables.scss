@@ -3,8 +3,15 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 
-@import 'fonts/CharisSil/index';
 @import 'fonts/OpenDyslexic/index';
+
+$font-family: 'Bahnschrift';
+@font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    src: url('~/assets/fonts/#{$font-family}-Regular.ttf') format('truetype');
+}
 
 [class*='text'] {
     // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
@@ -24,4 +31,4 @@
     color: var(--v-secondary-base) !important;
 }
 
-$body-font-family: 'CharisSil';
+$body-font-family: $font-family;
