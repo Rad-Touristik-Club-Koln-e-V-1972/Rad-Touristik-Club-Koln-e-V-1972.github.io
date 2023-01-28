@@ -9,12 +9,15 @@
 [class*='text'] {
     // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
     white-space: normal;
-    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-    word-break: normal;
 }
 
 .v-card--link:before {
     background: none;
+}
+
+.v-card__title {
+    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
+    word-break: normal;
 }
 
 .v-icon {
