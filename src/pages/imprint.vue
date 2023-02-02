@@ -9,7 +9,7 @@
                 <v-card-title>Anschrift</v-card-title>
                 <v-card-text>
                     Rad-Touristik-Club Köln e.V. 1972<br />
-                    Am Markt 4<br />
+                    Turmhofstr. 2<br />
                     51143 Köln
                 </v-card-text>
             </v-card>
