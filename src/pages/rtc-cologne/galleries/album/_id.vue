@@ -82,6 +82,11 @@
 </template>
 
 <script lang="ts" setup>
+/*
+TODO "[Vue warn]: Invalid component name: "_id". Component names should conform to valid custom element name in html5 specification."
+ See https://github.com/nuxt-community/router-module/issues/67
+*/
+
 import { computed, getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
@@ -95,7 +100,7 @@ const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
-const value = useGalleryStore().findById(proxy?.$route.params.value ?? '')
+const value = useGalleryStore().findById(proxy?.$route.params.id ?? '') ?? proxy?.$router.go(-1)
 
 const close = () => {
     isLoading.value = true

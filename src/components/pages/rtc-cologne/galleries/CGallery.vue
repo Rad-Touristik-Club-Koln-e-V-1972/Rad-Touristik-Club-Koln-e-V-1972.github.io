@@ -63,7 +63,7 @@ const open = () => {
     isLoading.value = true
     nextTick(() => {
         setTimeout(() => {
-            router?.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album, value: props.value.id } })
+            router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value.id } })
         }, 0)
     })
 }
