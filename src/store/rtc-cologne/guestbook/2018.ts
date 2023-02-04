@@ -5,7 +5,7 @@ import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 export default [
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
-        .setDate('2018-10-28 0:00')
+        .setDate('2018-10-28 00:00')
         .setName('Andreas Reineke')
         .setSource(ESource.Facebook)
         .setText(
@@ -19,7 +19,7 @@ Es war eine sehr schöne Veranstaltung.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
-        .setDate('2018-10-28 0:00')
+        .setDate('2018-10-28 00:00')
         .setName('Vamos Bala')
         .setSource(ESource.Facebook)
         .setText(

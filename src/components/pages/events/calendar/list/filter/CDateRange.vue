@@ -39,7 +39,7 @@ const abort = () => {
 const close = () => {
     emits(
         'input',
-        items.value.map((it: string) => `${it} 0:00`) // Otherwise it would add a hour offset the same as the timezone value.
+        items.value.map((it: string) => `${it} 00:00`) // Otherwise it would add a hour offset the same as the timezone value.
     )
     isOpen.value = false
 }
