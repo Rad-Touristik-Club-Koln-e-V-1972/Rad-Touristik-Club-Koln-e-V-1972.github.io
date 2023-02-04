@@ -6,7 +6,7 @@ import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 export default class PressReportBuilder extends ABuilder<PressReport> {
     // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-    private date!: string
+    private date!: Date
     private images!: GalleryEntry[]
     private title!: string
 
@@ -15,7 +15,7 @@ export default class PressReportBuilder extends ABuilder<PressReport> {
         //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
         return Object.assign(
             {
-                date: new Date(this.date),
+                date: this.date,
                 images: this.images ?? [],
                 title: this.title,
             },
@@ -24,7 +24,7 @@ export default class PressReportBuilder extends ABuilder<PressReport> {
     }
 
     setDate(value: string): PressReportBuilder {
-        this.date = value
+        this.date = new Date(value)
 
         return this
     }

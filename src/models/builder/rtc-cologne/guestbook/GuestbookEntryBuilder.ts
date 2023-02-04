@@ -10,7 +10,7 @@ export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private answer!: string
     private category = EEvent.RTC
-    private date!: string
+    private date!: Date
     private imageUrls?: string[]
     private location!: string
     private name!: string
@@ -26,7 +26,7 @@ export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
             {
                 answer: this.answer,
                 category: this.category,
-                date: new Date(this.date),
+                date: this.date,
                 imageUrls: this.imageUrls?.map((it) => new GalleryEntryBuilder().setImageUrl(it).build()) ?? [],
                 location: this.location,
                 name: this.name,
@@ -52,7 +52,7 @@ export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
     }
 
     setDate(value: string): GuestbookEntryBuilder {
-        this.date = value
+        this.date = new Date(value)
 
         return this
     }

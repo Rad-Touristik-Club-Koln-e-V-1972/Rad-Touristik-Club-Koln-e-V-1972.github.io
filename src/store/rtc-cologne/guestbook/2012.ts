@@ -4,7 +4,7 @@ import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 
 export default [
     new GuestbookEntryBuilder()
-        .setDate('2012-6-1')
+        .setDate('2012-06-01')
         .setName('Wolfgang Alberg')
         .setOrganization('www.cardiofitness.de')
         .setSource(ESource['E-Mail'])
@@ -27,7 +27,7 @@ www.cardiofitness.de
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-6-1')
+        .setDate('2012-06-01')
         .setName('Ursula Koepp')
         .setOrganization('TSV Weiss-Köln')
         .setSource(ESource['E-Mail'])
@@ -51,7 +51,7 @@ Ursula Koepp
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-6-1')
+        .setDate('2012-06-01')
         .setName('Günter')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -81,7 +81,7 @@ Günter
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-6-1')
+        .setDate('2012-06-01')
         .setName('Dieter Reich')
         .setOrganization('ISB-Team-Cologne')
         .setSource(ESource['E-Mail'])
@@ -103,7 +103,7 @@ Dieter Reich
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-6-1')
+        .setDate('2012-06-01')
         .setLocation('Monheim')
         .setName('Elke und Dieter')
         .setSource(ESource['E-Mail'])
@@ -125,7 +125,7 @@ Elke und Dieter
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-5-1')
+        .setDate('2012-05-01')
         .setName('Josef Witt')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -152,7 +152,7 @@ Josef Witt
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-5-1')
+        .setDate('2012-05-01')
         .setLocation('Kierspe')
         .setName('Michaela Bäcker')
         .setSource(ESource['E-Mail'])
@@ -213,7 +213,7 @@ Aus Kierspe
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-5-1')
+        .setDate('2012-05-01')
         .setLocation('Libur')
         .setName('Matthias Zimmer')
         .setSource(ESource['E-Mail'])
@@ -245,7 +245,7 @@ Matthias Zimmer
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2012-5-1')
+        .setDate('2012-05-01')
         .setName('Monika und Helmut Moosmann')
         .setOrganization('RSG Ford')
         .setSource(ESource['E-Mail'])

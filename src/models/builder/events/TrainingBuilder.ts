@@ -8,7 +8,7 @@ export default class TrainingBuilder extends ABuilder<Training> {
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private category = ETraining.wintertraining
     private height!: string
-    private lastChange!: string
+    private lastChange!: Date
     private length!: string
     private speed!: string
     private text!: string
@@ -21,7 +21,7 @@ export default class TrainingBuilder extends ABuilder<Training> {
             {
                 category: this.category,
                 height: this.height,
-                lastChange: new Date(this.lastChange),
+                lastChange: this.lastChange,
                 length: this.length,
                 speed: this.speed,
                 text: this.text,
@@ -44,7 +44,7 @@ export default class TrainingBuilder extends ABuilder<Training> {
     }
 
     setLastChange(value: string): TrainingBuilder {
-        this.lastChange = value
+        this.lastChange = new Date(value)
 
         return this
     }

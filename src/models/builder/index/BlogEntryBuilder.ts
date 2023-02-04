@@ -6,8 +6,8 @@ export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
     // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private albumIDs!: string[] | Record<string, string>
-    private end?: string
-    private start!: string
+    private end?: Date
+    private start!: Date
     private text!: string
     private title!: string
 
@@ -17,8 +17,8 @@ export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
         return Object.assign(
             {
                 albumIDs: this.albumIDs ? this.createAlbumIDs(this.albumIDs) : {},
-                end: this.end ? new Date(this.end) : undefined,
-                start: new Date(this.start),
+                end: this.end,
+                start: this.start,
                 text: this.text,
                 title: this.title,
             },
@@ -33,8 +33,8 @@ export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
     }
 
     setDate(start: string, end?: string): BlogEntryBuilder {
-        this.start = start
-        this.end = end
+        this.start = new Date(start)
+        this.end = end ? new Date(end) : undefined
 
         return this
     }

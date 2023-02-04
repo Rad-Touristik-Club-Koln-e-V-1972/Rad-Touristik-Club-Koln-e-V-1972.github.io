@@ -48,21 +48,21 @@ Bernd
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-28 17:00')
+        .setDate('2018-05-28 17:00')
         .setName('Profitrise Sports')
         .setSource(ESource.Facebook)
         .setText(`Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!`)
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-28 17:00')
+        .setDate('2018-05-28 17:00')
         .setName('Petra Humbach')
         .setSource(ESource.Facebook)
         .setText(`Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.`)
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-28 17:00')
+        .setDate('2018-05-28 17:00')
         .setName('Jochen Güttes')
         .setSource(ESource.Facebook)
         .setText(
@@ -74,7 +74,7 @@ Danke für die Gastfreundschaft.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-28 17:00')
+        .setDate('2018-05-28 17:00')
         .setName('Ros Si')
         .setSource(ESource.Facebook)
         .setText(
@@ -90,7 +90,7 @@ Nächstes Jahr wieder.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-28 17:00')
+        .setDate('2018-05-28 17:00')
         .setName('Angela Maja')
         .setSource(ESource.Facebook)
         .setText(
@@ -103,7 +103,7 @@ Alles bestens.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-27 17:01')
+        .setDate('2018-05-27 17:01')
         .setName('Harald Seidenberg')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -123,7 +123,7 @@ Harry
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2018-5-27 13:54')
+        .setDate('2018-05-27 13:54')
         .setName('Dirk Oliver Heppert')
         .setOrganization('RSV Staubwolke Refrath')
         .setSource(ESource['E-Mail'])

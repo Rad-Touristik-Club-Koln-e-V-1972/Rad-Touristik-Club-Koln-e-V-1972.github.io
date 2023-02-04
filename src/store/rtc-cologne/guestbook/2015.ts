@@ -256,7 +256,7 @@ Stephan
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-3 20:16')
+        .setDate('2015-06-03 20:16')
         .setName('Guido Faßbender')
         .setOrganization('Grenzfahrer e.V.')
         .setSource(ESource['E-Mail'])
@@ -277,7 +277,7 @@ Grenzfahrer e.V.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-3 12:36')
+        .setDate('2015-06-03 12:36')
         .setName('Frank Koch')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -292,7 +292,7 @@ mfg Frank
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-3 9:31')
+        .setDate('2015-06-03 9:31')
         .setName('Frank Koch')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -311,7 +311,7 @@ schöne Grüße aus Troisdorf Frank 😊
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-2 10:45')
+        .setDate('2015-06-02 10:45')
         .setName('Frank Oesterheld')
         .setSource(ESource.Facebook)
         .setText(
@@ -325,7 +325,7 @@ Bis zum nächsten Jahr 😊
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-1 22:47')
+        .setDate('2015-06-01 22:47')
         .setName('Gerhard Veeh')
         .setSource(ESource.Facebook)
         .setText(
@@ -338,7 +338,7 @@ Danke Euch für die tolle Organisation.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-1 20:33')
+        .setDate('2015-06-01 20:33')
         .setName('Fam Rossol')
         .setOrganization('1. RTW-Sankt Augustin-Menden')
         .setSource(ESource['E-Mail'])
@@ -353,7 +353,7 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-1 15:57')
+        .setDate('2015-06-01 15:57')
         .setName('Christof Mourikis')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -381,7 +381,7 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-1 14:14')
+        .setDate('2015-06-01 14:14')
         .setName('Yvonne Basinski')
         .setSource(ESource.Facebook)
         .setText(
@@ -394,7 +394,7 @@ Wir sind nächstes Jahr wieder dabei.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-6-1 9:05')
+        .setDate('2015-06-01 9:05')
         .setName('Marc Grewe')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -430,14 +430,14 @@ Marc
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-5-31 20:30')
+        .setDate('2015-05-31 20:30')
         .setName('Petra Ak')
         .setSource(ESource.Facebook)
         .setText("Vielen Dank für's Organisieren, war super !")
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-5-31 20:19')
+        .setDate('2015-05-31 20:19')
         .setName('Thomas Mühl')
         .setSource(ESource.Facebook)
         .setText(
@@ -445,17 +445,17 @@ Marc
 `
         )
         .build(),
-    new GuestbookEntryBuilder().setCategory(EEvent.RTF).setDate('2015-5-31 20:11').setName('Michael Kalisch').setSource(ESource.Facebook).setTitle('top top top 😊').build(),
+    new GuestbookEntryBuilder().setCategory(EEvent.RTF).setDate('2015-05-31 20:11').setName('Michael Kalisch').setSource(ESource.Facebook).setTitle('top top top 😊').build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-5-31 20:10')
+        .setDate('2015-05-31 20:10')
         .setName('Horst Voll')
         .setSource(ESource.Facebook)
         .setText('War geil und sehr anstrengend ! 👍')
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2015-5-31 19:29')
+        .setDate('2015-05-31 19:29')
         .setImageUrls('content.rtc-koeln.de/pages/guestbook/2015-05-31_19-29.jpg')
         .setName('Horst Paesch')
         .setSource(ESource.Facebook)

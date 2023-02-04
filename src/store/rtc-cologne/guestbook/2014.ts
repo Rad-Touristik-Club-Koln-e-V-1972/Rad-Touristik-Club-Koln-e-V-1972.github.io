@@ -4,7 +4,7 @@ import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 
 export default [
     new GuestbookEntryBuilder()
-        .setDate('2014-6-19 18:43')
+        .setDate('2014-06-19 18:43')
         .setName('Helga Hasberg')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -22,7 +22,7 @@ Helga
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-28 12:36')
+        .setDate('2014-05-28 12:36')
         .setName('Jessica Bosen')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -61,7 +61,7 @@ Jessica
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-27 13:10')
+        .setDate('2014-05-27 13:10')
         .setName('velotoerist')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -92,7 +92,7 @@ velotoerist
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-27 12:59')
+        .setDate('2014-05-27 12:59')
         .setName('Helmut Hane')
         .setOrganization('www.sportlich-radeln.de')
         .setSource(ESource['E-Mail'])
@@ -107,7 +107,7 @@ Helmut Hane
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-27 9:28')
+        .setDate('2014-05-27 9:28')
         .setName('Marco Gerlach')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -127,7 +127,7 @@ Marco Gerlach
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-27 9:26')
+        .setDate('2014-05-27 9:26')
         .setName('Jörg Homann')
         .setOrganization('www.scan.bike`')
         .setSource(ESource['E-Mail'])
@@ -162,7 +162,7 @@ http://scan.bike
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-27 6:49')
+        .setDate('2014-05-27 6:49')
         .setName('Norbert Priefert')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -194,7 +194,7 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 20:16')
+        .setDate('2014-05-26 20:16')
         .setLocation('Recklinghausen')
         .setName('Jörg Freitag')
         .setSource(ESource['E-Mail'])
@@ -212,7 +212,7 @@ Jörg
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 16:57')
+        .setDate('2014-05-26 16:57')
         .setName('Markus Reckter')
         .setOrganization('www.rtf-koblenz.de')
         .setSource(ESource['E-Mail'])
@@ -232,7 +232,7 @@ RTF Koblenz
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 13:08')
+        .setDate('2014-05-26 13:08')
         .setName('Claudia Braun')
         .setOrganization('Union Biesfeld Triathlon')
         .setSource(ESource['E-Mail'])
@@ -253,7 +253,7 @@ Union Biesfeld Triathlon
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 12:50')
+        .setDate('2014-05-26 12:50')
         .setName('Angela Schmilewski')
         .setOrganization('Fachwart RTC Mehlem')
         .setSource(ESource['E-Mail'])
@@ -273,7 +273,7 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 12:43')
+        .setDate('2014-05-26 12:43')
         .setName('Dirk Brieden')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -294,7 +294,7 @@ PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Me
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 10:55')
+        .setDate('2014-05-26 10:55')
         .setName('Dirk Brieden')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -329,7 +329,7 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 10:49')
+        .setDate('2014-05-26 10:49')
         .setName('Michaela Packebusch')
         .setOrganization('VfB Polch Abtl. Radsport')
         .setSource(ESource['E-Mail'])
@@ -346,7 +346,7 @@ vom VfB Polch Abtl. Radsport.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 10:33')
+        .setDate('2014-05-26 10:33')
         .setName('Frank Stöcker')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -376,7 +376,7 @@ Frank
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 8:54')
+        .setDate('2014-05-26 8:54')
         .setName('Reiche')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -390,7 +390,7 @@ vielen Dank für die Orga und die Auswahl der schönen Strecke.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 8:15')
+        .setDate('2014-05-26 8:15')
         .setName('Max Christian Obst')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -404,7 +404,7 @@ nächstes Jahr will ich wieder meine Banane bekommen ;)
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 7:24')
+        .setDate('2014-05-26 7:24')
         .setLocation('Berrenrath')
         .setName('Stefan Schneider')
         .setOrganization('RV Morgenstern')
@@ -424,7 +424,7 @@ Stefan Schneider
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-26 7:06')
+        .setDate('2014-05-26 7:06')
         .setName('Norbert Priefert')
         .setOrganization('www.rtc-rodenkirchen.de')
         .setSource(ESource['E-Mail'])
@@ -450,7 +450,7 @@ Norbert
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2014-5-25 19:44')
+        .setDate('2014-05-25 19:44')
         .setName('Jürgen Ruttkowski')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -468,7 +468,7 @@ Jürgen Ruttkowski
         )
         .build(),
     new GuestbookEntryBuilder()
-        .setDate('2014-1-17 11:09')
+        .setDate('2014-01-17 11:09')
         .setName('Roland Schultz')
         .setSource(ESource['E-Mail'])
         .setText(

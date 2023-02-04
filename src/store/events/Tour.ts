@@ -25,7 +25,7 @@ export const useTourStore = defineStore('tour', {
                     new FeeBuilder().setName('sonstige BDR-Mitglieder').setPrice(7).build(),
                     new FeeBuilder().setName('Gastfahrer').setPrice(9).build()
                 )
-                .setTimes(new TimeBuilder().setName('Start').setTime('8:00').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
+                .setTimes(new TimeBuilder().setName('Start').setTime('08:00').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
                 .setTracks(
                     new TrackBuilder()
                         .setName('Alle Strecken')
@@ -64,7 +64,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .setTime('7:30', '11:00')
+                        .setTime('07:30', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676899286'),
@@ -97,7 +97,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .setTime('7:30', '11:00')
+                        .setTime('07:30', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676927332'),
@@ -135,7 +135,7 @@ Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen hab
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         )
-                        .setTime('7:30', '11:00')
+                        .setTime('07:30', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 117km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676930729'),

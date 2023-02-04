@@ -7,7 +7,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-2-4 20:00', '2022-2-4 22:00')
+        .setDate('2022-02-04 20:00', '2022-02-04 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -15,7 +15,7 @@ export default [
         .setCategory(EEvent.Veranstaltung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-3-5')
+        .setDate('2022-03-05')
         .setName('Start in das Jubiläumsjahr')
         .build(),
     new EventBuilder()
@@ -23,7 +23,7 @@ export default [
         .setCategory(EEvent.Abgesagt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-3-12')
+        .setDate('2022-03-12')
         .setName('RTF Mistral Köln')
         .setUrl('rc-mistral.koeln')
         .build(),
@@ -32,7 +32,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(0)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-3-18 19:00', '2022-3-18 21:00')
+        .setDate('2022-03-18 19:00', '2022-03-18 21:00')
         .setName('Jahreshauptversammlung')
         .build(),
     new EventBuilder()
@@ -40,16 +40,16 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-4-1 20:00', '2022-4-1 22:00')
+        .setDate('2022-04-01 20:00', '2022-04-01 22:00')
         .setName('Mitgliederversammlung')
         .build(),
-    new EventBuilder().setallDay(true).setCategory(EEvent.Permanente).setClubPoints(1).setContact('Klaus Dünkelmann').setDate('2022-4-9').setName('RTC Permanente').build(),
+    new EventBuilder().setallDay(true).setCategory(EEvent.Permanente).setClubPoints(1).setContact('Klaus Dünkelmann').setDate('2022-04-09').setName('RTC Permanente').build(),
     new EventBuilder()
         .setallDay(true)
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-5-1')
+        .setDate('2022-05-01')
         .setName('RTF Staubwolke Refrath')
         .setUrl('rc-mistral.koeln')
         .build(),
@@ -58,7 +58,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-5-6 20:00', '2022-5-6 22:00')
+        .setDate('2022-05-06 20:00', '2022-05-06 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -66,7 +66,7 @@ export default [
         .setCategory(EEvent.RTF)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-5-7')
+        .setDate('2022-05-07')
         .setName('50. Forsbach – Tour - Marathon - Vortour')
         .build(),
     new EventBuilder()
@@ -74,7 +74,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-5-14')
+        .setDate('2022-05-14')
         .setName('RTF Erftstadt')
         .setUrl('www.rsc-erftstadt.de')
         .build(),
@@ -83,7 +83,7 @@ export default [
         .setCategory(EEvent.RTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-5-28')
+        .setDate('2022-05-28')
         .setName('50. Forsbach – Tour - Marathon - Ausschildern')
         .build(),
     new EventBuilder()
@@ -91,7 +91,7 @@ export default [
         .setCategory(EEvent.RTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-5-29')
+        .setDate('2022-05-29')
         .setName('50. Forsbach – Tour - Marathon')
         .build(),
     new EventBuilder()
@@ -99,7 +99,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-6-3 20:00', '2022-6-3 22:00')
+        .setDate('2022-06-03 20:00', '2022-06-03 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -107,7 +107,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-6-12')
+        .setDate('2022-06-12')
         .setName('RTF Lülsdorf')
         .setUrl('luera1959.de/radsportabteilung')
         .build(),
@@ -116,7 +116,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-6-16', '2022-6-19')
+        .setDate('2022-06-16', '2022-06-19')
         .setName('RTF Radsport Schrecksbach')
         .setUrl('www.radsport-schrecksbach.de')
         .build(),
@@ -125,7 +125,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-6-19')
+        .setDate('2022-06-19')
         .setName('RTF Ford Köln')
         .setUrl('www.rsg-ford.de')
         .build(),
@@ -135,7 +135,7 @@ export default [
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
         .setName('RTF Rodenkirchen')
-        .setDate('2022-6-26')
+        .setDate('2022-06-26')
         .setUrl('rtc-rodenkirchen.de')
         .build(),
     new EventBuilder()
@@ -143,7 +143,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-7-1 20:00', '2022-7-1 22:00')
+        .setDate('2022-07-01 20:00', '2022-07-01 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -151,7 +151,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-7-30', '2022-7-24')
+        .setDate('2022-07-30', '2022-07-24')
         .setName('BRT Schwerin')
         .setUrl('www.brt-2022.de')
         .build(),
@@ -160,7 +160,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-8-6')
+        .setDate('2022-08-06')
         .setName('RTF Lohmar')
         .setUrl('sites.google.com/view/rtvlohmar/startseite')
         .build(),
@@ -169,7 +169,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-8-14')
+        .setDate('2022-08-14')
         .setName('RTF Hennef')
         .setUrl('www.cito-hennef.de')
         .build(),
@@ -178,7 +178,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-8-27')
+        .setDate('2022-08-27')
         .setName('RTF Rhein Energie')
         .setUrl('www.rheinenergie.com/de/privatkunden/wir_fuer_die_region/sportangebot/radsport/radsport.html')
         .build(),
@@ -187,7 +187,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-9-2 20:00', '2022-9-2 22:00')
+        .setDate('2022-09-02 20:00', '2022-09-02 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -195,7 +195,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-9-17')
+        .setDate('2022-09-17')
         .setName('RTF Quadrath')
         .setUrl('www.rc-staubwolke-quadrath.de')
         .build(),
@@ -204,7 +204,7 @@ export default [
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
-        .setDate('2022-10-3')
+        .setDate('2022-10-03')
         .setName('RTF Radsport Schmitter Hürth')
         .setUrl('www.rc-schmitter.de')
         .build(),
@@ -213,7 +213,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-10-7 20:00', '2022-10-7 22:00')
+        .setDate('2022-10-07 20:00', '2022-10-07 22:00')
         .setName('Mitgliederversammlung')
         .build(),
     new EventBuilder()
@@ -254,7 +254,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-11-4 19:00', '2022-11-4 21:00')
+        .setDate('2022-11-04 19:00', '2022-11-04 21:00')
         .setName('Mitgliederversammlung')
         .build(),
 ]

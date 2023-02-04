@@ -7,13 +7,13 @@ export default class TrackBuilder extends ABuilder<Track> {
     // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private controls!: number
-    private end!: string
+    private end!: Date
     private height!: number
     private important = false
     private length!: number
     private name!: string
     private profile = EProfile.normal
-    private start!: string
+    private start!: Date
     private text!: string
     private urls!: Record<string, URL>
 
@@ -23,13 +23,13 @@ export default class TrackBuilder extends ABuilder<Track> {
         return Object.assign(
             {
                 controls: this.controls,
-                end: this.end ? new Date(`1970-01-01 ${this.end}`) : undefined,
+                end: this.end,
                 height: this.height,
                 important: this.important,
                 length: this.length,
                 name: this.name,
                 profile: this.profile,
-                start: new Date(`1970-01-01 ${this.start}`),
+                start: this.start,
                 text: this.text,
                 urls: this.urls ?? {},
             },
@@ -80,8 +80,8 @@ export default class TrackBuilder extends ABuilder<Track> {
     }
 
     setTime(start: string, end: string): TrackBuilder {
-        this.start = start
-        this.end = end
+        this.start = new Date(`1970-01-01 ${start}`)
+        this.end = new Date(`1970-01-01 ${end}`)
 
         return this
     }

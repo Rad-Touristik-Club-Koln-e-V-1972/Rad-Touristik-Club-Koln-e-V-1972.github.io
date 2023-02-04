@@ -9,9 +9,9 @@ export default class EventBuilder extends ABuilder<Event> {
     private category = EEvent.RTC
     private clubPoints?: number
     private contact!: string
-    private end?: string | Date
+    private end?: Date
     private name!: string
-    private start!: string | Date
+    private start!: Date
     private timed = false
     private url?: string
 
@@ -24,9 +24,9 @@ export default class EventBuilder extends ABuilder<Event> {
                 clubPoints: this.clubPoints,
                 color: this.getColor(this.category),
                 contact: this.contact,
-                end: this.end ? new Date(this.end) : undefined,
+                end: this.end,
                 name: this.name,
-                start: new Date(this.start),
+                start: this.start,
                 timed: this.timed,
                 url: this.url ? new URL(`https://${this.url}`) : undefined,
             },
@@ -59,8 +59,8 @@ export default class EventBuilder extends ABuilder<Event> {
     }
 
     setDate(start: Date | string, end?: Date | string): EventBuilder {
-        this.start = start
-        this.end = end
+        this.start = new Date(start)
+        this.end = end ? new Date(end) : undefined
 
         return this
     }

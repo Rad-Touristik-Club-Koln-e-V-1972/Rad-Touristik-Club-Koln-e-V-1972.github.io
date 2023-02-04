@@ -14,7 +14,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
     protected category = EEvent.Vereinsfahrt
     protected controls!: Control[]
     protected images!: GalleryEntry[]
-    protected lastChange!: string
+    protected lastChange!: Date
     protected popup?: Popup
     protected text!: string
     protected title!: string
@@ -29,7 +29,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
                 category: this.category,
                 controls: this.controls ?? [],
                 images: this.images ?? [],
-                lastChange: new Date(this.lastChange),
+                lastChange: this.lastChange,
                 popup: this.popup,
                 text: this.text,
                 title: this.title,
@@ -64,7 +64,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder<T> {
     }
 
     setLastChange(value: string): TourBuilder<T> {
-        this.lastChange = value
+        this.lastChange = new Date(value)
 
         return this
     }

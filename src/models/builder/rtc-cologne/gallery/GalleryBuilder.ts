@@ -9,10 +9,10 @@ export default class GalleryBuilder extends ABuilder<Gallery> {
     //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private category = EEvent.RTC
     private description!: string
-    private end?: string
+    private end?: Date
     private images!: Record<string, GalleryEntry[]>
     private location!: string
-    private start!: string
+    private start!: Date
     private title!: string
     private titleImageUrl!: string
     private youtubeVideoIds!: string[]
@@ -24,10 +24,10 @@ export default class GalleryBuilder extends ABuilder<Gallery> {
             {
                 category: this.category,
                 description: this.description,
-                end: this.end ? new Date(this.end) : undefined,
+                end: this.end,
                 images: this.images ?? {},
                 location: this.location,
-                start: new Date(this.start),
+                start: this.start,
                 title: this.title,
                 titleImageUrl: new URL(`https://${this.titleImageUrl}`),
                 youtubeVideoIds: this.youtubeVideoIds ?? [],
@@ -43,8 +43,8 @@ export default class GalleryBuilder extends ABuilder<Gallery> {
     }
 
     setDate(start: string, end?: string): GalleryBuilder {
-        this.start = start
-        this.end = end
+        this.start = new Date(start)
+        this.end = end ? new Date(end) : undefined
 
         return this
     }

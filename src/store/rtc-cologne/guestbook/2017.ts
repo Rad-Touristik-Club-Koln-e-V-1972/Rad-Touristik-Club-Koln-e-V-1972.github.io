@@ -142,7 +142,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-29 20:30')
+        .setDate('2017-05-29 20:30')
         .setName('Jochen Güttes')
         .setOrganization('Präsident des RTC Mehlem')
         .setSource(ESource.Facebook)
@@ -154,7 +154,7 @@ Es war wieder super bei euch.
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-29 20:30')
+        .setDate('2017-05-29 20:30')
         .setName('Roland Liffers')
         .setSource(ESource.Facebook)
         .setText(
@@ -166,21 +166,21 @@ Danke dafür!
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-29 20:30')
+        .setDate('2017-05-29 20:30')
         .setName('Horst Voll')
         .setSource(ESource.Facebook)
         .setText(`Vielen Dank für die heutige Betreuung.... war TippiToppi.`)
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-29 20:30')
+        .setDate('2017-05-29 20:30')
         .setName('Uli Fritzsche')
         .setSource(ESource.Facebook)
         .setText(`Und wir danken für die tolle Orga!`)
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-28 20:30')
+        .setDate('2017-05-28 20:30')
         .setName('Frank Müller')
         .setSource(ESource.Facebook)
         .setText(
@@ -191,7 +191,7 @@ Vielen Dank
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-28 20:30')
+        .setDate('2017-05-28 20:30')
         .setName('Mika Kali')
         .setSource(ESource.Facebook)
         .setText(
@@ -203,7 +203,7 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
         .build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
-        .setDate('2017-5-28 20:57')
+        .setDate('2017-05-28 20:57')
         .setName('Dirk Oliver Heppert')
         .setOrganization('RSV Staubwolke Refrath')
         .setSource(ESource['E-Mail'])
