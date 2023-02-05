@@ -9,6 +9,19 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['xxxxxx'])
+                .setDate('2023-02-04')
+                .setId('96fc29f0-edcc-4ea9-b336-2e0fa44d64a2')
+                .setText(
+                    `Der Wettergott ließ uns länger im Unsicheren: Regnet es oder nicht? Sind die Straßen trocken oder nicht?
+Das Wetter war letztendlich mit seinen 9 Grad perfekt für eine Winterausfahrt nach Heimerzheim — so waren wir heute sogar zu siebt. 😃
+Das hat total Spaß gemacht in der Gruppe. 🎉
+Es wurden für die meisten von uns 60 km.
+Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`
+                )
+                .setTitle('Kurzentschlossene RTCler 🚴🚴‍♀️🚴‍♂️🚴🚴‍♀️🚴🚴‍♀️')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['c8136f59-6fea-468d-914d-31a828e1a184'])
                 .setDate('2023-01-22')
                 .setId('0b9009fd-1aa7-45e9-ad25-3ddc4804e83f')
