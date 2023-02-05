@@ -9,7 +9,7 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
-                .setAlbumIDs(['xxxxxx'])
+                .setAlbumIDs(['7626953c-6efa-44f8-af4b-29cbf1e408f0'])
                 .setDate('2023-02-04')
                 .setId('96fc29f0-edcc-4ea9-b336-2e0fa44d64a2')
                 .setText(
