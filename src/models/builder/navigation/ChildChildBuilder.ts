@@ -1,10 +1,7 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import ChildChild from '~/models/entities/navigation/ChildChild'
 
 export default class ChildChildBuilder<T extends ChildChild> extends ABuilder<T> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     protected color?: string
     protected icon?: string
     protected imageUrl?: string
@@ -15,21 +12,17 @@ export default class ChildChildBuilder<T extends ChildChild> extends ABuilder<T>
     protected url?: URL
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                color: this.color,
-                icon: this.icon,
-                imageUrl: new URL(`https://${this.imageUrl}`),
-                nuxt: this.nuxt,
-                target: this.target,
-                title: this.title,
-                to: this.to,
-                url: this.url,
-            },
-            new AEntity(this.id)
-        ) as T
+        return {
+            color: this.color,
+            icon: this.icon,
+            id: this.id,
+            imageUrl: new URL(`https://${this.imageUrl}`),
+            nuxt: this.nuxt,
+            target: this.target,
+            title: this.title,
+            to: this.to,
+            url: this.url,
+        } satisfies ChildChild as T
     }
 
     setColor(value: string): ChildChildBuilder<T> {

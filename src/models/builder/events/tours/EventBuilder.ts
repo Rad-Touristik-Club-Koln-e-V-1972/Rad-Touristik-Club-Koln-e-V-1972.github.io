@@ -6,23 +6,17 @@ import Time from '~/models/entities/events/tours/events/Time'
 import Track from '~/models/entities/events/tours/events/Track'
 
 export default class EventBuilder extends TourBuilder<Event> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-    private fees!: Fee[]
-    private times!: Time[]
-    private tracks!: Track[]
+    private fees: Fee[] = []
+    private times: Time[] = []
+    private tracks: Track[] = []
 
     build() {
-        const value = super.build()
-
-        value.category = EEvent.RTF
-        value.fees = this.fees ?? []
-        value.times = this.times ?? []
-        value.tracks = this.tracks ?? []
-
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return value as Event
+        return Object.assign(super.build(), {
+            category: EEvent.RTF,
+            fees: this.fees,
+            times: this.times,
+            tracks: this.tracks,
+        }) satisfies Event
     }
 
     setFees(...value: Fee[]): EventBuilder {

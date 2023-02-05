@@ -11,6 +11,7 @@ export const useTrainingStore = defineStore('training', {
         trainings: [
             new TrainingBuilder()
                 .setHeight('300-1000')
+                .setId('aa0ecce0-a8a6-46a5-a161-f48f608b7c32')
                 .setLastChange('2022-11-16')
                 .setLength('60-130')
                 .setSpeed('21-22')

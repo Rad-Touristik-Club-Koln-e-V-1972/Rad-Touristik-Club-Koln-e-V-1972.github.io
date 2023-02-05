@@ -1,5 +1,4 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import PopupBuilder from '~/models/builder/PopupBuilder'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
@@ -8,35 +7,29 @@ import Control from '~/models/entities/events/tours/Control'
 import Popup from '~/models/entities/Popup'
 
 export default class TourBuilder<T extends Tour> extends ABuilder<T> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     protected active = true
     protected category = EEvent.Vereinsfahrt
-    protected controls!: Control[]
-    protected images!: GalleryEntry[]
+    protected controls: Control[] = []
+    protected images: GalleryEntry[] = []
     protected lastChange!: Date
     protected popup?: Popup
     protected text!: string
     protected title!: string
-    protected urls!: Record<string, URL>
+    protected urls: Record<string, URL> = {}
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                active: this.active,
-                category: this.category,
-                controls: this.controls ?? [],
-                images: this.images ?? [],
-                lastChange: this.lastChange,
-                popup: this.popup,
-                text: this.text,
-                title: this.title,
-                urls: this.urls ?? {},
-            },
-            new AEntity(this.id)
-        ) as T
+        return {
+            active: this.active,
+            category: this.category,
+            controls: this.controls,
+            id: this.id,
+            images: this.images,
+            lastChange: this.lastChange,
+            popup: this.popup,
+            text: this.text,
+            title: this.title,
+            urls: this.urls,
+        } satisfies Tour as T
     }
 
     setActive(value: boolean): TourBuilder<T> {

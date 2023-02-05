@@ -7,6 +7,7 @@ export default [
         .setAnswer(`Dem Dieter kann geholfen werden, Brille ist da, Kontakt wird aufgenommen ...`)
         .setCategory(EEvent.CTF)
         .setDate('2017-11-11 17:01')
+        .setId('41af2aad-55fa-46fc-af9b-7dd5b4319bec')
         .setName('Dieter Roggensack')
         .setSource(ESource['E-Mail'])
         .setText(
@@ -24,6 +25,7 @@ Viele Grüße, Dieter Roggensack...`
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-30 9:48')
+        .setId('59b1dd55-230e-405c-8f0d-d7725fa7bff4')
         .setName('Herwig Barthes')
         .setSource(ESource.Facebook)
         .setText(
@@ -45,6 +47,7 @@ Gruß H. Barthes
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
+        .setId('e5a6d8de-786c-4252-add2-7e4446ba12c3')
         .setName('Wilfried Goesgens')
         .setSource(ESource.Facebook)
         .setText(
@@ -59,6 +62,7 @@ Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
+        .setId('d0fc81a8-dbb5-487e-9aba-73deb71d3778')
         .setName('Jan Koza')
         .setSource(ESource.Facebook)
         .setText(
@@ -70,6 +74,7 @@ Herzlichen Dank!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
+        .setId('55683c01-0a06-4820-bb8c-f99d58ab4abe')
         .setName('Birgit Frings-Salz')
         .setSource(ESource.Facebook)
         .setText(`Uns, als Gruppe Säuwätz, hat es auch super gut gefallen. Grosses Lob ...`)
@@ -77,14 +82,23 @@ Herzlichen Dank!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('fcb47dbd-5d0f-48fd-b99c-4be6a2ac0f89')
         .setName('Christoph Werner')
         .setSource(ESource.Facebook)
         .setText(`War eine schöne Veranstaltung. Gerne nächstes Jahr wieder.`)
         .build(),
-    new GuestbookEntryBuilder().setCategory(EEvent.CTF).setDate('2017-10-28 21:30').setName('Mika Kali').setSource(ESource.Facebook).setText(`Wie immer: Klasse CTF ...`).build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('6816bd6c-9865-407a-ad80-3cf3b660e8e9')
+        .setName('Mika Kali')
+        .setSource(ESource.Facebook)
+        .setText(`Wie immer: Klasse CTF ...`)
+        .build(),
+    new GuestbookEntryBuilder()
+        .setCategory(EEvent.CTF)
+        .setDate('2017-10-28 21:30')
+        .setId('cbd50311-319f-4fc9-b1a1-248f0487b67f')
         .setName('Thomas Zengerle')
         .setSource(ESource.Facebook)
         .setText(
@@ -95,10 +109,18 @@ Schönen Gruß Thomas
 `
         )
         .build(),
-    new GuestbookEntryBuilder().setCategory(EEvent.CTF).setDate('2017-10-28 21:30').setName('Andreas Diehl').setSource(ESource.Facebook).setText(`Schön war's ...`).build(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('02d7ea76-4074-4f9a-9c8a-b6208314e7bd')
+        .setName('Andreas Diehl')
+        .setSource(ESource.Facebook)
+        .setText(`Schön war's ...`)
+        .build(),
+    new GuestbookEntryBuilder()
+        .setCategory(EEvent.CTF)
+        .setDate('2017-10-28 21:30')
+        .setId('27b66792-1cb8-4dc3-ace1-a958bc710ceb')
         .setName('Jürgen Em')
         .setSource(ESource.Facebook)
         .setText(
@@ -111,6 +133,7 @@ Bin nächstes Jahr gerne wieder dabei!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('82cc177a-80dc-42a0-8cd6-c7dab895339e')
         .setName('Bernd Doelp')
         .setSource(ESource.Facebook)
         .setText(
@@ -123,6 +146,7 @@ VIELEN DANK
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('7d6484e4-fbea-45f0-aa53-8342dbc222d8')
         .setName('Konstantin Sakellaris')
         .setSource(ESource.Facebook)
         .setText(
@@ -136,6 +160,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
+        .setId('4b4d554d-a764-440a-a701-0f93c3f52861')
         .setName('Mischa Breuer')
         .setSource(ESource.Facebook)
         .setText(`War echt super. Hoffentlich 2018 wieder ...`)
@@ -143,6 +168,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
+        .setId('d3a00f24-cd3e-4772-b842-a5be6a0f7c41')
         .setName('Jochen Güttes')
         .setOrganization('Präsident des RTC Mehlem')
         .setSource(ESource.Facebook)
@@ -155,6 +181,7 @@ Es war wieder super bei euch.
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
+        .setId('8ad6aa92-2374-41fb-bd3c-eae3556855c7')
         .setName('Roland Liffers')
         .setSource(ESource.Facebook)
         .setText(
@@ -167,6 +194,7 @@ Danke dafür!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
+        .setId('1a92a753-f4d1-481d-af9a-8cbdf0a976bc')
         .setName('Horst Voll')
         .setSource(ESource.Facebook)
         .setText(`Vielen Dank für die heutige Betreuung.... war TippiToppi.`)
@@ -174,6 +202,7 @@ Danke dafür!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
+        .setId('848eede7-086e-4679-9770-23fd96e7ce50')
         .setName('Uli Fritzsche')
         .setSource(ESource.Facebook)
         .setText(`Und wir danken für die tolle Orga!`)
@@ -181,6 +210,7 @@ Danke dafür!
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:30')
+        .setId('e137479f-1ef4-4866-a4f9-83648e8ee745')
         .setName('Frank Müller')
         .setSource(ESource.Facebook)
         .setText(
@@ -192,6 +222,7 @@ Vielen Dank
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:30')
+        .setId('4e2794d8-2969-4d37-8aa6-b04ebda6d6ad')
         .setName('Mika Kali')
         .setSource(ESource.Facebook)
         .setText(
@@ -204,6 +235,7 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:57')
+        .setId('9d8a4e46-de83-4b23-add3-a25a9ca99d38')
         .setName('Dirk Oliver Heppert')
         .setOrganization('RSV Staubwolke Refrath')
         .setSource(ESource['E-Mail'])

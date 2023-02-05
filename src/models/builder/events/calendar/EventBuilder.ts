@@ -1,11 +1,8 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import EEvent from '~/models/enums/EEvent'
 import Event from '~/models/entities/events/calendar/Event'
 
 export default class EventBuilder extends ABuilder<Event> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private category = EEvent.RTC
     private clubPoints?: number
     private contact!: string
@@ -13,28 +10,24 @@ export default class EventBuilder extends ABuilder<Event> {
     private name!: string
     private start!: Date
     private timed = false
-    private url?: string
+    private url?: URL
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                category: this.category,
-                clubPoints: this.clubPoints,
-                color: this.getColor(this.category),
-                contact: this.contact,
-                end: this.end,
-                name: this.name,
-                start: this.start,
-                timed: this.timed,
-                url: this.url ? new URL(`https://${this.url}`) : undefined,
-            },
-            new AEntity(this.id)
-        ) as Event
+        return {
+            category: this.category,
+            clubPoints: this.clubPoints,
+            color: this.getColor(this.category),
+            contact: this.contact,
+            id: this.id,
+            end: this.end,
+            name: this.name,
+            start: this.start,
+            timed: this.timed,
+            url: this.url,
+        } satisfies Event
     }
 
-    setallDay(value: boolean): EventBuilder {
+    setAllDay(value: boolean): EventBuilder {
         this.timed = !value
 
         return this
@@ -72,7 +65,7 @@ export default class EventBuilder extends ABuilder<Event> {
     }
 
     setUrl(value: string): EventBuilder {
-        this.url = value
+        this.url = new URL(`https://${value}`)
 
         return this
     }

@@ -1,11 +1,8 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import Training from '~/models/entities/events/Training'
 import ETraining from '~/models/enums/events/ETraining'
 
 export default class TrainingBuilder extends ABuilder<Training> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private category = ETraining.wintertraining
     private height!: string
     private lastChange!: Date
@@ -15,20 +12,16 @@ export default class TrainingBuilder extends ABuilder<Training> {
     private title!: string
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                category: this.category,
-                height: this.height,
-                lastChange: this.lastChange,
-                length: this.length,
-                speed: this.speed,
-                text: this.text,
-                title: this.title,
-            },
-            new AEntity(this.id)
-        ) as Training
+        return {
+            category: this.category,
+            height: this.height,
+            id: this.id,
+            lastChange: this.lastChange,
+            length: this.length,
+            speed: this.speed,
+            text: this.text,
+            title: this.title,
+        } satisfies Training
     }
 
     setCategory(value: ETraining): TrainingBuilder {

@@ -1,17 +1,14 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private answer!: string
     private category = EEvent.RTC
     private date!: Date
-    private imageUrls?: string[]
+    private imageUrls: string[] = []
     private location!: string
     private name!: string
     private organization!: string
@@ -20,23 +17,19 @@ export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
     private title!: string
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                answer: this.answer,
-                category: this.category,
-                date: this.date,
-                imageUrls: this.imageUrls?.map((it) => new GalleryEntryBuilder().setImageUrl(it).build()) ?? [],
-                location: this.location,
-                name: this.name,
-                organization: this.organization,
-                source: this.source,
-                text: this.text,
-                title: this.title,
-            },
-            new AEntity(this.id)
-        ) as GuestbookEntry
+        return {
+            answer: this.answer,
+            category: this.category,
+            date: this.date,
+            id: this.id,
+            imageUrls: this.imageUrls.map((it) => new GalleryEntryBuilder().setId('ce9e89f9-7d6a-491c-8848-be2032546c6e').setImageUrl(it).build()),
+            location: this.location,
+            name: this.name,
+            organization: this.organization,
+            source: this.source,
+            text: this.text,
+            title: this.title,
+        } satisfies GuestbookEntry
     }
 
     setAnswer(value: string): GuestbookEntryBuilder {

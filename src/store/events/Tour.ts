@@ -14,20 +14,27 @@ import EProfile from '~/models/enums/events/tours/EProfile'
 export const useTourStore = defineStore('tour', {
     getters: {
         allPermanents: (state): Permanent[] => state.tours.filter((it) => it.category === EEvent.Permanente) as Permanent[],
-        rtf: (state): Event => state.tours.find((it) => it.category === EEvent.RTF) as Event,
+        rtf: (state): Event => {
+            return state.tours.find((it) => it.category === EEvent.RTF) as Event
+        },
     },
     state: () => ({
         tours: [
             new EventBuilder()
                 .setFees(
-                    new FeeBuilder().setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
-                    new FeeBuilder().setName('BDR-Mitglieder mit Breitensportlizenz').setPrice(5).build(),
-                    new FeeBuilder().setName('sonstige BDR-Mitglieder').setPrice(7).build(),
-                    new FeeBuilder().setName('Gastfahrer').setPrice(9).build()
+                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
+                    new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('BDR-Mitglieder mit Breitensportlizenz').setPrice(5).build(),
+                    new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('sonstige BDR-Mitglieder').setPrice(7).build(),
+                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('Gastfahrer').setPrice(9).build()
                 )
-                .setTimes(new TimeBuilder().setName('Start').setTime('08:00').build(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build())
+                .setId('2048a7f0-315a-43d7-885a-23f388601052')
+                .setTimes(
+                    new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').build(),
+                    new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build()
+                )
                 .setTracks(
                     new TrackBuilder()
+                        .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
                         .setName('Alle Strecken')
                         .setText(
                             `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
@@ -55,6 +62,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
                     new TrackBuilder()
                         .setControls(1)
                         .setHeight(390)
+                        .setId('c1934b4b-2058-4100-946e-77c264533c76')
                         .setLength(51)
                         .setName('Die 51er')
                         .setText(
@@ -73,6 +81,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                     new TrackBuilder()
                         .setControls(2)
                         .setHeight(740)
+                        .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
                         .setLength(78)
                         .setName('Die 78er')
                         .setProfile(EProfile.wellig)
@@ -106,6 +115,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                     new TrackBuilder()
                         .setControls(3)
                         .setHeight(1440)
+                        .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
                         .setLength(117)
                         .setName('Die 117er')
                         .setProfile(EProfile.huegelig)
@@ -142,7 +152,12 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         })
                         .build()
                 )
-                .setImages(new GalleryEntryBuilder().setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build())
+                .setImages(
+                    new GalleryEntryBuilder()
+                        .setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb')
+                        .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
+                        .build()
+                )
                 .setLastChange('2023-01-28')
                 .setPopup(
                     `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
@@ -177,6 +192,7 @@ Eurer RTC Köln e.V.`
                 .build(),
             new PermanentBuilder()
                 .setHeight(700)
+                .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
                 .setLength(71)
                 .setProfile(EProfile.wellig)
                 .setText(
@@ -225,6 +241,7 @@ Euer RTC Köln e.V. 1972`
                 .setControls(
                     new ControlBuilder()
                         .setCity('Lindlar')
+                        .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
                         .setStreet('Kölner Straße 23')
                         .setTitle('Aral-Tankstelle')
                         .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
@@ -235,6 +252,7 @@ Euer RTC Köln e.V. 1972`
                 .build(),
             new PermanentBuilder()
                 .setHeight(700)
+                .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
                 .setLength(72)
                 .setProfile(EProfile.wellig)
                 .setActive(false)
@@ -289,6 +307,7 @@ Euer RTC Köln e.V. 1972`
                 .setControls(
                     new ControlBuilder()
                         .setCity('Kürten')
+                        .setId('32851936-b351-4b4d-a71f-03e3138a8864')
                         .setStreet('Wipperfürther Straße 360')
                         .setTitle('Esso-Tankstelle')
                         .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')

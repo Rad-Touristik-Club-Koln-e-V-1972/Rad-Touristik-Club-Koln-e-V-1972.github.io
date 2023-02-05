@@ -1,11 +1,8 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import Track from '~/models/entities/events/tours/events/Track'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
 export default class TrackBuilder extends ABuilder<Track> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private controls!: number
     private end!: Date
     private height!: number
@@ -15,26 +12,22 @@ export default class TrackBuilder extends ABuilder<Track> {
     private profile = EProfile.normal
     private start!: Date
     private text!: string
-    private urls!: Record<string, URL>
+    private urls: Record<string, URL> = {}
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                controls: this.controls,
-                end: this.end,
-                height: this.height,
-                important: this.important,
-                length: this.length,
-                name: this.name,
-                profile: this.profile,
-                start: this.start,
-                text: this.text,
-                urls: this.urls ?? {},
-            },
-            new AEntity(this.id)
-        ) as Track
+        return {
+            controls: this.controls,
+            end: this.end,
+            height: this.height,
+            id: this.id,
+            important: this.important,
+            length: this.length,
+            name: this.name,
+            profile: this.profile,
+            start: this.start,
+            text: this.text,
+            urls: this.urls,
+        } satisfies Track
     }
 
     setControls(value: number): TrackBuilder {

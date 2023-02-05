@@ -1,39 +1,32 @@
 import ABuilder from '~/models/builder/ABuilder'
-import AEntity from '~/models/entities/AEntity'
 import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class GalleryBuilder extends ABuilder<Gallery> {
-    // TODO WORKAROUND replace setter with "accessor" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
     private category = EEvent.RTC
     private description!: string
     private end?: Date
-    private images!: Record<string, GalleryEntry[]>
+    private images: Record<string, GalleryEntry[]> = {}
     private location!: string
     private start!: Date
     private title!: string
-    private titleImageUrl!: string
-    private youtubeVideoIds!: string[]
+    private titleImageUrl!: URL
+    private youtubeVideoIds: string[] = []
 
     build() {
-        // TODO WORKAROUND replace "as" by "satisfies" after "@typescript-eslint/parser" "v5.43.1" got released.
-        //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-        return Object.assign(
-            {
-                category: this.category,
-                description: this.description,
-                end: this.end,
-                images: this.images ?? {},
-                location: this.location,
-                start: this.start,
-                title: this.title,
-                titleImageUrl: new URL(`https://${this.titleImageUrl}`),
-                youtubeVideoIds: this.youtubeVideoIds ?? [],
-            },
-            new AEntity(this.id)
-        ) as Gallery
+        return {
+            category: this.category,
+            description: this.description,
+            end: this.end,
+            id: this.id,
+            images: this.images,
+            location: this.location,
+            start: this.start,
+            title: this.title,
+            titleImageUrl: this.titleImageUrl,
+            youtubeVideoIds: this.youtubeVideoIds,
+        } satisfies Gallery
     }
 
     setCategory(value: EEvent): GalleryBuilder {
@@ -76,7 +69,7 @@ export default class GalleryBuilder extends ABuilder<Gallery> {
     }
 
     setTitleImageUrl(value: string): GalleryBuilder {
-        this.titleImageUrl = value
+        this.titleImageUrl = new URL(`https://${value}`)
 
         return this
     }

@@ -145,11 +145,11 @@
 
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
+import CPopup from '~/components/pages/events/tours/CPopup.vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
-import CPopup from '~/components/pages/events/tours/CPopup.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
