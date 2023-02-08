@@ -77,7 +77,7 @@
                                                 <tbody>
                                                     <tr v-for="it in value.fees.filter((f) => f.category !== EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
-                                                        <td class="text-no-wrap" v-text="`${it.price} €`" />
+                                                        <td class="text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                     </tr>
                                                 </tbody>
                                             </v-simple-table>
@@ -90,7 +90,7 @@
                                                 <tbody>
                                                     <tr v-for="it in value.fees.filter((f) => f.category === EEvent.Marathon)" :key="it.id">
                                                         <td v-text="it.name" />
-                                                        <td class="text-no-wrap" v-text="`${it.price} €`" />
+                                                        <td class="text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                     </tr>
                                                 </tbody>
                                             </v-simple-table>

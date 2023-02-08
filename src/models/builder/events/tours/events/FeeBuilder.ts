@@ -5,7 +5,7 @@ import EEvent from '~/models/enums/EEvent'
 export default class FeeBuilder extends ABuilder<Fee> {
     private category = EEvent.RTF
     private name!: string
-    private price!: number
+    private price: number | null = null
 
     build() {
         return {

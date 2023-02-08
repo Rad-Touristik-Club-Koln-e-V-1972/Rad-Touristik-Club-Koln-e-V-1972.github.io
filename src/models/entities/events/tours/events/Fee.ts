@@ -4,5 +4,5 @@ import EEvent from '~/models/enums/EEvent'
 export default class Fee extends AEntity {
     category = EEvent.RTF
     name!: string
-    price!: number
+    price!: number | null
 }
