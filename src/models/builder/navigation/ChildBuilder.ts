@@ -3,24 +3,20 @@ import Child from '~/models/entities/navigation/Child'
 import ChildChild from '~/models/entities/navigation/ChildChild'
 
 export default class ChildBuilder<T extends Child> extends ChildChildBuilder<T> {
-    protected children: ChildChild[] = []
-    protected expanded = false
+    protected entity = new Child()
 
     build() {
-        return Object.assign(super.build(), {
-            children: this.children,
-            expanded: this.expanded,
-        }) satisfies T
+        return Object.assign(this.entity, super.build())
     }
 
     setChildren(...value: ChildChild[]): ChildBuilder<T> {
-        this.children = value
+        this.entity.children = value
 
         return this
     }
 
     setExpanded(): ChildBuilder<T> {
-        this.expanded = true
+        this.entity.expanded = true
 
         return this
     }

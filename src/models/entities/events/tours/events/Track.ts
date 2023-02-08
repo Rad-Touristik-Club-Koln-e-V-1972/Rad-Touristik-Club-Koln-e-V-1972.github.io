@@ -11,5 +11,5 @@ export default class Track extends AEntity {
     profile = EProfile.normal
     start!: Date
     text!: string
-    urls!: Record<string, URL>
+    urls: Record<string, URL> = {}
 }

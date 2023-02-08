@@ -51,7 +51,7 @@
                         </tr>
                         <tr>
                             <td class="text-no-wrap text-right" v-text="'Letzte Änderung:'" />
-                            <td v-text="dateTime.format(props.value.lastChange, undefined, true)" />
+                            <td v-text="dateTime.format(props.value.lastChange, null, true)" />
                         </tr>
                     </tbody>
                 </v-simple-table>

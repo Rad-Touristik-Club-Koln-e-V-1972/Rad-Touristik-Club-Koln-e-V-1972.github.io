@@ -7,11 +7,11 @@ import Popup from '~/models/entities/Popup'
 export default class Tour extends AEntity {
     active = true
     category = EEvent.Vereinsfahrt
-    controls!: Control[]
-    images!: GalleryEntry[]
+    controls: Control[] = []
+    images: GalleryEntry[] = []
     lastChange!: Date
-    popup?: Popup
+    popup: Popup | null = null
     text!: string
     title!: string
-    urls!: Record<string, URL>
+    urls: Record<string, URL> = {}
 }

@@ -1,8 +1,9 @@
 import AEntity from '~/models/entities/AEntity'
 import EEvent from '~/models/enums/EEvent'
 
+// noinspection JSClassNamingConvention
 export default class Fee extends AEntity {
     category = EEvent.RTF
     name!: string
-    price!: number | null
+    price: number | null = null
 }

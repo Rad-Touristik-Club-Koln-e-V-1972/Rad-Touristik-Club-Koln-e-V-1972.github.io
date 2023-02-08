@@ -7,7 +7,7 @@
             <v-timeline :dense="vuetify?.breakpoint.mobile">
                 <v-timeline-item v-for="it in value" :key="it.id">
                     <template #opposite>
-                        <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.date, undefined, true)" />
+                        <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.date, null, true)" />
                     </template>
                     <v-card max-width="40em">
                         <v-toolbar color="primary" flat>

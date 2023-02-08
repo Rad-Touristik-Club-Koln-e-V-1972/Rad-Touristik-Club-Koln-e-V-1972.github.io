@@ -152,6 +152,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         })
                         .build()
                 )
+                .setCategory(EEvent.RTF)
                 .setImages(
                     new GalleryEntryBuilder()
                         .setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb')
@@ -160,6 +161,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                 )
                 .setLastChange('2023-01-28')
                 .setPopup(
+                    'cd313bcb-5a63-48ed-aaac-2d9dfaea96af',
                     `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
 
 Notiert Euch schon mal den Termin.
@@ -195,6 +197,7 @@ Eurer RTC Köln e.V.`
                 .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
                 .setLength(71)
                 .setProfile(EProfile.wellig)
+                .setCategory(EEvent.Permanente)
                 .setText(
                     `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
 Es handelt sich um landschaftlich schöne Strecken mit herrlichen Rundblicken über Köln und das Bergische Land.
@@ -255,6 +258,7 @@ Euer RTC Köln e.V. 1972`
                 .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
                 .setLength(72)
                 .setProfile(EProfile.wellig)
+                .setCategory(EEvent.Permanente)
                 .setActive(false)
                 .setText(
                     `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.

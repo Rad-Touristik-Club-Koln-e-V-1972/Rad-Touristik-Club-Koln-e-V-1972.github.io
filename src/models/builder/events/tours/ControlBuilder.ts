@@ -2,49 +2,38 @@ import ABuilder from '~/models/builder/ABuilder'
 import Control from '~/models/entities/events/tours/Control'
 
 export default class ControlBuilder extends ABuilder<Control> {
-    private city!: string
-    private street!: string
-    private url?: string
-    private title!: string
-    private zipCode!: string
+    private entity = new Control()
 
     build() {
-        return {
-            city: this.city,
-            id: this.id,
-            street: this.street,
-            url: new URL(`https://${this.url}`),
-            title: this.title,
-            zipCode: this.zipCode,
-        } satisfies Control
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setCity(value: string): ControlBuilder {
-        this.city = value
+        this.entity.city = value
 
         return this
     }
 
     setStreet(value: string): ControlBuilder {
-        this.street = value
+        this.entity.street = value
 
         return this
     }
 
     setTitle(value: string): ControlBuilder {
-        this.title = value
+        this.entity.title = value
 
         return this
     }
 
     setUrl(value: string): ControlBuilder {
-        this.url = value
+        this.entity.url = new URL(`https://${value}`)
 
         return this
     }
 
     setZipCode(value: string): ControlBuilder {
-        this.zipCode = value
+        this.entity.zipCode = value
 
         return this
     }

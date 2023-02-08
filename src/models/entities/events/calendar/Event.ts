@@ -3,12 +3,12 @@ import EEvent from '~/models/enums/EEvent'
 
 export default class Event extends AEntity {
     category = EEvent.RTC
-    clubPoints?: number
+    clubPoints: number | null = null
     color = 'primary'
     contact!: string
-    end?: Date
+    end: Date | null = null
     name!: string
     start!: Date
     timed = false
-    url?: URL
+    url: URL | null = null
 }

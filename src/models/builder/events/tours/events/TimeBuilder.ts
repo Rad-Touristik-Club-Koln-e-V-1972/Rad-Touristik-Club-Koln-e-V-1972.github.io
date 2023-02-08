@@ -2,28 +2,21 @@ import ABuilder from '~/models/builder/ABuilder'
 import Time from '~/models/entities/events/tours/events/Time'
 
 export default class TimeBuilder extends ABuilder<Time> {
-    private end?: Date
-    private name!: string
-    private start!: Date
+    private entity = new Time()
 
     build() {
-        return {
-            end: this.end,
-            id: this.id,
-            name: this.name,
-            start: this.start,
-        } satisfies Time
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setName(value: string): TimeBuilder {
-        this.name = value
+        this.entity.name = value
 
         return this
     }
 
     setTime(start: string, end?: string): TimeBuilder {
-        this.start = new Date(`1970-01-01 ${start}`)
-        this.end = end ? new Date(`1970-01-01 ${end}`) : undefined
+        if (end) this.entity.end = new Date(`1970-01-01 ${end}`)
+        this.entity.start = new Date(`1970-01-01 ${start}`)
 
         return this
     }

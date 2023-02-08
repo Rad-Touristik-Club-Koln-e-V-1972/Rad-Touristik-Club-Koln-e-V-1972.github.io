@@ -7,7 +7,7 @@ export default class GuestbookEntry extends AEntity {
     answer!: string
     category = EEvent.RTC
     date!: Date
-    imageUrls?: GalleryEntry[]
+    imageUrls: GalleryEntry[] = []
     location!: string
     name!: string
     organization!: string

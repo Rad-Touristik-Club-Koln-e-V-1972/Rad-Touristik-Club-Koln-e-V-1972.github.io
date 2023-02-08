@@ -2,44 +2,33 @@ import ABuilder from '~/models/builder/ABuilder'
 import BlogEntry from '~/models/entities/index/BlogEntry'
 
 export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
-    private albumIDs!: string[] | Record<string, string>
-    private end?: Date
-    private start!: Date
-    private text!: string
-    private title!: string
+    private entity = new BlogEntry()
 
     build() {
-        return {
-            albumIDs: this.albumIDs ? this.createAlbumIDs(this.albumIDs) : {},
-            end: this.end,
-            id: this.id,
-            start: this.start,
-            text: this.text,
-            title: this.title,
-        } satisfies BlogEntry
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setAlbumIDs(value: string[] | Record<string, string>): BlogEntryBuilder {
-        this.albumIDs = value
+        this.entity.albumIDs = this.createAlbumIDs(value)
 
         return this
     }
 
     setDate(start: string, end?: string): BlogEntryBuilder {
-        this.start = new Date(start)
-        this.end = end ? new Date(end) : undefined
+        if (end) this.entity.end = new Date(end)
+        this.entity.start = new Date(start)
 
         return this
     }
 
     setText(value: string): BlogEntryBuilder {
-        this.text = value
+        this.entity.text = value
 
         return this
     }
 
     setTitle(value: string): BlogEntryBuilder {
-        this.title = value
+        this.entity.title = value
 
         return this
     }

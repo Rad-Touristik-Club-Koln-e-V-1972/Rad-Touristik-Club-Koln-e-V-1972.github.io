@@ -5,89 +5,70 @@ import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
-    private answer!: string
-    private category = EEvent.RTC
-    private date!: Date
-    private imageUrls: string[] = []
-    private location!: string
-    private name!: string
-    private organization!: string
-    private source = ESource['E-Mail']
-    private text!: string
-    private title!: string
+    private entity = new GuestbookEntry()
 
     build() {
-        return {
-            answer: this.answer,
-            category: this.category,
-            date: this.date,
-            id: this.id,
-            imageUrls: this.imageUrls.map((it) => new GalleryEntryBuilder().setId('ce9e89f9-7d6a-491c-8848-be2032546c6e').setImageUrl(it).build()),
-            location: this.location,
-            name: this.name,
-            organization: this.organization,
-            source: this.source,
-            text: this.text,
-            title: this.title,
-        } satisfies GuestbookEntry
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setAnswer(value: string): GuestbookEntryBuilder {
-        this.answer = value
+        this.entity.answer = value
 
         return this
     }
 
     setCategory(value: EEvent): GuestbookEntryBuilder {
-        this.category = value
+        this.entity.category = value
 
         return this
     }
 
     setDate(value: string): GuestbookEntryBuilder {
-        this.date = new Date(value)
+        this.entity.date = new Date(value)
 
         return this
     }
 
-    setImageUrls(...value: string[]): GuestbookEntryBuilder {
-        this.imageUrls = value
+    setImageUrls(value: Record<string, string>): GuestbookEntryBuilder {
+        for (const id in Object.keys(value)) {
+            this.entity.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).build())
+        }
 
         return this
     }
 
     setLocation(value: string): GuestbookEntryBuilder {
-        this.location = value
+        this.entity.location = value
 
         return this
     }
 
     setName(value: string): GuestbookEntryBuilder {
-        this.name = value
+        this.entity.name = value
 
         return this
     }
 
     setOrganization(value: string): GuestbookEntryBuilder {
-        this.organization = value
+        this.entity.organization = value
 
         return this
     }
 
     setSource(value: ESource): GuestbookEntryBuilder {
-        this.source = value
+        this.entity.source = value
 
         return this
     }
 
     setText(value: string): GuestbookEntryBuilder {
-        this.text = value
+        this.entity.text = value
 
         return this
     }
 
     setTitle(value: string): GuestbookEntryBuilder {
-        this.title = value
+        this.entity.title = value
 
         return this
     }

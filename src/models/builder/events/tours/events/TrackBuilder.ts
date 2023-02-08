@@ -3,84 +3,63 @@ import Track from '~/models/entities/events/tours/events/Track'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
 export default class TrackBuilder extends ABuilder<Track> {
-    private controls!: number
-    private end!: Date
-    private height!: number
-    private important = false
-    private length!: number
-    private name!: string
-    private profile = EProfile.normal
-    private start!: Date
-    private text!: string
-    private urls: Record<string, URL> = {}
+    private entity = new Track()
 
     build() {
-        return {
-            controls: this.controls,
-            end: this.end,
-            height: this.height,
-            id: this.id,
-            important: this.important,
-            length: this.length,
-            name: this.name,
-            profile: this.profile,
-            start: this.start,
-            text: this.text,
-            urls: this.urls,
-        } satisfies Track
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setControls(value: number): TrackBuilder {
-        this.controls = value
+        this.entity.controls = value
 
         return this
     }
 
     setHeight(value: number): TrackBuilder {
-        this.height = value
+        this.entity.height = value
 
         return this
     }
 
     setImportant(value: boolean): TrackBuilder {
-        this.important = value
+        this.entity.important = value
 
         return this
     }
 
     setLength(value: number): TrackBuilder {
-        this.length = value
+        this.entity.length = value
 
         return this
     }
 
     setName(value: string): TrackBuilder {
-        this.name = value
+        this.entity.name = value
 
         return this
     }
 
     setProfile(value: EProfile): TrackBuilder {
-        this.profile = value
+        this.entity.profile = value
 
         return this
     }
 
     setText(value: string): TrackBuilder {
-        this.text = value
+        this.entity.text = value
 
         return this
     }
 
     setTime(start: string, end: string): TrackBuilder {
-        this.start = new Date(`1970-01-01 ${start}`)
-        this.end = new Date(`1970-01-01 ${end}`)
+        this.entity.end = new Date(`1970-01-01 ${end}`)
+        this.entity.start = new Date(`1970-01-01 ${start}`)
 
         return this
     }
 
     setUrls(value: Record<string, URL>): TrackBuilder {
-        this.urls = value
+        this.entity.urls = value
 
         return this
     }

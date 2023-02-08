@@ -4,12 +4,12 @@ export default function useDateTime() {
     const timeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit' })
 
     return {
-        format: (start: Date, end?: Date, allDay = false) => {
+        format: (start: Date, end: Date | null = null, allDay = false) => {
             const formatter = allDay ? dateFormatter : dateTimeFormatter
 
             return end ? formatter.formatRange(start, end) : formatter.format(start)
         },
-        formatTime: (start: Date, end?: Date) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
+        formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
         getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
         isBetween: (date: Date, start: Date, end: Date) => {
             let tempStart = start

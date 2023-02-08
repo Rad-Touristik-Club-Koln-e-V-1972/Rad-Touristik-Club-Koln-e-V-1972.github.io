@@ -3,33 +3,26 @@ import Fee from '~/models/entities/events/tours/events/Fee'
 import EEvent from '~/models/enums/EEvent'
 
 export default class FeeBuilder extends ABuilder<Fee> {
-    private category = EEvent.RTF
-    private name!: string
-    private price: number | null = null
+    private entity = new Fee()
 
     build() {
-        return {
-            category: this.category,
-            id: this.id,
-            name: this.name,
-            price: this.price,
-        } satisfies Fee
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setCategory(value: EEvent): FeeBuilder {
-        this.category = value
+        this.entity.category = value
 
         return this
     }
 
     setName(value: string): FeeBuilder {
-        this.name = value
+        this.entity.name = value
 
         return this
     }
 
     setPrice(value: number): FeeBuilder {
-        this.price = value
+        this.entity.price = value
 
         return this
     }

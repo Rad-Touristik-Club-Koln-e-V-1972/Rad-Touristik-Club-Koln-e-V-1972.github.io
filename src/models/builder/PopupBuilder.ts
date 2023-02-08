@@ -2,25 +2,20 @@ import ABuilder from '~/models/builder/ABuilder'
 import Popup from '~/models/entities/Popup'
 
 export default class PopupBuilder extends ABuilder<Popup> {
-    private text!: string
-    private title!: string
+    private entity = new Popup()
 
     build() {
-        return {
-            id: this.id,
-            text: this.text,
-            title: this.title,
-        } satisfies Popup
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setText(value: string): PopupBuilder {
-        this.text = value
+        this.entity.text = value
 
         return this
     }
 
     setTitle(value: string): PopupBuilder {
-        this.title = value
+        this.entity.title = value
 
         return this
     }

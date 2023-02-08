@@ -3,7 +3,7 @@
         <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
-        <v-card-subtitle>Stand: {{ dateTime.format(value.lastChange, undefined, true) }}</v-card-subtitle>
+        <v-card-subtitle>Stand: {{ dateTime.format(value.lastChange, null, true) }}</v-card-subtitle>
         <v-card-text>
             <v-row class="justify-center" no-gutters>
                 <v-col cols="auto">

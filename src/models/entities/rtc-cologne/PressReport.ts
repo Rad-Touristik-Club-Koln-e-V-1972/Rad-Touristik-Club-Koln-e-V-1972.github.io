@@ -3,6 +3,6 @@ import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class Contact extends AEntity {
     date!: Date
-    images!: GalleryEntry[]
+    images: GalleryEntry[] = []
     title!: string
 }

@@ -3,69 +3,52 @@ import EEvent from '~/models/enums/EEvent'
 import Event from '~/models/entities/events/calendar/Event'
 
 export default class EventBuilder extends ABuilder<Event> {
-    private category = EEvent.RTC
-    private clubPoints?: number
-    private contact!: string
-    private end?: Date
-    private name!: string
-    private start!: Date
-    private timed = false
-    private url?: URL
+    private entity = new Event()
 
     build() {
-        return {
-            category: this.category,
-            clubPoints: this.clubPoints,
-            color: this.getColor(this.category),
-            contact: this.contact,
-            id: this.id,
-            end: this.end,
-            name: this.name,
-            start: this.start,
-            timed: this.timed,
-            url: this.url,
-        } satisfies Event
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setAllDay(value: boolean): EventBuilder {
-        this.timed = !value
+        this.entity.timed = !value
 
         return this
     }
 
     setCategory(value: EEvent): EventBuilder {
-        this.category = value
+        this.entity.category = value
+        this.entity.color = this.getColor(value)
 
         return this
     }
 
     setClubPoints(value: number): EventBuilder {
-        this.clubPoints = value
+        this.entity.clubPoints = value
 
         return this
     }
 
     setContact(value: string): EventBuilder {
-        this.contact = value
+        this.entity.contact = value
 
         return this
     }
 
-    setDate(start: Date | string, end?: Date | string): EventBuilder {
-        this.start = new Date(start)
-        this.end = end ? new Date(end) : undefined
+    setDate(start: Date | string, end: Date | string | null = null): EventBuilder {
+        if (end) this.entity.end = new Date(end)
+        this.entity.start = new Date(start)
 
         return this
     }
 
     setName(value: string): EventBuilder {
-        this.name = value
+        this.entity.name = value
 
         return this
     }
 
     setUrl(value: string): EventBuilder {
-        this.url = new URL(`https://${value}`)
+        this.entity.url = new URL(`https://${value}`)
 
         return this
     }

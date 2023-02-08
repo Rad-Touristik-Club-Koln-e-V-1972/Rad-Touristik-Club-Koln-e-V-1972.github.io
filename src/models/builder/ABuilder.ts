@@ -1,10 +1,10 @@
 import AEntity from '~/models/entities/AEntity'
 
 export default abstract class ABuilder<T extends AEntity> {
-    protected id!: string
+    protected aEntity = new AEntity()
 
     setId(value: string): this {
-        this.id = value
+        this.aEntity.id = value
 
         return this
     }

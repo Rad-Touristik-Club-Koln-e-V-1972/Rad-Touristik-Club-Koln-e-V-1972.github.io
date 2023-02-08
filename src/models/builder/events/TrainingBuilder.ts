@@ -3,65 +3,50 @@ import Training from '~/models/entities/events/Training'
 import ETraining from '~/models/enums/events/ETraining'
 
 export default class TrainingBuilder extends ABuilder<Training> {
-    private category = ETraining.wintertraining
-    private height!: string
-    private lastChange!: Date
-    private length!: string
-    private speed!: string
-    private text!: string
-    private title!: string
+    private entity = new Training()
 
     build() {
-        return {
-            category: this.category,
-            height: this.height,
-            id: this.id,
-            lastChange: this.lastChange,
-            length: this.length,
-            speed: this.speed,
-            text: this.text,
-            title: this.title,
-        } satisfies Training
+        return Object.assign(this.entity, super.aEntity)
     }
 
     setCategory(value: ETraining): TrainingBuilder {
-        this.category = value
+        this.entity.category = value
 
         return this
     }
 
     setHeight(value: string): TrainingBuilder {
-        this.height = value
+        this.entity.height = value
 
         return this
     }
 
     setLastChange(value: string): TrainingBuilder {
-        this.lastChange = new Date(value)
+        this.entity.lastChange = new Date(value)
 
         return this
     }
 
     setLength(value: string): TrainingBuilder {
-        this.length = value
+        this.entity.length = value
 
         return this
     }
 
     setSpeed(value: string): TrainingBuilder {
-        this.speed = value
+        this.entity.speed = value
 
         return this
     }
 
     setText(value: string): TrainingBuilder {
-        this.text = value
+        this.entity.text = value
 
         return this
     }
 
     setTitle(value: string): TrainingBuilder {
-        this.title = value
+        this.entity.title = value
 
         return this
     }
