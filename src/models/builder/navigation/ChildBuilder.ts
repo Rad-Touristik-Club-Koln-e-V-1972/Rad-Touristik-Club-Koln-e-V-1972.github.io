@@ -6,7 +6,7 @@ export default class ChildBuilder<T extends Child> extends ChildChildBuilder<T> 
     protected entity = new Child()
 
     build() {
-        return Object.assign(this.entity, super.build())
+        return Object.assign(this.entity, super.build()) as T
     }
 
     setChildren(...value: ChildChild[]): ChildBuilder<T> {

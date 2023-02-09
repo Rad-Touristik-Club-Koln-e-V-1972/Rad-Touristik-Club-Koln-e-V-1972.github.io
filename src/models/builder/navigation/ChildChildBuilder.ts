@@ -5,7 +5,7 @@ export default class ChildChildBuilder<T extends ChildChild> extends ABuilder {
     protected childChild = new ChildChild()
 
     build() {
-        return Object.assign(this.childChild, super.build())
+        return Object.assign(this.childChild, super.build()) as T
     }
 
     setColor(value: string): ChildChildBuilder<T> {

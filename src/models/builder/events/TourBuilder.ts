@@ -9,7 +9,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder {
     protected tour = new Tour()
 
     build() {
-        return Object.assign(this.tour, super.build())
+        return Object.assign(this.tour, super.build()) as T
     }
 
     setActive(value: boolean): TourBuilder<T> {
