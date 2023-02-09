@@ -5,11 +5,11 @@ import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 import Tour from '~/models/entities/events/Tour'
 import Control from '~/models/entities/events/tours/Control'
 
-export default class TourBuilder<T extends Tour> extends ABuilder<T> {
+export default class TourBuilder<T extends Tour> extends ABuilder {
     protected tour = new Tour()
 
     build() {
-        return Object.assign(this.tour, super.aEntity) as T
+        return Object.assign(this.tour, super.build())
     }
 
     setActive(value: boolean): TourBuilder<T> {

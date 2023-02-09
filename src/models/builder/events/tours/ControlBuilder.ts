@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import Control from '~/models/entities/events/tours/Control'
 
-export default class ControlBuilder extends ABuilder<Control> {
+export default class ControlBuilder extends ABuilder {
     private entity = new Control()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setCity(value: string): ControlBuilder {

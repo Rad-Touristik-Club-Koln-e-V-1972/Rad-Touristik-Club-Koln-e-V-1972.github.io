@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import BlogEntry from '~/models/entities/index/BlogEntry'
 
-export default class BlogEntryBuilder extends ABuilder<BlogEntry> {
+export default class BlogEntryBuilder extends ABuilder {
     private entity = new BlogEntry()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setAlbumIDs(value: string[] | Record<string, string>): BlogEntryBuilder {

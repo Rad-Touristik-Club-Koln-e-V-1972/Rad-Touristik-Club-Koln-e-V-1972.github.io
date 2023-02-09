@@ -2,11 +2,11 @@ import ABuilder from '~/models/builder/ABuilder'
 import PressReport from '~/models/entities/rtc-cologne/PressReport'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-export default class PressReportBuilder extends ABuilder<PressReport> {
+export default class PressReportBuilder extends ABuilder {
     private entity = new PressReport()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setDate(value: string): PressReportBuilder {

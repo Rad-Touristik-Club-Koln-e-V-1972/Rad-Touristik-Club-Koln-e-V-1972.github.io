@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import Contact from '~/models/entities/rtc-cologne/Contact'
 
-export default class ContactBuilder extends ABuilder<Contact> {
+export default class ContactBuilder extends ABuilder {
     private entity = new Contact()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setEMail(value: string): ContactBuilder {

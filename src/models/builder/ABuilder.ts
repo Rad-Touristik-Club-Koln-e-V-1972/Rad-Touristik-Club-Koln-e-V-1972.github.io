@@ -1,6 +1,6 @@
 import AEntity from '~/models/entities/AEntity'
 
-export default abstract class ABuilder<T extends AEntity> {
+export default abstract class ABuilder {
     protected aEntity = new AEntity()
 
     setId(value: string): this {
@@ -9,5 +9,7 @@ export default abstract class ABuilder<T extends AEntity> {
         return this
     }
 
-    abstract build(): T
+    build() {
+        return this.aEntity
+    }
 }

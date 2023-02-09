@@ -2,11 +2,11 @@ import ABuilder from '~/models/builder/ABuilder'
 import EEvent from '~/models/enums/EEvent'
 import Event from '~/models/entities/events/calendar/Event'
 
-export default class EventBuilder extends ABuilder<Event> {
+export default class EventBuilder extends ABuilder {
     private entity = new Event()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setAllDay(value: boolean): EventBuilder {

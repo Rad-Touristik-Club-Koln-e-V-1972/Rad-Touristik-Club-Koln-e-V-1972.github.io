@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import Popup from '~/models/entities/Popup'
 
-export default class PopupBuilder extends ABuilder<Popup> {
+export default class PopupBuilder extends ABuilder {
     private entity = new Popup()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setText(value: string): PopupBuilder {

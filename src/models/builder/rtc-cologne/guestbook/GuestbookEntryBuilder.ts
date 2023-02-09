@@ -4,11 +4,11 @@ import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
-export default class GuestbookEntryBuilder extends ABuilder<GuestbookEntry> {
+export default class GuestbookEntryBuilder extends ABuilder {
     private entity = new GuestbookEntry()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setAnswer(value: string): GuestbookEntryBuilder {

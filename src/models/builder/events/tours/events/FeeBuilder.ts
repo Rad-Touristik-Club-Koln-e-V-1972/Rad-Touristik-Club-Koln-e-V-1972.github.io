@@ -2,11 +2,11 @@ import ABuilder from '~/models/builder/ABuilder'
 import Fee from '~/models/entities/events/tours/events/Fee'
 import EEvent from '~/models/enums/EEvent'
 
-export default class FeeBuilder extends ABuilder<Fee> {
+export default class FeeBuilder extends ABuilder {
     private entity = new Fee()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setCategory(value: EEvent): FeeBuilder {

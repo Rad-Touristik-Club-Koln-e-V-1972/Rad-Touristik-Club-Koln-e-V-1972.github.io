@@ -2,11 +2,11 @@ import ABuilder from '~/models/builder/ABuilder'
 import Track from '~/models/entities/events/tours/events/Track'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
-export default class TrackBuilder extends ABuilder<Track> {
+export default class TrackBuilder extends ABuilder {
     private entity = new Track()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setControls(value: number): TrackBuilder {

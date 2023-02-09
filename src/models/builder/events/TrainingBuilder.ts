@@ -2,11 +2,11 @@ import ABuilder from '~/models/builder/ABuilder'
 import Training from '~/models/entities/events/Training'
 import ETraining from '~/models/enums/events/ETraining'
 
-export default class TrainingBuilder extends ABuilder<Training> {
+export default class TrainingBuilder extends ABuilder {
     private entity = new Training()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setCategory(value: ETraining): TrainingBuilder {

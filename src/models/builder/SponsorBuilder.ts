@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import Sponsor from '~/models/entities/Sponsor'
 
-export default class SponsorBuilder extends ABuilder<Sponsor> {
+export default class SponsorBuilder extends ABuilder {
     private entity = new Sponsor()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setImageUrl(value: string): SponsorBuilder {

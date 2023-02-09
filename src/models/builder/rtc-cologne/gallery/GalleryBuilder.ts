@@ -3,11 +3,11 @@ import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-export default class GalleryBuilder extends ABuilder<Gallery> {
+export default class GalleryBuilder extends ABuilder {
     private entity = new Gallery()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setCategory(value: EEvent): GalleryBuilder {

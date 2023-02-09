@@ -1,11 +1,11 @@
 import ABuilder from '~/models/builder/ABuilder'
 import Time from '~/models/entities/events/tours/events/Time'
 
-export default class TimeBuilder extends ABuilder<Time> {
+export default class TimeBuilder extends ABuilder {
     private entity = new Time()
 
     build() {
-        return Object.assign(this.entity, super.aEntity)
+        return Object.assign(this.entity, super.build())
     }
 
     setName(value: string): TimeBuilder {
