@@ -30,9 +30,9 @@ export default class GalleryBuilder extends ABuilder {
     }
 
     setImages(value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): GalleryBuilder {
-        if (value instanceof Array) this.entity.images = { '': value }
-        else if (value.constructor === GalleryEntry) this.entity.images = { '': [value] }
-        else this.entity.images = value as Record<string, GalleryEntry[]>
+        if (value instanceof Array) this.entity.images = Object.assign(this.entity.images, { '': value })
+        else if (value.constructor === GalleryEntry) this.entity.images = Object.assign(this.entity.images, { '': [value] })
+        else this.entity.images = Object.assign(this.entity.images, value as Record<string, GalleryEntry[]>)
 
         return this
     }
