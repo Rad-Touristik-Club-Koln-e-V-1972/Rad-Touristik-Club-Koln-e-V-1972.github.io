@@ -9,6 +9,19 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['ac7d6f63-20c4-4088-ab8e-2c7030c9fd44'])
+                .setDate('2023-02-11')
+                .setId('b1d7767f-5865-4e04-b9b9-c9581bfbce0e')
+                .setText(
+                    `Wolfgang nutzte wiederum die CTF-Veranstaltung „Jeck im Dreck“ 🤡von Cito Hennef, um zu trainieren.
+In dieser großen Gruppe hat es ihn heute richtig Spaß gemacht.
+Trotz des feuchtkalten Wetters hatten sich über 180 Graveler und Mountainbiker aufgemacht.
+Die Hennefer hätten mehr Teilnehmer:innen verdient gehabt, denn es war richtig klasse.
+Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`
+                )
+                .setTitle('😃 RTC GOES CTF️')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['7626953c-6efa-44f8-af4b-29cbf1e408f0'])
                 .setDate('2023-02-04')
                 .setId('96fc29f0-edcc-4ea9-b336-2e0fa44d64a2')
