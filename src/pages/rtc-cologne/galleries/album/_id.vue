@@ -38,7 +38,7 @@
             <v-tabs-items v-model="tabModel">
                 <v-tab-item key="Bilder" value="tab-Bilder">
                     <v-tabs
-                        v-show="Object.keys(value.images).length"
+                        v-show="Object.keys(value.images).length && Object.keys(value.images)[0]"
                         v-model="tabModelPictures"
                         background-color="primary"
                         centered
