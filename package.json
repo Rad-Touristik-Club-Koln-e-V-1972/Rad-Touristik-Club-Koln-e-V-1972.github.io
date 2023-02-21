@@ -42,7 +42,7 @@
         "@types/mime-types": "^2.1.1",
         "@types/node": "^18.14.0",
         "@types/uuid": "^9.0.0",
-        "@vue/eslint-config-prettier": "^7.0.0",
+        "@vue/eslint-config-prettier": "^7.1.0",
         "@vue/eslint-config-typescript": "^11.0.2",
         "buffer": "^6.0.3",
         "consola": "^2.15.3",

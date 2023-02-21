@@ -20,7 +20,7 @@ importers:
       '@types/mime-types': ^2.1.1
       '@types/node': ^18.14.0
       '@types/uuid': ^9.0.0
-      '@vue/eslint-config-prettier': ^7.0.0
+      '@vue/eslint-config-prettier': ^7.1.0
       '@vue/eslint-config-typescript': ^11.0.2
       '@yeger/vue2-masonry-wall': ^2.3.2
       buffer: ^6.0.3
@@ -70,7 +70,7 @@ importers:
       '@types/mime-types': 2.1.1
       '@types/node': 18.14.0
       '@types/uuid': 9.0.0
-      '@vue/eslint-config-prettier': 7.0.0_yrlhudqyxg2l7qvwle5bdpmrli
+      '@vue/eslint-config-prettier': 7.1.0_yrlhudqyxg2l7qvwle5bdpmrli
       '@vue/eslint-config-typescript': 11.0.2_h2vevngznqqjsppuxlkfy3oipa
       buffer: 6.0.3
       consola: 2.15.3
@@ -4148,8 +4148,8 @@ packages:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
     dev: false
 
-  /@vue/eslint-config-prettier/7.0.0_yrlhudqyxg2l7qvwle5bdpmrli:
-    resolution: {integrity: sha512-/CTc6ML3Wta1tCe1gUeO0EYnVXfo3nJXsIhZ8WJr3sov+cGASr6yuiibJTL6lmIBm7GobopToOuB3B6AWyV0Iw==}
+  /@vue/eslint-config-prettier/7.1.0_yrlhudqyxg2l7qvwle5bdpmrli:
+    resolution: {integrity: sha512-Pv/lVr0bAzSIHLd9iz0KnvAr4GKyCEl+h52bc4e5yWuDVtLgFwycF7nrbWTAQAS+FU6q1geVd07lc6EWfJiWKQ==}
     peerDependencies:
       eslint: '>= 7.28.0'
       prettier: '>= 2.0.0'
