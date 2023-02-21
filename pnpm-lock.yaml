@@ -33,7 +33,7 @@ importers:
       husky: ^8.0.3
       lint-staged: ^13.1.2
       nuxt: ^2.16.1
-      pinia: ^2.0.31
+      pinia: ^2.0.32
       postcss-html: ^1.5.0
       prettier: ^2.8.4
       stylelint: ^15.2.0
@@ -50,7 +50,7 @@ importers:
       '@yeger/vue2-masonry-wall': 2.3.2_vue@2.7.14
       date-holidays: 3.16.17
       nuxt: 2.16.1_6ydn5bsi7sfcvgw4rqoywzr3ei
-      pinia: 2.0.31_hwpzsh6pnvsm3pjf2zi526hnzq
+      pinia: 2.0.32_hwpzsh6pnvsm3pjf2zi526hnzq
       uuid: 9.0.0
       vue: 2.7.14
       vuetify: 2.6.14_vue@2.7.14
@@ -3164,7 +3164,7 @@ packages:
     resolution: {integrity: sha512-ifgA9PO/jmPlK1e/HtkrZa7OMSL8EUOpo8Z1O5vNLRr/OZ42kKGEaY1NbIoCz6dIf/pbkATTNHJmcrlPCo3zSA==}
     dependencies:
       '@nuxt/kit': 3.1.2
-      pinia: 2.0.31_hwpzsh6pnvsm3pjf2zi526hnzq
+      pinia: 2.0.32_hwpzsh6pnvsm3pjf2zi526hnzq
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -10247,8 +10247,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /pinia/2.0.31_hwpzsh6pnvsm3pjf2zi526hnzq:
-    resolution: {integrity: sha512-6OOKZGX79jm3q0xAu+X/PaRjfyOcFnPXcHFAA8HHa+wbJeSi5xc/nYqO8Ff7XLvwV8mKGYXcUfZUHbqUmw6P0w==}
+  /pinia/2.0.32_hwpzsh6pnvsm3pjf2zi526hnzq:
+    resolution: {integrity: sha512-8Tw4OrpCSJ028UUyp0gYPP/wyjigLoEceuO/x1G+FlHVf73337e5vLm4uDmrRIoBG1hvaed/eSHnrCFjOc4nkA==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
