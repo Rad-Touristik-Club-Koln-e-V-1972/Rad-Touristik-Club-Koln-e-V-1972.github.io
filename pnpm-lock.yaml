@@ -19,7 +19,7 @@ importers:
       '@rushstack/eslint-patch': ^1.2.0
       '@types/mime-types': ^2.1.1
       '@types/node': ^18.14.0
-      '@types/uuid': ^9.0.0
+      '@types/uuid': ^9.0.1
       '@vue/eslint-config-prettier': ^7.1.0
       '@vue/eslint-config-typescript': ^11.0.2
       '@yeger/vue2-masonry-wall': ^2.3.2
@@ -69,7 +69,7 @@ importers:
       '@rushstack/eslint-patch': 1.2.0
       '@types/mime-types': 2.1.1
       '@types/node': 18.14.0
-      '@types/uuid': 9.0.0
+      '@types/uuid': 9.0.1
       '@vue/eslint-config-prettier': 7.1.0_yrlhudqyxg2l7qvwle5bdpmrli
       '@vue/eslint-config-typescript': 11.0.2_h2vevngznqqjsppuxlkfy3oipa
       buffer: 6.0.3
@@ -3659,8 +3659,8 @@ packages:
     dependencies:
       source-map: 0.6.1
 
-  /@types/uuid/9.0.0:
-    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
+  /@types/uuid/9.0.1:
+    resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
     dev: true
 
   /@types/webpack-bundle-analyzer/4.6.0:
