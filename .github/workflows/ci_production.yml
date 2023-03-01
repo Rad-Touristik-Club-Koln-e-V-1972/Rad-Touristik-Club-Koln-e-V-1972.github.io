@@ -16,13 +16,7 @@ jobs:
               with:
                   cache: 'pnpm'
                   check-latest: true
-                  node-version: '16'
-                  # node-version: 'lts/*'
-                  # WORKAROUND ISSUE https://github.com/nuxt/bridge/discussions/601
-                  # It seems that vite instead of webpack is needed.
-                  # Webpack 4 and 5.75 are not compatible with NodeJS >= 17 and OpenSSL 3
-                  # But Vite is not compatible with vuetify 2.6
-                  # So maybe wait for nuxt 3.0 / vuetify 3.x
+                  node-version: 'lts/*'
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
             - name: Run linter
