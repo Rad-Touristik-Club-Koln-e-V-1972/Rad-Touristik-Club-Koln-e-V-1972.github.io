@@ -15,32 +15,50 @@ jobs:
             - name: Install PNPM
               uses: pnpm/action-setup@v2
             - name: Setup node env
-              uses: actions/setup-node@v3.6.0
+              uses: actions/setup-node@v3
               with:
                   cache: 'pnpm'
                   check-latest: true
                   node-version: 'lts/*'
-            - name: Install dependencies
-              run: pnpm install --frozen-lockfile
-            - name: Commit dependency changes
+            - name: Setup Pages
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              run: |
-                  echo "START: Reasons why it fails if it fails"
-                  echo "github.event.issue.pull_request: ${{ github.event.issue.pull_request }}"
-                  echo "github.event.action: ${{ github.event.action }}"
-                  echo "Reasons why it fails if it fails :END"
-                  git config --global user.name 'Github Actions'
-                  git config --global user.email 'github.actions@users.noreply.github.com'
-                  git add . || true
-                  git commit -am "build: update dependencies" || true
-                  git push || true
+              uses: actions/configure-pages@v3
+              with:
+                  static_site_generator: nuxt
+            - name: Restore cache
+              if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
+              uses: actions/cache@v3
+              with:
+                  path: |
+                      dist
+                      .nuxt
+                  key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+                  restore-keys: |
+                      ${{ runner.os }}-nuxt-build-
+            - name: Install dependencies
+              run: pnpm install
             - name: Run linter
               run: pnpm prepare && pnpm lint
             - name: Run static website generator
               run: pnpm build
-            - name: Deploy to github branch
+            - name: Upload artifact
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: JamesIves/github-pages-deploy-action@v4.4.1
+              uses: actions/upload-pages-artifact@v1
               with:
-                  branch: gh-pages
-                  folder: .output/public
+                  path: ./dist
+    ci_dev_deploy:
+        needs: ci_dev
+        runs-on: ubuntu-latest
+        concurrency:
+            group: 'pages'
+            cancel-in-progress: true
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        permissions:
+            pages: write # to deploy to Pages
+            id-token: write # to verify the deployment originates from an appropriate source
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v1
