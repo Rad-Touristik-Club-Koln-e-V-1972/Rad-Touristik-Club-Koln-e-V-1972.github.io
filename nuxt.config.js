@@ -7,8 +7,9 @@ export default defineNuxtConfig({
     buildModules: [
         // https://github.com/nuxt-community/router-module
         '@nuxtjs/router',
+        // TODO WORKAROUND https://github.com/nuxt-community/stylelint-module/issues/69 Use Vite Plugin with Nuxt 3 instead
         // https://go.nuxtjs.dev/stylelint
-        '@nuxtjs/stylelint-module',
+        // '@nuxtjs/stylelint-module',
         // https://go.nuxtjs.dev/vuetify
         [
             '@nuxtjs/vuetify',
