@@ -9,8 +9,8 @@
                 <v-card-title>Anschrift</v-card-title>
                 <v-card-text>
                     Rad-Touristik-Club Köln e.V. 1972<br />
-                    Turmhofstr. 2<br />
-                    51143 Köln
+                    Im Forst 51<br />
+                    51105 Köln
                 </v-card-text>
             </v-card>
             <v-card flat>
@@ -22,16 +22,16 @@
             <v-card flat>
                 <v-card-title>Vertreten durch</v-card-title>
                 <v-card-text>
-                    1. Vorsitzender<br />
-                    Wolfgang Dünkelmann<br />
-                    Turmhofstraße 2<br />
-                    51143 Köln
+                    Erster Vorsitz<br />
+                    Diana Vialon<br />
+                    Im Forst 51<br />
+                    51105 Köln
                 </v-card-text>
             </v-card>
             <v-card flat>
                 <v-card-title>Kontakt</v-card-title>
                 <v-card-text>
-                    Telefon: +49 2203 183920<br />
+                    Telefon: +49 1516 8002171<br />
                     E-Mail: webmaster@rtc-koeln.de
                 </v-card-text>
             </v-card>
@@ -52,9 +52,10 @@
             <v-card flat>
                 <v-card-title>Redaktionell verantwortlich</v-card-title>
                 <v-card-text>
-                    Wolfgang Dünkelmann<br />
-                    Turmhofstraße 2<br />
-                    51143 Köln
+                    Pressewart<br />
+                    Diana Vialon<br />
+                    Im Forst 51<br />
+                    51105 Köln
                 </v-card-text>
             </v-card>
             <v-card flat>

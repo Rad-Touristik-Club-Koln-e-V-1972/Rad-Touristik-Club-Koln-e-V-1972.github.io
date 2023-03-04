@@ -106,14 +106,14 @@
                 <v-card-title>Hinweis zur verantwortlichen Stelle</v-card-title>
                 <v-card-text>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</v-card-text>
                 <v-card-text>
-                    1. Vorsitzender<br />
-                    Wolfgang Dünkelmann<br />
-                    Turmhofstraße 2<br />
-                    51143 Köln
+                    Erster Vorsitz<br />
+                    Diana Vialon<br />
+                    Im Forst 51<br />
+                    51105 Köln
                 </v-card-text>
                 <v-card-text>
-                    Telefon: +49 2203 183920<br />
-                    E-Mail: erster.vorsitzender@rtc-koeln.de
+                    Telefon: +49 1516 8002171<br />
+                    E-Mail: erster.vorsitz@rtc-koeln.de
                 </v-card-text>
                 <v-card-text>
                     Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von

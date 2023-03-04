@@ -9,11 +9,11 @@ export const useContactsStore = defineStore('rtc-cologne-contacts', {
     state: () => ({
         contacts: [
             new ContactBuilder()
-                .setEMail('erster.vorsitzender@rtc-koeln.de')
+                .setEMail('erster.vorsitz@rtc-koeln.de')
                 .setId('4c5aea1e-a6b7-4319-ab3d-854529d8a476')
                 .setImageUrl('www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png')
-                .setName('Wolfgang Dünkelmann')
-                .setPosition('Erster Vorsitzender')
+                .setName('Diana Vialon')
+                .setPosition('Erster Vorsitz')
                 .build(),
             new ContactBuilder()
                 .setEMail('erster.sportwart@rtc-koeln.de')
@@ -27,14 +27,14 @@ export const useContactsStore = defineStore('rtc-cologne-contacts', {
                 .setId('697d177f-454d-42a3-8b7e-85b576e9696f')
                 .setImageUrl('www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png')
                 .setName('Diana Vialon')
-                .setPosition('Pressewartin')
+                .setPosition('Pressewart')
                 .build(),
             new ContactBuilder()
                 .setEMail('geschaeftsfuehrung@rtc-koeln.de')
                 .setId('ca74ca7f-79e3-4548-b851-8757a4ee17f7')
                 .setImageUrl('www.rtc-koeln.de/content/Bilder/rtc-weihnachten/2021/RTC Logo 720px_withHat.png')
                 .setName('Burghild Liedtke')
-                .setPosition('Geschäftsführerin')
+                .setPosition('Geschäftsführung')
                 .build(),
             new ContactBuilder()
                 .setEMail('webmaster@rtc-koeln.de')

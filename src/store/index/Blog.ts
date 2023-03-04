@@ -10,6 +10,17 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['1c843630-1346-4af8-ad7b-10009b1b694e'])
+                    .setDate('2023-03-03')
+                    .setId('c8142b69-7827-4e7c-ac35-59b821cfdfa9')
+                    .setText(
+                        `Der langjährige 1. Vorsitzende des RTC Köln e.V., Wolfgang Dünkelmann, hat heute bei der JHV den „Rennrad-Lenker“ 😉 an Diana Vialon übergeben.
+Unser Sportwart, Klaus Dünkelmann, bedankte sich im Namen des Vereins bei Wolfgang, der sich über ein Jahrzehnt mit viel Engagement für den Verein eingesetzt hat.
+Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgabe und grüßt alle unsere treuen Follower und Radsportfreunde.`
+                    )
+                    .setTitle('Generationenwechsel')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['ac7d6f63-20c4-4088-ab8e-2c7030c9fd44'])
                     .setDate('2023-02-11')
                     .setId('b1d7767f-5865-4e04-b9b9-c9581bfbce0e')

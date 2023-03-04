@@ -5,8 +5,10 @@ import _20230123SonntagSchneeKaelte from '~/store/rtc-cologne/gallery/2023/01_23
 import _20230204KurzentschlosseneRTCler from '~/store/rtc-cologne/gallery/2023/02_04_Kurzentschlossene_RTCler'
 import _20230211WintertrainingdAlbert from '~/store/rtc-cologne/gallery/2023/02_11_Wintertraining_d_Albert'
 import _20230211JeckImDreckCTF from '~/store/rtc-cologne/gallery/2023/02_11_Jeck_Im_Dreck_CTF'
+import _20230303Generationenwechsel from '~/store/rtc-cologne/gallery/2023/03_03_Generationenwechsel'
 
 export default [
+    _20230303Generationenwechsel,
     _20230211JeckImDreckCTF,
     _20230211WintertrainingdAlbert,
     _20230204KurzentschlosseneRTCler,
