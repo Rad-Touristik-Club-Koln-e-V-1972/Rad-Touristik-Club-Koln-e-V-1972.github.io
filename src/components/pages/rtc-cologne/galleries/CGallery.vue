@@ -3,11 +3,12 @@
         <template #progress>
             <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
         </template>
-        <v-card-title>{{ props.value.title }}</v-card-title>
         <v-card-subtitle>
-            Datum: {{ dateTime.format(props.value.start, props.value.end, true) }}
+            {{ props.value.title }}
             <br />
-            Ort: {{ props.value.location }}
+            {{ dateTime.format(props.value.start, props.value.end, true) }}
+            <br />
+            {{ props.value.location }}
         </v-card-subtitle>
         <v-card-text>
             <v-img eager :src="props.value.titleImageUrl.toString()" style="cursor: pointer" @click="open">

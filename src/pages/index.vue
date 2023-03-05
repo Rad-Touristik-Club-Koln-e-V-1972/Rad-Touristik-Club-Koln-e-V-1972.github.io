@@ -16,7 +16,7 @@
                                 </template>
                                 <v-card max-width="40em">
                                     <v-toolbar color="primary" flat>
-                                        <v-toolbar-title class="accent--text">{{ it.title }}</v-toolbar-title>
+                                        <v-toolbar-title class="accent--text text-truncate" style="display: inline-block">{{ it.title }}</v-toolbar-title>
                                     </v-toolbar>
                                     <v-card-text>
                                         <span class="black--text text-pre-wrap" v-html="it.text" />

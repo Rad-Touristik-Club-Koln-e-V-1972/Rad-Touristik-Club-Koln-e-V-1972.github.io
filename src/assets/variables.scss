@@ -13,11 +13,6 @@ $font-family: 'Bahnschrift';
     src: url('~/assets/fonts/#{$font-family}-Regular.ttf') format('truetype');
 }
 
-[class*='text'] {
-    // TODO Workaround until vuetify 3 https://github.com/vuetifyjs/vuetify/issues/9130
-    white-space: normal;
-}
-
 .v-card--link:before {
     background: none;
 }
