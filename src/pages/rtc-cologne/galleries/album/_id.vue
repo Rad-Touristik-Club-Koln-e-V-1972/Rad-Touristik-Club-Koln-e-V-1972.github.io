@@ -85,6 +85,7 @@
 /*
 TODO "[Vue warn]: Invalid component name: "_id". Component names should conform to valid custom element name in html5 specification."
  See https://github.com/nuxt-community/router-module/issues/67
+ Solution: Migrate to Nuxt 3 and replace "_id" by "[id]"
 */
 
 import { computed, getCurrentInstance, nextTick, ref } from 'vue'
