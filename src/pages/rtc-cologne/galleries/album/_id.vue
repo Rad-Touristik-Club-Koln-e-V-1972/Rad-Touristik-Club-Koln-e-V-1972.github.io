@@ -38,7 +38,7 @@
             <v-tabs-items v-model="tabModel">
                 <v-tab-item key="Bilder" value="tab-Bilder">
                     <v-tabs
-                        v-show="Object.keys(value.images).length && Object.keys(value.images)[0]"
+                        v-show="Object.keys(value.images).length > 1"
                         v-model="tabModelPictures"
                         background-color="primary"
                         centered
@@ -93,6 +93,7 @@ import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
 import useDateTime from '~/utils/DateTime'
+import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
 
 const proxy = getCurrentInstance()?.proxy
 
@@ -101,7 +102,8 @@ const vuetify = ref(proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
-const value = useGalleryStore().findById(proxy?.$route.params.id ?? '') ?? proxy?.$router.go(-1)
+const value = useGalleryStore().findById(proxy?.$route.params.id ?? '')
+value || proxy?.$router.go(-1)
 
 const close = () => {
     isLoading.value = true

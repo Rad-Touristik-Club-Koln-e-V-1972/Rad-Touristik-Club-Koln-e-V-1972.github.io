@@ -9,7 +9,7 @@ export default new GalleryBuilder()
     .setDate('2014-05-25')
     .setId('adfb799b-4249-4355-96fa-8eafe9859087')
     .setImages({
-        '': [
+        Intro: [
             new GalleryEntryBuilder()
                 .setId('068fa747-3eeb-448a-b660-03ac5ce9752f')
                 .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/05_25_RTF_42/rtc-forsbach-tour-flyer1-2014.jpg')

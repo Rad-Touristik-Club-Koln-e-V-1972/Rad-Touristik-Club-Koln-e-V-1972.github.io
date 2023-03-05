@@ -5,7 +5,7 @@ export default new GalleryBuilder()
     .setDate('2013-05-26', '2013-12-23')
     .setId('8e9c444a-4f7a-406b-a8a7-2aaec217890d')
     .setImages({
-        '': [new GalleryEntryBuilder().setId('7bf11c01-d4a5-45ed-934d-37be65a388bd').setImageUrl('content.rtc-koeln.de/pages/gallery/2013/07_23_Rueckblick.gif').build()],
+        Intro: [new GalleryEntryBuilder().setId('7bf11c01-d4a5-45ed-934d-37be65a388bd').setImageUrl('content.rtc-koeln.de/pages/gallery/2013/07_23_Rueckblick.gif').build()],
         '26.05. 41. Forsbach-Tour': [
             new GalleryEntryBuilder().setId('9587cbe5-7a64-4f6d-9f75-587319bbfe96').setImageUrl('content.rtc-koeln.de/pages/gallery/2013/05_26_RTF_41/rtc_131006_001.jpg').build(),
             new GalleryEntryBuilder().setId('ab47d742-dce2-4834-b235-3e15cd21d5fd').setImageUrl('content.rtc-koeln.de/pages/gallery/2013/05_26_RTF_41/rtc_131006_002.jpg').build(),

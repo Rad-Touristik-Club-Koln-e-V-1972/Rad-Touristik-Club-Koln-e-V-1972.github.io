@@ -14,7 +14,7 @@ export default new GalleryBuilder()
     .setDate('2015-05-31')
     .setId('991a9f19-cb22-43f3-991d-a3b8ddaa7ec8')
     .setImages({
-        '': [
+        Intro: [
             new GalleryEntryBuilder()
                 .setId('5d164015-0f2f-43aa-89b9-4737864a4030')
                 .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-987-intro-2015.jpg')

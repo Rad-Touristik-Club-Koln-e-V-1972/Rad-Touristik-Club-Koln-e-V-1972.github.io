@@ -5,7 +5,7 @@ export default new GalleryBuilder()
     .setDate('2012-04-08', '2012-12-11')
     .setId('7d7bb909-5c77-409d-8808-5570729b78b0')
     .setImages({
-        '': [new GalleryEntryBuilder().setId('93696e86-749e-4420-b528-b054a7181fa7').setImageUrl('content.rtc-koeln.de/pages/gallery/2012/08_15_Rueckblick.gif').build()],
+        Intro: [new GalleryEntryBuilder().setId('93696e86-749e-4420-b528-b054a7181fa7').setImageUrl('content.rtc-koeln.de/pages/gallery/2012/08_15_Rueckblick.gif').build()],
         '08.04. Jubiläumsfahrt': [
             new GalleryEntryBuilder()
                 .setId('ed171f7f-40a0-473e-933a-838406ca1129')

@@ -7,7 +7,7 @@ export default new GalleryBuilder()
     .setDate('2011-03-27', '2011-08-06')
     .setId('facf8f0f-e452-42c5-8c4e-fd8710a4c9ee')
     .setImages({
-        '': [new GalleryEntryBuilder().setId('11f887b9-6783-40e9-b1a8-841f5d7423ae').setImageUrl('content.rtc-koeln.de/pages/gallery/2011/01_01_Rueckblick.gif').build()],
+        Intro: [new GalleryEntryBuilder().setId('11f887b9-6783-40e9-b1a8-841f5d7423ae').setImageUrl('content.rtc-koeln.de/pages/gallery/2011/01_01_Rueckblick.gif').build()],
         '27.03. Düren-Merken': [
             new GalleryEntryBuilder().setId('8dc731f6-ed46-4b2b-ab54-44c7221e673f').setImageUrl('content.rtc-koeln.de/pages/gallery/2011/03_27_Dueren-Merken/DSCF1156.JPG').build(),
         ],

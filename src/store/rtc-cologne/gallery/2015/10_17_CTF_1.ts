@@ -9,7 +9,7 @@ export default new GalleryBuilder()
     .setDate('2015-10-17')
     .setId('eecf5550-fbfe-43a3-8a81-649e00221371')
     .setImages({
-        '': [
+        Intro: [
             new GalleryEntryBuilder()
                 .setId('db72d126-fd2d-4e2d-b45e-014da1e11161')
                 .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/10_17_CTF_1/rtc-wahnbach-tour-flyer1-2015.jpg')
