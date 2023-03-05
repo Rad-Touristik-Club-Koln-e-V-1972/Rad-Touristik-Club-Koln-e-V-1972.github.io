@@ -207,10 +207,6 @@ export default new GalleryBuilder()
             .setId('4225c5a1-9e24-4922-988b-2fb7e55447dd')
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/11_28_Weihnachtsfeier/Sieger2015b-28.jpg')
             .build(),
-        new GalleryEntryBuilder()
-            .setId('0c2ccb5c-514a-4a6f-844c-b4a00cd73aee')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/11_28_Weihnachtsfeier/Sieger2015b-29.jpg')
-            .build(),
     ])
     .setLocation('Köln')
     .setTitle('Weihnachtsfeier')
