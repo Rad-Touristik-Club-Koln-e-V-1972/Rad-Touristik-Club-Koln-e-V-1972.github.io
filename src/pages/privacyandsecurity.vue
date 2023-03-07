@@ -105,15 +105,18 @@
                 </v-card-text>
                 <v-card-title>Hinweis zur verantwortlichen Stelle</v-card-title>
                 <v-card-text>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</v-card-text>
+                <v-card-text>RTC Köln e.V. 1972</v-card-text>
+                <v-card-text>vertreten durch:</v-card-text>
+                <v-card-text>geschäftsführender Vorstand</v-card-text>
                 <v-card-text>
                     Erster Vorsitz<br />
                     Diana Vialon<br />
-                    Im Forst 51<br />
-                    51105 Köln
+                    E-Mail: erster.vorsitz@rtc-koeln.de
                 </v-card-text>
                 <v-card-text>
-                    Telefon: +49 1516 8002171<br />
-                    E-Mail: erster.vorsitz@rtc-koeln.de
+                    Zweiter Vorsitz<br />
+                    Norbert Schrandt<br />
+                    E-Mail: zweiter.vorsitz@rtc-koeln.de
                 </v-card-text>
                 <v-card-text>
                     Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von
