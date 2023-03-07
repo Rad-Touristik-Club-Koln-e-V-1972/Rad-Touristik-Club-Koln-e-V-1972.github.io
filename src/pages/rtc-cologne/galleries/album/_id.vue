@@ -93,7 +93,6 @@ import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
 import useDateTime from '~/utils/DateTime'
-import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
 
 const proxy = getCurrentInstance()?.proxy
 

@@ -16,7 +16,6 @@ import {
     mdiInformationOutline,
     mdiInstagram,
     mdiMessageDraw,
-    mdiNewspaperVariantMultiple,
     mdiSnowman,
     mdiTimelineClockOutline,
     mdiWeatherPartlyRainy,
