@@ -15,7 +15,7 @@
                     <v-card flat :href="item.url.toString()" max-width="20em" target="_blank">
                         <v-card-text>
                             <div v-if="item.text" v-text="item.text" />
-                            <v-img v-if="item.imageUrl" contain :src="item.imageUrl.toString()" />
+                            <v-img v-else-if="item.imageUrl" contain :src="item.imageUrl.toString()" />
                         </v-card-text>
                     </v-card>
                 </template>
