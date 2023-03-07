@@ -131,12 +131,13 @@ export const useNavigationStore = defineStore('navigation', {
                             .build(),
                         new ChildBuilder().setIcon(mdiImageMultiple).setId('d1718773-901a-42cd-ab49-3745d1a3a8b2').setTitle('Galerien').setTo('rtc-cologne-galleries').build(),
                         new ChildBuilder().setIcon(mdiMessageDraw).setId('d0900ba6-f50f-46d2-a5a9-c72cfee9dd58').setTitle('Gästebuch').setTo('rtc-cologne-guestbook').build(),
-                        new ChildBuilder()
+                        // TODO Offline bis Genehmigung eingeholt wurde
+                        /* new ChildBuilder()
                             .setIcon(mdiNewspaperVariantMultiple)
                             .setId('77fc43fb-f2fa-40ae-b6e1-50c5568b286f')
                             .setTitle('Presseberichte')
                             .setTo('rtc-cologne-press-reports')
-                            .build(),
+                            .build(), */
                         new ChildBuilder()
                             .setIcon(mdiHumanGreetingProximity)
                             .setId('8b92dcb4-57c0-467e-9f36-ba7a9f325f41')
