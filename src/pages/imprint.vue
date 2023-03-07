@@ -15,8 +15,8 @@
             </v-card>
             <v-card flat>
                 <v-card-text>
-                    Vereinsregister: 6757<br />
-                    Registergericht: Köln
+                    Registergericht: Amtsgericht Köln<br />
+                    Vereinsregister-Nummer: 6757
                 </v-card-text>
             </v-card>
             <v-card flat>
