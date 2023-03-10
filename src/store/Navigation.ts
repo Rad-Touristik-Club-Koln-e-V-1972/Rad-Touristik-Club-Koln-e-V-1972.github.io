@@ -10,6 +10,7 @@ import {
     mdiGoKartTrack,
     mdiGoogle,
     mdiHome,
+    mdiHumanCane,
     mdiHumanGreetingProximity,
     mdiHumanMaleBoard,
     mdiImageMultiple,
@@ -142,7 +143,8 @@ export const useNavigationStore = defineStore('navigation', {
                             .setId('8b92dcb4-57c0-467e-9f36-ba7a9f325f41')
                             .setTitle('Ansprechpartner')
                             .setTo('rtc-cologne-contacts')
-                            .build()
+                            .build(),
+                        new ChildBuilder().setIcon(mdiHumanCane).setId('244d210f-2151-427e-a1ed-3f767c034a50').setTitle('Alte Website').setUrl('old.rtc-koeln.de').build()
                     )
                     .setIcon(mdiDomain)
                     .setId('4fa2ef6c-b1ce-4690-9f60-36c76656840d')
