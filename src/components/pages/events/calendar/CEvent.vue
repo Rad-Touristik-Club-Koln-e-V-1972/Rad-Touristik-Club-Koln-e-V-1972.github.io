@@ -12,7 +12,7 @@
                 <!-- TODO "pointer-events: none" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/5787 -->
                 <v-simple-table style="pointer-events: none">
                     <tbody>
-                        <tr v-if="selectedEvent?.category !== EEvent.Mitgliederversammlung">
+                        <tr v-if="!isEventMitgliederversammlung">
                             <td class="text-end">Art:</td>
                             <td v-text="selectedEvent?.category" />
                         </tr>
@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { mdiClose } from '@mdi/js'
 import Event from '~/models/entities/events/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
@@ -45,6 +45,8 @@ import useDateTime from '~/utils/DateTime'
 const icons = { mdiClose }
 const isOpen = ref(false)
 const selectedEvent = ref<Event>()
+
+const isEventMitgliederversammlung = computed(() => selectedEvent.value?.category === EEvent.Mitgliederversammlung)
 
 const getDate = (event: Event) => useDateTime().format(event?.start, event?.end, !event?.timed)
 // TODO nur event parameter ohne objekt kapselung?

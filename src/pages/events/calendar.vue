@@ -3,32 +3,32 @@
         <c-control v-model="type" :title="title" @next="calendar.next()" @prev="calendar.prev()" @show-today="setFocus('')" />
         <v-card-text>
             <v-calendar
-                v-if="type !== ECalendar.list && event"
+                v-if="!isTypeList && event"
                 ref="calendar"
                 v-model="focus"
                 color="primary"
                 :event-color="getEventColor"
-                :events="events.filter((it) => it.category !== EEvent.Abgesagt)"
+                :events="eventsOhneAbgesagt"
                 show-week
                 :type="getTypeString(type)"
                 @click:date="switchToDayView"
                 @click:event="event.showEvent"
                 @click:more="switchToDayView"
             />
-            <c-list v-if="type === ECalendar.list" />
+            <c-list v-if="isTypeList" />
             <c-event ref="event" />
         </v-card-text>
     </v-card>
 </template>
 
 <script lang="ts" setup>
-import { ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import CControl from '~/components/pages/events/calendar/CControl.vue'
 import CEvent from '~/components/pages/events/calendar/CEvent.vue'
 import CList from '~/components/pages/events/calendar/CList.vue'
 import Event from '~/models/entities/events/calendar/Event'
-import ECalendar from '~/models/enums/events/ECalendar'
 import EEvent from '~/models/enums/EEvent'
+import ECalendar from '~/models/enums/events/ECalendar'
 import { useCalendarStore } from '~/store/events/Calendar'
 
 const calendar = ref()
@@ -38,6 +38,9 @@ const events = useCalendarStore().all
 const focus = ref('')
 const title = ref('')
 const type = ref<ECalendar>(ECalendar.month)
+
+const eventsOhneAbgesagt = computed(() => events.filter((it) => it.category !== EEvent.Abgesagt))
+const isTypeList = computed(() => type.value === ECalendar.list)
 
 const getEventColor = (event: Event) => event.color
 const getTypeString = (ec: ECalendar) => Object.entries(ECalendar).find((it) => it[1] === ec)?.[0] ?? ''

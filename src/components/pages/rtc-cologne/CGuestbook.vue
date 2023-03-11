@@ -4,7 +4,7 @@
             <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
             <div v-text="`${props.value.name} via ${ESource[props.value.source]}`" />
             <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
-            <div v-if="props.value.category !== EEvent.RTC" v-text="`Event: ${EEvent[props.value.category]}`" />
+            <div v-if="!isCategoryRTC" v-text="`Event: ${EEvent[props.value.category]}`" />
         </v-card-subtitle>
         <v-toolbar v-if="props.value.title" color="primary" flat>
             <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
@@ -20,9 +20,9 @@
             <div v-if="props.value.answer">
                 <v-divider />
                 <v-card-text>
-                    <span class="black--text text-pre-wrap"
-                        ><b>RTC Köln:</b> <i>{{ props.value.answer }}</i></span
-                    >
+                    <span class="black--text text-pre-wrap">
+                        <b>RTC Köln:</b> <i>{{ props.value.answer }}</i>
+                    </span>
                 </v-card-text>
             </div>
         </v-expand-transition>
@@ -30,6 +30,7 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
 import CSlideshow from '~/components/CSlideshow.vue'
 import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import EEvent from '~/models/enums/EEvent'
@@ -37,4 +38,6 @@ import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
 import useDateTime from '~/utils/DateTime'
 
 const props = defineProps<{ value: GuestbookEntry }>()
+
+const isCategoryRTC = computed(() => props.value.category === EEvent.RTC)
 </script>

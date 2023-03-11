@@ -6,7 +6,7 @@
             <v-toolbar-title class="text-center" style="width: 100%">
                 <span class="accessibility font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
                 <br />
-                <span class="accessibility font-weight-bold text-sm-h4 text-md-h3 text-h6"> RTC Köln e.V. <span class="primary--text" v-text="1972" /> </span>
+                <span class="accessibility font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
             </v-toolbar-title>
             <c-accessibility />
         </v-app-bar>

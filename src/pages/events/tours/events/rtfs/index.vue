@@ -82,13 +82,13 @@
                                                 </tbody>
                                             </v-simple-table>
                                         </v-col>
-                                        <v-col v-if="value.fees.filter((f) => f.category === EEvent.Marathon).length">
+                                        <v-col v-if="feesMarathon.length">
                                             <v-simple-table dense>
                                                 <thead>
                                                     <th colspan="2" v-text="'Marathon'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((f) => f.category === EEvent.Marathon)" :key="it.id">
+                                                    <tr v-for="it in feesMarathon" :key="it.id">
                                                         <td v-text="it.name" />
                                                         <td class="text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                     </tr>
@@ -144,7 +144,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { computed, getCurrentInstance, ref } from 'vue'
 import CPopup from '~/components/pages/events/tours/CPopup.vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import EEvent from '~/models/enums/EEvent'
@@ -157,4 +157,6 @@ const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 const dateTime = useDateTime()
 
 const value = useTourStore().rtf
+
+const feesMarathon = computed(() => value.fees.filter((f) => f.category === EEvent.Marathon))
 </script>
