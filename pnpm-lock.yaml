@@ -11,7 +11,7 @@ importers:
       '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27928371.c30fa0f
       '@nuxt/types': ~2.16.0
       '@nuxtjs/eslint-config-typescript': ~12.0.0
-      '@nuxtjs/eslint-module': ~4.0.1
+      '@nuxtjs/eslint-module': ~4.0.2
       '@nuxtjs/router': ~1.7.0
       '@nuxtjs/vuetify': ~1.12.3
       '@pinia/nuxt': ~0.4.7
@@ -61,7 +61,7 @@ importers:
       '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27928371.c30fa0f_u6ijj6gxmykjwnqomsjm253yj4
       '@nuxt/types': 2.16.0_webpack@4.46.0
       '@nuxtjs/eslint-config-typescript': 12.0.0_ycpbpc6yetojsgtrx3mwntkhsu
-      '@nuxtjs/eslint-module': 4.0.1_47imvc6hy6dc2w6gfpmnntc3hq
+      '@nuxtjs/eslint-module': 4.0.2_47imvc6hy6dc2w6gfpmnntc3hq
       '@nuxtjs/router': 1.7.0
       '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
       '@rushstack/eslint-patch': 1.2.0
@@ -3189,8 +3189,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/eslint-module/4.0.1_47imvc6hy6dc2w6gfpmnntc3hq:
-    resolution: {integrity: sha512-s0Pdqhr7YEVuf4J5Nm7/EU2plF5TCgolX9c6GTOt+HUkN3DJzwZpDk6JfuCKhDtC4iP2borRZcjJU6av7xMugA==}
+  /@nuxtjs/eslint-module/4.0.2_47imvc6hy6dc2w6gfpmnntc3hq:
+    resolution: {integrity: sha512-Lss37KjO9EZwlrxHcvXWiLZnd/kvw40htqhwKJiA8/IwuVWAFJ6Tu5Hl8iz2V0BN4RU1DIaS1ULQOQycndu3dw==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
