@@ -6,9 +6,7 @@
             <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
             <div v-if="!isCategoryRTC" v-text="`Event: ${EEvent[props.value.category]}`" />
         </v-card-subtitle>
-        <v-toolbar v-if="props.value.title" color="primary" flat>
-            <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
-        </v-toolbar>
+        <v-card-title v-if="props.value.title" class="accent--text primary">{{ props.value.title }}</v-card-title>
         <!-- TODO style="padding: 16px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/12170 -->
         <v-card-text v-if="props.value.text || props.value.imageUrls?.length" style="padding: 16px">
             <div v-if="props.value.text">
