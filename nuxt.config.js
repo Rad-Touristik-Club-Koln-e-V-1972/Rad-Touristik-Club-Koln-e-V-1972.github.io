@@ -35,7 +35,10 @@ export default defineNuxtConfig({
         title: 'Rad-Touristik-Club Köln e.V. 1972',
     },
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        // TODO Disabled until fixed: https://github.com/nuxt-community/eslint-module/pull/80#issuecomment-1464880535
+        // '@nuxtjs/eslint-module'
+    ],
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     // TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177
     plugins: [{ src: '~/plugins/vue-masonry-wall' }],
