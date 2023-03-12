@@ -1,6 +1,6 @@
 <template>
-    <v-sheet v-if="nextEvent" id="CCountdown" class="text-center" style="cursor: pointer" @click="event.showEvent({ event: nextEvent })">
-        <v-row>
+    <v-sheet v-if="nextEvents.length" id="CCountdown" class="text-center" style="cursor: pointer" @click="event.showEvent({ event: nextEvents[0] })">
+        <v-row dense>
             <v-col></v-col>
             <v-col cols="auto">
                 <v-progress-circular color="primary" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}<br />Tage</v-progress-circular>
@@ -13,11 +13,13 @@
             </v-col>
             <v-col></v-col>
         </v-row>
-        <v-row>
-            <v-col>Nächstes Event:</v-col>
+        <v-row dense>
+            <v-col class="text-right" cols="2">Event:</v-col>
+            <v-col class="font-weight-bold" cols="10">{{ nextEvents[0].name }}</v-col>
         </v-row>
-        <v-row no-gutters>
-            <v-col class="font-weight-bold">{{ nextEvent.name }}</v-col>
+        <v-row v-if="nextEvents[1]" dense>
+            <v-col class="text-right" cols="2">Danach:</v-col>
+            <v-col class="font-weight-bold" cols="10">{{ nextEvents[1].name }}</v-col>
         </v-row>
         <c-event ref="event" />
     </v-sheet>
@@ -43,8 +45,8 @@ const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
 
-const nextEvent = calendarStore.nextEvent()
-const daysOfMonth = nextEvent ? useDateTime().getDaysInMonth(nextEvent.start.getMonth(), nextEvent.start.getFullYear()) : 30
+const nextEvents = calendarStore.nextEvents()
+const daysOfMonth = nextEvents.length ? useDateTime().getDaysInMonth(nextEvents[0].start.getMonth(), nextEvents[0].start.getFullYear()) : 30
 
 let interval: NodeJS.Timeout
 
@@ -57,9 +59,9 @@ const calcCountdown = (nextEvent: Event) => {
 const getPercentage = (max: number, value: number) => Math.round((100 / max) * value)
 
 onMounted(() => {
-    if (nextEvent) {
-        calcCountdown(nextEvent)
-        interval = setInterval(() => calcCountdown(nextEvent), 60000)
+    if (nextEvents.length) {
+        calcCountdown(nextEvents[0])
+        interval = setInterval(() => calcCountdown(nextEvents[0]), 60000)
     }
 })
 

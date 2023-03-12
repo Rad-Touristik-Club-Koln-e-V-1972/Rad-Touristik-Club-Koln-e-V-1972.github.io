@@ -1,6 +1,6 @@
 <template>
     <v-navigation-drawer id="CNavigationDrawer" app bottom clipped :value="props.value" width="auto" @input="emitInput">
-        <v-row class="ma-auto" :no-gutters="!vuetify?.breakpoint.mobile">
+        <v-row class="ma-auto" :dense="!vuetify?.breakpoint.mobile">
             <v-col>
                 <c-countdown />
             </v-col>

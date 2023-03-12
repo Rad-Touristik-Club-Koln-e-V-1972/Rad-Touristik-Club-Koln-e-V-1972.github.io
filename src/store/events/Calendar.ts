@@ -10,14 +10,11 @@ export const useCalendarStore = defineStore('calendar', {
         allFuture(): Event[] {
             return this.all.filter((it) => it.start.getTime() > this.today().getTime())
         },
-        nextEvent(): Event | undefined {
-            this.allFuture().filter((it) => [EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung, EEvent.Vereinsfahrt].includes(it.category))
-            const nextStartTime = Math.min(
-                ...this.allFuture()
-                    .filter((it) => it.category !== EEvent.Feiertag)
-                    .map((it) => it.start.getTime())
-            )
-            return this.allFuture().find((it) => it.start.getTime() === nextStartTime)
+        nextEvents(): Event[] {
+            return this.allFuture()
+                .filter((it) => ![EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung, EEvent.Vereinsfahrt].includes(it.category))
+                .sort((a, b) => a.start.getTime() - b.start.getTime())
+                .slice(0, 2)
         },
         today: (): Date => new Date(Date.now()),
     },
