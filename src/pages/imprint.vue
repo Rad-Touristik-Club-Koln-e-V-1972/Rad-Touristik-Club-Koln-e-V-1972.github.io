@@ -32,7 +32,7 @@
                 <v-card-title>Kontakt</v-card-title>
                 <v-card-text>
                     Telefon: +49 1516 8002171<br />
-                    E-Mail: webmaster@rtc-koeln.de
+                    E-Mail: vorstand@rtc-koeln.de
                 </v-card-text>
             </v-card>
             <v-card flat>
