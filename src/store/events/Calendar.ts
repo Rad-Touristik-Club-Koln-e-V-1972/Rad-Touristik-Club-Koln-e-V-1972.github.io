@@ -16,6 +16,9 @@ export const useCalendarStore = defineStore('calendar', {
                 .sort((a, b) => a.start.getTime() - b.start.getTime())
                 .slice(0, 2)
         },
+        nextRTF(): Event | undefined {
+            return this.allFuture().find((it) => it.category === EEvent.RTF)
+        },
         today: (): Date => new Date(Date.now()),
     },
     getters: {

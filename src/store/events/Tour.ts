@@ -160,17 +160,6 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .build()
                 )
                 .setLastChange('2023-01-28')
-                .setPopup(
-                    'cd313bcb-5a63-48ed-aaac-2d9dfaea96af',
-                    `Unsere nächste Forsbach-Tour ist am <b>Sonntag, dem 28. Mai 2023</b>
-
-Notiert Euch schon mal den Termin.
-
-Wir freuen uns auf Euch!
-
-Euer RTC Köln e.V.`,
-                    'NICHT VERPASSEN'
-                )
                 .setText(
                     `Liebe Radsportlerinnen und Radsportler,
 

@@ -139,13 +139,11 @@
                 </v-col>
             </v-row>
         </v-card-text>
-        <c-popup v-if="value.popup" :value="value.popup" />
     </v-card>
 </template>
 
 <script lang="ts" setup>
 import { computed, getCurrentInstance, ref } from 'vue'
-import CPopup from '~/components/pages/events/tours/CPopup.vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
