@@ -87,6 +87,15 @@ export default [
         .setUrl('www.rsc-erftstadt.de')
         .build(),
     new EventBuilder()
+        .setAllDay(true)
+        .setCategory(EEvent.RTF)
+        .setClubPoints(3)
+        .setContact('Klaus Dünkelmann')
+        .setDate('2023-05-28')
+        .setId('262224f4-be70-414a-bd68-07a0706da73e')
+        .setName('51. Forsbach – Tour')
+        .build(),
+    new EventBuilder()
         .setAllDay(false)
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
