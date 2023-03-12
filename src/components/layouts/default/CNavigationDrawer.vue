@@ -1,13 +1,13 @@
 <template>
     <v-navigation-drawer id="CNavigationDrawer" app bottom clipped :value="props.value" width="auto" @input="emitInput">
-        <v-row class="ma-auto">
+        <v-row class="ma-auto" :no-gutters="!vuetify?.breakpoint.mobile">
             <v-col>
                 <c-countdown />
             </v-col>
         </v-row>
-        <v-row>
+        <v-row no-gutters>
             <v-col>
-                <v-list nav>
+                <v-list :dense="!vuetify?.breakpoint.mobile" nav>
                     <template v-for="it in navigationStore.allNavigation">
                         <!-- TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531 -->
                         <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded" @click="workaround">
@@ -62,7 +62,7 @@
                 </v-list>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row no-gutters>
             <v-col>
                 <v-card flat>
                     <v-card-title class="justify-center">Folge uns auf</v-card-title>
@@ -82,6 +82,8 @@
 </template>
 
 <script lang="ts" setup>
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+import { getCurrentInstance, ref } from 'vue'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import { useNavigationStore } from '~/store/Navigation'
 
@@ -89,6 +91,8 @@ const emits = defineEmits<{ (e: 'input', value: boolean): void }>()
 const props = defineProps<{ value: boolean }>()
 
 const navigationStore = useNavigationStore()
+// TODO WORKAROUND UNTIL VUETIFY 2.7
+const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
 const emitInput = (value: boolean) => {
     emits('input', value)
