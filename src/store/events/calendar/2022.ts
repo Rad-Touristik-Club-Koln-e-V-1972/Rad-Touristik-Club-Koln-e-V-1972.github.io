@@ -55,7 +55,7 @@ export default [
         .setContact('Klaus Dünkelmann')
         .setDate('2022-04-09')
         .setId('63d9f864-8655-407b-98d9-1e24b60ccd03')
-        .setName('RTC Permanente')
+        .setName('RTC Permanente - Intern - Strecke Abfahren')
         .build(),
     new EventBuilder()
         .setAllDay(true)
