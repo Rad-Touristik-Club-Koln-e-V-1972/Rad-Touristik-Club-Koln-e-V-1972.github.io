@@ -11,7 +11,7 @@
         "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
         "lint:markup": "vue-tsc",
         "lint:prettier": "prettier --write --list-different .",
-        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore --fix",
+        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --cache --ignore-path .gitignore --fix",
         "predev": "pnpm lint",
         "preinstall": "npx only-allow pnpm",
         "prepare": "husky install && nuxi prepare"
