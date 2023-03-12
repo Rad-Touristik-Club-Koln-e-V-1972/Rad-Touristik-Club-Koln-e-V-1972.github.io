@@ -89,7 +89,7 @@ export default [
     new EventBuilder()
         .setAllDay(true)
         .setCategory(EEvent.RTF)
-        .setClubPoints(3)
+        .setClubPoints(0)
         .setContact('Klaus Dünkelmann')
         .setDate('2023-05-28')
         .setId('262224f4-be70-414a-bd68-07a0706da73e')
