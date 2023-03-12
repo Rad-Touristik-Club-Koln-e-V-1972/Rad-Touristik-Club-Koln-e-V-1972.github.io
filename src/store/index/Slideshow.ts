@@ -43,6 +43,9 @@ export const useSlideshowStore = defineStore('slideshow', {
                 .setId('6236709d-d210-4301-a3ac-90fbf57b2cdb')
                 .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/signal-2023-02-05-092407_003.jpeg')
                 .build(),
+            new GalleryEntryBuilder().setId('167f8e77-b02a-4822-bbcb-b643a5a220bc').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/IMG_0936.JPG').build(),
+            new GalleryEntryBuilder().setId('4c006505-9c4c-457e-ac87-028a7f50bbca').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/IMG_0923.JPG').build(),
+            new GalleryEntryBuilder().setId('74ba44f1-cabb-4506-a72b-381d71ed3d1d').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/IMG_0909.JPG').build(),
         ],
     }),
 })
