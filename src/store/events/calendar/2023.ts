@@ -7,7 +7,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-01-06 20:00', '2022-01-06 22:00')
+        .setDate('2023-01-06 20:00', '2023-01-06 22:00')
         .setId('8e55e3d2-4005-40a3-9feb-ffef998d73d5')
         .setName('Mitgliederversammlung')
         .build(),
@@ -16,7 +16,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-02-03 20:00', '2022-02-03 22:00')
+        .setDate('2023-02-03 20:00', '2023-02-03 22:00')
         .setId('acb50ed9-d216-4c5f-9d44-9abb2926ef91')
         .setName('Mitgliederversammlung')
         .build(),
@@ -25,7 +25,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-03-03 20:00', '2022-03-03 22:00')
+        .setDate('2023-03-03 20:00', '2023-03-03 22:00')
         .setId('04f8f604-58a5-4991-87a0-f533bf6abc8e')
         .setName('Jahreshauptversammlung')
         .build(),
@@ -44,7 +44,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-04-07 20:00', '2022-04-07 22:00')
+        .setDate('2023-04-07 20:00', '2023-04-07 22:00')
         .setId('8794ea0a-3325-47b6-8fbc-158a724bf781')
         .setName('Mitgliederversammlung')
         .build(),
@@ -72,7 +72,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-05-05 20:00', '2022-05-05 22:00')
+        .setDate('2023-05-05 20:00', '2023-05-05 22:00')
         .setId('981e73cc-0004-434c-babb-392e80a7ac65')
         .setName('Mitgliederversammlung')
         .build(),
@@ -100,7 +100,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-06-02 20:00', '2022-06-02 22:00')
+        .setDate('2023-06-02 20:00', '2023-06-02 22:00')
         .setId('1864934b-59e0-46b0-ada4-e08090186615')
         .setName('Mitgliederversammlung')
         .build(),
@@ -169,7 +169,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-07-07 20:00', '2022-07-07 22:00')
+        .setDate('2023-07-07 20:00', '2023-07-07 22:00')
         .setId('549d49f2-a893-47b8-94c4-cde5594a313f')
         .setName('Mitgliederversammlung')
         .build(),
@@ -178,7 +178,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-08-04 20:00', '2022-08-04 22:00')
+        .setDate('2023-08-04 20:00', '2023-08-04 22:00')
         .setId('506889cb-b98f-4cb8-94a0-a6f99e179211')
         .setName('Mitgliederversammlung')
         .build(),
@@ -217,7 +217,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-09-01 20:00', '2022-09-01 22:00')
+        .setDate('2023-09-01 20:00', '2023-09-01 22:00')
         .setId('61a561ba-a33f-4386-8c29-6c087e8c9acf')
         .setName('Mitgliederversammlung')
         .build(),
@@ -256,7 +256,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-10-06 20:00', '2022-10-06 22:00')
+        .setDate('2023-10-06 20:00', '2023-10-06 22:00')
         .setId('834430d8-8466-4414-96c6-4c88a3f29069')
         .setName('Mitgliederversammlung')
         .build(),
@@ -265,7 +265,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-11-03 20:00', '2022-11-03 22:00')
+        .setDate('2023-11-03 20:00', '2023-11-03 22:00')
         .setId('e46b95ab-68a6-4435-b4a8-8d2018f8ec64')
         .setName('Mitgliederversammlung')
         .build(),
@@ -274,7 +274,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2022-12-01 20:00', '2022-12-01 22:00')
+        .setDate('2023-12-01 20:00', '2023-12-01 22:00')
         .setId('471ee844-0897-488b-b107-77e5889e1fa7')
         .setName('Mitgliederversammlung / Weihnachtsfeier')
         .build(),
