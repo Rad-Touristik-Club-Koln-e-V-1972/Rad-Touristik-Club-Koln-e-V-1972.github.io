@@ -24,6 +24,7 @@ importers:
       '@vue/eslint-config-typescript': ~11.0.2
       '@yeger/vue2-masonry-wall': ~2.3.3
       buffer: ~6.0.3
+      commitlint: ~17.4.4
       consola: ~2.15.3
       date-holidays: ~3.19.0
       eslint: ~8.36.0
@@ -73,6 +74,7 @@ importers:
       '@vue/eslint-config-prettier': 7.1.0_a7sjvsbcgg5dveitgz3whbbski
       '@vue/eslint-config-typescript': 11.0.2_75cttubc7yphoaabg6k3yrjnke
       buffer: 6.0.3
+      commitlint: 17.4.4
       consola: 2.15.3
       eslint: 8.36.0
       eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
@@ -5592,6 +5594,18 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
+  /commitlint/17.4.4:
+    resolution: {integrity: sha512-trjD7/aJ3FyCMNRhP27QorPjvlE9m0AIlLKcusS6r8aDaDJQ8/MQMmANMv3LvjVx1SKy1MTSF0/oUw3T3If/EA==}
+    engines: {node: '>=v14'}
+    hasBin: true
+    dependencies:
+      '@commitlint/cli': 17.4.4
+      '@commitlint/types': 17.4.4
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+    dev: true
+
   /commondir/1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
 
@@ -7653,6 +7667,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
 
   /fill-range/4.0.0:
     resolution: {integrity: sha512-VcpLTWqWDiTerugjj8e3+esbg+skS3M9e54UuR3iCeIDMXCLTsAH8hTSzDQU/X6/6t3eYkOKoZSef2PlU6U1XQ==}
