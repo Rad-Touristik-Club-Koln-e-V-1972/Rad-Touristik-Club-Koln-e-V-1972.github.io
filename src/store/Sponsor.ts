@@ -64,12 +64,6 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setUrl('www.krombacher.de')
                 .build(),
             new SponsorBuilder()
-                .setId('1da469f0-7a83-473c-9682-7d8d7b82dd1a')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/StoryImage.jpg')
-                .setText('Storyimage')
-                .setUrl('www.storyimage.de')
-                .build(),
-            new SponsorBuilder()
                 .setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.png')
                 .setText('Sebamed')
