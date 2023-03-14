@@ -5,7 +5,7 @@
                 <c-countdown />
             </v-col>
         </v-row>
-        <v-row no-gutters>
+        <v-row :no-gutters="vuetify?.breakpoint.mobile">
             <v-col>
                 <v-list :dense="!vuetify?.breakpoint.mobile" nav>
                     <template v-for="it in navigationStore.allNavigation">
