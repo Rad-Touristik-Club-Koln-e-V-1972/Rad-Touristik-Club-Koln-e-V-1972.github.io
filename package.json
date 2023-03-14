@@ -8,10 +8,10 @@
         "build": "nuxi generate",
         "dev": "nuxi dev",
         "lint": "pnpm lint:markup && pnpm lint:js && pnpm lint:style && pnpm lint:prettier",
-        "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
+        "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
         "lint:markup": "vue-tsc",
-        "lint:prettier": "prettier --write --list-different .",
-        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --cache --ignore-path .gitignore --fix",
+        "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --write --list-different .",
+        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --cache --cache-location node_modules/.cache/.stylelintcache --ignore-path .gitignore --fix",
         "predev": "pnpm lint",
         "preinstall": "npx only-allow pnpm",
         "prepare": "husky install && nuxi prepare"
@@ -68,7 +68,7 @@
     "lint-staged": {
         "*.vue": "bash -c vue-tsc",
         "*.{js,ts,vue}": "eslint --fix",
-        "*.{css,scss,sass,html,vue}": "stylelint --cache --fix",
+        "*.{css,scss,sass,html,vue}": "stylelint --fix",
         "*.**": "prettier --ignore-unknown --write"
     }
 }
