@@ -32,12 +32,12 @@
                             <v-simple-table dense>
                                 <thead>
                                     <tr>
-                                        <th class="text-left" v-text="'Uhrzeit'" />
+                                        <th class="text-left" v-text="'Startzeit'" />
                                         <th class="text-left" v-text="'Streckenlänge'" />
                                         <th class="text-left" v-text="'Höhenmeter'" />
                                         <th class="text-left" v-text="'Profil'" />
                                         <th class="text-left" v-text="'Kontrollen'" />
-                                        <th class="text-left" v-text="'Links'" />
+                                        <th class="text-right" v-text="'Links'" />
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -76,8 +76,8 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr v-for="it in value.fees.filter((f) => f.category !== EEvent.Marathon)" :key="it.id">
+                                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                         <td v-text="it.name" />
-                                                        <td class="text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                     </tr>
                                                 </tbody>
                                             </v-simple-table>
@@ -89,8 +89,8 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr v-for="it in feesMarathon" :key="it.id">
+                                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                         <td v-text="it.name" />
-                                                        <td class="text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                     </tr>
                                                 </tbody>
                                             </v-simple-table>
@@ -108,8 +108,8 @@
                                     <v-simple-table dense>
                                         <tbody>
                                             <tr v-for="it in value.times" :key="it.id">
+                                                <td class="text-right text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
                                                 <td v-text="it.name" />
-                                                <td class="text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
                                             </tr>
                                         </tbody>
                                     </v-simple-table>

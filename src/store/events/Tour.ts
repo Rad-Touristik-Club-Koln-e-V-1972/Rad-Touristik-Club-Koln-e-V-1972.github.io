@@ -22,10 +22,10 @@ export const useTourStore = defineStore('tour', {
         tours: [
             new EventBuilder()
                 .setFees(
-                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('Jugendliche bis 18 Jahre').build(),
-                    new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('BDR-Mitglieder mit Breitensportlizenz').build(),
-                    new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('sonstige BDR-Mitglieder').build(),
-                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('Gastfahrer').build()
+                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
+                    new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('BDR-Mitglieder mit Breitensportlizenz').setPrice(6).build(),
+                    new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('sonstige BDR-Mitglieder').setPrice(8).build(),
+                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('Gastfahrer').setPrice(12).build()
                 )
                 .setId('2048a7f0-315a-43d7-885a-23f388601052')
                 .setTimes(
@@ -72,7 +72,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .setTime('07:30', '11:00')
+                        .setTime('08:00', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676899286'),
@@ -106,7 +106,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
                         )
-                        .setTime('07:30', '11:00')
+                        .setTime('08:00', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676927332'),
@@ -145,7 +145,7 @@ Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen hab
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         )
-                        .setTime('07:30', '11:00')
+                        .setTime('08:00', '11:00')
                         .setUrls({
                             'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 117km.gpx'),
                             Komoot: new URL('https://www.komoot.de/tour/676930729'),
