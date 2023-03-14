@@ -1,7 +1,7 @@
 export default function useDateTime() {
     const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' })
-    const dateTimeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
-    const timeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit' })
+    const dateTimeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: 'numeric', minute: '2-digit' })
+    const timeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { hour: 'numeric', minute: '2-digit' })
 
     return {
         format: (start: Date, end: Date | null = null, allDay = false) => {
