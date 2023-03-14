@@ -1,5 +1,4 @@
 import ABuilder from '~/models/builder/ABuilder'
-import PopupBuilder from '~/models/builder/PopupBuilder'
 import EEvent from '~/models/enums/EEvent'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 import Tour from '~/models/entities/events/Tour'
