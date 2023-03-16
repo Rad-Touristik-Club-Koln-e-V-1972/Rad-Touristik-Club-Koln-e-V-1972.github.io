@@ -1,94 +1,95 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@babel/core': ~7.21.3
-  '@commitlint/cli': ~17.4.4
-  '@commitlint/config-conventional': ~17.4.4
-  '@mdi/js': ~7.1.96
-  '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27928371.c30fa0f
-  '@nuxt/types': ~2.16.0
-  '@nuxtjs/eslint-config-typescript': ~12.0.0
-  '@nuxtjs/eslint-module': ~4.0.2
-  '@nuxtjs/router': ~1.7.0
-  '@nuxtjs/stylelint-module': ~5.0.1
-  '@nuxtjs/vuetify': ~1.12.3
-  '@pinia/nuxt': ~0.4.7
-  '@rushstack/eslint-patch': ~1.2.0
-  '@types/mime-types': ~2.1.1
-  '@types/node': ~18.15.3
-  '@types/uuid': ~9.0.1
-  '@vue/eslint-config-prettier': ~7.1.0
-  '@vue/eslint-config-typescript': ~11.0.2
-  '@yeger/vue2-masonry-wall': ~2.3.3
-  buffer: ~6.0.3
-  commitlint: ~17.4.4
-  consola: ~2.15.3
-  date-holidays: ~3.19.0
-  eslint: ~8.36.0
-  eslint-plugin-nuxt: ~4.0.0
-  eslint-plugin-vue: ~9.9.0
-  eslint-plugin-vuetify: ~1.1.0
-  husky: ~8.0.3
-  lint-staged: ~13.2.0
-  nuxt: ~2.16.2
-  pinia: ~2.0.33
-  postcss-html: ~1.5.0
-  prettier: ~2.8.4
-  stylelint: ~15.2.0
-  stylelint-config-recommended-vue: ~1.4.0
-  stylelint-config-standard: ~30.0.1
-  typescript: ~4.9.5
-  uuid: ~9.0.0
-  vue: ~2.7.14
-  vue-tsc: ~1.2.0
-  vuetify: ~2.6.14
-  webpack: ~4.46.0
+importers:
 
-dependencies:
-  '@pinia/nuxt': 0.4.7_hwpzsh6pnvsm3pjf2zi526hnzq
-  '@yeger/vue2-masonry-wall': 2.3.3_vue@2.7.14
-  date-holidays: 3.19.0
-  nuxt: 2.16.2_6ydn5bsi7sfcvgw4rqoywzr3ei
-  pinia: 2.0.33_hwpzsh6pnvsm3pjf2zi526hnzq
-  uuid: 9.0.0
-  vue: 2.7.14
-  vuetify: 2.6.14_vue@2.7.14
-
-devDependencies:
-  '@babel/core': 7.21.3
-  '@commitlint/cli': 17.4.4
-  '@commitlint/config-conventional': 17.4.4
-  '@mdi/js': 7.1.96
-  '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27928371.c30fa0f_2szspiyt3i4fdvx3s4kpfjdhdq
-  '@nuxt/types': 2.16.0_webpack@4.46.0
-  '@nuxtjs/eslint-config-typescript': 12.0.0_vgl77cfdswitgr47lm5swmv43m
-  '@nuxtjs/eslint-module': 4.0.2_p72rhxqnkxdgq5hcokxg4t4deu
-  '@nuxtjs/router': 1.7.0
-  '@nuxtjs/stylelint-module': 5.0.1_2hyb4fv2vqmnyvqjnb4pgity2q
-  '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
-  '@rushstack/eslint-patch': 1.2.0
-  '@types/mime-types': 2.1.1
-  '@types/node': 18.15.3
-  '@types/uuid': 9.0.1
-  '@vue/eslint-config-prettier': 7.1.0_a7sjvsbcgg5dveitgz3whbbski
-  '@vue/eslint-config-typescript': 11.0.2_75cttubc7yphoaabg6k3yrjnke
-  buffer: 6.0.3
-  commitlint: 17.4.4
-  consola: 2.15.3
-  eslint: 8.36.0
-  eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
-  eslint-plugin-vue: 9.9.0_eslint@8.36.0
-  eslint-plugin-vuetify: 1.1.0_ovpwsvu36lyv5jn6tzskmymuqm
-  husky: 8.0.3
-  lint-staged: 13.2.0
-  postcss-html: 1.5.0
-  prettier: 2.8.4
-  stylelint: 15.2.0
-  stylelint-config-recommended-vue: 1.4.0_x2qzl5lwlwnkkekx7bj2y4o6y4
-  stylelint-config-standard: 30.0.1_stylelint@15.2.0
-  typescript: 4.9.5
-  vue-tsc: 1.2.0_typescript@4.9.5
-  webpack: 4.46.0
+  .:
+    specifiers:
+      '@babel/core': ~7.21.3
+      '@commitlint/cli': ~17.4.4
+      '@commitlint/config-conventional': ~17.4.4
+      '@mdi/js': ~7.1.96
+      '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27928371.c30fa0f
+      '@nuxt/types': ~2.16.0
+      '@nuxtjs/eslint-config-typescript': ~12.0.0
+      '@nuxtjs/eslint-module': ~4.0.2
+      '@nuxtjs/router': ~1.7.0
+      '@nuxtjs/stylelint-module': ~5.0.1
+      '@nuxtjs/vuetify': ~1.12.3
+      '@pinia/nuxt': ~0.4.7
+      '@rushstack/eslint-patch': ~1.2.0
+      '@types/mime-types': ~2.1.1
+      '@types/node': ~18.15.3
+      '@types/uuid': ~9.0.1
+      '@vue/eslint-config-prettier': ~7.1.0
+      '@vue/eslint-config-typescript': ~11.0.2
+      '@yeger/vue2-masonry-wall': ~2.3.3
+      buffer: ~6.0.3
+      commitlint: ~17.4.4
+      consola: ~2.15.3
+      date-holidays: ~3.19.0
+      eslint: ~8.36.0
+      eslint-plugin-nuxt: ~4.0.0
+      eslint-plugin-vue: ~9.9.0
+      eslint-plugin-vuetify: ~1.1.0
+      husky: ~8.0.3
+      lint-staged: ~13.2.0
+      nuxt: ~2.16.2
+      pinia: ~2.0.33
+      postcss-html: ~1.5.0
+      prettier: ~2.8.4
+      stylelint: ~15.3.0
+      stylelint-config-recommended-vue: ~1.4.0
+      stylelint-config-standard: ~30.0.1
+      typescript: ~4.9.5
+      uuid: ~9.0.0
+      vue: ~2.7.14
+      vue-tsc: ~1.2.0
+      vuetify: ~2.6.14
+      webpack: ~4.46.0
+    dependencies:
+      '@pinia/nuxt': 0.4.7_hwpzsh6pnvsm3pjf2zi526hnzq
+      '@yeger/vue2-masonry-wall': 2.3.3_vue@2.7.14
+      date-holidays: 3.19.0
+      nuxt: 2.16.2_6ydn5bsi7sfcvgw4rqoywzr3ei
+      pinia: 2.0.33_hwpzsh6pnvsm3pjf2zi526hnzq
+      uuid: 9.0.0
+      vue: 2.7.14
+      vuetify: 2.6.14_vue@2.7.14
+    devDependencies:
+      '@babel/core': 7.21.3
+      '@commitlint/cli': 17.4.4
+      '@commitlint/config-conventional': 17.4.4
+      '@mdi/js': 7.1.96
+      '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27928371.c30fa0f_2szspiyt3i4fdvx3s4kpfjdhdq
+      '@nuxt/types': 2.16.0_webpack@4.46.0
+      '@nuxtjs/eslint-config-typescript': 12.0.0_vgl77cfdswitgr47lm5swmv43m
+      '@nuxtjs/eslint-module': 4.0.2_p72rhxqnkxdgq5hcokxg4t4deu
+      '@nuxtjs/router': 1.7.0
+      '@nuxtjs/stylelint-module': 5.0.1_jzaunmzrh37r7h5mhskng4dkbu
+      '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
+      '@rushstack/eslint-patch': 1.2.0
+      '@types/mime-types': 2.1.1
+      '@types/node': 18.15.3
+      '@types/uuid': 9.0.1
+      '@vue/eslint-config-prettier': 7.1.0_a7sjvsbcgg5dveitgz3whbbski
+      '@vue/eslint-config-typescript': 11.0.2_75cttubc7yphoaabg6k3yrjnke
+      buffer: 6.0.3
+      commitlint: 17.4.4
+      consola: 2.15.3
+      eslint: 8.36.0
+      eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
+      eslint-plugin-vue: 9.9.0_eslint@8.36.0
+      eslint-plugin-vuetify: 1.1.0_ovpwsvu36lyv5jn6tzskmymuqm
+      husky: 8.0.3
+      lint-staged: 13.2.0
+      postcss-html: 1.5.0
+      prettier: 2.8.4
+      stylelint: 15.3.0
+      stylelint-config-recommended-vue: 1.4.0_o7z2z2yv565o3a3uaodintvte4
+      stylelint-config-standard: 30.0.1_stylelint@15.3.0
+      typescript: 4.9.5
+      vue-tsc: 1.2.0_typescript@4.9.5
+      webpack: 4.46.0
 
 packages:
 
@@ -1383,8 +1384,8 @@ packages:
       '@commitlint/types': 17.4.4
       '@types/node': 18.15.3
       chalk: 4.1.2
-      cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.2.0_o5d5d5qrhzipaz5nmkhyrkswza
+      cosmiconfig: 8.1.0
+      cosmiconfig-typescript-loader: 4.2.0_7l6wx57tjccnqi3q2lzmydziha
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -1470,15 +1471,15 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@csstools/cascade-layer-name-parser/1.0.1_ggzcsjlodsz5bpm3wuzdizqs5y:
+  /@csstools/cascade-layer-name-parser/1.0.1_ppok7cytzjc65mcyxmtit3wdyi:
     resolution: {integrity: sha512-SAAi5DpgJJWkfTvWSaqkgyIsTawa83hMwKrktkj6ra2h+q6ZN57vOGZ6ySHq6RSo+CbP64fA3aPChPBRDDUgtw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^2.0.0
       '@csstools/css-tokenizer': ^2.0.0
     dependencies:
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
     dev: false
 
   /@csstools/color-helpers/1.0.0:
@@ -1486,27 +1487,27 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     dev: false
 
-  /@csstools/css-parser-algorithms/2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy:
+  /@csstools/css-parser-algorithms/2.0.1_5vzy4lghjvuzkedkkk4tqwjftm:
     resolution: {integrity: sha512-B9/8PmOtU6nBiibJg0glnNktQDZ3rZnGn/7UmDfrm2vMtrdlXO3p7ErE95N0up80IRk9YEtB5jyj/TmQ1WH3dw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-tokenizer': ^2.0.0
     dependencies:
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/css-tokenizer': 2.1.0
 
-  /@csstools/css-tokenizer/2.0.1:
-    resolution: {integrity: sha512-sYD3H7ReR88S/4+V5VbKiBEUJF4FqvG+8aNJkxqoPAnbhFziDG22IDZc4+h+xA63SfgM+h15lq5OnLeCxQ9nPA==}
+  /@csstools/css-tokenizer/2.1.0:
+    resolution: {integrity: sha512-dtqFyoJBHUxGi9zPZdpCKP1xk8tq6KPHJ/NY4qWXiYo6IcSGwzk3L8x2XzZbbyOyBs9xQARoGveU2AsgLj6D2A==}
     engines: {node: ^14 || ^16 || >=18}
 
-  /@csstools/media-query-list-parser/2.0.1_ggzcsjlodsz5bpm3wuzdizqs5y:
+  /@csstools/media-query-list-parser/2.0.1_ppok7cytzjc65mcyxmtit3wdyi:
     resolution: {integrity: sha512-X2/OuzEbjaxhzm97UJ+95GrMeT29d1Ib+Pu+paGLuRWZnWRK9sI9r3ikmKXPWGA1C4y4JEdBEFpp9jEqCvLeRA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^2.0.0
       '@csstools/css-tokenizer': ^2.0.0
     dependencies:
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
 
   /@csstools/postcss-cascade-layers/1.1.1_postcss@8.4.21:
     resolution: {integrity: sha512-+KdYrpKC5TgomQr2DlZF4lDEpHcoxnj5IGddYYfBWJAKfj1JtuHUIqMa+E1pJJ+z3kvDViWMqyqPlG4Ja7amQA==}
@@ -1662,7 +1663,7 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/css-tokenizer': 2.1.0
       postcss: 8.4.21
     dev: false
 
@@ -1672,9 +1673,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
-      '@csstools/media-query-list-parser': 2.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
+      '@csstools/media-query-list-parser': 2.0.1_ppok7cytzjc65mcyxmtit3wdyi
       postcss: 8.4.21
     dev: false
 
@@ -3230,15 +3231,15 @@ packages:
       defu: 5.0.1
     dev: true
 
-  /@nuxtjs/stylelint-module/5.0.1_2hyb4fv2vqmnyvqjnb4pgity2q:
+  /@nuxtjs/stylelint-module/5.0.1_jzaunmzrh37r7h5mhskng4dkbu:
     resolution: {integrity: sha512-oEtbFazgJaEEeTjuLS43HUNRChfexmAj4AX5FoSz03gO+K9371hnT8akU3N9/QU2an+cXQbNj8ATqyy1XasTOw==}
     peerDependencies:
       stylelint: '>=13'
     dependencies:
       '@nuxt/kit': 3.2.3
-      stylelint: 15.2.0
-      stylelint-webpack-plugin: 4.1.0_2hyb4fv2vqmnyvqjnb4pgity2q
-      vite-plugin-stylelint: 4.3.0_stylelint@15.2.0
+      stylelint: 15.3.0
+      stylelint-webpack-plugin: 4.1.0_jzaunmzrh37r7h5mhskng4dkbu
+      vite-plugin-stylelint: 4.3.0_stylelint@15.3.0
     transitivePeerDependencies:
       - '@types/stylelint'
       - postcss
@@ -5925,7 +5926,7 @@ packages:
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  /cosmiconfig-typescript-loader/4.2.0_o5d5d5qrhzipaz5nmkhyrkswza:
+  /cosmiconfig-typescript-loader/4.2.0_7l6wx57tjccnqi3q2lzmydziha:
     resolution: {integrity: sha512-NkANeMnaHrlaSSlpKGyvn2R4rqUDeE/9E5YHx+b4nwo0R8dZyAqcih8/gxpCZvqWP9Vf6xuLpMSzSgdVEIM78g==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -5935,7 +5936,7 @@ packages:
       typescript: '>=3'
     dependencies:
       '@types/node': 18.15.3
-      cosmiconfig: 8.0.0
+      cosmiconfig: 8.1.0
       ts-node: 10.9.1_cbfmry4sbbh4vatmdrsmatfg5a
       typescript: 4.9.5
     dev: true
@@ -5950,8 +5951,8 @@ packages:
       path-type: 4.0.0
       yaml: 1.10.2
 
-  /cosmiconfig/8.0.0:
-    resolution: {integrity: sha512-da1EafcpH6b/TD8vDRaWV7xFINlHlF6zKsGwS1TsuVJTZRkquaS5HTMq7uq6h31619QjbsYl21gVDOm32KM1vQ==}
+  /cosmiconfig/8.1.0:
+    resolution: {integrity: sha512-0tLZ9URlPGU7JsKq0DQOQ3FoRsYX8xDZ7xMiATQfaiGMz7EHowNkbU9u1coAOmnh9p/1ySpm0RB3JNWRXM5GCg==}
     engines: {node: '>=14'}
     dependencies:
       import-fresh: 3.3.0
@@ -8947,8 +8948,8 @@ packages:
   /knitwork/1.0.0:
     resolution: {integrity: sha512-dWl0Dbjm6Xm+kDxhPQJsCBTxrJzuGl0aP9rhr+TG8D3l+GL90N8O8lYUi7dTSAN2uuDqCtNgb6aEuQH5wsiV8Q==}
 
-  /known-css-properties/0.26.0:
-    resolution: {integrity: sha512-5FZRzrZzNTBruuurWpvZnvP9pum+fe0HcK8z/ooo+U+Hmp4vtbyp1/QDsqmufirXy4egGzbaH/y2uCZf+6W5Kg==}
+  /known-css-properties/0.27.0:
+    resolution: {integrity: sha512-uMCj6+hZYDoffuvAJjFAPz56E9uoowFHmTkqRtRq5WyC5Q6Cu/fTZKNQpX/RbzChBYLLl3lo8CjFZBAZXq9qFg==}
     dev: true
 
   /last-call-webpack-plugin/3.0.0:
@@ -10612,10 +10613,10 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
-      '@csstools/media-query-list-parser': 2.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
+      '@csstools/cascade-layer-name-parser': 1.0.1_ppok7cytzjc65mcyxmtit3wdyi
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
+      '@csstools/media-query-list-parser': 2.0.1_ppok7cytzjc65mcyxmtit3wdyi
       postcss: 8.4.21
     dev: false
 
@@ -10635,9 +10636,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/cascade-layer-name-parser': 1.0.1_ppok7cytzjc65mcyxmtit3wdyi
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
       postcss: 8.4.21
       postcss-value-parser: 4.2.0
     dev: false
@@ -10658,9 +10659,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
+      '@csstools/cascade-layer-name-parser': 1.0.1_ppok7cytzjc65mcyxmtit3wdyi
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
     dev: false
@@ -12638,7 +12639,7 @@ packages:
       postcss-selector-parser: 6.0.11
     dev: false
 
-  /stylelint-config-html/1.1.0_x2qzl5lwlwnkkekx7bj2y4o6y4:
+  /stylelint-config-html/1.1.0_o7z2z2yv565o3a3uaodintvte4:
     resolution: {integrity: sha512-IZv4IVESjKLumUGi+HWeb7skgO6/g4VMuAYrJdlqQFndgbj6WJAXPhaysvBiXefX79upBdQVumgYcdd17gCpjQ==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12646,10 +12647,10 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.2.0
+      stylelint: 15.3.0
     dev: true
 
-  /stylelint-config-recommended-vue/1.4.0_x2qzl5lwlwnkkekx7bj2y4o6y4:
+  /stylelint-config-recommended-vue/1.4.0_o7z2z2yv565o3a3uaodintvte4:
     resolution: {integrity: sha512-DVJqyX2KvMCn9U0+keL12r7xlsH26K4Vg8NrIZuq5MoF7g82DpMp326Om4E0Q+Il1o+bTHuUyejf2XAI0iD04Q==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12658,29 +12659,29 @@ packages:
     dependencies:
       postcss-html: 1.5.0
       semver: 7.3.8
-      stylelint: 15.2.0
-      stylelint-config-html: 1.1.0_x2qzl5lwlwnkkekx7bj2y4o6y4
-      stylelint-config-recommended: 10.0.1_stylelint@15.2.0
+      stylelint: 15.3.0
+      stylelint-config-html: 1.1.0_o7z2z2yv565o3a3uaodintvte4
+      stylelint-config-recommended: 10.0.1_stylelint@15.3.0
     dev: true
 
-  /stylelint-config-recommended/10.0.1_stylelint@15.2.0:
+  /stylelint-config-recommended/10.0.1_stylelint@15.3.0:
     resolution: {integrity: sha512-TQ4xQ48tW4QSlODcti7pgSRqBZcUaBzuh0jPpfiMhwJKBPkqzTIAU+IrSWL/7BgXlOM90DjB7YaNgFpx8QWhuA==}
     peerDependencies:
       stylelint: ^15.0.0
     dependencies:
-      stylelint: 15.2.0
+      stylelint: 15.3.0
     dev: true
 
-  /stylelint-config-standard/30.0.1_stylelint@15.2.0:
+  /stylelint-config-standard/30.0.1_stylelint@15.3.0:
     resolution: {integrity: sha512-NbeHOmpRQhjZh5XB1B/S4MLRWvz4xxAxeDBjzl0tY2xEcayNhLbaRGF0ZQzq+DQZLCcPpOHeS2Ru1ydbkhkmLg==}
     peerDependencies:
       stylelint: ^15.0.0
     dependencies:
-      stylelint: 15.2.0
-      stylelint-config-recommended: 10.0.1_stylelint@15.2.0
+      stylelint: 15.3.0
+      stylelint-config-recommended: 10.0.1_stylelint@15.3.0
     dev: true
 
-  /stylelint-webpack-plugin/4.1.0_2hyb4fv2vqmnyvqjnb4pgity2q:
+  /stylelint-webpack-plugin/4.1.0_jzaunmzrh37r7h5mhskng4dkbu:
     resolution: {integrity: sha512-Vm8H2uYflIiF9m4BjSBEn9cpqY2zZ0wDHgBxOVM6aWFDd0FvfNoymrSYYOIG5/ZST0NO/0NCXPWcpRVpv79Uew==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -12692,22 +12693,22 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       schema-utils: 4.0.0
-      stylelint: 15.2.0
+      stylelint: 15.3.0
       webpack: 4.46.0
     dev: true
 
-  /stylelint/15.2.0:
-    resolution: {integrity: sha512-wjg5OLn8zQwjlj5cYUgyQpMWKzct42AG5dYlqkHRJQJqsystFFn3onqEc263KH4xfEI0W3lZCnlIhFfS64uwSA==}
+  /stylelint/15.3.0:
+    resolution: {integrity: sha512-9UYBYk7K9rtlKcTUDZrtntE840sZM00qyYBQHHe7tjwMNUsPsGvR6Fd43IxHEAhRrDLzpy3TVaHb6CReBB3eFg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@csstools/css-parser-algorithms': 2.0.1_jcyrkspfsqbg4tr2sa6u4jvygy
-      '@csstools/css-tokenizer': 2.0.1
-      '@csstools/media-query-list-parser': 2.0.1_ggzcsjlodsz5bpm3wuzdizqs5y
+      '@csstools/css-parser-algorithms': 2.0.1_5vzy4lghjvuzkedkkk4tqwjftm
+      '@csstools/css-tokenizer': 2.1.0
+      '@csstools/media-query-list-parser': 2.0.1_ppok7cytzjc65mcyxmtit3wdyi
       '@csstools/selector-specificity': 2.1.1_wajs5nedgkikc5pcuwett7legi
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 8.0.0
+      cosmiconfig: 8.1.0
       css-functions-list: 3.1.0
       css-tree: 2.3.1
       debug: 4.3.4
@@ -12722,7 +12723,7 @@ packages:
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
-      known-css-properties: 0.26.0
+      known-css-properties: 0.27.0
       mathml-tag-names: 2.1.3
       meow: 9.0.0
       micromatch: 4.0.5
@@ -12738,7 +12739,7 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       style-search: 0.1.0
-      supports-hyperlinks: 2.3.0
+      supports-hyperlinks: 3.0.0
       svg-tags: 1.0.0
       table: 6.8.1
       v8-compile-cache: 2.3.0
@@ -12766,9 +12767,9 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /supports-hyperlinks/2.3.0:
-    resolution: {integrity: sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA==}
-    engines: {node: '>=8'}
+  /supports-hyperlinks/3.0.0:
+    resolution: {integrity: sha512-QBDPHyPQDRTy9ku4URNGY5Lah8PAaXs6tAAwp55sL5WCsSW7GIfdf6W5ixfziW+t7wh3GVvHyHHyQ1ESsoRvaA==}
+    engines: {node: '>=14.18'}
     dependencies:
       has-flag: 4.0.0
       supports-color: 7.2.0
@@ -13501,7 +13502,7 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /vite-plugin-stylelint/4.3.0_stylelint@15.2.0:
+  /vite-plugin-stylelint/4.3.0_stylelint@15.3.0:
     resolution: {integrity: sha512-S8BONq5X8TndOFt+My4lkeHxVZvkDQRL++TV0nvnuYgOU/CvDddPPOT4V6go+ETzWK0NEtXqCGFnpkmm8c8Xcg==}
     engines: {node: '>=14.18'}
     peerDependencies:
@@ -13520,7 +13521,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2
       chokidar: 3.5.3
-      stylelint: 15.2.0
+      stylelint: 15.3.0
     dev: true
 
   /vite/3.2.5_bo6h3scodoujns3g7sdb3erumq:
