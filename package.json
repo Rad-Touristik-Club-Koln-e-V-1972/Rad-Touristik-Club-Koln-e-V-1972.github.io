@@ -8,10 +8,10 @@
         "build": "nuxi generate",
         "dev": "nuxi dev",
         "lint": "pnpm lint:markup && pnpm lint:js && pnpm lint:style && pnpm lint:prettier",
-        "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext \".js,.ts,.vue\" --fix --ignore-path .gitignore .",
+        "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext \".js,.ts,.vue\" --fix --ignore-path .gitignore --ignore-pattern pnpm-lock.yaml .",
         "lint:markup": "vue-tsc",
-        "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write .",
-        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --cache --cache-location node_modules/.cache/.stylelintcache --ignore-path .gitignore --fix",
+        "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --ignore-pattern pnpm-lock.yaml --list-different --write .",
+        "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --cache --cache-location node_modules/.cache/.stylelintcache --ignore-path .gitignore --ignore-pattern pnpm-lock.yaml --fix",
         "predev": "pnpm lint",
         "preinstall": "npx only-allow pnpm",
         "prepare": "husky install && nuxi prepare"
