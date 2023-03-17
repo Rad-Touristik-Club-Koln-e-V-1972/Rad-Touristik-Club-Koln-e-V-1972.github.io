@@ -34,6 +34,18 @@ export const useTourStore = defineStore('tour', {
                 )
                 .setTracks(
                     new TrackBuilder()
+                        .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
+                        .setName('Hinweis')
+                        .setText(
+                            `Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
+
+<ul style="white-space: normal">
+    <li>Tempo: max. 20er Schnitt</li>
+    <li>Startzeiten: 8 Uhr und ca. 11 Uhr</li>
+</ul>`
+                        )
+                        .build(),
+                    new TrackBuilder()
                         .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
                         .setName('Alle Strecken')
                         .setText(

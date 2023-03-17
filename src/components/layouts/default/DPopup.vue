@@ -12,11 +12,11 @@
                 Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
                 <br />
                 <br />
-                <v-row>
+                <v-row dense>
                     <v-col class="text-right">Tempo:</v-col>
                     <v-col class="text-left">max. 20er Schnitt</v-col>
                 </v-row>
-                <v-row>
+                <v-row dense>
                     <v-col class="text-right">Startzeiten:</v-col>
                     <v-col class="text-left">8 Uhr und ca. 11 Uhr</v-col>
                 </v-row>

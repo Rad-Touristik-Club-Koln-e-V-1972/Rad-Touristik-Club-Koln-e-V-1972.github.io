@@ -131,7 +131,7 @@
                                     <v-toolbar-title class="accent--text">{{ it.name }}</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
-                                    <span class="black--text text-pre-wrap" v-html="it.text" />
+                                    <span class="black--text text-pre-line" v-html="it.text" />
                                 </v-card-text>
                             </v-card>
                         </v-timeline-item>
