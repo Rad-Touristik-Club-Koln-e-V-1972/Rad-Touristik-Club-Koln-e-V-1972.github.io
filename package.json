@@ -20,7 +20,7 @@
         "@pinia/nuxt": "~0.4.7",
         "@yeger/vue2-masonry-wall": "~2.3.3",
         "date-holidays": "~3.19.0",
-        "nuxt": "~2.16.2",
+        "nuxt": "~2.16.3",
         "pinia": "~2.0.33",
         "uuid": "~9.0.0",
         "vue": "~2.7.14",
