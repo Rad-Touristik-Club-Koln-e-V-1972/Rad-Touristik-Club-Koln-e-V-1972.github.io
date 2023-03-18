@@ -50,7 +50,7 @@ export const useTourStore = defineStore('tour', {
                         .setName('Alle Strecken')
                         .setText(
                             `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
-„Frühaufsteher“ können dort ab acht Uhr, während die „Langschläfer“ noch bis elf Uhr starten können.
+„Frühaufsteher“ können dort ab acht Uhr, „Langschläfer“ bis elf Uhr starten.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
 Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
