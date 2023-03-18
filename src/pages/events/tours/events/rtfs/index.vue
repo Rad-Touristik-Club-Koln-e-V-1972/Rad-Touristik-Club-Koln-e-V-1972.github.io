@@ -1,5 +1,5 @@
 <template>
-    <v-card id="VIndex" flat>
+    <v-card v-if="value" id="VIndex" flat>
         <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
@@ -145,6 +145,8 @@
 <script lang="ts" setup>
 import { computed, getCurrentInstance, ref } from 'vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
+import Event from '~/models/entities/events/tours/Event'
+import Fee from '~/models/entities/events/tours/events/Fee'
 import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
@@ -154,7 +156,7 @@ const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
 const dateTime = useDateTime()
 
-const value = useTourStore().rtf
+const value: Event | undefined = useTourStore().rtf
 
-const feesMarathon = computed(() => value.fees.filter((f) => f.category === EEvent.Marathon))
+const feesMarathon = computed<Fee[]>(() => value?.fees.filter((f) => f.category === EEvent.Marathon) ?? [])
 </script>

@@ -13,13 +13,11 @@ import EProfile from '~/models/enums/events/tours/EProfile'
 
 export const useTourStore = defineStore('tour', {
     getters: {
-        allPermanents: (state): Permanent[] => state.tours.filter((it) => it.category === EEvent.Permanente) as Permanent[],
-        rtf: (state): Event => {
-            return state.tours.find((it) => it.category === EEvent.RTF) as Event
-        },
+        allPermanents: (state): Permanent[] => state.permanents,
+        rtf: (state): Event | undefined => state.events.find((it) => it.category === EEvent.RTF),
     },
     state: () => ({
-        tours: [
+        events: [
             new EventBuilder()
                 .setFees(
                     new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
@@ -193,6 +191,8 @@ Euer RTC Köln e.V.`
                 )
                 .setTitle('Die Forsbach-Tour')
                 .build(),
+        ],
+        permanents: [
             new PermanentBuilder()
                 .setHeight(700)
                 .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
