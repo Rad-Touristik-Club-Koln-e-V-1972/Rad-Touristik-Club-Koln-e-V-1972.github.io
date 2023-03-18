@@ -1,7 +1,7 @@
 <template>
     <v-sheet v-if="nextEvents.length" id="CCountdown" class="text-center" style="cursor: pointer" @click="event.showEvent({ event: nextEvents[0] })">
         <v-row dense>
-            <v-col></v-col>
+            <v-col />
             <v-col cols="auto">
                 <v-progress-circular color="primary" rotate="270" size="60" :value="getPercentageDays(days)">{{ days }}<br />Tage</v-progress-circular>
             </v-col>
@@ -11,7 +11,7 @@
             <v-col cols="auto">
                 <v-progress-circular color="primary darken-2" rotate="90" size="60" :value="getPercentageMinutes(minutes)">{{ minutes }}<br />Min</v-progress-circular>
             </v-col>
-            <v-col></v-col>
+            <v-col />
         </v-row>
         <v-row dense>
             <v-col class="text-right" cols="2">Event:</v-col>
