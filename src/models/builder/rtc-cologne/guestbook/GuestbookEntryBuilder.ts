@@ -30,7 +30,7 @@ export default class GuestbookEntryBuilder extends ABuilder {
     }
 
     setImageUrls(value: Record<string, string>): GuestbookEntryBuilder {
-        for (const id in Object.keys(value)) {
+        for (const id of Object.keys(value)) {
             this.entity.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).build())
         }
 
