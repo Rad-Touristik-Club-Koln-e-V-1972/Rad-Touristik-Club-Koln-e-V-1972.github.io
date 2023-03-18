@@ -1,8 +1,11 @@
 <template>
-    <v-card id="VWinter" flat>
+    <v-card v-if="value" id="VWinter" flat>
         <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
         </v-toolbar>
+        <v-card-text>
+            <c-slideshow height="200" :value="value.imageUrls" />
+        </v-card-text>
         <v-card-text>
             <v-row class="justify-center">
                 <v-col cols="auto">
@@ -47,10 +50,12 @@
 </template>
 
 <script lang="ts" setup>
+import CSlideshow from '~/components/CSlideshow.vue'
+import Training from '~/models/entities/events/Training'
 import { useTrainingStore } from '~/store/events/Training'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const value = useTrainingStore().winter
+const value: Training | undefined = useTrainingStore().winter
 </script>
