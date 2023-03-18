@@ -12,7 +12,6 @@ export const useSponsorStore = defineStore('sponsor', {
             new SponsorBuilder()
                 .setId('08ba12dc-1ff3-4441-8146-c59ac929e8a6')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Alpecin.svg')
-                .setText('Alpecin')
                 .setUrl('www.alpecin.com/de-de/')
                 .build(),
             new SponsorBuilder()
@@ -45,12 +44,7 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setText('RheinEnergie')
                 .setUrl('www.rheinenergie.com')
                 .build(),
-            new SponsorBuilder()
-                .setId('1bf98410-d65d-4d9d-8594-c7b0c1d62e17')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/InnoBike.svg')
-                .setText('InnoBike')
-                .setUrl('www.inno-bike.com')
-                .build(),
+            new SponsorBuilder().setId('1bf98410-d65d-4d9d-8594-c7b0c1d62e17').setImageUrl('content.rtc-koeln.de/pages/sponsor/InnoBike.svg').setUrl('www.inno-bike.com').build(),
             new SponsorBuilder()
                 .setId('cf95576c-6bb4-407d-ba63-41673566a249')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Ford.webp')
@@ -63,12 +57,7 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setText('Krombacher')
                 .setUrl('www.krombacher.de')
                 .build(),
-            new SponsorBuilder()
-                .setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.png')
-                .setText('Sebamed')
-                .setUrl('shop.sebamed.de')
-                .build(),
+            new SponsorBuilder().setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72').setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.jpg').setUrl('shop.sebamed.de').build(),
             new SponsorBuilder()
                 .setId('ef52759c-48ec-42d9-91e4-0dc56c4ef646')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/RoadBike.jpg')
@@ -87,12 +76,7 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setText('Volksbank Köln Bonn eG')
                 .setUrl('www.volksbank-koeln-bonn.de')
                 .build(),
-            new SponsorBuilder()
-                .setId('fe512d84-b4df-434a-8cde-ef6b240022a4')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/ConneX.svg')
-                .setText('ConneX')
-                .setUrl('www.connexchain.com')
-                .build(),
+            new SponsorBuilder().setId('fe512d84-b4df-434a-8cde-ef6b240022a4').setImageUrl('content.rtc-koeln.de/pages/sponsor/ConneX.svg').setUrl('www.connexchain.com').build(),
         ],
     }),
 })
