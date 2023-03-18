@@ -44,7 +44,7 @@ export default [
         .setCategory(EEvent.Mitgliederversammlung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
-        .setDate('2023-04-07 20:00', '2023-04-07 22:00')
+        .setDate('2023-04-14 20:00', '2023-04-14 22:00')
         .setId('8794ea0a-3325-47b6-8fbc-158a724bf781')
         .setName('Mitgliederversammlung')
         .build(),
