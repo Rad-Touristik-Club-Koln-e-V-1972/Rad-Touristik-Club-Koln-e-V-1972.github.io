@@ -10,6 +10,22 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['db15854a-bfad-486d-9a6d-916946b4050b'])
+                    .setDate('2023-03-17')
+                    .setId('6ceefc9d-5b41-494e-adb2-112a17de8e8f')
+                    .setText(
+                        `🌷🌷🌷🚴‍♂️🚴🚴‍♀️🚴🚴‍♀️🚴‍♂️🌷🌷🌷☀️
+Heute haben wir zu sechst das frühlingshafte Wetter für eine Ausfahrt nach Lindlar ausgenutzt.
+Es ging hin über die Höhen und zurück über die Bahntrasse.
+
+Start und Ziel nach ca. 80 km: Die Schmitzebud.
+
+🔜 Unsere RTF, die Forsbachtour, ist am 28. Mai
+🎉 Wer von Euch ist dabei?`
+                    )
+                    .setTitle('Frühlingsfahrt nach Lindlar')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['1c843630-1346-4af8-ad7b-10009b1b694e'])
                     .setDate('2023-03-03')
                     .setId('c8142b69-7827-4e7c-ac35-59b821cfdfa9')

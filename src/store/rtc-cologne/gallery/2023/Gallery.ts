@@ -6,8 +6,10 @@ import _20230204KurzentschlosseneRTCler from '~/store/rtc-cologne/gallery/2023/0
 import _20230211WintertrainingdAlbert from '~/store/rtc-cologne/gallery/2023/02_11_Wintertraining_d_Albert'
 import _20230211JeckImDreckCTF from '~/store/rtc-cologne/gallery/2023/02_11_Jeck_Im_Dreck_CTF'
 import _20230303Generationenwechsel from '~/store/rtc-cologne/gallery/2023/03_03_Generationenwechsel'
+import _20230317FruehlingsfahrtnachLindlar from '~/store/rtc-cologne/gallery/2023/03_17_Fruehlingsfahrt_nach_Lindlar'
 
 export default [
+    _20230317FruehlingsfahrtnachLindlar,
     _20230303Generationenwechsel,
     _20230211JeckImDreckCTF,
     _20230211WintertrainingdAlbert,
