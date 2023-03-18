@@ -189,7 +189,7 @@ Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
 
 Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
 
-Eurer RTC Köln e.V.`
+Euer RTC Köln e.V.`
                 )
                 .setTitle('Die Forsbach-Tour')
                 .build(),
