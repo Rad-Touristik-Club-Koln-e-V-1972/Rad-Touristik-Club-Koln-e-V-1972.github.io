@@ -3,6 +3,9 @@
         <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text">Über uns</v-toolbar-title>
         </v-toolbar>
+        <v-card-text>
+            <c-slideshow height="200" :value="imageUrls" />
+        </v-card-text>
         <v-card-text class="black--text">
             <p>
                 Wir, die Sportler:innen des RTC Köln, kommen aus vielen unterschiedlichen Lebensphasen: die einen studieren, die anderen sind voll berufstätig und die anderen
@@ -43,3 +46,14 @@
         </v-card-text>
     </v-card>
 </template>
+
+<script lang="ts" setup>
+import CSlideshow from '~/components/CSlideshow.vue'
+import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+
+const imageUrls = [
+    new GalleryEntryBuilder().setId('1e0ba419-3aa9-40b1-8cda-9bbf6dabcecb').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_0.jpg').build(),
+    new GalleryEntryBuilder().setId('633246fd-7423-420c-9e4c-d28503755b34').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_1.jpg').build(),
+    new GalleryEntryBuilder().setId('a4b3fe25-0d70-4f25-8ad1-160f684da614').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_2.jpg').build(),
+]
+</script>
