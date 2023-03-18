@@ -9,7 +9,7 @@
         show-arrows-on-hover
         :value="startIndex"
     >
-        <v-carousel-item v-for="it in props.value" :key="it.imageUrl.toString()" contain :src="it.imageUrl.toString()">
+        <v-carousel-item v-for="it in props.value" :key="it.id" contain :src="it.imageUrl.toString()">
             <template #placeholder>
                 <c-loading-skeleton />
             </template>
