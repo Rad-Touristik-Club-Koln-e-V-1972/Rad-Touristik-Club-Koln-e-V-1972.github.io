@@ -2,6 +2,10 @@ import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEnt
 
 export default {
     'Start & Ziel': [
+        new GalleryEntryBuilder().setId('67208871-2a01-4a9c-81b0-cf0b0cfb48eb').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/Chronik.jpg').build(),
+        new GalleryEntryBuilder().setId('a0291146-a405-46e8-9c35-624292fe1de8').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/Chronik2.jpg').build(),
+        new GalleryEntryBuilder().setId('1e67984a-4a20-4632-a63d-766e3524dac2').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/Chronik3.jpg').build(),
+        new GalleryEntryBuilder().setId('4c07a16b-4995-4313-a49c-ba45350081a0').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/Chronik4.jpg').build(),
         new GalleryEntryBuilder().setId('3ea3a618-4eeb-4b71-975e-39e8ad45453e').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/01.jpg').build(),
         new GalleryEntryBuilder().setId('d17a45aa-6dc4-4706-bfc2-37f5dfe877fd').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/02.jpg').build(),
         new GalleryEntryBuilder().setId('8403143d-7f62-41c1-bbc2-2b1ee9faef35').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Start_Ziel/03.jpg').build(),
