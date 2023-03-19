@@ -1,94 +1,95 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@babel/core': ~7.21.3
-  '@commitlint/cli': ~17.4.4
-  '@commitlint/config-conventional': ~17.4.4
-  '@mdi/js': ~7.1.96
-  '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27982868.cf7ca7b
-  '@nuxt/types': ~2.16.3
-  '@nuxtjs/eslint-config-typescript': ~12.0.0
-  '@nuxtjs/eslint-module': ~4.0.2
-  '@nuxtjs/router': ~1.7.0
-  '@nuxtjs/stylelint-module': ~5.0.1
-  '@nuxtjs/vuetify': ~1.12.3
-  '@pinia/nuxt': ~0.4.7
-  '@rushstack/eslint-patch': ~1.2.0
-  '@types/mime-types': ~2.1.1
-  '@types/node': ~18.15.3
-  '@types/uuid': ~9.0.1
-  '@vue/eslint-config-prettier': ~7.1.0
-  '@vue/eslint-config-typescript': ~11.0.2
-  '@yeger/vue2-masonry-wall': ~2.3.3
-  buffer: ~6.0.3
-  commitlint: ~17.4.4
-  consola: ~2.15.3
-  date-holidays: ~3.19.0
-  eslint: ~8.36.0
-  eslint-plugin-nuxt: ~4.0.0
-  eslint-plugin-vue: ~9.9.0
-  eslint-plugin-vuetify: ~1.1.0
-  husky: ~8.0.3
-  lint-staged: ~13.2.0
-  nuxt: ~2.16.3
-  pinia: ~2.0.33
-  postcss-html: ~1.5.0
-  prettier: ~2.8.4
-  stylelint: ~15.3.0
-  stylelint-config-recommended-vue: ~1.4.0
-  stylelint-config-standard: ~31.0.0
-  typescript: ~5.0.2
-  uuid: ~9.0.0
-  vue: ~2.7.14
-  vue-tsc: ~1.2.0
-  vuetify: ~2.6.14
-  webpack: ~4.46.0
+importers:
 
-dependencies:
-  '@pinia/nuxt': 0.4.7_ebc5ylquwea4x7zblxrr24u2de
-  '@yeger/vue2-masonry-wall': 2.3.3_vue@2.7.14
-  date-holidays: 3.19.0
-  nuxt: 2.16.3_gigk4hstk6d2tzykdigxc3jcj4
-  pinia: 2.0.33_ebc5ylquwea4x7zblxrr24u2de
-  uuid: 9.0.0
-  vue: 2.7.14
-  vuetify: 2.6.14_vue@2.7.14
-
-devDependencies:
-  '@babel/core': 7.21.3
-  '@commitlint/cli': 17.4.4
-  '@commitlint/config-conventional': 17.4.4
-  '@mdi/js': 7.1.96
-  '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27982868.cf7ca7b_2szspiyt3i4fdvx3s4kpfjdhdq
-  '@nuxt/types': 2.16.3
-  '@nuxtjs/eslint-config-typescript': 12.0.0_j4766f7ecgqbon3u7zlxn5zszu
-  '@nuxtjs/eslint-module': 4.0.2_p72rhxqnkxdgq5hcokxg4t4deu
-  '@nuxtjs/router': 1.7.0
-  '@nuxtjs/stylelint-module': 5.0.1_jzaunmzrh37r7h5mhskng4dkbu
-  '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
-  '@rushstack/eslint-patch': 1.2.0
-  '@types/mime-types': 2.1.1
-  '@types/node': 18.15.3
-  '@types/uuid': 9.0.1
-  '@vue/eslint-config-prettier': 7.1.0_a7sjvsbcgg5dveitgz3whbbski
-  '@vue/eslint-config-typescript': 11.0.2_cgv3ijhnmp44cwuqfct7aff4va
-  buffer: 6.0.3
-  commitlint: 17.4.4
-  consola: 2.15.3
-  eslint: 8.36.0
-  eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
-  eslint-plugin-vue: 9.9.0_eslint@8.36.0
-  eslint-plugin-vuetify: 1.1.0_ovpwsvu36lyv5jn6tzskmymuqm
-  husky: 8.0.3
-  lint-staged: 13.2.0
-  postcss-html: 1.5.0
-  prettier: 2.8.4
-  stylelint: 15.3.0
-  stylelint-config-recommended-vue: 1.4.0_o7z2z2yv565o3a3uaodintvte4
-  stylelint-config-standard: 31.0.0_stylelint@15.3.0
-  typescript: 5.0.2
-  vue-tsc: 1.2.0_typescript@5.0.2
-  webpack: 4.46.0
+  .:
+    specifiers:
+      '@babel/core': ~7.21.3
+      '@commitlint/cli': ~17.4.4
+      '@commitlint/config-conventional': ~17.4.4
+      '@mdi/js': ~7.2.96
+      '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27982868.cf7ca7b
+      '@nuxt/types': ~2.16.3
+      '@nuxtjs/eslint-config-typescript': ~12.0.0
+      '@nuxtjs/eslint-module': ~4.0.2
+      '@nuxtjs/router': ~1.7.0
+      '@nuxtjs/stylelint-module': ~5.0.1
+      '@nuxtjs/vuetify': ~1.12.3
+      '@pinia/nuxt': ~0.4.7
+      '@rushstack/eslint-patch': ~1.2.0
+      '@types/mime-types': ~2.1.1
+      '@types/node': ~18.15.3
+      '@types/uuid': ~9.0.1
+      '@vue/eslint-config-prettier': ~7.1.0
+      '@vue/eslint-config-typescript': ~11.0.2
+      '@yeger/vue2-masonry-wall': ~2.3.3
+      buffer: ~6.0.3
+      commitlint: ~17.4.4
+      consola: ~2.15.3
+      date-holidays: ~3.19.0
+      eslint: ~8.36.0
+      eslint-plugin-nuxt: ~4.0.0
+      eslint-plugin-vue: ~9.9.0
+      eslint-plugin-vuetify: ~1.1.0
+      husky: ~8.0.3
+      lint-staged: ~13.2.0
+      nuxt: ~2.16.3
+      pinia: ~2.0.33
+      postcss-html: ~1.5.0
+      prettier: ~2.8.4
+      stylelint: ~15.3.0
+      stylelint-config-recommended-vue: ~1.4.0
+      stylelint-config-standard: ~31.0.0
+      typescript: ~5.0.2
+      uuid: ~9.0.0
+      vue: ~2.7.14
+      vue-tsc: ~1.2.0
+      vuetify: ~2.6.14
+      webpack: ~4.46.0
+    dependencies:
+      '@pinia/nuxt': 0.4.7_ebc5ylquwea4x7zblxrr24u2de
+      '@yeger/vue2-masonry-wall': 2.3.3_vue@2.7.14
+      date-holidays: 3.19.0
+      nuxt: 2.16.3_gigk4hstk6d2tzykdigxc3jcj4
+      pinia: 2.0.33_ebc5ylquwea4x7zblxrr24u2de
+      uuid: 9.0.0
+      vue: 2.7.14
+      vuetify: 2.6.14_vue@2.7.14
+    devDependencies:
+      '@babel/core': 7.21.3
+      '@commitlint/cli': 17.4.4
+      '@commitlint/config-conventional': 17.4.4
+      '@mdi/js': 7.2.96
+      '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27982868.cf7ca7b_2szspiyt3i4fdvx3s4kpfjdhdq
+      '@nuxt/types': 2.16.3
+      '@nuxtjs/eslint-config-typescript': 12.0.0_j4766f7ecgqbon3u7zlxn5zszu
+      '@nuxtjs/eslint-module': 4.0.2_p72rhxqnkxdgq5hcokxg4t4deu
+      '@nuxtjs/router': 1.7.0
+      '@nuxtjs/stylelint-module': 5.0.1_jzaunmzrh37r7h5mhskng4dkbu
+      '@nuxtjs/vuetify': 1.12.3_vue@2.7.14+webpack@4.46.0
+      '@rushstack/eslint-patch': 1.2.0
+      '@types/mime-types': 2.1.1
+      '@types/node': 18.15.3
+      '@types/uuid': 9.0.1
+      '@vue/eslint-config-prettier': 7.1.0_a7sjvsbcgg5dveitgz3whbbski
+      '@vue/eslint-config-typescript': 11.0.2_cgv3ijhnmp44cwuqfct7aff4va
+      buffer: 6.0.3
+      commitlint: 17.4.4
+      consola: 2.15.3
+      eslint: 8.36.0
+      eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
+      eslint-plugin-vue: 9.9.0_eslint@8.36.0
+      eslint-plugin-vuetify: 1.1.0_ovpwsvu36lyv5jn6tzskmymuqm
+      husky: 8.0.3
+      lint-staged: 13.2.0
+      postcss-html: 1.5.0
+      prettier: 2.8.4
+      stylelint: 15.3.0
+      stylelint-config-recommended-vue: 1.4.0_o7z2z2yv565o3a3uaodintvte4
+      stylelint-config-standard: 31.0.0_stylelint@15.3.0
+      typescript: 5.0.2
+      vue-tsc: 1.2.0_typescript@5.0.2
+      webpack: 4.46.0
 
 packages:
 
@@ -2612,8 +2613,8 @@ packages:
       - supports-color
     dev: true
 
-  /@mdi/js/7.1.96:
-    resolution: {integrity: sha512-wlrJs6Ryhaa5CqhK3FjTfMRnb/s7HeLkKMFqwQySkK86cdN1TGdzpSM3O4tsmzCA1dYBeTbXvOwSE/Y42cUrvA==}
+  /@mdi/js/7.2.96:
+    resolution: {integrity: sha512-paR9M9ZT7rKbh2boksNUynuSZMHhqRYnEZOm/KrZTjQ4/FzyhjLHuvw/8XYzP+E7fS4+/Ms/82EN1pl/OFsiIA==}
     dev: true
 
   /@netlify/functions/1.4.0:
