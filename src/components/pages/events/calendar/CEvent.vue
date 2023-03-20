@@ -49,7 +49,6 @@ const selectedEvent = ref<Event>()
 const isEventMitgliederversammlung = computed(() => selectedEvent.value?.category === EEvent.Mitgliederversammlung)
 
 const getDate = (event: Event) => useDateTime().format(event?.start, event?.end, !event?.timed)
-// TODO nur event parameter ohne objekt kapselung?
 const showEvent = ({ event }: { event: Event }) => {
     selectedEvent.value = event
     isOpen.value = true

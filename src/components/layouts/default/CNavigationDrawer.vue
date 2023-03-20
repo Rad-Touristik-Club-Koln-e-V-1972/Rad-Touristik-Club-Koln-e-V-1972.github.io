@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" app bottom clipped style="max-width: 20em" :value="props.value" width="auto" @input="emitInput">
+    <v-navigation-drawer id="CNavigationDrawer" app bottom clipped style="max-width: 20em" :value="props.value" width="auto" @input="emitUpdate">
         <v-row class="ma-auto" :dense="!vuetify?.breakpoint.mobile">
             <v-col>
                 <c-countdown />
@@ -98,8 +98,8 @@ const navigationStore = useNavigationStore()
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
-const emitInput = (value: boolean) => {
-    emits('input', value)
+const emitUpdate = (modelValue: boolean) => {
+    emits('input', modelValue)
 }
 
 // TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531

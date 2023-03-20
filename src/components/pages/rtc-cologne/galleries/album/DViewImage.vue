@@ -1,5 +1,5 @@
-<!-- TODO WORKAROUND UNTIL VUETIFY GETS A NATIVE IMAGE GALLERY IN https://github.com/vuetifyjs/vuetify/issues/11177
-      OR USE https://github.com/sachinchoolur/lightgallery.js/ WITH VUE/NUXT 3 -->
+<!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support.
+      See https://github.com/vuetifyjs/vuetify/issues/11177 -->
 <template>
     <v-card id="DViewImage">
         <v-dialog v-model="isOpen" fullscreen persistent>

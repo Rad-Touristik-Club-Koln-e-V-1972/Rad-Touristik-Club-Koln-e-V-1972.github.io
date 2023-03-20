@@ -51,7 +51,8 @@
                     </v-tabs>
                     <v-tabs-items v-model="tabModelPictures" class="mt-1">
                         <v-tab-item v-for="(item, key) in value.images" :key="key" :value="`tab-${key}`">
-                            <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+                            <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support.
+                                  See https://github.com/vuetifyjs/vuetify/issues/11177 -->
                             <masonry-wall :column-width="280" :gap="16" :items="item">
                                 <template #default="{ index }">
                                     <d-view :start-index="index" :value="item" />
@@ -61,7 +62,8 @@
                     </v-tabs-items>
                 </v-tab-item>
                 <v-tab-item key="Videos" value="tab-Videos" class="mt-1">
-                    <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177 -->
+                    <!-- TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support.
+                          See https://github.com/vuetifyjs/vuetify/issues/11177 -->
                     <masonry-wall :column-width="vuetify?.breakpoint.mobile ? 280 : 560" :gap="16" :items="value.youtubeVideoIds">
                         <template #default="{ item }">
                             <iframe

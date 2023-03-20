@@ -1,5 +1,5 @@
 <template>
-    <v-text-field id="CSearch" :append-icon="icons.mdiMagnify" clearable hide-details label="Suche" :value="props.value" @input="emitInput" />
+    <v-text-field id="CSearch" :append-icon="icons.mdiMagnify" clearable hide-details label="Suche" :value="props.value" @input="emitUpdate" />
 </template>
 
 <script lang="ts" setup>
@@ -10,7 +10,7 @@ const props = defineProps<{ value?: string }>()
 
 const icons = { mdiMagnify }
 
-const emitInput = (value: string) => {
-    emits('input', value)
+const emitUpdate = (modelValue: string) => {
+    emits('input', modelValue)
 }
 </script>

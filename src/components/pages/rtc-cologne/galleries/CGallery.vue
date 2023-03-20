@@ -46,9 +46,7 @@ import useDateTime from '~/utils/DateTime'
 
 const props = defineProps({
     album: { default: '', type: String },
-    // TODO WORKAROUND replace "Object as PropType<Gallery>" by "Gallery" after "@typescript-eslint/parser" "v5.43.1" got released.
-    //  See https://github.com/typescript-eslint/typescript-eslint/issues/5688
-    value: { required: true, type: Object as PropType<Gallery> },
+    value: { required: true, type: Gallery },
 })
 
 const router = getCurrentInstance()?.proxy?.$router

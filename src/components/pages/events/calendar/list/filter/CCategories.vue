@@ -8,7 +8,7 @@
         label="Kategorien"
         multiple
         :value="props.value"
-        @input="emitInput"
+        @input="emitUpdate"
     />
 </template>
 
@@ -21,7 +21,7 @@ const props = defineProps<{ value: EEvent[] }>()
 
 const icons = { mdiFilter }
 
-const emitInput = (value: EEvent) => {
-    emits('input', value)
+const emitUpdate = (modelValue: EEvent) => {
+    emits('input', modelValue)
 }
 </script>
