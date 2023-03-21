@@ -38,7 +38,7 @@
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, nextTick, PropType, ref } from 'vue'
+import { getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
 import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
 import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
