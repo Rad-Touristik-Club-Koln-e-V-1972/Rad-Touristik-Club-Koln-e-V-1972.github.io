@@ -8,7 +8,7 @@ export const useSponsorStore = defineStore('sponsor', {
     },
     state: () => ({
         sponsors: [
-            // TODO Offline bis Genehmigung eingeholt wurde
+            // TODO Offline durch "setText" bis Genehmigung eingeholt wurde
             new SponsorBuilder()
                 .setId('08ba12dc-1ff3-4441-8146-c59ac929e8a6')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Alpecin.svg')
