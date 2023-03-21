@@ -22,6 +22,11 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setUrl('www.dextro-energy.com')
                 .build(),
             new SponsorBuilder()
+                .setId('5e644906-a8f6-4e30-8b2f-645216b587d8')
+                .setImageUrl('content.rtc-koeln.de/pages/sponsor/FlughafenKölnBonnGmbH.svg')
+                .setUrl('www.koeln-bonn-airport.de')
+                .build(),
+            new SponsorBuilder()
                 .setId('cf95576c-6bb4-407d-ba63-41673566a249')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Ford.webp')
                 .setText('Ford')
