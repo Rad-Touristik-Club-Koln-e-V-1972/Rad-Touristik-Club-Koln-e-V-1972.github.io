@@ -1,8 +1,9 @@
 import ABuilder from '~/models/builder/ABuilder'
-import EEvent from '~/models/enums/EEvent'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import PopupBuilder from '~/models/builder/PopupBuilder'
 import Tour from '~/models/entities/events/Tour'
 import Control from '~/models/entities/events/tours/Control'
+import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import EEvent from '~/models/enums/EEvent'
 
 export default class TourBuilder<T extends Tour> extends ABuilder {
     protected tour = new Tour()
@@ -37,6 +38,12 @@ export default class TourBuilder<T extends Tour> extends ABuilder {
 
     setLastChange(value: string): TourBuilder<T> {
         this.tour.lastChange = new Date(value)
+
+        return this
+    }
+
+    setPopup(text: string, title: string): TourBuilder<T> {
+        this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).build()
 
         return this
     }

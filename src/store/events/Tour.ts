@@ -169,7 +169,13 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
                         .build()
                 )
-                .setLastChange('2023-01-28')
+                .setLastChange('2023-03-22')
+                .setPopup(
+                    `Natürlich sind all unsere Strecken ausgeschildert.
+
+Euer RTC Köln e.V.`,
+                    'Hinweis'
+                )
                 .setText(
                     `Liebe Radsportlerinnen und Radsportler,
 
