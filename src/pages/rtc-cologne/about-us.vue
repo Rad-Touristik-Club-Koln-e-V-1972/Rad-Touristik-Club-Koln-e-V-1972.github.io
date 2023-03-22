@@ -48,7 +48,7 @@
 </template>
 
 <script lang="ts" setup>
-import CSlideshow from '~/components/CSlideshow.vue'
+import CSlideshow from '~/components/pages/CSlideshow.vue'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 const imageUrls = [

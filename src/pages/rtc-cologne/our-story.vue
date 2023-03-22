@@ -61,7 +61,7 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
-import CSlideshow from '~/components/CSlideshow.vue'
+import CSlideshow from '~/components/pages/CSlideshow.vue'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 import StartZiel from '~/store/rtc-cologne/gallery/2022/05_29_RTF_50/Start_Ziel'
 

@@ -40,7 +40,7 @@
 <script lang="ts" setup>
 import { getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
-import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
+import CLoadingSkeleton from '~/components/pages/CLoadingSkeleton.vue'
 import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from '~/utils/DateTime'
 

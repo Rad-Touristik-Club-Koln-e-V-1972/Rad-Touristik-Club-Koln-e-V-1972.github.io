@@ -29,7 +29,7 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import CSlideshow from '~/components/CSlideshow.vue'
+import CSlideshow from '~/components/pages/CSlideshow.vue'
 import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import EEvent from '~/models/enums/EEvent'
 import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'

@@ -25,8 +25,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiClose } from '@mdi/js'
-import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
-import CSlideshow from '~/components/CSlideshow.vue'
+import CLoadingSkeleton from '~/components/pages/CLoadingSkeleton.vue'
+import CSlideshow from '~/components/pages/CSlideshow.vue'
 import DViewImageOriginal from '~/components/pages/rtc-cologne/galleries/album/DViewImageOriginal.vue'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 

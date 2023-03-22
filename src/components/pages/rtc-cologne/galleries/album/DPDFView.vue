@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts" setup>
-import CLoadingSkeleton from '~/components/CLoadingSkeleton.vue'
+import CLoadingSkeleton from '~/components/pages/CLoadingSkeleton.vue'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{ value: GalleryEntry }>()
