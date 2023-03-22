@@ -23,7 +23,7 @@
             <v-btn text :to="{ name: 'imprint' }">Impressum</v-btn>
             <v-btn text :to="{ name: 'privacyandsecurity' }">Datenschutz</v-btn>
         </v-footer>
-        <d-popup />
+        <d-r-t-f-popup />
     </v-app>
 </template>
 
@@ -32,7 +32,7 @@ import { getCurrentInstance, ref } from 'vue'
 import { mdiCopyright } from '@mdi/js'
 import CAccessibility from '~/components/layouts/default/CAccessibility.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
-import DPopup from '~/components/layouts/default/DPopup.vue'
+import DRTFPopup from '~/components/layouts/default/DRTFPopup.vue'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
