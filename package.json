@@ -23,7 +23,7 @@
     },
     "devDependencies": {
         "@babel/core": "~7.21.3",
-        "@commitlint/cli": "~17.4.4",
+        "@commitlint/cli": "~17.5.0",
         "@commitlint/config-conventional": "~17.4.4",
         "@mdi/js": "~7.2.96",
         "@nuxt/bridge": "npm:@nuxt/bridge-edge@~3.0.0-27982868.cf7ca7b",
@@ -40,7 +40,7 @@
         "@vue/eslint-config-prettier": "~7.1.0",
         "@vue/eslint-config-typescript": "~11.0.2",
         "buffer": "~6.0.3",
-        "commitlint": "~17.4.4",
+        "commitlint": "~17.5.0",
         "consola": "~2.15.3",
         "eslint": "~8.36.0",
         "eslint-plugin-nuxt": "~4.0.0",
