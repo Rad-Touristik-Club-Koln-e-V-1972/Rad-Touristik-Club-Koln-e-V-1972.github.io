@@ -54,7 +54,6 @@ export const useSponsorStore = defineStore('sponsor', {
             new SponsorBuilder()
                 .setId('247e0334-aec4-408c-9637-2889b1e65998')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/RheinEnergie.svg')
-                .setText('RheinEnergie')
                 .setUrl('www.rheinenergie.com')
                 .build(),
             new SponsorBuilder()
