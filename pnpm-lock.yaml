@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@babel/core': ~7.21.3
-      '@commitlint/cli': ~17.5.0
+      '@commitlint/cli': ~17.5.1
       '@commitlint/config-conventional': ~17.4.4
       '@mdi/js': ~7.2.96
       '@nuxt/bridge': npm:@nuxt/bridge-edge@~3.0.0-27998567.a12a710
@@ -23,7 +23,7 @@ importers:
       '@vue/eslint-config-typescript': ~11.0.2
       '@yeger/vue2-masonry-wall': ~2.3.3
       buffer: ~6.0.3
-      commitlint: ~17.5.0
+      commitlint: ~17.5.1
       consola: ~2.15.3
       date-holidays: ~3.19.0
       eslint: ~8.36.0
@@ -50,7 +50,7 @@ importers:
       pinia: 2.0.33_ebc5ylquwea4x7zblxrr24u2de
     devDependencies:
       '@babel/core': 7.21.3
-      '@commitlint/cli': 17.5.0
+      '@commitlint/cli': 17.5.1
       '@commitlint/config-conventional': 17.4.4
       '@mdi/js': 7.2.96
       '@nuxt/bridge': /@nuxt/bridge-edge/3.0.0-27998567.a12a710_g2aixu3y22653gq23aqxz4rbta
@@ -67,7 +67,7 @@ importers:
       '@vue/eslint-config-prettier': 7.1.0_46eickiazn37rcnqccwnhqcaki
       '@vue/eslint-config-typescript': 11.0.2_lawzt7dmfqaotzbm75kfdoil5a
       buffer: 6.0.3
-      commitlint: 17.5.0
+      commitlint: 17.5.1
       consola: 2.15.3
       eslint: 8.36.0
       eslint-plugin-nuxt: 4.0.0_eslint@8.36.0
@@ -1328,15 +1328,15 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@commitlint/cli/17.5.0:
-    resolution: {integrity: sha512-yNW3+M7UM1ioK28LKTrryIVB5qGpXlEv8+rJQiWPMZNayy9/1XR5+lL8qBTNlgopYtZWWnIm5RETcAN29ZTL/A==}
+  /@commitlint/cli/17.5.1:
+    resolution: {integrity: sha512-pRRgGSzdHQHehxZbGA3qF6wVPyl+EEQgTe/t321rtMLFbuJ7nRj2waS17s/v5oEbyZtiY5S8PGB6XtEIm0I+Sg==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.4.4
       '@commitlint/lint': 17.4.4
       '@commitlint/load': 17.5.0
-      '@commitlint/read': 17.4.4
+      '@commitlint/read': 17.5.1
       '@commitlint/types': 17.4.4
       execa: 5.1.1
       lodash.isfunction: 3.0.9
@@ -1443,8 +1443,8 @@ packages:
       conventional-commits-parser: 3.2.4
     dev: true
 
-  /@commitlint/read/17.4.4:
-    resolution: {integrity: sha512-B2TvUMJKK+Svzs6eji23WXsRJ8PAD+orI44lVuVNsm5zmI7O8RSGJMvdEZEikiA4Vohfb+HevaPoWZ7PiFZ3zA==}
+  /@commitlint/read/17.5.1:
+    resolution: {integrity: sha512-7IhfvEvB//p9aYW09YVclHbdf1u7g7QhxeYW9ZHSO8Huzp8Rz7m05aCO1mFG7G8M+7yfFnXB5xOmG18brqQIBg==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/top-level': 17.4.0
@@ -5181,12 +5181,12 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /commitlint/17.5.0:
-    resolution: {integrity: sha512-uUDHN7WOUu3zBAGM/1rYGshT/f1HCwcnt3wFoKlVtzkGsb2OmAV5oCDkN1hlrbv6BUENM0wqrZjuwO1Q557Z2A==}
+  /commitlint/17.5.1:
+    resolution: {integrity: sha512-BmYX5GJrZFk/90Owlsoh7J38hbikK1AIE+j0MlU0U+Vns+JNHwOE+6jkU9UYEiyY9rrgrI50kx2thI3028FwGw==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 17.5.0
+      '@commitlint/cli': 17.5.1
       '@commitlint/types': 17.4.4
     transitivePeerDependencies:
       - '@swc/core'
