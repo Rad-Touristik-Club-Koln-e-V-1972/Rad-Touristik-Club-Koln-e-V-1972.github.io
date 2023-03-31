@@ -22,7 +22,7 @@
         "pinia": "~2.0.33"
     },
     "devDependencies": {
-        "@babel/core": "~7.21.3",
+        "@babel/core": "~7.21.4",
         "@commitlint/cli": "~17.5.1",
         "@commitlint/config-conventional": "~17.4.4",
         "@mdi/js": "~7.2.96",
