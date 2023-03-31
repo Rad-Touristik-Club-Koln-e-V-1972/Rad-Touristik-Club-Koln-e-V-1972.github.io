@@ -70,12 +70,6 @@ export const useSponsorStore = defineStore('sponsor', {
                 .build(),
             new SponsorBuilder().setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72').setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.jpg').setUrl('shop.sebamed.de').build(),
             new SponsorBuilder()
-                .setId('6b9af4ec-e138-41f8-bb82-c40be19c329f')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/Severin-Apotheke.gif')
-                .setText('Severin-Apotheke')
-                .setUrl('www.severin-apotheke-koeln.de')
-                .build(),
-            new SponsorBuilder()
                 .setId('011d89ca-8ed8-45d3-b625-df376d6931d5')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/VolksbankKölnBonneG.jpg')
                 .setUrl('www.volksbank-koeln-bonn.de')
