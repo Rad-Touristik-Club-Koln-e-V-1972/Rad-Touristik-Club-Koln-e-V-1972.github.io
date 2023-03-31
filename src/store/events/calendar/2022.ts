@@ -65,7 +65,7 @@ export default [
         .setDate('2022-05-01')
         .setId('c20b6404-2ade-4fbb-af65-ada7fc01e606')
         .setName('RTF Staubwolke Refrath')
-        .setUrl('rc-mistral.koeln')
+        .setUrl('staubwolke-refrath.de')
         .build(),
     new EventBuilder()
         .setAllDay(false)
