@@ -78,7 +78,6 @@ export const useSponsorStore = defineStore('sponsor', {
             new SponsorBuilder()
                 .setId('011d89ca-8ed8-45d3-b625-df376d6931d5')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/VolksbankKölnBonneG.jpg')
-                .setText('Volksbank Köln Bonn eG')
                 .setUrl('www.volksbank-koeln-bonn.de')
                 .build(),
         ],
