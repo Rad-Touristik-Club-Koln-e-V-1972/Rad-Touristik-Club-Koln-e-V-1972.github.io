@@ -13,11 +13,17 @@
                 <br />
                 <br />
                 <v-row dense>
-                    <v-col class="text-right">Tempo:</v-col>
+                    <v-col class="text-right" cols="2">Tempo:</v-col>
                     <v-col class="text-left">max. 20er Schnitt</v-col>
                 </v-row>
+                <v-row no-gutters>
+                    <v-col class="text-right" cols="2">
+                        <v-icon color="secondary" x-small left>{{ icons.mdiArrowRightBottom }}</v-icon>
+                    </v-col>
+                    <v-col class="text-left">Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</v-col>
+                </v-row>
                 <v-row dense>
-                    <v-col class="text-right">Startzeiten:</v-col>
+                    <v-col class="text-right" cols="2">Startzeiten:</v-col>
                     <v-col class="text-left">8 Uhr und ca. 11 Uhr</v-col>
                 </v-row>
                 <br />
@@ -39,11 +45,13 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { mdiArrowRightBottom } from '@mdi/js'
 import { useCalendarStore } from '~/store/events/Calendar'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()
 
+const icons = { mdiArrowRightBottom }
 const dialog = ref(true)
 const nextRTF = useCalendarStore().nextRTF()
 </script>

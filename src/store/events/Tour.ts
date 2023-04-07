@@ -38,8 +38,13 @@ export const useTourStore = defineStore('tour', {
                             `Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
 
 <ul style="white-space: normal">
-    <li>Tempo: max. 20er Schnitt</li>
-    <li>Startzeiten: 8 Uhr und ca. 11 Uhr</li>
+  <li>
+    Tempo: max. 20er Schnitt
+    <ul style="white-space: normal">
+      <li>Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</li>
+    </ul>
+  </li>
+  <li>Startzeiten: 8 Uhr und ca. 11 Uhr</li>
 </ul>`
                         )
                         .build(),
@@ -169,7 +174,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
                         .build()
                 )
-                .setLastChange('2023-03-22')
+                .setLastChange('2023-04-07')
                 .setPopup(
                     `Natürlich sind all unsere Strecken ausgeschildert.
 
