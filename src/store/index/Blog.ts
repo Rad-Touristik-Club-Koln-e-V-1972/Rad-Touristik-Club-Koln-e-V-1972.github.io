@@ -10,6 +10,25 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['7c66e8f8-2dbd-4af8-9641-65ea0dd69484'])
+                    .setDate('2023-04-09')
+                    .setId('71913d41-1356-4e47-9560-cb267b0e6f14')
+                    .setText(
+                        `Der RTC Köln e.V. bietet im Sommer eine geführte Genuss-Tour an die Mosel an.
+
+Wir bieten
+🔝Wunderschöne Strecke - ca. 170 km
+🔝 Köln - Eifel - Ahr - Mosel
+🔝 Ca. 2000 Hm - anspruchsvolle Topografie
+🔝 Langsames Tempo mit Pausen - wir lassen uns den ganzen Tag Zeit für die Tour
+🔝 Verpflegung TO GO (Begleitfahrzeug)
+🔝 Gepäcktransport (…)
+
+➡️ Mehr Infos demnächst hier und auf unserer Forsbachtour am 28. Mai 2023 🎉`
+                    )
+                    .setTitle('➡️ LUST AUF WAS NEUES? 🚴‍♀️')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['db15854a-bfad-486d-9a6d-916946b4050b'])
                     .setDate('2023-03-17')
                     .setId('6ceefc9d-5b41-494e-adb2-112a17de8e8f')
