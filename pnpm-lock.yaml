@@ -41,7 +41,7 @@ devDependencies:
     version: 1.7.0
   '@nuxtjs/stylelint-module':
     specifier: ~5.0.1
-    version: 5.0.1(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.4.0)(vite@4.2.1)(webpack@4.46.0)
+    version: 5.0.1(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.5.0)(vite@4.2.1)(webpack@4.46.0)
   '@nuxtjs/vuetify':
     specifier: ~1.12.3
     version: 1.12.3(vue@2.7.14)(webpack@4.46.0)
@@ -100,14 +100,14 @@ devDependencies:
     specifier: ~2.8.7
     version: 2.8.7
   stylelint:
-    specifier: ~15.4.0
-    version: 15.4.0
+    specifier: ~15.5.0
+    version: 15.5.0
   stylelint-config-recommended-vue:
     specifier: ~1.4.0
-    version: 1.4.0(postcss-html@1.5.0)(stylelint@15.4.0)
+    version: 1.4.0(postcss-html@1.5.0)(stylelint@15.5.0)
   stylelint-config-standard:
     specifier: ~32.0.0
-    version: 32.0.0(stylelint@15.4.0)
+    version: 32.0.0(stylelint@15.5.0)
   typescript:
     specifier: ~5.0.4
     version: 5.0.4
@@ -2955,15 +2955,15 @@ packages:
       defu: 5.0.1
     dev: true
 
-  /@nuxtjs/stylelint-module@5.0.1(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.4.0)(vite@4.2.1)(webpack@4.46.0):
+  /@nuxtjs/stylelint-module@5.0.1(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.5.0)(vite@4.2.1)(webpack@4.46.0):
     resolution: {integrity: sha512-oEtbFazgJaEEeTjuLS43HUNRChfexmAj4AX5FoSz03gO+K9371hnT8akU3N9/QU2an+cXQbNj8ATqyy1XasTOw==}
     peerDependencies:
       stylelint: '>=13'
     dependencies:
       '@nuxt/kit': 3.3.2(rollup@3.20.2)
-      stylelint: 15.4.0
-      stylelint-webpack-plugin: 4.1.0(stylelint@15.4.0)(webpack@4.46.0)
-      vite-plugin-stylelint: 4.3.0(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.4.0)(vite@4.2.1)
+      stylelint: 15.5.0
+      stylelint-webpack-plugin: 4.1.0(stylelint@15.5.0)(webpack@4.46.0)
+      vite-plugin-stylelint: 4.3.0(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.5.0)(vite@4.2.1)
     transitivePeerDependencies:
       - '@types/stylelint'
       - postcss
@@ -7838,8 +7838,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /html-tags@3.2.0:
-    resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
+  /html-tags@3.3.1:
+    resolution: {integrity: sha512-ztqyC3kLto0e9WbNp0aeP+M3kTt+nbaIveGmUxAtZa+8iFgKLUOD4YKM5j+f3QD89bra7UeumolZHKuOXnTmeQ==}
     engines: {node: '>=8'}
     dev: true
 
@@ -12210,7 +12210,7 @@ packages:
       postcss-selector-parser: 6.0.11
     dev: true
 
-  /stylelint-config-html@1.1.0(postcss-html@1.5.0)(stylelint@15.4.0):
+  /stylelint-config-html@1.1.0(postcss-html@1.5.0)(stylelint@15.5.0):
     resolution: {integrity: sha512-IZv4IVESjKLumUGi+HWeb7skgO6/g4VMuAYrJdlqQFndgbj6WJAXPhaysvBiXefX79upBdQVumgYcdd17gCpjQ==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12218,10 +12218,10 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.4.0
+      stylelint: 15.5.0
     dev: true
 
-  /stylelint-config-recommended-vue@1.4.0(postcss-html@1.5.0)(stylelint@15.4.0):
+  /stylelint-config-recommended-vue@1.4.0(postcss-html@1.5.0)(stylelint@15.5.0):
     resolution: {integrity: sha512-DVJqyX2KvMCn9U0+keL12r7xlsH26K4Vg8NrIZuq5MoF7g82DpMp326Om4E0Q+Il1o+bTHuUyejf2XAI0iD04Q==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -12230,29 +12230,29 @@ packages:
     dependencies:
       postcss-html: 1.5.0
       semver: 7.3.8
-      stylelint: 15.4.0
-      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.4.0)
-      stylelint-config-recommended: 11.0.0(stylelint@15.4.0)
+      stylelint: 15.5.0
+      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.5.0)
+      stylelint-config-recommended: 11.0.0(stylelint@15.5.0)
     dev: true
 
-  /stylelint-config-recommended@11.0.0(stylelint@15.4.0):
+  /stylelint-config-recommended@11.0.0(stylelint@15.5.0):
     resolution: {integrity: sha512-SoGIHNI748OCZn6BxFYT83ytWoYETCINVHV3LKScVAWQQauWdvmdDqJC5YXWjpBbxg2E761Tg5aUGKLFOVhEkA==}
     peerDependencies:
       stylelint: ^15.3.0
     dependencies:
-      stylelint: 15.4.0
+      stylelint: 15.5.0
     dev: true
 
-  /stylelint-config-standard@32.0.0(stylelint@15.4.0):
+  /stylelint-config-standard@32.0.0(stylelint@15.5.0):
     resolution: {integrity: sha512-UnGJxYDyYFrIE9CjDMZRkrNh2o4lOtO+MVZ9qG5b8yARfsWho0GMx4YvhHfsv8zKKgHeWX2wfeyxmuoqcaYZ4w==}
     peerDependencies:
       stylelint: ^15.4.0
     dependencies:
-      stylelint: 15.4.0
-      stylelint-config-recommended: 11.0.0(stylelint@15.4.0)
+      stylelint: 15.5.0
+      stylelint-config-recommended: 11.0.0(stylelint@15.5.0)
     dev: true
 
-  /stylelint-webpack-plugin@4.1.0(stylelint@15.4.0)(webpack@4.46.0):
+  /stylelint-webpack-plugin@4.1.0(stylelint@15.5.0)(webpack@4.46.0):
     resolution: {integrity: sha512-Vm8H2uYflIiF9m4BjSBEn9cpqY2zZ0wDHgBxOVM6aWFDd0FvfNoymrSYYOIG5/ZST0NO/0NCXPWcpRVpv79Uew==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -12264,12 +12264,12 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       schema-utils: 4.0.0
-      stylelint: 15.4.0
+      stylelint: 15.5.0
       webpack: 4.46.0
     dev: true
 
-  /stylelint@15.4.0:
-    resolution: {integrity: sha512-TlOvpG3MbcFwHmK0q2ykhmpKo7Dq892beJit0NPdpyY9b1tFah/hGhqnAz/bRm2PDhDbJLKvjzkEYYBEz7Dxcg==}
+  /stylelint@15.5.0:
+    resolution: {integrity: sha512-jyMO3R1QtE5mUS4v40+Gg+sIQBqe7CF1xPslxycDzNVkIBCUD4O+5F1vLPq16VmunUTv4qG9o2rUKLnU5KkVeQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -12289,7 +12289,7 @@ packages:
       global-modules: 2.0.0
       globby: 11.1.0
       globjoin: 0.1.4
-      html-tags: 3.2.0
+      html-tags: 3.3.1
       ignore: 5.2.4
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
@@ -13110,7 +13110,7 @@ packages:
       vite: 4.2.1(@types/node@18.15.11)(terser@5.16.8)
     dev: true
 
-  /vite-plugin-stylelint@4.3.0(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.4.0)(vite@4.2.1):
+  /vite-plugin-stylelint@4.3.0(postcss@8.4.21)(rollup@3.20.2)(stylelint@15.5.0)(vite@4.2.1):
     resolution: {integrity: sha512-S8BONq5X8TndOFt+My4lkeHxVZvkDQRL++TV0nvnuYgOU/CvDddPPOT4V6go+ETzWK0NEtXqCGFnpkmm8c8Xcg==}
     engines: {node: '>=14.18'}
     peerDependencies:
@@ -13131,7 +13131,7 @@ packages:
       chokidar: 3.5.3
       postcss: 8.4.21
       rollup: 3.20.2
-      stylelint: 15.4.0
+      stylelint: 15.5.0
       vite: 4.2.1(@types/node@18.15.11)(terser@5.16.8)
     dev: true
 
