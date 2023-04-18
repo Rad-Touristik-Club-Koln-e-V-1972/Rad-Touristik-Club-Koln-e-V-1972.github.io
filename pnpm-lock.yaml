@@ -70,8 +70,8 @@ devDependencies:
     specifier: ~17.6.1
     version: 17.6.1
   consola:
-    specifier: ~3.0.2
-    version: 3.0.2
+    specifier: ~3.1.0
+    version: 3.1.0
   eslint:
     specifier: ~8.38.0
     version: 8.38.0
@@ -92,7 +92,7 @@ devDependencies:
     version: 13.2.1
   nuxt:
     specifier: ~2.16.3
-    version: 2.16.3(buffer@6.0.3)(consola@3.0.2)(typescript@5.0.4)(vue@2.7.14)
+    version: 2.16.3(buffer@6.0.3)(consola@3.1.0)(typescript@5.0.4)(vue@2.7.14)
   postcss-html:
     specifier: ~1.5.0
     version: 1.5.0
@@ -2485,14 +2485,14 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/components@2.2.1(consola@3.0.2):
+  /@nuxt/components@2.2.1(consola@3.1.0):
     resolution: {integrity: sha512-r1LHUzifvheTnJtYrMuA+apgsrEJbxcgFKIimeXKb+jl8TnPWdV3egmrxBCaDJchrtY/wmHyP47tunsft7AWwg==}
     peerDependencies:
       consola: '*'
     dependencies:
       chalk: 4.1.2
       chokidar: 3.5.3
-      consola: 3.0.2
+      consola: 3.1.0
       glob: 7.2.3
       globby: 11.1.0
       scule: 0.2.1
@@ -5295,8 +5295,8 @@ packages:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: true
 
-  /consola@3.0.2:
-    resolution: {integrity: sha512-o/Wau2FmZKiQgyp3c3IULgN6J5yc0lwYMnoyiZdEpdGxKGBtt2ACbkulBZ6BUsHy1HlSJqoP4YOyPIJLgRJyKQ==}
+  /consola@3.1.0:
+    resolution: {integrity: sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==}
     dev: true
 
   /console-browserify@1.2.0:
@@ -9664,7 +9664,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /nuxt@2.16.3(buffer@6.0.3)(consola@3.0.2)(typescript@5.0.4)(vue@2.7.14):
+  /nuxt@2.16.3(buffer@6.0.3)(consola@3.1.0)(typescript@5.0.4)(vue@2.7.14):
     resolution: {integrity: sha512-KfqOwtsgo2vew+mHNTQZOf23SlUYYnppH65Rj7whmbXJ+J28Rdvx8ccTj0Mir13TVpjUMtxYBq9VWAL6cFZyOA==}
     hasBin: true
     requiresBuild: true
@@ -9672,7 +9672,7 @@ packages:
       '@nuxt/babel-preset-app': 2.16.3(vue@2.7.14)
       '@nuxt/builder': 2.16.3(typescript@5.0.4)(vue@2.7.14)
       '@nuxt/cli': 2.16.3(buffer@6.0.3)
-      '@nuxt/components': 2.2.1(consola@3.0.2)
+      '@nuxt/components': 2.2.1(consola@3.1.0)
       '@nuxt/config': 2.16.3
       '@nuxt/core': 2.16.3
       '@nuxt/generator': 2.16.3
