@@ -19,7 +19,7 @@
     "dependencies": {
         "@yeger/vue2-masonry-wall": "~2.3.3",
         "date-holidays": "~3.19.0",
-        "pinia": "~2.0.34"
+        "pinia": "~2.0.35"
     },
     "devDependencies": {
         "@babel/core": "~7.21.4",
