@@ -46,8 +46,8 @@ devDependencies:
     specifier: ~1.12.3
     version: 1.12.3(vue@2.7.14)(webpack@4.46.0)
   '@pinia/nuxt':
-    specifier: ~0.4.8
-    version: 0.4.8(rollup@3.20.2)(typescript@5.0.4)(vue@2.7.14)
+    specifier: ~0.4.9
+    version: 0.4.9(rollup@3.20.2)(typescript@5.0.4)(vue@2.7.14)
   '@rushstack/eslint-patch':
     specifier: ~1.2.0
     version: 1.2.0
@@ -2999,11 +2999,11 @@ packages:
       stack-trace: 0.0.10
     dev: true
 
-  /@pinia/nuxt@0.4.8(rollup@3.20.2)(typescript@5.0.4)(vue@2.7.14):
-    resolution: {integrity: sha512-E0HKmW+6Ec5HYzomZl86xil2rGPRAqKG1d+slVVLBHC7PFZOM0VIw/1XFO9hwo+EiCuDEXZDReZwTqO7KQsMgQ==}
+  /@pinia/nuxt@0.4.9(rollup@3.20.2)(typescript@5.0.4)(vue@2.7.14):
+    resolution: {integrity: sha512-ojzUMHKrQ7ZFjhWqMYKYetcqHSfgtIhjc6Hxw4alfQaGTlFdj38Vpz8Ol36YvmNdSjLFTNWYAgxEWCvg6HcSSg==}
     dependencies:
       '@nuxt/kit': 3.3.2(rollup@3.20.2)
-      pinia: 2.0.34(typescript@5.0.4)(vue@2.7.14)
+      pinia: 2.0.35(typescript@5.0.4)(vue@2.7.14)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -10174,6 +10174,25 @@ packages:
       typescript: 5.0.4
       vue: 2.7.14
       vue-demi: 0.13.11(vue@2.7.14)
+    dev: false
+
+  /pinia@2.0.35(typescript@5.0.4)(vue@2.7.14):
+    resolution: {integrity: sha512-P1IKKQWhxGXiiZ3atOaNI75bYlFUbRxtJdhPLX059Z7+b9Z04rnTZdSY8Aph1LA+/4QEMAYHsTQ638Wfe+6K5g==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+      typescript: 5.0.4
+      vue: 2.7.14
+      vue-demi: 0.13.11(vue@2.7.14)
+    dev: true
 
   /pkg-dir@3.0.0:
     resolution: {integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==}
