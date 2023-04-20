@@ -8,8 +8,8 @@ dependencies:
     specifier: ~3.19.0
     version: 3.19.0
   pinia:
-    specifier: ~2.0.34
-    version: 2.0.34(typescript@5.0.4)(vue@2.7.14)
+    specifier: ~2.0.35
+    version: 2.0.35(typescript@5.0.4)(vue@2.7.14)
 
 devDependencies:
   '@babel/core':
@@ -10158,24 +10158,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /pinia@2.0.34(typescript@5.0.4)(vue@2.7.14):
-    resolution: {integrity: sha512-cgOoGUiyqX0SSgX8XelK9+Ri4XA2/YyNtgjogwfzIx1g7iZTaZPxm7/bZYMCLU2qHRiHhxG7SuQO0eBacFNc2Q==}
-    peerDependencies:
-      '@vue/composition-api': ^1.4.0
-      typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      typescript: 5.0.4
-      vue: 2.7.14
-      vue-demi: 0.13.11(vue@2.7.14)
-    dev: false
-
   /pinia@2.0.35(typescript@5.0.4)(vue@2.7.14):
     resolution: {integrity: sha512-P1IKKQWhxGXiiZ3atOaNI75bYlFUbRxtJdhPLX059Z7+b9Z04rnTZdSY8Aph1LA+/4QEMAYHsTQ638Wfe+6K5g==}
     peerDependencies:
@@ -10192,7 +10174,6 @@ packages:
       typescript: 5.0.4
       vue: 2.7.14
       vue-demi: 0.13.11(vue@2.7.14)
-    dev: true
 
   /pkg-dir@3.0.0:
     resolution: {integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==}
