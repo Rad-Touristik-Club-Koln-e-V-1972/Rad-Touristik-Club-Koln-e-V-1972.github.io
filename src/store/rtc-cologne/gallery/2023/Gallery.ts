@@ -8,8 +8,10 @@ import _20230211JeckImDreckCTF from '~/store/rtc-cologne/gallery/2023/02_11_Jeck
 import _20230303Generationenwechsel from '~/store/rtc-cologne/gallery/2023/03_03_Generationenwechsel'
 import _20230317FruehlingsfahrtNachLindlar from '~/store/rtc-cologne/gallery/2023/03_17_Fruehlingsfahrt_nach_Lindlar'
 import _20230409LustAufWasNeues from '~/store/rtc-cologne/gallery/2023/04_09_Lust_auf_was_Neues'
+import _20230416KenntIhrSchonDasBergischeKarussell from '~/store/rtc-cologne/gallery/2023/04_16_Kennt_Ihr_schon_das_Bergische_Karussell'
 
 export default [
+    _20230416KenntIhrSchonDasBergischeKarussell,
     _20230409LustAufWasNeues,
     _20230317FruehlingsfahrtNachLindlar,
     _20230303Generationenwechsel,

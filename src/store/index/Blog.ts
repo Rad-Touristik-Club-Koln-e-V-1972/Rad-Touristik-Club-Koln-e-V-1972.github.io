@@ -10,6 +10,21 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['2d739f34-e77d-4bff-93dd-d7ebcf7f2a2c'])
+                    .setDate('2023-04-16')
+                    .setId('086b91b9-8f03-43d1-a7a7-bd39f4a98018')
+                    .setText(
+                        `Das ist die landschaftlich sehr schöne Permanente von uns. 👍
+Unser Sportwart, Klaus Dünkelmann, hatte heute zu dieser Tour eingeladen. 🤗
+Beim Start gab es sogar schon den Anmelde-QR-Code. 👍
+Zu siebt fuhren wir nach Lindlar (ins Café) und zurück.
+Mit An- und Anreise hatte so mancher 86 km mit 720 Hm auf dem Tacho.
+Schön war‘s.
+🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️`
+                    )
+                    .setTitle('🤔 Kennt Ihr schon das Bergische Karussell?')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['7c66e8f8-2dbd-4af8-9641-65ea0dd69484'])
                     .setDate('2023-04-09')
                     .setId('71913d41-1356-4e47-9560-cb267b0e6f14')
