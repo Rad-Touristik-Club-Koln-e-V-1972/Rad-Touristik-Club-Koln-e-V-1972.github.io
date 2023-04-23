@@ -3,6 +3,7 @@ import {
     mdiBikeFast,
     mdiCalendarAlert,
     mdiCalendarClockOutline,
+    mdiCurrencyEur,
     mdiDomain,
     mdiFacebook,
     mdiGithub,
@@ -149,6 +150,7 @@ export const useNavigationStore = defineStore('navigation', {
                     .setId('4fa2ef6c-b1ce-4690-9f60-36c76656840d')
                     .setTitle('Der RTC Köln')
                     .build(),
+                new NavigationBuilder().setIcon(mdiCurrencyEur).setId('b7aa63ac-1e9a-44f3-80f6-4c2a8df8928b').setTitle('Sponsoren').setTo('sponsors').build(),
             ],
             socialMedias: [
                 new NavigationBuilder().setColor('indigo').setIcon(mdiFacebook).setId('53558cbf-2289-4fba-9990-aee4fb7b336d').setUrl('www.facebook.com/RTC.Koeln').build(),

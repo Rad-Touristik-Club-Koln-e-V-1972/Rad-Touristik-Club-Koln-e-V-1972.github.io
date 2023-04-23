@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer id="CNavigationDrawer" app bottom clipped style="max-width: 20em" :value="props.value" width="auto" @input="emitUpdate">
+    <v-navigation-drawer id="CNavigationDrawer" app bottom clipped :value="props.value" width="auto" @input="emitUpdate">
         <v-row class="ma-auto" :dense="!vuetify?.breakpoint.mobile">
             <v-col>
                 <c-countdown />
@@ -63,9 +63,6 @@
             </v-col>
         </v-row>
         <v-row no-gutters>
-            <v-col><c-sponsors /></v-col>
-        </v-row>
-        <v-row no-gutters>
             <v-col>
                 <v-card flat>
                     <v-card-title class="justify-center">Folge uns auf</v-card-title>
@@ -89,7 +86,6 @@
 import { getCurrentInstance, ref } from 'vue'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
 import { useNavigationStore } from '~/store/Navigation'
-import CSponsors from '~/components/layouts/default/CSponsors.vue'
 
 const emits = defineEmits<{ (e: 'input', value: boolean): void }>()
 const props = defineProps<{ value: boolean }>()
