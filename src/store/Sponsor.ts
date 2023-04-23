@@ -8,7 +8,6 @@ export const useSponsorStore = defineStore('sponsor', {
     },
     state: () => ({
         sponsors: [
-            // TODO Offline durch "setText" bis Genehmigung eingeholt wurde
             new SponsorBuilder()
                 .setId('08ba12dc-1ff3-4441-8146-c59ac929e8a6')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/Alpecin.svg')
@@ -16,20 +15,9 @@ export const useSponsorStore = defineStore('sponsor', {
                 .build(),
             new SponsorBuilder().setId('fe512d84-b4df-434a-8cde-ef6b240022a4').setImageUrl('content.rtc-koeln.de/pages/sponsor/ConneX.svg').setUrl('www.connexchain.com').build(),
             new SponsorBuilder()
-                .setId('f17dfdeb-b949-41cc-9230-b558bcc41760')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/DextroEnergy.png')
-                .setUrl('www.dextro-energy.com')
-                .build(),
-            new SponsorBuilder()
                 .setId('5e644906-a8f6-4e30-8b2f-645216b587d8')
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/FlughafenKölnBonnGmbH.svg')
                 .setUrl('www.koeln-bonn-airport.de')
-                .build(),
-            new SponsorBuilder()
-                .setId('cf95576c-6bb4-407d-ba63-41673566a249')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/Ford.webp')
-                .setText('Ford')
-                .setUrl('www.ford.de')
                 .build(),
             new SponsorBuilder().setId('ce3f1eeb-7f0c-4ec0-b72c-0a7c68372091').setImageUrl('content.rtc-koeln.de/pages/sponsor/Garmin.svg').setUrl('www.garmin.com').build(),
             new SponsorBuilder()
@@ -44,12 +32,7 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/RheinEnergie.svg')
                 .setUrl('www.rheinenergie.com')
                 .build(),
-            new SponsorBuilder()
-                .setId('ef52759c-48ec-42d9-91e4-0dc56c4ef646')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/RoadBike.jpg')
-                .setText('Roadbike')
-                .setUrl('www.roadbike.de')
-                .build(),
+            new SponsorBuilder().setId('ef52759c-48ec-42d9-91e4-0dc56c4ef646').setImageUrl('content.rtc-koeln.de/pages/sponsor/RoadBike.jpg').setUrl('www.roadbike.de').build(),
             new SponsorBuilder().setId('748dc3ab-a086-46f2-a754-8d950f7aef9b').setImageUrl('content.rtc-koeln.de/pages/sponsor/RoseBikes.svg').setUrl('www.rosebikes.de').build(),
             new SponsorBuilder().setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72').setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.jpg').setUrl('shop.sebamed.de').build(),
             new SponsorBuilder()
