@@ -1,5 +1,5 @@
 <template>
-    <v-carousel id="CSponsors" cycle hide-delimiters height="100%" interval="6000" :show-arrows="false">
+    <v-carousel id="CSponsors" cycle hide-delimiters height="100%" interval="3000" :show-arrows="false">
         <v-carousel-item v-for="it in useSponsorStore().all" :key="it.id">
             <v-card flat height="16em" :href="it.url?.toString()" target="_blank" tile>
                 <v-row class="align-center fill-height justify-center" no-gutters>
