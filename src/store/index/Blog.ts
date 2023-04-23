@@ -10,6 +10,25 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['d75f2e09-17d6-48bc-b640-1431ca581f74'])
+                    .setDate('2023-04-22')
+                    .setId('2e681f00-55ec-47c0-a1d9-0dc386c44ee1')
+                    .setText(
+                        `Unsere erste Marathoni in 2023 heißt Burghild 🎉💪🎉
+HERZLICHEN GLÜCKWUNSCH vom RTC Köln e.V.!
+
+Am 22.4.23 machte unsere Geschäftsführerin ihren Traum wahr und fuhr zu Brandenburgs größtem Radlerfest: dem Spreewaldmarathon.
+
+Es ist ein besonderes Erlebnis und ein Muss für jeden Freund des Radfahrens, so die Werbung des Vereins. Und das bestätigt Burghild:
+„Es ging  um die goldene Gurke und es ging über 200 km durchs wenig hügelige Brandenburg, immer auf dem großen Blatt. Es war meist sehr guter Asphalt und wenig Verkehr. Passt 👍.“
+
+Im Ziel gab es die berühmte Gurkenmedaille und die persönliche Urkunde.
+
+TOLLE LEISTUNG!👍`
+                    )
+                    .setTitle('Unsere erste Marathoni in 2023')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['2d739f34-e77d-4bff-93dd-d7ebcf7f2a2c'])
                     .setDate('2023-04-16')
                     .setId('086b91b9-8f03-43d1-a7a7-bd39f4a98018')
