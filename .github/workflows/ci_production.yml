@@ -1,8 +1,8 @@
 name: CI Production
 on:
     push:
-        tags:
-            - '*'
+        branches:
+            - release
 jobs:
     ci_prod:
         runs-on: ubuntu-latest
