@@ -3,9 +3,9 @@
         <v-app-bar app class="border" clipped-left color="accent" flat>
             <v-app-bar-nav-icon @click.stop="navDrawer = !navDrawer" />
             <!--TODO WORKAROUND for  https://github.com/vuetifyjs/vuetify/issues/13455. Replace v-app-bar-title with v-toolbar-title.-->
-            <v-toolbar-title class="text-center" style="width: 100%">
-                <span class="accessibility font-weight-bold text-sm-h5 text-md-h4 text-subtitle-1" v-text="'Herzlich willkommen beim'" />
-                <span class="accessibility font-weight-bold text-sm-h4 text-md-h3 text-h6">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
+            <v-toolbar-title class="accessibility text-center text-sm-h4 text-md-h3 text-h6" style="width: 100%">
+                Herzlich willkommen beim
+                <span class="font-weight-bold">RTC Köln e.V. <span class="primary--text" v-text="1972" /></span>
             </v-toolbar-title>
             <c-accessibility />
         </v-app-bar>
