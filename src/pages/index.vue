@@ -13,6 +13,14 @@
                             <v-timeline-item v-for="it in value" :key="it.id">
                                 <template #opposite>
                                     <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.start, it.end, true)" />
+                                    <div v-if="Object.keys(it.albumIDs).length">
+                                        <c-gallery
+                                            v-for="gallery in galleryStore.findByIds(...Object.keys(it.albumIDs))"
+                                            :key="gallery.id"
+                                            :value="gallery"
+                                            :album="it.albumIDs[gallery.id]"
+                                        />
+                                    </div>
                                 </template>
                                 <v-card max-width="40em">
                                     <v-toolbar color="primary" flat>
@@ -21,7 +29,7 @@
                                     <v-card-text>
                                         <span class="black--text text-pre-wrap" v-html="it.text" />
                                     </v-card-text>
-                                    <v-card-actions v-if="Object.keys(it.albumIDs).length" class="justify-center">
+                                    <v-card-actions v-if="vuetify?.breakpoint.mobile && Object.keys(it.albumIDs).length" class="justify-center">
                                         <c-gallery
                                             v-for="gallery in galleryStore.findByIds(...Object.keys(it.albumIDs))"
                                             :key="gallery.id"
