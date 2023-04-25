@@ -14,7 +14,7 @@
             <Nuxt />
         </v-main>
         <v-footer app class="accent border text-caption text-sm-body-2 text-xl-h6">
-            <v-row v-if="!vuetify?.breakpoint.mobile" class="justify-center" dense>
+            <v-row v-if="!vuetify?.breakpoint.mobile" class="justify-center" dense style="width: 100%">
                 <v-col v-for="it in useSponsorStore().all" :key="it.id" cols="auto">
                     <v-card flat :href="it.url?.toString()" target="_blank" tile>
                         <v-img contain height="36px" :src="it.imageUrl?.toString()" width="100px" />
