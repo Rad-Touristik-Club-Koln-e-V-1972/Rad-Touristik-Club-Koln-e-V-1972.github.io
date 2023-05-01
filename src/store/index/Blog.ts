@@ -10,6 +10,24 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['220b9dc9-8845-4976-8206-df382373d031'])
+                    .setDate('2023-05-01')
+                    .setId('c3128ff8-d197-4294-abf1-860ab306444d')
+                    .setText(
+                        `Für den RTC Köln e.V. stand die RTF der Refrather auf dem Trainingsplan.
+Und die hatte es in sich: Viele Höhenmeter und 1048❗️Radportler:innen. 💪👍
+Es gibt sie also doch noch, die RTF-Szene. 🥳
+
+Schön war‘s heute:
+Wegen der RTF und den tollen Veranstaltern, wegen den schönen Strecken, wegen der Anstiege und Abfahrten, wegen dem sonnigen Wetter - aber vor allem wegen uns allen. ❤️
+
+🔜 Wer noch so eine tolle RTF fahren möchte, sollte sich unsere Forsbachtour am 28. Mai nicht entgehen lassen. 👍👍🚴‍♂️🚴‍♀️🚴
+Es gibt tolle Überraschungen und allerlei Neues.
+Und natürlich die selbstgebackenen Power-Reisriegel. 💪`
+                    )
+                    .setTitle('1. Mai: Von wegen dicker Kopf vom Reinfeiern')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['d75f2e09-17d6-48bc-b640-1431ca581f74'])
                     .setDate('2023-04-22')
                     .setId('2e681f00-55ec-47c0-a1d9-0dc386c44ee1')

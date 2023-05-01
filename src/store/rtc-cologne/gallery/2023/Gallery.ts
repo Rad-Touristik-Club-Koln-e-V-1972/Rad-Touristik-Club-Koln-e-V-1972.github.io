@@ -10,8 +10,10 @@ import _20230317FruehlingsfahrtNachLindlar from '~/store/rtc-cologne/gallery/202
 import _20230409LustAufWasNeues from '~/store/rtc-cologne/gallery/2023/04_09_Lust_auf_was_Neues'
 import _20230416KenntIhrSchonDasBergischeKarussell from '~/store/rtc-cologne/gallery/2023/04_16_Kennt_Ihr_schon_das_Bergische_Karussell'
 import _20230422UnsereErsteMarathoniIn2023 from '~/store/rtc-cologne/gallery/2023/04_22_Unsere_Erste_Marathoni_In_2023'
+import _202305011MaiVonWegenDickerKopfVomReinfeiern from '~/store/rtc-cologne/gallery/2023/05_01_1._Mai_Von_wegen_dicker_Kopf_vom_Reinfeiern'
 
 export default [
+    _202305011MaiVonWegenDickerKopfVomReinfeiern,
     _20230422UnsereErsteMarathoniIn2023,
     _20230416KenntIhrSchonDasBergischeKarussell,
     _20230409LustAufWasNeues,
