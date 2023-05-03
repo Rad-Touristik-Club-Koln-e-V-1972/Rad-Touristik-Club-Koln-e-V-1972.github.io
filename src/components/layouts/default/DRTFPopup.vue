@@ -9,9 +9,12 @@
                 Unsere <b>{{ nextRTF.name }}</b> ist am <b>{{ dateTime.format(nextRTF.start, null, true) }}</b>
                 <br />
                 <br />
-                Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
-                <br />
-                <br />
+                <v-row dense>
+                    <v-col class="text-center">Die 120er-Strecke hat sich geändert!</v-col>
+                </v-row>
+                <v-row dense>
+                    <v-col class="text-center">Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!</v-col>
+                </v-row>
                 <v-row dense>
                     <v-col class="text-right" cols="4">Tempo:</v-col>
                     <v-col class="text-left">max. 20er Schnitt</v-col>

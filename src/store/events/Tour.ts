@@ -35,9 +35,9 @@ export const useTourStore = defineStore('tour', {
                         .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
                         .setName('Hinweis')
                         .setText(
-                            `Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
-
-<ul style="white-space: normal">
+                            `<ul style="white-space: normal">
+  <li>Die 120er-Strecke hat sich geändert!</li>
+  <li>Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!</li>
   <li>
     Tempo: max. 20er Schnitt
     <ul style="white-space: normal">
@@ -45,6 +45,51 @@ export const useTourStore = defineStore('tour', {
     </ul>
   </li>
   <li>Startzeiten: 8 Uhr und ca. 11 Uhr</li>
+</ul>`
+                        )
+                        .build(),
+                    new TrackBuilder()
+                        .setId('19564df0-3abb-4d67-b262-2ff357826470')
+                        .setName('Vor der Tour')
+                        .setText(
+                            `<ul style="white-space: normal">
+  <li>Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.</li>
+  <li>Für die Frühaufsteher unter euch bieten wir ab 07.30 Uhr ein Frühstück in der Aula an.</li>
+</ul>`
+                        )
+                        .build(),
+                    new TrackBuilder()
+                        .setId('bb9e11a4-f627-41eb-a288-34d0d4acfc66')
+                        .setName('Während der Tour')
+                        .setText(
+                            `<ul style='white-space: normal'>
+  <li>Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.</li>
+  <li>
+    Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
+    <ul style='white-space: normal'>
+        <li>Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.</li>
+        <li>Wir kommen euch abholen.</li>
+    </ul>
+  </li>
+</ul>`
+                        )
+                        .build(),
+                    new TrackBuilder()
+                        .setId('d10f9888-866c-4e64-8392-541e09a7b543')
+                        .setName('Nach der Tour')
+                        .setText(
+                            `<ul style='white-space: normal'>
+  <li>
+    Besonders wichtig nach so einer anstrengenden Tour: Duschen.
+    <ul style='white-space: normal'>
+        <li>Sie sind in einem Nebengebäude reichlich vorhanden.</li>
+    </ul>
+  </li>
+  <li>
+    Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachten Kuchen ab mittags eine Gemüsepfanne, Grillwurst, etc. mit verschiedenen Salaten an.
+  </li>
+  <li>Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.</li>
+  <li>Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.</li>
 </ul>`
                         )
                         .build(),
@@ -131,8 +176,8 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         .setControls(3)
                         .setHeight(1440)
                         .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
-                        .setLength(117)
-                        .setName('Die 117er')
+                        .setLength(120)
+                        .setName('Die 120er')
                         .setProfile(EProfile.huegelig)
                         .setText(
                             `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
@@ -150,7 +195,7 @@ Leider finden sich in dieser Abfahrt einige Straßenschäden, sodass besondere V
     <figcaption>Kontrolle 2 - Eitdorf-Bourauel</figcaption>
 </figure>
 Von der Kontrollstelle auf dem Dorfplatz in Bourauel geht es das Siegtal hinauf.
-Recht schnell verlässt die 117er das Siegtal wieder und führt über Rieferath nach Ruppichteroth.
+Recht schnell verlässt die 120er das Siegtal wieder und führt über Rieferath nach Ruppichteroth.
 Auf diesem Teilstück wird ein erheblicher Anteil der Höhenmeter auf der anspruchsvollen Strecke überwunden.
 Über Hambuchen und Retscheroth geht es weiter nach Marienfeld, bis nach Much.
 Von Much geht es durch wenig befahrene ländliche Straßen über Hetzenholz, Nackhausen und Seelscheid nach Ingersauel, wo die nächste Herausforderung wartet:
@@ -162,8 +207,8 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         )
                         .setTime('08:00', '11:00')
                         .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 117km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/676930729'),
+                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 120km.gpx'),
+                            Komoot: new URL('https://www.komoot.de/tour/1067049435'),
                         })
                         .build()
                 )
@@ -174,7 +219,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                         .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
                         .build()
                 )
-                .setLastChange('2023-04-10')
+                .setLastChange('2023-05-03')
                 .setPopup(
                     `Natürlich sind all unsere Strecken ausgeschildert.
 
