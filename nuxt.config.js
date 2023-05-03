@@ -2,10 +2,7 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {
-        // TODO Workaround for https://github.com/nuxt/bridge/issues/748 'Having a problem with loader: "You may need an additional loader to handle the result of these loaders."'
-        transpile: ['ohash'],
-    },
+    build: {},
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
         // https://github.com/nuxt-community/router-module
