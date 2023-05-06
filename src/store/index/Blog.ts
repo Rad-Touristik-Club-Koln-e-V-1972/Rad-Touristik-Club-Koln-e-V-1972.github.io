@@ -10,6 +10,19 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setDate('2023-05-05')
+                    .setId('119e6598-ce3c-45b4-a925-5021cb5ae9ab')
+                    .setText(
+                        `Neue Wege gehen. Zu Fuß, ohne Rad. 👌
+In den Sommermonaten stehen unsere monatlichen Versammlungen unter dem Motto: Outdoor-Spaß am Vereinsleben.
+Ab in den Garten, kurz besprechen, was wichtig ist, und dann grillen und Musik hören.
+Das Debüt ist geglückt - es hat richtig Spaß gemacht.
+Selbst die ständigen Regenschauern konnten uns nicht von unserem neuen Konzept abbringen. 🤗
+Wir freuen uns schon auf den 4.6., wenn wir uns nach der Forsbachtour (ist übrigens am 28. Mai 😉) erneut und entspannt im Garten treffen. 🎉`
+                    )
+                    .setTitle('🆕 RTC-Versammlung 2.0 🏡')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['220b9dc9-8845-4976-8206-df382373d031'])
                     .setDate('2023-05-01')
                     .setId('c3128ff8-d197-4294-abf1-860ab306444d')
