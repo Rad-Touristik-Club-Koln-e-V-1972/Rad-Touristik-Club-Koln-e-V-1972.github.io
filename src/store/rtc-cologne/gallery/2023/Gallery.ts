@@ -12,8 +12,10 @@ import _20230416KenntIhrSchonDasBergischeKarussell from '~/store/rtc-cologne/gal
 import _20230422UnsereErsteMarathoniIn2023 from '~/store/rtc-cologne/gallery/2023/04_22_Unsere_Erste_Marathoni_In_2023'
 import _202305011MaiVonWegenDickerKopfVomReinfeiern from '~/store/rtc-cologne/gallery/2023/05_01_1._Mai_Von_wegen_dicker_Kopf_vom_Reinfeiern'
 import _20230505RTCVersammlung20 from '~/store/rtc-cologne/gallery/2023/05_05_RTC-Versammlung_2.0'
+import _2023050506RTFNievenheim from '~/store/rtc-cologne/gallery/2023/05_06_RTF_Nievenheim'
 
 export default [
+    _2023050506RTFNievenheim,
     _20230505RTCVersammlung20,
     _202305011MaiVonWegenDickerKopfVomReinfeiern,
     _20230422UnsereErsteMarathoniIn2023,

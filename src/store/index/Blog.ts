@@ -10,6 +10,20 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['9f754e63-1819-4e8e-9857-8562eedc9cc8'])
+                    .setDate('2023-05-06')
+                    .setId('bd41ce92-9cb4-418a-acdf-596a9c92d570')
+                    .setText(
+                        `Schöne Strecken mit der Allrather Höhe, es ging viel über Felder, es gab Sonnenschein, es waren tolle Veranstalter - auf dem Platz und an den Kontrollen.
+Wir haben bis zur ersten Kontrolle 7 oder 8  Fahrer:innen gesehen, die einen platten Reifen hatten.
+Einer davon war Klaus B. vom RTC: „Als wir mit dem Wechsel fertig waren, kam ein Anwohner mit einer großen Standpumpe um zu helfen. Super lieb!“
+Es gibt so viele nette Menschen, die man auf seinen Touren trifft.
+Eine rundum schöne RTF.
+Danke, Nievenheim. 🤗`
+                    )
+                    .setTitle('6. Mai: RTF Nievenheim')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['52d3d0de-a776-4ca6-8e80-a5e80d364fc7'])
                     .setDate('2023-05-05')
                     .setId('119e6598-ce3c-45b4-a925-5021cb5ae9ab')
