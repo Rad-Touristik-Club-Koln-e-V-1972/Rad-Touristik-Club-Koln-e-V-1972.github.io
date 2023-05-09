@@ -37,7 +37,7 @@ export const useSponsorStore = defineStore('sponsor', {
             new SponsorBuilder().setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72').setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.jpg').setUrl('shop.sebamed.de').build(),
             new SponsorBuilder()
                 .setId('011d89ca-8ed8-45d3-b625-df376d6931d5')
-                .setImageUrl('content.rtc-koeln.de/pages/sponsor/VolksbankKölnBonneG.jpg')
+                .setImageUrl('content.rtc-koeln.de/pages/sponsor/VolksbankKölnBonneG_RGB.svg')
                 .setUrl('www.volksbank-koeln-bonn.de')
                 .build(),
         ],
