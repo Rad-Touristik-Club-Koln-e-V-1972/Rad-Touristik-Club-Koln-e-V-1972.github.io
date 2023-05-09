@@ -68,29 +68,16 @@
                                     <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
-                                    <v-row dense>
+                                    <v-row>
                                         <v-col>
                                             <v-simple-table dense>
                                                 <thead>
                                                     <th colspan="2" v-text="'RTF'" />
                                                 </thead>
                                                 <tbody>
-                                                    <tr v-for="it in value.fees.filter((f) => f.category !== EEvent.Marathon)" :key="it.id">
+                                                    <tr v-for="it in value.fees.filter((f) => f.category)" :key="it.id">
                                                         <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                                         <td v-html="it.name" />
-                                                    </tr>
-                                                </tbody>
-                                            </v-simple-table>
-                                        </v-col>
-                                        <v-col v-if="feesMarathon.length">
-                                            <v-simple-table dense>
-                                                <thead>
-                                                    <th colspan="2" v-text="'Marathon'" />
-                                                </thead>
-                                                <tbody>
-                                                    <tr v-for="it in feesMarathon" :key="it.id">
-                                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
-                                                        <td v-text="it.name" />
                                                     </tr>
                                                 </tbody>
                                             </v-simple-table>
@@ -144,12 +131,10 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, getCurrentInstance, ref } from 'vue'
+import { getCurrentInstance, ref } from 'vue'
 import DPopup from '~/components/pages/DPopup.vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
 import Event from '~/models/entities/events/tours/Event'
-import Fee from '~/models/entities/events/tours/events/Fee'
-import EEvent from '~/models/enums/EEvent'
 import { useTourStore } from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
 
@@ -159,6 +144,4 @@ const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 const dateTime = useDateTime()
 
 const value: Event | undefined = useTourStore().rtf
-
-const feesMarathon = computed<Fee[]>(() => value?.fees.filter((f) => f.category === EEvent.Marathon) ?? [])
 </script>
