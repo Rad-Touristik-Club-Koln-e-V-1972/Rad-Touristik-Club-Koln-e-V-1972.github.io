@@ -20,10 +20,18 @@ export const useTourStore = defineStore('tour', {
         events: [
             new EventBuilder()
                 .setFees(
-                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('Jugendliche bis 18 Jahre').setPrice(0).build(),
-                    new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('Team-Biker (BDR-Mitglieder mit Breitensportlizenz)').setPrice(6).build(),
-                    new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('sonstige BDR-Mitglieder').setPrice(8).build(),
-                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('After Work-Biker (Gastfahrer)').setPrice(12).build()
+                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).build(),
+                    new FeeBuilder()
+                        .setId('f7116627-33c3-4b87-a77e-fed528bafa63')
+                        .setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)')
+                        .setPrice(6)
+                        .build(),
+                    new FeeBuilder()
+                        .setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5')
+                        .setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)')
+                        .setPrice(8)
+                        .build(),
+                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).build()
                 )
                 .setId('2048a7f0-315a-43d7-885a-23f388601052')
                 .setTimes(
