@@ -2,7 +2,7 @@
     "name": "rad-touristik-club-koln-e-v-1972.github.io",
     "version": "1.0.0",
     "private": true,
-    "packageManager": "pnpm@8.4.0",
+    "packageManager": "pnpm@8.5.0",
     "TODO": "TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support. See https://github.com/vuetifyjs/vuetify/issues/11177",
     "scripts": {
         "build": "nuxi generate",
