@@ -10,6 +10,17 @@ export const usePressReportsStore = defineStore('rtc-cologne-press-reports', {
     state: () => ({
         pressReports: [
             new PressReportBuilder()
+                .setDate('2023-05-10')
+                .setId('00045bd5-14c1-49a8-8d49-055b9d9652e5')
+                .setImages(
+                    new GalleryEntryBuilder()
+                        .setId('37d52527-5e35-4410-b789-3801b10aabb9')
+                        .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/Rueckblick/signal-2023-05-10-105056.jpeg')
+                        .build()
+                )
+                .setTitle('Porz am Montag')
+                .build(),
+            new PressReportBuilder()
                 .setDate('2022-12-06')
                 .setId('df7bdf29-d6ad-4b8a-9a48-aa8ff8dfe176')
                 .setImages(
