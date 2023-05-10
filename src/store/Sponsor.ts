@@ -32,7 +32,6 @@ export const useSponsorStore = defineStore('sponsor', {
                 .setImageUrl('content.rtc-koeln.de/pages/sponsor/RheinEnergie.svg')
                 .setUrl('www.rheinenergie.com')
                 .build(),
-            new SponsorBuilder().setId('ef52759c-48ec-42d9-91e4-0dc56c4ef646').setImageUrl('content.rtc-koeln.de/pages/sponsor/RoadBike.jpg').setUrl('www.roadbike.de').build(),
             new SponsorBuilder().setId('748dc3ab-a086-46f2-a754-8d950f7aef9b').setImageUrl('content.rtc-koeln.de/pages/sponsor/RoseBikes.svg').setUrl('www.rosebikes.de').build(),
             new SponsorBuilder().setId('3539bfeb-5ed9-46cc-8678-ffeceb4a0d72').setImageUrl('content.rtc-koeln.de/pages/sponsor/Sebamed.jpg').setUrl('shop.sebamed.de').build(),
             new SponsorBuilder()
