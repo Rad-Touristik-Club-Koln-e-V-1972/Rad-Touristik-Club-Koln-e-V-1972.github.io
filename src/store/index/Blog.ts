@@ -10,6 +10,44 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['2b5902f1-77bc-467e-baad-20ae94e4c08a'])
+                    .setDate('2023-05-09')
+                    .setId('387d61f9-b9c7-4d2c-808c-0ef0ff45c63c')
+                    .setText(
+                        `Liebe Radsportfreundinnen und -freunde,
+
+wir sind der Radsportverein RTC Köln e.V. und haben vor, mit neuem Engagement mehr Menschen aufs Rad zu bekommen.
+Daher bieten wir neben unserer ➡️ Forsbachtour am 28. Mai❗️ etwas ganz Neues im Juli und September an:
+Geführte Genusstouren (langsames Tempo) an die Mosel (Tagestour). 170km mit 2000 Hm auf wirklich schönen Strecken.
+
+➡️ Es wäre nett, wenn Ihr Euch 1 Minute Zeit für uns nehmen und für uns abstimmen würdet.
+GERNE AUCH TEILEN 🤗
+
+Unser Projekt heißt „Rauf aufs Rad mit dem RTC Köln e.V.“
+
+Von heute bis zum 16. Mai kann JEDEN TAG AUFS NEUE gevotet werden!
+
+So geht es:
+1. Diesen Link unten anklicken
+2. Deine E-Mail-Adresse eintippen
+3. Danach auf den Button „Abschicken“ klicken
+4. WICHTIG: Deine Stimme bestätigen  (in deinem Mailbriefkasten auf den Link klicken)
+
+FERTIG! DAS WAR ES SCHON!
+
+Vielen lieben Dank für Eure Unterstützung.❤️
+
+Sportliche Grüße,
+Euer RTC Köln e.V. 1972
+
+https://www.rheinstart.org/voting/voting-fruehjahr-2023/rauf-aufs-rad-mit-dem-rtc-koeln-ev/
+
+
+Rauf aufs Rad mit dem RTC Köln e.V. - Eins von vielen gemeinnützigen Projekten RheinStart`
+                    )
+                    .setTitle('Rauf aufs Rad mit dem RTC Köln e.V.')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['9f754e63-1819-4e8e-9857-8562eedc9cc8'])
                     .setDate('2023-05-06')
                     .setId('bd41ce92-9cb4-418a-acdf-596a9c92d570')
