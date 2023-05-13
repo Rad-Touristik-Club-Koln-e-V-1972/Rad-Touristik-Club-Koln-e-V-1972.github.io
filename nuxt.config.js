@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     /* TODO WORKAROUND dependency '@yeger/vue2-masonry-wall' is needed until vuetify 3.2.0 delivers native support.
         See https://github.com/vuetifyjs/vuetify/issues/11177 */
-    plugins: [{ src: '~/plugins/vue-masonry-wall' }],
+    plugins: ['~/plugins/vue-signature-pad', '~/plugins/vue-masonry-wall'],
     srcDir: 'src/',
     ssr: false,
     // Target: https://go.nuxtjs.dev/config-target

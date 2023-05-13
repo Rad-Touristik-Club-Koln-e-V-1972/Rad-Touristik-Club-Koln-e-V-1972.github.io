@@ -1,6 +1,7 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import {
+    mdiAccountMultiplePlus,
     mdiBikeFast,
     mdiCalendarAlert,
     mdiCalendarClockOutline,
@@ -33,6 +34,13 @@ import Navigation from '~/models/entities/Navigation'
 
 export const useNavigationStore = defineStore('navigation', () => {
     const navigations = ref<Navigation[]>([
+        new NavigationBuilder()
+            .setColor('primary')
+            .setIcon(mdiAccountMultiplePlus)
+            .setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0')
+            .setTitle('Mitgliedschaft beantragen')
+            .setTo('membership-registration')
+            .build(),
         new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('index').build(),
         new NavigationBuilder()
             .setChildren(
