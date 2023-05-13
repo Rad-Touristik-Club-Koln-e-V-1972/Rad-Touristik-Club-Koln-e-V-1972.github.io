@@ -11,6 +11,20 @@ export default function useDateTime() {
         },
         formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
         getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
+        getHundredYearsAgo: () => {
+            const date = new Date(Date.now())
+
+            date.setFullYear(date.getFullYear() - 100)
+
+            return date
+        },
+        getNextMonth: () => {
+            const date = new Date(Date.now())
+
+            date.setDate(date.getDate() + 31)
+
+            return date
+        },
         getTomorrowMidnight: () => {
             const date = new Date(Date.now())
 
