@@ -10,7 +10,7 @@
                 <v-list :dense="!vuetify?.breakpoint.mobile" nav>
                     <template v-for="it in navigationStore.allNavigation">
                         <!-- TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531 -->
-                        <v-list-group v-if="it.children.length" :key="it.id" :prepend-icon="it.icon" :value="it.expanded" @click="workaround">
+                        <v-list-group v-if="it.children.length" :key="it.id" :color="it.color" :prepend-icon="it.icon" :value="it.expanded" @click="workaround">
                             <template #activator>
                                 <v-list-item-title style="white-space: normal">{{ it.title }}</v-list-item-title>
                             </template>
@@ -30,7 +30,7 @@
                                         :to="childChildIt.to"
                                     >
                                         <v-list-item-icon>
-                                            <v-icon>{{ childChildIt.icon }}</v-icon>
+                                            <v-icon :color="childIt.color">{{ childChildIt.icon }}</v-icon>
                                         </v-list-item-icon>
                                         <v-list-item-title style="white-space: normal">{{ childChildIt.title }}</v-list-item-title>
                                     </v-list-item>
@@ -46,7 +46,7 @@
                                     :to="childIt.to"
                                 >
                                     <v-list-item-icon>
-                                        <v-icon>{{ childIt.icon }}</v-icon>
+                                        <v-icon :color="childIt.color">{{ childIt.icon }}</v-icon>
                                     </v-list-item-icon>
                                     <v-list-item-title class="ml-n4" style="white-space: normal">{{ childIt.title }}</v-list-item-title>
                                 </v-list-item>
@@ -54,7 +54,7 @@
                         </v-list-group>
                         <v-list-item v-else :key="it.id" exact :href="it.url?.toString()" :nuxt="it.nuxt" :target="it.target" :to="it.to">
                             <v-list-item-icon>
-                                <v-icon>{{ it.icon }}</v-icon>
+                                <v-icon :color="it.color">{{ it.icon }}</v-icon>
                             </v-list-item-icon>
                             <v-list-item-title>{{ it.title }}</v-list-item-title>
                         </v-list-item>
