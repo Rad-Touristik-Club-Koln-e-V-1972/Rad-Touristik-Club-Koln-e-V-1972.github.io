@@ -8,6 +8,22 @@ export const useSlideshowStore = defineStore('slideshow', {
     },
     state: () => ({
         images: [
+            new GalleryEntryBuilder()
+                .setId('5920bf55-e018-4e22-bf9f-ba76b2a3439b')
+                .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image0_61fe6032-2f8a-4344-a6cc-b91d395eca08.jpeg')
+                .build(),
+            new GalleryEntryBuilder()
+                .setId('c30f8886-41ba-47f6-bf97-b68bd8bb0baf')
+                .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image1_d322962f-3531-4248-8f64-f1fe3f3850b8.jpeg')
+                .build(),
+            new GalleryEntryBuilder()
+                .setId('1461e1b4-c418-4761-932f-3c6d660d79ec')
+                .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image2_4f36deec-6f19-4992-9ab3-3ea2a84b1572.jpeg')
+                .build(),
+            new GalleryEntryBuilder()
+                .setId('457576cf-03c8-4bb7-ab4f-444b6246dd47')
+                .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image3_e788fefb-5518-4e6c-a594-d93c96dfdfd2.jpeg')
+                .build(),
             new GalleryEntryBuilder().setId('d72861c4-31fd-4f96-b7b8-46d51a50c6cf').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image0.jpeg').build(),
             new GalleryEntryBuilder().setId('2317e30f-8933-4378-89ae-07bf34026f83').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image1.jpeg').build(),
             new GalleryEntryBuilder().setId('0680d03d-52f1-43a8-a9e2-7342d58c9328').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image2.jpeg').build(),
