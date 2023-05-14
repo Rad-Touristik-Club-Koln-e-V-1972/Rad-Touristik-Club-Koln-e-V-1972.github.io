@@ -20,6 +20,27 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['57987c1c-d899-4f5c-93ea-fdacfebfb7c9'])
+                .setDate('2023-05-15')
+                .setId('7bdd73f2-a5c4-437d-8801-6fd79f63f09e')
+                .setText(
+                    `<ol style='white-space: normal'>
+  <li>Bike-Challenge</li>
+  <li>Feedback-Bogen-Gewinnspiel</li>
+  <li>Glücksrad</li>
+  <li>Auszeichnung der drei schönsten Vintage-Räder (vor 1990)</li>
+</ol>
+(Immer solange der Vorrat reicht)
+
+➡️ Geplant waren ursprünglich 51 Gewinne und Preise anlässlich der 51. Forsbachtour.
+Aber dank unserer großzügigen Sponsoren haben wir viel, viel mehr für Euch. 🤗
+
+Hier vorab eine kleine Auswahl der hochwertigen Preise und Gewinne.
+In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`
+                )
+                .setTitle('Gewinne und Preise auf der Forsbachtour in vier Kategorien')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['2930ebbb-07ea-41f9-bd56-73b3425c4284'])
                 .setDate('2023-05-14')
                 .setId('36f9ea03-5ccf-46f6-83a3-dd1d525495d7')

@@ -16,8 +16,10 @@ import _2023050506RTFNievenheim from '~/store/rtc-cologne/gallery/2023/05_06_RTF
 import _2023050509RaufaufsRadmitdemRTCKoelneV from '~/store/rtc-cologne/gallery/2023/05_09_Rauf_aufs_Rad_mit_dem_RTC_Köln_e.V.'
 import _2023050513SonneHagelSonne from '~/store/rtc-cologne/gallery/2023/05_13_Sonne_Hagel_Sonne'
 import _2023050514ParisBrestParisQualifikation from '~/store/rtc-cologne/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation'
+import _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien from '~/store/rtc-cologne/gallery/2023/05_15_Gewinne_und_Preise_auf_der_Forsbachtour_in_vier_Kategorien'
 
 export default [
+    _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien,
     _2023050514ParisBrestParisQualifikation,
     _2023050513SonneHagelSonne,
     _2023050509RaufaufsRadmitdemRTCKoelneV,
