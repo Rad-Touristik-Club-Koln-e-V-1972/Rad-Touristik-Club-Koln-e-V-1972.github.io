@@ -41,6 +41,23 @@ In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`
                 .setTitle('Gewinne und Preise auf der Forsbachtour in vier Kategorien')
                 .build(),
             new BlogEntryBuilder()
+                .setAlbumIDs(['468f80a4-f5e9-4bd4-b638-53cb5675e496'])
+                .setDate('2023-05-14')
+                .setId('61e08020-df8d-495a-8b10-d471aba0d024')
+                .setText(
+                    `Unsere RTCler Helmut, Jürgen und Klaus haben noch eine zweite RTF an diesem Wochenende unter die Räder genommen.
+„Wir waren heute auf der 76er unterwegs.
+Die Strecke führte über viele verkehrsarm Nebenstraßen und Wirtschaftswege. 👍🏻
+Kein Höhenmeter wurde irgendwo liegengelassen, Steigungen im zweistelligen (13-14%) Bereich 🫣 wurden bevorzugt.
+Zum Schluss hatten wir 1150 Meter auf der Uhr. 😅
+Die Belohnung wartete im Ziel mit Currywurst und Fritten 😊.
+Leider waren auch hier nur ca. 400 TN.“ 🤷🏼‍♂️
+
+Danke an den RCB für die tolle Strecke und die Organisation 👍`
+                )
+                .setTitle('RTF Campus Bonn')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['2930ebbb-07ea-41f9-bd56-73b3425c4284'])
                 .setDate('2023-05-14')
                 .setId('36f9ea03-5ccf-46f6-83a3-dd1d525495d7')
