@@ -10,9 +10,9 @@
                 <v-sheet>
                     <v-card-text>
                         <v-timeline :dense="vuetify?.breakpoint.mobile">
-                            <v-timeline-item v-for="it in value" :key="it.id">
+                            <v-timeline-item v-for="it in useBlogStore().all" :key="it.id">
                                 <template #opposite>
-                                    <span class="font-weight-bold primary--text text-h5" v-text="dateTime.format(it.start, it.end, true)" />
+                                    <span class="font-weight-bold primary--text text-h5" v-text="useDateTime().format(it.start, it.end, true)" />
                                     <div v-if="Object.keys(it.albumIDs).length">
                                         <c-gallery
                                             v-for="gallery in galleryStore.findByIds(...Object.keys(it.albumIDs))"
@@ -60,9 +60,5 @@ import useDateTime from '~/utils/DateTime'
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
-const dateTime = useDateTime()
-
 const galleryStore = useGalleryStore()
-
-const value = useBlogStore().all
 </script>
