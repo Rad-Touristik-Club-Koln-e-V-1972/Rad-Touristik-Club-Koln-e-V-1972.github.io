@@ -10,6 +10,25 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['2930ebbb-07ea-41f9-bd56-73b3425c4284'])
+                    .setDate('2023-05-14')
+                    .setId('36f9ea03-5ccf-46f6-83a3-dd1d525495d7')
+                    .setText(
+                        `🔝Wie Ihr seht:
+Beim  RTC KÖLN e.V. ist für wirklich jeden Platz.
+Für die gemütlichen RTF Fahrer:innen, aber auch für die ambitionierten Sportler, wie Frank, der sich für Paris-Brest-Paris qualifiziert.
+Gestern ist er die Brevet von 400 km gefahren:
+„Fahrt nach Namur über den Ravel und zurück.
+Regen und Sonne im Wechsel.
+Eine Stunde im Freien gepennt.
+Schnitt verschlechtert durch die Nacht.
+Bei km 204 km hat ich noch 28,4 Schnitt.“
+
+Super Leistung, Frank!`
+                    )
+                    .setTitle('Paris-Brest-Paris Qualifikation')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['738750b9-1dfd-4226-abdf-a50235834c77'])
                     .setDate('2023-05-13')
                     .setId('4c3152b1-8938-4d78-bae0-2b7e23f5b9f2')
