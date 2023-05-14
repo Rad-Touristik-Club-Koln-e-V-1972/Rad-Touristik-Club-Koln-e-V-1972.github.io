@@ -14,8 +14,10 @@ import _202305011MaiVonWegenDickerKopfVomReinfeiern from '~/store/rtc-cologne/ga
 import _20230505RTCVersammlung20 from '~/store/rtc-cologne/gallery/2023/05_05_RTC-Versammlung_2.0'
 import _2023050506RTFNievenheim from '~/store/rtc-cologne/gallery/2023/05_06_RTF_Nievenheim'
 import _2023050509RaufaufsRadmitdemRTCKoelneV from '~/store/rtc-cologne/gallery/2023/05_09_Rauf_aufs_Rad_mit_dem_RTC_Köln_e.V.'
+import _2023050513SonneHagelSonne from '~/store/rtc-cologne/gallery/2023/05_13_Sonne_Hagel_Sonne'
 
 export default [
+    _2023050513SonneHagelSonne,
     _2023050509RaufaufsRadmitdemRTCKoelneV,
     _2023050506RTFNievenheim,
     _20230505RTCVersammlung20,

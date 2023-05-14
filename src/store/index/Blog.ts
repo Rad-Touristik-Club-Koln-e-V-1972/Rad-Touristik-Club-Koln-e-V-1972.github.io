@@ -10,6 +10,20 @@ export const useBlogStore = defineStore('blog', {
         return {
             entries: [
                 new BlogEntryBuilder()
+                    .setAlbumIDs(['738750b9-1dfd-4226-abdf-a50235834c77'])
+                    .setDate('2023-05-13')
+                    .setId('4c3152b1-8938-4d78-bae0-2b7e23f5b9f2')
+                    .setText(
+                        `Die rund 500 Teilnehmer:innen der RTF des RSC Erftstadt mussten sich spätestens an der K1 entscheiden,
+ob sie die wirklich wunderschön ausgesuchten und perfekt ausgeschilderten Strecken noch weiter fahren möchten
+oder ob sie wetterbedingt auf Nummer sicher gehen und die tolle Tour auf der 70er beenden möchten.
+Der RTC Köln hat sich beides entschieden und so wurde die 70er und die 100er gefahren.
+Ein toller RTF-Tag auf super schönen verkehrsarmen Straßen in wunderschöner Eifel-Natur.
+DANKE an den RSC Erftstadt!`
+                    )
+                    .setTitle('Sonne - Hagel - Sonne')
+                    .build(),
+                new BlogEntryBuilder()
                     .setAlbumIDs(['2b5902f1-77bc-467e-baad-20ae94e4c08a'])
                     .setDate('2023-05-09')
                     .setId('387d61f9-b9c7-4d2c-808c-0ef0ff45c63c')
