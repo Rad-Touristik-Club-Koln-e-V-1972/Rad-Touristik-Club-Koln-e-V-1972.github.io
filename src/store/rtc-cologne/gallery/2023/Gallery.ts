@@ -12,18 +12,18 @@ import _20230416KenntIhrSchonDasBergischeKarussell from '~/store/rtc-cologne/gal
 import _20230422UnsereErsteMarathoniIn2023 from '~/store/rtc-cologne/gallery/2023/04_22_Unsere_Erste_Marathoni_In_2023'
 import _202305011MaiVonWegenDickerKopfVomReinfeiern from '~/store/rtc-cologne/gallery/2023/05_01_1._Mai_Von_wegen_dicker_Kopf_vom_Reinfeiern'
 import _20230505RTCVersammlung20 from '~/store/rtc-cologne/gallery/2023/05_05_RTC-Versammlung_2.0'
-import _2023050506RTFNievenheim from '~/store/rtc-cologne/gallery/2023/05_06_RTF_Nievenheim'
-import _2023050509RaufaufsRadmitdemRTCKoelneV from '~/store/rtc-cologne/gallery/2023/05_09_Rauf_aufs_Rad_mit_dem_RTC_Köln_e.V.'
-import _2023050513SonneHagelSonne from '~/store/rtc-cologne/gallery/2023/05_13_Sonne_Hagel_Sonne'
-import _2023050514ParisBrestParisQualifikation from '~/store/rtc-cologne/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation'
+import _20230506RTFNievenheim from '~/store/rtc-cologne/gallery/2023/05_06_RTF_Nievenheim'
+import _20230509RaufaufsRadmitdemRTCKoelneV from '~/store/rtc-cologne/gallery/2023/05_09_Rauf_aufs_Rad_mit_dem_RTC_Köln_e.V.'
+import _20230513SonneHagelSonne from '~/store/rtc-cologne/gallery/2023/05_13_Sonne_Hagel_Sonne'
+import _20230514ParisBrestParisQualifikation from '~/store/rtc-cologne/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation'
 import _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien from '~/store/rtc-cologne/gallery/2023/05_15_Gewinne_und_Preise_auf_der_Forsbachtour_in_vier_Kategorien'
 
 export default [
     _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien,
-    _2023050514ParisBrestParisQualifikation,
-    _2023050513SonneHagelSonne,
-    _2023050509RaufaufsRadmitdemRTCKoelneV,
-    _2023050506RTFNievenheim,
+    _20230514ParisBrestParisQualifikation,
+    _20230513SonneHagelSonne,
+    _20230509RaufaufsRadmitdemRTCKoelneV,
+    _20230506RTFNievenheim,
     _20230505RTCVersammlung20,
     _202305011MaiVonWegenDickerKopfVomReinfeiern,
     _20230422UnsereErsteMarathoniIn2023,
