@@ -10,7 +10,7 @@
                 <v-sheet>
                     <v-card-text>
                         <v-timeline :dense="vuetify?.breakpoint.mobile">
-                            <v-timeline-item v-for="it in useBlogStore().all" :key="it.id">
+                            <v-timeline-item v-for="it in useBlogStore().findAllBeforeTomorrow()" :key="it.id">
                                 <template #opposite>
                                     <span class="font-weight-bold primary--text text-h5" v-text="useDateTime().format(it.start, it.end, true)" />
                                     <div v-if="Object.keys(it.albumIDs).length">
