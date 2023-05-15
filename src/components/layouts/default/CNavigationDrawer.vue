@@ -26,6 +26,7 @@
                                         exact
                                         :href="childChildIt.url?.toString()"
                                         :nuxt="childChildIt.nuxt"
+                                        rel="canonical"
                                         :target="childChildIt.target"
                                         :to="childChildIt.to"
                                     >
@@ -42,6 +43,7 @@
                                     exact
                                     :href="childIt.url?.toString()"
                                     :nuxt="childIt.nuxt"
+                                    rel="canonical"
                                     :target="childIt.target"
                                     :to="childIt.to"
                                 >
@@ -52,7 +54,7 @@
                                 </v-list-item>
                             </template>
                         </v-list-group>
-                        <v-list-item v-else :key="it.id" exact :href="it.url?.toString()" :nuxt="it.nuxt" :target="it.target" :to="it.to">
+                        <v-list-item v-else :key="it.id" exact :href="it.url?.toString()" :nuxt="it.nuxt" rel="canonical" :target="it.target" :to="it.to">
                             <v-list-item-icon>
                                 <v-icon :color="it.color">{{ it.icon }}</v-icon>
                             </v-list-item-icon>
@@ -69,7 +71,7 @@
                     <v-card-text class="text-center">
                         <v-row no-gutters>
                             <v-col v-for="it in navigationStore.allSocialMedia" :key="it.id">
-                                <v-btn fab :href="it.url?.toString()" icon :target="it.target">
+                                <v-btn fab :href="it.url?.toString()" icon rel="canonical" :target="it.target">
                                     <v-icon :color="it.color" large>{{ it.icon }}</v-icon>
                                 </v-btn>
                             </v-col>

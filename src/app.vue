@@ -30,10 +30,10 @@
                 </v-col>
                 <v-col />
                 <v-col cols="auto">
-                    <v-btn text :to="{ name: 'imprint' }">Impressum</v-btn>
+                    <v-btn rel="canonical" text :to="{ name: 'imprint' }">Impressum</v-btn>
                 </v-col>
                 <v-col cols="auto">
-                    <v-btn text :to="{ name: 'privacyandsecurity' }">Datenschutz</v-btn>
+                    <v-btn rel="canonical" text :to="{ name: 'privacyandsecurity' }">Datenschutz</v-btn>
                 </v-col>
             </v-row>
         </v-footer>
