@@ -1,5 +1,5 @@
 <template>
-    <v-card id="VImprint" flat>
+    <v-card id="VPrivacyAndSecurity" flat>
         <v-toolbar color="primary" flat>
             <v-toolbar-title class="accent--text">Datenschutzerklärung</v-toolbar-title>
         </v-toolbar>
