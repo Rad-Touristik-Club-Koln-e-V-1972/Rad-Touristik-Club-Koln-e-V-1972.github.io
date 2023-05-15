@@ -20,6 +20,21 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['e2ab13b0-d2f7-482b-864c-f5affec8863c'])
+                .setDate('2023-05-24')
+                .setId('13c58951-6955-4498-9786-444e80575f44')
+                .setText(
+                    `Am Wochenende habt Ihr die Chance den RTC Köln e.V. auf der Forsbachtour zu besuchen und Tolles zu gewinnen. ❤️
+
+💬 „In diesem Jahr fährt man Pfingsten nach Köln-Zündorf 😍.“😘
+
+Wir freuen uns auf Euch. 🎉
+
+Euer RTC Köln e.V.`
+                )
+                .setTitle('➡️ Tipp Nummer 3')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['91b934e0-8a3a-4934-8965-8a1bf7beae87'])
                 .setDate('2023-05-22')
                 .setId('d91d524b-7744-4499-8a34-c4437d779798')
