@@ -18,8 +18,10 @@ import _20230513SonneHagelSonne from '~/store/rtc-cologne/gallery/2023/05_13_Son
 import _20230514ParisBrestParisQualifikation from '~/store/rtc-cologne/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation'
 import _20230514RTFCampusBonn from '~/store/rtc-cologne/gallery/2023/05_14_RTF_Campus_Bonn'
 import _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien from '~/store/rtc-cologne/gallery/2023/05_15_Gewinne_und_Preise_auf_der_Forsbachtour_in_vier_Kategorien'
+import _20230522RTCKoelnTIPPNummer2 from '~/store/rtc-cologne/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2'
 
 export default [
+    _20230522RTCKoelnTIPPNummer2,
     _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien,
     _20230514RTFCampusBonn,
     _20230514ParisBrestParisQualifikation,

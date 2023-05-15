@@ -20,6 +20,26 @@ export const useBlogStore = defineStore('blog', {
     state: () => ({
         entries: [
             new BlogEntryBuilder()
+                .setAlbumIDs(['91b934e0-8a3a-4934-8965-8a1bf7beae87'])
+                .setDate('2023-05-22')
+                .setId('d91d524b-7744-4499-8a34-c4437d779798')
+                .setText(
+                    `Hochwertige Radsportartikel könnt Ihr durch kleine
+Aktivitäten auf der Forsbachtour erhalten*.
+
+➡️ Notieren: 28.5. Forsbachtour ✅
+➡️ Hinfahren und anmelden (in diesem Jahr haben wir
+Teilnehmerbändchen)
+➡️ die schöne Strecke fahren
+➡️ Im Ziel gibt es vier Möglichkeiten tolle Gewinne zu
+erhalten.
+➡️ FREUEN 🤗
+
+*nur für Teilnehmer:innen mit Teilnehmerbändchen`
+                )
+                .setTitle('rtckoeln 👍TIPP Nummer 2')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['57987c1c-d899-4f5c-93ea-fdacfebfb7c9'])
                 .setDate('2023-05-15')
                 .setId('7bdd73f2-a5c4-437d-8801-6fd79f63f09e')
