@@ -35,6 +35,22 @@ Euer RTC Köln e.V.`
                 .setTitle('➡️ Tipp Nummer 3')
                 .build(),
             new BlogEntryBuilder()
+                .setAlbumIDs(['3013dff8-2924-458e-b990-dc9a8871077a'])
+                .setDate('2023-05-23')
+                .setId('352e773c-00a1-4878-b479-15367451e105')
+                .setText(
+                    `🪞Spieglein, Spieglein an der Wand, wer hat das schönste Vintage-Bike im Land?
+
+🥰 Liebhaber:innen von ✨Vintage-Bikes✨ (1990 oder älter) haben die zusätzliche Chance, Preise zu gewinnen.
+Meldet euch vor 14 Uhr bei uns auf dem Platz, wenn Ihr mit Euren Rad-Schatz mitmachen möchtet. ✨
+
+Wir freuen uns auf Euch. 🤗
+
+Euer RTC Köln e.V.`
+                )
+                .setTitle('Vintage-Bike-Wettbewerb')
+                .build(),
+            new BlogEntryBuilder()
                 .setAlbumIDs(['91b934e0-8a3a-4934-8965-8a1bf7beae87'])
                 .setDate('2023-05-22')
                 .setId('d91d524b-7744-4499-8a34-c4437d779798')

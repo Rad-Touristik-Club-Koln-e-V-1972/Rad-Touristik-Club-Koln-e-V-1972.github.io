@@ -19,10 +19,12 @@ import _20230514ParisBrestParisQualifikation from '~/store/rtc-cologne/gallery/2
 import _20230514RTFCampusBonn from '~/store/rtc-cologne/gallery/2023/05_14_RTF_Campus_Bonn'
 import _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien from '~/store/rtc-cologne/gallery/2023/05_15_Gewinne_und_Preise_auf_der_Forsbachtour_in_vier_Kategorien'
 import _20230522RTCKoelnTIPPNummer2 from '~/store/rtc-cologne/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2'
+import _20230523VintageBikeWettbewerb from '~/store/rtc-cologne/gallery/2023/05_23_Vintage-Bike-Wettbewerb'
 import _20230524TippNummer3 from '~/store/rtc-cologne/gallery/2023/05_24_Tipp_Nummer_3'
 
 export default [
     _20230524TippNummer3,
+    _20230523VintageBikeWettbewerb,
     _20230522RTCKoelnTIPPNummer2,
     _20230515GewinneUndPreiseAufDerForsbachtourInVierKategorien,
     _20230514RTFCampusBonn,
