@@ -1,3 +1,4 @@
+import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import ControlBuilder from '~/models/builder/events/tours/ControlBuilder'
@@ -11,39 +12,34 @@ import Permanent from '~/models/entities/events/tours/Permanent'
 import EEvent from '~/models/enums/EEvent'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
-export const useTourStore = defineStore('tour', {
-    getters: {
-        allPermanents: (state): Permanent[] => state.permanents,
-        rtf: (state): Event | undefined => state.events.find((it) => it.category === EEvent.RTF),
-    },
-    state: () => ({
-        events: [
-            new EventBuilder()
-                .setFees(
-                    new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).build(),
-                    new FeeBuilder()
-                        .setId('f7116627-33c3-4b87-a77e-fed528bafa63')
-                        .setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)')
-                        .setPrice(6)
-                        .build(),
-                    new FeeBuilder()
-                        .setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5')
-                        .setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)')
-                        .setPrice(8)
-                        .build(),
-                    new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).build()
-                )
-                .setId('2048a7f0-315a-43d7-885a-23f388601052')
-                .setTimes(
-                    new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').build(),
-                    new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build()
-                )
-                .setTracks(
-                    new TrackBuilder()
-                        .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
-                        .setName('Hinweis')
-                        .setText(
-                            `<ul style="white-space: normal">
+export const useTourStore = defineStore('tour', () => {
+    const events = ref<Event[]>([
+        new EventBuilder()
+            .setFees(
+                new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).build(),
+                new FeeBuilder()
+                    .setId('f7116627-33c3-4b87-a77e-fed528bafa63')
+                    .setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)')
+                    .setPrice(6)
+                    .build(),
+                new FeeBuilder()
+                    .setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5')
+                    .setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)')
+                    .setPrice(8)
+                    .build(),
+                new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).build()
+            )
+            .setId('2048a7f0-315a-43d7-885a-23f388601052')
+            .setTimes(
+                new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').build(),
+                new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build()
+            )
+            .setTracks(
+                new TrackBuilder()
+                    .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
+                    .setName('Hinweis')
+                    .setText(
+                        `<ul style="white-space: normal">
   <li>Die 120er-Strecke hat sich geändert!</li>
   <li>Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!</li>
   <li>
@@ -54,23 +50,23 @@ export const useTourStore = defineStore('tour', {
   </li>
   <li>Startzeiten: 8 Uhr und ca. 11 Uhr</li>
 </ul>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setId('19564df0-3abb-4d67-b262-2ff357826470')
-                        .setName('Vor der Tour')
-                        .setText(
-                            `<ul style="white-space: normal">
+                    )
+                    .build(),
+                new TrackBuilder()
+                    .setId('19564df0-3abb-4d67-b262-2ff357826470')
+                    .setName('Vor der Tour')
+                    .setText(
+                        `<ul style="white-space: normal">
   <li>Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.</li>
   <li>Für die Frühaufsteher unter euch bieten wir ab 07.30 Uhr ein Frühstück in der Aula an.</li>
 </ul>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setId('bb9e11a4-f627-41eb-a288-34d0d4acfc66')
-                        .setName('Während der Tour')
-                        .setText(
-                            `<ul style='white-space: normal'>
+                    )
+                    .build(),
+                new TrackBuilder()
+                    .setId('bb9e11a4-f627-41eb-a288-34d0d4acfc66')
+                    .setName('Während der Tour')
+                    .setText(
+                        `<ul style='white-space: normal'>
   <li>Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.</li>
   <li>
     Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
@@ -80,13 +76,13 @@ export const useTourStore = defineStore('tour', {
     </ul>
   </li>
 </ul>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setId('d10f9888-866c-4e64-8392-541e09a7b543')
-                        .setName('Nach der Tour')
-                        .setText(
-                            `<ul style='white-space: normal'>
+                    )
+                    .build(),
+                new TrackBuilder()
+                    .setId('d10f9888-866c-4e64-8392-541e09a7b543')
+                    .setName('Nach der Tour')
+                    .setText(
+                        `<ul style='white-space: normal'>
   <li>
     Besonders wichtig nach so einer anstrengenden Tour: Duschen.
     <ul style='white-space: normal'>
@@ -99,13 +95,13 @@ export const useTourStore = defineStore('tour', {
   <li>Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.</li>
   <li>Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.</li>
 </ul>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
-                        .setName('Alle Strecken')
-                        .setText(
-                            `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
+                    )
+                    .build(),
+                new TrackBuilder()
+                    .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
+                    .setName('Alle Strecken')
+                    .setText(
+                        `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
 „Frühaufsteher“ können dort ab acht Uhr, „Langschläfer“ bis elf Uhr starten.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
@@ -125,36 +121,36 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
     <img alt="Kontrolle 1 - Pohlhausen" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/K1_Pohlhausen.jpg' style='width: 100%' />
     <figcaption>Kontrolle 1 - Pohlhausen</figcaption>
 </figure>`
-                        )
-                        .build(),
-                    new TrackBuilder()
-                        .setControls(1)
-                        .setHeight(390)
-                        .setId('c1934b4b-2058-4100-946e-77c264533c76')
-                        .setLength(51)
-                        .setName('Die 51er')
-                        .setText(
-                            `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
+                    )
+                    .build(),
+                new TrackBuilder()
+                    .setControls(1)
+                    .setHeight(390)
+                    .setId('c1934b4b-2058-4100-946e-77c264533c76')
+                    .setLength(51)
+                    .setName('Die 51er')
+                    .setText(
+                        `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
 
 Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
-                        )
-                        .setTime('08:00', '11:00')
-                        .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/676899286'),
-                        })
-                        .build(),
-                    new TrackBuilder()
-                        .setControls(2)
-                        .setHeight(740)
-                        .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
-                        .setLength(78)
-                        .setName('Die 78er')
-                        .setProfile(EProfile.wellig)
-                        .setText(
-                            `Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
+                    )
+                    .setTime('08:00', '11:00')
+                    .setUrls({
+                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
+                        Komoot: new URL('https://www.komoot.de/tour/676899286'),
+                    })
+                    .build(),
+                new TrackBuilder()
+                    .setControls(2)
+                    .setHeight(740)
+                    .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
+                    .setLength(78)
+                    .setName('Die 78er')
+                    .setProfile(EProfile.wellig)
+                    .setText(
+                        `Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
 Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 51er.
 <figure>
     <img alt="Von Much nach Hetzenholz" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Much_Hetzenholz.jpg' style='width: 100%' />
@@ -173,22 +169,22 @@ Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle S
 Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`
-                        )
-                        .setTime('08:00', '11:00')
-                        .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/676927332'),
-                        })
-                        .build(),
-                    new TrackBuilder()
-                        .setControls(3)
-                        .setHeight(1440)
-                        .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
-                        .setLength(120)
-                        .setName('Die 120er')
-                        .setProfile(EProfile.huegelig)
-                        .setText(
-                            `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
+                    )
+                    .setTime('08:00', '11:00')
+                    .setUrls({
+                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
+                        Komoot: new URL('https://www.komoot.de/tour/676927332'),
+                    })
+                    .build(),
+                new TrackBuilder()
+                    .setControls(3)
+                    .setHeight(1440)
+                    .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
+                    .setLength(120)
+                    .setName('Die 120er')
+                    .setProfile(EProfile.huegelig)
+                    .setText(
+                        `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
 Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
@@ -212,30 +208,27 @@ Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Ag
 Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
-                        )
-                        .setTime('08:00', '11:00')
-                        .setUrls({
-                            'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 120km.gpx'),
-                            Komoot: new URL('https://www.komoot.de/tour/1067049435'),
-                        })
-                        .build()
-                )
-                .setCategory(EEvent.RTF)
-                .setImages(
-                    new GalleryEntryBuilder()
-                        .setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb')
-                        .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
-                        .build()
-                )
-                .setLastChange('2023-05-03')
-                .setPopup(
-                    `Natürlich sind all unsere Strecken ausgeschildert.
+                    )
+                    .setTime('08:00', '11:00')
+                    .setUrls({
+                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 120km.gpx'),
+                        Komoot: new URL('https://www.komoot.de/tour/1067049435'),
+                    })
+                    .build()
+            )
+            .setCategory(EEvent.RTF)
+            .setImages(
+                new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build()
+            )
+            .setLastChange('2023-05-03')
+            .setPopup(
+                `Natürlich sind all unsere Strecken ausgeschildert.
 
 Euer RTC Köln e.V.`,
-                    'Hinweis'
-                )
-                .setText(
-                    `Liebe Radsportlerinnen und Radsportler,
+                'Hinweis'
+            )
+            .setText(
+                `Liebe Radsportlerinnen und Radsportler,
 
 wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
 Wie ihr wisst, liegt ein ereignisreiches und intensives Jubiläumsjahr hinter uns.
@@ -252,19 +245,20 @@ Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
 Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
 
 Euer RTC Köln e.V.`
-                )
-                .setTitle('Die Forsbach-Tour')
-                .build(),
-        ],
-        permanents: [
-            new PermanentBuilder()
-                .setHeight(700)
-                .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
-                .setLength(71)
-                .setProfile(EProfile.wellig)
-                .setCategory(EEvent.Permanente)
-                .setText(
-                    `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
+            )
+            .setTitle('Die Forsbach-Tour')
+            .build(),
+    ])
+
+    const permanents = ref<Permanent[]>([
+        new PermanentBuilder()
+            .setHeight(700)
+            .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
+            .setLength(71)
+            .setProfile(EProfile.wellig)
+            .setCategory(EEvent.Permanente)
+            .setText(
+                `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
 Es handelt sich um landschaftlich schöne Strecken mit herrlichen Rundblicken über Köln und das Bergische Land.
 
 Start und Ziel ist das <a href='https://maps.google.com/maps?daddr=Rather Mauspfad 19, 51107, Köln-Rath, Deutschland&hl=de' target='_blank'>Eiscafe "Piccola Gelateria", Rather Mauspfad 19 in 51107 Köln-Rath</a>.
@@ -299,34 +293,34 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`
-                )
-                .setTitle('Das Bergische Karussell')
-                .setUrls({
-                    'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
-                    Komoot: new URL('https://www.komoot.de/tour/678486665'),
-                    'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
-                })
-                .setControls(
-                    new ControlBuilder()
-                        .setCity('Lindlar')
-                        .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
-                        .setStreet('Kölner Straße 23')
-                        .setTitle('Aral-Tankstelle')
-                        .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
-                        .setZipCode('51789')
-                        .build()
-                )
-                .setLastChange('2022-01-12')
-                .build(),
-            new PermanentBuilder()
-                .setHeight(700)
-                .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
-                .setLength(72)
-                .setProfile(EProfile.wellig)
-                .setCategory(EEvent.Permanente)
-                .setActive(false)
-                .setText(
-                    `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
+            )
+            .setTitle('Das Bergische Karussell')
+            .setUrls({
+                'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
+                Komoot: new URL('https://www.komoot.de/tour/678486665'),
+                'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
+            })
+            .setControls(
+                new ControlBuilder()
+                    .setCity('Lindlar')
+                    .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
+                    .setStreet('Kölner Straße 23')
+                    .setTitle('Aral-Tankstelle')
+                    .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
+                    .setZipCode('51789')
+                    .build()
+            )
+            .setLastChange('2022-01-12')
+            .build(),
+        new PermanentBuilder()
+            .setHeight(700)
+            .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
+            .setLength(72)
+            .setProfile(EProfile.wellig)
+            .setCategory(EEvent.Permanente)
+            .setActive(false)
+            .setText(
+                `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
 
 Nach dem Start geht es erst mal über den Rather Mauspfad Richtung Norden.
@@ -366,25 +360,29 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`
-                )
-                .setTitle('Schmitzebud')
-                .setUrls({
-                    'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
-                    Komoot: new URL('https://www.komoot.de/tour/678483689'),
-                    'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
-                })
-                .setControls(
-                    new ControlBuilder()
-                        .setCity('Kürten')
-                        .setId('32851936-b351-4b4d-a71f-03e3138a8864')
-                        .setStreet('Wipperfürther Straße 360')
-                        .setTitle('Esso-Tankstelle')
-                        .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
-                        .setZipCode('51515')
-                        .build()
-                )
-                .setLastChange('2023-01-27')
-                .build(),
-        ],
-    }),
+            )
+            .setTitle('Schmitzebud')
+            .setUrls({
+                'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
+                Komoot: new URL('https://www.komoot.de/tour/678483689'),
+                'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
+            })
+            .setControls(
+                new ControlBuilder()
+                    .setCity('Kürten')
+                    .setId('32851936-b351-4b4d-a71f-03e3138a8864')
+                    .setStreet('Wipperfürther Straße 360')
+                    .setTitle('Esso-Tankstelle')
+                    .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
+                    .setZipCode('51515')
+                    .build()
+            )
+            .setLastChange('2023-01-27')
+            .build(),
+    ])
+
+    const allPermanents = computed(() => permanents.value)
+    const rtf = computed(() => events.value.find((it) => it.category === EEvent.RTF))
+
+    return { allPermanents, rtf }
 })

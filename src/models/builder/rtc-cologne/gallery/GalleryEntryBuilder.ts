@@ -1,4 +1,4 @@
-import mimeTypes from 'mime-types'
+import { lookup } from 'mime-types'
 import ABuilder from '~/models/builder/ABuilder'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
@@ -14,7 +14,7 @@ export default class GalleryEntryBuilder extends ABuilder {
 
     setImageUrl(value: string): GalleryEntryBuilder {
         this.entity.imageUrl = new URL(`https://${value}`)
-        this.entity.mimeType = mimeTypes.lookup(value)
+        this.entity.mimeType = lookup(value)
 
         return this
     }
