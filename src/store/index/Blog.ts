@@ -57,6 +57,13 @@ erhalten.
             .setTitle('rtckoeln 👍TIPP Nummer 2')
             .build(),
         new BlogEntryBuilder()
+            .setAlbumIDs(['c96345be-6fba-4d03-b0f1-5ee71e0fed12'])
+            .setDate('2023-05-19')
+            .setId('e353d230-eb2b-4b6f-96f8-853c2d1c599e')
+            .setText(`Der RTC Köln e.V. in der Mai-Ausgabe des Stadtmagazins „Porz im Blick“. 🤗👍`)
+            .setTitle('Porz im Blick - Maiausgabe')
+            .build(),
+        new BlogEntryBuilder()
             .setAlbumIDs(['57987c1c-d899-4f5c-93ea-fdacfebfb7c9'])
             .setDate('2023-05-15')
             .setId('7bdd73f2-a5c4-437d-8801-6fd79f63f09e')
