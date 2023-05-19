@@ -34,8 +34,8 @@ devDependencies:
     specifier: ~12.0.0
     version: 12.0.0(eslint@8.40.0)(typescript@5.0.4)
   '@nuxtjs/eslint-module':
-    specifier: ~4.0.2
-    version: 4.0.2(eslint@8.40.0)(rollup@3.21.5)(vite@4.3.7)(webpack@4.46.0)
+    specifier: ~4.1.0
+    version: 4.1.0(eslint@8.40.0)(rollup@3.21.5)(vite@4.3.7)(webpack@4.46.0)
   '@nuxtjs/router':
     specifier: ~1.7.0
     version: 1.7.0
@@ -3006,14 +3006,16 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/eslint-module@4.0.2(eslint@8.40.0)(rollup@3.21.5)(vite@4.3.7)(webpack@4.46.0):
-    resolution: {integrity: sha512-Lss37KjO9EZwlrxHcvXWiLZnd/kvw40htqhwKJiA8/IwuVWAFJ6Tu5Hl8iz2V0BN4RU1DIaS1ULQOQycndu3dw==}
+  /@nuxtjs/eslint-module@4.1.0(eslint@8.40.0)(rollup@3.21.5)(vite@4.3.7)(webpack@4.46.0):
+    resolution: {integrity: sha512-lW9ozEjOrnU8Uot3GOAZ/0ThNAds0d6UAp9n46TNxcTvH/MOcAggGbMNs16c0HYT2HlyPQvXORCHQ5+9p87mmw==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
-      '@nuxt/kit': 3.3.2(rollup@3.21.5)
+      '@nuxt/kit': 3.5.0(rollup@3.21.5)
+      chokidar: 3.5.3
       eslint: 8.40.0
-      eslint-webpack-plugin: 4.0.0(eslint@8.40.0)(webpack@4.46.0)
+      eslint-webpack-plugin: 4.0.1(eslint@8.40.0)(webpack@4.46.0)
+      pathe: 1.1.0
       vite-plugin-eslint: 1.8.1(eslint@8.40.0)(vite@4.3.7)
     transitivePeerDependencies:
       - rollup
@@ -3329,6 +3331,13 @@ packages:
 
   /@types/eslint@8.21.3:
     resolution: {integrity: sha512-fa7GkppZVEByMWGbTtE5MbmXWJTVbrjjaS8K6uQj+XtuuUv1fsuPAxhygfqLmsb/Ufb3CV8deFCpiMfAgi00Sw==}
+    dependencies:
+      '@types/estree': 1.0.0
+      '@types/json-schema': 7.0.11
+    dev: true
+
+  /@types/eslint@8.37.0:
+    resolution: {integrity: sha512-Piet7dG2JBuDIfohBngQ3rCt7MgO9xCO4xIMKxBThCq5PNRB91IjlJ10eJVwfoNtvTErmxLzwBZ7rHZtbOMmFQ==}
     dependencies:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
@@ -6906,14 +6915,14 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint-webpack-plugin@4.0.0(eslint@8.40.0)(webpack@4.46.0):
-    resolution: {integrity: sha512-eM9ccGRWkU+btBSVfABRn8CjT7jZ2Q+UV/RfErMDVCFXpihEbvajNrLltZpwTAcEoXSqESGlEPIUxl7PoDlLWw==}
+  /eslint-webpack-plugin@4.0.1(eslint@8.40.0)(webpack@4.46.0):
+    resolution: {integrity: sha512-fUFcXpui/FftGx3NzvWgLZXlLbu+m74sUxGEgxgoxYcUtkIQbS6SdNNZkS99m5ycb23TfoNYrDpp1k/CK5j6Hw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       eslint: ^8.0.0
       webpack: ^5.0.0
     dependencies:
-      '@types/eslint': 8.21.3
+      '@types/eslint': 8.37.0
       eslint: 8.40.0
       jest-worker: 29.5.0
       micromatch: 4.0.5
