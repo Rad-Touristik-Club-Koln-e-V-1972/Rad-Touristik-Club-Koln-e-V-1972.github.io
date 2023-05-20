@@ -19,7 +19,5 @@ import EEvent from '~/models/enums/EEvent'
 const emits = defineEmits<{ (e: 'input', value: EEvent): void }>()
 const props = defineProps<{ value: EEvent[] }>()
 
-const emitUpdate = (modelValue: EEvent) => {
-    emits('input', modelValue)
-}
+const emitUpdate = (modelValue: EEvent) => emits('input', modelValue)
 </script>

@@ -8,7 +8,5 @@ import { mdiMagnify } from '@mdi/js'
 const emits = defineEmits<{ (e: 'input', value: string): void }>()
 const props = defineProps<{ value?: string }>()
 
-const emitUpdate = (modelValue: string) => {
-    emits('input', modelValue)
-}
+const emitUpdate = (modelValue: string) => emits('input', modelValue)
 </script>

@@ -96,9 +96,7 @@ const navigationStore = useNavigationStore()
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
-const emitUpdate = (modelValue: boolean) => {
-    emits('input', modelValue)
-}
+const emitUpdate = (modelValue: boolean) => emits('input', modelValue)
 
 // TODO WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15531
 const workaround = () => {
