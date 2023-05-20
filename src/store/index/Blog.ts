@@ -1,9 +1,12 @@
-import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
+import { defineStore } from 'pinia'
 import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 import BlogEntry from '~/models/entities/index/BlogEntry'
+import useDateTime from '~/utils/DateTime'
 
 export const useBlogStore = defineStore('blog', () => {
+    const dateTime = useDateTime()
+
     const entries = ref<BlogEntry[]>([
         new BlogEntryBuilder()
             .setAlbumIDs(['e2ab13b0-d2f7-482b-864c-f5affec8863c'])
@@ -550,15 +553,7 @@ Klaus`
 
     const all = computed(() => entries.value)
 
-    const tomorrow = (): Date => {
-        const tomorrow = new Date(Date.now())
-        tomorrow.setDate(tomorrow.getDate() + 1)
-        tomorrow.setHours(0, 0, 0, 0)
-        return tomorrow
-    }
-    const findAllBeforeTomorrow = function (): BlogEntry[] {
-        return all.value.filter((it) => it.start.getTime() < tomorrow().getTime())
-    }
+    const findAllBeforeTomorrow = (): BlogEntry[] => all.value.filter((it) => it.start.getTime() < dateTime.getTomorrowMidnight().getTime())
 
     return { all, findAllBeforeTomorrow }
 })

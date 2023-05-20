@@ -11,6 +11,14 @@ export default function useDateTime() {
         },
         formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
         getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
+        getTomorrowMidnight: () => {
+            const date = new Date(Date.now())
+
+            date.setDate(date.getDate() + 1)
+            date.setHours(0, 0, 0, 0)
+
+            return date
+        },
         isBetween: (date: Date, start: Date, end: Date) => {
             let tempStart = start
             let tempEnd = end
