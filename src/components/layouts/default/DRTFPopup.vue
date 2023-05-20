@@ -21,7 +21,7 @@
                 </v-row>
                 <v-row no-gutters>
                     <v-col class="text-right" cols="4">
-                        <v-icon color="secondary" x-small left>{{ icons.mdiArrowRightBottom }}</v-icon>
+                        <v-icon color="secondary" x-small left>{{ mdiArrowRightBottom }}</v-icon>
                     </v-col>
                     <v-col class="text-left">Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</v-col>
                 </v-row>
@@ -54,7 +54,6 @@ import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const icons = { mdiArrowRightBottom }
 const dialog = ref(true)
 const nextRTF = useCalendarStore().nextRTF()
 </script>

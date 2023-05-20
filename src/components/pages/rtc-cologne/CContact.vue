@@ -6,7 +6,7 @@
         <v-divider />
         <v-card-actions>
             <v-btn :href="`mailto:${props.value.eMail}`" text>
-                <v-icon left>{{ icons.mdiEmailArrowRight }}</v-icon>
+                <v-icon left>{{ mdiEmailArrowRight }}</v-icon>
                 E-Mail senden
             </v-btn>
             <v-spacer />
@@ -15,14 +15,8 @@
 </template>
 
 <script lang="ts" setup>
-import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
+import { mdiEmailArrowRight } from '@mdi/js'
 import Contact from '~/models/entities/rtc-cologne/Contact'
 
 const props = defineProps<{ value: Contact }>()
-
-const icons = {
-    mdiChevronDown,
-    mdiChevronUp,
-    mdiEmailArrowRight,
-}
 </script>

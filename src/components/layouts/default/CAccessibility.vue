@@ -2,7 +2,7 @@
     <v-dialog id="CAccessibility" v-model="dialog" width="auto">
         <template #activator="{ on, attrs }">
             <v-btn icon v-bind="attrs" v-on="on">
-                <v-icon>{{ icons.mdiWheelchair }}</v-icon>
+                <v-icon>{{ mdiWheelchair }}</v-icon>
             </v-btn>
         </template>
         <v-card>
@@ -28,9 +28,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { mdiCopyright, mdiWheelchair } from '@mdi/js'
-
-const icons = { mdiCopyright, mdiWheelchair }
+import { mdiWheelchair } from '@mdi/js'
 
 const dialog = ref(false)
 const legasthenie = ref(false)

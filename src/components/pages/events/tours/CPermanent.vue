@@ -61,7 +61,7 @@
                 <v-spacer />
                 <v-btn text @click="showText = !showText">
                     Details
-                    <v-icon right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+                    <v-icon right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
                 </v-btn>
             </v-card-actions>
             <v-expand-transition>
@@ -84,9 +84,5 @@ const props = defineProps<{ value: Permanent }>()
 
 const dateTime = useDateTime()
 
-const icons = {
-    mdiChevronDown,
-    mdiChevronUp,
-}
 const showText = ref(false)
 </script>

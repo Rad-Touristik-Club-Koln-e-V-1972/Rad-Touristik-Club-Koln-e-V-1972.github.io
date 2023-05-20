@@ -5,7 +5,7 @@
                 <v-card-title>{{ selectedEvent?.name }}</v-card-title>
                 <v-spacer />
                 <v-btn icon @click="isOpen = false">
-                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
+                    <v-icon color="accent">{{ mdiClose }}</v-icon>
                 </v-btn>
             </v-toolbar>
             <v-card-text>
@@ -42,7 +42,6 @@ import Event from '~/models/entities/events/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
 import useDateTime from '~/utils/DateTime'
 
-const icons = { mdiClose }
 const isOpen = ref(false)
 const selectedEvent = ref<Event>()
 

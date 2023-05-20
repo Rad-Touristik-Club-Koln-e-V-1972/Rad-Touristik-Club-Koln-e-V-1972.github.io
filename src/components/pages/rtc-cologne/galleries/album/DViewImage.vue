@@ -13,7 +13,7 @@
             <v-sheet height="100%">
                 <d-view-image-original style="left: 0; z-index: 1" :value="props.value[startIndex].imageUrl" />
                 <v-btn absolute color="primary" style="right: 0; z-index: 1" @click="isOpen = false">
-                    <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
+                    <v-icon color="accent">{{ mdiClose }}</v-icon>
                 </v-btn>
                 <!-- TODO KEYBOARD SUPPORT COMES WITH VUETIFY 3.x https://github.com/vuetifyjs/vuetify/issues/11544 -->
                 <c-slideshow :cycle="false" :start-index="startIndex" :value="props.value" />
@@ -35,6 +35,5 @@ const props = defineProps<{
     startIndex: number
 }>()
 
-const icons = { mdiClose }
 const isOpen = ref(false)
 </script>

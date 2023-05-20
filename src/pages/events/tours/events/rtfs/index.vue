@@ -9,19 +9,19 @@
                 <v-tabs-slider></v-tabs-slider>
                 <v-tab href="#tab-general">
                     Allgemein
-                    <v-icon color="white">{{ icons.mdiBike }}</v-icon>
+                    <v-icon color="white">{{ mdiBike }}</v-icon>
                 </v-tab>
                 <v-tab href="#tab-info">
                     Info
-                    <v-icon color="white">{{ icons.mdiInformation }}</v-icon>
+                    <v-icon color="white">{{ mdiInformation }}</v-icon>
                 </v-tab>
                 <v-tab href="#tab-tracks">
                     Strecken
-                    <v-icon color="white">{{ icons.mdiGoKartTrack }}</v-icon>
+                    <v-icon color="white">{{ mdiGoKartTrack }}</v-icon>
                 </v-tab>
                 <v-tab href="#tab-registration">
                     Anmeldung
-                    <v-icon color="white">{{ icons.mdiCurrencyEur }}</v-icon>
+                    <v-icon color="white">{{ mdiCurrencyEur }}</v-icon>
                 </v-tab>
             </v-tabs>
             <v-tabs-items v-model="tab">
@@ -49,7 +49,6 @@ import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const icons = { mdiBike, mdiCurrencyEur, mdiGoKartTrack, mdiInformation }
 const value: Event | undefined = useTourStore().rtf
 
 const tab = ref()

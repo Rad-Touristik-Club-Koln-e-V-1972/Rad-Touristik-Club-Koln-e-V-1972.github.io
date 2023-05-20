@@ -6,13 +6,13 @@
         <!-- TODO max-height="64px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/15362 -->
         <v-toolbar color="primary" flat max-height="64px">
             <v-btn exact icon @click="close">
-                <v-icon color="accent">{{ icons.mdiClose }}</v-icon>
+                <v-icon color="accent">{{ mdiClose }}</v-icon>
             </v-btn>
             <v-toolbar-title class="accent--text">{{ value.title }}</v-toolbar-title>
             <v-spacer />
             <v-btn v-if="value?.description" color="accent" text @click="showText = !showText">
                 Details
-                <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+                <v-icon color="accent" right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
             </v-btn>
         </v-toolbar>
         <v-card-subtitle>{{ dateTime.format(value.start, value.end, true) }} bei {{ value.location }}</v-card-subtitle>
@@ -106,19 +106,6 @@ const dateTime = useDateTime()
 const value = useGalleryStore().findById(proxy?.$route.params.id ?? '')
 value || proxy?.$router.go(-1)
 
-const close = () => {
-    isLoading.value = true
-    nextTick(() => {
-        setTimeout(() => {
-            proxy?.$router.go(-1)
-        }, 0)
-    })
-}
-const icons = {
-    mdiChevronDown,
-    mdiChevronUp,
-    mdiClose,
-}
 const isLoading = ref(false)
 const showText = ref(false)
 const tabModel = ref()
@@ -132,4 +119,13 @@ const tabs = computed(() => {
 
     return tabs
 })
+
+const close = () => {
+    isLoading.value = true
+    nextTick(() => {
+        setTimeout(() => {
+            proxy?.$router.go(-1)
+        }, 0)
+    })
+}
 </script>

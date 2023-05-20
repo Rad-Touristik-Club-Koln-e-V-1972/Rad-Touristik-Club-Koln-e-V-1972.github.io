@@ -3,7 +3,7 @@
         <template #activator="{ attrs, on }">
             <v-text-field
                 v-model="items"
-                :append-icon="icons.mdiCalendar"
+                :append-icon="mdiCalendar"
                 clearable
                 hide-details
                 label="Datenbereich"
@@ -28,7 +28,6 @@ import { mdiCalendar } from '@mdi/js'
 const emits = defineEmits<{ (e: 'input', value: string[]): void }>()
 const props = defineProps<{ value: string[] }>()
 
-const icons = { mdiCalendar }
 const isOpen = ref(false)
 const items = ref(props.value)
 

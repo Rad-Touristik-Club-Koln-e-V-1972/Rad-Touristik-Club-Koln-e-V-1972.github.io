@@ -1,7 +1,7 @@
 <template>
     <v-autocomplete
         id="CCategories"
-        :append-icon="icons.mdiFilter"
+        :append-icon="mdiFilter"
         clearable
         hide-details
         :items="Object.values(EEvent)"
@@ -18,8 +18,6 @@ import EEvent from '~/models/enums/EEvent'
 
 const emits = defineEmits<{ (e: 'input', value: EEvent): void }>()
 const props = defineProps<{ value: EEvent[] }>()
-
-const icons = { mdiFilter }
 
 const emitUpdate = (modelValue: EEvent) => {
     emits('input', modelValue)

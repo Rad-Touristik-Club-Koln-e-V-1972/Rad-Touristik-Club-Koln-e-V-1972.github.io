@@ -1,11 +1,11 @@
 <template>
     <v-toolbar id="CControl" flat>
         <v-btn v-if="!isCalendarList" fab :small="vuetify?.breakpoint.xs" text @click="emits('prev')">
-            <v-icon>{{ icons.mdiChevronLeft }}</v-icon>
+            <v-icon>{{ mdiChevronLeft }}</v-icon>
         </v-btn>
         <v-btn v-if="!isCalendarList" outlined :small="vuetify?.breakpoint.xs" @click="emits('showToday')">Heute</v-btn>
         <v-btn v-if="!isCalendarList" fab :small="vuetify?.breakpoint.xs" text @click="emits('next')">
-            <v-icon>{{ icons.mdiChevronRight }}</v-icon>
+            <v-icon>{{ mdiChevronRight }}</v-icon>
         </v-btn>
         <v-toolbar-title v-if="!isCalendarList && !vuetify?.breakpoint.xs">{{ props.title }}</v-toolbar-title>
         <v-spacer />
@@ -13,7 +13,7 @@
             <template #activator="{ on, attrs }">
                 <v-btn outlined :small="vuetify?.breakpoint.xs" v-bind="attrs" v-on="on">
                     {{ value }}
-                    <v-icon right>{{ icons.mdiMenuDown }}</v-icon>
+                    <v-icon right>{{ mdiMenuDown }}</v-icon>
                 </v-btn>
             </template>
             <v-list>
@@ -47,10 +47,5 @@ const props = defineProps<{
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
 
-const icons = {
-    mdiChevronLeft,
-    mdiChevronRight,
-    mdiMenuDown,
-}
 const isCalendarList = computed(() => props.value === ECalendar.list)
 </script>

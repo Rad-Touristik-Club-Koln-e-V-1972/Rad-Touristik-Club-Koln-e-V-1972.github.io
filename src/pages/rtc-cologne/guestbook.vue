@@ -5,7 +5,7 @@
             <v-spacer />
             <v-btn color="accent" text @click="showText = !showText">
                 Details
-                <v-icon color="accent" right>{{ showText ? icons.mdiChevronUp : icons.mdiChevronDown }}</v-icon>
+                <v-icon color="accent" right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
             </v-btn>
         </v-toolbar>
         <v-card-subtitle>Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</v-card-subtitle>
@@ -16,7 +16,7 @@
                 --%0D%0AViele%20Gr%C3%BC%C3%9Fe%0D%0AMax%20Mustermann%0D%0AAus%20K%C3%B6ln"
                 style="background-color: var(--v-primary-base); color: var(--v-accent-base)"
             >
-                <v-icon color="accent" left>{{ icons.mdiEmailArrowRight }}</v-icon>
+                <v-icon color="accent" left>{{ mdiEmailArrowRight }}</v-icon>
                 Gästebucheintrag hinzufügen
             </v-btn>
         </v-card-actions>
@@ -60,7 +60,6 @@ import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
 import CGuestbook from '~/components/pages/rtc-cologne/CGuestbook.vue'
 import { useGuestbookStore } from '~/store/rtc-cologne/Guestbook'
 
-const icons = { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight }
 const items = useGuestbookStore().getGroupedByYear
 const showText = ref(false)
 </script>

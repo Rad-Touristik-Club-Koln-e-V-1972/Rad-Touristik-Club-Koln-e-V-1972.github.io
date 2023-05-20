@@ -195,7 +195,7 @@
                     <v-list>
                         <v-list-item>
                             <v-list-item-icon>
-                                <v-icon>{{ icons.mdiCircleSmall }}</v-icon>
+                                <v-icon>{{ mdiCircleSmall }}</v-icon>
                             </v-list-item-icon>
                             <v-list-item-content>
                                 Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für
@@ -204,7 +204,7 @@
                         </v-list-item>
                         <v-list-item>
                             <v-list-item-icon>
-                                <v-icon>{{ icons.mdiCircleSmall }}</v-icon>
+                                <v-icon>{{ mdiCircleSmall }}</v-icon>
                             </v-list-item-icon>
                             <v-list-item-content>
                                 Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der
@@ -213,7 +213,7 @@
                         </v-list-item>
                         <v-list-item>
                             <v-list-item-icon>
-                                <v-icon>{{ icons.mdiCircleSmall }}</v-icon>
+                                <v-icon>{{ mdiCircleSmall }}</v-icon>
                             </v-list-item-icon>
                             <v-list-item-content>
                                 Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen
@@ -222,7 +222,7 @@
                         </v-list-item>
                         <v-list-item>
                             <v-list-item-icon>
-                                <v-icon>{{ icons.mdiCircleSmall }}</v-icon>
+                                <v-icon>{{ mdiCircleSmall }}</v-icon>
                             </v-list-item-icon>
                             <v-list-item-content>
                                 Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden.
@@ -331,6 +331,4 @@
 
 <script lang="ts" setup>
 import { mdiCircleSmall } from '@mdi/js'
-
-const icons = { mdiCircleSmall }
 </script>

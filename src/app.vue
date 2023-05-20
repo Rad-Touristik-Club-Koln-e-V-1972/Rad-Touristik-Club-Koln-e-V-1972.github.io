@@ -24,7 +24,7 @@
             <v-row dense>
                 <v-col cols="auto">
                     <div class="text-no-wrap">
-                        <v-icon left>{{ icons.mdiCopyright }}</v-icon>
+                        <v-icon left>{{ mdiCopyright }}</v-icon>
                         2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
                     </div>
                 </v-col>
@@ -52,7 +52,6 @@ import { useSponsorStore } from '~/store/Sponsor'
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)
 
-const icons = { mdiCopyright }
 const navDrawer = ref(!vuetify.value?.breakpoint.mobile ?? false)
 </script>
 
