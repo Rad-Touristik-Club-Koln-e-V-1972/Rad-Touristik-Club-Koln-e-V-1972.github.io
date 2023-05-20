@@ -65,9 +65,7 @@ onMounted(() => {
     }
 })
 
-onUnmounted(() => {
-    clearInterval(interval)
-})
+onUnmounted(() => clearInterval(interval))
 
 const getPercentageDays = (value: number) => getPercentage(daysOfMonth, value)
 const getPercentageHours = (value: number) => getPercentage(24, value)

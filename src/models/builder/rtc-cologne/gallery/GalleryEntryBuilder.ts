@@ -27,6 +27,7 @@ export default class GalleryEntryBuilder extends ABuilder {
 
     private createPreviewURL = (value: URL) => {
         const strings = value.href.split('/')
+
         return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
     }
 }

@@ -44,9 +44,7 @@ const isTypeList = computed(() => type.value === ECalendar.list)
 
 const getEventColor = (event: Event) => event.color
 const getTypeString = (ec: ECalendar) => Object.entries(ECalendar).find((it) => it[1] === ec)?.[0] ?? ''
-const setFocus = (val: string) => {
-    focus.value = val
-}
+const setFocus = (val: string) => (focus.value = val)
 const switchToDayView = ({ date }: { date: string }) => {
     focus.value = date
     type.value = ECalendar.day
@@ -54,9 +52,7 @@ const switchToDayView = ({ date }: { date: string }) => {
 
 watch(
     () => calendar.value?.title,
-    (currentValue) => {
-        title.value = currentValue ?? ''
-    },
+    (currentValue) => (title.value = currentValue ?? ''),
     { immediate: true }
 )
 </script>
