@@ -61,7 +61,7 @@ const filterBy = (_: string, __: string | null, item: Event) => {
         ret = filter.dateRange.length === 1 ? dateTime.isSameDay(item.start, start) : dateTime.isBetween(item.start, start, new Date(filter.dateRange[1]))
     }
 
-    if (ret && filter.search.value) ret = (item.clubPoints + item.contact.toLowerCase() + item.name.toLowerCase()).includes(filter.search.value.toLowerCase())
+    if (ret && filter.search.value) ret = (item.clubPoints + item.contact?.toLowerCase() + item.name?.toLowerCase()).includes(filter.search.value.toLowerCase())
 
     return ret
 }
