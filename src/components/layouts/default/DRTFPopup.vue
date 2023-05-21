@@ -40,7 +40,7 @@
             <v-card-actions>
                 <v-btn class="font-weight-black" color="primary" text @click="dialog = false">OK</v-btn>
                 <v-spacer />
-                <v-btn class="font-weight-black" color="primary" text :to="{ name: 'events-tours-events-rtfs' }" @click="dialog = false">Infos</v-btn>
+                <v-btn class="font-weight-black" color="primary" :to="{ name: 'events-tours-events-rtfs' }" @click="dialog = false">Infos</v-btn>
             </v-card-actions>
         </v-card>
     </v-dialog>
