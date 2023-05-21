@@ -6,7 +6,7 @@
         <v-card-subtitle>Stand: {{ dateTime.format(value.lastChange, null, true) }}</v-card-subtitle>
         <v-card-text>
             <v-tabs v-model="tab" background-color="primary" centered icons-and-text show-arrows>
-                <v-tabs-slider></v-tabs-slider>
+                <v-tabs-slider />
                 <v-tab href="#tab-general">
                     Allgemein
                     <v-icon color="white">{{ mdiBike }}</v-icon>
@@ -51,5 +51,5 @@ const dateTime = useDateTime()
 
 const value: Event | undefined = useTourStore().rtf
 
-const tab = ref()
+const tab = ref('tab-info')
 </script>
