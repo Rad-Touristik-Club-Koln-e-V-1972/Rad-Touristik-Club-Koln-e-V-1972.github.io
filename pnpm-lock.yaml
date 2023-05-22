@@ -11,7 +11,6 @@ dependencies:
     specifier: ~2.1.3
     version: 2.1.3(typescript@5.0.4)(vue@2.7.14)
 
-
 devDependencies:
   '@babel/core':
     specifier: ~7.21.8
@@ -50,8 +49,8 @@ devDependencies:
     specifier: ~0.4.11
     version: 0.4.11(rollup@3.21.5)(typescript@5.0.4)(vue@2.7.14)
   '@rushstack/eslint-patch':
-    specifier: ~1.2.0
-    version: 1.2.0
+    specifier: ~1.3.0
+    version: 1.3.0
   '@types/mime-types':
     specifier: ~2.1.1
     version: 2.1.1
@@ -3199,8 +3198,8 @@ packages:
       rollup: 3.21.5
     dev: true
 
-  /@rushstack/eslint-patch@1.2.0:
-    resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
+  /@rushstack/eslint-patch@1.3.0:
+    resolution: {integrity: sha512-IthPJsJR85GhOkp3Hvp8zFOPK5ynKn6STyHa/WZpioK7E1aYDiBzpqQPrngc14DszIUkIrdd3k9Iu0XSzlP/1w==}
     dev: true
 
   /@sinclair/typebox@0.25.24:
