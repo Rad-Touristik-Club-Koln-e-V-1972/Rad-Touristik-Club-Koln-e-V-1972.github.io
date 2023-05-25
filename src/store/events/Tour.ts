@@ -220,7 +220,17 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
             .setImages(
                 new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build()
             )
-            .setLastChange('2023-05-03')
+            .setLastChange('2023-05-25')
+            .setLocation(
+                new ControlBuilder()
+                    .setCity('Köln-Zündorf')
+                    .setId('9644f162-29c8-40ef-a37f-3eac5e94d8c5')
+                    .setStreet('Heerstraße 7')
+                    .setTitle('Schulzentrum Zündorf')
+                    .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
+                    .setZipCode('51143')
+                    .build()
+            )
             .setPopup(
                 `Natürlich sind all unsere Strecken ausgeschildert.
 

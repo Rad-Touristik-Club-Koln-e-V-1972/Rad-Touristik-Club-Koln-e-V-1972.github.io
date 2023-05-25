@@ -10,6 +10,7 @@ export default class Tour extends AEntity {
     controls: Control[] = []
     images: GalleryEntry[] = []
     lastChange!: Date
+    location!: Control
     popup?: Popup
     text!: string
     title!: string

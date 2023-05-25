@@ -26,7 +26,7 @@
             </v-tabs>
             <v-tabs-items v-model="tab">
                 <v-tab-item value="tab-general"><c-general :images="value.images" :text="value.text" /></v-tab-item>
-                <v-tab-item value="tab-info"><c-info :fees="value.fees" :times="value.times" :tracks="value.tracks" /></v-tab-item>
+                <v-tab-item value="tab-info"><c-info :fees="value.fees" :location="value.location" :times="value.times" :tracks="value.tracks" /></v-tab-item>
                 <v-tab-item value="tab-tracks"><c-tracks :tracks="value.tracks" /></v-tab-item>
                 <v-tab-item value="tab-registration"><c-registration /></v-tab-item>
             </v-tabs-items>

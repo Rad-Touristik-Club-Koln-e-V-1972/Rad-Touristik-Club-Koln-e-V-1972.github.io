@@ -42,6 +42,12 @@ export default class TourBuilder<T extends Tour> extends ABuilder {
         return this
     }
 
+    setLocation(value: Control): TourBuilder<T> {
+        this.tour.location = value
+
+        return this
+    }
+
     setPopup(text: string, title: string): TourBuilder<T> {
         this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).build()
 

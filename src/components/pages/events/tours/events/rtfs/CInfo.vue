@@ -5,6 +5,57 @@
                 <v-col cols="auto">
                     <v-card class="text-no-wrap">
                         <v-toolbar color="primary" flat>
+                            <v-toolbar-title class="accent--text">Adresse</v-toolbar-title>
+                        </v-toolbar>
+                        <v-card-text class="black--text">
+                            <b>{{ props.location.title }}</b>
+                            <br />
+                            {{ props.location.street }}
+                            <br />
+                            {{ props.location.zipCode }} {{ props.location.city }}
+                            <br />
+                            <a :href="props.location.url?.toString()" target="_blank">Anfahrt bei Google Maps</a>
+                            <br />
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="auto">
+                    <v-card>
+                        <v-toolbar color="primary" flat>
+                            <v-toolbar-title class="accent--text">Zeiten</v-toolbar-title>
+                        </v-toolbar>
+                        <v-card-text>
+                            <v-simple-table dense>
+                                <tbody>
+                                    <tr v-for="it in props.times" :key="it.id">
+                                        <td class="text-right text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
+                                        <td v-text="it.name" />
+                                    </tr>
+                                </tbody>
+                            </v-simple-table>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="auto">
+                    <v-card>
+                        <v-toolbar color="primary" flat>
+                            <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
+                        </v-toolbar>
+                        <v-card-text>
+                            <v-simple-table dense>
+                                <tbody>
+                                    <tr v-for="it in props.fees.filter((f) => f.category)" :key="it.id">
+                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
+                                        <td v-html="it.name" />
+                                    </tr>
+                                </tbody>
+                            </v-simple-table>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="auto">
+                    <v-card class="text-no-wrap">
+                        <v-toolbar color="primary" flat>
                             <v-toolbar-title class="accent--text">Strecken</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
@@ -39,40 +90,6 @@
                         </v-card-text>
                     </v-card>
                 </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <v-simple-table dense>
-                                <tbody>
-                                    <tr v-for="it in props.fees.filter((f) => f.category)" :key="it.id">
-                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
-                                        <td v-html="it.name" />
-                                    </tr>
-                                </tbody>
-                            </v-simple-table>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Zeiten</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <v-simple-table dense>
-                                <tbody>
-                                    <tr v-for="it in props.times" :key="it.id">
-                                        <td class="text-right text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
-                                        <td v-text="it.name" />
-                                    </tr>
-                                </tbody>
-                            </v-simple-table>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
             </v-row>
         </v-card-text>
     </v-card>
@@ -80,11 +97,12 @@
 
 <script lang="ts" setup>
 import useDateTime from '~/utils/DateTime'
+import Control from '~/models/entities/events/tours/Control'
 import Fee from '~/models/entities/events/tours/events/Fee'
 import Time from '~/models/entities/events/tours/events/Time'
 import Track from '~/models/entities/events/tours/events/Track'
 
-const props = defineProps<{ fees: Fee[]; times: Time[]; tracks: Track[] }>()
+const props = defineProps<{ fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
 
 const dateTime = useDateTime()
 </script>
