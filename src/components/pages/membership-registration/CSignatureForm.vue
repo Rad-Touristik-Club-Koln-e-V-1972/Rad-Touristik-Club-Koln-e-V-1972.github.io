@@ -26,9 +26,5 @@ const props = defineProps({
 
 const signaturePad = ref<VueSignaturePad>()
 
-onMounted(() => {
-    signaturePad.value?.fromDataURL(props.value ?? '') // TODO REMOVE
-})
-
 const onEnd = () => emits('input', signaturePad.value?.saveSignature('image/svg+xml')?.data ?? '')
 </script>
