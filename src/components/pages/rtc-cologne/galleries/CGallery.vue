@@ -11,13 +11,13 @@
             {{ props.value.location }}
         </v-card-subtitle>
         <v-card-text>
-            <v-img eager :src="props.value.titleImageUrl.toString()" style="cursor: pointer" @click="open">
+            <v-img eager :src="props.value?.titleImageUrl?.toString()" style="cursor: pointer" @click="open">
                 <template #placeholder>
                     <c-loading-skeleton />
                 </template>
             </v-img>
         </v-card-text>
-        <div v-if="props.value.description">
+        <div v-if="props.value?.description">
             <v-divider />
             <v-card-actions>
                 <v-spacer />
@@ -29,7 +29,7 @@
             <v-expand-transition>
                 <div v-show="showText">
                     <v-card-text>
-                        <span class="black--text text-pre-wrap" v-text="props.value.description" />
+                        <span class="black--text text-pre-wrap" v-text="props.value?.description" />
                     </v-card-text>
                 </div>
             </v-expand-transition>
@@ -56,7 +56,7 @@ const dateTime = useDateTime()
 const isLoading = ref(false)
 const open = () => {
     isLoading.value = true
-    nextTick(() => setTimeout(() => router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value.id } }), 0))
+    nextTick(() => setTimeout(() => router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value?.id } }), 0))
 }
 const showText = ref(false)
 </script>
