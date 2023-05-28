@@ -54,6 +54,6 @@ import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const dialog = ref(true)
 const nextRTF = useCalendarStore().nextRTF()
+const dialog = ref(!!nextRTF)
 </script>
