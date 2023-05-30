@@ -8,11 +8,13 @@ import _2016 from '~/store/rtc-cologne/guestbook/2016'
 import _2017 from '~/store/rtc-cologne/guestbook/2017'
 import _2018 from '~/store/rtc-cologne/guestbook/2018'
 import _2019 from '~/store/rtc-cologne/guestbook/2019'
+import _2023 from '~/store/rtc-cologne/guestbook/2023'
 
 const sortByDate = (entries: GuestbookEntry[]) => entries.sort((a, b) => b.date.getTime() - a.date.getTime())
 
 export const useGuestbookStore = defineStore('guestbook', () => {
     const guestbooks = ref<Record<string, GuestbookEntry[]>>({
+        2023: sortByDate(_2023),
         2019: sortByDate(_2019),
         2018: sortByDate(_2018),
         2017: sortByDate(_2017),
