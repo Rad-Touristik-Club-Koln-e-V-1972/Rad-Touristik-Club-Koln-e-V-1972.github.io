@@ -2,6 +2,34 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setDate('2023-05-31')
+        .setId('6f11b4e0-52c7-4b28-a4d5-b19de2ad6fc7')
+        .setText(
+            `Jetzt ist es amtlich:
+Wir hatten 526 Teilnehmer:innen bei unserer 51. Forsbachtour am Pfingstsonntag.
+Vielen Dank, dass ihr so zahlreich zu uns gekommen seid und an unseren neuen Event-Aktionen teilgenommen habt. 🥰
+Von allem gab es satt: Im Vorfeld Blicke in die Wetter-App, Planungsgespräche, Muskelarbeit, dann Sonne, Stress, Spaß, zu essen (außer an der K1 - sorry), Dinge, die gesucht wurden, Fragen, ausgefüllte Feedback-Bögen, Gewinne, strahlende Gesichter, Kilo- und Höhenmeter, liebevolle und positive Kommentare, Likes, zufriedene Sportler:innen und am Ende der Forstbachtour glückliche, erschöpfte RTCler:innen.
+Vielleicht ist der oder dem ein oder anderen aufgefallen, dass die Forsbachtour-TN ganz herzlich mit einem selbstgebastelten Plakat begrüßt worden sind? @Marco Laufenberg:
+Du bist echt der Hammer.
+Vielen lieben Dank für diese super liebe Geste im „Radsport Hotspot Hetzenholz“. 🤗👍
+Ein riesiges Dankeschön geht aber auch an unsere Sponsoren, die uns wahnsinnig großzügig unterstützt haben - sei es mit Sachspenden oder mit finanzieller Unterstützung.
+Als recht kleiner Verein hätten wir Vieles ohne diesen Support nicht umsetzen können.
+🙏 Danke ❤️
+Aber in erster Linie bedanke ich mich bei den fleißigen RTCler:innen und 13 Fremdhelfern🫶, die an einigen Tagen (denn eine RTF macht nicht nur an EINEM Tag sehr viel Arbeit!) unheimlich viele Stunden ihrer Lebenszeit dem RTC geschenkt haben, damit unsere Veranstaltung überhaupt möglich ist.
+Unterm Strich: Der RTC Köln e.V. fühlt Dankbarkeit satt. 🤗
+
+Alles Liebe ❤️
+Diana vom RTC Köln e.V.
+
+🔜 Nicht vergessen:
+Neu bei uns im Programm sind zwei geführte Touren an die Mosel ‼️
+Wer von euch nimmt die Herausforderung an und verbringt einen Urlaubstag auf dem Rennrad mit dem RTC Köln?
+Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de
+`
+        )
+        .setTitle('Résumé 51. Forsbachtour 2023')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['e2ab13b0-d2f7-482b-864c-f5affec8863c'])
         .setDate('2023-05-24')
         .setId('13c58951-6955-4498-9786-444e80575f44')
