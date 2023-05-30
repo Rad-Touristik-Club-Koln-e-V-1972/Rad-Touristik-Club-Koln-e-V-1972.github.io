@@ -22,8 +22,10 @@ import _20230519PorzimBlickMaiausgabe from '~/store/rtc-cologne/gallery/2023/05_
 import _20230522RTCKoelnTIPPNummer2 from '~/store/rtc-cologne/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2'
 import _20230523VintageBikeWettbewerb from '~/store/rtc-cologne/gallery/2023/05_23_Vintage-Bike-Wettbewerb'
 import _20230524TippNummer3 from '~/store/rtc-cologne/gallery/2023/05_24_Tipp_Nummer_3'
+import _20230528RTF51 from '~/store/rtc-cologne/gallery/2023/05_28_RTF_51'
 
 export default [
+    _20230528RTF51,
     _20230524TippNummer3,
     _20230523VintageBikeWettbewerb,
     _20230522RTCKoelnTIPPNummer2,
