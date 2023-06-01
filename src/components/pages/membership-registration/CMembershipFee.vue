@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import CSignatureForm from '~/components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import MembershipFee from '~/models/entities/membership-registration/MembershipFee'
@@ -61,4 +61,15 @@ const props = defineProps({
 const _value = ref(props.value ?? new MembershipFee())
 
 const emitUpdate = () => emits('input', _value.value)
+
+watch(
+    () => _value.value.iban,
+    (currentValue) => {
+        // Add spaces to IBAN
+        _value.value.iban = currentValue
+            .replace(/[^\dA-Z]/g, '')
+            .replace(/(.{4})/g, '$1 ')
+            .trim()
+    }
+)
 </script>
