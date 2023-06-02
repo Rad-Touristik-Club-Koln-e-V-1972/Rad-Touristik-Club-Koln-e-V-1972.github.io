@@ -93,8 +93,6 @@ const beforeDownload = async (event: unknown) => {
     // TODO Workaround "any" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
     const { html2pdf, options, pdfContent } = event as any
 
-    isLoading.value = true
-
     await html2pdf()
         .set(options)
         .from(pdfContent)
@@ -118,30 +116,30 @@ const beforeDownload = async (event: unknown) => {
         })
         .save()
 
-    // TODO Workaround for broken @hasDownloaded event https://github.com/kempsteven/vue-html2pdf/issues/41 https://github.com/kempsteven/vue-html2pdf/issues/138
     isLoading.value = false
+
+    dialog.value = false
 }
 
 const download = () => {
-    html2Pdf.value.generatePdf()
+    isLoading.value = true
 
-    // TODO Workaround for broken @hasDownloaded event https://github.com/kempsteven/vue-html2pdf/issues/41 https://github.com/kempsteven/vue-html2pdf/issues/138
-    nextTick(() => setTimeout(() => (dialog.value = false), 2000))
+    nextTick(() => setTimeout(() => html2Pdf.value.generatePdf()))
 }
 
 const submit = () => {
-    html2Pdf.value.generatePdf()
+    download()
 
-    // TODO Workaround for broken @hasDownloaded event https://github.com/kempsteven/vue-html2pdf/issues/41 https://github.com/kempsteven/vue-html2pdf/issues/138
     nextTick(() =>
-        setTimeout(() => {
-            window.open(
-                'mailto:vorstand@rtc-koeln.de?subject=Antrag%20auf%20Mitgliedschaft' +
-                    '&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20eine%20Mitgliedschaft%20in%20eurem%20Verein%20beantragen.' +
-                    '%0D%0AAnbei%20mein%20ausgef%C3%BClltes%20Formular.'
-            )
-            dialog.value = false
-        }, 2000)
+        setTimeout(
+            () =>
+                window.open(
+                    'mailto:vorstand@rtc-koeln.de?subject=Antrag%20auf%20Mitgliedschaft' +
+                        '&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20eine%20Mitgliedschaft%20in%20eurem%20Verein%20beantragen.' +
+                        '%0D%0AAnbei%20mein%20ausgef%C3%BClltes%20Formular.'
+                ),
+            2000
+        )
     )
 }
 </script>
