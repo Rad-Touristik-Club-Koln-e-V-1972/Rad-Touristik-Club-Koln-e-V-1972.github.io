@@ -54,9 +54,10 @@ const router = getCurrentInstance()?.proxy?.$router
 const dateTime = useDateTime()
 
 const isLoading = ref(false)
+const showText = ref(false)
+
 const open = () => {
     isLoading.value = true
-    nextTick(() => setTimeout(() => router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value?.id } }), 0))
+    nextTick(() => setTimeout(() => router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value?.id } })))
 }
-const showText = ref(false)
 </script>

@@ -122,6 +122,6 @@ const tabs = computed(() => {
 
 const close = () => {
     isLoading.value = true
-    nextTick(() => setTimeout(() => proxy?.$router.go(-1), 0))
+    nextTick(() => setTimeout(() => proxy?.$router.go(-1)))
 }
 </script>
