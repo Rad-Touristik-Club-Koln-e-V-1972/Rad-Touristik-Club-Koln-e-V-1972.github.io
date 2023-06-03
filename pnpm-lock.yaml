@@ -9,8 +9,8 @@ dependencies:
     specifier: ~2.3.3
     version: 2.3.3(vue@2.7.14)
   date-holidays:
-    specifier: ~3.19.2
-    version: 3.19.2
+    specifier: ~3.21.0
+    version: 3.21.0
   pinia:
     specifier: ~2.1.3
     version: 2.1.3(typescript@5.1.3)(vue@2.7.14)
@@ -6326,8 +6326,8 @@ packages:
       moment-timezone: 0.5.43
     dev: false
 
-  /date-holidays@3.19.2:
-    resolution: {integrity: sha512-9izEnkVCkpHYwkWcuFw6EPhy9+MY8ASGdTCBTGSf6tbaiynFSsAL0ltGv/ft60Gft3sDbtZOTQZF95W9Nde+Fw==}
+  /date-holidays@3.21.0:
+    resolution: {integrity: sha512-BPIkadXkv/fYcmztKN9SzzrxxAVdrcB90texA5lvZYoWyYEjOTv9OcArBFrlvTmtTcbv9kceTh0uDxbKa0ZJvg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
