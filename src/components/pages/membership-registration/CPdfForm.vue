@@ -109,9 +109,11 @@ const beforeDownload = async (event: unknown) => {
                 const pageSize = pdfInternal.pageSize
 
                 tmp.setPage(i)
+                // eslint-disable-next-line @typescript-eslint/no-var-requires
+                tmp.addImage(require('~/assets/img/banner_vertikal.png'), 'PNG', pageSize.getWidth() - 0.3, 0, 0.3, pageSize.getHeight())
                 tmp.setFontSize(10)
                 tmp.setTextColor(150)
-                tmp.text('Seite ' + i + ' von ' + totalPages, pageSize.getWidth() * 0.88, pageSize.getHeight() - 0.3)
+                tmp.text(`Seite ${i} von ${totalPages}`, pageSize.getWidth() * 0.86, pageSize.getHeight() - 0.3)
             }
         })
         .save()
@@ -144,9 +146,9 @@ const submit = () => {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* TODO Workaround for Adding margin totally breaks the page https://github.com/kempsteven/vue-html2pdf/issues/55 */
 .pdf-item {
-    margin: 10px 20px !important;
+    margin: 10px 40px 10px 20px;
 }
 </style>
