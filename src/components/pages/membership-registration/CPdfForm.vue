@@ -32,16 +32,26 @@
             >
                 <section slot="pdf-content">
                     <section class="pdf-item">
-                        <!-- TODO Workaround for wrong h1 sizing in https://github.com/kempsteven/vue-html2pdf -->
-                        <h4 style="font-size: 2.125rem">Mitgliedsantrag</h4>
-                        <!-- TODO Workaround for not working css classes in https://github.com/kempsteven/vue-html2pdf -->
-                        <h2 style="color: var(--v-primary-base)">RTC Köln e.V. 1972</h2>
-                        <p>
-                            Wir freuen uns, dass <b>Du Dich</b> dazu entschieden hast, dem <b>RTC Köln e.V. 1972</b> beizutreten. Dazu müsstest Du bitte noch das folgende Formular
-                            vollständig ausfüllen
-                        </p>
+                        <v-card>
+                            <v-card-text>
+                                <!-- TODO Workaround for wrong h1 sizing in https://github.com/kempsteven/vue-html2pdf -->
+                                <h4 style="font-size: 2.125rem">Mitgliedsantrag</h4>
+                            </v-card-text>
+                            <v-card-text>
+                                <!-- TODO Workaround for not working css classes in https://github.com/kempsteven/vue-html2pdf -->
+                                <h2 style="color: var(--v-primary-base)">RTC Köln e.V. 1972</h2>
+                            </v-card-text>
+                            <v-card-text>
+                                Wir freuen uns, dass <b>Du Dich</b> dazu entschieden hast, dem <b>RTC Köln e.V. 1972</b> beizutreten. Dazu müsstest Du bitte noch das folgende
+                                Formular vollständig ausfüllen.
+                            </v-card-text>
+                        </v-card>
                         <br />
-                        <h3>Personendaten</h3>
+                        <v-card>
+                            <v-card-text>
+                                <h3>Personendaten</h3>
+                            </v-card-text>
+                        </v-card>
                         <v-divider />
                         <c-person :value="props.value.personalData" />
                         <c-contact :value="props.value.personalData" />
@@ -49,19 +59,35 @@
                     </section>
                     <div class="html2pdf__page-break" />
                     <section class="pdf-item">
-                        <h3>Mitgliedsbeitrag</h3>
+                        <v-card>
+                            <v-card-text>
+                                <h3>Mitgliedsbeitrag</h3>
+                            </v-card-text>
+                        </v-card>
                         <v-divider />
                         <c-membership-fee readonly :value="props.value.membershipFee" />
-                        <h3>BDR-Mitgliedschaft</h3>
+                        <v-card>
+                            <v-card-text>
+                                <h3>Mitgliedschaft</h3>
+                            </v-card-text>
+                        </v-card>
                         <v-divider />
                         <c-bdr-membership :value="props.value.bdrMembership" />
-                        <h3>Unterschrift</h3>
+                        <v-card>
+                            <v-card-text>
+                                <h3>Unterschrift</h3>
+                            </v-card-text>
+                        </v-card>
                         <v-divider />
                         <c-signature readonly :value="props.value.signature" />
                     </section>
                     <div class="html2pdf__page-break" />
                     <section class="pdf-item">
-                        <h3>Einwilligungserklärung für die Veröffentlichung von Mitgliederdaten im Internet</h3>
+                        <v-card>
+                            <v-card-text>
+                                <h3>Einwilligungserklärung für die Veröffentlichung von Mitgliederdaten im Internet</h3>
+                            </v-card-text>
+                        </v-card>
                         <v-divider />
                         <c-consent-data-usage readonly :value="props.value.consentPrivacyPolicy" />
                     </section>
@@ -109,11 +135,13 @@ const beforeDownload = async (event: unknown) => {
                 const pageSize = pdfInternal.pageSize
 
                 tmp.setPage(i)
+
                 // eslint-disable-next-line @typescript-eslint/no-var-requires
                 tmp.addImage(require('~/assets/img/banner_vertikal.png'), 'PNG', pageSize.getWidth() - 0.3, 0, 0.3, pageSize.getHeight())
+
                 tmp.setFontSize(10)
                 tmp.setTextColor(150)
-                tmp.text(`Seite ${i} von ${totalPages}`, pageSize.getWidth() * 0.86, pageSize.getHeight() - 0.3)
+                tmp.text(`Seite ${i} von ${totalPages}`, pageSize.getWidth() * 0.86, pageSize.getHeight() - 0.15)
             }
         })
         .save()

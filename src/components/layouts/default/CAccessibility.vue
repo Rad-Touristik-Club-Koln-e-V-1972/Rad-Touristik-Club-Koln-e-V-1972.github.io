@@ -17,21 +17,22 @@
                     </v-list-item>
                 </v-list>
             </v-card-text>
-            <v-divider></v-divider>
+            <v-divider />
             <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn color="primary" variant="text" @click="dialog = false"> Ok </v-btn>
+                <v-spacer />
+                <v-btn color="primary" variant="text" @click="dialog = false">Ok</v-btn>
             </v-card-actions>
         </v-card>
     </v-dialog>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { nextTick, ref } from 'vue'
 import { mdiWheelchair } from '@mdi/js'
 
 const dialog = ref(false)
 const legasthenie = ref(false)
+
 // noinspection FunctionWithMultipleLoopsJS
 const switchFont = () => {
     const font = legasthenie.value ? 'OpenDyslexic' : 'Bahnschrift'
@@ -47,4 +48,6 @@ const switchFont = () => {
         if (attribute) element.setAttribute('style', attribute.replace(font, `${font} !important`))
     }
 }
+
+nextTick(() => switchFont())
 </script>
