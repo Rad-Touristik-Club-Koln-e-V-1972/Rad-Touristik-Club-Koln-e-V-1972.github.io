@@ -29,7 +29,7 @@ import CList from '~/components/pages/events/calendar/CList.vue'
 import Event from '~/models/entities/events/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
 import ECalendar from '~/models/enums/events/ECalendar'
-import { useCalendarStore } from '~/store/events/Calendar'
+import useCalendarStore from '~/store/events/Calendar'
 
 const calendar = ref()
 const event = ref()

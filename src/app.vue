@@ -47,7 +47,7 @@ import { mdiCopyright } from '@mdi/js'
 import CAccessibility from '~/components/layouts/default/CAccessibility.vue'
 import CNavigationDrawer from '~/components/layouts/default/CNavigationDrawer.vue'
 import DRTFPopup from '~/components/layouts/default/DRTFPopup.vue'
-import { useSponsorStore } from '~/store/Sponsor'
+import useSponsorStore from '~/store/Sponsor'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 const vuetify = ref(getCurrentInstance()?.proxy.$vuetify)

@@ -85,7 +85,7 @@
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 import { getCurrentInstance, ref } from 'vue'
 import CCountdown from '~/components/layouts/default/CCountdown.vue'
-import { useNavigationStore } from '~/store/Navigation'
+import useNavigationStore from '~/store/Navigation'
 
 const emits = defineEmits<{ (e: 'input', value: boolean): void }>()
 const props = defineProps<{ value: boolean }>()

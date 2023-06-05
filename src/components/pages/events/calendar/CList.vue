@@ -39,7 +39,7 @@ import CCategories from '~/components/pages/events/calendar/list/filter/CCategor
 import CDateRange from '~/components/pages/events/calendar/list/filter/CDateRange.vue'
 import Event from '~/models/entities/events/calendar/Event'
 import EEvent from '~/models/enums/EEvent'
-import { useCalendarStore } from '~/store/events/Calendar'
+import useCalendarStore from '~/store/events/Calendar'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()

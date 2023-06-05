@@ -4,7 +4,7 @@ import PressReportBuilder from '~/models/builder/rtc-cologne/PressReportBuilder'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import PressReport from '~/models/entities/rtc-cologne/PressReport'
 
-export const usePressReportsStore = defineStore('rtc-cologne-press-reports', () => {
+export default defineStore('rtc-cologne-press-reports', () => {
     const pressReports = ref<PressReport[]>([
         new PressReportBuilder()
             .setDate('2023-05-10')

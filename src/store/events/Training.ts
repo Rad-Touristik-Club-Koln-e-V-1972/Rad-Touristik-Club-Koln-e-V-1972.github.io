@@ -4,7 +4,7 @@ import TrainingBuilder from '~/models/builder/events/TrainingBuilder'
 import Training from '~/models/entities/events/Training'
 import ETraining from '~/models/enums/events/ETraining'
 
-export const useTrainingStore = defineStore('training', () => {
+export default defineStore('training', () => {
     const trainings = ref<Training[]>([
         new TrainingBuilder()
             .setHeight('300-1000')

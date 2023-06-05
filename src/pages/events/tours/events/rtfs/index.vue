@@ -44,7 +44,7 @@ import CInfo from '~/components/pages/events/tours/events/rtfs/CInfo.vue'
 import CRegistration from '~/components/pages/events/tours/events/rtfs/CRegistration.vue'
 import CTracks from '~/components/pages/events/tours/events/rtfs/CTracks.vue'
 import Event from '~/models/entities/events/tours/Event'
-import { useTourStore } from '~/store/events/Tour'
+import useTourStore from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()

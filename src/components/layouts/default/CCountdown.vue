@@ -29,7 +29,7 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import CEvent from '~/components/pages/events/calendar/CEvent.vue'
 import Event from '~/models/entities/events/calendar/Event'
-import { useCalendarStore } from '~/store/events/Calendar'
+import useCalendarStore from '~/store/events/Calendar'
 import useDateTime from '~/utils/DateTime'
 
 const event = ref()

@@ -15,7 +15,7 @@ const sortByDate = (entries: GuestbookEntry[]) => {
     return entries
 }
 
-export const useGuestbookStore = defineStore('guestbook', () => {
+export default defineStore('guestbook', () => {
     const guestbooks = ref<Record<string, GuestbookEntry[]>>({
         2023: sortByDate(_2023),
         2019: sortByDate(_2019),

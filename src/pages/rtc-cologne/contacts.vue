@@ -18,5 +18,5 @@
 
 <script lang="ts" setup>
 import CContact from '~/components/pages/rtc-cologne/CContact.vue'
-import { useContactsStore } from '~/store/rtc-cologne/Contacts'
+import useContactsStore from '~/store/rtc-cologne/Contacts'
 </script>

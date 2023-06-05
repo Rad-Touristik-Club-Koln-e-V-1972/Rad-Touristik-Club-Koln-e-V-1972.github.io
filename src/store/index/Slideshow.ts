@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-export const useSlideshowStore = defineStore('slideshow', () => {
+export default defineStore('slideshow', () => {
     const images = ref<GalleryEntry[]>([
         new GalleryEntryBuilder()
             .setId('5920bf55-e018-4e22-bf9f-ba76b2a3439b')

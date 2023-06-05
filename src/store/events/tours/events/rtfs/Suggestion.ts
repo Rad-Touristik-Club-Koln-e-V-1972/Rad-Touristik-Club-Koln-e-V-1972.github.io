@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import SuggestionBuilder from '~/models/builder/events/tours/events/SuggestionBuilder'
 import Suggestion from '~/models/entities/events/tours/events/Suggestion'
 
-export const useSuggestionStore = defineStore('suggestion', () => {
+export default defineStore('suggestion', () => {
     const suggestions = ref<Suggestion[]>([
         new SuggestionBuilder().setId('ba680dd5-bbbd-4b55-9b40-891ab4cb831f').setText('').setTitle('Bimbach').setUrl('rhoen-radmarathon.de').build(),
         new SuggestionBuilder().setId('4827480f-cbee-40e0-956a-6bd84cff6e9c').setText('').setTitle('St. Vith').setUrl('www.ostbelgien.eu/de/fahrrad').build(),

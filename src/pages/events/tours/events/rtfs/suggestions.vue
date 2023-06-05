@@ -24,5 +24,5 @@
 
 <script lang="ts" setup>
 import CSuggestion from '~/components/pages/events/tours/events/rtfs/CSuggestion.vue'
-import { useSuggestionStore } from '~/store/events/tours/events/rtfs/Suggestion'
+import useSuggestionStore from '~/store/events/tours/events/rtfs/Suggestion'
 </script>

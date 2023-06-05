@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import ContactBuilder from '~/models/builder/rtc-cologne/ContactBuilder'
 import Contact from '~/models/entities/rtc-cologne/Contact'
 
-export const useContactsStore = defineStore('rtc-cologne-contacts', () => {
+export default defineStore('rtc-cologne-contacts', () => {
     const contacts = ref<Contact[]>([
         new ContactBuilder()
             .setEMail('erster.vorsitz@rtc-koeln.de')

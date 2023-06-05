@@ -21,5 +21,5 @@
 
 <script lang="ts" setup>
 import CPermanent from '~/components/pages/events/tours/CPermanent.vue'
-import { useTourStore } from '~/store/events/Tour'
+import useTourStore from '~/store/events/Tour'
 </script>

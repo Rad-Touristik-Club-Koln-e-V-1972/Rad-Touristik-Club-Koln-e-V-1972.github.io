@@ -52,7 +52,7 @@
 <script lang="ts" setup>
 import CSlideshow from '~/components/pages/CSlideshow.vue'
 import Training from '~/models/entities/events/Training'
-import { useTrainingStore } from '~/store/events/Training'
+import useTrainingStore from '~/store/events/Training'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()

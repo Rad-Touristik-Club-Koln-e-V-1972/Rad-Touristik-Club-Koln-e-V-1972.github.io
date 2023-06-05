@@ -49,7 +49,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiArrowRightBottom } from '@mdi/js'
-import { useCalendarStore } from '~/store/events/Calendar'
+import useCalendarStore from '~/store/events/Calendar'
 import useDateTime from '~/utils/DateTime'
 
 const dateTime = useDateTime()

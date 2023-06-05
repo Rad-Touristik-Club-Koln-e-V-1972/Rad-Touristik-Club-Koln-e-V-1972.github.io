@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import SponsorBuilder from '~/models/builder/SponsorBuilder'
 import Sponsor from '~/models/entities/Sponsor'
 
-export const useSponsorStore = defineStore('sponsor', () => {
+export default defineStore('sponsor', () => {
     const sponsors = ref<Sponsor[]>([
         new SponsorBuilder().setId('08ba12dc-1ff3-4441-8146-c59ac929e8a6').setImageUrl('content.rtc-koeln.de/pages/sponsor/Alpecin.svg').setUrl('www.alpecin.com/de-de/').build(),
         new SponsorBuilder().setId('fe512d84-b4df-434a-8cde-ef6b240022a4').setImageUrl('content.rtc-koeln.de/pages/sponsor/ConneX.svg').setUrl('www.connexchain.com').build(),

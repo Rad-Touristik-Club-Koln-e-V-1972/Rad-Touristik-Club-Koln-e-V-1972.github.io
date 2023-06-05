@@ -57,7 +57,7 @@
 import { ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiEmailArrowRight } from '@mdi/js'
 import CGuestbook from '~/components/pages/rtc-cologne/CGuestbook.vue'
-import { useGuestbookStore } from '~/store/rtc-cologne/Guestbook'
+import useGuestbookStore from '~/store/rtc-cologne/Guestbook'
 
 const items = useGuestbookStore().getGroupedByYear
 const showText = ref(false)

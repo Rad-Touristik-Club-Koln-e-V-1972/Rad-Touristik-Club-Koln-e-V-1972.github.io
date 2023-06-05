@@ -32,7 +32,7 @@
 <script lang="ts" setup>
 import { getCurrentInstance, ref } from 'vue'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
-import { usePressReportsStore } from '~/store/rtc-cologne/PressReports'
+import usePressReportsStore from '~/store/rtc-cologne/PressReports'
 import useDateTime from '~/utils/DateTime'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7

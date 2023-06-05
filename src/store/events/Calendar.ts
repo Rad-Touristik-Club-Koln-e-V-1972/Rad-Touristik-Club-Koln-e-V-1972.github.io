@@ -6,7 +6,7 @@ import _2022 from '~/store/events/calendar/2022'
 import _2023 from '~/store/events/calendar/2023'
 import useCalendar from '~/utils/Calendar'
 
-export const useCalendarStore = defineStore('calendar', () => {
+export default defineStore('calendar', () => {
     const events = ref<Record<string, Event[]>>({
         2022: _2022.concat(useCalendar().getHolidays(2022)),
         2023: _2023.concat(useCalendar().getHolidays(2023)),

@@ -93,7 +93,7 @@ TODO "[Vue warn]: Invalid component name: "_id". Component names should conform 
 import { computed, getCurrentInstance, nextTick, ref } from 'vue'
 import { mdiChevronDown, mdiChevronUp, mdiClose } from '@mdi/js'
 import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
-import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
+import useGalleryStore from '~/store/rtc-cologne/Gallery'
 import useDateTime from '~/utils/DateTime'
 
 const proxy = getCurrentInstance()?.proxy

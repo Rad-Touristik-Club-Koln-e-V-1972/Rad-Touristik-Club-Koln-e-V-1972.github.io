@@ -21,7 +21,7 @@
 
 <script lang="ts" setup>
 import CGallery from '~/components/pages/rtc-cologne/galleries/CGallery.vue'
-import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
+import useGalleryStore from '~/store/rtc-cologne/Gallery'
 
 const items = useGalleryStore().getGroupedByYear
 </script>

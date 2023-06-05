@@ -19,7 +19,7 @@ import _2023 from '~/store/rtc-cologne/gallery/2023/Gallery'
 
 const sortByDate = (galleries: Gallery[]) => galleries.sort((a, b) => b.start.getTime() - a.start.getTime())
 
-export const useGalleryStore = defineStore('gallery', () => {
+export default defineStore('gallery', () => {
     const galleries = ref<Record<string, Gallery[]>>({
         2023: sortByDate(_2023),
         2022: sortByDate(_2022),

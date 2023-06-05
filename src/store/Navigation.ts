@@ -32,7 +32,7 @@ import ChildBuilder from '~/models/builder/navigation/ChildBuilder'
 import ChildChildBuilder from '~/models/builder/navigation/ChildChildBuilder'
 import Navigation from '~/models/entities/Navigation'
 
-export const useNavigationStore = defineStore('navigation', () => {
+export default defineStore('navigation', () => {
     const navigations = ref<Navigation[]>([
         new NavigationBuilder()
             .setColor('primary')

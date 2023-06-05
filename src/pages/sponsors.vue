@@ -25,5 +25,5 @@
 </template>
 
 <script lang="ts" setup>
-import { useSponsorStore } from '~/store/Sponsor'
+import useSponsorStore from '~/store/Sponsor'
 </script>

@@ -12,7 +12,7 @@ import Permanent from '~/models/entities/events/tours/Permanent'
 import EEvent from '~/models/enums/EEvent'
 import EProfile from '~/models/enums/events/tours/EProfile'
 
-export const useTourStore = defineStore('tour', () => {
+export default defineStore('tour', () => {
     const events = ref<Event[]>([
         new EventBuilder()
             .setFees(

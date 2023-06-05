@@ -52,9 +52,9 @@
 import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/pages/CSlideshow.vue'
 import CGallery from '~/components/pages/rtc-cologne/galleries/CGallery.vue'
-import { useGalleryStore } from '~/store/rtc-cologne/Gallery'
-import { useBlogStore } from '~/store/index/Blog'
-import { useSlideshowStore } from '~/store/index/Slideshow'
+import useGalleryStore from '~/store/rtc-cologne/Gallery'
+import useBlogStore from '~/store/index/Blog'
+import useSlideshowStore from '~/store/index/Slideshow'
 import useDateTime from '~/utils/DateTime'
 
 // TODO WORKAROUND UNTIL VUETIFY 2.7
