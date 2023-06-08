@@ -38,11 +38,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiBike, mdiCurrencyEur, mdiGoKartTrack, mdiInformation } from '@mdi/js'
-import DPopup from '~/components/pages/DPopup.vue'
 import CGeneral from '~/components/pages/events/tours/events/rtfs/CGeneral.vue'
 import CInfo from '~/components/pages/events/tours/events/rtfs/CInfo.vue'
 import CRegistration from '~/components/pages/events/tours/events/rtfs/CRegistration.vue'
 import CTracks from '~/components/pages/events/tours/events/rtfs/CTracks.vue'
+import DPopup from '~/components/pages/events/tours/events/rtfs/DPopup.vue'
 import Event from '~/models/entities/events/tours/Event'
 import useTourStore from '~/store/events/Tour'
 import useDateTime from '~/utils/DateTime'
