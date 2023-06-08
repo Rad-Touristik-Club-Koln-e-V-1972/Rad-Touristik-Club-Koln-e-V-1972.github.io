@@ -2,6 +2,25 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['4ddfb09a-bc1b-42d9-bf73-5a0bb7ff1978'])
+        .setDate('2023-06-05')
+        .setId('089afc4d-7030-429a-aa3e-62ee1dcac41b')
+        .setText(
+            `Anbei ein Bericht aus erster Hand von Frank 👍:
+„Wind ist, wenn du aus 100m Entfernung vom Feldsprenger nass wirst !
+600km von Amsterdam aus, immer an der Küste entlang bis Den Helder. Die 65 Teilnehmer hatte der Wind schon hier in Kleingruppen zerlegt.
+Wieder die Küste runter durch die Dünenlandschaft, als Touristenschreck unterwegs (Rückenwind 😀).
+Essenspause in Nordwijk, Huhn süß/sauer, die kalorienfreie Cola hab ich mit ungläubigen Blick wieder zurückgeschickt.
+Ab ins Landesinnere und in die Nacht. 150 km weiter wartete eine Hamburgerkette 🍔 auf mich. Den ganzen Tag bei bis zu 25 Grad, waren die 8 Grad nachts gefühlte Minustemperatur. 🥶
+Den zwei Iren war es egal. Die fuhren kurz/kurz weiter. 150 km freut man sich auf verdichtete ungesunde Kalorien...und dann ist der Laden zu.
+Dann halt eigene Voräte plündern und 3 Stunden in der 24h Tankstelle bis Sonnenaufgang verbringen.
+Über Umwege ging es dann zurück nach Amsterdam und der Wind wurde wieder ein treuer Begleiter. Stundenlang mit 17 km/h... Zermürbt aber nicht gebrochen kam ich dann in Amsterdam an.“
+
+➡️ Frank, Du bist der Beste. Hut ab‼️`
+        )
+        .setTitle("Frank's Amsterdam Tour")
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['6ee17200-d1d3-4273-8777-885a3f946912'])
         .setDate('2023-05-31')
         .setId('6f11b4e0-52c7-4b28-a4d5-b19de2ad6fc7')
@@ -25,8 +44,7 @@ Diana vom RTC Köln e.V.
 🔜 Nicht vergessen:
 Neu bei uns im Programm sind zwei geführte Touren an die Mosel ‼️
 Wer von euch nimmt die Herausforderung an und verbringt einen Urlaubstag auf dem Rennrad mit dem RTC Köln?
-Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de
-`
+Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`
         )
         .setTitle('Résumé 51. Forsbachtour 2023')
         .build(),
