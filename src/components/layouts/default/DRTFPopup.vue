@@ -1,5 +1,5 @@
 <template>
-    <v-dialog id="DPopup" v-model="dialog" scrollable width="auto">
+    <v-dialog id="DRTFPopup" v-model="dialog" scrollable width="auto">
         <v-card v-if="nextRTF">
             <v-toolbar color="primary" flat>
                 <v-toolbar-title class="accent--text">NICHT VERPASSEN</v-toolbar-title>
