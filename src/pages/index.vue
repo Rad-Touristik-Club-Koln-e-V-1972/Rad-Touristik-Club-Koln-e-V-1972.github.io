@@ -7,6 +7,11 @@
         </v-row>
         <v-row no-gutters>
             <v-col>
+                <c-news />
+            </v-col>
+        </v-row>
+        <v-row no-gutters>
+            <v-col>
                 <v-sheet>
                     <v-card-text>
                         <v-timeline :dense="vuetify?.breakpoint.mobile">
@@ -51,6 +56,7 @@
 // TODO WORKAROUND UNTIL VUETIFY 2.7
 import { getCurrentInstance, ref } from 'vue'
 import CSlideshow from '~/components/pages/CSlideshow.vue'
+import CNews from '~/components/pages/index/CNews.vue'
 import CGallery from '~/components/pages/rtc-cologne/galleries/CGallery.vue'
 import useGalleryStore from '~/store/rtc-cologne/Gallery'
 import useBlogStore from '~/store/index/Blog'
