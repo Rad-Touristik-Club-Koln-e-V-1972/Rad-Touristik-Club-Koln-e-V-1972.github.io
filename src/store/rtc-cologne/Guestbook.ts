@@ -1,5 +1,5 @@
-import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
+import { defineStore } from 'pinia'
 import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import _2012 from '~/store/rtc-cologne/guestbook/2012'
 import _2014 from '~/store/rtc-cologne/guestbook/2014'

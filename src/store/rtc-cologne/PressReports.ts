@@ -1,11 +1,11 @@
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import PressReportBuilder from '~/models/builder/rtc-cologne/PressReportBuilder'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import PressReport from '~/models/entities/rtc-cologne/PressReport'
 
 export default defineStore('rtc-cologne-press-reports', () => {
-    const pressReports = ref<PressReport[]>([
+    const all = ref<PressReport[]>([
         new PressReportBuilder()
             .setDate('2023-05-10')
             .setId('00045bd5-14c1-49a8-8d49-055b9d9652e5')
@@ -52,8 +52,6 @@ export default defineStore('rtc-cologne-press-reports', () => {
             .setTitle('Roadbike')
             .build(),
     ])
-
-    const all = computed(() => pressReports.value)
 
     return { all }
 })

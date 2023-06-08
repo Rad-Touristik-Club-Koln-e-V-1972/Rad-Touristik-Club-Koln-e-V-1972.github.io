@@ -1,10 +1,10 @@
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import ContactBuilder from '~/models/builder/rtc-cologne/ContactBuilder'
 import Contact from '~/models/entities/rtc-cologne/Contact'
 
 export default defineStore('rtc-cologne-contacts', () => {
-    const contacts = ref<Contact[]>([
+    const all = ref<Contact[]>([
         new ContactBuilder()
             .setEMail('erster.vorsitz@rtc-koeln.de')
             .setId('4c5aea1e-a6b7-4319-ab3d-854529d8a476')
@@ -41,8 +41,6 @@ export default defineStore('rtc-cologne-contacts', () => {
             .setPosition('Webmaster')
             .build(),
     ])
-
-    const all = computed(() => contacts.value)
 
     return { all }
 })

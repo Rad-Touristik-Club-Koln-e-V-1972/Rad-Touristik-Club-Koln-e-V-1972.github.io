@@ -1,10 +1,10 @@
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default defineStore('slideshow', () => {
-    const images = ref<GalleryEntry[]>([
+    const all = ref<GalleryEntry[]>([
         new GalleryEntryBuilder()
             .setId('5920bf55-e018-4e22-bf9f-ba76b2a3439b')
             .setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image0_61fe6032-2f8a-4344-a6cc-b91d395eca08.jpeg')
@@ -64,8 +64,6 @@ export default defineStore('slideshow', () => {
         new GalleryEntryBuilder().setId('f5c72948-357b-4d18-8fbd-26d4677d26e5').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/image14.jpeg').build(),
         new GalleryEntryBuilder().setId('18369947-addc-4f54-a464-1c40a9995877').setImageUrl('content.rtc-koeln.de/pages/index/slideshow/signal-2023-05-01-193158.jpeg').build(),
     ])
-
-    const all = computed(() => images.value)
 
     return { all }
 })

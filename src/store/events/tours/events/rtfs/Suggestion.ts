@@ -1,10 +1,10 @@
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import SuggestionBuilder from '~/models/builder/events/tours/events/SuggestionBuilder'
 import Suggestion from '~/models/entities/events/tours/events/Suggestion'
 
 export default defineStore('suggestion', () => {
-    const suggestions = ref<Suggestion[]>([
+    const all = ref<Suggestion[]>([
         new SuggestionBuilder().setId('ba680dd5-bbbd-4b55-9b40-891ab4cb831f').setText('').setTitle('Bimbach').setUrl('rhoen-radmarathon.de').build(),
         new SuggestionBuilder().setId('4827480f-cbee-40e0-956a-6bd84cff6e9c').setText('').setTitle('St. Vith').setUrl('www.ostbelgien.eu/de/fahrrad').build(),
         new SuggestionBuilder().setId('b7b8490d-f2b0-414f-acc8-5d9d43b6ca79').setText('').setTitle('Ochtendung').setUrl('djk-ochtendung.de/94.html').build(),
@@ -20,8 +20,6 @@ export default defineStore('suggestion', () => {
             .setUrl('oetztaler-radmarathon.com/de/home.html')
             .build(),
     ])
-
-    const all = computed(() => suggestions.value)
 
     return { all }
 })
