@@ -32,7 +32,7 @@
         <v-card-text>
             <v-row>
                 <v-col cols="3">
-                    <d-view :start-index="0" :value="images" />
+                    <d-view :value="images" />
                 </v-col>
                 <v-col>
                     <v-stepper v-model="step" non-linear vertical>
