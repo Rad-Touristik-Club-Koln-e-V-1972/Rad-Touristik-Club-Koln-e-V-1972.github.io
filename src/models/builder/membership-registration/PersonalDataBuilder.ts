@@ -44,8 +44,14 @@ export default class PersonalDataBuilder extends ABuilder {
         return this
     }
 
-    setMobilePhone(value: string): PersonalDataBuilder {
-        this.entity.mobilePhone = value
+    setMobilePhoneCountryCode(value: string): PersonalDataBuilder {
+        this.entity.mobilePhoneCountryCode = value
+
+        return this
+    }
+
+    setMobilePhoneNumber(value: string): PersonalDataBuilder {
+        this.entity.mobilePhoneNumber = value
 
         return this
     }
@@ -68,8 +74,14 @@ export default class PersonalDataBuilder extends ABuilder {
         return this
     }
 
-    setTelephone(value: string): PersonalDataBuilder {
-        this.entity.telephone = value
+    setTelePhoneCountryCode(value: string): PersonalDataBuilder {
+        this.entity.telePhoneCountryCode = value
+
+        return this
+    }
+
+    setTelePhoneNumber(value: string): PersonalDataBuilder {
+        this.entity.telePhoneNumber = value
 
         return this
     }

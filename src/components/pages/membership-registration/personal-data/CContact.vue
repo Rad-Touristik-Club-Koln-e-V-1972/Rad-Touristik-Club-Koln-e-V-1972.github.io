@@ -2,10 +2,34 @@
     <v-card-text id="CContact">
         <v-row>
             <v-col>
-                <v-text-field v-model="_value.telephone" dense label="Telefon" @input="emitUpdate" />
+                <MazPhoneNumberInput
+                    :default-country-code="_value.telePhoneCountryCode"
+                    :default-phone-number="_value.telePhoneNumber"
+                    no-flags
+                    no-validation
+                    :translations="{
+                        countrySelectorError: 'Fehlerhafte Länderauswahl',
+                        countrySelectorLabel: 'Landesvorwahl',
+                        example: 'Beispiel :',
+                        phoneNumberLabel: 'Telefon',
+                    }"
+                    @update="emitTelePhoneUpdate"
+                />
             </v-col>
             <v-col>
-                <v-text-field v-model="_value.mobilePhone" dense label="Handy" @input="emitUpdate" />
+                <MazPhoneNumberInput
+                    :default-country-code="_value.mobilePhoneCountryCode"
+                    :default-phone-number="_value.mobilePhoneNumber"
+                    no-flags
+                    no-validation
+                    :translations="{
+                        countrySelectorError: 'Fehlerhafte Länderauswahl',
+                        countrySelectorLabel: 'Landesvorwahl',
+                        example: 'Beispiel :',
+                        phoneNumberLabel: 'Handy',
+                    }"
+                    @update="emitMobilePhoneUpdate"
+                />
             </v-col>
         </v-row>
         <v-row>
@@ -18,6 +42,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { MazPhoneNumberInput } from 'maz-ui'
 import PersonalData from '~/models/entities/membership-registration/PersonalData'
 
 const emits = defineEmits<{ (e: 'input', value: PersonalData): void }>()
@@ -25,5 +50,15 @@ const props = defineProps<{ value: PersonalData }>()
 
 const _value = ref(props.value)
 
+const emitMobilePhoneUpdate = (event: { countryCode: string; phoneNumber: string }) => {
+    _value.value.mobilePhoneCountryCode = event.countryCode
+    _value.value.mobilePhoneNumber = event.phoneNumber
+    emitUpdate()
+}
+const emitTelePhoneUpdate = (event: { countryCode: string; phoneNumber: string }) => {
+    _value.value.telePhoneCountryCode = event.countryCode
+    _value.value.telePhoneNumber = event.phoneNumber
+    emitUpdate()
+}
 const emitUpdate = () => emits('input', _value.value)
 </script>
