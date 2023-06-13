@@ -2,6 +2,42 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setDate('2023-06-11')
+        .setId('27a637ca-8c3d-452e-8971-cae44f1d885d')
+        .setText(
+            `Für 9 RTCler:innen und zwei liebe RTC-Freunde startete das lange WE mit einer 2,5-stündigen Autofahrt nach Schrecksbach, Hessen.
+Dort organisiert jährlich der VfB Schrecksbach ein 4-tägiges Radsport-Event der besonderen Art.
+Do, Fr und So wurden - zu versetzten Startzeiten - je 3 geführte Touren angeboten, so dass man bei einer 🍦-Pause auf dem Marktplatz zusammensaß. 👍
+Samstag war der RTF-Tag.
+8 von uns fuhren bei 30 Grad die anspruchsvolle 110 km mit 1100 Hm, 3 von uns fuhren die 76er-XXL-Runde, die am Ende weder 76 km noch 500 Hm hatte, sondern 92 km mit 900 Hm. 😳
+Schilderdiebe hatten uns diesen Streich gespielt.
+Gewundert hatten wir uns schon, dass es eine K3 auf der 70er gab. 🙈
+Egal - sind kaputt, glücklich und stolz angekommen.
+Toll ist die ganze familiäre Atmosphäre und die Orga in Schrecksbach.
+Wer zelten will oder ein WoMo hat, kann kostenneutral auf dem Sportplatz campen.
+Wir waren aufgeteilt: WoMo, Baumhaus und Hotel.
+Frühstück und All-you-can-eat-Abendessen gibt es dort für kleines Geld und - am RTF-Tag - abends sogar Live-Musik.
+Alle sind gut drauf, weil alle das gleiche Lieben:
+Das Radfahren mit Freunden in wunderschöner Natur. 🫶
+➡️ Tipp für 2024: 4 Tage in Schrecksbach❗️
+
+Noch weitere 4 RTCler waren an diesem WE fleißig 👍
+
+Frank: „Zuhause wird auch fleißig Rad gefahren !
+Zwei RTCler, Klaus und ich, nahmen die Strecken in Quadrath-Ischendorf in Augenschein.
+Einer auf der 70er und einer auf der 40er.
+Altbekannte Wege um den Tagebau, Autobahnradweg, Speedway, Hambach und Terra Nova - alles drin.
+Am Start- und Zielort war gleich das Feuerwehrfest und dadurch auch gleich gute Verpflegung.
+Mit Hin und Rückfahrt wurde es dann 3-stellig.“
+
+Peter: „Da Birgit und ich leider nicht mit nach Schrecksbach fahren konnten, haben wir uns auch in Bergheim durch die RTF-Hitze gekämpft.
+Die Strecke war flach und die Verpflegung hat noch Luft nach oben.
+Trotzdem wieder 110 km auf der Uhr. 🤗“
+`
+        )
+        .setTitle('VfB Schrecksbach: Ein empfehlenswertes Radsport-Event der familiären Art')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['4ddfb09a-bc1b-42d9-bf73-5a0bb7ff1978'])
         .setDate('2023-06-05')
         .setId('089afc4d-7030-429a-aa3e-62ee1dcac41b')
