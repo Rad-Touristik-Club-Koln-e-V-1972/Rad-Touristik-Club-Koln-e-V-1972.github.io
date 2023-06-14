@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.4.7
     version: 2.4.7(vue@2.7.14)
   pinia:
-    specifier: ^2.1.3
-    version: 2.1.3(typescript@5.1.3)(vue@2.7.14)
+    specifier: ^2.1.4
+    version: 2.1.4(typescript@5.1.3)(vue@2.7.14)
   postleitzahlen:
     specifier: ^1.0.0
     version: 1.0.0
@@ -3197,7 +3197,7 @@ packages:
     resolution: {integrity: sha512-bhuNFngJpmBCdAqWguezNJ/oJFR7wvKieqiZrmmdmPR07XjsidAw8RLXHMZE9kUm32M9E6T057OBbG/22jERTg==}
     dependencies:
       '@nuxt/kit': 3.5.3(rollup@3.23.0)
-      pinia: 2.1.3(typescript@5.1.3)(vue@2.7.14)
+      pinia: 2.1.4(typescript@5.1.3)(vue@2.7.14)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - rollup
@@ -10883,8 +10883,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /pinia@2.1.3(typescript@5.1.3)(vue@2.7.14):
-    resolution: {integrity: sha512-XNA/z/ye4P5rU1pieVmh0g/hSuDO98/a5UC8oSP0DNdvt6YtetJNHTrXwpwsQuflkGT34qKxAEcp7lSxXNjf/A==}
+  /pinia@2.1.4(typescript@5.1.3)(vue@2.7.14):
+    resolution: {integrity: sha512-vYlnDu+Y/FXxv1ABo1vhjC+IbqvzUdiUC3sfDRrRyY2CQSrqqaa+iiHmqtARFxJVqWQMCJfXx1PBvFs9aJVLXQ==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
