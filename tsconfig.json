@@ -7,7 +7,6 @@
         "strict": true,
         "types": ["node", "@nuxt/types", "vue", "@nuxtjs/vuetify", "@pinia/nuxt"]
     },
-    // TODO "app.html" IS A WORKAROUND FOR https://github.com/nuxt/bridge/issues/20
-    "exclude": [".nuxt", "src/app.html", "dist", "node_modules"],
+    "exclude": [".nuxt", "dist", "node_modules"],
     "extends": "./.nuxt/tsconfig.json"
 }
