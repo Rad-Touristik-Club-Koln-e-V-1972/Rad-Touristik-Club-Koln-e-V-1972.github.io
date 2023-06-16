@@ -24,8 +24,10 @@ import _20230523VintageBikeWettbewerb from '~/store/rtc-cologne/gallery/2023/05_
 import _20230524TippNummer3 from '~/store/rtc-cologne/gallery/2023/05_24_Tipp_Nummer_3'
 import _20230528RTF51 from '~/store/rtc-cologne/gallery/2023/05_28_RTF_51'
 import _20230605FranksAmsterdamTour from '~/store/rtc-cologne/gallery/2023/06_05_Franks_Amsterdam_Tour'
+import _20230611VfBSchrecksbach from '~/store/rtc-cologne/gallery/2023/06_11_VfB_Schrecksbach'
 
 export default [
+    _20230611VfBSchrecksbach,
     _20230605FranksAmsterdamTour,
     _20230528RTF51,
     _20230524TippNummer3,
