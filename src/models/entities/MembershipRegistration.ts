@@ -1,8 +1,8 @@
-import AEntity from '~/models/entities/AEntity'
-import BdrMembership from '~/models/entities/membership-registration/BdrMembership'
-import MembershipFee from '~/models/entities/membership-registration/MembershipFee'
-import PersonalData from '~/models/entities/membership-registration/PersonalData'
-import Signature from '~/models/entities/membership-registration/Signature'
+import AEntity from 'src/models/entities/AEntity'
+import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
+import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import Signature from 'src/models/entities/membership-registration/Signature'
 
 export default class MembershipRegistration extends AEntity {
     bdrMembership!: BdrMembership

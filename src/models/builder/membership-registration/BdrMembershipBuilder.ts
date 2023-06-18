@@ -1,26 +1,24 @@
-import ABuilder from '~/models/builder/ABuilder'
-import BdrMembership from '~/models/entities/membership-registration/BdrMembership'
+import ABuilder from 'src/models/builder/ABuilder'
+import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 
 export default class BdrMembershipBuilder extends ABuilder {
     private entity = new BdrMembership()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setIsMember(value: boolean): BdrMembershipBuilder {
+    setIsMember = (value: boolean): this => {
         this.entity.isMember = value
 
         return this
     }
 
-    setDate(value: string): BdrMembershipBuilder {
+    setDate = (value: string): this => {
         this.entity.date = value
 
         return this
     }
 
-    setNumber(value: string): BdrMembershipBuilder {
+    setNumber = (value: string): this => {
         this.entity.number = value
 
         return this

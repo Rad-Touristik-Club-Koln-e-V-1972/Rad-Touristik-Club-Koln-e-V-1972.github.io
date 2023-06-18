@@ -1,9 +1,8 @@
 enum ECalendar {
-    day = 'Tag',
-    '4day' = '4 Tage',
-    week = 'Woche',
-    month = 'Monat',
-    list = 'Liste',
+    Day = 'Tag',
+    Week = 'Woche',
+    Month = 'Monat',
+    List = 'Liste',
 }
 
 export default ECalendar

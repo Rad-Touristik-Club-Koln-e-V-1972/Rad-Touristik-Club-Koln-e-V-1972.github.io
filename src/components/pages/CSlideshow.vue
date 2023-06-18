@@ -1,38 +1,51 @@
 <template>
-    <v-carousel
-        id="CSlideshow"
-        :cycle="props.cycle"
+    <q-carousel
+        ref="carousel"
+        v-model="slide"
+        animated
+        :autoplay="12000"
+        control-color="primary"
+        draggable="false"
         :height="props.height"
-        hide-delimiters
-        interval="12000"
-        :show-arrows="props.value.length > 1"
-        show-arrows-on-hover
-        :value="startIndex"
+        :infinite="props.infinite"
+        swipeable
+        transition-next="slide-left"
+        transition-prev="slide-right"
     >
-        <v-carousel-item v-for="it in props.value" :key="it.id" contain :src="it.imageUrl.toString()">
-            <template #placeholder>
-                <c-loading-skeleton />
-            </template>
-            <template #default>
-                <v-img height="100%" :src="it.previewUrl.toString()" style="filter: blur(20px); z-index: -2">
-                    <template #placeholder>
-                        <c-loading-skeleton />
-                    </template>
-                </v-img>
-            </template>
-        </v-carousel-item>
-    </v-carousel>
+        <q-carousel-slide v-for="it in props.modelValue" :key="it.id" :name="it.id">
+            <q-img class="absolute-center full-height" fit="contain" :placeholder-src="it.previewUrl.toString()" :src="it.imageUrl.toString()" style="z-index: 1" />
+            <q-img class="absolute-center full-height" :src="it.previewUrl.toString()" style="filter: blur(20px)" />
+        </q-carousel-slide>
+        <template #control>
+            <q-carousel-control position="bottom-left" style="z-index: 1">
+                <q-btn color="primary" :icon="mdiArrowLeft" round size="lg" text-color="accent" @click="$refs.carousel.previous()" />
+            </q-carousel-control>
+            <q-carousel-control position="bottom-right" style="z-index: 1">
+                <q-btn color="primary" :icon="mdiArrowRight" round size="lg" text-color="accent" @click="$refs.carousel.next()" />
+            </q-carousel-control>
+        </template>
+    </q-carousel>
 </template>
 
 <script lang="ts" setup>
-import { PropType } from 'vue'
-import CLoadingSkeleton from '~/components/pages/CLoadingSkeleton.vue'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import { onMounted, PropType, ref } from 'vue'
+import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps({
-    cycle: { default: true, type: Boolean },
+    infinite: { default: true, type: Boolean },
     height: { default: '100%', type: String },
-    startIndex: { default: 0, type: Number },
-    value: { required: true, type: Array as PropType<GalleryEntry[]> },
+    modelValue: { required: true, type: Array as PropType<GalleryEntry[]> },
+    startId: { default: undefined, type: String },
+})
+
+const carousel = ref()
+
+const slide = ref()
+
+onMounted(() => {
+    const [{ id }] = props.modelValue
+
+    slide.value = props.startId ?? id
 })
 </script>

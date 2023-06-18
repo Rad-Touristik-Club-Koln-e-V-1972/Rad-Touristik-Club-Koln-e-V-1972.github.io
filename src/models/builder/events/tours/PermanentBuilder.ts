@@ -1,27 +1,25 @@
-import TourBuilder from '~/models/builder/events/TourBuilder'
-import Permanent from '~/models/entities/events/tours/Permanent'
-import EProfile from '~/models/enums/events/tours/EProfile'
+import TourBuilder from 'src/models/builder/events/TourBuilder'
+import Permanent from 'src/models/entities/events/tours/Permanent'
+import EProfile from 'src/models/enums/events/tours/EProfile'
 
 export default class PermanentBuilder extends TourBuilder<Permanent> {
     private entity = new Permanent()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setHeight(value: number): PermanentBuilder {
+    setHeight = (value: number): this => {
         this.entity.height = value
 
         return this
     }
 
-    setLength(value: number): PermanentBuilder {
+    setLength = (value: number): this => {
         this.entity.length = value
 
         return this
     }
 
-    setProfile(value: EProfile): PermanentBuilder {
+    setProfile = (value: EProfile): this => {
         this.entity.profile = value
 
         return this

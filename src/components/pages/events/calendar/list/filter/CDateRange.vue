@@ -1,50 +1,43 @@
 <template>
-    <v-dialog id="CDateRange" v-model="isOpen" persistent width="auto">
-        <template #activator="{ attrs, on }">
-            <v-text-field
-                v-model="_value"
-                :append-icon="mdiCalendar"
-                clearable
-                hide-details
-                label="Datenbereich"
-                readonly
-                v-bind="attrs"
-                v-on="on"
-                @click:clear="() => $emit('input', [])"
-            />
+    <q-input :model-value="stringDate" clearable dense hide-hint label="Datenbereich" @click="popup = true" @clear="clear">
+        <template #append>
+            <q-icon class="cursor-pointer" :name="mdiCalendar">
+                <q-popup-proxy v-model="popup" cover>
+                    <q-date v-model="value" color="primary" mask="DD.MM.YYYY" range>
+                        <div class="items-center justify-end row">
+                            <q-btn v-close-popup label="Abbrechen" />
+                            <q-btn v-close-popup color="primary" label="OK" @click="save" />
+                        </div>
+                    </q-date>
+                </q-popup-proxy>
+            </q-icon>
         </template>
-        <v-date-picker v-model="_value" color="primary" range scrollable>
-            <v-spacer />
-            <v-btn text @click="abort">Abbrechen</v-btn>
-            <v-btn color="primary" text @click="save">OK</v-btn>
-        </v-date-picker>
-    </v-dialog>
+    </q-input>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import { mdiCalendar } from '@mdi/js'
+import { is } from 'quasar'
+import { mdiCalendar } from '@quasar/extras/mdi-v7'
 
-const emits = defineEmits<(e: 'input', value: string[]) => void>()
-const props = defineProps<{ value: string[] }>()
+const emits = defineEmits<{ 'update:modelValue': [value: string | { from: string; to: string }] }>()
+const props = defineProps<{ modelValue: string | { from: string; to: string } }>()
 
-const isOpen = ref(false)
-const _value = ref()
+const value = ref<string | { from: string; to: string }>('')
+const popup = ref(false)
+const stringDate = ref('')
 
-const abort = () => {
-    _value.value = []
-    close()
+const clear = () => {
+    stringDate.value = ''
+    value.value = ''
+    emits('update:modelValue', '')
 }
-const close = () => {
-    emits(
-        'input',
-        _value.value.map((it: string) => `${it} 00:00`) // Otherwise it would add a hour offset the same as the timezone value.
-    )
-    isOpen.value = false
+const save = () => {
+    stringDate.value = is.object(value.value) ? `${value.value.from} - ${value.value.to}` : `${value.value}`
+    emits('update:modelValue', value.value)
 }
-const save = () => close()
 
 onMounted(() => {
-    _value.value = props.value
+    value.value = props.modelValue
 })
 </script>

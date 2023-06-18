@@ -1,34 +1,25 @@
 <template>
-    <v-card flat>
-        <v-card-text>
-            <v-row no-gutters>
-                <v-col>
-                    <v-timeline :dense="vuetify?.breakpoint.mobile">
-                        <v-timeline-item v-for="it in props.tracks" :key="it.id">
-                            <template #opposite>
-                                <span class="font-weight-bold primary--text text-h5" v-text="it.name" />
-                            </template>
-                            <v-card>
-                                <v-toolbar color="primary" flat>
-                                    <v-toolbar-title class="accent--text">{{ it.name }}</v-toolbar-title>
-                                </v-toolbar>
-                                <v-card-text>
-                                    <span class="black--text text-pre-line" v-html="it.text" />
-                                </v-card-text>
-                            </v-card>
-                        </v-timeline-item>
-                    </v-timeline>
-                </v-col>
-            </v-row>
-        </v-card-text>
-    </v-card>
+    <q-card flat>
+        <q-card-section>
+            <div class="row">
+                <div class="col">
+                    <q-timeline :layout="$q.platform.is.mobile ? 'dense' : 'loose'">
+                        <q-timeline-entry v-for="(it, index) in props.tracks" :key="it.id" :side="index % 2 === 0 ? 'right' : 'left'" :title="it.name">
+                            <q-card>
+                                <q-card-section class="bg-primary text-accent text-h6">{{ it.name }}</q-card-section>
+                                <q-card-section>
+                                    <span class="text-pre-wrap" v-html="it.text" />
+                                </q-card-section>
+                            </q-card>
+                        </q-timeline-entry>
+                    </q-timeline>
+                </div>
+            </div>
+        </q-card-section>
+    </q-card>
 </template>
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
-import Track from '~/models/entities/events/tours/events/Track'
-
-// TODO WORKAROUND UNTIL VUETIFY 2.7
-const vuetify = ref(getCurrentInstance()?.proxy?.$vuetify)
+import Track from 'src/models/entities/events/tours/events/Track'
 
 const props = defineProps<{ tracks: Track[] }>()
 </script>

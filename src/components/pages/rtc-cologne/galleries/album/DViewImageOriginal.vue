@@ -1,25 +1,17 @@
 <template>
-    <v-card id="DViewImageOriginal">
-        <v-dialog v-model="isOpen" fullscreen persistent>
-            <template #activator="{ attrs, on }">
-                <v-btn absolute color="primary" v-bind="attrs" v-on="on">
-                    <v-icon color="accent">{{ mdiMagnifyPlus }}</v-icon>
-                </v-btn>
-            </template>
-            <v-sheet>
-                <v-btn color="primary" fixed style="right: 0; z-index: 1" @click="isOpen = false">
-                    <v-icon color="accent">{{ mdiClose }}</v-icon>
-                </v-btn>
-                <v-img :src="props.value.toString()" />
-            </v-sheet>
-        </v-dialog>
-    </v-card>
+    <q-btn color="primary" :icon="mdiMagnifyPlus" style="position: absolute; z-index: 2" text-color="accent" @click="dialog = true" />
+    <q-dialog v-model="dialog" maximized persistent>
+        <q-card flat>
+            <q-btn color="primary" :icon="mdiClose" style="position: fixed; right: 0; z-index: 1" text-color="accent" @click="dialog = false" />
+            <q-img :src="props.modelValue.toString()" />
+        </q-card>
+    </q-dialog>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { mdiClose, mdiMagnifyPlus } from '@mdi/js'
+import { mdiClose, mdiMagnifyPlus } from '@quasar/extras/mdi-v7'
 
-const props = defineProps<{ value: URL }>()
+const props = defineProps<{ modelValue: URL }>()
 
-const isOpen = ref(false)
+const dialog = ref(false)
 </script>

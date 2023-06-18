@@ -1,7 +1,8 @@
-import AEntity from '~/models/entities/AEntity'
-import EEvent from '~/models/enums/EEvent'
+import AEntity from 'src/models/entities/AEntity'
+import EEvent from 'src/models/enums/EEvent'
 
 export default class Event extends AEntity {
+    allDay = true
     category = EEvent.RTC
     clubPoints: number | null = null
     color = 'primary'
@@ -9,6 +10,5 @@ export default class Event extends AEntity {
     end: Date | null = null
     name!: string
     start!: Date
-    timed = false
     url: URL | null = null
 }

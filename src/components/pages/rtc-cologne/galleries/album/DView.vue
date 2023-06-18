@@ -1,20 +1,20 @@
 <template>
-    <div v-if="props.value" id="DView">
-        <d-p-d-f-view v-if="isMimeTypePDF" :value="props.value[props.startIndex]" />
-        <d-view-image v-else :value="props.value" :start-index="props.startIndex ?? 0" />
+    <div v-if="props.modelValue">
+        <d-p-d-f-view v-if="isMimeTypePDF" :model-value="props.modelValue[props.startIndex]" />
+        <d-view-image v-else :model-value="props.modelValue" :start-value="props.modelValue[props.startIndex]" />
     </div>
 </template>
 
 <script lang="ts" setup>
 import { computed, PropType } from 'vue'
-import DPDFView from '~/components/pages/rtc-cologne/galleries/album/DPDFView.vue'
-import DViewImage from '~/components/pages/rtc-cologne/galleries/album/DViewImage.vue'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
+import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.vue'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps({
+    modelValue: { required: true, type: Array as PropType<GalleryEntry[]> },
     startIndex: { default: 0, type: Number },
-    value: { required: true, type: Array as PropType<GalleryEntry[]> },
 })
 
-const isMimeTypePDF = computed(() => props.value?.at(props.startIndex ?? 0)?.mimeType === 'application/pdf')
+const isMimeTypePDF = computed(() => props.modelValue.at(props.startIndex)?.mimeType === 'application/pdf')
 </script>

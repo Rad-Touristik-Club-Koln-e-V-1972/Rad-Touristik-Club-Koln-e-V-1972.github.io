@@ -1,28 +1,26 @@
 <template>
-    <v-card flat>
-        <v-card-text>
-            <v-row class="justify-center">
-                <v-col cols="auto">
-                    <v-card max-width="40em">
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Vorwort</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <span class="black--text text-pre-wrap" v-html="props.text" />
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col v-for="(it, index) in props.images" :key="it.id" cols="auto">
-                    <d-view :start-index="index" :value="props.images" />
-                </v-col>
-            </v-row>
-        </v-card-text>
-    </v-card>
+    <q-card flat>
+        <q-card-section>
+            <div class="justify-center row">
+                <div class="col-auto">
+                    <q-card max-width="40em">
+                        <q-card-section class="bg-primary text-accent text-h6">Vorwort</q-card-section>
+                        <q-card-section>
+                            <span class="text-pre-wrap" v-html="props.text" />
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div v-for="(it, index) in props.images" :key="it.id" class="col-auto">
+                    <d-view :start-index="index" :model-value="props.images" />
+                </div>
+            </div>
+        </q-card-section>
+    </q-card>
 </template>
 
 <script lang="ts" setup>
-import DView from '~/components/pages/rtc-cologne/galleries/album/DView.vue'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{ images: GalleryEntry[]; text: string }>()
 </script>

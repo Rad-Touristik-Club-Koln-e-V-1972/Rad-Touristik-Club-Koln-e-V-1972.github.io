@@ -1,38 +1,36 @@
-import ABuilder from '~/models/builder/ABuilder'
-import Control from '~/models/entities/events/tours/Control'
+import ABuilder from 'src/models/builder/ABuilder'
+import Control from 'src/models/entities/events/tours/Control'
 
 export default class ControlBuilder extends ABuilder {
     private entity = new Control()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setCity(value: string): ControlBuilder {
+    setCity = (value: string): this => {
         this.entity.city = value
 
         return this
     }
 
-    setStreet(value: string): ControlBuilder {
+    setStreet = (value: string): this => {
         this.entity.street = value
 
         return this
     }
 
-    setTitle(value: string): ControlBuilder {
+    setTitle = (value: string): this => {
         this.entity.title = value
 
         return this
     }
 
-    setUrl(value: string): ControlBuilder {
+    setUrl = (value: string): this => {
         this.entity.url = new URL(`https://${value}`)
 
         return this
     }
 
-    setZipCode(value: string): ControlBuilder {
+    setZipCode = (value: string): this => {
         this.entity.zipCode = value
 
         return this

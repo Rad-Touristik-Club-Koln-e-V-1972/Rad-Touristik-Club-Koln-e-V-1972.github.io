@@ -1,63 +1,49 @@
 <template>
-    <v-card id="CGallery" :loading="isLoading">
-        <template #progress>
-            <v-progress-linear color="primary" height="15">Bitte warten</v-progress-linear>
-        </template>
-        <v-card-subtitle>
-            {{ props.value.title }}
+    <q-card>
+        <q-card-section class="text-subtitle2">
+            {{ props.modelValue.title }}
             <br />
-            {{ dateTime.format(props.value.start, props.value.end, true) }}
+            {{ dateTime.format(props.modelValue.start, props.modelValue.end, true) }}
             <br />
-            {{ props.value.location }}
-        </v-card-subtitle>
-        <v-card-text>
-            <v-img eager :src="props.value?.titleImageUrl?.toString()" style="cursor: pointer" @click="open">
-                <template #placeholder>
-                    <c-loading-skeleton />
-                </template>
-            </v-img>
-        </v-card-text>
-        <div v-if="props.value?.description">
-            <v-divider />
-            <v-card-actions>
-                <v-spacer />
-                <v-btn text @click="showText = !showText">
-                    Details
-                    <v-icon right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
-                </v-btn>
-            </v-card-actions>
-            <v-expand-transition>
-                <div v-show="showText">
-                    <v-card-text>
-                        <span class="black--text text-pre-wrap" v-text="props.value?.description" />
-                    </v-card-text>
-                </div>
-            </v-expand-transition>
-        </div>
-    </v-card>
+            {{ props.modelValue.location }}
+        </q-card-section>
+        <q-card-section>
+            <q-img eager :src="props.modelValue?.titleImageUrl?.toString()" style="cursor: pointer" @click="open" />
+        </q-card-section>
+        <q-card-actions align="right">
+            <q-expansion-item v-if="props.modelValue?.description" expand-separator label="Details">
+                <q-card>
+                    <q-card-section>
+                        <span class="text-pre-wrap" v-text="props.modelValue?.description" />
+                    </q-card-section>
+                </q-card>
+            </q-expansion-item>
+        </q-card-actions>
+        <q-inner-loading :showing="isLoading">
+            <q-spinner-gears size="50px" color="primary" />
+        </q-inner-loading>
+    </q-card>
 </template>
 
 <script lang="ts" setup>
-import { getCurrentInstance, nextTick, ref } from 'vue'
-import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
-import CLoadingSkeleton from '~/components/pages/CLoadingSkeleton.vue'
-import Gallery from '~/models/entities/rtc-cologne/gallery/Gallery'
-import useDateTime from '~/utils/DateTime'
+import { ref } from 'vue'
+import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import useDateTime from 'src/utils/DateTime'
+import { useRouter } from 'vue-router'
 
 const props = defineProps({
-    album: { default: '', type: String },
-    value: { required: true, type: Gallery },
+    album: { default: undefined, type: String },
+    modelValue: { required: true, type: Gallery },
 })
 
-const router = getCurrentInstance()?.proxy?.$router
+const router = useRouter()
 
 const dateTime = useDateTime()
 
 const isLoading = ref(false)
-const showText = ref(false)
 
-const open = () => {
+const open = async () => {
     isLoading.value = true
-    nextTick(() => setTimeout(() => router?.push({ name: 'rtc-cologne-galleries-album-id', params: { album: props.album, id: props.value?.id } })))
+    await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album ?? Object.keys(props.modelValue.images)[0], id: props.modelValue.id } })
 }
 </script>

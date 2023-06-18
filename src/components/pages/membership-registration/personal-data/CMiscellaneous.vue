@@ -1,63 +1,69 @@
 <template>
-    <v-card-text id="CMiscellaneous">
-        <v-row>
-            <v-col>
+    <q-card-section>
+        <div class="row">
+            <div class="col">
                 <c-date-picker
-                    v-model="_value.birthdate"
-                    dense
+                    v-model="value.birthdate"
                     label="Geburtsdatum"
-                    :max="new Date().toISOString()"
-                    :min="dateTime.getHundredYearsAgo().toISOString()"
-                    @input="emitUpdate"
+                    :max="new Date()"
+                    :min="date.addToDate(new Date(), { years: -100 })"
+                    @update:model-value="emitUpdate"
                 />
-            </v-col>
-            <v-col>
-                <v-combobox v-model="_value.tShirtSize" dense :items="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']" label="T-Shirt Größe" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <c-date-picker v-model="_value.entryDate" dense label="Eintritt (Datum)" :max="dateTime.getNextMonth().toISOString()" min="1972-10-30" @input="emitUpdate" />
-            </v-col>
-            <v-col>
-                <v-checkbox v-model="_value.wantsBdrMembership" dense label="BDR-Beitritt" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-text-field v-model="_value.specialNeeds" dense label="Besonderheiten" @input="emitUpdate" />
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <q-select v-model="value.tShirtSize" label="T-Shirt Größe" :options="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <c-date-picker
+                    v-model="value.entryDate"
+                    label="Eintritt (Datum)"
+                    :max="date.addToDate(new Date(), { month: 1 })"
+                    :min="date.buildDate({ year: 1972, month: 10, date: 30 })"
+                    @update:model-value="emitUpdate"
+                />
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <q-checkbox v-model="value.wantsBdrMembership" label="BDR-Beitritt" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.specialNeeds" label="Besonderheiten" @update:model-value="emitUpdate" />
                 <small>(bspw. Allergiker)</small>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-checkbox
-                    v-model="_value.wantsAmateursportslicense"
-                    dense
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-checkbox
+                    v-model="value.wantsAmateursportslicense"
                     label="Ich beantrage hiermit die Breitensportlizenz (für die Teilnahme an den RTF)."
-                    @input="emitUpdate"
+                    @update:model-value="emitUpdate"
                 />
-            </v-col>
-        </v-row>
-    </v-card-text>
+            </div>
+        </div>
+    </q-card-section>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import PersonalData from '~/models/entities/membership-registration/PersonalData'
-import useDateTime from '~/utils/DateTime'
+import { date } from 'quasar'
+import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
+import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
-const emits = defineEmits<(e: 'input', value: PersonalData) => void>()
-const props = defineProps<{ value: PersonalData }>()
+const emits = defineEmits<{ 'update:modelValue': [value: PersonalData] }>()
+const props = defineProps<{ modelValue: PersonalData }>()
 
-const dateTime = useDateTime()
+const value = ref(new PersonalData())
 
-const _value = ref()
-
-const emitUpdate = () => emits('input', _value.value)
+const emitUpdate = () => {
+    emits('update:modelValue', value.value)
+}
 
 onMounted(() => {
-    _value.value = props.value
+    value.value = props.modelValue
 })
 </script>

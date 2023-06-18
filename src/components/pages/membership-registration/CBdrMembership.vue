@@ -1,39 +1,40 @@
 <template>
-    <v-card-text id="CMiscellaneous">
-        <v-row>
-            <v-col>
-                <v-checkbox
-                    v-model="_value.isMember"
-                    dense
+    <q-card-section>
+        <div class="row">
+            <div class="col">
+                <q-checkbox
+                    v-model="value.isMember"
                     label="Ich bin bereits Mitglied beim Bund Deutscher Radfahrer (bei Vereinswechsel bitte unbedingt angeben)"
-                    @input="emitUpdate"
+                    @update:model-value="emitUpdate"
                 />
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-text-field v-model="_value.number" dense label="BDR-Mitgliedsnummer" @input="emitUpdate" />
-            </v-col>
-            <v-col>
-                <c-date-picker v-model="_value.date" dense label="Mitglied seit" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-    </v-card-text>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.number" label="BDR-Mitgliedsnummer" @update:model-value="emitUpdate" />
+            </div>
+            <div class="col">
+                <c-date-picker v-model="value.date" label="Mitglied seit" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+    </q-card-section>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import BdrMembership from '~/models/entities/membership-registration/BdrMembership'
-import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
+import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 
-const emits = defineEmits<(e: 'input', value: BdrMembership) => void>()
-const props = defineProps<{ value: BdrMembership }>()
+const emits = defineEmits<{ 'update:modelValue': [value: BdrMembership] }>()
+const props = defineProps<{ modelValue: BdrMembership }>()
 
-const _value = ref()
+const value = ref(new BdrMembership())
 
-const emitUpdate = () => emits('input', _value.value)
+const emitUpdate = () => {
+    emits('update:modelValue', value.value)
+}
 
 onMounted(() => {
-    _value.value = props.value
+    value.value = props.modelValue
 })
 </script>

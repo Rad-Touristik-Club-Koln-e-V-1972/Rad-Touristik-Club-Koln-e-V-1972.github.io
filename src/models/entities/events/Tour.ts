@@ -1,8 +1,8 @@
-import AEntity from '~/models/entities/AEntity'
-import Control from '~/models/entities/events/tours/Control'
-import Popup from '~/models/entities/Popup'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
-import EEvent from '~/models/enums/EEvent'
+import AEntity from 'src/models/entities/AEntity'
+import Control from 'src/models/entities/events/tours/Control'
+import Popup from 'src/models/entities/Popup'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import EEvent from 'src/models/enums/EEvent'
 
 export default class Tour extends AEntity {
     active = true

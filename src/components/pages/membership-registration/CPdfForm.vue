@@ -1,182 +1,702 @@
 <template>
-    <div id="CPdfForm">
-        <v-dialog v-model="dialog" width="auto">
-            <template #activator="{ on, attrs }">
-                <v-btn color="primary" v-bind="attrs" v-on="on">Fertigstellen</v-btn>
-            </template>
-            <v-card loader-height="10" :loading="isLoading">
-                <v-card-title>Möchtest du den Antrag ausdrucken oder per E-Mail an uns senden?</v-card-title>
-                <v-card-text>
-                    Bitte achte beim E-Mail-Versand darauf den Antrag beizufügen.
-                    <br />
-                    Dieser sollte in deinem "Downloads" Ordner sein.
-                </v-card-text>
-                <v-card-actions>
-                    <v-btn color="primary" :loading="isLoading" @click="download">Download</v-btn>
-                    <v-spacer />
-                    <v-btn color="primary" :loading="isLoading" @click="submit">Abschicken</v-btn>
-                </v-card-actions>
-            </v-card>
-        </v-dialog>
-        <client-only>
-            <vue-html2pdf
-                ref="html2Pdf"
-                :enable-download="false"
-                filename="Mitgliedsantrag"
-                :manual-pagination="true"
-                pdf-format="a4"
-                pdf-orientation="portrait"
-                :pdf-quality="2"
-                :preview-modal="false"
-                @beforeDownload="beforeDownload($event)"
-            >
-                <section slot="pdf-content">
-                    <section class="pdf-item">
-                        <v-card>
-                            <v-card-text>
-                                <!-- TODO Workaround for wrong h1 sizing in https://github.com/kempsteven/vue-html2pdf -->
-                                <h4 style="font-size: 2.125rem">Mitgliedsantrag</h4>
-                            </v-card-text>
-                            <v-card-text>
-                                <!-- TODO Workaround for not working css classes in https://github.com/kempsteven/vue-html2pdf -->
-                                <h2 style="color: var(--v-primary-base)">RTC Köln e.V. 1972</h2>
-                            </v-card-text>
-                            <v-card-text>
-                                Wir freuen uns, dass <b>Du Dich</b> dazu entschieden hast, dem <b>RTC Köln e.V. 1972</b> beizutreten. Dazu müsstest Du bitte noch das folgende
-                                Formular vollständig ausfüllen.
-                            </v-card-text>
-                        </v-card>
-                        <br />
-                        <v-card>
-                            <v-card-text>
-                                <h3>Personendaten</h3>
-                            </v-card-text>
-                        </v-card>
-                        <v-divider />
-                        <c-person :value="props.value.personalData" />
-                        <c-contact :value="props.value.personalData" />
-                        <c-miscellaneous :value="props.value.personalData" />
-                    </section>
-                    <div class="html2pdf__page-break" />
-                    <section class="pdf-item">
-                        <v-card>
-                            <v-card-text>
-                                <h3>Mitgliedsbeitrag</h3>
-                            </v-card-text>
-                        </v-card>
-                        <v-divider />
-                        <c-membership-fee readonly :value="props.value.membershipFee" />
-                        <v-card>
-                            <v-card-text>
-                                <h3>Mitgliedschaft</h3>
-                            </v-card-text>
-                        </v-card>
-                        <v-divider />
-                        <c-bdr-membership :value="props.value.bdrMembership" />
-                        <v-card>
-                            <v-card-text>
-                                <h3>Unterschrift</h3>
-                            </v-card-text>
-                        </v-card>
-                        <v-divider />
-                        <c-signature readonly :value="props.value.signature" />
-                    </section>
-                    <div class="html2pdf__page-break" />
-                    <section class="pdf-item">
-                        <v-card>
-                            <v-card-text>
-                                <h3>Einwilligungserklärung für die Veröffentlichung von Mitgliederdaten im Internet</h3>
-                            </v-card-text>
-                        </v-card>
-                        <v-divider />
-                        <c-consent-data-usage readonly :value="props.value.consentPrivacyPolicy" />
-                    </section>
-                </section>
-            </vue-html2pdf>
-        </client-only>
-    </div>
+    <q-btn color="primary" label="Fertigstellen" @click="dialog = true" />
+    <q-dialog v-model="dialog">
+        <q-card>
+            <q-card-section class="text-accent text-h6">Möchtest du den Antrag ausdrucken oder per E-Mail an uns senden?</q-card-section>
+            <q-card-section>
+                Bitte achte beim E-Mail-Versand darauf den Antrag beizufügen.
+                <br />
+                Dieser sollte in deinem "Downloads" Ordner sein.
+            </q-card-section>
+            <q-card-actions align="between">
+                <q-btn color="primary" label="Download" :loading="isLoading" @click="download" />
+                <q-btn color="primary" label="Abschicken" :loading="isLoading" @click="submit" />
+            </q-card-actions>
+            <q-inner-loading :showing="isLoading">
+                <q-spinner-gears size="50px" color="primary" />
+            </q-inner-loading>
+        </q-card>
+    </q-dialog>
 </template>
 
 <script lang="ts" setup>
-import { nextTick, ref } from 'vue'
-import CBdrMembership from '~/components/pages/membership-registration/CBdrMembership.vue'
-import CConsentDataUsage from '~/components/pages/membership-registration/CConsentDataUsage.vue'
-import CMembershipFee from '~/components/pages/membership-registration/CMembershipFee.vue'
-import CSignature from '~/components/pages/membership-registration/CSignature.vue'
-import CContact from '~/components/pages/membership-registration/personal-data/CContact.vue'
-import CMiscellaneous from '~/components/pages/membership-registration/personal-data/CMiscellaneous.vue'
-import CPerson from '~/components/pages/membership-registration/personal-data/CPerson.vue'
-import MembershipRegistration from '~/models/entities/MembershipRegistration'
+import { onMounted, ref } from 'vue'
+import { colors, date } from 'quasar'
+import { AcroFormCheckBox, jsPDF } from 'jspdf'
+import 'src/assets/fonts/Bahnschrift-Regular-normal.js'
+import MembershipRegistration from 'src/models/entities/MembershipRegistration'
 
-const props = defineProps<{ value: MembershipRegistration }>()
+const props = defineProps<{ modelValue: MembershipRegistration }>()
 
 const dialog = ref(false)
-const html2Pdf = ref()
 const isLoading = ref(false)
 
-// TODO Workaround "unknown" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-const beforeDownload = async (event: unknown) => {
-    // TODO Workaround "any" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-    const { html2pdf, options, pdfContent } = event as any
+let pdfGenerator: jsPDF
 
-    await html2pdf()
-        .set(options)
-        .from(pdfContent)
-        .toPdf()
-        .get('pdf')
-        // TODO Workaround "object" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-        .then((pdf: object) => {
-            // TODO Workaround "any" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-            const tmp = pdf as any
-            const pdfInternal = tmp.internal
-            const totalPages = pdfInternal.getNumberOfPages()
+onMounted(async () => {
+    pdfGenerator = getPDFGenerator()
 
-            for (let i = 1; i <= totalPages; i++) {
-                const pageSize = pdfInternal.pageSize
+    // TODO REMOVE BEFORE DEPLOYMENT
+    await download()
+})
 
-                tmp.setPage(i)
+const addUnderline = (params: { leftMargin: number; topMargin: number; underlineColor?: string; underlineLength?: number }): number => {
+    const lineLength = params.underlineLength ?? 85
+    const topMarginOfLine = 3
+    const _topMargin = params.topMargin + topMarginOfLine
 
-                // eslint-disable-next-line @typescript-eslint/no-var-requires
-                tmp.addImage(require('~/assets/img/banner_vertikal.png'), 'PNG', pageSize.getWidth() - 0.3, 0, 0.3, pageSize.getHeight())
+    pdfGenerator.setDrawColor(colors.getPaletteColor(params.underlineColor ?? 'grey-14'))
+    pdfGenerator.line(params.leftMargin, _topMargin, params.leftMargin + lineLength, _topMargin)
 
-                tmp.setFontSize(10)
-                tmp.setTextColor(150)
-                tmp.text(`Seite ${i} von ${totalPages}`, pageSize.getWidth() * 0.86, pageSize.getHeight() - 0.15)
-            }
-        })
-        .save()
-
-    isLoading.value = false
-
-    dialog.value = false
+    return topMarginOfLine
 }
 
-const download = () => {
+const addCheckbox = (params: { leftMargin: number; topMargin: number; value?: boolean }): number => {
+    const checkboxLength = 10
+    const checkboxTextHeight = checkboxLength * 0.15
+    const checkBox = new AcroFormCheckBox()
+
+    checkBox.readOnly = true
+    // noinspection TypeScriptUnresolvedReference
+    checkBox.Rect = [params.leftMargin, params.topMargin - checkboxTextHeight, checkboxLength, checkboxLength]
+    checkBox.appearanceState = params.value ? 'On' : 'Off'
+    pdfGenerator.addField(checkBox)
+
+    return checkboxLength / 2
+}
+
+const addCheckboxWithText = (params: {
+    description?: string
+    fontSize?: number
+    leftMargin: number
+    text: string
+    textColor?: string
+    topMargin: number
+    value: boolean
+    withoutTopMargin?: boolean
+}): number => {
+    const fontSize = params.fontSize ?? 12
+    const leftMarginText = params.leftMargin + 15
+    let titleHeight = 0
+
+    if (!params.withoutTopMargin) titleHeight += addTextTitle({ fontSize: fontSize - 2, leftMargin: params.leftMargin, text: '', topMargin: params.topMargin })
+
+    let contentHeight = addText({
+        fontSize: fontSize,
+        leftMargin: leftMarginText,
+        text: params.text,
+        textColor: params.textColor,
+        topMargin: params.topMargin + titleHeight,
+    })
+    const textHeight = contentHeight / 2
+
+    contentHeight += titleHeight
+    contentHeight += addCheckbox({ leftMargin: params.leftMargin, topMargin: params.topMargin - textHeight + titleHeight, value: params.value })
+
+    if (params.description) addText({ fontSize: fontSize - 4, leftMargin: leftMarginText, text: params.description, topMargin: params.topMargin + textHeight + titleHeight })
+
+    return contentHeight
+}
+
+const addList = (params: { elements: string[]; fontSize?: number; leftMargin: number; textColor?: string; topMargin: number }): number => {
+    let contentHeight = 0
+
+    for (const element of params.elements) {
+        const textHeight = addText({
+            fontSize: params.fontSize,
+            leftMargin: params.leftMargin,
+            text: `- ${element.replaceAll('\n', '\n    ')}`,
+            textColor: params.textColor,
+            topMargin: params.topMargin + contentHeight,
+        })
+
+        contentHeight += textHeight
+    }
+
+    return contentHeight
+}
+
+const addPage1 = (params: { leftMargin: number; topMargin: number; leftMarginCenter: number }) => {
+    let _topMargin = params.topMargin
+
+    _topMargin += addText({ fontSize: 25, leftMargin: params.leftMargin, text: 'Mitgliedsantrag', topMargin: _topMargin })
+
+    _topMargin += addText({ fontSize: 17, leftMargin: params.leftMargin, text: 'RTC Köln e.V. 1972', textColor: 'primary', topMargin: _topMargin })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `Wir freuen uns, dass Du Dich dazu entschieden hast, dem RTC Köln e.V. 1972 beizutreten.
+Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.`,
+        textColor: 'grey-14',
+        topMargin: _topMargin,
+    })
+
+    _topMargin += addText({
+        fontSize: 14,
+        leftMargin: params.leftMargin,
+        text: 'Personendaten',
+        topMargin: _topMargin,
+        underlineColor: 'grey',
+        underlineLength: 180,
+        useHeadlineSpace: true,
+        withUnderline: true,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.personalData.firstName,
+        title: 'Vorname',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({ leftMargin: params.leftMarginCenter, text: props.modelValue.personalData.lastName, title: 'Nachname', topMargin: _topMargin, withUnderline: true })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.personalData.street,
+        title: 'Straße',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: props.modelValue.personalData.streetNumber,
+        title: 'Hausnummer',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.personalData.zipCode,
+        title: 'Postleitzahl',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({ leftMargin: params.leftMarginCenter, text: props.modelValue.personalData.city, title: 'Stadt', topMargin: _topMargin, withUnderline: true })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: `${props.modelValue.personalData.telePhoneCountryCode} ${props.modelValue.personalData.telePhoneNumber}`,
+        title: 'Telefonnummer',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: `${props.modelValue.personalData.mobilePhoneCountryCode} ${props.modelValue.personalData.mobilePhoneNumber}`,
+        title: 'Handynummer',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.personalData.email,
+        title: 'E-Mail',
+        topMargin: _topMargin,
+        underlineLength: 180,
+        withUnderline: true,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: date.formatDate(props.modelValue.personalData.birthdate, 'DD.MM.YYYY'),
+        title: 'Geburtsdatum',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: props.modelValue.personalData.tShirtSize,
+        title: 'T-Shirt Größe',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    const textHeight = addText({
+        leftMargin: params.leftMargin,
+        text: date.formatDate(props.modelValue.personalData.entryDate, 'DD.MM.YYYY'),
+        title: 'Eintritt (Datum)',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    addCheckboxWithText({
+        leftMargin: params.leftMarginCenter,
+        text: 'BDR-Beitritt',
+        topMargin: _topMargin,
+        value: props.modelValue.personalData.wantsBdrMembership,
+    })
+    _topMargin += textHeight
+
+    _topMargin += addText({
+        description: '(bspw. Allergiker)',
+        leftMargin: params.leftMargin,
+        text: props.modelValue.personalData.specialNeeds,
+        title: 'Besonderheiten',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addCheckboxWithText({
+        leftMargin: params.leftMargin,
+        text: 'Ich beantrage hiermit die Breitensportlizenz (für die Teilnahme an den RTF).',
+        topMargin: _topMargin,
+        value: props.modelValue.personalData.wantsAmateursportslicense,
+    })
+}
+
+const addPage2 = (params: { leftMargin: number; topMargin: number; leftMarginCenter: number }) => {
+    let _topMargin = params.topMargin
+
+    pdfGenerator.addPage()
+
+    _topMargin += addText({
+        fontSize: 14,
+        leftMargin: params.leftMargin,
+        text: 'Mitgliedsbeitrag',
+        topMargin: _topMargin,
+        underlineColor: 'grey',
+        underlineLength: 180,
+        withUnderline: true,
+    })
+
+    _topMargin += addRadioButtons({
+        leftMargin: params.leftMargin,
+        options: ['Bar', 'Lastschrifteinzug'],
+        text: 'Zahlungsweise (zutreffendes bitte ankreuzen):',
+        topMargin: _topMargin,
+        value: props.modelValue.membershipFee.paymentMethod,
+    })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `Hiermit ermächtige ich den RTC Köln e.V. 1972 den Jahresbeitrag gemäß der aktuellen Beitragsordnung
+jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
+        topMargin: _topMargin,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.membershipFee.iban,
+        title: 'IBAN',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: props.modelValue.membershipFee.bic,
+        title: 'BIC',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.membershipFee.creditInstitute,
+        title: 'Kreditinstitut',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: props.modelValue.membershipFee.bankholder,
+        title: 'Kontoinhaber',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.membershipFee.signature.location,
+        title: 'Ort',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: date.formatDate(props.modelValue.membershipFee.signature.date, 'DD.MM.YYYY'),
+        title: 'Datum',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    _topMargin += addSignature({
+        leftMargin: params.leftMargin,
+        text: 'Unterschrift Kontoinhaber',
+        topMargin: _topMargin,
+        value: props.modelValue.membershipFee.signature.signature,
+    })
+
+    _topMargin += addText({
+        fontSize: 14,
+        leftMargin: params.leftMargin,
+        text: 'Mitgliedschaft',
+        topMargin: _topMargin,
+        underlineColor: 'grey',
+        underlineLength: 180,
+        useHeadlineSpace: true,
+        withUnderline: true,
+    })
+
+    _topMargin += addCheckboxWithText({
+        description: '(bei Vereinswechsel bitte unbedingt angeben)',
+        leftMargin: params.leftMargin,
+        text: 'Ich bin bereits Mitglied beim Bund Deutscher Radfahrer',
+        topMargin: _topMargin,
+        value: props.modelValue.bdrMembership.isMember,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.bdrMembership.number,
+        title: 'BDR-Mitgliedsnummer',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: date.formatDate(props.modelValue.bdrMembership.date, 'DD.MM.YYYY'),
+        title: 'Mitglied seit',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    _topMargin += addText({
+        fontSize: 14,
+        leftMargin: params.leftMargin,
+        text: 'Unterschrift',
+        topMargin: _topMargin,
+        underlineColor: 'grey',
+        underlineLength: 180,
+        useHeadlineSpace: true,
+        withUnderline: true,
+    })
+
+    _topMargin += addText({
+        fontSize: 9,
+        leftMargin: params.leftMargin,
+        text: `Mit dieser Erklärung trete ich dem RTC Köln e.V. 1972 bei.
+Durch den Beitritt entstehen gegenüber dem RTC Köln e.V. 1972 keinerlei finanzielle, materielle sowie sonstige Forderungsansprüche.
+Die Mitgliedschaft kann bis 30. September eines Jahres zum Jahresende gekündigt werden.
+Eine Erstattung von bereits gezahlten Beträgen ist nicht möglich.
+Mit dem Beitritt erkenne ich die aktuelle Satzung und die damit verbundenen Geschäftsordnungen des RTC Köln e.V. 1972 an.`,
+        topMargin: _topMargin,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.signature.location,
+        title: 'Ort',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: date.formatDate(props.modelValue.signature.date, 'DD.MM.YYYY'),
+        title: 'Datum',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addSignature({
+        leftMargin: params.leftMargin,
+        text: 'Unterschrift (Bei Minderjährigen: Unterschrift des Erziehungsberechtigten)',
+        topMargin: _topMargin,
+        value: props.modelValue.signature.signature,
+    })
+}
+
+const addPage3 = (params: { leftMarginCenter: number; leftMargin: number; topMargin: number }) => {
+    let _topMargin = params.topMargin
+
+    pdfGenerator.addPage()
+
+    _topMargin += addText({
+        fontSize: 14,
+        leftMargin: params.leftMargin,
+        text: 'Einwilligungserklärung für die Veröffentlichung von Mitgliederdaten im Internet',
+        topMargin: _topMargin,
+        underlineColor: 'grey',
+        underlineLength: 180,
+        withUnderline: true,
+    })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `Der Vereinsvorstand weist hiermit darauf hin, dass ausreichende technische Maßnahmen
+zur Gewährleistung des Datenschutzes getroffen wurden.
+Dennoch kann bei einer Veröffentlichung von personenbezogenen Mitgliederdaten im Internet
+ein umfassender Datenschutz nicht garantiert werden.
+Daher nimmt das Vereinsmitglied die Risiken für eine eventuelle Persönlichkeitsrechtsverletzung
+zur Kenntnis und ist sich bewusst, dass:`,
+        topMargin: _topMargin,
+    })
+
+    _topMargin += addList({
+        elements: [
+            `die personenbezogenen Daten auch in Staaten abrufbar sind,
+die keine der Bundesrepublik Deutschland vergleichbaren Datenschutzbestimmungen kennen,`,
+            `die Vertraulichkeit, die Integrität (Unverletzlichkeit), die Authentizität (Echtheit)
+und die Verfügbarkeit der personenbezogenen Daten nicht garantiert ist.`,
+        ],
+        leftMargin: params.leftMargin,
+        topMargin: _topMargin,
+    })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `Das Vereinsmitglied trifft die Entscheidung zur Veröffentlichung seiner Daten im Internet freiwillig
+und kann seine Einwilligung jederzeit widerrufen.`,
+        topMargin: _topMargin,
+    })
+
+    _topMargin += addText({
+        fontSize: 13,
+        leftMargin: params.leftMargin,
+        text: 'Erklärung',
+        topMargin: _topMargin,
+        useHeadlineSpace: true,
+    })
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `"Ich bestätige das Vorstehende zur Kenntnis genommen zu haben und willige ein,
+dass der RTC Köln e.V. 1972 folgende Daten zu meiner Person:`,
+        topMargin: _topMargin,
+    })
+
+    addText({
+        fontSize: 13,
+        leftMargin: params.leftMargin,
+        text: 'Allgemeine Daten',
+        topMargin: _topMargin,
+    })
+    _topMargin += addText({
+        fontSize: 13,
+        leftMargin: params.leftMarginCenter,
+        text: 'Spezielle Daten von Funktionsträgern',
+        topMargin: _topMargin,
+    })
+
+    _topMargin += Math.max(
+        addList({
+            elements: [
+                'Nachname, Vorname',
+                `Bildhafte Darstellungen (in Printmaterialien,
+auf der Internetseite, auf Social Media-Kanälen)`,
+                `Sonstige Daten (z.B.: Leistungsergebnisse,
+Lizenzen, Mannschaftsgruppe u.ä.)`,
+            ],
+            leftMargin: params.leftMargin,
+            topMargin: _topMargin,
+        }),
+        addList({
+            elements: ['Anschrift', 'Telefonnummer', 'Faxnummer', 'Email-Adresse'],
+            leftMargin: params.leftMarginCenter,
+            topMargin: _topMargin,
+        }),
+    )
+
+    _topMargin += addText({
+        leftMargin: params.leftMargin,
+        text: `wie angegeben in folgender Internetseite des Vereins www.rtc-koeln.de veröffentlichen darf."`,
+        topMargin: _topMargin,
+    })
+
+    addText({
+        leftMargin: params.leftMargin,
+        text: props.modelValue.consentPrivacyPolicy.location,
+        title: 'Ort',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+    _topMargin += addText({
+        leftMargin: params.leftMarginCenter,
+        text: date.formatDate(props.modelValue.consentPrivacyPolicy.date, 'DD.MM.YYYY'),
+        title: 'Datum',
+        topMargin: _topMargin,
+        withUnderline: true,
+    })
+
+    addSignature({
+        leftMargin: params.leftMargin,
+        text: 'Unterschrift (Bei Minderjährigen: Unterschrift des Erziehungsberechtigten)',
+        topMargin: _topMargin,
+        value: props.modelValue.consentPrivacyPolicy.signature,
+    })
+}
+
+const addPageBanner = () => {
+    const internal = pdfGenerator.internal
+    const totalPages = internal.pages.length
+
+    for (let i = 1; i < totalPages; i++) {
+        const pageSize = internal.pageSize
+
+        pdfGenerator.setPage(i).addImage('/src/assets/img/banner_vertikal.png', 'PNG', pageSize.getWidth() - 9, 0, 9, pageSize.getHeight())
+    }
+}
+
+const addPageFooter = () => {
+    const internal = pdfGenerator.internal
+    const totalPages = internal.pages.length
+
+    for (let i = 1; i < totalPages; i++) {
+        const footerText = `Seite ${i} von ${totalPages - 1}`
+        const pageSize = internal.pageSize
+
+        pdfGenerator
+            .setFontSize(10)
+            .setPage(i)
+            .setTextColor(colors.getPaletteColor('grey'))
+            .text(footerText, pageSize.getWidth() - pdfGenerator.getTextWidth(footerText) - 10, pageSize.getHeight() - 10)
+    }
+}
+
+const addRadioButtons = (params: { fontSize?: number; leftMargin: number; options: string[]; text: string; textColor?: string; topMargin: number; value: string }): number => {
+    let _leftMargin = params.leftMargin
+    let contentHeight = 0
+
+    addText({
+        fontSize: params.fontSize,
+        leftMargin: _leftMargin,
+        text: params.text,
+        textColor: params.textColor,
+        topMargin: params.topMargin,
+    })
+
+    _leftMargin += pdfGenerator.getTextWidth(params.text) + 5
+
+    for (let i = 0; i < params.options.length; i++) {
+        if (i > 0) _leftMargin += pdfGenerator.getTextWidth(params.options[i - 1]) + 20
+
+        contentHeight += addCheckboxWithText({
+            fontSize: params.fontSize,
+            leftMargin: _leftMargin,
+            text: params.options[i],
+            topMargin: params.topMargin,
+            value: params.options[i] === params.value,
+            withoutTopMargin: true,
+        })
+    }
+
+    return contentHeight / params.options.length
+}
+
+const addSignature = (params: { leftMargin: number; topMargin: number; text: string; value: string }): number => {
+    let contentHeight = 0
+
+    pdfGenerator.addImage(params.value, 'PNG', params.leftMargin, params.topMargin, 100, 25)
+    contentHeight += 28
+
+    contentHeight += addText({
+        fontSize: 8,
+        leftMargin: params.leftMargin,
+        text: params.text,
+        topMargin: params.topMargin + contentHeight,
+    })
+
+    return contentHeight
+}
+
+const addText = (params: {
+    description?: string
+    fontSize?: number
+    leftMargin: number
+    text: string
+    textColor?: string
+    title?: string
+    topMargin: number
+    underlineColor?: string
+    underlineLength?: number
+    useHeadlineSpace?: boolean
+    withUnderline?: boolean
+}): number => {
+    let contentHeight = 0
+    const fontSize = params.fontSize ?? 12
+
+    if (params.useHeadlineSpace) contentHeight += 10
+
+    if (params.title) contentHeight += addTextTitle({ fontSize: fontSize - 2, leftMargin: params.leftMargin, text: params.title, topMargin: params.topMargin + contentHeight })
+
+    pdfGenerator.setFontSize(fontSize)
+    pdfGenerator.setTextColor(colors.getPaletteColor(params.textColor ?? 'black'))
+    pdfGenerator.text(params.text, params.leftMargin, params.topMargin + contentHeight)
+    contentHeight += params.text.split('\n').length * (pdfGenerator.getLineHeight() * 0.45)
+
+    if (params.withUnderline)
+        contentHeight += addUnderline({
+            leftMargin: params.leftMargin,
+            topMargin: params.topMargin + contentHeight - 7,
+            underlineColor: params.underlineColor,
+            underlineLength: params.underlineLength,
+        })
+
+    if (params.description)
+        contentHeight += addTextDescription({ fontSize: fontSize - 4, leftMargin: params.leftMargin, text: params.description, topMargin: params.topMargin + contentHeight })
+
+    return contentHeight
+}
+
+const addTextDescription = (params: { fontSize: number; leftMargin: number; text: string; topMargin: number }): number => {
+    pdfGenerator.setFontSize(params.fontSize)
+    pdfGenerator.setTextColor(colors.getPaletteColor('black'))
+    pdfGenerator.text(params.text, params.leftMargin, params.topMargin)
+
+    return pdfGenerator.getLineHeight() * 0.5
+}
+
+const addTextTitle = (params: { fontSize: number; leftMargin: number; text: string; topMargin: number }): number => {
+    pdfGenerator.setFontSize(params.fontSize)
+    pdfGenerator.setTextColor(colors.getPaletteColor('grey'))
+    pdfGenerator.text(params.text, params.leftMargin, params.topMargin)
+
+    return pdfGenerator.getLineHeight() * 0.6
+}
+
+const createPDF = () => {
+    const leftMargin = 10
+    const leftMarginCenter = 105
+    const topMargin = 12
+
+    addPage1({ leftMargin: leftMargin, topMargin: topMargin, leftMarginCenter: leftMarginCenter })
+
+    addPage2({ leftMargin: leftMargin, topMargin: topMargin, leftMarginCenter: leftMarginCenter })
+
+    addPage3({ leftMargin: leftMargin, topMargin: topMargin, leftMarginCenter: leftMarginCenter })
+
+    addPageFooter()
+
+    addPageBanner()
+}
+
+const download = async () => {
     isLoading.value = true
 
-    nextTick(() => setTimeout(() => html2Pdf.value.generatePdf()))
+    createPDF()
+
+    await pdfGenerator.save('Mitgliedsantrag.pdf', { returnPromise: true })
+
+    isLoading.value = false
 }
 
-const submit = () => {
-    download()
+const getPDFGenerator = () => {
+    // Default export is a4 paper, portrait, using millimeters for units
+    const pdfGenerator = new jsPDF({})
 
-    nextTick(() =>
-        setTimeout(
-            () =>
-                window.open(
-                    'mailto:vorstand@rtc-koeln.de?subject=Antrag%20auf%20Mitgliedschaft' +
-                        '&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20eine%20Mitgliedschaft%20in%20eurem%20Verein%20beantragen.' +
-                        '%0D%0AAnbei%20mein%20ausgef%C3%BClltes%20Formular.'
-                ),
-            2000
-        )
+    pdfGenerator.setFont('Bahnschrift-Regular')
+
+    return pdfGenerator
+}
+
+const submit = async () => {
+    await download()
+
+    window.open(
+        'mailto:vorstand@rtc-koeln.de?subject=Antrag%20auf%20Mitgliedschaft' +
+            '&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20eine%20Mitgliedschaft%20in%20eurem%20Verein%20beantragen.' +
+            '%0D%0AAnbei%20mein%20ausgef%C3%BClltes%20Formular.',
     )
 }
 </script>
-
-<style lang="scss" scoped>
-/* TODO Workaround for Adding margin totally breaks the page https://github.com/kempsteven/vue-html2pdf/issues/55 */
-.pdf-item {
-    margin: 10px 40px 10px 20px;
-}
-</style>

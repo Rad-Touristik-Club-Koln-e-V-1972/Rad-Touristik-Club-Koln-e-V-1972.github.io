@@ -1,4 +1,4 @@
-import AEntity from '~/models/entities/AEntity'
+import AEntity from 'src/models/entities/AEntity'
 
 export default class PersonalData extends AEntity {
     birthdate = ''
@@ -8,12 +8,12 @@ export default class PersonalData extends AEntity {
     firstName = ''
     lastName = ''
     mobilePhoneNumber = ''
-    mobilePhoneCountryCode = ''
+    mobilePhoneCountryCode = 'DE'
     street = ''
     streetNumber = ''
     specialNeeds = ''
     telePhoneNumber = ''
-    telePhoneCountryCode = ''
+    telePhoneCountryCode = 'DE'
     tShirtSize = ''
     wantsAmateursportslicense = false
     wantsBdrMembership = false

@@ -1,5 +1,5 @@
 enum ETraining {
-    wintertraining = 'Wintertraining',
+    Wintertraining = 'Wintertraining',
 }
 
 export default ETraining

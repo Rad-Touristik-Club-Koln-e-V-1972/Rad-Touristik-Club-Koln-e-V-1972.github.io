@@ -1,26 +1,22 @@
 <template>
-    <v-dialog id="DPopup" v-model="dialog" scrollable width="auto">
-        <v-card>
-            <v-toolbar color="primary" flat>
-                <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
-            </v-toolbar>
-            <!-- TODO style="padding: 16px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/12170 -->
-            <v-card-text style="padding: 16px">
-                <span class="black--text text-pre-wrap" v-html="props.value.text" />
-            </v-card-text>
-            <v-card-actions>
-                <v-spacer />
-                <v-btn class="font-weight-black" color="primary" text @click="dialog = false">OK</v-btn>
-            </v-card-actions>
-        </v-card>
-    </v-dialog>
+    <q-dialog v-model="dialog">
+        <q-card>
+            <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
+            <q-card-section>
+                <span class="text-pre-wrap" v-html="props.modelValue.text" />
+            </q-card-section>
+            <q-card-actions align="right">
+                <q-btn v-close-popup color="primary" label="OK" />
+            </q-card-actions>
+        </q-card>
+    </q-dialog>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import Popup from '~/models/entities/Popup'
+import Popup from 'src/models/entities/Popup'
 
-const props = defineProps<{ value: Popup }>()
+const props = defineProps<{ modelValue: Popup }>()
 
 const dialog = ref(true)
 </script>

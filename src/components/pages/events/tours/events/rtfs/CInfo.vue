@@ -1,13 +1,11 @@
 <template>
-    <v-card flat>
-        <v-card-text>
-            <v-row class="justify-center">
-                <v-col cols="auto">
-                    <v-card class="text-no-wrap">
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Adresse</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text class="black--text">
+    <q-card flat>
+        <q-card-section>
+            <div class="justify-center q-gutter-lg row">
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Adresse</q-card-section>
+                        <q-card-section>
                             <b>{{ props.location.title }}</b>
                             <br />
                             {{ props.location.street }}
@@ -16,62 +14,56 @@
                             <br />
                             <a :href="props.location.url?.toString()" target="_blank">Anfahrt bei Google Maps</a>
                             <br />
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Zeiten</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <v-simple-table dense>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Zeiten</q-card-section>
+                        <q-card-section>
+                            <q-markup-table flat>
                                 <tbody>
                                     <tr v-for="it in props.times" :key="it.id">
                                         <td class="text-right text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
                                         <td v-text="it.name" />
                                     </tr>
                                 </tbody>
-                            </v-simple-table>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Gebühren</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <v-simple-table dense>
+                            </q-markup-table>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Gebühren</q-card-section>
+                        <q-card-section>
+                            <q-markup-table flat>
                                 <tbody>
                                     <tr v-for="it in props.fees.filter((f) => f.category)" :key="it.id">
                                         <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
                                         <td v-html="it.name" />
                                     </tr>
                                 </tbody>
-                            </v-simple-table>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card class="text-no-wrap">
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Strecken</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            <v-simple-table dense>
+                            </q-markup-table>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card class="text-no-wrap">
+                        <q-card-section class="bg-primary text-accent text-h6">Strecken</q-card-section>
+                        <q-card-section>
+                            <q-markup-table flat>
                                 <thead>
                                     <tr>
-                                        <th class="text-left" v-text="'Startzeit'" />
-                                        <th class="text-left" v-text="'Streckenlänge'" />
-                                        <th class="text-left" v-text="'Höhenmeter'" />
-                                        <th class="text-left" v-text="'Profil'" />
-                                        <th class="text-left" v-text="'Kontrollen'" />
-                                        <th class="text-right" v-text="'Links'" />
+                                        <th class="text-left" scope="col">Startzeit</th>
+                                        <th class="text-left" scope="col">Streckenlänge</th>
+                                        <th class="text-left" scope="col">Höhenmeter</th>
+                                        <th class="text-left" scope="col">Profil</th>
+                                        <th class="text-left" scope="col">Kontrollen</th>
+                                        <th class="text-right" scope="col">Links</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="it in props.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'primary--text' : ''">
+                                    <tr v-for="it in props.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'text-primary' : ''">
                                         <td v-text="dateTime.formatTime(it.start, it.end)" />
                                         <td v-text="`${it.length} km`" />
                                         <td v-text="it.height" />
@@ -86,21 +78,21 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                            </v-simple-table>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-card-text>
-    </v-card>
+                            </q-markup-table>
+                        </q-card-section>
+                    </q-card>
+                </div>
+            </div>
+        </q-card-section>
+    </q-card>
 </template>
 
 <script lang="ts" setup>
-import useDateTime from '~/utils/DateTime'
-import Control from '~/models/entities/events/tours/Control'
-import Fee from '~/models/entities/events/tours/events/Fee'
-import Time from '~/models/entities/events/tours/events/Time'
-import Track from '~/models/entities/events/tours/events/Track'
+import Control from 'src/models/entities/events/tours/Control'
+import Fee from 'src/models/entities/events/tours/events/Fee'
+import Time from 'src/models/entities/events/tours/events/Time'
+import Track from 'src/models/entities/events/tours/events/Track'
+import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
 

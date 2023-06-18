@@ -1,5 +1,5 @@
-import AEntity from '~/models/entities/AEntity'
-import EProfile from '~/models/enums/events/tours/EProfile'
+import AEntity from 'src/models/entities/AEntity'
+import EProfile from 'src/models/enums/events/tours/EProfile'
 
 export default class Track extends AEntity {
     controls!: number
@@ -8,7 +8,7 @@ export default class Track extends AEntity {
     important = false
     length!: number
     name!: string
-    profile = EProfile.normal
+    profile = EProfile.Normal
     start!: Date
     text!: string
     urls: Record<string, URL> = {}

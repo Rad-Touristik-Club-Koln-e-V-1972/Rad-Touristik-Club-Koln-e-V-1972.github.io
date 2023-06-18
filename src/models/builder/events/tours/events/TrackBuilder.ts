@@ -1,64 +1,62 @@
-import ABuilder from '~/models/builder/ABuilder'
-import Track from '~/models/entities/events/tours/events/Track'
-import EProfile from '~/models/enums/events/tours/EProfile'
+import ABuilder from 'src/models/builder/ABuilder'
+import Track from 'src/models/entities/events/tours/events/Track'
+import EProfile from 'src/models/enums/events/tours/EProfile'
 
 export default class TrackBuilder extends ABuilder {
     private entity = new Track()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setControls(value: number): TrackBuilder {
+    setControls = (value: number): this => {
         this.entity.controls = value
 
         return this
     }
 
-    setHeight(value: number): TrackBuilder {
+    setHeight = (value: number): this => {
         this.entity.height = value
 
         return this
     }
 
-    setImportant(value: boolean): TrackBuilder {
+    setImportant = (value: boolean): this => {
         this.entity.important = value
 
         return this
     }
 
-    setLength(value: number): TrackBuilder {
+    setLength = (value: number): this => {
         this.entity.length = value
 
         return this
     }
 
-    setName(value: string): TrackBuilder {
+    setName = (value: string): this => {
         this.entity.name = value
 
         return this
     }
 
-    setProfile(value: EProfile): TrackBuilder {
+    setProfile = (value: EProfile): this => {
         this.entity.profile = value
 
         return this
     }
 
-    setText(value: string): TrackBuilder {
-        this.entity.text = value
+    setText = (value: string): this => {
+        this.entity.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
-    setTime(start: string, end: string): TrackBuilder {
+    setTime = (start: string, end: string): this => {
         this.entity.end = new Date(`1970-01-01 ${end}`)
         this.entity.start = new Date(`1970-01-01 ${start}`)
 
         return this
     }
 
-    setUrls(value: Record<string, URL>): TrackBuilder {
+    setUrls = (value: Record<string, URL>): this => {
         this.entity.urls = value
 
         return this

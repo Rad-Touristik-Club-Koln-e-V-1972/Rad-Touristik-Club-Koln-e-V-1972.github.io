@@ -1,31 +1,29 @@
 <template>
-    <v-sheet id="CTour">
-        <v-card-title v-if="!props.value.active" class="font-weight-bold justify-center">! Zur Zeit nicht verfügbar !</v-card-title>
-        <v-card :disabled="!props.value.active" max-width="37em">
-            <v-toolbar color="primary" flat>
-                <v-toolbar-title class="accent--text">{{ props.value.title }}</v-toolbar-title>
-            </v-toolbar>
-            <v-divider />
-            <v-card-text>
-                <v-simple-table dense>
+    <q-card style="width: 40em">
+        <q-card-section v-if="!props.modelValue.active" class="justify-center text-primary text-h6">! Zur Zeit nicht verfügbar !</q-card-section>
+        <q-card :class="props.modelValue.active ? '' : 'disabled'">
+            <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
+            <q-separator />
+            <q-card-section>
+                <q-markup-table flat>
                     <tbody>
                         <tr>
                             <td class="text-right" v-text="'Strecke:'" />
-                            <td v-text="`${props.value.length} km`" />
+                            <td v-text="`${props.modelValue.length} km`" />
                         </tr>
                         <tr>
                             <td class="text-right" v-text="'Höhenmeter:'" />
-                            <td v-text="`ca. ${props.value.height} hm`" />
+                            <td v-text="`ca. ${props.modelValue.height} hm`" />
                         </tr>
                         <tr>
                             <td class="text-right" v-text="'Profil:'" />
-                            <td v-text="props.value.profile" />
+                            <td v-text="props.modelValue.profile" />
                         </tr>
                         <tr>
                             <td class="text-right" v-text="'Kontrollen:'" />
                             <td>
                                 <dl class="my-1">
-                                    <div v-for="it in props.value.controls" :key="it.id">
+                                    <div v-for="it in props.modelValue.controls" :key="it.id">
                                         <dt>
                                             <a :href="it.url?.toString()" target="_blank" v-text="it.title" />
                                         </dt>
@@ -43,7 +41,7 @@
                             <td class="text-right" v-text="'Links:'" />
                             <td>
                                 <ul class="mt-1">
-                                    <li v-for="(it, key) in props.value.urls" :key="key" class="mb-1">
+                                    <li v-for="(it, key) in props.modelValue.urls" :key="key" class="mb-1">
                                         <a :href="it.toString()" target="_blank" v-text="key" />
                                     </li>
                                 </ul>
@@ -51,38 +49,26 @@
                         </tr>
                         <tr>
                             <td class="text-no-wrap text-right" v-text="'Letzte Änderung:'" />
-                            <td v-text="dateTime.format(props.value.lastChange, null, true)" />
+                            <td v-text="dateTime.format(props.modelValue.lastChange, null, true)" />
                         </tr>
                     </tbody>
-                </v-simple-table>
-            </v-card-text>
-            <v-divider />
-            <v-card-actions>
-                <v-spacer />
-                <v-btn text @click="showText = !showText">
-                    Details
-                    <v-icon right>{{ showText ? mdiChevronUp : mdiChevronDown }}</v-icon>
-                </v-btn>
-            </v-card-actions>
-            <v-expand-transition>
-                <div v-show="showText">
-                    <v-card-text>
-                        <span class="black--text text-pre-wrap" v-html="props.value.text" />
-                    </v-card-text>
-                </div>
-            </v-expand-transition>
-        </v-card>
-    </v-sheet>
+                </q-markup-table>
+            </q-card-section>
+            <q-separator />
+            <q-expansion-item label="Details">
+                <q-card-section>
+                    <span class="text-pre-wrap" v-html="props.modelValue.text" />
+                </q-card-section>
+            </q-expansion-item>
+        </q-card>
+    </q-card>
 </template>
-<script lang="ts" setup>
-import { ref } from 'vue'
-import { mdiChevronDown, mdiChevronUp } from '@mdi/js'
-import Permanent from '~/models/entities/events/tours/Permanent'
-import useDateTime from '~/utils/DateTime'
 
-const props = defineProps<{ value: Permanent }>()
+<script lang="ts" setup>
+import Permanent from 'src/models/entities/events/tours/Permanent'
+import useDateTime from 'src/utils/DateTime'
+
+const props = defineProps<{ modelValue: Permanent }>()
 
 const dateTime = useDateTime()
-
-const showText = ref(false)
 </script>

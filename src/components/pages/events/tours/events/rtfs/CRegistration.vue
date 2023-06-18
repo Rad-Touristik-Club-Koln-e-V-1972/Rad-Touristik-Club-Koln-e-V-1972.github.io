@@ -1,17 +1,15 @@
 <template>
-    <v-card flat>
-        <v-card-text class="font-weight-bold">
+    <q-card flat>
+        <q-card-section class="font-weight-bold">
             Breitensportlizenzinhaber/innen (Wertungskarteninhaber/innen) aus anderen Bundesländern bekommen ihren Eintrag in die Wertungskarte wie bisher.
-        </v-card-text>
-        <v-card-subtitle>Damit der An-/Abmeldevorgang möglichst schnell und reibungslos für euch abläuft, haben wir folgendes zusammengestellt:</v-card-subtitle>
-        <v-card-text>
-            <v-row class="justify-center">
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Für Breitensportlizenzinhaber/innen (digitale Anmeldung)</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
+        </q-card-section>
+        <q-card-section>Damit der An-/Abmeldevorgang möglichst schnell und reibungslos für euch abläuft, haben wir folgendes zusammengestellt:</q-card-section>
+        <q-card-section>
+            <div class="justify-center q-gutter-lg row">
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Für Breitensportlizenzinhaber/innen (digitale Anmeldung)</q-card-section>
+                        <q-card-section>
                             <ol>
                                 <li>in der BDR-App die Veranstaltung buchen.</li>
                                 <li>am Start den ausgehängten oder online den <a href="https://scan.bike/" target="_blank">scan&bike</a> QR-Code scannen (QR- oder Foto-App)</li>
@@ -31,15 +29,13 @@
                                     Dieser kann dann auch am Jahresende für die Vereinsmeisterschaft ausgewertet werden.
                                 </li>
                             </ol>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Für alle anderen (digitale Anmeldung)</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Für alle anderen (digitale Anmeldung)</q-card-section>
+                        <q-card-section>
                             <ol>
                                 <li>am Start den ausgehängten oder online den <a href="https://scan.bike/" target="_blank">scan&bike</a> QR-Code scannen (QR- oder Foto-App)</li>
                                 <li>pers. Daten speichern. Die Daten werden nur auf deinem Smartphone im Browser gespeichert – sonst nirgendwo</li>
@@ -53,37 +49,36 @@
                                     (1. und 2. auch vor Ort möglich)
                                 </li>
                             </ol>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Oder ohne Smartphone (manuelle Anmeldung)</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Oder ohne Smartphone (manuelle Anmeldung)</q-card-section>
+                        <q-card-section>
                             <ol>
                                 <li>Anmeldeformular ausfüllen</li>
                                 <li>anmelden und Startkarte entgegennehmen.</li>
                                 <li>Startgeld bezahlen</li>
                                 <li>losfahren und Spaß haben</li>
                             </ol>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="auto">
-                    <v-card>
-                        <v-toolbar color="primary" flat>
-                            <v-toolbar-title class="accent--text">Sternfahrtmodus</v-toolbar-title>
-                        </v-toolbar>
-                        <v-card-text>
-                            Dieser Modus gilt weiterhin. Dabei kann maximal die längste Strecke anerkannt werden. Die An- und Abfahrt zum Startort wird zu der bei der RTF
-                            gefahrenen Strecke zugerechnet. Z.B., die An- und Abfahrt sind insges. 40 Km und ihr fahrt die 78er Strecke, dann scannt ihr den QR-Code der 117er
-                            Strecke. Fahrt ihr die 51er Strecke, dann bei der Ankunft den Code der 78er Strecke.
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-card-text>
-    </v-card>
+                        </q-card-section>
+                    </q-card>
+                </div>
+                <div class="col-auto">
+                    <q-card>
+                        <q-card-section class="bg-primary text-accent text-h6">Sternfahrtmodus</q-card-section>
+                        <q-card-section>
+                            Dieser Modus gilt weiterhin.<br />
+                            Dabei kann maximal die längste Strecke anerkannt werden.<br />
+                            Die An- und Abfahrt zum Startort wird zu der bei der RTF gefahrenen Strecke zugerechnet.<br />
+                            Z.B., die An- und Abfahrt sind insgesamt 40 km und ihr fahrt die 78er Strecke, dann scannt ihr den QR-Code der 117er Strecke.<br />
+                            Fahrt ihr die 51er Strecke, dann bei der Ankunft den Code der 78er Strecke.
+                        </q-card-section>
+                    </q-card>
+                </div>
+            </div>
+        </q-card-section>
+    </q-card>
 </template>
+<script setup lang="ts"></script>

@@ -1,68 +1,81 @@
 <template>
-    <v-card-text id="CContact">
-        <v-row>
-            <v-col>
-                <MazPhoneNumberInput
-                    :default-country-code="_value.telePhoneCountryCode"
-                    :default-phone-number="_value.telePhoneNumber"
+    <q-card-section>
+        <div class="row">
+            <div class="col">
+                <maz-phone-number-input
+                    v-model="value.telePhoneNumber"
+                    :default-country-code="value.telePhoneCountryCode"
+                    :default-phone-number="value.telePhoneNumber"
                     no-flags
                     no-validation
                     :translations="{
-                        countrySelectorError: 'Fehlerhafte Länderauswahl',
-                        countrySelectorLabel: 'Landesvorwahl',
-                        example: 'Beispiel :',
-                        phoneNumberLabel: 'Telefon',
+                        countrySelector: {
+                            error: 'Fehlerhafte Länderauswahl',
+                            placeholder: 'Landesvorwahl',
+                            searchPlaceholder: 'Ländersuche',
+                        },
+                        phoneInput: {
+                            placeholder: 'Telefonnummer',
+                            example: 'Beispiel :',
+                        },
                     }"
-                    @update="emitTelePhoneUpdate"
+                    @country-code="emitTelePhoneUpdate"
                 />
-            </v-col>
-            <v-col>
-                <MazPhoneNumberInput
-                    :default-country-code="_value.mobilePhoneCountryCode"
-                    :default-phone-number="_value.mobilePhoneNumber"
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <maz-phone-number-input
+                    v-model="value.mobilePhoneNumber"
+                    :default-country-code="value.mobilePhoneCountryCode"
+                    :default-phone-number="value.mobilePhoneNumber"
                     no-flags
                     no-validation
                     :translations="{
-                        countrySelectorError: 'Fehlerhafte Länderauswahl',
-                        countrySelectorLabel: 'Landesvorwahl',
-                        example: 'Beispiel :',
-                        phoneNumberLabel: 'Handy',
+                        countrySelector: {
+                            error: 'Fehlerhafte Länderauswahl',
+                            placeholder: 'Landesvorwahl',
+                            searchPlaceholder: 'Ländersuche',
+                        },
+                        phoneInput: {
+                            placeholder: 'Handynummer',
+                            example: 'Beispiel :',
+                        },
                     }"
-                    @update="emitMobilePhoneUpdate"
+                    @country-code="emitMobilePhoneUpdate"
                 />
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-text-field v-model="_value.email" dense label="E-Mail" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-    </v-card-text>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.email" label="E-Mail" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+    </q-card-section>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import { MazPhoneNumberInput } from 'maz-ui'
-import PersonalData from '~/models/entities/membership-registration/PersonalData'
+import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
+import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
-const emits = defineEmits<(e: 'input', value: PersonalData) => void>()
-const props = defineProps<{ value: PersonalData }>()
+const emits = defineEmits<{ 'update:modelValue': [value: PersonalData] }>()
+const props = defineProps<{ modelValue: PersonalData }>()
 
-const _value = ref()
+const value = ref(new PersonalData())
 
-const emitMobilePhoneUpdate = (event: { countryCode: string; phoneNumber: string }) => {
-    _value.value.mobilePhoneCountryCode = event.countryCode
-    _value.value.mobilePhoneNumber = event.phoneNumber
+const emitMobilePhoneUpdate = (countryCode: string) => {
+    value.value.mobilePhoneCountryCode = countryCode
     emitUpdate()
 }
-const emitTelePhoneUpdate = (event: { countryCode: string; phoneNumber: string }) => {
-    _value.value.telePhoneCountryCode = event.countryCode
-    _value.value.telePhoneNumber = event.phoneNumber
+const emitTelePhoneUpdate = (countryCode: string) => {
+    value.value.telePhoneCountryCode = countryCode
     emitUpdate()
 }
-const emitUpdate = () => emits('input', _value.value)
+const emitUpdate = () => {
+    emits('update:modelValue', value.value)
+}
 
 onMounted(() => {
-    _value.value = props.value
+    value.value = props.modelValue
 })
 </script>

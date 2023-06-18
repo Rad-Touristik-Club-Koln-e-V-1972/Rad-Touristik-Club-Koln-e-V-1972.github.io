@@ -1,9 +1,9 @@
-import AEntity from '~/models/entities/AEntity'
+import AEntity from 'src/models/entities/AEntity'
 
 export default abstract class ABuilder {
     protected aEntity = new AEntity()
 
-    setId(value: string): this {
+    setId = (value: string): this => {
         this.aEntity.id = value
 
         return this

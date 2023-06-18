@@ -1,35 +1,33 @@
-import ABuilder from '~/models/builder/ABuilder'
-import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
-import EEvent from '~/models/enums/EEvent'
-import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
-import GalleryEntryBuilder from '~/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+import ABuilder from 'src/models/builder/ABuilder'
+import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
+import EEvent from 'src/models/enums/EEvent'
+import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
+import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class GuestbookEntryBuilder extends ABuilder {
     private entity = new GuestbookEntry()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setAnswer(value: string): GuestbookEntryBuilder {
+    setAnswer = (value: string): this => {
         this.entity.answer = value
 
         return this
     }
 
-    setCategory(value: EEvent): GuestbookEntryBuilder {
+    setCategory = (value: EEvent): this => {
         this.entity.category = value
 
         return this
     }
 
-    setDate(value: string): GuestbookEntryBuilder {
+    setDate = (value: string): this => {
         this.entity.date = new Date(value)
 
         return this
     }
 
-    setImageUrls(value: Record<string, string>): GuestbookEntryBuilder {
+    setImageUrls = (value: Record<string, string>): this => {
         for (const id of Object.keys(value)) {
             this.entity.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).build())
         }
@@ -37,37 +35,37 @@ export default class GuestbookEntryBuilder extends ABuilder {
         return this
     }
 
-    setLocation(value: string): GuestbookEntryBuilder {
+    setLocation = (value: string): this => {
         this.entity.location = value
 
         return this
     }
 
-    setName(value: string): GuestbookEntryBuilder {
+    setName = (value: string): this => {
         this.entity.name = value
 
         return this
     }
 
-    setOrganization(value: string): GuestbookEntryBuilder {
+    setOrganization = (value: string): this => {
         this.entity.organization = value
 
         return this
     }
 
-    setSource(value: ESource): GuestbookEntryBuilder {
+    setSource = (value: ESource): this => {
         this.entity.source = value
 
         return this
     }
 
-    setText(value: string): GuestbookEntryBuilder {
-        this.entity.text = value
+    setText = (value: string): this => {
+        this.entity.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
-    setTitle(value: string): GuestbookEntryBuilder {
+    setTitle = (value: string): this => {
         this.entity.title = value
 
         return this

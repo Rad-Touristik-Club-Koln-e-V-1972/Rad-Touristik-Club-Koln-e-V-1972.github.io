@@ -1,72 +1,70 @@
-import ABuilder from '~/models/builder/ABuilder'
-import PopupBuilder from '~/models/builder/PopupBuilder'
-import Tour from '~/models/entities/events/Tour'
-import Control from '~/models/entities/events/tours/Control'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
-import EEvent from '~/models/enums/EEvent'
+import ABuilder from 'src/models/builder/ABuilder'
+import PopupBuilder from 'src/models/builder/PopupBuilder'
+import Tour from 'src/models/entities/events/Tour'
+import Control from 'src/models/entities/events/tours/Control'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import EEvent from 'src/models/enums/EEvent'
 
 export default class TourBuilder<T extends Tour> extends ABuilder {
     protected tour = new Tour()
 
-    build() {
-        return Object.assign(this.tour, super.build()) as T
-    }
+    build = () => Object.assign(this.tour, super.build()) as T
 
-    setActive(value: boolean): TourBuilder<T> {
+    setActive = (value: boolean): this => {
         this.tour.active = value
 
         return this
     }
 
-    setCategory(value: EEvent): TourBuilder<T> {
+    setCategory = (value: EEvent): this => {
         this.tour.category = value
 
         return this
     }
 
-    setControls(...value: Control[]): TourBuilder<T> {
+    setControls = (...value: Control[]): this => {
         this.tour.controls = value
 
         return this
     }
 
-    setImages(...value: GalleryEntry[]): TourBuilder<T> {
+    setImages = (...value: GalleryEntry[]): this => {
         this.tour.images = value
 
         return this
     }
 
-    setLastChange(value: string): TourBuilder<T> {
+    setLastChange = (value: string): this => {
         this.tour.lastChange = new Date(value)
 
         return this
     }
 
-    setLocation(value: Control): TourBuilder<T> {
+    setLocation = (value: Control): this => {
         this.tour.location = value
 
         return this
     }
 
-    setPopup(text: string, title: string): TourBuilder<T> {
+    setPopup = (text: string, title: string): this => {
         this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).build()
 
         return this
     }
 
-    setText(value: string): TourBuilder<T> {
-        this.tour.text = value
+    setText = (value: string): this => {
+        this.tour.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
-    setTitle(value: string): TourBuilder<T> {
+    setTitle = (value: string): this => {
         this.tour.title = value
 
         return this
     }
 
-    setUrls(value: Record<string, URL>): TourBuilder<T> {
+    setUrls = (value: Record<string, URL>): this => {
         this.tour.urls = value
 
         return this

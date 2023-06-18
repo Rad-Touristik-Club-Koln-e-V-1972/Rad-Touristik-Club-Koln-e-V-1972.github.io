@@ -1,12 +1,14 @@
 <template>
-    <v-card id="CSuggestion" color="primary" :href="props.value.url.toString()" max-width="20em">
-        <v-card-title>{{ props.value.title }}</v-card-title>
-        <v-card-text>{{ props.value.text }}</v-card-text>
-    </v-card>
+    <a :href="props.modelValue.url.toString()" target="_blank">
+        <q-card class="bg-primary" max-width="20em">
+            <q-card-section class="text-h6">{{ props.modelValue.title }}</q-card-section>
+            <q-card-section>{{ props.modelValue.text }}</q-card-section>
+        </q-card>
+    </a>
 </template>
 
 <script lang="ts" setup>
-import Suggestion from '~/models/entities/events/tours/events/Suggestion'
+import Suggestion from 'src/models/entities/events/tours/events/Suggestion'
 
-const props = defineProps<{ value: Suggestion }>()
+const props = defineProps<{ modelValue: Suggestion }>()
 </script>

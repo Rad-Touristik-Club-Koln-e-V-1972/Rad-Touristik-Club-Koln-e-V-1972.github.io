@@ -1,41 +1,39 @@
 <template>
-    <v-card id="CGuestbook" max-width="20em">
-        <v-card-subtitle class="accent--text secondary">
-            <div v-if="props.value.date" v-text="useDateTime().format(props.value.date)" />
-            <div v-text="`${props.value.name} via ${ESource[props.value.source]}`" />
-            <div v-text="`${[props.value.organization, props.value.location].filter((it) => it).join(', ')} `" />
-            <div v-if="!isCategoryRTC" v-text="`Event: ${EEvent[props.value.category]}`" />
-        </v-card-subtitle>
-        <v-card-title v-if="props.value.title" class="accent--text primary">{{ props.value.title }}</v-card-title>
-        <!-- TODO style="padding: 16px" IS A WORKAROUND FOR https://github.com/vuetifyjs/vuetify/issues/12170 -->
-        <v-card-text v-if="props.value.text || props.value.imageUrls?.length" style="padding: 16px">
-            <div v-if="props.value.text">
-                <span class="black--text text-pre-wrap" v-html="props.value.text" />
+    <q-card max-width="20em">
+        <q-card-section class="bg-secondary text-accent text-subtitle1">
+            <div v-if="props.modelValue.date" v-text="useDateTime().format(props.modelValue.date)" />
+            <div v-text="`${props.modelValue.name} via ${ESource[props.modelValue.source]}`" />
+            <div v-text="`${[props.modelValue.organization, props.modelValue.location].filter((it) => it).join(', ')} `" />
+            <div v-if="!isCategoryRTC" v-text="`Event: ${EEvent[props.modelValue.category]}`" />
+        </q-card-section>
+        <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
+        <q-card-section v-if="props.modelValue.text || props.modelValue.imageUrls?.length">
+            <div v-if="props.modelValue.text">
+                <span class="text-pre-wrap" v-html="props.modelValue.text" />
             </div>
-            <c-slideshow v-if="props.value.imageUrls?.length" :value="props.value.imageUrls" />
-        </v-card-text>
-        <v-expand-transition>
-            <div v-if="props.value.answer">
-                <v-divider />
-                <v-card-text>
-                    <span class="black--text text-pre-wrap">
-                        <b>RTC Köln:</b> <i>{{ props.value.answer }}</i>
+            <c-slideshow v-if="props.modelValue.imageUrls?.length" :model-value="props.modelValue.imageUrls" />
+        </q-card-section>
+        <q-expansion-item v-if="props.modelValue.answer" class="text-secondary" expand-separator label="Details">
+            <q-card flat>
+                <q-card-section>
+                    <span class="text-pre-wrap">
+                        <b>RTC Köln:</b> <i>{{ props.modelValue.answer }}</i>
                     </span>
-                </v-card-text>
-            </div>
-        </v-expand-transition>
-    </v-card>
+                </q-card-section>
+            </q-card>
+        </q-expansion-item>
+    </q-card>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import CSlideshow from '~/components/pages/CSlideshow.vue'
-import GuestbookEntry from '~/models/entities/rtc-cologne/guestbook/GuestbookEntry'
-import EEvent from '~/models/enums/EEvent'
-import ESource from '~/models/enums/rtc-cologne/guestbook/ESource'
-import useDateTime from '~/utils/DateTime'
+import CSlideshow from 'components/pages/CSlideshow.vue'
+import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
+import EEvent from 'src/models/enums/EEvent'
+import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
+import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ value: GuestbookEntry }>()
+const props = defineProps<{ modelValue: GuestbookEntry }>()
 
-const isCategoryRTC = computed(() => props.value.category === EEvent.RTC)
+const isCategoryRTC = computed(() => props.modelValue.category === EEvent.RTC)
 </script>

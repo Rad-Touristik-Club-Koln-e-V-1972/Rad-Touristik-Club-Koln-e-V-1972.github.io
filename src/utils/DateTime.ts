@@ -1,3 +1,7 @@
+import { date } from 'quasar'
+
+// TODO migrate to Quasar Date Utils to format date ranges after the resolution of https://github.com/quasarframework/quasar/discussions/16032
+
 export default function useDateTime() {
     const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit' })
     const dateTimeFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat('de-DE', { year: 'numeric', month: '2-digit', day: '2-digit', hour: 'numeric', minute: '2-digit' })
@@ -5,43 +9,17 @@ export default function useDateTime() {
 
     return {
         format: (start: Date, end: Date | null = null, allDay = false) => {
-            const formatter = allDay ? dateFormatter : dateTimeFormatter
+            let value: string
 
-            return end ? formatter.formatRange(start, end) : formatter.format(start)
+            if (end) value = (allDay ? dateFormatter : dateTimeFormatter).formatRange(start, end)
+            else if (allDay) value = date.formatDate(start, 'DD.MM.YYYY')
+            else value = date.formatDate(start, 'DD.MM.YYYYTH:mmZ')
+
+            return value
         },
-        formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : timeFormatter.format(start)),
-        getDaysInMonth: (month: number, year: number) => new Date(year, month, 0).getDate(),
-        getHundredYearsAgo: () => {
-            const date = new Date(Date.now())
-
-            date.setFullYear(date.getFullYear() - 100)
-
-            return date
-        },
-        getNextMonth: () => {
-            const date = new Date(Date.now())
-
-            date.setDate(date.getDate() + 31)
-
-            return date
-        },
-        getTomorrowMidnight: () => {
-            const date = new Date(Date.now())
-
-            date.setDate(date.getDate() + 1)
-            date.setHours(0, 0, 0, 0)
-
-            return date
-        },
-        isBetween: (date: Date, start: Date, end: Date) => {
-            let tempStart = start
-            let tempEnd = end
-
-            if (tempStart.getTime() > tempEnd.getTime()) [tempStart, tempEnd] = [tempEnd, tempStart]
-
-            return date.getTime() >= tempStart.getTime() && date.getTime() <= tempEnd.getTime()
-        },
-        isSameDay: (start: Date, end: Date) => end.getFullYear() === start.getFullYear() && end.getMonth() === start.getMonth() && end.getDate() === start.getDate(),
+        formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : date.formatDate(start, 'H:mm')),
+        getTomorrowMidnight: () => date.adjustDate(date.addToDate(new Date(), { days: 1 }), { hour: 0, minute: 0, second: 0, millisecond: 0 }),
+        isBetweenDates: (d: Date, from: Date, to: Date | null) => date.isBetweenDates(d, from, to ?? from, { inclusiveFrom: true, inclusiveTo: true, onlyDate: true }),
         sort: (a: Date, b: Date) => a.getTime() - b.getTime(),
     }
 }

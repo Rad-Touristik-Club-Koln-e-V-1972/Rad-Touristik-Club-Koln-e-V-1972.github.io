@@ -1,12 +1,6 @@
 {
+    "extends": "@quasar/app-vite/tsconfig-preset",
     "compilerOptions": {
-        "allowJs": false,
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "sourceMap": true,
-        "strict": true,
-        "types": ["node", "@nuxt/types", "vue", "@nuxtjs/vuetify", "@pinia/nuxt"]
-    },
-    "exclude": [".nuxt", "dist", "node_modules"],
-    "extends": "./.nuxt/tsconfig.json"
+        "baseUrl": "."
+    }
 }

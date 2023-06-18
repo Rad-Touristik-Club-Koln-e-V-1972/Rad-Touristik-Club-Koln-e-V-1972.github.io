@@ -1,33 +1,31 @@
-import ABuilder from '~/models/builder/ABuilder'
-import BlogEntry from '~/models/entities/index/BlogEntry'
+import ABuilder from 'src/models/builder/ABuilder'
+import BlogEntry from 'src/models/entities/index/BlogEntry'
 
 export default class BlogEntryBuilder extends ABuilder {
     private entity = new BlogEntry()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setAlbumIDs(value: string[] | Record<string, string>): BlogEntryBuilder {
+    setAlbumIDs = (value: string[] | Record<string, string>): this => {
         this.entity.albumIDs = this.createAlbumIDs(value)
 
         return this
     }
 
-    setDate(start: string, end?: string): BlogEntryBuilder {
+    setDate = (start: string, end?: string): this => {
         if (end) this.entity.end = new Date(end)
         this.entity.start = new Date(start)
 
         return this
     }
 
-    setText(value: string): BlogEntryBuilder {
-        this.entity.text = value
+    setText = (value: string): this => {
+        this.entity.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
-    setTitle(value: string): BlogEntryBuilder {
+    setTitle = (value: string): this => {
         this.entity.title = value
 
         return this
@@ -35,9 +33,9 @@ export default class BlogEntryBuilder extends ABuilder {
 
     private createAlbumIDs = (albumIDs: string[] | Record<string, string>) =>
         albumIDs instanceof Array
-            ? albumIDs.reduce((map, it) => {
+            ? albumIDs.reduce<Record<string, string>>((map, it) => {
                   map[it] = ''
                   return map
-              }, {} as Record<string, string>)
+              }, {})
             : albumIDs
 }

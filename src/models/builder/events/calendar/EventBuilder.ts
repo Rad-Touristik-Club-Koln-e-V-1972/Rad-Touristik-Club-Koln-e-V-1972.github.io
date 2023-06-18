@@ -1,53 +1,51 @@
-import ABuilder from '~/models/builder/ABuilder'
-import EEvent from '~/models/enums/EEvent'
-import Event from '~/models/entities/events/calendar/Event'
+import ABuilder from 'src/models/builder/ABuilder'
+import EEvent from 'src/models/enums/EEvent'
+import Event from 'src/models/entities/events/calendar/Event'
 
 export default class EventBuilder extends ABuilder {
     private entity = new Event()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setAllDay(value: boolean): EventBuilder {
-        this.entity.timed = !value
+    setAllDay = (value: boolean): this => {
+        this.entity.allDay = value
 
         return this
     }
 
-    setCategory(value: EEvent): EventBuilder {
+    setCategory = (value: EEvent): this => {
         this.entity.category = value
         this.entity.color = this.getColor(value)
 
         return this
     }
 
-    setClubPoints(value: number): EventBuilder {
+    setClubPoints = (value: number): this => {
         this.entity.clubPoints = value
 
         return this
     }
 
-    setContact(value: string): EventBuilder {
+    setContact = (value: string): this => {
         this.entity.contact = value
 
         return this
     }
 
-    setDate(start: Date | string, end: Date | string | null = null): EventBuilder {
+    setDate = (start: Date | string, end: Date | string | null = null): this => {
         if (end) this.entity.end = new Date(end)
         this.entity.start = new Date(start)
 
         return this
     }
 
-    setName(value: string): EventBuilder {
+    setName = (value: string): this => {
         this.entity.name = value
 
         return this
     }
 
-    setUrl(value: string): EventBuilder {
+    setUrl = (value: string): this => {
         this.entity.url = new URL(`https://${value}`)
 
         return this

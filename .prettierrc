@@ -1,4 +1,12 @@
 {
+    "overrides": [
+        {
+            "files": "pnpm-lock.yaml",
+            "options": {
+                "rangeEnd": 0
+            }
+        }
+    ],
     "printWidth": 180,
     "semi": false,
     "singleQuote": true,

@@ -1,12 +1,14 @@
 <template>
-    <v-text-field id="CSearch" :append-icon="mdiMagnify" clearable hide-details label="Suche" :value="props.value" @input="emitUpdate" />
+    <q-input :model-value="props.modelValue" clearable debounce="500" dense hide-hint label="Suche" @update:model-value="(value) => emits('update:modelValue', value)">
+        <template #append>
+            <q-icon :name="mdiMagnify" />
+        </template>
+    </q-input>
 </template>
 
 <script lang="ts" setup>
-import { mdiMagnify } from '@mdi/js'
+import { mdiMagnify } from '@quasar/extras/mdi-v7'
 
-const emits = defineEmits<{ (e: 'input', value: string): void }>()
-const props = defineProps<{ value?: string }>()
-
-const emitUpdate = (modelValue: string) => emits('input', modelValue)
+const emits = defineEmits<{ 'update:modelValue': [value: string | number | null] }>()
+const props = defineProps<{ modelValue?: string }>()
 </script>

@@ -1,8 +1,8 @@
 enum EProfile {
-    bergisch = 'bergisch',
-    normal = 'normal',
-    huegelig = 'hügelig',
-    wellig = 'wellig',
+    Bergisch = 'Bergisch',
+    Normal = 'Normal',
+    Huegelig = 'hügelig',
+    Wellig = 'Wellig',
 }
 
 export default EProfile

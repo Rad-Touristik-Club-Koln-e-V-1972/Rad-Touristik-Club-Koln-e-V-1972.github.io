@@ -1,27 +1,25 @@
-import ABuilder from '~/models/builder/ABuilder'
-import PressReport from '~/models/entities/rtc-cologne/PressReport'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import ABuilder from 'src/models/builder/ABuilder'
+import PressReport from 'src/models/entities/rtc-cologne/PressReport'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class PressReportBuilder extends ABuilder {
     private entity = new PressReport()
 
-    build() {
-        return Object.assign(this.entity, super.build())
-    }
+    build = () => Object.assign(this.entity, super.build())
 
-    setDate(value: string): PressReportBuilder {
+    setDate = (value: string): this => {
         this.entity.date = new Date(value)
 
         return this
     }
 
-    setImages(...value: GalleryEntry[]): PressReportBuilder {
+    setImages = (...value: GalleryEntry[]): this => {
         this.entity.images = value
 
         return this
     }
 
-    setTitle(value: string): PressReportBuilder {
+    setTitle = (value: string): this => {
         this.entity.title = value
 
         return this

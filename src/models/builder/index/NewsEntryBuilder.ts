@@ -1,6 +1,6 @@
-import ABuilder from '~/models/builder/ABuilder'
-import NewsEntry from '~/models/entities/index/NewsEntry'
-import GalleryEntry from '~/models/entities/rtc-cologne/gallery/GalleryEntry'
+import ABuilder from 'src/models/builder/ABuilder'
+import NewsEntry from 'src/models/entities/index/NewsEntry'
+import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class NewsEntryBuilder extends ABuilder {
     private entity = new NewsEntry()
@@ -14,7 +14,7 @@ export default class NewsEntryBuilder extends ABuilder {
     }
 
     setText(value: string): this {
-        this.entity.text = value
+        this.entity.text = value.replaceAll('\n', '<br>')
 
         return this
     }

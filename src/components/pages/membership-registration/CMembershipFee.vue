@@ -1,79 +1,82 @@
 <template>
-    <v-card-text id="CMiscellaneous">
-        <v-row>
-            <v-col>
-                <v-radio-group v-model="_value.paymentMethod" dense label="Zahlungsweise (zutreffendes bitte ankreuzen):" mandatory row @input="emitUpdate">
-                    <v-radio label="Lastschrifteinzug" value="Lastschrifteinzug" />
-                    <v-radio label="Bar" value="Bar" />
-                </v-radio-group>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
+    <q-card-section>
+        <div class="row">
+            <div class="col">
+                <div class="q-px-sm">Zahlungsweise (zutreffendes bitte ankreuzen):</div>
+                <div class="q-gutter-sm">
+                    <q-radio v-model="value.paymentMethod" label="Lastschrifteinzug" val="Lastschrifteinzug" @update:model-value="emitUpdate" />
+                    <q-radio v-model="value.paymentMethod" label="Bar" val="Bar" @update:model-value="emitUpdate" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 Hiermit ermächtige ich den <b>RTC Köln e.V. 1972</b> den Jahresbeitrag gemäß der aktuellen Beitragsordnung <b>jährlich</b> im Voraus zu Lasten meines Kontos bis auf
                 Widerruf einzuziehen:
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-text-field v-model="_value.iban" dense label="IBAN" @input="emitUpdate" />
-            </v-col>
-            <v-col>
-                <v-text-field v-model="_value.bic" dense label="BIC" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <v-text-field v-model="_value.creditInstitute" dense label="Kreditinstitut" @input="emitUpdate" />
-            </v-col>
-            <v-col>
-                <v-text-field v-model="_value.bankholder" dense label="Kontoinhaber" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-        <v-row v-if="_value.signature">
-            <v-col>
-                <v-text-field v-model="_value.signature.location" dense label="Ort" @input="emitUpdate" />
-            </v-col>
-            <v-col>
-                <c-date-picker v-model="_value.signature.date" dense label="Datum" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-        <v-row v-if="_value.signature">
-            <v-col>
-                <c-signature-form v-model="_value.signature.signature" label="Unterschrift Kontoinhaber" :readonly="readonly" @input="emitUpdate" />
-            </v-col>
-        </v-row>
-    </v-card-text>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.iban" label="IBAN" @update:model-value="emitUpdate" />
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <q-input v-model="value.bic" label="BIC" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.creditInstitute" label="Kreditinstitut" @update:model-value="emitUpdate" />
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <q-input v-model="value.bankholder" label="Kontoinhaber" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <q-input v-model="value.signature.location" label="Ort" @update:model-value="emitUpdate" />
+            </div>
+            <div class="col-1" />
+            <div class="col">
+                <c-date-picker v-model="value.signature.date" label="Datum" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <c-signature-form v-model="value.signature.signature" label="Unterschrift Kontoinhaber" @update:model-value="emitUpdate" />
+            </div>
+        </div>
+    </q-card-section>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref, watch } from 'vue'
-import CSignatureForm from '~/components/pages/membership-registration/CSignatureForm.vue'
-import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import MembershipFee from '~/models/entities/membership-registration/MembershipFee'
+import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
+import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
+import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
 
-const emits = defineEmits<(e: 'input', value: MembershipFee) => void>()
-const props = defineProps({
-    readonly: { default: false, type: Boolean },
-    value: { required: true, type: MembershipFee },
-})
+const emits = defineEmits<{ 'update:modelValue': [value: MembershipFee] }>()
+const props = defineProps<{ modelValue: MembershipFee }>()
 
-const _value = ref()
+const value = ref(new MembershipFee())
 
-const emitUpdate = () => emits('input', _value.value)
+const emitUpdate = () => {
+    emits('update:modelValue', value.value)
+}
 
 watch(
-    () => _value.value.iban,
+    () => value.value.iban,
     (currentValue) => {
         // Add spaces to IBAN
-        _value.value.iban = currentValue
+        value.value.iban = currentValue
             .replace(/[^\dA-Z]/g, '')
             .replace(/(.{4})/g, '$1 ')
             .trim()
-    }
+    },
 )
 
 onMounted(() => {
-    _value.value = props.value ?? new MembershipFee()
+    value.value = props.modelValue
 })
 </script>
