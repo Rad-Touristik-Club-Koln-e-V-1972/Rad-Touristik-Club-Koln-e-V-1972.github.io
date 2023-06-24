@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.0.3
     version: 4.0.3(vue@2.7.14)
   date-holidays:
-    specifier: ^3.21.1
-    version: 3.21.1
+    specifier: ^3.21.2
+    version: 3.21.2
   maz-ui:
     specifier: ^2.4.7
     version: 2.4.7(vue@2.7.14)
@@ -6629,8 +6629,8 @@ packages:
       moment-timezone: 0.5.43
     dev: false
 
-  /date-holidays@3.21.1:
-    resolution: {integrity: sha512-j9ZblefQ/WhIT4K4V7OXPzAxgAuRs2YVem8bQ0dLGiKTd7dpmfaS4Q8pfdpdoKsbyUVz/3MjZU+X0Lo2JFemlA==}
+  /date-holidays@3.21.2:
+    resolution: {integrity: sha512-nxmNiOB25W5iZ+A2LYPAStkFmtt2H7Z+OjVR0T+YpwfFbDhf3ki1uu2RgvX6U6SbeOllOBi8TbZga4P+OSNa+g==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
