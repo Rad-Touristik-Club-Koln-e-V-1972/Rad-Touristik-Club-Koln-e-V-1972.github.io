@@ -25,8 +25,10 @@ import _20230524TippNummer3 from '~/store/rtc-cologne/gallery/2023/05_24_Tipp_Nu
 import _20230528RTF51 from '~/store/rtc-cologne/gallery/2023/05_28_RTF_51'
 import _20230605FranksAmsterdamTour from '~/store/rtc-cologne/gallery/2023/06_05_Franks_Amsterdam_Tour'
 import _20230611VfBSchrecksbach from '~/store/rtc-cologne/gallery/2023/06_11_VfB_Schrecksbach'
+import _20230624DieSternfahrtzurRTFnachKerpen from '~/store/rtc-cologne/gallery/2023/06_24_Die_Sternfahrt_zur_RTF_nach_Kerpen'
 
 export default [
+    _20230624DieSternfahrtzurRTFnachKerpen,
     _20230611VfBSchrecksbach,
     _20230605FranksAmsterdamTour,
     _20230528RTF51,

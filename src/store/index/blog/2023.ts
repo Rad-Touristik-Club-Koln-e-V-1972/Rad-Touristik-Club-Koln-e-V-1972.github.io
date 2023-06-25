@@ -2,6 +2,25 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['732a5c32-d90f-4b61-be01-640d19757c76'])
+        .setDate('2023-06-24')
+        .setId('dd50bc6f-5b54-4a3c-840c-3629bc3612e7')
+        .setText(
+            `Helmut und Klaus D. sind heute früh von Immendorf aus im Rahmen einer Sternfahrt zur RTF nach Kerpen gestartet.
+Die Strecke ging über Fischenich, Hürth, Knappsack, Berrenrath über Türnich nach Kerpen.
+Kurz vor Startschluß wurde sich dort noch schnell für die 44er Runde eingebucht und ab ging die Reise bei knalliger Sonne rund um den Flugplatz Nörvenich.
+Etwa auf der Hälfte der Strecke, in Poll, nicht unser Köln-Poll 😉, war dann die bei der Hitze ersehnte 😅 Kontrolle mit aussreichend Getränken und leckeren Bäcker-Rosinenweckchen.
+Von dort ging es dann zurück zum Startort in Kerpen, wo wir dann noch Birgit, Peter und wir trauten unseren Augen nicht, Christoph Hötte vom RTC trafen👍🏼.
+Hier wurde nochmal ordentlich mit selbstgemachten Kuchen, Wurst und Kartoffelsalat die nötigen Kohlehydrate aufgetankt, bevor es wieder an der Erft entlang über Liblar zurück nach Köln ging.
+Außer uns beiden war noch Lutz und Johannes auf der kurzen Strecke, Birgit und Peter hatten die 100er bis zum Rurstausee unter die Räder genommen.
+Die 44er war sehr schön geführt, über viele Wirtschafts- und Fahrradwege und gut ausgeschildert.
+Probleme gab es nur für die GPSler, die teilweise eine andere Strecke auf dem Navi hatten.
+Hier fehlte zur Eindeutigkeit der Streckenführung noch ein Trennungsschild.
+Trotz der sonst guten Organisation und den schönen Strecken hatte der RSC leider nur 180 TN an die Erft locken können.`
+        )
+        .setTitle('Die Sternfahrt zur RTF nach Kerpen')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['1db3f0d8-dc8d-421d-83fd-505d69d8ea73'])
         .setDate('2023-06-11')
         .setId('27a637ca-8c3d-452e-8971-cae44f1d885d')
@@ -33,8 +52,7 @@ Mit Hin und Rückfahrt wurde es dann 3-stellig.“
 
 Peter: „Da Birgit und ich leider nicht mit nach Schrecksbach fahren konnten, haben wir uns auch in Bergheim durch die RTF-Hitze gekämpft.
 Die Strecke war flach und die Verpflegung hat noch Luft nach oben.
-Trotzdem wieder 110 km auf der Uhr. 🤗“
-`
+Trotzdem wieder 110 km auf der Uhr. 🤗“`
         )
         .setTitle('VfB Schrecksbach: Ein empfehlenswertes Radsport-Event der familiären Art')
         .build(),
