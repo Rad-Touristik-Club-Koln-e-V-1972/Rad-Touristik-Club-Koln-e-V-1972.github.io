@@ -46,7 +46,7 @@
         "babel-plugin-component": "^1.1.1",
         "buffer": "^6.0.3",
         "commitlint": "^17.6.6",
-        "consola": "^3.2.1",
+        "consola": "^3.2.2",
         "eslint": "^8.43.0",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-vue": "^9.15.1",
