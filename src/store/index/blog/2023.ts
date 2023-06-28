@@ -2,6 +2,31 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['2807edbd-f491-43ad-9a1e-d33bdce5aec3'])
+        .setDate('2023-06-25')
+        .setId('4cbafd9a-9f7a-41a1-9935-f8c30aab6324')
+        .setText(
+            `Die RTF des RTC Rodenkirchen war eine Hitzeschlacht.
+Aber nicht nur deswegen war sie besonders.
+Bis zur 100er waren die Strecken ausgeschildert.
+So, wie es sich für eine RTF gehört.
+Immerhin ist es genau das, was RTFs ausmacht: Das Rundumsorglospaket - vom Start bis zum Ziel.
+Um nur mit dem Garmin zu fahren, braucht man keine RTF.
+Und genau das war heute - neben dem fantastischen Wetter - der Garant für 540 Teilnehmer:innen. 🎉
+Und mindestens 13 Radsportler:innen waren vom RTC Köln e.V. dabei! 🚴🚴‍♀️🚴‍♂️🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️🚴🚴‍♂️🚴‍♀️
+In unterschiedlichen Konstellationen.
+Zwei Gruppen hatten mehrere befreundete Fahrer:innen dabei, die dem Aufruf des RTC Köln gefolgt waren, mitzufahren - eine Gruppe ging auf die 100er, die andere auf die 40er bzw. 74 km.
+Heiß war es.☀️
+Besonders, wenn man an Ampeln🚦 warten musste.
+Ansonsten brachte der Fahrtwind eine leichte kühlende Brise. 🌬️
+Im Ziel gab es ein Kaltgetränk, um das wieder aufzufüllen, was man unterwegs auf der Strecke gelassen hatte. 💦
+Alle hatten Spaß und haben es genossen, ihren Lieblingssport im Team zu erleben.
+Sport ist eben im Team und im Verein am schönsten. 😘
+Danke, RTC Rodenkirchen, für die schönen ausgeschilderten Strecken und Eure Gastfreundschaft.`
+        )
+        .setTitle('30 Grad und es war noch heißer')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['732a5c32-d90f-4b61-be01-640d19757c76'])
         .setDate('2023-06-24')
         .setId('dd50bc6f-5b54-4a3c-840c-3629bc3612e7')
