@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@yeger/vue2-masonry-wall':
-    specifier: ^4.0.3
-    version: 4.0.3(vue@2.7.14)
+    specifier: ^4.0.4
+    version: 4.0.4(vue@2.7.14)
   date-holidays:
     specifier: ^3.21.2
     version: 3.21.2
@@ -4585,8 +4585,8 @@ packages:
       '@yeger/vue-lib-adapter': 1.0.1
     dev: false
 
-  /@yeger/vue2-masonry-wall@4.0.3(vue@2.7.14):
-    resolution: {integrity: sha512-GSdw+75AmuEJNyi0h+RU/eFVotsDHHFS+k95sdgO7gFeJ31tAwaFx1TTnSL8yYcfld0IWy3wxhJ15UyUslO5WQ==}
+  /@yeger/vue2-masonry-wall@4.0.4(vue@2.7.14):
+    resolution: {integrity: sha512-KkbBVlV15t+RloH3B0WGjPdz6+8kOwlxRT3lFo+PEeK7fapU85W0e7fYIds4ncJJvPWShRihLm/DdBDJ9oTULA==}
     peerDependencies:
       vue: ^2.7.0
     dependencies:
