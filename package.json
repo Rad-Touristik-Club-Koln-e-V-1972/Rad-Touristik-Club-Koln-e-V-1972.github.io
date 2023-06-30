@@ -17,7 +17,7 @@
         "prepare": "husky install && nuxi prepare"
     },
     "dependencies": {
-        "@yeger/vue2-masonry-wall": "^4.0.3",
+        "@yeger/vue2-masonry-wall": "^4.0.4",
         "date-holidays": "^3.21.2",
         "maz-ui": "^2.4.7",
         "pinia": "^2.1.4",
