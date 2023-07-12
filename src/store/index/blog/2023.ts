@@ -2,6 +2,26 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setDate('2023-07-02')
+        .setId('a04e3323-f316-4612-b8cb-4db452eac434')
+        .setText(
+            `Ungefähr 1300 km haben heute 8 RTCler:innen und 2 Gäste insgesamt unter die Räder genommen - bei angenehmen Temperaturen und leichtem Wind.
+Um 8.15 Uhr ging es für 3 von uns schon los, die Eifel-Serpentinen im Sahrbachtal bereits im Visier.
+Ziel: Eifel, mindestens 130 km (plus An- und Abfahrt) und 1200 Hm. 🚴‍♂️🚴‍♂️🚴‍♂️
+Um 10 Uhr startete die 2. RTC-Gruppe.🚴‍♂️🚴‍♂️🚴‍♂️🚴‍♂️🚴‍♂️🚴‍♂️🚴‍♂️
+Ziel: Eifel, mindestens 100 km, 650 Hm.
+Nach 80, bzw 50 km Treffpunkt mit allen in Hilberath im Café in der Alten Scheune.
+Die Gemeinschaft war super schön. 🍰🍝☕️🍽️
+Danach: Gemeinsame Rückfahrt mit allen.
+Da es vom Café aus ja „nur bergab“ bis nach Hause ging (so Manni), waren die 60 km schnell geschafft. 🤪
+FAZIT: Die Strecken (Danke Klaus und Manni), die Landschaft, die Anstiege und Abfahrten mit den fantastischen Weitblicken, das Café,
+aber vor allem die gemeinsame Ausfahrt zu zehnt, war ein absolutes Highlight dieses Sonntags.
+🧡 Der RTC Köln macht Laune!🧡
+Und das nicht nur sonntags. 😉😍`
+        )
+        .setTitle('Tolle Eifelrunde zu zehnt')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['2807edbd-f491-43ad-9a1e-d33bdce5aec3'])
         .setDate('2023-06-25')
         .setId('4cbafd9a-9f7a-41a1-9935-f8c30aab6324')
