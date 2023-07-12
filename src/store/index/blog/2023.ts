@@ -2,6 +2,27 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setDate('2023-07-09')
+        .setId('f2d4443d-1f99-4471-bd0c-184d5897bd99')
+        .setText(
+            `Man muss schon etwas verrückt sein, wenn man bei angekündigten 35 Grad eine RTF fährt.
+In  Immendorf waren es insgesamt 351 Radsportler:innen, die der backofenähnlichen Hitze getrotzt haben.
+Darunter 70 Marathonis!!! Und zwei davon waren heute RTCler - Frank und Manni, einen RTC-Gast im Gepäck.  🎉
+Um 6.30 h ging es für die beiden bei angenehmen Temperaturen los.
+Aber das sollte sich am späten Vormittag für alle RTFler:innen ändern, denn an da verwandelte sich die Strecke un einen Glutofen.
+Viel trinken war angesagt.
+Da taten die Kontrollen besonders gut und waren auch selten so ersehnt.
+Weitere 7 RTCler:innen starteten zu unterschiedlichen Zeiten auf die 40er oder die 100er.
+Es war heute eine enorme körperliche Leistung - für alle.
+Aber besonders für die Marathonis, die kurz vor dem Ziel noch mit heftigen Sturmböen zu kämpfen hatten.
+Um 17 Uhr waren dann alle glücklich im Ziel.
+Toll gemacht, ihr beiden. 🎉
+
+Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe sind und wunderschöne Strecken ausgesucht haben!`
+        )
+        .setTitle('Condor-Flug bei 35 Grad')
+        .build(),
+    new BlogEntryBuilder()
         .setDate('2023-07-02')
         .setId('a04e3323-f316-4612-b8cb-4db452eac434')
         .setText(
