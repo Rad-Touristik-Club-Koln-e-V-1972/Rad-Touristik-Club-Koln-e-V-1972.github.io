@@ -24,6 +24,7 @@ Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe s
         .setTitle('Condor-Flug bei 35 Grad')
         .build(),
     new BlogEntryBuilder()
+        .setAlbumIDs(['2450bf87-cec4-4914-9b6e-ff241819c414'])
         .setDate('2023-07-02')
         .setId('a04e3323-f316-4612-b8cb-4db452eac434')
         .setText(

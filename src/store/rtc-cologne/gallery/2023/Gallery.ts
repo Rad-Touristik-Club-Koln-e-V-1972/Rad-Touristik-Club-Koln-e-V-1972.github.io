@@ -27,10 +27,12 @@ import _20230605FranksAmsterdamTour from '~/store/rtc-cologne/gallery/2023/06_05
 import _20230611VfBSchrecksbach from '~/store/rtc-cologne/gallery/2023/06_11_VfB_Schrecksbach'
 import _20230624DieSternfahrtzurRTFnachKerpen from '~/store/rtc-cologne/gallery/2023/06_24_Die_Sternfahrt_zur_RTF_nach_Kerpen'
 import _2023062530Gradundeswarnochheisser from '~/store/rtc-cologne/gallery/2023/06_25_30_Grad_und_es_war_noch_heisser'
+import _20230702TolleEifelrundezuzehnt from '~/store/rtc-cologne/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt'
 import _20230709CondorFlugbei35Grad from '~/store/rtc-cologne/gallery/2023/07_09_Condor_Flug_bei_35_Grad'
 
 export default [
     _20230709CondorFlugbei35Grad,
+    _20230702TolleEifelrundezuzehnt,
     _2023062530Gradundeswarnochheisser,
     _20230624DieSternfahrtzurRTFnachKerpen,
     _20230611VfBSchrecksbach,
