@@ -2,6 +2,32 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setDate('2023-07-14')
+        .setId('872d69b7-2de8-42d0-82da-839741d4f00b')
+        .setText(
+            `Der RTC Köln e.V. hatte am Freitag, 14.7.23, zum ersten Mal die Strecke Köln —> Mosel als geführte Tour im Angebot.
+Neben der landschaftlich schönen und durchaus anspruchsvollen Strecke (170 km /2000 Hm), gab es zwei Begleitfahrzeuge, die vier Verpflegungsstellen für die Teilnehmer:innen anboten.
+Das Beste kam zum Schluss und so ging es für die Radsportler:innen die letzten 3,5 km mit  Serpentinen hoch zum Ziel. 👍💪🚴‍♂️🚴🚴‍♀️🚴‍♂️🚴🚴
+Aber nicht nur das war ein Highlight:
+Auch Samstag und Sonntag standen ganz im Zeichen des RTC Köln, denn es war eine Vereinsfahrt.
+Am Samstag fuhren wir - in Gedenken an die schönen RTFs von Erden - die 70er und am Sonntag die 100er.
+Der Samstag kühlte uns einmal mit einem Regenschauer ab - warmer Regen.
+Am Sonntag bließ uns kräftig der Wind um die Ohren….auch bergauf. 🙈
+Am Samstagabend saßen wir mit 20 ❗️Personen zusammen und haben am Schwenk-Grill einen schönen gemeinschaftlichen RTC-Abend verbracht.
+
+➡️ Danke an Frank, der Manni als 2. Guide begleitet hat.❤️
+➡️ Danke an Norbert und Maxi, die mit mir am Freitag die Verpflegungsstellen auf der geführten Tour gemeistert haben. ❤️
+➡️ Ein besonderer Dank geht an Manni, der die geführte Moseltour ausgearbeitet und geleitet hatund sich an den beiden Folgetagen um Maxi, Celia und Tano gekümmert hat,
+da er auf weitere Radtouren verzichtet hat.
+Ach ja: Vielfacher Taxifahrer war er auch!❤️
+
+Fazit: Der RTC Köln ist schon ne tolle Truppe und ein Verein, der Laune macht. 🫶🎉
+
+Eure Diana`
+        )
+        .setTitle('3 tolle Tage mit dem RTC Köln - inkl. geführte Moselgenusstour')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['4bfc4b0b-d7c1-44e6-9d4f-96cb4d1833e7'])
         .setDate('2023-07-09')
         .setId('f2d4443d-1f99-4471-bd0c-184d5897bd99')
