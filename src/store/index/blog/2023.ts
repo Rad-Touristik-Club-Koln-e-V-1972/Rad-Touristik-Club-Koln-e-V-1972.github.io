@@ -17,13 +17,13 @@ Am Samstagabend saßen wir mit 20 ❗️Personen zusammen und haben am Schwenk-G
 
 ➡️ Danke an Frank, der Manni als 2. Guide begleitet hat.❤️
 ➡️ Danke an Norbert und Maxi, die mit mir am Freitag die Verpflegungsstellen auf der geführten Tour gemeistert haben. ❤️
-➡️ Ein besonderer Dank geht an Manni, der die geführte Moseltour ausgearbeitet und geleitet hatund sich an den beiden Folgetagen um Maxi, Celia und Tano gekümmert hat,
+➡️ Ein besonderer Dank geht an Manni, der die geführte Moseltour ausgearbeitet und geleitet hat und sich an den beiden Folgetagen um Maxi, Celia und Tano gekümmert hat,
 da er auf weitere Radtouren verzichtet hat.
 Ach ja: Vielfacher Taxifahrer war er auch!❤️
 
 Fazit: Der RTC Köln ist schon ne tolle Truppe und ein Verein, der Laune macht. 🫶🎉
 
-Eure Diana`
+Eure Diana`,
         )
         .setTitle('3 tolle Tage mit dem RTC Köln - inkl. geführte Moselgenusstour')
         .build(),
@@ -45,7 +45,7 @@ Aber besonders für die Marathonis, die kurz vor dem Ziel noch mit heftigen Stur
 Um 17 Uhr waren dann alle glücklich im Ziel.
 Toll gemacht, ihr beiden. 🎉
 
-Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe sind und wunderschöne Strecken ausgesucht haben!`
+Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe sind und wunderschöne Strecken ausgesucht haben!`,
         )
         .setTitle('Condor-Flug bei 35 Grad')
         .build(),
@@ -66,7 +66,7 @@ Da es vom Café aus ja „nur bergab“ bis nach Hause ging (so Manni), waren di
 FAZIT: Die Strecken (Danke Klaus und Manni), die Landschaft, die Anstiege und Abfahrten mit den fantastischen Weitblicken, das Café,
 aber vor allem die gemeinsame Ausfahrt zu zehnt, war ein absolutes Highlight dieses Sonntags.
 🧡 Der RTC Köln macht Laune!🧡
-Und das nicht nur sonntags. 😉😍`
+Und das nicht nur sonntags. 😉😍`,
         )
         .setTitle('Tolle Eifelrunde zu zehnt')
         .build(),
@@ -91,7 +91,7 @@ Ansonsten brachte der Fahrtwind eine leichte kühlende Brise. 🌬️
 Im Ziel gab es ein Kaltgetränk, um das wieder aufzufüllen, was man unterwegs auf der Strecke gelassen hatte. 💦
 Alle hatten Spaß und haben es genossen, ihren Lieblingssport im Team zu erleben.
 Sport ist eben im Team und im Verein am schönsten. 😘
-Danke, RTC Rodenkirchen, für die schönen ausgeschilderten Strecken und Eure Gastfreundschaft.`
+Danke, RTC Rodenkirchen, für die schönen ausgeschilderten Strecken und Eure Gastfreundschaft.`,
         )
         .setTitle('30 Grad und es war noch heißer')
         .build(),
@@ -110,7 +110,7 @@ Außer uns beiden war noch Lutz und Johannes auf der kurzen Strecke, Birgit und 
 Die 44er war sehr schön geführt, über viele Wirtschafts- und Fahrradwege und gut ausgeschildert.
 Probleme gab es nur für die GPSler, die teilweise eine andere Strecke auf dem Navi hatten.
 Hier fehlte zur Eindeutigkeit der Streckenführung noch ein Trennungsschild.
-Trotz der sonst guten Organisation und den schönen Strecken hatte der RSC leider nur 180 TN an die Erft locken können.`
+Trotz der sonst guten Organisation und den schönen Strecken hatte der RSC leider nur 180 TN an die Erft locken können.`,
         )
         .setTitle('Die Sternfahrt zur RTF nach Kerpen')
         .build(),
@@ -146,7 +146,7 @@ Mit Hin und Rückfahrt wurde es dann 3-stellig.“
 
 Peter: „Da Birgit und ich leider nicht mit nach Schrecksbach fahren konnten, haben wir uns auch in Bergheim durch die RTF-Hitze gekämpft.
 Die Strecke war flach und die Verpflegung hat noch Luft nach oben.
-Trotzdem wieder 110 km auf der Uhr. 🤗“`
+Trotzdem wieder 110 km auf der Uhr. 🤗“`,
         )
         .setTitle('VfB Schrecksbach: Ein empfehlenswertes Radsport-Event der familiären Art')
         .build(),
@@ -165,7 +165,7 @@ Den zwei Iren war es egal. Die fuhren kurz/kurz weiter. 150 km freut man sich au
 Dann halt eigene Voräte plündern und 3 Stunden in der 24h Tankstelle bis Sonnenaufgang verbringen.
 Über Umwege ging es dann zurück nach Amsterdam und der Wind wurde wieder ein treuer Begleiter. Stundenlang mit 17 km/h... Zermürbt aber nicht gebrochen kam ich dann in Amsterdam an.“
 
-➡️ Frank, Du bist der Beste. Hut ab‼️`
+➡️ Frank, Du bist der Beste. Hut ab‼️`,
         )
         .setTitle("Frank's Amsterdam Tour")
         .build(),
@@ -193,7 +193,7 @@ Diana vom RTC Köln e.V.
 🔜 Nicht vergessen:
 Neu bei uns im Programm sind zwei geführte Touren an die Mosel ‼️
 Wer von euch nimmt die Herausforderung an und verbringt einen Urlaubstag auf dem Rennrad mit dem RTC Köln?
-Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`
+Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`,
         )
         .setTitle('Résumé 51. Forsbachtour 2023')
         .build(),
@@ -208,7 +208,7 @@ Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`
 
 Wir freuen uns auf Euch. 🎉
 
-Euer RTC Köln e.V.`
+Euer RTC Köln e.V.`,
         )
         .setTitle('➡️ Tipp Nummer 3')
         .build(),
@@ -224,7 +224,7 @@ Meldet euch vor 14 Uhr bei uns auf dem Platz, wenn Ihr mit Euren Rad-Schatz mitm
 
 Wir freuen uns auf Euch. 🤗
 
-Euer RTC Köln e.V.`
+Euer RTC Köln e.V.`,
         )
         .setTitle('Vintage-Bike-Wettbewerb')
         .build(),
@@ -244,7 +244,7 @@ Teilnehmerbändchen)
 erhalten.
 ➡️ FREUEN 🤗
 
-*nur für Teilnehmer:innen mit Teilnehmerbändchen`
+*nur für Teilnehmer:innen mit Teilnehmerbändchen`,
         )
         .setTitle('rtckoeln 👍TIPP Nummer 2')
         .build(),
@@ -272,7 +272,7 @@ erhalten.
 Aber dank unserer großzügigen Sponsoren haben wir viel, viel mehr für Euch. 🤗
 
 Hier vorab eine kleine Auswahl der hochwertigen Preise und Gewinne.
-In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`
+In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`,
         )
         .setTitle('Gewinne und Preise auf der Forsbachtour in vier Kategorien')
         .build(),
@@ -289,7 +289,7 @@ Zum Schluss hatten wir 1150 Meter auf der Uhr. 😅
 Die Belohnung wartete im Ziel mit Currywurst und Fritten 😊.
 Leider waren auch hier nur ca. 400 TN.“ 🤷🏼‍♂️
 
-Danke an den RCB für die tolle Strecke und die Organisation 👍`
+Danke an den RCB für die tolle Strecke und die Organisation 👍`,
         )
         .setTitle('RTF Campus Bonn')
         .build(),
@@ -308,7 +308,7 @@ Eine Stunde im Freien gepennt.
 Schnitt verschlechtert durch die Nacht.
 Bei km 204 km hat ich noch 28,4 Schnitt.“
 
-Super Leistung, Frank!`
+Super Leistung, Frank!`,
         )
         .setTitle('Paris-Brest-Paris Qualifikation')
         .build(),
@@ -322,7 +322,7 @@ ob sie die wirklich wunderschön ausgesuchten und perfekt ausgeschilderten Strec
 oder ob sie wetterbedingt auf Nummer sicher gehen und die tolle Tour auf der 70er beenden möchten.
 Der RTC Köln hat sich beides entschieden und so wurde die 70er und die 100er gefahren.
 Ein toller RTF-Tag auf super schönen verkehrsarmen Straßen in wunderschöner Eifel-Natur.
-DANKE an den RSC Erftstadt!`
+DANKE an den RSC Erftstadt!`,
         )
         .setTitle('Sonne - Hagel - Sonne')
         .build(),
@@ -360,7 +360,7 @@ Euer RTC Köln e.V. 1972
 https://www.rheinstart.org/voting/voting-fruehjahr-2023/rauf-aufs-rad-mit-dem-rtc-koeln-ev/
 
 
-Rauf aufs Rad mit dem RTC Köln e.V. - Eins von vielen gemeinnützigen Projekten RheinStart`
+Rauf aufs Rad mit dem RTC Köln e.V. - Eins von vielen gemeinnützigen Projekten RheinStart`,
         )
         .setTitle('Rauf aufs Rad mit dem RTC Köln e.V.')
         .build(),
@@ -374,7 +374,7 @@ Wir haben bis zur ersten Kontrolle 7 oder 8  Fahrer:innen gesehen, die einen pla
 Einer davon war Klaus B. vom RTC: „Als wir mit dem Wechsel fertig waren, kam ein Anwohner mit einer großen Standpumpe um zu helfen. Super lieb!“
 Es gibt so viele nette Menschen, die man auf seinen Touren trifft.
 Eine rundum schöne RTF.
-Danke, Nievenheim. 🤗`
+Danke, Nievenheim. 🤗`,
         )
         .setTitle('6. Mai: RTF Nievenheim')
         .build(),
@@ -388,7 +388,7 @@ In den Sommermonaten stehen unsere monatlichen Versammlungen unter dem Motto: Ou
 Ab in den Garten, kurz besprechen, was wichtig ist, und dann grillen und Musik hören.
 Das Debüt ist geglückt - es hat richtig Spaß gemacht.
 Selbst die ständigen Regenschauern konnten uns nicht von unserem neuen Konzept abbringen. 🤗
-Wir freuen uns schon auf den 4.6., wenn wir uns nach der Forsbachtour (ist übrigens am 28. Mai 😉) erneut und entspannt im Garten treffen. 🎉`
+Wir freuen uns schon auf den 4.6., wenn wir uns nach der Forsbachtour (ist übrigens am 28. Mai 😉) erneut und entspannt im Garten treffen. 🎉`,
         )
         .setTitle('🆕 RTC-Versammlung 2.0 🏡')
         .build(),
@@ -406,7 +406,7 @@ Wegen der RTF und den tollen Veranstaltern, wegen den schönen Strecken, wegen d
 
 🔜 Wer noch so eine tolle RTF fahren möchte, sollte sich unsere Forsbachtour am 28. Mai nicht entgehen lassen. 👍👍🚴‍♂️🚴‍♀️🚴
 Es gibt tolle Überraschungen und allerlei Neues.
-Und natürlich die selbstgebackenen Power-Reisriegel. 💪`
+Und natürlich die selbstgebackenen Power-Reisriegel. 💪`,
         )
         .setTitle('1. Mai: Von wegen dicker Kopf vom Reinfeiern')
         .build(),
@@ -425,7 +425,7 @@ Es ist ein besonderes Erlebnis und ein Muss für jeden Freund des Radfahrens, so
 
 Im Ziel gab es die berühmte Gurkenmedaille und die persönliche Urkunde.
 
-TOLLE LEISTUNG!👍`
+TOLLE LEISTUNG!👍`,
         )
         .setTitle('Unsere erste Marathoni in 2023')
         .build(),
@@ -440,7 +440,7 @@ Beim Start gab es sogar schon den Anmelde-QR-Code. 👍
 Zu siebt fuhren wir nach Lindlar (ins Café) und zurück.
 Mit An- und Anreise hatte so mancher 86 km mit 720 Hm auf dem Tacho.
 Schön war‘s.
-🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️`
+🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️`,
         )
         .setTitle('🤔 Kennt Ihr schon das Bergische Karussell?')
         .build(),
@@ -459,7 +459,7 @@ Wir bieten
 🔝 Verpflegung TO GO (Begleitfahrzeug)
 🔝 Gepäcktransport (…)
 
-➡️ Mehr Infos demnächst hier und auf unserer Forsbachtour am 28. Mai 2023 🎉`
+➡️ Mehr Infos demnächst hier und auf unserer Forsbachtour am 28. Mai 2023 🎉`,
         )
         .setTitle('➡️ LUST AUF WAS NEUES? 🚴‍♀️')
         .build(),
@@ -475,7 +475,7 @@ Es ging hin über die Höhen und zurück über die Bahntrasse.
 Start und Ziel nach ca. 80 km: Die Schmitzebud.
 
 🔜 Unsere RTF, die Forsbachtour, ist am 28. Mai
-🎉 Wer von Euch ist dabei?`
+🎉 Wer von Euch ist dabei?`,
         )
         .setTitle('Frühlingsfahrt nach Lindlar')
         .build(),
@@ -486,7 +486,7 @@ Start und Ziel nach ca. 80 km: Die Schmitzebud.
         .setText(
             `Der langjährige 1. Vorsitzende des RTC Köln e.V., Wolfgang Dünkelmann, hat heute bei der JHV den „Rennrad-Lenker“ 😉 an Diana Vialon übergeben.
 Unser Sportwart, Klaus Dünkelmann, bedankte sich im Namen des Vereins bei Wolfgang, der sich über ein Jahrzehnt mit viel Engagement für den Verein eingesetzt hat.
-Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgabe und grüßt alle unsere treuen Follower und Radsportfreunde.`
+Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgabe und grüßt alle unsere treuen Follower und Radsportfreunde.`,
         )
         .setTitle('Generationenwechsel')
         .build(),
@@ -499,7 +499,7 @@ Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgab
 In dieser großen Gruppe hat es ihn heute richtig Spaß gemacht.
 Trotz des feuchtkalten Wetters hatten sich über 180 Graveler und Mountainbiker aufgemacht.
 Die Hennefer hätten mehr Teilnehmer:innen verdient gehabt, denn es war richtig klasse.
-Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`
+Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`,
         )
         .setTitle('😃 RTC GOES CTF️')
         .build(),
@@ -512,7 +512,7 @@ Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`
 Wir fuhren „Alberts Strecke“.
 Das bedeutete: 80 statt 60 km 😳😃, aber der 20er Schnitt blieb.
 Es ging in die Voreifel mit einem Aufwärmkaffee (und anderen Kalorien) in Heimerzheim.
-😄 Danke,Albert, dass Du uns gefordert hast. Hat Spaß gemacht.`
+😄 Danke,Albert, dass Du uns gefordert hast. Hat Spaß gemacht.`,
         )
         .setTitle('Wintertraining d‘Albert')
         .build(),
@@ -525,7 +525,7 @@ Es ging in die Voreifel mit einem Aufwärmkaffee (und anderen Kalorien) in Heime
 Das Wetter war letztendlich mit seinen 9 Grad perfekt für eine Winterausfahrt nach Heimerzheim — so waren wir heute sogar zu siebt. 😃
 Das hat total Spaß gemacht in der Gruppe. 🎉
 Es wurden für die meisten von uns 60 km.
-Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`
+Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`,
         )
         .setTitle('Kurzentschlossene RTCler 🚴🚴‍♀️🚴‍♂️🚴🚴‍♀️🚴🚴‍♀️')
         .build(),
@@ -542,7 +542,7 @@ Und gestern, beim 3. Lauf 2023 in Waltrop, war bei -1 Grad und Schneefall jede M
 Den insgesamt 505 Teilnehmer:innen - mit MTB / Crosser / Gravelbike etc. - wurden tolle Strecken über Wald- und Feldwege, Halden mit fiesen Rampen und eine perfekte Orga vom RC Sprinter Waltrop geboten.
 Ihr Fazit: „Hat sehr viel Spaß gemacht und das Rad ist auch wieder sauber geworden!“
 
-Toll gemacht, Burghild! Starke Leistung. 💪`
+Toll gemacht, Burghild! Starke Leistung. 💪`,
         )
         .setTitle('Sonntag, Schnee, Kälte')
         .build(),
@@ -559,7 +559,7 @@ Manfred Marquardt ist ein Pionier der Breitensportszene, denn bis zur Gründung 
 
 Aber auch Manfreds Frau, Hanni Marquardt, wurde für ihre 40-jährige Mitgliedschaft beim BDR geehrt und erhielt von Wolfgang Dünkelmann die Urkunde sowie die BDR-Ehrennadel überreicht.
 
-Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren Pioniergeist.`
+Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren Pioniergeist.`,
         )
         .setTitle('Ehrung Manfred & Hanni Marquardt')
         .build(),
@@ -575,7 +575,7 @@ Nach einer Pause im Café ging es über Metternich und Rösberg zurück.
 Nach 60 km waren wir wieder glücklich zu Hause.
 🆕 ➡️ Sobald wir eine Ausfahrt machen, kündigen wir sie jetzt immer hier an.
 Kommt und fahrt mit dem RTC Köln e.V.!
-Wir freuen uns auf Euch. 😊`
+Wir freuen uns auf Euch. 😊`,
         )
         .setTitle('Wintertraining 2023')
         .build(),
