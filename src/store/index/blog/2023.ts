@@ -5,7 +5,8 @@ export default [
         .setDate('2023-07-14')
         .setId('872d69b7-2de8-42d0-82da-839741d4f00b')
         .setText(
-            `Der RTC Köln e.V. hatte am Freitag, 14.7.23, zum ersten Mal die Strecke Köln —> Mosel als geführte Tour im Angebot.
+            `Der RTC Köln e.V. hatte am Freitag, 14.7.23, zum ersten Mal die Strecke Köln —> Mosel als geführte Tour im Angebot,
+an der auch Radsportlerinnen teilgenommen haben, die nicht Mitglieder beim RTC Köln e.V. sind.
 Neben der landschaftlich schönen und durchaus anspruchsvollen Strecke (170 km /2000 Hm), gab es zwei Begleitfahrzeuge, die vier Verpflegungsstellen für die Teilnehmer:innen anboten.
 Das Beste kam zum Schluss und so ging es für die Radsportler:innen die letzten 3,5 km mit  Serpentinen hoch zum Ziel. 👍💪🚴‍♂️🚴🚴‍♀️🚴‍♂️🚴🚴
 Aber nicht nur das war ein Highlight:
