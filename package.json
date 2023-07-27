@@ -20,7 +20,7 @@
         "@yeger/vue2-masonry-wall": "^4.1.0",
         "date-holidays": "^3.21.2",
         "maz-ui": "^2.4.7",
-        "pinia": "^2.1.4",
+        "pinia": "^2.1.6",
         "postleitzahlen": "^1.0.0",
         "vue-html2pdf": "^1.8.0",
         "vue-signature-pad": "^2.0.5"
