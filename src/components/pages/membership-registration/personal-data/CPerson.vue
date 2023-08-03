@@ -28,16 +28,20 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import plzToCity from 'postleitzahlen/data/plz.full.json'
 import PersonalData from '~/models/entities/membership-registration/PersonalData'
 
-const emits = defineEmits<{ (e: 'input', value: PersonalData): void }>()
+const emits = defineEmits<(e: 'input', value: PersonalData) => void>()
 const props = defineProps<{ value: PersonalData }>()
 
-const _value = ref(props.value)
+const _value = ref()
 
 const emitUpdate = () => emits('input', _value.value)
 
 const updateCity = () => (_value.value.city = (plzToCity as Record<string, string[]>)[_value.value.zipCode]?.[0] ?? '')
+
+onMounted(() => {
+    _value.value = props.value
+})
 </script>

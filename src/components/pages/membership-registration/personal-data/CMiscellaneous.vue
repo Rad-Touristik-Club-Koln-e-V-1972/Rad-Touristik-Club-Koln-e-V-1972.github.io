@@ -33,17 +33,21 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import PersonalData from '~/models/entities/membership-registration/PersonalData'
 import useDateTime from '~/utils/DateTime'
 
-const emits = defineEmits<{ (e: 'input', value: PersonalData): void }>()
+const emits = defineEmits<(e: 'input', value: PersonalData) => void>()
 const props = defineProps<{ value: PersonalData }>()
 
 const dateTime = useDateTime()
 
-const _value = ref(props.value)
+const _value = ref()
 
 const emitUpdate = () => emits('input', _value.value)
+
+onMounted(() => {
+    _value.value = props.value
+})
 </script>

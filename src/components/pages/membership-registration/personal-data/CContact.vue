@@ -41,14 +41,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { MazPhoneNumberInput } from 'maz-ui'
 import PersonalData from '~/models/entities/membership-registration/PersonalData'
 
-const emits = defineEmits<{ (e: 'input', value: PersonalData): void }>()
+const emits = defineEmits<(e: 'input', value: PersonalData) => void>()
 const props = defineProps<{ value: PersonalData }>()
 
-const _value = ref(props.value)
+const _value = ref()
 
 const emitMobilePhoneUpdate = (event: { countryCode: string; phoneNumber: string }) => {
     _value.value.mobilePhoneCountryCode = event.countryCode
@@ -61,4 +61,8 @@ const emitTelePhoneUpdate = (event: { countryCode: string; phoneNumber: string }
     emitUpdate()
 }
 const emitUpdate = () => emits('input', _value.value)
+
+onMounted(() => {
+    _value.value = props.value
+})
 </script>

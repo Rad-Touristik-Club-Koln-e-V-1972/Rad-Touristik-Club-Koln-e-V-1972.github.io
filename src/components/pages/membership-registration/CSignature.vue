@@ -37,18 +37,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import CSignatureForm from '~/components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import Signature from '~/models/entities/membership-registration/Signature'
 
-const emits = defineEmits<{ (e: 'input', value: Signature): void }>()
+const emits = defineEmits<(e: 'input', value: Signature) => void>()
 const props = defineProps({
     readonly: { default: false, type: Boolean },
     value: { required: true, type: Signature },
 })
 
-const _value = ref(props.value ?? new Signature())
+const _value = ref()
 
 const emitUpdate = () => emits('input', _value.value)
+
+onMounted(() => {
+    _value.value = props.value ?? new Signature()
+})
 </script>

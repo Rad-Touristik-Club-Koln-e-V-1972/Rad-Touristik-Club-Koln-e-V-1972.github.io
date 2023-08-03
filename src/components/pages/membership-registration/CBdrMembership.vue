@@ -22,14 +22,18 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import BdrMembership from '~/models/entities/membership-registration/BdrMembership'
 import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 
-const emits = defineEmits<{ (e: 'input', value: BdrMembership): void }>()
+const emits = defineEmits<(e: 'input', value: BdrMembership) => void>()
 const props = defineProps<{ value: BdrMembership }>()
 
-const _value = ref(props.value)
+const _value = ref()
 
 const emitUpdate = () => emits('input', _value.value)
+
+onMounted(() => {
+    _value.value = props.value
+})
 </script>

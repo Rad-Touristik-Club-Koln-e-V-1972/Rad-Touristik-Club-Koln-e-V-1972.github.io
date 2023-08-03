@@ -47,18 +47,18 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import CSignatureForm from '~/components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from '~/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import MembershipFee from '~/models/entities/membership-registration/MembershipFee'
 
-const emits = defineEmits<{ (e: 'input', value: MembershipFee): void }>()
+const emits = defineEmits<(e: 'input', value: MembershipFee) => void>()
 const props = defineProps({
     readonly: { default: false, type: Boolean },
     value: { required: true, type: MembershipFee },
 })
 
-const _value = ref(props.value ?? new MembershipFee())
+const _value = ref()
 
 const emitUpdate = () => emits('input', _value.value)
 
@@ -72,4 +72,8 @@ watch(
             .trim()
     }
 )
+
+onMounted(() => {
+    _value.value = props.value ?? new MembershipFee()
+})
 </script>

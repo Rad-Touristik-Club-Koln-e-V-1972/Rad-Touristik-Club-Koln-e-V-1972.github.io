@@ -2,7 +2,7 @@
     <v-dialog id="CDateRange" v-model="isOpen" persistent width="auto">
         <template #activator="{ attrs, on }">
             <v-text-field
-                v-model="items"
+                v-model="_value"
                 :append-icon="mdiCalendar"
                 clearable
                 hide-details
@@ -13,7 +13,7 @@
                 @click:clear="() => $emit('input', [])"
             />
         </template>
-        <v-date-picker v-model="items" color="primary" range scrollable>
+        <v-date-picker v-model="_value" color="primary" range scrollable>
             <v-spacer />
             <v-btn text @click="abort">Abbrechen</v-btn>
             <v-btn color="primary" text @click="save">OK</v-btn>
@@ -22,25 +22,29 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { mdiCalendar } from '@mdi/js'
 
-const emits = defineEmits<{ (e: 'input', value: string[]): void }>()
+const emits = defineEmits<(e: 'input', value: string[]) => void>()
 const props = defineProps<{ value: string[] }>()
 
 const isOpen = ref(false)
-const items = ref(props.value)
+const _value = ref()
 
 const abort = () => {
-    items.value = []
+    _value.value = []
     close()
 }
 const close = () => {
     emits(
         'input',
-        items.value.map((it: string) => `${it} 00:00`) // Otherwise it would add a hour offset the same as the timezone value.
+        _value.value.map((it: string) => `${it} 00:00`) // Otherwise it would add a hour offset the same as the timezone value.
     )
     isOpen.value = false
 }
 const save = () => close()
+
+onMounted(() => {
+    _value.value = props.value
+})
 </script>
