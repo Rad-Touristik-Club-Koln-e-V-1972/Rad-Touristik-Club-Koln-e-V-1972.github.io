@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^7.1.0
     version: 7.1.0(eslint@8.46.0)(prettier@2.8.8)
   '@vue/eslint-config-typescript':
-    specifier: ^11.0.2
-    version: 11.0.2(eslint-plugin-vue@9.16.1)(eslint@8.46.0)(typescript@5.1.6)
+    specifier: ^11.0.3
+    version: 11.0.3(eslint-plugin-vue@9.16.1)(eslint@8.46.0)(typescript@5.1.6)
   babel-plugin-component:
     specifier: ^1.1.1
     version: 1.1.1
@@ -4369,8 +4369,8 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@vue/eslint-config-typescript@11.0.2(eslint-plugin-vue@9.16.1)(eslint@8.46.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-EiKud1NqlWmSapBFkeSrE994qpKx7/27uCGnhdqzllYDpQZroyX/O6bwjEpeuyKamvLbsGdO6PMR2faIf+zFnw==}
+  /@vue/eslint-config-typescript@11.0.3(eslint-plugin-vue@9.16.1)(eslint@8.46.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-dkt6W0PX6H/4Xuxg/BlFj5xHvksjpSlVjtkQCpaYJBIEuKj2hOVU7r+TIe+ysCwRYFz/lGqvklntRkCAibsbPw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -7355,7 +7355,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.3
+      resolve: 1.22.2
     transitivePeerDependencies:
       - supports-color
     dev: true
