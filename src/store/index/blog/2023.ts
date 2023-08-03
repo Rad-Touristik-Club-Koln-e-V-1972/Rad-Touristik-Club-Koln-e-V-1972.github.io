@@ -2,6 +2,33 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['d8946223-d4f6-4095-bf84-6956af878a2c'])
+        .setDate('2023-07-30')
+        .setId('2629cebb-4e62-4d82-ae6d-68bb6d8fb7c6')
+        .setText(
+            `Der Deutsche Wetterdienst ist auch nicht mehr das, was er mal war: zuverlässig. 😩
+So fühlten sich etwas mehr als 400 Teilnehmer:innen von den angekündigten - nahezu trockenen - Wetterbedingungen animiert, um in Siegburg auf die schönen Strecken zu gehen.🚴🚴‍♂️🚴‍♀️
+Zum Glück 🍀für die netten Gastgeber:innen, denn sonst wären viele nicht gekommen.
+7 RTCler:innen und 3 RTC-Gäste hatten sich auch  für die heutigen Radtouren verabredet.😃 Für die einen sollte es um 6:30 Uhr auf die 160 km- Strecke gehen.
+Die nächsten starteten gegen 8.15 h und wollten auf die 120er oder auf die 80 km-Strecke.
+Für alle ging es auch trocken los. 🎉
+Aber dann öffnete der Himmel seine Schleusen 🌧️ und tunkte alle Radsportler:innen in ein durch und durch kühles Nass.
+Nichts war mehr trocken. Absolut nichts.
+Mit der sinkenden Temperatur auf 13/14 Grad 🥶(wir haben Juli!), sank bei einigen auch die Motivation.
+So kam es, dass manch eine:r von seiner ursprünglich geplanten Tour Abstand nahm und die Strecke verkürzte.
+Vernünftig!
+Diejenigen, deren Motivation größer war, haben sich an den zahlreichen Erd-Erhebungen warm gestrampelt und kamen happy ins Ziel.
+Letztendlich gab es ein schönes Get Together am Start-/Zielbereich - bei 25 Grad. Verrückt, oder?
+
+Auf die nächste Tour - hoffentlich müssen wir unsere Regenjacken nicht schon wieder mitnehmen. ☀️
+
+PS: Ein großes Dankeschön an die Siegburger.
+Ihr seid eine tolle Truppe, habt wunderschöne Strecken ausgesucht und die Verpflegung war auch klasse.
+Nur über das Wetter müssen wir nächstes Jahr nochmal reden.🤪🥰`
+        )
+        .setTitle('REGEN-RTF in Siegburg')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['9aa16b1c-9a90-4723-b586-65e51575bd89'])
         .setDate('2023-07-14')
         .setId('872d69b7-2de8-42d0-82da-839741d4f00b')
