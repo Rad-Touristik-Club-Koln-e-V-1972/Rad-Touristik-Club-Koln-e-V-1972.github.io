@@ -175,7 +175,7 @@ export default [
         .build(),
     new EventBuilder()
         .setAllDay(false)
-        .setCategory(EEvent.Mitgliederversammlung)
+        .setCategory(EEvent.Abgesagt)
         .setClubPoints(1)
         .setContact('Diana Vialon')
         .setDate('2023-08-04 19:00', '2023-08-04 21:00')
@@ -214,7 +214,7 @@ export default [
         .build(),
     new EventBuilder()
         .setAllDay(false)
-        .setCategory(EEvent.Mitgliederversammlung)
+        .setCategory(EEvent.Abgesagt)
         .setClubPoints(1)
         .setContact('Diana Vialon')
         .setDate('2023-09-01 19:00', '2023-09-01 21:00')
