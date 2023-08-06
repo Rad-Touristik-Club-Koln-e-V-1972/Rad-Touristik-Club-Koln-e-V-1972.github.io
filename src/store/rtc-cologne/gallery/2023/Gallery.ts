@@ -31,8 +31,10 @@ import _20230702TolleEifelrundezuzehnt from '~/store/rtc-cologne/gallery/2023/07
 import _20230709CondorFlugbei35Grad from '~/store/rtc-cologne/gallery/2023/07_09_Condor_Flug_bei_35_Grad'
 import _202307143tolleTagemitdemRTCKoeln from '~/store/rtc-cologne/gallery/2023/07_14_3_tolle_Tage_mit_dem_RTC_Koeln'
 import _20230730REGENRTFinSiegburg from '~/store/rtc-cologne/gallery/2023/07_30_REGEN-RTF_in_Siegburg'
+import _20230805RTFvomRTVLohmar from '~/store/rtc-cologne/gallery/2023/08_05_RTF_vom_RTV_Lohmar'
 
 export default [
+    _20230805RTFvomRTVLohmar,
     _20230730REGENRTFinSiegburg,
     _202307143tolleTagemitdemRTCKoeln,
     _20230709CondorFlugbei35Grad,

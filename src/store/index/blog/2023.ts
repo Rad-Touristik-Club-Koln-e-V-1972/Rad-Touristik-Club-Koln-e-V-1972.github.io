@@ -2,6 +2,28 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['6a72b056-6c53-40e7-ae87-872938b7824e'])
+        .setDate('2023-08-05')
+        .setId('c8a8db08-19b2-4eb8-8534-232d05892b5f')
+        .setText(
+            `Erwischt uns der Regen gegen Mittag noch oder schaffen wir es trocken ins Ziel?
+Das war die heutige Frage.
+
+Einige unserer heutigen Radsport-Gruppe haben eine Sternfahrt von Zündorf, Kalk bzw. Refrath gemacht.
+Ob diejenigen bei der Rückfahrt trocken geblieben sind, wage ich zu bezweifeln.
+Wir waren mit Albert, Burghild, Helmut, Lutz, Norbert, Susanne, Wolfgang und Klaus 8 RTCler, die sich bei - zumindest zunächst - trockenem Wetter auf die Strecken begeben hatten.
+Dazu kamen noch zur Gruppe Dirk, Sandra, und Uwe.
+Bis auf Susanne, Wolfgang und Norbert sind wir auf der 75er Strecke gewesen.
+Landschaftlich schön und teilweise verkehrsarm geführt, aber von den HM her anspruchsvoll.
+Die Verpflegung, insbesondere auf den Kontrollen, war vielfältig und von guter Qualität.
+Ein besonderes Lob gilt der netten Mannschaft vom RTV Lohmar, die diese schöne Veranstaltung möglich gemacht haben.
+🤗
+
+LG Klaus`
+        )
+        .setTitle('RTF vom RTV Lohmar')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['d8946223-d4f6-4095-bf84-6956af878a2c'])
         .setDate('2023-07-30')
         .setId('2629cebb-4e62-4d82-ae6d-68bb6d8fb7c6')
