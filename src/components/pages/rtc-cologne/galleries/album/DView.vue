@@ -1,7 +1,7 @@
 <template>
-    <div v-if="props.startIndex && props.value" id="DView">
+    <div v-if="props.value" id="DView">
         <d-p-d-f-view v-if="isMimeTypePDF" :value="props.value[props.startIndex]" />
-        <d-view-image v-else :value="props.value" :start-index="props.startIndex" />
+        <d-view-image v-else :value="props.value" :start-index="props.startIndex ?? 0" />
     </div>
 </template>
 
