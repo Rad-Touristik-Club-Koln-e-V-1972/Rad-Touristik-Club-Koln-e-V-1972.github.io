@@ -29,6 +29,16 @@
                 <small>(bspw. Allergiker)</small>
             </v-col>
         </v-row>
+        <v-row>
+            <v-col>
+                <v-checkbox
+                    v-model="_value.wantsAmateursportslicense"
+                    dense
+                    label="Ich beantrage hiermit die Breitensportlizenz (für die Teilnahme an den RTF)."
+                    @input="emitUpdate"
+                />
+            </v-col>
+        </v-row>
     </v-card-text>
 </template>
 

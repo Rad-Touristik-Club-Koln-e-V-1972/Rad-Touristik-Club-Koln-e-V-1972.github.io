@@ -15,6 +15,7 @@ export default class PersonalData extends AEntity {
     telePhoneNumber = ''
     telePhoneCountryCode = ''
     tShirtSize = ''
+    wantsAmateursportslicense = false
     wantsBdrMembership = false
     zipCode = ''
 }
