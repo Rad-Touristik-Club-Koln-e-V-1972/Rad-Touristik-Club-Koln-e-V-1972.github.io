@@ -2,6 +2,36 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['aced9fe7-38c6-4cba-8572-c16e47670388'])
+        .setDate('2023-08-13')
+        .setId('ddb5497c-ae51-4512-bc4e-2552a89161c1')
+        .setText(
+            `Auf nach Hennef und ab auf die Strecke.
+ODER:
+Auf und ab war an diesem Wochenende die Wettervorhersage.
+So fiel quasi leider der erste der beiden Hennefer Radsporttage mit nur ca 37 Teilnehmer:innen ins Wasser.😩
+ODER:
+Auf und ab gingen wir in den Sätteln, weil wir manchmal mehr Kraftübertragung brauchten.
+DENN:
+Auf und ab ging die RTF von Hennef vom Start bis zum Ziel. 👍
+Sportlich war sie. 🤗
+Es war eine richtig schöne RTF durch tolle Landschaften.
+Es ging oft hoch und im Anschluss wurden wir mit tollen langen Abfahrten belohnt.
+Mit Klaus, Albert, Helmut, Jürgen, Jan, Judith, Diana und Uwe waren wir 8 RTCler:innen, die die 70er mit 920 Höhenmetern erradelten.
+Die Nummer 9 war Paul.
+Er traute sich sogar die noch bergigere 100er zu.
+Und der 10. RTFler war unser Sternfahrer ⭐️ Norbert ⭐️.
+Die 2. Belohnung gab es Ziel mit einer Bratwurst und dem ein oder anderen leckeren Kuchenstück.
+War lecker, Jürgen, oder? 🤗😘
+Danke, Ihr tollen Hennefer für den tollen Radsporttag heute.
+Es war alles super:
+Von den verbrauchten Kalorien bis zu den wieder zugeführten Kalorien.
+Für nächstes Jahr wünschen wir euch ein komplettes Wochenende voller Sonnenschein.
+☀️ Wir kommen wieder!`
+        )
+        .setTitle('Auf und ab')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['6a72b056-6c53-40e7-ae87-872938b7824e'])
         .setDate('2023-08-05')
         .setId('c8a8db08-19b2-4eb8-8534-232d05892b5f')
