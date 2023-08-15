@@ -102,7 +102,7 @@ devDependencies:
     version: 9.16.1(eslint@8.46.0)
   eslint-plugin-vuetify:
     specifier: ^1.1.0
-    version: 1.1.0(eslint@8.46.0)(vuetify@2.7.0)
+    version: 1.1.0(eslint@8.46.0)(vuetify@2.7.1)
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -137,8 +137,8 @@ devDependencies:
     specifier: ^1.8.8
     version: 1.8.8(typescript@5.1.6)
   vuetify:
-    specifier: ^2.7.0
-    version: 2.7.0(vue@2.7.14)
+    specifier: ^2.7.1
+    version: 2.7.1(vue@2.7.14)
   webpack:
     specifier: ^4.46.0
     version: 4.46.0
@@ -3362,8 +3362,8 @@ packages:
       deepmerge: 4.3.1
       sass: 1.32.13
       sass-loader: 10.4.1(sass@1.32.13)(webpack@4.46.0)
-      vuetify: 2.7.0(vue@2.7.14)
-      vuetify-loader: 1.9.2(vue@2.7.14)(vuetify@2.7.0)(webpack@4.46.0)
+      vuetify: 2.7.1(vue@2.7.14)
+      vuetify-loader: 1.9.2(vue@2.7.14)(vuetify@2.7.1)(webpack@4.46.0)
     transitivePeerDependencies:
       - fibers
       - gm
@@ -3612,7 +3612,7 @@ packages:
     resolution: {integrity: sha512-aACu/U/omhdk15O4Nfb+fHgH/z3QsfQzpnvRZhYhThms83ZnAOZz7zZAWO7mn2yyNQaA4xTO8GLK3uqFU4bYYw==}
     dependencies:
       '@babel/parser': 7.22.7
-      '@babel/types': 7.22.5
+      '@babel/types': 7.22.10
       '@types/babel__generator': 7.6.4
       '@types/babel__template': 7.4.1
       '@types/babel__traverse': 7.20.1
@@ -3621,20 +3621,20 @@ packages:
   /@types/babel__generator@7.6.4:
     resolution: {integrity: sha512-tFkciB9j2K755yrTALxD44McOrk+gfpIpvC3sxHjRawj6PfnQxrse4Clq5y/Rq+G3mrBurMax/lG8Qn2t9mSsg==}
     dependencies:
-      '@babel/types': 7.22.5
+      '@babel/types': 7.22.10
     dev: true
 
   /@types/babel__template@7.4.1:
     resolution: {integrity: sha512-azBFKemX6kMg5Io+/rdGT0dkGreboUVR0Cdm3fz9QJWpaQGJRQXl7C+6hOTCZcMll7KFyEQpgbYI2lHdsS4U7g==}
     dependencies:
       '@babel/parser': 7.22.7
-      '@babel/types': 7.22.5
+      '@babel/types': 7.22.10
     dev: true
 
   /@types/babel__traverse@7.20.1:
     resolution: {integrity: sha512-MitHFXnhtgwsGZWtT68URpOvLN4EREih1u3QtQiN4VdAxWKRVvGCSvw/Qth0M0Qq3pJpnGOu5JaM/ydK7OGbqg==}
     dependencies:
-      '@babel/types': 7.22.5
+      '@babel/types': 7.22.10
     dev: true
 
   /@types/body-parser@1.19.2:
@@ -7568,7 +7568,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vuetify@1.1.0(eslint@8.46.0)(vuetify@2.7.0):
+  /eslint-plugin-vuetify@1.1.0(eslint@8.46.0)(vuetify@2.7.1):
     resolution: {integrity: sha512-I1YRUCGkDqe8F7O0tdf63UZVKtk4734+8fzbZ24YIZKTTyQp/FIR0nSZYG8mPFhTWerzPta7oXNzliBOwP2XeQ==}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -7577,7 +7577,7 @@ packages:
       eslint: 8.46.0
       eslint-plugin-vue: 7.20.0(eslint@8.46.0)
       requireindex: 1.2.0
-      vuetify: 2.7.0(vue@2.7.14)
+      vuetify: 2.7.1(vue@2.7.14)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -15238,7 +15238,7 @@ packages:
       sortablejs: 1.10.2
     dev: false
 
-  /vuetify-loader@1.9.2(vue@2.7.14)(vuetify@2.7.0)(webpack@4.46.0):
+  /vuetify-loader@1.9.2(vue@2.7.14)(vuetify@2.7.1)(webpack@4.46.0):
     resolution: {integrity: sha512-8PP2w7aAs/rjA+Izec6qY7sHVb75MNrGQrDOTZJ5IEnvl+NiFhVpU2iWdRDZ3eMS842cWxSWStvkr+KJJKy+Iw==}
     peerDependencies:
       gm: ^1.23.0
@@ -15261,12 +15261,12 @@ packages:
       file-loader: 6.2.0(webpack@4.46.0)
       loader-utils: 2.0.4
       vue: 2.7.14
-      vuetify: 2.7.0(vue@2.7.14)
+      vuetify: 2.7.1(vue@2.7.14)
       webpack: 4.46.0
     dev: true
 
-  /vuetify@2.7.0(vue@2.7.14):
-    resolution: {integrity: sha512-eDb+lbtB9e+FRbOPIIyXwgwgc2M6gvhHkhSgggzM0hmKh1XM34YStZbM865viH0AfpxGZIOsRcs0S+OtdyOB+Q==}
+  /vuetify@2.7.1(vue@2.7.14):
+    resolution: {integrity: sha512-DVFmRsDtYrITw9yuGLwpFWngFYzEgk0KwloDCIV3+vhZw+NBFJOSzdbttbYmOwtqvQlhDxUyIRQolrRbSFAKlg==}
     peerDependencies:
       vue: ^2.6.4
     dependencies:
