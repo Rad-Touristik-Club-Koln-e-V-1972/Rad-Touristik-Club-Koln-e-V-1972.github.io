@@ -26,7 +26,7 @@
         "vue-signature-pad": "^2.0.5"
     },
     "devDependencies": {
-        "@babel/core": "^7.22.9",
+        "@babel/core": "^7.22.10",
         "@commitlint/cli": "^17.6.7",
         "@commitlint/config-conventional": "^17.6.7",
         "@mdi/js": "^7.2.96",
