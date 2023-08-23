@@ -2,6 +2,24 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['ac86b04d-b2b1-4f2f-a197-ef78eea9f8b4'])
+        .setDate('2023-08-20')
+        .setId('c2135b81-0619-4671-868b-9069632c4004')
+        .setText(
+            `Erstaunliche 16 RTCler:innen und 1 RTC-Gast haben heute die landschaftlich schönen und sehr gut ausgeschilderten Strecken der Lövenicher unter die Rennräder genommen.
+Es ging vom Kölner Norden Richtung Eifel.
+Alles war dabei:
+Frühe Alleinstarter, Sternfahrer für die 40er und 70er, aber auch ein Grüppchen für die 100er.
+Das 40-jährige Jubiläum der Lövenicher stand mehrfach unter einem guten Stern:
+zum einen war bestes Wetter mit mittags bis zu 30° und es kamen starke 650 Teilnehmer:innen, die mit den Lövenichern feiern wollten.🎉
+
+HERZLICHEN GLÜCKWUNSCH, liebe Lövenicher.
+❤️Alles war perfekt - vom neuen Startplatz mit der Jubiläumsausstellung, über die Strecken, die Ausschilderung, bis zu den Kontrollverpflegungen, die wirklich klasse war.
+Und wie ihr das mit dem ☀️Wetter☀️ hingekriegt habt, könnt ihr uns bitte für unsere Forsbachtour am 2. Juni 2024 verraten. 😉🤗`
+        )
+        .setTitle('Großes RTC-Aufgebot in Lövenich 🚴‍♀️')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['aced9fe7-38c6-4cba-8572-c16e47670388'])
         .setDate('2023-08-13')
         .setId('ddb5497c-ae51-4512-bc4e-2552a89161c1')
