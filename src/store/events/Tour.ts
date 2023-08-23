@@ -232,9 +232,13 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`
                     .build()
             )
             .setPopup(
-                `Natürlich sind all unsere Strecken ausgeschildert.
+                `Unsere FORSBACHTOUR 2024 ist am 2. Juni! 🚴🎉
 
-Euer RTC Köln e.V.`,
+➡️ Nähere Infos folgen später.
+
+Aber Ihr könnt Euch den Termin ja schon mal merken. 😉🫶
+
+Euer RTC Köln e.V. 1972`,
                 'Hinweis'
             )
             .setText(
