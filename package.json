@@ -18,7 +18,7 @@
     },
     "dependencies": {
         "@yeger/vue2-masonry-wall": "^5.0.2",
-        "date-holidays": "^3.21.4",
+        "date-holidays": "^3.21.5",
         "maz-ui": "^2.4.7",
         "pinia": "^2.1.6",
         "postleitzahlen": "^1.0.0",
