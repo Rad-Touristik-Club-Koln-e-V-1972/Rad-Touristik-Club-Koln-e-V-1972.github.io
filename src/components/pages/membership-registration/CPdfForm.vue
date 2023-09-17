@@ -117,7 +117,6 @@ const isLoading = ref(false)
 // TODO Workaround "unknown" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
 const beforeDownload = async (event: unknown) => {
     // TODO Workaround "any" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-    // eslint-disable-next-line
     const { html2pdf, options, pdfContent } = event as any
 
     await html2pdf()
@@ -128,7 +127,6 @@ const beforeDownload = async (event: unknown) => {
         // TODO Workaround "object" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
         .then((pdf: object) => {
             // TODO Workaround "any" for missing TypeScript types https://github.com/kempsteven/vue-html2pdf/issues/64
-            // eslint-disable-next-line
             const tmp = pdf as any
             const pdfInternal = tmp.internal
             const totalPages = pdfInternal.getNumberOfPages()

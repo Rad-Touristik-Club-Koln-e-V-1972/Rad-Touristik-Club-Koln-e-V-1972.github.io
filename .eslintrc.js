@@ -7,14 +7,7 @@ module.exports = {
         browser: true,
         node: false,
     },
-    extends: [
-        'eslint:recommended',
-        '@nuxtjs/eslint-config-typescript',
-        '@vue/eslint-config-typescript/recommended',
-        'plugin:nuxt/recommended',
-        'plugin:vuetify/recommended',
-        '@vue/eslint-config-prettier',
-    ],
+    extends: ['eslint:recommended', '@nuxtjs/eslint-config-typescript', 'plugin:nuxt/recommended', 'plugin:vuetify/recommended', '@vue/eslint-config-prettier'],
     parser: 'vue-eslint-parser',
     parserOptions: {
         ecmaVersion: 'latest',
