@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^0.4.11
     version: 0.4.11(rollup@3.29.2)(typescript@5.2.2)(vue@2.7.14)
   '@rushstack/eslint-patch':
-    specifier: ^1.3.3
-    version: 1.3.3
+    specifier: ^1.4.0
+    version: 1.4.0
   '@types/mime-types':
     specifier: ^2.1.1
     version: 2.1.1
@@ -3770,8 +3770,8 @@ packages:
       rollup: 3.29.2
     dev: true
 
-  /@rushstack/eslint-patch@1.3.3:
-    resolution: {integrity: sha512-0xd7qez0AQ+MbHatZTlI1gu5vkG8r7MYRUJAHPAHJBmGLs16zpkrpAVLvjQKQOqaXPDUBwOiJzNc00znHSCVBw==}
+  /@rushstack/eslint-patch@1.4.0:
+    resolution: {integrity: sha512-cEjvTPU32OM9lUFegJagO0mRnIn+rbqrG89vV8/xLnLFX0DoR0r1oy5IlTga71Q7uT3Qus7qm7wgeiMT/+Irlg==}
     dev: true
 
   /@sinclair/typebox@0.27.8:
@@ -5539,7 +5539,7 @@ packages:
       defu: 6.1.2
       dotenv: 16.3.1
       giget: 1.1.2
-      jiti: 1.19.1
+      jiti: 1.20.0
       mlly: 1.4.2
       ohash: 1.1.3
       pathe: 1.1.1
@@ -14678,7 +14678,7 @@ packages:
   /unimport@3.1.3(rollup@3.29.2):
     resolution: {integrity: sha512-up4TE2yA+nMyyErGTjbYGVw95MriGa2hVRXQ3/JRp7984cwwqULcnBjHaovVpsO8tZc2j0fvgGu9yiBKOyxvYw==}
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.29.2)
+      '@rollup/pluginutils': 5.0.4(rollup@3.29.2)
       escape-string-regexp: 5.0.0
       fast-glob: 3.3.1
       local-pkg: 0.4.3
