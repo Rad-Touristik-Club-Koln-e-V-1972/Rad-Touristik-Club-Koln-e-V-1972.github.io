@@ -46,7 +46,7 @@
         "buffer": "^6.0.3",
         "commitlint": "^17.7.1",
         "consola": "^3.2.3",
-        "eslint": "^8.48.0",
+        "eslint": "^8.49.0",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-vue": "^9.17.0",
         "eslint-plugin-vuetify": "^1.1.0",
