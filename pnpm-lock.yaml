@@ -107,8 +107,8 @@ devDependencies:
     specifier: ^14.0.1
     version: 14.0.1
   nuxi:
-    specifier: ^3.8.4
-    version: 3.8.4
+    specifier: ^3.9.0
+    version: 3.9.0
   nuxt:
     specifier: ^2.17.1
     version: 2.17.1(buffer@6.0.3)(consola@3.2.3)(typescript@5.2.2)(vue@2.7.14)
@@ -10843,8 +10843,8 @@ packages:
       boolbase: 1.0.0
     dev: true
 
-  /nuxi@3.8.4:
-    resolution: {integrity: sha512-YQAH2msfL1PeaDuk880jQAJdtF1hpuYaTQ7j8Ombl+SyyamcB9VTx0gbkNyZj7wmJQYxfiV6a42nlGQ7cJDO+g==}
+  /nuxi@3.9.0:
+    resolution: {integrity: sha512-roCfCnQsp/oaHm6PL3HFvvGrwm1d2y1n7G9KzIx+i91eiO4P7fBuaVKibB2e8uqEJBgTwN52KxFha6MJnDykJQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
     optionalDependencies:
