@@ -2,6 +2,34 @@ import BlogEntryBuilder from '~/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['a86f1e5c-ccb4-47ba-804b-46561c254325'])
+        .setDate('2023-09-17')
+        .setId('8bfc526e-5b03-4cd9-9a75-4cd4794c350b')
+        .setText(
+            `Ein aktives Wochenende für die RTCler:innen, die derzeit nicht im Urlaub sind.
+Der Samstag stand im Zeichen der Voreifel.
+Hier haben wir die 100er von Mistral ein wenig aufgepeppt.
+Es ging von Rodenkirchen zu viert (Frank, Albert, Manni, Diana) zur Steinbachtalsperre, über Waldorf, Stotzheim, Arloff und zurück über Odendorf.
+Der moldawische Imbiss an der Talsperre lud zu einer gemütlichen Pause ein. 👍
+
+Am Sonntag stand für Helmut die RTF in Polch auf dem Wunschzettel und seinen Wunsch hat er sich auch erfüllt.🤗
+Allerdings war er - aufgrund der langen Anreise - leider allein in Polch.
+„Eine der schönsten  RTF die es gibt, aber wie lange noch?
+Denn es ist ein kleiner Verein und sie haben sich sehr viel Mühe gegeben, 5 Strecken im Angebot, tolle große Richtungsschilder, traumhafte Strecke aber leider nur 194 Starter“,
+so Helmuts Fazit nach seiner höhenmeterintensiven 100er.
+
+Für Jürgen, Eric und Diana stand am Sonntag Lindlar auf dem Rennrad-Plan.
+Treffpunkt war an der Schmitzebud.
+Mit 2,5 Pausen -  in Lindlar (P 1) auf dem Immekeppel-Hügel (P 0,5)  😉
+(ein großes Dankeschön an meine zwei Begleiter für diesen Extra-Stopp)
+und im Eiscafé in Refrath (P 2) war es eine landschaftlich sehr schöne Runde mit 880 Hm bei 90 km durchs Bergische Land.
+Danke an Jürgen, der die Tour geleitet und den ein oder anderen Höhenmeter mit tollen Aussichten eingebaut hat. 🤗
+
+Fazit: Mega Wochenende. 🎉`
+        )
+        .setTitle('Allein … in Polch oder die 3 Strecken des Wochenendes 🚴‍♂️🚴‍♂️')
+        .build(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['ac86b04d-b2b1-4f2f-a197-ef78eea9f8b4'])
         .setDate('2023-08-20')
         .setId('c2135b81-0619-4671-868b-9069632c4004')

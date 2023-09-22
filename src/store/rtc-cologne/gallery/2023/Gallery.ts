@@ -34,8 +34,10 @@ import _20230730REGENRTFinSiegburg from '~/store/rtc-cologne/gallery/2023/07_30_
 import _20230805RTFvomRTVLohmar from '~/store/rtc-cologne/gallery/2023/08_05_RTF_vom_RTV_Lohmar'
 import _20230813Aufundab from '~/store/rtc-cologne/gallery/2023/08_13_Auf_und_ab'
 import _20230820GrossesRTCAufgebotinLoevenich from '~/store/rtc-cologne/gallery/2023/08_20_Grosses_RTC-Aufgebot_in_Loevenich'
+import _20230917AlleininPolchoderdie3StreckendesWochenendes from '~/store/rtc-cologne/gallery/2023/09_17_Allein_in_Polch_oder_die_3_Strecken_des_Wochenendes'
 
 export default [
+    _20230917AlleininPolchoderdie3StreckendesWochenendes,
     _20230820GrossesRTCAufgebotinLoevenich,
     _20230813Aufundab,
     _20230805RTFvomRTVLohmar,
