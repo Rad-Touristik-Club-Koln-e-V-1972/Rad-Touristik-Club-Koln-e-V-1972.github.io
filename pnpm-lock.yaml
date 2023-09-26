@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^0.4.11
     version: 0.4.11(rollup@3.29.2)(typescript@5.2.2)(vue@2.7.14)
   '@rushstack/eslint-patch':
-    specifier: ^1.4.0
-    version: 1.4.0
+    specifier: ^1.5.0
+    version: 1.5.0
   '@types/mime-types':
     specifier: ^2.1.1
     version: 2.1.1
@@ -3750,8 +3750,8 @@ packages:
       rollup: 3.29.2
     dev: true
 
-  /@rushstack/eslint-patch@1.4.0:
-    resolution: {integrity: sha512-cEjvTPU32OM9lUFegJagO0mRnIn+rbqrG89vV8/xLnLFX0DoR0r1oy5IlTga71Q7uT3Qus7qm7wgeiMT/+Irlg==}
+  /@rushstack/eslint-patch@1.5.0:
+    resolution: {integrity: sha512-EF3948ckf3f5uPgYbQ6GhyA56Dmv8yg0+ir+BroRjwdxyZJsekhZzawOecC2rOTPCz173t7ZcR1HHZu0dZgOCw==}
     dev: true
 
   /@sinclair/typebox@0.27.8:
