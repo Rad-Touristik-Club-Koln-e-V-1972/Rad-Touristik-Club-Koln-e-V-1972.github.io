@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^17.7.0
     version: 17.7.0
   '@mdi/js':
-    specifier: ^7.2.96
-    version: 7.2.96
+    specifier: ^7.3.67
+    version: 7.3.67
   '@nuxt/bridge':
     specifier: npm:@nuxt/bridge-edge@^3.0.0-rc.1-28271265.8fa71e1
     version: /@nuxt/bridge-edge@3.0.0-rc.1-28271265.8fa71e1(@babel/core@7.23.0)(@types/node@20.8.3)(rollup@3.29.2)(typescript@5.2.2)(vue@2.7.14)(webpack@4.47.0)
@@ -2870,8 +2870,8 @@ packages:
       - supports-color
     dev: true
 
-  /@mdi/js@7.2.96:
-    resolution: {integrity: sha512-paR9M9ZT7rKbh2boksNUynuSZMHhqRYnEZOm/KrZTjQ4/FzyhjLHuvw/8XYzP+E7fS4+/Ms/82EN1pl/OFsiIA==}
+  /@mdi/js@7.3.67:
+    resolution: {integrity: sha512-MnRjknFqpTC6FifhGHjZ0+QYq2bAkZFQqIj8JA2AdPZbBxUvr8QSgB2yPAJ8/ob/XkR41xlg5majDR3c1JP1hw==}
     dev: true
 
   /@netlify/functions@2.0.2:
