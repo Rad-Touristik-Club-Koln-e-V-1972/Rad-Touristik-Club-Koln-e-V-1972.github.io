@@ -4,9 +4,10 @@
             <q-carousel
                 v-model="slide"
                 animated
-                arrows
+                :arrows="items.length > 1"
                 autoplay
                 control-color="primary"
+                control-type="push"
                 draggable="false"
                 infinite
                 padding
