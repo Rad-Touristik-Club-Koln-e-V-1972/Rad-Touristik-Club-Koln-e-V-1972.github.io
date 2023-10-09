@@ -8,11 +8,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v4
+              uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
             - name: Install PNPM
               uses: pnpm/action-setup@v2
             - name: Setup node env
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
               with:
                   cache: 'pnpm'
                   check-latest: true
@@ -24,7 +24,7 @@ jobs:
             - name: Run static website generator
               run: pnpm build
             - name: Deploy to website
-              uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+              uses: SamKirkland/FTP-Deploy-Action@8a24039354ee91000cb948cb4a1dbdf1a1b94a3c # v4.3.4
               with:
                   local-dir: .output/public/
                   password: ${{ secrets.OVH_SFTP_PASSWORD }}
