@@ -63,7 +63,7 @@
         "vue": "^2.7.14",
         "vue-tsc": "^1.8.18",
         "vuetify": "^2.7.1",
-        "webpack": "^4.47.0"
+        "webpack": "^5.88.2"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
