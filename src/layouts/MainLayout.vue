@@ -28,7 +28,7 @@
             <div class="q-px-xs row text-body1 text-secondary">
                 <div class="col-auto">
                     <q-icon :name="mdiCopyright" size="sm" />
-                    2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
+                    2021 - {{ new Date().getFullYear() }} RTC Köln e.V. 1972
                 </div>
                 <div class="col" />
                 <div class="col-auto">
