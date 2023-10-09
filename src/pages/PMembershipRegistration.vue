@@ -3,14 +3,14 @@
         <q-card-section class="bg-primary text-accent text-h6">Mitgliedschaft beantragen</q-card-section>
         <q-card-section class="text-subtitle1">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-8 col-lg-10">
                     Es gibt viele Vorteile, wenn man in einem Radsportverein Mitglied ist.
                     <br />
                     <b>Wir freuen uns, dass Du Dich dazu entschieden hast, dem RTC Köln e.V. 1972 beizutreten.</b>
                     <br />
                     Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.
                 </div>
-                <div class="col-auto">
+                <div class="col-12 col-md-4 col-lg-2">
                     RTC Köln e.V. 1972
                     <br />
                     Postfach 99 01 03
