@@ -25,7 +25,7 @@
                     </q-card>
                 </div>
             </div>
-            <div class="q-px-xs row text-h6 text-secondary">
+            <div class="q-px-xs row text-body1 text-secondary">
                 <div class="col-auto">
                     <q-icon :name="mdiCopyright" size="sm" />
                     2021 - {{ new Date().getFullYear() }} Rad-Touristik-Club Köln e.V. 1972
