@@ -29,10 +29,10 @@
         </q-card-section>
         <q-card-section>
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-sm-3">
                     <d-view :model-value="images" />
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-9">
                     <q-stepper v-model="step" animated vertical>
                         <q-step :done="step > 1" :name="1" title="Personendaten">
                             <q-stepper-navigation>
