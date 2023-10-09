@@ -2,24 +2,24 @@ import ABuilder from 'src/models/builder/ABuilder'
 import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 
 export default class BdrMembershipBuilder extends ABuilder {
-    private entity = new BdrMembership()
+    private bdrMembership = new BdrMembership()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildBdrMembership = () => Object.assign(this.bdrMembership, this.buildAEntity())
 
     setIsMember = (value: boolean): this => {
-        this.entity.isMember = value
+        this.bdrMembership.isMember = value
 
         return this
     }
 
     setDate = (value: string): this => {
-        this.entity.date = value
+        this.bdrMembership.date = value
 
         return this
     }
 
     setNumber = (value: string): this => {
-        this.entity.number = value
+        this.bdrMembership.number = value
 
         return this
     }

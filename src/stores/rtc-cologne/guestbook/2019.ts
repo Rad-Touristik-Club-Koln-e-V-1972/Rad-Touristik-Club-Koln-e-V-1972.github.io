@@ -10,7 +10,7 @@ export default [
         .setName('Franz Böhm')
         .setSource(ESource.Facebook)
         .setText('Ihr macht das richtig gut! Freue mich auf nächstes Jahr.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -25,7 +25,7 @@ mit Grill und Bierchen ...
 weiter so.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -38,7 +38,7 @@ Danke an alle fleißigen Helferlein an den verschiedenen Kontrollpunkten.
 Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -46,7 +46,7 @@ Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
         .setName('Dirk Weinbörner')
         .setSource(ESource.Facebook)
         .setText('Tolle Tour, klasse Verpflegung - richtig gut gemacht - nächstes Jahr auf jeden Fall wieder.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -58,7 +58,7 @@ Die 55er Strecke war bis auf 2 oder 3 Stellen sehr gut markiert.
 Einfach gesagt, ich freu mich schon auf's nächste Jahr!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -66,7 +66,7 @@ Einfach gesagt, ich freu mich schon auf's nächste Jahr!
         .setName('Stephanie Hilton')
         .setSource(ESource.Facebook)
         .setText('Tolle Tour! Hat Spass gemacht!!!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2019-10-28 20:00')
@@ -74,5 +74,5 @@ Einfach gesagt, ich freu mich schon auf's nächste Jahr!
         .setName('Jochen Güttes')
         .setSource(ESource.Facebook)
         .setText('Eine top organisierte Veranstaltung. Hat riesen Spaß gemacht.')
-        .build(),
+        .buildGuestbookEntry(),
 ]

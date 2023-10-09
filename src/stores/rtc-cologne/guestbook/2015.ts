@@ -18,7 +18,7 @@ Es ist zu hoffen, dass im nächstem Jahr eine Wiederholung der Veranstaltung sta
 und dass auch vielleicht noch einige andere Vereine aus der Region die für Viele noch etwas unbekannte Veranstaltung in Angriff nehmen ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 18:43')
@@ -37,7 +37,7 @@ Helmut vom RSC Nievenheim
 `,
         )
         .setTitle('Feedback wegen ...CTF 1. Wahnbach - Tour')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 14:23')
@@ -46,7 +46,7 @@ Helmut vom RSC Nievenheim
         .setSource(ESource.Facebook)
         .setText('<a href="www.youtube.com/v/Z2MqTVOeZMM" target="_blank">www.youtube.com/v/Z2MqTVOeZMM<a/>')
         .setTitle('... kleines Video von gestern')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 14:22')
@@ -61,7 +61,7 @@ Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei ..
 `,
         )
         .setTitle('Besten Dank an ALLE Helfer ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 13:49')
@@ -73,7 +73,7 @@ Hoffentlich gibt es nächstes Jahr die 2. Wahnbach-Tour, ich bin wieder dabei ..
 gerne wieder!!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 10:33')
@@ -91,7 +91,7 @@ Ps. Dank suuuuper Waschmöglichkeit vor Ort konnten wir uns zuhause gleich aufs 
 Ps.Ps. Schmalzbrotgrüsse
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-18 8:22')
@@ -117,7 +117,7 @@ Bin nächstes Jahr wieder dabei.
 Guido Faßbender
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 21:02')
@@ -132,7 +132,7 @@ Mir hat die Strecke sehr gut gefallen, Verpflegung super, Rad war zum Schluß au
 Ich würde mich auf ein nächstes Mal sehr freuen.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 20:45')
@@ -157,7 +157,7 @@ Sportliche Grüße,
 Henning
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 20:01')
@@ -170,7 +170,7 @@ Henning
 Superrunde und hoffentlich nächstes Jahr wieder ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 19:38')
@@ -189,7 +189,7 @@ Die Möglichkeit das Rad direkt vor Ort zu reinigen fand ich auch klasse.
 Hier auch noch ein Bild von dem Ausblick auf der Strecke.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 19:03')
@@ -197,7 +197,7 @@ Hier auch noch ein Bild von dem Ausblick auf der Strecke.
         .setName('Sabine Riehl')
         .setSource(ESource.Facebook)
         .setText('Superschöne Strecke, tolle Verpflegung: hat total Spaß gemacht - vielen Dank für diese CTF und allen, die Sie möglich gemacht haben ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 18:57')
@@ -211,7 +211,7 @@ Gute Idee, hier mal eine CTF anzubieten.
 Danke RTC!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 17:52')
@@ -237,7 +237,7 @@ Bernd Doelp
 `,
         )
         .setTitle('Feedback vom CTF')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 16:45')
@@ -251,7 +251,7 @@ Die Strecke war ausgesprochen schön und überall, wo nicht irgendwelche Deppen 
 Wiederholung im nächsten Jahr ist ausdrücklich erwünscht.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2015-10-17 16:07')
@@ -269,7 +269,7 @@ Stephan
 `,
         )
         .setTitle('Wahnbachtal Tour')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-03 20:16')
@@ -291,7 +291,7 @@ Grenzfahrer e.V.
 `,
         )
         .setTitle('Feedback wegen Marathon')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-03 12:36')
@@ -307,7 +307,7 @@ mfg Frank
 `,
         )
         .setTitle('Re: RTF')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-03 9:31')
@@ -327,7 +327,7 @@ schöne Grüße aus Troisdorf Frank 😊
 `,
         )
         .setTitle('RTF')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-02 10:45')
@@ -342,7 +342,7 @@ Bis zum nächsten Jahr 😊
 `,
         )
         .setTitle('Kommentar zu Schnappschüssen / Impressionen von der K5 auf der Forsbach-Tour 2015')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-01 22:47')
@@ -356,7 +356,7 @@ Nächstes Mal sind wir wieder mehr und beim Marathon dabei ...
 Danke Euch für die tolle Organisation.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-01 20:33')
@@ -372,7 +372,7 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
 `,
         )
         .setTitle('Danke ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-01 15:57')
@@ -401,7 +401,7 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
 `,
         )
         .setTitle('Feedback wegen 43. Marathon am 31.05.2015')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-01 14:14')
@@ -415,7 +415,7 @@ Vielen Dank an das Orga Team!
 Wir sind nächstes Jahr wieder dabei.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-06-01 9:05')
@@ -452,7 +452,7 @@ Nochmals danke und bis zum nächsten Mal!
 Marc
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-05-31 20:30')
@@ -460,7 +460,7 @@ Marc
         .setName('Petra Ak')
         .setSource(ESource.Facebook)
         .setText("Vielen Dank für's Organisieren, war super !")
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-05-31 20:19')
@@ -471,7 +471,7 @@ Marc
             `Für den Regen am Schluss könnt ihr ja nichts, ansonsten Top Veranstaltung, da können sich andere Veranstalter mal 'ne Scheibe von abschneiden.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-05-31 20:11')
@@ -479,7 +479,7 @@ Marc
         .setName('Michael Kalisch')
         .setSource(ESource.Facebook)
         .setTitle('top top top 😊')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-05-31 20:10')
@@ -487,7 +487,7 @@ Marc
         .setName('Horst Voll')
         .setSource(ESource.Facebook)
         .setText('War geil und sehr anstrengend ! 👍')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2015-05-31 19:29')
@@ -502,5 +502,5 @@ Die Damen und Herren an den Kontrollpunkte/Verpflegungspunkten waren alle sehr n
 Da nimmt man beim Marathon noch zu 😊
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
 ]

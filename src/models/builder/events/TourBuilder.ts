@@ -5,10 +5,10 @@ import Control from 'src/models/entities/events/tours/Control'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import EEvent from 'src/models/enums/EEvent'
 
-export default class TourBuilder<T extends Tour> extends ABuilder {
-    protected tour = new Tour()
+export default class TourBuilder extends ABuilder {
+    private tour = new Tour()
 
-    build = () => Object.assign(this.tour, super.build()) as T
+    buildTour = () => Object.assign(this.tour, this.buildAEntity())
 
     setActive = (value: boolean): this => {
         this.tour.active = value
@@ -47,7 +47,7 @@ export default class TourBuilder<T extends Tour> extends ABuilder {
     }
 
     setPopup = (text: string, title: string): this => {
-        this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).build()
+        this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).buildPopup()
 
         return this
     }

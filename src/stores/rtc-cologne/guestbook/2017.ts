@@ -21,7 +21,7 @@ Sollte sie gefunden sein, bitte ich um Kontakt per email.
 Viele Grüße, Dieter Roggensack...`,
         )
         .setTitle('Feedback wegen ...CTF Wahnbachtour')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-30 9:48')
@@ -43,7 +43,7 @@ Vielen Dank!
 Gruß H. Barthes
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
@@ -58,7 +58,7 @@ Da wir gestern den Punkt nicht genau festmachen konnten, hier mein Strava Track,
 Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von oben kommend sah man die Markierung quasi nicht.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
@@ -70,7 +70,7 @@ Evtl. müsste man hier den Abbieger mit Flatterband auf dem Boden markieren, von
 Herzlichen Dank!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-29 18:00')
@@ -78,7 +78,7 @@ Herzlichen Dank!
         .setName('Birgit Frings-Salz')
         .setSource(ESource.Facebook)
         .setText('Uns, als Gruppe Säuwätz, hat es auch super gut gefallen. Grosses Lob ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -86,7 +86,7 @@ Herzlichen Dank!
         .setName('Christoph Werner')
         .setSource(ESource.Facebook)
         .setText('War eine schöne Veranstaltung. Gerne nächstes Jahr wieder.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -94,7 +94,7 @@ Herzlichen Dank!
         .setName('Mika Kali')
         .setSource(ESource.Facebook)
         .setText('Wie immer: Klasse CTF ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -108,7 +108,7 @@ Hoffentlich geht es dem Verletzten bald wieder gut.
 Schönen Gruß Thomas
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -116,7 +116,7 @@ Schönen Gruß Thomas
         .setName('Andreas Diehl')
         .setSource(ESource.Facebook)
         .setText("Schön war's ...")
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -129,7 +129,7 @@ Ausschilderung hätte etwas besser sein können, aber irgendwas ist immer.
 Bin nächstes Jahr gerne wieder dabei!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -142,7 +142,7 @@ Super ausgeschildert, Verpflegung mehr als genug ...
 VIELEN DANK
                 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -156,7 +156,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
 2 TUC Kekse und dazwischen eine Scheibe Käse. Lecker. Bis zum nächstem Jahr.
                 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2017-10-28 21:30')
@@ -164,7 +164,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
         .setName('Mischa Breuer')
         .setSource(ESource.Facebook)
         .setText('War echt super. Hoffentlich 2018 wieder ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
@@ -177,7 +177,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
 Es war wieder super bei euch.
                 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
@@ -190,7 +190,7 @@ Der RTC Köln hat trotz immer schwerer werdenden Rahmenbedingungen eine Super-Ve
 Danke dafür!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
@@ -198,7 +198,7 @@ Danke dafür!
         .setName('Horst Voll')
         .setSource(ESource.Facebook)
         .setText('Vielen Dank für die heutige Betreuung.... war TippiToppi.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-29 20:30')
@@ -206,7 +206,7 @@ Danke dafür!
         .setName('Uli Fritzsche')
         .setSource(ESource.Facebook)
         .setText('Und wir danken für die tolle Orga!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:30')
@@ -218,7 +218,7 @@ Danke dafür!
 Vielen Dank
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:30')
@@ -231,7 +231,7 @@ Ich habe nur einen kleinen Kritikpunkt:
 Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Autofahrer genötigt, was das Zeug hält ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2017-05-28 20:57')
@@ -249,5 +249,5 @@ VG
 Dirk Oliver Heppert RSV Staubwolke Refrath
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
 ]

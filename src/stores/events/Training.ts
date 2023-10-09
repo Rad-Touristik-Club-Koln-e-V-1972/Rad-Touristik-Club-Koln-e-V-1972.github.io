@@ -33,7 +33,7 @@ Wir freuen uns auf Euch!
 Euer RTC Köln e.V.`,
             )
             .setTitle('Wintertraining')
-            .build(),
+            .buildTraining(),
     ])
 
     return { winter: computed(() => trainings.value.find((it) => it.category.toString() === ETraining.Wintertraining.toString())) }

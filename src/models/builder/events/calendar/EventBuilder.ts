@@ -3,50 +3,50 @@ import EEvent from 'src/models/enums/EEvent'
 import Event from 'src/models/entities/events/calendar/Event'
 
 export default class EventBuilder extends ABuilder {
-    private entity = new Event()
+    private event = new Event()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildEvent = () => Object.assign(this.event, this.buildAEntity())
 
     setAllDay = (value: boolean): this => {
-        this.entity.allDay = value
+        this.event.allDay = value
 
         return this
     }
 
     setCategory = (value: EEvent): this => {
-        this.entity.category = value
-        this.entity.color = this.getColor(value)
+        this.event.category = value
+        this.event.color = this.getColor(value)
 
         return this
     }
 
     setClubPoints = (value: number): this => {
-        this.entity.clubPoints = value
+        this.event.clubPoints = value
 
         return this
     }
 
     setContact = (value: string): this => {
-        this.entity.contact = value
+        this.event.contact = value
 
         return this
     }
 
     setDate = (start: Date | string, end: Date | string | null = null): this => {
-        if (end) this.entity.end = new Date(end)
-        this.entity.start = new Date(start)
+        if (end) this.event.end = new Date(end)
+        this.event.start = new Date(start)
 
         return this
     }
 
     setName = (value: string): this => {
-        this.entity.name = value
+        this.event.name = value
 
         return this
     }
 
     setUrl = (value: string): this => {
-        this.entity.url = new URL(`https://${value}`)
+        this.event.url = new URL(`https://${value}`)
 
         return this
     }

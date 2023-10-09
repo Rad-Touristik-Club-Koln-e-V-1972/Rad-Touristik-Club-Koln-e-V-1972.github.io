@@ -5,68 +5,68 @@ import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class GuestbookEntryBuilder extends ABuilder {
-    private entity = new GuestbookEntry()
+    private guestbookEntry = new GuestbookEntry()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildGuestbookEntry = () => Object.assign(this.guestbookEntry, this.buildAEntity())
 
     setAnswer = (value: string): this => {
-        this.entity.answer = value
+        this.guestbookEntry.answer = value
 
         return this
     }
 
     setCategory = (value: EEvent): this => {
-        this.entity.category = value
+        this.guestbookEntry.category = value
 
         return this
     }
 
     setDate = (value: string): this => {
-        this.entity.date = new Date(value)
+        this.guestbookEntry.date = new Date(value)
 
         return this
     }
 
     setImageUrls = (value: Record<string, string>): this => {
         for (const id of Object.keys(value)) {
-            this.entity.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).build())
+            this.guestbookEntry.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).buildGalleryEntry())
         }
 
         return this
     }
 
     setLocation = (value: string): this => {
-        this.entity.location = value
+        this.guestbookEntry.location = value
 
         return this
     }
 
     setName = (value: string): this => {
-        this.entity.name = value
+        this.guestbookEntry.name = value
 
         return this
     }
 
     setOrganization = (value: string): this => {
-        this.entity.organization = value
+        this.guestbookEntry.organization = value
 
         return this
     }
 
     setSource = (value: ESource): this => {
-        this.entity.source = value
+        this.guestbookEntry.source = value
 
         return this
     }
 
     setText = (value: string): this => {
-        this.entity.text = value.replaceAll('\n', '<br>')
+        this.guestbookEntry.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
     setTitle = (value: string): this => {
-        this.entity.title = value
+        this.guestbookEntry.title = value
 
         return this
     }

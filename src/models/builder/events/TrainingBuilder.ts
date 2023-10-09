@@ -4,56 +4,56 @@ import Training from 'src/models/entities/events/Training'
 import ETraining from 'src/models/enums/events/ETraining'
 
 export default class TrainingBuilder extends ABuilder {
-    private entity = new Training()
+    private training = new Training()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildTraining = () => Object.assign(this.training, this.buildAEntity())
 
     setCategory = (value: ETraining): this => {
-        this.entity.category = value
+        this.training.category = value
 
         return this
     }
 
     setHeight = (value: string): this => {
-        this.entity.height = value
+        this.training.height = value
 
         return this
     }
 
     setImageUrls = (value: Record<string, string>): this => {
         for (const id of Object.keys(value)) {
-            this.entity.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).build())
+            this.training.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).buildGalleryEntry())
         }
 
         return this
     }
 
     setLastChange = (value: string): this => {
-        this.entity.lastChange = new Date(value)
+        this.training.lastChange = new Date(value)
 
         return this
     }
 
     setLength = (value: string): this => {
-        this.entity.length = value
+        this.training.length = value
 
         return this
     }
 
     setSpeed = (value: string): this => {
-        this.entity.speed = value
+        this.training.speed = value
 
         return this
     }
 
     setText = (value: string): this => {
-        this.entity.text = value.replaceAll('\n', '<br>')
+        this.training.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
     setTitle = (value: string): this => {
-        this.entity.title = value
+        this.training.title = value
 
         return this
     }

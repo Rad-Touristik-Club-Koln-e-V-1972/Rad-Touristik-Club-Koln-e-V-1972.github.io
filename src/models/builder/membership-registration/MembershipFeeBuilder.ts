@@ -3,42 +3,42 @@ import MembershipFee from 'src/models/entities/membership-registration/Membershi
 import Signature from 'src/models/entities/membership-registration/Signature'
 
 export default class MembershipFeeBuilder extends ABuilder {
-    private entity = new MembershipFee()
+    private membershipFee = new MembershipFee()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildMembershipFee = () => Object.assign(this.membershipFee, this.buildAEntity())
 
     setBankholder = (value: string): this => {
-        this.entity.bankholder = value
+        this.membershipFee.bankholder = value
 
         return this
     }
 
     setBic = (value: string): this => {
-        this.entity.bic = value
+        this.membershipFee.bic = value
 
         return this
     }
 
     setCreditInstitute = (value: string): this => {
-        this.entity.creditInstitute = value
+        this.membershipFee.creditInstitute = value
 
         return this
     }
 
     setIban = (value: string): this => {
-        this.entity.iban = value
+        this.membershipFee.iban = value
 
         return this
     }
 
     setPaymentMethod = (value: string): this => {
-        this.entity.paymentMethod = value
+        this.membershipFee.paymentMethod = value
 
         return this
     }
 
     setSignature = (value: Signature): this => {
-        this.entity.signature = value
+        this.membershipFee.signature = value
 
         return this
     }

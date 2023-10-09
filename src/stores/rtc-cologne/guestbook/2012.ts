@@ -25,7 +25,7 @@ www.cardiofitness.de
 `,
         )
         .setTitle('Ein großes Dankeschöööööön')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-06-01')
@@ -50,7 +50,7 @@ Ursula Koepp
 `,
         )
         .setTitle('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-06-01')
@@ -81,7 +81,7 @@ Günter
 `,
         )
         .setTitle('10 Punkte und die Krone für eure schöne RTF!!!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-06-01')
@@ -104,7 +104,7 @@ Dieter Reich
 `,
         )
         .setTitle('Danke für die gut ausgearbeitete Tour am 20.05.12')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-06-01')
@@ -127,7 +127,7 @@ Elke und Dieter
 `,
         )
         .setTitle('... eine tolle Forsbachtour 2012')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-05-01')
@@ -155,7 +155,7 @@ Josef Witt
 `,
         )
         .setTitle('Verpflegungsengpässe, sonst war es eine sehr gute Veranstaltung!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-05-01')
@@ -217,7 +217,7 @@ Aus Kierspe
 `,
         )
         .setTitle('... eine super gelungene RTF !!!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-05-01')
@@ -250,7 +250,7 @@ Matthias Zimmer
 `,
         )
         .setTitle('Lärmbelästigung und Raserei')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2012-05-01')
@@ -281,5 +281,5 @@ Monika u. Helmut Moosmann
 `,
         )
         .setTitle('CHAPEAU !!!')
-        .build(),
+        .buildGuestbookEntry(),
 ]

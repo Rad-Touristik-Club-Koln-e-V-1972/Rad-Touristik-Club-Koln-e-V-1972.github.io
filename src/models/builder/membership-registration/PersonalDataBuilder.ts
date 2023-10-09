@@ -2,108 +2,108 @@ import ABuilder from 'src/models/builder/ABuilder'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 export default class PersonalDataBuilder extends ABuilder {
-    private entity = new PersonalData()
+    private personalData = new PersonalData()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildPersonalData = () => Object.assign(this.personalData, this.buildAEntity())
 
     setBirthdate = (value: string): this => {
-        this.entity.birthdate = value
+        this.personalData.birthdate = value
 
         return this
     }
 
     setCity = (value: string): this => {
-        this.entity.city = value
+        this.personalData.city = value
 
         return this
     }
 
     setEmail = (value: string): this => {
-        this.entity.email = value
+        this.personalData.email = value
 
         return this
     }
 
     setEntryDate = (value: string): this => {
-        this.entity.entryDate = value
+        this.personalData.entryDate = value
 
         return this
     }
 
     setFirstName = (value: string): this => {
-        this.entity.firstName = value
+        this.personalData.firstName = value
 
         return this
     }
 
     setLastName = (value: string): this => {
-        this.entity.lastName = value
+        this.personalData.lastName = value
 
         return this
     }
 
     setMobilePhoneCountryCode = (value: string): this => {
-        this.entity.mobilePhoneCountryCode = value
+        this.personalData.mobilePhoneCountryCode = value
 
         return this
     }
 
     setMobilePhoneNumber = (value: string): this => {
-        this.entity.mobilePhoneNumber = value
+        this.personalData.mobilePhoneNumber = value
 
         return this
     }
 
     setStreet = (value: string): this => {
-        this.entity.street = value
+        this.personalData.street = value
 
         return this
     }
 
     setStreetNumber = (value: string): this => {
-        this.entity.streetNumber = value
+        this.personalData.streetNumber = value
 
         return this
     }
 
     setSpecialNeeds = (value: string): this => {
-        this.entity.specialNeeds = value
+        this.personalData.specialNeeds = value
 
         return this
     }
 
     setTelePhoneCountryCode = (value: string): this => {
-        this.entity.telePhoneCountryCode = value
+        this.personalData.telePhoneCountryCode = value
 
         return this
     }
 
     setTelePhoneNumber = (value: string): this => {
-        this.entity.telePhoneNumber = value
+        this.personalData.telePhoneNumber = value
 
         return this
     }
 
     setTShirtSize = (value: string): this => {
-        this.entity.tShirtSize = value
+        this.personalData.tShirtSize = value
 
         return this
     }
 
     setWantsAmateursportslicense = (value: boolean): this => {
-        this.entity.wantsAmateursportslicense = value
+        this.personalData.wantsAmateursportslicense = value
 
         return this
     }
 
     setWantsBdrMembership = (value: boolean): this => {
-        this.entity.wantsBdrMembership = value
+        this.personalData.wantsBdrMembership = value
 
         return this
     }
 
     setZipCode = (value: string): this => {
-        this.entity.zipCode = value
+        this.personalData.zipCode = value
 
         return this
     }

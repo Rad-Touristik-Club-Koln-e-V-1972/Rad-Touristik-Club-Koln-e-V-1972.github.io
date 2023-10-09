@@ -23,7 +23,7 @@ Ich freue mich schon auf das nächste Jahr!
 Rolf Müller, Cito Hennef-Geistingen
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setAnswer("310 Teilnehmer waren's")
         .setCategory(EEvent.CTF)
@@ -39,7 +39,7 @@ Ich war ganz froh meinen Garmin dabei gehabt zu haben.
 Wie viele Teilnehmer hattet ihr eigentlich?
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setAnswer('Der Tacho wurde gefunden, der Finder hat sich bei uns gemeldet - danke nochmal dafür - und Jörg hat ihn heute (31.10.) auch schon zurück bekommen ...')
         .setCategory(EEvent.CTF)
@@ -62,7 +62,7 @@ Jörg Moritz
 `,
         )
         .setTitle('Feedback wegen CTF')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -75,7 +75,7 @@ Hat Spaß gemacht.
 Vielen Dank an das Orga-Team!!!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -90,7 +90,7 @@ ich fand es sehr spannend und man kam dadurch mit den Kollegen ins Gespräch.
 Also, wie gewohnt vom RTC, eine tolle Veranstaltung.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -103,7 +103,7 @@ Also, wie gewohnt vom RTC, eine tolle Veranstaltung.
 Sollte mehr davon bei uns hier geben 😊
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -111,7 +111,7 @@ Sollte mehr davon bei uns hier geben 😊
         .setName('Bernd Doelp')
         .setSource(ESource.Facebook)
         .setText('Vielen Dank für die schöne Tour und bis nächstes Jahr')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -124,7 +124,7 @@ Denke ich war der einzige mit einem Pedelec, habe sonst keins gesehen.
 Wir sehen uns dann 2017.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2016-10-29 20:30')
@@ -132,7 +132,7 @@ Wir sehen uns dann 2017.
         .setName('Marcus Wilden')
         .setSource(ESource.Facebook)
         .setText('Schöne Tour bei bestem Wetter')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-31 1:34')
@@ -164,7 +164,7 @@ Klar ist das eine kleine Kritik, die eher einen Denkanstoss geben soll und wobei
 Ich wollte es trotzdem loswerden, da wir uns gestern schon auf der Strecke darüber unterhalten haben.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-30')
@@ -178,7 +178,7 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
 `,
         )
         .setTitle('Wo bleiben die Vegetarier?')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-30')
@@ -186,7 +186,7 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
         .setName('Andreas Klemt')
         .setSource(ESource.Facebook)
         .setText('Sehr gut: Der Reiskuchen!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-30 14:46')
@@ -203,7 +203,7 @@ Schade, daß das vorhersagte Wetter eine niedrigeTeilnehmerzahl beschert hat, so
 LG Martin
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-30 13:04')
@@ -233,7 +233,7 @@ Martin Poettgen,
 Ruhrstadt Bochum
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 23:00')
@@ -247,7 +247,7 @@ Ruhrstadt Bochum
 Ohne Nachschlag gingen Hermann und ich da nicht wieder auf die Strecke.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 21:21')
@@ -261,7 +261,7 @@ Bin den Marathon gefahren und es hat einfach Spaß gemacht.
 Danke an alle Helfer und das Orga Team!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 20:50')
@@ -270,7 +270,7 @@ Danke an alle Helfer und das Orga Team!
         .setOrganization('FB-Gruppe RTF und CTF - Radtourenfahrten des BDR (Bund Deutscher Radfahrer e.V.)')
         .setSource(ESource.Facebook)
         .setText('Herrliche Strecke ')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 20:33')
@@ -283,7 +283,7 @@ Nächstes Jahr wird wieder die 1000er Marke geknackt 😀
 `,
         )
         .setTitle('Tolle Stullen, die 2.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 20:20')
@@ -303,7 +303,7 @@ Ein großes Lob und DANKE an alle Helfer des RTC Köln für diesen tollen Tag.
 Bis nächstes Jahr!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 19:46')
@@ -318,7 +318,7 @@ Ich freute mich, dass ich heute weder auf der 160 km Strecke noch auf dem anschl
 `,
         )
         .setTitle('Fabelhaft ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 19:11')
@@ -335,7 +335,7 @@ Chapeau!
 `,
         )
         .setTitle('Tolle Stullen ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -345,7 +345,7 @@ Chapeau!
         .setOrganization('RV Morgenstern')
         .setSource(ESource.Facebook)
         .setText('Wie gut ,dass ich den Apps heute nicht getraut habe und bei euch war 😀')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -353,7 +353,7 @@ Chapeau!
         .setName('Petra Ba')
         .setSource(ESource.Facebook)
         .setText('Ein super Tag, und super Wetter ...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 17:38')
@@ -361,7 +361,7 @@ Chapeau!
         .setName('Bernd Doelp')
         .setSource(ESource.Facebook)
         .setText('Das war eine schöne und anspruchsvolle Veranstaltung, vielen Dank.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -375,7 +375,7 @@ Einfach nur Top und alle die nur nach dem Wetterbericht gehen sind selber schuld
 Super Wetter mit reichlich Sonne auf knapp 200km ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 16:12')
@@ -388,7 +388,7 @@ Super Wetter mit reichlich Sonne auf knapp 200km ...
 Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 16:06')
@@ -404,7 +404,7 @@ Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
 ...super Wetter!
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -418,7 +418,7 @@ Die Strecke war klar und deutlich ausgeschildert und die Verpflegung war reichli
 Top! 👍
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -433,7 +433,7 @@ Mich hat am meisten beeindruckt wie gut die Strecke ausgeschildert war!
 Top! 👍
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29')
@@ -448,7 +448,7 @@ Was ist das? 😉
 `,
         )
         .setTitle('Tadel gibt es keinen!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 14:36')
@@ -462,7 +462,7 @@ Alles klasse, sogar das Wetter.
 Vielen Dank an den RTC.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 14:00')
@@ -470,7 +470,7 @@ Vielen Dank an den RTC.
         .setName('Patrock Cyclista')
         .setSource(ESource.Facebook)
         .setText('Danke für heute. Super Orga, schöne Strecke, gerne wieder.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2016-05-29 13:52')
@@ -485,5 +485,5 @@ Vielen Dank
 `,
         )
         .setTitle('Ihr habt mehr Teilnehmer verdient gehabt. Vor allem beim Marathon ...')
-        .build(),
+        .buildGuestbookEntry(),
 ]

@@ -18,5 +18,5 @@ Es mir sehr gut bei Euch gefallen.
 Liebe Grüße
 Marius`,
         )
-        .build(),
+        .buildGuestbookEntry(),
 ]

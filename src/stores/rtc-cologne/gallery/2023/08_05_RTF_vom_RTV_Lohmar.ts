@@ -10,9 +10,9 @@ export default new GalleryBuilder()
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/08_05_RTF_vom_RTV_Lohmar/WhatsApp_Image_2023-08-05_at_6.15.02_PM.avif')
             // TODO Migrate all pictures to avif and remove the "preview" feature.
             .setPreviewUrl('content.rtc-koeln.de/pages/gallery/2023/08_05_RTF_vom_RTV_Lohmar/WhatsApp_Image_2023-08-05_at_6.15.02_PM.avif')
-            .build(),
+            .buildGalleryEntry(),
     ])
     .setLocation('Lohmar')
     .setTitle('RTF vom RTV Lohmar')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/08_05_RTF_vom_RTV_Lohmar/WhatsApp_Image_2023-08-05_at_6.15.02_PM.avif')
-    .build()
+    .buildGallery()

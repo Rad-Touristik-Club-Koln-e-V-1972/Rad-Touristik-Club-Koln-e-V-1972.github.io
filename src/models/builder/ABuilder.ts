@@ -1,7 +1,7 @@
 import AEntity from 'src/models/entities/AEntity'
 
 export default abstract class ABuilder {
-    protected aEntity = new AEntity()
+    private aEntity = new AEntity()
 
     setId = (value: string): this => {
         this.aEntity.id = value
@@ -9,7 +9,7 @@ export default abstract class ABuilder {
         return this
     }
 
-    build() {
+    buildAEntity() {
         return this.aEntity
     }
 }

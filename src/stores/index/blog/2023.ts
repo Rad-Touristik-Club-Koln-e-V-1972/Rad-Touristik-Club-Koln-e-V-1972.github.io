@@ -28,7 +28,7 @@ Danke an Jürgen, der die Tour geleitet und den ein oder anderen Höhenmeter mit
 Fazit: Mega Wochenende. 🎉`,
         )
         .setTitle('Allein … in Polch oder die 3 Strecken des Wochenendes 🚴‍♂️🚴‍♂️')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['ac86b04d-b2b1-4f2f-a197-ef78eea9f8b4'])
         .setDate('2023-08-20')
@@ -46,7 +46,7 @@ HERZLICHEN GLÜCKWUNSCH, liebe Lövenicher.
 Und wie ihr das mit dem ☀️Wetter☀️ hingekriegt habt, könnt ihr uns bitte für unsere Forsbachtour am 2. Juni 2024 verraten. 😉🤗`,
         )
         .setTitle('Großes RTC-Aufgebot in Lövenich 🚴‍♀️')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['aced9fe7-38c6-4cba-8572-c16e47670388'])
         .setDate('2023-08-13')
@@ -76,7 +76,7 @@ Für nächstes Jahr wünschen wir euch ein komplettes Wochenende voller Sonnensc
 ☀️ Wir kommen wieder!`,
         )
         .setTitle('Auf und ab')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['6a72b056-6c53-40e7-ae87-872938b7824e'])
         .setDate('2023-08-05')
@@ -98,7 +98,7 @@ Ein besonderes Lob gilt der netten Mannschaft vom RTV Lohmar, die diese schöne 
 LG Klaus`,
         )
         .setTitle('RTF vom RTV Lohmar')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['d8946223-d4f6-4095-bf84-6956af878a2c'])
         .setDate('2023-07-30')
@@ -125,7 +125,7 @@ Ihr seid eine tolle Truppe, habt wunderschöne Strecken ausgesucht und die Verpf
 Nur über das Wetter müssen wir nächstes Jahr nochmal reden.🤪🥰`,
         )
         .setTitle('REGEN-RTF in Siegburg')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['9aa16b1c-9a90-4723-b586-65e51575bd89'])
         .setDate('2023-07-14')
@@ -153,7 +153,7 @@ Fazit: Der RTC Köln ist schon ne tolle Truppe und ein Verein, der Laune macht. 
 Eure Diana`,
         )
         .setTitle('3 tolle Tage mit dem RTC Köln - inkl. geführte Moselgenusstour')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['4bfc4b0b-d7c1-44e6-9d4f-96cb4d1833e7'])
         .setDate('2023-07-09')
@@ -175,7 +175,7 @@ Toll gemacht, ihr beiden. 🎉
 Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe sind und wunderschöne Strecken ausgesucht haben!`,
         )
         .setTitle('Condor-Flug bei 35 Grad')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['2450bf87-cec4-4914-9b6e-ff241819c414'])
         .setDate('2023-07-02')
@@ -196,7 +196,7 @@ aber vor allem die gemeinsame Ausfahrt zu zehnt, war ein absolutes Highlight die
 Und das nicht nur sonntags. 😉😍`,
         )
         .setTitle('Tolle Eifelrunde zu zehnt')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['2807edbd-f491-43ad-9a1e-d33bdce5aec3'])
         .setDate('2023-06-25')
@@ -221,7 +221,7 @@ Sport ist eben im Team und im Verein am schönsten. 😘
 Danke, RTC Rodenkirchen, für die schönen ausgeschilderten Strecken und Eure Gastfreundschaft.`,
         )
         .setTitle('30 Grad und es war noch heißer')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['732a5c32-d90f-4b61-be01-640d19757c76'])
         .setDate('2023-06-24')
@@ -240,7 +240,7 @@ Hier fehlte zur Eindeutigkeit der Streckenführung noch ein Trennungsschild.
 Trotz der sonst guten Organisation und den schönen Strecken hatte der RSC leider nur 180 TN an die Erft locken können.`,
         )
         .setTitle('Die Sternfahrt zur RTF nach Kerpen')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['1db3f0d8-dc8d-421d-83fd-505d69d8ea73'])
         .setDate('2023-06-11')
@@ -276,7 +276,7 @@ Die Strecke war flach und die Verpflegung hat noch Luft nach oben.
 Trotzdem wieder 110 km auf der Uhr. 🤗“`,
         )
         .setTitle('VfB Schrecksbach: Ein empfehlenswertes Radsport-Event der familiären Art')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['4ddfb09a-bc1b-42d9-bf73-5a0bb7ff1978'])
         .setDate('2023-06-05')
@@ -295,7 +295,7 @@ Dann halt eigene Voräte plündern und 3 Stunden in der 24h Tankstelle bis Sonne
 ➡️ Frank, Du bist der Beste. Hut ab‼️`,
         )
         .setTitle("Frank's Amsterdam Tour")
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['6ee17200-d1d3-4273-8777-885a3f946912'])
         .setDate('2023-05-31')
@@ -323,7 +323,7 @@ Wer von euch nimmt die Herausforderung an und verbringt einen Urlaubstag auf dem
 Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`,
         )
         .setTitle('Résumé 51. Forsbachtour 2023')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['e2ab13b0-d2f7-482b-864c-f5affec8863c'])
         .setDate('2023-05-24')
@@ -338,7 +338,7 @@ Wir freuen uns auf Euch. 🎉
 Euer RTC Köln e.V.`,
         )
         .setTitle('➡️ Tipp Nummer 3')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['3013dff8-2924-458e-b990-dc9a8871077a'])
         .setDate('2023-05-23')
@@ -354,7 +354,7 @@ Wir freuen uns auf Euch. 🤗
 Euer RTC Köln e.V.`,
         )
         .setTitle('Vintage-Bike-Wettbewerb')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['91b934e0-8a3a-4934-8965-8a1bf7beae87'])
         .setDate('2023-05-22')
@@ -374,14 +374,14 @@ erhalten.
 *nur für Teilnehmer:innen mit Teilnehmerbändchen`,
         )
         .setTitle('rtckoeln 👍TIPP Nummer 2')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['c96345be-6fba-4d03-b0f1-5ee71e0fed12'])
         .setDate('2023-05-19')
         .setId('e353d230-eb2b-4b6f-96f8-853c2d1c599e')
         .setText('Der RTC Köln e.V. in der Mai-Ausgabe des Stadtmagazins „Porz im Blick“. 🤗👍')
         .setTitle('Porz im Blick - Maiausgabe')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['57987c1c-d899-4f5c-93ea-fdacfebfb7c9'])
         .setDate('2023-05-15')
@@ -402,7 +402,7 @@ Hier vorab eine kleine Auswahl der hochwertigen Preise und Gewinne.
 In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`,
         )
         .setTitle('Gewinne und Preise auf der Forsbachtour in vier Kategorien')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['468f80a4-f5e9-4bd4-b638-53cb5675e496'])
         .setDate('2023-05-14')
@@ -419,7 +419,7 @@ Leider waren auch hier nur ca. 400 TN.“ 🤷🏼‍♂️
 Danke an den RCB für die tolle Strecke und die Organisation 👍`,
         )
         .setTitle('RTF Campus Bonn')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['2930ebbb-07ea-41f9-bd56-73b3425c4284'])
         .setDate('2023-05-14')
@@ -438,7 +438,7 @@ Bei km 204 km hat ich noch 28,4 Schnitt.“
 Super Leistung, Frank!`,
         )
         .setTitle('Paris-Brest-Paris Qualifikation')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['738750b9-1dfd-4226-abdf-a50235834c77'])
         .setDate('2023-05-13')
@@ -452,7 +452,7 @@ Ein toller RTF-Tag auf super schönen verkehrsarmen Straßen in wunderschöner E
 DANKE an den RSC Erftstadt!`,
         )
         .setTitle('Sonne - Hagel - Sonne')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['2b5902f1-77bc-467e-baad-20ae94e4c08a'])
         .setDate('2023-05-09')
@@ -490,7 +490,7 @@ https://www.rheinstart.org/voting/voting-fruehjahr-2023/rauf-aufs-rad-mit-dem-rt
 Rauf aufs Rad mit dem RTC Köln e.V. - Eins von vielen gemeinnützigen Projekten RheinStart`,
         )
         .setTitle('Rauf aufs Rad mit dem RTC Köln e.V.')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['9f754e63-1819-4e8e-9857-8562eedc9cc8'])
         .setDate('2023-05-06')
@@ -504,7 +504,7 @@ Eine rundum schöne RTF.
 Danke, Nievenheim. 🤗`,
         )
         .setTitle('6. Mai: RTF Nievenheim')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['52d3d0de-a776-4ca6-8e80-a5e80d364fc7'])
         .setDate('2023-05-05')
@@ -518,7 +518,7 @@ Selbst die ständigen Regenschauern konnten uns nicht von unserem neuen Konzept 
 Wir freuen uns schon auf den 4.6., wenn wir uns nach der Forsbachtour (ist übrigens am 28. Mai 😉) erneut und entspannt im Garten treffen. 🎉`,
         )
         .setTitle('🆕 RTC-Versammlung 2.0 🏡')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['220b9dc9-8845-4976-8206-df382373d031'])
         .setDate('2023-05-01')
@@ -536,7 +536,7 @@ Es gibt tolle Überraschungen und allerlei Neues.
 Und natürlich die selbstgebackenen Power-Reisriegel. 💪`,
         )
         .setTitle('1. Mai: Von wegen dicker Kopf vom Reinfeiern')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['d75f2e09-17d6-48bc-b640-1431ca581f74'])
         .setDate('2023-04-22')
@@ -555,7 +555,7 @@ Im Ziel gab es die berühmte Gurkenmedaille und die persönliche Urkunde.
 TOLLE LEISTUNG!👍`,
         )
         .setTitle('Unsere erste Marathoni in 2023')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['2d739f34-e77d-4bff-93dd-d7ebcf7f2a2c'])
         .setDate('2023-04-16')
@@ -570,7 +570,7 @@ Schön war‘s.
 🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️`,
         )
         .setTitle('🤔 Kennt Ihr schon das Bergische Karussell?')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['7c66e8f8-2dbd-4af8-9641-65ea0dd69484'])
         .setDate('2023-04-09')
@@ -589,7 +589,7 @@ Wir bieten
 ➡️ Mehr Infos demnächst hier und auf unserer Forsbachtour am 28. Mai 2023 🎉`,
         )
         .setTitle('➡️ LUST AUF WAS NEUES? 🚴‍♀️')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['db15854a-bfad-486d-9a6d-916946b4050b'])
         .setDate('2023-03-17')
@@ -605,7 +605,7 @@ Start und Ziel nach ca. 80 km: Die Schmitzebud.
 🎉 Wer von Euch ist dabei?`,
         )
         .setTitle('Frühlingsfahrt nach Lindlar')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['1c843630-1346-4af8-ad7b-10009b1b694e'])
         .setDate('2023-03-03')
@@ -616,7 +616,7 @@ Unser Sportwart, Klaus Dünkelmann, bedankte sich im Namen des Vereins bei Wolfg
 Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgabe und grüßt alle unsere treuen Follower und Radsportfreunde.`,
         )
         .setTitle('Generationenwechsel')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['ac7d6f63-20c4-4088-ab8e-2c7030c9fd44'])
         .setDate('2023-02-11')
@@ -629,7 +629,7 @@ Die Hennefer hätten mehr Teilnehmer:innen verdient gehabt, denn es war richtig 
 Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`,
         )
         .setTitle('😃 RTC GOES CTF️')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['4d6e43a0-3923-4c94-a60d-d7c2dda20905'])
         .setDate('2023-02-11')
@@ -642,7 +642,7 @@ Es ging in die Voreifel mit einem Aufwärmkaffee (und anderen Kalorien) in Heime
 😄 Danke,Albert, dass Du uns gefordert hast. Hat Spaß gemacht.`,
         )
         .setTitle('Wintertraining d‘Albert')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['7626953c-6efa-44f8-af4b-29cbf1e408f0'])
         .setDate('2023-02-04')
@@ -655,7 +655,7 @@ Es wurden für die meisten von uns 60 km.
 Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`,
         )
         .setTitle('Kurzentschlossene RTCler 🚴🚴‍♀️🚴‍♂️🚴🚴‍♀️🚴🚴‍♀️')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['c8136f59-6fea-468d-914d-31a828e1a184'])
         .setDate('2023-01-22')
@@ -672,7 +672,7 @@ Ihr Fazit: „Hat sehr viel Spaß gemacht und das Rad ist auch wieder sauber gew
 Toll gemacht, Burghild! Starke Leistung. 💪`,
         )
         .setTitle('Sonntag, Schnee, Kälte')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['52c09122-f041-4b5b-8ae1-a581ccf77dd4'])
         .setDate('2023-01-19')
@@ -689,7 +689,7 @@ Aber auch Manfreds Frau, Hanni Marquardt, wurde für ihre 40-jährige Mitgliedsc
 Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren Pioniergeist.`,
         )
         .setTitle('Ehrung Manfred & Hanni Marquardt')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['bd6f7533-efaa-45f9-895f-11a419363bfa'])
         .setDate('2023-01-07')
@@ -705,5 +705,5 @@ Kommt und fahrt mit dem RTC Köln e.V.!
 Wir freuen uns auf Euch. 😊`,
         )
         .setTitle('Wintertraining 2023')
-        .build(),
+        .buildBlogEntry(),
 ]

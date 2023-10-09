@@ -16,12 +16,15 @@ export default new GalleryBuilder()
         new GalleryEntryBuilder()
             .setId('dc645f0f-eca8-470c-a629-45cb5b8e04a4')
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer1-2022.png')
-            .build(),
+            .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('cfda5413-aed1-4a1b-8d10-0dec402f15b1')
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/rtc-forsbach-tour-flyer2-2022.png')
-            .build(),
-        new GalleryEntryBuilder().setId('0b9650bd-3449-4d9d-b17f-7cdad2d78af5').setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Zugbeutel.jpeg').build(),
+            .buildGalleryEntry(),
+        new GalleryEntryBuilder()
+            .setId('0b9650bd-3449-4d9d-b17f-7cdad2d78af5')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/Zugbeutel.jpeg')
+            .buildGalleryEntry(),
     ])
     .setImages(K1)
     .setImages(K2)
@@ -33,4 +36,4 @@ export default new GalleryBuilder()
     .setTitle('50. Forsbach-Tour')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2022/05_29_RTF_50/preview/preview.rtc-forsbach-tour-flyer1-2022.png')
     .setYoutubeVideoIds('bx0zAC-A-fg')
-    .build()
+    .buildGallery()

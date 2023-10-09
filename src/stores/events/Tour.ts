@@ -15,25 +15,73 @@ import EProfile from 'src/models/enums/events/tours/EProfile'
 export default defineStore('tour', () => {
     const events = ref<Event[]>([
         new EventBuilder()
+            .setCategory(EEvent.RTF)
             .setFees(
-                new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).build(),
+                new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
                 new FeeBuilder()
                     .setId('f7116627-33c3-4b87-a77e-fed528bafa63')
                     .setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)')
                     .setPrice(6)
-                    .build(),
+                    .buildFee(),
                 new FeeBuilder()
                     .setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5')
                     .setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)')
                     .setPrice(8)
-                    .build(),
-                new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).build(),
+                    .buildFee(),
+                new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
             )
             .setId('2048a7f0-315a-43d7-885a-23f388601052')
-            .setTimes(
-                new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').build(),
-                new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').build(),
+            .setImages(
+                new GalleryEntryBuilder()
+                    .setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb')
+                    .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg')
+                    .buildGalleryEntry(),
             )
+            .setLastChange('2023-05-25')
+            .setLocation(
+                new ControlBuilder()
+                    .setCity('Köln-Zündorf')
+                    .setId('9644f162-29c8-40ef-a37f-3eac5e94d8c5')
+                    .setStreet('Heerstraße 7')
+                    .setTitle('Schulzentrum Zündorf')
+                    .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
+                    .setZipCode('51143')
+                    .buildControl(),
+            )
+            .setPopup(
+                `Unsere FORSBACHTOUR 2024 ist am 2. Juni! 🚴🎉
+
+➡️ Nähere Infos folgen später.
+
+Aber Ihr könnt Euch den Termin ja schon mal merken. 😉🫶
+
+Euer RTC Köln e.V. 1972`,
+                'Hinweis',
+            )
+            .setText(
+                `Liebe Radsportlerinnen und Radsportler,
+
+wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
+Wie ihr wisst, liegt ein ereignisreiches und intensives Jubiläumsjahr hinter uns.
+Um uns eine Verschnaufpause zu gönnen, haben wir uns entschlossen, in diesem Jahr nur drei Strecken anzubieten.
+Aber auch diese Strecken sind wunderschön und lohnen sich, unter die Räder genommen zu werden.
+
+Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung.
+Dies gilt für die Kontrollstellen genauso wie für den Start-/Zielbereich.
+Wir möchten den früheren Kontrollschluss dafür nutzen, mit Euch den Nachmittag auf dem Schulhof zu genießen.
+Bringt also Zeit und Hunger mit.
+
+Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
+
+Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
+
+Euer RTC Köln e.V.`,
+            )
+            .setTimes(
+                new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').buildTime(),
+                new TimeBuilder().setId('b8cdb12d-037b-4522-894e-48425a8218c0').setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
+            )
+            .setTitle('Die Forsbach-Tour')
             .setTracks(
                 new TrackBuilder()
                     .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
@@ -48,7 +96,7 @@ Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.
 
 Startzeiten: 8 Uhr und ca. 11 Uhr`,
                     )
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setId('19564df0-3abb-4d67-b262-2ff357826470')
                     .setName('Vor der Tour')
@@ -57,7 +105,7 @@ Startzeiten: 8 Uhr und ca. 11 Uhr`,
 
 Für die Frühaufsteher unter euch bieten wir ab 07.30 Uhr ein Frühstück in der Aula an.`,
                     )
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setId('bb9e11a4-f627-41eb-a288-34d0d4acfc66')
                     .setName('Während der Tour')
@@ -69,7 +117,7 @@ Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
     <li>Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.</li>
     <li>Wir kommen euch abholen.</li></ul>`,
                     )
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setId('d10f9888-866c-4e64-8392-541e09a7b543')
                     .setName('Nach der Tour')
@@ -83,7 +131,7 @@ Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
 Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
                     )
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
                     .setName('Alle Strecken')
@@ -109,7 +157,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
     <figcaption>Kontrolle 1 - Pohlhausen</figcaption>
 </figure>`,
                     )
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setControls(1)
                     .setHeight(390)
@@ -128,7 +176,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
                         Komoot: new URL('https://www.komoot.de/tour/676899286'),
                     })
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setControls(2)
                     .setHeight(740)
@@ -162,7 +210,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                         'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
                         Komoot: new URL('https://www.komoot.de/tour/676927332'),
                     })
-                    .build(),
+                    .buildTrack(),
                 new TrackBuilder()
                     .setControls(3)
                     .setHeight(1440)
@@ -201,63 +249,29 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
                         'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 120km.gpx'),
                         Komoot: new URL('https://www.komoot.de/tour/1067049435'),
                     })
-                    .build(),
+                    .buildTrack(),
             )
-            .setCategory(EEvent.RTF)
-            .setImages(
-                new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg').build(),
-            )
-            .setLastChange('2023-05-25')
-            .setLocation(
-                new ControlBuilder()
-                    .setCity('Köln-Zündorf')
-                    .setId('9644f162-29c8-40ef-a37f-3eac5e94d8c5')
-                    .setStreet('Heerstraße 7')
-                    .setTitle('Schulzentrum Zündorf')
-                    .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
-                    .setZipCode('51143')
-                    .build(),
-            )
-            .setPopup(
-                `Unsere FORSBACHTOUR 2024 ist am 2. Juni! 🚴🎉
-
-➡️ Nähere Infos folgen später.
-
-Aber Ihr könnt Euch den Termin ja schon mal merken. 😉🫶
-
-Euer RTC Köln e.V. 1972`,
-                'Hinweis',
-            )
-            .setText(
-                `Liebe Radsportlerinnen und Radsportler,
-
-wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
-Wie ihr wisst, liegt ein ereignisreiches und intensives Jubiläumsjahr hinter uns.
-Um uns eine Verschnaufpause zu gönnen, haben wir uns entschlossen, in diesem Jahr nur drei Strecken anzubieten.
-Aber auch diese Strecken sind wunderschön und lohnen sich, unter die Räder genommen zu werden.
-
-Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung.
-Dies gilt für die Kontrollstellen genauso wie für den Start-/Zielbereich.
-Wir möchten den früheren Kontrollschluss dafür nutzen, mit Euch den Nachmittag auf dem Schulhof zu genießen.
-Bringt also Zeit und Hunger mit.
-
-Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
-
-Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
-
-Euer RTC Köln e.V.`,
-            )
-            .setTitle('Die Forsbach-Tour')
-            .build(),
+            .buildEvent(),
     ])
 
     const permanents = ref<Permanent[]>([
         new PermanentBuilder()
+            .setCategory(EEvent.Permanente)
+            .setControls(
+                new ControlBuilder()
+                    .setCity('Lindlar')
+                    .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
+                    .setStreet('Kölner Straße 23')
+                    .setTitle('Aral-Tankstelle')
+                    .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
+                    .setZipCode('51789')
+                    .buildControl(),
+            )
             .setHeight(700)
             .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
+            .setLastChange('2022-01-12')
             .setLength(71)
             .setProfile(EProfile.Wellig)
-            .setCategory(EEvent.Permanente)
             .setText(
                 `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
 Es handelt sich um landschaftlich schöne Strecken mit herrlichen Rundblicken über Köln und das Bergische Land.
@@ -301,25 +315,25 @@ Euer RTC Köln e.V. 1972`,
                 Komoot: new URL('https://www.komoot.de/tour/678486665'),
                 'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
             })
+            .buildPermanent(),
+        new PermanentBuilder()
+            .setActive(false)
+            .setCategory(EEvent.Permanente)
             .setControls(
                 new ControlBuilder()
-                    .setCity('Lindlar')
-                    .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
-                    .setStreet('Kölner Straße 23')
-                    .setTitle('Aral-Tankstelle')
-                    .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
-                    .setZipCode('51789')
-                    .build(),
+                    .setCity('Kürten')
+                    .setId('32851936-b351-4b4d-a71f-03e3138a8864')
+                    .setStreet('Wipperfürther Straße 360')
+                    .setTitle('Esso-Tankstelle')
+                    .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
+                    .setZipCode('51515')
+                    .buildControl(),
             )
-            .setLastChange('2022-01-12')
-            .build(),
-        new PermanentBuilder()
             .setHeight(700)
             .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
+            .setLastChange('2023-01-27')
             .setLength(72)
             .setProfile(EProfile.Wellig)
-            .setCategory(EEvent.Permanente)
-            .setActive(false)
             .setText(
                 `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
@@ -368,18 +382,7 @@ Euer RTC Köln e.V. 1972`,
                 Komoot: new URL('https://www.komoot.de/tour/678483689'),
                 'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
             })
-            .setControls(
-                new ControlBuilder()
-                    .setCity('Kürten')
-                    .setId('32851936-b351-4b4d-a71f-03e3138a8864')
-                    .setStreet('Wipperfürther Straße 360')
-                    .setTitle('Esso-Tankstelle')
-                    .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
-                    .setZipCode('51515')
-                    .build(),
-            )
-            .setLastChange('2023-01-27')
-            .build(),
+            .buildPermanent(),
     ])
 
     const allPermanents = computed(() => permanents.value)

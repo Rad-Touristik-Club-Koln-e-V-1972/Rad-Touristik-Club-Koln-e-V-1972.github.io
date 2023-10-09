@@ -17,7 +17,7 @@ Es waren alle super nett!!
 Es war eine sehr schöne Veranstaltung.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2018-10-28 00:00')
@@ -29,7 +29,7 @@ Es war eine sehr schöne Veranstaltung.
 Schön, dass Ihr die Veranstaltung gewuppt bekommt und sie auch weiter macht ...
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.CTF)
         .setDate('2018-10-27 16:36')
@@ -48,7 +48,7 @@ Viele Grüße
 Bernd
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-28 17:00')
@@ -56,7 +56,7 @@ Bernd
         .setName('Profitrise Sports')
         .setSource(ESource.Facebook)
         .setText('Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-28 17:00')
@@ -64,7 +64,7 @@ Bernd
         .setName('Petra Humbach')
         .setSource(ESource.Facebook)
         .setText('Schade, da bietet ihr an, ab Pohlhausen zu starten und dann gibt es ab 9:15 Uhr keine Startkarten mehr.')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-28 17:00')
@@ -77,7 +77,7 @@ Streckenführung, Verpflegung, Personal ... alles TOP.
 Danke für die Gastfreundschaft.
                 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-28 17:00')
@@ -94,7 +94,7 @@ Hat riesig Spaß gemacht bei euch zu fahren.
 Nächstes Jahr wieder.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-28 17:00')
@@ -108,7 +108,7 @@ Alles bestens.
 
 161 km RTF Strecke und dann nach Hause waren dann für mich bei meiner ersten RTF in diesem Jahr ein Marathon ... 😊`,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-27 17:01')
@@ -129,7 +129,7 @@ Harry
 `,
         )
         .setTitle('Feedback wegen ... RTF 27.05.2018')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2018-05-27 13:54')
@@ -149,5 +149,5 @@ LG Dirk Heppert- RSV Staubwolke Refrath- Bezirksmeister 2017 Köln-Bonn
 `,
         )
         .setTitle('Feedback wegen ...RTF 2018')
-        .build(),
+        .buildGuestbookEntry(),
 ]

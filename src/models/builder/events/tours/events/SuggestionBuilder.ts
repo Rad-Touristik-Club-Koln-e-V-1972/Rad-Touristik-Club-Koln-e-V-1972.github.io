@@ -2,24 +2,24 @@ import ABuilder from 'src/models/builder/ABuilder'
 import Suggestion from 'src/models/entities/events/tours/events/Suggestion'
 
 export default class SuggestionBuilder extends ABuilder {
-    private entity = new Suggestion()
+    private suggestion = new Suggestion()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildSuggestion = () => Object.assign(this.suggestion, this.buildAEntity())
 
     setText = (value: string): this => {
-        this.entity.text = value.replaceAll('\n', '<br>')
+        this.suggestion.text = value.replaceAll('\n', '<br>')
 
         return this
     }
 
     setTitle = (value: string): this => {
-        this.entity.title = value
+        this.suggestion.title = value
 
         return this
     }
 
     setUrl = (value: string): this => {
-        this.entity.url = new URL(`https://${value}`)
+        this.suggestion.url = new URL(`https://${value}`)
 
         return this
     }

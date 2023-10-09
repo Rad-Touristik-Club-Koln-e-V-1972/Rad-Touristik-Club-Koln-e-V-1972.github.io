@@ -3,18 +3,18 @@ import NewsEntry from 'src/models/entities/index/NewsEntry'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class NewsEntryBuilder extends ABuilder {
-    private entity = new NewsEntry()
+    private newsEntry = new NewsEntry()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
 
     setImage(value: GalleryEntry): this {
-        this.entity.image = value
+        this.newsEntry.image = value
 
         return this
     }
 
     setText(value: string): this {
-        this.entity.text = value.replaceAll('\n', '<br>')
+        this.newsEntry.text = value.replaceAll('\n', '<br>')
 
         return this
     }

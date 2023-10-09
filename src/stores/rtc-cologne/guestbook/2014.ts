@@ -20,7 +20,7 @@ Viele liebe Grüße
 Helga
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-28 12:36')
@@ -60,7 +60,7 @@ Bis zum nächsten Jahr
 Jessica
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-27 13:10')
@@ -92,7 +92,7 @@ velotoerist
 `,
         )
         .setTitle('RM')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-27 12:59')
@@ -108,7 +108,7 @@ Helmut Hane
 `,
         )
         .setTitle('Prima RTF')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-27 9:28')
@@ -129,7 +129,7 @@ Gruß
 Marco Gerlach
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-27 9:26')
@@ -165,7 +165,7 @@ http://scan.bike
 `,
         )
         .setTitle('erfolgreicher Einsatz von scan&bike')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-27 6:49')
@@ -198,7 +198,7 @@ Norbert
 `,
         )
         .setTitle('Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder .')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 20:16')
@@ -217,7 +217,7 @@ Jörg
 `,
         )
         .setTitle('Marathon')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 16:57')
@@ -238,7 +238,7 @@ M.Reckter
 RTF Koblenz
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 13:08')
@@ -260,7 +260,7 @@ Claudia Braun
 Union Biesfeld Triathlon
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 12:50')
@@ -281,7 +281,7 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
 `,
         )
         .setTitle('Wunderbare Veranstaltung')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 12:43')
@@ -303,7 +303,7 @@ Dirk
 PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Meinungen „reingestellt“ wurden.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 10:55')
@@ -339,7 +339,7 @@ Nachdem wir alle von eurem Team angesprochen hatten und alle Mitarbeiter suchten
 Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 10:49')
@@ -357,7 +357,7 @@ LG Michaela
 vom VfB Polch Abtl. Radsport.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 10:33')
@@ -388,7 +388,7 @@ Frank
 `,
         )
         .setTitle('Feedback wegen Forsbach Tour 24.05.14')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 8:54')
@@ -403,7 +403,7 @@ ich/wir wollte/n nur sagen, dass ...
 vielen Dank für die Orga und die Auswahl der schönen Strecke.
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 8:15')
@@ -418,7 +418,7 @@ Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaa
 nächstes Jahr will ich wieder meine Banane bekommen ;)
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 7:24')
@@ -439,7 +439,7 @@ Stefan Schneider
 1.Vorsitzender RV Morgenstern Berrenrath
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-26 7:06')
@@ -466,7 +466,7 @@ Norbert
 `,
         )
         .setTitle('Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen...')
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setCategory(EEvent.RTF)
         .setDate('2014-05-25 19:44')
@@ -486,7 +486,7 @@ Viele Grüße und den besten Dank an alle die zum Gelingen beigetragen haben
 Jürgen Ruttkowski
 `,
         )
-        .build(),
+        .buildGuestbookEntry(),
     new GuestbookEntryBuilder()
         .setDate('2014-01-17 11:09')
         .setId('5fd0a8c3-e1b3-43d3-8926-adae665ced29')
@@ -516,5 +516,5 @@ Roland Schultz
 `,
         )
         .setTitle('Feedback wegen ... Roland Schultz')
-        .build(),
+        .buildGuestbookEntry(),
 ]

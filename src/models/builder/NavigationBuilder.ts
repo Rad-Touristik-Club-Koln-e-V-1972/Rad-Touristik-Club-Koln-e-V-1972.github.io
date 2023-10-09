@@ -2,43 +2,43 @@ import Navigation from 'src/models/entities/Navigation'
 import ABuilder from 'src/models/builder/ABuilder'
 
 export default class NavigationBuilder extends ABuilder {
-    protected entity = new Navigation()
+    private navigation = new Navigation()
 
-    build = () => Object.assign(this.entity, super.build())
+    buildNavigation = () => Object.assign(this.navigation, this.buildAEntity())
 
     setChildren = (...value: Navigation[]): this => {
-        this.entity.children = value
+        this.navigation.children = value
 
         return this
     }
 
     setColor = (value: string): this => {
-        this.entity.color = value
+        this.navigation.color = value
 
         return this
     }
 
     setIcon = (value: string): this => {
-        this.entity.icon = value
+        this.navigation.icon = value
 
         return this
     }
 
     setTitle = (value: string): this => {
-        this.entity.title = value
+        this.navigation.title = value
 
         return this
     }
 
     setTo = (name: string): this => {
-        this.entity.to = { name }
+        this.navigation.to = { name }
 
         return this
     }
 
     setUrl = (value: string): this => {
-        this.entity.target = '_blank'
-        this.entity.url = new URL(`https://${value}`)
+        this.navigation.target = '_blank'
+        this.navigation.url = new URL(`https://${value}`)
 
         return this
     }

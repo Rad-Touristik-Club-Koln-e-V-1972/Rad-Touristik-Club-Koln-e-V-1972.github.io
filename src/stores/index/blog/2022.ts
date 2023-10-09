@@ -14,7 +14,7 @@ Dank einiger Höhenmeter ist es einem dann auch bei kühlen Temperaturen wohlig 
 Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schreibt mir gerne ➡️ <a href='mailto:PR@rtc-koeln.de'>PR@rtc-koeln.de</a> 😃`,
         )
         .setTitle('Wintertraining 2022')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb'])
         .setDate('2022-10-29')
@@ -33,7 +33,7 @@ Der RTC Köln e.V. hat mit dieser Abschlussveranstaltung sein Jubiläumsjahr wü
 Euer RTC Köln e.V. ☺️`,
         )
         .setTitle('RTC-Feier zum 50. Jubiläum')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs({ 'cda4c7e0-a266-44e4-923d-afe6dc11deb4': 'Start & Ziel' })
         .setDate('2022-10-22')
@@ -51,7 +51,7 @@ Wir sehen uns. 😃
 Euer RTC Köln e.V.`,
         )
         .setTitle('7. CTF')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7'])
         .setDate('2022-10-08')
@@ -68,14 +68,14 @@ Ein großes Dankeschön an die Veranstalter, die uns eine so schöne Abschlussto
 Wir kommen nächstes Jahr wieder. 😘️`,
         )
         .setTitle('Saisonabschluss - VfR Büttgen')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['4a0c9096-eeae-4bee-9eca-068e616feed4'])
         .setDate('2022-09-25')
         .setId('b36dd179-6525-4877-978e-5ecdc44dfa54')
         .setText('Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️')
         .setTitle('Herbsttour - Lohmar-Wahlscheid')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['284dae72-4bf4-49fc-9ff1-a7b1263946f0'])
         .setDate('2022-08-27')
@@ -94,7 +94,7 @@ Ein herzliches Dankeschön an die Veranstalter der RTF RheinEnergie für die sch
 Richtig toll, lieber Jürgen. 💪🚴`,
         )
         .setTitle('RTF GEW RheinEnergie')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setAlbumIDs(['fb982b9c-abf8-457c-b1f4-10b360bf235d'])
         .setDate('2022-08-13', '2022-08-14')
@@ -112,7 +112,7 @@ Ein herzliches Dankeschön geht unsererseits an beide Vereine.
 👍👍 Wir kommen wieder.`,
         )
         .setTitle('RTF Hennefer Hitzetage')
-        .build(),
+        .buildBlogEntry(),
     new BlogEntryBuilder()
         .setDate('2022-01-15')
         .setId('79297f2d-fa6a-4b67-a0c5-d51a77c09df6')
@@ -144,5 +144,5 @@ Aber es hat uns Spaß gemacht, sich wieder gemeinsam mit dem Rad zu bewegen, in 
 Klaus`,
         )
         .setTitle('Wintertraining')
-        .build(),
+        .buildBlogEntry(),
 ]

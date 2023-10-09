@@ -10,9 +10,9 @@ export default new GalleryBuilder()
         new GalleryEntryBuilder()
             .setId('e9f33ef3-288c-4a13-bcc6-bc5c7d25ad14')
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2009/07_01_RTF_37_Pressebericht_Koelner_Wochenspiegel.jpeg')
-            .build(),
+            .buildGalleryEntry(),
     )
     .setLocation('Köln')
     .setTitle('Pressebericht zur 37. Forsbach-Tour')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2009/preview/preview.07_01_RTF_37_Pressebericht_Koelner_Wochenspiegel.jpeg')
-    .build()
+    .buildGallery()
