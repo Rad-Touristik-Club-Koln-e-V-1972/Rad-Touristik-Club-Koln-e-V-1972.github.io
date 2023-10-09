@@ -99,7 +99,7 @@ devDependencies:
     version: 9.17.0(eslint@8.51.0)
   eslint-plugin-vuetify:
     specifier: ^1.1.0
-    version: 1.1.0(eslint@8.51.0)(vuetify@2.7.1)
+    version: 1.1.0(eslint@8.51.0)(vuetify@3.3.20)
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -137,8 +137,8 @@ devDependencies:
     specifier: ^1.8.18
     version: 1.8.18(typescript@5.2.2)
   vuetify:
-    specifier: ^2.7.1
-    version: 2.7.1(vue@2.7.14)
+    specifier: ^3.3.20
+    version: 3.3.20(typescript@5.2.2)(vue@2.7.14)
   webpack:
     specifier: ^4.47.0
     version: 4.47.0
@@ -8020,7 +8020,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vuetify@1.1.0(eslint@8.51.0)(vuetify@2.7.1):
+  /eslint-plugin-vuetify@1.1.0(eslint@8.51.0)(vuetify@3.3.20):
     resolution: {integrity: sha512-I1YRUCGkDqe8F7O0tdf63UZVKtk4734+8fzbZ24YIZKTTyQp/FIR0nSZYG8mPFhTWerzPta7oXNzliBOwP2XeQ==}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -8029,7 +8029,7 @@ packages:
       eslint: 8.51.0
       eslint-plugin-vue: 7.20.0(eslint@8.51.0)
       requireindex: 1.2.0
-      vuetify: 2.7.1(vue@2.7.14)
+      vuetify: 3.3.20(typescript@5.2.2)(vue@2.7.14)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -16085,6 +16085,29 @@ packages:
     peerDependencies:
       vue: ^2.6.4
     dependencies:
+      vue: 2.7.14
+    dev: true
+
+  /vuetify@3.3.20(typescript@5.2.2)(vue@2.7.14):
+    resolution: {integrity: sha512-7z3rv1j94WXO1y9CYQXygtCuct0bJNPao0T5no95c++atvPf5+WfgvnYK+XrMyjq4Y0xe6z5mhJfv9taeVelpQ==}
+    engines: {node: ^12.20 || >=14.13}
+    peerDependencies:
+      typescript: '>=4.7'
+      vite-plugin-vuetify: ^1.0.0-alpha.12
+      vue: ^3.2.0
+      vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: ^2.0.0-alpha.11
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vite-plugin-vuetify:
+        optional: true
+      vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+    dependencies:
+      typescript: 5.2.2
       vue: 2.7.14
     dev: true
 
