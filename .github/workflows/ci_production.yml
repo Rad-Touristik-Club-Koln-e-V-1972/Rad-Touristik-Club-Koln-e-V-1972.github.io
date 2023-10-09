@@ -26,7 +26,7 @@ jobs:
             - name: Deploy to website
               uses: SamKirkland/FTP-Deploy-Action@8a24039354ee91000cb948cb4a1dbdf1a1b94a3c # v4.3.4
               with:
-                  local-dir: .output/public/
+                  local-dir: dist/spa/
                   password: ${{ secrets.OVH_SFTP_PASSWORD }}
                   server: ${{ secrets.OVH_SFTP_SERVER }}
                   username: ${{ secrets.OVH_SFTP_USERNAME }}

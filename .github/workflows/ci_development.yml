@@ -45,7 +45,7 @@ jobs:
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
               uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c # v2
               with:
-                  path: ./dist/spa
+                  path: dist/spa/
     ci_dev_deploy:
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         needs: ci_dev
