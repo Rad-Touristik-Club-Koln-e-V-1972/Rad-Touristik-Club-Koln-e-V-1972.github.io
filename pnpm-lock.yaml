@@ -50,55 +50,55 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli':
-    specifier: ^17.7.2
+    specifier: 17.7.2
     version: 17.7.2
   '@commitlint/config-conventional':
-    specifier: ^17.7.0
+    specifier: 17.7.0
     version: 17.7.0
   '@quasar/app-vite':
-    specifier: ^1.6.2
+    specifier: 1.6.2
     version: 1.6.2(eslint@8.51.0)(pinia@2.1.6)(quasar@2.12.7)(vue-router@4.2.5)(vue@3.3.4)
   '@quasar/quasar-app-extension-qcalendar':
-    specifier: ^4.0.0-beta.16
+    specifier: 4.0.0-beta.16
     version: 4.0.0-beta.16
   '@types/mime':
-    specifier: ^3.0.2
+    specifier: 3.0.2
     version: 3.0.2
   '@types/node':
-    specifier: ^20.8.3
+    specifier: 20.8.3
     version: 20.8.3
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.7.4
+    specifier: 6.7.4
     version: 6.7.4(@typescript-eslint/parser@6.7.4)(eslint@8.51.0)(typescript@5.2.2)
   '@typescript-eslint/parser':
-    specifier: ^6.7.4
+    specifier: 6.7.4
     version: 6.7.4(eslint@8.51.0)(typescript@5.2.2)
   autoprefixer:
-    specifier: ^10.4.16
+    specifier: 10.4.16
     version: 10.4.16(postcss@8.4.30)
   commitlint:
-    specifier: ^17.7.2
+    specifier: 17.7.2
     version: 17.7.2
   eslint:
-    specifier: ^8.51.0
+    specifier: 8.51.0
     version: 8.51.0
   eslint-config-prettier:
-    specifier: ^9.0.0
+    specifier: 9.0.0
     version: 9.0.0(eslint@8.51.0)
   eslint-plugin-vue:
-    specifier: ^9.17.0
+    specifier: 9.17.0
     version: 9.17.0(eslint@8.51.0)
   husky:
-    specifier: ^8.0.3
+    specifier: 8.0.3
     version: 8.0.3
   lint-staged:
-    specifier: ^14.0.1
+    specifier: 14.0.1
     version: 14.0.1
   prettier:
-    specifier: ^3.0.3
+    specifier: 3.0.3
     version: 3.0.3
   typescript:
-    specifier: ^5.2.2
+    specifier: 5.2.2
     version: 5.2.2
 
 packages:
