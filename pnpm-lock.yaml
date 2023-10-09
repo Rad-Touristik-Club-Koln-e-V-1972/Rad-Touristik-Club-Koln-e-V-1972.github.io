@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.8.0
     version: 1.8.0
   vue-signature-pad:
-    specifier: ^2.0.5
-    version: 2.0.5
+    specifier: ^3.0.2
+    version: 3.0.2(vue@2.7.14)
 
 devDependencies:
   '@babel/core':
@@ -15981,9 +15981,11 @@ packages:
       source-map: 0.5.6
     dev: true
 
-  /vue-signature-pad@2.0.5:
-    resolution: {integrity: sha512-FLvJRmhSP/DVkg0W/tGcPZ4D0ZQlFxHgN1mjph6jt/59yLeTSv0zGGU133lfq9CkYMQ5DqN6rWujjL7Gnx7UPA==}
+  /vue-signature-pad@3.0.2(vue@2.7.14):
+    resolution: {integrity: sha512-o25o+lROfCmzASS2+fU8ZV801kV+D4/02zkZ+ez3NKeiUmbxW7kwlUf5oKQkvA+l7Ou9xGsGLsirBLch3jyX8A==}
     engines: {node: '>=12'}
+    peerDependencies:
+      vue: ^3.2.0
     dependencies:
       merge-images: 1.2.0
       signature_pad: 3.0.0-beta.4

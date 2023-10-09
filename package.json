@@ -23,7 +23,7 @@
         "pinia": "^2.1.6",
         "postleitzahlen": "^1.0.0",
         "vue-html2pdf": "^1.8.0",
-        "vue-signature-pad": "^2.0.5"
+        "vue-signature-pad": "^3.0.2"
     },
     "devDependencies": {
         "@babel/core": "^7.23.0",
