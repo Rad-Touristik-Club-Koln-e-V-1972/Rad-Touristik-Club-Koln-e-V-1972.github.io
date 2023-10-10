@@ -2,7 +2,7 @@
     <q-card v-if="value" id="VWinter" flat>
         <q-card-section class="bg-primary text-accent text-h6">{{ value.title }}</q-card-section>
         <q-card-section>
-            <c-slideshow height="200px" :model-value="value.imageUrls" />
+            <c-slideshow :gallery-entries="value.imageUrls" height="200px" />
         </q-card-section>
         <q-card-section>
             <div class="justify-center q-gutter-lg row">

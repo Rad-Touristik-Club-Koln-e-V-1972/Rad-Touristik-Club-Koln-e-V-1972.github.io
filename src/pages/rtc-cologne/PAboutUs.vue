@@ -2,7 +2,7 @@
     <q-card flat>
         <q-card-section class="bg-primary text-accent text-h6">Über uns</q-card-section>
         <q-card-section>
-            <c-slideshow height="200px" :model-value="imageUrls" />
+            <c-slideshow :gallery-entries="imageUrls" height="200px" />
         </q-card-section>
         <q-card-section>
             Wir, die Sportler:innen des RTC Köln, kommen aus vielen unterschiedlichen Lebensphasen: die einen studieren, die anderen sind voll berufstätig und die anderen genießen

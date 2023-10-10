@@ -8,7 +8,7 @@
             </q-tabs>
             <q-tab-panels v-model="tab">
                 <q-tab-panel name="bilder">
-                    <c-slideshow height="200px" :model-value="galleryEntries" />
+                    <c-slideshow :gallery-entries="galleryEntries" height="200px" />
                 </q-tab-panel>
                 <q-tab-panel name="videos">
                     <q-video :ratio="16 / 9" src="https://www.youtube-nocookie.com/embed/bx0zAC-A-fg" />

@@ -2,9 +2,9 @@
     <q-img :src="props.startValue.previewUrl.toString()" style="cursor: pointer" @click="dialog = true" />
     <q-dialog v-model="dialog" maximized persistent>
         <q-card flat>
-            <d-view-image-original :model-value="props.startValue.imageUrl" />
+            <d-view-image-original :model-value="currentGalleryEntry.imageUrl" />
             <q-btn color="primary" :icon="mdiClose" style="position: absolute; right: 0; z-index: 2" text-color="accent" @click="dialog = false" />
-            <c-slideshow :infinite="false" :model-value="props.modelValue" :start-id="startValue.id" />
+            <c-slideshow v-model="currentGalleryEntry" :gallery-entries="props.modelValue" :infinite="false" />
         </q-card>
     </q-dialog>
 </template>
@@ -21,5 +21,6 @@ const props = defineProps<{
     startValue: GalleryEntry
 }>()
 
+const currentGalleryEntry = ref(props.startValue)
 const dialog = ref(false)
 </script>

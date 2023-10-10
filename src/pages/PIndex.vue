@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col">
-            <c-slideshow height="200px" :model-value="useSlideshowStore().all" />
+            <c-slideshow :gallery-entries="useSlideshowStore().all" height="200px" />
         </div>
     </div>
     <div class="row">
