@@ -12,7 +12,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Veranstaltung)
         .setClubPoints(1)
         .setContact('Wolfgang Dünkelmann')
@@ -21,7 +20,6 @@ export default [
         .setName('Start in das Jubiläumsjahr')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Abgesagt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -33,7 +31,6 @@ export default [
     new EventBuilder()
         .setAllDay(false)
         .setCategory(EEvent.Mitgliederversammlung)
-        .setClubPoints(0)
         .setContact('Wolfgang Dünkelmann')
         .setDate('2022-03-18 19:00', '2022-03-18 21:00')
         .setId('22b90479-7d0f-4cdc-8a61-b54ae5c3be38')
@@ -49,7 +46,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Permanente)
         .setClubPoints(1)
         .setContact('Klaus Dünkelmann')
@@ -58,7 +54,6 @@ export default [
         .setName('RTC Permanente - Intern - Strecke Abfahren')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -77,7 +72,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.RTF)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -86,7 +80,6 @@ export default [
         .setName('50. Forsbach – Tour - Marathon - Vortour')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -96,7 +89,6 @@ export default [
         .setUrl('www.rsc-erftstadt.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.RTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -105,7 +97,6 @@ export default [
         .setName('50. Forsbach – Tour - Marathon - Ausschildern')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.RTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -123,7 +114,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -133,7 +123,6 @@ export default [
         .setUrl('luera1959.de/radsportabteilung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -143,7 +132,6 @@ export default [
         .setUrl('www.radsport-schrecksbach.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -153,7 +141,6 @@ export default [
         .setUrl('www.rsg-ford.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -172,7 +159,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -182,7 +168,6 @@ export default [
         .setUrl('www.brt-2022.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -192,7 +177,6 @@ export default [
         .setUrl('sites.google.com/view/rtvlohmar/startseite')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -202,7 +186,6 @@ export default [
         .setUrl('www.cito-hennef.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -221,7 +204,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -231,7 +213,6 @@ export default [
         .setUrl('www.rc-staubwolke-quadrath.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -250,7 +231,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.CTF)
         .setClubPoints(4)
         .setContact('Klaus Dünkelmann')
@@ -259,7 +239,6 @@ export default [
         .setName('7. Wahnbach – Tour - Gravel - Vortour')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.CTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -268,7 +247,6 @@ export default [
         .setName('7. Wahnbach – Tour - Gravel - Ausschildern')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.CTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -277,7 +255,6 @@ export default [
         .setName('7. Wahnbach – Tour - Gravel')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.CTF)
         .setClubPoints(5)
         .setContact('Klaus Dünkelmann')
@@ -288,7 +265,6 @@ export default [
     new EventBuilder()
         .setAllDay(false)
         .setCategory(EEvent.Mitgliederversammlung)
-        .setClubPoints(0)
         .setContact('Wolfgang Dünkelmann')
         .setDate('2022-10-29 18:00', '2022-10-29 22:00')
         .setId('994131a3-4576-4ad8-a43f-b850a04286bf')

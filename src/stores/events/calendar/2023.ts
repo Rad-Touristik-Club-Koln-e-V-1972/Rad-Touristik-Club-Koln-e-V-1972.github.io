@@ -48,7 +48,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Permanente)
         .setClubPoints(1)
         .setContact('Klaus Dünkelmann')
@@ -57,7 +56,6 @@ export default [
         .setName('RTC Permanente - Intern - Strecke Abfahren')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -76,7 +74,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -86,9 +83,7 @@ export default [
         .setUrl('www.rsc-erftstadt.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.RTF)
-        .setClubPoints(0)
         .setContact('Klaus Dünkelmann')
         .setDate('2023-05-28')
         .setId('262224f4-be70-414a-bd68-07a0706da73e')
@@ -104,7 +99,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -114,7 +108,6 @@ export default [
         .setUrl('rsv-euskirchen.de/informationen-rtf-neu')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -124,7 +117,6 @@ export default [
         .setUrl('luera1959.de/radsportabteilung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -134,7 +126,6 @@ export default [
         .setUrl('www.radsport-schrecksbach.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -144,7 +135,6 @@ export default [
         .setUrl('www.rsg-ford.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -154,7 +144,6 @@ export default [
         .setUrl('rtc-rodenkirchen.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -182,7 +171,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -192,7 +180,6 @@ export default [
         .setUrl('sites.google.com/view/rtvlohmar/startseite')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -202,7 +189,6 @@ export default [
         .setUrl('www.cito-hennef.de')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -221,7 +207,6 @@ export default [
         .setName('Mitgliederversammlung')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -231,7 +216,6 @@ export default [
         .setUrl('www.svmalefinkbach.de/rtf/')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
@@ -241,7 +225,6 @@ export default [
         .setUrl('www.rscwelldorf.de/html/rtf.html')
         .buildEvent(),
     new EventBuilder()
-
         .setCategory(EEvent.Vereinsfahrt)
         .setClubPoints(2)
         .setContact('Klaus Dünkelmann')
