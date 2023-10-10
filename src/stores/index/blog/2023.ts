@@ -140,7 +140,8 @@ LG Klaus`,
         .setId('2629cebb-4e62-4d82-ae6d-68bb6d8fb7c6')
         .setText(
             `Der Deutsche Wetterdienst ist auch nicht mehr das, was er mal war: zuverlässig. 😩
-So fühlten sich etwas mehr als 400 Teilnehmer:innen von den angekündigten - nahezu trockenen - Wetterbedingungen animiert, um in Siegburg auf die schönen Strecken zu gehen.🚴🚴‍♂️🚴‍♀️
+So fühlten sich etwas mehr als 400 Teilnehmer:innen von den angekündigten - nahezu trockenen - Wetterbedingungen animiert,
+um in Siegburg auf die schönen Strecken zu gehen.🚴🚴‍♂️🚴‍♀️
 Zum Glück 🍀für die netten Gastgeber:innen, denn sonst wären viele nicht gekommen.
 7 RTCler:innen und 3 RTC-Gäste hatten sich auch  für die heutigen Radtouren verabredet.😃 Für die einen sollte es um 6:30 Uhr auf die 160 km- Strecke gehen.
 Die nächsten starteten gegen 8.15 h und wollten auf die 120er oder auf die 80 km-Strecke.
@@ -168,7 +169,8 @@ Nur über das Wetter müssen wir nächstes Jahr nochmal reden.🤪🥰`,
         .setText(
             `Der RTC Köln e.V. hatte am Freitag, 14.7.23, zum ersten Mal die Strecke Köln —> Mosel als geführte Tour im Angebot,
 an der auch Radsportlerinnen teilgenommen haben, die nicht Mitglieder beim RTC Köln e.V. sind.
-Neben der landschaftlich schönen und durchaus anspruchsvollen Strecke (170 km /2000 Hm), gab es zwei Begleitfahrzeuge, die vier Verpflegungsstellen für die Teilnehmer:innen anboten.
+Neben der landschaftlich schönen und durchaus anspruchsvollen Strecke (170 km /2000 Hm),
+gab es zwei Begleitfahrzeuge, die vier Verpflegungsstellen für die Teilnehmer:innen anboten.
 Das Beste kam zum Schluss und so ging es für die Radsportler:innen die letzten 3,5 km mit  Serpentinen hoch zum Ziel. 👍💪🚴‍♂️🚴🚴‍♀️🚴‍♂️🚴🚴
 Aber nicht nur das war ein Highlight:
 Auch Samstag und Sonntag standen ganz im Zeichen des RTC Köln, denn es war eine Vereinsfahrt.
@@ -246,7 +248,8 @@ Um nur mit dem Garmin zu fahren, braucht man keine RTF.
 Und genau das war heute - neben dem fantastischen Wetter - der Garant für 540 Teilnehmer:innen. 🎉
 Und mindestens 13 Radsportler:innen waren vom RTC Köln e.V. dabei! 🚴🚴‍♀️🚴‍♂️🚴‍♀️🚴‍♂️🚴🚴🚴‍♀️🚴‍♂️🚴‍♀️🚴🚴‍♂️🚴‍♀️
 In unterschiedlichen Konstellationen.
-Zwei Gruppen hatten mehrere befreundete Fahrer:innen dabei, die dem Aufruf des RTC Köln gefolgt waren, mitzufahren - eine Gruppe ging auf die 100er, die andere auf die 40er bzw. 74 km.
+Zwei Gruppen hatten mehrere befreundete Fahrer:innen dabei, die dem Aufruf des RTC Köln gefolgt waren, mitzufahren
+Eine Gruppe ging auf die 100er, die andere auf die 40er bzw. 74 km.
 Heiß war es.☀️
 Besonders, wenn man an Ampeln🚦 warten musste.
 Ansonsten brachte der Fahrtwind eine leichte kühlende Brise. 🌬️
@@ -267,7 +270,8 @@ Die Strecke ging über Fischenich, Hürth, Knappsack, Berrenrath über Türnich 
 Kurz vor Startschluß wurde sich dort noch schnell für die 44er Runde eingebucht und ab ging die Reise bei knalliger Sonne rund um den Flugplatz Nörvenich.
 Etwa auf der Hälfte der Strecke, in Poll, nicht unser Köln-Poll 😉, war dann die bei der Hitze ersehnte 😅 Kontrolle mit aussreichend Getränken und leckeren Bäcker-Rosinenweckchen.
 Von dort ging es dann zurück zum Startort in Kerpen, wo wir dann noch Birgit, Peter und wir trauten unseren Augen nicht, Christoph Hötte vom RTC trafen👍🏼.
-Hier wurde nochmal ordentlich mit selbstgemachten Kuchen, Wurst und Kartoffelsalat die nötigen Kohlehydrate aufgetankt, bevor es wieder an der Erft entlang über Liblar zurück nach Köln ging.
+Hier wurde nochmal ordentlich mit selbstgemachten Kuchen, Wurst und Kartoffelsalat die nötigen Kohlehydrate aufgetankt,
+bevor es wieder an der Erft entlang über Liblar zurück nach Köln ging.
 Außer uns beiden war noch Lutz und Johannes auf der kurzen Strecke, Birgit und Peter hatten die 100er bis zum Rurstausee unter die Räder genommen.
 Die 44er war sehr schön geführt, über viele Wirtschafts- und Fahrradwege und gut ausgeschildert.
 Probleme gab es nur für die GPSler, die teilweise eine andere Strecke auf dem Navi hatten.
@@ -325,7 +329,8 @@ Essenspause in Nordwijk, Huhn süß/sauer, die kalorienfreie Cola hab ich mit un
 Ab ins Landesinnere und in die Nacht. 150 km weiter wartete eine Hamburgerkette 🍔 auf mich. Den ganzen Tag bei bis zu 25 Grad, waren die 8 Grad nachts gefühlte Minustemperatur. 🥶
 Den zwei Iren war es egal. Die fuhren kurz/kurz weiter. 150 km freut man sich auf verdichtete ungesunde Kalorien...und dann ist der Laden zu.
 Dann halt eigene Voräte plündern und 3 Stunden in der 24h Tankstelle bis Sonnenaufgang verbringen.
-Über Umwege ging es dann zurück nach Amsterdam und der Wind wurde wieder ein treuer Begleiter. Stundenlang mit 17 km/h... Zermürbt aber nicht gebrochen kam ich dann in Amsterdam an.“
+Über Umwege ging es dann zurück nach Amsterdam und der Wind wurde wieder ein treuer Begleiter.
+Stundenlang mit 17 km/h... Zermürbt aber nicht gebrochen kam ich dann in Amsterdam an.“
 
 ➡️ Frank, Du bist der Beste. Hut ab‼️`,
         )
@@ -339,14 +344,19 @@ Dann halt eigene Voräte plündern und 3 Stunden in der 24h Tankstelle bis Sonne
             `Jetzt ist es amtlich:
 Wir hatten 526 Teilnehmer:innen bei unserer 51. Forsbachtour am Pfingstsonntag.
 Vielen Dank, dass ihr so zahlreich zu uns gekommen seid und an unseren neuen Event-Aktionen teilgenommen habt. 🥰
-Von allem gab es satt: Im Vorfeld Blicke in die Wetter-App, Planungsgespräche, Muskelarbeit, dann Sonne, Stress, Spaß, zu essen (außer an der K1 - sorry), Dinge, die gesucht wurden, Fragen, ausgefüllte Feedback-Bögen, Gewinne, strahlende Gesichter, Kilo- und Höhenmeter, liebevolle und positive Kommentare, Likes, zufriedene Sportler:innen und am Ende der Forstbachtour glückliche, erschöpfte RTCler:innen.
+Von allem gab es satt:
+Im Vorfeld Blicke in die Wetter-App, Planungsgespräche, Muskelarbeit, dann Sonne, Stress, Spaß, zu essen (außer an der K1 - sorry),
+Dinge, die gesucht wurden, Fragen, ausgefüllte Feedback-Bögen, Gewinne, strahlende Gesichter, Kilo- und Höhenmeter, liebevolle und positive Kommentare, Likes,
+zufriedene Sportler:innen und am Ende der Forstbachtour glückliche, erschöpfte RTCler:innen.
 Vielleicht ist der oder dem ein oder anderen aufgefallen, dass die Forsbachtour-TN ganz herzlich mit einem selbstgebastelten Plakat begrüßt worden sind? @Marco Laufenberg:
 Du bist echt der Hammer.
 Vielen lieben Dank für diese super liebe Geste im „Radsport Hotspot Hetzenholz“. 🤗👍
 Ein riesiges Dankeschön geht aber auch an unsere Sponsoren, die uns wahnsinnig großzügig unterstützt haben - sei es mit Sachspenden oder mit finanzieller Unterstützung.
 Als recht kleiner Verein hätten wir Vieles ohne diesen Support nicht umsetzen können.
 🙏 Danke ❤️
-Aber in erster Linie bedanke ich mich bei den fleißigen RTCler:innen und 13 Fremdhelfern🫶, die an einigen Tagen (denn eine RTF macht nicht nur an EINEM Tag sehr viel Arbeit!) unheimlich viele Stunden ihrer Lebenszeit dem RTC geschenkt haben, damit unsere Veranstaltung überhaupt möglich ist.
+Aber in erster Linie bedanke ich mich bei den fleißigen RTCler:innen und 13 Fremdhelfern🫶,
+die an einigen Tagen (denn eine RTF macht nicht nur an EINEM Tag sehr viel Arbeit!) unheimlich viele Stunden ihrer Lebenszeit dem RTC geschenkt haben,
+damit unsere Veranstaltung überhaupt möglich ist.
 Unterm Strich: Der RTC Köln e.V. fühlt Dankbarkeit satt. 🤗
 
 Alles Liebe ❤️
@@ -698,10 +708,12 @@ Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`,
         .setText(
             `Richtige Radsportler:innen lassen sich von nichts stoppen.
 So auch nicht Burghild vom RTC Köln.
-„Ich habe heute die BDR-App erfolgreich getestet“, schreibt sie den restlichen RTClern fröhlich in den Chat, die aufgrund des Wetters lieber die Räder putzen, statt sie zu benutzen.
+„Ich habe heute die BDR-App erfolgreich getestet“, schreibt sie den restlichen RTClern fröhlich in den Chat,
+die aufgrund des Wetters lieber die Räder putzen, statt sie zu benutzen.
 Für Burghild ist die „Westfalen-Winterbike-Trophy“ einfach Kult.
 Und gestern, beim 3. Lauf 2023 in Waltrop, war bei -1 Grad und Schneefall jede Menge los.
-Den insgesamt 505 Teilnehmer:innen - mit MTB / Crosser / Gravelbike etc. - wurden tolle Strecken über Wald- und Feldwege, Halden mit fiesen Rampen und eine perfekte Orga vom RC Sprinter Waltrop geboten.
+Den insgesamt 505 Teilnehmer:innen - mit MTB / Crosser / Gravelbike etc., wurden tolle Strecken über Wald- und Feldwege, Halden mit fiesen Rampen
+und eine perfekte Orga vom RC Sprinter Waltrop geboten.
 Ihr Fazit: „Hat sehr viel Spaß gemacht und das Rad ist auch wieder sauber geworden!“
 
 Toll gemacht, Burghild! Starke Leistung. 💪`,
@@ -716,10 +728,13 @@ Toll gemacht, Burghild! Starke Leistung. 💪`,
             `Ehre wem Ehre gebührt:
 
 Manfred Marquardt hat vor 50 Jahren mit seinen Sportfreunden den traditionsreichen Breitensportverein „RTC Köln e.V.“ gegründet.
-Aus diesem Anlass überreichte ihm Wolfgang Dünkelmann, 1. Vorsitzender des RTC Köln, am 19.1.2023 die Urkunde und die Ehrennadel für langjährige Mitgliedschaft beim Bund Deutscher Radfahrer (BDR).
-Manfred Marquardt ist ein Pionier der Breitensportszene, denn bis zur Gründung des RTC Köln gab es nur Rennrad-Vereine, die sich auf Rennen – und nicht auf den Breitensport – konzentriert hatten.
+Aus diesem Anlass überreichte ihm Wolfgang Dünkelmann, 1. Vorsitzender des RTC Köln,
+am 19.1.2023 die Urkunde und die Ehrennadel für langjährige Mitgliedschaft beim Bund Deutscher Radfahrer (BDR).
+Manfred Marquardt ist ein Pionier der Breitensportszene,
+denn bis zur Gründung des RTC Köln gab es nur Rennrad-Vereine, die sich auf Rennen – und nicht auf den Breitensport – konzentriert hatten.
 
-Aber auch Manfreds Frau, Hanni Marquardt, wurde für ihre 40-jährige Mitgliedschaft beim BDR geehrt und erhielt von Wolfgang Dünkelmann die Urkunde sowie die BDR-Ehrennadel überreicht.
+Aber auch Manfreds Frau, Hanni Marquardt, wurde für ihre 40-jährige Mitgliedschaft beim BDR geehrt
+und erhielt von Wolfgang Dünkelmann die Urkunde sowie die BDR-Ehrennadel überreicht.
 
 Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren Pioniergeist.`,
         )
