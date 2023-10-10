@@ -44,6 +44,10 @@ const isLoading = ref(false)
 
 const open = async () => {
     isLoading.value = true
-    await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album ?? Object.keys(props.modelValue.images)[0], id: props.modelValue.id } })
+
+    let album = props.album
+    if (!album) album = Object.keys(props.modelValue.images)[0]
+
+    await router.push({ name: 'rtc-cologne-galleries-album', params: { album: album, id: props.modelValue.id } })
 }
 </script>
