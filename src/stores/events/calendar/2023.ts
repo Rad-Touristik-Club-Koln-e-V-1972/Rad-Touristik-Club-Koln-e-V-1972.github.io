@@ -254,10 +254,9 @@ export default [
     new EventBuilder()
         .setAllDay(false)
         .setCategory(EEvent.Mitgliederversammlung)
-        .setClubPoints(1)
         .setContact('Diana Vialon')
-        .setDate('2023-12-01 19:00', '2023-12-01 21:00')
+        .setDate('2023-12-02 18:00', '2023-12-02 22:30')
         .setId('471ee844-0897-488b-b107-77e5889e1fa7')
-        .setName('Mitgliederversammlung / Weihnachtsfeier')
+        .setName('Weihnachtsfeier')
         .buildEvent(),
 ]
