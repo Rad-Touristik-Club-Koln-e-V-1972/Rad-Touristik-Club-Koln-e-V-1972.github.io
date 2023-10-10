@@ -2,6 +2,41 @@ import BlogEntryBuilder from 'src/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['19e71a41-1e1c-4c5d-ae0c-b012245e5176'])
+        .setDate('2023-10-01')
+        .setId('7b275465-e0a8-4cc2-bd28-e55fa3c35a1a')
+        .setText(
+            `Wie jedes Jahr lockt der VFR Büttgen am Ende des Monat September zu seiner RTF.
+Dabei hat diese RTF im Vergleich zu den meisten anderen Veranstaltungen einen besondern Charme.
+Vielleicht umgibt die Veranstaltung ein gewissens proffesiolles Flair,
+weil der Startort an der weithin bekannten Radrennbahn in Neuss-Büttgen liegt, auf der auch bereits internationale Meisterschaften ausgetragen wurden.
+
+Vielleicht ist es aber auch das meist traumhafte Wetter, bei dem die RTF im Spätsommer stattfindet.
+
+Wir wollten jedenfalls dort auf der letzten Veranstaltung des Radsportbezirks die Saison ausklingen lassen.
+Manni, Helmut, Klaus,, Eric, Diana, Uwe und unsere "Gastfahrer" Petra und Dirk starteten voller Tatendrang um 10:00 Uhr auf die 111 km Strecke.
+
+Allerdings holte uns bereits nach 15 km die Defekthexe ein.
+
+Diana konnte aus unerfindlichen Gründen nicht mehr aus den Pedalen ausklinken und nur mit Mühe konnte ein schlimmer Sturz verhindert werden.
+Da das Missgeschick an einer unübersichtlichen Stelle der Strecke passierte, hatten Klaus, Manni, Helmut und Petra nichts bemekt und radelten davon.
+
+Eric, Dirk und Uwe versuchten zusammen mit Diana den Defekt zu beheben.
+Leider sind die drei Herren jedoch nicht die begabtesten Schrauber und so wurden unsere Technikfreaks (wo war eingentlich Jürgen?) schmerzlich vermisst.
+Am Ende verzweifelter Versuche den Auslösepunkt der Pedale besser einzustellen, musste Manni beordert werden den Materialwagen zu holen.
+Schade!
+
+Während alle anderen bereits weit enteilt waren, setzten dann Dirk, Eric und Uwe die Tour fort.
+Wegen des Zeitverlusts aber nur auf der 77er Strecke, die nicht weniger interessant ist und auch über die "Bergwertung" der Allrather Höhe führt.
+
+Leider haben wir uns dann auch im Ziel verpasst, so dass nur noch die drei im Ziel übrig blieben
+und den Radsporttag in der Spätsommersonne an der Radrennbahn mit Kaffee, Kuchen und einem alkoholfreien Kaltgetränk ausklingen ließen.
+
+Euer Uwe`,
+        )
+        .setTitle('RTF Büttgen... und da waren es nur noch drei!')
+        .buildBlogEntry(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['a86f1e5c-ccb4-47ba-804b-46561c254325'])
         .setDate('2023-09-17')
         .setId('8bfc526e-5b03-4cd9-9a75-4cd4794c350b')
