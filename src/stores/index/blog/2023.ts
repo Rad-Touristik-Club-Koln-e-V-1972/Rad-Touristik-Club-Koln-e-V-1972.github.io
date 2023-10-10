@@ -2,6 +2,38 @@ import BlogEntryBuilder from 'src/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['41efa0de-2fa0-40a0-b147-aa3e1d09a558'])
+        .setDate('2023-10-06')
+        .setId('89dbe92c-116d-4a1c-bd0d-420b062f7b28')
+        .setText(
+            `Das schöne Wetter galt es in vollen Zügen auszunutzen.
+Daher stand nochmal eine lange Tour auf dem Wunschzettel des RTC Köln.
+Also lud Manni zu der Tour ein und es verabredeten sich fünf RTCler:innen am traditionsreichen Treffpunkt “Rodenkirchener Brücke“,
+um zum schönen Sahrbachtal (ein Seitental des Ahrtals) zu radeln.
+Vier Gäste schlossen sich der Tour an.
+So waren wir drei Frauen und sechs Männer.
+Warum das Sahrbachtal lockt?
+Schon der Hinweg ist schön und führt durch landwirtschaftlich genutzte Gegenden, bietet einen Hügel in Waldorf, einen in Todenfeld sowie einen wunderschönen Weitblick,
+wenn man aus Kölner Bucht hinausgeradelt ist.
+Das Sahrbachtal selber bekam nach der Flutkatastrophe eine kilometerlange neue Asphaltdecke,
+sodass man - da sehr verkehrsarm - lange mit Vollspeed durch die wirklich wunderschöne Gegend ras(d)e(l)n kann.
+Nach dem Speedpart folgen über ein paar Kilometer schöne, gut zu schaffende Serpentinen.
+Belohnt haben wir uns in der gemütlichen Scheune in Hilberath, wo wir uns aber auch etwas sputen mussten,
+weil im Herbst der Zeitdruck wegen der Dunkelheit erheblich höher ist, als im Sommer.
+So bekam (fast) jeder „nur“ ein Stück Kuchen 🍰. 😉
+Die 2-3-stündige Rücktour im Hinterkopf (mit einem Platten muss bei neun Radfahrer:innen immer gerechnet werden), sind wir pünktlich in der Scheune gestartet.
+Der Rückweg ist - man kann es sich denken - eher abschüssig.
+Aber er war auch wunderschön, weil Manni uns in Rheinbach auf asphaltierte Feldwege lockte.
+Fazit: Trotz der neun Personen mit unterschiedlichen Stärken, war es eine flotte Runde, bei der jede:r mitkam - auch die Gäste.
+Je nach Anfahrtsweg hatte die gestrige Truppe zwischen 100 km und 150 km auf dem Tacho.
+Was für alle gleich war: Wir alle hatten einen tollen Radsport-Urlaubstag mit „Ich-will-mehr“-Suchtfaktor.
+Zu viert (Robert kam noch nach) haben wir im Poller Fischerhaus den erfolgreichen Tag ausklingen lassen. 🤗
+Wir freuen uns schon darauf, wenn Robert wieder mit uns fahren kann.
+Uns wurde schon zugezwitschert, dass er schon fleißig für sein Comeback trainiert. 🚴‍♂️💪🫶`,
+        )
+        .setTitle('Ab ins Sahrbachtal - an einem warmen Herbsttag')
+        .buildBlogEntry(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['19e71a41-1e1c-4c5d-ae0c-b012245e5176'])
         .setDate('2023-10-01')
         .setId('7b275465-e0a8-4cc2-bd28-e55fa3c35a1a')

@@ -36,8 +36,10 @@ import _20230813Aufundab from './08_13_Auf_und_ab'
 import _20230820GrossesRTCAufgebotinLoevenich from './08_20_Grosses_RTC-Aufgebot_in_Loevenich'
 import _20230917AlleininPolchoderdie3StreckendesWochenendes from './09_17_Allein_in_Polch_oder_die_3_Strecken_des_Wochenendes'
 import _20231001RTFBuettgen from './10_01_RTF_Buettgen'
+import _20231006AbinsSahrbachtal from './10_06_Ab_ins_Sahrbachtal'
 
 export default [
+    _20231006AbinsSahrbachtal,
     _20231001RTFBuettgen,
     _20230917AlleininPolchoderdie3StreckendesWochenendes,
     _20230820GrossesRTCAufgebotinLoevenich,
