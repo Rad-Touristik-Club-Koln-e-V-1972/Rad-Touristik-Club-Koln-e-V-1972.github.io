@@ -11,23 +11,23 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+              uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
             - name: Install PNPM
               uses: pnpm/action-setup@v2
             - name: Setup node env
-              uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
+              uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
               with:
                   cache: 'pnpm'
                   check-latest: true
                   node-version: 'lts/*'
             - name: Setup Pages
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3
+              uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
               with:
                   static_site_generator: nuxt
             - name: Restore cache
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3
+              uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3.3.2
               with:
                   path: |
                       dist
@@ -43,7 +43,7 @@ jobs:
               run: pnpm build
             - name: Upload artifact
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c # v2
+              uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c # v2.0.0
               with:
                   path: dist/spa/
     ci_dev_deploy:
@@ -62,4 +62,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2
+              uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2.0.4
