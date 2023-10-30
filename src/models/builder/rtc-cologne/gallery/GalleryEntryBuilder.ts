@@ -7,7 +7,7 @@ export default class GalleryEntryBuilder extends ABuilder {
     private previewUrl: string | null = null
 
     buildGalleryEntry = () => {
-        this.galleryEntry.previewUrl = this.previewUrl ? new URL(`https://${this.previewUrl}`) : this.createPreviewURL(this.galleryEntry.imageUrl)
+        this.galleryEntry.previewUrl = this.createPreviewURL()
 
         return Object.assign(this.galleryEntry, this.buildAEntity())
     }
@@ -25,8 +25,16 @@ export default class GalleryEntryBuilder extends ABuilder {
         return this
     }
 
-    private createPreviewURL = (value: URL) => {
-        const strings = value.href.split('/')
-        return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
+    // TODO Remove after every image is an avif
+    private createPreviewURL = () => {
+        if (this.previewUrl) {
+            return new URL(`https://${this.previewUrl}`)
+        } else if (this.galleryEntry.imageUrl.href.includes('.avif')) {
+            return this.galleryEntry.imageUrl
+        } else {
+            const strings = this.galleryEntry.imageUrl.href.split('/')
+
+            return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
+        }
     }
 }
