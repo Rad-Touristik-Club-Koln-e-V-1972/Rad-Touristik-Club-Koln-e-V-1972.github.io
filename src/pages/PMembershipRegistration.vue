@@ -17,7 +17,7 @@
                             Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.
                         </div>
                         <div class="col-1" />
-                        <div class="col-auto">
+                        <div class="col-auto q-mt-sm">
                             RTC Köln e.V. 1972
                             <br />
                             Postfach 99 01 03
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <br />
-                    <div class="row center">
+                    <div class="row justify-around">
                         <div class="col-auto">
                             <q-card>
                                 <q-card-section class="bg-primary text-accent">Beitragstabelle</q-card-section>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-1" />
                         <div class="col" style="max-width: 25em">
-                            <d-view :model-value="images" />
+                            <d-view class="q-mt-sm" :model-value="images" />
                         </div>
                     </div>
                 </q-card-section>
