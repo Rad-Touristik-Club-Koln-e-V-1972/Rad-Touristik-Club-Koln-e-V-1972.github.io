@@ -1,38 +1,69 @@
 <template>
     <q-card flat>
         <q-card-section class="bg-primary text-accent text-h6">Mitgliedschaft beantragen</q-card-section>
-        <q-card-section class="text-subtitle1">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-10">
-                    Es gibt viele Vorteile, wenn man in einem Radsportverein Mitglied ist.
+        <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" indicator-color="secondary">
+            <q-tab alert label="Infos" name="infos" />
+            <q-tab alert label="Bewerbung" name="bewerbung" />
+        </q-tabs>
+        <q-tab-panels v-model="tab">
+            <q-tab-panel name="infos">
+                <q-card-section class="text-subtitle1">
+                    <div class="row">
+                        <div class="col-auto">
+                            Es gibt viele Vorteile, wenn man in einem Radsportverein Mitglied ist.
+                            <br />
+                            <b>Wir freuen uns, dass Du Dich dazu entschieden hast, dem RTC Köln e.V. 1972 beizutreten.</b>
+                            <br />
+                            Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.
+                        </div>
+                        <div class="col-1" />
+                        <div class="col-auto">
+                            RTC Köln e.V. 1972
+                            <br />
+                            Postfach 99 01 03
+                            <br />
+                            51083 Köln
+                            <br />
+                            Volksbank Köln Bonn eG
+                            <br />
+                            IBAN: DE73 3806 0186 6601 1910 14
+                            <br />
+                            BIC: GENODED1BRS
+                            <br />
+                            <a href="https://www.rtc-koeln.de" target="_blank">www.rtc-koeln.de</a>
+                        </div>
+                    </div>
                     <br />
-                    <b>Wir freuen uns, dass Du Dich dazu entschieden hast, dem RTC Köln e.V. 1972 beizutreten.</b>
-                    <br />
-                    Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.
-                </div>
-                <div class="col-12 col-md-4 col-lg-2">
-                    RTC Köln e.V. 1972
-                    <br />
-                    Postfach 99 01 03
-                    <br />
-                    51083 Köln
-                    <br />
-                    Volksbank Köln Bonn eG
-                    <br />
-                    IBAN: DE73 3806 0186 6601 1910 14
-                    <br />
-                    BIC: GENODED1BRS
-                    <br />
-                    <a href="https://www.rtc-koeln.de" target="_blank">www.rtc-koeln.de</a>
-                </div>
-            </div>
-        </q-card-section>
-        <q-card-section>
-            <div class="row">
-                <div class="col-12 col-sm-3">
-                    <d-view :model-value="images" />
-                </div>
-                <div class="col-12 col-sm-9">
+                    <div class="row center">
+                        <div class="col-auto">
+                            <q-card>
+                                <q-card-section class="bg-primary text-accent">Beitragstabelle</q-card-section>
+                                <q-card-section>
+                                    <q-markup-table flat>
+                                        <thead>
+                                            <th class="text-left">Beitrags-/Mitgliedsform</th>
+                                            <th class="text-right">Jahresbeitrag</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="it in fees.filter((f) => f.name)" :key="it.id">
+                                                <td v-html="it.name" />
+                                                <td class="text-right text-no-wrap" v-text="it.price ? `${it.price} €` : 'frei'" />
+                                            </tr>
+                                        </tbody>
+                                    </q-markup-table>
+                                </q-card-section>
+                                <q-card-section class="text-body2">Der RTC Köln bezuschusst den Kauf des Vereinstrikots einmalig mit 25,00 EUR.</q-card-section>
+                            </q-card>
+                        </div>
+                        <div class="col-1" />
+                        <div class="col" style="max-width: 25em">
+                            <d-view :model-value="images" />
+                        </div>
+                    </div>
+                </q-card-section>
+            </q-tab-panel>
+            <q-tab-panel name="bewerbung">
+                <q-card-section>
                     <q-stepper v-model="step" animated vertical>
                         <q-step :done="step > 1" :name="1" title="Personendaten">
                             <q-stepper-navigation>
@@ -83,9 +114,9 @@
                             </q-stepper-navigation>
                         </q-step>
                     </q-stepper>
-                </div>
-            </div>
-        </q-card-section>
+                </q-card-section>
+            </q-tab-panel>
+        </q-tab-panels>
     </q-card>
 </template>
 
@@ -106,16 +137,18 @@ import MembershipFeeBuilder from 'src/models/builder/membership-registration/Mem
 import PersonalDataBuilder from 'src/models/builder/membership-registration/PersonalDataBuilder'
 import SignatureBuilder from 'src/models/builder/membership-registration/SignatureBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+import useMembershipRegistrationStore from 'stores/MembershipRegistration'
 
+const fees = useMembershipRegistrationStore().fees
 const images = [
     new GalleryEntryBuilder()
         .setId('19478109-bff3-4116-a500-97401dedfb8b')
         .setImageUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.pdf')
-        .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/preview/preview.Din-A4-Flyer-Vorteile-Verein-RGB.png')
+        .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.avif')
         .buildGalleryEntry(),
 ]
 const step = ref(1)
-
+const tab = ref('infos')
 const value = ref(
     new MembershipRegistrationBuilder()
         .setBdrMembership(new BdrMembershipBuilder().buildBdrMembership())
