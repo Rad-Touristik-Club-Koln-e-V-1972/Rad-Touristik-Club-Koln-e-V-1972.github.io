@@ -1,6 +1,8 @@
 {
     "extends": "@quasar/app-vite/tsconfig-preset",
     "compilerOptions": {
+        // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/9455
+        "allowImportingTsExtensions": true,
         "baseUrl": "."
     }
 }

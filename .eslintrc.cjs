@@ -29,6 +29,8 @@ module.exports = {
         ga: 'readonly', // Google Analytics
         process: 'readonly',
     },
+    // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/9455
+    ignorePatterns: ['quasar.config.js'],
     // https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
     // Must use parserOptions instead of "parser" to allow vue-eslint-parser to keep working
     // `parser: 'vue-eslint-parser'` is already included with any 'plugin:vue/**' config and should be omitted

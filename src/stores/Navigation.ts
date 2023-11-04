@@ -28,7 +28,7 @@ import {
     mdiYoutube,
 } from '@quasar/extras/mdi-v7'
 import NavigationBuilder from 'src/models/builder/NavigationBuilder'
-import Navigation from 'src/models/entities/Navigation'
+import Navigation from 'src/models/entities/navigation/Navigation'
 
 export default defineStore('navigation', () => {
     const navigations = ref<Navigation[]>([

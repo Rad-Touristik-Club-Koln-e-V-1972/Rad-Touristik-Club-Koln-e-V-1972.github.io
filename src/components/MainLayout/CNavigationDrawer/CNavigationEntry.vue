@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import Navigation from 'src/models/entities/Navigation'
+import Navigation from 'src/models/entities/navigation/Navigation'
 
 const props = defineProps<{ modelValue: Navigation }>()
 </script>

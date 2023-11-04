@@ -1,4 +1,4 @@
-import Navigation from 'src/models/entities/Navigation'
+import Navigation from 'src/models/entities/navigation/Navigation'
 import ABuilder from 'src/models/builder/ABuilder'
 
 export default class NavigationBuilder extends ABuilder {
