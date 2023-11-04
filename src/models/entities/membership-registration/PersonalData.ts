@@ -1,10 +1,11 @@
+import { date } from 'quasar'
 import AEntity from 'src/models/entities/AEntity'
 
 export default class PersonalData extends AEntity {
-    birthdate = ''
+    birthdate = '1972/10/30'
     city = ''
     email = ''
-    entryDate = ''
+    entryDate = date.formatDate(new Date(), 'YYYY/MM/DD')
     firstName = ''
     lastName = ''
     mobilePhoneNumber = ''

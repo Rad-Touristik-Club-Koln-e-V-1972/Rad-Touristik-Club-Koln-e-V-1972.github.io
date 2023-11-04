@@ -5,13 +5,9 @@ import PersonalData from 'src/models/entities/membership-registration/PersonalDa
 import Signature from 'src/models/entities/membership-registration/Signature'
 
 export default class MembershipRegistration extends AEntity {
-    bdrMembership!: BdrMembership
-
-    consentPrivacyPolicy!: Signature
-
-    membershipFee!: MembershipFee
-
-    personalData!: PersonalData
-
-    signature: Signature = new Signature()
+    bdrMembership = new BdrMembership()
+    consentPrivacyPolicy = new Signature()
+    membershipFee = new MembershipFee()
+    personalData = new PersonalData()
+    signature = new Signature()
 }

@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { colors, date } from 'quasar'
 import { AcroFormCheckBox, jsPDF } from 'jspdf'
 import 'src/assets/fonts/Bahnschrift-Regular-normal.js'
@@ -32,13 +32,6 @@ const dialog = ref(false)
 const isLoading = ref(false)
 
 let pdfGenerator: jsPDF
-
-onMounted(async () => {
-    pdfGenerator = getPDFGenerator()
-
-    // TODO REMOVE BEFORE DEPLOYMENT
-    await download()
-})
 
 const addUnderline = (params: { leftMargin: number; topMargin: number; underlineColor?: string; underlineLength?: number }): number => {
     const lineLength = params.underlineLength ?? 85
@@ -587,7 +580,7 @@ const addRadioButtons = (params: { fontSize?: number; leftMargin: number; option
 const addSignature = (params: { leftMargin: number; topMargin: number; text: string; value: string }): number => {
     let contentHeight = 0
 
-    pdfGenerator.addImage(params.value, 'PNG', params.leftMargin, params.topMargin, 100, 25)
+    params.value && pdfGenerator.addImage(params.value, 'PNG', params.leftMargin, params.topMargin, 100, 25)
     contentHeight += 28
 
     contentHeight += addText({
@@ -656,6 +649,8 @@ const addTextTitle = (params: { fontSize: number; leftMargin: number; text: stri
 }
 
 const createPDF = () => {
+    pdfGenerator = getPDFGenerator()
+
     const leftMargin = 10
     const leftMarginCenter = 105
     const topMargin = 12
