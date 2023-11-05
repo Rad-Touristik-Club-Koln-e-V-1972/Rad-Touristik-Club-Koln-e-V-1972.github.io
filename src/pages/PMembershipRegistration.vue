@@ -14,7 +14,7 @@
                             <br />
                             <b>Wir freuen uns, dass Du Dich dazu entschieden hast, dem RTC Köln e.V. 1972 beizutreten.</b>
                             <br />
-                            Dazu müsstest Du bitte noch das folgende Formular vollständig ausfüllen.
+                            Dazu müsstest Du bitte noch das Formular im Tab "Bewerbung" vollständig ausfüllen.
                         </div>
                         <div class="col-1" />
                         <div class="col-auto q-mt-sm">
