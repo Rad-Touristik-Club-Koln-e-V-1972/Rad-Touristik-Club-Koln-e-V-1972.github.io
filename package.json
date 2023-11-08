@@ -39,7 +39,7 @@
         "@quasar/app-vite": "1.6.2",
         "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
         "@types/mime": "3.0.4",
-        "@types/node": "20.8.10",
+        "@types/node": "20.9.0",
         "@typescript-eslint/eslint-plugin": "6.10.0",
         "@typescript-eslint/parser": "6.10.0",
         "autoprefixer": "10.4.16",
