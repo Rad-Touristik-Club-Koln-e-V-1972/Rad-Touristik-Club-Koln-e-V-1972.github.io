@@ -7,10 +7,10 @@ export default new GalleryBuilder()
     .setImages(
         new GalleryEntryBuilder()
             .setId('8f37bf18-d319-4577-9c6c-9444213c190c')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2019/Rueckblick/rtc-960-intro-2019.jpg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2019/Rueckblick/rtc-960-intro-2019.jpg.avif')
             .buildGalleryEntry(),
     )
     .setLocation('Köln')
     .setTitle('Rückblick')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2019/Rueckblick/preview/preview.rtc-960-intro-2019.jpg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2019/Rueckblick/rtc-960-intro-2019.jpg.avif')
     .buildGallery()
