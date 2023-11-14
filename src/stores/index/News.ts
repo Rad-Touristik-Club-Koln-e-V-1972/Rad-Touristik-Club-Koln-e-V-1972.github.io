@@ -13,7 +13,7 @@ export default defineStore('news', () => {
                     new GalleryEntryBuilder()
                         .setId('2049e110-da82-49ef-b0f1-1f167bda676d')
                         .setImageUrl('content.rtc-koeln.de/pages/index/news/Werbung_Social_Media.pdf')
-                        .setPreviewUrl('content.rtc-koeln.de/pages/index/news/preview/preview.Werbung_Social_Media.avif')
+                        .setPreviewUrl('content.rtc-koeln.de/pages/index/news/Werbung_Social_Media.pdf.avif')
                         .buildGalleryEntry(),
                 )
                 .setText(
