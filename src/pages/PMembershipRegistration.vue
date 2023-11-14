@@ -144,7 +144,7 @@ const images = [
     new GalleryEntryBuilder()
         .setId('19478109-bff3-4116-a500-97401dedfb8b')
         .setImageUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.pdf')
-        .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.avif')
+        .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.pdf.avif')
         .buildGalleryEntry(),
 ]
 const step = ref(1)
