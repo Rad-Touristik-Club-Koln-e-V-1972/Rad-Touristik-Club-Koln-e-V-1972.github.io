@@ -12,7 +12,7 @@ export default defineStore('rtc-cologne-press-reports', () => {
             .setImages(
                 new GalleryEntryBuilder()
                     .setId('37d52527-5e35-4410-b789-3801b10aabb9')
-                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/Rueckblick/signal-2023-05-10-105056.jpeg')
+                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/Rueckblick/signal-2023-05-10-105056.jpeg.avif')
                     .buildGalleryEntry(),
             )
             .setTitle('Porz am Montag')
@@ -23,7 +23,7 @@ export default defineStore('rtc-cologne-press-reports', () => {
             .setImages(
                 new GalleryEntryBuilder()
                     .setId('9ee7921e-2cd4-4a93-9a99-0fe1e1493713')
-                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-12-06_porz-im-blick.jpg')
+                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-12-06_porz-im-blick.jpg.avif')
                     .buildGalleryEntry(),
             )
             .setTitle('Porz im Blick')
@@ -34,7 +34,7 @@ export default defineStore('rtc-cologne-press-reports', () => {
             .setImages(
                 new GalleryEntryBuilder()
                     .setId('eb1d1fd0-18a9-40a8-9d5f-9abafa7d3324')
-                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-11-14_porz-am-montag.jpg')
+                    .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-11-14_porz-am-montag.jpg.avif')
                     .buildGalleryEntry(),
             )
             .setTitle('Porz am Montag')
@@ -46,7 +46,7 @@ export default defineStore('rtc-cologne-press-reports', () => {
                 new GalleryEntryBuilder()
                     .setId('59a1209b-f8c1-4cd0-8faa-0bc7c1055525')
                     .setImageUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.pdf')
-                    .setPreviewUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/preview/preview.2022-05_roadbike.jpeg')
+                    .setPreviewUrl('content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.jpeg.avif')
                     .buildGalleryEntry(),
             )
             .setTitle('Roadbike')
