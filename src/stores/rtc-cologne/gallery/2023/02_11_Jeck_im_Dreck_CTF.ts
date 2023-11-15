@@ -7,14 +7,14 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('21499548-8c89-410e-b4d9-e58f9851c6f1')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/image0.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('98e9a979-6901-4b01-9c32-46d04362ed76')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/image1.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/image1.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Hennef')
     .setTitle('😃 RTC GOES CTF')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/preview/preview.image0.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Jeck_im_Dreck_CTF/image0.jpeg.avif')
     .buildGallery()

@@ -7,18 +7,18 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('590cc7e5-3bc4-47a7-89df-1c3b384b0ead')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image0.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('6f130521-4687-4d99-a8f6-bc15b98c182a')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image1.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image1.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('50bafec3-b288-45a3-9e5f-189269fca6a8')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image2.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image2.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Mosel')
     .setTitle('➡️ LUST AUF WAS NEUES? 🚴‍♀️')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/preview/preview.image0.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/04_09_Lust_auf_was_Neues/image0.jpeg.avif')
     .buildGallery()

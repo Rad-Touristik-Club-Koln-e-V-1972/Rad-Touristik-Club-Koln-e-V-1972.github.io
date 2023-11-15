@@ -7,10 +7,10 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('23d43085-69bd-4dea-820b-3515047a2ba0')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/06_05_Franks_Amsterdam_Tour/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/06_05_Franks_Amsterdam_Tour/image0.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Amsterdam')
     .setTitle("Frank's Amsterdam Tour")
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/06_05_Franks_Amsterdam_Tour/preview/preview.image0.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/06_05_Franks_Amsterdam_Tour/image0.jpeg.avif')
     .buildGallery()

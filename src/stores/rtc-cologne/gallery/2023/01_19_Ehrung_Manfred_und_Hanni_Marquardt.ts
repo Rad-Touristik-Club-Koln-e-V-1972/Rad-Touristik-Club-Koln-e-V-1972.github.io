@@ -7,14 +7,14 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('f6cfe6d2-96f4-4dfe-a4cf-20145065d5a9')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/image1.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/image1.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('048ae6d4-ec35-44d9-9ea8-1fa8ca06b652')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/image2.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/image2.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Köln')
     .setTitle('Ehrung Manfred & Hanni Marquardt')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/preview/preview.image2.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/01_19_Ehrung_Manfred_und_Hanni_Marquardt/image2.jpeg.avif')
     .buildGallery()

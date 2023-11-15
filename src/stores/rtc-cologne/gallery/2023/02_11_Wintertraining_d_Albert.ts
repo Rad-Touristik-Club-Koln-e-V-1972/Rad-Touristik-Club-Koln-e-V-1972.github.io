@@ -7,15 +7,15 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('5009ef35-7e89-41df-bfe8-e3508078b955')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/image0.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('240d0aa9-e80d-417f-adb2-7e0c5172baee')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/image1.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/image1.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Heimerzheim')
     .setTitle('Wintertraining d‘Albert')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/preview/preview.image0.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/02_11_Wintertraining_d_Albert/image0.jpeg.avif')
     .setYoutubeVideoIds('S9x_NGno4U4', 'oWWz0OlpRVY')
     .buildGallery()

@@ -7,22 +7,22 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('eb3c7a0e-0d47-4cae-84b6-58bb1826fb86')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image0.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('19de0a59-417e-4d54-ab6e-7a69596eaecf')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image1.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image1.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('5a41f816-ed3f-4a43-b21f-9d7fd12b89bc')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image2.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image2.jpeg.avif')
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('597989c1-0556-4338-9a7f-e64c054d21df')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image3.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image3.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Bonn')
     .setTitle('RTF Campus Bonn')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/preview/preview.image1.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_RTF_Campus_Bonn/image1.jpeg.avif')
     .buildGallery()

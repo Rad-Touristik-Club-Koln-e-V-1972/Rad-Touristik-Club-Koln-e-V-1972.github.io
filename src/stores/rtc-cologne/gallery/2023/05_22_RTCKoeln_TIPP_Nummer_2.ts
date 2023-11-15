@@ -7,10 +7,10 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('8f379cf7-5961-4d83-b57f-d96fe644abd2')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2/signal-2023-05-14-193529_002.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2/signal-2023-05-14-193529_002.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Köln')
     .setTitle('rtckoeln 👍TIPP Nummer 2')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2/preview/preview.signal-2023-05-14-193529_002.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_22_RTCKoeln_TIPP_Nummer_2/signal-2023-05-14-193529_002.jpeg.avif')
     .buildGallery()

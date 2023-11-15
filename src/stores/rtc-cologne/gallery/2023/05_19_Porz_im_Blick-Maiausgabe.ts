@@ -7,10 +7,10 @@ export default new GalleryBuilder()
     .setImages([
         new GalleryEntryBuilder()
             .setId('fcb4b18c-533d-4764-adbd-2fd816817147')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_19_Porz_im_Blick-Maiausgabe/image0.jpeg')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_19_Porz_im_Blick-Maiausgabe/image0.jpeg.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Köln-Porz')
     .setTitle('Porz im Blick - Maiausgabe')
-    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_19_Porz_im_Blick-Maiausgabe/preview/preview.image0.jpeg')
+    .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_19_Porz_im_Blick-Maiausgabe/image0.jpeg.avif')
     .buildGallery()
