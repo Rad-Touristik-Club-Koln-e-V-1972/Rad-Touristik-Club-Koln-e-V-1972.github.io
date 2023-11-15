@@ -51,7 +51,7 @@ export default new GalleryBuilder()
             .buildGalleryEntry(),
         new GalleryEntryBuilder()
             .setId('68c07626-737f-4b04-8dae-74e23038ad3e')
-            .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/04_03_Geburtstag_Erich_Fischer/05_15_Presseartikel_95_Geburtstag.pdf.avif')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/04_03_Geburtstag_Erich_Fischer/05_15_Presseartikel_95_Geburtstag.avif')
             .buildGalleryEntry(),
     ])
     .setLocation('Erich Fischer')
