@@ -37,8 +37,10 @@ import _20230820GrossesRTCAufgebotinLoevenich from './08_20_Grosses_RTC-Aufgebot
 import _20230917AlleininPolchoderdie3StreckendesWochenendes from './09_17_Allein_in_Polch_oder_die_3_Strecken_des_Wochenendes'
 import _20231001RTFBuettgen from './10_01_RTF_Buettgen'
 import _20231006AbinsSahrbachtal from './10_06_Ab_ins_Sahrbachtal'
+import _20231119ZwischendenRegenschauern from './11_19_Zwischen_den_Regenschauern'
 
 export default [
+    _20231119ZwischendenRegenschauern,
     _20231006AbinsSahrbachtal,
     _20231001RTFBuettgen,
     _20230917AlleininPolchoderdie3StreckendesWochenendes,

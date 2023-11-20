@@ -2,6 +2,30 @@ import BlogEntryBuilder from 'src/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['0e40f34a-4e48-4af4-a27a-ccdfe74e4f2e'])
+        .setDate('2023-11-19')
+        .setId('c4160b9f-fa55-4454-a526-311abf5995c9')
+        .setText(
+            `Der Wettergott meint es in diesem Jahr nicht gut mit dem Wintertraining des RTC.
+Hoffnungsfroh angesetzte Trainingstermine müssen kurzfristig abgesagt werden.
+Ausfahrten während der Woche fallen ins Wasser.
+
+So manch ein Radsportler sitzt schon auf der Couch und bemerkt voller Missmut den Staubansatz auf seinem geliebten Renner.
+
+Allerdings machten heute die einschlägigen WetterApps Mut!
+Es sollte zumindest an Vor- und Nachmittag regenfrei sein.
+Daher traf sich eine kleine Gruppe bestehend aus Diana, Manni, Albert und Uwe zu ungewöhnlicher Zeit, um 11:30 Uhr,
+an der Schmitze Bud zu einer Trainingsrunde zwischen den Regenschauern.
+
+Es ging vom legendären Rennradtreff Schmitze Bud über die "Panzerstraße" in Richtung Lohmar und von dort durch das Aggertal.
+Nach dem obligatorsichen Stopp im "inoffiziellen Vereinslokal" des RTC, Gilgen's Bäckerei, weiter über Hohnrath Bahnhof und Rambrücken zurück zur Schmitze Bud.
+
+Eine kleine, aber feine Sonntagsrunde, die mal wieder Lust auf mehr gemacht hat.
+Zumindest dann, wenn uns der Wettergott wieder hold ist.`,
+        )
+        .setTitle('Zwischen den Regenschauern')
+        .buildBlogEntry(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['41efa0de-2fa0-40a0-b147-aa3e1d09a558'])
         .setDate('2023-10-06')
         .setId('89dbe92c-116d-4a1c-bd0d-420b062f7b28')
