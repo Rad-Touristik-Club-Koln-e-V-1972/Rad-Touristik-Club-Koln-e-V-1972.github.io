@@ -18,9 +18,10 @@ const generateRoutes = () => {
 
     const mainRoutes = routes.at(0)
     if (mainRoutes?.children) {
-        const rootPath = mainRoutes.path
+        const sufix = '#'
+        const rootPath = mainRoutes.path + sufix
         // Avoid "//" at the beginning of the path if the root is "/".
-        ret.push(...generateRoutesHelper(rootPath === '/' ? '' : rootPath, mainRoutes.children))
+        ret.push(...generateRoutesHelper(rootPath === '/#' ? '#' : rootPath, mainRoutes.children))
     }
 
     // Remove duplicated "/" route.
@@ -46,7 +47,6 @@ export default configure(function (/* ctx */) {
         animations: 'all',
         build: {
             vitePlugins: [[require('vite-plugin-sitemap'), { dynamicRoutes: generateRoutes(), hostname: 'https://www.rtc-koeln.de', outDir: 'dist/spa' }]],
-            vueRouterMode: 'history',
         },
         // app boot file (/src/boot)
         // --> boot files are part of "main.js"
