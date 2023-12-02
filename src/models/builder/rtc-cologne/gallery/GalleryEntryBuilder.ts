@@ -1,4 +1,3 @@
-// TODO Workaround for `The requested module 'mime/lite' does not provide an export named 'getType'` https://github.com/broofa/mime/issues/291
 import mime from 'mime/lite'
 import ABuilder from 'src/models/builder/ABuilder'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
@@ -15,7 +14,6 @@ export default class GalleryEntryBuilder extends ABuilder {
 
     setImageUrl = (value: string): this => {
         this.galleryEntry.imageUrl = new URL(`https://${value}`)
-        // TODO Workaround for `The requested module 'mime/lite' does not provide an export named 'getType'` https://github.com/broofa/mime/issues/291
         this.galleryEntry.mimeType = mime.getType(value)
 
         return this
