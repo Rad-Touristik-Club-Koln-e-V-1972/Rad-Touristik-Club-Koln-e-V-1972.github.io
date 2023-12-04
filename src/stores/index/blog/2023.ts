@@ -2,6 +2,35 @@ import BlogEntryBuilder from 'src/models/builder/index/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs(['4d2dd3c2-1e44-475e-9b82-55fd4c9bc764'])
+        .setDate('2023-12-02')
+        .setId('053478fd-23a7-4192-ac8d-0ecb85b936f6')
+        .setText(
+            `Es war ein sehr schöner Abend.🌟🎄 Das Café Uferglück bot eine gemütliche Atmosphäre, die von euch allen mit Leben gefüllt wurde. Ein herzliches Dankeschön an alle, die zum Gelingen unseres RTC-Weihnachtsabends beigetragen haben – sei es durch Organisation, Dekoration oder einfach durch eure Anwesenheit und gute Laune. 🌟💫
+
+Die festliche Stimmung, die Ehrungen und die kulinarischen Köstlichkeiten haben uns einen schönen vorweihnachtlichen Abend erleben lassen. Es war großartig, nicht nur unsere Vereinsmeister:innen durch unseren lieben Sportwart Klaus zu ehren, sondern auch weitere verdienstvolle Mitglieder auszuzeichnen. Eure Unterstützung und euer Engagement machen den RTC Köln zu dem, was er ist: eine tolle Gemeinschaft voller Leidenschaft für den Radsport. 🚴‍♀️🚴‍♂️
+
+Nochmals vielen Dank an alle, die dazu beigetragen haben, dass unsere Weihnachtsfeier so schön wurde.
+
+Und hier unsere Ehrungen im Überblick:
+
+Der „Preis des Sportwarts“
+(für herausragende sportliche Leistungen im Jahr 2023) ging an Frank (626 km an einem Stück 😳👍🤪)
+
+Der „Preis der Präsidentin“
+(für herausragendes Engagement für den RTC Köln e.V.) ging an Helmut, aber auch Albert, Robert und Lutz
+
+Uschi S. wurde für ihre 50-jährige BDR-Mitgliedschaft geehrt.
+
+Jürgen wurde für seine 10-jährige RTC-Mitgliedschaft geehrt.
+
+Helmut und Diana wurden Vereinsmeister.
+
+Herzlichen Glückwunsch!🎉`,
+        )
+        .setTitle('RTC-Weihnachtsfeier 2023')
+        .buildBlogEntry(),
+    new BlogEntryBuilder()
         .setAlbumIDs(['0e40f34a-4e48-4af4-a27a-ccdfe74e4f2e'])
         .setDate('2023-11-19')
         .setId('c4160b9f-fa55-4454-a526-311abf5995c9')

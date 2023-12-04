@@ -38,8 +38,10 @@ import _20230917AlleininPolchoderdie3StreckendesWochenendes from './09_17_Allein
 import _20231001RTFBuettgen from './10_01_RTF_Buettgen'
 import _20231006AbinsSahrbachtal from './10_06_Ab_ins_Sahrbachtal'
 import _20231119ZwischendenRegenschauern from './11_19_Zwischen_den_Regenschauern'
+import _20231202RTCWeihnachtsfeier from './12_02_RTC_Weihnachtsfeier'
 
 export default [
+    _20231202RTCWeihnachtsfeier,
     _20231119ZwischendenRegenschauern,
     _20231006AbinsSahrbachtal,
     _20231001RTFBuettgen,
