@@ -213,6 +213,22 @@ export default new GalleryBuilder()
             .setId('12d38bff-fb5f-4343-b41e-a3a0d40a8e7d')
             .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/12_02_RTC_Weihnachtsfeier/_1490623.JPG.avif')
             .buildGalleryEntry(),
+        new GalleryEntryBuilder()
+            .setId('f91fec63-df56-48ad-9a92-6a8505daa16c')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/12_02_RTC_Weihnachtsfeier/IMG_7502.jpg.avif')
+            .buildGalleryEntry(),
+        new GalleryEntryBuilder()
+            .setId('ac4d9cf4-5c15-4154-81fb-fdaf0e4d7510')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/12_02_RTC_Weihnachtsfeier/IMG_7504.jpg.avif')
+            .buildGalleryEntry(),
+        new GalleryEntryBuilder()
+            .setId('fbb2149a-c8bc-48d7-8d2b-5912c7f46125')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/12_02_RTC_Weihnachtsfeier/IMG_7505.jpg.avif')
+            .buildGalleryEntry(),
+        new GalleryEntryBuilder()
+            .setId('14396001-a931-47cc-afcc-438841b469c0')
+            .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/12_02_RTC_Weihnachtsfeier/IMG_7518.jpg.avif')
+            .buildGalleryEntry(),
     ])
     .setLocation('Köln')
     .setTitle('RTC-Weihnachtsfeier 2023')
