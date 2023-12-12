@@ -1,57 +1,77 @@
 <template>
     <q-card flat>
-        <q-card-section class="bg-primary text-accent text-h6">Über uns</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6">Willkommen beim RTC Köln e.V.: Gemeinschaft und Radfahren für alle!</q-card-section>
         <q-card-section>
             <c-slideshow :gallery-entries="imageUrls" height="200px" />
         </q-card-section>
+        <q-card-section class="text-primary text-h6">Über uns</q-card-section>
         <q-card-section>
-            Wir, die Sportler:innen des RTC Köln, kommen aus vielen unterschiedlichen Lebensphasen: die einen studieren, die anderen sind voll berufstätig und die anderen genießen
-            im wohlverdienten Ruhestand die Runden auf dem Rennrad.<br />
-            Was wir aber alle gemeinsam haben, ist die Freude an der Gemeinschaft und am aktiven regelmäßigen Sport.<br />
-            Dazu halten wir uns mit dem Rennrad fit und pflegen in angemessenem Rahmen die Vereinskultur.
+            Beim RTC Köln e.V. sind wir eine vielfältige Gruppe von Radsportbegeisterten, die aus verschiedenen Lebensphasen stammen.<br />
+            Egal ob Studierende, Berufstätige oder Menschen im Ruhestand – uns vereint die Freude an Gemeinschaft und regelmäßigem Radsport.
         </q-card-section>
+        <q-card-section class="text-primary text-h6">Unsere Aktivitäten</q-card-section>
         <q-card-section>
-            Jährlich veranstalten wir ehrenamtlich Ende Mai im Rahmen der offiziellen RTFVeranstaltungsreihe des BDR unsere – über Kölns Grenzen hinweg bekannte –
-            „ForsbachTour“.<br />
-            Darüber hinaus unternehmen wir „Ausflüge“ an die Mosel, in die Eifel oder in die Rhön.<br />
-            Zur Saisonvorbereitung sind wir des öfteren im Frühjahr auf Mallorca.<br />
-            Auch bei Einzelveranstaltungen, wie zum Beispiel bei den Bundesradsporttreffen, sind wir anzutreffen.
-        </q-card-section>
-        <q-card-section>
-            Wir organisieren aber keine Rennen.<br />
-            Unser Schwerpunkt ist „Radfahren zur Erholung und Gesundheitsvorsorge“ im Rahmen der Radtouristik.<br />
-            Wir freuen uns, wenn wir damit unsere Fitness steigern oder erhalten und so viele Jahre wie möglich dem Radsport treu bleiben können.<br />
-            Unser Ziel ist es, auch andere Radfahrer:innen für den Radsport zu begeistern, sei es als neue Vereinsmitglieder oder als Teilnehmer:innen an unseren Veranstaltungen.
-        </q-card-section>
-        <q-card-section>
-            Der Trainings- und Veranstaltungsbetrieb läuft bei uns über persönliche Absprachen via WhatsApp, Mail, die Vereins-App „Mein Verein“ und bei unseren Clubabenden (i. d.
-            R. am 1. Freitag im Monat, um 19 Uhr).<br />
-            Wir sind oft auf den RTF des Radsportbezirks Köln, aber auch NRW-weit zu finden.<br />
-            Gäste sind sowohl bei unseren Clubabenden als auch den Ausfahrten jederzeit herzlich willkommen.<br />
-            Im Winter treffen wir uns an den Wochenenden zu lockeren Ausfahrten.<br />
-            Möchtet Ihr in den Wintermonaten nicht alleine trainieren? Dann kommt zum RTC Köln e.V..<br />
-            Ihr seid herzlich willkommen!
-        </q-card-section>
-        <q-card-section>
-            Wir haben einige Runden rund um Köln, die wir – je nach Zeit und Gruppenstärke – unter die Räder nehmen.<br />
-            Start ist entweder an der Rodenkirchener Brücke (linksrheinisch) oder an der Schmitzebud.
+            Unser Fokus liegt auf dem Rennradfahren zur Erholung und Gesundheitsvorsorge im Rahmen der Radtouristik.<br />
+            Mit dem Rennrad halten wir uns fit und pflegen eine lebendige Vereinskultur.<br />
+            Zu unseren jährlichen Highlights gehört die über Kölns Grenzen hinweg bekannte „Forsbachtour“, Teil der offiziellen RTF-Veranstaltungsreihe des BDR.<br /><br />
+            <q-btn
+                color="primary"
+                :icon="mdiArrowRight"
+                label="Bitte schon mal vormerken: Die Forsbachtour ist am 2. Juni 2024."
+                outline
+                :to="{ name: 'events-tours-events-rtfs' }"
+            />
             <br />
-            Alle Strecken sind landschaftlich schön und zwischen 60 km (etwa 450 Hm) und 130 km (etwa 1000 Hm) lang.<br />
-            Wir fahren moderat, so dass sich jeder anschließen kann.<br />
-            Meist haben wir einen Schnitt von 21-22 km/h.
-        </q-card-section>
-        <q-card-section>
-            Gemeinsame Ausfahren machen am meisten Spaß! Meldet Euch bei Interesse bei:
             <br />
-            <a href="mailto:PR@rtc-koeln.de">PR@rtc-koeln.de</a>
+            Außerdem unternehmen wir Ausflüge in malerische Gegenden wie die Mosel, die Eifel und sogar nach Mallorca zur Saisonvorbereitung etc.
         </q-card-section>
-        <q-card-section>Wir freuen uns auf Euch!</q-card-section>
+        <q-card-section class="text-primary text-h6">Unser Ziel</q-card-section>
+        <q-card-section>
+            Wir möchten andere Radfahrer:innen für diesen Sport begeistern, sei es als neue Vereinsmitglieder oder als Teilnehmer:innen an unseren Veranstaltungen.
+        </q-card-section>
+        <q-card-section class="text-primary text-h6">Unsere Treffpunkte und Veranstaltungen</q-card-section>
+        <q-card-section>
+            Unser Trainings- und Veranstaltungsbetrieb läuft über persönliche Absprachen per
+            <ul>
+                <li>WhatsApp</li>
+                <li>Signal</li>
+                <li>Mail</li>
+                <li>der Vereins-App „Mein Verein“</li>
+                <li>sowie unseren RTC-Vereinsabenden, die normalerweise am ersten Freitag im Monat ab 19 Uhr stattfinden.</li>
+            </ul>
+            Während der Sommermonate treffen wir uns im Garten der 1. Vorsitzenden zu einem gemütlichen Grillabend.
+        </q-card-section>
+        <q-card-section class="text-primary text-h6">Unser Engagement</q-card-section>
+        <q-card-section>
+            Wir sind regelmäßig bei den RTF des Radsportbezirks Köln sowie in ganz NRW vertreten.<br />
+            Gäste sind sowohl bei unseren Vereinsabenden als auch den Ausfahrten immer herzlich willkommen.<br /><br />
+            <q-btn color="primary" :icon="mdiArrowRight" label="Du möchtest uns kennenlernen? Dann melde Dich einfach bei: PR@rtc-koeln.de" outline href="mailto:PR@rtc-koeln.de" />
+        </q-card-section>
+        <q-card-section class="text-primary text-h6">Aktivitäten im Winter</q-card-section>
+        <q-card-section>
+            Auch in den Wintermonaten bieten wir lockere Ausfahrten an den Wochenenden an, bei denen wir ungefähr 60 Kilometer zurücklegen.<br />
+            <b>Falls ihr nicht alleine trainieren möchtet, seid ihr beim RTC Köln e.V. herzlich willkommen!</b>
+        </q-card-section>
+        <q-card-section class="text-primary text-h6">Unsere Touren</q-card-section>
+        <q-card-section>
+            Wir haben verschiedene Strecken rund um Köln, die wir – je nach Zeit und Gruppengröße – gemeinsam erkunden.<br />
+            Unsere Touren starten entweder an der Rodenkirchener Brücke (linksrheinisch) oder an der Schmitzebud.<br />
+            Die Strecken sind zwischen 60 Kilometer (mit etwa 450 Höhenmetern) und 130 Kilometer (mit etwa 1000 Höhenmetern) lang und führen durch landschaftlich reizvolle
+            Gegenden.
+        </q-card-section>
+        <q-card-section class="text-primary text-h6">Kommunikation und Kontakt</q-card-section>
+        <q-card-section>
+            Bei Interesse meldet euch gerne bei <a href="mailto:PR@rtc-koeln.de">PR@rtc-koeln.de</a><br />
+            Wir freuen uns darauf, euch auf unseren Touren zu begrüßen und gemeinsam die Faszination des Radsports zu erleben!
+        </q-card-section>
+        <q-card-section class="text-h6">Herzlich willkommen beim RTC Köln e.V.!</q-card-section>
     </q-card>
 </template>
 
 <script lang="ts" setup>
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+import { mdiArrowRight } from '@quasar/extras/mdi-v7'
 
 const imageUrls = [
     new GalleryEntryBuilder().setId('1e0ba419-3aa9-40b1-8cda-9bbf6dabcecb').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_0.jpg.avif').buildGalleryEntry(),
