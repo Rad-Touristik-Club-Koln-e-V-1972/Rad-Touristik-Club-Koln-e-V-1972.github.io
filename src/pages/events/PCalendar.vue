@@ -6,7 +6,11 @@
             <q-btn v-if="mode !== ECalendar.List" fab flat :icon="mdiChevronRight" @click="calendar.next()" />
             <q-toolbar-title v-if="mode !== ECalendar.List && !$q.screen.xs">{{ title }}</q-toolbar-title>
             <q-space />
-            <q-select v-model="mode" hide-hint outlined dense :options="Object.values(ECalendar)" />
+            <q-select v-model="mode" filled label="Darstellung" :options="Object.values(ECalendar)" style="min-width: 161px">
+                <template #prepend>
+                    <q-icon :name="mdiTableCog" />
+                </template>
+            </q-select>
         </q-toolbar>
         <q-card-section>
             <q-calendar
@@ -70,7 +74,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { date } from 'quasar'
-import { mdiChevronLeft, mdiChevronRight } from '@quasar/extras/mdi-v7'
+import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi-v7'
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
 import CList from 'components/pages/events/calendar/CList.vue'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
