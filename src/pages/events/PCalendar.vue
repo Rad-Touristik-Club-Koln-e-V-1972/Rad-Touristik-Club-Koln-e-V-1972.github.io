@@ -85,7 +85,7 @@ const calendar = ref()
 const event = ref()
 
 const events = useCalendarStore().allNotCancelled
-const mode = ref<ECalendar>(ECalendar.Month)
+const mode = ref<ECalendar>(ECalendar.List)
 const selectedDate = ref(date.formatDate(new Date(), 'YYYY-MM-DD'))
 const title = ref('')
 
