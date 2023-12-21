@@ -33,7 +33,7 @@ const clear = () => {
     emits('update:modelValue', '')
 }
 const save = () => {
-    stringDate.value = is.object(value.value) ? `${value.value.from} - ${value.value.to}` : `${value.value}`
+    stringDate.value = is.object(value.value) ? `${value.value.from} - ${value.value.to}` : value.value.toString()
     emits('update:modelValue', value.value)
 }
 
