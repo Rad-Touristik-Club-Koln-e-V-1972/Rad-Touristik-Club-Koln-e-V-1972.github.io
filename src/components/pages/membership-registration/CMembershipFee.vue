@@ -51,7 +51,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref, toValue, watch } from 'vue'
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
@@ -62,7 +62,7 @@ const props = defineProps<{ modelValue: MembershipFee }>()
 const value = ref(new MembershipFee())
 
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 watch(

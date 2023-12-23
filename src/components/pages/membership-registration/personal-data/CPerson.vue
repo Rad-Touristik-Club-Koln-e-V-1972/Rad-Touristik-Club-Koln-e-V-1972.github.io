@@ -31,7 +31,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import plzToCity from 'postleitzahlen/data/plz.full.json'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
@@ -41,7 +41,7 @@ const props = defineProps<{ modelValue: PersonalData }>()
 const value = ref(new PersonalData())
 
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 const updateCity = () => (value.value.city = (plzToCity as Record<string, string[]>)[value.value.zipCode][0] ?? '')

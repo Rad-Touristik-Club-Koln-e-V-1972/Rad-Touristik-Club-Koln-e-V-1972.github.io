@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed, ref, toRef } from 'vue'
 import { date, is, QTableColumn } from 'quasar'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
 import CCategories from 'components/pages/events/calendar/list/filter/CCategories.vue'
@@ -45,7 +45,7 @@ import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const filterComputed = computed(() => ({
+const filterComputed = toRef(() => ({
     categories: filter.value.categories,
     dateRange: filter.value.dateRange,
     search: filter.value.search,

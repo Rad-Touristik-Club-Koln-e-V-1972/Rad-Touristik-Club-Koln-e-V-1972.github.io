@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 
@@ -31,7 +31,7 @@ const props = defineProps<{ modelValue: BdrMembership }>()
 const value = ref(new BdrMembership())
 
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 onMounted(() => {

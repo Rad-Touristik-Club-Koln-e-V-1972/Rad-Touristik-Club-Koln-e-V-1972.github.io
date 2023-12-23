@@ -70,7 +70,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import Signature from 'src/models/entities/membership-registration/Signature'
@@ -81,7 +81,7 @@ const props = defineProps<{ modelValue: Signature }>()
 const value = ref(new Signature())
 
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 onMounted(() => {

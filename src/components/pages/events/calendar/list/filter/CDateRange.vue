@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import { is } from 'quasar'
 import { mdiCalendar } from '@quasar/extras/mdi-v7'
 
@@ -34,7 +34,7 @@ const clear = () => {
 }
 const save = () => {
     stringDate.value = is.object(value.value) ? `${value.value.from} - ${value.value.to}` : value.value.toString()
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 onMounted(() => {

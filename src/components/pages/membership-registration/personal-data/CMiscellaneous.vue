@@ -49,7 +49,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import { date } from 'quasar'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
@@ -60,7 +60,7 @@ const props = defineProps<{ modelValue: PersonalData }>()
 const value = ref(new PersonalData())
 
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 onMounted(() => {

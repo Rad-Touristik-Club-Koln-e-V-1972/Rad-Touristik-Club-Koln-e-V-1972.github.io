@@ -54,7 +54,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, toValue } from 'vue'
 import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
@@ -72,7 +72,7 @@ const emitTelePhoneUpdate = (countryCode: string) => {
     emitUpdate()
 }
 const emitUpdate = () => {
-    emits('update:modelValue', value.value)
+    emits('update:modelValue', toValue(value.value))
 }
 
 onMounted(() => {
