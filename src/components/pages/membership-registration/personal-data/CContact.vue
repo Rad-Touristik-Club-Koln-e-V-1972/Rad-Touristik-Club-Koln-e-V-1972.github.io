@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col">
                 <maz-phone-number-input
-                    v-model="value.telePhoneNumber"
-                    :default-country-code="value.telePhoneCountryCode"
-                    :default-phone-number="value.telePhoneNumber"
+                    v-model="modelValue.telePhoneNumber"
+                    :default-country-code="modelValue.telePhoneCountryCode"
+                    :default-phone-number="modelValue.telePhoneNumber"
                     no-flags
                     no-validation
                     :translations="{
@@ -25,9 +25,9 @@
             <div class="col-1" />
             <div class="col">
                 <maz-phone-number-input
-                    v-model="value.mobilePhoneNumber"
-                    :default-country-code="value.mobilePhoneCountryCode"
-                    :default-phone-number="value.mobilePhoneNumber"
+                    v-model="modelValue.mobilePhoneNumber"
+                    :default-country-code="modelValue.mobilePhoneCountryCode"
+                    :default-phone-number="modelValue.mobilePhoneNumber"
                     no-flags
                     no-validation
                     :translations="{
@@ -47,35 +47,23 @@
         </div>
         <div class="row">
             <div class="col">
-                <q-input v-model="value.email" label="E-Mail" @update:model-value="emitUpdate" />
+                <q-input v-model="modelValue.email" label="E-Mail" />
             </div>
         </div>
     </q-card-section>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, toValue } from 'vue'
+import { defineModel } from 'vue'
 import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
-const emits = defineEmits<{ 'update:modelValue': [value: PersonalData] }>()
-const props = defineProps<{ modelValue: PersonalData }>()
-
-const value = ref(new PersonalData())
+const modelValue = defineModel<PersonalData>({ required: true })
 
 const emitMobilePhoneUpdate = (countryCode: string) => {
-    value.value.mobilePhoneCountryCode = countryCode
-    emitUpdate()
+    modelValue.value.mobilePhoneCountryCode = countryCode
 }
 const emitTelePhoneUpdate = (countryCode: string) => {
-    value.value.telePhoneCountryCode = countryCode
-    emitUpdate()
+    modelValue.value.telePhoneCountryCode = countryCode
 }
-const emitUpdate = () => {
-    emits('update:modelValue', toValue(value.value))
-}
-
-onMounted(() => {
-    value.value = props.modelValue
-})
 </script>

@@ -3,7 +3,7 @@
         <template #append>
             <q-icon class="cursor-pointer" :name="mdiCalendar">
                 <q-popup-proxy v-model="popup" cover>
-                    <q-date v-model="value" color="primary" mask="DD.MM.YYYY" range>
+                    <q-date v-model="modelValue" color="primary" mask="DD.MM.YYYY" range>
                         <div class="items-center justify-end row">
                             <q-btn v-close-popup label="Abbrechen" />
                             <q-btn v-close-popup color="primary" label="OK" @click="save" />
@@ -16,28 +16,20 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, toValue } from 'vue'
+import { defineModel, ref } from 'vue'
 import { is } from 'quasar'
 import { mdiCalendar } from '@quasar/extras/mdi-v7'
 
-const emits = defineEmits<{ 'update:modelValue': [value: string | { from: string; to: string }] }>()
-const props = defineProps<{ modelValue: string | { from: string; to: string } }>()
+const modelValue = defineModel<string | { from: string; to: string }>({ required: true })
 
-const value = ref<string | { from: string; to: string }>('')
 const popup = ref(false)
 const stringDate = ref('')
 
 const clear = () => {
+    modelValue.value = ''
     stringDate.value = ''
-    value.value = ''
-    emits('update:modelValue', '')
 }
 const save = () => {
-    stringDate.value = is.object(value.value) ? `${value.value.from} - ${value.value.to}` : value.value.toString()
-    emits('update:modelValue', toValue(value.value))
+    stringDate.value = is.object(modelValue.value) ? `${modelValue.value.from} - ${modelValue.value.to}` : modelValue.value.toString()
 }
-
-onMounted(() => {
-    value.value = props.modelValue
-})
 </script>

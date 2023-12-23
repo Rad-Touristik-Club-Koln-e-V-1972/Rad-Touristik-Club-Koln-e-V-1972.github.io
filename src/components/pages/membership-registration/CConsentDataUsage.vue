@@ -55,36 +55,25 @@
         </div>
         <div class="row">
             <div class="col">
-                <q-input v-model="value.location" label="Ort" @update:model-value="emitUpdate" />
+                <q-input v-model="modelValue.location" label="Ort" />
             </div>
             <div class="col">
-                <c-date-picker v-model="value.date" label="Datum" @update:model-value="emitUpdate" />
+                <c-date-picker v-model="modelValue.date" label="Datum" />
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <c-signature-form v-model="value.signature" label="Unterschrift (Bei Minderjährigen: Unterschrift des Erziehungsberechtigten)" @update:model-value="emitUpdate" />
+                <c-signature-form v-model="modelValue.signature" label="Unterschrift (Bei Minderjährigen: Unterschrift des Erziehungsberechtigten)" />
             </div>
         </div>
     </q-card-section>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, toValue } from 'vue'
+import { defineModel } from 'vue'
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import Signature from 'src/models/entities/membership-registration/Signature'
 
-const emits = defineEmits<{ 'update:modelValue': [value: Signature] }>()
-const props = defineProps<{ modelValue: Signature }>()
-
-const value = ref(new Signature())
-
-const emitUpdate = () => {
-    emits('update:modelValue', toValue(value.value))
-}
-
-onMounted(() => {
-    value.value = props.modelValue
-})
+const modelValue = defineModel<Signature>({ required: true })
 </script>

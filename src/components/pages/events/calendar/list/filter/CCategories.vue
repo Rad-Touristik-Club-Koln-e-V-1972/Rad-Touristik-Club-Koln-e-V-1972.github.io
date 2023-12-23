@@ -1,14 +1,5 @@
 <template>
-    <q-select
-        clearable
-        dense
-        hide-hint
-        label="Kategorien"
-        :model-value="props.modelValue"
-        multiple
-        :options="Object.values(EEvent)"
-        @update:model-value="(value) => emits('update:modelValue', value)"
-    >
+    <q-select v-model="modelValue" clearable dense hide-hint label="Kategorien" multiple :options="Object.values(EEvent)">
         <template #append>
             <q-icon :name="mdiFilter" />
         </template>
@@ -16,9 +7,9 @@
 </template>
 
 <script lang="ts" setup>
+import { defineModel } from 'vue'
 import { mdiFilter } from '@quasar/extras/mdi-v7'
 import EEvent from 'src/models/enums/EEvent'
 
-const emits = defineEmits<{ 'update:modelValue': [value: EEvent] }>()
-const props = defineProps<{ modelValue: EEvent[] }>()
+const modelValue = defineModel<EEvent>({ required: true })
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <q-drawer bordered :model-value="props.modelValue" show-if-above @update:model-value="(value) => emits('update:modelValue', value)">
+    <q-drawer v-model="modelValue" bordered show-if-above>
         <q-scroll-area class="fit">
             <c-countdown />
             <br />
@@ -19,12 +19,12 @@
 </template>
 
 <script lang="ts" setup>
+import { defineModel } from 'vue'
 import CCountdown from 'components/MainLayout/CNavigationDrawer/CCountdown.vue'
 import CNavigationEntry from 'components/MainLayout/CNavigationDrawer/CNavigationEntry.vue'
 import useNavigationStore from 'stores/Navigation'
 
-const emits = defineEmits<{ 'update:modelValue': [value: boolean] }>()
-const props = defineProps<{ modelValue: boolean }>()
+const modelValue = defineModel<boolean>({ required: true })
 
 const navigationStore = useNavigationStore()
 </script>

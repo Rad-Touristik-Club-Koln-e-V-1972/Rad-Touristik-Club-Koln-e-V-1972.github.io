@@ -1,5 +1,5 @@
 <template>
-    <q-input :model-value="props.modelValue" clearable debounce="500" dense hide-hint label="Suche" @update:model-value="(value) => emits('update:modelValue', value)">
+    <q-input v-model="modelValue" clearable debounce="500" dense hide-hint label="Suche">
         <template #append>
             <q-icon :name="mdiMagnify" />
         </template>
@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts" setup>
+import { defineModel } from 'vue'
 import { mdiMagnify } from '@quasar/extras/mdi-v7'
 
-const emits = defineEmits<{ 'update:modelValue': [value: string | number | null] }>()
-const props = defineProps<{ modelValue?: string }>()
+const modelValue = defineModel<string | number | null>()
 </script>

@@ -1,7 +1,7 @@
 <template>
     <q-carousel
         ref="carousel"
-        v-model="slide"
+        v-model="modelValue"
         animated
         :autoplay="12000"
         control-color="primary"
@@ -9,7 +9,6 @@
         :height="props.height"
         :infinite="props.infinite"
         swipeable
-        @update:model-value="(value) => emits('update:modelValue', value)"
     >
         <q-carousel-slide v-for="it in props.galleryEntries" :key="it" :name="it">
             <q-img class="absolute-center full-height" fit="contain" :placeholder-src="it.previewUrl.toString()" :src="it.imageUrl.toString()" style="z-index: 1" />
@@ -27,24 +26,20 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { defineModel, ref } from 'vue'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const emits = defineEmits<{ 'update:modelValue': [value: GalleryEntry] }>()
-const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean; modelValue?: GalleryEntry }>(), {
+const modelValue = defineModel<GalleryEntry>({ local: true })
+const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>(), {
     height: '100%',
     infinite: true,
-    modelValue: undefined,
 })
 
 const carousel = ref()
-const slide = ref()
 
-onMounted(() => {
+if (modelValue.value === undefined) {
     const [first] = props.galleryEntries
-
-    if (props.modelValue) slide.value = props.modelValue
-    else slide.value = first
-})
+    modelValue.value = first
+}
 </script>

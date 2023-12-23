@@ -2,39 +2,24 @@
     <q-card-section>
         <div class="row">
             <div class="col">
-                <q-checkbox
-                    v-model="value.isMember"
-                    label="Ich bin bereits Mitglied beim Bund Deutscher Radfahrer (bei Vereinswechsel bitte unbedingt angeben)"
-                    @update:model-value="emitUpdate"
-                />
+                <q-checkbox v-model="modelValue.isMember" label="Ich bin bereits Mitglied beim Bund Deutscher Radfahrer (bei Vereinswechsel bitte unbedingt angeben)" />
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <q-input v-model="value.number" label="BDR-Mitgliedsnummer" @update:model-value="emitUpdate" />
+                <q-input v-model="modelValue.number" label="BDR-Mitgliedsnummer" />
             </div>
             <div class="col">
-                <c-date-picker v-model="value.date" label="Mitglied seit" @update:model-value="emitUpdate" />
+                <c-date-picker v-model="modelValue.date" label="Mitglied seit" />
             </div>
         </div>
     </q-card-section>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, toValue } from 'vue'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import { defineModel } from 'vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
+import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 
-const emits = defineEmits<{ 'update:modelValue': [value: BdrMembership] }>()
-const props = defineProps<{ modelValue: BdrMembership }>()
-
-const value = ref(new BdrMembership())
-
-const emitUpdate = () => {
-    emits('update:modelValue', toValue(value.value))
-}
-
-onMounted(() => {
-    value.value = props.modelValue
-})
+const modelValue = defineModel<BdrMembership>({ required: true })
 </script>

@@ -8,11 +8,11 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted } from 'vue'
 import { mdiPenRemove } from '@quasar/extras/mdi-v7'
 import SignaturePad from 'signature_pad'
-import { onMounted } from 'vue'
 
-const emits = defineEmits<{ 'update:modelValue': [value: string] }>()
+const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
 const props = defineProps<{ label: string; modelValue: string }>()
 
 let canvas, signaturePad: SignaturePad
@@ -24,7 +24,7 @@ onMounted(async () => {
     if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
 
     signaturePad.addEventListener('endStroke', () => {
-        emits('update:modelValue', signaturePad.toDataURL())
+        emit('update:modelValue', signaturePad.toDataURL())
     })
 })
 </script>
