@@ -27,14 +27,11 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from 'src/utils/DateTime'
-import { useRouter } from 'vue-router'
 
-const props = defineProps({
-    album: { default: undefined, type: String },
-    modelValue: { required: true, type: Gallery },
-})
+const props = withDefaults(defineProps<{ album?: string; modelValue: Gallery }>(), { album: undefined })
 
 const router = useRouter()
 

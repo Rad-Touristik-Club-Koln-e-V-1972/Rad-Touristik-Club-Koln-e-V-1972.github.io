@@ -6,15 +6,12 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, PropType } from 'vue'
+import { computed } from 'vue'
 import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
 import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.vue'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const props = defineProps({
-    modelValue: { required: true, type: Array as PropType<GalleryEntry[]> },
-    startIndex: { default: 0, type: Number },
-})
+const props = withDefaults(defineProps<{ modelValue: GalleryEntry[]; startIndex?: number }>(), { startIndex: 0 })
 
 const isMimeTypePDF = computed(() => props.modelValue.at(props.startIndex)?.mimeType === 'application/pdf')
 </script>

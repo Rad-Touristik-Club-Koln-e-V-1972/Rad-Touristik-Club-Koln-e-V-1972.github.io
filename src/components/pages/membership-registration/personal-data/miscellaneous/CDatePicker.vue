@@ -23,14 +23,13 @@
 
 <script lang="ts" setup>
 import { mdiCalendar } from '@quasar/extras/mdi-v7'
-import useDateTime from 'src/utils/DateTime'
 import { date } from 'quasar'
+import useDateTime from 'src/utils/DateTime'
 
 const emits = defineEmits<{ 'update:modelValue': [value: string] }>()
-const props = defineProps({
-    label: { default: '', type: String },
-    max: { default: undefined, type: Date },
-    min: { default: undefined, type: Date },
-    modelValue: { required: true, type: String },
+const props = withDefaults(defineProps<{ label?: string; max?: Date; min?: Date; modelValue: string }>(), {
+    label: '',
+    max: undefined,
+    min: undefined,
 })
 </script>

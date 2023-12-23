@@ -27,16 +27,15 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, PropType, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const emits = defineEmits<{ 'update:modelValue': [value: GalleryEntry] }>()
-const props = defineProps({
-    galleryEntries: { required: true, type: Array as PropType<GalleryEntry[]> },
-    height: { default: '100%', type: String },
-    infinite: { default: true, type: Boolean },
-    modelValue: { default: undefined, type: GalleryEntry },
+const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean; modelValue?: GalleryEntry }>(), {
+    height: '100%',
+    infinite: true,
+    modelValue: undefined,
 })
 
 const carousel = ref()
