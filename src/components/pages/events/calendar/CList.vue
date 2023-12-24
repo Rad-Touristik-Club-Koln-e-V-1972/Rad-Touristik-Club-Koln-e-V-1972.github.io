@@ -50,7 +50,7 @@ const filterComputed = toRef(() => ({
     dateRange: filter.value.dateRange,
     search: filter.value.search,
 }))
-const futureEvents = computed(() => useCalendarStore().allFuture())
+const futureEvents = computed(() => useCalendarStore().allActualYear())
 
 const columns: QTableColumn<Event>[] = [
     {

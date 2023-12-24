@@ -13,6 +13,7 @@ export default defineStore('calendar', () => {
     })
 
     const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))
+    const allActualYear = () => all.value.filter((it) => it.start.getFullYear() === today().getFullYear())
     const allFuture = () => all.value.filter((it) => it.start.getTime() > today().getTime())
     const allNotCancelled = computed(() => all.value.filter((it) => it.category !== EEvent.Abgesagt))
     const nextEvents = () =>
@@ -23,5 +24,5 @@ export default defineStore('calendar', () => {
     const nextRTF = () => allFuture().find((it) => it.category === EEvent.RTF)
     const today = () => new Date(Date.now())
 
-    return { all, allFuture, allNotCancelled, nextEvents, nextRTF, today }
+    return { all, allActualYear, allFuture, allNotCancelled, nextEvents, nextRTF, today }
 })
