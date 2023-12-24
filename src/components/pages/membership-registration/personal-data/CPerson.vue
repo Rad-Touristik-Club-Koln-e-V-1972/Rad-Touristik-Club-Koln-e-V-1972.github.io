@@ -37,5 +37,7 @@ import PersonalData from 'src/models/entities/membership-registration/PersonalDa
 
 const modelValue = defineModel<PersonalData>({ required: true })
 
-const updateCity = () => (modelValue.value.city = (plzToCity as Record<string, string[]>)[modelValue.value.zipCode][0] ?? '')
+// Needed because of the false positive eslint warning.
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+const updateCity = () => (modelValue.value.city = (plzToCity as Record<string, string[]>)[modelValue.value.zipCode]?.[0] ?? '')
 </script>
