@@ -108,7 +108,7 @@ const columns: QTableColumn<Event>[] = [
     },
 ]
 const filter = ref<Filter>({
-    categories: [],
+    categories: [EEvent.Vereinsfahrt],
     dateRange: '',
     search: '',
 })
