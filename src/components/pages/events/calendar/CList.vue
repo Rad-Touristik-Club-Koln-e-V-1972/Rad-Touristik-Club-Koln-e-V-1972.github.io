@@ -116,7 +116,7 @@ const initialPagination = {
     sortBy: 'datetime',
     descending: false,
     page: 1,
-    rowsPerPage: 10,
+    rowsPerPage: 20,
 }
 
 const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
