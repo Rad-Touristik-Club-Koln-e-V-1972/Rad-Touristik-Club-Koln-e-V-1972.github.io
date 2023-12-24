@@ -11,7 +11,7 @@
             <div v-if="props.modelValue.text">
                 <span class="text-pre-wrap" v-html="props.modelValue.text" />
             </div>
-            <c-slideshow v-if="props.modelValue.imageUrls?.length" :gallery-entries="props.modelValue.imageUrls" />
+            <c-slideshow v-if="props.modelValue.imageUrls?.length" :gallery-entries="props.modelValue.imageUrls" height="200px" />
         </q-card-section>
         <q-expansion-item v-if="props.modelValue.answer" class="text-secondary" expand-separator label="Details">
             <q-card flat>
