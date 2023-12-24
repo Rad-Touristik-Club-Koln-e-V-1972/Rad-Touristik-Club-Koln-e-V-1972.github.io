@@ -1,5 +1,5 @@
 <template>
-    <q-select v-model="modelValue" clearable dense hide-hint label="Kategorien" multiple :options="Object.values(EEvent)">
+    <q-select v-model="modelValue" clearable dense hide-hint label="Kategorien" multiple :options="Object.values(EEvent)" @clear="modelValue = []">
         <template #append>
             <q-icon :name="mdiFilter" />
         </template>
