@@ -15,10 +15,10 @@
             <q-img class="absolute-center full-height" :src="it.previewUrl.toString()" style="filter: blur(20px)" />
         </q-carousel-slide>
         <template #control>
-            <q-carousel-control position="bottom-left" style="z-index: 1">
+            <q-carousel-control v-if="props.galleryEntries.length > 1" position="bottom-left" style="z-index: 1">
                 <q-btn color="primary" :icon="mdiArrowLeft" round size="md" text-color="accent" @click="$refs.carousel.previous()" />
             </q-carousel-control>
-            <q-carousel-control position="bottom-right" style="z-index: 1">
+            <q-carousel-control v-if="props.galleryEntries.length > 1" position="bottom-right" style="z-index: 1">
                 <q-btn color="primary" :icon="mdiArrowRight" round size="md" text-color="accent" @click="$refs.carousel.next()" />
             </q-carousel-control>
         </template>
