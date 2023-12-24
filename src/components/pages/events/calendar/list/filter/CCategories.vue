@@ -11,5 +11,5 @@ import { defineModel } from 'vue'
 import { mdiFilter } from '@quasar/extras/mdi-v7'
 import EEvent from 'src/models/enums/EEvent'
 
-const modelValue = defineModel<EEvent>({ required: true })
+const modelValue = defineModel<EEvent[]>({ required: true })
 </script>
