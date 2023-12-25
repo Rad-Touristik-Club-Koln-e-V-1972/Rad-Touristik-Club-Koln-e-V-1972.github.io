@@ -39,8 +39,8 @@ dependencies:
     specifier: 2.13.0
     version: 2.13.0
   signature_pad:
-    specifier: 4.1.6
-    version: 4.1.6
+    specifier: 4.1.7
+    version: 4.1.7
   vue:
     specifier: 3.3.7
     version: 3.3.7(typescript@5.3.3)
@@ -4012,8 +4012,8 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /signature_pad@4.1.6:
-    resolution: {integrity: sha512-eoZB8qFPfCs7o00weajp5roNnE2gY2kTNjZsh805L8V+lYPagxoZi9qrBFS3A6sgbVq++ukdzgruK7tuv3JFXQ==}
+  /signature_pad@4.1.7:
+    resolution: {integrity: sha512-2Vmybep25VlDnvdgtE3v09KGawS8mL10lRpSq1RmPpLcS4eH8I1YPQUzXsxwnmepcAgDHQ2jyzgS6XhjKsYYAQ==}
     dev: false
 
   /sisteransi@1.0.5:
