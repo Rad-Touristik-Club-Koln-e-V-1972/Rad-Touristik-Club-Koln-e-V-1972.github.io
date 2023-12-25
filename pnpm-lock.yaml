@@ -24,8 +24,8 @@ dependencies:
     specifier: 1.10.52
     version: 1.10.52
   maz-ui:
-    specifier: 3.20.0
-    version: 3.20.0(libphonenumber-js@1.10.52)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.3.13)
+    specifier: 3.30.0
+    version: 3.30.0(libphonenumber-js@1.10.52)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.3.13)
   mime:
     specifier: 4.0.1
     version: 4.0.1
@@ -3117,8 +3117,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /maz-ui@3.20.0(libphonenumber-js@1.10.52)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.3.13):
-    resolution: {integrity: sha512-TFnKolv1f7Ah+MU2ldxiMHr0KffnxuR9Wvp7FzU972SJB/KBpf466+wvsj7WZKFhvsmCkTNvuiGVACFh6HsSKg==}
+  /maz-ui@3.30.0(libphonenumber-js@1.10.52)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.3.13):
+    resolution: {integrity: sha512-KqAmj0QQi7zqILwEjEcr6vLjvwOwQEpyfGER45/sSvmhucFYc1QGVPwXc9MTlWtex+EI3hWJwDQj+L1QM1f7pw==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     hasBin: true
     peerDependencies:
@@ -3129,9 +3129,9 @@ packages:
       dropzone: ^5.9.3
       libphonenumber-js: ^1.9.44
       nuxt: ^3.4.0
+      unplugin-vue-components: ^0.25.0
       vue: ^3.0.0
       vue-router: ^4.0.0
-      vue-scrollto: ^2.0.0
     peerDependenciesMeta:
       '@nuxt/kit':
         optional: true
@@ -3147,9 +3147,9 @@ packages:
         optional: true
       nuxt:
         optional: true
-      vue-router:
+      unplugin-vue-components:
         optional: true
-      vue-scrollto:
+      vue-router:
         optional: true
     dependencies:
       '@mazui/cli': 3.29.12-beta.21(typescript@5.3.3)
