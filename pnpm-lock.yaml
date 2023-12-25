@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@quasar/extras':
-    specifier: 1.16.7
-    version: 1.16.7
+    specifier: 1.16.9
+    version: 1.16.9
   '@quasar/quasar-ui-qcalendar':
     specifier: 4.0.0-beta.16
     version: 4.0.0-beta.16
@@ -507,8 +507,8 @@ packages:
       - supports-color
     dev: true
 
-  /@quasar/extras@1.16.7:
-    resolution: {integrity: sha512-nYF3gVE/si1YJ/D4qmAiHGwxoJIDCvTT8NI6ZmbTMPrur4J8xBKhfhfhyLoQ4k2jJZP6Rx0rUcB71FBNC2C8vQ==}
+  /@quasar/extras@1.16.9:
+    resolution: {integrity: sha512-SlOhwzXyPQHWgQIS2ncyDdYdksCJvUYNtgsDQqzAKEG3r3d/ejOxvThle79HTK3Q6HB+gQWFG21Ux00Osr5XSw==}
     dev: false
 
   /@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16:
