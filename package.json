@@ -30,7 +30,7 @@
         "postleitzahlen": "1.0.0",
         "quasar": "2.13.0",
         "signature_pad": "4.1.7",
-        "vue": "3.3.7",
+        "vue": "3.3.13",
         "vue-router": "4.2.5"
     },
     "devDependencies": {
