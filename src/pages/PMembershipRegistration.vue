@@ -5,7 +5,7 @@
             <q-tab alert label="Infos" name="infos" />
             <q-tab alert label="Bewerbung" name="bewerbung" />
         </q-tabs>
-        <q-tab-panels v-model="tab">
+        <q-tab-panels v-model="tab" keep-alive>
             <q-tab-panel name="infos">
                 <q-card-section class="text-subtitle1">
                     <div class="row">
@@ -64,7 +64,7 @@
             </q-tab-panel>
             <q-tab-panel name="bewerbung">
                 <q-card-section>
-                    <q-stepper v-model="step" animated vertical>
+                    <q-stepper v-model="step" animated keep-alive vertical>
                         <q-step :done="step > 1" :name="1" title="Personendaten">
                             <q-stepper-navigation>
                                 <c-person v-model="value.personalData" />
@@ -147,7 +147,7 @@ const images = [
         .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.avif')
         .buildGalleryEntry(),
 ]
-const step = ref(1)
+const step = ref(7)
 const tab = ref('infos')
 const value = ref(
     new MembershipRegistrationBuilder()
