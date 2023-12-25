@@ -15,11 +15,10 @@ import SignaturePad from 'signature_pad'
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
 const props = defineProps<{ label: string; modelValue: string }>()
 
-let canvas, signaturePad: SignaturePad
+let signaturePad: SignaturePad
 
 onMounted(async () => {
-    canvas = document.querySelector('canvas')
-    signaturePad = new SignaturePad(canvas)
+    signaturePad = new SignaturePad(document.querySelector('canvas'))
 
     if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
 
