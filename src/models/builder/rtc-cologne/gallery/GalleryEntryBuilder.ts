@@ -4,11 +4,8 @@ import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class GalleryEntryBuilder extends ABuilder {
     private galleryEntry = new GalleryEntry()
-    private previewUrl: string | null = null
 
     buildGalleryEntry = () => {
-        this.galleryEntry.previewUrl = this.createPreviewURL()
-
         return Object.assign(this.galleryEntry, this.buildAEntity())
     }
 
@@ -16,25 +13,15 @@ export default class GalleryEntryBuilder extends ABuilder {
         this.galleryEntry.imageUrl = new URL(`https://${value}`)
         this.galleryEntry.mimeType = mime.getType(value)
 
+        // Needed for pdfs with custom previewUrl
+        if (value.includes('.avif')) this.galleryEntry.previewUrl = this.galleryEntry.imageUrl
+
         return this
     }
 
     setPreviewUrl = (value: string): this => {
-        this.previewUrl = value
+        this.galleryEntry.previewUrl = new URL(`https://${value}`)
 
         return this
-    }
-
-    // TODO Remove after every image is an avif
-    private createPreviewURL = () => {
-        if (this.previewUrl) {
-            return new URL(`https://${this.previewUrl}`)
-        } else if (this.galleryEntry.imageUrl.href.includes('.avif')) {
-            return this.galleryEntry.imageUrl
-        } else {
-            const strings = this.galleryEntry.imageUrl.href.split('/')
-
-            return new URL(`${strings.slice(0, -1).join('/')}/preview/preview.${strings.at(-1)}`)
-        }
     }
 }
