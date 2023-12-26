@@ -5,7 +5,7 @@
     "productName": "RTC Köln e.V. 1972",
     "author": "Martin Dünkelmann <nc-duenkekl3@netcologne.de>",
     "private": true,
-    "packageManager": "pnpm@8.12.1",
+    "packageManager": "pnpm@8.13.1",
     "scripts": {
         "build": "quasar build",
         "predev": "pnpm lint",
