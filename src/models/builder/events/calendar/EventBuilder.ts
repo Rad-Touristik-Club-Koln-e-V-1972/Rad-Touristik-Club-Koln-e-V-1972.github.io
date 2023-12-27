@@ -45,6 +45,12 @@ export default class EventBuilder extends ABuilder {
         return this
     }
 
+    setProvisionalReason = (value: string): this => {
+        this.event.provisionalReason = value
+
+        return this
+    }
+
     setUrl = (value: string): this => {
         this.event.url = new URL(`https://${value}`)
 
@@ -59,6 +65,7 @@ export default class EventBuilder extends ABuilder {
                 color = 'grey'
                 break
             case EEvent.CTF:
+            case EEvent.Marathon:
                 color = 'blue'
                 break
             case EEvent.Feiertag:

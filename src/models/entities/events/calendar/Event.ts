@@ -9,6 +9,7 @@ export default class Event extends AEntity {
     contact!: string
     end: Date | null = null
     name!: string
+    provisionalReason?: string
     start!: Date
     url: URL | null = null
 }
