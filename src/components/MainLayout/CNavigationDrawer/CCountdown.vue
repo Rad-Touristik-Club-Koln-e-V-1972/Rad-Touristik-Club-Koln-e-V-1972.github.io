@@ -1,5 +1,5 @@
 <template>
-    <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="event.showEvent({ event: nextEvents[0] })">
+    <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="event.showEvent(nextEvents[0])">
         <div class="justify-center row">
             <div class="col-auto">
                 <q-circular-progress class="q-ma-md" color="primary" rounded size="60px" show-value :thickness="0.2" track-color="transparent" :value="getPercentageDays(days)">
@@ -43,12 +43,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-1 offset-1">Zuerst:</div>
-            <div class="col-9 text-bold">{{ nextEvents[0].name }}</div>
+            <div class="col-auto offset-1">Zuerst:</div>
         </div>
-        <div v-if="nextEvents[1]" class="row">
-            <div class="col-1 offset-1">Danach:</div>
-            <div class="col-9 text-bold">{{ nextEvents[1].name }}</div>
+        <div class="row">
+            <div class="col text-bold">{{ nextEvents[0].name }}</div>
+        </div>
+        <div v-if="nextEvents[1]">
+            <div class="row">
+                <div class="col-auto offset-1">Danach:</div>
+            </div>
+            <div class="row">
+                <div class="col text-bold">{{ nextEvents[1].name }}</div>
+            </div>
         </div>
     </q-card>
     <d-event ref="event" />
@@ -81,6 +87,7 @@ let interval: number
 
 const calcCountdown = (nextEvent: Event) => {
     const milliseconds = Math.abs(calendarStore.today().getTime() - nextEvent.start.getTime())
+
     days.value = Math.floor(milliseconds / _millisecondsDay)
     hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)
     minutes.value = Math.floor((milliseconds % _millisecondsHour) / _millisecondsMinute)
