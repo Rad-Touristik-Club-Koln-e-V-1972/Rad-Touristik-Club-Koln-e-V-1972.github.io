@@ -14,18 +14,27 @@
                 </div>
             </div>
         </q-toolbar>
-        <q-table :columns="columns" :filter="filterComputed" :filter-method="filterMethod" :pagination="initialPagination" :rows="futureEvents">
-            <template #body-cell-name="props">
-                <q-td :props="props">
-                    <a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank" v-text="props.row.name" />
-                </q-td>
-            </template>
-            <template #body-cell-contact="props">
-                <q-td :props="props">
-                    <router-link v-if="props.row.contact" :class="getColor(props.row)" :to="{ name: 'rtc-cologne-contacts' }">
-                        {{ props.row.contact }}
-                    </router-link>
-                </q-td>
+        <q-table :columns="columns" :filter="filterComputed" :filter-method="filterMethod" :pagination="initialPagination" :rows="futureEvents" separator="none">
+            <template #body="props">
+                <q-tr :class="getColor(props.row) + getStyle(props.row)">
+                    <q-td>{{ props.row.category }}</q-td>
+                    <q-td><a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank" v-text="props.row.name" /></q-td>
+                    <q-td>{{ dateTime.format(props.row.start, props.row.end, props.row.allDay) }}</q-td>
+                    <q-td>
+                        <router-link v-if="props.row.contact" :class="getColor(props.row)" :to="{ name: 'rtc-cologne-contacts' }">
+                            {{ props.row.contact }}
+                        </router-link>
+                    </q-td>
+                    <q-td>{{ props.row.kilometer }}</q-td>
+                </q-tr>
+                <q-tr v-if="props.row.provisionalReason" :class="`${getColor(props.row)} ${getStyle(props.row)} text-center`">
+                    <q-td colspan="100%">
+                        <q-icon :name="mdiArrowUpLeftBold" />
+                        {{ props.row.provisionalReason }}
+                        <q-icon :name="mdiArrowUpRightBold" />
+                    </q-td>
+                </q-tr>
+                <q-separator />
             </template>
         </q-table>
     </q-card>
@@ -34,6 +43,7 @@
 <script lang="ts" setup>
 import { computed, ref, toRef } from 'vue'
 import { date, is, QTableColumn } from 'quasar'
+import { mdiArrowUpLeftBold, mdiArrowUpRightBold } from '@quasar/extras/mdi-v7'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
 import CCategories from 'components/pages/events/calendar/list/filter/CCategories.vue'
 import CDateRange from 'components/pages/events/calendar/list/filter/CDateRange.vue'
@@ -55,8 +65,6 @@ const futureEvents = computed(() => useCalendarStore().allActualYear())
 const columns: QTableColumn<Event>[] = [
     {
         align: 'left',
-        // TODO Workaround until https://github.com/quasarframework/quasar/pull/13742
-        classes: (row: Event) => getColor(row),
         field: 'category',
         label: 'Art',
         name: 'category',
@@ -65,46 +73,34 @@ const columns: QTableColumn<Event>[] = [
     },
     {
         align: 'left',
-        // TODO Workaround until https://github.com/quasarframework/quasar/pull/13742
-        classes: (row: Event) => getColor(row),
         field: 'name',
         label: 'Event',
         name: 'name',
         sort: (a: string, b: string) => a.localeCompare(b),
         sortable: true,
-        style: (row: Event) => getStyle(row),
     },
     {
         align: 'left',
-        // TODO Workaround until https://github.com/quasarframework/quasar/pull/13742
-        classes: (row: Event) => getColor(row),
         field: (row: Event) => dateTime.format(row.start, row.end, row.allDay),
         label: 'Termin',
         name: 'datetime',
         sort: (a: string, b: string, rowA: Event, rowB: Event) => sortDateTime(rowA, rowB),
         sortable: true,
         sortOrder: 'ad',
-        style: (row: Event) => getStyle(row),
     },
     {
         align: 'left',
-        // TODO Workaround until https://github.com/quasarframework/quasar/pull/13742
-        classes: (row: Event) => getColor(row),
         field: 'contact',
         label: 'Ansprechpartner',
         name: 'contact',
         sortable: true,
-        style: (row: Event) => getStyle(row),
     },
     {
         align: 'left',
-        // TODO Workaround until https://github.com/quasarframework/quasar/pull/13742
-        classes: (row: Event) => getColor(row),
-        field: 'clubPoints',
-        label: 'VP',
-        name: 'clubPoints',
+        field: 'kilometer',
+        label: 'Kilometer',
+        name: 'kilometer',
         sortable: true,
-        style: (row: Event) => getStyle(row),
     },
 ]
 const filter = ref<Filter>({
@@ -136,7 +132,7 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
         tmp = tmp.filter((item) => dateTime.isBetweenDates(item.start, from, to))
     }
 
-    if (terms.search) tmp = tmp.filter((item) => (item.clubPoints + item.contact + item.name).toLowerCase().includes(terms.search.toLowerCase()))
+    if (terms.search) tmp = tmp.filter((item) => (item.kilometer + item.contact + item.name).toLowerCase().includes(terms.search.toLowerCase()))
 
     return tmp
 }

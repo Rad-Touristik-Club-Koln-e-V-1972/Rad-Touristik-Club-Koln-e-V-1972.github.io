@@ -7,8 +7,12 @@
                 <q-btn v-close-popup dense flat :icon="mdiClose" round text-color="accent" />
             </q-card-section>
             <q-card-section>
-                <q-markup-table flat>
+                <q-markup-table flat wrap-cells>
                     <tbody>
+                        <tr v-if="selectedEvent?.provisionalReason" class="q-tr--no-hover text-primary">
+                            <td class="text-end">Provisorischer Termin:</td>
+                            <td v-text="selectedEvent?.provisionalReason" />
+                        </tr>
                         <tr v-if="!isEventMitgliederversammlung" class="q-tr--no-hover">
                             <td class="text-end">Art:</td>
                             <td v-text="selectedEvent?.category" />
