@@ -21,9 +21,9 @@
                             <td class="text-end">Ansprechpartner:</td>
                             <td v-text="selectedEvent.contact" />
                         </tr>
-                        <tr v-if="selectedEvent?.clubPoints" class="q-tr--no-hover">
-                            <td class="text-end">Vereinspunkte:</td>
-                            <td v-text="selectedEvent.clubPoints" />
+                        <tr v-if="selectedEvent?.kilometer" class="q-tr--no-hover">
+                            <td class="text-end">Kilometer:</td>
+                            <td v-text="selectedEvent.kilometer" />
                         </tr>
                     </tbody>
                 </q-markup-table>

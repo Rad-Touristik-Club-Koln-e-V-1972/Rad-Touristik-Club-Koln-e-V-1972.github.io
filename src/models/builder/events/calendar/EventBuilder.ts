@@ -20,12 +20,6 @@ export default class EventBuilder extends ABuilder {
         return this
     }
 
-    setClubPoints = (value: number): this => {
-        this.event.clubPoints = value
-
-        return this
-    }
-
     setContact = (value: string): this => {
         this.event.contact = value
 
@@ -35,6 +29,12 @@ export default class EventBuilder extends ABuilder {
     setDate = (start: Date | string, end: Date | string | null = null): this => {
         if (end) this.event.end = new Date(end)
         this.event.start = new Date(start)
+
+        return this
+    }
+
+    setKilometer = (value: number): this => {
+        this.event.kilometer = value
 
         return this
     }
