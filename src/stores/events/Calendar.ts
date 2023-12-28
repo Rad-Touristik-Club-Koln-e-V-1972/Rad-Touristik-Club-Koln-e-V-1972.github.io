@@ -1,6 +1,5 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
-import _2022 from './calendar/2022'
 import _2023 from './calendar/2023'
 import EEvent from 'src/models/enums/EEvent'
 import Event from 'src/models/entities/events/calendar/Event'
@@ -8,7 +7,6 @@ import useCalendar from 'src/utils/Calendar'
 
 export default defineStore('calendar', () => {
     const events = ref<Record<string, Event[]>>({
-        2022: _2022.concat(useCalendar().getHolidays(2022)),
         2023: _2023.concat(useCalendar().getHolidays(2023)),
     })
 
