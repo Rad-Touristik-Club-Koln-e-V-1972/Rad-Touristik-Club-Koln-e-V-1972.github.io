@@ -14,7 +14,7 @@
                 </div>
             </div>
         </q-toolbar>
-        <q-table :columns="columns" :filter="filterComputed" :filter-method="filterMethod" :pagination="initialPagination" :rows="futureEvents" separator="none">
+        <q-table :columns="columns" :filter="filter" :filter-method="filterMethod" :pagination="initialPagination" :rows="events" separator="none">
             <template #body="props">
                 <q-tr :class="getColor(props.row) + getStyle(props.row)">
                     <q-td>{{ props.row.category }}</q-td>
@@ -41,7 +41,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, toRef } from 'vue'
+import { computed, ref } from 'vue'
 import { date, is, QTableColumn } from 'quasar'
 import { mdiArrowUpLeftBold, mdiArrowUpRightBold } from '@quasar/extras/mdi-v7'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
@@ -55,11 +55,6 @@ import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const filterComputed = toRef(() => ({
-    categories: filter.value.categories,
-    dateRange: filter.value.dateRange,
-    search: filter.value.search,
-}))
 const futureEvents = computed(() => useCalendarStore().allActualYearAndFuture())
 
 const columns: QTableColumn<Event>[] = [
