@@ -87,14 +87,12 @@ Euer RTC Köln e.V.`,
                     .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
                     .setName('Hinweis')
                     .setText(
-                        `Die 120er-Strecke hat sich geändert!
+                        `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
 
-Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!
+Wir bieten in diesem Jahr eine geführte Touren (70 km) für Neueinsteiger an!
 
 Tempo: max. 20er Schnitt
-Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.
-
-Startzeiten: 8 Uhr und ca. 11 Uhr`,
+Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
                     )
                     .buildTrack(),
                 new TrackBuilder()

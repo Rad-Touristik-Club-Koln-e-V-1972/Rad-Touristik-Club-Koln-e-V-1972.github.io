@@ -6,25 +6,20 @@
                 Unsere <b>{{ nextRTF.name }}</b> ist am <b>{{ dateTime.format(nextRTF.start, null, true) }}</b>
                 <br />
                 <br />
-                <div class="row">
-                    <div class="col text-center">Die 120er-Strecke hat sich geändert!</div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">Wir bieten in diesem Jahr erstmalig zwei geführte Touren (51 km) für Neueinsteiger an!</div>
-                </div>
+                <div class="text-center">Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!</div>
+                <br />
+                <div class="text-center">Wir bieten in diesem Jahr eine geführte Touren (70 km) für Neueinsteiger an!</div>
                 <div class="row">
                     <div class="col-4 text-right">Tempo:</div>
-                    <div class="col text-left">max. 20er Schnitt</div>
+                    <div class="col-1" />
+                    <div class="col">max. 20er Schnitt</div>
                 </div>
                 <div class="row">
                     <div class="col-4 text-right">
                         <q-icon left :name="mdiArrowRightBottom" size="xs" />
                     </div>
-                    <div class="col text-left">Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</div>
-                </div>
-                <div class="row">
-                    <div class="col-4 text-right">Startzeiten:</div>
-                    <div class="col text-left">8 Uhr und ca. 11 Uhr</div>
+                    <div class="col-1" />
+                    <div class="col">Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</div>
                 </div>
                 <br />
                 Notiert Euch schon mal den Termin.
