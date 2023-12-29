@@ -51,11 +51,13 @@ import Event from 'src/models/entities/events/calendar/Event'
 import Filter from 'src/models/entities/events/calendar/Filter'
 import EEvent from 'src/models/enums/EEvent'
 import useCalendarStore from 'stores/events/Calendar'
+import useCalendar from 'src/utils/Calendar.ts'
 import useDateTime from 'src/utils/DateTime'
 
+const calendar = useCalendar()
 const dateTime = useDateTime()
 
-const futureEvents = computed(() => useCalendarStore().allActualYearAndFuture())
+const events = computed(() => useCalendarStore().all)
 
 const columns: QTableColumn<Event>[] = [
     {
@@ -98,9 +100,10 @@ const columns: QTableColumn<Event>[] = [
         sortable: true,
     },
 ]
+
 const filter = ref<Filter>({
     categories: [EEvent.CTF, EEvent.Marathon, EEvent.Mitgliederversammlung, EEvent.Permanente, EEvent.RTC, EEvent.RTF, EEvent.Veranstaltung, EEvent.Vereinsfahrt],
-    dateRange: '',
+    dateRange: { from: `01.01.${calendar.today().getFullYear()}`, to: `31.12.${calendar.today().getFullYear() + 1}` },
     search: '',
 })
 const initialPagination = {

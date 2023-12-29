@@ -6,13 +6,14 @@ import Event from 'src/models/entities/events/calendar/Event'
 import useCalendar from 'src/utils/Calendar'
 
 export default defineStore('calendar', () => {
+    const calendar = useCalendar()
+
     const events = ref<Record<string, Event[]>>({
-        2024: _2024.concat(useCalendar().getHolidays(2024)),
+        2024: _2024.concat(calendar.getHolidays(2024)),
     })
 
     const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))
-    const allActualYearAndFuture = () => all.value.filter((it) => it.start.getFullYear() >= today().getFullYear())
-    const allFuture = () => all.value.filter((it) => it.start.getTime() > today().getTime())
+    const allFuture = () => all.value.filter((it) => it.start.getTime() > calendar.today().getTime())
     const allNotCancelled = computed(() => all.value.filter((it) => it.category !== EEvent.Abgesagt))
     const nextEvents = () =>
         allFuture()
@@ -20,7 +21,6 @@ export default defineStore('calendar', () => {
             .sort((a, b) => a.start.getTime() - b.start.getTime())
             .slice(0, 2)
     const nextRTF = () => allFuture().find((it) => it.category === EEvent.RTF)
-    const today = () => new Date(Date.now())
 
-    return { all, allActualYearAndFuture, allFuture, allNotCancelled, nextEvents, nextRTF, today }
+    return { all, allFuture, allNotCancelled, nextEvents, nextRTF }
 })

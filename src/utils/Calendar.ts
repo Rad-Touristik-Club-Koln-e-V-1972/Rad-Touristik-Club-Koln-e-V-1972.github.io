@@ -14,5 +14,6 @@ export default function useCalendar() {
                     new EventBuilder().setCategory(EEvent.Feiertag).setDate(it.date).setId(`${it.date}${it.name}`).setName(it.name).buildEvent(),
                 )
         },
+        today: () => new Date(Date.now()),
     }
 }
