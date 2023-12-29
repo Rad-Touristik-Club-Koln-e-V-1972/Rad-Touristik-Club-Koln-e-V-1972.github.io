@@ -227,7 +227,7 @@ export default [
         .setName('Vortour Marathon')
         .buildEvent(),
     new EventBuilder()
-        .setCategory(EEvent.Marathon)
+        .setCategory(EEvent.RTC)
         .setContact('Klaus Dünkelmann')
         .setDate('2024-09-20')
         .setId('f5b96178-5991-4afb-91bd-52a9abb50696')
