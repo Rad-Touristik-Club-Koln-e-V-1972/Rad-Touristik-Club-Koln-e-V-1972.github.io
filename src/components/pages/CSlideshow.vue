@@ -30,7 +30,7 @@ import { defineModel, ref } from 'vue'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const modelValue = defineModel<GalleryEntry>({ local: true })
+const modelValue = defineModel<GalleryEntry>()
 const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>(), {
     height: '100%',
     infinite: true,
