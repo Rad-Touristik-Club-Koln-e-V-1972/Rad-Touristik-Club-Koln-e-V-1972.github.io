@@ -47,7 +47,6 @@ export default configure(function (/* ctx */) {
         animations: 'all',
         build: {
             vitePlugins: [[require('vite-plugin-sitemap'), { dynamicRoutes: generateRoutes(), hostname: 'https://www.rtc-koeln.de', outDir: 'dist/spa' }]],
-            viteVuePluginOptions: { script: { defineModel: true } }, // TODO remove it after defineModel became stable in vue 3.4
         },
         // app boot file (/src/boot)
         // --> boot files are part of "main.js"
