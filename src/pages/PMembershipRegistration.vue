@@ -147,7 +147,7 @@ const images = [
         .setPreviewUrl('content.rtc-koeln.de/pages/membership-registration/Din-A4-Flyer-Vorteile-Verein-RGB.avif')
         .buildGalleryEntry(),
 ]
-const step = ref(7)
+const step = ref(1)
 const tab = ref('infos')
 const value = ref(
     new MembershipRegistrationBuilder()
