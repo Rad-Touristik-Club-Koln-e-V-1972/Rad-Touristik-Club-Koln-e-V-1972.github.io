@@ -5,7 +5,7 @@
             <q-tab alert label="Infos" name="infos" />
             <q-tab alert label="Bewerbung" name="bewerbung" />
         </q-tabs>
-        <q-tab-panels v-model="tab" keep-alive>
+        <q-tab-panels v-model="tab">
             <q-tab-panel name="infos">
                 <q-card-section class="text-subtitle1">
                     <div class="row">
@@ -64,7 +64,7 @@
             </q-tab-panel>
             <q-tab-panel name="bewerbung">
                 <q-card-section>
-                    <q-stepper v-model="step" animated keep-alive vertical>
+                    <q-stepper v-model="step" animated vertical>
                         <q-step :done="step > 1" :name="1" title="Personendaten">
                             <q-stepper-navigation>
                                 <c-person v-model="value.personalData" />
