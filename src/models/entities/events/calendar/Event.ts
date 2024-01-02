@@ -6,10 +6,10 @@ export default class Event extends AEntity {
     category = EEvent.RTC
     color = 'primary'
     contact!: string
-    end: Date | null = null
+    end?: Date
     kilometer = 0
     name!: string
     provisionalReason?: string
     start!: Date
-    url: URL | null = null
+    url?: URL
 }

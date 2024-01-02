@@ -5,7 +5,7 @@ export default class Navigation extends AEntity {
     color: string | undefined
     icon: string | undefined
     target = ''
-    title: string | null = null
+    title?: string
     to: object | undefined
-    url: URL | null = null
+    url?: URL
 }

@@ -42,5 +42,5 @@ import { mdiEmailArrowRight } from '@quasar/extras/mdi-v7'
 import CGuestbook from 'components/pages/rtc-cologne/CGuestbook.vue'
 import useGuestbookStore from 'stores/rtc-cologne/Guestbook'
 
-const items = useGuestbookStore().getGroupedByYear
+const items = useGuestbookStore().groupedByYear
 </script>

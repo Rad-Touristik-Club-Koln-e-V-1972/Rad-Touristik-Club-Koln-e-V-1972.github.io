@@ -1,9 +1,9 @@
 <template>
     <q-dialog v-model="dialog" persistent>
-        <q-card v-if="nextRTF">
+        <q-card v-if="calendarStore.nextRTF">
             <q-card-section class="bg-primary text-accent text-h6">NICHT VERPASSEN</q-card-section>
             <q-card-section>
-                Unsere <b>{{ nextRTF.name }}</b> ist am <b>{{ dateTime.format(nextRTF.start, null, true) }}</b>
+                Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ dateTime.format(calendarStore.nextRTF.start, null, true) }}</b>
                 <br />
                 <br />
                 <div class="text-center">Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!</div>
@@ -43,8 +43,8 @@ import { mdiArrowRightBottom } from '@quasar/extras/mdi-v7'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
+const calendarStore = useCalendarStore()
 const dateTime = useDateTime()
 
-const nextRTF = useCalendarStore().nextRTF()
-const dialog = ref(!!nextRTF)
+const dialog = ref(!!calendarStore.nextRTF)
 </script>

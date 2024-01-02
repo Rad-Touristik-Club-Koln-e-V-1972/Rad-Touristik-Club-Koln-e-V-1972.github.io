@@ -66,11 +66,11 @@ import { date } from 'quasar'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
 import Event from 'src/models/entities/events/calendar/Event'
 import useCalendarStore from 'stores/events/Calendar'
-import useCalendar from 'src/utils/Calendar.ts'
+import useDateTime from 'src/utils/DateTime.ts'
 
 const event = ref()
 
-const calendar = useCalendar()
+const dateTime = useDateTime()
 const calendarStore = useCalendarStore()
 
 const _millisecondsSecond = 1000
@@ -82,13 +82,13 @@ const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
 
-const nextEvents = calendarStore.nextEvents()
+const nextEvents = calendarStore.nextEvents
 const daysOfMonth = nextEvents.length ? date.daysInMonth(nextEvents[0].start) : 30
 
 let interval: number
 
 const calcCountdown = (nextEvent: Event) => {
-    const milliseconds = Math.abs(calendar.today().getTime() - nextEvent.start.getTime())
+    const milliseconds = Math.abs(dateTime.today.value.getTime() - nextEvent.start.getTime())
 
     days.value = Math.floor(milliseconds / _millisecondsDay)
     hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)

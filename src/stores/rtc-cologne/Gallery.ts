@@ -17,13 +17,10 @@ import _2022 from './gallery/2022/Gallery'
 import _2023 from './gallery/2023/Gallery'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 
-const sortByDate = (galleries: Gallery[]) => {
-    galleries.sort((a, b) => b.start.getTime() - a.start.getTime())
-    return galleries
-}
-
 export default defineStore('gallery', () => {
-    const galleries = ref<Record<string, Gallery[]>>({
+    const sortByDate = (galleries: Gallery[]) => galleries.toSorted((a, b) => b.start.getTime() - a.start.getTime())
+
+    const groupedByYear = ref<Record<string, Gallery[]>>({
         2023: sortByDate(_2023),
         2022: sortByDate(_2022),
         2021: sortByDate(_2021),
@@ -42,14 +39,15 @@ export default defineStore('gallery', () => {
     })
 
     const all = computed(() =>
-        Object.values(galleries.value)
+        Object.values(groupedByYear.value)
             .flatMap((it) => it.flatMap((it) => it))
             .reverse(),
     )
-    const getGroupedByYear = computed(() => galleries.value)
 
-    const findById = (id: string) => all.value.find((gallery) => gallery.id === id)
-    const findByIds = (...ids: string[]) => all.value.filter((gallery) => ids.includes(gallery.id))
-
-    return { all, findById, findByIds, getGroupedByYear }
+    return {
+        all,
+        findById: (id: string) => all.value.find((gallery) => gallery.id === id),
+        findByIds: (...ids: string[]) => all.value.filter((gallery) => ids.includes(gallery.id)),
+        groupedByYear,
+    }
 })
