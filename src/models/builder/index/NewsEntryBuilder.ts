@@ -7,13 +7,19 @@ export default class NewsEntryBuilder extends ABuilder {
 
     buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
 
-    setImage(value: GalleryEntry): this {
+    setImage = (value: GalleryEntry): this => {
         this.newsEntry.image = value
 
         return this
     }
 
-    setText(value: string): this {
+    setShowUntil = (value: string): this => {
+        this.newsEntry.showUntil = new Date(value)
+
+        return this
+    }
+
+    setText = (value: string): this => {
         this.newsEntry.text = value.replaceAll('\n', '<br>')
 
         return this

@@ -15,7 +15,7 @@
                 transition-next="slide-left"
                 transition-prev="slide-right"
             >
-                <q-carousel-slide v-for="it in items" :key="it.id" class="column flex-center no-wrap" :name="it.id">
+                <q-carousel-slide v-for="it in items" :key="it.id" :name="it.id" class="column flex-center no-wrap">
                     <div style="width: 20em">
                         <d-p-d-f-view :model-value="it.image" />
                         <q-expansion-item v-if="it.text" expand-icon-toggle expand-separator label="Details">
@@ -37,6 +37,7 @@ import { ref } from 'vue'
 import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
 import useNewsStore from 'stores/index/News'
 
-const items = useNewsStore().all
+const items = useNewsStore().allValid
+
 const slide = ref(items[0]?.id)
 </script>
