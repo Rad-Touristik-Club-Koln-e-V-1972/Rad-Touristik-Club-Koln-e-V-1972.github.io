@@ -4,8 +4,7 @@
             <div class="col">
                 <maz-phone-number-input
                     v-model="modelValue.telePhoneNumber"
-                    :default-country-code="modelValue.telePhoneCountryCode"
-                    :default-phone-number="modelValue.telePhoneNumber"
+                    v-model:country-code="modelValue.telePhoneCountryCode"
                     no-flags
                     no-validation
                     :translations="{
@@ -19,15 +18,13 @@
                             example: 'Beispiel :',
                         },
                     }"
-                    @country-code="emitTelePhoneUpdate"
                 />
             </div>
             <div class="col-1" />
             <div class="col">
                 <maz-phone-number-input
                     v-model="modelValue.mobilePhoneNumber"
-                    :default-country-code="modelValue.mobilePhoneCountryCode"
-                    :default-phone-number="modelValue.mobilePhoneNumber"
+                    v-model:country-code="modelValue.mobilePhoneCountryCode"
                     no-flags
                     no-validation
                     :translations="{
@@ -41,7 +38,6 @@
                             example: 'Beispiel :',
                         },
                     }"
-                    @country-code="emitMobilePhoneUpdate"
                 />
             </div>
         </div>
@@ -59,11 +55,4 @@ import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 const modelValue = defineModel<PersonalData>({ required: true })
-
-const emitMobilePhoneUpdate = (countryCode: string) => {
-    modelValue.value.mobilePhoneCountryCode = countryCode
-}
-const emitTelePhoneUpdate = (countryCode: string) => {
-    modelValue.value.telePhoneCountryCode = countryCode
-}
 </script>
