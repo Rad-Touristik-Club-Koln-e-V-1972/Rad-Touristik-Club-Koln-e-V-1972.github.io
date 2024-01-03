@@ -3,6 +3,7 @@
     "compilerOptions": {
         // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/9455
         "allowImportingTsExtensions": true,
-        "baseUrl": "."
+        "baseUrl": ".",
+        "skipLibCheck": true
     }
 }
