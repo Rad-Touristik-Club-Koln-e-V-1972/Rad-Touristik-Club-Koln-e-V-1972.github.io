@@ -18,12 +18,16 @@ const props = defineProps<{ label: string; modelValue: string }>()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
-    signaturePad = new SignaturePad(document.querySelector('canvas'))
+    const canvas = document.querySelector('canvas')
 
-    if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
+    if (canvas) {
+        signaturePad = new SignaturePad(canvas)
 
-    signaturePad.addEventListener('endStroke', () => {
-        emit('update:modelValue', signaturePad.toDataURL())
-    })
+        if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
+
+        signaturePad.addEventListener('endStroke', () => {
+            emit('update:modelValue', signaturePad.toDataURL())
+        })
+    }
 })
 </script>

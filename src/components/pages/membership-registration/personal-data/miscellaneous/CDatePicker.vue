@@ -1,6 +1,6 @@
 <template>
     <div class="q-pa-md">
-        <q-input dense :label="props.label" :model-value="modelValue ? useDateTime().format(new Date(modelValue), null, true) : ''" readonly>
+        <q-input dense :label="props.label" :model-value="modelValue ? useDateTime().format(new Date(modelValue), undefined, true) : ''" readonly>
             <template #append>
                 <q-icon :name="mdiCalendar" class="cursor-pointer">
                     <q-popup-proxy cover transition-show="scale" transition-hide="scale">

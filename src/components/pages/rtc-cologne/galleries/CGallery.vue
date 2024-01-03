@@ -3,7 +3,7 @@
         <q-card-section class="text-subtitle2">
             {{ props.modelValue.title }}
             <br />
-            {{ dateTime.format(props.modelValue.start, props.modelValue.end, true) }}
+            {{ dateTime.format(props.modelValue.start, props.modelValue.end) }}
             <br />
             {{ props.modelValue.location }}
         </q-card-section>

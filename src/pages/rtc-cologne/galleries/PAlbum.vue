@@ -11,7 +11,7 @@
                 </q-card>
             </q-expansion-item>
         </q-toolbar>
-        <q-card-section class="text-subtitle1">{{ dateTime.format(value.start, value.end, true) }} bei {{ value.location }}</q-card-section>
+        <q-card-section class="text-subtitle1">{{ dateTime.format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
         <q-card-section>
             <q-tabs
                 v-show="Object.keys(value.images).length && value.youtubeVideoIds.length"
@@ -68,7 +68,7 @@ const router = useRouter()
 
 const dateTime = useDateTime()
 
-const value = ref<Gallery | undefined>(undefined)
+const value = ref<Gallery>()
 
 const tab = ref('Bilder')
 const tabPictures = ref()
@@ -76,7 +76,7 @@ const tabPictures = ref()
 const tabs = computed(() => {
     const tabs = []
 
-    if (value.value && Object.keys(value.value.images).length) tabs.push('Bilder')
+    if (Object.keys(value.value?.images ?? {}).length) tabs.push('Bilder')
     if (value.value?.youtubeVideoIds.length) tabs.push('Videos')
 
     return tabs

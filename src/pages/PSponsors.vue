@@ -9,7 +9,7 @@
         <q-card-section class="column example-container">
             <masonry-wall :column-width="280" :gap="16" :items="useSponsorStore().all">
                 <template #default="{ item }">
-                    <a :href="item.url.toString()" target="_blank">
+                    <a :href="item.url?.toString()" target="_blank">
                         <q-card flat>
                             <q-card-section>
                                 <div v-if="item.text" v-text="item.text" />

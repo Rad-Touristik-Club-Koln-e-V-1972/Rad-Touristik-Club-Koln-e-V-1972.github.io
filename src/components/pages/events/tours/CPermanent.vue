@@ -49,7 +49,7 @@
                         </tr>
                         <tr>
                             <td class="text-no-wrap text-right" v-text="'Letzte Änderung:'" />
-                            <td v-text="dateTime.format(props.modelValue.lastChange, null, true)" />
+                            <td v-text="dateTime.format(props.modelValue.lastChange)" />
                         </tr>
                     </tbody>
                 </q-markup-table>

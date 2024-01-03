@@ -118,7 +118,7 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
 
     if (terms.dateRange) {
         let from: Date
-        let to: Date | null = null
+        let to: Date
 
         if (is.object(terms.dateRange)) {
             from = date.extractDate(terms.dateRange.from, 'DD.MM.YYYY')

@@ -4,7 +4,7 @@
         <q-card flat>
             <d-view-image-original :model-value="currentGalleryEntry.imageUrl" />
             <q-btn color="primary" :icon="mdiClose" style="position: absolute; right: 0; z-index: 2" text-color="accent" @click="dialog = false" />
-            <c-slideshow v-model="currentGalleryEntry" :gallery-entries="props.modelValue" :infinite="false" />
+            <c-slideshow v-model="currentGalleryEntry.id" :gallery-entries="props.modelValue" :infinite="false" />
         </q-card>
     </q-dialog>
 </template>

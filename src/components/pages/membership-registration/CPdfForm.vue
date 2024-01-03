@@ -45,13 +45,17 @@ const addUnderline = (params: { leftMargin: number; topMargin: number; underline
 }
 
 const addCheckbox = (params: { leftMargin: number; topMargin: number; value?: boolean }): number => {
-    const checkboxLength = 10
+    const checkboxLength = 5
     const checkboxTextHeight = checkboxLength * 0.15
     const checkBox = new AcroFormCheckBox()
 
     checkBox.readOnly = true
-    // noinspection TypeScriptUnresolvedReference
-    checkBox.Rect = [params.leftMargin, params.topMargin - checkboxTextHeight, checkboxLength, checkboxLength]
+
+    checkBox.x = params.leftMargin
+    checkBox.y = params.topMargin - checkboxTextHeight
+    checkBox.width = checkboxLength
+    checkBox.height = checkboxLength
+
     checkBox.appearanceState = params.value ? 'On' : 'Off'
     pdfGenerator.addField(checkBox)
 
@@ -69,7 +73,7 @@ const addCheckboxWithText = (params: {
     withoutTopMargin?: boolean
 }): number => {
     const fontSize = params.fontSize ?? 12
-    const leftMarginText = params.leftMargin + 15
+    const leftMarginText = params.leftMargin + 10
     let titleHeight = 0
 
     if (!params.withoutTopMargin) titleHeight += addTextTitle({ fontSize: fontSize - 2, leftMargin: params.leftMargin, text: '', topMargin: params.topMargin })

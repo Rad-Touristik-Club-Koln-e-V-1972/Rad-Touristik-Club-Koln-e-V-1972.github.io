@@ -18,7 +18,7 @@
                             v-for="(it, index) in useBlogStore().allBeforeTomorrow"
                             :key="it.id"
                             :side="index % 2 === 0 ? 'right' : 'left'"
-                            :subtitle="dateTime.format(it.start, it.end, true)"
+                            :subtitle="dateTime.format(it.start, it.end)"
                             :title="it.title"
                         >
                             <q-card>

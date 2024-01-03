@@ -12,7 +12,7 @@ export default function useDateTime() {
     const todayMidnight = computed(() => date.adjustDate(today.value, { hour: 0, minute: 0, second: 0, millisecond: 0 }))
 
     return {
-        format: (start: Date, end: Date | null = null, allDay = false) => {
+        format: (start: Date, end?: Date, allDay = true) => {
             let value: string
 
             if (end) value = (allDay ? dateFormatter : dateTimeFormatter).formatRange(start, end)
@@ -21,8 +21,8 @@ export default function useDateTime() {
 
             return value
         },
-        formatTime: (start: Date, end: Date | null = null) => (end ? timeFormatter.formatRange(start, end) : date.formatDate(start, 'H:mm')),
-        isBetweenDates: (d: Date, from: Date, to: Date | null) => date.isBetweenDates(d, from, to ?? from, { inclusiveFrom: true, inclusiveTo: true, onlyDate: true }),
+        formatTime: (start: Date, end?: Date) => (end ? timeFormatter.formatRange(start, end) : date.formatDate(start, 'H:mm')),
+        isBetweenDates: (d: Date, from: Date, to?: Date) => date.isBetweenDates(d, from, to ?? from, { inclusiveFrom: true, inclusiveTo: true, onlyDate: true }),
         sort: (a: Date, b: Date) => a.getTime() - b.getTime(),
         today,
         todayMidnight,

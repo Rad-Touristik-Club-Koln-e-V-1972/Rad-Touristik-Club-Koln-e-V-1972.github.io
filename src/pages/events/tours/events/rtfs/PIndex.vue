@@ -1,7 +1,7 @@
 <template>
     <q-card v-if="value" flat>
         <q-card-section class="bg-primary text-accent text-h6">{{ value.title }}</q-card-section>
-        <q-card-section class="text-subtitle1">Stand: {{ dateTime.format(value.lastChange, null, true) }}</q-card-section>
+        <q-card-section class="text-subtitle1">Stand: {{ dateTime.format(value.lastChange) }}</q-card-section>
         <q-card-section>
             <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
                 <q-tab :icon="mdiBike" label="Allgemein" name="general" />
