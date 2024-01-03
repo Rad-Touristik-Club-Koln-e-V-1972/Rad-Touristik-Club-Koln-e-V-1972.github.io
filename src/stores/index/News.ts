@@ -17,7 +17,7 @@ export default defineStore('news', () => {
                     .setImageUrl('content.rtc-koeln.de/pages/index/news/signal-2024-01-01-201656.jpeg.avif')
                     .buildGalleryEntry(),
             )
-            .setShowUntil('2024-01-01')
+            .setShowUntil('2024-01-14')
             .buildNewsEntry(),
         new NewsEntryBuilder()
             .setId('51f3e784-346c-43e2-ad72-715503ccf5ab')
