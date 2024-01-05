@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <canvas id="signature" height="100" style="background-color: #d3d3d3" width="467" />
+        <canvas :id="id" height="100" style="background-color: #d3d3d3" width="467" />
         <q-btn color="primary" flat :icon-right="mdiPenRemove" size="xl" square @click="signaturePad.clear()" />
     </div>
     <br />
@@ -15,13 +15,14 @@ import SignaturePad from 'signature_pad'
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
 const props = defineProps<{ label: string; modelValue: string }>()
 
+let id = crypto.randomUUID()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
-    const canvas = document.querySelector('canvas')
+    const canvas = document.getElementById(id)
 
     if (canvas) {
-        signaturePad = new SignaturePad(canvas)
+        signaturePad = new SignaturePad(canvas as HTMLCanvasElement)
 
         if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
 
