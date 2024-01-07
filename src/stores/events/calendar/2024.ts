@@ -129,6 +129,14 @@ export default [
         .setName('52. Forsbachtour')
         .buildEvent(),
     new EventBuilder()
+        .setCategory(EEvent.Mitgliederversammlung)
+        .setContact('Diana Vialon')
+        .setDate('2024-06-07')
+        .setId('80147f20-ee7d-481e-be7d-1ce06bbc2056')
+        .setKilometer(50)
+        .setName('Mitgliederversammlung')
+        .buildEvent(),
+    new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
         .setContact('Klaus Dünkelmann')
         .setDate('2024-06-23')
