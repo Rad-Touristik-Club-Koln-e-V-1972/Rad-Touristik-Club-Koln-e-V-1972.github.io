@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.16.9
     version: 1.16.9
   '@quasar/quasar-ui-qcalendar':
-    specifier: 4.0.0-beta.16
-    version: 4.0.0-beta.16
+    specifier: 4.0.0-beta.19
+    version: 4.0.0-beta.19
   '@yeger/vue-masonry-wall':
     specifier: 5.0.4
     version: 5.0.4(vue@3.4.13)
@@ -518,11 +518,11 @@ packages:
     resolution: {integrity: sha512-Rj3KKjPFrE13cswlZAPcqdqi1YH9CeHMpWIw8xsNqdLhCoaRhMGbRas9fvHFLJOXpnsDaVwWINNgN/bBUyn99w==}
     engines: {node: '>= 10.0.0', npm: '>= 5.6.0', yarn: '>= 1.6.0'}
     dependencies:
-      '@quasar/quasar-ui-qcalendar': 4.0.0-beta.16
+      '@quasar/quasar-ui-qcalendar': 4.0.0-beta.19
     dev: true
 
-  /@quasar/quasar-ui-qcalendar@4.0.0-beta.16:
-    resolution: {integrity: sha512-KVbFJD1HQp91tiklv+6XsG7bq8FKK6mhhnoVzmjgoyhUAEb9csfbDPbpegy1/FzXy3o0wITe6mmRZ8nbaiMEZg==}
+  /@quasar/quasar-ui-qcalendar@4.0.0-beta.19:
+    resolution: {integrity: sha512-BT0G2JjgKl1bqNrY5utcYeoy8gK+U9k3Pz1YDi1OB265W/jHU6nFoWMEUdY3JdvMccwkXTL2DLVyl3eqAUyLyg==}
 
   /@quasar/render-ssr-error@1.0.3:
     resolution: {integrity: sha512-A8RF99q6/sOSe1Ighnh5syEIbliD3qUYEJd2HyfFyBPSMF+WYGXon5dmzg4nUoK662NgOggInevkDyBDJcZugg==}
