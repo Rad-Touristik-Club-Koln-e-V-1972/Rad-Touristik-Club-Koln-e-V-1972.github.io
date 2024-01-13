@@ -1,9 +1,9 @@
 <template>
     <q-img :src="props.startValue.previewUrl.toString()" style="cursor: pointer" @click="dialog = true" />
-    <q-dialog v-model="dialog" maximized persistent>
+    <q-dialog v-model="dialog" class="z-top" maximized persistent>
         <q-card flat>
             <d-view-image-original :model-value="currentGalleryEntry.imageUrl" />
-            <q-btn color="primary" :icon="mdiClose" style="position: absolute; right: 0; z-index: 2" text-color="accent" @click="dialog = false" />
+            <q-btn class="absolute-top-right z-max" color="primary" :icon="mdiClose" text-color="accent" @click="dialog = false" />
             <c-slideshow v-model="currentGalleryEntry.id" :gallery-entries="props.modelValue" :infinite="false" />
         </q-card>
     </q-dialog>

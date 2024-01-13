@@ -17,12 +17,12 @@
                 v-if="mode !== ECalendar.List"
                 ref="calendar"
                 v-model="selectedDate"
+                class="relative-position"
                 :day-min-height="100"
                 hour24-format
                 locale="de"
                 :mode="mode === ECalendar.Week ? 'day' : getTypeString(mode)"
                 :view="getTypeString(mode)"
-                style="position: relative"
                 @change="onChange"
                 @click-date="onClickDate"
             >
@@ -55,10 +55,9 @@
                     <template v-for="e in events" :key="e.id">
                         <div
                             v-if="!e.allDay && dateTime.isBetweenDates(timestamp.date, e.start, e.end)"
-                            :class="`bg-${e.color}`"
+                            :class="`absolute bg-${e.color}`"
                             class="cursor-pointer full-width text-accent"
                             :style="getDayEntryStyle(e, timeStartPos, timeDurationHeight)"
-                            style="position: absolute"
                             @click="event.showEvent(e)"
                             v-text="e.name"
                         />
