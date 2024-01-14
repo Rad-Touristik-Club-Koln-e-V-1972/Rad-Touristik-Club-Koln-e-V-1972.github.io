@@ -79,9 +79,13 @@
                 <q-card-section class="text-h6">Herzlich willkommen beim RTC Köln e.V.!</q-card-section>
             </q-tab-panel>
             <q-tab-panel name="statutes">
-                <object :data="statutesUrl" :height="`${$q.screen.height}px`" type="application/pdf" width="100%">
-                    <p>
-                        Dein Browser unterstützt leider den HTML5 Standard nicht, um das PDF anzuzeigen.
+                <p v-if="$q.platform.is.ios" class="text-center">
+                    Leider ist die Unterstützung ein PDF-Dokumente anzuzeigen seit iOS 8 defekt.<br />
+                    <a :href="statutesUrl">Hier kannst du es herunterladen.</a>
+                </p>
+                <object v-else :data="statutesUrl" :height="`${$q.screen.height}px`" type="application/pdf" width="100%">
+                    <p class="text-center">
+                        Leider unterstützt dein Browser nicht das Anzeigen eines PDF-Dokuments.<br />
                         <a :href="statutesUrl">Hier kannst du es herunterladen.</a>
                     </p>
                 </object>
