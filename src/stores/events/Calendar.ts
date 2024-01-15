@@ -23,7 +23,7 @@ export default defineStore('calendar', () => {
         allNotCancelled: computed(() => all.value.filter((it) => it.category !== EEvent.Abgesagt)),
         nextEvents: computed(() =>
             allFuture.value
-                .filter((it) => ![EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung, EEvent.Vereinsfahrt].includes(it.category))
+                .filter((it) => ![EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung].includes(it.category))
                 .sort((a, b) => a.start.getTime() - b.start.getTime())
                 .slice(0, 2),
         ),
