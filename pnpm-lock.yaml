@@ -56,8 +56,8 @@ devDependencies:
     specifier: 18.4.4
     version: 18.4.4
   '@quasar/app-vite':
-    specifier: 1.7.2
-    version: 1.7.2(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.2)(vue-router@4.2.5)(vue@3.4.15)
+    specifier: 1.7.3
+    version: 1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.2)(vue-router@4.2.5)(vue@3.4.15)
   '@quasar/quasar-app-extension-qcalendar':
     specifier: 4.0.0-beta.16
     version: 4.0.0-beta.16
@@ -436,8 +436,8 @@ packages:
       fastq: 1.16.0
     dev: true
 
-  /@quasar/app-vite@1.7.2(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.2)(vue-router@4.2.5)(vue@3.4.15):
-    resolution: {integrity: sha512-mVJHDA9PhVWzbfxqBlVphcYoEemQNxxwfZtnO82XjB5feL3sF8HNON9q3HbTdelTjOSYpMi81jswlM9q+ALQww==}
+  /@quasar/app-vite@1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.2)(vue-router@4.2.5)(vue@3.4.15):
+    resolution: {integrity: sha512-pnDInCFP9M1d7lJzS8UkiFq8bGWdekLz8Gu+NLI9UAxruIM9QVlSD4hUmWptTQXaVEvYlDnqfW3LOr57B8eVtw==}
     engines: {node: ^24 || ^22 || ^20 || ^18 || ^16 || ^14.19, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
