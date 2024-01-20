@@ -22,7 +22,7 @@
         "@quasar/extras": "1.16.9",
         "@quasar/quasar-ui-qcalendar": "4.0.0-beta.19",
         "@yeger/vue-masonry-wall": "5.0.5",
-        "date-holidays": "3.23.3",
+        "date-holidays": "3.23.5",
         "jspdf": "2.5.1",
         "libphonenumber-js": "1.10.53",
         "maz-ui": "3.31.6",
