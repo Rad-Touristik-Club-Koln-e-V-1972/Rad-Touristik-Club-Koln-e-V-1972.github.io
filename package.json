@@ -15,7 +15,7 @@
         "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext \".js,.ts,.vue\" --fix --ignore-path .gitignore --ignore-pattern pnpm-lock.yaml .",
         "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write .",
         "lint:vue-tsc": "vue-tsc --noEmit",
-        "prepare": "husky install",
+        "prepare": "husky",
         "test": "echo \"No test specified\" && exit 0"
     },
     "dependencies": {
