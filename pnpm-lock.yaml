@@ -15,8 +15,8 @@ dependencies:
     specifier: 5.0.6
     version: 5.0.6(vue@3.4.15)
   date-holidays:
-    specifier: 3.23.5
-    version: 3.23.5
+    specifier: 3.23.7
+    version: 3.23.7
   jspdf:
     specifier: 2.5.1
     version: 2.5.1
@@ -1720,15 +1720,14 @@ packages:
       moment-timezone: 0.5.43
     dev: false
 
-  /date-holidays@3.23.5:
-    resolution: {integrity: sha512-hdRf+4VuPXbJ7defOHJpiH8JGQ47s6Sx50Si2XW0mboXjEZ6nSGWCWAB78JAdd3JvJa0NNZ8CdKpBK346GKtOg==}
+  /date-holidays@3.23.7:
+    resolution: {integrity: sha512-B5mJ4EzMx0vtQ8HEyaoxgffT3nrTBUst6TV/bH21KwPaZvLlnS3NHqO8+PK1cqHoYWvgRSsgkLvrYPvZrlIqYg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
       date-holidays-parser: 3.4.4
       js-yaml: 4.1.0
-      lodash.omit: 4.5.0
-      lodash.pick: 4.4.0
+      lodash: 4.17.21
       prepin: 1.0.3
     dev: false
 
@@ -3097,14 +3096,6 @@ packages:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
     dev: true
 
-  /lodash.omit@4.5.0:
-    resolution: {integrity: sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg==}
-    dev: false
-
-  /lodash.pick@4.4.0:
-    resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
-    dev: false
-
   /lodash.snakecase@4.1.1:
     resolution: {integrity: sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==}
     dev: true
@@ -3131,7 +3122,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
