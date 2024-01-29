@@ -255,6 +255,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
     return {
         allPermanents: ref<Permanent[]>([
             new PermanentBuilder()
+                .setActive(false)
                 .setCategory(EEvent.Permanente)
                 .setControls(
                     new ControlBuilder()
