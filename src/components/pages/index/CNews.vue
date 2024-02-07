@@ -6,6 +6,7 @@
                 animated
                 :arrows="items.length > 1"
                 autoplay
+                class="full-height"
                 control-color="primary"
                 control-type="push"
                 draggable="false"
