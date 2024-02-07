@@ -43,7 +43,7 @@ jobs:
               run: pnpm build
             - name: Upload artifact
               if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-              uses: actions/upload-pages-artifact@0252fc4ba7626f0298f0cf00902a25c6afc77fa8 # v3.0.0
+              uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
               with:
                   path: dist/spa/
     ci_dev_deploy:
