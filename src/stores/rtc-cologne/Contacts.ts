@@ -14,6 +14,13 @@ export default defineStore('rtc-cologne-contacts', () => {
                 .setPosition('Erster Vorsitz')
                 .buildContact(),
             new ContactBuilder()
+                .setEMail('zweiter.vorsitz@rtc-koeln.de')
+                .setId('2c8afbe2-8774-42b0-8788-5a5b29e41568')
+                .setImageUrl('content.rtc-koeln.de/pages/gallery/2021/Rueckblick/RTC Logo 720px_withHat.png')
+                .setName('Norbert Schrandt')
+                .setPosition('Zweiter Vorsitz')
+                .buildContact(),
+            new ContactBuilder()
                 .setEMail('erster.sportwart@rtc-koeln.de')
                 .setId('5f48c322-ba0e-4866-be30-89702565522d')
                 .setImageUrl('content.rtc-koeln.de/pages/gallery/2021/Rueckblick/RTC Logo 720px_withHat.png')
