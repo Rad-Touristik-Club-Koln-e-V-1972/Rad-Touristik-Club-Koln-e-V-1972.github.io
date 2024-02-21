@@ -25,7 +25,7 @@ dependencies:
     version: 1.10.56
   maz-ui:
     specifier: 3.32.2
-    version: 3.32.2(libphonenumber-js@1.10.56)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.4.19)
+    version: 3.32.2(libphonenumber-js@1.10.56)(typescript@5.3.3)(vue-router@4.3.0)(vue@3.4.19)
   mime:
     specifier: 4.0.1
     version: 4.0.1
@@ -45,8 +45,8 @@ dependencies:
     specifier: 3.4.19
     version: 3.4.19(typescript@5.3.3)
   vue-router:
-    specifier: 4.2.5
-    version: 4.2.5(vue@3.4.19)
+    specifier: 4.3.0
+    version: 4.3.0(vue@3.4.19)
 
 devDependencies:
   '@commitlint/cli':
@@ -57,7 +57,7 @@ devDependencies:
     version: 18.6.2
   '@quasar/app-vite':
     specifier: 1.7.3
-    version: 1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.5)(vue-router@4.2.5)(vue@3.4.19)
+    version: 1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.5)(vue-router@4.3.0)(vue@3.4.19)
   '@quasar/quasar-app-extension-qcalendar':
     specifier: 4.0.0-beta.16
     version: 4.0.0-beta.16
@@ -437,7 +437,7 @@ packages:
       fastq: 1.16.0
     dev: true
 
-  /@quasar/app-vite@1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.5)(vue-router@4.2.5)(vue@3.4.19):
+  /@quasar/app-vite@1.7.3(eslint@8.56.0)(pinia@2.1.7)(quasar@2.14.5)(vue-router@4.3.0)(vue@3.4.19):
     resolution: {integrity: sha512-pnDInCFP9M1d7lJzS8UkiFq8bGWdekLz8Gu+NLI9UAxruIM9QVlSD4hUmWptTQXaVEvYlDnqfW3LOr57B8eVtw==}
     engines: {node: ^24 || ^22 || ^20 || ^18 || ^16 || ^14.19, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
@@ -502,7 +502,7 @@ packages:
       table: 6.8.1
       vite: 2.9.17(sass@1.69.5)
       vue: 3.4.19(typescript@5.3.3)
-      vue-router: 4.2.5(vue@3.4.19)
+      vue-router: 4.3.0(vue@3.4.19)
       webpack-merge: 5.10.0
     transitivePeerDependencies:
       - less
@@ -3176,7 +3176,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /maz-ui@3.32.2(libphonenumber-js@1.10.56)(typescript@5.3.3)(vue-router@4.2.5)(vue@3.4.19):
+  /maz-ui@3.32.2(libphonenumber-js@1.10.56)(typescript@5.3.3)(vue-router@4.3.0)(vue@3.4.19):
     resolution: {integrity: sha512-jOhApJOvD2AqmhkS/qNtWzNyz6QWTWpyuWzeuNxXBtq9icRU1djOCV1WD77PXneKogY/JYhrf8Ji6y1EfMDIXg==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     hasBin: true
@@ -3214,7 +3214,7 @@ packages:
       '@mazui/cli': 3.32.2(typescript@5.3.3)
       libphonenumber-js: 1.10.56
       vue: 3.4.19(typescript@5.3.3)
-      vue-router: 4.2.5(vue@3.4.19)
+      vue-router: 4.3.0(vue@3.4.19)
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -4567,8 +4567,8 @@ packages:
       - supports-color
     dev: true
 
-  /vue-router@4.2.5(vue@3.4.19):
-    resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}
+  /vue-router@4.3.0(vue@3.4.19):
+    resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
