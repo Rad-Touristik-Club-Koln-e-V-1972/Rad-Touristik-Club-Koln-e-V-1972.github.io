@@ -29,6 +29,7 @@ export default defineStore('tour', () => {
                     .setPrice(8)
                     .buildFee(),
                 new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
+                new FeeBuilder().setId('ce8f7235-4d1e-4ec0-a704-921bcf8588df').setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
             )
             .setId('2048a7f0-315a-43d7-885a-23f388601052')
             .setImages(
@@ -37,7 +38,7 @@ export default defineStore('tour', () => {
                     .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg.avif')
                     .buildGalleryEntry(),
             )
-            .setLastChange('2023-05-25')
+            .setLastChange('2024-02-22')
             .setLocation(
                 new ControlBuilder()
                     .setCity('Köln-Zündorf')
@@ -78,7 +79,7 @@ Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, d
 Euer RTC Köln e.V.`,
             )
             .setTimes(
-                new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('08:00').buildTime(),
+                new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('07:30').buildTime(),
                 new TimeBuilder().setId('b8cdb12d-037b-4522-894e-48425a8218c0').setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
             )
             .setTitle('Die Forsbach-Tour')
@@ -158,10 +159,24 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
                     .buildTrack(),
                 new TrackBuilder()
                     .setControls(1)
+                    .setHeight(70)
+                    .setId('0b0df6c7-c7c9-4592-b9c9-d8fd3bece55f')
+                    .setLength(21)
+                    .setName('Die 21er')
+                    .setProfile(EProfile.Flach)
+                    .setText(`Text in Bearbeitung`)
+                    .setTime('10:00', '12:00')
+                    .setUrls({
+                        'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+                        'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+                    })
+                    .buildTrack(),
+                new TrackBuilder()
+                    .setControls(1)
                     .setHeight(390)
                     .setId('c1934b4b-2058-4100-946e-77c264533c76')
-                    .setLength(51)
-                    .setName('Die 51er')
+                    .setLength(52)
+                    .setName('Die 52er')
                     .setText(
                         `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
 
@@ -169,18 +184,18 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
                     )
-                    .setTime('08:00', '11:00')
+                    .setTime('07:30', '11:00')
                     .setUrls({
-                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 51km.gpx'),
-                        Komoot: new URL('https://www.komoot.de/tour/676899286'),
+                        'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+                        'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
                     })
                     .buildTrack(),
                 new TrackBuilder()
                     .setControls(2)
-                    .setHeight(740)
+                    .setHeight(780)
                     .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
-                    .setLength(78)
-                    .setName('Die 78er')
+                    .setLength(82)
+                    .setName('Die 82er')
                     .setProfile(EProfile.Wellig)
                     .setText(
                         `Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
@@ -203,18 +218,18 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
                     )
-                    .setTime('08:00', '11:00')
+                    .setTime('07:30', '11:00')
                     .setUrls({
-                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 78km.gpx'),
-                        Komoot: new URL('https://www.komoot.de/tour/676927332'),
+                        'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+                        'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
                     })
                     .buildTrack(),
                 new TrackBuilder()
                     .setControls(3)
-                    .setHeight(1440)
+                    .setHeight(1500)
                     .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
-                    .setLength(120)
-                    .setName('Die 120er')
+                    .setLength(125)
+                    .setName('Die 125er')
                     .setProfile(EProfile.Huegelig)
                     .setText(
                         `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
@@ -242,10 +257,24 @@ Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen hab
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
                     )
-                    .setTime('08:00', '11:00')
+                    .setTime('07:30', '10:00')
                     .setUrls({
-                        'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Tour 120km.gpx'),
-                        Komoot: new URL('https://www.komoot.de/tour/1067049435'),
+                        'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+                        'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+                    })
+                    .buildTrack(),
+                new TrackBuilder()
+                    .setControls(4)
+                    .setHeight(1850)
+                    .setId('3e252d86-e452-43f3-9f93-440eeb792338')
+                    .setLength(151)
+                    .setName('Die 151er')
+                    .setProfile(EProfile.Huegelig)
+                    .setText(`Text in Bearbeitung`)
+                    .setTime('07:30', '08:30')
+                    .setUrls({
+                        'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+                        'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
                     })
                     .buildTrack(),
             )
