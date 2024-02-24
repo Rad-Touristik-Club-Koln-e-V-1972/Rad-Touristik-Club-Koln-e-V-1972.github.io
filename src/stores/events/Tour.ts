@@ -38,7 +38,7 @@ export default defineStore('tour', () => {
                     .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg.avif')
                     .buildGalleryEntry(),
             )
-            .setLastChange('2024-02-22')
+            .setLastChange('2024-02-24')
             .setLocation(
                 new ControlBuilder()
                     .setCity('Köln-Zündorf')
@@ -63,20 +63,28 @@ Euer RTC Köln e.V. 1972`,
                 `Liebe Radsportlerinnen und Radsportler,
 
 wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
-Wie ihr wisst, liegt ein ereignisreiches und intensives Jubiläumsjahr hinter uns.
-Um uns eine Verschnaufpause zu gönnen, haben wir uns entschlossen, in diesem Jahr nur drei Strecken anzubieten.
-Aber auch diese Strecken sind wunderschön und lohnen sich, unter die Räder genommen zu werden.
+Die Forsbachtour startet im Schulzentrum in Porz-Zündorf.
+„Frühaufsteher“, die die 151 km fahren möchten, können von 7:30 Uhr bis 8:30 Uhr starten.
+„Langschläfer“ können bis 11:00 Uhr starten – je nach Streckenlänge.
+
+Wir bieten Euch <b>vier RTF-Strecken, eine Familientour</b> und eine <b>geführte 80er</b> an:
+22 km, 52 km, 82 km (geführt und nicht geführt), 125 km und sogar eine 151 km Tour.
+
+Das Besondere an unserer 151 km-Tour ist, dass wir unseren befreundeten Verein, den RSC Buchholz, in Rheinland-Pfalz dabei besuchen.
+An deren Startplatz werden wir unsere 151er- Kontrolle haben, da dieser Verein auch am 2. Juni seine RTF hat.
+Da hat die APPstimmung zwischen den beiden Bundesländern nicht gepasst, aber wir haben das Beste daraus gemacht. 💪
+
+Unsere Streckenführungen wurden in den vergangenen Jahren von den Teilnehmer:innen immer sehr gelobt.
 
 Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung.
 Dies gilt für die Kontrollstellen genauso wie für den Start-/Zielbereich.
-Wir möchten den früheren Kontrollschluss dafür nutzen, mit Euch den Nachmittag auf dem Schulhof zu genießen.
 Bringt also Zeit und Hunger mit.
 
-Wie es mit unseren Streckenangeboten in 2024 weitergeht? Da sind wir dran. 😊
+Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 2. Juni 2024 stattfindet.
 
-Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 28. Mai 2023 stattfindet.
+Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement und Liebe für Euch ausrichten.
 
-Euer RTC Köln e.V.`,
+Euer RTC Köln e.V`,
             )
             .setTimes(
                 new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('07:30').buildTime(),
@@ -90,7 +98,7 @@ Euer RTC Köln e.V.`,
                     .setText(
                         `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
 
-Wir bieten in diesem Jahr eine geführte Touren (70 km) für Neueinsteiger an!
+Wir bieten in diesem Jahr eine geführte Tour (82 km) für Neueinsteiger an!
 
 Tempo: max. 20er Schnitt
 Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
@@ -102,7 +110,7 @@ Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
                     .setText(
                         `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
 
-Für die Frühaufsteher unter euch bieten wir ab 07.30 Uhr ein Frühstück in der Aula an.`,
+Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.`,
                     )
                     .buildTrack(),
                 new TrackBuilder()
@@ -124,7 +132,7 @@ Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
                         `Besonders wichtig nach so einer anstrengenden Tour: Duschen.
 Sie sind in einem Nebengebäude reichlich vorhanden.
 
-Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachten Kuchen ab mittags eine Gemüsepfanne, Grillwurst, etc. mit verschiedenen Salaten an.
+Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachten Kuchen ab <b>mittags auch leckere warme Gerichte</b> mit verschiedenen Salaten an.
 
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
@@ -161,8 +169,8 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
                     .setControls(1)
                     .setHeight(70)
                     .setId('0b0df6c7-c7c9-4592-b9c9-d8fd3bece55f')
-                    .setLength(21)
-                    .setName('Die 21er')
+                    .setLength(22)
+                    .setName('Die 22er')
                     .setProfile(EProfile.Flach)
                     .setText(`Text in Bearbeitung`)
                     .setTime('10:00', '12:00')

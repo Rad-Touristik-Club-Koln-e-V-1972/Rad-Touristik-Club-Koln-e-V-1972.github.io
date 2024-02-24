@@ -8,7 +8,7 @@
                 <br />
                 <div class="text-center">Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!</div>
                 <br />
-                <div class="text-center">Wir bieten in diesem Jahr eine geführte Touren (70 km) für Neueinsteiger an!</div>
+                <div class="text-center">Wir bieten in diesem Jahr eine geführte Tour (82 km) für Neueinsteiger an!</div>
                 <div class="row">
                     <div class="col-4 text-right">Tempo:</div>
                     <div class="col-1" />
