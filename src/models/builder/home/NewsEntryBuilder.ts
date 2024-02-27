@@ -1,5 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import NewsEntry from 'src/models/entities/index/NewsEntry'
+import NewsEntry from 'src/models/entities/home/NewsEntry'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class NewsEntryBuilder extends ABuilder {

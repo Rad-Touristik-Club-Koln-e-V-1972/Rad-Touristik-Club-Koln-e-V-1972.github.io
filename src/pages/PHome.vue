@@ -55,10 +55,10 @@
 
 <script lang="ts" setup>
 import CSlideshow from 'components/pages/CSlideshow.vue'
-import CNews from 'components/pages/index/CNews.vue'
+import CNews from 'components/pages/home/CNews.vue'
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
-import useBlogStore from 'stores/index/Blog'
-import useSlideshowStore from 'stores/index/Slideshow'
+import useBlogStore from 'stores/home/Blog'
+import useSlideshowStore from 'stores/home/Slideshow'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'
 import useDateTime from 'src/utils/DateTime'
 

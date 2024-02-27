@@ -1,4 +1,4 @@
-import BlogEntryBuilder from 'src/models/builder/index/BlogEntryBuilder'
+import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()

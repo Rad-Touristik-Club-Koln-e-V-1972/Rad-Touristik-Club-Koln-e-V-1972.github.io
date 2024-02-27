@@ -1,8 +1,9 @@
 export default [
     {
         children: [
-            { component: () => import('pages/PIndex.vue'), name: 'index', path: '' },
-            { component: () => import('pages/PImprint.vue'), name: 'imprint', path: 'Imprint' },
+            { path: '/', redirect: { name: 'home' } },
+            { component: () => import('pages/PHome.vue'), name: 'home', path: 'home' },
+            { component: () => import('pages/PImprint.vue'), name: 'imprint', path: 'imprint' },
             {
                 children: [
                     { component: () => import('pages/events/PCalendar.vue'), name: 'events-calendar', path: 'calendar' },

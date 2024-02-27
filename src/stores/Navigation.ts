@@ -40,7 +40,7 @@ export default defineStore('navigation', () => {
                 .setTitle('Mitgliedschaft beantragen')
                 .setTo('membership-registration')
                 .buildNavigation(),
-            new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('index').buildNavigation(),
+            new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('home').buildNavigation(),
             new NavigationBuilder()
                 .setChildren(
                     new NavigationBuilder()

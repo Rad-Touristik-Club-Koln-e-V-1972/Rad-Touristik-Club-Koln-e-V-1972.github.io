@@ -1,5 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import BlogEntry from 'src/models/entities/index/BlogEntry'
+import BlogEntry from 'src/models/entities/home/BlogEntry'
 
 export default class BlogEntryBuilder extends ABuilder {
     private blogEntry = new BlogEntry()

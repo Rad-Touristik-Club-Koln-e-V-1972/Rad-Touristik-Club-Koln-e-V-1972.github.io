@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import NewsEntry from 'src/models/entities/index/NewsEntry'
-import NewsEntryBuilder from 'src/models/builder/index/NewsEntryBuilder'
+import NewsEntry from 'src/models/entities/home/NewsEntry'
+import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime.ts'
 
@@ -14,7 +14,7 @@ export default defineStore('news', () => {
             .setImage(
                 new GalleryEntryBuilder()
                     .setId('b5187e2c-cebc-40dc-83af-cdbadf09ff68')
-                    .setImageUrl('content.rtc-koeln.de/pages/index/news/Social_Media_-_all_you_need_is_laugh_5.2.24.jpg.avif')
+                    .setImageUrl('content.rtc-koeln.de/pages/home/news/Social_Media_-_all_you_need_is_laugh_5.2.24.jpg.avif')
                     .buildGalleryEntry(),
             )
             .setShowUntil('2024-02-15')
@@ -24,8 +24,8 @@ export default defineStore('news', () => {
             .setImage(
                 new GalleryEntryBuilder()
                     .setId('2049e110-da82-49ef-b0f1-1f167bda676d')
-                    .setImageUrl('content.rtc-koeln.de/pages/index/news/Werbung_Social_Media.pdf')
-                    .setPreviewUrl('content.rtc-koeln.de/pages/index/news/Werbung_Social_Media.avif')
+                    .setImageUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.pdf')
+                    .setPreviewUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.avif')
                     .buildGalleryEntry(),
             )
             .setText(

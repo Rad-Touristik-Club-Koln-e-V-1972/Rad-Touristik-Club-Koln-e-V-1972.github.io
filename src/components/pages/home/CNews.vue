@@ -36,7 +36,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
-import useNewsStore from 'stores/index/News'
+import useNewsStore from 'stores/home/News'
 
 const items = useNewsStore().allValid
 
