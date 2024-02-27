@@ -35,7 +35,7 @@
         "vue-router": "4.3.0"
     },
     "devDependencies": {
-        "@commitlint/cli": "19.0.0",
+        "@commitlint/cli": "19.0.1",
         "@commitlint/config-conventional": "19.0.0",
         "@quasar/app-vite": "1.7.3",
         "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
@@ -44,7 +44,7 @@
         "@typescript-eslint/eslint-plugin": "7.1.0",
         "@typescript-eslint/parser": "7.1.0",
         "autoprefixer": "10.4.17",
-        "commitlint": "19.0.0",
+        "commitlint": "19.0.1",
         "eslint": "8.57.0",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-vue": "9.22.0",
