@@ -38,7 +38,7 @@ export default defineStore('tour', () => {
                     .setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg.avif')
                     .buildGalleryEntry(),
             )
-            .setLastChange('2024-02-24')
+            .setLastChange('2024-02-27')
             .setLocation(
                 new ControlBuilder()
                     .setCity('Köln-Zündorf')
@@ -48,16 +48,6 @@ export default defineStore('tour', () => {
                     .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
                     .setZipCode('51143')
                     .buildControl(),
-            )
-            .setPopup(
-                `Unsere FORSBACHTOUR 2024 ist am 2. Juni! 🚴🎉
-
-➡️ Nähere Infos folgen später.
-
-Aber Ihr könnt Euch den Termin ja schon mal merken. 😉🫶
-
-Euer RTC Köln e.V. 1972`,
-                'Hinweis',
             )
             .setText(
                 `Liebe Radsportlerinnen und Radsportler,
@@ -148,7 +138,12 @@ Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
 Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
-Da die App zurzeit noch in der Testphase ist und noch weiter angepasst wird, werden wir zeitnah zum 28.05.2023 noch nähere Informationen auf unserer Webseite bekannt geben.
+
+<a href='https://www.rad-net.de/touren-app-lizenz.htm' target="_blank">
+    <b>Wichtiger Hinweis für Fahrer:innen ohne Breitensportlizenz (Gastfahrer):</b>
+    Bitte meldet Euch im Vorfeld in der <b>BDR-Touren-App</b> mit dem kostenlosen Basisaccount an.
+</a>
+
 Vom Start weg fahren wir durch eine Spielstraße, die sich leider nicht sinnvoll umgehen lässt.
 Hier bitten wir die FahrerInnen um besondere Rücksichtnahme.
 Zum Einrollen geht es zunächst flach durch die Felder und den südlichsten Stadtteil von Köln, Porz-Libur.
@@ -206,8 +201,11 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                     .setName('Die 82er')
                     .setProfile(EProfile.Wellig)
                     .setText(
-                        `Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
-Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 51er.
+                        `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
+Wir haben uns für die Strecken 82 km, 125 km und 151 km eine neue Auffahrt zur Kontrolle nach Pohlhausen für Euch ausgedacht.
+An diesem Anstieg wartet eine RTC-Fotografin auf Euch, also bitte immer schön lächeln. 🙂
+Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
+Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 52er.
 <figure>
     <img alt="Von Much nach Hetzenholz" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Much_Hetzenholz.jpg.avif' style='width: 100%' />
     <figcaption>Von Much nach Hetzenholz</figcaption>
@@ -240,7 +238,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
                     .setName('Die 125er')
                     .setProfile(EProfile.Huegelig)
                     .setText(
-                        `Während die 78er weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
+                        `Während die <b>82er</b> weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
 Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
@@ -278,7 +276,18 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
                     .setLength(151)
                     .setName('Die 151er')
                     .setProfile(EProfile.Huegelig)
-                    .setText(`Text in Bearbeitung`)
+                    .setText(
+                        `Hier haben wir etwas ganz Besonderes für Euch:
+Direkt nach der Kontrolle in Bouraul teilt sich die Strecke in 125 km und 151 km (350 Hm mehr als die 125er) auf.
+Wenn ihr auf die ausgeschilderte 151 km-Strecke geht, fahrt ihr südlich bis zum RSC Buchholz, der am selben Tag seine RTF ausrichtet wie wir.
+Auf deren Startplatz ist unsere nächste Verpflegungsstation.
+Am Start in Zündorf bekommt ihr von uns einen Gutschein über einen 4 Euro-Verzehrbon, den ihr in Buchholz einlösen könnt.
+Auf dem Rückweg an die Sieg kommt Ihr wieder auf die 125 km-Strecke und habt theoretisch so die Chance, nachdem ihr die Sieg überquert habt,
+nochmal zu unserer Kontrolle in Bouraul zu fahren (nur 2 km ab der Sieg-Überquerung).
+Wir versuchen aus der Terminkollision, denn da hat die APPstimmung im BDR leider nicht funktioniert, das Beste zum Wohle von Euch, den Buchholzern und uns zu machen.
+Denkt dran:
+Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss in Zündorf ist um 17 Uhr 🙂🙂🙂🙂🙂 Wir freuen uns alle auf Euch.`,
+                    )
                     .setTime('07:30', '08:30')
                     .setUrls({
                         'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
