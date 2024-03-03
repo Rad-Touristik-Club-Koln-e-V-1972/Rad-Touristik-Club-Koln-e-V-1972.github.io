@@ -15,12 +15,14 @@ import _2020 from './gallery/2020/Gallery'
 import _2021 from './gallery/2021/Gallery'
 import _2022 from './gallery/2022/Gallery'
 import _2023 from './gallery/2023/Gallery'
+import _2024 from './gallery/2024/Gallery'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 
 export default defineStore('gallery', () => {
     const sortByDate = (galleries: Gallery[]) => galleries.toSorted((a, b) => b.start.getTime() - a.start.getTime())
 
     const groupedByYear = ref<Record<string, Gallery[]>>({
+        2024: sortByDate(_2024),
         2023: sortByDate(_2023),
         2022: sortByDate(_2022),
         2021: sortByDate(_2021),
