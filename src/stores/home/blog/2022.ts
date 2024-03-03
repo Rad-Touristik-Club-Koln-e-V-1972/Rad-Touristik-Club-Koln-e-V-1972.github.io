@@ -24,7 +24,8 @@ Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schrei
 
 Zu diesem Ehrentag organisierte der Vorstand - mit der Unterstützung von Ulla und Jutta - am 29.10.2022 einen schönes und würdiges Fest. 🥰
 
-Der 1. Vorsitzende, Wolfgang Dünkelmann, führte kurzweilig durch den Abend. Wir begrüßten u.a. Gründungsmitglieder und den 1. Vorsitzenden des Radsportverbands Bezirk Köln/Bonn (BDR).
+Der 1. Vorsitzende, Wolfgang Dünkelmann, führte kurzweilig durch den Abend.
+Wir begrüßten u.a. Gründungsmitglieder und den 1. Vorsitzenden des Radsportverbands Bezirk Köln/Bonn (BDR).
 Es wurde historisch eingetaucht, vorgestellt, erzählt, geehrt (1. Dame: Burghild Liedtke, 1. Herr: Klaus Dünkelmann) lecker gegessen und getrunken sowie gelacht. 😃
 
 Der RTC Köln e.V. hat mit dieser Abschlussveranstaltung sein Jubiläumsjahr würdig beendet. 🍾❤️
@@ -39,7 +40,8 @@ Euer RTC Köln e.V. ☺️`,
         .setDate('2022-10-22')
         .setId('9ccb4f29-bc89-4fe0-a6a9-7cee2b46e410')
         .setText(
-            `Bei schönstem Herbstwetter nahmen gestern ca. 170 Gravel- und MTB-Fahrer:innen Waldboden, Matsch und Laub bei der 7. Wahnbachtour unter die Reifen. Die Zufriedenheit der Teilnehmer:innen über die Strecken und die Verpflegung sieht man in den glücklichen Gesichtern. 😃
+            `Bei schönstem Herbstwetter nahmen gestern ca. 170 Gravel- und MTB-Fahrer:innen Waldboden, Matsch und Laub bei der 7. Wahnbachtour unter die Reifen.
+Die Zufriedenheit der Teilnehmer:innen über die Strecken und die Verpflegung sieht man in den glücklichen Gesichtern. 😃
 
 Wir bedanken uns herzlich beim RTA Lülsdorf für die tatkräftige Kooperation 👍 und beim Tennisverein Siegburger TV für die Location. 👍
 

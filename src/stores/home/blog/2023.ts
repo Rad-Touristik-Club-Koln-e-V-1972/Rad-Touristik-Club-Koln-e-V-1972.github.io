@@ -6,9 +6,15 @@ export default [
         .setDate('2023-12-02')
         .setId('053478fd-23a7-4192-ac8d-0ecb85b936f6')
         .setText(
-            `Es war ein sehr schöner Abend.🌟🎄 Das Café Uferglück bot eine gemütliche Atmosphäre, die von euch allen mit Leben gefüllt wurde. Ein herzliches Dankeschön an alle, die zum Gelingen unseres RTC-Weihnachtsabends beigetragen haben – sei es durch Organisation, Dekoration oder einfach durch eure Anwesenheit und gute Laune. 🌟💫
+            `Es war ein sehr schöner Abend.🌟🎄
+Das Café Uferglück bot eine gemütliche Atmosphäre, die von euch allen mit Leben gefüllt wurde.
+Ein herzliches Dankeschön an alle, die zum Gelingen unseres RTC-Weihnachtsabends beigetragen haben
+ – sei es durch Organisation, Dekoration oder einfach durch eure Anwesenheit und gute Laune. 🌟💫
 
-Die festliche Stimmung, die Ehrungen und die kulinarischen Köstlichkeiten haben uns einen schönen vorweihnachtlichen Abend erleben lassen. Es war großartig, nicht nur unsere Vereinsmeister:innen durch unseren lieben Sportwart Klaus zu ehren, sondern auch weitere verdienstvolle Mitglieder auszuzeichnen. Eure Unterstützung und euer Engagement machen den RTC Köln zu dem, was er ist: eine tolle Gemeinschaft voller Leidenschaft für den Radsport. 🚴‍♀️🚴‍♂️
+Die festliche Stimmung, die Ehrungen und die kulinarischen Köstlichkeiten haben uns einen schönen vorweihnachtlichen Abend erleben lassen.
+Es war großartig, nicht nur unsere Vereinsmeister:innen durch unseren lieben Sportwart Klaus zu ehren, sondern auch weitere verdienstvolle Mitglieder auszuzeichnen.
+Eure Unterstützung und euer Engagement machen den RTC Köln zu dem, was er ist:
+eine tolle Gemeinschaft voller Leidenschaft für den Radsport. 🚴‍♀️🚴‍♂️
 
 Nochmals vielen Dank an alle, die dazu beigetragen haben, dass unsere Weihnachtsfeier so schön wurde.
 
