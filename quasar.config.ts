@@ -13,19 +13,14 @@ import IRoute from 'src/models/entities/navigation/IRoute.ts'
 import routes from 'src/router/routes.ts'
 
 // TODO Workaround until a better solution for generating the sitemap is found.
-const generateRoutes = () => {
-    const ret: string[] = []
-
+const generateRootRoute = () => {
     const mainRoutes = routes.at(0)
-    if (mainRoutes?.children) {
-        const sufix = '#'
-        const rootPath = mainRoutes.path + sufix
-        // Avoid "//" at the beginning of the path if the root is "/".
-        ret.push(...generateRoutesHelper(rootPath === '/#' ? '#' : rootPath, mainRoutes.children))
-    }
+    let ret: string[] = []
 
-    // Remove duplicated "/" route.
-    return ret.filter((route) => route !== '/')
+    // Avoid "//" at the beginning of the path if the root is "/".
+    if (mainRoutes?.children) ret = generateRoutesHelper(mainRoutes.path === '/' ? '#' : `${mainRoutes.path}#`, mainRoutes.children)
+
+    return ret
 }
 
 // TODO Workaround until a better solution for generating the sitemap is found.
@@ -46,7 +41,7 @@ export default configure(function (/* ctx */) {
         // https://v2.quasar.dev/options/animations
         animations: 'all',
         build: {
-            vitePlugins: [[require('vite-plugin-sitemap'), { dynamicRoutes: generateRoutes(), hostname: 'https://www.rtc-koeln.de', outDir: 'dist/spa' }]],
+            vitePlugins: [[require('vite-plugin-sitemap'), { dynamicRoutes: generateRootRoute(), hostname: 'https://www.rtc-koeln.de', outDir: 'dist/spa' }]],
         },
         // app boot file (/src/boot)
         // --> boot files are part of "main.js"

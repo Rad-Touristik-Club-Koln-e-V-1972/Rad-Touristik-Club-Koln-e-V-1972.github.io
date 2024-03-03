@@ -6,8 +6,14 @@ export default class BlogEntryBuilder extends ABuilder {
 
     buildBlogEntry = () => Object.assign(this.blogEntry, this.buildAEntity())
 
-    setAlbumIDs = (value: string[] | Record<string, string>): this => {
-        this.blogEntry.albumIDs = this.createAlbumIDs(value)
+    setAlbumIDs = (value: Record<string, string> | string[] | string): this => {
+        if (value instanceof Array)
+            this.blogEntry.albumIDs = value.reduce<Record<string, string>>((map, it) => {
+                map[it] = ''
+                return map
+            }, {})
+        else if (value.constructor === String) this.blogEntry.albumIDs = { [value]: '' }
+        else this.blogEntry.albumIDs = Object.assign(this.blogEntry.albumIDs, value as Record<string, string>)
 
         return this
     }
@@ -30,12 +36,4 @@ export default class BlogEntryBuilder extends ABuilder {
 
         return this
     }
-
-    private createAlbumIDs = (albumIDs: string[] | Record<string, string>) =>
-        albumIDs instanceof Array
-            ? albumIDs.reduce<Record<string, string>>((map, it) => {
-                  map[it] = ''
-                  return map
-              }, {})
-            : albumIDs
 }

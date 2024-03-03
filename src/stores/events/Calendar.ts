@@ -11,7 +11,7 @@ export default defineStore('calendar', () => {
     const dateTime = useDateTime()
 
     const events = ref<Record<string, Event[]>>({
-        2024: _2024.concat(calendar.getHolidays(2024)),
+        2024: [..._2024, ...calendar.getHolidays(2024)],
     })
 
     const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))

@@ -2,7 +2,7 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
-        .setAlbumIDs(['32ade59b-0ba1-47f5-b20e-54d872a9e524'])
+        .setAlbumIDs('32ade59b-0ba1-47f5-b20e-54d872a9e524')
         .setDate('2022-11-06')
         .setId('c8957c03-0b01-49bc-9ec7-cf5517a0e1c7')
         .setText(
@@ -16,7 +16,7 @@ Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schrei
         .setTitle('Wintertraining 2022')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb'])
+        .setAlbumIDs('8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb')
         .setDate('2022-10-29')
         .setId('212a59b7-a3da-40dd-98e7-c26085491eb9')
         .setText(
@@ -53,7 +53,7 @@ Euer RTC Köln e.V.`,
         .setTitle('7. CTF')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7'])
+        .setAlbumIDs('24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7')
         .setDate('2022-10-08')
         .setId('03bf5272-12f4-4b5e-8ff7-2131f21a35c7')
         .setText(
@@ -70,14 +70,14 @@ Wir kommen nächstes Jahr wieder. 😘️`,
         .setTitle('Saisonabschluss - VfR Büttgen')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['4a0c9096-eeae-4bee-9eca-068e616feed4'])
+        .setAlbumIDs('4a0c9096-eeae-4bee-9eca-068e616feed4')
         .setDate('2022-09-25')
         .setId('b36dd179-6525-4877-978e-5ecdc44dfa54')
         .setText('Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️')
         .setTitle('Herbsttour - Lohmar-Wahlscheid')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['284dae72-4bf4-49fc-9ff1-a7b1263946f0'])
+        .setAlbumIDs('284dae72-4bf4-49fc-9ff1-a7b1263946f0')
         .setDate('2022-08-27')
         .setId('6c9fce9d-3964-4106-be9a-4e2296051b07')
         .setText(
@@ -96,7 +96,7 @@ Richtig toll, lieber Jürgen. 💪🚴`,
         .setTitle('RTF GEW RheinEnergie')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['fb982b9c-abf8-457c-b1f4-10b360bf235d'])
+        .setAlbumIDs('fb982b9c-abf8-457c-b1f4-10b360bf235d')
         .setDate('2022-08-13', '2022-08-14')
         .setId('05b8ed74-6693-457c-ac6e-92b5c412bfeb')
         .setText(

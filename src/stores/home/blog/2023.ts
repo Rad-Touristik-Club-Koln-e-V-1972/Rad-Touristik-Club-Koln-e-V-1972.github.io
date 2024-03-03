@@ -2,7 +2,7 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
-        .setAlbumIDs(['4d2dd3c2-1e44-475e-9b82-55fd4c9bc764'])
+        .setAlbumIDs('4d2dd3c2-1e44-475e-9b82-55fd4c9bc764')
         .setDate('2023-12-02')
         .setId('053478fd-23a7-4192-ac8d-0ecb85b936f6')
         .setText(
@@ -31,7 +31,7 @@ Herzlichen Glückwunsch!🎉`,
         .setTitle('RTC-Weihnachtsfeier 2023')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['0e40f34a-4e48-4af4-a27a-ccdfe74e4f2e'])
+        .setAlbumIDs('0e40f34a-4e48-4af4-a27a-ccdfe74e4f2e')
         .setDate('2023-11-19')
         .setId('c4160b9f-fa55-4454-a526-311abf5995c9')
         .setText(
@@ -55,7 +55,7 @@ Zumindest dann, wenn uns der Wettergott wieder hold ist.`,
         .setTitle('Zwischen den Regenschauern')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['41efa0de-2fa0-40a0-b147-aa3e1d09a558'])
+        .setAlbumIDs('41efa0de-2fa0-40a0-b147-aa3e1d09a558')
         .setDate('2023-10-06')
         .setId('89dbe92c-116d-4a1c-bd0d-420b062f7b28')
         .setText(
@@ -87,7 +87,7 @@ Uns wurde schon zugezwitschert, dass er schon fleißig für sein Comeback traini
         .setTitle('Ab ins Sahrbachtal - an einem warmen Herbsttag')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['19e71a41-1e1c-4c5d-ae0c-b012245e5176'])
+        .setAlbumIDs('19e71a41-1e1c-4c5d-ae0c-b012245e5176')
         .setDate('2023-10-01')
         .setId('7b275465-e0a8-4cc2-bd28-e55fa3c35a1a')
         .setText(
@@ -122,7 +122,7 @@ Euer Uwe`,
         .setTitle('RTF Büttgen... und da waren es nur noch drei!')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['a86f1e5c-ccb4-47ba-804b-46561c254325'])
+        .setAlbumIDs('a86f1e5c-ccb4-47ba-804b-46561c254325')
         .setDate('2023-09-17')
         .setId('8bfc526e-5b03-4cd9-9a75-4cd4794c350b')
         .setText(
@@ -150,7 +150,7 @@ Fazit: Mega Wochenende. 🎉`,
         .setTitle('Allein … in Polch oder die 3 Strecken des Wochenendes 🚴‍♂️🚴‍♂️')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['ac86b04d-b2b1-4f2f-a197-ef78eea9f8b4'])
+        .setAlbumIDs('ac86b04d-b2b1-4f2f-a197-ef78eea9f8b4')
         .setDate('2023-08-20')
         .setId('c2135b81-0619-4671-868b-9069632c4004')
         .setText(
@@ -168,7 +168,7 @@ Und wie ihr das mit dem ☀️Wetter☀️ hingekriegt habt, könnt ihr uns bitt
         .setTitle('Großes RTC-Aufgebot in Lövenich 🚴‍♀️')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['aced9fe7-38c6-4cba-8572-c16e47670388'])
+        .setAlbumIDs('aced9fe7-38c6-4cba-8572-c16e47670388')
         .setDate('2023-08-13')
         .setId('ddb5497c-ae51-4512-bc4e-2552a89161c1')
         .setText(
@@ -198,7 +198,7 @@ Für nächstes Jahr wünschen wir euch ein komplettes Wochenende voller Sonnensc
         .setTitle('Auf und ab')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['6a72b056-6c53-40e7-ae87-872938b7824e'])
+        .setAlbumIDs('6a72b056-6c53-40e7-ae87-872938b7824e')
         .setDate('2023-08-05')
         .setId('c8a8db08-19b2-4eb8-8534-232d05892b5f')
         .setText(
@@ -220,7 +220,7 @@ LG Klaus`,
         .setTitle('RTF vom RTV Lohmar')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['d8946223-d4f6-4095-bf84-6956af878a2c'])
+        .setAlbumIDs('d8946223-d4f6-4095-bf84-6956af878a2c')
         .setDate('2023-07-30')
         .setId('2629cebb-4e62-4d82-ae6d-68bb6d8fb7c6')
         .setText(
@@ -248,7 +248,7 @@ Nur über das Wetter müssen wir nächstes Jahr nochmal reden.🤪🥰`,
         .setTitle('REGEN-RTF in Siegburg')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['9aa16b1c-9a90-4723-b586-65e51575bd89'])
+        .setAlbumIDs('9aa16b1c-9a90-4723-b586-65e51575bd89')
         .setDate('2023-07-14')
         .setId('872d69b7-2de8-42d0-82da-839741d4f00b')
         .setText(
@@ -277,7 +277,7 @@ Eure Diana`,
         .setTitle('3 tolle Tage mit dem RTC Köln - inkl. geführte Moselgenusstour')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['4bfc4b0b-d7c1-44e6-9d4f-96cb4d1833e7'])
+        .setAlbumIDs('4bfc4b0b-d7c1-44e6-9d4f-96cb4d1833e7')
         .setDate('2023-07-09')
         .setId('f2d4443d-1f99-4471-bd0c-184d5897bd99')
         .setText(
@@ -299,7 +299,7 @@ Ein besonderes Dankeschön gilt den Immendorfern, die eine liebenswerte Truppe s
         .setTitle('Condor-Flug bei 35 Grad')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['2450bf87-cec4-4914-9b6e-ff241819c414'])
+        .setAlbumIDs('2450bf87-cec4-4914-9b6e-ff241819c414')
         .setDate('2023-07-02')
         .setId('a04e3323-f316-4612-b8cb-4db452eac434')
         .setText(
@@ -320,7 +320,7 @@ Und das nicht nur sonntags. 😉😍`,
         .setTitle('Tolle Eifelrunde zu zehnt')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['2807edbd-f491-43ad-9a1e-d33bdce5aec3'])
+        .setAlbumIDs('2807edbd-f491-43ad-9a1e-d33bdce5aec3')
         .setDate('2023-06-25')
         .setId('4cbafd9a-9f7a-41a1-9935-f8c30aab6324')
         .setText(
@@ -346,7 +346,7 @@ Danke, RTC Rodenkirchen, für die schönen ausgeschilderten Strecken und Eure Ga
         .setTitle('30 Grad und es war noch heißer')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['732a5c32-d90f-4b61-be01-640d19757c76'])
+        .setAlbumIDs('732a5c32-d90f-4b61-be01-640d19757c76')
         .setDate('2023-06-24')
         .setId('dd50bc6f-5b54-4a3c-840c-3629bc3612e7')
         .setText(
@@ -366,7 +366,7 @@ Trotz der sonst guten Organisation und den schönen Strecken hatte der RSC leide
         .setTitle('Die Sternfahrt zur RTF nach Kerpen')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['1db3f0d8-dc8d-421d-83fd-505d69d8ea73'])
+        .setAlbumIDs('1db3f0d8-dc8d-421d-83fd-505d69d8ea73')
         .setDate('2023-06-11')
         .setId('27a637ca-8c3d-452e-8971-cae44f1d885d')
         .setText(
@@ -402,7 +402,7 @@ Trotzdem wieder 110 km auf der Uhr. 🤗“`,
         .setTitle('VfB Schrecksbach: Ein empfehlenswertes Radsport-Event der familiären Art')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['4ddfb09a-bc1b-42d9-bf73-5a0bb7ff1978'])
+        .setAlbumIDs('4ddfb09a-bc1b-42d9-bf73-5a0bb7ff1978')
         .setDate('2023-06-05')
         .setId('089afc4d-7030-429a-aa3e-62ee1dcac41b')
         .setText(
@@ -422,7 +422,7 @@ Stundenlang mit 17 km/h... Zermürbt aber nicht gebrochen kam ich dann in Amster
         .setTitle("Frank's Amsterdam Tour")
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['6ee17200-d1d3-4273-8777-885a3f946912'])
+        .setAlbumIDs('6ee17200-d1d3-4273-8777-885a3f946912')
         .setDate('2023-05-31')
         .setId('6f11b4e0-52c7-4b28-a4d5-b19de2ad6fc7')
         .setText(
@@ -455,7 +455,7 @@ Meldet Euch einfach bis zum 19. Juni bei pr@rtc-koeln.de`,
         .setTitle('Résumé 51. Forsbachtour 2023')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['e2ab13b0-d2f7-482b-864c-f5affec8863c'])
+        .setAlbumIDs('e2ab13b0-d2f7-482b-864c-f5affec8863c')
         .setDate('2023-05-24')
         .setId('13c58951-6955-4498-9786-444e80575f44')
         .setText(
@@ -470,7 +470,7 @@ Euer RTC Köln e.V.`,
         .setTitle('➡️ Tipp Nummer 3')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['3013dff8-2924-458e-b990-dc9a8871077a'])
+        .setAlbumIDs('3013dff8-2924-458e-b990-dc9a8871077a')
         .setDate('2023-05-23')
         .setId('352e773c-00a1-4878-b479-15367451e105')
         .setText(
@@ -486,7 +486,7 @@ Euer RTC Köln e.V.`,
         .setTitle('Vintage-Bike-Wettbewerb')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['91b934e0-8a3a-4934-8965-8a1bf7beae87'])
+        .setAlbumIDs('91b934e0-8a3a-4934-8965-8a1bf7beae87')
         .setDate('2023-05-22')
         .setId('d91d524b-7744-4499-8a34-c4437d779798')
         .setText(
@@ -506,14 +506,14 @@ erhalten.
         .setTitle('rtckoeln 👍TIPP Nummer 2')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['c96345be-6fba-4d03-b0f1-5ee71e0fed12'])
+        .setAlbumIDs('c96345be-6fba-4d03-b0f1-5ee71e0fed12')
         .setDate('2023-05-19')
         .setId('e353d230-eb2b-4b6f-96f8-853c2d1c599e')
         .setText('Der RTC Köln e.V. in der Mai-Ausgabe des Stadtmagazins „Porz im Blick“. 🤗👍')
         .setTitle('Porz im Blick - Maiausgabe')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['57987c1c-d899-4f5c-93ea-fdacfebfb7c9'])
+        .setAlbumIDs('57987c1c-d899-4f5c-93ea-fdacfebfb7c9')
         .setDate('2023-05-15')
         .setId('7bdd73f2-a5c4-437d-8801-6fd79f63f09e')
         .setText(
@@ -534,7 +534,7 @@ In ein paar Tagen gibt es noch mehr Bilder als Appetithäppchen. 🤗`,
         .setTitle('Gewinne und Preise auf der Forsbachtour in vier Kategorien')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['468f80a4-f5e9-4bd4-b638-53cb5675e496'])
+        .setAlbumIDs('468f80a4-f5e9-4bd4-b638-53cb5675e496')
         .setDate('2023-05-14')
         .setId('61e08020-df8d-495a-8b10-d471aba0d024')
         .setText(
@@ -551,7 +551,7 @@ Danke an den RCB für die tolle Strecke und die Organisation 👍`,
         .setTitle('RTF Campus Bonn')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['2930ebbb-07ea-41f9-bd56-73b3425c4284'])
+        .setAlbumIDs('2930ebbb-07ea-41f9-bd56-73b3425c4284')
         .setDate('2023-05-14')
         .setId('36f9ea03-5ccf-46f6-83a3-dd1d525495d7')
         .setText(
@@ -570,7 +570,7 @@ Super Leistung, Frank!`,
         .setTitle('Paris-Brest-Paris Qualifikation')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['738750b9-1dfd-4226-abdf-a50235834c77'])
+        .setAlbumIDs('738750b9-1dfd-4226-abdf-a50235834c77')
         .setDate('2023-05-13')
         .setId('4c3152b1-8938-4d78-bae0-2b7e23f5b9f2')
         .setText(
@@ -584,7 +584,7 @@ DANKE an den RSC Erftstadt!`,
         .setTitle('Sonne - Hagel - Sonne')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['2b5902f1-77bc-467e-baad-20ae94e4c08a'])
+        .setAlbumIDs('2b5902f1-77bc-467e-baad-20ae94e4c08a')
         .setDate('2023-05-09')
         .setId('387d61f9-b9c7-4d2c-808c-0ef0ff45c63c')
         .setText(
@@ -622,7 +622,7 @@ Rauf aufs Rad mit dem RTC Köln e.V. - Eins von vielen gemeinnützigen Projekten
         .setTitle('Rauf aufs Rad mit dem RTC Köln e.V.')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['9f754e63-1819-4e8e-9857-8562eedc9cc8'])
+        .setAlbumIDs('9f754e63-1819-4e8e-9857-8562eedc9cc8')
         .setDate('2023-05-06')
         .setId('bd41ce92-9cb4-418a-acdf-596a9c92d570')
         .setText(
@@ -636,7 +636,7 @@ Danke, Nievenheim. 🤗`,
         .setTitle('6. Mai: RTF Nievenheim')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['52d3d0de-a776-4ca6-8e80-a5e80d364fc7'])
+        .setAlbumIDs('52d3d0de-a776-4ca6-8e80-a5e80d364fc7')
         .setDate('2023-05-05')
         .setId('119e6598-ce3c-45b4-a925-5021cb5ae9ab')
         .setText(
@@ -650,7 +650,7 @@ Wir freuen uns schon auf den 4.6., wenn wir uns nach der Forsbachtour (ist übri
         .setTitle('🆕 RTC-Versammlung 2.0 🏡')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['220b9dc9-8845-4976-8206-df382373d031'])
+        .setAlbumIDs('220b9dc9-8845-4976-8206-df382373d031')
         .setDate('2023-05-01')
         .setId('c3128ff8-d197-4294-abf1-860ab306444d')
         .setText(
@@ -668,7 +668,7 @@ Und natürlich die selbstgebackenen Power-Reisriegel. 💪`,
         .setTitle('1. Mai: Von wegen dicker Kopf vom Reinfeiern')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['d75f2e09-17d6-48bc-b640-1431ca581f74'])
+        .setAlbumIDs('d75f2e09-17d6-48bc-b640-1431ca581f74')
         .setDate('2023-04-22')
         .setId('2e681f00-55ec-47c0-a1d9-0dc386c44ee1')
         .setText(
@@ -687,7 +687,7 @@ TOLLE LEISTUNG!👍`,
         .setTitle('Unsere erste Marathoni in 2023')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['2d739f34-e77d-4bff-93dd-d7ebcf7f2a2c'])
+        .setAlbumIDs('2d739f34-e77d-4bff-93dd-d7ebcf7f2a2c')
         .setDate('2023-04-16')
         .setId('086b91b9-8f03-43d1-a7a7-bd39f4a98018')
         .setText(
@@ -702,7 +702,7 @@ Schön war‘s.
         .setTitle('🤔 Kennt Ihr schon das Bergische Karussell?')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['7c66e8f8-2dbd-4af8-9641-65ea0dd69484'])
+        .setAlbumIDs('7c66e8f8-2dbd-4af8-9641-65ea0dd69484')
         .setDate('2023-04-09')
         .setId('71913d41-1356-4e47-9560-cb267b0e6f14')
         .setText(
@@ -721,7 +721,7 @@ Wir bieten
         .setTitle('➡️ LUST AUF WAS NEUES? 🚴‍♀️')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['db15854a-bfad-486d-9a6d-916946b4050b'])
+        .setAlbumIDs('db15854a-bfad-486d-9a6d-916946b4050b')
         .setDate('2023-03-17')
         .setId('6ceefc9d-5b41-494e-adb2-112a17de8e8f')
         .setText(
@@ -737,7 +737,7 @@ Start und Ziel nach ca. 80 km: Die Schmitzebud.
         .setTitle('Frühlingsfahrt nach Lindlar')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['1c843630-1346-4af8-ad7b-10009b1b694e'])
+        .setAlbumIDs('1c843630-1346-4af8-ad7b-10009b1b694e')
         .setDate('2023-03-03')
         .setId('c8142b69-7827-4e7c-ac35-59b821cfdfa9')
         .setText(
@@ -748,7 +748,7 @@ Die neue 1. Vorsitzende, Diana Vialon, freut sich auf die neue sportliche Aufgab
         .setTitle('Generationenwechsel')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['ac7d6f63-20c4-4088-ab8e-2c7030c9fd44'])
+        .setAlbumIDs('ac7d6f63-20c4-4088-ab8e-2c7030c9fd44')
         .setDate('2023-02-11')
         .setId('b1d7767f-5865-4e04-b9b9-c9581bfbce0e')
         .setText(
@@ -761,7 +761,7 @@ Ein großes Lob an Cito Hennef für die tolle Strecke. 👍`,
         .setTitle('😃 RTC GOES CTF️')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['4d6e43a0-3923-4c94-a60d-d7c2dda20905'])
+        .setAlbumIDs('4d6e43a0-3923-4c94-a60d-d7c2dda20905')
         .setDate('2023-02-11')
         .setId('3a662aa0-2add-463d-9016-421688c701a4')
         .setText(
@@ -774,7 +774,7 @@ Es ging in die Voreifel mit einem Aufwärmkaffee (und anderen Kalorien) in Heime
         .setTitle('Wintertraining d‘Albert')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['7626953c-6efa-44f8-af4b-29cbf1e408f0'])
+        .setAlbumIDs('7626953c-6efa-44f8-af4b-29cbf1e408f0')
         .setDate('2023-02-04')
         .setId('96fc29f0-edcc-4ea9-b336-2e0fa44d64a2')
         .setText(
@@ -787,7 +787,7 @@ Bis auf Frank: Er hatte am Ende sogar 105 km auf dem Tacho. 🙌👍`,
         .setTitle('Kurzentschlossene RTCler 🚴🚴‍♀️🚴‍♂️🚴🚴‍♀️🚴🚴‍♀️')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['c8136f59-6fea-468d-914d-31a828e1a184'])
+        .setAlbumIDs('c8136f59-6fea-468d-914d-31a828e1a184')
         .setDate('2023-01-22')
         .setId('0b9009fd-1aa7-45e9-ad25-3ddc4804e83f')
         .setText(
@@ -806,7 +806,7 @@ Toll gemacht, Burghild! Starke Leistung. 💪`,
         .setTitle('Sonntag, Schnee, Kälte')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['52c09122-f041-4b5b-8ae1-a581ccf77dd4'])
+        .setAlbumIDs('52c09122-f041-4b5b-8ae1-a581ccf77dd4')
         .setDate('2023-01-19')
         .setId('1bd8a011-6259-45b5-b98f-1b6e35cf9302')
         .setText(
@@ -826,7 +826,7 @@ Der RTC Köln e.V. dankt Hanni und Manfred Marquardt für diese Treue und ihren 
         .setTitle('Ehrung Manfred & Hanni Marquardt')
         .buildBlogEntry(),
     new BlogEntryBuilder()
-        .setAlbumIDs(['bd6f7533-efaa-45f9-895f-11a419363bfa'])
+        .setAlbumIDs('bd6f7533-efaa-45f9-895f-11a419363bfa')
         .setDate('2023-01-07')
         .setId('2e7d82d3-8554-4a1b-9a15-0f8bd0c556e9')
         .setText(
