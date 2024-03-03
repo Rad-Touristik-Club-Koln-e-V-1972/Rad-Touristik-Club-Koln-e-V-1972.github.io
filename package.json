@@ -53,7 +53,7 @@
         "prettier": "3.2.5",
         "typescript": "5.3.3",
         "vite-plugin-sitemap": "0.5.3",
-        "vue-tsc": "2.0.2"
+        "vue-tsc": "2.0.3"
     },
     "gitHooks": {
         "pre-commit": "lint-staged"
