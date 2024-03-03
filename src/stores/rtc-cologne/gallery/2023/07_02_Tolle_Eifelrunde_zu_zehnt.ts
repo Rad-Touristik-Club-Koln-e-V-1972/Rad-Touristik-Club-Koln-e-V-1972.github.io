@@ -67,7 +67,7 @@ export default new GalleryBuilder()
             .buildGalleryEntry(),
     ])
     .setLocation('Köln-Immendorf')
-    .setTitle('Condor-Flug bei 35 Grad')
+    .setTitle('Tolle Eifelrunde zu zehnt')
     .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3898.jpg.avif')
     .setYoutubeVideoIds('0Tv6pawaDw4')
     .buildGallery()
