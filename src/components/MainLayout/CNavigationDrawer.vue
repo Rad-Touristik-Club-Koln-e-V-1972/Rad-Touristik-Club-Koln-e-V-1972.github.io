@@ -6,7 +6,8 @@
             <q-list>
                 <c-navigation-entry v-for="it in navigationStore.allNavigation" :key="it.id" :model-value="it" />
             </q-list>
-            <q-card class="absolute-bottom" flat>
+            <br />
+            <q-card flat>
                 <q-card-section class="text-center text-subtitle1">Folge uns auf</q-card-section>
                 <q-card-section class="row text-center">
                     <div v-for="it in navigationStore.allSocialMedia" :key="it.id" class="col">
