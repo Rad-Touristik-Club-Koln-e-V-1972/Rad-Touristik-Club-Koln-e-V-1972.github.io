@@ -56,8 +56,8 @@ devDependencies:
     specifier: 19.0.3
     version: 19.0.3
   '@quasar/app-vite':
-    specifier: 1.7.3
-    version: 1.7.3(eslint@8.57.0)(pinia@2.1.7)(quasar@2.14.6)(vue-router@4.3.0)(vue@3.4.21)
+    specifier: 1.7.4
+    version: 1.7.4(eslint@8.57.0)(pinia@2.1.7)(quasar@2.14.6)(vue-router@4.3.0)(vue@3.4.21)
   '@quasar/quasar-app-extension-qcalendar':
     specifier: 4.0.0-beta.16
     version: 4.0.0-beta.16
@@ -434,8 +434,8 @@ packages:
       fastq: 1.16.0
     dev: true
 
-  /@quasar/app-vite@1.7.3(eslint@8.57.0)(pinia@2.1.7)(quasar@2.14.6)(vue-router@4.3.0)(vue@3.4.21):
-    resolution: {integrity: sha512-pnDInCFP9M1d7lJzS8UkiFq8bGWdekLz8Gu+NLI9UAxruIM9QVlSD4hUmWptTQXaVEvYlDnqfW3LOr57B8eVtw==}
+  /@quasar/app-vite@1.7.4(eslint@8.57.0)(pinia@2.1.7)(quasar@2.14.6)(vue-router@4.3.0)(vue@3.4.21):
+    resolution: {integrity: sha512-nsiA3PDWcEffvRe3fLDH+e9yHMNloIe5kBukx1q48ktRwtRt2Yfi00zKrT26eVq8rDLhj5reOlR3XBSdDOcIDQ==}
     engines: {node: ^24 || ^22 || ^20 || ^18 || ^16 || ^14.19, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
@@ -494,7 +494,7 @@ packages:
       register-service-worker: 1.7.2
       rollup-plugin-visualizer: 5.11.0
       sass: 1.69.5
-      semver: 7.5.4
+      semver: 7.6.0
       serialize-javascript: 6.0.1
       table: 6.8.1
       vite: 2.9.17(sass@1.69.5)
@@ -3486,15 +3486,6 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss@8.4.33:
-    resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
-
   /postcss@8.4.35:
     resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3769,14 +3760,6 @@ packages:
 
   /sax@1.1.4:
     resolution: {integrity: sha512-5f3k2PbGGp+YtKJjOItpg3P99IMD84E4HOvcfleTb5joCHNXYLsR9yWFPOYGgaeMPDubQILTCMdsFb2OMeOjtg==}
-    dev: true
-
-  /semver@7.5.4:
-    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
     dev: true
 
   /semver@7.6.0:
@@ -4241,7 +4224,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.14.51
-      postcss: 8.4.33
+      postcss: 8.4.35
       resolve: 1.22.8
       rollup: 2.77.3
       sass: 1.69.5
