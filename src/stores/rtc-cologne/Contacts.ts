@@ -25,14 +25,14 @@ export default defineStore('rtc-cologne-contacts', () => {
                 .setPosition('Geschäftsführung')
                 .buildContact(),
             new ContactBuilder()
-                .setEMail('kassenwart@rtc-koeln.de')
+                .setEMail('erster.kassenwart@rtc-koeln.de')
                 .setId('dde5cc57-9669-4455-8971-70a9a3500069')
                 .setName('Matthias Köhler')
-                .setPosition('Kassenwart')
+                .setPosition('Erster Kassenwart')
                 .buildContact(),
             new ContactBuilder().setEMail('PR@rtc-koeln.de').setId('697d177f-454d-42a3-8b7e-85b576e9696f').setName('Diana Vialon').setPosition('Pressewart').buildContact(),
             new ContactBuilder()
-                .setEMail('erster.sportwart@rtc-koeln.de')
+                .setEMail('sportwart@rtc-koeln.de')
                 .setId('5f48c322-ba0e-4866-be30-89702565522d')
                 .setName('Manfred Türk-Vialon')
                 .setPosition('Sportwart')
