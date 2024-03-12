@@ -24,7 +24,7 @@
         "@yeger/vue-masonry-wall": "5.0.8",
         "date-holidays": "3.23.9",
         "jspdf": "2.5.1",
-        "libphonenumber-js": "1.10.57",
+        "libphonenumber-js": "1.10.58",
         "maz-ui": "3.34.0",
         "mime": "4.0.1",
         "pinia": "2.1.7",
