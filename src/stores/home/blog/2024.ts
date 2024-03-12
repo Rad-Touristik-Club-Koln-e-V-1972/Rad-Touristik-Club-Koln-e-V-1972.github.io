@@ -2,6 +2,7 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs('ff8c6c3f-f246-418f-a17d-077a81c0ca82')
         .setDate('2024-03-09')
         .setId('9080735c-8f6d-4257-b3fa-5ebed7ddb27f')
         .setText(
