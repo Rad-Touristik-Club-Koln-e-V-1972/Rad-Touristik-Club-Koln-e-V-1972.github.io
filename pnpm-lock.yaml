@@ -21,11 +21,11 @@ dependencies:
     specifier: 2.5.1
     version: 2.5.1
   libphonenumber-js:
-    specifier: 1.10.57
-    version: 1.10.57
+    specifier: 1.10.58
+    version: 1.10.58
   maz-ui:
     specifier: 3.34.0
-    version: 3.34.0(libphonenumber-js@1.10.57)(typescript@5.4.2)(vue-router@4.3.0)(vue@3.4.21)
+    version: 3.34.0(libphonenumber-js@1.10.58)(typescript@5.4.2)(vue-router@4.3.0)(vue@3.4.21)
   mime:
     specifier: 4.0.1
     version: 4.0.1
@@ -2898,8 +2898,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /libphonenumber-js@1.10.57:
-    resolution: {integrity: sha512-OjsEd9y4LgcX+Ig09SbxWqcGESxliDDFNVepFhB9KEsQZTrnk3UdEU+cO0sW1APvLprHstQpS23OQpZ3bwxy6Q==}
+  /libphonenumber-js@1.10.58:
+    resolution: {integrity: sha512-53A0IpJFL9LdHbpeatwizf8KSwPICrqn9H0g3Y7WQ+Jgeu9cQ4Ew3WrRtrLBu/CX2lXd5+rgT01/tGlkbkzOjw==}
     dev: false
 
   /lilconfig@3.0.0:
@@ -3050,7 +3050,7 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /maz-ui@3.34.0(libphonenumber-js@1.10.57)(typescript@5.4.2)(vue-router@4.3.0)(vue@3.4.21):
+  /maz-ui@3.34.0(libphonenumber-js@1.10.58)(typescript@5.4.2)(vue-router@4.3.0)(vue@3.4.21):
     resolution: {integrity: sha512-2T5nlZZ1mYeXsGrmW8uWIkjPokGIMaEnqRXfMbEceixoJBXPTUZCYW7ISI5c7Pjt4el73HAMt+reWLsVCNMbqQ==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     hasBin: true
@@ -3086,7 +3086,7 @@ packages:
         optional: true
     dependencies:
       '@mazui/cli': 3.34.0(typescript@5.4.2)
-      libphonenumber-js: 1.10.57
+      libphonenumber-js: 1.10.58
       vue: 3.4.21(typescript@5.4.2)
       vue-router: 4.3.0(vue@3.4.21)
     transitivePeerDependencies:
