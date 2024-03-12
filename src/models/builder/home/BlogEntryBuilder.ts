@@ -7,7 +7,7 @@ export default class BlogEntryBuilder extends ABuilder {
     buildBlogEntry = () => Object.assign(this.blogEntry, this.buildAEntity())
 
     setAlbumIDs = (value: Record<string, string> | string[] | string): this => {
-        if (value instanceof Array)
+        if (Array.isArray(value))
             this.blogEntry.albumIDs = value.reduce<Record<string, string>>((map, it) => {
                 map[it] = ''
                 return map

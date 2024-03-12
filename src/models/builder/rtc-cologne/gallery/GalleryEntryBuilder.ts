@@ -13,9 +13,6 @@ export default class GalleryEntryBuilder extends ABuilder {
         this.galleryEntry.imageUrl = new URL(`https://${value}`)
         this.galleryEntry.mimeType = mime.getType(value)
 
-        // Needed for pdfs with custom previewUrl
-        if (value.includes('.avif')) this.galleryEntry.previewUrl = this.galleryEntry.imageUrl
-
         return this
     }
 

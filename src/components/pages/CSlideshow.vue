@@ -10,9 +10,9 @@
         :infinite="props.infinite"
         swipeable
     >
-        <q-carousel-slide v-for="it in props.galleryEntries" :key="it.id" :name="it.id">
-            <q-img class="absolute-center full-height" fit="contain" :placeholder-src="it.previewUrl.toString()" :src="it.imageUrl.toString()" style="z-index: 1" />
-            <q-img class="absolute-center full-height" :src="it.previewUrl.toString()" style="filter: blur(20px)" />
+        <q-carousel-slide v-for="it in props.galleryEntries" :key="it.id" :name="it.id.toString()">
+            <q-img class="absolute-center full-height" fit="contain" :src="it.imageUrl.toString()" style="z-index: 1" />
+            <q-img class="absolute-center full-height" :src="it.imageUrl.toString()" style="filter: blur(20px)" />
         </q-carousel-slide>
         <template #control>
             <q-carousel-control v-if="props.galleryEntries.length > 1" position="bottom-left" style="z-index: 1">
@@ -40,11 +40,15 @@ const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?
 const carousel = ref<InstanceType<typeof QCarousel>>()
 
 const next = () => {
+    console.warn('next: before modelValue: ', modelValue.value)
     carousel.value?.next()
+    console.warn('next: after modelValue: ', modelValue.value)
 }
 const previous = () => {
     carousel.value?.previous()
 }
 
-if (modelValue.value === undefined) modelValue.value = props.galleryEntries.at(0)?.id
+console.warn('modelValue: ', modelValue.value)
+if (modelValue.value === undefined) modelValue.value = props.galleryEntries.at(0)?.id.toString()
+console.warn('modelValue: ', modelValue.value)
 </script>

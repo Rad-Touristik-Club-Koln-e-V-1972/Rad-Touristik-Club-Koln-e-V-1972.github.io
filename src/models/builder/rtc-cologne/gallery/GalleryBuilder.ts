@@ -28,7 +28,7 @@ export default class GalleryBuilder extends ABuilder {
     }
 
     setImages = (value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): this => {
-        if (value instanceof Array) this.gallery.images = Object.assign(this.gallery.images, { 'Ohne Album': value })
+        if (Array.isArray(value)) this.gallery.images = Object.assign(this.gallery.images, { 'Ohne Album': value })
         else if (value.constructor === GalleryEntry) this.gallery.images = Object.assign(this.gallery.images, { 'Ohne Album': [value] })
         else this.gallery.images = Object.assign(this.gallery.images, value as Record<string, GalleryEntry[]>)
 
