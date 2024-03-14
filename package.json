@@ -29,7 +29,7 @@
         "mime": "4.0.1",
         "pinia": "2.1.7",
         "postleitzahlen": "1.0.0",
-        "quasar": "2.15.0",
+        "quasar": "2.15.1",
         "signature_pad": "4.2.0",
         "vue": "3.4.21",
         "vue-router": "4.3.0"
