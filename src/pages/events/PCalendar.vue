@@ -96,11 +96,11 @@ const getDayEntryStyle = (event: Event, timeStartPos: (time: string) => number, 
     const s = { 'align-items': '', height: '', top: '' }
 
     if (event.end) {
-        s.top = `${timeStartPos(date.formatDate(event.start, 'HH:mm'))}px`
-
-        s.height = `${timeDurationHeight(date.getDateDiff(event.end, event.start, 'minutes'))}px`
-
         s['align-items'] = 'flex-start'
+
+        s.height = `${timeDurationHeight(date.getDateDiff(event.end, event.start, 'minutes')).toFixed()}px`
+
+        s.top = `${timeStartPos(date.formatDate(event.start, 'HH:mm')).toFixed()}px`
     }
 
     return s

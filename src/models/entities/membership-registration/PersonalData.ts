@@ -9,11 +9,11 @@ export default class PersonalData extends AEntity {
     firstName = ''
     lastName = ''
     mobilePhoneNumber = ''
-    mobilePhoneCountryCode? = 'DE'
+    mobilePhoneCountryCode = 'DE'
     street = ''
     streetNumber = ''
     specialNeeds = ''
-    telePhoneCountryCode? = 'DE'
+    telePhoneCountryCode = 'DE'
     telePhoneNumber = ''
     tShirtSize = ''
     wantsAmateursportslicense = false

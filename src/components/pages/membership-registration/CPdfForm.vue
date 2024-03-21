@@ -540,7 +540,7 @@ const addPageFooter = () => {
     const totalPages = internal.pages.length
 
     for (let i = 1; i < totalPages; i++) {
-        const footerText = `Seite ${i} von ${totalPages - 1}`
+        const footerText = `Seite ${i.toFixed()} von ${(totalPages - 1).toFixed()}`
         const pageSize = internal.pageSize
 
         pdfGenerator

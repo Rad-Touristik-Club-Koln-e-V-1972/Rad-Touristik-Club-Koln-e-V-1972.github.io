@@ -101,7 +101,7 @@ const columns: QTableColumn<Event>[] = [
 
 const filter = ref<Filter>({
     categories: [EEvent.CTF, EEvent.Marathon, EEvent.Mitgliederversammlung, EEvent.Permanente, EEvent.RTC, EEvent.RTF, EEvent.Veranstaltung, EEvent.Vereinsfahrt],
-    dateRange: { from: `01.01.${dateTime.today.value.getFullYear()}`, to: `31.12.${dateTime.today.value.getFullYear() + 1}` },
+    dateRange: { from: `01.01.${dateTime.today.value.getFullYear().toFixed()}`, to: `31.12.${(dateTime.today.value.getFullYear() + 1).toFixed()}` },
     search: '',
 })
 const initialPagination = {
@@ -128,7 +128,7 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
         tmp = tmp.filter((item) => dateTime.isBetweenDates(item.start, from, to))
     }
 
-    if (terms.search) tmp = tmp.filter((item) => (item.kilometer + item.contact + item.name).toLowerCase().includes(terms.search.toLowerCase()))
+    if (terms.search) tmp = tmp.filter((item) => (item.kilometer.toFixed() + item.contact + item.name).toLowerCase().includes(terms.search.toLowerCase()))
 
     return tmp
 }
