@@ -61,6 +61,7 @@
     "lint-staged": {
         "*.{js,ts,vue}": [
             "eslint --fix",
+            "echo 'TODO Workaround for https://github.com/microsoft/TypeScript/issues/27379'",
             "bash -c 'vue-tsc --noEmit'"
         ],
         "*.**": "prettier --ignore-unknown --write"
