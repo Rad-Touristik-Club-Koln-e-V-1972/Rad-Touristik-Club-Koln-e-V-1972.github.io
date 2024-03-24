@@ -55,7 +55,7 @@ export default [
     new EventBuilder()
         .setCategory(EEvent.Mitgliederversammlung)
         .setContact('Diana Vialon')
-        .setDate('2024-05-03')
+        .setDate('2024-05-10')
         .setId('ee2eec1e-b669-4db1-ae9e-d03c80116142')
         .setKilometer(50)
         .setName('Mitgliederversammlung')
