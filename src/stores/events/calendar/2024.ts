@@ -20,7 +20,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-03-09')
         .setId('db2e31ff-18dd-4173-b419-6b51576ac70f')
         .setKilometer(100)
@@ -37,7 +37,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-04-13')
         .setId('4a9b9b8d-9542-4189-88d6-85dc5dcf1b68')
         .setKilometer(50)
@@ -45,7 +45,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-01')
         .setId('f4d32fd2-dd5f-4778-b693-0775cef29d9b')
         .setKilometer(100)
@@ -62,7 +62,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-09')
         .setId('a899b1ed-7a37-42e0-a8ee-e09d67c8dbcb')
         .setKilometer(100)
@@ -70,7 +70,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-11')
         .setId('b050acb1-dc43-4363-90c7-4217e7f5dda6')
         .setKilometer(100)
@@ -79,7 +79,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-18')
         .setId('ef1df82b-62ba-4f8d-90ae-59cf091c4bf4')
         .setKilometer(100)
@@ -87,7 +87,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-20')
         .setId('7b127ee1-1081-4a84-ab13-00baa2c7e000')
         .setKilometer(100)
@@ -96,7 +96,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-05-25')
         .setId('09207a3b-f809-4408-8399-347a78667ed3')
         .setKilometer(100)
@@ -104,17 +104,8 @@ export default [
         .setUrl('rsv-euskirchen.de')
         .buildEvent(),
     new EventBuilder()
-        .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
-        .setDate('2024-06-09', '2024-07-31')
-        .setId('35ee0ab5-796a-4941-bd54-b6e3a5410640')
-        .setKilometer(250)
-        .setName('Mehrtägige Vereinsfahrt')
-        .setProvisionalReason('Ziel und Termin noch offen')
-        .buildEvent(),
-    new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-06-01')
         .setId('2699c56b-2c21-4904-bf76-30c174175018')
         .setKilometer(250)
@@ -122,7 +113,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTF)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-06-02')
         .setId('cceb09ef-5148-4e82-b632-e7d79ed2a5b8')
         .setKilometer(250)
@@ -138,7 +129,16 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
+        .setDate('2024-06-09', '2024-07-31')
+        .setId('35ee0ab5-796a-4941-bd54-b6e3a5410640')
+        .setKilometer(250)
+        .setName('Mehrtägige Vereinsfahrt')
+        .setProvisionalReason('Ziel und Termin noch offen')
+        .buildEvent(),
+    new EventBuilder()
+        .setCategory(EEvent.Vereinsfahrt)
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-06-23')
         .setId('e2eb05df-1b4c-4433-b6ad-86b0812fd901')
         .setKilometer(100)
@@ -147,7 +147,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-06-29')
         .setId('ab46f6f2-bbaa-4cf5-bb84-bff069d714fb')
         .setKilometer(100)
@@ -165,7 +165,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-07-06')
         .setId('ccbadd54-be9b-4d2c-9a4a-14231840b4a2')
         .setKilometer(100)
@@ -175,7 +175,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-07-14')
         .setId('fb3c8d99-fb3d-44b5-8289-723a1caa389c')
         .setKilometer(100)
@@ -184,7 +184,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-08-03')
         .setId('5a35069c-5bc1-4736-ae51-d0e24f9c086f')
         .setKilometer(100)
@@ -193,7 +193,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-08-11')
         .setId('f143e4e5-3648-4d04-844b-79e468c325aa')
         .setKilometer(100)
@@ -202,7 +202,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-08-25')
         .setId('db87d722-68fa-417f-82de-c734b5166ee1')
         .setKilometer(100)
@@ -219,7 +219,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-09-08')
         .setId('16758d61-646d-4801-8957-ad70b719ef56')
         .setKilometer(100)
@@ -228,7 +228,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-09-14')
         .setId('6ff614d7-1e70-4410-8c36-69311cec9847')
         .setKilometer(100)
@@ -236,7 +236,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.RTC)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-09-20')
         .setId('f5b96178-5991-4afb-91bd-52a9abb50696')
         .setKilometer(250)
@@ -244,7 +244,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Marathon)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-09-21')
         .setId('fcbc1d7d-558a-4641-93ca-35322ef86893')
         .setKilometer(250)
@@ -252,7 +252,7 @@ export default [
         .buildEvent(),
     new EventBuilder()
         .setCategory(EEvent.Vereinsfahrt)
-        .setContact('Klaus Dünkelmann')
+        .setContact('Manfred Türk-Vialon')
         .setDate('2024-09-28')
         .setId('401b6cb5-2b47-4c1b-80f9-6c951ba63618')
         .setKilometer(100)
