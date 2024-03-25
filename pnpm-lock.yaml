@@ -86,8 +86,8 @@ devDependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.57.0)
   eslint-plugin-vue:
-    specifier: 9.23.0
-    version: 9.23.0(eslint@8.57.0)
+    specifier: 9.24.0
+    version: 9.24.0(eslint@8.57.0)
   husky:
     specifier: 9.0.11
     version: 9.0.11
@@ -399,8 +399,8 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@mazui/cli@3.36.3(typescript@5.4.3):
-    resolution: {integrity: sha512-3OCx0MUvH94Jckzw9ELDqxNirZUJisYoIFqLCBv6/eLo8T3fnrdUWvUzyGWv3DZBDIpH0PPRxbkCwDYk9WNzEg==}
+  /@mazui/cli@3.36.4(typescript@5.4.3):
+    resolution: {integrity: sha512-dBcRn0XI2jJ95VnxSs1cSXC16+de4Q5/rCYMKasIEU73+syz3/xFHH6aEJoObLWFgmtrUOBkFaiXdN6PwFWKaQ==}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.7.0
@@ -2057,14 +2057,15 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-vue@9.23.0(eslint@8.57.0):
-    resolution: {integrity: sha512-Bqd/b7hGYGrlV+wP/g77tjyFmp81lh5TMw0be9093X02SyelxRRfCI6/IsGq/J7Um0YwB9s0Ry0wlFyjPdmtUw==}
+  /eslint-plugin-vue@9.24.0(eslint@8.57.0):
+    resolution: {integrity: sha512-9SkJMvF8NGMT9aQCwFc5rj8Wo1XWSMSHk36i7ZwdI614BU7sIOR28ZjuFPKp8YGymZN12BSEbiSwa7qikp+PBw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       eslint: 8.57.0
+      globals: 13.24.0
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.15
@@ -3068,7 +3069,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@mazui/cli': 3.36.3(typescript@5.4.3)
+      '@mazui/cli': 3.36.4(typescript@5.4.3)
       libphonenumber-js: 1.10.58
       vue: 3.4.21(typescript@5.4.3)
       vue-router: 4.3.0(vue@3.4.21)
