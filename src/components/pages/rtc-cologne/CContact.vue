@@ -1,5 +1,5 @@
 <template>
-    <q-card max-width="20em">
+    <q-card style="max-width: 20em">
         <q-card-section class="text-h6">{{ props.modelValue.name }}</q-card-section>
         <q-card-section class="text-subtitle1">{{ props.modelValue.position }}</q-card-section>
         <q-card-actions>

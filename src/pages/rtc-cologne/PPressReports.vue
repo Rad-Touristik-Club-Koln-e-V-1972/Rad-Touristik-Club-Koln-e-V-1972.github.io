@@ -4,7 +4,7 @@
         <q-card-section>
             <q-timeline :layout="$q.platform.is.mobile ? 'dense' : 'loose'">
                 <q-timeline-entry v-for="(it, idx) in value" :key="it.id" :side="idx % 2 === 0 ? 'right' : 'left'" :subtitle="dateTime.format(it.date)" :title="it.title">
-                    <q-card max-width="40em">
+                    <q-card style="max-width: 40em">
                         <q-card-section>
                             <masonry-wall :column-width="280" :gap="16" :items="it.images">
                                 <template #default="{ index }">

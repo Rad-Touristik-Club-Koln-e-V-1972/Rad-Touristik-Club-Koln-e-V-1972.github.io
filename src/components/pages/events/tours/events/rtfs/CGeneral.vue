@@ -3,7 +3,7 @@
         <q-card-section>
             <div class="justify-center row">
                 <div class="col-auto">
-                    <q-card max-width="40em">
+                    <q-card style="max-width: 40em">
                         <q-card-section class="bg-primary text-accent text-h6">Vorwort</q-card-section>
                         <q-card-section>
                             <span class="text-pre-wrap" v-html="props.text" />

@@ -1,5 +1,5 @@
 <template>
-    <q-card max-width="20em">
+    <q-card style="max-width: 20em">
         <q-card-section class="bg-secondary text-accent text-subtitle1">
             <div v-if="props.modelValue.date" v-text="useDateTime().format(props.modelValue.date)" />
             <div v-text="`${props.modelValue.name} via ${ESource[props.modelValue.source]}`" />
