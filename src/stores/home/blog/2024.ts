@@ -2,6 +2,29 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
     new BlogEntryBuilder()
+        .setAlbumIDs('b30fba5c-671a-4e93-9097-85ffff6df973')
+        .setDate('2024-03-16')
+        .setId('1987494b-cc43-4a7a-93ab-ddaee31c87a6')
+        .setText(
+            `Wem Shimano TL-CM42, Befestigungsbolzen oder 11/34 etwas sagt, kann sich vielleicht vorstellen, was 9 RTClerinnen und RTCler heute Nachmittag gemacht haben:
+GELERNT. ⚒️🥳
+Jürgen war heute unser Schrauber-Chef beim Anfängerkurs... und bestens vorbereitet.
+Zunächst erläuterte er sehr verständlich und geduldig diverse Reparaturarbeiten am Rad, dann durfte jeder selber an sein Rad und das Gelernte umsetzen.
+Was bei ihm so einfach aussah, erwies sich in der Praxis als schwieriger.
+Da ging nicht nur dem Reifen die Luft aus.
+„Wie war das nochmal und warum brauche ich eigentlich drei Arme dafür ?“, fragte man sich beispielsweise, als man versuchte, sein Hinterrad wieder einzusetzen. 🤣
+Ca. 4 Stunden wurde erklärt, gewalkt, gezeigt, probiert, ein- und ausgebaut, geputzt... und... verspeist, denn zur Stärkung gab es zwei leckere Kuchen mit Kaffee. 🍰 ☕️
+Vielen Dank an unseren Schrauber-König Jürgen, der uns Schrauber-Anfänger mit viel Liebe zum Detail hat in die ersten Schritte der Rennradtechnik eintauchen lassen. ❤️
+Ein Brauhaus-Besuch rundete den geselligen und kulinarischen Tag mit dem RTC Köln ab.
+Fazit: War toll! Wiederholung folgt. ⚒️🚴‍♂️
+
+Den Kuchen könntest du bitte als Eyecatcher nehmen.😃
+
+LG Diana`,
+        )
+        .setTitle('Schrauber-Workshop beim RTC Köln e.V. ')
+        .buildBlogEntry(),
+    new BlogEntryBuilder()
         .setAlbumIDs('ff8c6c3f-f246-418f-a17d-077a81c0ca82')
         .setDate('2024-03-09')
         .setId('9080735c-8f6d-4257-b3fa-5ebed7ddb27f')
