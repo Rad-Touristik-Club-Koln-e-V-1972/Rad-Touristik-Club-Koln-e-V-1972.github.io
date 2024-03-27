@@ -19,7 +19,6 @@ import {
     mdiInformationOutline,
     mdiInstagram,
     mdiMessageDraw,
-    mdiSnowman,
     mdiTimelineClockOutline,
     mdiWeatherPartlyRainy,
     mdiWeatherSunny,
@@ -58,10 +57,10 @@ export default defineStore('navigation', () => {
                                 .setTo('events-tours-events-rtfs')
                                 .buildNavigation(),
                             new NavigationBuilder()
-                                .setIcon(mdiSnowman)
+                                .setIcon(mdiBikeFast)
                                 .setId('b53d7f6a-296d-45b6-b061-8a590bf89a20')
-                                .setTitle('Wintertraining')
-                                .setTo('events-wintertraining')
+                                .setTitle('Training')
+                                .setTo('events-training')
                                 .buildNavigation(),
                             new NavigationBuilder()
                                 .setIcon(mdiGoKartTrack)

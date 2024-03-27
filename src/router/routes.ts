@@ -7,7 +7,7 @@ export default [
             {
                 children: [
                     { component: () => import('pages/events/PCalendar.vue'), name: 'events-calendar', path: 'calendar' },
-                    { component: () => import('pages/events/PWintertraining.vue'), name: 'events-wintertraining', path: 'wintertraining' },
+                    { component: () => import('pages/events/PTraining.vue'), name: 'events-training', path: 'training' },
                     {
                         children: [
                             {

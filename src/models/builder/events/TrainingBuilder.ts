@@ -1,21 +1,26 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import Training from 'src/models/entities/events/Training'
-import ETraining from 'src/models/enums/events/ETraining'
 
 export default class TrainingBuilder extends ABuilder {
     private training = new Training()
 
     buildTraining = () => Object.assign(this.training, this.buildAEntity())
 
-    setCategory = (value: ETraining): this => {
-        this.training.category = value
+    setAlternativeDay = (value: string): this => {
+        this.training.alternativeDay = value
 
         return this
     }
 
-    setHeight = (value: string): this => {
-        this.training.height = value
+    setDay = (value: string): this => {
+        this.training.day = value
+
+        return this
+    }
+
+    setDeparture = (value: string): this => {
+        this.training.departure = value
 
         return this
     }
@@ -28,14 +33,14 @@ export default class TrainingBuilder extends ABuilder {
         return this
     }
 
-    setLastChange = (value: string): this => {
-        this.training.lastChange = new Date(value)
+    setLength = (value: string): this => {
+        this.training.length = value
 
         return this
     }
 
-    setLength = (value: string): this => {
-        this.training.length = value
+    setLocation = (value: string): this => {
+        this.training.location = value
 
         return this
     }
