@@ -13,6 +13,12 @@ export default class FeeBuilder extends ABuilder {
         return this
     }
 
+    setGroup = (value: number): this => {
+        this.fee.group = value
+
+        return this
+    }
+
     setName = (value: string): this => {
         this.fee.name = value
 

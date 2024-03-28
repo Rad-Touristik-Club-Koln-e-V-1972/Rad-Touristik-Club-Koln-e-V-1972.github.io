@@ -28,8 +28,10 @@ export default defineStore('tour', () => {
                     .setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)')
                     .setPrice(8)
                     .buildFee(),
-                new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
                 new FeeBuilder().setId('ce8f7235-4d1e-4ec0-a704-921bcf8588df').setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
+                new FeeBuilder().setId('b3be3c22-e784-4650-b27c-f151056faf88').setGroup(1).setName('<b>Family Tour</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
+                new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup(1).setName('<b>Family Tour</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
+                new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setGroup(1).setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
             )
             .setId('2048a7f0-315a-43d7-885a-23f388601052')
             .setImages(
