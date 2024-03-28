@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="text-center"><b>Erklärung</b></div>
+                <div class="text-bold text-center">Erklärung</div>
                 "Ich bestätige das Vorstehende zur Kenntnis genommen zu haben und willige ein, dass der <b>RTC Köln e.V. 1972</b> folgende Daten zu meiner Person:
             </div>
         </div>
