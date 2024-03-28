@@ -24,8 +24,8 @@
                             <q-markup-table flat>
                                 <tbody>
                                     <tr v-for="it in props.times" :key="it.id">
-                                        <td class="text-right text-no-wrap" v-text="dateTime.formatTime(it.start, it.end)" />
-                                        <td v-text="it.name" />
+                                        <td class="text-right text-no-wrap">{{ dateTime.formatTime(it.start, it.end) }}</td>
+                                        <td>{{ it.name }}</td>
                                     </tr>
                                 </tbody>
                             </q-markup-table>
@@ -39,7 +39,7 @@
                             <q-markup-table flat>
                                 <tbody>
                                     <tr v-for="it in props.fees.filter((f) => f.category)" :key="it.id">
-                                        <td class="text-right text-no-wrap" v-text="`${it.price ?? 'N/A'} €`" />
+                                        <td class="text-right text-no-wrap">{{ it.price }}€</td>
                                         <td v-html="it.name" />
                                     </tr>
                                 </tbody>
@@ -64,15 +64,15 @@
                                 </thead>
                                 <tbody>
                                     <tr v-for="it in props.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'text-primary' : ''">
-                                        <td v-text="dateTime.formatTime(it.start, it.end)" />
-                                        <td v-text="`${it.length} km`" />
-                                        <td v-text="it.height" />
-                                        <td v-text="it.profile" />
-                                        <td v-text="it.controls" />
+                                        <td>{{ dateTime.formatTime(it.start, it.end) }}</td>
+                                        <td>{{ it.length }}km</td>
+                                        <td>{{ it.height }}</td>
+                                        <td>{{ it.profile }}</td>
+                                        <td>{{ it.controls }}</td>
                                         <td>
                                             <ul>
                                                 <li v-for="(url, key) in it.urls" :key="key" class="my-2" style="list-style: none">
-                                                    <a :href="url.toString()" v-text="key" />
+                                                    <a :href="url.toString()">{{ key }}</a>
                                                 </li>
                                             </ul>
                                         </td>

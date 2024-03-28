@@ -12,7 +12,7 @@
                     <a :href="item.url?.toString()" target="_blank">
                         <q-card flat>
                             <q-card-section>
-                                <div v-if="item.text" v-text="item.text" />
+                                <div v-if="item.text">{{ item.text }}</div>
                                 <q-img v-else-if="item.imageUrl" fit="contain" :src="item.imageUrl.toString()" />
                             </q-card-section>
                         </q-card>

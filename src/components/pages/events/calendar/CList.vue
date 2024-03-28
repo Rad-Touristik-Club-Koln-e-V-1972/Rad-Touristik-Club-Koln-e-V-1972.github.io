@@ -18,7 +18,9 @@
             <template #body="props">
                 <q-tr :class="getColor(props.row) + getStyle(props.row)">
                     <q-td>{{ props.row.category }}</q-td>
-                    <q-td><a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank" v-text="props.row.name" /></q-td>
+                    <q-td>
+                        <a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank">{{ props.row.name }}</a>
+                    </q-td>
                     <q-td>{{ dateTime.format(props.row.start, props.row.end, props.row.allDay) }}</q-td>
                     <q-td>
                         <router-link v-if="props.row.contact" :class="getColor(props.row)" :to="{ name: 'rtc-cologne-contacts' }">

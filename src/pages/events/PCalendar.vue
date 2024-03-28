@@ -34,20 +34,17 @@
                             :class="`bg-${e.color}`"
                             class="cursor-pointer full-width text-accent"
                             @click="event.showEvent(e)"
-                            v-text="e.name"
-                        />
+                        >
+                            {{ e.name }}
+                        </div>
                     </template>
                 </template>
                 <template #day="{ scope: { timestamp } }">
                     <!-- Month entry -->
                     <template v-for="e in events" :key="e.id">
-                        <div
-                            v-if="dateTime.isBetweenDates(timestamp.date, e.start, e.end)"
-                            :class="`bg-${e.color}`"
-                            class="cursor-pointer text-accent"
-                            @click="event.showEvent(e)"
-                            v-text="e.name"
-                        />
+                        <div v-if="dateTime.isBetweenDates(timestamp.date, e.start, e.end)" :class="`bg-${e.color}`" class="cursor-pointer text-accent" @click="event.showEvent(e)">
+                            {{ e.name }}
+                        </div>
                     </template>
                 </template>
                 <template #day-body="{ scope: { timestamp, timeStartPos, timeDurationHeight } }">
@@ -59,8 +56,9 @@
                             class="cursor-pointer full-width text-accent"
                             :style="getDayEntryStyle(e, timeStartPos, timeDurationHeight)"
                             @click="event.showEvent(e)"
-                            v-text="e.name"
-                        />
+                        >
+                            {{ e.name }}
+                        </div>
                     </template>
                 </template>
             </q-calendar>

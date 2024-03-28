@@ -1,10 +1,10 @@
 <template>
-    <q-card style="max-width: 20em">
+    <q-card>
         <q-card-section class="bg-secondary text-accent text-subtitle1">
-            <div v-if="props.modelValue.date" v-text="useDateTime().format(props.modelValue.date)" />
-            <div v-text="`${props.modelValue.name} via ${ESource[props.modelValue.source]}`" />
-            <div v-text="`${[props.modelValue.organization, props.modelValue.location].filter((it) => it).join(', ')} `" />
-            <div v-if="!isCategoryRTC" v-text="`Event: ${EEvent[props.modelValue.category]}`" />
+            <div v-if="props.modelValue.date">{{ useDateTime().format(props.modelValue.date) }}</div>
+            {{ props.modelValue.name }} via {{ ESource[props.modelValue.source] }}<br />
+            {{ [props.modelValue.organization, props.modelValue.location].filter((it) => it).join(', ') }}
+            <div v-if="!isCategoryRTC">Event: {{ EEvent[props.modelValue.category] }}</div>
         </q-card-section>
         <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
         <q-card-section v-if="props.modelValue.text || props.modelValue.imageUrls?.length">

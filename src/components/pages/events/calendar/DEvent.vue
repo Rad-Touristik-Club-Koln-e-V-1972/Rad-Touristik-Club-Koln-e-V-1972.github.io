@@ -11,23 +11,23 @@
                     <tbody>
                         <tr v-if="selectedEvent?.provisionalReason" class="q-tr--no-hover text-primary">
                             <td class="text-end">Provisorischer Termin:</td>
-                            <td v-text="selectedEvent?.provisionalReason" />
+                            <td>{{ selectedEvent?.provisionalReason }}</td>
                         </tr>
                         <tr v-if="!isEventMitgliederversammlung" class="q-tr--no-hover">
                             <td class="text-end">Art:</td>
-                            <td v-text="selectedEvent?.category" />
+                            <td>{{ selectedEvent?.category }}</td>
                         </tr>
                         <tr v-if="selectedEvent" class="q-tr--no-hover">
                             <td class="text-end">Termin:</td>
-                            <td v-text="getDate(selectedEvent)" />
+                            <td>{{ getDate(selectedEvent) }}</td>
                         </tr>
                         <tr v-if="selectedEvent?.contact" class="q-tr--no-hover">
                             <td class="text-end">Ansprechpartner:</td>
-                            <td v-text="selectedEvent.contact" />
+                            <td>{{ selectedEvent.contact }}</td>
                         </tr>
                         <tr v-if="selectedEvent?.kilometer" class="q-tr--no-hover">
                             <td class="text-end">Kilometer:</td>
-                            <td v-text="selectedEvent.kilometer" />
+                            <td>{{ selectedEvent.kilometer }}</td>
                         </tr>
                     </tbody>
                 </q-markup-table>

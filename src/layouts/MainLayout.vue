@@ -6,7 +6,7 @@
                 <q-toolbar-title class="text-center text-h5">
                     Herzlich willkommen beim
                     <br class="xs" />
-                    <span class="text-bold">RTC Köln e.V. <span class="text-primary" v-text="1972" /></span>
+                    <span class="text-bold">RTC Köln e.V. <span class="text-primary">1972</span></span>
                 </q-toolbar-title>
                 <d-accessibility />
             </q-toolbar>

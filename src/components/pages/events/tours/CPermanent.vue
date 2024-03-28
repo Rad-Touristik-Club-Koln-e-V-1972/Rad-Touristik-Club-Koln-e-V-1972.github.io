@@ -8,29 +8,29 @@
                 <q-markup-table flat>
                     <tbody>
                         <tr>
-                            <td class="text-right" v-text="'Strecke:'" />
-                            <td v-text="`${props.modelValue.length} km`" />
+                            <td class="text-right">Strecke:</td>
+                            <td>{{ props.modelValue.length }} km</td>
                         </tr>
                         <tr>
-                            <td class="text-right" v-text="'Höhenmeter:'" />
-                            <td v-text="`ca. ${props.modelValue.height} hm`" />
+                            <td class="text-right">Höhenmeter:</td>
+                            <td>ca. {{ props.modelValue.height }} hm</td>
                         </tr>
                         <tr>
-                            <td class="text-right" v-text="'Profil:'" />
-                            <td v-text="props.modelValue.profile" />
+                            <td class="text-right">Profil:</td>
+                            <td>{{ props.modelValue.profile }}</td>
                         </tr>
                         <tr>
-                            <td class="text-right" v-text="'Kontrollen:'" />
+                            <td class="text-right">Kontrollen:</td>
                             <td>
                                 <dl class="my-1">
                                     <div v-for="it in props.modelValue.controls" :key="it.id">
                                         <dt>
-                                            <a :href="it.url?.toString()" target="_blank" v-text="it.title" />
+                                            <a :href="it.url?.toString()" target="_blank">{{ it.title }}</a>
                                         </dt>
                                         <dd>
                                             <ul style="list-style: none">
-                                                <li v-text="it.street" />
-                                                <li v-text="`${it.zipCode} ${it.city}`" />
+                                                <li>{{ it.street }}</li>
+                                                <li>{{ it.zipCode }} {{ it.city }}</li>
                                             </ul>
                                         </dd>
                                     </div>
@@ -38,18 +38,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-right" v-text="'Links:'" />
+                            <td class="text-right">Links:</td>
                             <td>
                                 <ul class="mt-1">
                                     <li v-for="(it, key) in props.modelValue.urls" :key="key" class="mb-1">
-                                        <a :href="it.toString()" target="_blank" v-text="key" />
+                                        <a :href="it.toString()" target="_blank">{{ key }}</a>
                                     </li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-no-wrap text-right" v-text="'Letzte Änderung:'" />
-                            <td v-text="dateTime.format(props.modelValue.lastChange)" />
+                            <td class="text-no-wrap text-right">Letzte Änderung:</td>
+                            <td>{{ dateTime.format(props.modelValue.lastChange) }}</td>
                         </tr>
                     </tbody>
                 </q-markup-table>

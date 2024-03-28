@@ -7,7 +7,7 @@
             <span class="text">
                 Falls du keine Fotos siehst, schau bitte nach, ob dein Browser unterstützt wird:
                 <br />
-                <a href="https://caniuse.com/?search=avif" target="_blank" v-text="'https://caniuse.com/?search=avif'" />
+                <a href="https://caniuse.com/?search=avif" target="_blank">https://caniuse.com/?search=avif</a>
             </span>
         </q-card-section>
         <q-card-section>

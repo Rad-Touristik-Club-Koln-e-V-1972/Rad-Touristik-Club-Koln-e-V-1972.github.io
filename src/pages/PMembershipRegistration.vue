@@ -47,7 +47,7 @@
                                         <tbody>
                                             <tr v-for="it in fees.filter((f) => f.name)" :key="it.id">
                                                 <td v-html="it.name" />
-                                                <td class="text-right text-no-wrap" v-text="it.price ? `${it.price} €` : 'frei'" />
+                                                <td class="text-right text-no-wrap">{{ it.price ? `${it.price} €` : 'frei' }}</td>
                                             </tr>
                                         </tbody>
                                     </q-markup-table>
