@@ -10,15 +10,6 @@
         <q-card-section>
             <q-img eager :src="props.modelValue?.titleImageUrl?.toString()" style="cursor: pointer" @click="open" />
         </q-card-section>
-        <q-card-actions align="right">
-            <q-expansion-item v-if="props.modelValue?.description" expand-separator label="Details">
-                <q-card>
-                    <q-card-section>
-                        <span class="text-pre-wrap" v-text="props.modelValue?.description" />
-                    </q-card-section>
-                </q-card>
-            </q-expansion-item>
-        </q-card-actions>
         <q-inner-loading :showing="isLoading">
             <q-spinner-gears size="50px" color="primary" />
         </q-inner-loading>

@@ -4,7 +4,6 @@ import EEvent from 'src/models/enums/EEvent'
 
 export default class Gallery extends AEntity {
     category = EEvent.RTC
-    description!: string
     end?: Date
     images: Record<string, GalleryEntry[]> = {}
     location!: string

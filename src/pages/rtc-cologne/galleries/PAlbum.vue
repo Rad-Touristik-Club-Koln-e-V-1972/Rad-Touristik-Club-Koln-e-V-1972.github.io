@@ -3,13 +3,6 @@
         <q-toolbar class="bg-primary">
             <q-btn dense flat :icon="mdiClose" round @click="close" />
             <q-toolbar-title class="text-accent">{{ value.title }}</q-toolbar-title>
-            <q-expansion-item v-if="value?.description" class="text-accent" expand-separator label="Details">
-                <q-card flat>
-                    <q-card-section>
-                        <span class="text-pre-wrap" v-text="value.description" />
-                    </q-card-section>
-                </q-card>
-            </q-expansion-item>
         </q-toolbar>
         <q-card-section class="text-subtitle1">{{ dateTime.format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
         <q-card-section>

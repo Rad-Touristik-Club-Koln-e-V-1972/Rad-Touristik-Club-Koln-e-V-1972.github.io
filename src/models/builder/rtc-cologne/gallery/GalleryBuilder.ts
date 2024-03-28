@@ -21,12 +21,6 @@ export default class GalleryBuilder extends ABuilder {
         return this
     }
 
-    setDescription = (value: string): this => {
-        this.gallery.description = value
-
-        return this
-    }
-
     setImages = (value: Record<string, GalleryEntry[]> | GalleryEntry[] | GalleryEntry): this => {
         if (Array.isArray(value)) this.gallery.images = Object.assign(this.gallery.images, { 'Ohne Album': value })
         else if (value.constructor === GalleryEntry) this.gallery.images = Object.assign(this.gallery.images, { 'Ohne Album': [value] })
