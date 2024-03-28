@@ -41,8 +41,10 @@
                                 <q-card-section>
                                     <q-markup-table flat>
                                         <thead>
-                                            <th class="text-left">Beitrags-/Mitgliedsform</th>
-                                            <th class="text-right">Jahresbeitrag</th>
+                                            <tr>
+                                                <th class="text-left">Beitrags-/Mitgliedsform</th>
+                                                <th class="text-right">Jahresbeitrag</th>
+                                            </tr>
                                         </thead>
                                         <tbody>
                                             <tr v-for="it in fees.filter((f) => f.name)" :key="it.id">
