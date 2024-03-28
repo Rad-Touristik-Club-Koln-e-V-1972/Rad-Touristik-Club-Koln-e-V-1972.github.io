@@ -35,20 +35,26 @@
                 <div class="col-auto">
                     <q-card>
                         <q-card-section class="bg-primary text-accent text-h6">Gebühren</q-card-section>
-                        <q-card-section class="row">
+                        <q-card-section>
                             <q-markup-table
                                 v-for="fg in Map.groupBy(
                                     props.fees.filter((it) => it.category),
                                     (it) => it.group,
                                 )"
                                 :key="fg[0]"
-                                class="col-auto"
                                 flat
                             >
+                                <thead v-if="fg[0]">
+                                    <tr>
+                                        <th :id="fg[0]" colspan="2">
+                                            <div class="text-bold text-body2">{{ fg[0] }}</div>
+                                        </th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr v-for="it in fg[1]" :key="it.id">
-                                        <td class="text-right text-no-wrap">{{ it.price }}€</td>
-                                        <td v-html="it.name" />
+                                        <td>{{ it.price }}€</td>
+                                        <td class="text-left" v-html="it.name" />
                                     </tr>
                                 </tbody>
                             </q-markup-table>
