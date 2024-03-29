@@ -9,16 +9,19 @@
             Weitere Tipps werden folgen.
         </q-card-section>
         <q-card-section>
-            <masonry-wall :column-width="280" :gap="16" :items="useSuggestionStore().all">
-                <template #default="{ item }">
-                    <c-suggestion :model-value="item" />
-                </template>
-            </masonry-wall>
+            <c-masonry-wall v-slot="{ item }" :items="useSuggestionStore().all">
+                <a :href="item.url.toString()" target="_blank">
+                    <q-card class="bg-primary">
+                        <q-card-section class="text-h6">{{ item.title }}</q-card-section>
+                        <q-card-section>{{ item.text }}</q-card-section>
+                    </q-card>
+                </a>
+            </c-masonry-wall>
         </q-card-section>
     </q-card>
 </template>
 
 <script lang="ts" setup>
-import CSuggestion from 'components/pages/events/tours/events/rtfs/CSuggestion.vue'
+import CMasonryWall from 'components/pages/CMasonryWall.vue'
 import useSuggestionStore from 'stores/events/tours/events/rtfs/Suggestion'
 </script>
