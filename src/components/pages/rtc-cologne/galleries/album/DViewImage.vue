@@ -1,5 +1,5 @@
 <template>
-    <div style="max-width: 20em">
+    <div>
         <q-img :src="currentGalleryEntry.imageUrl.toString()" style="cursor: pointer" @click="dialog = true" />
         <q-dialog v-model="dialog" class="z-top" maximized persistent>
             <q-card flat>

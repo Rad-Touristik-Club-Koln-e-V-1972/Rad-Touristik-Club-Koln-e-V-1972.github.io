@@ -1,12 +1,12 @@
 <template>
     <q-card>
-        <q-card-section class="bg-secondary text-accent text-subtitle1">
+        <q-card-section class="bg-secondary text-accent text-subtitle2">
             <div v-if="props.modelValue.date">{{ useDateTime().format(props.modelValue.date) }}</div>
             {{ props.modelValue.name }} via {{ ESource[props.modelValue.source] }}<br />
             {{ [props.modelValue.organization, props.modelValue.location].filter((it) => it).join(', ') }}
             <div v-if="!isCategoryRTC">Event: {{ EEvent[props.modelValue.category] }}</div>
         </q-card-section>
-        <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
+        <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-subtitle2">{{ props.modelValue.title }}</q-card-section>
         <q-card-section v-if="props.modelValue.text || props.modelValue.imageUrls?.length">
             <div v-if="props.modelValue.text">
                 <span class="text-pre-wrap" v-html="props.modelValue.text" />
