@@ -6,7 +6,6 @@
                     v-model="modelValue.telePhoneNumber"
                     v-model:country-code="modelValue.telePhoneCountryCode"
                     no-flags
-                    no-validation
                     :translations="{
                         countrySelector: {
                             error: 'Fehlerhafte Länderauswahl',
@@ -26,7 +25,6 @@
                     v-model="modelValue.mobilePhoneNumber"
                     v-model:country-code="modelValue.mobilePhoneCountryCode"
                     no-flags
-                    no-validation
                     :translations="{
                         countrySelector: {
                             error: 'Fehlerhafte Länderauswahl',

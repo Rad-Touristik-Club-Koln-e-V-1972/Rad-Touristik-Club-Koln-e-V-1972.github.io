@@ -1,3 +1,4 @@
+import { CountryCode } from 'libphonenumber-js/types'
 import ABuilder from 'src/models/builder/ABuilder'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
@@ -42,7 +43,7 @@ export default class PersonalDataBuilder extends ABuilder {
         return this
     }
 
-    setMobilePhoneCountryCode = (value: string): this => {
+    setMobilePhoneCountryCode = (value: CountryCode): this => {
         this.personalData.mobilePhoneCountryCode = value
 
         return this
@@ -72,7 +73,7 @@ export default class PersonalDataBuilder extends ABuilder {
         return this
     }
 
-    setTelePhoneCountryCode = (value: string): this => {
+    setTelePhoneCountryCode = (value: CountryCode): this => {
         this.personalData.telePhoneCountryCode = value
 
         return this

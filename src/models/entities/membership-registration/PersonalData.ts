@@ -1,4 +1,5 @@
 import { date } from 'quasar'
+import { CountryCode } from 'libphonenumber-js/types'
 import AEntity from 'src/models/entities/AEntity'
 
 export default class PersonalData extends AEntity {
@@ -9,11 +10,11 @@ export default class PersonalData extends AEntity {
     firstName = ''
     lastName = ''
     mobilePhoneNumber = ''
-    mobilePhoneCountryCode = 'DE'
+    mobilePhoneCountryCode: CountryCode = 'DE'
     street = ''
     streetNumber = ''
     specialNeeds = ''
-    telePhoneCountryCode = 'DE'
+    telePhoneCountryCode: CountryCode = 'DE'
     telePhoneNumber = ''
     tShirtSize = ''
     wantsAmateursportslicense = false
