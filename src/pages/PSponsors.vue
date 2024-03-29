@@ -6,23 +6,22 @@
             <br />
             Auch all denjenigen, die um Diskretion gebeten haben, sind wir sehr verbunden!
         </q-card-section>
-        <q-card-section class="column example-container">
-            <masonry-wall :column-width="280" :gap="16" :items="useSponsorStore().all">
-                <template #default="{ item }">
-                    <a :href="item.url?.toString()" target="_blank">
-                        <q-card flat>
-                            <q-card-section>
-                                <div v-if="item.text">{{ item.text }}</div>
-                                <q-img v-else-if="item.imageUrl" fit="contain" :src="item.imageUrl.toString()" />
-                            </q-card-section>
-                        </q-card>
-                    </a>
-                </template>
-            </masonry-wall>
+        <q-card-section>
+            <c-masonry-wall v-slot="{ item }" :items="useSponsorStore().all">
+                <a :href="item.url?.toString()" target="_blank">
+                    <q-card flat>
+                        <q-card-section>
+                            <div v-if="item.text">{{ item.text }}</div>
+                            <q-img v-else-if="item.imageUrl" fit="contain" :src="item.imageUrl.toString()" />
+                        </q-card-section>
+                    </q-card>
+                </a>
+            </c-masonry-wall>
         </q-card-section>
     </q-card>
 </template>
 
 <script lang="ts" setup>
+import CMasonryWall from 'components/pages/CMasonryWall.vue'
 import useSponsorStore from 'stores/Sponsor'
 </script>
