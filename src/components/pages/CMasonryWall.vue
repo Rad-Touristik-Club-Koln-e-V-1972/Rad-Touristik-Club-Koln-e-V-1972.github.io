@@ -17,3 +17,38 @@ import type AEntity from 'src/models/entities/AEntity.ts'
 
 const props = defineProps<{ items: T[] }>()
 </script>
+
+<style lang="scss" scoped>
+$breakpoints: (
+    map-get($sizes, 'xs'): 1,
+    map-get($sizes, 'sm'): 2,
+    map-get($sizes, 'md'): 3,
+    map-get($sizes, 'lg'): 4,
+    map-get($sizes, 'xl'): 6,
+);
+
+@each $breakpoint, $x in $breakpoints {
+    @media (min-width: $breakpoint) {
+        @for $i from 1 through ($x - 1) {
+            .masonry-wall-container > div:nth-child(#{$x}n + #{$i}) {
+                order: #{$i};
+            }
+        }
+        .masonry-wall-container {
+            height: calc(2800px / #{$x});
+            .masonry-wall-cell {
+                padding: 1px;
+                width: calc(100% / #{$x});
+            }
+            > div:nth-child(#{$x}n) {
+                order: #{$x};
+            }
+        }
+    }
+}
+
+.masonry-wall-flex-break {
+    flex: 1 0 100% !important;
+    width: 0 !important;
+}
+</style>

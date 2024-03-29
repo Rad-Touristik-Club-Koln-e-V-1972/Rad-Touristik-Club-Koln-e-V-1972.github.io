@@ -48,7 +48,7 @@ export default configure(function (/* ctx */) {
         // https://v2.quasar.dev/quasar-cli-vite/boot-files
         boot: ['vue-masonry-wall'],
         // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
-        css: ['app.scss'],
+        css: ['font.scss'],
         // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
         devServer: {
             open: true, // opens browser window automatically
