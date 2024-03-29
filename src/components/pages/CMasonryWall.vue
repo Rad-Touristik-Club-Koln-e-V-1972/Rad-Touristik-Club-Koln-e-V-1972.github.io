@@ -1,4 +1,7 @@
 <template>
+    <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
+          & https://drafts.csswg.org/css-grid-3/
+          & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
     <div class="column masonry-wall-container">
         <div class="masonry-wall-flex-break hidden" />
         <div class="masonry-wall-flex-break" />
