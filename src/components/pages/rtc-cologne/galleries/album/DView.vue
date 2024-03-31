@@ -1,6 +1,6 @@
 <template>
-    <d-p-d-f-view v-if="isMimeTypePDF" :model-value="modelValueAsArray[props.startIndex]" />
-    <d-view-image v-else :model-value="modelValueAsArray" :start-value="modelValueAsArray[props.startIndex]" />
+  <d-p-d-f-view v-if="isMimeTypePDF" :model-value="modelValueAsArray[props.startIndex]" />
+  <d-view-image v-else :model-value="modelValueAsArray" :start-value="modelValueAsArray[props.startIndex]" />
 </template>
 
 <script lang="ts" setup>

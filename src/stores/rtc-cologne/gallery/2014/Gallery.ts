@@ -4,7 +4,7 @@ import _20140408FlandernBelgien from './04_08_Flandern_Belgien'
 import _20140412Duesseldorf from './04_12_Duesseldorf'
 import _20140504Luelsdorf from './05_04_Luelsdorf'
 import _20140514KoelnRodenkirchen from './05_14_Koeln_Rodenkirchen'
-import _2014_05_25_RTF_42 from './05_25_RTF_42'
+import _2014_05_25_RTF_42 from './05_25_RTF_42/index'
 import _20140531Euskirchen from './05_31_Euskirchen'
 import _20140608GrossenluederBimbach from './06_08_Großenlueder_Bimbach'
 import _20140619Erkelenz from './06_19_Erkelenz'
@@ -22,26 +22,26 @@ import _20141202SiegerehrungMannschaftswertungBezirkKoeln from './12_02_Siegereh
 import _2014Rueckblick from './Rueckblick'
 
 export default [
-    _2014Rueckblick,
-    _20141202SiegerehrungMannschaftswertungBezirkKoeln,
-    _20141128Weihnachtsfeier,
-    _20141025HarryBrot,
-    _20141019Ahrwanderung,
-    _20141012Saisonabschluss,
-    _20140927RTFQuadrathIchendorf,
-    _20140920RTFSundern,
-    _20140901RTFErden,
-    _20140713Eslohe,
-    _20140629RTFNiederlande,
-    _20140621RTFErftstadt,
-    _20140619Erkelenz,
-    _20140608GrossenluederBimbach,
-    _20140531Euskirchen,
-    _2014_05_25_RTF_42,
-    _20140514KoelnRodenkirchen,
-    _20140504Luelsdorf,
-    _20140412Duesseldorf,
-    _20140408FlandernBelgien,
-    _20140403GeburtstagErichFischer,
-    _20140329BergischeKarussell,
+  _2014Rueckblick,
+  _20141202SiegerehrungMannschaftswertungBezirkKoeln,
+  _20141128Weihnachtsfeier,
+  _20141025HarryBrot,
+  _20141019Ahrwanderung,
+  _20141012Saisonabschluss,
+  _20140927RTFQuadrathIchendorf,
+  _20140920RTFSundern,
+  _20140901RTFErden,
+  _20140713Eslohe,
+  _20140629RTFNiederlande,
+  _20140621RTFErftstadt,
+  _20140619Erkelenz,
+  _20140608GrossenluederBimbach,
+  _20140531Euskirchen,
+  _2014_05_25_RTF_42,
+  _20140514KoelnRodenkirchen,
+  _20140504Luelsdorf,
+  _20140412Duesseldorf,
+  _20140408FlandernBelgien,
+  _20140403GeburtstagErichFischer,
+  _20140329BergischeKarussell,
 ]

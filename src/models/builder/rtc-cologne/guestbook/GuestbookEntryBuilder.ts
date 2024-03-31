@@ -5,69 +5,69 @@ import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class GuestbookEntryBuilder extends ABuilder {
-    private guestbookEntry = new GuestbookEntry()
+  private guestbookEntry = new GuestbookEntry()
 
-    buildGuestbookEntry = () => Object.assign(this.guestbookEntry, this.buildAEntity())
+  buildGuestbookEntry = () => Object.assign(this.guestbookEntry, this.buildAEntity())
 
-    setAnswer = (value: string): this => {
-        this.guestbookEntry.answer = value
+  setAnswer = (value: string): this => {
+    this.guestbookEntry.answer = value
 
-        return this
+    return this
+  }
+
+  setCategory = (value: EEvent): this => {
+    this.guestbookEntry.category = value
+
+    return this
+  }
+
+  setDate = (value: string): this => {
+    this.guestbookEntry.date = new Date(value)
+
+    return this
+  }
+
+  setImageUrls = (value: Record<string, string>): this => {
+    for (const id of Object.keys(value)) {
+      this.guestbookEntry.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).buildGalleryEntry())
     }
 
-    setCategory = (value: EEvent): this => {
-        this.guestbookEntry.category = value
+    return this
+  }
 
-        return this
-    }
+  setLocation = (value: string): this => {
+    this.guestbookEntry.location = value
 
-    setDate = (value: string): this => {
-        this.guestbookEntry.date = new Date(value)
+    return this
+  }
 
-        return this
-    }
+  setName = (value: string): this => {
+    this.guestbookEntry.name = value
 
-    setImageUrls = (value: Record<string, string>): this => {
-        for (const id of Object.keys(value)) {
-            this.guestbookEntry.imageUrls.push(new GalleryEntryBuilder().setId(id).setImageUrl(value[id]).buildGalleryEntry())
-        }
+    return this
+  }
 
-        return this
-    }
+  setOrganization = (value: string): this => {
+    this.guestbookEntry.organization = value
 
-    setLocation = (value: string): this => {
-        this.guestbookEntry.location = value
+    return this
+  }
 
-        return this
-    }
+  setSource = (value: ESource): this => {
+    this.guestbookEntry.source = value
 
-    setName = (value: string): this => {
-        this.guestbookEntry.name = value
+    return this
+  }
 
-        return this
-    }
+  setText = (value: string): this => {
+    this.guestbookEntry.text = value.replaceAll('\n', '<br>')
 
-    setOrganization = (value: string): this => {
-        this.guestbookEntry.organization = value
+    return this
+  }
 
-        return this
-    }
+  setTitle = (value: string): this => {
+    this.guestbookEntry.title = value
 
-    setSource = (value: ESource): this => {
-        this.guestbookEntry.source = value
-
-        return this
-    }
-
-    setText = (value: string): this => {
-        this.guestbookEntry.text = value.replaceAll('\n', '<br>')
-
-        return this
-    }
-
-    setTitle = (value: string): this => {
-        this.guestbookEntry.title = value
-
-        return this
-    }
+    return this
+  }
 }

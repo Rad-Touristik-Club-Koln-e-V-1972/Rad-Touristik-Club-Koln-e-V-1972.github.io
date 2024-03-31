@@ -19,37 +19,37 @@ import _2024 from './gallery/2024/Gallery'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 
 export default defineStore('gallery', () => {
-    const sortByDate = (galleries: Gallery[]) => galleries.toSorted((a, b) => b.start.getTime() - a.start.getTime())
+  const sortByDate = (galleries: Gallery[]) => galleries.toSorted((a, b) => b.start.getTime() - a.start.getTime())
 
-    const groupedByYear = ref<Record<string, Gallery[]>>({
-        2024: sortByDate(_2024),
-        2023: sortByDate(_2023),
-        2022: sortByDate(_2022),
-        2021: sortByDate(_2021),
-        2020: sortByDate(_2020),
-        2019: sortByDate(_2019),
-        2018: sortByDate(_2018),
-        2017: sortByDate(_2017),
-        2016: sortByDate(_2016),
-        2015: sortByDate(_2015),
-        2014: sortByDate(_2014),
-        2013: sortByDate(_2013),
-        2012: sortByDate(_2012),
-        2011: sortByDate(_2011),
-        2010: sortByDate(_2010),
-        2009: sortByDate(_2009),
-    })
+  const groupedByYear = ref<Record<string, Gallery[]>>({
+    2024: sortByDate(_2024),
+    2023: sortByDate(_2023),
+    2022: sortByDate(_2022),
+    2021: sortByDate(_2021),
+    2020: sortByDate(_2020),
+    2019: sortByDate(_2019),
+    2018: sortByDate(_2018),
+    2017: sortByDate(_2017),
+    2016: sortByDate(_2016),
+    2015: sortByDate(_2015),
+    2014: sortByDate(_2014),
+    2013: sortByDate(_2013),
+    2012: sortByDate(_2012),
+    2011: sortByDate(_2011),
+    2010: sortByDate(_2010),
+    2009: sortByDate(_2009),
+  })
 
-    const all = computed(() =>
-        Object.values(groupedByYear.value)
-            .flatMap((it) => it.flatMap((it) => it))
-            .reverse(),
-    )
+  const all = computed(() =>
+    Object.values(groupedByYear.value)
+      .flatMap((it) => it.flatMap((it) => it))
+      .reverse(),
+  )
 
-    return {
-        all,
-        findById: (id: string) => all.value.find((gallery) => gallery.id === id),
-        findByIds: (...ids: string[]) => all.value.filter((gallery) => ids.includes(gallery.id)),
-        groupedByYear,
-    }
+  return {
+    all,
+    findById: (id: string) => all.value.find((gallery) => gallery.id === id),
+    findByIds: (...ids: string[]) => all.value.filter((gallery) => ids.includes(gallery.id)),
+    groupedByYear,
+  }
 })

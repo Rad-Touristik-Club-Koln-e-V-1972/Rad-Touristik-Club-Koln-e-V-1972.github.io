@@ -3,25 +3,25 @@ import NewsEntry from 'src/models/entities/home/NewsEntry'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class NewsEntryBuilder extends ABuilder {
-    private newsEntry = new NewsEntry()
+  private newsEntry = new NewsEntry()
 
-    buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
+  buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
 
-    setImage = (value: GalleryEntry): this => {
-        this.newsEntry.image = value
+  setImage = (value: GalleryEntry): this => {
+    this.newsEntry.image = value
 
-        return this
-    }
+    return this
+  }
 
-    setShowUntil = (value: string): this => {
-        this.newsEntry.showUntil = new Date(value)
+  setShowUntil = (value: string): this => {
+    this.newsEntry.showUntil = new Date(value)
 
-        return this
-    }
+    return this
+  }
 
-    setText = (value: string): this => {
-        this.newsEntry.text = value.replaceAll('\n', '<br>')
+  setText = (value: string): this => {
+    this.newsEntry.text = value.replaceAll('\n', '<br>')
 
-        return this
-    }
+    return this
+  }
 }

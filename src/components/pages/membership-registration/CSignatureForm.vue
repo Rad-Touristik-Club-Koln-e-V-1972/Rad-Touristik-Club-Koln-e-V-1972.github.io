@@ -1,10 +1,10 @@
 <template>
-    <div class="row">
-        <canvas :id="id" height="100" style="background-color: #d3d3d3" width="467" />
-        <q-btn color="primary" flat :icon-right="mdiPenRemove" size="xl" square @click="signaturePad.clear()" />
-    </div>
-    <br />
-    <small>{{ props.label }}</small>
+  <div class="row">
+    <canvas :id="id" height="100" style="background-color: #d3d3d3" width="467" />
+    <q-btn color="primary" flat :icon-right="mdiPenRemove" size="xl" square @click="signaturePad.clear()" />
+  </div>
+  <br />
+  <small>{{ props.label }}</small>
 </template>
 
 <script lang="ts" setup>
@@ -19,16 +19,16 @@ let id = crypto.randomUUID()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
-    const canvas = document.getElementById(id)
+  const canvas = document.getElementById(id)
 
-    if (canvas) {
-        signaturePad = new SignaturePad(canvas as HTMLCanvasElement)
+  if (canvas) {
+    signaturePad = new SignaturePad(canvas as HTMLCanvasElement)
 
-        if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
+    if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
 
-        signaturePad.addEventListener('endStroke', () => {
-            emit('update:modelValue', signaturePad.toDataURL())
-        })
-    }
+    signaturePad.addEventListener('endStroke', () => {
+      emit('update:modelValue', signaturePad.toDataURL())
+    })
+  }
 })
 </script>

@@ -1,111 +1,111 @@
-import { CountryCode } from 'libphonenumber-js/types'
+import type { CountryCode } from 'libphonenumber-js'
 import ABuilder from 'src/models/builder/ABuilder'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 export default class PersonalDataBuilder extends ABuilder {
-    private personalData = new PersonalData()
+  private personalData = new PersonalData()
 
-    buildPersonalData = () => Object.assign(this.personalData, this.buildAEntity())
+  buildPersonalData = () => Object.assign(this.personalData, this.buildAEntity())
 
-    setBirthdate = (value: string): this => {
-        this.personalData.birthdate = value
+  setBirthdate = (value: string): this => {
+    this.personalData.birthdate = value
 
-        return this
-    }
+    return this
+  }
 
-    setCity = (value: string): this => {
-        this.personalData.city = value
+  setCity = (value: string): this => {
+    this.personalData.city = value
 
-        return this
-    }
+    return this
+  }
 
-    setEmail = (value: string): this => {
-        this.personalData.email = value
+  setEmail = (value: string): this => {
+    this.personalData.email = value
 
-        return this
-    }
+    return this
+  }
 
-    setEntryDate = (value: string): this => {
-        this.personalData.entryDate = value
+  setEntryDate = (value: string): this => {
+    this.personalData.entryDate = value
 
-        return this
-    }
+    return this
+  }
 
-    setFirstName = (value: string): this => {
-        this.personalData.firstName = value
+  setFirstName = (value: string): this => {
+    this.personalData.firstName = value
 
-        return this
-    }
+    return this
+  }
 
-    setLastName = (value: string): this => {
-        this.personalData.lastName = value
+  setLastName = (value: string): this => {
+    this.personalData.lastName = value
 
-        return this
-    }
+    return this
+  }
 
-    setMobilePhoneCountryCode = (value: CountryCode): this => {
-        this.personalData.mobilePhoneCountryCode = value
+  setMobilePhoneCountryCode = (value: CountryCode): this => {
+    this.personalData.mobilePhoneCountryCode = value
 
-        return this
-    }
+    return this
+  }
 
-    setMobilePhoneNumber = (value: string): this => {
-        this.personalData.mobilePhoneNumber = value
+  setMobilePhoneNumber = (value: string): this => {
+    this.personalData.mobilePhoneNumber = value
 
-        return this
-    }
+    return this
+  }
 
-    setStreet = (value: string): this => {
-        this.personalData.street = value
+  setStreet = (value: string): this => {
+    this.personalData.street = value
 
-        return this
-    }
+    return this
+  }
 
-    setStreetNumber = (value: string): this => {
-        this.personalData.streetNumber = value
+  setStreetNumber = (value: string): this => {
+    this.personalData.streetNumber = value
 
-        return this
-    }
+    return this
+  }
 
-    setSpecialNeeds = (value: string): this => {
-        this.personalData.specialNeeds = value
+  setSpecialNeeds = (value: string): this => {
+    this.personalData.specialNeeds = value
 
-        return this
-    }
+    return this
+  }
 
-    setTelePhoneCountryCode = (value: CountryCode): this => {
-        this.personalData.telePhoneCountryCode = value
+  setTelePhoneCountryCode = (value: CountryCode): this => {
+    this.personalData.telePhoneCountryCode = value
 
-        return this
-    }
+    return this
+  }
 
-    setTelePhoneNumber = (value: string): this => {
-        this.personalData.telePhoneNumber = value
+  setTelePhoneNumber = (value: string): this => {
+    this.personalData.telePhoneNumber = value
 
-        return this
-    }
+    return this
+  }
 
-    setTShirtSize = (value: string): this => {
-        this.personalData.tShirtSize = value
+  setTShirtSize = (value: string): this => {
+    this.personalData.tShirtSize = value
 
-        return this
-    }
+    return this
+  }
 
-    setWantsAmateursportslicense = (value: boolean): this => {
-        this.personalData.wantsAmateursportslicense = value
+  setWantsAmateursportslicense = (value: boolean): this => {
+    this.personalData.wantsAmateursportslicense = value
 
-        return this
-    }
+    return this
+  }
 
-    setWantsBdrMembership = (value: boolean): this => {
-        this.personalData.wantsBdrMembership = value
+  setWantsBdrMembership = (value: boolean): this => {
+    this.personalData.wantsBdrMembership = value
 
-        return this
-    }
+    return this
+  }
 
-    setZipCode = (value: string): this => {
-        this.personalData.zipCode = value
+  setZipCode = (value: string): this => {
+    this.personalData.zipCode = value
 
-        return this
-    }
+    return this
+  }
 }

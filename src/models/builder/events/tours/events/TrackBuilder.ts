@@ -3,62 +3,62 @@ import Track from 'src/models/entities/events/tours/events/Track'
 import EProfile from 'src/models/enums/events/tours/EProfile'
 
 export default class TrackBuilder extends ABuilder {
-    private track = new Track()
+  private track = new Track()
 
-    buildTrack = () => Object.assign(this.track, this.buildAEntity())
+  buildTrack = () => Object.assign(this.track, this.buildAEntity())
 
-    setControls = (value: number): this => {
-        this.track.controls = value
+  setControls = (value: number): this => {
+    this.track.controls = value
 
-        return this
-    }
+    return this
+  }
 
-    setHeight = (value: number): this => {
-        this.track.height = value
+  setHeight = (value: number): this => {
+    this.track.height = value
 
-        return this
-    }
+    return this
+  }
 
-    setImportant = (value: boolean): this => {
-        this.track.important = value
+  setImportant = (value: boolean): this => {
+    this.track.important = value
 
-        return this
-    }
+    return this
+  }
 
-    setLength = (value: number): this => {
-        this.track.length = value
+  setLength = (value: number): this => {
+    this.track.length = value
 
-        return this
-    }
+    return this
+  }
 
-    setName = (value: string): this => {
-        this.track.name = value
+  setName = (value: string): this => {
+    this.track.name = value
 
-        return this
-    }
+    return this
+  }
 
-    setProfile = (value: EProfile): this => {
-        this.track.profile = value
+  setProfile = (value: EProfile): this => {
+    this.track.profile = value
 
-        return this
-    }
+    return this
+  }
 
-    setText = (value: string): this => {
-        this.track.text = value.replaceAll('\n', '<br>')
+  setText = (value: string): this => {
+    this.track.text = value.replaceAll('\n', '<br>')
 
-        return this
-    }
+    return this
+  }
 
-    setTime = (start: string, end: string): this => {
-        this.track.end = new Date(`1970-01-01 ${end}`)
-        this.track.start = new Date(`1970-01-01 ${start}`)
+  setTime = (start: string, end: string): this => {
+    this.track.end = new Date(`1970-01-01 ${end}`)
+    this.track.start = new Date(`1970-01-01 ${start}`)
 
-        return this
-    }
+    return this
+  }
 
-    setUrls = (value: Record<string, URL>): this => {
-        this.track.urls = value
+  setUrls = (value: Record<string, URL>): this => {
+    this.track.urls = value
 
-        return this
-    }
+    return this
+  }
 }

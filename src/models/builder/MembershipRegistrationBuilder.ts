@@ -6,37 +6,37 @@ import PersonalData from 'src/models/entities/membership-registration/PersonalDa
 import Signature from 'src/models/entities/membership-registration/Signature'
 
 export default class MembershipRegistrationBuilder extends ABuilder {
-    private membershipRegistration = new MembershipRegistration()
+  private membershipRegistration = new MembershipRegistration()
 
-    buildMembershipRegistration = () => Object.assign(this.membershipRegistration, this.buildAEntity())
+  buildMembershipRegistration = () => Object.assign(this.membershipRegistration, this.buildAEntity())
 
-    setBdrMembership = (value: BdrMembership): this => {
-        this.membershipRegistration.bdrMembership = value
+  setBdrMembership = (value: BdrMembership): this => {
+    this.membershipRegistration.bdrMembership = value
 
-        return this
-    }
+    return this
+  }
 
-    setConsentPrivacyPolicy = (value: Signature): this => {
-        this.membershipRegistration.consentPrivacyPolicy = value
+  setConsentPrivacyPolicy = (value: Signature): this => {
+    this.membershipRegistration.consentPrivacyPolicy = value
 
-        return this
-    }
+    return this
+  }
 
-    setMembershipFee = (value: MembershipFee): this => {
-        this.membershipRegistration.membershipFee = value
+  setMembershipFee = (value: MembershipFee): this => {
+    this.membershipRegistration.membershipFee = value
 
-        return this
-    }
+    return this
+  }
 
-    setPersonalData = (value: PersonalData): this => {
-        this.membershipRegistration.personalData = value
+  setPersonalData = (value: PersonalData): this => {
+    this.membershipRegistration.personalData = value
 
-        return this
-    }
+    return this
+  }
 
-    setSignature = (value: Signature): this => {
-        this.membershipRegistration.signature = value
+  setSignature = (value: Signature): this => {
+    this.membershipRegistration.signature = value
 
-        return this
-    }
+    return this
+  }
 }

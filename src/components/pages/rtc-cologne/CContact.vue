@@ -1,11 +1,11 @@
 <template>
-    <q-card style="max-width: 20em">
-        <q-card-section class="text-h6">{{ props.modelValue.name }}</q-card-section>
-        <q-card-section class="text-subtitle1">{{ props.modelValue.position }}</q-card-section>
-        <q-card-actions>
-            <q-btn flat :href="`mailto:${props.modelValue.eMail}`" :icon="mdiEmailArrowRight" label=" E-Mail senden" />
-        </q-card-actions>
-    </q-card>
+  <q-card style="max-width: 20em">
+    <q-card-section class="text-h6">{{ props.modelValue.name }}</q-card-section>
+    <q-card-section class="text-subtitle1">{{ props.modelValue.position }}</q-card-section>
+    <q-card-actions>
+      <q-btn flat :href="`mailto:${props.modelValue.eMail}`" :icon="mdiEmailArrowRight" label=" E-Mail senden" />
+    </q-card-actions>
+  </q-card>
 </template>
 
 <script lang="ts" setup>

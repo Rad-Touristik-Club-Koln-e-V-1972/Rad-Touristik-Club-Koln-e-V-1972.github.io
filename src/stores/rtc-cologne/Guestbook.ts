@@ -11,24 +11,24 @@ import _2023 from './guestbook/2023'
 import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 
 export default defineStore('guestbook', () => {
-    const sortByDate = (entries: GuestbookEntry[]) => entries.toSorted((a, b) => b.date.getTime() - a.date.getTime())
+  const sortByDate = (entries: GuestbookEntry[]) => entries.toSorted((a, b) => b.date.getTime() - a.date.getTime())
 
-    const groupedByYear = ref<Record<string, GuestbookEntry[]>>({
-        2023: sortByDate(_2023),
-        2019: sortByDate(_2019),
-        2018: sortByDate(_2018),
-        2017: sortByDate(_2017),
-        2016: sortByDate(_2016),
-        2015: sortByDate(_2015),
-        2014: sortByDate(_2014),
-        2012: sortByDate(_2012),
-    })
+  const groupedByYear = ref<Record<string, GuestbookEntry[]>>({
+    2023: sortByDate(_2023),
+    2019: sortByDate(_2019),
+    2018: sortByDate(_2018),
+    2017: sortByDate(_2017),
+    2016: sortByDate(_2016),
+    2015: sortByDate(_2015),
+    2014: sortByDate(_2014),
+    2012: sortByDate(_2012),
+  })
 
-    const all = computed(() =>
-        Object.values(groupedByYear.value)
-            .flatMap((it) => it.flatMap((it) => it))
-            .reverse(),
-    )
+  const all = computed(() =>
+    Object.values(groupedByYear.value)
+      .flatMap((it) => it.flatMap((it) => it))
+      .reverse(),
+  )
 
-    return { all, groupedByYear }
+  return { all, groupedByYear }
 })

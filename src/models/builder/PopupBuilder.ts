@@ -2,19 +2,19 @@ import ABuilder from 'src/models/builder/ABuilder'
 import Popup from 'src/models/entities/Popup'
 
 export default class PopupBuilder extends ABuilder {
-    private popup = new Popup()
+  private popup = new Popup()
 
-    buildPopup = () => Object.assign(this.popup, this.buildAEntity())
+  buildPopup = () => Object.assign(this.popup, this.buildAEntity())
 
-    setText = (value: string): this => {
-        this.popup.text = value.replaceAll('\n', '<br>')
+  setText = (value: string): this => {
+    this.popup.text = value.replaceAll('\n', '<br>')
 
-        return this
-    }
+    return this
+  }
 
-    setTitle = (value: string): this => {
-        this.popup.title = value
+  setTitle = (value: string): this => {
+    this.popup.title = value
 
-        return this
-    }
+    return this
+  }
 }

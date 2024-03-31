@@ -1,5 +1,5 @@
 <template>
-    <q-img :src="props.modelValue.previewUrl.toString()" style="cursor: pointer" @click="openURL(props.modelValue.imageUrl.toString())" />
+  <q-img :src="props.modelValue.previewUrl.toString()" style="cursor: pointer" @click="openURL(props.modelValue.imageUrl.toString())" />
 </template>
 
 <script lang="ts" setup>

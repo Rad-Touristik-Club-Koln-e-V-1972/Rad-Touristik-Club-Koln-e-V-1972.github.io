@@ -6,67 +6,67 @@ import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import EEvent from 'src/models/enums/EEvent'
 
 export default class TourBuilder extends ABuilder {
-    private tour = new Tour()
+  private tour = new Tour()
 
-    buildTour = () => Object.assign(this.tour, this.buildAEntity())
+  buildTour = () => Object.assign(this.tour, this.buildAEntity())
 
-    setActive = (value: boolean): this => {
-        this.tour.active = value
+  setActive = (value: boolean): this => {
+    this.tour.active = value
 
-        return this
-    }
+    return this
+  }
 
-    setCategory = (value: EEvent): this => {
-        this.tour.category = value
+  setCategory = (value: EEvent): this => {
+    this.tour.category = value
 
-        return this
-    }
+    return this
+  }
 
-    setControls = (...value: Control[]): this => {
-        this.tour.controls = value
+  setControls = (...value: Control[]): this => {
+    this.tour.controls = value
 
-        return this
-    }
+    return this
+  }
 
-    setImages = (...value: GalleryEntry[]): this => {
-        this.tour.images = value
+  setImages = (...value: GalleryEntry[]): this => {
+    this.tour.images = value
 
-        return this
-    }
+    return this
+  }
 
-    setLastChange = (value: string): this => {
-        this.tour.lastChange = new Date(value)
+  setLastChange = (value: string): this => {
+    this.tour.lastChange = new Date(value)
 
-        return this
-    }
+    return this
+  }
 
-    setLocation = (value: Control): this => {
-        this.tour.location = value
+  setLocation = (value: Control): this => {
+    this.tour.location = value
 
-        return this
-    }
+    return this
+  }
 
-    setPopup = (text: string, title: string): this => {
-        this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).buildPopup()
+  setPopup = (text: string, title: string): this => {
+    this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).buildPopup()
 
-        return this
-    }
+    return this
+  }
 
-    setText = (value: string): this => {
-        this.tour.text = value.replaceAll('\n', '<br>')
+  setText = (value: string): this => {
+    this.tour.text = value.replaceAll('\n', '<br>')
 
-        return this
-    }
+    return this
+  }
 
-    setTitle = (value: string): this => {
-        this.tour.title = value
+  setTitle = (value: string): this => {
+    this.tour.title = value
 
-        return this
-    }
+    return this
+  }
 
-    setUrls = (value: Record<string, URL>): this => {
-        this.tour.urls = value
+  setUrls = (value: Record<string, URL>): this => {
+    this.tour.urls = value
 
-        return this
-    }
+    return this
+  }
 }

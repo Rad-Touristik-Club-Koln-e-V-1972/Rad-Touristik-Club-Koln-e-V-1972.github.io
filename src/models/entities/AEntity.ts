@@ -1,3 +1,3 @@
 export default class AEntity {
-    id!: string
+  id!: string
 }

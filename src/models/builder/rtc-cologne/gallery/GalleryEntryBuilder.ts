@@ -3,22 +3,22 @@ import ABuilder from 'src/models/builder/ABuilder'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class GalleryEntryBuilder extends ABuilder {
-    private galleryEntry = new GalleryEntry()
+  private galleryEntry = new GalleryEntry()
 
-    buildGalleryEntry = () => {
-        return Object.assign(this.galleryEntry, this.buildAEntity())
-    }
+  buildGalleryEntry = () => {
+    return Object.assign(this.galleryEntry, this.buildAEntity())
+  }
 
-    setImageUrl = (value: string): this => {
-        this.galleryEntry.imageUrl = new URL(`https://${value}`)
-        this.galleryEntry.mimeType = mime.getType(value)
+  setImageUrl = (value: string): this => {
+    this.galleryEntry.imageUrl = new URL(`https://${value}`)
+    this.galleryEntry.mimeType = mime.getType(value)
 
-        return this
-    }
+    return this
+  }
 
-    setPreviewUrl = (value: string): this => {
-        this.galleryEntry.previewUrl = new URL(`https://${value}`)
+  setPreviewUrl = (value: string): this => {
+    this.galleryEntry.previewUrl = new URL(`https://${value}`)
 
-        return this
-    }
+    return this
+  }
 }

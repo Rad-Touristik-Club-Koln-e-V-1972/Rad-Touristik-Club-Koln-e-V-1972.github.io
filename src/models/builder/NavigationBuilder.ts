@@ -1,45 +1,45 @@
-import Navigation from 'src/models/entities/navigation/Navigation'
 import ABuilder from 'src/models/builder/ABuilder'
+import Navigation from 'src/models/entities/navigation/Navigation'
 
 export default class NavigationBuilder extends ABuilder {
-    private navigation = new Navigation()
+  private navigation = new Navigation()
 
-    buildNavigation = () => Object.assign(this.navigation, this.buildAEntity())
+  buildNavigation = () => Object.assign(this.navigation, this.buildAEntity())
 
-    setChildren = (...value: Navigation[]): this => {
-        this.navigation.children = value
+  setChildren = (...value: Navigation[]): this => {
+    this.navigation.children = value
 
-        return this
-    }
+    return this
+  }
 
-    setColor = (value: string): this => {
-        this.navigation.color = value
+  setColor = (value: string): this => {
+    this.navigation.color = value
 
-        return this
-    }
+    return this
+  }
 
-    setIcon = (value: string): this => {
-        this.navigation.icon = value
+  setIcon = (value: string): this => {
+    this.navigation.icon = value
 
-        return this
-    }
+    return this
+  }
 
-    setTitle = (value: string): this => {
-        this.navigation.title = value
+  setTitle = (value: string): this => {
+    this.navigation.title = value
 
-        return this
-    }
+    return this
+  }
 
-    setTo = (name: string): this => {
-        this.navigation.to = { name }
+  setTo = (name: string): this => {
+    this.navigation.to = { name }
 
-        return this
-    }
+    return this
+  }
 
-    setUrl = (value: string): this => {
-        this.navigation.target = '_blank'
-        this.navigation.url = new URL(`https://${value}`)
+  setUrl = (value: string): this => {
+    this.navigation.target = '_blank'
+    this.navigation.url = new URL(`https://${value}`)
 
-        return this
-    }
+    return this
+  }
 }

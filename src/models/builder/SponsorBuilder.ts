@@ -2,25 +2,25 @@ import ABuilder from 'src/models/builder/ABuilder'
 import Sponsor from 'src/models/entities/Sponsor'
 
 export default class SponsorBuilder extends ABuilder {
-    private sponsor = new Sponsor()
+  private sponsor = new Sponsor()
 
-    buildSponsor = () => Object.assign(this.sponsor, this.buildAEntity())
+  buildSponsor = () => Object.assign(this.sponsor, this.buildAEntity())
 
-    setImageUrl = (value: string): this => {
-        this.sponsor.imageUrl = new URL(`https://${value}`)
+  setImageUrl = (value: string): this => {
+    this.sponsor.imageUrl = new URL(`https://${value}`)
 
-        return this
-    }
+    return this
+  }
 
-    setText = (value: string): this => {
-        this.sponsor.text = value.replaceAll('\n', '<br>')
+  setText = (value: string): this => {
+    this.sponsor.text = value.replaceAll('\n', '<br>')
 
-        return this
-    }
+    return this
+  }
 
-    setUrl = (value: string): this => {
-        this.sponsor.url = new URL(`https://${value}`)
+  setUrl = (value: string): this => {
+    this.sponsor.url = new URL(`https://${value}`)
 
-        return this
-    }
+    return this
+  }
 }

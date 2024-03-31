@@ -1,9 +1,11 @@
 {
-    "extends": "@quasar/app-vite/tsconfig-preset",
-    "compilerOptions": {
-        // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/9455
-        "allowImportingTsExtensions": true,
-        "baseUrl": ".",
-        "skipLibCheck": true
-    }
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/9455#issuecomment-2028679573 ? Quasar 3 ?
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true
+  },
+  "exclude": ["./dist", "./.quasar", "./node_modules", "./src-capacitor", "./src-cordova", "./quasar.config.*.temporary.compiled*"]
 }

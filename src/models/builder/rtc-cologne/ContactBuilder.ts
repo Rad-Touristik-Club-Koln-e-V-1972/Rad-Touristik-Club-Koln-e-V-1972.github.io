@@ -2,31 +2,31 @@ import ABuilder from 'src/models/builder/ABuilder'
 import Contact from 'src/models/entities/rtc-cologne/Contact'
 
 export default class ContactBuilder extends ABuilder {
-    private contact = new Contact()
+  private contact = new Contact()
 
-    buildContact = () => Object.assign(this.contact, this.buildAEntity())
+  buildContact = () => Object.assign(this.contact, this.buildAEntity())
 
-    setEMail = (value: string): this => {
-        this.contact.eMail = value
+  setEMail = (value: string): this => {
+    this.contact.eMail = value
 
-        return this
-    }
+    return this
+  }
 
-    setImageUrl = (value: string): this => {
-        this.contact.imageUrl = new URL(`https://${value}`)
+  setImageUrl = (value: string): this => {
+    this.contact.imageUrl = new URL(`https://${value}`)
 
-        return this
-    }
+    return this
+  }
 
-    setName = (value: string): this => {
-        this.contact.name = value
+  setName = (value: string): this => {
+    this.contact.name = value
 
-        return this
-    }
+    return this
+  }
 
-    setPosition = (value: string): this => {
-        this.contact.position = value
+  setPosition = (value: string): this => {
+    this.contact.position = value
 
-        return this
-    }
+    return this
+  }
 }
