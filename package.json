@@ -12,10 +12,9 @@
     "predev": "pnpm lint",
     "dev": "quasar dev",
     "preinstall": "npx only-allow pnpm",
-    "lint": "pnpm lint:js && pnpm lint:prettier && pnpm lint:vue-tsc",
-    "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext \".js,.ts,.vue\" --fix --ignore-path .gitignore --ignore-pattern pnpm-lock.yaml .",
-    "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write .",
-    "lint:vue-tsc": "vue-tsc --noEmit",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ext '.cjs,.js,.mjs,.ts,.vue' --fix --ignore-path .gitignore --ignore-pattern .eslintrc.cjs --ignore-pattern pnpm-lock.yaml .",
+    "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write '**/*.{js,ts,vue,scss,html,md,json}' .",
     "prepare": "husky",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -60,11 +59,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": [
-      "eslint --fix",
-      "echo 'TODO Workaround for https://github.com/microsoft/TypeScript/issues/27379'",
-      "bash -c 'vue-tsc --noEmit'"
-    ],
+    "*.{cjs,js,mjs,ts,vue}": "eslint --fix",
     "*.**": "prettier --ignore-unknown --write"
   },
   "pnpm": {

@@ -70,10 +70,10 @@ export default configure((/*ctx*/) => ({
         'vite-plugin-checker',
         {
           eslint: {
-            lintCommand: 'eslint "./**/*.{js,ts,mjs,cjs,vue}"',
+            lintCommand: 'eslint "./**/*.{cjs,js,mjs,ts,vue}"',
           },
           vueTsc: {
-            tsconfigPath: 'tsconfig.json',
+            tsconfigPath: 'tsconfig.vue-tsc.json',
           },
         },
         { server: false },
