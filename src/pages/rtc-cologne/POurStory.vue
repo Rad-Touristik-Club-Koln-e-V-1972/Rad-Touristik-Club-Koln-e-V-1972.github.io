@@ -16,20 +16,19 @@
       </q-tab-panels>
     </q-card-section>
     <q-card-section>
-      Am 30.10.1972 trafen sich in einer Kneipe in Köln-Deutz 28 Sportfreunde mit einer damals revolutionären Idee - einen Radsportverein zu gründen, bei dem nicht der Rennbetrieb,
-      sondern der Breitensport im Mittelpunkt stehen sollte.
+      Am 30.10.1972 trafen sich in einer Kneipe in Köln-Deutz 28 Sportfreunde mit einer damals revolutionären Idee - einen Radsportverein zu gründen, bei dem nicht der Rennbetrieb, sondern der Breitensport im Mittelpunkt
+      stehen sollte.
     </q-card-section>
     <q-card-section>
       Der Verein wurde Rad-Touristik-Club Köln genannt.<br />
-      Die Kurzform RTC wurde später von vielen Vereinen kopiert, aber der Grundgedanke, den Breitensport zu betreiben und zu fördern, wurde als Erstes durch den RTC Köln definiert
-      und wird bis heute von Vorstand und Mitgliedern des Vereins gelebt.
+      Die Kurzform RTC wurde später von vielen Vereinen kopiert, aber der Grundgedanke, den Breitensport zu betreiben und zu fördern, wurde als Erstes durch den RTC Köln definiert und wird bis heute von Vorstand und
+      Mitgliedern des Vereins gelebt.
     </q-card-section>
     <q-card-section>
       Unser ehemaliges Ehrenmitglied Erich Fischer vom RTC Köln wurde damals der erste Radtouristikfachwart beim Bund Deutscher Radfahrer.<br />
       Mitglieder des Vereins fuhren bis nach Schleswig-Holstein, um dort Vereine bei der Durchführung einer RTF zu unterstützen.<br />
       Als erster deutscher Verein führte der RTC Köln eine Euro-Audax-Tour nach den Bestimmungen der Union des Audax Francais durch.<br />
-      Seit dem Gründungsjahr werden RTF durchgeführt, in den Anfängen neben der Forsbachtour auch das Bergische Karussell, diese Strecke ist heute noch als eine unserer beiden
-      Permanenten erhalten.<br />
+      Seit dem Gründungsjahr werden RTF durchgeführt, in den Anfängen neben der Forsbachtour auch das Bergische Karussell, diese Strecke ist heute noch als eine unserer beiden Permanenten erhalten.<br />
       <br />
       1976 wurde das erste Poller Volksradfahren organisiert.<br />
       <br />

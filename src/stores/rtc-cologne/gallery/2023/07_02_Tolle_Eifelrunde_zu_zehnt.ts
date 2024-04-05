@@ -29,42 +29,15 @@ export default new GalleryBuilder()
       .setId('9bd06f66-f055-4e7b-99de-d49a024fa9bf')
       .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/fc87e96a-953e-4af4-ab30-2cdec8cb7506.JPG.avif')
       .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('117c5f4a-7030-4996-ac4b-3b2919801278')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3895.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('c9a296ba-1fa6-430c-8705-15cc5c65bb98')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3896.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('f1d34231-8924-4d30-b283-bbba7b7a847a')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3898.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('526939b0-0f70-4fce-9ff0-4228cac9101e')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3902.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('1d77cdd6-60a9-44f4-b761-525aa8ffa688')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3906.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('61a899df-055b-48fa-8413-5cc7f40f8846')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3908.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('54281456-5825-4e84-9b9a-70874774117e')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3915.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('cd6f5fa3-184f-4fec-a7ae-258201158d1b')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3918.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('f3aaa7a1-b26a-4de7-b391-0a46f9c95b53')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_6925.HEIC.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('117c5f4a-7030-4996-ac4b-3b2919801278').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3895.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('c9a296ba-1fa6-430c-8705-15cc5c65bb98').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3896.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('f1d34231-8924-4d30-b283-bbba7b7a847a').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3898.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('526939b0-0f70-4fce-9ff0-4228cac9101e').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3902.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('1d77cdd6-60a9-44f4-b761-525aa8ffa688').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3906.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('61a899df-055b-48fa-8413-5cc7f40f8846').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3908.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('54281456-5825-4e84-9b9a-70874774117e').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3915.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('cd6f5fa3-184f-4fec-a7ae-258201158d1b').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_3918.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('f3aaa7a1-b26a-4de7-b391-0a46f9c95b53').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/07_02_Tolle_Eifelrunde_zu_zehnt/IMG_6925.HEIC.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln-Immendorf')
   .setTitle('Tolle Eifelrunde zu zehnt')

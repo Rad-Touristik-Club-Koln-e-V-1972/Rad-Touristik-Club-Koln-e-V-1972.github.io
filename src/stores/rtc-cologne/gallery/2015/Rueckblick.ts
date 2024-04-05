@@ -17,10 +17,7 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('ac9c9c10-b08e-42c0-a4d8-53fdc9325d8f').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150605b.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('70ee300d-01e8-4555-a44c-ac70ef67b6f5').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150605c.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('792e0279-607f-4245-8c7d-0ecb196bbefa').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150607.jpg.avif').buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('483a9343-a8ea-48ac-bcdd-442c557882c8')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150628_Siegerehrung_Photo-Hyou-Vielz.jpg.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('483a9343-a8ea-48ac-bcdd-442c557882c8').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150628_Siegerehrung_Photo-Hyou-Vielz.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('afdac735-49a7-40c9-9f7b-ba528b28ec3f').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-1.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('4676a876-e0de-45c7-b2df-222f82bbc93d').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-2.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('f5d21663-c1e6-4997-8ade-c2885ca0e051').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-3.jpg.avif').buildGalleryEntry(),
@@ -32,10 +29,7 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('9b3b217d-db2e-4801-bc8a-6c07b31a326b').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151003-2.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('6ebe8452-34ea-4658-b5bb-4c8ab5d57b2f').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151011-1.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('776572fd-9483-46c5-b958-32c18e2a54d5').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151011-2.jpg.avif').buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('6b950f03-282f-4c99-897c-a5aa7caf237d')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/rtc-984-intro-2015.jpg.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('6b950f03-282f-4c99-897c-a5aa7caf237d').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/Rueckblick/rtc-984-intro-2015.jpg.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln')
   .setTitle('Rückblick')

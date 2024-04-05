@@ -5,14 +5,8 @@ export default new GalleryBuilder()
   .setDate('2014-12-31')
   .setId('7c41dde4-d8aa-45c2-a02c-283217ef7aa5')
   .setImages([
-    new GalleryEntryBuilder()
-      .setId('825fac38-a5c5-4009-b94d-ff998e79f602')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140503-01.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b1985b10-a7b3-4d35-865f-6ad8d96df496')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140503-02.jpg.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('825fac38-a5c5-4009-b94d-ff998e79f602').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140503-01.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b1985b10-a7b3-4d35-865f-6ad8d96df496').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140503-02.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('dbc246a6-44e2-4428-b292-d94aaabe222f').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140609.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('a6ce79f6-06b7-4ed1-acd5-2a618df8209b').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140614.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('6faccdd4-1973-4559-b1f4-215e3a762d6f').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/140619a.jpg.avif').buildGalleryEntry(),
@@ -31,58 +25,19 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('635c1616-63aa-4277-97c8-4310d9620627').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/141128a.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('e0c85b80-b64f-408b-8e14-d2cf0d8c4208').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/141128b.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('1d3e32d4-8351-4b7d-832a-fdbb7f9a0716').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/141128c.jpg.avif').buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('e9c051a3-5d4b-47ca-bf0b-df5ad9cada2f')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/Heinz Dieter Rolshoven002.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('ffc7d68a-0dcf-4ec4-ac81-4342d9c831f4')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-993-intro-2014.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('57b4a274-ca89-473f-8911-abeb31477aee')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-994-intro-2014.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('182350ce-41bf-44ae-b60b-5fac475e3d4a')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-995-intro-2014.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('e7dc5410-4215-43ee-9298-85bb111be5c5')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/IMG-20140605-00479_Ersatz_Permanente_Schmitzebud.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('d54dd3fd-3ce3-4280-94ec-fcef08f978e3')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-a.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('5f25d143-7b2a-4c8f-80d8-c7aba6a6a269')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-b.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('99c248cb-3026-4a1d-8679-8245ae6fe6dc')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-c.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b797934a-974c-4773-84b6-9388665095c6')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-d.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('8e63b476-2fcf-4f4d-8ad1-48fd03926c37')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-a.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b3212814-167f-403d-96a5-e2858c405788')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-b.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('4c380ba9-b785-47b9-b944-89f8dbd54ce6')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-c.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('74d71ecd-8449-4f0a-bbb0-275182ee86b6')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-d.jpg.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('e9c051a3-5d4b-47ca-bf0b-df5ad9cada2f').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/Heinz Dieter Rolshoven002.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('ffc7d68a-0dcf-4ec4-ac81-4342d9c831f4').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-993-intro-2014.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('57b4a274-ca89-473f-8911-abeb31477aee').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-994-intro-2014.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('182350ce-41bf-44ae-b60b-5fac475e3d4a').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-995-intro-2014.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('e7dc5410-4215-43ee-9298-85bb111be5c5').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/IMG-20140605-00479_Ersatz_Permanente_Schmitzebud.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('d54dd3fd-3ce3-4280-94ec-fcef08f978e3').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-a.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('5f25d143-7b2a-4c8f-80d8-c7aba6a6a269').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-b.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('99c248cb-3026-4a1d-8679-8245ae6fe6dc').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-c.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b797934a-974c-4773-84b6-9388665095c6').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-01-d.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('8e63b476-2fcf-4f4d-8ad1-48fd03926c37').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-a.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b3212814-167f-403d-96a5-e2858c405788').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-b.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('4c380ba9-b785-47b9-b944-89f8dbd54ce6').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-c.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('74d71ecd-8449-4f0a-bbb0-275182ee86b6').setImageUrl('content.rtc-koeln.de/pages/gallery/2014/Rueckblick/rtc-laufbild-2014-02-d.jpg.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln')
   .setTitle('Rückblick')

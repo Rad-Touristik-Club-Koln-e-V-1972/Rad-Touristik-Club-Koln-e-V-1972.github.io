@@ -4,12 +4,7 @@ import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryE
 export default new GalleryBuilder()
   .setDate('2023-05-14')
   .setId('2930ebbb-07ea-41f9-bd56-73b3425c4284')
-  .setImages(
-    new GalleryEntryBuilder()
-      .setId('55cc6ae1-51ef-4e6a-9cbb-2b19a5cd8358')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation/image0.jpeg.avif')
-      .buildGalleryEntry(),
-  )
+  .setImages(new GalleryEntryBuilder().setId('55cc6ae1-51ef-4e6a-9cbb-2b19a5cd8358').setImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation/image0.jpeg.avif').buildGalleryEntry())
   .setLocation('Deutschland, Niederlande & Belgien')
   .setTitle('Paris-Brest-Paris Qualifikation')
   .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2023/05_14_Paris-Brest-Paris_Qualifikation/image0.jpeg.avif')

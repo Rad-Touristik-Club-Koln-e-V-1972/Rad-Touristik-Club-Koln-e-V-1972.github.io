@@ -8,11 +8,7 @@ export default function useCalendar() {
 
   return {
     getHolidays(year: number): Event[] {
-      return holidays
-        .getHolidays(year)
-        .map((it: DateHolidays.HolidaysTypes.Holiday) =>
-          new EventBuilder().setCategory(EEvent.Feiertag).setDate(it.date).setId(`${it.date}${it.name}`).setName(it.name).buildEvent(),
-        )
+      return holidays.getHolidays(year).map((it: DateHolidays.HolidaysTypes.Holiday) => new EventBuilder().setCategory(EEvent.Feiertag).setDate(it.date).setId(`${it.date}${it.name}`).setName(it.name).buildEvent())
     },
   }
 }

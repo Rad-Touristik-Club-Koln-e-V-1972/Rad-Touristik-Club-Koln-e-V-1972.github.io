@@ -25,7 +25,5 @@ import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useContactsStore from 'stores/rtc-cologne/Contacts'
 
-const imageUrls = ref([
-  new GalleryEntryBuilder().setId('abeba013-67c5-4974-aa02-4675a8db7042').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/contacts/IMG_9235.jpg.avif').buildGalleryEntry(),
-])
+const imageUrls = ref([new GalleryEntryBuilder().setId('abeba013-67c5-4974-aa02-4675a8db7042').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/contacts/IMG_9235.jpg.avif').buildGalleryEntry()])
 </script>

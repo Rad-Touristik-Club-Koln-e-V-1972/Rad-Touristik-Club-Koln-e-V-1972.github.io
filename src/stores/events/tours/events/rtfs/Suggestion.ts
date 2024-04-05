@@ -14,12 +14,7 @@ export default defineStore('suggestion', () => {
       new SuggestionBuilder().setId('5736c25d-71b2-481b-8316-b1738a18eb2a').setText('').setTitle('Drei-Länder-Giro').setUrl('dreilaendergiro.at/de').buildSuggestion(),
       new SuggestionBuilder().setId('9c604e52-9b9f-4ff6-a183-0a2c781fd99c').setText('').setTitle('Wendelsteinrundfahrt').setUrl('wendelsteinrundfahrt.de').buildSuggestion(),
       new SuggestionBuilder().setId('4d695d86-48b0-4930-9502-a06be15e1383').setText('').setTitle('Schrecksbach').setUrl('www.radsport-schrecksbach.de').buildSuggestion(),
-      new SuggestionBuilder()
-        .setId('0e00337e-6aee-4f21-bd2c-58105952bc6e')
-        .setText('')
-        .setTitle('Ötztalmarathon (der krönende Abschluss)')
-        .setUrl('oetztaler-radmarathon.com/de/home.html')
-        .buildSuggestion(),
+      new SuggestionBuilder().setId('0e00337e-6aee-4f21-bd2c-58105952bc6e').setText('').setTitle('Ötztalmarathon (der krönende Abschluss)').setUrl('oetztaler-radmarathon.com/de/home.html').buildSuggestion(),
     ]),
   }
 })

@@ -62,16 +62,7 @@ const addCheckbox = (params: { leftMargin: number; topMargin: number; value?: bo
   return checkboxLength / 2
 }
 
-const addCheckboxWithText = (params: {
-  description?: string
-  fontSize?: number
-  leftMargin: number
-  text: string
-  textColor?: string
-  topMargin: number
-  value: boolean
-  withoutTopMargin?: boolean
-}): number => {
+const addCheckboxWithText = (params: { description?: string; fontSize?: number; leftMargin: number; text: string; textColor?: string; topMargin: number; value: boolean; withoutTopMargin?: boolean }): number => {
   const fontSize = params.fontSize ?? 12
   const leftMarginText = params.leftMargin + 10
   let titleHeight = 0
@@ -630,8 +621,7 @@ const addText = (params: {
       underlineLength: params.underlineLength,
     })
 
-  if (params.description)
-    contentHeight += addTextDescription({ fontSize: fontSize - 4, leftMargin: params.leftMargin, text: params.description, topMargin: params.topMargin + contentHeight })
+  if (params.description) contentHeight += addTextDescription({ fontSize: fontSize - 4, leftMargin: params.leftMargin, text: params.description, topMargin: params.topMargin + contentHeight })
 
   return contentHeight
 }

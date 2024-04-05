@@ -15,46 +15,16 @@ export default new GalleryBuilder()
   .setId('991a9f19-cb22-43f3-991d-a3b8ddaa7ec8')
   .setImages({
     Intro: [
-      new GalleryEntryBuilder()
-        .setId('5d164015-0f2f-43aa-89b9-4737864a4030')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-987-intro-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('ebd7c543-f65a-4b6f-a627-c9930599063a')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-988-intro-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('bc2f169c-5215-4eae-a910-669688bb2cb2')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-990-intro-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('eac149ef-8b9f-4610-ab40-abdd913daaaa')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-fbt2015-002.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('48d92132-b65d-486f-b963-9432ff5ab43a')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-fbt2015-003.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('90f31c2d-0cb1-412b-8d41-70873d6b81c5')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-forsbach-tour-flyer1-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('1c5d9da3-db5e-461a-8b6a-84fb7a25be8b')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-forsbach-tour-flyer2-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('51f9e294-4938-45f3-943c-be701b12667b')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Koelner-Wochenspiegel-20150610.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('90a3f99c-4e94-4ea7-93a7-7f82541a9ec4')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Koelner-Wochenspiegel-2015.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('5192bbc2-b567-4561-bff7-8beb963bb305')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Loss-Jonn-2015.png.avif')
-        .buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('5d164015-0f2f-43aa-89b9-4737864a4030').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-987-intro-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('ebd7c543-f65a-4b6f-a627-c9930599063a').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-988-intro-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('bc2f169c-5215-4eae-a910-669688bb2cb2').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-990-intro-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('eac149ef-8b9f-4610-ab40-abdd913daaaa').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-fbt2015-002.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('48d92132-b65d-486f-b963-9432ff5ab43a').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-fbt2015-003.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('90f31c2d-0cb1-412b-8d41-70873d6b81c5').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-forsbach-tour-flyer1-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('1c5d9da3-db5e-461a-8b6a-84fb7a25be8b').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-forsbach-tour-flyer2-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('51f9e294-4938-45f3-943c-be701b12667b').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Koelner-Wochenspiegel-20150610.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('90a3f99c-4e94-4ea7-93a7-7f82541a9ec4').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Koelner-Wochenspiegel-2015.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('5192bbc2-b567-4561-bff7-8beb963bb305').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/rtc-Loss-Jonn-2015.png.avif').buildGalleryEntry(),
     ],
     ..._0516Vortour,
     ..._75erAlternative,
@@ -124,22 +94,10 @@ export default new GalleryBuilder()
     ],
     ...K1,
     K3: [
-      new GalleryEntryBuilder()
-        .setId('ffa44273-43a0-4fa3-a9ce-027a7f500229')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-001.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('9e80b3dc-570b-4935-91f3-d232ba5bbde2')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-002.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('65740870-29ff-4b12-957e-fd1f629f8ae3')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-003.jpg.avif')
-        .buildGalleryEntry(),
-      new GalleryEntryBuilder()
-        .setId('d641e7d1-f9a8-4943-8ea5-795fddd6a9b4')
-        .setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-004.jpg.avif')
-        .buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('ffa44273-43a0-4fa3-a9ce-027a7f500229').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-001.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('9e80b3dc-570b-4935-91f3-d232ba5bbde2').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-002.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('65740870-29ff-4b12-957e-fd1f629f8ae3').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-003.jpg.avif').buildGalleryEntry(),
+      new GalleryEntryBuilder().setId('d641e7d1-f9a8-4943-8ea5-795fddd6a9b4').setImageUrl('content.rtc-koeln.de/pages/gallery/2015/05_31_RTF_43/K3/rtc-150531-fbtk3-004.jpg.avif').buildGalleryEntry(),
     ],
     ...K5,
     ...K6,

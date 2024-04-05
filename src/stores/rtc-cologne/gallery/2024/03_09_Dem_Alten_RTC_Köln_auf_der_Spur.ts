@@ -41,142 +41,40 @@ export default new GalleryBuilder()
       .setId('69616d74-4601-4c47-bb11-955c4822c261')
       .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/e1d43ebe-a208-4e84-89a9-04a5198fbc89.jpg.avif')
       .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('49535797-bdb9-464a-be2d-023e14396750')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9509.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('2d235c0c-2286-42ed-9e21-b956b4b76564')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9510.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('e67b75ea-7150-4638-beb4-90fe4361ea93')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9511.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('38009da0-2dca-4e3e-97cd-6d62f35e6716')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9512.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('6bd91308-cb3b-470f-a475-154fc6a9132a')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9515.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('03167b72-bf2b-47e9-bc02-3f6a7c60f37c')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9519.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('f7132b90-e017-40ab-8a18-83e5c99a6eab')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9520.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('223296e3-5014-4591-99a1-c56d1d6a32f0')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9521.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('5b5438bb-3b0f-43b5-842b-7a9262f0ec23')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9523.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('7be5056f-268c-4977-abde-810d8cb91763')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9526.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('d04f88ff-e182-4280-a4bc-ccbe7775d2dd')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9527.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('1c2fd597-fe72-422d-8ec7-9df2187cf6b4')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9529.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('a467eda6-82c8-4179-9c1d-03901904cfab')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9532.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('7d4c19dc-7227-4dcf-9d19-35286c7762c3')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9538.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('9ee6338a-a3a8-4134-aaa1-0aced4b37dc9')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9539.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('866175ea-09dc-4c09-9904-8d1b9a7420f3')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9541.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b73f85f1-b871-41bb-8bf2-34c8edca5fa1')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9543.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('c4d29744-9732-4167-9208-dd96d7c8362c')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9547.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('658680d7-52d6-4596-b717-0b64b8517290')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9549.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('3c1f3ab6-beb5-4f7c-ab76-b17ceab2ca99')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9555.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('6ed28582-23e6-4169-8456-85a6f9bd4261')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9560.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('d80e144b-062b-49f9-a200-c4ee8c2ca366')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9562.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('6514566c-5bc0-4da3-9f1e-d17c3e29c2cd')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9567.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('8fefee26-7658-4067-a31f-853ca27725f7')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9569.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('71d31f38-cbf1-4dbc-906a-badc609f5944')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9572.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b936f74d-bced-4bc2-946c-72d8e016c85d')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9573.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('71c69874-bfb2-45da-a36f-5a40f7b814f6')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9576.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('289f96b9-43a5-4eda-ba46-c158deafaf54')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9580.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('52061537-8686-473a-8cd6-02e2a489f749')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9583.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('ef448bdf-4d68-44c5-8890-1f3a397feeab')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9585.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('de3b43b9-6e6f-438e-a298-d8c20c38aca2')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9588.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('813a2ea6-bc0e-4472-84e6-890b32dbd375')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9589.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('3276d686-cc73-4699-954a-3f91f778ffd1')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9591.JPG.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('b470b04a-3b1c-4148-9763-57d4654be6d2')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9597.JPG.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('49535797-bdb9-464a-be2d-023e14396750').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9509.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('2d235c0c-2286-42ed-9e21-b956b4b76564').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9510.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('e67b75ea-7150-4638-beb4-90fe4361ea93').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9511.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('38009da0-2dca-4e3e-97cd-6d62f35e6716').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9512.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('6bd91308-cb3b-470f-a475-154fc6a9132a').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9515.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('03167b72-bf2b-47e9-bc02-3f6a7c60f37c').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9519.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('f7132b90-e017-40ab-8a18-83e5c99a6eab').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9520.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('223296e3-5014-4591-99a1-c56d1d6a32f0').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9521.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('5b5438bb-3b0f-43b5-842b-7a9262f0ec23').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9523.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('7be5056f-268c-4977-abde-810d8cb91763').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9526.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('d04f88ff-e182-4280-a4bc-ccbe7775d2dd').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9527.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('1c2fd597-fe72-422d-8ec7-9df2187cf6b4').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9529.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('a467eda6-82c8-4179-9c1d-03901904cfab').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9532.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('7d4c19dc-7227-4dcf-9d19-35286c7762c3').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9538.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('9ee6338a-a3a8-4134-aaa1-0aced4b37dc9').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9539.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('866175ea-09dc-4c09-9904-8d1b9a7420f3').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9541.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b73f85f1-b871-41bb-8bf2-34c8edca5fa1').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9543.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('c4d29744-9732-4167-9208-dd96d7c8362c').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9547.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('658680d7-52d6-4596-b717-0b64b8517290').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9549.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('3c1f3ab6-beb5-4f7c-ab76-b17ceab2ca99').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9555.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('6ed28582-23e6-4169-8456-85a6f9bd4261').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9560.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('d80e144b-062b-49f9-a200-c4ee8c2ca366').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9562.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('6514566c-5bc0-4da3-9f1e-d17c3e29c2cd').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9567.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('8fefee26-7658-4067-a31f-853ca27725f7').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9569.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('71d31f38-cbf1-4dbc-906a-badc609f5944').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9572.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b936f74d-bced-4bc2-946c-72d8e016c85d').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9573.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('71c69874-bfb2-45da-a36f-5a40f7b814f6').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9576.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('289f96b9-43a5-4eda-ba46-c158deafaf54').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9580.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('52061537-8686-473a-8cd6-02e2a489f749').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9583.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('ef448bdf-4d68-44c5-8890-1f3a397feeab').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9585.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('de3b43b9-6e6f-438e-a298-d8c20c38aca2').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9588.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('813a2ea6-bc0e-4472-84e6-890b32dbd375').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9589.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('3276d686-cc73-4699-954a-3f91f778ffd1').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9591.JPG.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('b470b04a-3b1c-4148-9763-57d4654be6d2').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_09_Dem_Alten_RTC_Köln_auf_der_Spur/IMG_9597.JPG.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln')
   .setTitle('Dem alten RTC Köln auf der Spur 🧡')

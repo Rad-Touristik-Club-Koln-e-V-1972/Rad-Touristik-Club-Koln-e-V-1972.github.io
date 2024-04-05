@@ -9,33 +9,14 @@
         </q-circular-progress>
       </div>
       <div class="col-auto">
-        <q-circular-progress
-          class="q-ma-md"
-          color="primary-darkened"
-          reverse
-          rounded
-          show-value
-          size="60px"
-          :thickness="0.2"
-          track-color="transparent"
-          :value="getPercentageHours(hours)"
-        >
+        <q-circular-progress class="q-ma-md" color="primary-darkened" reverse rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageHours(hours)">
           {{ hours }}
           <br />
           Std
         </q-circular-progress>
       </div>
       <div class="col-auto">
-        <q-circular-progress
-          class="q-ma-md"
-          color="primary-darkened"
-          rounded
-          show-value
-          size="60px"
-          :thickness="0.2"
-          track-color="transparent"
-          :value="getPercentageMinutes(minutes)"
-        >
+        <q-circular-progress class="q-ma-md" color="primary-darkened" rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageMinutes(minutes)">
           {{ minutes }}
           <br />
           Min

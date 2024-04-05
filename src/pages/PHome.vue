@@ -14,13 +14,7 @@
       <q-card flat>
         <q-card-section>
           <q-timeline :layout="$q.platform.is.mobile ? 'dense' : 'loose'">
-            <q-timeline-entry
-              v-for="(it, index) in useBlogStore().allBeforeTomorrow"
-              :key="it.id"
-              :side="index % 2 === 0 ? 'right' : 'left'"
-              :subtitle="dateTime.format(it.start, it.end)"
-              :title="it.title"
-            >
+            <q-timeline-entry v-for="(it, index) in useBlogStore().allBeforeTomorrow" :key="it.id" :side="index % 2 === 0 ? 'right' : 'left'" :subtitle="dateTime.format(it.start, it.end)" :title="it.title">
               <q-card>
                 <q-card-section class="text-left">
                   <span v-html="it.text" />

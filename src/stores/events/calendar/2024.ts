@@ -35,14 +35,7 @@ export default [
     .setKilometer(50)
     .setName('Mitgliederversammlung')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-04-13')
-    .setId('4a9b9b8d-9542-4189-88d6-85dc5dcf1b68')
-    .setKilometer(50)
-    .setName('RTC-Permanente abfahren')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-04-13').setId('4a9b9b8d-9542-4189-88d6-85dc5dcf1b68').setKilometer(50).setName('RTC-Permanente abfahren').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
@@ -60,14 +53,7 @@ export default [
     .setKilometer(50)
     .setName('Mitgliederversammlung')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-05-09')
-    .setId('a899b1ed-7a37-42e0-a8ee-e09d67c8dbcb')
-    .setKilometer(100)
-    .setName('Vatertagstour in die Eifel')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-05-09').setId('a899b1ed-7a37-42e0-a8ee-e09d67c8dbcb').setKilometer(100).setName('Vatertagstour in die Eifel').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
@@ -77,14 +63,7 @@ export default [
     .setName('RSC Erftstadt')
     .setUrl('www.rsc-erftstadt.de')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-05-18')
-    .setId('ef1df82b-62ba-4f8d-90ae-59cf091c4bf4')
-    .setKilometer(100)
-    .setName('Vortour RTF')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-05-18').setId('ef1df82b-62ba-4f8d-90ae-59cf091c4bf4').setKilometer(100).setName('Vortour RTF').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
@@ -103,22 +82,8 @@ export default [
     .setName('RSV Euskirchen')
     .setUrl('rsv-euskirchen.de')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-06-01')
-    .setId('2699c56b-2c21-4904-bf76-30c174175018')
-    .setKilometer(250)
-    .setName('Auschildern RTF')
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTF)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-06-02')
-    .setId('cceb09ef-5148-4e82-b632-e7d79ed2a5b8')
-    .setKilometer(250)
-    .setName('52. Forsbachtour')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-06-01').setId('2699c56b-2c21-4904-bf76-30c174175018').setKilometer(250).setName('Auschildern RTF').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTF).setContact('Manfred Türk-Vialon').setDate('2024-06-02').setId('cceb09ef-5148-4e82-b632-e7d79ed2a5b8').setKilometer(250).setName('52. Forsbachtour').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
@@ -226,30 +191,9 @@ export default [
     .setName('SV Malefinkbach')
     .setUrl('www.svmalefinkbach.de')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-09-14')
-    .setId('6ff614d7-1e70-4410-8c36-69311cec9847')
-    .setKilometer(100)
-    .setName('Vortour Marathon')
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTC)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-09-20')
-    .setId('f5b96178-5991-4afb-91bd-52a9abb50696')
-    .setKilometer(250)
-    .setName('Ausschildern Marathon')
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.Marathon)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2024-09-21')
-    .setId('fcbc1d7d-558a-4641-93ca-35322ef86893')
-    .setKilometer(250)
-    .setName('Marathon')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-09-14').setId('6ff614d7-1e70-4410-8c36-69311cec9847').setKilometer(100).setName('Vortour Marathon').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-09-20').setId('f5b96178-5991-4afb-91bd-52a9abb50696').setKilometer(250).setName('Ausschildern Marathon').buildEvent(),
+  new EventBuilder().setCategory(EEvent.Marathon).setContact('Manfred Türk-Vialon').setDate('2024-09-21').setId('fcbc1d7d-558a-4641-93ca-35322ef86893').setKilometer(250).setName('Marathon').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
@@ -267,12 +211,5 @@ export default [
     .setKilometer(50)
     .setName('Mitgliederversammlung')
     .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.Mitgliederversammlung)
-    .setContact('Diana Vialon')
-    .setDate('2024-12-07')
-    .setId('39232501-499a-4dd0-b759-86bd9cdff128')
-    .setKilometer(50)
-    .setName('Weihnachtsfeier')
-    .buildEvent(),
+  new EventBuilder().setCategory(EEvent.Mitgliederversammlung).setContact('Diana Vialon').setDate('2024-12-07').setId('39232501-499a-4dd0-b759-86bd9cdff128').setKilometer(50).setName('Weihnachtsfeier').buildEvent(),
 ]

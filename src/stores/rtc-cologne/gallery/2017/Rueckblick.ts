@@ -17,18 +17,9 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('d73a67b5-06d9-4033-b61b-17b03569cfbc').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180202b.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('72041216-0755-4514-be59-93df789f4806').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180202c.jpg.avif').buildGalleryEntry(),
     new GalleryEntryBuilder().setId('76fda114-6c83-448a-9b2a-4afa1eabd374').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/191206.jpg.avif').buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('667ba683-99ce-486a-96e2-8341390dd444')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-971-intro-2017.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('3fb409f6-a244-47ab-a02f-4a11da698182')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-972-intro-2017.jpg.avif')
-      .buildGalleryEntry(),
-    new GalleryEntryBuilder()
-      .setId('22690396-835a-43dc-b473-9afc5f4258c9')
-      .setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-976-intro-2017.jpg.avif')
-      .buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('667ba683-99ce-486a-96e2-8341390dd444').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-971-intro-2017.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('3fb409f6-a244-47ab-a02f-4a11da698182').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-972-intro-2017.jpg.avif').buildGalleryEntry(),
+    new GalleryEntryBuilder().setId('22690396-835a-43dc-b473-9afc5f4258c9').setImageUrl('content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-976-intro-2017.jpg.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln')
   .setTitle('Rückblick')

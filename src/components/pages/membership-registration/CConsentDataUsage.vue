@@ -2,9 +2,9 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        Der Vereinsvorstand weist hiermit darauf hin, dass ausreichende technische Maßnahmen zur Gewährleistung des Datenschutzes getroffen wurden. Dennoch kann bei einer
-        Veröffentlichung von personenbezogenen Mitgliederdaten im Internet ein umfassender Datenschutz nicht garantiert werden. Daher nimmt das Vereinsmitglied die Risiken für eine
-        eventuelle Persönlichkeitsrechtsverletzung zur Kenntnis und ist sich bewusst, dass:
+        Der Vereinsvorstand weist hiermit darauf hin, dass ausreichende technische Maßnahmen zur Gewährleistung des Datenschutzes getroffen wurden. Dennoch kann bei einer Veröffentlichung von personenbezogenen
+        Mitgliederdaten im Internet ein umfassender Datenschutz nicht garantiert werden. Daher nimmt das Vereinsmitglied die Risiken für eine eventuelle Persönlichkeitsrechtsverletzung zur Kenntnis und ist sich bewusst,
+        dass:
       </div>
     </div>
     <div class="row">

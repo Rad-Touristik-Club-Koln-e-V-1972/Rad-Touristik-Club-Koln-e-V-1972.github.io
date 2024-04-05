@@ -10,10 +10,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        Hiermit ermächtige ich den <b>RTC Köln e.V. 1972</b> den Jahresbeitrag gemäß der aktuellen Beitragsordnung <b>jährlich</b> im Voraus zu Lasten meines Kontos bis auf
-        Widerruf einzuziehen:
-      </div>
+      <div class="col">Hiermit ermächtige ich den <b>RTC Köln e.V. 1972</b> den Jahresbeitrag gemäß der aktuellen Beitragsordnung <b>jährlich</b> im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:</div>
     </div>
     <div class="row">
       <div class="col">

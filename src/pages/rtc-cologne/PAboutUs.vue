@@ -20,21 +20,13 @@
           Unser Fokus liegt auf dem Rennradfahren zur Erholung und Gesundheitsvorsorge im Rahmen der Radtouristik.<br />
           Mit dem Rennrad halten wir uns fit und pflegen eine lebendige Vereinskultur.<br />
           Zu unseren jährlichen Highlights gehört die über Kölns Grenzen hinweg bekannte „Forsbachtour“, Teil der offiziellen RTF-Veranstaltungsreihe des BDR.<br /><br />
-          <q-btn
-            color="primary"
-            :icon="mdiArrowRight"
-            label="Bitte schon mal vormerken: Die Forsbachtour ist am 2. Juni 2024."
-            outline
-            :to="{ name: 'events-tours-events-rtfs' }"
-          />
+          <q-btn color="primary" :icon="mdiArrowRight" label="Bitte schon mal vormerken: Die Forsbachtour ist am 2. Juni 2024." outline :to="{ name: 'events-tours-events-rtfs' }" />
           <br />
           <br />
           Außerdem unternehmen wir Ausflüge in malerische Gegenden wie die Mosel, die Eifel und sogar nach Mallorca zur Saisonvorbereitung etc.
         </q-card-section>
         <q-card-section class="text-primary text-h6">Unser Ziel</q-card-section>
-        <q-card-section>
-          Wir möchten andere Radfahrer:innen für diesen Sport begeistern, sei es als neue Vereinsmitglieder oder als Teilnehmer:innen an unseren Veranstaltungen.
-        </q-card-section>
+        <q-card-section> Wir möchten andere Radfahrer:innen für diesen Sport begeistern, sei es als neue Vereinsmitglieder oder als Teilnehmer:innen an unseren Veranstaltungen. </q-card-section>
         <q-card-section class="text-primary text-h6">Unsere Treffpunkte und Veranstaltungen</q-card-section>
         <q-card-section>
           Unser Trainings- und Veranstaltungsbetrieb läuft über persönliche Absprachen per

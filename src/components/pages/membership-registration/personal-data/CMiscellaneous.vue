@@ -11,12 +11,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <c-date-picker
-          v-model="modelValue.entryDate"
-          label="Eintritt (Datum)"
-          :max="date.addToDate(new Date(), { month: 1 })"
-          :min="date.buildDate({ year: 1972, month: 10, date: 30 })"
-        />
+        <c-date-picker v-model="modelValue.entryDate" label="Eintritt (Datum)" :max="date.addToDate(new Date(), { month: 1 })" :min="date.buildDate({ year: 1972, month: 10, date: 30 })" />
       </div>
       <div class="col-1" />
       <div class="col">
