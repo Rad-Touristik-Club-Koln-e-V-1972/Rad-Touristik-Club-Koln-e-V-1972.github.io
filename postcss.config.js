@@ -1,21 +1,11 @@
-/* eslint-disable */
 // https://github.com/michael-ciniawsky/postcss-load-config
+// TODO rename to postcss.config.js with vite v6
+import autoprefixer from 'autoprefixer'
 
-module.exports = {
+export default {
   plugins: [
     // https://github.com/postcss/autoprefixer
-    require('autoprefixer')({
-      overrideBrowserslist: [
-        'last 4 Chrome versions',
-        'last 4 Firefox versions',
-        'last 4 Edge versions',
-        'last 4 Safari versions',
-        'last 4 Android versions',
-        'last 4 ChromeAndroid versions',
-        'last 4 FirefoxAndroid versions',
-        'last 4 iOS versions',
-      ],
-    }),
+    autoprefixer,
 
     // https://github.com/elchininet/postcss-rtlcss
     // If you want to support RTL css, then
