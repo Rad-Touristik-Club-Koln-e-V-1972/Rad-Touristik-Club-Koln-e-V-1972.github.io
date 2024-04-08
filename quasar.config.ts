@@ -70,7 +70,9 @@ export default configure((/*ctx*/) => ({
         'vite-plugin-checker',
         {
           eslint: {
-            lintCommand: 'eslint "./**/*.{cjs,js,mjs,ts,vue}"',
+            lintCommand: 'eslint',
+            // TODO Remove with ESLint 9
+            useFlatConfig: true,
           },
           vueTsc: {
             tsconfigPath: 'tsconfig.vue-tsc.json',
