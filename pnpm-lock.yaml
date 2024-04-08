@@ -29,8 +29,8 @@ dependencies:
     specifier: 1.10.60
     version: 1.10.60
   maz-ui:
-    specifier: 3.37.5
-    version: 3.37.5(libphonenumber-js@1.10.60)(typescript@5.4.4)(vue-router@4.3.0)(vue@3.4.21)
+    specifier: 3.37.6
+    version: 3.37.6(libphonenumber-js@1.10.60)(typescript@5.4.4)(vue-router@4.3.0)(vue@3.4.21)
   mime:
     specifier: 4.0.1
     version: 4.0.1
@@ -631,8 +631,8 @@ packages:
       call-bind: 1.0.7
     dev: true
 
-  /@mazui/cli@3.37.5(typescript@5.4.4):
-    resolution: {integrity: sha512-fQNYQv8TXqzD48x/U57hvcOr/4ituZ9AZ4B10Ol3iUg560VVExovREatUBC+gc40X/6bLtM3h6nnaw9UjrHpaw==}
+  /@mazui/cli@3.37.6(typescript@5.4.4):
+    resolution: {integrity: sha512-jK1Ec8oawMVeCoTdqRwgAfCcG6LZzhbYVw5soi/BfXFVGLE2ppI66tLThFkBEqczyl6X4jBnLojHvYZiuUZsPw==}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.7.0
@@ -3398,8 +3398,8 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /maz-ui@3.37.5(libphonenumber-js@1.10.60)(typescript@5.4.4)(vue-router@4.3.0)(vue@3.4.21):
-    resolution: {integrity: sha512-E6ZvqvjbofzXuIp9Z6blKM36sAJxcLNJrG9aAER1S9vmAp8/LixdATcKNQDmss7zQ3qtU6fENxcr5UMDgtueHw==}
+  /maz-ui@3.37.6(libphonenumber-js@1.10.60)(typescript@5.4.4)(vue-router@4.3.0)(vue@3.4.21):
+    resolution: {integrity: sha512-2HKgOdbzW2/FWBGzWLj9v85piRKIaxBUPW3CCgIvHaoZBRfXnnnda4RGZe/ZElvmSqgQepmRYhvcJFOgw+pyww==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     hasBin: true
     peerDependencies:
@@ -3433,7 +3433,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@mazui/cli': 3.37.5(typescript@5.4.4)
+      '@mazui/cli': 3.37.6(typescript@5.4.4)
       libphonenumber-js: 1.10.60
       vue: 3.4.21(typescript@5.4.4)
       vue-router: 4.3.0(vue@3.4.21)
