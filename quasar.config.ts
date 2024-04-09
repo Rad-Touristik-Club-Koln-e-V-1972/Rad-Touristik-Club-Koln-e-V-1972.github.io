@@ -147,7 +147,7 @@ export default configure((/*ctx*/) => ({
     // 'ionicons-v4',
     // 'line-awesome',
     // 'material-icons', // optional, you are not bound to it
-    'mdi-v7',
+    // 'mdi-v7',
     // 'roboto-font', // optional, you are not bound to it
     // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
     // 'themify',
@@ -168,7 +168,7 @@ export default configure((/*ctx*/) => ({
     // components: [],
     // directives: [],
 
-    iconSet: 'mdi-v7', // Quasar icon set
+    iconSet: 'svg-mdi-v7', // Quasar icon set
     lang: 'de', // Quasar language pack
 
     // Quasar plugins
