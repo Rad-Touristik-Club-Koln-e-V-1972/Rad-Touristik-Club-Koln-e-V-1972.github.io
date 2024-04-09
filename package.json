@@ -62,8 +62,10 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{cjs,js,mjs,ts,vue}": "eslint --fix",
-    "*.**": "prettier --ignore-unknown --write"
+    "*.**": [
+      "eslint --fix",
+      "prettier --ignore-unknown --write"
+    ]
   },
   "browserslist": [
     "defaults"
