@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { colors, date } from 'quasar'
+import { colors, date, openURL } from 'quasar'
 import { AcroFormCheckBox, jsPDF } from 'jspdf'
 import 'src/assets/fonts/Bahnschrift-Regular-normal.js'
 import MembershipRegistration from 'src/models/entities/MembershipRegistration'
@@ -684,7 +684,7 @@ const getPDFGenerator = () => {
 const submit = async () => {
   await download()
 
-  window.open(
+  openURL(
     'mailto:vorstand@rtc-koeln.de?subject=Antrag%20auf%20Mitgliedschaft' +
       '&body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20eine%20Mitgliedschaft%20in%20eurem%20Verein%20beantragen.' +
       '%0D%0AAnbei%20mein%20ausgef%C3%BClltes%20Formular.',

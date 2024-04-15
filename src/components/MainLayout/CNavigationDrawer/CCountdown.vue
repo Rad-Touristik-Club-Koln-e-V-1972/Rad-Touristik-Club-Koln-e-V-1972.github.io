@@ -44,16 +44,16 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, onUnmounted, ref } from 'vue'
-import { date } from 'quasar'
+import { onMounted, ref } from 'vue'
+import { date, useInterval } from 'quasar'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
 import Event from 'src/models/entities/events/calendar/Event'
 import useCalendarStore from 'stores/events/Calendar'
-import useDateTime from 'src/utils/DateTime'
 
 const event = ref()
 
-const dateTime = useDateTime()
+const intervall = useInterval()
+
 const calendarStore = useCalendarStore()
 
 const _millisecondsSecond = 1000
@@ -68,10 +68,8 @@ const minutes = ref(0)
 const nextEvents = calendarStore.nextEvents
 const daysOfMonth = nextEvents.length ? date.daysInMonth(nextEvents[0].start) : 30
 
-let interval: number
-
 const calcCountdown = (nextEvent: Event) => {
-  const milliseconds = Math.abs(dateTime.today.value.getTime() - nextEvent.start.getTime())
+  const milliseconds = Math.abs(Date.now() - nextEvent.start.getTime())
 
   days.value = Math.floor(milliseconds / _millisecondsDay)
   hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)
@@ -82,14 +80,10 @@ const getPercentage = (max: number, value: number) => Math.round((100 / max) * v
 onMounted(() => {
   if (nextEvents.length) {
     calcCountdown(nextEvents[0])
-    interval = window.setInterval(() => {
+    intervall.registerInterval(() => {
       calcCountdown(nextEvents[0])
     }, 60000)
   }
-})
-
-onUnmounted(() => {
-  clearInterval(interval)
 })
 
 const getPercentageDays = (value: number) => getPercentage(daysOfMonth, value)
