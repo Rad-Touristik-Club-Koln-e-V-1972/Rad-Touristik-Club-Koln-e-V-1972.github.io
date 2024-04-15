@@ -1,16 +1,18 @@
 <template>
-  <q-btn aria-label="Behindertenhilfe" flat dense round :icon="mdiWheelchair" @click="dialog = true" />
-  <q-dialog v-model="dialog" persistent>
-    <q-card>
-      <q-card-section class="bg-primary text-accent text-h6">Barrierefreiheit</q-card-section>
-      <q-card-section>
-        <q-toggle v-model="legasthenie" style="font-family: OpenDyslexic, sans-serif" label="Legasthenie" @click="switchFont()" />
-      </q-card-section>
-      <q-card-actions align="right">
-        <q-btn v-close-popup color="primary" label="Schließen" />
-      </q-card-actions>
-    </q-card>
-  </q-dialog>
+  <div>
+    <q-btn aria-label="Behindertenhilfe" flat dense round :icon="mdiWheelchair" @click="dialog = true" />
+    <q-dialog v-model="dialog" persistent>
+      <q-card>
+        <q-card-section class="bg-primary text-accent text-h6">Barrierefreiheit</q-card-section>
+        <q-card-section>
+          <q-toggle v-model="legasthenie" style="font-family: OpenDyslexic, sans-serif" label="Legasthenie" @click="switchFont()" />
+        </q-card-section>
+        <q-card-actions align="right">
+          <q-btn v-close-popup color="primary" label="Schließen" />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+  </div>
 </template>
 
 <script lang="ts" setup>

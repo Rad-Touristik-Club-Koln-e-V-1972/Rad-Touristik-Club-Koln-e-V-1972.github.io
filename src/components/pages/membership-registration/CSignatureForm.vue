@@ -1,10 +1,12 @@
 <template>
-  <div class="row">
-    <canvas :id="id" height="100" style="background-color: #d3d3d3" width="467" />
-    <q-btn color="primary" flat :icon-right="mdiPenRemove" size="xl" square @click="signaturePad.clear()" />
+  <div>
+    <div class="row">
+      <canvas :id="id" height="100" style="background-color: #d3d3d3" width="467" />
+      <q-btn color="primary" flat :icon-right="mdiPenRemove" size="xl" square @click="signaturePad.clear()" />
+    </div>
+    <br />
+    <small>{{ props.label }}</small>
   </div>
-  <br />
-  <small>{{ props.label }}</small>
 </template>
 
 <script lang="ts" setup>

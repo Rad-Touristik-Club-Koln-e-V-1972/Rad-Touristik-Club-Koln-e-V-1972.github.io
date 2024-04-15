@@ -1,44 +1,46 @@
 <template>
-  <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="event.showEvent(nextEvents[0])">
-    <div class="justify-center row">
-      <div class="col-auto">
-        <q-circular-progress class="q-ma-md" color="primary" rounded size="60px" show-value :thickness="0.2" track-color="transparent" :value="getPercentageDays(days)">
-          {{ days }}
-          <br />
-          Tage
-        </q-circular-progress>
-      </div>
-      <div class="col-auto">
-        <q-circular-progress class="q-ma-md" color="primary-darkened" reverse rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageHours(hours)">
-          {{ hours }}
-          <br />
-          Std
-        </q-circular-progress>
-      </div>
-      <div class="col-auto">
-        <q-circular-progress class="q-ma-md" color="primary-darkened" rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageMinutes(minutes)">
-          {{ minutes }}
-          <br />
-          Min
-        </q-circular-progress>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-auto offset-1">Zuerst:</div>
-    </div>
-    <div class="row">
-      <div class="col text-bold">{{ nextEvents[0].name }}</div>
-    </div>
-    <div v-if="nextEvents[1]">
-      <div class="row">
-        <div class="col-auto offset-1">Danach:</div>
+  <div>
+    <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="event.showEvent(nextEvents[0])">
+      <div class="justify-center row">
+        <div class="col-auto">
+          <q-circular-progress class="q-ma-md" color="primary" rounded size="60px" show-value :thickness="0.2" track-color="transparent" :value="getPercentageDays(days)">
+            {{ days }}
+            <br />
+            Tage
+          </q-circular-progress>
+        </div>
+        <div class="col-auto">
+          <q-circular-progress class="q-ma-md" color="primary-darkened" reverse rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageHours(hours)">
+            {{ hours }}
+            <br />
+            Std
+          </q-circular-progress>
+        </div>
+        <div class="col-auto">
+          <q-circular-progress class="q-ma-md" color="primary-darkened" rounded show-value size="60px" :thickness="0.2" track-color="transparent" :value="getPercentageMinutes(minutes)">
+            {{ minutes }}
+            <br />
+            Min
+          </q-circular-progress>
+        </div>
       </div>
       <div class="row">
-        <div class="col text-bold">{{ nextEvents[1].name }}</div>
+        <div class="col-auto offset-1">Zuerst:</div>
       </div>
-    </div>
-  </q-card>
-  <d-event ref="event" />
+      <div class="row">
+        <div class="col text-bold">{{ nextEvents[0].name }}</div>
+      </div>
+      <div v-if="nextEvents[1]">
+        <div class="row">
+          <div class="col-auto offset-1">Danach:</div>
+        </div>
+        <div class="row">
+          <div class="col text-bold">{{ nextEvents[1].name }}</div>
+        </div>
+      </div>
+    </q-card>
+    <d-event ref="event" />
+  </div>
 </template>
 
 <script lang="ts" setup>

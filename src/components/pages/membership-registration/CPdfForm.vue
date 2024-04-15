@@ -1,22 +1,24 @@
 <template>
-  <q-btn color="primary" label="Fertigstellen" @click="dialog = true" />
-  <q-dialog v-model="dialog">
-    <q-card>
-      <q-card-section class="text-accent text-h6">Möchtest du den Antrag ausdrucken oder per E-Mail an uns senden?</q-card-section>
-      <q-card-section>
-        Bitte achte beim E-Mail-Versand darauf den Antrag beizufügen.
-        <br />
-        Dieser sollte in deinem "Downloads" Ordner sein.
-      </q-card-section>
-      <q-card-actions align="between">
-        <q-btn color="primary" label="Download" :loading="isLoading" @click="download" />
-        <q-btn color="primary" label="Abschicken" :loading="isLoading" @click="submit" />
-      </q-card-actions>
-      <q-inner-loading :showing="isLoading">
-        <q-spinner-gears size="50px" color="primary" />
-      </q-inner-loading>
-    </q-card>
-  </q-dialog>
+  <div>
+    <q-btn color="primary" label="Fertigstellen" @click="dialog = true" />
+    <q-dialog v-model="dialog">
+      <q-card>
+        <q-card-section class="text-accent text-h6">Möchtest du den Antrag ausdrucken oder per E-Mail an uns senden?</q-card-section>
+        <q-card-section>
+          Bitte achte beim E-Mail-Versand darauf den Antrag beizufügen.
+          <br />
+          Dieser sollte in deinem "Downloads" Ordner sein.
+        </q-card-section>
+        <q-card-actions align="between">
+          <q-btn color="primary" label="Download" :loading="isLoading" @click="download" />
+          <q-btn color="primary" label="Abschicken" :loading="isLoading" @click="submit" />
+        </q-card-actions>
+        <q-inner-loading :showing="isLoading">
+          <q-spinner-gears size="50px" color="primary" />
+        </q-inner-loading>
+      </q-card>
+    </q-dialog>
+  </div>
 </template>
 
 <script lang="ts" setup>

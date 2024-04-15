@@ -18,6 +18,7 @@
     </q-card-section>
   </q-card>
 </template>
+
 <script lang="ts" setup>
 import Track from 'src/models/entities/events/tours/events/Track'
 

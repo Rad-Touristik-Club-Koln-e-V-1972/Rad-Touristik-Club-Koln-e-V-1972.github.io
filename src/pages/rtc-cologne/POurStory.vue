@@ -48,6 +48,7 @@
     </q-card-section>
   </q-card>
 </template>
+
 <script lang="ts" setup>
 import { ref } from 'vue'
 import CSlideshow from 'components/pages/CSlideshow.vue'
