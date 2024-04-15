@@ -172,7 +172,7 @@ export default configure((/*ctx*/) => ({
     lang: 'de', // Quasar language pack
 
     // Quasar plugins
-    plugins: ['Loading'],
+    plugins: [],
   },
 
   // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
