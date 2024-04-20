@@ -33,7 +33,7 @@ importers:
         version: 1.10.60
       maz-ui:
         specifier: ^3.40.0
-        version: 3.40.3(libphonenumber-js@1.10.60)(typescript@5.4.5)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5))
+        version: 3.40.4(libphonenumber-js@1.10.60)(typescript@5.4.5)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5))
       mime:
         specifier: ^4.0.1
         version: 4.0.1
@@ -440,8 +440,8 @@ packages:
     resolution: {integrity: sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ==}
     engines: {node: '>= 0.4'}
 
-  '@mazui/cli@3.40.3':
-    resolution: {integrity: sha512-IM+1m8NtSPMz11f3Su++YfvGQYzM3tjCGdasElV1/fn68O/dzc6O/N0GiMunrounMp5HGNqdPmXbNMIg6M7Qwg==}
+  '@mazui/cli@3.40.4':
+    resolution: {integrity: sha512-yUdJi/+Tb5Vtt3s64JtEpH8LgqW3vpgRdnuyFn0fZKyuuLxvOM8lGIo1hh8cdcSus/uXbOB5Y2dgovR6+Txuog==}
     hasBin: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2037,8 +2037,8 @@ packages:
   make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
 
-  maz-ui@3.40.3:
-    resolution: {integrity: sha512-e42nppy+xDAbPFCGOXkxLH5wH/hGQDtykJLDetnmN8CcURu4KclS7KBD3+SiayGwoxCLLunfrfXinmEqP8bVSQ==}
+  maz-ui@3.40.4:
+    resolution: {integrity: sha512-GZHrvNdZgEcUsD6J0mS2CLBxDZskKPJjMNsIwNG0MkUkaNpVf5SI/s6ZkrDG5olRJqzQepeaVr3BHoTik7qtLg==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     hasBin: true
     peerDependencies:
@@ -3350,7 +3350,7 @@ snapshots:
     dependencies:
       call-bind: 1.0.7
 
-  '@mazui/cli@3.40.3(typescript@5.4.5)':
+  '@mazui/cli@3.40.4(typescript@5.4.5)':
     dependencies:
       '@clack/prompts': 0.7.0
       clear: 0.1.0
@@ -5097,9 +5097,9 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  maz-ui@3.40.3(libphonenumber-js@1.10.60)(typescript@5.4.5)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5)):
+  maz-ui@3.40.4(libphonenumber-js@1.10.60)(typescript@5.4.5)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5)):
     dependencies:
-      '@mazui/cli': 3.40.3(typescript@5.4.5)
+      '@mazui/cli': 3.40.4(typescript@5.4.5)
       eslint: 8.57.0
       vue: 3.4.23(typescript@5.4.5)
     optionalDependencies:
