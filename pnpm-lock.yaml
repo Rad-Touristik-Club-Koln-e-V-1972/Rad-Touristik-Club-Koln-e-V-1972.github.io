@@ -66,8 +66,8 @@ importers:
         specifier: 9.1.1
         version: 9.1.1
       '@quasar/app-vite':
-        specifier: 2.0.0-beta.10
-        version: 2.0.0-beta.10(@types/node@20.12.7)(eslint@9.1.1)(pinia@2.1.7(typescript@5.4.5)(vue@3.4.25(typescript@5.4.5)))(quasar@2.15.4)(rollup@4.13.2)(terser@5.30.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5))
+        specifier: 2.0.0-beta.11
+        version: 2.0.0-beta.11(@types/node@20.12.7)(eslint@9.1.1)(pinia@2.1.7(typescript@5.4.5)(vue@3.4.25(typescript@5.4.5)))(quasar@2.15.4)(rollup@4.13.2)(terser@5.30.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -482,8 +482,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@quasar/app-vite@2.0.0-beta.10':
-    resolution: {integrity: sha512-sAsEeJ6yyrpVHLfgO3RXO4+HdbBcCwIYVgcOmJQ+r9Un4PoBcePeYQqRFMjERURlisk3xls7olIKkgzeCoIFwQ==}
+  '@quasar/app-vite@2.0.0-beta.11':
+    resolution: {integrity: sha512-tRVw9yqGEP56AFTuGuKkicaaNL3qkIaKgM9A8U1teUfUUBtWD9Mfeish4+2Sjsn9y+D/prvl8yeryxKkLKobBA==}
     engines: {node: ^30 || ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
@@ -3428,7 +3428,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.10(@types/node@20.12.7)(eslint@9.1.1)(pinia@2.1.7(typescript@5.4.5)(vue@3.4.25(typescript@5.4.5)))(quasar@2.15.4)(rollup@4.13.2)(terser@5.30.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5))':
+  '@quasar/app-vite@2.0.0-beta.11(@types/node@20.12.7)(eslint@9.1.1)(pinia@2.1.7(typescript@5.4.5)(vue@3.4.25(typescript@5.4.5)))(quasar@2.15.4)(rollup@4.13.2)(terser@5.30.4)(vue-router@4.3.2(vue@3.4.25(typescript@5.4.5)))(vue@3.4.25(typescript@5.4.5))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
