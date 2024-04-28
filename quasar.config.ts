@@ -4,24 +4,20 @@
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
 import { configure } from 'quasar/wrappers'
-//import type { RouteRecordRaw } from 'vue-router'
-//import routes from 'src/router/routes'
+import type { RouteRecordRaw } from 'vue-router'
+import routes from 'src/router/routes'
 
-// TODO Disabled until issue with app-vite v2 got fixed. See https://github.com/quasarframework/quasar/issues/17075
-// TODO Workaround until a better solution for generating the sitemap is found.
 const generateRootRoute = () => {
-  //const mainRoutes = routes.at(0)
-  const ret: string[] = []
+  const mainRoutes = routes.at(0)
+  let ret: string[] = []
 
   // Avoid "//" at the beginning of the path if the root is "/".
-  //if (mainRoutes?.children) ret = generateRoutesHelper(mainRoutes.path === '/' ? '#' : `${mainRoutes.path}#`, mainRoutes.children)
+  if (mainRoutes?.children) ret = generateRoutesHelper(mainRoutes.path === '/' ? '#' : `${mainRoutes.path}#`, mainRoutes.children)
 
   return ret
 }
 
-// TODO Disabled until issue with app-vite v2 got fixed. See https://github.com/quasarframework/quasar/issues/17075
-// TODO Workaround until a better solution for generating the sitemap is found.
-/*const generateRoutesHelper = (rootPath: string, children: RouteRecordRaw[]) => {
+const generateRoutesHelper = (rootPath: string, children: RouteRecordRaw[]) => {
   const ret: string[] = []
 
   children.forEach((child) => {
@@ -30,7 +26,7 @@ const generateRootRoute = () => {
   })
 
   return ret
-}*/
+}
 
 export default configure((/*ctx*/) => ({
   // animations: 'all', // --- includes all animations
