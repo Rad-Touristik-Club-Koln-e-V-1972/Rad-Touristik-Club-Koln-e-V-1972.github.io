@@ -1,16 +1,16 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
-import FeeBuilder from 'src/models/builder/events/tours/events/FeeBuilder'
-import TimeBuilder from 'src/models/builder/events/tours/events/TimeBuilder'
-import TrackBuilder from 'src/models/builder/events/tours/events/TrackBuilder'
 import EventBuilder from 'src/models/builder/events/tours/EventBuilder'
+import FeeBuilder from 'src/models/builder/events/tours/FeeBuilder'
 import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
+import TimeBuilder from 'src/models/builder/events/tours/TimeBuilder'
+import TrackBuilder from 'src/models/builder/events/tours/TrackBuilder'
+import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import Event from 'src/models/entities/events/tours/Event'
 import Permanent from 'src/models/entities/events/tours/Permanent'
 import EEvent from 'src/models/enums/EEvent'
-import EProfile from 'src/models/enums/events/tours/EProfile'
+import EProfile from 'src/models/enums/events/EProfile'
 
 export default defineStore('tour', () => {
   const events = ref<Event[]>([
@@ -26,7 +26,7 @@ export default defineStore('tour', () => {
         new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
       )
       .setId('2048a7f0-315a-43d7-885a-23f388601052')
-      .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/events/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
+      .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
       .setLastChange('2024-02-27')
       .setLocation(
         new ControlBuilder()
@@ -137,14 +137,14 @@ Vom Start weg fahren wir durch eine Spielstraße, die sich leider nicht sinnvoll
 Hier bitten wir die FahrerInnen um besondere Rücksichtnahme.
 Zum Einrollen geht es zunächst flach durch die Felder und den südlichsten Stadtteil von Köln, Porz-Libur.
 <figure>
-    <img alt="Start an der Schule in Zündorf" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Start_Ziel.jpg.avif' style='width: 100%' />
+    <img alt="Start an der Schule in Zündorf" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Start_Ziel.jpg.avif' style='width: 100%' />
     <figcaption>Start an der Schule in Zündorf</figcaption>
 </figure>
 In Troisdorf-Spich kommen dann auf dem Mauspfad die ersten Hügel.
 Nachdem in Lohmar wieder Rollen angesagt ist, geht es dann das Jabachtal hinauf.
 Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
 <figure>
-    <img alt="Kontrolle 1 - Pohlhausen" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/K1_Pohlhausen.jpg.avif' style='width: 100%' />
+    <img alt="Kontrolle 1 - Pohlhausen" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/K1_Pohlhausen.jpg.avif' style='width: 100%' />
     <figcaption>Kontrolle 1 - Pohlhausen</figcaption>
 </figure>`,
           )
@@ -159,7 +159,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
           .setText('Text in Bearbeitung')
           .setTime('10:00', '12:00')
           .setUrls({
-            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
             'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
           })
           .buildTrack(),
@@ -178,7 +178,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
           )
           .setTime('07:30', '11:00')
           .setUrls({
-            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
             'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
           })
           .buildTrack(),
@@ -196,13 +196,13 @@ An diesem Anstieg wartet eine RTC-Fotografin auf Euch, also bitte immer schön l
 Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
 Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 52er.
 <figure>
-    <img alt="Von Much nach Hetzenholz" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Much_Hetzenholz.jpg.avif' style='width: 100%' />
+    <img alt="Von Much nach Hetzenholz" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Much_Hetzenholz.jpg.avif' style='width: 100%' />
     <figcaption>Von Much nach Hetzenholz</figcaption>
 </figure>
 Von Much geht es durch wenig befahrene ländliche Straßen über Hetzenholz, Nackhausen und Seelscheid nach Ingersauel, wo die nächste Herausforderung wartet:
 der Anstieg zu unserer Kontrolle auf dem Betriebshof von Fullwood Wohnblockhaus in Oberstehöhe.
 <figure>
-    <img alt="Betriebshof Fullwood" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Betriebshof_Fullwood.jpg.avif' style='width: 100%' />
+    <img alt="Betriebshof Fullwood" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Betriebshof_Fullwood.jpg.avif' style='width: 100%' />
     <figcaption>Betriebshof Fullwood</figcaption>
 </figure>
 Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Aggertal erreicht wird.
@@ -215,7 +215,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
           )
           .setTime('07:30', '11:00')
           .setUrls({
-            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
             'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
           })
           .buildTrack(),
@@ -232,13 +232,13 @@ In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
 Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
 <figure>
-    <img alt="Wahnbachtal" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/Wahnbachtal.jpg.avif' style='width: 100%' />
+    <img alt="Wahnbachtal" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Wahnbachtal.jpg.avif' style='width: 100%' />
     <figcaption>Wahnbachtal</figcaption>
 </figure>
 Bis zur Abfahrt zur nächsten Kontrolle in Bourauel kann man sich den Hügel auf nur leicht welliger Strecke aus den Beinen fahren.
 Leider finden sich in dieser Abfahrt einige Straßenschäden, sodass besondere Vorsicht geboten ist.
 <figure>
-    <img alt="Kontrolle 2 - Eitdorf-Bourauel" src='https://content.rtc-koeln.de/pages/events/tours/events/rtfs/K2_Eitdorf_Bourauel.jpg.avif' style='width: 100%' />
+    <img alt="Kontrolle 2 - Eitdorf-Bourauel" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/K2_Eitdorf_Bourauel.jpg.avif' style='width: 100%' />
     <figcaption>Kontrolle 2 - Eitdorf-Bourauel</figcaption>
 </figure>
 Von der Kontrollstelle auf dem Dorfplatz in Bourauel geht es das Siegtal hinauf.
@@ -254,7 +254,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
           )
           .setTime('07:30', '10:00')
           .setUrls({
-            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
             'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
           })
           .buildTrack(),
@@ -279,7 +279,7 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
           )
           .setTime('07:30', '08:30')
           .setUrls({
-            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/events/rtfs/'),
+            'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
             'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
           })
           .buildTrack(),

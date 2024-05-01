@@ -23,5 +23,5 @@
 
 <script lang="ts" setup>
 import CMasonryWall from 'components/pages/CMasonryWall.vue'
-import useSuggestionStore from 'stores/events/tours/events/rtfs/Suggestion'
+import useSuggestionStore from 'stores/events/tours/Suggestion'
 </script>

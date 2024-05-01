@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import SuggestionBuilder from 'src/models/builder/events/tours/events/SuggestionBuilder'
-import Suggestion from 'src/models/entities/events/tours/events/Suggestion'
+import SuggestionBuilder from 'src/models/builder/events/tours/SuggestionBuilder'
+import Suggestion from 'src/models/entities/events/tours/Suggestion'
 
 export default defineStore('suggestion', () => {
   return {

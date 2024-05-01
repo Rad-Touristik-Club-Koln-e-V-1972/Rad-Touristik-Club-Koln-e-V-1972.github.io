@@ -1,5 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import Suggestion from 'src/models/entities/events/tours/events/Suggestion'
+import Suggestion from 'src/models/entities/events/tours/Suggestion'
 
 export default class SuggestionBuilder extends ABuilder {
   private suggestion = new Suggestion()

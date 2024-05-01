@@ -1,5 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import Fee from 'src/models/entities/events/tours/events/Fee'
+import Fee from 'src/models/entities/events/tours/Fee'
 import EEvent from 'src/models/enums/EEvent'
 
 export default class FeeBuilder extends ABuilder {

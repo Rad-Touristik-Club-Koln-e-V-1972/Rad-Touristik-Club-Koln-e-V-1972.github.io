@@ -1,5 +1,5 @@
 import AEntity from 'src/models/entities/AEntity'
-import EProfile from 'src/models/enums/events/tours/EProfile'
+import EProfile from 'src/models/enums/events/EProfile'
 
 export default class Track extends AEntity {
   controls!: number

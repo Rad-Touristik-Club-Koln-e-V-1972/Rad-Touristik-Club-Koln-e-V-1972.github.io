@@ -31,13 +31,13 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { mdiBike, mdiCurrencyEur, mdiGoKartTrack, mdiInformation } from '@quasar/extras/mdi-v7'
-import CGeneral from 'components/pages/events/tours/events/rtfs/CGeneral.vue'
-import CInfo from 'components/pages/events/tours/events/rtfs/CInfo.vue'
-import CRegistration from 'components/pages/events/tours/events/rtfs/CRegistration.vue'
-import CTracks from 'components/pages/events/tours/events/rtfs/CTracks.vue'
-import DPopup from 'components/pages/events/tours/events/rtfs/DPopup.vue'
+import CGeneral from 'components/pages/events/tours/rtfs/CGeneral.vue'
+import CInfo from 'components/pages/events/tours/rtfs/CInfo.vue'
+import CRegistration from 'components/pages/events/tours/rtfs/CRegistration.vue'
+import CTracks from 'components/pages/events/tours/rtfs/CTracks.vue'
+import DPopup from 'components/pages/events/tours/rtfs/DPopup.vue'
 import Event from 'src/models/entities/events/tours/Event'
-import useTourStore from 'stores/events/Tour'
+import useTourStore from 'stores/events/tours/Tour'
 import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()

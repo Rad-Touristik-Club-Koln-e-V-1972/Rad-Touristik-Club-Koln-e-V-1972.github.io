@@ -1,39 +1,30 @@
 export default [
   {
     children: [
-      { path: '/', redirect: { name: 'events-tours-events-rtfs' } },
+      { path: '/', redirect: { name: 'events-tours-rtfs' } },
       { component: () => import('pages/PHome.vue'), name: 'home', path: 'home' },
       { component: () => import('pages/PImprint.vue'), name: 'imprint', path: 'imprint' },
       {
         children: [
           { component: () => import('pages/events/PCalendar.vue'), name: 'events-calendar', path: 'calendar' },
-          { component: () => import('pages/events/PTraining.vue'), name: 'events-training', path: 'training' },
           {
             children: [
-              {
-                children: [
-                  {
-                    children: [
-                      { component: () => import('pages/events/tours/events/rtfs/PIndex.vue'), name: 'events-tours-events-rtfs', path: '' },
-                      {
-                        component: () => import('pages/events/tours/events/rtfs/PSuggestions.vue'),
-                        name: 'events-tours-events-rtfs-suggestions',
-                        path: 'suggestions',
-                      },
-                    ],
-                    path: 'rtfs',
-                  },
-                ],
-                path: 'events',
-              },
               {
                 component: () => import('pages/events/tours/PPermanents.vue'),
                 name: 'events-tours-permanents',
                 path: 'permanents',
               },
+              {
+                children: [
+                  { component: () => import('pages/events/tours/rtfs/PIndex.vue'), name: 'events-tours-rtfs', path: '' },
+                  { component: () => import('pages/events/tours/rtfs/PSuggestions.vue'), name: 'events-tours-rtfs-suggestions', path: 'suggestions' },
+                ],
+                path: 'rtfs',
+              },
             ],
             path: 'tours',
           },
+          { component: () => import('pages/events/PTraining.vue'), name: 'events-training', path: 'training' },
         ],
         path: 'events',
       },

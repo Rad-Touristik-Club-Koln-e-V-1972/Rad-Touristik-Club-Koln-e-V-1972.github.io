@@ -17,5 +17,5 @@
 
 <script lang="ts" setup>
 import CPermanent from 'components/pages/events/tours/CPermanent.vue'
-import useTourStore from 'stores/events/Tour'
+import useTourStore from 'stores/events/tours/Tour'
 </script>

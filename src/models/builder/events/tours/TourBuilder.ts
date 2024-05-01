@@ -1,7 +1,7 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import PopupBuilder from 'src/models/builder/PopupBuilder'
-import Tour from 'src/models/entities/events/Tour'
 import Control from 'src/models/entities/events/tours/Control'
+import Tour from 'src/models/entities/events/tours/Tour'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import EEvent from 'src/models/enums/EEvent'
 

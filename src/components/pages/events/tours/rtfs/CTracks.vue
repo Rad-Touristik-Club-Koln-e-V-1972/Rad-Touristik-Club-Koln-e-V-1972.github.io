@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import Track from 'src/models/entities/events/tours/events/Track'
+import Track from 'src/models/entities/events/tours/Track'
 
 const props = defineProps<{ tracks: Track[] }>()
 </script>

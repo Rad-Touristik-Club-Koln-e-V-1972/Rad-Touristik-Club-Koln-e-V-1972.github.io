@@ -103,9 +103,9 @@
 
 <script lang="ts" setup>
 import Control from 'src/models/entities/events/tours/Control'
-import Fee from 'src/models/entities/events/tours/events/Fee'
-import Time from 'src/models/entities/events/tours/events/Time'
-import Track from 'src/models/entities/events/tours/events/Track'
+import Fee from 'src/models/entities/events/tours/Fee'
+import Time from 'src/models/entities/events/tours/Time'
+import Track from 'src/models/entities/events/tours/Track'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
