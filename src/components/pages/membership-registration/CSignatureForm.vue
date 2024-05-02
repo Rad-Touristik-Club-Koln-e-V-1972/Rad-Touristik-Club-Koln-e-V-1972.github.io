@@ -11,13 +11,14 @@
 
 <script lang="ts" setup>
 import { onMounted } from 'vue'
+import { uid } from 'quasar'
 import { mdiPenRemove } from '@quasar/extras/mdi-v7'
 import SignaturePad from 'signature_pad'
 
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
 const props = defineProps<{ label: string; modelValue: string }>()
 
-let id = crypto.randomUUID()
+let id = uid()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
