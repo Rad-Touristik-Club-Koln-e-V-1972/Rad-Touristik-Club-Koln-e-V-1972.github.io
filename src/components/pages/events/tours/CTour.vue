@@ -1,7 +1,7 @@
 <template>
   <q-card v-if="props.value" flat>
     <q-card-section class="bg-primary text-accent text-h6">{{ props.value.title }}</q-card-section>
-    <q-card-section class="text-subtitle1">Stand: {{ dateTime.format(props.value.lastChange) }}</q-card-section>
+    <q-card-section class="text-subtitle1">Stand: {{ useDateTime().format(props.value.lastChange) }}</q-card-section>
     <q-card-section>
       <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
         <q-tab :icon="mdiBike" label="Allgemein" name="general" />
@@ -40,8 +40,6 @@ import Event from 'src/models/entities/events/tours/Event'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ value: Event | undefined }>()
-
-const dateTime = useDateTime()
 
 const tab = ref('info')
 </script>

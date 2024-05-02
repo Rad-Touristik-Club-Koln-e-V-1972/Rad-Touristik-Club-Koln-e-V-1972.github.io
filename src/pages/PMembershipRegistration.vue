@@ -47,7 +47,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="it in fees.filter((f) => f.name)" :key="it.id">
+                      <tr v-for="it in useMembershipRegistrationStore().fees.filter((f) => f.name)" :key="it.id">
                         <td v-html="it.name" />
                         <td class="text-right text-no-wrap">{{ it.price ? `${it.price} €` : 'frei' }}</td>
                       </tr>
@@ -141,7 +141,6 @@ import SignatureBuilder from 'src/models/builder/membership-registration/Signatu
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useMembershipRegistrationStore from 'stores/MembershipRegistration'
 
-const fees = useMembershipRegistrationStore().fees
 const images = [
   new GalleryEntryBuilder()
     .setId('19478109-bff3-4116-a500-97401dedfb8b')

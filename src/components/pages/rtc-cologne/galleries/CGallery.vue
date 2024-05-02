@@ -3,7 +3,7 @@
     <q-card-section class="text-subtitle2">
       {{ props.modelValue.title }}
       <br />
-      {{ dateTime.format(props.modelValue.start, props.modelValue.end) }}
+      {{ useDateTime().format(props.modelValue.start, props.modelValue.end) }}
       <br />
       {{ props.modelValue.location }}
     </q-card-section>
@@ -24,10 +24,6 @@ import useDateTime from 'src/utils/DateTime'
 
 const props = withDefaults(defineProps<{ album?: string; modelValue: Gallery }>(), { album: undefined })
 
-const router = useRouter()
-
-const dateTime = useDateTime()
-
 const isLoading = ref(false)
 
 const open = async () => {
@@ -36,6 +32,6 @@ const open = async () => {
   let album = props.album
   if (!album) album = Object.keys(props.modelValue.images)[0]
 
-  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: album, id: props.modelValue.id } })
+  await useRouter().push({ name: 'rtc-cologne-galleries-album', params: { album: album, id: props.modelValue.id } })
 }
 </script>

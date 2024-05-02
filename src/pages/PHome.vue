@@ -25,7 +25,7 @@
                   </q-card-actions>
                 </q-card>
                 <template v-if="$q.platform.is.desktop" #subtitle>
-                  <span class="text-h6">{{ useDateTime().format(it.start, it.end, true) }}</span>
+                  <span class="text-h6">{{ dateTime.format(it.start, it.end, true) }}</span>
                   <div v-if="Object.keys(it.albumIDs).length">
                     <c-gallery v-for="gallery in galleryStore.findByIds(...Object.keys(it.albumIDs))" :key="gallery.id" :album="it.albumIDs[gallery.id]" :model-value="gallery" />
                   </div>

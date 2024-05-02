@@ -3,7 +3,7 @@
     <q-card v-if="calendarStore.nextRTF">
       <q-card-section class="bg-primary text-accent text-h6">NICHT VERPASSEN</q-card-section>
       <q-card-section>
-        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ dateTime.format(calendarStore.nextRTF.start) }}</b>
+        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}</b>
         <br />
         <br />
         <div class="text-center">Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!</div>
@@ -44,7 +44,6 @@ import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
 const calendarStore = useCalendarStore()
-const dateTime = useDateTime()
 
 const dialog = ref(!!calendarStore.nextRTF)
 </script>

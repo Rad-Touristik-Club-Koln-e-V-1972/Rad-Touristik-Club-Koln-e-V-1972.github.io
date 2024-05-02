@@ -3,7 +3,7 @@
     <q-card-section class="bg-primary text-accent text-h6">Presseberichte</q-card-section>
     <q-card-section>
       <q-timeline :layout="$q.platform.is.mobile ? 'dense' : 'loose'">
-        <q-timeline-entry v-for="(it, idx) in value" :key="it.id" :side="idx % 2 === 0 ? 'right' : 'left'" :subtitle="dateTime.format(it.date)" :title="it.title">
+        <q-timeline-entry v-for="(it, idx) in usePressReportsStore().all" :key="it.id" :side="idx % 2 === 0 ? 'right' : 'left'" :subtitle="useDateTime().format(it.date)" :title="it.title">
           <q-card style="max-width: 40em">
             <q-card-section>
               <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
@@ -26,8 +26,4 @@
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import usePressReportsStore from 'stores/rtc-cologne/PressReports'
 import useDateTime from 'src/utils/DateTime'
-
-const dateTime = useDateTime()
-
-const value = usePressReportsStore().all
 </script>

@@ -14,7 +14,7 @@
         </div>
       </div>
     </q-toolbar>
-    <q-table :columns="columns" :filter="filter" :filter-method="filterMethod" :pagination="initialPagination" :rows="events" separator="none">
+    <q-table :columns="columns" :filter="filter" :filter-method="filterMethod" :pagination="initialPagination" :rows="useCalendarStore().all" separator="none">
       <template #body="props">
         <q-tr :class="getColor(props.row) + getStyle(props.row)">
           <q-td>{{ props.row.category }}</q-td>
@@ -57,8 +57,6 @@ import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()
-
-const events = useCalendarStore().all
 
 const columns: QTableColumn<Event>[] = [
   {

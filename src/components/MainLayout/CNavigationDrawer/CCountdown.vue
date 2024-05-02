@@ -52,8 +52,6 @@ import useCalendarStore from 'stores/events/Calendar'
 
 const event = ref()
 
-const intervall = useInterval()
-
 const calendarStore = useCalendarStore()
 
 const _millisecondsSecond = 1000
@@ -80,7 +78,7 @@ const getPercentage = (max: number, value: number) => Math.round((100 / max) * v
 onMounted(() => {
   if (nextEvents.length) {
     calcCountdown(nextEvents[0])
-    intervall.registerInterval(() => {
+    useInterval().registerInterval(() => {
       calcCountdown(nextEvents[0])
     }, 60000)
   }

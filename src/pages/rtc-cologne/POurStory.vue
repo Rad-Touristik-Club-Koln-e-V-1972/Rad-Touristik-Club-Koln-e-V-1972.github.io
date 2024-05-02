@@ -8,7 +8,7 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="bilder">
-          <c-slideshow :gallery-entries="galleryEntries" height="200px" />
+          <c-slideshow :gallery-entries="StartZiel['Start & Ziel']" height="200px" />
         </q-tab-panel>
         <q-tab-panel name="videos">
           <q-video :ratio="16 / 9" src="https://www.youtube-nocookie.com/embed/bx0zAC-A-fg" />
@@ -52,9 +52,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import CSlideshow from 'components/pages/CSlideshow.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import StartZiel from 'stores/rtc-cologne/gallery/2022/05_29_RTF_50/Start_Ziel'
 
-const galleryEntries: GalleryEntry[] = StartZiel['Start & Ziel']
 const tab = ref('bilder')
 </script>

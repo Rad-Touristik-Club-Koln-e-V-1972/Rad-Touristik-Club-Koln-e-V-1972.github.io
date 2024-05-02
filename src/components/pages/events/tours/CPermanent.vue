@@ -49,7 +49,7 @@
             </tr>
             <tr>
               <td class="text-no-wrap text-right">Letzte Änderung:</td>
-              <td>{{ dateTime.format(props.modelValue.lastChange) }}</td>
+              <td>{{ useDateTime().format(props.modelValue.lastChange) }}</td>
             </tr>
           </tbody>
         </q-markup-table>
@@ -69,6 +69,4 @@ import Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ modelValue: Permanent }>()
-
-const dateTime = useDateTime()
 </script>

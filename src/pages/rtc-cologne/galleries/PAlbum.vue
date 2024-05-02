@@ -5,7 +5,7 @@
         <q-btn dense flat :icon="mdiClose" round @click="close" />
         <q-toolbar-title class="text-accent">{{ value.title }}</q-toolbar-title>
       </q-toolbar>
-      <q-card-section class="text-subtitle1">{{ dateTime.format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
+      <q-card-section class="text-subtitle1">{{ useDateTime().format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
       <q-card-section>
         <q-tabs v-show="Object.keys(value.images).length && value.youtubeVideoIds.length" v-model="tab" active-bg-color="primary" active-color="accent" indicator-color="secondary">
           <q-tab v-for="it in tabs" :key="it" :name="it" :label="it" />
@@ -32,7 +32,7 @@
             <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
                         & https://drafts.csswg.org/css-grid-3/
                         & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
-            <masonry-wall :column-width="quasar.platform.is.mobile ? 280 : 560" :gap="16" :items="value.youtubeVideoIds">
+            <masonry-wall :column-width="useQuasar().platform.is.mobile ? 280 : 560" :gap="16" :items="value.youtubeVideoIds">
               <template #default="{ item }">
                 <q-video :ratio="16 / 9" :src="`https://www.youtube-nocookie.com/embed/${item}`" />
               </template>
@@ -56,11 +56,7 @@ import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ album: string; id: string }>()
 
-const quasar = useQuasar()
-
 const router = useRouter()
-
-const dateTime = useDateTime()
 
 const value = ref<Gallery>()
 
