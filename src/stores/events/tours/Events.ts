@@ -21,7 +21,7 @@ export default [
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
     .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
-    .setLastChange('2024-02-27')
+    .setLastChange('2024-05-06')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -290,6 +290,7 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
+    .setLastChange('2024-05-06')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
