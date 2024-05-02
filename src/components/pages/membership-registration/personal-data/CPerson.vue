@@ -32,12 +32,14 @@
 
 <script lang="ts" setup>
 import { defineModel } from 'vue'
-import plzToCity from 'postleitzahlen/data/plz.full.json'
+// TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
+// @ts-expect-error TypeScriptCheckImport
+import * as germanMetadata from 'german-metadata/german-metadata'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 const modelValue = defineModel<PersonalData>({ required: true })
 
-// Needed because of the false positive eslint warning.
-// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-const updateCity = () => (modelValue.value.city = (plzToCity as Record<string, string[]>)[modelValue.value.zipCode]?.[0] ?? '')
+// TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
+// eslint-disable-next-line @typescript-eslint/no-unsafe-return,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access
+const updateCity = () => (modelValue.value.city = germanMetadata.citiesByPostalCode(modelValue.value.zipCode)?.[0]?.name ?? '')
 </script>

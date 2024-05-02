@@ -25,6 +25,9 @@ importers:
       date-holidays:
         specifier: ^3.23.11
         version: 3.23.11
+      german-metadata:
+        specifier: ^2.0.1
+        version: 2.0.1
       jspdf:
         specifier: ^2.5.1
         version: 2.5.1
@@ -40,9 +43,6 @@ importers:
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.26(typescript@5.4.5))
-      postleitzahlen:
-        specifier: ^1.0.0
-        version: 1.0.0
       quasar:
         specifier: ^2.15.2
         version: 2.15.4
@@ -1642,6 +1642,9 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
+  german-metadata@2.0.1:
+    resolution: {integrity: sha512-rRK3CMeD0YbSY0CIje5OvxQHiX9na7C0goKs/L1fen/Fp+eNU10q9zL+NsWUU0R7WbZKP+9mh7p8rHR65IDlVQ==}
+
   get-caller-file@2.0.5:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
@@ -2382,9 +2385,6 @@ packages:
   postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
-
-  postleitzahlen@1.0.0:
-    resolution: {integrity: sha512-JKP+ZNfxNOMNwJ6Kp40bZbeJGe/EYzGJiSMrMT2regrlwLofpZoV6I/T8bLaK1lf2w1tnXVN3PNRepd/Y5CD4w==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -4753,6 +4753,8 @@ snapshots:
 
   function-bind@1.1.2: {}
 
+  german-metadata@2.0.1: {}
+
   get-caller-file@2.0.5: {}
 
   get-east-asian-width@1.2.0: {}
@@ -5421,8 +5423,6 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.2.0
-
-  postleitzahlen@1.0.0: {}
 
   prelude-ls@1.2.1: {}
 
