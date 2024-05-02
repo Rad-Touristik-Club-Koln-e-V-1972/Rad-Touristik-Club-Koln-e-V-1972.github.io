@@ -58,6 +58,7 @@
                   </tr>
                 </tbody>
               </q-markup-table>
+              {{ props.feeHints }}
             </q-card-section>
           </q-card>
         </div>
@@ -108,7 +109,7 @@ import Time from 'src/models/entities/events/tours/events/Time'
 import Track from 'src/models/entities/events/tours/events/Track'
 import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
+const props = defineProps<{ feeHints?: string; fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
 
 const dateTime = useDateTime()
 </script>

@@ -9,6 +9,7 @@ export default [
           { component: () => import('pages/events/PCalendar.vue'), name: 'events-calendar', path: 'calendar' },
           {
             children: [
+              { component: () => import('pages/events/tours/PFamily.vue'), name: 'events-tours-family', path: 'family' },
               { component: () => import('pages/events/tours/PPermanents.vue'), name: 'events-tours-permanents', path: 'permanents' },
               {
                 children: [

@@ -15,6 +15,7 @@ import {
   mdiHumanCane,
   mdiHumanGreetingProximity,
   mdiHumanMaleBoard,
+  mdiHumanMaleFemaleChild,
   mdiImageMultiple,
   mdiInformationOutline,
   mdiInstagram,
@@ -40,6 +41,7 @@ export default defineStore('navigation', () => {
           new NavigationBuilder()
             .setChildren(
               new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbach-Tour').setTo('events-tours-rtfs').buildNavigation(),
+              new NavigationBuilder().setIcon(mdiHumanMaleFemaleChild).setId('55829ef0-c2ab-4e51-94fa-3a6d5c5d9dc1').setTitle('Family Tour').setTo('events-tours-family').buildNavigation(),
               new NavigationBuilder().setIcon(mdiBikeFast).setId('b53d7f6a-296d-45b6-b061-8a590bf89a20').setTitle('Training').setTo('events-training').buildNavigation(),
               new NavigationBuilder().setIcon(mdiGoKartTrack).setId('c6c800fb-7e14-4651-a7a7-e230b96ddadc').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),
             )

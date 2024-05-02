@@ -279,4 +279,132 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
         .buildTrack(),
     )
     .buildEvent(),
+  new EventBuilder()
+    .setCategory(EEvent.Familientour)
+    .setFees(
+      new FeeBuilder().setGroup('Gebühren').setId('5d862e1f-6898-4b9e-9b17-24a208f0ac65').setName('Kinder und Jugendliche bis 18 Jahre').setPrice(0).buildFee(),
+      new FeeBuilder().setGroup('Gebühren').setId('7c08c3cb-c0cb-431c-a756-12fef22957af').setName('Erwachsene').setPrice(6).buildFee(),
+      new FeeBuilder().setGroup('Fährpreise*').setId('00058a22-eaf8-4ab2-9459-744bb6dbb0f6').setName('Erwachsene').setPrice(5).buildFee(),
+      new FeeBuilder().setGroup('Fährpreise*').setId('e0bf5ea3-a4c1-4d47-ae57-ff966337aed7').setName('Kinder von 4 – 11 Jahre').setPrice(2).buildFee(),
+      new FeeBuilder().setGroup('Fährpreise*').setId('6ed05bc8-8c42-439e-bdc4-e381542f48d3').setName('Kinder von 0 – 3 Jahre').setPrice(0).buildFee(),
+      new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
+    )
+    .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
+    .setLocation(
+      new ControlBuilder()
+        .setCity('Köln-Zündorf')
+        .setId('5198e22d-0d6a-49fc-a5f4-235c6055db67')
+        .setStreet('Heerstraße 7')
+        .setTitle('Schulzentrum Zündorf')
+        .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
+        .setZipCode('51143')
+        .buildControl(),
+    )
+    .setText(
+      `Liebe Kinder, Eltern und sonstige Verwandtschaft :-),
+
+der RTC Köln freut sich, nach langer Zeit mal wieder eine Familientour anbieten zu können und lädt euch alle dazu herzlich ein.
+Die <b>Krokodil-Familientour</b> startet am 02. Juli 2024 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
+"Langschläfer" können noch bis 12:00 Uhr auf die Strecke gehen.
+Wir bieten euch eine 22 km lange Familientour links und rechts des Rheins, die weitgehend über Radwege und Nebenstraßen in den Rheinauen führt.
+Ihr habt aber auch einen Blick auf den Chemiegürtel, der Köln von Wesseling über Knappsack bis Dormagen und Leverkusen umspannt.
+Am Fähranleger Wesseling angekommen, könnt Ihr Euch für den zweiten Teil der Strecke ausruhen und mit unserer vielfältigen Verpflegung stärken.
+
+Die "Highlights" der Tour sind die beiden Fährfahrten von Zündorf nach Weiß und von Wesseling nach Lülsdorf – genau das Richtige für kleine SeeräuberInnen.`,
+    )
+    .setTimes(
+      new TimeBuilder().setId('c94e6040-6a86-49c1-ac67-a13941a84894').setName('Beginn der Veranstaltung').setTime('07:00').buildTime(),
+      new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
+      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Preisverleihung und Tombola').setTime('14:00').buildTime(),
+    )
+    .setTracks(
+      new TrackBuilder()
+        .setId('e6db748e-6b26-496b-b593-4d9377206d0d')
+        .setName('Vor der Tour')
+        .setText(
+          `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
+
+Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.`,
+        )
+        .buildTrack(),
+      new TrackBuilder()
+        .setId('8fa6354d-0607-4401-862c-e6ab93f44a27')
+        .setName('Während der Tour')
+        .setText(
+          `Auf unserer Kontrollstelle am Wesselinger Fähranleger steht für euch eine vielfältige Verpflegung zur Verfügung,
+damit ihr das Schulzentrum in Zündorf garantiert ohne Hungerast erreicht.
+
+Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
+Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.
+Wir kommen euch abholen.`,
+        )
+        .buildTrack(),
+      new TrackBuilder()
+        .setId('74855084-4ca7-45a9-a5a9-48172caf4eb5')
+        .setName('Nach der Tour')
+        .setText(
+          `Damit ihr nach so einer anstrengenden Tour wieder zu Kräften kommt,
+bieten wir neben selbstgemachten Kuchen ab mittags auch leckere warme Gerichte mit verschiedenen Salaten an.
+
+Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
+
+Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
+        )
+        .buildTrack(),
+      new TrackBuilder()
+        .setControls(1)
+        .setHeight(70)
+        .setId('71029e5d-5f30-4cf0-b2fa-abf0468d3864')
+        .setLength(22)
+        .setName('Die Strecke')
+        .setProfile(EProfile.Flach)
+        .setText(
+          `Wir starten, wie auch bei unseren großen Touren, im Schulzentrum Zündorf.
+Dort ist für euch ein besonderer Anmeldetisch eingerichtet, wo eure erwachsenen Begleiter das „Startgeld“ entrichten müssen.
+Daneben gibt es dort die Chips für die Fährfahrten.
+
+Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei, den der ein oder andere sicher schon kennt ( wenn nicht – sehr empfehlenswert!),
+in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
+Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
+
+Dafür bringt er euch nach einer wilden Seefahrt sicher an das andere Ufer.
+Weiter geht es immer am Rhein entlang in Richtung Sürth, wo ein schöner Kirchturm mit Zwiebelhaube ins Blickfeld kommt.
+Von dort fahren wir auf dem Leinpfad am Naturschutzgebiet Godorfer Hafen entlang bis zur Mauer der Theo Steil GmbH, die mit tollen Graffitis verziert ist.
+Schon in die nächste Kurve haben wir einen interessanten Blick in das Hafenbecken, wo die Shell AG ihre Raffinerieprodukte umschlägt.
+Ehe wir die alte Godorfer Mühle erreichen, queren wir am Bahnhof Godorf auf einer Fußgängerbrücke die Eisenbahnschienen.
+Hier müssen wir zu Fuß laufen, um auf den Radweg an der Industriestraße zu kommen.
+
+Die Industriestraße führt uns auf die Dachhöhe der umliegenden Bauten, sodass Ihr einen Blick in die Industrieanlagen werfen könnt.
+Und das ist gleichzeitig die einzige Steigung, die ihr auf unserer Tour bewältigen müsst.
+Von dort aus geht es hinab nach Wesseling, wo nach einer Fahrt durch die Straßen am Fähranleger die wohlverdiente Pause wartet.
+
+Hier steht für euch vielfältige Verpflegung bereit, die eure müden Beine wieder in Schwung bringt.
+Wenn ihr wieder fit seid, bringt euch der RHEINSCHWAN auf die andere Rheinseite nach Lülsdorf.
+Auch hier bezahlt ihr den Fährmann, Herrn Weisbarth, mit euren Chips.
+Nun geht es auf die Heimreise.
+Gleich zu Beginn fahrt ihr über die Einlaufschleusen des Hochwasserschutzbeckens Langeler Bogen.
+Die dahinter liegenden Felder werden bei Extremhochwasser geflutet und können fast 5 Mio. Kubikmeter Wasser aufnehmen.
+Das entspricht etwa einem Volumen von 1800 olympischen Schwimmbecken; die so entstehende Fläche umfasst ca. 210 Fußballfelder.
+Und das alles, damit Köln nicht absäuft.
+Auf der Deichkrone geht es durch den schönen Auenwald nach Langel.
+Ein kleiner Hügel am Ende des Deichs zeigt euch, dass ihr über die Auslaufschleusen gefahren seid, denn das viele Wasser muss nach Ende der Flut ja wieder zurück in den Rhein.
+Kurz darauf erreicht ihr den Langeler Weiher.
+Er ist eines der letzten Auengewässer in NRW und bietet Heimat für seltene Fischarten.
+Er wurde gerade erst vor dem Austrocknen gerettet.
+
+Auf dem Damm geht es an „d´r Tant“ und der Bootsrampe vorbei weiter in Richtung Zündorf.
+Hier können wir noch einmal einen schönen Blick auf Sürth am anderen Rheinufer werfen.
+Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit ist die Tour fast geschafft.
+Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
+
+Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
+        )
+        .setTime('10:00', '12:00')
+        .setUrls({
+          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/family/'),
+          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+        })
+        .buildTrack(),
+    )
+    .buildEvent(),
 ]
