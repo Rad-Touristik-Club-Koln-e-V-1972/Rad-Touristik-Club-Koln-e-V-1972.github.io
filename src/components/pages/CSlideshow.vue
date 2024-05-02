@@ -19,9 +19,9 @@
 import { ref } from 'vue'
 import { QCarousel } from 'quasar'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 
-const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean; modelValue?: string }>(), {
+const props = withDefaults(defineProps<{ galleryEntries: GalleryAlbumEntry[]; height?: string; infinite?: boolean; modelValue?: string }>(), {
   height: '100%',
   infinite: true,
   modelValue: undefined,

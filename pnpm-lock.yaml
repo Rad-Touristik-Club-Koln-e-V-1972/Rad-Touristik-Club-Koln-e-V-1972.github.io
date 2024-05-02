@@ -43,6 +43,9 @@ importers:
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
+      pinia-orm:
+        specifier: ^1.9.1
+        version: 1.9.1(pinia@2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)))
       quasar:
         specifier: ^2.16.1
         version: 2.16.4
@@ -457,6 +460,9 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@pinia-orm/normalizr@1.9.1':
+    resolution: {integrity: sha512-Vu5PBFBiY21gy7HwwuzAvZ/+/bb3P8I2tqH1gs77WGDFbMiVDiVNPaZs/ivDhK5ajwi3DcZONmTyI6jURPOkkg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2317,6 +2323,11 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
+  pinia-orm@1.9.1:
+    resolution: {integrity: sha512-iYUucN0zJwzufi5SqDcsu3MmwInJJZInE3ywtq4BsR5XKPTMoxi220k8EoRh7wqldCavQuK3K5Fb+E3eev811w==}
+    peerDependencies:
+      pinia: ^2.1.7
+
   pinia@2.1.7:
     resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
     peerDependencies:
@@ -3347,6 +3358,8 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@pinia-orm/normalizr@1.9.1': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -5232,6 +5245,11 @@ snapshots:
   picomatch@4.0.2: {}
 
   pidtree@0.6.0: {}
+
+  pinia-orm@1.9.1(pinia@2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))):
+    dependencies:
+      '@pinia-orm/normalizr': 1.9.1
+      pinia: 2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
 
   pinia@2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5)):
     dependencies:

@@ -1,7 +1,10 @@
-import AEntity from 'src/models/entities/AEntity'
+import { Model } from 'pinia-orm'
+import { Attr, Str } from 'pinia-orm/decorators'
 
-export default class Suggestion extends AEntity {
-  text!: string
-  title!: string
-  url!: URL
+export default class Suggestion extends Model {
+  static readonly entity = 'suggestions'
+
+  @Str('', { notNullable: true }) declare text: string
+  @Str('', { notNullable: true }) declare title: string
+  @Attr() declare url: URL
 }

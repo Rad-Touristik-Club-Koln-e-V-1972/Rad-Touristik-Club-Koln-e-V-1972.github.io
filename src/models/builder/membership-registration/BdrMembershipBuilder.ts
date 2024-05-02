@@ -1,8 +1,8 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import MembershipBdr from 'src/models/entities/membership-registration/MembershipBdr'
 
 export default class BdrMembershipBuilder extends ABuilder {
-  private bdrMembership = new BdrMembership()
+  private bdrMembership = new MembershipBdr()
 
   buildBdrMembership = () => Object.assign(this.bdrMembership, this.buildAEntity())
 

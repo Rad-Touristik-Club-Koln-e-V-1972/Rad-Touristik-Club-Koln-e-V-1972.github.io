@@ -9,9 +9,9 @@
 import { computed } from 'vue'
 import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
 import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 
-const props = withDefaults(defineProps<{ modelValue: GalleryEntry[] | GalleryEntry; startIndex?: number }>(), { startIndex: 0 })
+const props = withDefaults(defineProps<{ modelValue: GalleryAlbumEntry[] | GalleryAlbumEntry; startIndex?: number }>(), { startIndex: 0 })
 
 const isMimeTypePDF = computed(() => (Array.isArray(props.modelValue) ? props.modelValue[props.startIndex] : props.modelValue).mimeType === 'application/pdf')
 

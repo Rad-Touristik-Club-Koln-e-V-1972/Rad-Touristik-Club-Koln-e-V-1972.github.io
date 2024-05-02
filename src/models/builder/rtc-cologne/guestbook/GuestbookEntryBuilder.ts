@@ -2,8 +2,6 @@ import ABuilder from 'src/models/builder/ABuilder'
 import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import EEvent from 'src/models/enums/EEvent'
 import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
-
 export default class GuestbookEntryBuilder extends ABuilder {
   private guestbookEntry = new GuestbookEntry()
 

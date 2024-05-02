@@ -1,22 +1,22 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import MembershipRegistration from 'src/models/entities/MembershipRegistration'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import MembershipBdr from 'src/models/entities/membership-registration/MembershipBdr'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import MembershipPersonalData from 'src/models/entities/membership-registration/MembershipPersonalData'
+import MembershipSignature from 'src/models/entities/membership-registration/MembershipSignature'
 
 export default class MembershipRegistrationBuilder extends ABuilder {
   private membershipRegistration = new MembershipRegistration()
 
   buildMembershipRegistration = () => Object.assign(this.membershipRegistration, this.buildAEntity())
 
-  setBdrMembership = (value: BdrMembership): this => {
+  setBdrMembership = (value: MembershipBdr): this => {
     this.membershipRegistration.bdrMembership = value
 
     return this
   }
 
-  setConsentPrivacyPolicy = (value: Signature): this => {
+  setConsentPrivacyPolicy = (value: MembershipSignature): this => {
     this.membershipRegistration.consentPrivacyPolicy = value
 
     return this
@@ -28,13 +28,13 @@ export default class MembershipRegistrationBuilder extends ABuilder {
     return this
   }
 
-  setPersonalData = (value: PersonalData): this => {
+  setPersonalData = (value: MembershipPersonalData): this => {
     this.membershipRegistration.personalData = value
 
     return this
   }
 
-  setSignature = (value: Signature): this => {
+  setSignature = (value: MembershipSignature): this => {
     this.membershipRegistration.signature = value
 
     return this

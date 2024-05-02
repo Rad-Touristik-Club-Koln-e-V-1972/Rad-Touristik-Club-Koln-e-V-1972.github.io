@@ -105,13 +105,13 @@
 </template>
 
 <script lang="ts" setup>
-import Control from 'src/models/entities/events/tours/Control'
-import Fee from 'src/models/entities/events/tours/events/Fee'
+import Location from 'src/models/entities/events/tours/Location'
+import EventFee from 'src/models/entities/events/tours/events/EventFee'
 import Time from 'src/models/entities/events/tours/events/Time'
 import Track from 'src/models/entities/events/tours/events/Track'
 import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ feeHints?: string; fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
+const props = defineProps<{ feeHints?: string; fees: EventFee[]; location: Location; times: Time[]; tracks: Track[] }>()
 
 const dateTime = useDateTime()
 </script>

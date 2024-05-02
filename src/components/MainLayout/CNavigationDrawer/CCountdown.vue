@@ -47,7 +47,7 @@
 import { onMounted, ref } from 'vue'
 import { date, useInterval } from 'quasar'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import useCalendarStore from 'stores/events/Calendar'
 
 const event = ref()
@@ -66,7 +66,7 @@ const minutes = ref(0)
 const nextEvents = calendarStore.nextEvents
 const daysOfMonth = nextEvents.length ? date.daysInMonth(nextEvents[0].start) : 30
 
-const calcCountdown = (nextEvent: Event) => {
+const calcCountdown = (nextEvent: CalendarEvent) => {
   const milliseconds = Math.abs(Date.now() - nextEvent.start.getTime())
 
   days.value = Math.floor(milliseconds / _millisecondsDay)

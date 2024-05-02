@@ -4,7 +4,7 @@ export default [
   new BlogEntryBuilder()
     .setAlbumIDs('b30fba5c-671a-4e93-9097-85ffff6df973')
     .setDate('2024-03-16')
-    .setId('1987494b-cc43-4a7a-93ab-ddaee31c87a6')
+
     .setText(
       `Wem Shimano TL-CM42, Befestigungsbolzen oder 11/34 etwas sagt, kann sich vielleicht vorstellen, was 9 RTClerinnen und RTCler heute Nachmittag gemacht haben:
 GELERNT. ⚒️🥳
@@ -27,7 +27,7 @@ LG Diana`,
   new BlogEntryBuilder()
     .setAlbumIDs('ff8c6c3f-f246-418f-a17d-077a81c0ca82')
     .setDate('2024-03-09')
-    .setId('9080735c-8f6d-4257-b3fa-5ebed7ddb27f')
+
     .setText(
       `17 RTCler:innen kamen zum Start zu Mistral.
 Wow! Was für ein wunderschönes Bild. 😍
@@ -54,7 +54,7 @@ Eure Diana`,
   new BlogEntryBuilder()
     .setAlbumIDs('288bbe8e-aa03-492f-b206-8e6932e7c45d')
     .setDate('2024-03-01')
-    .setId('3d9915bc-63a2-45d2-a0e6-b54de977e068')
+
     .setText(
       `Der neue Vorstand vom RTC Köln e.V. (von links):
 

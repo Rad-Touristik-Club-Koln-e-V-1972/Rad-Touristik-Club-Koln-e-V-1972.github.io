@@ -1,9 +1,9 @@
 import ABuilder from 'src/models/builder/ABuilder'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
-import Event from 'src/models/entities/events/calendar/Event'
 
 export default class EventBuilder extends ABuilder {
-  private event = new Event()
+  private event = new CalendarEvent()
 
   buildEvent = () => Object.assign(this.event, this.buildAEntity())
 

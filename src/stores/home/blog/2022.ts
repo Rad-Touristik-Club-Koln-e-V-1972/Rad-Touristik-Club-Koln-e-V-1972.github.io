@@ -4,7 +4,7 @@ export default [
   new BlogEntryBuilder()
     .setAlbumIDs('32ade59b-0ba1-47f5-b20e-54d872a9e524')
     .setDate('2022-11-06')
-    .setId('c8957c03-0b01-49bc-9ec7-cf5517a0e1c7')
+
     .setText(
       `Nach der RTF-Saison hat nun das Wintertraining für den RTC Köln begonnen.
 An beiden Tagen trotzen wir - in unterschiedlichen Gruppen - den 10 Grad Celsius und fuhren samstags 90 km nach Rheinbach.
@@ -18,7 +18,7 @@ Wenn ihr mal mit dem RTC Köln mitfahren möchtet (moderates Tempo), dann schrei
   new BlogEntryBuilder()
     .setAlbumIDs('8db60fe5-0c25-4d78-b4af-d5bae1cc4bfb')
     .setDate('2022-10-29')
-    .setId('212a59b7-a3da-40dd-98e7-c26085491eb9')
+
     .setText(
       `Am 30.10. vor 50 Jahren gründeten 28 Radsportler den RTC Köln e.V. 🎉
 
@@ -38,7 +38,7 @@ Euer RTC Köln e.V. ☺️`,
   new BlogEntryBuilder()
     .setAlbumIDs({ 'cda4c7e0-a266-44e4-923d-afe6dc11deb4': 'Start & Ziel' })
     .setDate('2022-10-22')
-    .setId('9ccb4f29-bc89-4fe0-a6a9-7cee2b46e410')
+
     .setText(
       `Bei schönstem Herbstwetter nahmen gestern ca. 170 Gravel- und MTB-Fahrer:innen Waldboden, Matsch und Laub bei der 7. Wahnbachtour unter die Reifen.
 Die Zufriedenheit der Teilnehmer:innen über die Strecken und die Verpflegung sieht man in den glücklichen Gesichtern. 😃
@@ -57,7 +57,7 @@ Euer RTC Köln e.V.`,
   new BlogEntryBuilder()
     .setAlbumIDs('24a6d9c0-3d4c-4f48-8b6f-4a1ad4b338b7')
     .setDate('2022-10-08')
-    .setId('03bf5272-12f4-4b5e-8ff7-2131f21a35c7')
+
     .setText(
       `Saisonabschluss beim VfR Büttgen:
 500 RTFler:innen nutzen das eigentlich perfekte Herbstwetter, um noch einmal eine Runde mit Freunden zu drehen.
@@ -74,14 +74,14 @@ Wir kommen nächstes Jahr wieder. 😘️`,
   new BlogEntryBuilder()
     .setAlbumIDs('4a0c9096-eeae-4bee-9eca-068e616feed4')
     .setDate('2022-09-25')
-    .setId('b36dd179-6525-4877-978e-5ecdc44dfa54')
+
     .setText('Erste Herbsttour zu siebt nach Wahlscheid - Kilometer, Kalorien, Kaffee & Kuchen, 🚴‍♂️🚴🚴‍♀️🚴🚴‍♂️🚴‍♀️🚴🍰☕️')
     .setTitle('Herbsttour - Lohmar-Wahlscheid')
     .buildBlogEntry(),
   new BlogEntryBuilder()
     .setAlbumIDs('284dae72-4bf4-49fc-9ff1-a7b1263946f0')
     .setDate('2022-08-27')
-    .setId('6c9fce9d-3964-4106-be9a-4e2296051b07')
+
     .setText(
       `Gezählte 11 RTCler haben die (endlich) angenehmen Temperaturen genutzt und sind die Strecken der RTF der GEW RheinEnergie gefahren.
 
@@ -100,7 +100,7 @@ Richtig toll, lieber Jürgen. 💪🚴`,
   new BlogEntryBuilder()
     .setAlbumIDs('fb982b9c-abf8-457c-b1f4-10b360bf235d')
     .setDate('2022-08-13', '2022-08-14')
-    .setId('05b8ed74-6693-457c-ac6e-92b5c412bfeb')
+
     .setText(
       `Am Samstag richtete der Verein Bike & Ski St. Augustin und am Sonntag der Verein CITO Hennef ihre RTFs am selben Startplatz in Hennef aus.
 
@@ -117,7 +117,7 @@ Ein herzliches Dankeschön geht unsererseits an beide Vereine.
     .buildBlogEntry(),
   new BlogEntryBuilder()
     .setDate('2022-01-15')
-    .setId('79297f2d-fa6a-4b67-a0c5-d51a77c09df6')
+
     .setText(
       `Heute trafen sich fünf dick verpackte Unentwegte (Albert, Jürgen, Manni, Robert und ich) vom RTC Köln,
 um ihren während der Weihnachtszeit angesetzten überflüssigen Pfunden den Kampf anzusagen.

@@ -10,7 +10,7 @@ export default [
     .setControls(
       new ControlBuilder()
         .setCity('Lindlar')
-        .setId('e12d3e90-9192-45cb-a13c-0fe0a7cfb35c')
+
         .setStreet('Kölner Straße 23')
         .setTitle('Aral-Tankstelle')
         .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
@@ -18,7 +18,7 @@ export default [
         .buildControl(),
     )
     .setHeight(700)
-    .setId('4c0364c7-508f-4e0c-9a1a-9f703e399f13')
+
     .setLastChange('2022-01-12')
     .setLength(71)
     .setProfile(EProfile.Wellig)
@@ -72,7 +72,7 @@ Euer RTC Köln e.V. 1972`,
     .setControls(
       new ControlBuilder()
         .setCity('Kürten')
-        .setId('32851936-b351-4b4d-a71f-03e3138a8864')
+
         .setStreet('Wipperfürther Straße 360')
         .setTitle('Esso-Tankstelle')
         .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
@@ -80,7 +80,7 @@ Euer RTC Köln e.V. 1972`,
         .buildControl(),
     )
     .setHeight(700)
-    .setId('05499ece-e973-48e4-8b1c-b2c35c72ef3e')
+
     .setLastChange('2023-01-27')
     .setLength(72)
     .setProfile(EProfile.Wellig)

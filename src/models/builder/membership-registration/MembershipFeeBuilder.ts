@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import MembershipSignature from 'src/models/entities/membership-registration/MembershipSignature'
 
 export default class MembershipFeeBuilder extends ABuilder {
   private membershipFee = new MembershipFee()
@@ -37,7 +37,7 @@ export default class MembershipFeeBuilder extends ABuilder {
     return this
   }
 
-  setSignature = (value: Signature): this => {
+  setSignature = (value: MembershipSignature): this => {
     this.membershipFee.signature = value
 
     return this

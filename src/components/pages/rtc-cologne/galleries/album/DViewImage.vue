@@ -16,11 +16,11 @@ import { ref } from 'vue'
 import { mdiClose } from '@quasar/extras/mdi-v7'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import DViewImageOriginal from 'components/pages/rtc-cologne/galleries/album/DViewImageOriginal.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 
 const props = defineProps<{
-  modelValue: GalleryEntry[]
-  startValue?: GalleryEntry
+  modelValue: GalleryAlbumEntry[]
+  startValue?: GalleryAlbumEntry
 }>()
 
 const currentGalleryEntry = ref(props.startValue ?? props.modelValue[0])

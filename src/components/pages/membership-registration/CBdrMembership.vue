@@ -19,7 +19,7 @@
 <script lang="ts" setup>
 import { defineModel } from 'vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import MembershipBdr from 'src/models/entities/membership-registration/MembershipBdr'
 
-const modelValue = defineModel<BdrMembership>({ required: true })
+const modelValue = defineModel<MembershipBdr>({ required: true })
 </script>

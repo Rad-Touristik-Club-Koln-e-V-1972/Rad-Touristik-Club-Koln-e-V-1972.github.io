@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import NewsEntry from 'src/models/entities/home/NewsEntry'
+import News from 'src/models/entities/home/News'
 import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime'
@@ -8,16 +8,10 @@ import useDateTime from 'src/utils/DateTime'
 export default defineStore('news', () => {
   const dateTime = useDateTime()
 
-  const all = ref<NewsEntry[]>([
+  const all = ref<News[]>([
     new NewsEntryBuilder()
-      .setId('51f3e784-346c-43e2-ad72-715503ccf5ab')
-      .setImage(
-        new GalleryEntryBuilder()
-          .setId('2049e110-da82-49ef-b0f1-1f167bda676d')
-          .setImageUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.pdf')
-          .setPreviewUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.avif')
-          .buildGalleryEntry(),
-      )
+
+      .setImage({ imageUrl: new URL('https://content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.pdf').setPreviewUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.avif').buildGalleryEntry())
       .setText(
         `Haben wir Dein Interesse geweckt?
 Dann schreib uns einfach eine Mail:

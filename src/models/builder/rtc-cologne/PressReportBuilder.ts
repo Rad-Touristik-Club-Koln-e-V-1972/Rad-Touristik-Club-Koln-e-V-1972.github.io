@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import PressReport from 'src/models/entities/rtc-cologne/PressReport'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 
 export default class PressReportBuilder extends ABuilder {
   private pressReport = new PressReport()
@@ -13,7 +13,7 @@ export default class PressReportBuilder extends ABuilder {
     return this
   }
 
-  setImages = (...value: GalleryEntry[]): this => {
+  setImages = (...value: GalleryAlbumEntry[]): this => {
     this.pressReport.images = value
 
     return this

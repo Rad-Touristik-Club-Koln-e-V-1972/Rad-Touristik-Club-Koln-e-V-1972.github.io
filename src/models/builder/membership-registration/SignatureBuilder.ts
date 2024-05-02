@@ -1,8 +1,8 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import MembershipSignature from 'src/models/entities/membership-registration/MembershipSignature'
 
 export default class SignatureBuilder extends ABuilder {
-  private signature = new Signature()
+  private signature = new MembershipSignature()
 
   buildSignature = () => Object.assign(this.signature, this.buildAEntity())
 
