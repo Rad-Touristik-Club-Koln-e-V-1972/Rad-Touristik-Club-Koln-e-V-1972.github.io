@@ -9,11 +9,7 @@ export default [
           { component: () => import('pages/events/PCalendar.vue'), name: 'events-calendar', path: 'calendar' },
           {
             children: [
-              {
-                component: () => import('pages/events/tours/PPermanents.vue'),
-                name: 'events-tours-permanents',
-                path: 'permanents',
-              },
+              { component: () => import('pages/events/tours/PPermanents.vue'), name: 'events-tours-permanents', path: 'permanents' },
               {
                 children: [
                   { component: () => import('pages/events/tours/rtfs/PIndex.vue'), name: 'events-tours-rtfs', path: '' },

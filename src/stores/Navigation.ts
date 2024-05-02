@@ -39,14 +39,14 @@ export default defineStore('navigation', () => {
           new NavigationBuilder().setIcon(mdiCalendarClockOutline).setId('c4455a48-63ee-4e62-b140-f2686d7d71ce').setTitle('Vereinskalender').setTo('events-calendar').buildNavigation(),
           new NavigationBuilder()
             .setChildren(
-              new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbach-Tour').setTo('events-tours-events-rtfs').buildNavigation(),
+              new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbach-Tour').setTo('events-tours-rtfs').buildNavigation(),
               new NavigationBuilder().setIcon(mdiBikeFast).setId('b53d7f6a-296d-45b6-b061-8a590bf89a20').setTitle('Training').setTo('events-training').buildNavigation(),
               new NavigationBuilder().setIcon(mdiGoKartTrack).setId('c6c800fb-7e14-4651-a7a7-e230b96ddadc').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),
             )
             .setId('b88787b2-eb8f-4ffa-b328-c6c49b36ff7a')
             .setTitle('RTF, Training & Permanente')
             .buildNavigation(),
-          new NavigationBuilder().setIcon(mdiHumanMaleBoard).setId('595728ab-cb75-48c7-8d63-81d102455568').setTitle('RTF-Empfehlungen außerhalb NRWs').setTo('events-tours-events-rtfs-suggestions').buildNavigation(),
+          new NavigationBuilder().setIcon(mdiHumanMaleBoard).setId('595728ab-cb75-48c7-8d63-81d102455568').setTitle('RTF-Empfehlungen außerhalb NRWs').setTo('events-tours-rtfs-suggestions').buildNavigation(),
           new NavigationBuilder()
             .setChildren(
               new NavigationBuilder().setIcon(mdiWeb).setId('16ea8ffe-1b71-48af-ab35-2257836e2fdc').setUrl('www.radsport-events.de/termine/rennrad-events').setTitle('Empfohlene Radsport Events').buildNavigation(),

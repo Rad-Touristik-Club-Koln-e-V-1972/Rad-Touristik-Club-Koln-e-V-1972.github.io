@@ -31,7 +31,7 @@
       </q-card-section>
       <q-card-actions align="right">
         <q-btn v-close-popup color="primary" label="OK" />
-        <q-btn v-close-popup color="primary" label="Infos" :to="{ name: 'events-tours-events-rtfs' }" />
+        <q-btn v-close-popup color="primary" label="Infos" :to="{ name: 'events-tours-rtfs' }" />
       </q-card-actions>
     </q-card>
   </q-dialog>

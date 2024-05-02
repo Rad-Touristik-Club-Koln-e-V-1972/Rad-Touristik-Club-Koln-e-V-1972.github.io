@@ -1,5 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import Time from 'src/models/entities/events/tours/Time'
+import Time from 'src/models/entities/events/tours/events/Time'
 
 export default class TimeBuilder extends ABuilder {
   private time = new Time()
