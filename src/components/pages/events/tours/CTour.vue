@@ -20,7 +20,7 @@
           <c-tracks :tracks="props.value.tracks" />
         </q-tab-panel>
         <q-tab-panel name="registration">
-          <c-registration />
+          <c-registration :category="props.value?.category" />
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>
