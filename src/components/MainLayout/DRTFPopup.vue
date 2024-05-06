@@ -6,23 +6,33 @@
         Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}</b>
         <br />
         <br />
-        <div class="text-center">Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!</div>
+        <div>Es gibt 3 tolle Neuerungen:</div>
         <br />
-        <div class="text-center">Wir bieten in diesem Jahr eine geführte Tour (82 km) für Neueinsteiger an!</div>
+        ➡️ Wir bieten in diesem Jahr wieder eine 150er-Strecke an!
+        <br />
+        ➡️ Außerdem gibt es eine geführte Tour (82 km) für RTF-Neueinsteiger!
         <div class="row">
-          <div class="col-4 text-right">Tempo:</div>
           <div class="col-1" />
-          <div class="col">max. 20er Schnitt</div>
+          <div class="col-auto">Abfahrt:</div>
+          <div class="col-1" />
+          <div class="col-auto">9 Uhr</div>
         </div>
         <div class="row">
-          <div class="col-4 text-right">
-            <q-icon left :name="mdiArrowRightBottom" size="xs" />
-          </div>
           <div class="col-1" />
-          <div class="col">Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</div>
+          <div class="col-auto">Tempo:</div>
+          <div class="col-1" />
+          <div class="col-auto">max. 20er Schnitt</div>
+        </div>
+        <div class="row">
+          <div class="col-1" />
+          <div class="col-auto"><q-icon :name="mdiArrowRightBottom" size="xs" /> Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.</div>
         </div>
         <br />
-        Notiert Euch schon mal den Termin.
+        ➡️ Oder ihr nehmt unsere neue Family Tour (22 km) unter die Reifen
+        <div class="row">
+          <div class="col-1" />
+          <div class="col-auto"><q-icon :name="mdiArrowRightBottom" size="xs" />mit Fährfahrten für ein schönes Ausflugserlebnis.</div>
+        </div>
         <br />
         Wir freuen uns auf Euch!
         <br />
