@@ -21,7 +21,7 @@ export default function useDateTime() {
 
       return value
     },
-    formatTime: (start: Date, end?: Date) => (end ? timeFormatter.formatRange(start, end) : date.formatDate(start, 'H:mm')),
+    formatTime: (start: Date, end?: Date) => (end ? timeFormatter.formatRange(start, end) : `${date.formatDate(start, 'H:mm')} Uhr`),
     isBetweenDates: (d: Date, from: Date, to?: Date) => date.isBetweenDates(d, from, to ?? from, { inclusiveFrom: true, inclusiveTo: true, onlyDate: true }),
     sort: (a: Date, b: Date) => a.getTime() - b.getTime(),
     today,

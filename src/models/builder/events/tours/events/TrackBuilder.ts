@@ -49,8 +49,8 @@ export default class TrackBuilder extends ABuilder {
     return this
   }
 
-  setTime = (start: string, end: string): this => {
-    this.track.end = new Date(`1970-01-01 ${end}`)
+  setTime = (start: string, end?: string): this => {
+    if (end) this.track.end = new Date(`1970-01-01 ${end}`)
     this.track.start = new Date(`1970-01-01 ${start}`)
 
     return this

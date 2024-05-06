@@ -220,7 +220,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setLength(82)
         .setName('Die geführte 82er')
         .setProfile(EProfile.Wellig)
-        .setTime('09:00', '11:00')
+        .setTime('09:00')
         .setUrls({
           'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
           'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
