@@ -181,7 +181,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setHeight(780)
         .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
         .setLength(82)
-        .setName('Die 82er')
+        .setName('Die 82er (geführte Tour)')
         .setProfile(EProfile.Wellig)
         .setText(
           `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
