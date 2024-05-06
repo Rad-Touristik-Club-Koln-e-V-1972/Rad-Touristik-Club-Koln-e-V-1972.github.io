@@ -69,6 +69,7 @@
               <q-markup-table flat>
                 <thead>
                   <tr>
+                    <th class="text-left" scope="col">Name</th>
                     <th class="text-left" scope="col">Startzeit</th>
                     <th class="text-left" scope="col">Streckenlänge</th>
                     <th class="text-left" scope="col">Höhenmeter</th>
@@ -79,6 +80,7 @@
                 </thead>
                 <tbody>
                   <tr v-for="it in props.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'text-primary' : ''">
+                    <td>{{ it.name }}</td>
                     <td>{{ dateTime.formatTime(it.start, it.end) }}</td>
                     <td>{{ it.length }}km</td>
                     <td>{{ it.height }}</td>
