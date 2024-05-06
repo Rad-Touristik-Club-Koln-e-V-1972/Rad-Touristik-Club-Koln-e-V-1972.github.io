@@ -318,6 +318,7 @@ Die "Highlights" der Tour sind die beiden Fährfahrten von Zündorf nach Weiß u
       new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
       new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Preisverleihung und Tombola').setTime('14:00').buildTime(),
     )
+    .setTitle('Die Familientour')
     .setTracks(
       new TrackBuilder()
         .setId('e6db748e-6b26-496b-b593-4d9377206d0d')
