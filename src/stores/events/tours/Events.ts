@@ -181,7 +181,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setHeight(780)
         .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
         .setLength(82)
-        .setName('Die 82er (geführte Tour)')
+        .setName('Die 82er')
         .setProfile(EProfile.Wellig)
         .setText(
           `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
@@ -208,6 +208,19 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
         )
         .setTime('07:30', '11:00')
+        .setUrls({
+          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
+          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+        })
+        .buildTrack(),
+      new TrackBuilder()
+        .setControls(2)
+        .setHeight(780)
+        .setId('5ea56b54-1d06-41bb-bc93-3dd54452b58c')
+        .setLength(82)
+        .setName('Die geführte 82er')
+        .setProfile(EProfile.Wellig)
+        .setTime('09:00', '11:00')
         .setUrls({
           'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
           'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
