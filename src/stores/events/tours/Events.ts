@@ -305,7 +305,7 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
       `Liebe Kinder, Eltern und sonstige Verwandtschaft :-),
 
 der RTC Köln freut sich, nach langer Zeit mal wieder eine Familientour anbieten zu können und lädt euch alle dazu herzlich ein.
-Die <b>Krokodil-Familientour</b> startet am 02. Juli 2024 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
+Die <b>Krokodil-Familientour</b> startet am 02. Juni 2024 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
 "Langschläfer" können noch bis 12:00 Uhr auf die Strecke gehen.
 Wir bieten euch eine 22 km lange Familientour links und rechts des Rheins, die weitgehend über Radwege und Nebenstraßen in den Rheinauen führt.
 Ihr habt aber auch einen Blick auf den Chemiegürtel, der Köln von Wesseling über Knappsack bis Dormagen und Leverkusen umspannt.
