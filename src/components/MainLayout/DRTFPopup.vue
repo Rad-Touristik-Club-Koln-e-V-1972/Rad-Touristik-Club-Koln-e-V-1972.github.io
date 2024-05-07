@@ -39,9 +39,10 @@
         <br />
         Euer RTC Köln e.V.
       </q-card-section>
-      <q-card-actions align="right">
+      <q-card-actions align="between">
+        <q-btn v-close-popup color="primary" label="Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
         <q-btn v-close-popup color="primary" label="OK" />
-        <q-btn v-close-popup color="primary" label="Infos" :to="{ name: 'events-tours-rtfs' }" />
+        <q-btn v-close-popup color="primary" label="RTF" :to="{ name: 'events-tours-rtfs' }" />
       </q-card-actions>
     </q-card>
   </q-dialog>
