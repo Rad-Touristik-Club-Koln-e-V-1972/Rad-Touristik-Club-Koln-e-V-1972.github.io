@@ -21,7 +21,7 @@ export default [
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
     .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
-    .setLastChange('2024-05-06')
+    .setLastChange('2024-05-07')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -143,18 +143,59 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
 </figure>`,
         )
         .buildTrack(),
+
       new TrackBuilder()
         .setControls(1)
         .setHeight(70)
-        .setId('0b0df6c7-c7c9-4592-b9c9-d8fd3bece55f')
+        .setId('71029e5d-5f30-4cf0-b2fa-abf0468d3864')
         .setLength(22)
         .setName('Die 22er')
         .setProfile(EProfile.Flach)
-        .setText('Text in Bearbeitung')
+        .setText(
+          `Wir starten, wie auch bei unseren großen Touren, im Schulzentrum Zündorf.
+Dort ist für euch ein besonderer Anmeldetisch eingerichtet, wo eure erwachsenen Begleiter das „Startgeld“ entrichten müssen.
+Daneben gibt es dort die Chips für die Fährfahrten.
+
+Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei, den der ein oder andere sicher schon kennt ( wenn nicht – sehr empfehlenswert!),
+in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
+Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
+
+Dafür bringt er euch nach einer wilden Seefahrt sicher an das andere Ufer.
+Weiter geht es immer am Rhein entlang in Richtung Sürth, wo ein schöner Kirchturm mit Zwiebelhaube ins Blickfeld kommt.
+Von dort fahren wir auf dem Leinpfad am Naturschutzgebiet Godorfer Hafen entlang bis zur Mauer der Theo Steil GmbH, die mit tollen Graffitis verziert ist.
+Schon in die nächste Kurve haben wir einen interessanten Blick in das Hafenbecken, wo die Shell AG ihre Raffinerieprodukte umschlägt.
+Ehe wir die alte Godorfer Mühle erreichen, queren wir am Bahnhof Godorf auf einer Fußgängerbrücke die Eisenbahnschienen.
+Hier müssen wir zu Fuß laufen, um auf den Radweg an der Industriestraße zu kommen.
+
+Die Industriestraße führt uns auf die Dachhöhe der umliegenden Bauten, sodass Ihr einen Blick in die Industrieanlagen werfen könnt.
+Und das ist gleichzeitig die einzige Steigung, die ihr auf unserer Tour bewältigen müsst.
+Von dort aus geht es hinab nach Wesseling, wo nach einer Fahrt durch die Straßen am Fähranleger die wohlverdiente Pause wartet.
+
+Hier steht für euch vielfältige Verpflegung bereit, die eure müden Beine wieder in Schwung bringt.
+Wenn ihr wieder fit seid, bringt euch der RHEINSCHWAN auf die andere Rheinseite nach Lülsdorf.
+Auch hier bezahlt ihr den Fährmann, Herrn Weisbarth, mit euren Chips.
+Nun geht es auf die Heimreise.
+Gleich zu Beginn fahrt ihr über die Einlaufschleusen des Hochwasserschutzbeckens Langeler Bogen.
+Die dahinter liegenden Felder werden bei Extremhochwasser geflutet und können fast 5 Mio. Kubikmeter Wasser aufnehmen.
+Das entspricht etwa einem Volumen von 1800 olympischen Schwimmbecken; die so entstehende Fläche umfasst ca. 210 Fußballfelder.
+Und das alles, damit Köln nicht absäuft.
+Auf der Deichkrone geht es durch den schönen Auenwald nach Langel.
+Ein kleiner Hügel am Ende des Deichs zeigt euch, dass ihr über die Auslaufschleusen gefahren seid, denn das viele Wasser muss nach Ende der Flut ja wieder zurück in den Rhein.
+Kurz darauf erreicht ihr den Langeler Weiher.
+Er ist eines der letzten Auengewässer in NRW und bietet Heimat für seltene Fischarten.
+Er wurde gerade erst vor dem Austrocknen gerettet.
+
+Auf dem Damm geht es an „d´r Tant“ und der Bootsrampe vorbei weiter in Richtung Zündorf.
+Hier können wir noch einmal einen schönen Blick auf Sürth am anderen Rheinufer werfen.
+Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit ist die Tour fast geschafft.
+Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
+
+Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
+        )
         .setTime('10:00', '12:00')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1441124693'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -172,8 +213,8 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         )
         .setTime('07:30', '11:00')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1433738920'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -209,8 +250,8 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         )
         .setTime('07:30', '11:00')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -222,8 +263,8 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setProfile(EProfile.Wellig)
         .setTime('09:00')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -261,8 +302,8 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
         )
         .setTime('07:30', '10:00')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433722005_51143 RTC-Köln 02.06.2024 125km RTF 52. Forsbach-Tour.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1433722005'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -286,8 +327,8 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
         )
         .setTime('07:30', '08:30')
         .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-06_1433146251_51143 RTC-Köln 02.06.2024 151km RTF 52. Forsbach-Tour.gpx'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1433146251'),
         })
         .buildTrack(),
     )
@@ -303,7 +344,7 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2024-05-06')
+    .setLastChange('2024-05-07')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -365,60 +406,6 @@ Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
 Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
         )
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(1)
-        .setHeight(70)
-        .setId('71029e5d-5f30-4cf0-b2fa-abf0468d3864')
-        .setLength(22)
-        .setName('Die Strecke')
-        .setProfile(EProfile.Flach)
-        .setText(
-          `Wir starten, wie auch bei unseren großen Touren, im Schulzentrum Zündorf.
-Dort ist für euch ein besonderer Anmeldetisch eingerichtet, wo eure erwachsenen Begleiter das „Startgeld“ entrichten müssen.
-Daneben gibt es dort die Chips für die Fährfahrten.
-
-Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei, den der ein oder andere sicher schon kennt ( wenn nicht – sehr empfehlenswert!),
-in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
-Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
-
-Dafür bringt er euch nach einer wilden Seefahrt sicher an das andere Ufer.
-Weiter geht es immer am Rhein entlang in Richtung Sürth, wo ein schöner Kirchturm mit Zwiebelhaube ins Blickfeld kommt.
-Von dort fahren wir auf dem Leinpfad am Naturschutzgebiet Godorfer Hafen entlang bis zur Mauer der Theo Steil GmbH, die mit tollen Graffitis verziert ist.
-Schon in die nächste Kurve haben wir einen interessanten Blick in das Hafenbecken, wo die Shell AG ihre Raffinerieprodukte umschlägt.
-Ehe wir die alte Godorfer Mühle erreichen, queren wir am Bahnhof Godorf auf einer Fußgängerbrücke die Eisenbahnschienen.
-Hier müssen wir zu Fuß laufen, um auf den Radweg an der Industriestraße zu kommen.
-
-Die Industriestraße führt uns auf die Dachhöhe der umliegenden Bauten, sodass Ihr einen Blick in die Industrieanlagen werfen könnt.
-Und das ist gleichzeitig die einzige Steigung, die ihr auf unserer Tour bewältigen müsst.
-Von dort aus geht es hinab nach Wesseling, wo nach einer Fahrt durch die Straßen am Fähranleger die wohlverdiente Pause wartet.
-
-Hier steht für euch vielfältige Verpflegung bereit, die eure müden Beine wieder in Schwung bringt.
-Wenn ihr wieder fit seid, bringt euch der RHEINSCHWAN auf die andere Rheinseite nach Lülsdorf.
-Auch hier bezahlt ihr den Fährmann, Herrn Weisbarth, mit euren Chips.
-Nun geht es auf die Heimreise.
-Gleich zu Beginn fahrt ihr über die Einlaufschleusen des Hochwasserschutzbeckens Langeler Bogen.
-Die dahinter liegenden Felder werden bei Extremhochwasser geflutet und können fast 5 Mio. Kubikmeter Wasser aufnehmen.
-Das entspricht etwa einem Volumen von 1800 olympischen Schwimmbecken; die so entstehende Fläche umfasst ca. 210 Fußballfelder.
-Und das alles, damit Köln nicht absäuft.
-Auf der Deichkrone geht es durch den schönen Auenwald nach Langel.
-Ein kleiner Hügel am Ende des Deichs zeigt euch, dass ihr über die Auslaufschleusen gefahren seid, denn das viele Wasser muss nach Ende der Flut ja wieder zurück in den Rhein.
-Kurz darauf erreicht ihr den Langeler Weiher.
-Er ist eines der letzten Auengewässer in NRW und bietet Heimat für seltene Fischarten.
-Er wurde gerade erst vor dem Austrocknen gerettet.
-
-Auf dem Damm geht es an „d´r Tant“ und der Bootsrampe vorbei weiter in Richtung Zündorf.
-Hier können wir noch einmal einen schönen Blick auf Sürth am anderen Rheinufer werfen.
-Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit ist die Tour fast geschafft.
-Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
-
-Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
-        )
-        .setTime('10:00', '12:00')
-        .setUrls({
-          'GPX-Datei (In Bearbeitung)': new URL('https://content.rtc-koeln.de/pages/events/tours/family/'),
-          'Komoot (In Bearbeitung)': new URL('https://www.komoot.de/tour/'),
-        })
         .buildTrack(),
     )
     .buildEvent(),
