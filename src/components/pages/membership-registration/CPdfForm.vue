@@ -25,7 +25,8 @@
 import { ref } from 'vue'
 import { colors, date, openURL } from 'quasar'
 import { AcroFormCheckBox, jsPDF } from 'jspdf'
-import 'src/assets/fonts/Bahnschrift-Regular-normal.js'
+import 'assets/fonts/Bahnschrift-Regular-normal.js'
+import bannerVertikal from 'assets/img/banner_vertikal.png'
 import MembershipRegistration from 'src/models/entities/MembershipRegistration'
 
 const props = defineProps<{ modelValue: MembershipRegistration }>()
@@ -524,7 +525,7 @@ const addPageBanner = () => {
   for (let i = 1; i < totalPages; i++) {
     const pageSize = internal.pageSize
 
-    pdfGenerator.setPage(i).addImage('/src/assets/img/banner_vertikal.png', 'PNG', pageSize.getWidth() - 9, 0, 9, pageSize.getHeight())
+    pdfGenerator.setPage(i).addImage(bannerVertikal, 'PNG', pageSize.getWidth() - 9, 0, 9, pageSize.getHeight())
   }
 }
 
