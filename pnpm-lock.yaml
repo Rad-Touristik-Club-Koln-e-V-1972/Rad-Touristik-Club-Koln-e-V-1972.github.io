@@ -48,7 +48,7 @@ importers:
         version: 2.16.4
       signature_pad:
         specifier: ^5.0.0
-        version: 5.0.0
+        version: 5.0.1
       vue:
         specifier: ^3.4.23
         version: 3.4.27(typescript@5.4.5)
@@ -1104,8 +1104,8 @@ packages:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
 
-  commander@12.0.0:
-    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
   commander@2.20.3:
@@ -2550,8 +2550,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  signature_pad@5.0.0:
-    resolution: {integrity: sha512-8BVdqf5EfgNIqkQolwPJqGGH1AYWgCdvRWBpYwDx5En9XWcVr4kT0JHLtFsMgTnNtQiJUACUJEgSHj8JNVf83Q==}
+  signature_pad@5.0.1:
+    resolution: {integrity: sha512-cecM+btTU3iwG21Er6IbXaqfEHcB+0u1BWe989QeBQm4fan4+xdps/zvBgbig8R811h8vkg5p3rqEV5anv62pg==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -3316,7 +3316,7 @@ snapshots:
       '@clack/prompts': 0.7.0
       clear: 0.1.0
       colorette: 2.0.20
-      commander: 12.0.0
+      commander: 12.1.0
       cosmiconfig: 9.0.0(typescript@5.4.5)
       figlet: 1.7.0
       tinycolor2: 1.6.0
@@ -4048,7 +4048,7 @@ snapshots:
 
   commander@11.1.0: {}
 
-  commander@12.0.0: {}
+  commander@12.1.0: {}
 
   commander@2.20.3: {}
 
@@ -5472,7 +5472,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  signature_pad@5.0.0: {}
+  signature_pad@5.0.1: {}
 
   sisteransi@1.0.5: {}
 
