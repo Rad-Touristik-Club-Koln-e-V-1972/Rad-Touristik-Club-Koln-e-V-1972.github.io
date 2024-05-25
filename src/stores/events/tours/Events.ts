@@ -152,11 +152,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
         .setName('Die 22er')
         .setProfile(EProfile.Flach)
         .setText(
-          `Wir starten, wie auch bei unseren großen Touren, im Schulzentrum Zündorf.
-Dort ist für euch ein besonderer Anmeldetisch eingerichtet, wo eure erwachsenen Begleiter das „Startgeld“ entrichten müssen.
-Daneben gibt es dort die Chips für die Fährfahrten.
-
-Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei, den der ein oder andere sicher schon kennt ( wenn nicht – sehr empfehlenswert!),
+          `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei, den der ein oder andere sicher schon kennt ( wenn nicht – sehr empfehlenswert!),
 in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
 Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
 
@@ -341,10 +337,10 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
       new FeeBuilder().setGroup('Fährpreise*').setId('00058a22-eaf8-4ab2-9459-744bb6dbb0f6').setName('Erwachsene').setPrice(5).buildFee(),
       new FeeBuilder().setGroup('Fährpreise*').setId('e0bf5ea3-a4c1-4d47-ae57-ff966337aed7').setName('Kinder von 4 – 11 Jahre').setPrice(2).buildFee(),
       new FeeBuilder().setGroup('Fährpreise*').setId('6ed05bc8-8c42-439e-bdc4-e381542f48d3').setName('Kinder von 0 – 3 Jahre').setPrice(0).buildFee(),
-      new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
+      new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2024-05-07')
+    .setLastChange('2024-05-25')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -374,7 +370,7 @@ Euer RTC Köln e.V.`,
     .setTimes(
       new TimeBuilder().setId('c94e6040-6a86-49c1-ac67-a13941a84894').setName('Beginn der Veranstaltung').setTime('07:00').buildTime(),
       new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
-      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Preisverleihung und Tombola').setTime('14:00').buildTime(),
+      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Ausgabe der Urkunden und weiterer Überraschungen').setTime('14:00').buildTime(),
     )
     .setTitle('Die Familientour')
     .setTracks(
@@ -382,16 +378,29 @@ Euer RTC Köln e.V.`,
         .setId('e6db748e-6b26-496b-b593-4d9377206d0d')
         .setName('Vor der Tour')
         .setText(
-          `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
+          `<div class='row'><div class='col-3'><figure><img alt="Fährchips" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-19-49-39-748a.jpg.avif' style='width: 100%' />
+<figcaption>Fährchips</figcaption></figure></div>
+<div class='col'>Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
 
-Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.`,
+  Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.
+
+  Wir starten, wie auch bei unseren großen Touren, im Schulzentrum Zündorf.
+  Dort ist für euch ein besonderer Anmeldetisch eingerichtet, wo eure erwachsenen Begleiter das „Startgeld“ entrichten müssen.
+  Daneben gibt es dort die Chips für die Fährfahrten.</div>
+  </div>`,
         )
         .buildTrack(),
       new TrackBuilder()
         .setId('8fa6354d-0607-4401-862c-e6ab93f44a27')
         .setName('Während der Tour')
         .setText(
-          `Auf unserer Kontrollstelle am Wesselinger Fähranleger steht für euch eine vielfältige Verpflegung zur Verfügung,
+          `Bei der Tour fahrt Ihr immer den gelben Schildern mit dem Krokodil nach. Sie führen euch sicher ins Ziel. Bei Richtungswechseln kommt der RTC-Pfeil hinzu.
+<figure>
+    <img alt="Streckenmarkierung" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-10-30-41-726.jpg.avif' style='width: 100%' />
+    <figcaption>Streckenmarkierung</figcaption>
+</figure>
+
+Auf unserer Kontrollstelle am Wesselinger Fähranleger steht für euch eine vielfältige Verpflegung zur Verfügung,
 damit ihr das Schulzentrum in Zündorf garantiert ohne Hungerast erreicht.
 
 Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
@@ -403,7 +412,9 @@ Wir kommen euch abholen.`,
         .setId('74855084-4ca7-45a9-a5a9-48172caf4eb5')
         .setName('Nach der Tour')
         .setText(
-          `Damit ihr nach so einer anstrengenden Tour wieder zu Kräften kommt,
+          `Im Ziel erhaltet Ihr eine Teilnehmerurkunde und eine kleine Überraschung.
+
+Damit ihr nach so einer anstrengenden Tour wieder zu Kräften kommt,
 bieten wir neben selbstgemachten Kuchen ab mittags auch leckere warme Gerichte mit verschiedenen Salaten an.
 
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
