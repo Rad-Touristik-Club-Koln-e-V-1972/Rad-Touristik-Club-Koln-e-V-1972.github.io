@@ -143,7 +143,6 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
 </figure>`,
         )
         .buildTrack(),
-
       new TrackBuilder()
         .setControls(1)
         .setHeight(70)
@@ -212,7 +211,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setTime('10:00', '12:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1441124693'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/1608643106'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -361,7 +360,7 @@ Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2024-05-25')
+    .setLastChange('2024-05-26')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -391,7 +390,7 @@ Euer RTC Köln e.V.`,
     .setTimes(
       new TimeBuilder().setId('c94e6040-6a86-49c1-ac67-a13941a84894').setName('Beginn der Veranstaltung').setTime('07:00').buildTime(),
       new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
-      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Ausgabe der Urkunden und weiterer Überraschungen').setTime('14:00').buildTime(),
+      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Ausgabe der Urkunden und weiterer Überraschungen').setTime('nach Rückkehr').buildTime(),
     )
     .setTitle('Die Familientour')
     .setTracks(
