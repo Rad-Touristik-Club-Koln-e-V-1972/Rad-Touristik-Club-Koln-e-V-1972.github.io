@@ -24,7 +24,7 @@
               <q-markup-table flat>
                 <tbody>
                   <tr v-for="it in props.times" :key="it.id">
-                    <td class="text-right text-no-wrap">{{ dateTime.formatTime(it.start, it.end) }}</td>
+                    <td class="text-right text-no-wrap">{{ it.end ? `${it.start} - ${it.end}` : it.start }}</td>
                     <td>{{ it.name }}</td>
                   </tr>
                 </tbody>

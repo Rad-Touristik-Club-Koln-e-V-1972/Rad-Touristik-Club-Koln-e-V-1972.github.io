@@ -13,8 +13,8 @@ export default class TimeBuilder extends ABuilder {
   }
 
   setTime = (start: string, end?: string): this => {
-    if (end) this.time.end = new Date(`1970-01-01 ${end}`)
-    this.time.start = new Date(`1970-01-01 ${start}`)
+    this.time.end = end
+    this.time.start = start
 
     return this
   }
