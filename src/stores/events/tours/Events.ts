@@ -21,7 +21,7 @@ export default [
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
     .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
-    .setLastChange('2024-05-07')
+    .setLastChange('2024-05-28')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -277,7 +277,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setLength(82)
         .setName('Die geführte 82er')
         .setProfile(EProfile.Wellig)
-        .setTime('09:00')
+        .setTime('09:30')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
           Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
