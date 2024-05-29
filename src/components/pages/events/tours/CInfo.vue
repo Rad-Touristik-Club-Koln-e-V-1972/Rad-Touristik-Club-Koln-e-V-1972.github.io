@@ -64,7 +64,10 @@
         </div>
         <div class="col-auto">
           <q-card class="text-no-wrap">
-            <q-card-section class="bg-primary text-accent text-h6">Strecken</q-card-section>
+            <q-card-section class="bg-primary text-accent">
+              <div class="text-h6">Strecken</div>
+              <div v-if="$q.platform.is.mobile" class="text-subtitle2">Bitte horizontal scrollen</div>
+            </q-card-section>
             <q-card-section>
               <q-markup-table flat>
                 <thead>
