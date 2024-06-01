@@ -3,12 +3,17 @@
     <q-card v-if="calendarStore.nextRTF">
       <q-card-section class="bg-primary text-accent text-h6">NICHT VERPASSEN</q-card-section>
       <q-card-section>
-        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}</b>
+        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
+      </q-card-section>
+      <q-card-section>
+        <b>Alle Strecken wurden von uns ausgeschildert.</b>
+      </q-card-section>
+      <q-card-section>
+        Es gibt 3 tolle Neuerungen:
         <br />
-        <br />
-        <div>Es gibt 3 tolle Neuerungen:</div>
         <br />
         ➡️ Wir bieten in diesem Jahr wieder eine 150er-Strecke an!
+        <br />
         <br />
         ➡️ Außerdem gibt es eine geführte Tour (82 km) für RTF-Neueinsteiger!
         <div class="row">
@@ -33,11 +38,11 @@
           <div class="col-1" />
           <div class="col-auto"><q-icon :name="mdiArrowRightBottom" size="xs" />mit Fährfahrten für ein schönes Ausflugserlebnis.</div>
         </div>
+      </q-card-section>
+      <q-card-section>
+        <div>Wir freuen uns auf Euch!</div>
         <br />
-        Wir freuen uns auf Euch!
-        <br />
-        <br />
-        Euer RTC Köln e.V.
+        <div>Euer RTC Köln e.V.</div>
       </q-card-section>
       <q-card-actions align="between">
         <q-btn v-close-popup color="primary" label="Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
