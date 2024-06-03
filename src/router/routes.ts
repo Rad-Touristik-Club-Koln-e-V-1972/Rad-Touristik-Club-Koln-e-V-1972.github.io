@@ -1,7 +1,7 @@
 export default [
   {
     children: [
-      { path: '/', redirect: { name: 'events-tours-rtfs' } },
+      { path: '/', redirect: { name: 'home' } },
       { component: () => import('pages/PHome.vue'), name: 'home', path: 'home' },
       { component: () => import('pages/PImprint.vue'), name: 'imprint', path: 'imprint' },
       {
