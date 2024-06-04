@@ -7,7 +7,7 @@ export default defineStore('suggestion', () => {
   return {
     all: ref<Suggestion[]>([
       new SuggestionBuilder().setId('ba680dd5-bbbd-4b55-9b40-891ab4cb831f').setText('').setTitle('Bimbach').setUrl('rhoen-radmarathon.de').buildSuggestion(),
-      new SuggestionBuilder().setId('4827480f-cbee-40e0-956a-6bd84cff6e9c').setText('').setTitle('St. Vith').setUrl('www.ostbelgien.eu/de/fahrrad').buildSuggestion(),
+      new SuggestionBuilder().setId('4827480f-cbee-40e0-956a-6bd84cff6e9c').setText('').setTitle('St. Vith').setUrl('www.rsv.be/3laenderfahrt').buildSuggestion(),
       new SuggestionBuilder().setId('b7b8490d-f2b0-414f-acc8-5d9d43b6ca79').setText('').setTitle('Ochtendung').setUrl('djk-ochtendung.de/94.html').buildSuggestion(),
       new SuggestionBuilder().setId('219afeb0-27c6-48ac-8dc2-6c63cb23ec79').setText('').setTitle('Hattersheim').setUrl('rc-hattersheim.de').buildSuggestion(),
       new SuggestionBuilder().setId('16103052-afc1-40c4-9654-408466e5fe42').setText('').setTitle('Bodenseerundfahrt').setUrl('bodensee-radmarathon.ch').buildSuggestion(),
