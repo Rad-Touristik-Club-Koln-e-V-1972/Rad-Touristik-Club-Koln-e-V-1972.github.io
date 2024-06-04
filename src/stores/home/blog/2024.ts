@@ -21,12 +21,12 @@ Für uns selber gab es ab 17 Uhr ein gemütliches Abendessen unter freiem Himmel
 Dieser Teamspirit war richtig schön.
 Danach wurde der LKW gepackt und im Anschluss fiel der RTC Köln erschöpft und glücklich in die Betten.
 Glück 🍀 kann man nicht kaufen.
-Glück kommt von alleine, wenn das Karma und das Herz ❤️ stimmt.
+Glück kommt von alleine, wenn das Karma und das Herz ❤️ stimmen.
 Und wir hatten Glück, dass Ihr alle bei uns ward.
 Darüber haben wir uns darüber gefreut.  🫶
 
 ➡️➡️➡️Nun wünschen wir Euch viel Spaß mit der Bildergalerie. 📸
-Alle Fotosfindet Ihr in Kürze auf unserer Website.
+Alle Fotos findet Ihr in Kürze auf unserer Website.
 🔜  <a href="https://www.rtc-koeln.de" target="_blank">https://www.rtc-koeln.de</a> 🎉
 
 Euer RTC Köln e.V. 1972`,
