@@ -48,6 +48,6 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('b14a70fd-8e56-458e-8f7b-aca1c360bd3f').setImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_16_Schrauberworkshop/IMG_9852.JPG.avif').buildGalleryEntry(),
   ])
   .setLocation('Köln')
-  .setTitle('Schrauber-Workshop beim RTC Köln e.V. ')
+  .setTitle('Schrauber-Workshop beim RTC Köln e.V.')
   .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2024/03_16_Schrauberworkshop/IMG_9773.JPG.avif')
   .buildGallery()
