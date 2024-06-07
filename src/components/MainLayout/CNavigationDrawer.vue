@@ -1,21 +1,23 @@
 <template>
   <q-drawer v-model="modelValue" bordered show-if-above>
-    <q-scroll-area class="fit">
-      <c-countdown />
-      <br />
-      <q-list>
-        <c-navigation-entry v-for="it in navigationStore.allNavigation" :key="it.id" :model-value="it" />
-      </q-list>
-      <br />
-      <q-card flat>
-        <q-card-section class="text-center text-subtitle1">Folge uns auf</q-card-section>
-        <q-card-section class="row text-center">
+    <div class="column justify-between full-height q-py-xs">
+      <div class="col column justify-start q-pb-md">
+        <c-countdown class="col-auto" />
+        <q-scroll-area class="col q-pt-md">
+          <q-list>
+            <c-navigation-entry v-for="it in navigationStore.allNavigation" :key="it.id" :model-value="it" />
+          </q-list>
+        </q-scroll-area>
+      </div>
+      <div class="col-auto column justify-between">
+        <div class="col text-center text-subtitle1">Folge uns auf</div>
+        <div class="col row text-center">
           <div v-for="it in navigationStore.allSocialMedia" :key="it.id" class="col">
             <q-btn flat :href="it.url?.toString()" :icon="it.icon" round :target="it.target" :text-color="it.color" />
           </div>
-        </q-card-section>
-      </q-card>
-    </q-scroll-area>
+        </div>
+      </div>
+    </div>
   </q-drawer>
 </template>
 
