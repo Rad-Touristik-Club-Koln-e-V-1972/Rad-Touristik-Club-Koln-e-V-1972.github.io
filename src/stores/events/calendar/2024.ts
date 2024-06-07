@@ -111,14 +111,6 @@ export default [
     .setUrl('www.rsc-kerpen.de')
     .buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.Mitgliederversammlung)
-    .setContact('Diana Vialon')
-    .setDate('2024-07-05')
-    .setId('3abe9fc3-2537-44b0-a25a-cdfc411b1d4e')
-    .setKilometer(50)
-    .setName('Mitgliederversammlung')
-    .buildEvent(),
-  new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
     .setDate('2024-07-05', '2024-07-07')
@@ -126,6 +118,14 @@ export default [
     .setKilometer(100)
     .setName('St. Vith')
     .setUrl('www.rsv.be/3laenderfahrt')
+    .buildEvent(),
+  new EventBuilder()
+    .setCategory(EEvent.Mitgliederversammlung)
+    .setContact('Diana Vialon')
+    .setDate('2024-07-12')
+    .setId('3abe9fc3-2537-44b0-a25a-cdfc411b1d4e')
+    .setKilometer(50)
+    .setName('Mitgliederversammlung')
     .buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
