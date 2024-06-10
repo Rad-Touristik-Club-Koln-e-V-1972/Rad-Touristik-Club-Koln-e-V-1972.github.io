@@ -48,7 +48,7 @@ importers:
         version: 2.16.4
       signature_pad:
         specifier: ^5.0.0
-        version: 5.0.1
+        version: 5.0.2
       vue:
         specifier: ^3.4.23
         version: 3.4.27(typescript@5.4.5)
@@ -443,8 +443,8 @@ packages:
     resolution: {integrity: sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ==}
     engines: {node: '>= 0.4'}
 
-  '@mazui/cli@3.43.4':
-    resolution: {integrity: sha512-l1kGScbTRq9WkK5PcCQkajeO2MRoK1EXmMObU8zkQ0sf5NHcI3US57vK4lvLHhAALUKFEyDBOnwS9aZdK/Xglg==}
+  '@mazui/cli@3.44.0':
+    resolution: {integrity: sha512-jfaRGmLSqPPJQK77ag+QMSohPLBzsr98+YyrsKxKRcnRAa4/3geijSCK+6chkqtXpHgAhomJCj3yKr3FFdQx8A==}
     hasBin: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2563,8 +2563,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  signature_pad@5.0.1:
-    resolution: {integrity: sha512-cecM+btTU3iwG21Er6IbXaqfEHcB+0u1BWe989QeBQm4fan4+xdps/zvBgbig8R811h8vkg5p3rqEV5anv62pg==}
+  signature_pad@5.0.2:
+    resolution: {integrity: sha512-FSseAwRWznAQg90CnrTbC570u1QYi8gijZiyboc18SK2IUx7sYVZhNPLnJRCnwhpyOpgdqXf91XAHL4Yg41yCg==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -3325,7 +3325,7 @@ snapshots:
     dependencies:
       call-bind: 1.0.7
 
-  '@mazui/cli@3.43.4(typescript@5.4.5)':
+  '@mazui/cli@3.44.0(typescript@5.4.5)':
     dependencies:
       '@clack/prompts': 0.7.0
       clear: 0.1.0
@@ -5004,7 +5004,7 @@ snapshots:
 
   maz-ui@3.43.4(libphonenumber-js@1.11.3)(typescript@5.4.5)(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5)):
     dependencies:
-      '@mazui/cli': 3.43.4(typescript@5.4.5)
+      '@mazui/cli': 3.44.0(typescript@5.4.5)
       vue: 3.4.27(typescript@5.4.5)
     optionalDependencies:
       libphonenumber-js: 1.11.3
@@ -5499,7 +5499,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  signature_pad@5.0.1: {}
+  signature_pad@5.0.2: {}
 
   sisteransi@1.0.5: {}
 
