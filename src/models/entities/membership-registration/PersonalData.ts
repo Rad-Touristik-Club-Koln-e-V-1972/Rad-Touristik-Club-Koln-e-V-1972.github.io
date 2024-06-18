@@ -3,7 +3,7 @@ import type { CountryCode } from 'libphonenumber-js'
 import AEntity from 'src/models/entities/AEntity'
 
 export default class PersonalData extends AEntity {
-  birthdate = '1972/10/30'
+  birthdate = ''
   city = ''
   email = ''
   entryDate = date.formatDate(new Date(), 'YYYY/MM/DD')
