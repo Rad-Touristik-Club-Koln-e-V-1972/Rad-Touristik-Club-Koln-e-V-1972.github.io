@@ -53,7 +53,7 @@
     "prettier": "3.3.2",
     "ts-node": "10.9.2",
     "typescript": "5.5.3",
-    "typescript-eslint": "7.14.1",
+    "typescript-eslint": "7.15.0",
     "vite-plugin-checker": "0.7.0",
     "vite-plugin-sitemap": "0.6.2",
     "vue-tsc": "2.0.24"
