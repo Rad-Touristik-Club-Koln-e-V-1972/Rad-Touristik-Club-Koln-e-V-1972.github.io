@@ -33,7 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import { date } from 'quasar'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'

@@ -48,7 +48,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
 import PersonalData from 'src/models/entities/membership-registration/PersonalData'
 

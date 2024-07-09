@@ -17,7 +17,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 

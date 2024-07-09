@@ -7,7 +7,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import { mdiFilter } from '@quasar/extras/mdi-v7'
 import EEvent from 'src/models/enums/EEvent'
 

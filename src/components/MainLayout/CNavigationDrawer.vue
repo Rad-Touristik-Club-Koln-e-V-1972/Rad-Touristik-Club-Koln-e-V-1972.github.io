@@ -22,7 +22,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import CCountdown from 'components/MainLayout/CNavigationDrawer/CCountdown.vue'
 import CNavigationEntry from 'components/MainLayout/CNavigationDrawer/CNavigationEntry.vue'
 import useNavigationStore from 'stores/Navigation'

@@ -7,7 +7,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import { mdiMagnify } from '@quasar/extras/mdi-v7'
 
 const modelValue = defineModel<string | number | null>()

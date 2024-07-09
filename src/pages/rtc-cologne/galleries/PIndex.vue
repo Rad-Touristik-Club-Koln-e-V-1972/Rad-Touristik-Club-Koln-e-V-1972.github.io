@@ -18,7 +18,8 @@
                     & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
         <masonry-wall :column-width="280" :gap="16" :items="items[it]">
           <template #default="{ item }">
-            <c-gallery :model-value="item" />
+            <!-- TODO WORKAROUDN FOR https://github.com/DerYeger/yeger/issues/296 bug: item prop in the #default slot isn't passing the correct type -->
+            <c-gallery :model-value="item as Gallery" />
           </template>
         </masonry-wall>
       </div>
@@ -28,7 +29,8 @@
 
 <script lang="ts" setup>
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
+import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'
 
-const items = useGalleryStore().groupedByYear
+const items: Record<string, Gallery[]> = useGalleryStore().groupedByYear
 </script>

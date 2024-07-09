@@ -5,7 +5,7 @@
   "productName": "RTC Köln e.V. 1972",
   "author": "Martin Dünkelmann <nc-duenkekl3@netcologne.de>",
   "type": "module",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.5.0+sha256.dbdf5961c32909fb030595a9daa1dae720162e658609a8f92f2fa99835510ca5",
   "private": true,
   "scripts": {
     "build": "quasar build",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@quasar/extras": "^1.16.11",
     "@quasar/quasar-ui-qcalendar": "^4.0.0-beta.19",
-    "@yeger/vue-masonry-wall": "^5.0.10",
+    "@yeger/vue-masonry-wall": "^5.0.12",
     "date-holidays": "^3.23.11",
     "german-metadata": "^2.0.1",
     "jspdf": "^2.5.1",

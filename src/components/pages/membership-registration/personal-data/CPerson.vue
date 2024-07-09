@@ -31,7 +31,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 // TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
 // @ts-expect-error TypeScriptCheckImport
 import * as germanMetadata from 'german-metadata/german-metadata'

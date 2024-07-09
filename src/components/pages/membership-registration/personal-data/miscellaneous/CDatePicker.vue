@@ -17,7 +17,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel } from 'vue'
 import { date } from 'quasar'
 import { mdiCalendar } from '@quasar/extras/mdi-v7'
 import useDateTime from 'src/utils/DateTime'
