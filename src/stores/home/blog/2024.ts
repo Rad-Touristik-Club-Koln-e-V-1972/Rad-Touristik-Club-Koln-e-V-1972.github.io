@@ -2,6 +2,44 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('285ea40c-908c-4581-a073-b78a4e9adc5d')
+    .setDate('2024-07-14')
+    .setId('be977c58-c637-47ab-87b0-4ebe6d063fb0')
+    .setText(
+      `Gibt es ein schöneres Hobby als unseres?
+Ja – es ist ein teures Hobby, wir geben viel Geld für Material aus, aber warum?
+Für uns! Für unsere körperliche und mentale Gesundheit.
+Kann es dann falsch sein? Nein!
+Das Rennradfahren ist einfach nur schön.
+Klar – ein bisschen verrückt muss man schon sein, dass man am WE mitten in der Nacht den Wecker stellt, um beispielsweise um 05:30h auf die Strecke zu gehen, weil man langsam ist, aber am Condor-Flug teilnehmen möchte.
+Aber das Gefühl, morgens um 06:15 h bei aufgehender Sonne - und die Eifel bereits im Blick -, durch die noch schlafende Welt zu gleiten, ist der Glücklichmacher schlechthin.
+So erging es mir gestern in Immendorf beim Condor-Flug – meinem ersten Marathon seit 13 Jahren, den ich alleine angegangen bin.
+Ich fliege in der Tat immer noch – mit dem Condor.  😉
+11 RTClerinnen und RTCler freuten sich schon sehr auf die RTF und gingen gestern auf die verschiedenen Strecken des TSV Immendorf:
+Klaus und Nicole machten eine Sternfahrt und setzten noch die 40er obendrauf.
+Eine Sternfahrt machten auch Robert und Manni.
+Robert hatte am Ende sogar die 100 km voll.
+Manni konnte krankheitsbedingt keine lange Strecke fahren, wollte aber dennoch die RTF-Luft schnuppern.
+Und dann hatten wir noch eine echt starke und sehr flotte Gruppe am Start:
+Tobias, Helmut, Klaus, Albert, Jürgen und Sabine gingen auf die 100er und rasten mit durchschnittlich 26 km/h durch die Eifel.
+Eine Wahnsinnsleistung, wenn man bedenkt, dass die Eifel nicht flach wie ein Brett ist.
+Tolle Leistung!
+Nachdem ich vom Marathon dann endlich um 16.45 Uhr im Ziel war (bin langsam und daher super früh gestartet), hatten Albert, Matthias (der extra nur für mich mit dem Rad angereist war) und Manni auf mich gewartet.
+Das war soooo schön.
+Vielen lieben Dank, Ihr drei, das bedeutet mir sehr viel.
+
+Ein toller Tag mit lieben Organisatorinnen und Organisatoren auf dem Platz und auf den Kontrollen,
+sehr freundlichen Radsportlerinnen und Radsportlern auf der Strecke, super Verpflegung, Bilderbuchwetter und wunderschöner Landschaft.
+Und die Topographie des Marathons war perfekt:
+Die 2000 Höhenmeter waren fast alle auf den ersten 100 Kilometern, so dass man quasi ab der Halbzeit gefühlt nur runter oder flach fahren konnte – nur noch mit kleinen Knubbeln, die auch für mich gut zu schaffen waren.
+
+Danke, Ihr Lieben vom TSV Immendorf, es war großartig bei Euch.
+
+Euer RTC Köln e.V. 1972`,
+    )
+    .setTitle('30. Condor-Flug')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('08672431-07a7-4d6a-8b0b-e96c3fb5775a')
     .setDate('2024-06-02')
     .setId('071dcbc3-7384-4778-8dac-bc3f495182e2')
