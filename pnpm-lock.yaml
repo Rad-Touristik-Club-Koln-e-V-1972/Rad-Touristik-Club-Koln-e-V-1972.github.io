@@ -36,7 +36,7 @@ importers:
         version: 1.11.5
       maz-ui:
         specifier: ^3.40.0
-        version: 3.44.3(libphonenumber-js@1.11.5)(typescript@5.5.4)(vue-router@4.4.1(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
+        version: 3.44.3(libphonenumber-js@1.11.5)(typescript@5.5.4)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
       mime:
         specifier: ^4.0.1
         version: 4.0.4
@@ -54,7 +54,7 @@ importers:
         version: 3.4.35(typescript@5.5.4)
       vue-router:
         specifier: ^4.3.1
-        version: 4.4.1(vue@3.4.35(typescript@5.5.4))
+        version: 4.4.2(vue@3.4.35(typescript@5.5.4))
     devDependencies:
       '@commitlint/cli':
         specifier: 19.3.0
@@ -67,7 +67,7 @@ importers:
         version: 9.8.0
       '@quasar/app-vite':
         specifier: 2.0.0-beta.15
-        version: 2.0.0-beta.15(@types/node@20.14.13)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.1(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
+        version: 2.0.0-beta.15(@types/node@20.14.13)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -3074,8 +3074,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.4.1:
-    resolution: {integrity: sha512-njTLt/6gYGgIhv+U8nc5J6JpJpntFgy4fptRJ9Dp2qWQRo/PekB5DbKRYRPt0kM6feXysPKl7A5BjOmOJL5Ttw==}
+  vue-router@4.4.2:
+    resolution: {integrity: sha512-1qNybkn2L7QsLzaXs8nvlQmRKp8XF8DCxZys/Jr1JpQcHsKUxTKzTxCVA1G7NfBfwRIBgCJPoujOG5lHCCNUxw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -3577,7 +3577,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.15(@types/node@20.14.13)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.1(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
+  '@quasar/app-vite@2.0.0-beta.15(@types/node@20.14.13)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
@@ -3616,7 +3616,7 @@ snapshots:
       table: 6.8.2
       vite: 5.3.3(@types/node@20.14.13)(sass@1.77.7)(terser@5.31.0)
       vue: 3.4.35(typescript@5.5.4)
-      vue-router: 4.4.1(vue@3.4.35(typescript@5.5.4))
+      vue-router: 4.4.2(vue@3.4.35(typescript@5.5.4))
       webpack-merge: 6.0.1
     optionalDependencies:
       eslint: 9.8.0
@@ -5247,13 +5247,13 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  maz-ui@3.44.3(libphonenumber-js@1.11.5)(typescript@5.5.4)(vue-router@4.4.1(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4)):
+  maz-ui@3.44.3(libphonenumber-js@1.11.5)(typescript@5.5.4)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4)):
     dependencies:
       '@mazui/cli': 3.44.3(typescript@5.5.4)
       vue: 3.4.35(typescript@5.5.4)
     optionalDependencies:
       libphonenumber-js: 1.11.5
-      vue-router: 4.4.1(vue@3.4.35(typescript@5.5.4))
+      vue-router: 4.4.2(vue@3.4.35(typescript@5.5.4))
     transitivePeerDependencies:
       - typescript
 
@@ -6057,7 +6057,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.4.1(vue@3.4.35(typescript@5.5.4)):
+  vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)):
     dependencies:
       '@vue/devtools-api': 6.6.3
       vue: 3.4.35(typescript@5.5.4)
