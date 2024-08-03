@@ -41,7 +41,7 @@
     "@quasar/app-vite": "2.0.0-beta.15",
     "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
     "@types/node": "20.14.14",
-    "autoprefixer": "10.4.19",
+    "autoprefixer": "10.4.20",
     "commitlint": "19.3.0",
     "eslint": "9.8.0",
     "eslint-config-prettier": "9.1.0",
