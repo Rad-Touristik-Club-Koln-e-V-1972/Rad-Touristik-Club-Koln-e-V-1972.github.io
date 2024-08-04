@@ -578,7 +578,7 @@ const addRadioButtons = (params: { fontSize?: number; leftMargin: number; option
 const addSignature = (params: { leftMargin: number; topMargin: number; text: string; value: string }): number => {
   let contentHeight = 0
 
-  params.value && pdfGenerator.addImage(params.value, 'PNG', params.leftMargin, params.topMargin, 100, 25)
+  if (params.value) pdfGenerator.addImage(params.value, 'PNG', params.leftMargin, params.topMargin, 100, 25)
   contentHeight += 28
 
   contentHeight += addText({
