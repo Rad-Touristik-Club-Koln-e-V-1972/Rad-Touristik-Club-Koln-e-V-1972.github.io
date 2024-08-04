@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel, ref } from 'vue'
+import { ref } from 'vue'
 import { is } from 'quasar'
 import { mdiCalendar } from '@quasar/extras/mdi-v7'
 

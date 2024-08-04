@@ -48,7 +48,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineModel, watch } from 'vue'
+import { watch } from 'vue'
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
