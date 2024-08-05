@@ -45,7 +45,7 @@ importers:
         version: 2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4))
       quasar:
         specifier: ^2.16.1
-        version: 2.16.6
+        version: 2.16.7
       signature_pad:
         specifier: ^5.0.0
         version: 5.0.2
@@ -67,7 +67,7 @@ importers:
         version: 9.8.0
       '@quasar/app-vite':
         specifier: 2.0.0-beta.16
-        version: 2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
+        version: 2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -586,8 +586,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@mazui/cli@3.45.0':
-    resolution: {integrity: sha512-xNSlvbT83Tu7y/DKSsMcWbJR0KPI2WLCesk3eTzp6SGOe5IEtX6alRpW3LWH31we5g8yGa2emWtqd9d8+XTx4g==}
+  '@mazui/cli@3.45.1':
+    resolution: {integrity: sha512-J8MgmjIfFX6UoIpkg6UjbXhXmUbgeQPHFXFC5GAYu01vsl4SLkfdPRPlcr6ENc227ljnjvP3nD7mLPwp7hwVSw==}
     hasBin: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2508,8 +2508,8 @@ packages:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
     engines: {node: '>=0.6'}
 
-  quasar@2.16.6:
-    resolution: {integrity: sha512-nFFS/WniZy052wUNr0UHxc46KVB0hVg7IlBpVScxQAANQxL5uJVqaiw0z2CEM8IM+MCObXANqxHX/m7woG7zIw==}
+  quasar@2.16.7:
+    resolution: {integrity: sha512-Q5CCJkxna7MrBft3Iy7O9px/CQYy9Hz1Y5RyKcg/nxMsjlrpCrW9arnXIzac0qPsUE0JqyePHJ1roShhNkeMFA==}
     engines: {node: '>= 10.18.1', npm: '>= 6.13.4', yarn: '>= 1.21.1'}
 
   queue-microtask@1.2.3:
@@ -3536,7 +3536,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@mazui/cli@3.45.0(typescript@5.5.4)':
+  '@mazui/cli@3.45.1(typescript@5.5.4)':
     dependencies:
       '@clack/prompts': 0.7.0
       clear: 0.1.0
@@ -3565,11 +3565,11 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
+  '@quasar/app-vite@2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
-      '@quasar/vite-plugin': 1.7.0(@vitejs/plugin-vue@5.1.2(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))
+      '@quasar/vite-plugin': 1.7.0(@vitejs/plugin-vue@5.1.2(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))
       '@types/chrome': 0.0.262
       '@types/compression': 1.7.5
       '@types/cordova': 11.0.3
@@ -3595,7 +3595,7 @@ snapshots:
       lodash: 4.17.21
       minimist: 1.2.8
       open: 10.1.0
-      quasar: 2.16.6
+      quasar: 2.16.7
       rollup-plugin-visualizer: 5.12.0(rollup@4.17.2)
       sass: 1.77.8
       semver: 7.6.3
@@ -3635,10 +3635,10 @@ snapshots:
       fs-extra: 11.2.0
       selfsigned: 2.4.1
 
-  '@quasar/vite-plugin@1.7.0(@vitejs/plugin-vue@5.1.2(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.6)(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))':
+  '@quasar/vite-plugin@1.7.0(@vitejs/plugin-vue@5.1.2(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@vitejs/plugin-vue': 5.1.2(vite@5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))
-      quasar: 2.16.6
+      quasar: 2.16.7
       vite: 5.3.5(@types/node@20.14.14)(sass@1.77.8)(terser@5.31.0)
       vue: 3.4.35(typescript@5.5.4)
 
@@ -5213,7 +5213,7 @@ snapshots:
 
   maz-ui@3.45.0(libphonenumber-js@1.11.5)(typescript@5.5.4)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4)):
     dependencies:
-      '@mazui/cli': 3.45.0(typescript@5.5.4)
+      '@mazui/cli': 3.45.1(typescript@5.5.4)
       vue: 3.4.35(typescript@5.5.4)
     optionalDependencies:
       libphonenumber-js: 1.11.5
@@ -5486,7 +5486,7 @@ snapshots:
     dependencies:
       side-channel: 1.0.6
 
-  quasar@2.16.6: {}
+  quasar@2.16.7: {}
 
   queue-microtask@1.2.3: {}
 
