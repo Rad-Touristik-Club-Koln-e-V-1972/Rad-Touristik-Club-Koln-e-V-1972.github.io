@@ -66,8 +66,8 @@ importers:
         specifier: 9.8.0
         version: 9.8.0
       '@quasar/app-vite':
-        specifier: 2.0.0-beta.16
-        version: 2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
+        specifier: 2.0.0-beta.17
+        version: 2.0.0-beta.17(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -610,14 +610,13 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@quasar/app-vite@2.0.0-beta.16':
-    resolution: {integrity: sha512-jBsr7N5A4u64uo6g3QbUpEDohQsvMLSMK/5BR+YNrmewpJsxUCWu+qiRUAeaBS+YbNRffd5G2urjTG1pxlVj8w==}
+  '@quasar/app-vite@2.0.0-beta.17':
+    resolution: {integrity: sha512-hwhcS+nOaEBbDL4RPnZFSly+uNmrTdPKbEzC32/vS1m6Y1aTZwyOFvpKkSG2R5mcYFjfop3bLQjRlVXm7BBzaQ==}
     engines: {node: ^30 || ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
       '@electron/packager': '>= 18'
       electron-builder: '>= 22'
-      electron-packager: '>= 15'
       eslint: '*'
       pinia: ^2.0.0
       quasar: ^2.16.0
@@ -629,8 +628,6 @@ packages:
       '@electron/packager':
         optional: true
       electron-builder:
-        optional: true
-      electron-packager:
         optional: true
       eslint:
         optional: true
@@ -3245,7 +3242,7 @@ snapshots:
   '@commitlint/is-ignored@19.2.2':
     dependencies:
       '@commitlint/types': 19.0.3
-      semver: 7.6.2
+      semver: 7.6.3
 
   '@commitlint/lint@19.2.2':
     dependencies:
@@ -3565,7 +3562,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.16(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
+  '@quasar/app-vite@2.0.0-beta.17(@types/node@20.14.14)(eslint@9.8.0)(pinia@2.2.0(typescript@5.5.4)(vue@3.4.35(typescript@5.5.4)))(quasar@2.16.7)(rollup@4.17.2)(terser@5.31.0)(vue-router@4.4.2(vue@3.4.35(typescript@5.5.4)))(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
