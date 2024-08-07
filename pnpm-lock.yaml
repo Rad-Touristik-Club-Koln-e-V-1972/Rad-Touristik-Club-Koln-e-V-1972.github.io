@@ -21,7 +21,7 @@ importers:
         version: 4.0.0-beta.19
       '@yeger/vue-masonry-wall':
         specifier: ^5.0.12
-        version: 5.0.13(vue@3.4.36(typescript@5.5.4))
+        version: 5.0.14(vue@3.4.36(typescript@5.5.4))
       date-holidays:
         specifier: ^3.23.11
         version: 3.23.12
@@ -942,11 +942,11 @@ packages:
   '@yeger/vue-lib-adapter@2.0.9':
     resolution: {integrity: sha512-FIaKvP596mg8J9bsphng4Ulr+EMghBG2RNrBrJCFvz9uV7YI6X0vNJ0vV/8SqL6Boe92VpRjG+puKe/HYKsnTg==}
 
-  '@yeger/vue-masonry-wall-core@5.0.10':
-    resolution: {integrity: sha512-s4dwP4/mvcwNqa1/2uSSXU8bSaKS1nHb+JmF17fFLFNvacZTk6b3mcW8yjM38sxzhQ+tv7rthMTrF3W+6abRgw==}
+  '@yeger/vue-masonry-wall-core@5.0.11':
+    resolution: {integrity: sha512-3/4v3fyn+KhiUS56CujJCiwjvtIZz8oAaJ5NaQluZ98dJIkYmNiMZutJ9gG4C4xjedXr9IznNjkTv4GD1UeO9Q==}
 
-  '@yeger/vue-masonry-wall@5.0.13':
-    resolution: {integrity: sha512-2VAVIpDCLFZITpE4iA3W0YkhZsUpGzufzoU3FGIQ5/YkqJrm2DVgyanEgAzEBe8bwzF0x8kXdO8vHznjCkqVsQ==}
+  '@yeger/vue-masonry-wall@5.0.14':
+    resolution: {integrity: sha512-UVwAC/T07Pj1HHBEnVm2m5HPq6mZGZjBXI72sdJdb7sU8wZ9SUnEOLd7Zm275eHhdqQZ+6b7hVgRMvfscu1k5g==}
     peerDependencies:
       vue: ^3.0.0
 
@@ -3963,14 +3963,14 @@ snapshots:
 
   '@yeger/vue-lib-adapter@2.0.9': {}
 
-  '@yeger/vue-masonry-wall-core@5.0.10':
+  '@yeger/vue-masonry-wall-core@5.0.11':
     dependencies:
       '@yeger/debounce': 2.0.9
       '@yeger/vue-lib-adapter': 2.0.9
 
-  '@yeger/vue-masonry-wall@5.0.13(vue@3.4.36(typescript@5.5.4))':
+  '@yeger/vue-masonry-wall@5.0.14(vue@3.4.36(typescript@5.5.4))':
     dependencies:
-      '@yeger/vue-masonry-wall-core': 5.0.10
+      '@yeger/vue-masonry-wall-core': 5.0.11
       vue: 3.4.36(typescript@5.5.4)
 
   JSONStream@1.3.5:
