@@ -22,9 +22,5 @@ import { mdiCalendar } from '@quasar/extras/mdi-v7'
 import useDateTime from 'src/utils/DateTime'
 
 const modelValue = defineModel<string>({ required: true })
-const props = withDefaults(defineProps<{ label?: string; max?: Date; min?: Date }>(), {
-  label: '',
-  max: undefined,
-  min: undefined,
-})
+const props = defineProps<{ label?: string; max?: Date; min?: Date }>()
 </script>

@@ -28,7 +28,7 @@
         <div class="col-auto offset-1">Zuerst:</div>
       </div>
       <div class="row">
-        <div class="col text-bold">{{ nextEvents[0].name }}</div>
+        <div class="col text-bold">{{ nextEvents[0]?.name }}</div>
       </div>
       <div v-if="nextEvents[1]">
         <div class="row">
@@ -64,7 +64,7 @@ const hours = ref(0)
 const minutes = ref(0)
 
 const nextEvents = calendarStore.nextEvents
-const daysOfMonth = nextEvents.length ? date.daysInMonth(nextEvents[0].start) : 30
+const daysOfMonth = nextEvents[0] ? date.daysInMonth(nextEvents[0].start) : 30
 
 const calcCountdown = (nextEvent: Event) => {
   const milliseconds = Math.abs(Date.now() - nextEvent.start.getTime())
@@ -76,10 +76,13 @@ const calcCountdown = (nextEvent: Event) => {
 const getPercentage = (max: number, value: number) => Math.round((100 / max) * value)
 
 onMounted(() => {
-  if (nextEvents.length) {
-    calcCountdown(nextEvents[0])
+  if (nextEvents[0]) {
+    let nextEvent = nextEvents[0]
+
+    calcCountdown(nextEvent)
+
     useInterval().registerInterval(() => {
-      calcCountdown(nextEvents[0])
+      calcCountdown(nextEvent)
     }, 60000)
   }
 })

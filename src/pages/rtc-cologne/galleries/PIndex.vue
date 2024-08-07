@@ -11,15 +11,14 @@
       </span>
     </q-card-section>
     <q-card-section>
-      <div v-for="it in Object.keys(items).reverse()" :key="it">
-        <q-card-section class="text-h6">{{ it }}</q-card-section>
+      <div v-for="key in Object.keys(items).reverse()" :key>
+        <q-card-section class="text-h6">{{ key }}</q-card-section>
         <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
                     & https://drafts.csswg.org/css-grid-3/
                     & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
-        <masonry-wall :column-width="280" :gap="16" :items="items[it]">
+        <masonry-wall v-if="items[key]" :column-width="280" :gap="16" :items="items[key]">
           <template #default="{ item }">
-            <!-- TODO WORKAROUDN FOR https://github.com/DerYeger/yeger/issues/296 bug: item prop in the #default slot isn't passing the correct type -->
-            <c-gallery :model-value="item as Gallery" />
+            <c-gallery :model-value="item" />
           </template>
         </masonry-wall>
       </div>

@@ -18,7 +18,7 @@
       >
         <q-carousel-slide v-for="it in items" :key="it.id" :name="it.id" class="column flex-center no-wrap">
           <div style="width: 20em">
-            <d-view :model-value="it.image" />
+            <d-view :model-value="[it.image]" />
             <q-expansion-item v-if="it.text" expand-icon-toggle expand-separator label="Details">
               <q-card>
                 <q-card-section>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <d-p-d-f-view v-if="isMimeTypePDF" :model-value="modelValueAsArray[props.startIndex]" />
-    <d-view-image v-else :model-value="modelValueAsArray" :start-value="modelValueAsArray[props.startIndex]" />
+    <d-p-d-f-view v-if="isMimeTypePDF && modelValueEntry" :model-value="modelValueEntry" />
+    <d-view-image v-else :model-value="props.modelValue" :start-index="props.startIndex" />
   </div>
 </template>
 
@@ -11,9 +11,9 @@ import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
 import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.vue'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const props = withDefaults(defineProps<{ modelValue: GalleryEntry[] | GalleryEntry; startIndex?: number }>(), { startIndex: 0 })
+const props = defineProps<{ modelValue: GalleryEntry[]; startIndex?: number }>()
 
-const isMimeTypePDF = computed(() => (Array.isArray(props.modelValue) ? props.modelValue[props.startIndex] : props.modelValue).mimeType === 'application/pdf')
+const isMimeTypePDF = computed(() => modelValueEntry.value?.mimeType === 'application/pdf')
 
-const modelValueAsArray = computed(() => (Array.isArray(props.modelValue) ? props.modelValue : [props.modelValue]))
+const modelValueEntry = computed(() => props.modelValue[props.startIndex ?? 0])
 </script>

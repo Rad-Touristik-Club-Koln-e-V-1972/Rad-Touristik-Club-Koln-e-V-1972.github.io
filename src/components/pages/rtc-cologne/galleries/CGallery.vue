@@ -22,7 +22,7 @@ import { useRouter } from 'vue-router'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from 'src/utils/DateTime'
 
-const props = withDefaults(defineProps<{ album?: string; modelValue: Gallery }>(), { album: undefined })
+const props = defineProps<{ album?: string; modelValue: Gallery }>()
 
 const router = useRouter()
 
@@ -31,9 +31,6 @@ const isLoading = ref(false)
 const open = async () => {
   isLoading.value = true
 
-  let album = props.album
-  if (!album) album = Object.keys(props.modelValue.images)[0]
-
-  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: album, id: props.modelValue.id } })
+  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album ? props.album : Object.keys(props.modelValue.images)[0], id: props.modelValue.id } })
 }
 </script>

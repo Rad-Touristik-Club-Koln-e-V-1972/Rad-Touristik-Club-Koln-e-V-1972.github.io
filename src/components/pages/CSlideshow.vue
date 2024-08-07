@@ -21,15 +21,14 @@ import { QCarousel } from 'quasar'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const props = withDefaults(defineProps<{ galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean; modelValue?: string }>(), {
+const props = withDefaults(defineProps<{ entryID?: string; galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>(), {
+  entryID: undefined,
+  galleryEntries: () => [] as GalleryEntry[],
   height: '100%',
   infinite: true,
-  modelValue: undefined,
 })
 
 const carousel = ref<InstanceType<typeof QCarousel>>()
 
-const item = ref(props.modelValue)
-
-if (!props.modelValue) item.value = props.galleryEntries.at(0)?.id.toString() ?? ''
+const item = ref(props.entryID ?? props.galleryEntries[0]?.id.toString() ?? '')
 </script>

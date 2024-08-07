@@ -13,7 +13,7 @@ export default class TimeBuilder extends ABuilder {
   }
 
   setTime = (start: string, end?: string): this => {
-    this.time.end = end
+    if (end) this.time.end = end
     this.time.start = start
 
     return this

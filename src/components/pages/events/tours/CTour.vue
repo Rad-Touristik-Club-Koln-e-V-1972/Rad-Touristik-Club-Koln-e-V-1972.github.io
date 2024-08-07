@@ -1,7 +1,7 @@
 <template>
-  <q-card v-if="props.value" flat>
-    <q-card-section class="bg-primary text-accent text-h6">{{ props.value.title }}</q-card-section>
-    <q-card-section class="text-subtitle1">Stand: {{ useDateTime().format(props.value.lastChange) }}</q-card-section>
+  <q-card v-if="props.modelValue" flat>
+    <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
+    <q-card-section class="text-subtitle1">Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</q-card-section>
     <q-card-section>
       <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
         <q-tab :icon="mdiBike" label="Allgemein" name="general" />
@@ -11,20 +11,20 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="general">
-          <c-general :images="props.value.images" :text="props.value.text" />
+          <c-general :images="props.modelValue.images" :text="props.modelValue.text" />
         </q-tab-panel>
         <q-tab-panel name="info">
-          <c-info :fee-hints="props.feeHints" :fees="props.value.fees" :location="props.value.location" :times="props.value.times" :tracks="props.value.tracks" />
+          <c-info :fee-hints="props.feeHints" :fees="props.modelValue.fees" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="tracks">
-          <c-tracks :tracks="props.value.tracks" />
+          <c-tracks :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="registration">
-          <c-registration :category="props.value?.category" />
+          <c-registration :category="props.modelValue?.category" />
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>
-    <d-popup v-if="props.value.popup" :model-value="props.value.popup" />
+    <d-popup v-if="props.modelValue.popup" :model-value="props.modelValue.popup" />
   </q-card>
 </template>
 
@@ -39,7 +39,7 @@ import DPopup from 'components/pages/events/tours/DPopup.vue'
 import Event from 'src/models/entities/events/tours/Event'
 import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ feeHints?: string; value: Event | undefined }>()
+const props = defineProps<{ feeHints?: string; modelValue: Event | undefined }>()
 
 const tab = ref('info')
 </script>

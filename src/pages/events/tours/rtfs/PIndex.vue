@@ -1,5 +1,5 @@
 <template>
-  <c-tour :value="useTourStore().getBy(EEvent.RTF)" />
+  <c-tour :model-value="useTourStore().getBy(EEvent.RTF)" />
 </template>
 
 <script lang="ts" setup>

@@ -12,8 +12,8 @@
       <div class="col-auto column justify-between">
         <div class="col text-center text-subtitle1">Folge uns auf</div>
         <div class="col row text-center">
-          <div v-for="it in navigationStore.allSocialMedia" :key="it.id" class="col">
-            <q-btn flat :href="it.url?.toString()" :icon="it.icon" round :target="it.target" :text-color="it.color" />
+          <div v-for="{ color, icon, id, target, url } in navigationStore.allSocialMedia" :key="id" class="col">
+            <q-btn flat :href="url?.toString()" :icon round :target :text-color="color" />
           </div>
         </div>
       </div>
