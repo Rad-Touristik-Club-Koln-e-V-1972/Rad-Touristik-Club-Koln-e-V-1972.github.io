@@ -8,15 +8,15 @@
       <q-card-section class="text-subtitle1">{{ useDateTime().format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
       <q-card-section>
         <q-tabs v-show="Object.keys(value.images).length && value.youtubeVideoIds.length" v-model="tab" active-bg-color="primary" active-color="accent" indicator-color="secondary">
-          <q-tab v-for="it in tabs" :key="it" :name="it" :label="it" />
+          <q-tab v-for="name in tabs" :key="name" :label="name" :name />
         </q-tabs>
         <q-tab-panels v-model="tab">
           <q-tab-panel name="Bilder">
             <q-tabs v-show="Object.keys(value.images).length > 1" v-model="tabPictures" active-bg-color="primary" active-color="accent" indicator-color="secondary">
-              <q-tab v-for="it in Object.keys(value.images)" :key="it" :name="it" :label="it" />
+              <q-tab v-for="name in Object.keys(value.images)" :key="name" :label="name" :name />
             </q-tabs>
             <q-tab-panels v-model="tabPictures">
-              <q-tab-panel v-for="(item, key) in value.images" :key="key" :name="key">
+              <q-tab-panel v-for="(item, key) in value.images" :key :name="key">
                 <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
                                 & https://drafts.csswg.org/css-grid-3/
                                 & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->

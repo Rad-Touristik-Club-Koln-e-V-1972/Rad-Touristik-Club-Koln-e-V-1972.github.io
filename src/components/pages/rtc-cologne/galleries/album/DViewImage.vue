@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div v-if="currentGalleryEntry">
     <q-img :src="currentGalleryEntry.imageUrl.toString()" style="cursor: pointer" @click="dialog = true" />
     <q-dialog v-model="dialog" class="z-top" maximized persistent>
       <q-card flat>
         <d-view-image-original :model-value="currentGalleryEntry.imageUrl" />
         <q-btn class="absolute-top-right z-max" color="primary" :icon="mdiClose" text-color="accent" @click="dialog = false" />
-        <c-slideshow v-model="currentGalleryEntry.id" :gallery-entries="props.modelValue" :infinite="false" />
+        <c-slideshow :entry-i-d="currentGalleryEntry.id" :gallery-entries="props.modelValue" :infinite="false" />
       </q-card>
     </q-dialog>
   </div>
@@ -20,9 +20,9 @@ import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{
   modelValue: GalleryEntry[]
-  startValue?: GalleryEntry
+  startIndex?: number
 }>()
 
-const currentGalleryEntry = ref(props.startValue ?? props.modelValue[0])
+const currentGalleryEntry = ref(props.modelValue[props.startIndex ?? 0])
 const dialog = ref(false)
 </script>

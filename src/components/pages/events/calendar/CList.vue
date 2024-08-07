@@ -14,7 +14,7 @@
         </div>
       </div>
     </q-toolbar>
-    <q-table :columns="columns" :filter="filter" :filter-method="filterMethod" :pagination="initialPagination" :rows="useCalendarStore().all" separator="none">
+    <q-table :columns :filter :filter-method="filterMethod" :pagination :rows="useCalendarStore().all" separator="none">
       <template #body="props">
         <q-tr :class="getColor(props.row) + getStyle(props.row)">
           <q-td>{{ props.row.category }}</q-td>
@@ -105,7 +105,7 @@ const filter = ref<Filter>({
   dateRange: { from: `01.01.${dateTime.today.value.getFullYear().toFixed()}`, to: `31.12.${(dateTime.today.value.getFullYear() + 1).toFixed()}` },
   search: '',
 })
-const initialPagination = {
+const pagination = {
   sortBy: 'datetime',
   descending: false,
   page: 1,

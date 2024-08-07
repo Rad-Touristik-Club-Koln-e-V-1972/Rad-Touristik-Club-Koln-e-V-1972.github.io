@@ -41,7 +41,7 @@
               <td class="text-right">Links:</td>
               <td>
                 <ul class="mt-1">
-                  <li v-for="(it, key) in props.modelValue.urls" :key="key" class="mb-1">
+                  <li v-for="(it, key) in props.modelValue.urls" :key class="mb-1">
                     <a :href="it.toString()" target="_blank">{{ key }}</a>
                   </li>
                 </ul>

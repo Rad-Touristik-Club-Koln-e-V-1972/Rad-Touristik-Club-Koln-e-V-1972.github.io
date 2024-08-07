@@ -8,7 +8,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import routes from 'src/router/routes'
 
 const generateRootRoute = () => {
-  const mainRoutes = routes.at(0)
+  const mainRoutes = routes[0]
   let ret: string[] = []
 
   // Avoid "//" at the beginning of the path if the root is "/".

@@ -559,17 +559,19 @@ const addRadioButtons = (params: { fontSize?: number; leftMargin: number; option
 
   _leftMargin += pdfGenerator.getTextWidth(params.text) + 5
 
-  for (let i = 0; i < params.options.length; i++) {
-    if (i > 0) _leftMargin += pdfGenerator.getTextWidth(params.options[i - 1]) + 20
+  let prev = undefined
+  for (let it of params.options) {
+    if (prev) _leftMargin += pdfGenerator.getTextWidth(prev) + 20
 
     contentHeight += addCheckboxWithText({
       fontSize: params.fontSize,
       leftMargin: _leftMargin,
-      text: params.options[i],
+      text: it,
       topMargin: params.topMargin,
-      value: params.options[i] === params.value,
+      value: it === params.value,
       withoutTopMargin: true,
     })
+    prev = it
   }
 
   return contentHeight / params.options.length

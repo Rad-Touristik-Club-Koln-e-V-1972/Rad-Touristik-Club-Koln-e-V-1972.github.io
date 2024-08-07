@@ -11,9 +11,10 @@
               {{ props.location.street }}
               <br />
               {{ props.location.zipCode }} {{ props.location.city }}
-              <br />
-              <a :href="props.location.url?.toString()" target="_blank">Anfahrt bei Google Maps</a>
-              <br />
+              <div v-if="props.location.url">
+                <br />
+                <a :href="props.location.url.toString()" target="_blank">Anfahrt bei Google Maps</a>
+              </div>
             </q-card-section>
           </q-card>
         </div>
@@ -91,7 +92,7 @@
                     <td>{{ it.controls }}</td>
                     <td>
                       <ul>
-                        <li v-for="(url, key) in it.urls" :key="key" class="my-2" style="list-style: none">
+                        <li v-for="(url, key) in it.urls" :key class="my-2" style="list-style: none">
                           <a :href="url.toString()">{{ key }}</a>
                         </li>
                       </ul>
