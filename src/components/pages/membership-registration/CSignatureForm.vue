@@ -16,7 +16,8 @@ import { mdiPenRemove } from '@quasar/extras/mdi-v7'
 import SignaturePad from 'signature_pad'
 
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
-const props = defineProps<{ label: string; modelValue: string }>()
+const modelValue = defineModel<string>({ required: true })
+const props = defineProps<{ label: string }>()
 
 let id = uid()
 let signaturePad: SignaturePad
@@ -27,7 +28,7 @@ onMounted(async () => {
   if (canvas) {
     signaturePad = new SignaturePad(canvas as HTMLCanvasElement)
 
-    if (props.modelValue) await signaturePad.fromDataURL(props.modelValue)
+    if (modelValue.value) await signaturePad.fromDataURL(modelValue.value)
 
     signaturePad.addEventListener('endStroke', () => {
       emit('update:modelValue', signaturePad.toDataURL())
