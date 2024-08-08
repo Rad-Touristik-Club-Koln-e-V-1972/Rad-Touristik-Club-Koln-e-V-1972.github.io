@@ -1,0 +1,26 @@
+export default {
+  albums: [
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-001.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-002.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-003int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-004.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-005int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-006int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-007int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-008int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-009int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-010int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-011int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-012int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-013int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-014.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-015int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-016int.jpg.avif') },
+  ],
+  location: 'Poller Haus, Köln',
+  time: {
+    name: 'Wintergrillen',
+    start: new Date('2016-01-16'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2016/01_16_Wintergrillen/rtc-20160116-wg-001.jpg.avif'),
+}

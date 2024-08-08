@@ -1,0 +1,28 @@
+export default {
+  albums: [
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-001int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-002int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-003int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-004int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-005int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-006int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-007int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-008int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-009int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-010int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-011int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-012int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-013int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-014int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-015int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-016int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-017int.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-018int.jpg.avif') },
+  ],
+  location: 'Köln',
+  time: {
+    name: 'Wintergrillen',
+    start: new Date('2017-03-05'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/03_05_Wintergrillen/rtc-170305-wg-004int.jpg.avif'),
+}

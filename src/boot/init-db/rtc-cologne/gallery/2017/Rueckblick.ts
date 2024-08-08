@@ -1,0 +1,25 @@
+export default {
+  albums: [
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/170305.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/170311.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/170504.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/171029-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/171029-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/171217.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180106.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180116.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180202a.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180202b.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/180202c.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/191206.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-971-intro-2017.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-972-intro-2017.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/rtc-976-intro-2017.jpg.avif') },
+  ],
+  location: 'Köln',
+  time: {
+    name: 'Rückblick',
+    start: new Date('2017-12-31'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2017/Rueckblick/171029-2.jpg.avif'),
+}

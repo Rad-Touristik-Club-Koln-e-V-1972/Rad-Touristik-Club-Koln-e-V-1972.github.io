@@ -27,9 +27,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
-import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
-import useGalleryStore from 'stores/rtc-cologne/Gallery'
+import GalleryRepository from 'stores/rtc-cologne/GalleryRepository'
 
-const items: Record<string, Gallery[]> = useGalleryStore().groupedByYear
+const galleriesRepo = useRepo(GalleryRepository)
+
+const items = galleriesRepo.allGroupedByYear()
 </script>

@@ -35,7 +35,7 @@
 <script lang="ts" setup>
 import { date } from 'quasar'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import MembershipPersonalData from 'src/models/entities/membership-registration/MembershipPersonalData'
 
-const modelValue = defineModel<PersonalData>({ required: true })
+const modelValue = defineModel<MembershipPersonalData>({ required: true })
 </script>

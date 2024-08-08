@@ -257,7 +257,7 @@ const addPage2 = (params: { leftMargin: number; topMargin: number; leftMarginCen
     options: ['Bar', 'Lastschrifteinzug'],
     text: 'Zahlungsweise (zutreffendes bitte ankreuzen):',
     topMargin: _topMargin,
-    value: props.modelValue.membershipFee.paymentMethod,
+    value: props.modelValue.fee.paymentMethod,
   })
 
   _topMargin += addText({
@@ -269,14 +269,14 @@ jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
 
   addText({
     leftMargin: params.leftMargin,
-    text: props.modelValue.membershipFee.iban,
+    text: props.modelValue.fee.iban,
     title: 'IBAN',
     topMargin: _topMargin,
     withUnderline: true,
   })
   _topMargin += addText({
     leftMargin: params.leftMarginCenter,
-    text: props.modelValue.membershipFee.bic,
+    text: props.modelValue.fee.bic,
     title: 'BIC',
     topMargin: _topMargin,
     withUnderline: true,
@@ -284,14 +284,14 @@ jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
 
   addText({
     leftMargin: params.leftMargin,
-    text: props.modelValue.membershipFee.creditInstitute,
+    text: props.modelValue.fee.creditInstitute,
     title: 'Kreditinstitut',
     topMargin: _topMargin,
     withUnderline: true,
   })
   _topMargin += addText({
     leftMargin: params.leftMarginCenter,
-    text: props.modelValue.membershipFee.bankholder,
+    text: props.modelValue.fee.bankholder,
     title: 'Kontoinhaber',
     topMargin: _topMargin,
     withUnderline: true,
@@ -299,14 +299,14 @@ jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
 
   addText({
     leftMargin: params.leftMargin,
-    text: props.modelValue.membershipFee.signature.location,
+    text: props.modelValue.fee.signature.location,
     title: 'Ort',
     topMargin: _topMargin,
     withUnderline: true,
   })
   _topMargin += addText({
     leftMargin: params.leftMarginCenter,
-    text: date.formatDate(props.modelValue.membershipFee.signature.date, 'DD.MM.YYYY'),
+    text: date.formatDate(props.modelValue.fee.signature.date, 'DD.MM.YYYY'),
     title: 'Datum',
     topMargin: _topMargin,
     withUnderline: true,
@@ -316,7 +316,7 @@ jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
     leftMargin: params.leftMargin,
     text: 'Unterschrift Kontoinhaber',
     topMargin: _topMargin,
-    value: props.modelValue.membershipFee.signature.signature,
+    value: props.modelValue.fee.signature.signature,
   })
 
   _topMargin += addText({
@@ -335,19 +335,19 @@ jährlich im Voraus zu Lasten meines Kontos bis auf Widerruf einzuziehen:`,
     leftMargin: params.leftMargin,
     text: 'Ich bin bereits Mitglied beim Bund Deutscher Radfahrer',
     topMargin: _topMargin,
-    value: props.modelValue.bdrMembership.isMember,
+    value: props.modelValue.bdr.isMember,
   })
 
   addText({
     leftMargin: params.leftMargin,
-    text: props.modelValue.bdrMembership.number,
+    text: props.modelValue.bdr.number ?? '',
     title: 'BDR-Mitgliedsnummer',
     topMargin: _topMargin,
     withUnderline: true,
   })
   _topMargin += addText({
     leftMargin: params.leftMarginCenter,
-    text: date.formatDate(props.modelValue.bdrMembership.date, 'DD.MM.YYYY'),
+    text: date.formatDate(props.modelValue.bdr.date, 'DD.MM.YYYY'),
     title: 'Mitglied seit',
     topMargin: _topMargin,
     withUnderline: true,
@@ -497,14 +497,14 @@ Lizenzen, Mannschaftsgruppe u.ä.)`,
 
   addText({
     leftMargin: params.leftMargin,
-    text: props.modelValue.consentPrivacyPolicy.location,
+    text: props.modelValue.consentPrivacyPolicySignature.location,
     title: 'Ort',
     topMargin: _topMargin,
     withUnderline: true,
   })
   _topMargin += addText({
     leftMargin: params.leftMarginCenter,
-    text: date.formatDate(props.modelValue.consentPrivacyPolicy.date, 'DD.MM.YYYY'),
+    text: date.formatDate(props.modelValue.consentPrivacyPolicySignature.date, 'DD.MM.YYYY'),
     title: 'Datum',
     topMargin: _topMargin,
     withUnderline: true,
@@ -514,7 +514,7 @@ Lizenzen, Mannschaftsgruppe u.ä.)`,
     leftMargin: params.leftMargin,
     text: 'Unterschrift (Bei Minderjährigen: Unterschrift des Erziehungsberechtigten)',
     topMargin: _topMargin,
-    value: props.modelValue.consentPrivacyPolicy.signature,
+    value: props.modelValue.consentPrivacyPolicySignature.signature,
   })
 }
 

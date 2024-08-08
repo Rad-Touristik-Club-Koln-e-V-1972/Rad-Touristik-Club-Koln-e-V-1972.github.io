@@ -3,7 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     // TODO WORKAROUND FOR https://github.com/vuejs/core/issues/6532 & masonry-wall https://github.com/DerYeger/yeger/issues/296#issuecomment-2273206984
-    "exactOptionalPropertyTypes": false
+    "exactOptionalPropertyTypes": false,
+    // TODO WORKAROUND FOR https://github.com/microsoft/TypeScript/issues/7342
+    "experimentalDecorators": true
   },
   "exclude": ["./dist", "./.quasar", "./node_modules", "./src-capacitor", "./src-cordova", "./quasar.config.*.temporary.compiled*"]
 }

@@ -31,3 +31,4 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+!/src/boot/init-db/gallery/2019/10_26_CTF_5.ts

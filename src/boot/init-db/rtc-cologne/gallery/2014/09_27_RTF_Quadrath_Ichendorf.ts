@@ -1,0 +1,36 @@
+import EEvent from 'src/models/enums/EEvent'
+
+export default {
+  albums: [
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-01.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-02.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-03.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-04.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-05.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-06.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-07.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-08.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath/rtc-quadrath-09.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-10.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-11.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-12.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-13.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-14.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-15.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-16.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-17.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-18.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-19.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-20.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-21.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-22.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-23.jpg.avif') },
+  ],
+  category: EEvent.Vereinsfahrt,
+  location: 'Quadrath-Ichendorf',
+  time: {
+    name: 'RTF Quadrath-Ichendorf',
+    start: new Date('2014-09-27'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2014/09_27_RTF_Quadrath_Ichendorf/rtc-quadrath-21.jpg.avif'),
+}

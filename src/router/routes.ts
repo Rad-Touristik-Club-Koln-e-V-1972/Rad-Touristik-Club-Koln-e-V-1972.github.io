@@ -30,7 +30,7 @@ export default [
           { component: () => import('pages/rtc-cologne/PAboutUs.vue'), name: 'rtc-cologne-about-us', path: 'about-us' },
           { component: () => import('pages/rtc-cologne/PContacts.vue'), name: 'rtc-cologne-contacts', path: 'contacts' },
           { component: () => import('pages/rtc-cologne/galleries/PIndex.vue'), name: 'rtc-cologne-galleries', path: 'galleries' },
-          { component: () => import('pages/rtc-cologne/galleries/PAlbum.vue'), name: 'rtc-cologne-galleries-album', path: 'galleries/:id/:album', props: true },
+          { component: () => import('pages/rtc-cologne/galleries/PAlbum.vue'), name: 'rtc-cologne-galleries-album', path: 'galleries/:galleryId/:album', props: true },
           { component: () => import('pages/rtc-cologne/PGuestbook.vue'), name: 'rtc-cologne-guestbook', path: 'guestbook' },
           { component: () => import('pages/rtc-cologne/POurStory.vue'), name: 'rtc-cologne-our-story', path: 'our-story' },
           { component: () => import('pages/rtc-cologne/PPressReports.vue'), name: 'rtc-cologne-press-reports', path: 'press-reports' },

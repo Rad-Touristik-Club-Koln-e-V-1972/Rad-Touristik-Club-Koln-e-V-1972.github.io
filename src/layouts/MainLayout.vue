@@ -21,9 +21,9 @@
     </q-page-container>
     <q-footer class="bg-accent border">
       <div class="justify-evenly md-hide row sm-hide xs-hide">
-        <q-card v-for="it in useSponsorStore().all" :key="it.id" class="col-auto" flat>
+        <q-card v-for="it in sponsorsRepo.all()" :key="it.id" class="col-auto" flat>
           <a :href="it.url?.toString()" target="_blank">
-            <q-img fit="contain" height="36px" :src="it.imageUrl?.toString()" width="100px" />
+            <q-img fit="contain" height="36px" :src="it.galleryEntry.imageUrl.toString()" width="100px" />
           </a>
         </q-card>
       </div>
@@ -44,11 +44,14 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRepo } from 'pinia-orm'
 import { mdiCopyright, mdiMenu } from '@quasar/extras/mdi-v7'
 import CNavigationDrawer from 'components/MainLayout/CNavigationDrawer.vue'
 import DAccessibility from 'components/MainLayout/DAccessibility.vue'
 import DRTFPopup from 'components/MainLayout/DRTFPopup.vue'
-import useSponsorStore from 'stores/Sponsor'
+import Sponsor from 'src/models/entities/Sponsor'
+
+const sponsorsRepo = useRepo(Sponsor)
 
 const navDrawer = ref(false)
 </script>

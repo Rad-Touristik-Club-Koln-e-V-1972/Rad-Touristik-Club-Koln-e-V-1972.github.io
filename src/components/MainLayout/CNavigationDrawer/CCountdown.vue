@@ -24,18 +24,20 @@
           </q-circular-progress>
         </div>
       </div>
-      <div class="row">
-        <div class="col-auto offset-1">Zuerst:</div>
-      </div>
-      <div class="row">
-        <div class="col text-bold">{{ nextEvents[0]?.name }}</div>
+      <div v-if="nextEvents[0]">
+        <div class="row">
+          <div class="col-auto offset-1">Zuerst:</div>
+        </div>
+        <div class="row">
+          <div class="col text-bold">{{ nextEvents[0].time.name }}</div>
+        </div>
       </div>
       <div v-if="nextEvents[1]">
         <div class="row">
           <div class="col-auto offset-1">Danach:</div>
         </div>
         <div class="row">
-          <div class="col text-bold">{{ nextEvents[1].name }}</div>
+          <div class="col text-bold">{{ nextEvents[1].time.name }}</div>
         </div>
       </div>
     </q-card>
@@ -46,13 +48,14 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
 import { date, useInterval } from 'quasar'
+import { useRepo } from 'pinia-orm'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
-import useCalendarStore from 'stores/events/Calendar'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
+import CalendarRepository from 'stores/events/CalendarRepository'
+
+const calendarRepo = useRepo(CalendarRepository)
 
 const event = ref()
-
-const calendarStore = useCalendarStore()
 
 const _millisecondsSecond = 1000
 const _millisecondsMinute = 60 * _millisecondsSecond
@@ -63,11 +66,11 @@ const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
 
-const nextEvents = calendarStore.nextEvents
-const daysOfMonth = nextEvents[0] ? date.daysInMonth(nextEvents[0].start) : 30
+const nextEvents = calendarRepo.nextEvents()
+const daysOfMonth = nextEvents[0] ? date.daysInMonth(nextEvents[0].time.start) : 30
 
-const calcCountdown = (nextEvent: Event) => {
-  const milliseconds = Math.abs(Date.now() - nextEvent.start.getTime())
+const calcCountdown = (nextEvent: CalendarEvent) => {
+  const milliseconds = Math.abs(Date.now() - nextEvent.time.start.getTime())
 
   days.value = Math.floor(milliseconds / _millisecondsDay)
   hours.value = Math.floor((milliseconds % _millisecondsDay) / _millisecondsHour)

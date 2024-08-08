@@ -18,7 +18,7 @@
       >
         <q-carousel-slide v-for="it in items" :key="it.id" :name="it.id" class="column flex-center no-wrap">
           <div style="width: 20em">
-            <d-view :model-value="[it.image]" />
+            <d-view :model-value="[it.galleryEntry]" />
             <q-expansion-item v-if="it.text" expand-icon-toggle expand-separator label="Details">
               <q-card>
                 <q-card-section>
@@ -35,10 +35,12 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRepo } from 'pinia-orm'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
-import useNewsStore from 'stores/home/News'
+import NewsRepository from 'stores/home/NewsRepository'
 
-const items = useNewsStore().allValid
+const newsRepo = useRepo(NewsRepository)
 
+const items = newsRepo.allValid()
 const slide = ref(items[0]?.id)
 </script>

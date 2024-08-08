@@ -1,9 +1,9 @@
 <template>
   <q-card>
     <q-card-section class="text-subtitle2">
-      {{ props.modelValue.title }}
+      {{ props.modelValue.time.name }}
       <br />
-      {{ useDateTime().format(props.modelValue.start, props.modelValue.end) }}
+      {{ useDateTime().format(props.modelValue.time.start, props.modelValue.time.end) }}
       <br />
       {{ props.modelValue.location }}
     </q-card-section>
@@ -22,7 +22,7 @@ import { useRouter } from 'vue-router'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ album?: string; modelValue: Gallery }>()
+const props = defineProps<{ modelValue: Gallery }>()
 
 const router = useRouter()
 
@@ -31,6 +31,6 @@ const isLoading = ref(false)
 const open = async () => {
   isLoading.value = true
 
-  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album ? props.album : Object.keys(props.modelValue.images)[0], id: props.modelValue.id } })
+  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.modelValue.albums[0]?.id, galleryId: props.modelValue.id } })
 }
 </script>

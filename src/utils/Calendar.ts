@@ -1,14 +1,20 @@
 import Holidays, * as DateHolidays from 'date-holidays'
-import EventBuilder from 'src/models/builder/events/calendar/EventBuilder'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
+import { useRepo } from 'pinia-orm'
 
-export default function useCalendar() {
-  const holidays = new Holidays('DE', { languages: ['de'] })
+const calendarEventsRepo = useRepo(CalendarEvent)
+const holidays = new Holidays('DE', { languages: ['de'] })
 
-  return {
-    getHolidays(year: number): Event[] {
-      return holidays.getHolidays(year).map((it: DateHolidays.HolidaysTypes.Holiday) => new EventBuilder().setCategory(EEvent.Feiertag).setDate(it.date).setId(`${it.date}${it.name}`).setName(it.name).buildEvent())
-    },
-  }
-}
+export default () => ({
+  getHolidays: (year: number): CalendarEvent[] =>
+    holidays.getHolidays(year).map((it: DateHolidays.HolidaysTypes.Holiday) =>
+      calendarEventsRepo.make({
+        time: {
+          name: it.name,
+          start: it.date,
+        },
+        category: EEvent.Feiertag,
+      }),
+    ),
+})

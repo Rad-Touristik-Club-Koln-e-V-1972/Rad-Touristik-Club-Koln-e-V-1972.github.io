@@ -1,6 +1,7 @@
 import type { Router } from 'vue-router'
 import { store } from 'quasar/wrappers'
 import { createPinia } from 'pinia'
+import { createORM } from 'pinia-orm'
 
 /*
  * When adding new properties to stores, you should also
@@ -25,8 +26,7 @@ declare module 'pinia' {
 export default store((/* { ssrContext } */) => {
   const pinia = createPinia()
 
-  // You can add Pinia plugins here
-  // pinia.use(SomePiniaPlugin)
+  pinia.use(createORM())
 
   return pinia
 })

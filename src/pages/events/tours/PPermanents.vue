@@ -7,7 +7,7 @@
     </q-card-section>
     <q-card-section>
       <div class="justify-center q-gutter-lg row">
-        <div v-for="it in useTourStore().permanents" :key="it.id" class="col-auto">
+        <div v-for="it in permanentsRepo.all()" :key="it.id" class="col-auto">
           <c-permanent :model-value="it" />
         </div>
       </div>
@@ -16,6 +16,9 @@
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import CPermanent from 'components/pages/events/tours/CPermanent.vue'
-import useTourStore from 'stores/events/Tour'
+import Permanent from 'src/models/entities/events/tours/Permanent'
+
+const permanentsRepo = useRepo(Permanent)
 </script>

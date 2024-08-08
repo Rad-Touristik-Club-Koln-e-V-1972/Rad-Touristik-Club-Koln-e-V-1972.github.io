@@ -3,12 +3,12 @@
     <q-card-section class="bg-primary text-accent text-h6">Unsere Geschichte</q-card-section>
     <q-card-section>
       <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" indicator-color="secondary">
-        <q-tab label="Bilder" name="bilder" />
+        <q-tab v-if="entries" label="Bilder" name="bilder" />
         <q-tab label="Videos" name="videos" />
       </q-tabs>
       <q-tab-panels v-model="tab">
-        <q-tab-panel name="bilder">
-          <c-slideshow :gallery-entries="StartZiel['Start & Ziel']" height="200px" />
+        <q-tab-panel v-if="entries" name="bilder">
+          <c-slideshow :gallery-entries="entries" height="200px" />
         </q-tab-panel>
         <q-tab-panel name="videos">
           <q-video :ratio="16 / 9" src="https://www.youtube-nocookie.com/embed/bx0zAC-A-fg" />
@@ -51,8 +51,12 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRepo } from 'pinia-orm'
 import CSlideshow from 'components/pages/CSlideshow.vue'
-import StartZiel from 'stores/rtc-cologne/gallery/2022/05_29_RTF_50/Start_Ziel'
+import GalleryAlbumRepository from 'stores/rtc-cologne/GalleryAlbumRepository'
 
+const galleryAlbumsRepo = useRepo(GalleryAlbumRepository)
+
+const entries = galleryAlbumsRepo.getByGalleryAndAlbumName('50. Forsbach-Tour', 'Start & Ziel')?.entries
 const tab = ref('bilder')
 </script>

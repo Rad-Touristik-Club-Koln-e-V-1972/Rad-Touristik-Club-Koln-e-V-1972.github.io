@@ -15,8 +15,8 @@
   </div>
 </template>
 
-<script generic="T extends AEntity" lang="ts" setup>
-import type AEntity from 'src/models/entities/AEntity'
+<script generic="T extends Model & { id: string }" lang="ts" setup>
+import { type Model } from 'pinia-orm'
 
 const props = defineProps<{ items: T[] }>()
 </script>

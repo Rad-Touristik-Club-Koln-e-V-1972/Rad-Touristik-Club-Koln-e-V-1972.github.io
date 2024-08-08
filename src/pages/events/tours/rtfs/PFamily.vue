@@ -1,8 +1,14 @@
 <template>
-  <c-tour fee-hints="* Die Fahrkarten werden als verschiedenfarbige Chips am Start ausgegeben." :model-value="useTourStore().getFamily()" />
+  <c-tour v-if="familyTour" :model-value="familyTour" />
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import CTour from 'components/pages/events/tours/CTour.vue'
-import useTourStore from 'stores/events/Tour'
+import EEvent from 'src/models/enums/EEvent'
+import EventsRepository from 'stores/events/tours/EventsRepository'
+
+const eventsRepo = useRepo(EventsRepository)
+
+const familyTour = eventsRepo.getByCategory(EEvent.Familientour)
 </script>

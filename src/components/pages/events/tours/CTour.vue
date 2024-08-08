@@ -14,7 +14,7 @@
           <c-general :images="props.modelValue.images" :text="props.modelValue.text" />
         </q-tab-panel>
         <q-tab-panel name="info">
-          <c-info :fee-hints="props.feeHints" :fees="props.modelValue.fees" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
+          <c-info :fees="props.modelValue.fees" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="tracks">
           <c-tracks :tracks="props.modelValue.tracks" />
@@ -39,7 +39,7 @@ import DPopup from 'components/pages/events/tours/DPopup.vue'
 import Event from 'src/models/entities/events/tours/Event'
 import useDateTime from 'src/utils/DateTime'
 
-const props = defineProps<{ feeHints?: string; modelValue: Event | undefined }>()
+const props = defineProps<{ modelValue: Event | undefined }>()
 
 const tab = ref('info')
 </script>

@@ -29,16 +29,16 @@
         <template #column-header-after="{ scope: { timestamp } }">
           <!-- Day / Week all day entry -->
           <template v-for="e in events" :key="e.id">
-            <div v-if="e.allDay && date.isSameDate(timestamp.date, e.start)" :class="`bg-${e.color}`" class="cursor-pointer full-width text-accent" @click="event.showEvent(e)">
-              {{ e.name }}
+            <div v-if="e.time.allDay && date.isSameDate(timestamp.date, e.time.start)" :class="`bg-${e.color}`" class="cursor-pointer full-width text-accent" @click="event.showEvent(e)">
+              {{ e.time.name }}
             </div>
           </template>
         </template>
         <template #day="{ scope: { timestamp } }">
           <!-- Month entry -->
           <template v-for="e in events" :key="e.id">
-            <div v-if="dateTime.isBetweenDates(timestamp.date, e.start, e.end)" :class="`bg-${e.color}`" class="cursor-pointer text-accent" @click="event.showEvent(e)">
-              {{ e.name }}
+            <div v-if="dateTime.isBetweenDates(timestamp.date, e.time.start, e.time.end)" :class="`bg-${e.color}`" class="cursor-pointer text-accent" @click="event.showEvent(e)">
+              {{ e.time.name }}
             </div>
           </template>
         </template>
@@ -46,13 +46,13 @@
           <!-- Day / Week with time entry -->
           <template v-for="e in events" :key="e.id">
             <div
-              v-if="!e.allDay && dateTime.isBetweenDates(timestamp.date, e.start, e.end)"
+              v-if="!e.time.allDay && dateTime.isBetweenDates(timestamp.date, e.time.start, e.time.end)"
               :class="`absolute bg-${e.color}`"
               class="cursor-pointer full-width text-accent"
               :style="getDayEntryStyle(e, timeStartPos, timeDurationHeight)"
               @click="event.showEvent(e)"
             >
-              {{ e.name }}
+              {{ e.time.name }}
             </div>
           </template>
         </template>
@@ -66,13 +66,14 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { date, useQuasar } from 'quasar'
+import { useRepo } from 'pinia-orm'
 import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi-v7'
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
 import CList from 'components/pages/events/calendar/CList.vue'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import ECalendar from 'src/models/enums/events/ECalendar'
-import useCalendarStore from 'stores/events/Calendar'
+import CalendarRepository from 'stores/events/CalendarRepository'
 import useDateTime from 'src/utils/DateTime'
 
 // noinspection LocalVariableNamingConventionJS
@@ -80,23 +81,25 @@ const $q = useQuasar()
 
 const dateTime = useDateTime()
 
+const calendarRepo = useRepo(CalendarRepository)
+
 const calendar = ref()
 const event = ref()
 
-const events = useCalendarStore().allNotCancelled
+const events = calendarRepo.allNotCancelled()
 const mode = ref<ECalendar>(ECalendar.List)
 const selectedDate = ref(date.formatDate(new Date(), 'YYYY-MM-DD'))
 const title = ref('')
 
-const getDayEntryStyle = (event: Event, timeStartPos: (time: string) => number, timeDurationHeight: (duration?: number | string) => number) => {
+const getDayEntryStyle = (event: CalendarEvent, timeStartPos: (time: string) => number, timeDurationHeight: (duration?: number | string) => number) => {
   const s = { 'align-items': '', height: '', top: '' }
 
-  if (event.end) {
+  if (event.time.end) {
     s['align-items'] = 'flex-start'
 
-    s.height = `${timeDurationHeight(date.getDateDiff(event.end, event.start, 'minutes')).toFixed()}px`
+    s.height = `${timeDurationHeight(date.getDateDiff(event.time.end, event.time.start, 'minutes')).toFixed()}px`
 
-    s.top = `${timeStartPos(date.formatDate(event.start, 'HH:mm')).toFixed()}px`
+    s.top = `${timeStartPos(date.formatDate(event.time.start, 'HH:mm')).toFixed()}px`
   }
 
   return s

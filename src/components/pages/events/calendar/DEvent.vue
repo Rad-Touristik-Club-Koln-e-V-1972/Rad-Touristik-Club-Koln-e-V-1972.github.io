@@ -2,7 +2,7 @@
   <q-dialog v-model="dialog">
     <q-card v-if="selectedEvent" flat>
       <q-card-section :class="`bg-${selectedEvent.color}`" class="row">
-        <div class="text-accent text-h6">{{ selectedEvent?.name }}</div>
+        <div class="text-accent text-h6">{{ selectedEvent?.time.name }}</div>
         <q-space />
         <q-btn v-close-popup dense flat :icon="mdiClose" round text-color="accent" />
       </q-card-section>
@@ -39,17 +39,17 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { mdiClose } from '@quasar/extras/mdi-v7'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
 import useDateTime from 'src/utils/DateTime'
 
 const dialog = ref(false)
-const selectedEvent = ref<Event>()
+const selectedEvent = ref<CalendarEvent>()
 
 const isEventMitgliederversammlung = computed(() => selectedEvent.value?.category === EEvent.Mitgliederversammlung)
 
-const getDate = (event: Event) => useDateTime().format(event.start, event.end, event.allDay)
-const showEvent = (event: Event) => {
+const getDate = (event: CalendarEvent) => useDateTime().format(event.time.start, event.time.end, event.time.allDay)
+const showEvent = (event: CalendarEvent) => {
   selectedEvent.value = event
   dialog.value = true
 }

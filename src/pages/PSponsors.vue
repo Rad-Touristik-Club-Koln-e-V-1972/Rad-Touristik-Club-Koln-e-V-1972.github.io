@@ -7,12 +7,12 @@
       Auch all denjenigen, die um Diskretion gebeten haben, sind wir sehr verbunden!
     </q-card-section>
     <q-card-section>
-      <c-masonry-wall v-slot="{ item }" :items="useSponsorStore().all">
+      <c-masonry-wall v-slot="{ item }" :items="sponsorsRepo.withAllRecursive().all()">
         <a :href="item.url?.toString()" target="_blank">
           <q-card flat>
             <q-card-section>
               <div v-if="item.text">{{ item.text }}</div>
-              <q-img v-else-if="item.imageUrl" fit="contain" :src="item.imageUrl.toString()" />
+              <q-img v-else-if="item.galleryEntry" fit="contain" :src="item.galleryEntry.imageUrl.toString()" />
             </q-card-section>
           </q-card>
         </a>
@@ -22,6 +22,9 @@
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import CMasonryWall from 'components/pages/CMasonryWall.vue'
-import useSponsorStore from 'stores/Sponsor'
+import Sponsor from 'src/models/entities/Sponsor'
+
+const sponsorsRepo = useRepo(Sponsor)
 </script>

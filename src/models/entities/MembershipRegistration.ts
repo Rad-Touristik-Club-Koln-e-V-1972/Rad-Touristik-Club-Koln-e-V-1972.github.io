@@ -1,13 +1,18 @@
-import AEntity from 'src/models/entities/AEntity'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import { Model } from 'pinia-orm'
+import { HasOne, MorphOne } from 'pinia-orm/decorators'
+import { Uid } from 'pinia-orm/nanoid/non-secure'
+import MembershipBdr from 'src/models/entities/membership-registration/MembershipBdr'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import MembershipPersonalData from 'src/models/entities/membership-registration/MembershipPersonalData'
+import MembershipSignature from 'src/models/entities/membership-registration/MembershipSignature'
 
-export default class MembershipRegistration extends AEntity {
-  bdrMembership = new BdrMembership()
-  consentPrivacyPolicy = new Signature()
-  membershipFee = new MembershipFee()
-  personalData = new PersonalData()
-  signature = new Signature()
+export default class MembershipRegistration extends Model {
+  static override readonly entity = 'membershipRegistrations'
+  @Uid() declare id: string
+
+  @HasOne(() => MembershipBdr, 'membershipRegistrationId') declare bdr: MembershipBdr
+  @MorphOne(() => MembershipSignature, 'membershipSignatureableId', 'membershipSignatureableType') declare consentPrivacyPolicySignature: MembershipSignature
+  @HasOne(() => MembershipFee, 'membershipRegistrationId') declare fee: MembershipFee
+  @HasOne(() => MembershipPersonalData, 'membershipRegistrationId') declare personalData: MembershipPersonalData
+  @MorphOne(() => MembershipSignature, 'membershipSignatureableId', 'membershipSignatureableType') declare signature: MembershipSignature
 }

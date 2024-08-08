@@ -14,14 +14,14 @@
         </div>
       </div>
     </q-toolbar>
-    <q-table :columns :filter :filter-method="filterMethod" :pagination :rows="useCalendarStore().all" separator="none">
+    <q-table :columns :filter :filter-method="filterMethod" :pagination :rows="all" separator="none">
       <template #body="props">
         <q-tr :class="getColor(props.row) + getStyle(props.row)">
           <q-td>{{ props.row.category }}</q-td>
           <q-td>
             <a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank">{{ props.row.name }}</a>
           </q-td>
-          <q-td>{{ dateTime.format(props.row.start, props.row.end, props.row.allDay) }}</q-td>
+          <q-td>{{ dateTime.format(props.row.time.start, props.row.time.end, props.row.time.allDay) }}</q-td>
           <q-td>
             <router-link v-if="props.row.contact" :class="getColor(props.row)" :to="{ name: 'rtc-cologne-contacts' }">
               {{ props.row.contact }}
@@ -44,21 +44,24 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { date, is } from 'quasar'
-import type { QTableColumn } from 'quasar'
+import { date, is, type QTableColumn } from 'quasar'
+import { useRepo } from 'pinia-orm'
 import { mdiArrowUpLeftBold, mdiArrowUpRightBold } from '@quasar/extras/mdi-v7'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
 import CCategories from 'components/pages/events/calendar/list/filter/CCategories.vue'
 import CDateRange from 'components/pages/events/calendar/list/filter/CDateRange.vue'
-import Event from 'src/models/entities/events/calendar/Event'
-import type Filter from 'src/models/entities/events/calendar/Filter'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
-import useCalendarStore from 'stores/events/Calendar'
+import type Filter from 'src/models/interfaces/events/calendar/Filter'
+import CalendarRepository from 'stores/events/CalendarRepository'
 import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const columns: QTableColumn<Event>[] = [
+const calendarRepo = useRepo(CalendarRepository)
+
+const all = calendarRepo.allSortedByDate()
+const columns: QTableColumn<CalendarEvent>[] = [
   {
     align: 'left',
     field: 'category',
@@ -69,7 +72,7 @@ const columns: QTableColumn<Event>[] = [
   },
   {
     align: 'left',
-    field: 'name',
+    field: (row: CalendarEvent) => row.time.name,
     label: 'Event',
     name: 'name',
     sort: (a: string, b: string) => a.localeCompare(b),
@@ -77,10 +80,10 @@ const columns: QTableColumn<Event>[] = [
   },
   {
     align: 'left',
-    field: (row: Event) => dateTime.format(row.start, row.end, row.allDay),
+    field: (row: CalendarEvent) => dateTime.format(row.time.start, row.time.end, row.time.allDay),
     label: 'Termin',
     name: 'datetime',
-    sort: (a: string, b: string, rowA: Event, rowB: Event) => sortDateTime(rowA, rowB),
+    sort: (a: string, b: string, rowA: CalendarEvent, rowB: CalendarEvent) => sortDateTime(rowA, rowB),
     sortable: true,
     sortOrder: 'ad',
   },
@@ -99,7 +102,6 @@ const columns: QTableColumn<Event>[] = [
     sortable: true,
   },
 ]
-
 const filter = ref<Filter>({
   categories: [EEvent.CTF, EEvent.Marathon, EEvent.Mitgliederversammlung, EEvent.Permanente, EEvent.RTC, EEvent.RTF, EEvent.Veranstaltung, EEvent.Vereinsfahrt],
   dateRange: { from: `01.01.${dateTime.today.value.getFullYear().toFixed()}`, to: `31.12.${(dateTime.today.value.getFullYear() + 1).toFixed()}` },
@@ -111,9 +113,8 @@ const pagination = {
   page: 1,
   rowsPerPage: 20,
 }
-
-const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
-  let tmp = rows as Event[]
+const filterMethod = (rows: readonly CalendarEvent[], terms: Filter): CalendarEvent[] => {
+  let tmp = rows as CalendarEvent[]
 
   if (terms.categories.length) tmp = tmp.filter((item) => terms.categories.includes(item.category))
 
@@ -126,29 +127,28 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
       if (terms.dateRange.to) to = date.extractDate(terms.dateRange.to, 'DD.MM.YYYY')
     } else from = date.extractDate(terms.dateRange, 'DD.MM.YYYY')
 
-    tmp = tmp.filter((item) => dateTime.isBetweenDates(item.start, from, to))
+    tmp = tmp.filter((item) => dateTime.isBetweenDates(item.time.start, from, to))
   }
 
-  if (terms.search) tmp = tmp.filter((item) => (item.kilometer.toFixed() + item.contact + item.name).toLowerCase().includes(terms.search.toLowerCase()))
+  if (terms.search) tmp = tmp.filter((item) => ((item.kilometer?.toFixed() ?? '') + item.contact + item.time.name).toLowerCase().includes(terms.search.toLowerCase()))
 
   return tmp
 }
-const getColor = (event: Event) => `bg-${event.color} text-accent`
-const getStyle = (event: Event) => {
+const getColor = (event: CalendarEvent) => `bg-${event.color} text-accent`
+const getStyle = (event: CalendarEvent) => {
   let style = ''
 
   if (event.category === EEvent.Abgesagt) style += 'text-decoration: double line-through '
 
   return style
 }
-
-const sortDateTime = (a: Event, b: Event) => {
-  let comp = new Date(a.start).getTime() - new Date(b.start).getTime()
+const sortDateTime = (a: CalendarEvent, b: CalendarEvent) => {
+  let comp = new Date(a.time.start).getTime() - new Date(b.time.start).getTime()
 
   if (comp === 0) {
-    if (!a.end) comp = -1
-    else if (!b.end) comp = 1
-    else comp = new Date(a.end).getTime() - new Date(b.end).getTime()
+    if (!a.time.end) comp = -1
+    else if (!b.time.end) comp = 1
+    else comp = new Date(a.time.end).getTime() - new Date(b.time.end).getTime()
   }
 
   return comp

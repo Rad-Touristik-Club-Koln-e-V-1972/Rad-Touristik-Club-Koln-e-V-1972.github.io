@@ -9,7 +9,7 @@
       Weitere Tipps werden folgen.
     </q-card-section>
     <q-card-section>
-      <c-masonry-wall v-slot="{ item }" :items="useSuggestionStore().all">
+      <c-masonry-wall v-slot="{ item }" :items="suggestionsRepo.all()">
         <a :href="item.url.toString()" target="_blank">
           <q-card class="bg-primary">
             <q-card-section class="text-h6">{{ item.title }}</q-card-section>
@@ -22,6 +22,9 @@
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import CMasonryWall from 'components/pages/CMasonryWall.vue'
-import useSuggestionStore from 'stores/events/tours/Suggestion'
+import Suggestion from 'src/models/entities/events/tours/Suggestion'
+
+const suggestionsRepo = useRepo(Suggestion)
 </script>

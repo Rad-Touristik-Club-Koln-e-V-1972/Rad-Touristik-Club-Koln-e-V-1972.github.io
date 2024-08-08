@@ -25,7 +25,7 @@
               <q-markup-table flat>
                 <tbody>
                   <tr v-for="it in props.times" :key="it.id">
-                    <td class="text-right text-no-wrap">{{ it.end ? `${it.start} - ${it.end}` : it.start }}</td>
+                    <td class="text-right text-no-wrap">{{ it.startText ?? (it.end ? `${it.start} - ${it.end}` : it.start) }}</td>
                     <td>{{ it.name }}</td>
                   </tr>
                 </tbody>
@@ -36,8 +36,8 @@
         <div class="col-auto">
           <q-card>
             <q-card-section class="bg-primary text-accent text-h6">Gebühren</q-card-section>
-            <q-card-section>
-              <q-markup-table v-for="[first, second] in fgs" :key="first" flat>
+            <q-card-section v-for="[first, second] in fgs" :key="first" flat>
+              <q-markup-table flat>
                 <thead v-if="first">
                   <tr>
                     <th :id="first" colspan="2">
@@ -52,7 +52,7 @@
                   </tr>
                 </tbody>
               </q-markup-table>
-              {{ props.feeHints }}
+              {{ first.text }}
             </q-card-section>
           </q-card>
         </div>
@@ -77,8 +77,8 @@
                 </thead>
                 <tbody>
                   <tr v-for="it in props.tracks.filter((t) => t.controls)" :key="it.id" :class="it.important ? 'text-primary' : ''">
-                    <td>{{ it.name }}</td>
-                    <td>{{ dateTime.formatTime(it.start, it.end) }}</td>
+                    <td>{{ it.time.name }}</td>
+                    <td>{{ dateTime.formatTime(it.time.start, it.time.end) }}</td>
                     <td>{{ it.length }}km</td>
                     <td>{{ it.height }}</td>
                     <td>{{ it.profile }}</td>
@@ -104,18 +104,18 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useQuasar } from 'quasar'
-import Control from 'src/models/entities/events/tours/Control'
-import Fee from 'src/models/entities/events/tours/events/Fee'
-import Time from 'src/models/entities/events/tours/events/Time'
+import Fee from 'src/models/entities/Fee'
+import Time from 'src/models/entities/events/Time'
+import Location from 'src/models/entities/events/tours/Location'
 import Track from 'src/models/entities/events/tours/events/Track'
 import useDateTime from 'src/utils/DateTime'
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()
 
-const props = defineProps<{ feeHints?: string; fees: Fee[]; location: Control; times: Time[]; tracks: Track[] }>()
+const props = defineProps<{ fees: Fee[]; location: Location; times: Time[]; tracks: Track[] }>()
 
 const dateTime = useDateTime()
 
-const fgs = computed(() => Map.groupBy(props.fees, (it) => it.group))
+const fgs = computed(() => Map.groupBy(props.fees, (it) => it.feeGroup))
 </script>

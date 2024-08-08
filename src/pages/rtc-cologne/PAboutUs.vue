@@ -82,17 +82,18 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useQuasar } from 'quasar'
+import { useRepo } from 'pinia-orm'
 import { mdiArrowRight, mdiBike, mdiInformation } from '@quasar/extras/mdi-v7'
 import CSlideshow from 'components/pages/CSlideshow.vue'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()
 
-const imageUrls = ref([
-  new GalleryEntryBuilder().setId('1e0ba419-3aa9-40b1-8cda-9bbf6dabcecb').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_0.jpg.avif').buildGalleryEntry(),
-  new GalleryEntryBuilder().setId('633246fd-7423-420c-9e4c-d28503755b34').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_1.jpg.avif').buildGalleryEntry(),
-  new GalleryEntryBuilder().setId('a4b3fe25-0d70-4f25-8ad1-160f684da614').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_2.jpg.avif').buildGalleryEntry(),
+const imageUrls = useRepo(GalleryAlbumEntry).make([
+  { imageUrl: new URL('https://content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_0.jpg.avif') },
+  { imageUrl: new URL('https://content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_1.jpg.avif') },
+  { imageUrl: new URL('https://content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_2.jpg.avif') },
 ])
 
 const statutesUrl = 'https://content.rtc-koeln.de/pages/rtc-cologne/about-us/2023-10-06_Satzung-RTC-Köln-e.V..pdf'

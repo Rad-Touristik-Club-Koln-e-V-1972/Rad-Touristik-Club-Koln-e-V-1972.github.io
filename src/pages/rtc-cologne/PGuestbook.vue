@@ -41,10 +41,12 @@
 </template>
 
 <script lang="ts" setup>
+import { useRepo } from 'pinia-orm'
 import { mdiEmailArrowRight } from '@quasar/extras/mdi-v7'
 import CGuestbook from 'components/pages/rtc-cologne/CGuestbook.vue'
-import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
-import useGuestbookStore from 'stores/rtc-cologne/Guestbook'
+import GuestbookRepository from 'stores/rtc-cologne/GuestbookRepository'
 
-const items: Record<string, GuestbookEntry[]> = useGuestbookStore().groupedByYear
+const guestbookRepo = useRepo(GuestbookRepository)
+
+const items = guestbookRepo.allGroupedByYear()
 </script>

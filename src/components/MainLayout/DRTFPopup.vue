@@ -1,9 +1,9 @@
 <template>
   <q-dialog v-model="dialog" persistent>
-    <q-card v-if="calendarStore.nextRTF">
+    <q-card v-if="nextRTF">
       <q-card-section class="bg-primary text-accent text-h6">NICHT VERPASSEN</q-card-section>
       <q-card-section>
-        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
+        Unsere <b>{{ nextRTF.time.name }}</b> ist am <b>{{ useDateTime().format(nextRTF.time.start) }}.</b>
       </q-card-section>
       <q-card-section>
         <b>Weitere Informationen folgen!</b>
@@ -24,10 +24,13 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import useCalendarStore from 'stores/events/Calendar'
+import { useRepo } from 'pinia-orm'
+import CalendarRepository from 'stores/events/CalendarRepository'
 import useDateTime from 'src/utils/DateTime'
 
-const calendarStore = useCalendarStore()
+const calendarRepo = useRepo(CalendarRepository)
 
-const dialog = ref(!!calendarStore.nextRTF)
+const nextRTF = ref(calendarRepo.nextRTF())
+
+const dialog = ref(!!nextRTF.value)
 </script>
