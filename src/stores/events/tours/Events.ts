@@ -11,21 +11,20 @@ export default [
   new EventBuilder()
     .setCategory(EEvent.RTF)
     .setFees(
-      new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
-      new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(6).buildFee(),
-      new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(8).buildFee(),
-      new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
-      new FeeBuilder().setId('ce8f7235-4d1e-4ec0-a704-921bcf8588df').setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
-      new FeeBuilder().setId('b3be3c22-e784-4650-b27c-f151056faf88').setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
-      new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
+      new FeeBuilder().setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
+      new FeeBuilder().setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(6).buildFee(),
+      new FeeBuilder().setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(8).buildFee(),
+      new FeeBuilder().setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
+      new FeeBuilder().setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
+      new FeeBuilder().setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
+      new FeeBuilder().setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
-    .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
+    .setImages({imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif')})
     .setLastChange('2024-05-28')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
-        .setId('9644f162-29c8-40ef-a37f-3eac5e94d8c5')
+
         .setStreet('Heerstraße 7')
         .setTitle('Schulzentrum Zündorf')
         .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
@@ -60,13 +59,13 @@ Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement 
 Euer RTC Köln e.V`,
     )
     .setTimes(
-      new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('07:30').buildTime(),
-      new TimeBuilder().setId('b8cdb12d-037b-4522-894e-48425a8218c0').setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
+      new TimeBuilder().setName('Start').setTime('07:30').buildTime(),
+      new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
     )
     .setTitle('Die Forsbach-Tour')
     .setTracks(
       new TrackBuilder()
-        .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
+
         .setName('Hinweis')
         .setText(
           `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
@@ -78,7 +77,7 @@ Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
         )
         .buildTrack(),
       new TrackBuilder()
-        .setId('19564df0-3abb-4d67-b262-2ff357826470')
+
         .setName('Vor der Tour')
         .setText(
           `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
@@ -87,7 +86,7 @@ Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in de
         )
         .buildTrack(),
       new TrackBuilder()
-        .setId('bb9e11a4-f627-41eb-a288-34d0d4acfc66')
+
         .setName('Während der Tour')
         .setText(
           `Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.
@@ -99,7 +98,7 @@ Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
         )
         .buildTrack(),
       new TrackBuilder()
-        .setId('d10f9888-866c-4e64-8392-541e09a7b543')
+
         .setName('Nach der Tour')
         .setText(
           `Besonders wichtig nach so einer anstrengenden Tour: Duschen.
@@ -113,7 +112,7 @@ Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am
         )
         .buildTrack(),
       new TrackBuilder()
-        .setId('dcd525d9-c804-435f-b50f-21ce85294dc7')
+
         .setName('Alle Strecken')
         .setText(
           `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
@@ -146,7 +145,6 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
       new TrackBuilder()
         .setControls(1)
         .setHeight(70)
-        .setId('71029e5d-5f30-4cf0-b2fa-abf0468d3864')
         .setLength(22)
         .setName('Die 22er')
         .setProfile(EProfile.Flach)
@@ -217,7 +215,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
       new TrackBuilder()
         .setControls(1)
         .setHeight(390)
-        .setId('c1934b4b-2058-4100-946e-77c264533c76')
+
         .setLength(52)
         .setName('Die 52er')
         .setText(
@@ -236,7 +234,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
       new TrackBuilder()
         .setControls(2)
         .setHeight(780)
-        .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
+
         .setLength(82)
         .setName('Die 82er')
         .setProfile(EProfile.Wellig)
@@ -286,7 +284,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
       new TrackBuilder()
         .setControls(3)
         .setHeight(1500)
-        .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
+
         .setLength(125)
         .setName('Die 125er')
         .setProfile(EProfile.Huegelig)
@@ -325,7 +323,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
       new TrackBuilder()
         .setControls(4)
         .setHeight(1850)
-        .setId('3e252d86-e452-43f3-9f93-440eeb792338')
+
         .setLength(151)
         .setName('Die 151er')
         .setProfile(EProfile.Huegelig)

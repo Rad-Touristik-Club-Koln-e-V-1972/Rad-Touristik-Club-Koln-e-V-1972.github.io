@@ -2,7 +2,7 @@ import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import _2024 from './calendar/2024'
 import EEvent from 'src/models/enums/EEvent'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import useCalendar from 'src/utils/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
@@ -10,7 +10,7 @@ export default defineStore('calendar', () => {
   const calendar = useCalendar()
   const dateTime = useDateTime()
 
-  const events = ref<Record<string, Event[]>>({
+  const events = ref<Record<string, CalendarEvent[]>>({
     2024: [..._2024, ...calendar.getHolidays(2024)],
   })
 

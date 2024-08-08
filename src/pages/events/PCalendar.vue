@@ -70,7 +70,7 @@ import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
 import CList from 'components/pages/events/calendar/CList.vue'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import ECalendar from 'src/models/enums/events/ECalendar'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
@@ -85,7 +85,7 @@ const mode = ref<ECalendar>(ECalendar.List)
 const selectedDate = ref(date.formatDate(new Date(), 'YYYY-MM-DD'))
 const title = ref('')
 
-const getDayEntryStyle = (event: Event, timeStartPos: (time: string) => number, timeDurationHeight: (duration?: number | string) => number) => {
+const getDayEntryStyle = (event: CalendarEvent, timeStartPos: (time: string) => number, timeDurationHeight: (duration?: number | string) => number) => {
   const s = { 'align-items': '', height: '', top: '' }
 
   if (event.end) {

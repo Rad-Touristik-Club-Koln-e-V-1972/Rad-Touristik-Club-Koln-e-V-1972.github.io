@@ -1,9 +1,9 @@
 import type { CountryCode } from 'libphonenumber-js'
 import ABuilder from 'src/models/builder/ABuilder'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import MembershipPersonalData from 'src/models/entities/membership-registration/MembershipPersonalData'
 
 export default class PersonalDataBuilder extends ABuilder {
-  private personalData = new PersonalData()
+  private personalData = new MembershipPersonalData()
 
   buildPersonalData = () => Object.assign(this.personalData, this.buildAEntity())
 

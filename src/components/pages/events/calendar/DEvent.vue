@@ -39,17 +39,17 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { mdiClose } from '@quasar/extras/mdi-v7'
-import Event from 'src/models/entities/events/calendar/Event'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
 import useDateTime from 'src/utils/DateTime'
 
 const dialog = ref(false)
-const selectedEvent = ref<Event>()
+const selectedEvent = ref<CalendarEvent>()
 
 const isEventMitgliederversammlung = computed(() => selectedEvent.value?.category === EEvent.Mitgliederversammlung)
 
-const getDate = (event: Event) => useDateTime().format(event.start, event.end, event.allDay)
-const showEvent = (event: Event) => {
+const getDate = (event: CalendarEvent) => useDateTime().format(event.start, event.end, event.allDay)
+const showEvent = (event: CalendarEvent) => {
   selectedEvent.value = event
   dialog.value = true
 }

@@ -50,15 +50,15 @@ import { mdiArrowUpLeftBold, mdiArrowUpRightBold } from '@quasar/extras/mdi-v7'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
 import CCategories from 'components/pages/events/calendar/list/filter/CCategories.vue'
 import CDateRange from 'components/pages/events/calendar/list/filter/CDateRange.vue'
-import Event from 'src/models/entities/events/calendar/Event'
-import type Filter from 'src/models/entities/events/calendar/Filter'
+import CalendarEvent from 'src/models/entities/events/CalendarEvent'
 import EEvent from 'src/models/enums/EEvent'
+import type Filter from 'src/models/interfaces/events/calendar/Filter'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
 const dateTime = useDateTime()
 
-const columns: QTableColumn<Event>[] = [
+const columns: QTableColumn<CalendarEvent>[] = [
   {
     align: 'left',
     field: 'category',
@@ -77,10 +77,10 @@ const columns: QTableColumn<Event>[] = [
   },
   {
     align: 'left',
-    field: (row: Event) => dateTime.format(row.start, row.end, row.allDay),
+    field: (row: CalendarEvent) => dateTime.format(row.start, row.end, row.allDay),
     label: 'Termin',
     name: 'datetime',
-    sort: (a: string, b: string, rowA: Event, rowB: Event) => sortDateTime(rowA, rowB),
+    sort: (a: string, b: string, rowA: CalendarEvent, rowB: CalendarEvent) => sortDateTime(rowA, rowB),
     sortable: true,
     sortOrder: 'ad',
   },
@@ -112,8 +112,8 @@ const pagination = {
   rowsPerPage: 20,
 }
 
-const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
-  let tmp = rows as Event[]
+const filterMethod = (rows: readonly CalendarEvent[], terms: Filter): CalendarEvent[] => {
+  let tmp = rows as CalendarEvent[]
 
   if (terms.categories.length) tmp = tmp.filter((item) => terms.categories.includes(item.category))
 
@@ -133,8 +133,8 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
 
   return tmp
 }
-const getColor = (event: Event) => `bg-${event.color} text-accent`
-const getStyle = (event: Event) => {
+const getColor = (event: CalendarEvent) => `bg-${event.color} text-accent`
+const getStyle = (event: CalendarEvent) => {
   let style = ''
 
   if (event.category === EEvent.Abgesagt) style += 'text-decoration: double line-through '
@@ -142,7 +142,7 @@ const getStyle = (event: Event) => {
   return style
 }
 
-const sortDateTime = (a: Event, b: Event) => {
+const sortDateTime = (a: CalendarEvent, b: CalendarEvent) => {
   let comp = new Date(a.start).getTime() - new Date(b.start).getTime()
 
   if (comp === 0) {

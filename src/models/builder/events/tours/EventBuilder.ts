@@ -1,6 +1,6 @@
 import TourBuilder from 'src/models/builder/events/tours/TourBuilder'
 import Event from 'src/models/entities/events/tours/Event'
-import Fee from 'src/models/entities/events/tours/events/Fee'
+import EventFee from 'src/models/entities/events/tours/events/EventFee'
 import Time from 'src/models/entities/events/tours/events/Time'
 import Track from 'src/models/entities/events/tours/events/Track'
 
@@ -9,7 +9,7 @@ export default class EventBuilder extends TourBuilder {
 
   buildEvent = () => Object.assign(this.event, this.buildTour())
 
-  setFees = (...value: Fee[]): this => {
+  setFees = (...value: EventFee[]): this => {
     this.event.fees = value
 
     return this

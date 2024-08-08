@@ -1,0 +1,38 @@
+import EEvent from 'src/models/enums/EEvent'
+
+export default {
+  albums: [
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150308.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150418.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150506a.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150506b.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150506c.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150510.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150517.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150527.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150605a.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150605b.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150605c.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150607.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150628_Siegerehrung_Photo-Hyou-Vielz.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-3.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150809-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150809-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150830-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150830-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151003-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151003-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151011-1.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/151011-2.jpg.avif') },
+    { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/rtc-984-intro-2015.jpg.avif') },
+  ],
+  category: EEvent.Vereinsfahrt,
+  location: 'Köln',
+  time: {
+    name: 'Rückblick',
+    start: new Date('2015-12-31'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2015/Rueckblick/150804-2.jpg.avif'),
+}

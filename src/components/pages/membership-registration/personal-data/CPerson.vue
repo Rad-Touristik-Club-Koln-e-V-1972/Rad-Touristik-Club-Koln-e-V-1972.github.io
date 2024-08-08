@@ -34,9 +34,9 @@
 // TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
 // @ts-expect-error TypeScriptCheckImport
 import * as germanMetadata from 'german-metadata/german-metadata'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import MembershipPersonalData from 'src/models/entities/membership-registration/MembershipPersonalData'
 
-const modelValue = defineModel<PersonalData>({ required: true })
+const modelValue = defineModel<MembershipPersonalData>({ required: true })
 
 // TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
 // eslint-disable-next-line @typescript-eslint/no-unsafe-return,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access

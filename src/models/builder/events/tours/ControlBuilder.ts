@@ -1,8 +1,8 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import Control from 'src/models/entities/events/tours/Control'
+import Location from 'src/models/entities/events/tours/Location'
 
 export default class ControlBuilder extends ABuilder {
-  private control = new Control()
+  private control = new Location()
 
   buildControl = () => Object.assign(this.control, this.buildAEntity())
 

@@ -1,0 +1,36 @@
+export default {
+  albums: [
+    {
+      entries: [
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/5f3ad58d-00d4-4dca-bfe6-efa45e8c23ce.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2569.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2573.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2574.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2575.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2576.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2581.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2582.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_2583.JPG.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5880.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5881.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5882.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5883.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5884.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5885.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5886.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5887.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5888.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5889.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/IMG_5890.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/b74ba152-d427-40ac-8ef4-4539bcb153e3.jpg.avif') },
+        { imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/d5153845-c790-4f8d-8aa9-cd62abe21ce3.JPG.avif') },
+      ],
+    },
+  ],
+  location: 'Wahlscheid',
+  time: {
+    name: 'Erste Ausfahrt 2023',
+    start: new Date('2023-01-01'),
+  },
+  titleImageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/01_01_Januarausfahrt/b74ba152-d427-40ac-8ef4-4539bcb153e3.jpg.avif'),
+}

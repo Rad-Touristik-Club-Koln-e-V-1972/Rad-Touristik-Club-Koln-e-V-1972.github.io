@@ -1,8 +1,8 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import PopupBuilder from 'src/models/builder/PopupBuilder'
-import Control from 'src/models/entities/events/tours/Control'
+import Location from 'src/models/entities/events/tours/Location'
 import Tour from 'src/models/entities/events/tours/Tour'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import GalleryAlbumEntry from 'src/models/entities/rtc-cologne/gallery/GalleryAlbumEntry'
 import EEvent from 'src/models/enums/EEvent'
 
 export default class TourBuilder extends ABuilder {
@@ -22,13 +22,13 @@ export default class TourBuilder extends ABuilder {
     return this
   }
 
-  setControls = (...value: Control[]): this => {
+  setControls = (...value: Location[]): this => {
     this.tour.controls = value
 
     return this
   }
 
-  setImages = (...value: GalleryEntry[]): this => {
+  setImages = (...value: GalleryAlbumEntry[]): this => {
     this.tour.images = value
 
     return this
@@ -40,14 +40,14 @@ export default class TourBuilder extends ABuilder {
     return this
   }
 
-  setLocation = (value: Control): this => {
+  setLocation = (value: Location): this => {
     this.tour.location = value
 
     return this
   }
 
   setPopup = (text: string, title: string): this => {
-    this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).buildPopup()
+    this.tour.popup = new PopupBuilder().setText(text).setTitle(title).buildPopup()
 
     return this
   }
