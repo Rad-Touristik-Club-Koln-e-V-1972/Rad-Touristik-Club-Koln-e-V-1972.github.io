@@ -1,7 +1,7 @@
 import EEvent from 'src/models/enums/EEvent'
 
 export default {
-  albums: [(await import('./05_28_RTF_51/Vorbereitungen')).default, (await import('./05_28_RTF_51/Start_Ziel')).default, (await import('./05_28_RTF_51/K1')).default, await import('./05_28_RTF_51/K6')).default],
+  albums: [(await import('./05_28_RTF_51/Vorbereitungen')).default, (await import('./05_28_RTF_51/Start_Ziel')).default, (await import('./05_28_RTF_51/K1')).default, (await import('./05_28_RTF_51/K6')).default],
   category: EEvent.RTF,
   location: 'Rösrath-Forsbach',
   time: {
