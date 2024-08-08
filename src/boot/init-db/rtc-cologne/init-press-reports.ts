@@ -1,23 +1,32 @@
 import type { Pinia } from 'pinia'
 import { useRepo } from 'pinia-orm'
-import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import PressReport from 'src/models/entities/rtc-cologne/PressReport.ts'
 
-export default async (store: Pinia) =>
-  useRepo(Gallery, store).save([
-    ...(await import('./gallery/2009/Gallery')).default,
-    ...(await import('./gallery/2010/Gallery')).default,
-    ...(await import('./gallery/2011/Gallery')).default,
-    ...(await import('./gallery/2012/Gallery')).default,
-    ...(await import('./gallery/2013/Gallery')).default,
-    ...(await import('./gallery/2014/Gallery')).default,
-    ...(await import('./gallery/2015/Gallery')).default,
-    ...(await import('./gallery/2016/Gallery')).default,
-    ...(await import('./gallery/2017/Gallery')).default,
-    ...(await import('./gallery/2018/Gallery')).default,
-    ...(await import('./gallery/2019/Gallery')).default,
-    ...(await import('./gallery/2020/Gallery')).default,
-    ...(await import('./gallery/2021/Gallery')).default,
-    ...(await import('./gallery/2022/Gallery')).default,
-    ...(await import('./gallery/2023/Gallery')).default,
-    ...(await import('./gallery/2024/Gallery')).default,
+export default (store: Pinia) =>
+  useRepo(PressReport, store).save([
+    {
+      date: new Date('2023-05-10'),
+      galleryEntry: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2023/Rueckblick/signal-2023-05-10-105056.jpeg.avif') }],
+      title: 'Porz am Montag',
+    },
+    {
+      date: new Date('2022-12-06'),
+      galleryEntry: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-12-06_porz-im-blick.jpg.avif') }],
+      title: 'Porz im Blick',
+    },
+    {
+      date: new Date('2022-11-14'),
+      galleryEntry: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-11-14_porz-am-montag.jpg.avif') }],
+      title: 'Porz am Montag',
+    },
+    {
+      date: new Date('2022-04-05'),
+      galleryEntry: [
+        {
+          imageUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.pdf'),
+          previewUrl: new URL('https://content.rtc-koeln.de/pages/gallery/2022/Rueckblick/2022-05_roadbike.jpeg.avif'),
+        },
+      ],
+      title: 'Roadbike',
+    },
   ])
