@@ -3,14 +3,9 @@ import Tour from 'src/models/entities/events/tours/Tour'
 import EProfile from 'src/models/enums/events/EProfile'
 
 export default class Permanent extends Tour {
-  static readonly baseEntity = 'tours'
+  static override readonly baseEntity = 'tours'
   static override readonly entity = 'permanent'
-
-  static fields() {
-    return {
-      ...super.schemas[super.entity],
-    }
-  }
+  static override readonly fields = () => ({ ...super.schemas[super.entity] })
 
   @Num(0, { notNullable: true }) declare height: number
   @Num(0, { notNullable: true }) declare length: number

@@ -10,7 +10,7 @@ export default class Sponsor extends Model {
   @Str(null) declare text: string | null
   @Attr(null) declare url: URL | null
 
-  static mutators() {
+  static override mutators() {
     return {
       name(value: string) {
         return value.replaceAll('\n', '<br>')

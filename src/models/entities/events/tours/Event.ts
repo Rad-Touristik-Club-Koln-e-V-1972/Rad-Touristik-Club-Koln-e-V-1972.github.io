@@ -5,14 +5,9 @@ import Track from 'src/models/entities/events/tours/events/Track'
 import FeeGroup from 'src/models/entities/FeeGroup'
 
 export default class Event extends Tour {
-  static readonly baseEntity = 'tours'
+  static override readonly baseEntity = 'tours'
   static override readonly entity = 'events'
-
-  static fields() {
-    return {
-      ...super.schemas[super.entity],
-    }
-  }
+  static override readonly fields = () => ({ ...super.schemas[super.entity] })
 
   @HasMany(() => FeeGroup, 'eventId') declare feeGroups: FeeGroup[]
   @MorphMany(() => Time, 'timeableId', 'timeableType') declare times: Time[]

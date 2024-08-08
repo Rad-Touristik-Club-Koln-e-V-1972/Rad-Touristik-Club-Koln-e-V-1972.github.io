@@ -2,7 +2,6 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import News from 'src/models/entities/home/News'
 import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime'
 
 export default defineStore('news', () => {
@@ -10,7 +9,6 @@ export default defineStore('news', () => {
 
   const all = ref<News[]>([
     new NewsEntryBuilder()
-
       .setImage({ imageUrl: new URL('https://content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.pdf').setPreviewUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.avif').buildGalleryEntry())
       .setText(
         `Haben wir Dein Interesse geweckt?
