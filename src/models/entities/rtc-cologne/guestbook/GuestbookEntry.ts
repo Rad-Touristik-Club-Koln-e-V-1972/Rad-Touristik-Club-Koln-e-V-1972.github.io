@@ -10,7 +10,7 @@ export default class GuestbookEntry extends Model {
   @MorphMany(() => GalleryAlbumEntry, 'galleryEntryableId', 'galleryEntryableType') declare galleryEntries: GalleryAlbumEntry[]
 
   @Str('', { notNullable: true }) declare answer: string
-  @Attr(EEvent.RTF) declare category: EEvent
+  @Attr(EEvent.RTC) declare category: EEvent
   @Attr() declare date: Date
   @Str('', { notNullable: true }) declare location: string
   @Str('', { notNullable: true }) declare name: string

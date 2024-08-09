@@ -167,7 +167,7 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
           controls: 1,
           height: 70,
           length: 22,
-          profile: EProfile.Flach, // default EProfile.Normal
+          profile: EProfile.Flach,
           text: `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
 den der ein oder andere sicher schon kennt (wenn nicht – sehr empfehlenswert!),
 <img alt="B1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/Rolfs Streichelzoo.jpg.avif' style='width: 50%' />
@@ -225,7 +225,7 @@ Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässch
 
 Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
           time: {
-            end: '12:00', // default null
+            end: '12:00',
             name: 'Die 22er',
             start: '10:00',
           },
@@ -250,7 +250,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
           time: {
-            end: '11:00', // default null
+            end: '11:00',
             name: 'Die 52er',
             start: '07:30',
           },
@@ -269,7 +269,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
           controls: 2,
           height: 780,
           length: 82,
-          profile: EProfile.Wellig, // default EProfile.Normal
+          profile: EProfile.Wellig,
           text: `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
 Wir haben uns für die Strecken 82 km, 125 km und 151 km eine neue Auffahrt zur Kontrolle nach Pohlhausen für Euch ausgedacht.
 An diesem Anstieg wartet eine RTC-Fotografin auf Euch, also bitte immer schön lächeln. 🙂
@@ -293,7 +293,7 @@ Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
           time: {
-            end: '11:00', // default null
+            end: '11:00',
             name: 'Die 82er',
             start: '07:30',
           },
@@ -312,10 +312,10 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
           controls: 2,
           height: 780,
           length: 82,
-          profile: EProfile.Wellig, // default EProfile.Normal
+          profile: EProfile.Wellig,
           //text: ``,
           time: {
-            // end: '11:00', // default null
+            // end: '11:00',
             name: 'Die geführte 82er',
             start: '09:30',
           },
@@ -334,7 +334,7 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
           controls: 3,
           height: 1500,
           length: 125,
-          profile: EProfile.Huegelig, // default EProfile.Normal
+          profile: EProfile.Huegelig,
           text: `Während die <b>82er</b> weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
@@ -360,7 +360,7 @@ Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen hab
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
           time: {
-            end: '10:00', // default null
+            end: '10:00',
             name: 'Die 125er',
             start: '07:30',
           },
@@ -379,7 +379,7 @@ Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
           controls: 4,
           height: 1850,
           length: 151,
-          profile: EProfile.Huegelig, // default EProfile.Normal
+          profile: EProfile.Huegelig,
           text: `Hier haben wir etwas ganz Besonderes für Euch:
 Direkt nach der Kontrolle in Bouraul teilt sich die Strecke in 125 km und 151 km (350 Hm mehr als die 125er) auf.
 Wenn ihr auf die ausgeschilderte 151 km-Strecke geht, fahrt ihr südlich bis zum RSC Buchholz, der am selben Tag seine RTF ausrichtet wie wir.
@@ -391,7 +391,7 @@ Wir versuchen aus der Terminkollision, denn da hat die APPstimmung im BDR leider
 Denkt dran:
 Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss in Zündorf ist um 17 Uhr 🙂🙂🙂🙂🙂 Wir freuen uns alle auf Euch.`,
           time: {
-            end: '08:30', // default null
+            end: '08:30',
             name: 'Die 151er',
             start: '07:30',
           },

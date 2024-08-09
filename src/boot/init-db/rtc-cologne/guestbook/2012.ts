@@ -1,11 +1,21 @@
-import GuestbookEntryBuilder from 'src/models/builder/rtc-cologne/guestbook/GuestbookEntryBuilder'
 import EEvent from 'src/models/enums/EEvent'
 import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 
 export default [
+  {
+    category: EEvent.RTC, // default EEvent.RTC
+    date: new Date(''),
+    galleryEntries: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif') }],
+    location: '',
+    name: '',
+    organization: '',
+    source: ESource['E-Mail'], // default ESource['E-Mail']
+    text: '',
+    title: '',
+  },
+
   new GuestbookEntryBuilder()
     .setDate('2012-06-01')
-
     .setName('Wolfgang Alberg')
     .setOrganization('www.cardiofitness.de')
     .setSource(ESource['E-Mail'])

@@ -1,8 +1,18 @@
-import GuestbookEntryBuilder from 'src/models/builder/rtc-cologne/guestbook/GuestbookEntryBuilder'
 import EEvent from 'src/models/enums/EEvent'
 import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 
 export default [
+  {
+    category: EEvent.RTC, // default EEvent.RTC
+    date: new Date(''),
+    galleryEntries: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif') }],
+    name: '',
+    organization: '',
+    source: ESource['E-Mail'], // default ESource['E-Mail']
+    text: '',
+    title: '',
+  },
+
   new GuestbookEntryBuilder()
     .setCategory(EEvent.CTF)
     .setDate('2015-10-19 12:55')
