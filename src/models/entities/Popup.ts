@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { BelongsTo, Str } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, Str } from 'pinia-orm/decorators'
 import Tour from 'src/models/entities/events/tours/Tour'
 
 export default class Popup extends Model {

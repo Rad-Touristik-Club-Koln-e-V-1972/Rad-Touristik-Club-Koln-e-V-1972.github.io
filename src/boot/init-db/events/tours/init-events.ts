@@ -1,37 +1,59 @@
-import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
-import EventBuilder from 'src/models/builder/events/tours/EventBuilder'
-import FeeBuilder from 'src/models/builder/events/tours/events/FeeBuilder'
-import TimeBuilder from 'src/models/builder/events/tours/events/TimeBuilder'
-import TrackBuilder from 'src/models/builder/events/tours/events/TrackBuilder'
-import EEvent from 'src/models/enums/EEvent'
-import EProfile from 'src/models/enums/events/EProfile'
+import { Pinia } from 'pinia'
+import { useRepo } from 'pinia-orm'
+import Event from 'src/models/entities/events/tours/Event.ts'
+import EEvent from 'src/models/enums/EEvent.ts'
+import EProfile from 'src/models/enums/events/EProfile.ts'
 
-export default [
-  new EventBuilder()
-    .setCategory(EEvent.RTF)
-    .setFees(
-      new FeeBuilder().setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
-      new FeeBuilder().setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(6).buildFee(),
-      new FeeBuilder().setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(8).buildFee(),
-      new FeeBuilder().setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
-      new FeeBuilder().setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
-      new FeeBuilder().setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
-      new FeeBuilder().setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
-    )
-    .setImages({ imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif') })
-    .setLastChange('2024-05-28')
-    .setLocation(
-      new ControlBuilder()
-        .setCity('Köln-Zündorf')
-
-        .setStreet('Heerstraße 7')
-        .setTitle('Schulzentrum Zündorf')
-        .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
-        .setZipCode('51143')
-        .buildControl(),
-    )
-    .setText(
-      `Liebe Radsportlerinnen und Radsportler,
+export default (store: Pinia) => {
+  return useRepo(Event, store).save([
+    {
+      feeGroups: [
+        {
+          fees: [
+            {
+              name: '<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)',
+            },
+            {
+              name: '<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)',
+              price: 6,
+            },
+            {
+              name: '<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)',
+              price: 8,
+            },
+            {
+              name: '<b>After Work-Bikers</b><br/>(Gastfahrer)',
+              price: 12,
+            },
+            {
+              name: '<b>151 km Strecke</b><br/>Zusatzgebühr',
+              price: 4,
+            },
+          ],
+        },
+        {
+          fees: [
+            {
+              name: '<b>Jugendliche bis 18 Jahre</b>',
+            },
+            {
+              name: '<b>Erwachsene</b><br/>(zzgl. Fährfahrten)',
+              price: 6,
+            },
+          ],
+          name: 'Family Tour',
+        },
+      ],
+      galleryEntries: [{ imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif') }],
+      lastChange: new Date('2024-05-28'),
+      location: {
+        city: 'Köln-Zündorf',
+        street: 'Heerstraße 7',
+        title: 'Schulzentrum Zündorf',
+        url: new URL('https://www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de'),
+        zipCode: '51143',
+      },
+      text: `Liebe Radsportlerinnen und Radsportler,
 
 wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
 Die Forsbachtour startet im Schulzentrum in Porz-Zündorf.
@@ -56,48 +78,50 @@ Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, d
 Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement und Liebe für Euch ausrichten.
 
 Euer RTC Köln e.V`,
-    )
-    .setTimes(new TimeBuilder().setName('Start').setTime('07:30').buildTime(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').buildTime())
-    .setTitle('Die Forsbach-Tour')
-    .setTracks(
-      new TrackBuilder()
-
-        .setName('Hinweis')
-        .setText(
-          `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
+      times: [
+        {
+          name: 'Start',
+          start: '07:30',
+        },
+        {
+          name: 'Kontrollschluss am Ziel',
+          start: '17:00',
+        },
+      ],
+      title: 'Die Forsbach-Tour',
+      tracks: [
+        {
+          text: `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
 
 Wir bieten in diesem Jahr eine geführte Tour (82 km) für Neueinsteiger an!
 
 Tempo: max. 20er Schnitt
 Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-
-        .setName('Vor der Tour')
-        .setText(
-          `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
+          time: {
+            name: 'Hinweis',
+          },
+        },
+        {
+          text: `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
 
 Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-
-        .setName('Während der Tour')
-        .setText(
-          `Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.
+          time: {
+            name: 'Vor der Tour',
+          },
+        },
+        {
+          text: `Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.
 
 Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
 <ul>
     <li>Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.</li>
     <li>Wir kommen euch abholen.</li></ul>`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-
-        .setName('Nach der Tour')
-        .setText(
-          `Besonders wichtig nach so einer anstrengenden Tour: Duschen.
+          time: {
+            name: 'Während der Tour',
+          },
+        },
+        {
+          text: `Besonders wichtig nach so einer anstrengenden Tour: Duschen.
 Sie sind in einem Nebengebäude reichlich vorhanden.
 
 Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachten Kuchen ab <b>mittags auch leckere warme Gerichte</b> mit verschiedenen Salaten an.
@@ -105,13 +129,12 @@ Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben sel
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
 Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-
-        .setName('Alle Strecken')
-        .setText(
-          `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
+          time: {
+            name: 'Nach der Tour',
+          },
+        },
+        {
+          text: `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
 „Frühaufsteher“ können dort ab acht Uhr, „Langschläfer“ bis elf Uhr starten.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
 Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
@@ -136,16 +159,16 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
     <img alt="Kontrolle 1 - Pohlhausen" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/K1_Pohlhausen.jpg.avif' style='width: 50%' />
     <figcaption>Kontrolle 1 - Pohlhausen</figcaption>
 </figure>`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(1)
-        .setHeight(70)
-        .setLength(22)
-        .setName('Die 22er')
-        .setProfile(EProfile.Flach)
-        .setText(
-          `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
+          time: {
+            name: 'Alle Strecken',
+          },
+        },
+        {
+          controls: 1,
+          height: 70,
+          length: 22,
+          profile: EProfile.Flach, // default EProfile.Normal
+          text: `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
 den der ein oder andere sicher schon kennt (wenn nicht – sehr empfehlenswert!),
 <img alt="B1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/Rolfs Streichelzoo.jpg.avif' style='width: 50%' />
 in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
@@ -201,41 +224,53 @@ Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit 
 Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
 
 Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
-        )
-        .setTime('10:00', '12:00')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1608643106'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(1)
-        .setHeight(390)
-
-        .setLength(52)
-        .setName('Die 52er')
-        .setText(
-          `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
+          time: {
+            end: '12:00', // default null
+            name: 'Die 22er',
+            start: '10:00',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1608643106'),
+            },
+          ],
+        },
+        {
+          controls: 1,
+          height: 390,
+          length: 52,
+          text: `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
 
 Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
-        )
-        .setTime('07:30', '11:00')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433738920'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(2)
-        .setHeight(780)
-
-        .setLength(82)
-        .setName('Die 82er')
-        .setProfile(EProfile.Wellig)
-        .setText(
-          `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
+          time: {
+            end: '11:00', // default null
+            name: 'Die 52er',
+            start: '07:30',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1433738920'),
+            },
+          ],
+        },
+        {
+          controls: 2,
+          height: 780,
+          length: 82,
+          profile: EProfile.Wellig, // default EProfile.Normal
+          text: `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
 Wir haben uns für die Strecken 82 km, 125 km und 151 km eine neue Auffahrt zur Kontrolle nach Pohlhausen für Euch ausgedacht.
 An diesem Anstieg wartet eine RTC-Fotografin auf Euch, also bitte immer schön lächeln. 🙂
 Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
@@ -257,35 +292,50 @@ Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle S
 Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
 Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
 Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
-        )
-        .setTime('07:30', '11:00')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(2)
-        .setHeight(780)
-        .setId('5ea56b54-1d06-41bb-bc93-3dd54452b58c')
-        .setLength(82)
-        .setName('Die geführte 82er')
-        .setProfile(EProfile.Wellig)
-        .setTime('09:30')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(3)
-        .setHeight(1500)
-
-        .setLength(125)
-        .setName('Die 125er')
-        .setProfile(EProfile.Huegelig)
-        .setText(
-          `Während die <b>82er</b> weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
+          time: {
+            end: '11:00', // default null
+            name: 'Die 82er',
+            start: '07:30',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1433730609'),
+            },
+          ],
+        },
+        {
+          controls: 2,
+          height: 780,
+          length: 82,
+          profile: EProfile.Wellig, // default EProfile.Normal
+          //text: ``,
+          time: {
+            // end: '11:00', // default null
+            name: 'Die geführte 82er',
+            start: '09:30',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1433730609'),
+            },
+          ],
+        },
+        {
+          controls: 3,
+          height: 1500,
+          length: 125,
+          profile: EProfile.Huegelig, // default EProfile.Normal
+          text: `Während die <b>82er</b> weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
 In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
 Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
 Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
@@ -309,22 +359,28 @@ Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Ag
 Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
 Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
 Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
-        )
-        .setTime('07:30', '10:00')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433722005_51143 RTC-Köln 02.06.2024 125km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433722005'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(4)
-        .setHeight(1850)
-
-        .setLength(151)
-        .setName('Die 151er')
-        .setProfile(EProfile.Huegelig)
-        .setText(
-          `Hier haben wir etwas ganz Besonderes für Euch:
+          time: {
+            end: '10:00', // default null
+            name: 'Die 125er',
+            start: '07:30',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433722005_51143 RTC-Köln 02.06.2024 125km RTF 52. Forsbach-Tour.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1433722005'),
+            },
+          ],
+        },
+        {
+          controls: 4,
+          height: 1850,
+          length: 151,
+          profile: EProfile.Huegelig, // default EProfile.Normal
+          text: `Hier haben wir etwas ganz Besonderes für Euch:
 Direkt nach der Kontrolle in Bouraul teilt sich die Strecke in 125 km und 151 km (350 Hm mehr als die 125er) auf.
 Wenn ihr auf die ausgeschilderte 151 km-Strecke geht, fahrt ihr südlich bis zum RSC Buchholz, der am selben Tag seine RTF ausrichtet wie wir.
 Auf deren Startplatz ist unsere nächste Verpflegungsstation.
@@ -334,39 +390,70 @@ nochmal zu unserer Kontrolle in Bouraul zu fahren (nur 2 km ab der Sieg-Überque
 Wir versuchen aus der Terminkollision, denn da hat die APPstimmung im BDR leider nicht funktioniert, das Beste zum Wohle von Euch, den Buchholzern und uns zu machen.
 Denkt dran:
 Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss in Zündorf ist um 17 Uhr 🙂🙂🙂🙂🙂 Wir freuen uns alle auf Euch.`,
-        )
-        .setTime('07:30', '08:30')
-        .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-06_1433146251_51143 RTC-Köln 02.06.2024 151km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433146251'),
-        })
-        .buildTrack(),
-    )
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.Familientour)
-    .setFees(
-      new FeeBuilder().setGroup('Gebühren').setId('5d862e1f-6898-4b9e-9b17-24a208f0ac65').setName('Kinder und Jugendliche bis 18 Jahre').setPrice(0).buildFee(),
-      new FeeBuilder().setGroup('Gebühren').setId('7c08c3cb-c0cb-431c-a756-12fef22957af').setName('Erwachsene').setPrice(6).buildFee(),
-      new FeeBuilder().setGroup('Fährpreise*').setId('00058a22-eaf8-4ab2-9459-744bb6dbb0f6').setName('Erwachsene').setPrice(5).buildFee(),
-      new FeeBuilder().setGroup('Fährpreise*').setId('e0bf5ea3-a4c1-4d47-ae57-ff966337aed7').setName('Kinder von 4 – 11 Jahre').setPrice(2).buildFee(),
-      new FeeBuilder().setGroup('Fährpreise*').setId('6ed05bc8-8c42-439e-bdc4-e381542f48d3').setName('Kinder von 0 – 3 Jahre').setPrice(0).buildFee(),
-      new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
-    )
-    .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2024-05-26')
-    .setLocation(
-      new ControlBuilder()
-        .setCity('Köln-Zündorf')
-        .setId('5198e22d-0d6a-49fc-a5f4-235c6055db67')
-        .setStreet('Heerstraße 7')
-        .setTitle('Schulzentrum Zündorf')
-        .setUrl('www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de')
-        .setZipCode('51143')
-        .buildControl(),
-    )
-    .setText(
-      `Liebe Kinder, Eltern und sonstige Verwandtschaft :-),
+          time: {
+            end: '08:30', // default null
+            name: 'Die 151er',
+            start: '07:30',
+          },
+          urls: [
+            {
+              text: 'GPX-Datei',
+              url: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-06_1433146251_51143 RTC-Köln 02.06.2024 151km RTF 52. Forsbach-Tour.gpx'),
+            },
+            {
+              text: 'Komoot',
+              url: new URL('https://www.komoot.com/de-de/tour/1433146251'),
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: EEvent.Familientour,
+      feeGroups: [
+        {
+          fees: [
+            {
+              name: 'Kinder und Jugendliche bis 18 Jahre',
+            },
+            {
+              name: 'Erwachsene',
+              price: 6,
+            },
+          ],
+          name: 'Gebühren',
+        },
+        {
+          fees: [
+            {
+              name: 'Erwachsene',
+              price: 5,
+            },
+            {
+              name: 'Kinder von 4 – 11 Jahre',
+              price: 2,
+            },
+            {
+              name: 'Kinder von 0 – 3 Jahre',
+            },
+            {
+              name: 'Zuschlag Lastenrad, Anhänger etc.',
+              price: 2,
+            },
+          ],
+          name: 'Fährpreise*',
+          text: '* Die Fahrkarten werden als verschiedenfarbige Chips am Start ausgegeben.',
+        },
+      ],
+      lastChange: new Date('2024-05-26'),
+      location: {
+        city: 'Köln-Zündorf',
+        street: 'Heerstraße 7',
+        title: 'Schulzentrum Zündorf',
+        url: new URL('https://www.google.com/maps?daddr=Heerstra%C3%9Fe+7,+51143,+K%C3%B6ln,+Deutschland&hl=de'),
+        zipCode: '51143',
+      },
+      text: `Liebe Kinder, Eltern und sonstige Verwandtschaft :-),
 
 der RTC Köln freut sich, nach langer Zeit mal wieder eine Familientour anbieten zu können und lädt euch alle dazu herzlich ein.
 Die <b>Krokodil-Familientour</b> startet am 02. Juni 2024 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
@@ -380,19 +467,25 @@ Die "Highlights" der Tour sind die beiden Fährfahrten von Zündorf nach Weiß u
 Hier möchten wir uns ausdrücklich bei den Fährleuten Niklas Thiel und Reiner Weisbarth für das Entgegenkommen bei den Fahrpreisen bedanken.
 
 Euer RTC Köln e.V.`,
-    )
-    .setTimes(
-      new TimeBuilder().setId('c94e6040-6a86-49c1-ac67-a13941a84894').setName('Beginn der Veranstaltung').setTime('07:00').buildTime(),
-      new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
-      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Ausgabe der Urkunden und weiterer Überraschungen').setTime('nach Rückkehr').buildTime(),
-    )
-    .setTitle('Die Familientour')
-    .setTracks(
-      new TrackBuilder()
-        .setId('e6db748e-6b26-496b-b593-4d9377206d0d')
-        .setName('Vor der Tour')
-        .setText(
-          `<div class='q-gutter-md row'>
+      times: [
+        {
+          name: 'Beginn der Veranstaltung',
+          start: '07:00',
+        },
+        {
+          end: '12:00',
+          name: 'Startfenster Familientour',
+          start: '10:00',
+        },
+        {
+          name: 'Ausgabe der Urkunden und weiterer Überraschungen',
+          start: 'nach Rückkehr',
+        },
+      ],
+      title: 'Die Familientour',
+      tracks: [
+        {
+          text: `<div class='q-gutter-md row'>
   <div class='col-3'>
     <img alt="Fährchips" src="https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-19-49-39-748a.jpg.avif" style='width: 100%' />
   </div>
@@ -406,13 +499,12 @@ Euer RTC Köln e.V.`,
     Daneben gibt es dort die Chips für die Fährfahrten.
   </div>
 </div>`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-        .setId('8fa6354d-0607-4401-862c-e6ab93f44a27')
-        .setName('Während der Tour')
-        .setText(
-          `Bei der Tour fahrt Ihr immer den gelben Schildern mit dem Krokodil nach. Sie führen euch sicher ins Ziel. Bei Richtungswechseln kommt der RTC-Pfeil hinzu.
+          time: {
+            name: 'Vor der Tour',
+          },
+        },
+        {
+          text: `Bei der Tour fahrt Ihr immer den gelben Schildern mit dem Krokodil nach. Sie führen euch sicher ins Ziel. Bei Richtungswechseln kommt der RTC-Pfeil hinzu.
 <img alt="Streckenmarkierung" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-10-30-41-726.jpg.avif' style='width: 50%' />
 
 Auf unserer Kontrollstelle am Wesselinger Fähranleger steht für euch eine vielfältige Verpflegung zur Verfügung,
@@ -421,13 +513,12 @@ damit ihr das Schulzentrum in Zündorf garantiert ohne Hungerast erreicht.
 Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
 Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.
 Wir kommen euch abholen.`,
-        )
-        .buildTrack(),
-      new TrackBuilder()
-        .setId('74855084-4ca7-45a9-a5a9-48172caf4eb5')
-        .setName('Nach der Tour')
-        .setText(
-          `Im Ziel erhaltet Ihr eine Teilnehmerurkunde und eine kleine Überraschung.
+          time: {
+            name: 'Während der Tour',
+          },
+        },
+        {
+          text: `Im Ziel erhaltet Ihr eine Teilnehmerurkunde und eine kleine Überraschung.
 
 Damit ihr nach so einer anstrengenden Tour wieder zu Kräften kommt,
 bieten wir neben selbstgemachten Kuchen ab mittags auch leckere warme Gerichte mit verschiedenen Salaten an.
@@ -435,8 +526,11 @@ bieten wir neben selbstgemachten Kuchen ab mittags auch leckere warme Gerichte m
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
 Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
-        )
-        .buildTrack(),
-    )
-    .buildEvent(),
-]
+          time: {
+            name: 'Nach der Tour',
+          },
+        },
+      ],
+    },
+  ])
+}

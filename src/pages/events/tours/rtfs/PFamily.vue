@@ -1,5 +1,9 @@
+<!-- TODO boilerplate component not needed -->
+<!-- TODO boilerplate component not needed -->
+<!-- TODO boilerplate component not needed -->
+<!-- TODO boilerplate component not needed -->
 <template>
-  <c-tour fee-hints="* Die Fahrkarten werden als verschiedenfarbige Chips am Start ausgegeben." :model-value="useTourStore().getFamily()" />
+  <c-tour :model-value="useTourStore().getFamily()" />
 </template>
 
 <script lang="ts" setup>

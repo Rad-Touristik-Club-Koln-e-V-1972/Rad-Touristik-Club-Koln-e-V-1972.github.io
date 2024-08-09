@@ -1,29 +1,24 @@
-import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
-import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
-import EEvent from 'src/models/enums/EEvent'
-import EProfile from 'src/models/enums/events/EProfile'
+import { Pinia } from 'pinia'
+import { useRepo } from 'pinia-orm'
+import Permanent from 'src/models/entities/events/tours/Permanent.ts'
 
-export default [
-  new PermanentBuilder()
-    .setActive(false)
-    .setCategory(EEvent.Permanente)
-    .setControls(
-      new ControlBuilder()
-        .setCity('Lindlar')
-
-        .setStreet('Kölner Straße 23')
-        .setTitle('Aral-Tankstelle')
-        .setUrl('tankstelle.aral.de/lindlar/koelner-strasse-23/28324100')
-        .setZipCode('51789')
-        .buildControl(),
-    )
-    .setHeight(700)
-
-    .setLastChange('2022-01-12')
-    .setLength(71)
-    .setProfile(EProfile.Wellig)
-    .setText(
-      `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
+export default (store: Pinia) =>
+  useRepo(Permanent, store).save([
+    {
+      active: false,
+      controls: [
+        {
+          city: 'Lindlar',
+          street: 'Kölner Straße 23',
+          title: 'Aral-Tankstelle',
+          url: new URL('https://tankstelle.aral.de/lindlar/koelner-strasse-23/28324100'),
+          zipCode: '51789',
+        },
+      ],
+      height: 700,
+      lastChange: new Date('2022-01-12'),
+      length: 71,
+      text: `Diese Strecke ist der Klassiker für das Profil des „Bergischen Landes“ schlechthin.
 Es handelt sich um landschaftlich schöne Strecken mit herrlichen Rundblicken über Köln und das Bergische Land.
 
 Start und Ziel ist das <a href='https://maps.google.com/maps?daddr=Rather Mauspfad 19, 51107, Köln-Rath, Deutschland&hl=de' target='_blank'>Eiscafe "Piccola Gelateria", Rather Mauspfad 19 in 51107 Köln-Rath</a>.
@@ -58,34 +53,37 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`,
-    )
-    .setTitle('Das Bergische Karussell')
-    .setUrls({
-      'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
-      Komoot: new URL('https://www.komoot.de/tour/678486665'),
-      'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
-    })
-    .buildPermanent(),
-  new PermanentBuilder()
-    .setActive(false)
-    .setCategory(EEvent.Permanente)
-    .setControls(
-      new ControlBuilder()
-        .setCity('Kürten')
-
-        .setStreet('Wipperfürther Straße 360')
-        .setTitle('Esso-Tankstelle')
-        .setUrl('ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/')
-        .setZipCode('51515')
-        .buildControl(),
-    )
-    .setHeight(700)
-
-    .setLastChange('2023-01-27')
-    .setLength(72)
-    .setProfile(EProfile.Wellig)
-    .setText(
-      `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
+      title: 'Das Bergische Karussell',
+      urls: [
+        {
+          text: 'GPX-Datei',
+          url: new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/bergischeskarussell-2021-12-12.gpx'),
+        },
+        {
+          text: 'Komoot',
+          url: new URL('https://www.komoot.de/tour/678486665'),
+        },
+        {
+          text: 'Startkarte inkl. Streckenbeschreibung',
+          url: new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Bergisches Karussell von Piccola 20201214.pdf'),
+        },
+      ],
+    },
+    {
+      active: false,
+      controls: [
+        {
+          city: 'Kürten',
+          street: 'Wipperfürther Straße 360',
+          title: 'Esso-Tankstelle',
+          url: new URL('https://ich-tanke.de/tankstelle/019555c8827f78f780d0e0c71a87e0f6/'),
+          zipCode: '51515',
+        },
+      ],
+      height: 700,
+      lastChange: new Date('2023-01-27'),
+      length: 72,
+      text: `Diese Tour startet an der legendären <a href='https://www.schmitzebud-koeln.de' target='_blank'>Schmitzebud</a> oder auch <a href='http://www.ambuedche.de/schmitzebud/' target='_blank'>Am Büdche</a> genannt.
 Sie ist ebenso wellig wie das Profil des Bergischen Landes.
 
 Nach dem Start geht es erst mal über den Rather Mauspfad Richtung Norden.
@@ -125,12 +123,20 @@ Das Tragen eines guten Helms wird dringend empfohlen.
 Der RTC Köln wünscht den TeilnehmerInnen eine gute und sichere Fahrt.
 
 Euer RTC Köln e.V. 1972`,
-    )
-    .setTitle('Schmitzebud')
-    .setUrls({
-      'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
-      Komoot: new URL('https://www.komoot.de/tour/678483689'),
-      'Startkarte inkl. Streckenbeschreibung': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
-    })
-    .buildPermanent(),
-]
+      title: 'Schmitzebud',
+      urls: [
+        {
+          text: 'GPX-Datei',
+          url: new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/schmitzebud-2021-12-12.gpx'),
+        },
+        {
+          text: 'Komoot',
+          url: new URL('https://www.komoot.de/tour/678483689'),
+        },
+        {
+          text: 'Startkarte inkl. Streckenbeschreibung',
+          url: new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Schmitzebud 20201214.pdf'),
+        },
+      ],
+    },
+  ])

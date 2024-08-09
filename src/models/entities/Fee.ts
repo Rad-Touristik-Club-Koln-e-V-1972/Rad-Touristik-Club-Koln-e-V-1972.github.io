@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { BelongsTo, Num, Str } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, Num, Str } from 'pinia-orm/decorators'
 import FeeGroup from 'src/models/entities/FeeGroup'
 
 // noinspection JSClassNamingConvention

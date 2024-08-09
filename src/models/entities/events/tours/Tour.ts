@@ -1,7 +1,6 @@
 import { Model } from 'pinia-orm'
-import { Attr, Bool, HasMany, HasOne, MorphMany, Str } from 'pinia-orm/decorators'
+import { Attr, Bool, HasOne, MorphMany, Str } from 'pinia-orm/decorators'
 import Popup from 'src/models/entities/Popup'
-import URL from 'src/models/entities/events/URL'
 import Event from 'src/models/entities/events/tours/Event.ts'
 import Location from 'src/models/entities/events/tours/Location'
 import Permanent from 'src/models/entities/events/tours/Permanent.ts'
@@ -14,9 +13,7 @@ export default class Tour extends Model {
 
   @MorphMany(() => GalleryAlbumEntry, 'galleryEntryableId', 'galleryEntryableType') declare galleryEntries: GalleryAlbumEntry[]
   @HasOne(() => Location, 'tourId') declare location: Location
-  @HasMany(() => Location, 'tourId') declare locations: Location[]
   @HasOne(() => Popup, 'tourId') declare popup: Popup | null
-  @MorphMany(() => URL, 'urlableId', 'urlableType') declare urls: URL[]
 
   @Bool(true) declare active: boolean
   @Attr(EEvent.Vereinsfahrt) declare category: EEvent

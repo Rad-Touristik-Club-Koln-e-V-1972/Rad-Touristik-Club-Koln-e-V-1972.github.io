@@ -1,7 +1,7 @@
 import { Model } from 'pinia-orm'
 import { Attr, MorphTo, Str } from 'pinia-orm/decorators'
+import Permanent from 'src/models/entities/events/tours/Permanent.ts'
 import Track from 'src/models/entities/events/tours/events/Track'
-import Tour from 'src/models/entities/events/tours/Tour'
 
 // noinspection JSClassNamingConvention
 export default class URL extends Model {
@@ -9,7 +9,7 @@ export default class URL extends Model {
 
   @Attr() declare urlableId: string
   @Str('', { notNullable: true }) declare urlableType: string
-  @MorphTo(() => [Tour, Track], 'urlableId', 'urlableType') declare urlable: Tour | Track
+  @MorphTo(() => [Permanent, Track], 'urlableId', 'urlableType') declare urlable: Permanent | Track
 
   @Str(null) declare text: string | null
   @Attr() declare url: URL
