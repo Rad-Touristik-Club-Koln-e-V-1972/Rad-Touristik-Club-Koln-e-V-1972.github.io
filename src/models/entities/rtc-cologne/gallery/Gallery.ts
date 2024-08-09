@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { Attr, BelongsTo, HasMany, MorphOne, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, HasMany, MorphOne, Str } from 'pinia-orm/decorators'
 import EEvent from 'src/models/enums/EEvent'
 import BlogEntry from 'src/models/entities/home/BlogEntry'
 import Time from 'src/models/entities/events/Time'
@@ -9,7 +9,7 @@ export default class Gallery extends Model {
   static override readonly entity = 'galleries'
 
   @HasMany(() => GalleryAlbum, 'galleryId') declare albums: GalleryAlbum[]
-  @Uid() declare blogEntryId: string | null
+  @Attr() declare blogEntryId: string | null
   @BelongsTo(() => BlogEntry, 'blogEntryId') declare blogEntry: BlogEntry | null
   @MorphOne(() => Time, 'timeableId', 'timeableType') declare time: Time
 

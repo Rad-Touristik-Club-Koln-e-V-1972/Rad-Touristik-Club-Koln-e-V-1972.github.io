@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { Attr, MorphTo, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, MorphTo, Str } from 'pinia-orm/decorators'
 import Track from 'src/models/entities/events/tours/events/Track'
 import Tour from 'src/models/entities/events/tours/Tour'
 
@@ -7,7 +7,7 @@ import Tour from 'src/models/entities/events/tours/Tour'
 export default class URL extends Model {
   static override readonly entity = 'urls'
 
-  @Uid() declare urlableId: string
+  @Attr() declare urlableId: string
   @Str('', { notNullable: true }) declare urlableType: string
   @MorphTo(() => [Tour, Track], 'urlableId', 'urlableType') declare urlable: Tour | Track
 

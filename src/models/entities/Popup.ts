@@ -1,11 +1,11 @@
 import { Model } from 'pinia-orm'
-import { BelongsTo, Str, Uid } from 'pinia-orm/decorators'
+import { BelongsTo, Str } from 'pinia-orm/decorators'
 import Tour from 'src/models/entities/events/tours/Tour'
 
 export default class Popup extends Model {
   static override readonly entity = 'popups'
 
-  @Uid() declare tourId: string
+  @Attr() declare tourId: string
   @BelongsTo(() => Tour, 'tourId') declare tour: Tour
 
   @Str('', { notNullable: true }) declare text: string

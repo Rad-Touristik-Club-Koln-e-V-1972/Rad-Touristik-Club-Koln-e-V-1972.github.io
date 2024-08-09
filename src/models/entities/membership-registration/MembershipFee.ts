@@ -1,12 +1,12 @@
 import { Model } from 'pinia-orm'
-import { BelongsTo, MorphOne, Str, Uid } from 'pinia-orm/decorators'
+import { BelongsTo, MorphOne, Str } from 'pinia-orm/decorators'
 import MembershipSignature from 'src/models/entities/membership-registration/MembershipSignature'
 import MembershipRegistration from 'src/models/entities/MembershipRegistration'
 
 export default class MembershipFee extends Model {
   static override readonly entity = 'membershipFees'
 
-  @Uid() declare membershipRegistrationId: string
+  @Attr() declare membershipRegistrationId: string
   @BelongsTo(() => MembershipRegistration, 'membershipRegistrationId') declare registration: MembershipRegistration
   @MorphOne(() => MembershipSignature, 'membershipSignatureableId', 'membershipSignatureableType') declare signature: MembershipSignature
 

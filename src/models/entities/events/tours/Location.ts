@@ -1,11 +1,11 @@
 import { Model } from 'pinia-orm'
-import { Attr, BelongsTo, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, Str } from 'pinia-orm/decorators'
 import Tour from 'src/models/entities/events/tours/Tour'
 
 export default class Location extends Model {
   static override readonly entity = 'locations'
 
-  @Uid() declare tourId: string
+  @Attr() declare tourId: string
   @BelongsTo(() => Tour, 'tourId') declare tour: Tour
 
   @Str('', { notNullable: true }) declare city: string

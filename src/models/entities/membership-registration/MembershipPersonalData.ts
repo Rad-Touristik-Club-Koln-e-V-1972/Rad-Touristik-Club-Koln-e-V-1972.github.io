@@ -1,12 +1,12 @@
 import { Model } from 'pinia-orm'
-import { Attr, BelongsTo, Bool, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, Bool, Str } from 'pinia-orm/decorators'
 import type { CountryCode } from 'libphonenumber-js'
 import MembershipRegistration from 'src/models/entities/MembershipRegistration'
 
 export default class MembershipPersonalData extends Model {
   static override readonly entity = 'membershipPersonalDatas'
 
-  @Uid() declare membershipRegistrationId: string
+  @Attr() declare membershipRegistrationId: string
   @BelongsTo(() => MembershipRegistration, 'membershipRegistrationId') declare registration: MembershipRegistration
 
   @Attr() declare birthdate: Date

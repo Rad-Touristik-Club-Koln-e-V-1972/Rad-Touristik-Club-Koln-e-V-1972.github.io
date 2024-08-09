@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { Attr, MorphTo, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, MorphTo, Str } from 'pinia-orm/decorators'
 import mime from 'mime/lite'
 import Sponsor from 'src/models/entities/Sponsor'
 import Training from 'src/models/entities/events/Training'
@@ -13,7 +13,7 @@ import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookE
 export default class GalleryAlbumEntry extends Model {
   static override readonly entity = 'galleryAlbumEntries'
 
-  @Uid() declare galleryAlbumEntryableId: string
+  @Attr() declare galleryAlbumEntryableId: string
   @Str('', { notNullable: true }) declare galleryAlbumEntryableType: string
   @MorphTo(() => [Contact, GalleryAlbum, GuestbookEntry, News, PressReport, Sponsor, Tour, Training], 'galleryAlbumEntryableId', 'galleryAlbumEntryableType') declare galleryAlbumEntryable:
     | Contact

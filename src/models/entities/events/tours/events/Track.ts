@@ -1,5 +1,5 @@
 import { Model } from 'pinia-orm'
-import { Attr, BelongsTo, Bool, MorphMany, MorphOne, Num, Str, Uid } from 'pinia-orm/decorators'
+import { Attr, BelongsTo, Bool, MorphMany, MorphOne, Num, Str } from 'pinia-orm/decorators'
 import Time from 'src/models/entities/events/Time'
 import URL from 'src/models/entities/events/URL'
 import Event from 'src/models/entities/events/tours/Event'
@@ -9,7 +9,7 @@ export default class Track extends Model {
   static override readonly entity = 'tracks'
 
   @MorphOne(() => Time, 'timeableId', 'timeableType') declare time: Time
-  @Uid() declare eventId: string
+  @Attr() declare eventId: string
   @BelongsTo(() => Event, 'eventId') declare event: Event
   @MorphMany(() => URL, 'urlableId', 'urlableType') declare urls: URL[]
 
