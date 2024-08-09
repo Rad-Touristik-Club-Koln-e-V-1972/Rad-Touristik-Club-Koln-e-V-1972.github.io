@@ -3,7 +3,6 @@ import EventBuilder from 'src/models/builder/events/tours/EventBuilder'
 import FeeBuilder from 'src/models/builder/events/tours/events/FeeBuilder'
 import TimeBuilder from 'src/models/builder/events/tours/events/TimeBuilder'
 import TrackBuilder from 'src/models/builder/events/tours/events/TrackBuilder'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import EEvent from 'src/models/enums/EEvent'
 import EProfile from 'src/models/enums/events/EProfile'
 
@@ -19,7 +18,7 @@ export default [
       new FeeBuilder().setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
       new FeeBuilder().setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
-    .setImages({imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif')})
+    .setImages({ imageUrl: new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif') })
     .setLastChange('2024-05-28')
     .setLocation(
       new ControlBuilder()
@@ -58,10 +57,7 @@ Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement 
 
 Euer RTC Köln e.V`,
     )
-    .setTimes(
-      new TimeBuilder().setName('Start').setTime('07:30').buildTime(),
-      new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
-    )
+    .setTimes(new TimeBuilder().setName('Start').setTime('07:30').buildTime(), new TimeBuilder().setName('Kontrollschluss am Ziel').setTime('17:00').buildTime())
     .setTitle('Die Forsbach-Tour')
     .setTracks(
       new TrackBuilder()

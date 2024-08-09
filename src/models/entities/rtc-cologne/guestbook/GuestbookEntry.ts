@@ -18,4 +18,10 @@ export default class GuestbookEntry extends Model {
   @Attr(ESource['E-Mail']) declare source: ESource
   @Str('', { notNullable: true }) declare text: string
   @Str('', { notNullable: true }) declare title: string
+
+  static override readonly saving = (model: GuestbookEntry) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }

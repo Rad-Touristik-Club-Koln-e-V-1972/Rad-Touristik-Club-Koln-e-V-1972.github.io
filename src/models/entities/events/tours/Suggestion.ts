@@ -7,4 +7,10 @@ export default class Suggestion extends Model {
   @Str('', { notNullable: true }) declare text: string
   @Str('', { notNullable: true }) declare title: string
   @Attr() declare url: URL
+
+  static override readonly saving = (model: Suggestion) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }

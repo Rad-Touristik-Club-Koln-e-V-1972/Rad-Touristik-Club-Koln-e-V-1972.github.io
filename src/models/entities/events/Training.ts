@@ -15,4 +15,10 @@ export default class Training extends Model {
   @Str('', { notNullable: true }) declare speed: string
   @Str('', { notNullable: true }) declare text: string
   @Str('', { notNullable: true }) declare title: string
+
+  static override readonly saving = (model: Training) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }

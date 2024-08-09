@@ -10,4 +10,10 @@ export default class Popup extends Model {
 
   @Str('', { notNullable: true }) declare text: string
   @Str('', { notNullable: true }) declare title: string
+
+  static override readonly saving = (model: Popup) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }

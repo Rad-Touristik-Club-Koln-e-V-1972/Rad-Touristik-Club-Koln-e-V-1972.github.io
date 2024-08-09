@@ -23,4 +23,10 @@ export default class Tour extends Model {
   @Attr() declare lastChange: Date
   @Str('', { notNullable: true }) declare text: string
   @Str('', { notNullable: true }) declare title: string
+
+  static override readonly saving = (model: Tour) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }

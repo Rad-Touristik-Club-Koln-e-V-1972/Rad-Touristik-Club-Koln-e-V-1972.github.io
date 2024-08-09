@@ -9,4 +9,10 @@ export default class News extends Model {
 
   @Attr(null) declare showUntil: Date | null
   @Str('', { notNullable: true }) declare text: string
+
+  static override readonly saving = (model: News) => {
+    model.text = model.text.replaceAll('\n', '<br>')
+
+    return true
+  }
 }
