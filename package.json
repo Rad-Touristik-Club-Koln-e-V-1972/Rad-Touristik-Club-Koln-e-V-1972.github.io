@@ -40,7 +40,7 @@
     "@eslint/js": "9.8.0",
     "@quasar/app-vite": "2.0.0-beta.18",
     "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
-    "@types/node": "20.14.14",
+    "@types/node": "20.14.15",
     "@vue/language-server": "2.0.29",
     "autoprefixer": "10.4.20",
     "commitlint": "19.4.0",
