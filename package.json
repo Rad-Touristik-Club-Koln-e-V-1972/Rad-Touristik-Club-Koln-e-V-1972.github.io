@@ -13,7 +13,8 @@
     "dev": "quasar dev",
     "preinstall": "npx only-allow pnpm",
     "lint": "pnpm lint:js && pnpm lint:prettier",
-    "lint:js": "eslint --cache --cache-location node_modules/.cache/.eslintcache --fix .",
+    "info": "echo 'TODO --flag unstable_ts_config WORKAROUND FOR https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files'",
+    "lint:js": "eslint --flag unstable_ts_config --cache --cache-location node_modules/.cache/.eslintcache --fix .",
     "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write '**/*.{js,ts,vue,scss,html,md,json}' .",
     "prepare": "husky",
     "test": "echo \"No test specified\" && exit 0"
@@ -40,7 +41,8 @@
     "@eslint/js": "9.9.0",
     "@quasar/app-vite": "2.0.0-beta.18",
     "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
-    "@types/node": "20.14.15",
+    "@types/eslint__js": "8.42.3",
+    "@types/node": "22.2.0",
     "@vue/language-server": "2.0.29",
     "autoprefixer": "10.4.20",
     "commitlint": "19.4.0",
@@ -64,7 +66,7 @@
   },
   "lint-staged": {
     "*.**": [
-      "eslint --fix",
+      "eslint --flag unstable_ts_config --fix",
       "prettier --ignore-unknown --write"
     ]
   },
@@ -73,7 +75,9 @@
   ],
   "pnpm": {
     "patchedDependencies": {
-      "@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16": "patches/@quasar__quasar-app-extension-qcalendar@4.0.0-beta.16.patch"
+      "@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16": "patches/@quasar__quasar-app-extension-qcalendar@4.0.0-beta.16.patch",
+      "eslint-plugin-prettier@5.2.1": "patches/eslint-plugin-prettier@5.2.1.patch",
+      "eslint@9.9.0": "patches/eslint@9.9.0.patch"
     }
   }
 }

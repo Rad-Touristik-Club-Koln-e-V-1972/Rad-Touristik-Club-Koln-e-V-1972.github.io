@@ -66,8 +66,11 @@ export default configure((/*ctx*/) => ({
         'vite-plugin-checker',
         {
           eslint: {
+            dev: {
+              // TODO --flag unstable_ts_config WORKAROUND FOR https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files
+              overrideConfig: { flags: ['unstable_ts_config'] },
+            },
             lintCommand: 'eslint',
-            // TODO Remove with ESLint 9
             useFlatConfig: true,
           },
           vueTsc: {

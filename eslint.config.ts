@@ -1,6 +1,6 @@
-import eslint from '@eslint/js'
+import js from '@eslint/js'
 import globals from 'globals'
-import prettierConfig from 'eslint-plugin-prettier/recommended'
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 import tslint from 'typescript-eslint'
 import vuePlugin from 'eslint-plugin-vue'
 
@@ -9,8 +9,7 @@ export default tslint.config(
    * Rules order is important, please avoid shuffling them
    * Base ESLint recommended rules
    */
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access
-  eslint.configs.recommended,
+  js.configs.recommended,
   /*
    * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#usage
    * ESLint typescript rules
@@ -18,21 +17,21 @@ export default tslint.config(
   ...tslint.configs.strictTypeChecked,
   ...tslint.configs.stylisticTypeChecked,
   // See https://eslint.vuejs.org/rules/#available-rules
+  // TODO WORKAROUND UNTIL vuejs/eslint-plugin-vue v10 See https://github.com/vuejs/eslint-plugin-vue/issues/2166 & https://github.com/vuejs/eslint-plugin-vue/issues/2124
   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access
   ...vuePlugin.configs['flat/recommended'],
   /*
    * https://github.com/prettier/eslint-config-prettier#installation
    * usage with Prettier, provided by 'eslint-config-prettier'.
    */
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-  prettierConfig,
+  eslintPluginPrettier,
   { ignores: ['.quasar/**', 'dist/**', 'node_modules/**'] },
   {
     languageOptions: {
       // global variables
       globals: {
         ...globals.browser,
-        ...globals.es2021,
+        ...globals.es2025,
         ...globals.nodeBuiltin,
         Capacitor: 'readonly',
         __QUASAR_SSR_CLIENT__: 'readonly',

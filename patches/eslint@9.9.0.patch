@@ -1,0 +1,32 @@
+# TODO WORKAROUND UNTIL https://github.com/fi3ework/vite-plugin-checker/issues/320 IS RESOLVED
+diff --git a/lib/eslint/eslint.js b/lib/eslint/eslint.js
+index da7fa6248df85be0cab6919e7607969936702bc8..b04e793063549c5712691869edf3bc5051a616a8 100644
+--- a/lib/eslint/eslint.js
++++ b/lib/eslint/eslint.js
+@@ -416,7 +416,7 @@ async function locateConfigFileToUse({ configFile, cwd }, hasUnstableTSConfigFla
+         configFilePath = path.resolve(cwd, configFile);
+     } else if (configFile !== false) {
+         debug("Searching for eslint.config.js");
+-        configFilePath = await findFlatConfigFile(cwd, hasUnstableTSConfigFlag);
++        configFilePath = await findFlatConfigFile(cwd, true);
+ 
+         if (configFilePath) {
+             basePath = path.resolve(path.dirname(configFilePath));
+@@ -459,7 +459,7 @@ async function calculateConfigArray(eslint, {
+ 
+     const hasUnstableTSConfigFlag = eslint.hasFlag("unstable_ts_config");
+ 
+-    const { configFilePath, basePath, error } = await locateConfigFileToUse({ configFile, cwd }, hasUnstableTSConfigFlag);
++    const { configFilePath, basePath, error } = await locateConfigFileToUse({ configFile, cwd }, true);
+ 
+     // config file is required to calculate config
+     if (error) {
+@@ -470,7 +470,7 @@ async function calculateConfigArray(eslint, {
+ 
+     // load config file
+     if (configFilePath) {
+-        const fileConfig = await loadFlatConfigFile(configFilePath, hasUnstableTSConfigFlag);
++        const fileConfig = await loadFlatConfigFile(configFilePath, true);
+ 
+         if (Array.isArray(fileConfig)) {
+             configs.push(...fileConfig);
