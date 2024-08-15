@@ -39,7 +39,7 @@
     "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@eslint/js": "9.9.0",
-    "@quasar/app-vite": "2.0.0-beta.18",
+    "@quasar/app-vite": "2.0.0-beta.19",
     "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.16",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.3.0",
