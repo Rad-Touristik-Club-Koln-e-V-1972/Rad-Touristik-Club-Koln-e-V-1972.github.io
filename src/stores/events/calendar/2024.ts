@@ -180,9 +180,6 @@ export default [
     .setName('SV Malefinkbach')
     .setUrl('www.svmalefinkbach.de')
     .buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-09-14').setId('6ff614d7-1e70-4410-8c36-69311cec9847').setKilometer(100).setName('Vortour Marathon').buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2024-09-20').setId('f5b96178-5991-4afb-91bd-52a9abb50696').setKilometer(250).setName('Ausschildern Marathon').buildEvent(),
-  new EventBuilder().setCategory(EEvent.Marathon).setContact('Manfred Türk-Vialon').setDate('2024-09-21').setId('fcbc1d7d-558a-4641-93ca-35322ef86893').setKilometer(250).setName('Marathon').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Manfred Türk-Vialon')
