@@ -1,0 +1,53 @@
+# TODO WORKAROUND UNTIL https://github.com/fi3ework/vite-plugin-checker/issues/320 IS RESOLVED
+diff --git a/dist/cjs/checkers/eslint/main.js b/dist/cjs/checkers/eslint/main.js
+index 7d08eef00a69b3089d0710d40b84de2cf0fd1f0d..a328789395d5f838c97342bd5ad3ae6b5a5ab70e 100644
+--- a/dist/cjs/checkers/eslint/main.js
++++ b/dist/cjs/checkers/eslint/main.js
+@@ -94,7 +94,8 @@ const createDiagnostic = (pluginConfig) => {
+         } = require2("eslint/use-at-your-own-risk");
+         if (shouldUseFlatConfig == null ? void 0 : shouldUseFlatConfig()) {
+           eslint = new FlatESLint({
+-            cwd: root
++            cwd: root,
++            flags: ['unstable_ts_config']
+           });
+         } else {
+           throw Error(
+@@ -177,9 +178,9 @@ class EslintChecker extends import_Checker.Checker {
+         buildBin: (pluginConfig) => {
+           if (pluginConfig.eslint) {
+             const { lintCommand } = pluginConfig.eslint;
+-            return ["eslint", lintCommand.split(" ").slice(1)];
++            return ["eslint --flag unstable_ts_config", lintCommand.split(" ").slice(1)];
+           }
+-          return ["eslint", [""]];
++          return ["eslint --flag unstable_ts_config", [""]];
+         }
+       },
+       createDiagnostic
+diff --git a/dist/esm/checkers/eslint/main.js b/dist/esm/checkers/eslint/main.js
+index 2088f4de71ef1d02f1fad6f4b5a616f649b257bc..af3587ea7cab6410d60e616e81534b0a36446502 100644
+--- a/dist/esm/checkers/eslint/main.js
++++ b/dist/esm/checkers/eslint/main.js
+@@ -67,7 +67,8 @@ const createDiagnostic = (pluginConfig) => {
+         } = require2("eslint/use-at-your-own-risk");
+         if (shouldUseFlatConfig == null ? void 0 : shouldUseFlatConfig()) {
+           eslint = new FlatESLint({
+-            cwd: root
++            cwd: root,
++            flags: ['unstable_ts_config']
+           });
+         } else {
+           throw Error(
+@@ -150,9 +151,9 @@ class EslintChecker extends Checker {
+         buildBin: (pluginConfig) => {
+           if (pluginConfig.eslint) {
+             const { lintCommand } = pluginConfig.eslint;
+-            return ["eslint", lintCommand.split(" ").slice(1)];
++            return ["eslint --flag unstable_ts_config", lintCommand.split(" ").slice(1)];
+           }
+-          return ["eslint", [""]];
++          return ["eslint --flag unstable_ts_config", [""]];
+         }
+       },
+       createDiagnostic
