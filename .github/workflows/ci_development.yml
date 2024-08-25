@@ -23,18 +23,16 @@ jobs:
       - name: Setup Pages
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
-        with:
-          static_site_generator: nuxt
       - name: Restore cache
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
         with:
           path: |
             dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+            .quasar
+          key: ${{ runner.os }}-quasar-build-${{ hashFiles('dist') }}
           restore-keys: |
-            ${{ runner.os }}-nuxt-build-
+            ${{ runner.os }}-quasar-build-
       - name: Install dependencies
         run: pnpm install
       - name: Run linter
