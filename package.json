@@ -59,7 +59,7 @@
     "typescript-eslint": "8.3.0",
     "vite-plugin-checker": "0.7.2",
     "vite-plugin-sitemap": "0.7.1",
-    "vue-tsc": "2.0.29"
+    "vue-tsc": "2.1.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
