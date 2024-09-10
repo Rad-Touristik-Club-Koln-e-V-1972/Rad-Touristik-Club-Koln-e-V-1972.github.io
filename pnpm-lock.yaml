@@ -39,10 +39,10 @@ importers:
         version: 2.5.1
       libphonenumber-js:
         specifier: ^1.11.7
-        version: 1.11.7
+        version: 1.11.8
       maz-ui:
         specifier: ^3.45.1
-        version: 3.45.4(libphonenumber-js@1.11.7)(typescript@5.6.2)(vue-router@4.4.3(vue@3.5.4(typescript@5.6.2)))(vue@3.5.4(typescript@5.6.2))
+        version: 3.45.4(libphonenumber-js@1.11.8)(typescript@5.6.2)(vue-router@4.4.3(vue@3.5.4(typescript@5.6.2)))(vue@3.5.4(typescript@5.6.2))
       mime:
         specifier: ^4.0.4
         version: 4.0.4
@@ -2140,8 +2140,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libphonenumber-js@1.11.7:
-    resolution: {integrity: sha512-x2xON4/Qg2bRIS11KIN9yCNYUjhtiEjNyptjX0mX+pyKHecxuJVLIpfX1lq9ZD6CrC/rB+y4GBi18c6CEcUR+A==}
+  libphonenumber-js@1.11.8:
+    resolution: {integrity: sha512-0fv/YKpJBAgXKy0kaS3fnqoUVN8901vUYAKIGD/MWZaDfhJt1nZjPL3ZzdZBt/G8G8Hw2J1xOIrXWdNHFHPAvg==}
 
   lilconfig@3.1.2:
     resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
@@ -5454,7 +5454,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libphonenumber-js@1.11.7: {}
+  libphonenumber-js@1.11.8: {}
 
   lilconfig@3.1.2: {}
 
@@ -5539,12 +5539,12 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  maz-ui@3.45.4(libphonenumber-js@1.11.7)(typescript@5.6.2)(vue-router@4.4.3(vue@3.5.4(typescript@5.6.2)))(vue@3.5.4(typescript@5.6.2)):
+  maz-ui@3.45.4(libphonenumber-js@1.11.8)(typescript@5.6.2)(vue-router@4.4.3(vue@3.5.4(typescript@5.6.2)))(vue@3.5.4(typescript@5.6.2)):
     dependencies:
       '@mazui/cli': 3.45.4(typescript@5.6.2)
       vue: 3.5.4(typescript@5.6.2)
     optionalDependencies:
-      libphonenumber-js: 1.11.7
+      libphonenumber-js: 1.11.8
       vue-router: 4.4.3(vue@3.5.4(typescript@5.6.2))
     transitivePeerDependencies:
       - typescript
@@ -6288,7 +6288,7 @@ snapshots:
     dependencies:
       browserslist: 4.23.3
       escalade: 3.1.2
-      picocolors: 1.1.0
+      picocolors: 1.0.1
 
   uri-js@4.4.1:
     dependencies:
