@@ -46,8 +46,8 @@
 
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
-import { useQuasar } from 'quasar'
 import { useRouter } from 'vue-router'
+import { useQuasar } from 'quasar'
 import { mdiClose } from '@quasar/extras/mdi-v7'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'

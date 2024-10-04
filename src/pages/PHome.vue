@@ -40,6 +40,7 @@
 </template>
 
 <script lang="ts" setup>
+import { useQuasar } from 'quasar'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import CNews from 'components/pages/home/CNews.vue'
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
@@ -47,6 +48,9 @@ import useBlogStore from 'stores/home/Blog'
 import useSlideshowStore from 'stores/home/Slideshow'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'
 import useDateTime from 'src/utils/DateTime'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 
 const dateTime = useDateTime()
 

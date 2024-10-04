@@ -23,7 +23,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useQuasar } from 'quasar'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import usePressReportsStore from 'stores/rtc-cologne/PressReports'
 import useDateTime from 'src/utils/DateTime'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 </script>

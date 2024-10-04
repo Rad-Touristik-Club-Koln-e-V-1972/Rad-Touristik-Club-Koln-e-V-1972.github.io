@@ -81,9 +81,13 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useQuasar } from 'quasar'
 import { mdiArrowRight, mdiBike, mdiInformation } from '@quasar/extras/mdi-v7'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 
 const imageUrls = ref([
   new GalleryEntryBuilder().setId('1e0ba419-3aa9-40b1-8cda-9bbf6dabcecb').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_0.jpg.avif').buildGalleryEntry(),

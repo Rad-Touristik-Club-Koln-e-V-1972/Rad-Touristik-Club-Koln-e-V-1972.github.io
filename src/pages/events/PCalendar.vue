@@ -65,7 +65,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { date } from 'quasar'
+import { date, useQuasar } from 'quasar'
 import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi-v7'
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
 import CList from 'components/pages/events/calendar/CList.vue'
@@ -74,6 +74,9 @@ import Event from 'src/models/entities/events/calendar/Event'
 import ECalendar from 'src/models/enums/events/ECalendar'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 
 const dateTime = useDateTime()
 
