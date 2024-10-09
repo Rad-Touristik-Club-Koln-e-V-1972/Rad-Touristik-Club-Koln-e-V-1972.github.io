@@ -11,12 +11,13 @@
       </span>
     </q-card-section>
     <q-card-section>
-      <div v-for="key in Object.keys(items).reverse()" :key>
-        <q-card-section class="text-h6">{{ key }}</q-card-section>
+      <div v-for="it in items.toReversed()" :key="it.id">
+        <q-card-section class="text-h6">{{ it.time.name }}</q-card-section>
         <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
                     & https://drafts.csswg.org/css-grid-3/
                     & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
-        <masonry-wall v-if="items[key]" :column-width="280" :gap="16" :items="items[key]">
+        <!-- TODO FIX USAGE OF ARRAY! IT MUST BE GROUPED AND NOT THE SAME ARRAY USED  AGAIN. -->
+        <masonry-wall :column-width="280" :gap="16" :items="items.toReversed()">
           <template #default="{ item }">
             <c-gallery :model-value="item" />
           </template>

@@ -36,23 +36,23 @@
         <div class="col-auto">
           <q-card>
             <q-card-section class="bg-primary text-accent text-h6">Gebühren</q-card-section>
-            <q-card-section v-for="[first, second] in fgs" :key="first" flat>
+            <q-card-section v-for="fg in fgs" :key="fg.id" flat>
               <q-markup-table flat>
-                <thead v-if="first">
+                <thead v-if="fg.name">
                   <tr>
-                    <th :id="first" colspan="2">
-                      <div class="text-bold text-body2">{{ first }}</div>
+                    <th :id="fg.id" colspan="2">
+                      <div class="text-bold text-body2">{{ fg.name }}</div>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="{ id, name, price } in second" :key="id">
+                  <tr v-for="{ id, name, price } in fg.fees" :key="id">
                     <td>{{ price }}€</td>
                     <td class="text-left" v-html="name" />
                   </tr>
                 </tbody>
               </q-markup-table>
-              {{ first.text }}
+              {{ fg.text }}
             </q-card-section>
           </q-card>
         </div>
@@ -102,9 +102,8 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
 import { useQuasar } from 'quasar'
-import Fee from 'src/models/entities/Fee'
+import FeeGroup from 'src/models/entities/FeeGroup'
 import Time from 'src/models/entities/events/Time'
 import Location from 'src/models/entities/events/tours/Location'
 import Track from 'src/models/entities/events/tours/events/Track'
@@ -113,9 +112,7 @@ import useDateTime from 'src/utils/DateTime'
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()
 
-const props = defineProps<{ fees: Fee[]; location: Location; times: Time[]; tracks: Track[] }>()
+const props = defineProps<{ fgs: FeeGroup[]; location: Location; times: Time[]; tracks: Track[] }>()
 
 const dateTime = useDateTime()
-
-const fgs = computed(() => Map.groupBy(props.fees, (it) => it.feeGroup))
 </script>

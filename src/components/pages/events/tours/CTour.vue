@@ -11,16 +11,16 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="general">
-          <c-general :images="props.modelValue.images" :text="props.modelValue.text" />
+          <c-general :images="props.modelValue.galleryEntries" :text="props.modelValue.text" />
         </q-tab-panel>
         <q-tab-panel name="info">
-          <c-info :fees="props.modelValue.fees" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
+          <c-info :fgs="props.modelValue.feeGroups" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="tracks">
           <c-tracks :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="registration">
-          <c-registration :category="props.modelValue?.category" />
+          <c-registration :category="props.modelValue.category" />
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>

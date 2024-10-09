@@ -2,6 +2,7 @@ import { boot } from 'quasar/wrappers'
 
 // TODO WORKAROUND FOR https://github.com/quasarframework/quasar/issues/11921
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
+// @ts-expect-error See https://github.com/quasarframework/quasar/issues/11921
 export default boot(async ({ store }) => {
   ;(await import('./init-db/init-fee-groups')).default(store)
   await (await import('./init-db/init-navigation')).default(store)

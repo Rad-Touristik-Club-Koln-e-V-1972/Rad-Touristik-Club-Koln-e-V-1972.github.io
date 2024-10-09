@@ -14,7 +14,7 @@
               </template>
               <template #title>
                 <q-card flat>
-                  <q-card-section class="bg-primary text-accent text-h6">{{ it.name }}</q-card-section>
+                  <q-card-section class="bg-primary text-accent text-h6">{{ it.time.name }}</q-card-section>
                 </q-card>
               </template>
             </q-timeline-entry>

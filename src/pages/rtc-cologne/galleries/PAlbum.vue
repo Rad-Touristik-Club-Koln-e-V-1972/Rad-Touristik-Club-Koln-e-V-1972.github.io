@@ -16,13 +16,14 @@
               <q-tab v-for="{ id, name } in value.albums" :key="id" :label="name" :name />
             </q-tabs>
             <q-tab-panels v-model="tabPictures">
-              <q-tab-panel v-for="(item, key) in value.albums" :key :name="key">
+              <q-tab-panel v-for="it in value.albums" :key="it.id" :name="it.name">
                 <!-- TODO Workaround until the browsers support native masonry walls. See https://caniuse.com/?search=masonry
                                 & https://drafts.csswg.org/css-grid-3/
                                 & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
-                <masonry-wall :column-width="280" :gap="16" :items="item">
-                  <template #default="{ index }">
-                    <d-view :start-index="index" :model-value="item" />
+                <!-- TODO FIX USAGE OF ARRAY! IT MUST BE GROUPED AND NOT THE SAME ARRAY USED  AGAIN. -->
+                <masonry-wall :column-width="280" :gap="16" :items="value.albums">
+                  <template #default="{ index, item }">
+                    <d-view :start-index="index" :model-value="item.entries" />
                   </template>
                 </masonry-wall>
               </q-tab-panel>
@@ -53,12 +54,13 @@ import { useRepo } from 'pinia-orm'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from 'src/utils/DateTime'
+import GalleryRepository from 'stores/rtc-cologne/GalleryRepository.ts'
 
 const props = defineProps<{ album: string; galleryId: string }>()
 
 const router = useRouter()
 
-const galleriesRepo = useRepo(Gallery)
+const galleriesRepo = useRepo(GalleryRepository)
 
 const value = ref<Gallery | null>()
 
@@ -79,7 +81,7 @@ const close = () => {
 }
 
 onMounted(() => {
-  value.value = galleriesRepo.query().find(props.galleryId)
+  value.value = galleriesRepo.findById(props.galleryId)
   if (!value.value) router.go(-1)
 
   tabPictures.value = props.album
