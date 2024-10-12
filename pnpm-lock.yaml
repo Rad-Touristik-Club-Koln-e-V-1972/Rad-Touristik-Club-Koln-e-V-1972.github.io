@@ -27,7 +27,7 @@ importers:
         version: 4.0.0-beta.19
       '@yeger/vue-masonry-wall':
         specifier: ^5.0.14
-        version: 5.0.15(vue@3.5.12(typescript@5.6.3))
+        version: 5.0.16(vue@3.5.12(typescript@5.6.3))
       date-holidays:
         specifier: ^3.23.12
         version: 3.23.12
@@ -1029,17 +1029,17 @@ packages:
   '@vue/typescript-plugin@2.1.6':
     resolution: {integrity: sha512-FGwinnIuwZPELbRPZmtA+G4YyLT+lxjGSZQpNvgrzvy3MZBJZzm4UU87DIA7Lb2xbbYpTMAM6P6TAWwioCNZIg==}
 
-  '@yeger/debounce@2.0.9':
-    resolution: {integrity: sha512-yapSa71O56W0zotDlgv7z/equgK61Ozb8rSEWsNX7oN543oUMucWVWIlDp73/Jg7D08xAkw+E23OVLe1xIBS7A==}
+  '@yeger/debounce@2.0.10':
+    resolution: {integrity: sha512-61K6anfnaJ6ziIXiFOKCqtWCmxy6SeVGxKsG2ae+98SihFo1lT8p/Ny351+sXM5rfa5136u09277JxTXymgalw==}
 
-  '@yeger/vue-lib-adapter@2.0.9':
-    resolution: {integrity: sha512-FIaKvP596mg8J9bsphng4Ulr+EMghBG2RNrBrJCFvz9uV7YI6X0vNJ0vV/8SqL6Boe92VpRjG+puKe/HYKsnTg==}
+  '@yeger/vue-lib-adapter@2.0.10':
+    resolution: {integrity: sha512-rHmTZxdrpuh+BheAjQcCZrY4ERpMGpLZHYY99nsqd5RoG1nXXzRkhhNlT3tfWlikW0Wr8UpoxA+/dOlYrCDrtQ==}
 
-  '@yeger/vue-masonry-wall-core@5.0.12':
-    resolution: {integrity: sha512-K/+GX6Wu2Y7BTA3gDZIPaXAGzcHwbLOZmFUE+3ifBocHHDJJJWSeQ8Q28BgVcje741HSTB5AMKhf7fF/KGOOGw==}
+  '@yeger/vue-masonry-wall-core@5.0.13':
+    resolution: {integrity: sha512-Sh4kj9uijz/SPy6M0ryVcakIIB31rw6FRlDGZYCADT6ublAYB+39MCcTITIUPAsFtEqk4Nl0IMCS6Gs29LDYVA==}
 
-  '@yeger/vue-masonry-wall@5.0.15':
-    resolution: {integrity: sha512-I2/3ejnep4cwHYzmadDdFXNnBw1eA5wWGaQJKVpohbDx75nCL0qABGnlPgA9A46KJQRZjBMNnQG7N4d/8lj4uA==}
+  '@yeger/vue-masonry-wall@5.0.16':
+    resolution: {integrity: sha512-UbgQhUSwtsALa4ovW/zYCaQjgxIsKQsGNQffE2Lx/hzbNjPoP6wluBbWbQWszPSEEw1wh3JfcVx5uvoH5dK6Rg==}
     peerDependencies:
       vue: ^3.0.0
 
@@ -4417,18 +4417,18 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@yeger/debounce@2.0.9': {}
+  '@yeger/debounce@2.0.10': {}
 
-  '@yeger/vue-lib-adapter@2.0.9': {}
+  '@yeger/vue-lib-adapter@2.0.10': {}
 
-  '@yeger/vue-masonry-wall-core@5.0.12':
+  '@yeger/vue-masonry-wall-core@5.0.13':
     dependencies:
-      '@yeger/debounce': 2.0.9
-      '@yeger/vue-lib-adapter': 2.0.9
+      '@yeger/debounce': 2.0.10
+      '@yeger/vue-lib-adapter': 2.0.10
 
-  '@yeger/vue-masonry-wall@5.0.15(vue@3.5.12(typescript@5.6.3))':
+  '@yeger/vue-masonry-wall@5.0.16(vue@3.5.12(typescript@5.6.3))':
     dependencies:
-      '@yeger/vue-masonry-wall-core': 5.0.12
+      '@yeger/vue-masonry-wall-core': 5.0.13
       vue: 3.5.12(typescript@5.6.3)
 
   JSONStream@1.3.5:
