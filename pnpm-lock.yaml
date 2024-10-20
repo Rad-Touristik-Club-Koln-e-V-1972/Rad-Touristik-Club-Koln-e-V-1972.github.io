@@ -20,46 +20,46 @@ importers:
   .:
     dependencies:
       '@quasar/extras':
-        specifier: ^1.16.12
+        specifier: 1.16.12
         version: 1.16.12
       '@quasar/quasar-ui-qcalendar':
-        specifier: ^4.0.0-beta.19
+        specifier: 4.0.0-beta.19
         version: 4.0.0-beta.19
       '@yeger/vue-masonry-wall':
-        specifier: ^5.0.14
+        specifier: 5.0.16
         version: 5.0.16(vue@3.5.12(typescript@5.6.3))
       date-holidays:
-        specifier: ^3.23.12
+        specifier: 3.23.12
         version: 3.23.12
       german-metadata:
-        specifier: ^2.0.1
+        specifier: 2.0.1
         version: 2.0.1
       jspdf:
-        specifier: ^2.5.1
+        specifier: 2.5.2
         version: 2.5.2
       libphonenumber-js:
-        specifier: ^1.11.7
+        specifier: 1.11.12
         version: 1.11.12
       maz-ui:
-        specifier: ^3.45.1
+        specifier: 3.47.1
         version: 3.47.1(libphonenumber-js@1.11.12)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
       mime:
-        specifier: ^4.0.4
+        specifier: 4.0.4
         version: 4.0.4
       pinia:
-        specifier: ^2.2.2
+        specifier: 2.2.4
         version: 2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       quasar:
-        specifier: ^2.16.9
+        specifier: 2.17.1
         version: 2.17.1
       signature_pad:
-        specifier: ^5.0.3
+        specifier: 5.0.4
         version: 5.0.4
       vue:
-        specifier: ^3.4.38
+        specifier: 3.5.12
         version: 3.5.12(typescript@5.6.3)
       vue-router:
-        specifier: ^4.4.3
+        specifier: 4.4.5
         version: 4.4.5(vue@3.5.12(typescript@5.6.3))
     devDependencies:
       '@commitlint/cli':
