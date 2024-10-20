@@ -38,7 +38,5 @@ import PersonalData from 'src/models/entities/membership-registration/PersonalDa
 
 const modelValue = defineModel<PersonalData>({ required: true })
 
-// TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
-// eslint-disable-next-line @typescript-eslint/no-unsafe-return,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access
 const updateCity = () => (modelValue.value.city = germanMetadata.citiesByPostalCode(modelValue.value.zipCode)?.[0]?.name ?? '')
 </script>

@@ -1,34 +1,20 @@
-import js from '@eslint/js'
+// TODO Workaround for "TS7016: Could not find a declaration file for module".
+//  See https://github.com/vuejs/eslint-config-prettier/issues/24
+// @ts-expect-error Dependency lacks declaration file
+import vueEslintConfigPrettier from '@vue/eslint-config-prettier'
+import vueEslintConfigTS from '@vue/eslint-config-typescript'
+import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
-import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
-import tslint from 'typescript-eslint'
-import vuePlugin from 'eslint-plugin-vue'
 
-export default tslint.config(
-  /*
-   * Rules order is important, please avoid shuffling them
-   * Base ESLint recommended rules
-   */
-  js.configs.recommended,
-  /*
-   * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#usage
-   * ESLint typescript rules
-   */
-  ...tslint.configs.strictTypeChecked,
-  ...tslint.configs.stylisticTypeChecked,
-  // See https://eslint.vuejs.org/rules/#available-rules
-  // TODO WORKAROUND UNTIL vuejs/eslint-plugin-vue v10 See https://github.com/vuejs/eslint-plugin-vue/issues/2166 & https://github.com/vuejs/eslint-plugin-vue/issues/2124
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-member-access
-  ...vuePlugin.configs['flat/recommended'],
-  /*
-   * https://github.com/prettier/eslint-config-prettier#installation
-   * usage with Prettier, provided by 'eslint-config-prettier'.
-   */
-  eslintPluginPrettier,
-  { ignores: ['.quasar/**', 'dist/**', 'node_modules/**'] },
+export default [
+  {
+    name: 'ignores',
+    ignores: ['.github/**', '.husky/**', '.idea/**', '.quasar/**', 'dist/**', 'node_modules/**', 'patches/**', 'src-capacitor/**', 'src-cordova/**', 'quasar.config.*.temporary.compiled*'],
+  },
+  ...pluginVue.configs['flat/essential'],
+  ...vueEslintConfigTS({ extends: ['strictTypeChecked', 'stylisticTypeChecked'] }),
   {
     languageOptions: {
-      // global variables
       globals: {
         ...globals.browser,
         ...globals.es2025,
@@ -45,22 +31,19 @@ export default tslint.config(
         ga: 'readonly',
         process: 'readonly',
       },
-      /*
-       * https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
-       * Must use parserOptions instead of "parser" to allow vue-eslint-parser to keep working
-       * `parser: 'vue-eslint-parser'` is already included with any 'plugin:vue/**' config and should be omitted
-       */
       parserOptions: {
         ecmaVersion: 'latest',
         extraFileExtensions: ['.vue'],
-        parser: tslint.parser,
         project: true,
         sourceType: 'module',
       },
     },
-    // Add your custom rules here
+  },
+  {
+    name: 'rules',
     rules: {
       'vue/no-v-html': 'off',
     },
   },
-)
+  vueEslintConfigPrettier,
+]

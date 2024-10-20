@@ -77,7 +77,7 @@ const getPercentage = (max: number, value: number) => Math.round((100 / max) * v
 
 onMounted(() => {
   if (nextEvents[0]) {
-    let nextEvent = nextEvents[0]
+    const nextEvent = nextEvents[0]
 
     calcCountdown(nextEvent)
 

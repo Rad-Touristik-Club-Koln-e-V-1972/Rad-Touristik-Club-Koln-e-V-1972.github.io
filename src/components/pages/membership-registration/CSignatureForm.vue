@@ -18,7 +18,7 @@ import SignaturePad from 'signature_pad'
 const modelValue = defineModel<string>({ required: true })
 const props = defineProps<{ label: string }>()
 
-let id = uid()
+const id = uid()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
