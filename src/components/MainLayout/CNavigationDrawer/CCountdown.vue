@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="event.showEvent(nextEvents[0])">
+    <q-card v-if="nextEvents.length" class="cursor-pointer text-center" flat @click="eventRef!.showEvent(nextEvents[0]!)">
       <div class="justify-center row">
         <div class="col-auto">
           <q-circular-progress class="q-ma-md" color="primary" rounded size="60px" show-value :thickness="0.2" track-color="transparent" :value="getPercentageDays(days)">
@@ -44,13 +44,13 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, useTemplateRef } from 'vue'
 import { date, useInterval } from 'quasar'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
 import Event from 'src/models/entities/events/calendar/Event'
 import useCalendarStore from 'stores/events/Calendar'
 
-const event = ref()
+const eventRef = useTemplateRef<InstanceType<typeof DEvent>>('event')
 
 const calendarStore = useCalendarStore()
 

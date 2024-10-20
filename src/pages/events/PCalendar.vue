@@ -1,9 +1,9 @@
 <template>
   <q-card flat>
     <q-toolbar>
-      <q-btn v-if="mode !== ECalendar.List" fab flat :icon="mdiChevronLeft" @click="calendar.prev()" />
-      <q-btn v-if="mode !== ECalendar.List" outline @click="calendar.moveToToday()">Heute</q-btn>
-      <q-btn v-if="mode !== ECalendar.List" fab flat :icon="mdiChevronRight" @click="calendar.next()" />
+      <q-btn v-if="mode !== ECalendar.List" fab flat :icon="mdiChevronLeft" @click="calendarRef!.prev()" />
+      <q-btn v-if="mode !== ECalendar.List" outline @click="calendarRef!.moveToToday()">Heute</q-btn>
+      <q-btn v-if="mode !== ECalendar.List" fab flat :icon="mdiChevronRight" @click="calendarRef!.next()" />
       <q-toolbar-title v-if="mode !== ECalendar.List && !$q.screen.xs">{{ title }}</q-toolbar-title>
       <q-space />
       <q-select v-model="mode" filled label="Darstellung" :options="Object.values(ECalendar)" style="min-width: 161px">
@@ -29,7 +29,7 @@
         <template #column-header-after="{ scope: { timestamp } }">
           <!-- Day / Week all day entry -->
           <template v-for="e in events" :key="e.id">
-            <div v-if="e.allDay && date.isSameDate(timestamp.date, e.start)" :class="`bg-${e.color}`" class="cursor-pointer full-width text-accent" @click="event.showEvent(e)">
+            <div v-if="e.allDay && date.isSameDate(timestamp.date, e.start)" :class="`bg-${e.color}`" class="cursor-pointer full-width text-accent" @click="eventRef!.showEvent(e)">
               {{ e.name }}
             </div>
           </template>
@@ -37,7 +37,7 @@
         <template #day="{ scope: { timestamp } }">
           <!-- Month entry -->
           <template v-for="e in events" :key="e.id">
-            <div v-if="dateTime.isBetweenDates(timestamp.date, e.start, e.end)" :class="`bg-${e.color}`" class="cursor-pointer text-accent" @click="event.showEvent(e)">
+            <div v-if="dateTime.isBetweenDates(timestamp.date, e.start, e.end)" :class="`bg-${e.color}`" class="cursor-pointer text-accent" @click="eventRef!.showEvent(e)">
               {{ e.name }}
             </div>
           </template>
@@ -50,7 +50,7 @@
               :class="`absolute bg-${e.color}`"
               class="cursor-pointer full-width text-accent"
               :style="getDayEntryStyle(e, timeStartPos, timeDurationHeight)"
-              @click="event.showEvent(e)"
+              @click="eventRef!.showEvent(e)"
             >
               {{ e.name }}
             </div>
@@ -64,7 +64,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, useTemplateRef } from 'vue'
 import { date, useQuasar } from 'quasar'
 import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi-v7'
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
@@ -80,8 +80,8 @@ const $q = useQuasar()
 
 const dateTime = useDateTime()
 
-const calendar = ref()
-const event = ref()
+const calendarRef = useTemplateRef<QCalendar>('calendar')
+const eventRef = useTemplateRef<InstanceType<typeof DEvent>>('event')
 
 const events = useCalendarStore().allNotCancelled
 const mode = ref<ECalendar>(ECalendar.List)

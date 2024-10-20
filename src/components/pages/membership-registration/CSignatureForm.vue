@@ -22,6 +22,7 @@ const id = uid()
 let signaturePad: SignaturePad
 
 onMounted(async () => {
+  // TODO wechsel zu "useTemplateRef" möglich?
   const canvas = document.getElementById(id)
 
   if (canvas) {
