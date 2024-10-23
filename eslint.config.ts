@@ -1,6 +1,3 @@
-// TODO Workaround for "TS7016: Could not find a declaration file for module".
-//  See https://github.com/vuejs/eslint-config-prettier/issues/24
-// @ts-expect-error Dependency lacks declaration file
 import vueEslintConfigPrettier from '@vue/eslint-config-prettier'
 import vueEslintConfigTS from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
