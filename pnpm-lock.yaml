@@ -47,8 +47,8 @@ importers:
         specifier: 4.0.4
         version: 4.0.4
       pinia:
-        specifier: 2.2.4
-        version: 2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+        specifier: 2.2.5
+        version: 2.2.5(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       quasar:
         specifier: 2.17.1
         version: 2.17.1
@@ -70,7 +70,7 @@ importers:
         version: 19.5.0
       '@quasar/app-vite':
         specifier: 2.0.0-beta.24
-        version: 2.0.0-beta.24(@types/node@22.8.2)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
+        version: 2.0.0-beta.24(@types/node@22.8.2)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.5(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -2557,12 +2557,12 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
-  pinia@2.2.4:
-    resolution: {integrity: sha512-K7ZhpMY9iJ9ShTC0cR2+PnxdQRuwVIsXDO/WIEV/RnMC/vmSoKDTKW/exNQYPI+4ij10UjXqdNiEHwn47McANQ==}
+  pinia@2.2.5:
+    resolution: {integrity: sha512-T4PEQ4uFv2KIRC8A1Y3k1ceQGTDtxtd7nngYGu1IJUUSpuQoYfGq7w7rOc+f5YN1vx3mEs2NjjtN2IFbNS7jqA==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.3.0
+      vue: ^2.6.14 || ^3.5.11
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
@@ -3942,7 +3942,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.8.2)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))':
+  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.8.2)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.5(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
@@ -3984,7 +3984,7 @@ snapshots:
       webpack-merge: 6.0.1
     optionalDependencies:
       eslint: 9.12.0(jiti@1.21.6)
-      pinia: 2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+      pinia: 2.2.5(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5953,7 +5953,7 @@ snapshots:
 
   pidtree@0.6.0: {}
 
-  pinia@2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)):
+  pinia@2.2.5(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
