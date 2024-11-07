@@ -50,8 +50,8 @@ importers:
         specifier: 2.2.6
         version: 2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       quasar:
-        specifier: 2.17.1
-        version: 2.17.1
+        specifier: 2.17.2
+        version: 2.17.2
       signature_pad:
         specifier: 5.0.4
         version: 5.0.4
@@ -70,7 +70,7 @@ importers:
         version: 19.5.0
       '@quasar/app-vite':
         specifier: 2.0.0-beta.24
-        version: 2.0.0-beta.24(@types/node@22.9.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
+        version: 2.0.0-beta.24(@types/node@22.9.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.2)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -2625,8 +2625,8 @@ packages:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
     engines: {node: '>=0.6'}
 
-  quasar@2.17.1:
-    resolution: {integrity: sha512-4tnprxb+oEFChqcHGeQnprTmsr9gRK/R4N2O6Gg0AxpP22G9ttKeeqhH7+Soyjdi9RUcc6d5Y49T6rRg4hGJXw==}
+  quasar@2.17.2:
+    resolution: {integrity: sha512-wycJcrjXsNxyNFYaw7eviKAo0I3LaQap0GCHXUEiaAi4H+a9LJbgkoZSZKCP4M0UO4iVnkWVkQzsFodyHk5uHQ==}
     engines: {node: '>= 10.18.1', npm: '>= 6.13.4', yarn: '>= 1.21.1'}
 
   queue-microtask@1.2.3:
@@ -3942,11 +3942,11 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.9.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))':
+  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.9.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.2)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
-      '@quasar/vite-plugin': 1.7.0(@vitejs/plugin-vue@5.1.4(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3))
+      '@quasar/vite-plugin': 1.7.0(@vitejs/plugin-vue@5.1.4(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.2)(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3))
       '@types/chrome': 0.0.262
       '@types/compression': 1.7.5
       '@types/cordova': 11.0.3
@@ -3972,7 +3972,7 @@ snapshots:
       lodash: 4.17.21
       minimist: 1.2.8
       open: 10.1.0
-      quasar: 2.17.1
+      quasar: 2.17.2
       rollup-plugin-visualizer: 5.12.0(rollup@4.24.0)
       sass-embedded: 1.80.3
       semver: 7.6.3
@@ -4014,10 +4014,10 @@ snapshots:
       fs-extra: 11.2.0
       selfsigned: 2.4.1
 
-  '@quasar/vite-plugin@1.7.0(@vitejs/plugin-vue@5.1.4(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.1)(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3))':
+  '@quasar/vite-plugin@1.7.0(@vitejs/plugin-vue@5.1.4(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3)))(quasar@2.17.2)(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@vitejs/plugin-vue': 5.1.4(vite@5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6))(vue@3.5.12(typescript@5.6.3))
-      quasar: 2.17.1
+      quasar: 2.17.2
       vite: 5.4.6(@types/node@22.9.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6)
       vue: 3.5.12(typescript@5.6.3)
 
@@ -6012,7 +6012,7 @@ snapshots:
     dependencies:
       side-channel: 1.0.6
 
-  quasar@2.17.1: {}
+  quasar@2.17.2: {}
 
   queue-microtask@1.2.3: {}
 
