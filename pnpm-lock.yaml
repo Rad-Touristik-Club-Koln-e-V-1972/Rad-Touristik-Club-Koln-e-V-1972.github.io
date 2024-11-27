@@ -42,7 +42,7 @@ importers:
         version: 1.11.15
       maz-ui:
         specifier: 3.47.1
-        version: 3.47.1(libphonenumber-js@1.11.15)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        version: 3.47.1(libphonenumber-js@1.11.15)(typescript@5.6.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       mime:
         specifier: 4.0.4
         version: 4.0.4
@@ -59,8 +59,8 @@ importers:
         specifier: 3.5.13
         version: 3.5.13(typescript@5.6.3)
       vue-router:
-        specifier: 4.4.5
-        version: 4.4.5(vue@3.5.13(typescript@5.6.3))
+        specifier: 4.5.0
+        version: 4.5.0(vue@3.5.13(typescript@5.6.3))
     devDependencies:
       '@commitlint/cli':
         specifier: 19.6.0
@@ -70,7 +70,7 @@ importers:
         version: 19.6.0
       '@quasar/app-vite':
         specifier: 2.0.0-beta.24
-        version: 2.0.0-beta.24(@types/node@22.10.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(quasar@2.17.4)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        version: 2.0.0-beta.24(@types/node@22.10.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(quasar@2.17.4)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -3426,8 +3426,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.4.5:
-    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
+  vue-router@4.5.0:
+    resolution: {integrity: sha512-HDuk+PuH5monfNuY+ct49mNmkCRK4xJAV9Ts4z9UFc4rzdDnxQLyCMGGc8pKhZhHTVzfanpNwB/lwqevcBwI4w==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -3965,7 +3965,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.10.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(quasar@2.17.4)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
+  '@quasar/app-vite@2.0.0-beta.24(@types/node@22.10.0)(eslint@9.12.0(jiti@1.21.6))(pinia@2.2.6(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(quasar@2.17.4)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.6.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
@@ -4003,7 +4003,7 @@ snapshots:
       ts-essentials: 9.4.2(typescript@5.6.3)
       vite: 5.4.6(@types/node@22.10.0)(sass-embedded@1.80.3)(sass@1.77.8)(terser@5.31.6)
       vue: 3.5.13(typescript@5.6.3)
-      vue-router: 4.4.5(vue@3.5.13(typescript@5.6.3))
+      vue-router: 4.5.0(vue@3.5.13(typescript@5.6.3))
       webpack-merge: 6.0.1
     optionalDependencies:
       eslint: 9.12.0(jiti@1.21.6)
@@ -5757,13 +5757,13 @@ snapshots:
 
   make-error@1.3.6: {}
 
-  maz-ui@3.47.1(libphonenumber-js@1.11.15)(typescript@5.6.3)(vue-router@4.4.5(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3)):
+  maz-ui@3.47.1(libphonenumber-js@1.11.15)(typescript@5.6.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@mazui/cli': 3.47.1(typescript@5.6.3)
       vue: 3.5.13(typescript@5.6.3)
     optionalDependencies:
       libphonenumber-js: 1.11.15
-      vue-router: 4.4.5(vue@3.5.13(typescript@5.6.3))
+      vue-router: 4.5.0(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - typescript
 
@@ -6792,7 +6792,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.4.5(vue@3.5.13(typescript@5.6.3)):
+  vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.6.3)
