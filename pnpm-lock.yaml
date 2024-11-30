@@ -20,8 +20,8 @@ importers:
   .:
     dependencies:
       '@quasar/extras':
-        specifier: 1.16.13
-        version: 1.16.13
+        specifier: 1.16.14
+        version: 1.16.14
       '@quasar/quasar-ui-qcalendar':
         specifier: 4.0.0-beta.19
         version: 4.0.0-beta.19
@@ -633,8 +633,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@mazui/cli@3.47.1':
-    resolution: {integrity: sha512-O62WOeLo9KYi5VLVXWRjbdjhlGfOUsapHPEzmpb91y46k6Sia58kjFbqZfeZyJ1X2ywVVBD00K6kRUcy9QKBjA==}
+  '@mazui/cli@3.48.0':
+    resolution: {integrity: sha512-X+8GLwj0BRiSJtdCqyheQvxJjwvOWM75ioKx77D7av6DoiGntv3P84wVCRmckeq5MF2/ZeS6h8yVbqFY9ZMjXQ==}
     hasBin: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -685,8 +685,8 @@ packages:
       workbox-build:
         optional: true
 
-  '@quasar/extras@1.16.13':
-    resolution: {integrity: sha512-6QdnYbFYhgeWFAwytUWTDgpP/mcJxydBmgO91cHr9MMTx0GLaVJY6d10m/G/XS9TzMnSsZgqO7kbVHf3Hvml3w==}
+  '@quasar/extras@1.16.14':
+    resolution: {integrity: sha512-kXVCX9GAV2l/av9EQJFRhJ3yp/sshOvc6quo+hGJYnCYj47061sxHXP6amw1vCIlVnyCFjBPeqZP2WcKmGwsOw==}
 
   '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16':
     resolution: {integrity: sha512-Rj3KKjPFrE13cswlZAPcqdqi1YH9CeHMpWIw8xsNqdLhCoaRhMGbRas9fvHFLJOXpnsDaVwWINNgN/bBUyn99w==}
@@ -3936,7 +3936,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mazui/cli@3.47.1(typescript@5.6.3)':
+  '@mazui/cli@3.48.0(typescript@5.6.3)':
     dependencies:
       '@clack/prompts': 0.7.0
       clear: 0.1.0
@@ -4020,7 +4020,7 @@ snapshots:
       - terser
       - typescript
 
-  '@quasar/extras@1.16.13': {}
+  '@quasar/extras@1.16.14': {}
 
   '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)':
     dependencies:
@@ -5759,7 +5759,7 @@ snapshots:
 
   maz-ui@3.47.1(libphonenumber-js@1.11.15)(typescript@5.6.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3)):
     dependencies:
-      '@mazui/cli': 3.47.1(typescript@5.6.3)
+      '@mazui/cli': 3.48.0(typescript@5.6.3)
       vue: 3.5.13(typescript@5.6.3)
     optionalDependencies:
       libphonenumber-js: 1.11.15
