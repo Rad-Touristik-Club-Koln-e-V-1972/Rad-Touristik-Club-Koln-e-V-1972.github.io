@@ -64,7 +64,7 @@ const tab = ref('Bilder')
 const tabPictures = ref()
 
 const tabs = computed(() => {
-  const tabs = []
+  const tabs: string[] = []
 
   if (Object.keys(value.value?.images ?? {}).length) tabs.push('Bilder')
   if (value.value?.youtubeVideoIds.length) tabs.push('Videos')

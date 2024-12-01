@@ -25,5 +25,5 @@ const { entryID = undefined, galleryEntries = [] as GalleryEntry[], height = '10
 
 const carouselRef = useTemplateRef<InstanceType<typeof QCarousel>>('carousel')
 
-const item = ref(entryID ?? galleryEntries[0]?.id.toString() ?? '')
+const item = ref(entryID ?? (galleryEntries[0]?.id ?? '').toString())
 </script>
