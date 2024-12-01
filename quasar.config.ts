@@ -3,15 +3,16 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-import { configure } from 'quasar/wrappers'
+import { defineConfig } from '#q-app/wrappers'
 import type { RouteRecordRaw } from 'vue-router'
-import routes from 'src/router/routes'
+import routes from './src/router/routes'
 
 const generateRootRoute = () => {
   const mainRoutes = routes[0]
   let ret: string[] = []
 
   // Avoid "//" at the beginning of the path if the root is "/".
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   if (mainRoutes?.children) ret = generateRoutesHelper(mainRoutes.path === '/' ? '#' : `${mainRoutes.path}#`, mainRoutes.children)
 
   return ret
@@ -28,16 +29,16 @@ const generateRoutesHelper = (rootPath: string, children: RouteRecordRaw[]) => {
   return ret
 }
 
-export default configure((/*ctx*/) => ({
+export default defineConfig((/*ctx*/) => ({
   // animations: 'all', // --- includes all animations
   // https://v2.quasar.dev/options/animations
   animations: 'all',
 
   // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuring-bex
   bex: {
-    // contentScripts: ['my-content-script'],
     // extendBexManifestJson (json) {},
     // extendBexScriptsConf (esbuildConf) {},
+    // extraScripts: ['my-content-script'],
   },
 
   // app boot file (/src/boot)
@@ -50,6 +51,8 @@ export default configure((/*ctx*/) => ({
     // analyze: true,
     // distDir
     // env: {},
+    // envFolder: './',
+    // envFiles: ['.env.somefile', '../.env.someotherfile'],
     // extendViteConf (viteConf) {},
     // ignorePublicFolder: true,
     // minify: false,
@@ -59,7 +62,15 @@ export default configure((/*ctx*/) => ({
       // browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
       // node: 'node20',
     },
-    // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
+    typescript: {
+      // extendTsConfig(tsConfig) {
+      // You can use this hook to extend tsConfig dynamically
+      // For basic use cases, you can still update the usual tsconfig.json file to override some settings
+      // },
+      strict: true, // (recommended) enables strict settings for TypeScript
+      vueShim: true, // required when using ESLint with type-checked rules, will generate a shim file for `*.vue` files
+    },
+    // useFilenameHashes: false,
     // viteVuePluginOptions: {},
     vitePlugins: [
       [
@@ -154,6 +165,18 @@ export default configure((/*ctx*/) => ({
 
   // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
   framework: {
+    /**
+     * Auto import - which file extensions should be interpreted as referring to Vue SFC?
+     * @default [ 'vue' ]
+     */
+    // autoImportVueExtensions: ['vue'],
+
+    /**
+     * Auto import - which file extensions should be interpreted as referring to script files?
+     * @default [ 'js', 'jsx', 'ts', 'tsx' ]
+     */
+    // autoImportScriptExtensions: [ 'js', 'jsx', 'ts', 'tsx' ],
+
     config: {
       screen: {
         bodyClasses: true,
@@ -172,6 +195,13 @@ export default configure((/*ctx*/) => ({
 
     // Quasar plugins
     plugins: [],
+
+    /**
+     * Treeshake Quasar's UI on dev too?
+     * Recommended to leave this as false for performance reasons.
+     * @default false
+     */
+    // devTreeshaking: false
   },
 
   // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
@@ -183,7 +213,7 @@ export default configure((/*ctx*/) => ({
     // extendInjectManifestOptions (cfg) {},
     // extendManifestJson (json) {},
     // extendPWACustomSWConf (esbuildConf) {},
-    // injectPwaMetaTags: false,
+    // injectPwaMetaTags: false, // boolean | ((injectParam: InjectPwaMetaTagsParams) => string)
     // manifestFilename: 'manifest.json'
     // swFilename: 'sw.js',
     // useCredentialsForManifestTag: true,
@@ -199,7 +229,6 @@ export default configure((/*ctx*/) => ({
   //   pwaServiceWorker: 'src-pwa/custom-service-worker',
   //   pwaManifestFile: 'src-pwa/manifest.json',
   //   electronMain: 'src-electron/electron-main',
-  //   electronPreload: 'src-electron/electron-preload'
   //   bexManifestFile: 'src-bex/manifest.json
   // },
 

@@ -1,6 +1,6 @@
-import { boot } from 'quasar/wrappers'
+import { defineBoot } from '#q-app/wrappers'
 import MasonryWall from '@yeger/vue-masonry-wall'
 
-export default boot(({ app }) => {
+export default defineBoot(({ app }) => {
   app.use(MasonryWall)
 })

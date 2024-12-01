@@ -1,8 +1,5 @@
 // https://github.com/michael-ciniawsky/postcss-load-config
-// TODO rename to postcss.config.js with vite v6
 import autoprefixer from 'autoprefixer'
-
-// TODO Rename to postcss.config.ts with vite 6. See https://github.com/vitejs/vite/issues/15869 & https://github.com/vitejs/vite/pull/15235
 
 export default {
   plugins: [

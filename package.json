@@ -12,6 +12,7 @@
     "predev": "corepack use pnpm@* && pnpm lint",
     "dev": "quasar dev",
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "quasar prepare",
     "lint": "pnpm lint:ts && pnpm lint:prettier",
     "info": "echo 'TODO --flag unstable_ts_config WORKAROUND FOR https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files'",
     "lint:ts": "eslint --flag unstable_ts_config --cache --cache-location node_modules/.cache/.eslintcache --fix .",

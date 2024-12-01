@@ -1,9 +1,12 @@
 {
-  "extends": "@quasar/app-vite/stricter-tsconfig-preset",
+  "extends": "./.quasar/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
     // TODO WORKAROUND FOR https://github.com/vuejs/core/issues/6532 & masonry-wall https://github.com/DerYeger/yeger/issues/296#issuecomment-2273206984
-    "exactOptionalPropertyTypes": false
+    "exactOptionalPropertyTypes": false,
+    "strictNullChecks": true
   },
-  "exclude": ["./.github/**", "./.husky/**", "./.idea/**", "./.quasar/**", "./dist", "./.quasar", "./node_modules", "./patches/**", "./src-capacitor", "./src-cordova", "./quasar.config.*.temporary.compiled*"]
+  "exclude": ["./../dist", "./../node_modules", "./../src-capacitor", "./../src-cordova", "./../quasar.config.*.temporary.compiled*"],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }]
+  }
 }
