@@ -54,7 +54,7 @@
     "lint-staged": "15.2.10",
     "prettier": "3.4.1",
     "ts-node": "10.9.2",
-    "typescript": "5.6.3",
+    "typescript": "5.7.2",
     "vite-plugin-checker": "0.8.0",
     "vite-plugin-sitemap": "0.7.1",
     "vue-tsc": "2.1.10"
