@@ -65,6 +65,14 @@ export default [
     .setName('Vereinsfahrt m. anschl. Geb.feier')
     .buildEvent(),
   new EventBuilder()
+    .setCategory(EEvent.Vereinsfahrt)
+    .setContact('Wolfgang Dünkelmann')
+    .setDate('2025-05-31')
+    .setId('0556e33f-ae45-46f3-8d58-b880b3467688')
+    .setKilometer(50)
+    .setName('Durchs Bergische mit anschließendem Besuch des RTC-Stands beim Inselfest')
+    .buildEvent(),
+  new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
     .setDate('2025-06-06')
