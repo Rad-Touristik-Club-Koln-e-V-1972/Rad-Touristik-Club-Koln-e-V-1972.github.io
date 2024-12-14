@@ -2,6 +2,67 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('9a17d9c6-eebe-4f72-830f-8eb69e6c33a5')
+    .setDate('2024-12-07')
+    .setId('d8b09d83-e5e1-4792-a5f0-e9267289fdd1')
+    .setText(
+      `7. Dezember 2024 – Ein Abend voller Glanz, Gemeinschaft und Ehrungen
+
+Es war endlich soweit! Nach wochenlanger Vorbereitung war der große Abend gekommen.
+Alles war sorgfältig geplant:
+Die drei Menüs zur Auswahl wurden besprochen, die Dekoration in warmem Orange gestaltet, das Jahr Revue passiert und dann die Reden geschrieben, die Geschenke für die neun Auszeichnungen liebevoll verpackt und mit persönlichen Worten versehen.
+
+Ein besonderes Highlight des Abends: Für jede*n der 37 Gäste gab es ein von Diana selbst graviertes Sektglas.
+Jedes Glas trug den jeweiligen Vornamen – ein persönliches Geschenk für alle, die das Jahr zu etwas Besonderem machten.
+
+Der Abend war durchzogen von einer warmen Atmosphäre – es wurde gelächelt, es gab Rückblicke auf das vergangene Jahr, Ehrungen für besondere Leistungen, sowie viel Freude und gute Gespräche an den Tischgemeinschaften.
+Wir genossen ein leckeres 5-Gänge-Menü und erlebten Überraschungen sowie gute Wendungen.
+Und nun zu unseren Stars des Abends.
+
+Die Auszeichnungen im Überblick:
+
+🏆 Vereinsmeisterschaft (unisex)
+<ol reversed start="5">
+  <li>Platz: Klaus D.</li>
+  <li>Platz: Albert</li>
+  <li>Platz: Diana</li>
+  <li>Platz: Jürgen</li>
+</ol>
+Unser Vereinsmeister 2024 ist Manni!🎉
+
+Manni hat sich mit viel Engagement und sportlichem Einsatz den Titel „Vereinsmeister“ 2024 verdient! Wir gratulieren dir herzlich und sind stolz, dich in diesem Jahr als Vereinsmeister zu feiern. 🏅💪👏
+
+🏅 *Preis der Sportwarts*
+Diese Auszeichnung für außergewöhnliche sportliche Leistungen, die nicht mit „höher, schneller, weiter“ zu tun hat, ging an *Norbert*.
+Herzlichen Glückwunsch, lieber Norbert!
+
+💖 *Preis der Präsidentin*
+Ein ganz besonderer Dank geht an drei Vereinsmitglieder, die sich durch Herzblut und Engagement im Verein hervorgetan haben:
+
+Martin: Für seine wertvolle IT-Unterstützung
+
+Jürgen: Für die Ausrichtung zweier hervorragender Technik-Workshops
+
+Eric: Für das Bereitstellen der Location für die beiden Workshops und das anschließende gemütliche Miteinander.
+
+Herzlichen Glückwunsch an Martin, Jürgen und Eric!
+
+🌟Ehrung durch den Vorstand
+Der Vorstand hat Wolfgang zum Ehrenmitglied ernannt und ihm eine Urkunde überreicht. 🏅
+
+Ein besonderer Dank geht an das Team vom Uferglück, das uns einen wunderschönen Abend bereitet hat 🙏, sowie an Judith für die vielen schönen Fotos 📸🥰, die diesen Abend festhielten!
+
+Der Abend war harmonisch und rundum gelungen – er war geprägt von Freude, guten Gesprächen und den positiven Wendungen, die uns als Radsport-Freunde näher zusammenbringen. 🧡
+Es war ein Moment des Innehaltens, des Rückblicks und der Dankbarkeit für alles, was wir gemeinsam erlebt haben.
+Gleichzeitig blicken wir mit Vorfreude auf das kommende Jahr, das uns sicherlich viele weitere schöne Erlebnisse bringen wird.
+
+Ich freue mich schon auf die neuen Geschichten, die wir alle zusammen in 2025 schreiben werden. ❤️
+
+Eure Diana`,
+    )
+    .setTitle('Weihnachtsfeier RTC Köln e.V. 🎄')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('285ea40c-908c-4581-a073-b78a4e9adc5d')
     .setDate('2024-07-14')
     .setId('be977c58-c637-47ab-87b0-4ebe6d063fb0')
