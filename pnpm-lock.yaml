@@ -44,8 +44,8 @@ importers:
         specifier: 3.50.1
         version: 3.50.1(libphonenumber-js@1.11.17)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
       mime:
-        specifier: 4.0.4
-        version: 4.0.4
+        specifier: 4.0.6
+        version: 4.0.6
       pinia:
         specifier: 2.3.0
         version: 2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
@@ -2216,8 +2216,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  mime@4.0.4:
-    resolution: {integrity: sha512-v8yqInVjhXyqP6+Kw4fV3ZzeMRqEW6FotRsKXjRS5VMTNIuXsdRoAvklpoRgSqXm6o9VNH4/C0mgedko9DdLsQ==}
+  mime@4.0.6:
+    resolution: {integrity: sha512-4rGt7rvQHBbaSOF9POGkk1ocRP16Md1x36Xma8sz8h8/vfCUI2OtEIeCqe4Ofes853x4xDoPiFLIT47J5fI/7A==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -5614,7 +5614,7 @@ snapshots:
 
   mime@1.6.0: {}
 
-  mime@4.0.4: {}
+  mime@4.0.6: {}
 
   mimic-fn@2.1.0: {}
 
