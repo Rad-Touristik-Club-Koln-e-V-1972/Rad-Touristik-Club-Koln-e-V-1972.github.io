@@ -69,8 +69,8 @@ importers:
         specifier: 19.6.0
         version: 19.6.0
       '@quasar/app-vite':
-        specifier: 2.0.2
-        version: 2.0.2(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(quasar@2.17.5)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.2)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)
+        specifier: 2.0.4
+        version: 2.0.4(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(quasar@2.17.5)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.2)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.0.0-beta.16
         version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
@@ -525,8 +525,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@quasar/app-vite@2.0.2':
-    resolution: {integrity: sha512-B3jQcjv8fUgjjzBCD5Dwm9Ba7+NBuwgD8aV5WKp6cjaMU2p9uw9+i7oTAATwTkdyFsOS0PNy/M04Vf0/6Wlvug==}
+  '@quasar/app-vite@2.0.4':
+    resolution: {integrity: sha512-irymP0wD1vsctegjBg04G1Wb79xkmU+tniEaMOJO96JffcvVPN142UmbAwJGn4Eu2MUf8N8umr5yvxL6Ab2cBw==}
     engines: {node: ^30 || ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
@@ -3793,7 +3793,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.0.2(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(quasar@2.17.5)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.2)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)':
+  '@quasar/app-vite@2.0.4(@types/node@22.10.2)(eslint@9.17.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(quasar@2.17.5)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.2)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))(yaml@2.6.1)':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
@@ -4337,10 +4337,6 @@ snapshots:
     dependencies:
       mime-types: 2.1.35
       negotiator: 0.6.3
-
-  acorn-jsx@5.3.2(acorn@8.12.1):
-    dependencies:
-      acorn: 8.12.1
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -5029,8 +5025,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.12.1
-      acorn-jsx: 5.3.2(acorn@8.12.1)
+      acorn: 8.14.0
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       eslint-visitor-keys: 3.4.3
 
   esquery@1.6.0:
@@ -6304,7 +6300,7 @@ snapshots:
   terser@5.31.6:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.12.1
+      acorn: 8.14.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
