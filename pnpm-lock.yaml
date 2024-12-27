@@ -29,8 +29,8 @@ importers:
         specifier: 5.0.16
         version: 5.0.16(vue@3.5.13(typescript@5.7.2))
       date-holidays:
-        specifier: 3.23.14
-        version: 3.23.14
+        specifier: 3.23.16
+        version: 3.23.16
       german-metadata:
         specifier: 2.0.1
         version: 2.0.1
@@ -1331,8 +1331,8 @@ packages:
     resolution: {integrity: sha512-qTuO7061IOyOAafjuKJIld4pBe5BhjdKyAayUgoYBaB+7aFnsdraeDLBS0WJpCALcw/RqyG8emoFuSgirW+c7w==}
     engines: {node: '>=12.0.0'}
 
-  date-holidays@3.23.14:
-    resolution: {integrity: sha512-KSYj5VkprA81ojdVkoyIBn9uHYPs9LAZt/iUiYBpICJ2/HkWI/OV9pfYl+MqZSBRtS0aLU3RE0Rc6heTuzcM3Q==}
+  date-holidays@3.23.16:
+    resolution: {integrity: sha512-RE4+bFy/WD+QAPjnsyLOcSox/ifwfj33Io4X0Q95rdC/zx33Y7XUbXmFlSZWwyZOdd0y6qjmQYpYfWwTL6yT1w==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -4733,7 +4733,7 @@ snapshots:
       jalaali-js: 1.2.7
       moment-timezone: 0.5.46
 
-  date-holidays@3.23.14:
+  date-holidays@3.23.16:
     dependencies:
       date-holidays-parser: 3.4.6
       js-yaml: 4.1.0
