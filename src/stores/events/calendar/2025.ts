@@ -116,6 +116,14 @@ export default [
     .setUrl('www.tsv-immendorf.de')
     .buildEvent(),
   new EventBuilder()
+    .setCategory(EEvent.Vereinsfahrt)
+    .setContact('Manfred Türk-Vialon')
+    .setDate('2025-07-19')
+    .setId('495885cf-10ff-4dc7-83e4-94b899f0d202')
+    .setKilometer(150)
+    .setName('Vereinsfahrt nach Marmagen/Eifel')
+    .buildEvent(),
+  new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
     .setDate('2025-08-01')
