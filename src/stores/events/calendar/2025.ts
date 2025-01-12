@@ -58,14 +58,6 @@ export default [
   new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2025-05-26').setId('cc770aa2-182e-4e05-9d23-e7e2e3d3f7f3').setName('Abschildern und Lager').setKilometer(150).buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
-    .setContact('Manfred Türk-Vialon')
-    .setDate('2025-05-29')
-    .setId('4235b324-111c-4492-8b0b-0261d949b746')
-    .setKilometer(50)
-    .setName('Vereinsfahrt m. anschl. Geb.feier')
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.Vereinsfahrt)
     .setContact('Wolfgang Dünkelmann')
     .setDate('2025-05-31')
     .setId('0556e33f-ae45-46f3-8d58-b880b3467688')
