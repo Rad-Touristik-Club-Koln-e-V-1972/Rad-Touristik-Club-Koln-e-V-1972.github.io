@@ -14,8 +14,7 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "quasar prepare",
     "lint": "pnpm lint:ts && pnpm lint:prettier",
-    "info": "echo 'TODO --flag unstable_ts_config WORKAROUND FOR https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files'",
-    "lint:ts": "eslint --flag unstable_ts_config --cache --cache-location node_modules/.cache/.eslintcache --fix .",
+    "lint:ts": "eslint --cache --cache-location node_modules/.cache/.eslintcache --fix .",
     "lint:prettier": "prettier --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore --list-different --write '**/*.{js,ts,vue,scss,html,md,json}' .",
     "prepare": "husky",
     "test": "echo \"No test specified\" && exit 0"
@@ -64,7 +63,7 @@
   },
   "lint-staged": {
     "*.**": [
-      "eslint --flag unstable_ts_config --fix",
+      "eslint --fix",
       "prettier --ignore-unknown --write"
     ]
   },
@@ -73,8 +72,7 @@
   ],
   "pnpm": {
     "patchedDependencies": {
-      "eslint-plugin-prettier@5.2.1": "patches/eslint-plugin-prettier@5.2.1.patch",
-      "vite-plugin-checker": "patches/vite-plugin-checker.patch"
+      "eslint-plugin-prettier@5.2.1": "patches/eslint-plugin-prettier@5.2.1.patch"
     }
   }
 }

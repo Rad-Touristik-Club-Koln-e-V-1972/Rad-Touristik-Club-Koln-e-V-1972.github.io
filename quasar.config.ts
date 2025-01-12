@@ -12,7 +12,7 @@ const generateRootRoute = () => {
   let ret: string[] = []
 
   // Avoid "//" at the beginning of the path if the root is "/".
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+
   if (mainRoutes?.children) ret = generateRoutesHelper(mainRoutes.path === '/' ? '#' : `${mainRoutes.path}#`, mainRoutes.children)
 
   return ret
@@ -77,10 +77,6 @@ export default defineConfig((/*ctx*/) => ({
         'vite-plugin-checker',
         {
           eslint: {
-            dev: {
-              // TODO --flag unstable_ts_config WORKAROUND FOR https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files
-              overrideConfig: { flags: ['unstable_ts_config'] },
-            },
             lintCommand: 'eslint',
             useFlatConfig: true,
           },

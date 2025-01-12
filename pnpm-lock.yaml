@@ -8,9 +8,6 @@ patchedDependencies:
   eslint-plugin-prettier@5.2.1:
     hash: wucktchjt2ireau3vozvpj62cm
     path: patches/eslint-plugin-prettier@5.2.1.patch
-  vite-plugin-checker:
-    hash: z2tankttopk3fhvy4awxtnfzly
-    path: patches/vite-plugin-checker.patch
 
 importers:
 
@@ -115,7 +112,7 @@ importers:
         version: 5.7.3
       vite-plugin-checker:
         specifier: 0.8.0
-        version: 0.8.0(patch_hash=z2tankttopk3fhvy4awxtnfzly)(eslint@9.18.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.6.1))(vue-tsc@2.2.0(typescript@5.7.3))
+        version: 0.8.0(eslint@9.18.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.6.1))(vue-tsc@2.2.0(typescript@5.7.3))
       vite-plugin-sitemap:
         specifier: 0.7.1
         version: 0.7.1
@@ -6400,7 +6397,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-checker@0.8.0(patch_hash=z2tankttopk3fhvy4awxtnfzly)(eslint@9.18.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.6.1))(vue-tsc@2.2.0(typescript@5.7.3)):
+  vite-plugin-checker@0.8.0(eslint@9.18.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.6.1))(vue-tsc@2.2.0(typescript@5.7.3)):
     dependencies:
       '@babel/code-frame': 7.24.7
       ansi-escapes: 4.3.2
