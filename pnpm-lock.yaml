@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16':
-    hash: csfs6nhyxgnlkgk2vytt4rokcu
-    path: patches/@quasar__quasar-app-extension-qcalendar@4.0.0-beta.16.patch
   eslint-plugin-prettier@5.2.1:
     hash: wucktchjt2ireau3vozvpj62cm
     path: patches/eslint-plugin-prettier@5.2.1.patch
@@ -72,8 +69,8 @@ importers:
         specifier: 2.0.6
         version: 2.0.6(@types/node@22.10.5)(eslint@9.17.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.0(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3)))(quasar@2.17.6)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.3)))(vue@3.5.13(typescript@5.7.3))(yaml@2.6.1)
       '@quasar/quasar-app-extension-qcalendar':
-        specifier: 4.0.0-beta.16
-        version: 4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)
+        specifier: 4.0.0-beta.22
+        version: 4.0.0-beta.22
       '@types/node':
         specifier: 22.10.5
         version: 22.10.5
@@ -558,8 +555,8 @@ packages:
   '@quasar/extras@1.16.15':
     resolution: {integrity: sha512-ZM8rUAagZ3Gm7Thu6DjKdGfkyFBv61RaCeVSIWdve6+q300yN+6aouxttf2RmxCk12RsSqEyzBnIg7BlF1s7MA==}
 
-  '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16':
-    resolution: {integrity: sha512-Rj3KKjPFrE13cswlZAPcqdqi1YH9CeHMpWIw8xsNqdLhCoaRhMGbRas9fvHFLJOXpnsDaVwWINNgN/bBUyn99w==}
+  '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.22':
+    resolution: {integrity: sha512-jnjD8Cfgo5BmjPsoe2KRpgSj04nVXZcZbsFvZJkwhO3Xheyi+FyzozFSzqnmiqW7hDZ2iAYtmF25UAaMhgUzJw==}
     engines: {node: '>= 10.0.0', npm: '>= 5.6.0', yarn: '>= 1.6.0'}
 
   '@quasar/quasar-ui-qcalendar@4.0.0-beta.22':
@@ -3838,7 +3835,7 @@ snapshots:
 
   '@quasar/extras@1.16.15': {}
 
-  '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.16(patch_hash=csfs6nhyxgnlkgk2vytt4rokcu)':
+  '@quasar/quasar-app-extension-qcalendar@4.0.0-beta.22':
     dependencies:
       '@quasar/quasar-ui-qcalendar': 4.0.0-beta.22
 
