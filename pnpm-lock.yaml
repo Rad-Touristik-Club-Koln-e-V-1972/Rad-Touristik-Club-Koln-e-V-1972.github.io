@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  eslint-plugin-prettier@5.2.1:
-    hash: wucktchjt2ireau3vozvpj62cm
-    path: patches/eslint-plugin-prettier@5.2.1.patch
-
 importers:
 
   .:
@@ -4168,7 +4163,7 @@ snapshots:
     dependencies:
       eslint: 9.18.0(jiti@2.4.1)
       eslint-config-prettier: 9.1.0(eslint@9.18.0(jiti@2.4.1))
-      eslint-plugin-prettier: 5.2.1(patch_hash=wucktchjt2ireau3vozvpj62cm)(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.18.0(jiti@2.4.1)))(eslint@9.18.0(jiti@2.4.1))(prettier@3.4.2)
+      eslint-plugin-prettier: 5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.18.0(jiti@2.4.1)))(eslint@9.18.0(jiti@2.4.1))(prettier@3.4.2)
       prettier: 3.4.2
     transitivePeerDependencies:
       - '@types/eslint'
@@ -4899,7 +4894,7 @@ snapshots:
     dependencies:
       eslint: 9.18.0(jiti@2.4.1)
 
-  eslint-plugin-prettier@5.2.1(patch_hash=wucktchjt2ireau3vozvpj62cm)(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.18.0(jiti@2.4.1)))(eslint@9.18.0(jiti@2.4.1))(prettier@3.4.2):
+  eslint-plugin-prettier@5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.18.0(jiti@2.4.1)))(eslint@9.18.0(jiti@2.4.1))(prettier@3.4.2):
     dependencies:
       eslint: 9.18.0(jiti@2.4.1)
       prettier: 3.4.2

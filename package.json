@@ -5,7 +5,7 @@
   "productName": "RTC Köln e.V. 1972",
   "author": "Martin Dünkelmann <nc-duenkekl3@netcologne.de>",
   "type": "module",
-  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
+  "packageManager": "pnpm@10.0.0+sha256.43abf6e720fb7bc53c591b0862605c7d323d0a9d2dd33bcac07b062e13cf4948",
   "private": true,
   "scripts": {
     "build": "quasar build",
@@ -69,10 +69,5 @@
   },
   "browserslist": [
     "defaults"
-  ],
-  "pnpm": {
-    "patchedDependencies": {
-      "eslint-plugin-prettier@5.2.1": "patches/eslint-plugin-prettier@5.2.1.patch"
-    }
-  }
+  ]
 }
