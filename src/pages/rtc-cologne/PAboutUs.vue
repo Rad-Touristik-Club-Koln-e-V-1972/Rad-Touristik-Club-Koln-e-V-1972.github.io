@@ -20,7 +20,7 @@
           Unser Fokus liegt auf dem Rennradfahren zur Erholung und Gesundheitsvorsorge im Rahmen der Radtouristik.<br />
           Mit dem Rennrad halten wir uns fit und pflegen eine lebendige Vereinskultur.<br />
           Zu unseren jährlichen Highlights gehört die über Kölns Grenzen hinweg bekannte „Forsbachtour“, Teil der offiziellen RTF-Veranstaltungsreihe des BDR.<br /><br />
-          <q-btn color="primary" :icon="mdiArrowRight" label="Bitte schon mal vormerken: Die Forsbachtour ist am 2. Juni 2024." outline :to="{ name: 'events-tours-rtfs' }" />
+          <q-btn color="primary" :icon="mdiArrowRight" :label="nextRTFDate" outline :to="{ name: 'events-tours-rtfs' }" />
           <br />
           <br />
           Außerdem unternehmen wir Ausflüge in malerische Gegenden wie die Mosel, die Eifel und sogar nach Mallorca zur Saisonvorbereitung etc.
@@ -80,11 +80,13 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useQuasar } from 'quasar'
 import { mdiArrowRight, mdiBike, mdiInformation } from '@quasar/extras/mdi-v7'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
+import useCalendarStore from 'stores/events/Calendar'
+import useDateTime from 'src/utils/DateTime'
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()
@@ -94,6 +96,10 @@ const imageUrls = ref([
   new GalleryEntryBuilder().setId('633246fd-7423-420c-9e4c-d28503755b34').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_1.jpg.avif').buildGalleryEntry(),
   new GalleryEntryBuilder().setId('a4b3fe25-0d70-4f25-8ad1-160f684da614').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/about-us/about_us_2.jpg.avif').buildGalleryEntry(),
 ])
+
+const nextRTF = useCalendarStore().nextRTF
+
+const nextRTFDate = computed(() => (nextRTF ? `Bitte schon mal vormerken: Die Forsbachtour ist am ${useDateTime().format(nextRTF.start)}.` : 'Die nächste Forsbachtour wird noch geplant.'))
 
 const statutesUrl = 'https://content.rtc-koeln.de/pages/rtc-cologne/about-us/2023-10-06_Satzung-RTC-Köln-e.V..pdf'
 
