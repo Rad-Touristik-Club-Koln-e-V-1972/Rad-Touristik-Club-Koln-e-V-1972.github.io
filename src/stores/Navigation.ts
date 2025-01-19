@@ -28,7 +28,7 @@ import {
   mdiYoutube,
 } from '@quasar/extras/mdi-v7'
 import NavigationBuilder from 'src/models/builder/NavigationBuilder'
-import Navigation from 'src/models/entities/navigation/Navigation'
+import type Navigation from 'src/models/entities/navigation/Navigation'
 
 export default defineStore('navigation', () => {
   return {

@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts" setup>
-import Permanent from 'src/models/entities/events/tours/Permanent'
+import type Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ modelValue: Permanent }>()

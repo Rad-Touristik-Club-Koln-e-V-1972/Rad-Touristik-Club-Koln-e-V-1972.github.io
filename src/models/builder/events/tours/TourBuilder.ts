@@ -1,9 +1,9 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import PopupBuilder from 'src/models/builder/PopupBuilder'
-import Control from 'src/models/entities/events/tours/Control'
+import type Control from 'src/models/entities/events/tours/Control'
 import Tour from 'src/models/entities/events/tours/Tour'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
-import EEvent from 'src/models/enums/EEvent'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type EEvent from 'src/models/enums/EEvent'
 
 export default class TourBuilder extends ABuilder {
   private tour = new Tour()

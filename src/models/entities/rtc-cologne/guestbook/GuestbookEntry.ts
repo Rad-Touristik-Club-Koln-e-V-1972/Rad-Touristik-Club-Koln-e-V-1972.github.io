@@ -1,5 +1,5 @@
 import AEntity from 'src/models/entities/AEntity'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import EEvent from 'src/models/enums/EEvent'
 import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 

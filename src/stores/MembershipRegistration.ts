@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import FeeBuilder from 'src/models/builder/membership-registration/FeeBuilder'
-import Fee from 'src/models/entities/membership-registration/Fee'
+import type Fee from 'src/models/entities/membership-registration/Fee'
 
 export default defineStore('membershipRegistration', () => {
   return {

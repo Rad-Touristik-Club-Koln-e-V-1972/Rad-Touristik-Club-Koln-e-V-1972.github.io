@@ -9,7 +9,7 @@
 import { computed } from 'vue'
 import DPDFView from 'components/pages/rtc-cologne/galleries/album/DPDFView.vue'
 import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{ modelValue: GalleryEntry[]; startIndex?: number }>()
 

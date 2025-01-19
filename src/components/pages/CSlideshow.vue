@@ -19,7 +19,7 @@
 import { ref, useTemplateRef } from 'vue'
 import { QCarousel } from 'quasar'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const { entryID = undefined, galleryEntries = [] as GalleryEntry[], height = '100%', infinite = true } = defineProps<{ entryID?: string; galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>()
 

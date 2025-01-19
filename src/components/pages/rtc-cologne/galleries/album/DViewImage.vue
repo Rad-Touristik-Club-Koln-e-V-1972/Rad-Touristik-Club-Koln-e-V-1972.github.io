@@ -16,7 +16,7 @@ import { ref } from 'vue'
 import { mdiClose } from '@quasar/extras/mdi-v7'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import DViewImageOriginal from 'components/pages/rtc-cologne/galleries/album/DViewImageOriginal.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{
   modelValue: GalleryEntry[]

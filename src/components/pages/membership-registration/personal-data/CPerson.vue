@@ -34,7 +34,7 @@
 // TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
 // @ts-expect-error TypeScriptCheckImport
 import * as germanMetadata from 'german-metadata/german-metadata'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 const modelValue = defineModel<PersonalData>({ required: true })
 

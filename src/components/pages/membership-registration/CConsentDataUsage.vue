@@ -65,7 +65,7 @@
 <script lang="ts" setup>
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import type Signature from 'src/models/entities/membership-registration/Signature'
 
 const modelValue = defineModel<Signature>({ required: true })
 </script>

@@ -43,7 +43,7 @@
 <script lang="ts" setup>
 import { mdiEmailArrowRight } from '@quasar/extras/mdi-v7'
 import CGuestbook from 'components/pages/rtc-cologne/CGuestbook.vue'
-import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
+import type GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import useGuestbookStore from 'stores/rtc-cologne/Guestbook'
 
 const items: Record<string, GuestbookEntry[]> = useGuestbookStore().groupedByYear

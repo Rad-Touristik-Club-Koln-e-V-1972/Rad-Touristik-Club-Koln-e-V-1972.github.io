@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import Popup from 'src/models/entities/Popup'
+import type Popup from 'src/models/entities/Popup'
 
 const props = defineProps<{ modelValue: Popup }>()
 </script>

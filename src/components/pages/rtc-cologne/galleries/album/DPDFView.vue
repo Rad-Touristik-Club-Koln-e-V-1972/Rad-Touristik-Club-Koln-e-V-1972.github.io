@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { openURL } from 'quasar'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{ modelValue: GalleryEntry }>()
 </script>

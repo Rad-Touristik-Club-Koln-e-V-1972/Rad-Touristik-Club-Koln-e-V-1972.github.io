@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import SponsorBuilder from 'src/models/builder/SponsorBuilder'
-import Sponsor from 'src/models/entities/Sponsor'
+import type Sponsor from 'src/models/entities/Sponsor'
 
 export default defineStore('sponsor', () => {
   return {

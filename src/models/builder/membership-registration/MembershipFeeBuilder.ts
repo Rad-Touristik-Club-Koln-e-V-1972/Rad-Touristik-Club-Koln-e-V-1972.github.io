@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
-import Signature from 'src/models/entities/membership-registration/Signature'
+import type Signature from 'src/models/entities/membership-registration/Signature'
 
 export default class MembershipFeeBuilder extends ABuilder {
   private membershipFee = new MembershipFee()

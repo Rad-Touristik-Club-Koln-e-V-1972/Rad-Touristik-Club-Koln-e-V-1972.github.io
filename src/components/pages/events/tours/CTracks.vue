@@ -27,7 +27,7 @@
 
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
-import Track from 'src/models/entities/events/tours/events/Track'
+import type Track from 'src/models/entities/events/tours/events/Track'
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()

@@ -49,7 +49,7 @@
 
 <script lang="ts" setup>
 import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 const modelValue = defineModel<PersonalData>({ required: true })
 </script>

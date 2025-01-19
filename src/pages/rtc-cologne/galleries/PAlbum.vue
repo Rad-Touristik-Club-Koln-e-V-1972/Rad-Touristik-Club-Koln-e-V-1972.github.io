@@ -50,7 +50,7 @@ import { useRouter } from 'vue-router'
 import { useQuasar } from 'quasar'
 import { mdiClose } from '@quasar/extras/mdi-v7'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
-import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'
 import useDateTime from 'src/utils/DateTime'
 

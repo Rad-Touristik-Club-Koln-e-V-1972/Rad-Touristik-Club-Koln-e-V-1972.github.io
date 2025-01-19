@@ -70,7 +70,7 @@ import { mdiChevronLeft, mdiChevronRight, mdiTableCog } from '@quasar/extras/mdi
 import { QCalendar } from '@quasar/quasar-ui-qcalendar'
 import CList from 'components/pages/events/calendar/CList.vue'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
+import type Event from 'src/models/entities/events/calendar/Event'
 import ECalendar from 'src/models/enums/events/ECalendar'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'

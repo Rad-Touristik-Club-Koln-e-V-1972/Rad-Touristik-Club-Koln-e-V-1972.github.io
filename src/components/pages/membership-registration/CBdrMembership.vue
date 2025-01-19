@@ -18,7 +18,7 @@
 
 <script lang="ts" setup>
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import type BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
 
 const modelValue = defineModel<BdrMembership>({ required: true })
 </script>

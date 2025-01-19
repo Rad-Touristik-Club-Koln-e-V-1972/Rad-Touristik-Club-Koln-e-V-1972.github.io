@@ -39,7 +39,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { mdiClose } from '@quasar/extras/mdi-v7'
-import Event from 'src/models/entities/events/calendar/Event'
+import type Event from 'src/models/entities/events/calendar/Event'
 import EEvent from 'src/models/enums/EEvent'
 import useDateTime from 'src/utils/DateTime'
 

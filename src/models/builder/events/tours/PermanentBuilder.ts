@@ -1,6 +1,6 @@
 import Permanent from 'src/models/entities/events/tours/Permanent'
 import TourBuilder from 'src/models/builder/events/tours/TourBuilder'
-import EProfile from 'src/models/enums/events/EProfile'
+import type EProfile from 'src/models/enums/events/EProfile'
 
 export default class PermanentBuilder extends TourBuilder {
   private permanent = new Permanent()

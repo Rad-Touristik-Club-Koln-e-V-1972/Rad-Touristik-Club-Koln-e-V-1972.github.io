@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
-import EEvent from 'src/models/enums/EEvent'
+import type EEvent from 'src/models/enums/EEvent'
 import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default class GalleryBuilder extends ABuilder {

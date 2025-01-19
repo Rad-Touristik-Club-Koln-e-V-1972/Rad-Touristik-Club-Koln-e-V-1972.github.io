@@ -36,7 +36,7 @@ import CInfo from 'components/pages/events/tours/CInfo.vue'
 import CRegistration from 'components/pages/events/tours/CRegistration.vue'
 import CTracks from 'components/pages/events/tours/CTracks.vue'
 import DPopup from 'components/pages/events/tours/DPopup.vue'
-import Event from 'src/models/entities/events/tours/Event'
+import type Event from 'src/models/entities/events/tours/Event'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ feeHints?: string; modelValue: Event | undefined }>()

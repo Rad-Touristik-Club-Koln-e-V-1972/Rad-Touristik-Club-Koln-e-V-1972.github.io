@@ -28,7 +28,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import CSlideshow from 'components/pages/CSlideshow.vue'
-import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
+import type GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import EEvent from 'src/models/enums/EEvent'
 import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 import useDateTime from 'src/utils/DateTime'

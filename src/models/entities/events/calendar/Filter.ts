@@ -1,4 +1,4 @@
-import EEvent from 'src/models/enums/EEvent'
+import type EEvent from 'src/models/enums/EEvent'
 
 export default interface Filter {
   categories: EEvent[]

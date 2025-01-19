@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import Track from 'src/models/entities/events/tours/events/Track'
-import EProfile from 'src/models/enums/events/EProfile'
+import type EProfile from 'src/models/enums/events/EProfile'
 
 export default class TrackBuilder extends ABuilder {
   private track = new Track()

@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import ContactBuilder from 'src/models/builder/rtc-cologne/ContactBuilder'
-import Contact from 'src/models/entities/rtc-cologne/Contact'
+import type Contact from 'src/models/entities/rtc-cologne/Contact'
 
 export default defineStore('rtc-cologne-contacts', () => {
   return {

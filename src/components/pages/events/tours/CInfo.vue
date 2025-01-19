@@ -104,10 +104,10 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useQuasar } from 'quasar'
-import Control from 'src/models/entities/events/tours/Control'
-import Fee from 'src/models/entities/events/tours/events/Fee'
-import Time from 'src/models/entities/events/tours/events/Time'
-import Track from 'src/models/entities/events/tours/events/Track'
+import type Control from 'src/models/entities/events/tours/Control'
+import type Fee from 'src/models/entities/events/tours/events/Fee'
+import type Time from 'src/models/entities/events/tours/events/Time'
+import type Track from 'src/models/entities/events/tours/events/Track'
 import useDateTime from 'src/utils/DateTime'
 
 // noinspection LocalVariableNamingConventionJS

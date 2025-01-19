@@ -2,7 +2,7 @@ import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import _2025 from './calendar/2025'
 import EEvent from 'src/models/enums/EEvent'
-import Event from 'src/models/entities/events/calendar/Event'
+import type Event from 'src/models/entities/events/calendar/Event'
 import useCalendar from 'src/utils/Calendar'
 import useDateTime from 'src/utils/DateTime'
 

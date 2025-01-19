@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
-import GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 const props = defineProps<{ images: GalleryEntry[]; text: string }>()
 </script>

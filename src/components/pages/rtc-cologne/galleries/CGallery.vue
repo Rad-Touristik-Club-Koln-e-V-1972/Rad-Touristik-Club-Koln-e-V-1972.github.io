@@ -19,7 +19,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ album?: string; modelValue: Gallery }>()

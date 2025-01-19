@@ -51,7 +51,7 @@
 import { watch } from 'vue'
 import CSignatureForm from 'components/pages/membership-registration/CSignatureForm.vue'
 import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
+import type MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
 
 const modelValue = defineModel<MembershipFee>({ required: true })
 

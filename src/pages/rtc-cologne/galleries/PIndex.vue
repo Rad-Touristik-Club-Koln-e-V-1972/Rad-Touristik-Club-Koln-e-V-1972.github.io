@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
-import Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'
 
 const items: Record<string, Gallery[]> = useGalleryStore().groupedByYear

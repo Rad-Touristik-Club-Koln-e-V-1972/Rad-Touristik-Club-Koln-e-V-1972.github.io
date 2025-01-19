@@ -1,6 +1,7 @@
-import Holidays, * as DateHolidays from 'date-holidays'
+import type * as DateHolidays from 'date-holidays'
+import Holidays from 'date-holidays'
 import EventBuilder from 'src/models/builder/events/calendar/EventBuilder'
-import Event from 'src/models/entities/events/calendar/Event'
+import type Event from 'src/models/entities/events/calendar/Event'
 import EEvent from 'src/models/enums/EEvent'
 
 export default function useCalendar() {

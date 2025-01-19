@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import PressReportBuilder from 'src/models/builder/rtc-cologne/PressReportBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
-import PressReport from 'src/models/entities/rtc-cologne/PressReport'
+import type PressReport from 'src/models/entities/rtc-cologne/PressReport'
 
 export default defineStore('rtc-cologne-press-reports', () => {
   return {

@@ -1,6 +1,6 @@
 import { computed, type ComputedRef } from 'vue'
 import { defineStore } from 'pinia'
-import GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
+import type GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import _2012 from './guestbook/2012'
 import _2014 from './guestbook/2014'
 import _2015 from './guestbook/2015'

@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import NewsEntry from 'src/models/entities/home/NewsEntry'
+import type NewsEntry from 'src/models/entities/home/NewsEntry'
 import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime'

@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import { mdiEmailArrowRight } from '@quasar/extras/mdi-v7'
-import Contact from 'src/models/entities/rtc-cologne/Contact'
+import type Contact from 'src/models/entities/rtc-cologne/Contact'
 
 const props = defineProps<{ modelValue: Contact }>()
 </script>

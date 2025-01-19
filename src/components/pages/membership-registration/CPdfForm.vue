@@ -27,7 +27,7 @@ import { colors, date, openURL } from 'quasar'
 import { AcroFormCheckBox, jsPDF } from 'jspdf'
 import 'assets/fonts/Bahnschrift-Regular-normal.js'
 import bannerVertikal from 'assets/img/banner_vertikal.png'
-import MembershipRegistration from 'src/models/entities/MembershipRegistration'
+import type MembershipRegistration from 'src/models/entities/MembershipRegistration'
 
 const props = defineProps<{ modelValue: MembershipRegistration }>()
 

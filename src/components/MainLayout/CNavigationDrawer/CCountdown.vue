@@ -47,7 +47,7 @@
 import { onMounted, ref, useTemplateRef } from 'vue'
 import { date, useInterval } from 'quasar'
 import DEvent from 'components/pages/events/calendar/DEvent.vue'
-import Event from 'src/models/entities/events/calendar/Event'
+import type Event from 'src/models/entities/events/calendar/Event'
 import useCalendarStore from 'stores/events/Calendar'
 
 const eventRef = useTemplateRef<InstanceType<typeof DEvent>>('event')

@@ -1,6 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import Fee from 'src/models/entities/events/tours/events/Fee'
-import EEvent from 'src/models/enums/EEvent'
+import type EEvent from 'src/models/enums/EEvent'
 
 export default class FeeBuilder extends ABuilder {
   private fee = new Fee()
