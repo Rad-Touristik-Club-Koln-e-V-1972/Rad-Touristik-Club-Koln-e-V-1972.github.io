@@ -5,3 +5,5 @@ declare namespace NodeJS {
     VUE_ROUTER_MODE: 'hash' | 'history' | 'abstract' | undefined
   }
 }
+
+declare module '@quasar/app-vite/eslint'
