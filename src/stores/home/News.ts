@@ -10,21 +10,21 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
-      .setId('51f3e784-346c-43e2-ad72-715503ccf5ab')
-      .setImage(
-        new GalleryEntryBuilder()
-          .setId('2049e110-da82-49ef-b0f1-1f167bda676d')
-          .setImageUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.pdf')
-          .setPreviewUrl('content.rtc-koeln.de/pages/home/news/Werbung_Social_Media.avif')
-          .buildGalleryEntry(),
-      )
+      .setId('e9a69973-0e32-4a72-98e1-1472eb2d4401')
+      .setImage(new GalleryEntryBuilder().setId('1509c4cb-3c98-480e-a41f-84bc8a127253').setImageUrl('content.rtc-koeln.de/pages/home/news/KC-Logo_primär_cmyk.pdf.avif').buildGalleryEntry())
       .setText(
-        `Haben wir Dein Interesse geweckt?
-Dann schreib uns einfach eine Mail:
-➡️ pr@rtc-koeln.de
+        `Neu ab 2025:
+die <b>KÖLN</b>CHALLENGE!
 
-Wir freuen uns auf Dich! 🧡`,
+Zusammen mit unseren Partnervereinen Mistral, Rodenkirchen, Ford, Immendorf und Lövenich haben wir eine spannende neue Initiative für den Breitensport ins Leben gerufen!
+
+Fahre bei unseren sechs Radtourenfahrten (RTF) mit, sammle Stempel auf Deiner Challenge-Karte und sichere dir die Chance auf tolle Preise – darunter ein <b>Hauptpreis im Wert von 600 €!</b>
+
+<u>Klick auf das Logo</u> und erfahre alles, was du wissen musst.
+
+Gemeinsam machen wir den Radsport 🚴‍♀️🚴‍♂️ in Köln noch besser. ❤️`,
       )
+      .setUrl('koelnchallenge.de')
       .buildNewsEntry(),
   ])
 
