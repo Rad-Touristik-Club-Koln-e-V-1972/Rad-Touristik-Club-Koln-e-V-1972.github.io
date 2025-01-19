@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@quasar/extras": "1.16.15",
-    "@quasar/quasar-ui-qcalendar": "4.0.0-beta.22",
+    "@quasar/quasar-ui-qcalendar": "4.0.0",
     "@yeger/vue-masonry-wall": "5.0.17",
     "date-holidays": "3.23.18",
     "german-metadata": "2.0.1",
@@ -40,7 +40,7 @@
     "@commitlint/config-conventional": "19.6.0",
     "@eslint/js": "9.18.0",
     "@quasar/app-vite": "2.0.8",
-    "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.22",
+    "@quasar/quasar-app-extension-qcalendar": "4.0.0",
     "@types/node": "22.10.7",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.3.0",
