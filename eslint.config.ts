@@ -1,15 +1,16 @@
 import vueEslintConfigPrettier from '@vue/eslint-config-prettier'
-import vueEslintConfigTS from '@vue/eslint-config-typescript'
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-export default [
+export default defineConfigWithVueTs(
   {
     name: 'ignores',
     ignores: ['.github/**', '.husky/**', '.idea/**', '.quasar/**', 'dist/**', 'node_modules/**', 'patches/**', 'src-capacitor/**', 'src-cordova/**', 'quasar.config.*.temporary.compiled*'],
   },
   ...pluginVue.configs['flat/essential'],
-  ...vueEslintConfigTS({ extends: ['strictTypeChecked', 'stylisticTypeChecked'] }),
+  vueTsConfigs.strictTypeChecked,
+  vueTsConfigs.strictTypeChecked,
   {
     languageOptions: {
       globals: {
@@ -43,4 +44,4 @@ export default [
     },
   },
   vueEslintConfigPrettier,
-]
+)
