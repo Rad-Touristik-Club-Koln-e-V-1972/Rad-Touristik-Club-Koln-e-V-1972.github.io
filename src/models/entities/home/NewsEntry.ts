@@ -5,4 +5,5 @@ export default class NewsEntry extends AEntity {
   image!: GalleryEntry
   showUntil?: Date
   text!: string
+  url?: URL
 }

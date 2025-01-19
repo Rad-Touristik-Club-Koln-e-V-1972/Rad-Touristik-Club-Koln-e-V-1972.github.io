@@ -24,4 +24,10 @@ export default class NewsEntryBuilder extends ABuilder {
 
     return this
   }
+
+  setUrl = (value: string): this => {
+    this.newsEntry.url = new URL(`https://${value}`)
+
+    return this
+  }
 }
