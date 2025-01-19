@@ -42,7 +42,7 @@
     "@quasar/quasar-app-extension-qcalendar": "4.0.0-beta.22",
     "@types/node": "22.10.7",
     "@vue/eslint-config-prettier": "10.2.0",
-    "@vue/eslint-config-typescript": "14.2.0",
+    "@vue/eslint-config-typescript": "14.3.0",
     "@vue/language-server": "2.2.0",
     "autoprefixer": "10.4.20",
     "commitlint": "19.6.1",
