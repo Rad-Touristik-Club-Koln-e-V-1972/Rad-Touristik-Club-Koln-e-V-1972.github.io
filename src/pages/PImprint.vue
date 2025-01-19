@@ -26,8 +26,8 @@
     </q-card-section>
     <q-card-section class="text-h6">Postadresse</q-card-section>
     <q-card-section>
-      Postfach 990103<br />
-      51083 Köln
+      Im Forst 51<br />
+      51105 Köln
     </q-card-section>
     <q-card-section class="text-h6">Umsatzsteuer-ID</q-card-section>
     <q-card-section>
