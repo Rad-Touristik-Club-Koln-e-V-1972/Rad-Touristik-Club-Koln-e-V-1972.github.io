@@ -12,8 +12,8 @@ importers:
         specifier: 1.16.15
         version: 1.16.15
       '@quasar/quasar-ui-qcalendar':
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.0.1
+        version: 4.0.1
       '@yeger/vue-masonry-wall':
         specifier: 5.0.17
         version: 5.0.17(vue@3.5.13(typescript@5.7.3))
@@ -553,9 +553,6 @@ packages:
   '@quasar/quasar-app-extension-qcalendar@4.0.1':
     resolution: {integrity: sha512-JYN1Ectuih72+hEgfwoudhgcK8qCmolbuI5EvMeWiU6wUMdpAzdwlP4lGrFSVE5t8/+vNWKWS32R+70XM8pilQ==}
     engines: {node: '>= 10.0.0', npm: '>= 5.6.0', yarn: '>= 1.6.0'}
-
-  '@quasar/quasar-ui-qcalendar@4.0.0':
-    resolution: {integrity: sha512-F7yapKxWjuT+XNPWnL6xczQd0Mj/N/R5852pL99n+grDhcH4az5uerRd5roOuCh3WzKPWhDl6XI9UPyY2X8uaQ==}
 
   '@quasar/quasar-ui-qcalendar@4.0.1':
     resolution: {integrity: sha512-m2Ijohb1mAuAdj7pxWBPKSTDNd2Fb2E9aSUyXWApNoZH63XszY8b0n7tlxyH/PUygGXt1/TNx2QSI1j/upGE6A==}
@@ -3845,8 +3842,6 @@ snapshots:
   '@quasar/quasar-app-extension-qcalendar@4.0.1':
     dependencies:
       '@quasar/quasar-ui-qcalendar': 4.0.1
-
-  '@quasar/quasar-ui-qcalendar@4.0.0': {}
 
   '@quasar/quasar-ui-qcalendar@4.0.1': {}
 
