@@ -20,7 +20,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "1.16.15",
+    "@quasar/extras": "1.16.16",
     "@quasar/quasar-ui-qcalendar": "4.0.2",
     "@yeger/vue-masonry-wall": "5.0.17",
     "date-holidays": "3.23.18",
