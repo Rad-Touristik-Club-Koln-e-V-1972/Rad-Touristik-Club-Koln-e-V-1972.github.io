@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@quasar/extras": "1.16.16",
-    "@quasar/quasar-ui-qcalendar": "4.0.8",
+    "@quasar/quasar-ui-qcalendar": "4.1.0",
     "@yeger/vue-masonry-wall": "5.0.18",
     "date-holidays": "3.23.20",
     "german-metadata": "2.0.1",
