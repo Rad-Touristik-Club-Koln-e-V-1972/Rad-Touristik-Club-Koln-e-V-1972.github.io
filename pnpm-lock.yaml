@@ -64,8 +64,8 @@ importers:
         specifier: 2.0.8
         version: 2.0.8(@types/node@22.13.1)(eslint@9.19.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.1(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3)))(quasar@2.17.7)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.3)))(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
       '@quasar/quasar-app-extension-qcalendar':
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.1
+        version: 4.1.1
       '@types/node':
         specifier: 22.13.1
         version: 22.13.1
@@ -550,12 +550,15 @@ packages:
   '@quasar/extras@1.16.16':
     resolution: {integrity: sha512-aswGUbEyLvt45KB1u6hBD3s82KnOdkqTn6YVu3xX5aGgwQkCWPyqb3FMTEHG+4+gGTMp4pIcnng96RlqswQctQ==}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.0':
-    resolution: {integrity: sha512-jeKS8o192pt21xZOIjvJZptc4E8rx7ACsjlLB4YbH7QAby9uC3+WpMttx/9OPY4dEtz4jYH2CJpJTTxFiQD9GA==}
+  '@quasar/quasar-app-extension-qcalendar@4.1.1':
+    resolution: {integrity: sha512-ccRpeMC6gSZ3jfdiLosTz5xMp/MiaGa/hATSbrenTf0zn6ej3N5oHscb7k1sHOi2KXp4LJn0kb8O9+D5zmdf9A==}
     engines: {node: ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.13.4', yarn: '>= 1.21.1'}
 
   '@quasar/quasar-ui-qcalendar@4.1.0':
     resolution: {integrity: sha512-BZyC0lMe4eW+xTgaTKYLuNJo+N0dFCeUzaZ5LZuTgPQtOecauWKqeGaT/ok+AXhKBKXgyBrkCexK02uOQn6vQw==}
+
+  '@quasar/quasar-ui-qcalendar@4.1.1':
+    resolution: {integrity: sha512-6wlL4UOTPT3YNV9oUC7ZC7Xz2WU+JBYsk9BHOhf/D79rYRwoJ63WWK59H3Fi6uzJZXXbJDOzIFAO++eN4YprrA==}
 
   '@quasar/render-ssr-error@1.0.3':
     resolution: {integrity: sha512-A8RF99q6/sOSe1Ighnh5syEIbliD3qUYEJd2HyfFyBPSMF+WYGXon5dmzg4nUoK662NgOggInevkDyBDJcZugg==}
@@ -3839,11 +3842,13 @@ snapshots:
 
   '@quasar/extras@1.16.16': {}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.0':
+  '@quasar/quasar-app-extension-qcalendar@4.1.1':
     dependencies:
-      '@quasar/quasar-ui-qcalendar': 4.1.0
+      '@quasar/quasar-ui-qcalendar': 4.1.1
 
   '@quasar/quasar-ui-qcalendar@4.1.0': {}
+
+  '@quasar/quasar-ui-qcalendar@4.1.1': {}
 
   '@quasar/render-ssr-error@1.0.3':
     dependencies:
