@@ -18,7 +18,8 @@
       >
         <q-carousel-slide v-for="it in items" :key="it.id" :name="it.id" class="column flex-center no-wrap">
           <div v-if="useQuasar().platform.is.mobile || !it.text" style="width: 20em">
-            <q-img v-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
+            <q-video v-if="it.videoUrl" :src="it.videoUrl" />
+            <q-img v-else-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
             <d-view v-else :model-value="[it.image]" />
             <q-expansion-item v-if="it.text" expand-icon-toggle expand-separator label="Details">
               <q-card>
@@ -31,7 +32,8 @@
           <div v-else style="width: 60em">
             <div class="row no-wrap">
               <div class="col-3">
-                <q-img v-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
+                <q-video v-if="it.videoUrl" :ratio="0.563" :src="it.videoUrl" />
+                <q-img v-else-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
                 <d-view v-else :model-value="[it.image]" />
               </div>
               <div class="col-auto offset-1">

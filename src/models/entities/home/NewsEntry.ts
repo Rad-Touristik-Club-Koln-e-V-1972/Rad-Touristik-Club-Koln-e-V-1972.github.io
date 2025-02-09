@@ -6,4 +6,5 @@ export default class NewsEntry extends AEntity {
   showUntil?: Date
   text?: string
   url?: URL
+  videoUrl?: string
 }
