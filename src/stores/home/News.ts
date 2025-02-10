@@ -22,7 +22,7 @@ Fahre bei unseren sechs Radtourenfahrten (RTF) mit, sammle Stempel auf Deiner Ch
 
 Gemeinsam machen wir den Radsport 🚴‍♀️🚴‍♂️ in Köln noch besser. ❤️`,
       )
-      .setVideoUrl('content.rtc-koeln.de/pages/home/news/signal-2025-02-07-141701_002_conv.webm')
+      .setYoutubeVideoId('ZdGk848MSeU')
       .buildNewsEntry(),
   ])
 

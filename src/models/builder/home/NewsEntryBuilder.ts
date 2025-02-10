@@ -31,8 +31,8 @@ export default class NewsEntryBuilder extends ABuilder {
     return this
   }
 
-  setVideoUrl = (value: string): this => {
-    this.newsEntry.videoUrl = `https://${value}`
+  setYoutubeVideoId = (value: string): this => {
+    this.newsEntry.youtubeVideoId = value
 
     return this
   }
