@@ -64,8 +64,8 @@ importers:
         specifier: 2.0.8
         version: 2.0.8(@types/node@22.13.1)(eslint@9.20.0(jiti@2.4.1))(jiti@2.4.1)(pinia@2.3.1(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3)))(quasar@2.17.7)(rollup@4.24.0)(sass@1.77.8)(terser@5.31.6)(typescript@5.7.3)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.3)))(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
       '@quasar/quasar-app-extension-qcalendar':
-        specifier: 4.1.1
-        version: 4.1.1
+        specifier: 4.1.2
+        version: 4.1.2
       '@types/node':
         specifier: 22.13.1
         version: 22.13.1
@@ -554,8 +554,8 @@ packages:
   '@quasar/extras@1.16.17':
     resolution: {integrity: sha512-4aX9XU/oj1+8O2C7LQCgywmoIw7suyUEZMPFFLWI61f21mF55VOsMdLCBhjeFgL5U4EWy079mfOR6/J8thi/ag==}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.1':
-    resolution: {integrity: sha512-ccRpeMC6gSZ3jfdiLosTz5xMp/MiaGa/hATSbrenTf0zn6ej3N5oHscb7k1sHOi2KXp4LJn0kb8O9+D5zmdf9A==}
+  '@quasar/quasar-app-extension-qcalendar@4.1.2':
+    resolution: {integrity: sha512-uhZ0k8znOQg8pGl+vc9VW+np72znuzaIMGsdGgI1pY/0/pSZ1rzsBT8xALX5T0oQXJkOT9OHwSrsw7WJxFGD9A==}
     engines: {node: ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.13.4', yarn: '>= 1.21.1'}
 
   '@quasar/quasar-ui-qcalendar@4.1.2':
@@ -3847,7 +3847,7 @@ snapshots:
 
   '@quasar/extras@1.16.17': {}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.1':
+  '@quasar/quasar-app-extension-qcalendar@4.1.2':
     dependencies:
       '@quasar/quasar-ui-qcalendar': 4.1.2
 
