@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@quasar/extras':
-        specifier: 1.16.16
-        version: 1.16.16
+        specifier: 1.16.17
+        version: 1.16.17
       '@quasar/quasar-ui-qcalendar':
         specifier: 4.1.1
         version: 4.1.1
@@ -551,8 +551,8 @@ packages:
       workbox-build:
         optional: true
 
-  '@quasar/extras@1.16.16':
-    resolution: {integrity: sha512-aswGUbEyLvt45KB1u6hBD3s82KnOdkqTn6YVu3xX5aGgwQkCWPyqb3FMTEHG+4+gGTMp4pIcnng96RlqswQctQ==}
+  '@quasar/extras@1.16.17':
+    resolution: {integrity: sha512-4aX9XU/oj1+8O2C7LQCgywmoIw7suyUEZMPFFLWI61f21mF55VOsMdLCBhjeFgL5U4EWy079mfOR6/J8thi/ag==}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.1':
     resolution: {integrity: sha512-ccRpeMC6gSZ3jfdiLosTz5xMp/MiaGa/hATSbrenTf0zn6ej3N5oHscb7k1sHOi2KXp4LJn0kb8O9+D5zmdf9A==}
@@ -3845,7 +3845,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@quasar/extras@1.16.16': {}
+  '@quasar/extras@1.16.17': {}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.1':
     dependencies:
