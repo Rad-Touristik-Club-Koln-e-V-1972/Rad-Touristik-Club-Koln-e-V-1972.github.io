@@ -47,7 +47,7 @@
     "@vue/language-server": "2.2.0",
     "autoprefixer": "10.4.20",
     "commitlint": "19.7.1",
-    "eslint": "9.20.0",
+    "eslint": "9.20.1",
     "eslint-plugin-vue": "9.32.0",
     "globals": "15.14.0",
     "husky": "9.1.7",
