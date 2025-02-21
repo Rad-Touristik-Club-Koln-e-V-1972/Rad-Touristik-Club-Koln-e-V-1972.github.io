@@ -21,7 +21,7 @@ jobs:
         with:
           cache: 'pnpm'
           check-latest: true
-          node-version: 'lts/*'
+          node-version: 'latest'
       - name: Setup Pages
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
