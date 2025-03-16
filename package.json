@@ -67,5 +67,10 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
