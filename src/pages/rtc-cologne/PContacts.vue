@@ -8,7 +8,7 @@
         <q-card-section class="col-auto text-subtitle2">
           Der Vorstand vom RTC Köln e.V. (von links):
           <br />
-          Judith (Geschäftsführerin), Diana (1. Vorsitzende), Matthias (Kassenwart), Manni (Sportwart) und Frank (2. Vorsitzender).
+          Matthias (Kassenwart), Frank (2. Vorsitzender & Geschäftsführung), Manni (Sportwart) und Diana (1. Vorsitzende).
         </q-card-section>
       </q-card>
       <div class="row">
@@ -25,5 +25,5 @@ import DViewImage from 'components/pages/rtc-cologne/galleries/album/DViewImage.
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useContactsStore from 'stores/rtc-cologne/Contacts'
 
-const imageUrls = ref([new GalleryEntryBuilder().setId('abeba013-67c5-4974-aa02-4675a8db7042').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/contacts/IMG_9235.jpg.avif').buildGalleryEntry()])
+const imageUrls = ref([new GalleryEntryBuilder().setId('abeba013-67c5-4974-aa02-4675a8db7042').setImageUrl('content.rtc-koeln.de/pages/rtc-cologne/contacts/image0.jpeg.avif').buildGalleryEntry()])
 </script>
