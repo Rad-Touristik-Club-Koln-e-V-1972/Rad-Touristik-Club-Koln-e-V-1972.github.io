@@ -9,7 +9,6 @@ export default class Event extends AEntity {
   end?: Date
   kilometer = 0
   name!: string
-  provisionalReason?: string
   start!: Date
   url?: URL
 }

@@ -14,29 +14,23 @@
         </div>
       </div>
     </q-toolbar>
-    <q-table :columns :filter :filter-method="filterMethod" :pagination :rows="useCalendarStore().all" separator="none">
-      <template #body="props">
-        <q-tr :class="getColor(props.row) + getStyle(props.row)">
-          <q-td>{{ props.row.category }}</q-td>
-          <q-td>
-            <a :class="getColor(props.row)" :href="props.row.url?.toString()" target="_blank">{{ props.row.name }}</a>
-          </q-td>
-          <q-td>{{ dateTime.format(props.row.start, props.row.end, props.row.allDay) }}</q-td>
-          <q-td>
-            <router-link v-if="props.row.contact" :class="getColor(props.row)" :to="{ name: 'rtc-cologne-contacts' }">
-              {{ props.row.contact }}
-            </router-link>
-          </q-td>
-          <q-td>{{ props.row.kilometer }}</q-td>
-        </q-tr>
-        <q-tr v-if="props.row.provisionalReason" :class="`${getColor(props.row)} ${getStyle(props.row)} text-center`">
-          <q-td colspan="100%">
-            <q-icon :name="mdiArrowUpLeftBold" />
-            {{ props.row.provisionalReason }}
-            <q-icon :name="mdiArrowUpRightBold" />
-          </q-td>
-        </q-tr>
-        <q-separator />
+    <q-table :columns :filter :filter-method :pagination :rows="useCalendarStore().all" separator="horizontal" :table-row-class-fn="getClass" :table-row-style-fn="getStyle">
+      <template #body-cell-name="props">
+        <q-td :props="props">
+          <a :class="getClass(props.row)" :href="props.row.url?.toString()" target="_blank">{{ props.row.name }}</a>
+        </q-td>
+      </template>
+      <template #body-cell-datetime="props">
+        <q-td :props="props">
+          {{ dateTime.format(props.row.start, props.row.end, props.row.allDay) }}
+        </q-td>
+      </template>
+      <template #body-cell-contact="props">
+        <q-td :props="props">
+          <router-link v-if="props.row.contact" :class="getClass(props.row)" :to="{ name: 'rtc-cologne-contacts' }">
+            {{ props.row.contact }}
+          </router-link>
+        </q-td>
       </template>
     </q-table>
   </q-card>
@@ -46,7 +40,6 @@
 import { ref } from 'vue'
 import { date, is } from 'quasar'
 import type { QTableColumn } from 'quasar'
-import { mdiArrowUpLeftBold, mdiArrowUpRightBold } from '@quasar/extras/mdi-v7'
 import CSearch from 'components/pages/events/calendar/list/CSearch.vue'
 import CCategories from 'components/pages/events/calendar/list/filter/CCategories.vue'
 import CDateRange from 'components/pages/events/calendar/list/filter/CDateRange.vue'
@@ -105,6 +98,7 @@ const filter = ref<Filter>({
   dateRange: { from: `01.01.${dateTime.today.value.getFullYear().toFixed()}`, to: `31.12.${(dateTime.today.value.getFullYear() + 1).toFixed()}` },
   search: '',
 })
+
 const pagination = {
   sortBy: 'datetime',
   descending: false,
@@ -133,11 +127,13 @@ const filterMethod = (rows: readonly Event[], terms: Filter): Event[] => {
 
   return tmp
 }
-const getColor = (event: Event) => `bg-${event.color} text-accent`
-const getStyle = (event: Event) => {
+
+const getClass = (row: Event) => `bg-${row.color} text-accent`
+
+const getStyle = (row: Event) => {
   let style = ''
 
-  if (event.category === EEvent.Abgesagt) style += 'text-decoration: double line-through '
+  if (row.category === EEvent.Abgesagt) style += 'text-decoration: double line-through '
 
   return style
 }

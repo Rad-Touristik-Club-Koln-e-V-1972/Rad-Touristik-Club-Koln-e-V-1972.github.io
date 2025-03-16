@@ -9,10 +9,6 @@
       <q-card-section>
         <q-markup-table flat wrap-cells>
           <tbody>
-            <tr v-if="selectedEvent?.provisionalReason" class="q-tr--no-hover text-primary">
-              <td class="text-end">Provisorischer Termin:</td>
-              <td>{{ selectedEvent?.provisionalReason }}</td>
-            </tr>
             <tr v-if="!isEventMitgliederversammlung" class="q-tr--no-hover">
               <td class="text-end">Art:</td>
               <td>{{ selectedEvent?.category }}</td>
