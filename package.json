@@ -38,7 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
-    "@eslint/js": "9.23.0",
+    "@eslint/js": "9.24.0",
     "@quasar/app-vite": "2.2.0",
     "@quasar/quasar-app-extension-qcalendar": "4.1.2",
     "@types/node": "22.14.0",
@@ -47,7 +47,7 @@
     "@vue/language-server": "2.2.8",
     "autoprefixer": "10.4.21",
     "commitlint": "19.8.0",
-    "eslint": "9.23.0",
+    "eslint": "9.24.0",
     "eslint-plugin-vue": "10.0.0",
     "globals": "16.0.0",
     "husky": "9.1.7",
