@@ -38,7 +38,6 @@
         </div>
       </div>
     </q-footer>
-    <d-r-t-f-popup />
   </q-layout>
 </template>
 
@@ -47,7 +46,6 @@ import { ref } from 'vue'
 import { mdiCopyright, mdiMenu } from '@quasar/extras/mdi-v7'
 import CNavigationDrawer from 'components/MainLayout/CNavigationDrawer.vue'
 import DAccessibility from 'components/MainLayout/DAccessibility.vue'
-import DRTFPopup from 'components/MainLayout/DRTFPopup.vue'
 import useSponsorStore from 'stores/Sponsor'
 
 const navDrawer = ref(false)

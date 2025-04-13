@@ -10,6 +10,7 @@ export default class Track extends AEntity {
   name!: string
   profile = EProfile.Normal
   start!: Date
+  subname?: string
   text!: string
   urls: Record<string, URL> = {}
 }

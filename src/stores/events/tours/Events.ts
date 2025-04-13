@@ -3,7 +3,6 @@ import EventBuilder from 'src/models/builder/events/tours/EventBuilder'
 import FeeBuilder from 'src/models/builder/events/tours/events/FeeBuilder'
 import TimeBuilder from 'src/models/builder/events/tours/events/TimeBuilder'
 import TrackBuilder from 'src/models/builder/events/tours/events/TrackBuilder'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import EEvent from 'src/models/enums/EEvent'
 import EProfile from 'src/models/enums/events/EProfile'
 
@@ -12,16 +11,14 @@ export default [
     .setCategory(EEvent.RTF)
     .setFees(
       new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
-      new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(6).buildFee(),
-      new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(8).buildFee(),
+      new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(7).buildFee(),
+      new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(9).buildFee(),
       new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
-      new FeeBuilder().setId('ce8f7235-4d1e-4ec0-a704-921bcf8588df').setName('<b>151 km Strecke</b><br/>Zusatzgebühr').setPrice(4).buildFee(),
       new FeeBuilder().setId('b3be3c22-e784-4650-b27c-f151056faf88').setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setImages(new GalleryEntryBuilder().setId('0bb4cd1f-bfd8-478d-9722-46bcba571edb').setImageUrl('content.rtc-koeln.de/pages/events/tours/rtfs/2023 Flyer.jpg.avif').buildGalleryEntry())
-    .setLastChange('2024-05-28')
+    .setLastChange('2025-04-13')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -37,23 +34,24 @@ export default [
 
 wir freuen uns schon riesig auf die neue Radsportsaison und auch darauf, Euch bei unserer Forsbachtour wiederzusehen.
 Die Forsbachtour startet im Schulzentrum in Porz-Zündorf.
-„Frühaufsteher“, die die 151 km fahren möchten, können von 7:30 Uhr bis 8:30 Uhr starten.
+„Frühaufsteher“, die die 150 km fahren möchten, können von 7:30 Uhr bis 8:30 Uhr starten.
 „Langschläfer“ können bis 11:00 Uhr starten – je nach Streckenlänge.
 
-Wir bieten Euch <b>vier RTF-Strecken, eine Familientour</b> und eine <b>geführte 80er</b> an:
-22 km, 52 km, 82 km (geführt und nicht geführt), 125 km und sogar eine 151 km Tour.
+Wir bieten Euch vier RTF-Strecken, eine Familientour und zwei begleitete Touren an:
+22 km, 52 km, 82 km, 125 km und 150 km
 
-Das Besondere an unserer 151 km-Tour ist, dass wir unseren befreundeten Verein, den RSC Buchholz, in Rheinland-Pfalz dabei besuchen.
-An deren Startplatz werden wir unsere 151er- Kontrolle haben, da dieser Verein auch am 2. Juni seine RTF hat.
-Da hat die APPstimmung zwischen den beiden Bundesländern nicht gepasst, aber wir haben das Beste daraus gemacht. 💪
+<ul style='list-style-position: inside; list-style-type: "82 km - "; margin-bottom: -50px; margin-top: -35px'>
+  <li style='margin-bottom: -15px'><b>Begleitete Ladies-Tour</b></li>
+  <li><b>Begleitete gemischte Tour</b></li>
+</ul>
 
 Unsere Streckenführungen wurden in den vergangenen Jahren von den Teilnehmer:innen immer sehr gelobt.
 
-Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung.
-Dies gilt für die Kontrollstellen genauso wie für den Start-/Zielbereich.
-Bringt also Zeit und Hunger mit.
+Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – sehr gute Verpflegung:
+An den Kontrollen und auf dem Platz.
+Es gibt ein frisch gekochtes <b>vegetarisches</b> Gericht, selbstgemachte Salate und natürlich die obligatorische leckere Bratwurst.
 
-Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 2. Juni 2024 stattfindet.
+Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 25.05.2025 stattfindet.
 
 Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement und Liebe für Euch ausrichten.
 
@@ -69,12 +67,18 @@ Euer RTC Köln e.V`,
         .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
         .setName('Hinweis')
         .setText(
-          `Wir bieten entgegen dem Breitensportkalender eine 150er-Strecke an!
+          `Wir bieten in diesem Jahr <b>zwei begleitete Touren</b> (82 km) für Neueinsteiger:innen an!
 
-Wir bieten in diesem Jahr eine geführte Tour (82 km) für Neueinsteiger an!
+Begleitete Ladies only-Tour (82 km) mit den beiden Guides Verena und Christine.
+
+Begleitete gemischte Tour (82 km) mit den beiden Guides Birgit und Peter.
 
 Tempo: max. 20er Schnitt
-Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
+Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.
+NUR FÜR RENNRÄDER!
+
+Meldet Euch gerne bei Diana (1. Vorsitzende), falls Ihr Fragen zu den begleiteten Touren habt.
+erster.vorsitz@rtc-koeln.de`,
         )
         .buildTrack(),
       new TrackBuilder()
@@ -83,7 +87,11 @@ Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.`,
         .setText(
           `Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
 
-Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.`,
+Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in der Aula an.
+
+Am Veranstaltungstag werden Fotos gemacht und Videosequenzen aufgenommen.
+Bitte sprecht die/den Fotograf:in/Videograf:in an, wenn das Foto von Euch gelöscht werden muss.
+Ansonsten gehen wir von Eurer Zustimmung aus.`,
         )
         .buildTrack(),
       new TrackBuilder()
@@ -91,10 +99,11 @@ Für die Frühaufsteher unter euch bieten wir ab 07:00 Uhr ein Frühstück in de
         .setName('Während der Tour')
         .setText(
           `Auf unseren Kontrollstellen steht für euch eine vielfältige Verpflegung zur Verfügung, damit ihr die nächste Kontrollstelle garantiert ohne Hungerast erreicht.
+Zum Beispiel mit unseren Power-Reisriegeln in Bourauel.
 
 Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
 <ul>
-    <li>Ruft einfach die Notfallnummer, die auf der Startkarte gedruckt ist, an.</li>
+    <li>Ruft einfach die Notfallnummer, die am Start aushängt, an.</li>
     <li>Wir kommen euch abholen.</li></ul>`,
         )
         .buildTrack(),
@@ -105,11 +114,13 @@ Sollte jemand auf der Strecke bleiben, z.B. wegen einer Panne:
           `Besonders wichtig nach so einer anstrengenden Tour: Duschen.
 Sie sind in einem Nebengebäude reichlich vorhanden.
 
-Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachten Kuchen ab <b>mittags auch leckere warme Gerichte</b> mit verschiedenen Salaten an.
+Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben selbstgemachtem Kuchen ab <b>mittags auch leckere warme Gerichte (auch <i>vegetarisch</i>)</b> mit verschiedenen, selbstgemachten Salaten an.
 
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
-Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
+Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.
+
+Auch dieses Jahr haben wieder ein Glücksrad mit fantastischen Radsportpreisen.`,
         )
         .buildTrack(),
       new TrackBuilder()
@@ -117,30 +128,16 @@ Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am
         .setName('Alle Strecken')
         .setText(
           `Wie in den letzten Jahren starten wir im Schulzentrum in Porz-Zündorf.
-„Frühaufsteher“ können dort ab acht Uhr, „Langschläfer“ bis elf Uhr starten.
+„Frühaufsteher“ können dort ab 7:30 Uhr, „Langschläfer“ bis elf Uhr starten.
 Parkflächen stehen auf dem Schulgelände ausreichend zur Verfügung.
-Die Anmeldung, Stand 27.01.2023, erfolgt über die BDR-App für die Breitensportlizenzinhaber (ehemalige Wertungskarteninhaber).
+Die Anmeldung für die Breitensportlizenzinhaber:innen erfolgt über die GC Touren-App.
+Die App kann man sich auch als nicht BDR-Mitglied herunterladen – das vereinfacht die Anmeldung vor Ort sehr.
 Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
 
 <a href='https://www.rad-net.de/touren-app-lizenz.htm' target="_blank">
     <b>Wichtiger Hinweis für Fahrer:innen ohne Breitensportlizenz (Gastfahrer):</b>
-    Bitte meldet Euch im Vorfeld in der <b>BDR-Touren-App</b> mit dem kostenlosen Basisaccount an.
-</a>
-
-Vom Start weg fahren wir durch eine Spielstraße, die sich leider nicht sinnvoll umgehen lässt.
-Hier bitten wir die FahrerInnen um besondere Rücksichtnahme.
-Zum Einrollen geht es zunächst flach durch die Felder und den südlichsten Stadtteil von Köln, Porz-Libur.
-<figure>
-    <img alt="Start an der Schule in Zündorf" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Start_Ziel.jpg.avif' style='width: 50%' />
-    <figcaption>Start an der Schule in Zündorf</figcaption>
-</figure>
-In Troisdorf-Spich kommen dann auf dem Mauspfad die ersten Hügel.
-Nachdem in Lohmar wieder Rollen angesagt ist, geht es dann das Jabachtal hinauf.
-Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
-<figure>
-    <img alt="Kontrolle 1 - Pohlhausen" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/K1_Pohlhausen.jpg.avif' style='width: 50%' />
-    <figcaption>Kontrolle 1 - Pohlhausen</figcaption>
-</figure>`,
+    Bitte meldet Euch im Vorfeld in der <b>GC Touren-App</b> mit dem kostenlosen Basisaccount an.
+</a>`,
         )
         .buildTrack(),
       new TrackBuilder()
@@ -150,64 +147,6 @@ Zur Belohnung gibt es dann in Pohlhausen die erste Kontrolle.
         .setLength(22)
         .setName('Die 22er')
         .setProfile(EProfile.Flach)
-        .setText(
-          `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
-den der ein oder andere sicher schon kennt (wenn nicht – sehr empfehlenswert!),
-<img alt="B1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/Rolfs Streichelzoo.jpg.avif' style='width: 50%' />
-in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
-<img alt="B2" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-29-03-647.jpg.avif' style='width: 50%' />
-Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
-Dafür bringt er euch nach einer wilden Seefahrt sicher an das andere Ufer.
-<img alt="B3" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-30-26-910.jpg.avif' style='width: 50%' />
-Weiter geht es immer am Rhein entlang in Richtung Sürth,
-<img alt="B4" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-31-36-311.jpg.avif' style='width: 50%' />
-wo ein schöner Kirchturm mit Zwiebelhaube ins Blickfeld kommt.
-Von dort fahren wir auf dem Leinpfad am Naturschutzgebiet Godorfer Hafen
-<img alt="B5" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-32-44-524.jpg.avif' style='width: 50%' />
-entlang bis zur Mauer der Theo Steil GmbH, die mit tollen Graffitis verziert ist.
-<img alt="B6.1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-14.jpg.avif' style='width: 50%' />
-<img alt="B6.2" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-12-45-04-754a.jpg.avif' style='width: 50%' />
-Schon in der nächste Kurve haben wir einen interessanten Blick in das Hafenbecken, wo die Shell AG ihre Raffinerieprodukte umschlägt.
-Ehe wir die alte Godorfer Mühle erreichen, queren wir am Bahnhof Godorf auf einer Fußgängerbrücke
-<img alt="B7" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-12-49-36-539.jpg.avif' style='width: 50%' />
-die Eisenbahnschienen.
-Hier müssen wir zu Fuß laufen, um auf den Radweg an der Industriestraße zu kommen.
-
-Die Industriestraße führt uns auf die Dachhöhe der umliegenden Bauten, sodass Ihr einen Blick in die Industrieanlagen werfen könnt.
-<img alt="B8" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-13-00-40-790.jpg.avif' style='width: 50%' />
-Und das ist gleichzeitig die einzige Steigung, die ihr auf unserer Tour bewältigen müsst.
-Von dort aus geht es hinab nach Wesseling, wo nach einer Fahrt durch die Straßen
-<img alt="B9" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-16.jpg.avif' style='width: 50%' />
-am Fähranleger die wohlverdiente Pause wartet.
-<img alt="B10" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-4.jpg.avif' style='width: 50%' />
-
-Hier steht für euch vielfältige Verpflegung bereit, die eure müden Beine wieder in Schwung bringt.
-Wenn ihr wieder fit seid, bringt euch der RHEINSCHWAN auf die andere Rheinseite nach Lülsdorf.
-Auch hier bezahlt ihr den Fährmann, Herrn Weisbarth, mit euren Chips.
-<img alt="B11" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-5.jpg.avif' style='width: 50%' />
-
-Nun geht es auf die Heimreise.
-Gleich zu Beginn fahrt ihr über die Einlaufschleusen des Hochwasserschutzbeckens Langeler Bogen.
-<img alt="B12" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-14-36-53-220.jpg.avif' style='width: 50%' />
-Die dahinter liegenden Felder werden bei Extremhochwasser geflutet und können fast 5 Mio. Kubikmeter Wasser aufnehmen.
-Das entspricht etwa einem Volumen von 1800 olympischen Schwimmbecken; die so entstehende Fläche umfasst ca. 210 Fußballfelder.
-Und das alles, damit Köln nicht absäuft.
-Auf der Deichkrone geht es durch den schönen Auenwald nach Langel.
-<img alt="B13" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-15-34-10-491.jpg.avif' style='width: 50%' />
-<img alt="B14" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-16-12-30-546.jpg.avif' style='width: 50%' />
-Ein kleiner Hügel am Ende des Deichs zeigt euch, dass ihr über die Auslaufschleusen gefahren seid, denn das viele Wasser muss nach Ende der Flut ja wieder zurück in den Rhein.
-Kurz darauf erreicht ihr den Langeler Weiher.
-Er ist eines der letzten Auengewässer in NRW und bietet Heimat für seltene Fischarten.
-Er wurde gerade erst vor dem Austrocknen gerettet.
-
-Auf dem Damm geht es an „d´r Tant“ und der Bootsrampe vorbei weiter in Richtung Zündorf.
-Hier können wir noch einmal einen schönen Blick auf Sürth am anderen Rheinufer werfen.
-<img alt="B15" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-16-14-10-577.jpg.avif' style='width: 50%' />
-Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit ist die Tour fast geschafft.
-Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
-
-Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
-        )
         .setTime('10:00', '12:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
@@ -220,13 +159,6 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setId('c1934b4b-2058-4100-946e-77c264533c76')
         .setLength(52)
         .setName('Die 52er')
-        .setText(
-          `Sie führt über Krahwinkel und Breidt vorbei an Halberg, um über eine kurvenreiche Abfahrt wieder ins Jabachtal zu gelangen, wo sie nördlich von Lohmar mit den anderen Strecken zusammentrifft.
-
-Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
-Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
-Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
-        )
         .setTime('07:30', '11:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
@@ -240,34 +172,9 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setLength(82)
         .setName('Die 82er')
         .setProfile(EProfile.Wellig)
-        .setText(
-          `Im Gegensatz zur 52er erfolgt schon in Lohmar eine Streckentrennung.
-Wir haben uns für die Strecken 82 km, 125 km und 151 km eine neue Auffahrt zur Kontrolle nach Pohlhausen für Euch ausgedacht.
-An diesem Anstieg wartet eine RTC-Fotografin auf Euch, also bitte immer schön lächeln. 🙂
-Nach einer rasanten Abfahrt folgen die Fahrer dem Wahnbachtal bis nach Herrenteich.
-Nach einem längeren Anstieg durch Sommerhausen treffen sich im westlichen Randbereich von Much alle Strecken, bis auf die 52er.
-<figure>
-    <img alt="Von Much nach Hetzenholz" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Much_Hetzenholz.jpg.avif' style='width: 50%' />
-    <figcaption>Von Much nach Hetzenholz</figcaption>
-</figure>
-Von Much geht es durch wenig befahrene ländliche Straßen über Hetzenholz, Nackhausen und Seelscheid nach Ingersauel, wo die nächste Herausforderung wartet:
-der Anstieg zu unserer Kontrolle auf dem Betriebshof von Fullwood Wohnblockhaus in Oberstehöhe.
-<figure>
-    <img alt="Betriebshof Fullwood" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Betriebshof_Fullwood.jpg.avif' style='width: 50%' />
-    <figcaption>Betriebshof Fullwood</figcaption>
-</figure>
-Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Aggertal erreicht wird.
-Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
-Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
-<i>Auf diesem Streckenteil sollte unbedingt der Radweg benutzt werden.</i>
-Hinter Lohmar geht es über die L288 ins Sülztal (Hier befindet sich der Radweg auf der „verkehrten“ Straßenseite!) und über den letzten Anstieg der Strecke nach Altenrath.
-Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße auf der Rückseite des Flughafens ist vielen VereinsfahrerInnen als Zeitfahrstrecke bekannt.
-Über Porz-Grengel und Urbach quert die Strecke die ICE-Strecke und führt zurück zum Startort.`,
-        )
         .setTime('07:30', '11:00')
         .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471438'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -275,12 +182,23 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setHeight(780)
         .setId('5ea56b54-1d06-41bb-bc93-3dd54452b58c')
         .setLength(82)
-        .setName('Die geführte 82er')
+        .setName('Die begleitete 82er', '(Ladies only, inkl. Guides)')
         .setProfile(EProfile.Wellig)
         .setTime('09:30')
         .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433730609_51143 RTC-Köln 02.06.2024 82km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433730609'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471438'),
+        })
+        .buildTrack(),
+      new TrackBuilder()
+        .setControls(2)
+        .setHeight(780)
+        .setId('519dbc00-5493-42cd-b852-e53bdacc74df')
+        .setLength(82)
+        .setName('Die begleitete 82er', '(Gemischte Tour)')
+        .setProfile(EProfile.Wellig)
+        .setTime('09:30')
+        .setUrls({
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471438?ref'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -290,61 +208,21 @@ Hier geht das Tempo noch mal deutlich nach oben, denn die alte Kölner Straße a
         .setLength(125)
         .setName('Die 125er')
         .setProfile(EProfile.Huegelig)
-        .setText(
-          `Während die <b>82er</b> weiter dem Wahnbachtal folgt, biegen die restlichen Strecken nach rechts in den Wald auf einen kleinen, gemeinen Anstieg nach Oberwennerscheid ab.
-In Brackemich geht es rechts ab und über Eischeid hinunter ins Bröltal.
-Einer Baustelle verdanken wir den folgenden Anstieg nach Winterscheid.
-Es lohnt sich unbedingt auf der Höhe den Blick zurück ins Tal zu richten!
-<figure>
-    <img alt="Wahnbachtal" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/Wahnbachtal.jpg.avif' style='width: 50%' />
-    <figcaption>Wahnbachtal</figcaption>
-</figure>
-Bis zur Abfahrt zur nächsten Kontrolle in Bourauel kann man sich den Hügel auf nur leicht welliger Strecke aus den Beinen fahren.
-Leider finden sich in dieser Abfahrt einige Straßenschäden, sodass besondere Vorsicht geboten ist.
-<figure>
-    <img alt="Kontrolle 2 - Eitdorf-Bourauel" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/K2_Eitdorf_Bourauel.jpg.avif' style='width: 50%' />
-    <figcaption>Kontrolle 2 - Eitdorf-Bourauel</figcaption>
-</figure>
-Von der Kontrollstelle auf dem Dorfplatz in Bourauel geht es das Siegtal hinauf.
-Recht schnell verlässt die 120er das Siegtal wieder und führt über Rieferath nach Ruppichteroth.
-Auf diesem Teilstück wird ein erheblicher Anteil der Höhenmeter auf der anspruchsvollen Strecke überwunden.
-Über Hambuchen und Retscheroth geht es weiter nach Marienfeld, bis nach Much.
-Von Much geht es durch wenig befahrene ländliche Straßen über Hetzenholz, Nackhausen und Seelscheid nach Ingersauel, wo die nächste Herausforderung wartet:
-der Anstieg zu unserer Kontrolle auf dem Betriebshof von Fullwood Blockhaus in Oberstehöhe.
-Von dort geht es zunächst wellig weiter, bis nach einer schönen Abfahrt das Aggertal erreicht wird.
-Alle FahrerInnen, die bis hierher noch nicht genügend Höhenmeter beisammen haben, dürfen hier gerne noch den Anstieg nach Naaferberg mitnehmen und auf dem Höhenrücken der 51er-Strecke folgen.
-Für alle anderen geht es flach weiter über Donrath, bis dass vor Lohmar alle Strecken zusammengeführt werden.
-Gemeinsam geht es auf dem Radweg Richtung Altenrath weiter.`,
-        )
         .setTime('07:30', '10:00')
         .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433722005_51143 RTC-Köln 02.06.2024 125km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433722005'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471146?ref'),
         })
         .buildTrack(),
       new TrackBuilder()
         .setControls(4)
-        .setHeight(1850)
+        .setHeight(1800)
         .setId('3e252d86-e452-43f3-9f93-440eeb792338')
-        .setLength(151)
-        .setName('Die 151er')
+        .setLength(150)
+        .setName('Die 150er')
         .setProfile(EProfile.Huegelig)
-        .setText(
-          `Hier haben wir etwas ganz Besonderes für Euch:
-Direkt nach der Kontrolle in Bouraul teilt sich die Strecke in 125 km und 151 km (350 Hm mehr als die 125er) auf.
-Wenn ihr auf die ausgeschilderte 151 km-Strecke geht, fahrt ihr südlich bis zum RSC Buchholz, der am selben Tag seine RTF ausrichtet wie wir.
-Auf deren Startplatz ist unsere nächste Verpflegungsstation.
-Am Start in Zündorf bekommt ihr von uns einen Gutschein über einen 4 Euro-Verzehrbon, den ihr in Buchholz einlösen könnt.
-Auf dem Rückweg an die Sieg kommt Ihr wieder auf die 125 km-Strecke und habt theoretisch so die Chance, nachdem ihr die Sieg überquert habt,
-nochmal zu unserer Kontrolle in Bouraul zu fahren (nur 2 km ab der Sieg-Überquerung).
-Wir versuchen aus der Terminkollision, denn da hat die APPstimmung im BDR leider nicht funktioniert, das Beste zum Wohle von Euch, den Buchholzern und uns zu machen.
-Denkt dran:
-Wenn Ihr in Buchholz auch noch eine 151er fahren möchtet, unser Kontrollschluss in Zündorf ist um 17 Uhr 🙂🙂🙂🙂🙂 Wir freuen uns alle auf Euch.`,
-        )
         .setTime('07:30', '08:30')
         .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-06_1433146251_51143 RTC-Köln 02.06.2024 151km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433146251'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2050184984?ref'),
         })
         .buildTrack(),
     )
@@ -390,7 +268,7 @@ Euer RTC Köln e.V.`,
     .setTimes(
       new TimeBuilder().setId('c94e6040-6a86-49c1-ac67-a13941a84894').setName('Beginn der Veranstaltung').setTime('07:00').buildTime(),
       new TimeBuilder().setId('06606e1f-74ba-491b-b099-61a571183cca').setName('Startfenster Familientour').setTime('10:00', '12:00').buildTime(),
-      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Ausgabe der Urkunden und weiterer Überraschungen').setTime('nach Rückkehr').buildTime(),
+      new TimeBuilder().setId('4ca570ef-378b-43e5-a3e5-8ed15815cd0b').setName('Urkunden und weitere Überraschungen').setTime('nach Rückkehr').buildTime(),
     )
     .setTitle('Die Familientour')
     .setTracks(

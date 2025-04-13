@@ -31,8 +31,9 @@ export default class TrackBuilder extends ABuilder {
     return this
   }
 
-  setName = (value: string): this => {
+  setName = (value: string, subname?: string): this => {
     this.track.name = value
+    this.track.subname = subname
 
     return this
   }

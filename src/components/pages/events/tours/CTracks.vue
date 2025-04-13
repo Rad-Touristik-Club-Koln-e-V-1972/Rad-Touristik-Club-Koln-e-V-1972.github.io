@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col">
           <q-timeline :layout="$q.platform.is.mobile ? 'dense' : 'loose'">
-            <q-timeline-entry v-for="(it, index) in props.tracks" :key="it.id" :side="index % 2 === 0 ? 'right' : 'left'">
+            <q-timeline-entry v-for="(it, index) in props.tracks.filter((t) => t.text)" :key="it.id" :side="index % 2 === 0 ? 'right' : 'left'">
               <template #default>
                 <q-card flat>
                   <q-card-section>

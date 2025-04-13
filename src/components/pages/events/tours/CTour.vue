@@ -1,7 +1,15 @@
 <template>
   <q-card v-if="props.modelValue" flat>
     <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
-    <q-card-section class="text-subtitle1">Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</q-card-section>
+    <q-card-section>
+      <div>Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</div>
+      <div class="text-subtitle1" v-if="calendarStore.nextRTF">
+        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
+        <br />
+        <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs'" color="primary" label="Zur Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
+        <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs-family'" color="primary" label="Zur RTF" :to="{ name: 'events-tours-rtfs' }" />
+      </div>
+    </q-card-section>
     <q-card-section>
       <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
         <q-tab :icon="mdiBike" label="Allgemein" name="general" />
@@ -11,7 +19,7 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="general">
-          <c-general :images="props.modelValue.images" :text="props.modelValue.text" />
+          <c-general :text="props.modelValue.text" />
         </q-tab-panel>
         <q-tab-panel name="info">
           <c-info :fee-hints="props.feeHints" :fees="props.modelValue.fees" :location="props.modelValue.location" :times="props.modelValue.times" :tracks="props.modelValue.tracks" />
@@ -24,22 +32,26 @@
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>
-    <d-popup v-if="props.modelValue.popup" :model-value="props.modelValue.popup" />
   </q-card>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 import { mdiBike, mdiCurrencyEur, mdiGoKartTrack, mdiInformation } from '@quasar/extras/mdi-v7'
 import CGeneral from 'components/pages/events/tours/CGeneral.vue'
 import CInfo from 'components/pages/events/tours/CInfo.vue'
 import CRegistration from 'components/pages/events/tours/CRegistration.vue'
 import CTracks from 'components/pages/events/tours/CTracks.vue'
-import DPopup from 'components/pages/events/tours/DPopup.vue'
 import type Event from 'src/models/entities/events/tours/Event'
+import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
 
 const props = defineProps<{ feeHints?: string; modelValue: Event | undefined }>()
+
+const route = useRoute()
+
+const calendarStore = useCalendarStore()
 
 const tab = ref('info')
 </script>

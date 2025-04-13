@@ -47,7 +47,7 @@ Am Schluss der Saison werden wir dir die notwendigen QR-Codes zusenden, damit du
 
 Das Startgeld beträgt 3 €.
 Breitensportlizenzinhaber mit dem Vermerk "Schüler" sind zum Start zugelassen und vom Startgeld befreit.
-Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrerinnen und Radfahrer nach der Eintragung in die Teilnehmerliste (Email-Adresse nicht vergessen) ausgehändigt bekommen.
+Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrer:innen und Radfahrer nach der Eintragung in die Teilnehmerliste (Email-Adresse nicht vergessen) ausgehändigt bekommen.
 An der ARAL-Tankstelle in Lindlar (ungefähr die Hälfte der insgesamt 71 km) erfolgt der Kontrollstempel in die Startkarte, als Nachweis, um sich nach der Rückkehr (Öffnungszeiten beachten) einmalig 2 Punkte in die Wertungskarte eintragen zu lassen.
 Bei den Touren wird entsprechend der Vorgabe des BDR der Sternfahrt-Modus nicht durchgeführt.
 Die Anmeldung am Start ist von den Öffnungszeiten abhängig.
@@ -114,7 +114,7 @@ Hier kannst du, wenn du möchtest, die Tour mit deinen Radsportfreunden auskling
 
 Das Startgeld beträgt 3 €.
 Wertungskarteninhaber mit dem Vermerk "Schüler" sind zum Start zugelassen und vom Startgeld befreit.
-Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrerinnen und Radfahrer nach der Eintragung in die Teilnehmerliste ausgehändigt bekommen.
+Die genaue Streckenbeschreibung befindet sich neben dem o.a. Flyer auch auf der Startkarte, die die Radfahrer:innen und Radfahrer nach der Eintragung in die Teilnehmerliste ausgehändigt bekommen.
 An der Esso-Tankstelle in Kürten (etwas mehr als die Hälfte der insgesamt 72 km) erfolgt der Kontrollstempel in die Startkarte, als Nachweis, um sich nach der Rückkehr (Öffnungszeiten beachten) einmalig 2 Punkte in die Wertungskarte eintragen zu lassen.
 Bei den Touren wird entsprechend der Vorgabe des BDR der Sternfahrt-Modus nicht durchgeführt.
 Die Anmeldung am Start ist von den Öffnungszeiten abhängig.

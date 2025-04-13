@@ -1,8 +1,6 @@
 import ABuilder from 'src/models/builder/ABuilder'
-import PopupBuilder from 'src/models/builder/PopupBuilder'
 import type Control from 'src/models/entities/events/tours/Control'
 import Tour from 'src/models/entities/events/tours/Tour'
-import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 import type EEvent from 'src/models/enums/EEvent'
 
 export default class TourBuilder extends ABuilder {
@@ -28,12 +26,6 @@ export default class TourBuilder extends ABuilder {
     return this
   }
 
-  setImages = (...value: GalleryEntry[]): this => {
-    this.tour.images = value
-
-    return this
-  }
-
   setLastChange = (value: string): this => {
     this.tour.lastChange = new Date(value)
 
@@ -42,12 +34,6 @@ export default class TourBuilder extends ABuilder {
 
   setLocation = (value: Control): this => {
     this.tour.location = value
-
-    return this
-  }
-
-  setPopup = (text: string, title: string): this => {
-    this.tour.popup = new PopupBuilder().setId('04ad6a7c-7fff-4224-bdb6-b52fb64f1785').setText(text).setTitle(title).buildPopup()
 
     return this
   }
