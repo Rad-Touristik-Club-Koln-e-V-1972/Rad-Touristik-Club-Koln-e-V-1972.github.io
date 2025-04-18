@@ -2,16 +2,19 @@
   <q-card v-if="props.modelValue" flat>
     <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
     <q-card-section>
-      <div>Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</div>
+      <span>Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</span>
       <div class="text-subtitle1" v-if="calendarStore.nextRTF">
         Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
-        <br />
-        <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs'" color="primary" label="Zur Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
-        <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs-family'" color="primary" label="Zur RTF" :to="{ name: 'events-tours-rtfs' }" />
       </div>
+      <i>Wir unterstützen den neuen Kids-Cup in der Radsport-Region Köln-Bonn-Aachen für Kinder und Jugendliche in den Altersklassen 2012-2015 und 2016-2019.</i>
     </q-card-section>
+    <q-card-actions align="left">
+      <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs'" color="primary" label="Zur Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
+      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" label="Zur RTF" :to="{ name: 'events-tours-rtfs' }" />
+      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" label="Zum Gothaer Kids-Cup 2025" href="https://www.svmalefinkbach.de/gothaer-kids-cup-2025/" target="_blank" />
+    </q-card-actions>
     <q-card-section>
-      <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
+      <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent" :vertical="$q.platform.is.mobile">
         <q-tab :icon="mdiBike" label="Allgemein" name="general" />
         <q-tab :icon="mdiInformation" label="Info" name="info" />
         <q-tab :icon="mdiGoKartTrack" label="Strecken" name="tracks" />
