@@ -238,7 +238,7 @@ Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2024-05-26')
+    .setLastChange('2025-04-23')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -253,7 +253,7 @@ Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
       `Liebe Kinder, Eltern und sonstige Verwandtschaft :-),
 
 der RTC Köln freut sich, nach langer Zeit mal wieder eine Familientour anbieten zu können und lädt euch alle dazu herzlich ein.
-Die <b>Krokodil-Familientour</b> startet am 02. Juni 2024 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
+Die <b>Krokodil-Familientour</b> startet am 25. Mai 2025 ab 10:00 Uhr im Schulzentrum Porz-Zündorf.
 "Langschläfer" können noch bis 12:00 Uhr auf die Strecke gehen.
 Wir bieten euch eine 22 km lange Familientour links und rechts des Rheins, die weitgehend über Radwege und Nebenstraßen in den Rheinauen führt.
 Ihr habt aber auch einen Blick auf den Chemiegürtel, der Köln von Wesseling über Knappsack bis Dormagen und Leverkusen umspannt.
