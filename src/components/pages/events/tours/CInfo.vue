@@ -2,7 +2,7 @@
   <div class="justify-center q-gutter-lg row">
     <div class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Adresse</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6">Startort</q-card-section>
         <q-card-section>
           <b>{{ props.location.title }}</b>
           <br />
