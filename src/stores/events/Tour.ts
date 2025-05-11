@@ -17,7 +17,7 @@ export default defineStore('tour', () => {
     getFamily: () => {
       // TODO This is a workaround until the db got converted to pina-orm.
       //  And somehow this function gets executed 3 times.
-      const tmp = events.value.find((it) => it.category === EEvent.Familientour)
+      const tmp = getBy(EEvent.Familientour)
 
       if (tmp && !tmp.tracks.find((it) => it.length === 22)) {
         const familyTourTrack = getBy(EEvent.RTF)?.tracks.find((it) => it.length === 22)

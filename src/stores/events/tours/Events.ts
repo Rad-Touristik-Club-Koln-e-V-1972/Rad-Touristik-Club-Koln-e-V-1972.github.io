@@ -18,7 +18,7 @@ export default [
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2025-04-13')
+    .setLastChange('2025-05-11')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -147,6 +147,64 @@ Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
         .setLength(22)
         .setName('Die 22er')
         .setProfile(EProfile.Flach)
+        .setText(
+          `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
+den der ein oder andere sicher schon kennt (wenn nicht – sehr empfehlenswert!),
+<img alt="B1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/Rolfs Streichelzoo.jpg.avif' style='width: 50%' />
+in Richtung Yachthafen, Groov und des Fähranlegers des KROKODILS.
+<img alt="B2" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-29-03-647.jpg.avif' style='width: 50%' />
+Hier bezahlt Ihr den Fährmann Niklas Thiel mit euren Chips.
+Dafür bringt er euch nach einer wilden Seefahrt sicher an das andere Ufer.
+<img alt="B3" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-30-26-910.jpg.avif' style='width: 50%' />
+Weiter geht es immer am Rhein entlang in Richtung Sürth,
+<img alt="B4" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-31-36-311.jpg.avif' style='width: 50%' />
+wo ein schöner Kirchturm mit Zwiebelhaube ins Blickfeld kommt.
+Von dort fahren wir auf dem Leinpfad am Naturschutzgebiet Godorfer Hafen
+<img alt="B5" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-32-44-524.jpg.avif' style='width: 50%' />
+entlang bis zur Mauer der Theo Steil GmbH, die mit tollen Graffitis verziert ist.
+<img alt="B6.1" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-14.jpg.avif' style='width: 50%' />
+<img alt="B6.2" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-12-45-04-754a.jpg.avif' style='width: 50%' />
+Schon in der nächste Kurve haben wir einen interessanten Blick in das Hafenbecken, wo die Shell AG ihre Raffinerieprodukte umschlägt.
+Ehe wir die alte Godorfer Mühle erreichen, queren wir am Bahnhof Godorf auf einer Fußgängerbrücke
+<img alt="B7" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-12-49-36-539.jpg.avif' style='width: 50%' />
+die Eisenbahnschienen.
+Hier müssen wir zu Fuß laufen, um auf den Radweg an der Industriestraße zu kommen.
+
+Die Industriestraße führt uns auf die Dachhöhe der umliegenden Bauten, sodass Ihr einen Blick in die Industrieanlagen werfen könnt.
+<img alt="B8" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-13-00-40-790.jpg.avif' style='width: 50%' />
+Und das ist gleichzeitig die einzige Steigung, die ihr auf unserer Tour bewältigen müsst.
+Von dort aus geht es hinab nach Wesseling, wo nach einer Fahrt durch die Straßen
+<img alt="B9" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-16.jpg.avif' style='width: 50%' />
+am Fähranleger die wohlverdiente Pause wartet.
+<img alt="B10" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-4.jpg.avif' style='width: 50%' />
+
+Hier steht für euch vielfältige Verpflegung bereit, die eure müden Beine wieder in Schwung bringt.
+Wenn ihr wieder fit seid, bringt euch der RHEINSCHWAN auf die andere Rheinseite nach Lülsdorf.
+Auch hier bezahlt ihr den Fährmann, Herrn Weisbarth, mit euren Chips.
+<img alt="B11" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/signal-2024-05-09-17-34-56-884-5.jpg.avif' style='width: 50%' />
+
+Nun geht es auf die Heimreise.
+Gleich zu Beginn fahrt ihr über die Einlaufschleusen des Hochwasserschutzbeckens Langeler Bogen.
+<img alt="B12" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-14-36-53-220.jpg.avif' style='width: 50%' />
+Die dahinter liegenden Felder werden bei Extremhochwasser geflutet und können fast 5 Mio. Kubikmeter Wasser aufnehmen.
+Das entspricht etwa einem Volumen von 1800 olympischen Schwimmbecken; die so entstehende Fläche umfasst ca. 210 Fußballfelder.
+Und das alles, damit Köln nicht absäuft.
+Auf der Deichkrone geht es durch den schönen Auenwald nach Langel.
+<img alt="B13" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-15-34-10-491.jpg.avif' style='width: 50%' />
+<img alt="B14" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-16-12-30-546.jpg.avif' style='width: 50%' />
+Ein kleiner Hügel am Ende des Deichs zeigt euch, dass ihr über die Auslaufschleusen gefahren seid, denn das viele Wasser muss nach Ende der Flut ja wieder zurück in den Rhein.
+Kurz darauf erreicht ihr den Langeler Weiher.
+Er ist eines der letzten Auengewässer in NRW und bietet Heimat für seltene Fischarten.
+Er wurde gerade erst vor dem Austrocknen gerettet.
+
+Auf dem Damm geht es an „d´r Tant“ und der Bootsrampe vorbei weiter in Richtung Zündorf.
+Hier können wir noch einmal einen schönen Blick auf Sürth am anderen Rheinufer werfen.
+<img alt="B15" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-09-16-14-10-577.jpg.avif' style='width: 50%' />
+Bald schon hören wir den fröhlichen Kinderlärm aus dem Zündorfbad und damit ist die Tour fast geschafft.
+Noch schnell am schönen Spielplatz vorbei und durch ein paar Zündorfer Gässchen und schon sind wir wieder zurück im Schulzentrum Zündorf.
+
+Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein oder anderen Überraschung.`,
+        )
         .setTime('10:00', '12:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
