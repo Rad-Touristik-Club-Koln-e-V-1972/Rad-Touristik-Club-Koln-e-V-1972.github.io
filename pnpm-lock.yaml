@@ -112,8 +112,8 @@ importers:
         specifier: 0.9.3
         version: 0.9.3(eslint@9.26.0(jiti@2.4.1))(optionator@0.9.4)(typescript@5.8.3)(vite@6.1.0(@types/node@22.15.18)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.7.1))(vue-tsc@2.2.10(typescript@5.8.3))
       vite-plugin-sitemap:
-        specifier: 0.8.1
-        version: 0.8.1
+        specifier: 0.8.2
+        version: 0.8.2
       vue-tsc:
         specifier: 2.2.10
         version: 2.2.10(typescript@5.8.3)
@@ -3482,8 +3482,8 @@ packages:
       vue-tsc:
         optional: true
 
-  vite-plugin-sitemap@0.8.1:
-    resolution: {integrity: sha512-pIxf4OVhLXGDVJLlJZ2moQmXc1tvmzMIt7Bf+A87Z96lmxEe8NSRNUIHuAQKLeYpxAvvIvG1te5BPnO2c136gA==}
+  vite-plugin-sitemap@0.8.2:
+    resolution: {integrity: sha512-bqIw6NVOXg6je81lzX8Lm0vjf8/QSAp8di8fYQzZ3ZdVicOm8+6idBGALJiy1R1FiXNIK8rgORO6HBqXyHW+iQ==}
 
   vite@6.1.0:
     resolution: {integrity: sha512-RjjMipCKVoR4hVfPY6GQTgveinjNuyLw+qruksLDvA5ktI1150VmcMBKmQaEWJhg/j6Uaf6dNCNA0AfdzUb/hQ==}
@@ -7155,7 +7155,7 @@ snapshots:
       typescript: 5.8.3
       vue-tsc: 2.2.10(typescript@5.8.3)
 
-  vite-plugin-sitemap@0.8.1: {}
+  vite-plugin-sitemap@0.8.2: {}
 
   vite@6.1.0(@types/node@22.15.18)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.7.1):
     dependencies:
