@@ -1,6 +1,6 @@
 <template>
   <div class="justify-center row">
-    <q-card class="col-auto" style="max-width: 40em">
+    <q-card class="col-auto">
       <q-card-section class="bg-primary text-accent text-h6">Vorwort</q-card-section>
       <q-card-section>
         <span class="text-pre-wrap" v-html="props.text" />

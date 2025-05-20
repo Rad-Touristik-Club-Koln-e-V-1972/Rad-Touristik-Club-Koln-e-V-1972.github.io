@@ -18,7 +18,7 @@ export default [
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2025-05-11')
+    .setLastChange('2025-05-20')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -208,7 +208,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setTime('10:00', '12:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-02-16_1441124693_Die Krokodil-Familientour – Toller Radweg beidseits des Rheins Runde von Zündorf.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1608643106'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2255106012?ref'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -220,7 +220,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setTime('07:30', '11:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/1433738920'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2255113981?ref'),
         })
         .buildTrack(),
       new TrackBuilder()
