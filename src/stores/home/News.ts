@@ -2,6 +2,7 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import type NewsEntry from 'src/models/entities/home/NewsEntry'
 import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
+import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime'
 
 export default defineStore('news', () => {
@@ -9,20 +10,16 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
-      .setId('e9a69973-0e32-4a72-98e1-1472eb2d4401')
+      .setId('ce3e795c-7c6d-496e-83ba-fb71ff15df9f')
+      .setImage(new GalleryEntryBuilder().setId('c223b62c-1590-4fb1-b056-b62e1925551f').setImageUrl('content.rtc-koeln.de/pages/home/news/signal-2025-05-23-125023.jpeg').buildGalleryEntry())
+      .setShowUntil('2025-05-25')
       .setText(
-        `Neu ab 2025:
-die <b>KÖLN</b>CHALLENGE!
+        `Die FORSBACHTOUR 2025 fällt aus!
 
-Zusammen mit unseren Partnervereinen Mistral, Rodenkirchen, Ford, Immendorf und Lövenich haben wir eine spannende neue Initiative für den Breitensport ins Leben gerufen!
+Es tut uns unendlich leid, aber es soll regnerisch und stürmisch werden und eure Sicherheit liegt uns am Herzen.
 
-Fahre bei unseren sechs Radtourenfahrten (RTF) mit, sammle Stempel auf Deiner Challenge-Karte und sichere dir die Chance auf tolle Preise – darunter ein <b>Hauptpreis im Wert von 600 €!</b>
-
-<u>Klick auf das Logo</u> und erfahre alles, was du wissen musst.
-
-Gemeinsam machen wir den Radsport 🚴‍♀️🚴‍♂️ in Köln noch besser. ❤️`,
+Euer RTC KÖLN e.V. 1972`,
       )
-      .setYoutubeVideoId('ZdGk848MSeU')
       .buildNewsEntry(),
   ])
 

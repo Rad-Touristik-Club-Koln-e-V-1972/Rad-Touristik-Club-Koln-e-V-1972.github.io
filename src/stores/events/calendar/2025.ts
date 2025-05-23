@@ -47,15 +47,15 @@ export default [
     .setName('Versammlung zur Forsbachtour')
     .buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.RTC)
+    .setCategory(EEvent.Abgesagt)
     .setContact('Manfred Türk-Vialon')
     .setDate('2025-05-24')
     .setId('f14d8251-93fb-4c87-aedc-cd88b6756cf6')
     .setName('Aufbau/Ausschildern Forsbachtour')
     .setKilometer(400)
     .buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTF).setContact('Manfred Türk-Vialon').setDate('2025-05-25').setId('89991c0a-fddd-4fb1-bd4b-f336304745aa').setKilometer(400).setName('53. Forsbachtour (KC)').buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTC).setContact('Manfred Türk-Vialon').setDate('2025-05-26').setId('cc770aa2-182e-4e05-9d23-e7e2e3d3f7f3').setName('Abschildern und Lager').setKilometer(150).buildEvent(),
+  new EventBuilder().setCategory(EEvent.Abgesagt).setContact('Manfred Türk-Vialon').setDate('2025-05-25').setId('89991c0a-fddd-4fb1-bd4b-f336304745aa').setKilometer(400).setName('53. Forsbachtour (KC)').buildEvent(),
+  new EventBuilder().setCategory(EEvent.Abgesagt).setContact('Manfred Türk-Vialon').setDate('2025-05-26').setId('cc770aa2-182e-4e05-9d23-e7e2e3d3f7f3').setName('Abschildern und Lager').setKilometer(150).buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Vereinsfahrt)
     .setContact('Wolfgang Dünkelmann')
