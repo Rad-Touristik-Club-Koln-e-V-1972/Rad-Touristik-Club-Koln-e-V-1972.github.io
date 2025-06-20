@@ -31,7 +31,7 @@
     "mime": "4.0.7",
     "pinia": "3.0.3",
     "quasar": "2.18.1",
-    "signature_pad": "5.0.9",
+    "signature_pad": "5.0.10",
     "vue": "3.5.17",
     "vue-router": "4.5.1"
   },
