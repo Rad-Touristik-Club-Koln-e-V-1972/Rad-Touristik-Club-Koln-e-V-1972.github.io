@@ -55,7 +55,7 @@
     "prettier": "3.6.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
-    "vite-plugin-checker": "0.9.3",
+    "vite-plugin-checker": "0.10.0",
     "vite-plugin-sitemap": "0.8.2",
     "vue-tsc": "3.0.1"
   },
