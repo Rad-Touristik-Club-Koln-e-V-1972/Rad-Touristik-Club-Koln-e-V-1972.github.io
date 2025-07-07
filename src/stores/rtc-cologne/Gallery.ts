@@ -17,11 +17,13 @@ import _2021 from './gallery/2021/Gallery'
 import _2022 from './gallery/2022/Gallery'
 import _2023 from './gallery/2023/Gallery'
 import _2024 from './gallery/2024/Gallery'
+import _2025 from './gallery/2025/Gallery'
 
 export default defineStore('gallery', () => {
   const sortByDate: (galleries: Gallery[]) => Gallery[] = (galleries: Gallery[]) => galleries.toSorted((a, b) => b.start.getTime() - a.start.getTime())
 
   const groupedByYear: ComputedRef<Record<string, Gallery[]>> = computed(() => ({
+    2025: sortByDate(_2025),
     2024: sortByDate(_2024),
     2023: sortByDate(_2023),
     2022: sortByDate(_2022),
