@@ -61,8 +61,8 @@ importers:
         specifier: 9.31.0
         version: 9.31.0
       '@quasar/app-vite':
-        specifier: 2.2.1
-        version: 2.2.1(@types/node@22.16.5)(eslint@9.31.0(jiti@2.4.1))(jiti@2.4.1)(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(rollup@4.34.6)(sass@1.77.8)(terser@5.31.6)(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))(yaml@2.8.0)
+        specifier: 2.3.0
+        version: 2.3.0(@types/node@22.16.5)(eslint@9.31.0(jiti@2.4.1))(jiti@2.4.1)(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(rollup@4.34.6)(sass@1.77.8)(terser@5.31.6)(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))(yaml@2.8.0)
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.1.2
         version: 4.1.2
@@ -670,8 +670,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@quasar/app-vite@2.2.1':
-    resolution: {integrity: sha512-wGKmPgrEFj3UzxZym2v8ZhCADhrUdC6Q2LvnSYtCBRldgZI71er2j52prbX40rDVIIeVReRFYRae235kzDJHOA==}
+  '@quasar/app-vite@2.3.0':
+    resolution: {integrity: sha512-AHMRa5cdZ/TmV9mJ0jg/fbTMaMtFDfxvOjuPHL75AH6cZHECkXZ7ndTdVM0mU3i6lYwWf8Rx5OEi/PCwAMYJng==}
     engines: {node: ^30 || ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.14.12', yarn: '>= 1.17.3'}
     hasBin: true
     peerDependencies:
@@ -716,13 +716,13 @@ packages:
     resolution: {integrity: sha512-RhZF7rO76T7Ywer1/5lCe7xl3CIiXxSAH1xgwOj0wcHTityDxJqIN/5YIj6BxMvlFw8XkJDoB1udEQafoVFA4g==}
     engines: {node: '>= 16'}
 
-  '@quasar/vite-plugin@1.9.0':
-    resolution: {integrity: sha512-r1MFtI2QZJ2g20pe75Zuv4aoi0uoK8oP0yEdzLWRoOLCbhtf2+StJpUza9TydYi3KcvCl9+4HUf3OAWVKoxDmQ==}
-    engines: {node: '>=18'}
+  '@quasar/vite-plugin@1.10.0':
+    resolution: {integrity: sha512-4PJoTclz4ZjAfyqe0+hlkKcFJt0e2NX3Ac3hy8ILqUPdtZ24nCo5/xEHvTxZGBQMKRPwwePbO8CVs4n9EKJEug==}
+    engines: {node: '>=20'}
     peerDependencies:
-      '@vitejs/plugin-vue': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+      '@vitejs/plugin-vue': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
       quasar: ^2.16.0
-      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
       vue: ^3.0.0
 
   '@rollup/rollup-android-arm-eabi@4.34.6':
@@ -1114,11 +1114,6 @@ packages:
 
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
-  acorn@8.14.0:
-    resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -2427,11 +2422,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -2618,10 +2608,6 @@ packages:
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
@@ -3134,10 +3120,6 @@ packages:
 
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
-
-  tinyglobby@0.2.13:
-    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
-    engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.14:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
@@ -3994,11 +3976,11 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@quasar/app-vite@2.2.1(@types/node@22.16.5)(eslint@9.31.0(jiti@2.4.1))(jiti@2.4.1)(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(rollup@4.34.6)(sass@1.77.8)(terser@5.31.6)(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))(yaml@2.8.0)':
+  '@quasar/app-vite@2.3.0(@types/node@22.16.5)(eslint@9.31.0(jiti@2.4.1))(jiti@2.4.1)(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(rollup@4.34.6)(sass@1.77.8)(terser@5.31.6)(typescript@5.8.3)(vue-router@4.5.1(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))(yaml@2.8.0)':
     dependencies:
       '@quasar/render-ssr-error': 1.0.3
       '@quasar/ssl-certificate': 1.0.0
-      '@quasar/vite-plugin': 1.9.0(@vitejs/plugin-vue@5.1.4(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
+      '@quasar/vite-plugin': 1.10.0(@vitejs/plugin-vue@5.1.4(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
       '@types/chrome': 0.0.262
       '@types/compression': 1.7.5
       '@types/cordova': 11.0.3
@@ -4030,7 +4012,7 @@ snapshots:
       sass-embedded: 1.83.0
       semver: 7.6.3
       serialize-javascript: 6.0.2
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.14
       ts-essentials: 9.4.2(typescript@5.8.3)
       vite: 6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0)
       vue: 3.5.17(typescript@5.8.3)
@@ -4072,7 +4054,7 @@ snapshots:
       fs-extra: 11.2.0
       selfsigned: 2.4.1
 
-  '@quasar/vite-plugin@1.9.0(@vitejs/plugin-vue@5.1.4(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
+  '@quasar/vite-plugin@1.10.0(@vitejs/plugin-vue@5.1.4(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(quasar@2.18.2)(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@vitejs/plugin-vue': 5.1.4(vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
       quasar: 2.18.2
@@ -4560,8 +4542,6 @@ snapshots:
   acorn@7.4.1: {}
 
   acorn@8.12.1: {}
-
-  acorn@8.14.0: {}
 
   acorn@8.15.0: {}
 
@@ -5843,7 +5823,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.15.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.5.4
@@ -5865,8 +5845,6 @@ snapshots:
   nano-spawn@1.0.2: {}
 
   nanoid@3.3.11: {}
-
-  nanoid@3.3.8: {}
 
   natural-compare@1.4.0: {}
 
@@ -6042,12 +6020,6 @@ snapshots:
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
-
-  postcss@8.5.3:
-    dependencies:
-      nanoid: 3.3.8
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.6:
     dependencies:
@@ -6548,11 +6520,6 @@ snapshots:
 
   tinyexec@1.0.1: {}
 
-  tinyglobby@0.2.13:
-    dependencies:
-      fdir: 6.4.4(picomatch@4.0.2)
-      picomatch: 4.0.2
-
   tinyglobby@0.2.14:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.2)
@@ -6689,7 +6656,7 @@ snapshots:
   vite@6.1.0(@types/node@22.16.5)(jiti@2.4.1)(sass-embedded@1.83.0)(sass@1.77.8)(terser@5.31.6)(yaml@2.8.0):
     dependencies:
       esbuild: 0.24.2
-      postcss: 8.5.3
+      postcss: 8.5.6
       rollup: 4.34.6
     optionalDependencies:
       '@types/node': 22.16.5
