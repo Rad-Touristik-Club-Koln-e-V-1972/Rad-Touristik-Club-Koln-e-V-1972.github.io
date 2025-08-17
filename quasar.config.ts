@@ -44,7 +44,7 @@ export default defineConfig((/*ctx*/) => ({
   // app boot file (/src/boot)
   // --> boot files are part of "main.js"
   // https://v2.quasar.dev/quasar-cli-vite/boot-files
-  boot: ['vue-masonry-wall'],
+  boot: ['maz-ui', 'vue-masonry-wall'],
 
   // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
   build: {

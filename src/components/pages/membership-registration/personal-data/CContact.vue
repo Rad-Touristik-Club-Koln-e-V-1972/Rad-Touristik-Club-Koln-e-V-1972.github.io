@@ -2,41 +2,11 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        <maz-phone-number-input
-          v-model="modelValue.telePhoneNumber"
-          v-model:country-code="modelValue.telePhoneCountryCode"
-          no-flags
-          :translations="{
-            countrySelector: {
-              error: 'Fehlerhafte Länderauswahl',
-              placeholder: 'Landesvorwahl',
-              searchPlaceholder: 'Ländersuche',
-            },
-            phoneInput: {
-              placeholder: 'Telefonnummer',
-              example: 'Beispiel :',
-            },
-          }"
-        />
+        <maz-input-phone-number v-model="modelValue.telePhoneNumber" v-model:country-code="modelValue.telePhoneCountryCode" no-flags />
       </div>
       <div class="col-1" />
       <div class="col">
-        <maz-phone-number-input
-          v-model="modelValue.mobilePhoneNumber"
-          v-model:country-code="modelValue.mobilePhoneCountryCode"
-          no-flags
-          :translations="{
-            countrySelector: {
-              error: 'Fehlerhafte Länderauswahl',
-              placeholder: 'Landesvorwahl',
-              searchPlaceholder: 'Ländersuche',
-            },
-            phoneInput: {
-              placeholder: 'Handynummer',
-              example: 'Beispiel :',
-            },
-          }"
-        />
+        <maz-input-phone-number v-model="modelValue.mobilePhoneNumber" v-model:country-code="modelValue.mobilePhoneCountryCode" no-flags />
       </div>
     </div>
     <div class="row">
@@ -48,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import MazPhoneNumberInput from 'maz-ui/components/MazPhoneNumberInput'
+import { MazInputPhoneNumber } from 'maz-ui/components'
 import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
 
 const modelValue = defineModel<PersonalData>({ required: true })
