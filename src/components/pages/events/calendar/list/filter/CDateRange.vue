@@ -30,6 +30,6 @@ const clear = () => {
   stringDate.value = ''
 }
 const save = () => {
-  stringDate.value = is.object(modelValue.value) ? `${modelValue.value.from} - ${modelValue.value.to}` : modelValue.value.toString()
+  stringDate.value = is.object(modelValue.value) ? `${modelValue.value.from} - ${modelValue.value.to}` : modelValue.value
 }
 </script>
