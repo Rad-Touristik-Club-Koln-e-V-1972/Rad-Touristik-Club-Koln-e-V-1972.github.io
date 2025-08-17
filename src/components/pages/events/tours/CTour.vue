@@ -41,6 +41,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { useQuasar } from 'quasar'
 import { mdiBike, mdiCurrencyEur, mdiGoKartTrack, mdiInformation } from '@quasar/extras/mdi-v7'
 import CGeneral from 'components/pages/events/tours/CGeneral.vue'
 import CInfo from 'components/pages/events/tours/CInfo.vue'
@@ -49,6 +50,9 @@ import CTracks from 'components/pages/events/tours/CTracks.vue'
 import type Event from 'src/models/entities/events/tours/Event'
 import useCalendarStore from 'stores/events/Calendar'
 import useDateTime from 'src/utils/DateTime'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 
 const props = defineProps<{ feeHints?: string; modelValue: Event | undefined }>()
 
