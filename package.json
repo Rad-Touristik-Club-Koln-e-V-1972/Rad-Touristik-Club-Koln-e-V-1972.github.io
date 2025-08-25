@@ -43,7 +43,7 @@
     "@eslint/js": "9.34.0",
     "@quasar/app-vite": "2.3.0",
     "@quasar/quasar-app-extension-qcalendar": "4.1.2",
-    "@types/node": "22.17.2",
+    "@types/node": "22.18.0",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.6.0",
     "@vue/language-server": "3.0.6",
