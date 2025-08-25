@@ -115,8 +115,8 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
       vite-plugin-checker:
-        specifier: 0.10.2
-        version: 0.10.2(eslint@9.34.0(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.2)(vite@6.3.5(@types/node@22.17.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.0.6(typescript@5.9.2))
+        specifier: 0.10.3
+        version: 0.10.3(eslint@9.34.0(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.2)(vite@6.3.5(@types/node@22.17.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.0.6(typescript@5.9.2))
       vite-plugin-sitemap:
         specifier: 0.8.2
         version: 0.8.2
@@ -3232,8 +3232,8 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vite-plugin-checker@0.10.2:
-    resolution: {integrity: sha512-FX9U8TnIS6AGOlqmC6O2YmkJzcZJRrjA03UF7FOhcUJ7it3HmCoxcIPMcoHliBP6EFOuNzle9K4c0JL4suRPow==}
+  vite-plugin-checker@0.10.3:
+    resolution: {integrity: sha512-f4sekUcDPF+T+GdbbE8idb1i2YplBAoH+SfRS0e/WRBWb2rYb1Jf5Pimll0Rj+3JgIYWwG2K5LtBPCXxoibkLg==}
     engines: {node: '>=14.16'}
     peerDependencies:
       '@biomejs/biome': '>=1.7'
@@ -6668,7 +6668,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-checker@0.10.2(eslint@9.34.0(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.2)(vite@6.3.5(@types/node@22.17.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.0.6(typescript@5.9.2)):
+  vite-plugin-checker@0.10.3(eslint@9.34.0(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.2)(vite@6.3.5(@types/node@22.17.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.0.6(typescript@5.9.2)):
     dependencies:
       '@babel/code-frame': 7.27.1
       chokidar: 4.0.3
