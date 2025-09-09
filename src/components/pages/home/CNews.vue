@@ -29,14 +29,14 @@
               </q-card>
             </q-expansion-item>
           </div>
-          <div v-else style="width: 60em">
+          <div v-else class="full-width">
             <div class="row no-wrap">
-              <div class="col-3">
+              <div class="col-5">
                 <q-video v-if="it.youtubeVideoId" :ratio="0.563" :src="`https://www.youtube-nocookie.com/embed/${it.youtubeVideoId}`" />
                 <q-img v-else-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
                 <d-view v-else :model-value="[it.image]" />
               </div>
-              <div class="col-auto offset-1">
+              <div class="col-auto q-px-lg" style="width: 80ch">
                 <q-card>
                   <q-card-section>
                     <span class="text-pre-wrap" v-html="it.text" />
