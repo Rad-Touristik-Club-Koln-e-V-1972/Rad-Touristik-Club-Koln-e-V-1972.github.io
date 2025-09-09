@@ -10,13 +10,14 @@
         control-color="primary"
         control-type="push"
         draggable="false"
+        :fullscreen="false"
         infinite
         padding
         swipeable
         transition-next="slide-left"
         transition-prev="slide-right"
       >
-        <q-carousel-slide v-for="it in items" :key="it.id" :name="it.id" class="column flex-center no-wrap">
+        <q-carousel-slide v-for="it in items" :key="it.id" class="column flex-center no-wrap" :fullscreen="false" :name="it.id">
           <div v-if="useQuasar().platform.is.mobile || !it.text" style="width: 20em">
             <q-video v-if="it.youtubeVideoId" :src="`https://www.youtube-nocookie.com/embed/${it.youtubeVideoId}`" />
             <q-img v-else-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
