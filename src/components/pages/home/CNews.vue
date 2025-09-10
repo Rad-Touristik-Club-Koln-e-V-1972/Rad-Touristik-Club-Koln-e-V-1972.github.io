@@ -32,12 +32,12 @@
           </div>
           <div v-else class="full-width">
             <div class="row no-wrap">
-              <div class="col-5">
+              <div class="col-3">
                 <q-video v-if="it.youtubeVideoId" :ratio="0.563" :src="`https://www.youtube-nocookie.com/embed/${it.youtubeVideoId}`" />
                 <q-img v-else-if="it.url" :src="it.image.imageUrl.toString()" style="cursor: pointer" @click="openURL(it.url.toString())" />
                 <d-view v-else :model-value="[it.image]" />
               </div>
-              <div class="col-auto q-px-lg" style="width: 80ch">
+              <div class="col-auto q-px-lg">
                 <q-card>
                   <q-card-section>
                     <span class="text-pre-wrap" v-html="it.text" />
