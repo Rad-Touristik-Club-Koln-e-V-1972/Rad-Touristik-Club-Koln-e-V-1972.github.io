@@ -11,7 +11,7 @@ export default defineStore('news', () => {
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
       .setId('c49e9b3b-cbb9-461d-bd04-6d549425f24d')
-      .setImage(new GalleryEntryBuilder().setId('cdd23a5c-1f5a-40fa-bb3e-5987791fe7ae').setImageUrl('content.rtc-koeln.de/pages/home/news/2025-09-09_IMG_6064.jpg').buildGalleryEntry())
+      .setImage(new GalleryEntryBuilder().setId('cdd23a5c-1f5a-40fa-bb3e-5987791fe7ae').setImageUrl('content.rtc-koeln.de/pages/home/news/2025-09-09_IMG_6064.avif').buildGalleryEntry())
       .setShowUntil('2025-09-28')
       .setText(
         `🌸 Ladies-only Ride im Sahrbachtal 🌸
