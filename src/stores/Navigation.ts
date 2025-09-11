@@ -33,7 +33,7 @@ import type Navigation from 'src/models/entities/navigation/Navigation'
 export default defineStore('navigation', () => {
   return {
     allNavigation: ref<Navigation[]>([
-      new NavigationBuilder().setColor('primary').setIcon(mdiAccountMultiplePlus).setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0').setTitle('Mitgliedschaft beantragen').setTo('membership-registration').buildNavigation(),
+      new NavigationBuilder().setIcon(mdiAccountMultiplePlus).setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0').setTitle('Mitgliedschaft beantragen').setTo('membership-registration').buildNavigation(),
       new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('home').buildNavigation(),
       new NavigationBuilder()
         .setChildren(
