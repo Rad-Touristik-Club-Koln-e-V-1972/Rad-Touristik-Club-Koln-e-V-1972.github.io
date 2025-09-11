@@ -4,6 +4,7 @@
       <div class="col column justify-start q-pb-md">
         <c-countdown class="col-auto" />
         <q-scroll-area class="col q-pt-md">
+          <d-write-message />
           <q-list>
             <c-navigation-entry v-for="it in navigationStore.allNavigation" :key="it.id" :model-value="it" />
           </q-list>
@@ -24,6 +25,7 @@
 <script lang="ts" setup>
 import CCountdown from 'components/MainLayout/CNavigationDrawer/CCountdown.vue'
 import CNavigationEntry from 'components/MainLayout/CNavigationDrawer/CNavigationEntry.vue'
+import DWriteMessage from 'components/MainLayout/CNavigationDrawer/DWriteMessage.vue'
 import useNavigationStore from 'stores/Navigation'
 
 const modelValue = defineModel<boolean>({ required: true })
