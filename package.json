@@ -30,7 +30,7 @@
     "jspdf": "3.0.2",
     "libphonenumber-js": "1.12.15",
     "maz-ui": "4.1.6",
-    "mime": "4.0.7",
+    "mime": "4.1.0",
     "pinia": "3.0.3",
     "quasar": "2.18.2",
     "signature_pad": "5.1.0",
