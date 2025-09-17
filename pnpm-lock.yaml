@@ -48,8 +48,8 @@ importers:
         specifier: 2.18.3
         version: 2.18.3
       signature_pad:
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       vue:
         specifier: 3.5.21
         version: 3.5.21(typescript@5.9.2)
@@ -2950,8 +2950,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  signature_pad@5.1.0:
-    resolution: {integrity: sha512-h9rIm0vZggb/wWiajLzrH0Md+YntTHIo2dUFm6mfYAIItD75yzpiIHa1HcRA9NhQqPBix2KF8TIIA9vaokomBw==}
+  signature_pad@5.1.1:
+    resolution: {integrity: sha512-BT5JJygS5BS0oV+tffPRorIud6q17bM7v/1LdQwd0o6mTqGoI25yY1NjSL99OqkekWltS4uon6p52Y8j1Zqu7g==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -6420,7 +6420,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  signature_pad@5.1.0: {}
+  signature_pad@5.1.1: {}
 
   sisteransi@1.0.5: {}
 
