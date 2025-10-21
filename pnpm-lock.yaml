@@ -12,8 +12,8 @@ importers:
         specifier: 4.1.7
         version: 4.1.7(vue@3.5.22(typescript@5.9.3))
       '@maz-ui/translations':
-        specifier: 4.1.7
-        version: 4.1.7(vue@3.5.22(typescript@5.9.3))
+        specifier: 4.2.0
+        version: 4.2.0(vue@3.5.22(typescript@5.9.3))
       '@quasar/extras':
         specifier: 1.17.0
         version: 1.17.0
@@ -548,8 +548,18 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
+  '@maz-ui/translations@4.2.0':
+    resolution: {integrity: sha512-dIjCrfRO+S4xbKMcvdd0dvJLuKLc6Y2uElQXOe8N8H3M7jWYrg8420NZ+YT/GnybiOq5ls6Zq+H6HLT5sOIIGA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: ^3.5.0
+
   '@maz-ui/utils@4.1.7':
     resolution: {integrity: sha512-pnNs6sbIuuwdFbhcy+XAwol2+txacYiz6TXoHrkQviUHQU5izfPxnsJAVdkkTj+FixltP4N3lBBXgNDsaMx2tw==}
+    engines: {node: '>=18.0.0'}
+
+  '@maz-ui/utils@4.1.8-beta.1':
+    resolution: {integrity: sha512-tJBnrH/yKMgxJmOKUiT22OLPcPD5NgFZ71nbBpSpHJeATSRupa25QQ2ADpNtu12Z/H80WGwK+H8yUoRaoDitAQ==}
     engines: {node: '>=18.0.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3902,7 +3912,14 @@ snapshots:
       '@maz-ui/utils': 4.1.7
       vue: 3.5.22(typescript@5.9.3)
 
+  '@maz-ui/translations@4.2.0(vue@3.5.22(typescript@5.9.3))':
+    dependencies:
+      '@maz-ui/utils': 4.1.8-beta.1
+      vue: 3.5.22(typescript@5.9.3)
+
   '@maz-ui/utils@4.1.7': {}
+
+  '@maz-ui/utils@4.1.8-beta.1': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
