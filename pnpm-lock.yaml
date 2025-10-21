@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.24
         version: 1.12.24
       maz-ui:
-        specifier: 4.1.7
-        version: 4.1.7(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+        specifier: 4.2.0
+        version: 4.2.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -514,12 +514,12 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@maz-ui/cli@4.1.7':
-    resolution: {integrity: sha512-HfqK4O/LIe82lHhseIrxXzqa2NPUWdnN16AgcQviPaEBAXG//HUfoiIYJP74f3fMdu9YI2PK4dr1i/NzV6vMdg==}
+  '@maz-ui/cli@4.1.8-beta.1':
+    resolution: {integrity: sha512-tKsIyjoy1mlAxECWmj9OXAzVa3GQ0QsCDTQ9pweD98xCa7FpxHSF7wIQ7BBRN4Fp3rAXiJiBGIpeKJzkuHde6A==}
     hasBin: true
 
-  '@maz-ui/icons@4.1.7':
-    resolution: {integrity: sha512-9BIXTv4fAa1nqiI5NmRN82Xgkcqe/PASz3OR/GDzyjcG5rMg83zc0hpgKVv+WtdftwTmNtoiv2TT+XeCk2WTJA==}
+  '@maz-ui/icons@4.1.8-beta.1':
+    resolution: {integrity: sha512-GHydLlDp1NxJdYGRrgkSFG9Vuvfb2OnxNt28QE98sQ/pXO0CRL+d40WybrqML0+827XFgPpHGRguw/cuXMFEIA==}
     peerDependencies:
       unplugin-vue-components: ^29.0.0
       vite-svg-loader: ^5.0.0
@@ -532,8 +532,8 @@ packages:
       vue:
         optional: true
 
-  '@maz-ui/node@4.1.7':
-    resolution: {integrity: sha512-ZoD4lIVUWwbye9t7YPUPdEhb0XpKHThjlFdNDeHnWjy1ka1mDmfh5ciyQdcdLybjxA5xVU+fZWmeOWPKPUxAFw==}
+  '@maz-ui/node@4.1.8-beta.1':
+    resolution: {integrity: sha512-CZDjZxU/za6fyWTkYn4/SeWrrpmY5omPipQDcoxkCHESv0I5lBjtD6weuknZSpCQWYUHsFoZyPBdEaGeAvqdQQ==}
     engines: {node: '>=18.0.0'}
 
   '@maz-ui/themes@4.1.7':
@@ -542,8 +542,8 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@maz-ui/translations@4.1.7':
-    resolution: {integrity: sha512-oxSZ+HoIhqUQgTMN/l5Ji82nSS3SysFIb0AYPyajYszaj9wkjkbzMuZD3764XVCSr1Vz6bYk71B+lVNM3LpqLg==}
+  '@maz-ui/themes@4.1.8-beta.1':
+    resolution: {integrity: sha512-HkCLKdlL+Li/rMElgXWKE8ad3EoiqpMzYpzxDDzZ49tC8Epq9p053UpY7u4OoSMKuLPfwWo8vxgEdaShbaVkHw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: ^3.5.0
@@ -1302,8 +1302,8 @@ packages:
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
 
-  chart.js@4.5.0:
-    resolution: {integrity: sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==}
+  chart.js@4.5.1:
+    resolution: {integrity: sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw==}
     engines: {pnpm: '>=8'}
 
   chokidar@3.6.0:
@@ -2268,8 +2268,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.1.7:
-    resolution: {integrity: sha512-Dr9/s4/YBMgGMZGBjYlLjDpHqg5R++t1osMRFXSUoLxseKuNtMNtd7swXYWtdAJE3XO/c//2ozTpf31neBIPaA==}
+  maz-ui@4.2.0:
+    resolution: {integrity: sha512-3wNibK8Aanb87xYeNhGKhuX9tuULVVzuL2RO/96ZVOgc4vC04KIORo5C0p+YdP81wbxB2SXSl5LF5xPofwE6aw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3881,10 +3881,10 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@maz-ui/cli@4.1.7(typescript@5.9.3)':
+  '@maz-ui/cli@4.1.8-beta.1(typescript@5.9.3)':
     dependencies:
       '@clack/prompts': 0.11.0
-      '@maz-ui/node': 4.1.7
+      '@maz-ui/node': 4.1.8-beta.1
       clear: 0.1.0
       commander: 14.0.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
@@ -3893,13 +3893,13 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@maz-ui/icons@4.1.7(vue@3.5.22(typescript@5.9.3))':
+  '@maz-ui/icons@4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))':
     optionalDependencies:
       vue: 3.5.22(typescript@5.9.3)
 
-  '@maz-ui/node@4.1.7':
+  '@maz-ui/node@4.1.8-beta.1':
     dependencies:
-      '@maz-ui/utils': 4.1.7
+      '@maz-ui/utils': 4.1.8-beta.1
       colorette: 2.0.20
 
   '@maz-ui/themes@4.1.7(vue@3.5.22(typescript@5.9.3))':
@@ -3907,9 +3907,9 @@ snapshots:
       '@maz-ui/utils': 4.1.7
       vue: 3.5.22(typescript@5.9.3)
 
-  '@maz-ui/translations@4.1.7(vue@3.5.22(typescript@5.9.3))':
+  '@maz-ui/themes@4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))':
     dependencies:
-      '@maz-ui/utils': 4.1.7
+      '@maz-ui/utils': 4.1.8-beta.1
       vue: 3.5.22(typescript@5.9.3)
 
   '@maz-ui/translations@4.2.0(vue@3.5.22(typescript@5.9.3))':
@@ -4782,7 +4782,7 @@ snapshots:
 
   chardet@0.7.0: {}
 
-  chart.js@4.5.0:
+  chart.js@4.5.1:
     dependencies:
       '@kurkle/color': 0.3.4
 
@@ -5758,20 +5758,20 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.1.7(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
+  maz-ui@4.2.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.9(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/cli': 4.1.7(typescript@5.9.3)
-      '@maz-ui/icons': 4.1.7(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/themes': 4.1.7(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/translations': 4.1.7(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/utils': 4.1.7
-      chart.js: 4.5.0
+      '@maz-ui/cli': 4.1.8-beta.1(typescript@5.9.3)
+      '@maz-ui/icons': 4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/themes': 4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/translations': 4.2.0(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/utils': 4.1.8-beta.1
+      chart.js: 4.5.1
       dayjs: 1.11.18
       libphonenumber-js: 1.12.24
       valibot: 1.1.0(typescript@5.9.3)
       vue: 3.5.22(typescript@5.9.3)
-      vue-chartjs: 5.3.2(chart.js@4.5.0)(vue@3.5.22(typescript@5.9.3))
+      vue-chartjs: 5.3.2(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3))
     optionalDependencies:
       vue-router: 4.6.3(vue@3.5.22(typescript@5.9.3))
     transitivePeerDependencies:
@@ -6794,9 +6794,9 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
-  vue-chartjs@5.3.2(chart.js@4.5.0)(vue@3.5.22(typescript@5.9.3)):
+  vue-chartjs@5.3.2(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3)):
     dependencies:
-      chart.js: 4.5.0
+      chart.js: 4.5.1
       vue: 3.5.22(typescript@5.9.3)
 
   vue-demi@0.14.10(vue@3.5.22(typescript@5.9.3)):
