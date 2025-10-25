@@ -33,8 +33,8 @@ importers:
         specifier: 3.0.3
         version: 3.0.3
       libphonenumber-js:
-        specifier: 1.12.24
-        version: 1.12.24
+        specifier: 1.12.25
+        version: 1.12.25
       maz-ui:
         specifier: 4.2.0
         version: 4.2.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
@@ -2191,8 +2191,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libphonenumber-js@1.12.24:
-    resolution: {integrity: sha512-l5IlyL9AONj4voSd7q9xkuQOL4u8Ty44puTic7J88CmdXkxfGsRfoVLXHCxppwehgpb/Chdb80FFehHqjN3ItQ==}
+  libphonenumber-js@1.12.25:
+    resolution: {integrity: sha512-u90tUu/SEF8b+RaDKCoW7ZNFDakyBtFlX1ex3J+VH+ElWes/UaitJLt/w4jGu8uAE41lltV/s+kMVtywcMEg7g==}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -5680,7 +5680,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libphonenumber-js@1.12.24: {}
+  libphonenumber-js@1.12.25: {}
 
   lines-and-columns@1.2.4: {}
 
@@ -5768,7 +5768,7 @@ snapshots:
       '@maz-ui/utils': 4.1.8-beta.1
       chart.js: 4.5.1
       dayjs: 1.11.18
-      libphonenumber-js: 1.12.24
+      libphonenumber-js: 1.12.25
       valibot: 1.1.0(typescript@5.9.3)
       vue: 3.5.22(typescript@5.9.3)
       vue-chartjs: 5.3.2(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3))
