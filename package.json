@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@maz-ui/themes": "4.1.7",
-    "@maz-ui/translations": "4.2.0",
+    "@maz-ui/translations": "4.2.1",
     "@quasar/extras": "1.17.0",
     "@quasar/quasar-ui-qcalendar": "4.1.2",
     "@yeger/vue-masonry-wall": "5.1.1",
