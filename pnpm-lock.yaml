@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.25
         version: 1.12.25
       maz-ui:
-        specifier: 4.2.1
-        version: 4.2.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+        specifier: 4.3.0
+        version: 4.3.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -518,8 +518,8 @@ packages:
     resolution: {integrity: sha512-oZeYKqcsuw2aqzZuSn6mN7P7dT/XSeMDr94tIaDMO//oK8kidP+PaWmKc9ahcVgWAb/X7WSPoz+gJYPbkE56rw==}
     hasBin: true
 
-  '@maz-ui/icons@4.1.8-beta.1':
-    resolution: {integrity: sha512-GHydLlDp1NxJdYGRrgkSFG9Vuvfb2OnxNt28QE98sQ/pXO0CRL+d40WybrqML0+827XFgPpHGRguw/cuXMFEIA==}
+  '@maz-ui/icons@4.3.0':
+    resolution: {integrity: sha512-VTH9PHKOEZlP1EOZQCMShOjNKMWqVj6iYfr6i7CGZ1xcZmP39SaoL3QSprtCpupVlTG1BBkflNhgZBg2yDYRVQ==}
     peerDependencies:
       unplugin-vue-components: ^29.0.0
       vite-svg-loader: ^5.0.0
@@ -536,20 +536,8 @@ packages:
     resolution: {integrity: sha512-JXerU0k61qU2dEkzpD77wtZfdEQXQhLRl/pdvY/2B3KOwvPUbzheZNCOmiewBOFBnpcX2r7a6LZw4/S1BRdklg==}
     engines: {node: '>=18.0.0'}
 
-  '@maz-ui/themes@4.2.1':
-    resolution: {integrity: sha512-otWPb8YnD3kJ7krPLx4Q6la9yZKQP+xy7049aTs8LyylIMgKN8XgbsUnIQlF53WF0qhsvv34dJcuON+TkVgDfw==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: ^3.5.0
-
   '@maz-ui/themes@4.3.0':
     resolution: {integrity: sha512-Og3rUnXlZ1dHnmhmzqHCCcwjBfvximpP4RrflHVa9sSGokyE/jijg4CnYrWQMKRLPBF8xqKPuYnUzPMNX/U8Xw==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: ^3.5.0
-
-  '@maz-ui/translations@4.2.1':
-    resolution: {integrity: sha512-l692DRaxl6GMrhpaBccEvYbjzpZ7EJKguXYeBM1JZN1XOzXkbmTski2mrp/9FP0isPAYBLfH7hOFzfveWxMbiw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: ^3.5.0
@@ -559,10 +547,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: ^3.5.0
-
-  '@maz-ui/utils@4.2.1':
-    resolution: {integrity: sha512-RK4jGoWKKvlUBxzsUafJVJdOvHsrKbHvkta4sZvWvaGPCBNWry9L5GnYLUHHibyEpKEJ429EO5ANb0xhiIouKg==}
-    engines: {node: '>=18.0.0'}
 
   '@maz-ui/utils@4.3.0':
     resolution: {integrity: sha512-f1qHDQy5JA2ESqSna4LRvzWNJYfjvORR8eZcORiMF1WyyDDrdBxdupOOSGjqA55G2JVWZlDmbla27i0IuM+NBw==}
@@ -1525,8 +1509,8 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
 
-  dayjs@1.11.18:
-    resolution: {integrity: sha512-zFBQ7WFRvVRhKcWoUh+ZA1g2HVgUbsZm9sbddh8EC5iv93sui8DVVz1Npvz+r6meo9VKfa8NyLWBsQK1VvIKPA==}
+  dayjs@1.11.19:
+    resolution: {integrity: sha512-t5EcLVS6QPBNqM2z8fakk/NKel+Xzshgt8FFKAn+qwlD1pzZWxh0nVCrvFK7ZDb6XucZeF9z8C7CBWTRIVApAw==}
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -2279,8 +2263,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.2.1:
-    resolution: {integrity: sha512-oN4E2RKRTwpsZX3IIyRzOCwHAIFmHzWiF0t7bDIh8BdFMsLIHhoszUQIyX8B3ikRgGgZUnDzLdP7BlVgmZb0cg==}
+  maz-ui@4.3.0:
+    resolution: {integrity: sha512-0MKv7G+lYpYtv94WOuWh9kHCSRyg63JAUF8cmBWPF7U+9cXhdQzqJKNY234FqIr53j+Wdu3sbKvQwn3N+xF3WQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3401,8 +3385,8 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
-  vue-chartjs@5.3.2:
-    resolution: {integrity: sha512-NrkbRRoYshbXbWqJkTN6InoDVwVb90C0R7eAVgMWcB9dPikbruaOoTFjFYHE/+tNPdIe6qdLCDjfjPHQ0fw4jw==}
+  vue-chartjs@5.3.3:
+    resolution: {integrity: sha512-jqxtL8KZ6YJ5NTv6XzrzLS7osyegOi28UGNZW0h9OkDL7Sh1396ht4Dorh04aKrl2LiSalQ84WtqiG0RIJb0tA==}
     peerDependencies:
       chart.js: ^4.1.1
       vue: ^3.0.0-0 || ^2.7.0
@@ -3903,7 +3887,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@maz-ui/icons@4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))':
+  '@maz-ui/icons@4.3.0(vue@3.5.22(typescript@5.9.3))':
     optionalDependencies:
       vue: 3.5.22(typescript@5.9.3)
 
@@ -3913,27 +3897,15 @@ snapshots:
       consola: 3.4.2
       figlet: 1.9.3
 
-  '@maz-ui/themes@4.2.1(vue@3.5.22(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.2.1
-      vue: 3.5.22(typescript@5.9.3)
-
   '@maz-ui/themes@4.3.0(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.3.0
-      vue: 3.5.22(typescript@5.9.3)
-
-  '@maz-ui/translations@4.2.1(vue@3.5.22(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.2.1
       vue: 3.5.22(typescript@5.9.3)
 
   '@maz-ui/translations@4.3.0(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.3.0
       vue: 3.5.22(typescript@5.9.3)
-
-  '@maz-ui/utils@4.2.1': {}
 
   '@maz-ui/utils@4.3.0': {}
 
@@ -5018,7 +4990,7 @@ snapshots:
       lodash: 4.17.21
       prepin: 1.0.3
 
-  dayjs@1.11.18: {}
+  dayjs@1.11.19: {}
 
   debug@2.6.9:
     dependencies:
@@ -5776,20 +5748,20 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.2.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
+  maz-ui@4.3.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.9(vue@3.5.22(typescript@5.9.3))
       '@maz-ui/cli': 4.2.1(typescript@5.9.3)
-      '@maz-ui/icons': 4.1.8-beta.1(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/themes': 4.2.1(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/translations': 4.2.1(vue@3.5.22(typescript@5.9.3))
-      '@maz-ui/utils': 4.2.1
+      '@maz-ui/icons': 4.3.0(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/themes': 4.3.0(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/translations': 4.3.0(vue@3.5.22(typescript@5.9.3))
+      '@maz-ui/utils': 4.3.0
       chart.js: 4.5.1
-      dayjs: 1.11.18
+      dayjs: 1.11.19
       libphonenumber-js: 1.12.25
       valibot: 1.1.0(typescript@5.9.3)
       vue: 3.5.22(typescript@5.9.3)
-      vue-chartjs: 5.3.2(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3))
+      vue-chartjs: 5.3.3(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3))
     optionalDependencies:
       vue-router: 4.6.3(vue@3.5.22(typescript@5.9.3))
     transitivePeerDependencies:
@@ -6812,7 +6784,7 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
-  vue-chartjs@5.3.2(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3)):
+  vue-chartjs@5.3.3(chart.js@4.5.1)(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       chart.js: 4.5.1
       vue: 3.5.22(typescript@5.9.3)
