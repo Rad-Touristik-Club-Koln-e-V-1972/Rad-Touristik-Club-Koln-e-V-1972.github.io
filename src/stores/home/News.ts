@@ -10,33 +10,20 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
-      .setId('c49e9b3b-cbb9-461d-bd04-6d549425f24d')
-      .setImage(new GalleryEntryBuilder().setId('cdd23a5c-1f5a-40fa-bb3e-5987791fe7ae').setImageUrl('content.rtc-koeln.de/pages/home/news/2025-09-09_IMG_6064.avif').buildGalleryEntry())
-      .setShowUntil('2025-09-28')
+      .setId('2a95ee4f-7eda-4b4f-a7d3-1bf158aa10a3')
+      .setImage(new GalleryEntryBuilder().setId('c4654ba8-16c1-48f9-8947-dc3f1e454818').setImageUrl('content.rtc-koeln.de/pages/home/news/signal-2025-11-03-193008.jpeg.avif').buildGalleryEntry())
+      .setShowUntil('2025-12-31')
       .setText(
-        `🌸 Ladies-only Ride im Sahrbachtal 🌸
+        `🎄 Weihnachtsfeier des RTC Köln  🚴‍♀️
 
-Lust auf Rennradfeeling, Naturgenuss und jede Menge gute Gesellschaft?
+Am 6. Dezember 2025 feiert der RTC Köln seine traditionelle Weihnachtsfeier – wieder im stimmungsvollen Café Uferglück.
+In liebevoller Atmosphäre lassen wir gemeinsam die Saison ausklingen, genießen ein festliches Menü und blicken auf viele schöne Touren, Erlebnisse und sportliche Highlights des Jahres zurück.
 
-Dann ist unsere exklusive Damen-Tour genau das Richtige:
-• 130 km Rennradspaß durch das idyllische Sahrbachtal mit ca. 1000 Hm
-• 3 Snack-Stops dank fliegendem & fahrendem Versorgungsfahrzeug
-• Begleitung durch erfahrene RTC-Fahrerinnen
-• Gemeinsamer Ausklang bei einem Bierchen oder einer Limo 🍻🥤
+Wie immer steht der Abend ganz im Zeichen unserer starken Gemeinschaft – mit guten Gesprächen, viel Lachen und dem ein oder anderen Rückblick auf die Höhepunkte der Saison.
 
-💖 Sportlich. Gesellig. Unvergesslich.
-🔹 Datum: 28.09.2025, 9.30 Uhr
-🔹 Start: Unter der Rodenkirchener Brücke linksrheinisch
-🔹 Das Tempo in der Ebene wird bei ca. 25-30 km/h. Bei Anstiegen fährt jede von uns so schnell wie sie kann. Am Ende des Anstiegs wird auf jede von Euch gewartet.
-🔹 Begrenzte Plätze – jetzt anmelden! (Diana.vialon@rtc-koeln.de)
-🔹Für die Teilnahme erheben wir einen Unkostenbeitrag von 10 € zur Deckung der Organisations- und Verpflegungskosten.
-
-P.S: Solltest du eine Breitensportlizenz haben, kannst du im Rahmen der Tour Wertungskilometer sammeln.
-Inhaberinnen einer BDR-Breitensportlizenz zahlen nur 6 € Teilnahmegebühr.
-
-Wir freuen uns auf Euch. 🫶🚴‍♀️🚴🚴‍♂️🚴‍♀️`,
+Wir freuen uns auf ein gemütliches Beisammensein mit unseren Vereinsmitgliedern, Partnerinnen und Partnern – und sagen schon jetzt:
+Danke für ein tolles Jahr voller Teamgeist, Leidenschaft und Rennradliebe! ❤️🚴‍♂️`,
       )
-      .setUrl('touren.rad-net.de/event/9975722')
       .buildNewsEntry(),
   ])
 
