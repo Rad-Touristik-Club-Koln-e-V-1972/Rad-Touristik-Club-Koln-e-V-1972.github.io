@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.26
         version: 1.12.26
       maz-ui:
-        specifier: 4.3.0
-        version: 4.3.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+        specifier: 4.3.1
+        version: 4.3.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -518,8 +518,8 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@maz-ui/cli@4.2.1':
-    resolution: {integrity: sha512-oZeYKqcsuw2aqzZuSn6mN7P7dT/XSeMDr94tIaDMO//oK8kidP+PaWmKc9ahcVgWAb/X7WSPoz+gJYPbkE56rw==}
+  '@maz-ui/cli@4.3.1':
+    resolution: {integrity: sha512-SIWC0bcW5iEcWxXqeau1XssTs9j24CpjxkwBunMiVzaA2MLTRwwJt+IfBMjf0sIm00SNOwiVjO2paJ5JLEdwhA==}
     hasBin: true
 
   '@maz-ui/icons@4.3.0':
@@ -536,8 +536,8 @@ packages:
       vue:
         optional: true
 
-  '@maz-ui/node@4.2.1':
-    resolution: {integrity: sha512-JXerU0k61qU2dEkzpD77wtZfdEQXQhLRl/pdvY/2B3KOwvPUbzheZNCOmiewBOFBnpcX2r7a6LZw4/S1BRdklg==}
+  '@maz-ui/node@4.3.1':
+    resolution: {integrity: sha512-gWyfXIpoGUBAT8U9MPtkZYa4nxiEmGHXDS/iyCKnp6fwiPUG4oP9pkfxOcbiPclFRshYCiKnqwhtIW3arb/DNw==}
     engines: {node: '>=18.0.0'}
 
   '@maz-ui/themes@4.3.0':
@@ -2280,8 +2280,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.3.0:
-    resolution: {integrity: sha512-0MKv7G+lYpYtv94WOuWh9kHCSRyg63JAUF8cmBWPF7U+9cXhdQzqJKNY234FqIr53j+Wdu3sbKvQwn3N+xF3WQ==}
+  maz-ui@4.3.1:
+    resolution: {integrity: sha512-JtGxCOMjVWWM2lE1gh67qcljU+ktDjfjgmOElMTHFh/kfOj2eBSOYHHIHeiZY4B72yxvksLdWpSFGIaeqSaWPg==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3895,10 +3895,10 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@maz-ui/cli@4.2.1(typescript@5.9.3)':
+  '@maz-ui/cli@4.3.1(typescript@5.9.3)':
     dependencies:
       '@clack/prompts': 0.11.0
-      '@maz-ui/node': 4.2.1
+      '@maz-ui/node': 4.3.1
       commander: 14.0.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
       figlet: 1.9.3
@@ -3910,7 +3910,7 @@ snapshots:
     optionalDependencies:
       vue: 3.5.24(typescript@5.9.3)
 
-  '@maz-ui/node@4.2.1':
+  '@maz-ui/node@4.3.1':
     dependencies:
       colorette: 2.0.20
       consola: 3.4.2
@@ -5785,10 +5785,10 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.3.0(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
+  maz-ui@4.3.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.9(vue@3.5.24(typescript@5.9.3))
-      '@maz-ui/cli': 4.2.1(typescript@5.9.3)
+      '@maz-ui/cli': 4.3.1(typescript@5.9.3)
       '@maz-ui/icons': 4.3.0(vue@3.5.24(typescript@5.9.3))
       '@maz-ui/themes': 4.3.0(vue@3.5.24(typescript@5.9.3))
       '@maz-ui/translations': 4.3.0(vue@3.5.24(typescript@5.9.3))
