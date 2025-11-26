@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.29
         version: 1.12.29
       maz-ui:
-        specifier: 4.3.1
-        version: 4.3.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+        specifier: 4.3.2
+        version: 4.3.2(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -517,8 +517,8 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@maz-ui/cli@4.3.1':
-    resolution: {integrity: sha512-SIWC0bcW5iEcWxXqeau1XssTs9j24CpjxkwBunMiVzaA2MLTRwwJt+IfBMjf0sIm00SNOwiVjO2paJ5JLEdwhA==}
+  '@maz-ui/cli@4.3.2':
+    resolution: {integrity: sha512-HFoSvhArqQMfJ3PRXtJz3NmcZlzkFaBS+MEyc+4tFHPsVP7V90/T2uhiH2cM0/dnjuvOUDvigVMvopXQSzlXmQ==}
     hasBin: true
 
   '@maz-ui/icons@4.3.0':
@@ -535,8 +535,8 @@ packages:
       vue:
         optional: true
 
-  '@maz-ui/node@4.3.1':
-    resolution: {integrity: sha512-gWyfXIpoGUBAT8U9MPtkZYa4nxiEmGHXDS/iyCKnp6fwiPUG4oP9pkfxOcbiPclFRshYCiKnqwhtIW3arb/DNw==}
+  '@maz-ui/node@4.3.2':
+    resolution: {integrity: sha512-Ew3l76shb2RyvnuIa+E/sw9nl+WMIYNzOUHFu9GzlCdqihRQ3BPUUAL3rMzXTCZmUA/e1bPShX94srboI0jvBg==}
     engines: {node: '>=18.0.0'}
 
   '@maz-ui/themes@4.3.0':
@@ -1819,8 +1819,8 @@ packages:
   fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
 
-  figlet@1.9.3:
-    resolution: {integrity: sha512-majPgOpVtrZN1iyNGbsUP6bOtZ6eaJgg5HHh0vFvm5DJhh8dc+FJpOC4GABvMZ/A7XHAJUuJujhgUY/2jPWgMA==}
+  figlet@1.9.4:
+    resolution: {integrity: sha512-uN6QE+TrzTAHC1IWTyrc4FfGo2KH/82J8Jl1tyKB7+z5DBit/m3D++Iu5lg91qJMnQQ3vpJrj5gxcK/pk4R9tQ==}
     engines: {node: '>= 17.0.0'}
     hasBin: true
 
@@ -2266,8 +2266,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.3.1:
-    resolution: {integrity: sha512-JtGxCOMjVWWM2lE1gh67qcljU+ktDjfjgmOElMTHFh/kfOj2eBSOYHHIHeiZY4B72yxvksLdWpSFGIaeqSaWPg==}
+  maz-ui@4.3.2:
+    resolution: {integrity: sha512-99VsAOuP2iAPn9Sz08v8agFia9QXvL5QRWjLB2VWMFffblNDtGf8wMf4XbBnx09UtXev2qpwTNpC9X/8z6vr8Q==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3881,13 +3881,13 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@maz-ui/cli@4.3.1(typescript@5.9.3)':
+  '@maz-ui/cli@4.3.2(typescript@5.9.3)':
     dependencies:
       '@clack/prompts': 0.11.0
-      '@maz-ui/node': 4.3.1
+      '@maz-ui/node': 4.3.2
       commander: 14.0.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      figlet: 1.9.3
+      figlet: 1.9.4
       tinycolor2: 1.6.0
     transitivePeerDependencies:
       - typescript
@@ -3896,11 +3896,11 @@ snapshots:
     optionalDependencies:
       vue: 3.5.24(typescript@5.9.3)
 
-  '@maz-ui/node@4.3.1':
+  '@maz-ui/node@4.3.2':
     dependencies:
       colorette: 2.0.20
       consola: 3.4.2
-      figlet: 1.9.3
+      figlet: 1.9.4
 
   '@maz-ui/themes@4.3.0(vue@3.5.24(typescript@5.9.3))':
     dependencies:
@@ -5325,7 +5325,7 @@ snapshots:
 
   fflate@0.8.2: {}
 
-  figlet@1.9.3:
+  figlet@1.9.4:
     dependencies:
       commander: 14.0.2
 
@@ -5754,10 +5754,10 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.3.1(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
+  maz-ui@4.3.2(typescript@5.9.3)(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.9(vue@3.5.24(typescript@5.9.3))
-      '@maz-ui/cli': 4.3.1(typescript@5.9.3)
+      '@maz-ui/cli': 4.3.2(typescript@5.9.3)
       '@maz-ui/icons': 4.3.0(vue@3.5.24(typescript@5.9.3))
       '@maz-ui/themes': 4.3.0(vue@3.5.24(typescript@5.9.3))
       '@maz-ui/translations': 4.3.0(vue@3.5.24(typescript@5.9.3))
