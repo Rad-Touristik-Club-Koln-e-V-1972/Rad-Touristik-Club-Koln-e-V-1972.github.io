@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "quasar build",
-    "predev": "corepack use pnpm@* && pnpm lint",
+    "predev": "corepack use pnpm@latest && pnpm lint",
     "dev": "quasar dev",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "quasar prepare",
