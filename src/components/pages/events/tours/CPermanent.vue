@@ -2,26 +2,28 @@
   <q-card style="width: 40em">
     <q-card-section v-if="!props.modelValue.active" class="justify-center text-primary text-h6">! Zur Zeit nicht verfügbar !</q-card-section>
     <q-card :class="props.modelValue.active ? '' : 'disabled'">
-      <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
-      <q-separator />
+      <q-card-section class="bg-primary text-accent text-h6">
+        {{ props.modelValue.title }}
+      </q-card-section>
       <q-card-section>
-        <q-markup-table flat>
+        <q-markup-table :dense="$q.platform.is.mobile" flat>
           <tbody>
             <tr>
               <td class="text-right">Strecke:</td>
               <td>{{ props.modelValue.length }} km</td>
+              <td class="text-right"><d-donation :model-value="props.modelValue.donations" /></td>
             </tr>
             <tr>
               <td class="text-right">Höhenmeter:</td>
-              <td>ca. {{ props.modelValue.height }} hm</td>
+              <td colspan="2">ca. {{ props.modelValue.height }} hm</td>
             </tr>
             <tr>
               <td class="text-right">Profil:</td>
-              <td>{{ props.modelValue.profile }}</td>
+              <td colspan="2">{{ props.modelValue.profile }}</td>
             </tr>
             <tr>
               <td class="text-right">Kontrollen:</td>
-              <td>
+              <td colspan="2">
                 <dl class="my-1">
                   <div v-for="it in props.modelValue.controls" :key="it.id">
                     <dt>
@@ -37,9 +39,9 @@
                 </dl>
               </td>
             </tr>
-            <tr>
+            <tr v-if="Object.keys(props.modelValue.urls).length">
               <td class="text-right">Links:</td>
-              <td>
+              <td colspan="2">
                 <ul class="mt-1">
                   <li v-for="(it, key) in props.modelValue.urls" :key class="mb-1">
                     <a :href="it.toString()" target="_blank">{{ key }}</a>
@@ -49,7 +51,7 @@
             </tr>
             <tr>
               <td class="text-no-wrap text-right">Letzte Änderung:</td>
-              <td>{{ useDateTime().format(props.modelValue.lastChange) }}</td>
+              <td colspan="2">{{ useDateTime().format(props.modelValue.lastChange) }}</td>
             </tr>
           </tbody>
         </q-markup-table>
@@ -65,8 +67,13 @@
 </template>
 
 <script lang="ts" setup>
+import { useQuasar } from 'quasar'
+import DDonation from 'components/pages/DDonation.vue'
 import type Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
+
+// noinspection LocalVariableNamingConventionJS
+const $q = useQuasar()
 
 const props = defineProps<{ modelValue: Permanent }>()
 </script>
