@@ -2,6 +2,7 @@ import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
 import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
 import EEvent from 'src/models/enums/EEvent'
 import EProfile from 'src/models/enums/events/EProfile'
+import DonationBuilder from 'src/models/builder/DonationBuilder'
 
 export default [
   new PermanentBuilder()
@@ -24,6 +25,23 @@ export default [
         .setZipCode('53359')
         .buildControl(),
     )
+    .setDonations(
+      new DonationBuilder()
+        .setId('5889e9e2-83e7-4a52-b79f-522a9b1aacdf')
+        .setText(
+          `Volksbank Köln Bonn eG
+IBAN: DE73 3806 0186 66011910 14
+BIC: GENODED1BRS`,
+        )
+        .setTitle('Bankverbindung')
+        .buildDonation(),
+      new DonationBuilder()
+        .setId('a8811f0f-2468-4035-a5de-983617e127d4')
+        .setImageUrl('content.rtc-koeln.de/pages/events/tours/permanents/Sahrbach_Panoramarunde_Donation_QRCode.png.avif')
+        .setTitle('PayPal')
+        .setUrl('www.paypal.com/ncp/payment/QKZ3XRRMLZ56E')
+        .buildDonation(),
+    )
     .setHeight(1000)
     .setId('c9632c9a-dcdb-4d41-a621-c6a0badc1435')
     .setLastChange('2025-09-12')
@@ -42,12 +60,8 @@ Highlights:
 ✅ Nach ca. 40 km bietet sich ein kleiner Stopp in der Bäckerei am Rheinbacher Bahnhof an
 ✅ Kulinarischer Tipp bei km 80 – unbedingt ausprobieren: Das „Café in der alten Scheune“ in Hilberath! Bester 🍰 Kuchen 🫶 (montags geschlossen)
 
-📍 Start & Infos: https://touren.rad-net.de/vrqdvjyFWdQQ2rbMA
-
-Einfach 5 Euro auf das Konto überweisen:
-Volksbank Köln Bonn eG
-IBAN: DE73 3806 0186 66011910 14
-BIC: GENODED1BRS
+Die Startgebühr beträgt 5 Euro.
+Diese kann über den Bezahlbutton gezahlt werden.
 
 Und anschließend gefahrene Strecke und GC-Tourenapp Mailadresse an den Verantwortlichen zweiter.vorsitz@rtc-koeln.de schicken.
 
@@ -56,9 +70,6 @@ Schnapp dir dein Rennrad und entdecke eine der schönsten Strecken der Region!
 Viel Spaß auf der Sahrbach Panoramarunde!`,
     )
     .setTitle('Sahrbach Panoramarunde')
-    .setUrls({
-      'Start & Infos': new URL('https://touren.rad-net.de/vrqdvjyFWdQQ2rbMA'),
-    })
     .buildPermanent(),
   new PermanentBuilder()
     .setActive(false)

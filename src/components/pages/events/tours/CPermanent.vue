@@ -2,8 +2,12 @@
   <q-card style="width: 40em">
     <q-card-section v-if="!props.modelValue.active" class="justify-center text-primary text-h6">! Zur Zeit nicht verfügbar !</q-card-section>
     <q-card :class="props.modelValue.active ? '' : 'disabled'">
-      <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
-      <q-separator />
+      <q-card-section class="bg-primary text-accent text-h6">
+        {{ props.modelValue.title }}
+      </q-card-section>
+      <q-card-actions align="right" v-if="props.modelValue.donations.length">
+        <d-donation :model-value="props.modelValue.donations" />
+      </q-card-actions>
       <q-card-section>
         <q-markup-table flat>
           <tbody>
@@ -37,7 +41,7 @@
                 </dl>
               </td>
             </tr>
-            <tr>
+            <tr v-if="Object.keys(props.modelValue.urls).length">
               <td class="text-right">Links:</td>
               <td>
                 <ul class="mt-1">
@@ -65,6 +69,7 @@
 </template>
 
 <script lang="ts" setup>
+import DDonation from 'components/pages/DDonation.vue'
 import type Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
 

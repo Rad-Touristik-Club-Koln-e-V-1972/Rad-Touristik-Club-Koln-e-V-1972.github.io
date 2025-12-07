@@ -1,4 +1,5 @@
 import ABuilder from 'src/models/builder/ABuilder'
+import type Donation from 'src/models/entities/Donation'
 import type Control from 'src/models/entities/events/tours/Control'
 import Tour from 'src/models/entities/events/tours/Tour'
 import type EEvent from 'src/models/enums/EEvent'
@@ -22,6 +23,12 @@ export default class TourBuilder extends ABuilder {
 
   setControls = (...value: Control[]): this => {
     this.tour.controls = value
+
+    return this
+  }
+
+  setDonations = (...value: Donation[]): this => {
+    this.tour.donations = value
 
     return this
   }
