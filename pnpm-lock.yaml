@@ -82,8 +82,8 @@ importers:
         specifier: 14.6.0
         version: 14.6.0(eslint-plugin-vue@10.6.2(@typescript-eslint/parser@8.39.1(eslint@9.39.1(jiti@2.5.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.5.1))(vue-eslint-parser@10.2.0(eslint@9.39.1(jiti@2.5.1))))(eslint@9.39.1(jiti@2.5.1))(typescript@5.9.3)
       '@vue/language-server':
-        specifier: 3.1.6
-        version: 3.1.6(typescript@5.9.3)
+        specifier: 3.1.7
+        version: 3.1.7(typescript@5.9.3)
       autoprefixer:
         specifier: 10.4.22
         version: 10.4.22(postcss@8.5.6)
@@ -1038,14 +1038,22 @@ packages:
       typescript:
         optional: true
 
-  '@vue/language-server@3.1.6':
-    resolution: {integrity: sha512-PsdiCq8U2LnBKITMwCYnUWuIWkTwzKsByjnWXOWJX1+mhCCvH3aNNr9GvKtRLc0Co2paSE34VBdqzkaLXgNegg==}
+  '@vue/language-core@3.1.7':
+    resolution: {integrity: sha512-xbJjFptmuTQD68a3/P70HDb+js61BxYvB3+/h5BflqRNV5dvwH1TZsSsTvMKwFx+QNQf0ndOvD3iih3fHXZYzQ==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@vue/language-server@3.1.7':
+    resolution: {integrity: sha512-yRXvH4YpjxMlnv0JvRMKncOpUmVKkIJjn9z5fHnq2auaSvQge2s/N4uzE0+dmW7NPJk4S+l/fb705wZB8WchlQ==}
     hasBin: true
     peerDependencies:
       typescript: '*'
 
-  '@vue/language-service@3.1.6':
-    resolution: {integrity: sha512-xXGfZnqvrfI4wr9t91qdqltq7E3trxd/2nUeLcVZGYABgIiIBtkajy7TvGPcCAXInPOslpMcQ3unBFX4VivInA==}
+  '@vue/language-service@3.1.7':
+    resolution: {integrity: sha512-RJtrY5IIdHqE0ek9sfVn0p+CHPy5Vu5CMYthZY8V5G5jIVlWjwlapXMZLkbzksHVEMQ+l7XGKhgSjt0Ml4aNgw==}
 
   '@vue/reactivity@3.5.25':
     resolution: {integrity: sha512-5xfAypCQepv4Jog1U4zn8cZIcbKKFka3AgWHEFQeK65OW+Ys4XybP6z2kKgws4YB43KGpqp5D/K3go2UPPunLA==}
@@ -1064,8 +1072,8 @@ packages:
   '@vue/shared@3.5.25':
     resolution: {integrity: sha512-AbOPdQQnAnzs58H2FrrDxYj/TJfmeS2jdfEEhgiKINy+bnOANmVizIEgq1r+C5zsbs6l1CCQxtcj71rwNQ4jWg==}
 
-  '@vue/typescript-plugin@3.1.6':
-    resolution: {integrity: sha512-SYfiWrw8eqxyaTitXLyy81eZkejTnIvaG4gMDR5KLdIXve90fq35M7eQWvl95ZexJ65VgJsig2ApFjEKvuMDGQ==}
+  '@vue/typescript-plugin@3.1.7':
+    resolution: {integrity: sha512-O3RcVIf2SOkhrFRC/B4Sy4nSpMhZZyCFFk4KCn2xoBqNtRmJZ8Sl6hIqWt/cM6opKk6ZAOnhcKgyFEUoDZkQVQ==}
 
   '@yeger/debounce@2.0.17':
     resolution: {integrity: sha512-wz9ARkGnY25yToyaZaCz887aRxsIg96uI/waBLkV/Qfh9/VHP+C6uAFpOg8FPba0KMS2QYo2dhCOqPvCoDigyA==}
@@ -4463,19 +4471,31 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@vue/language-server@3.1.6(typescript@5.9.3)':
+  '@vue/language-core@3.1.7(typescript@5.9.3)':
+    dependencies:
+      '@volar/language-core': 2.4.26
+      '@vue/compiler-dom': 3.5.25
+      '@vue/shared': 3.5.25
+      alien-signals: 3.0.0
+      muggle-string: 0.4.1
+      path-browserify: 1.0.1
+      picomatch: 4.0.3
+    optionalDependencies:
+      typescript: 5.9.3
+
+  '@vue/language-server@3.1.7(typescript@5.9.3)':
     dependencies:
       '@volar/language-server': 2.4.26
-      '@vue/language-core': 3.1.6(typescript@5.9.3)
-      '@vue/language-service': 3.1.6(typescript@5.9.3)
-      '@vue/typescript-plugin': 3.1.6(typescript@5.9.3)
+      '@vue/language-core': 3.1.7(typescript@5.9.3)
+      '@vue/language-service': 3.1.7(typescript@5.9.3)
+      '@vue/typescript-plugin': 3.1.7(typescript@5.9.3)
       typescript: 5.9.3
       vscode-uri: 3.1.0
 
-  '@vue/language-service@3.1.6(typescript@5.9.3)':
+  '@vue/language-service@3.1.7(typescript@5.9.3)':
     dependencies:
       '@volar/language-service': 2.4.26
-      '@vue/language-core': 3.1.6(typescript@5.9.3)
+      '@vue/language-core': 3.1.7(typescript@5.9.3)
       '@vue/shared': 3.5.25
       path-browserify: 1.0.1
       volar-service-css: 0.0.67(@volar/language-service@2.4.26)
@@ -4514,10 +4534,10 @@ snapshots:
 
   '@vue/shared@3.5.25': {}
 
-  '@vue/typescript-plugin@3.1.6(typescript@5.9.3)':
+  '@vue/typescript-plugin@3.1.7(typescript@5.9.3)':
     dependencies:
       '@volar/typescript': 2.4.26
-      '@vue/language-core': 3.1.6(typescript@5.9.3)
+      '@vue/language-core': 3.1.7(typescript@5.9.3)
       '@vue/shared': 3.5.25
       path-browserify: 1.0.1
     transitivePeerDependencies:
