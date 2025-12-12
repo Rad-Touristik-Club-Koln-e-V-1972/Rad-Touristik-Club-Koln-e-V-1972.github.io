@@ -46,7 +46,7 @@
     "@types/node": "24.10.2",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.6.0",
-    "@vue/language-server": "3.1.7",
+    "@vue/language-server": "3.1.8",
     "autoprefixer": "10.4.22",
     "commitlint": "20.2.0",
     "eslint": "9.39.1",
