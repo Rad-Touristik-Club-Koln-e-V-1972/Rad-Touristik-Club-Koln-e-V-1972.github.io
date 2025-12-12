@@ -116,13 +116,13 @@ importers:
         version: 5.9.3
       vite-plugin-checker:
         specifier: 0.12.0
-        version: 0.12.0(eslint@9.39.1(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.1.6(typescript@5.9.3))
+        version: 0.12.0(eslint@9.39.1(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.1.8(typescript@5.9.3))
       vite-plugin-sitemap:
         specifier: 0.8.2
         version: 0.8.2
       vue-tsc:
-        specifier: 3.1.6
-        version: 3.1.6(typescript@5.9.3)
+        specifier: 3.1.8
+        version: 3.1.8(typescript@5.9.3)
 
 packages:
 
@@ -1022,14 +1022,6 @@ packages:
       eslint: ^9.10.0
       eslint-plugin-vue: ^9.28.0 || ^10.0.0
       typescript: '>=4.8.4'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  '@vue/language-core@3.1.6':
-    resolution: {integrity: sha512-F3BIvDVyyj+6Sgl9Ev9zsb/DJ48rrH2EiI5NnIEpJKo7Yk8v0n2QjfG7/RYyFhYSMOJcsf6aAt5hx4JaNbhKbg==}
-    peerDependencies:
-      typescript: '*'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -3420,8 +3412,8 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  vue-tsc@3.1.6:
-    resolution: {integrity: sha512-h5mMNGIDI+WMZxTeuYcpfSeDtBIiHXAg3qsrt65H4vcFTYmuM1THNHMzlnDvD8kX0fwLuf6auxWP340bH/zcpw==}
+  vue-tsc@3.1.8:
+    resolution: {integrity: sha512-deKgwx6exIHeZwF601P1ktZKNF0bepaSN4jBU3AsbldPx9gylUc1JDxYppl82yxgkAgaz0Y0LCLOi+cXe9HMYA==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -4452,18 +4444,6 @@ snapshots:
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
-
-  '@vue/language-core@3.1.6(typescript@5.9.3)':
-    dependencies:
-      '@volar/language-core': 2.4.26
-      '@vue/compiler-dom': 3.5.25
-      '@vue/shared': 3.5.25
-      alien-signals: 3.0.0
-      muggle-string: 0.4.1
-      path-browserify: 1.0.1
-      picomatch: 4.0.3
-    optionalDependencies:
-      typescript: 5.9.3
 
   '@vue/language-core@3.1.8(typescript@5.9.3)':
     dependencies:
@@ -6668,7 +6648,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-checker@0.12.0(eslint@9.39.1(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.1.6(typescript@5.9.3)):
+  vite-plugin-checker@0.12.0(eslint@9.39.1(jiti@2.5.1))(optionator@0.9.4)(typescript@5.9.3)(vite@7.1.5(@types/node@24.10.2)(jiti@2.5.1)(sass-embedded@1.90.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.1))(vue-tsc@3.1.8(typescript@5.9.3)):
     dependencies:
       '@babel/code-frame': 7.27.1
       chokidar: 4.0.3
@@ -6683,7 +6663,7 @@ snapshots:
       eslint: 9.39.1(jiti@2.5.1)
       optionator: 0.9.4
       typescript: 5.9.3
-      vue-tsc: 3.1.6(typescript@5.9.3)
+      vue-tsc: 3.1.8(typescript@5.9.3)
 
   vite-plugin-sitemap@0.8.2: {}
 
@@ -6830,10 +6810,10 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.25(typescript@5.9.3)
 
-  vue-tsc@3.1.6(typescript@5.9.3):
+  vue-tsc@3.1.8(typescript@5.9.3):
     dependencies:
       '@volar/typescript': 2.4.26
-      '@vue/language-core': 3.1.6(typescript@5.9.3)
+      '@vue/language-core': 3.1.8(typescript@5.9.3)
       typescript: 5.9.3
 
   vue@3.5.25(typescript@5.9.3):
