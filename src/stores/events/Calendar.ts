@@ -1,6 +1,6 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
-import _2025 from './calendar/2025'
+import _2026 from './calendar/2026'
 import EEvent from 'src/models/enums/EEvent'
 import type Event from 'src/models/entities/events/calendar/Event'
 import useCalendar from 'src/utils/Calendar'
@@ -11,7 +11,7 @@ export default defineStore('calendar', () => {
   const dateTime = useDateTime()
 
   const events = ref<Record<string, Event[]>>({
-    2025: [..._2025, ...calendar.getHolidays(2025)],
+    2026: [..._2026, ...calendar.getHolidays(2026)],
   })
 
   const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))
