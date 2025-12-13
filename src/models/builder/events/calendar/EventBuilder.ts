@@ -69,13 +69,13 @@ export default class EventBuilder extends ABuilder {
         color = 'green'
         break
       case EEvent.Permanente:
-        color = 'red'
+        color = 'red-14'
         break
       case EEvent.RTF:
         color = 'deep-purple'
         break
       case EEvent.Veranstaltung:
-        color = 'pink darken-3'
+        color = 'pink-3'
         break
       case EEvent.RTC:
       case EEvent.Vereinsfahrt:
