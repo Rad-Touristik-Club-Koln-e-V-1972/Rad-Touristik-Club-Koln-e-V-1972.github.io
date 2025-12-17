@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.31
         version: 1.12.31
       maz-ui:
-        specifier: 4.3.2
-        version: 4.3.2(typescript@5.9.3)(vue-router@4.6.4(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3))
+        specifier: 4.3.3
+        version: 4.3.3(typescript@5.9.3)(vue-router@4.6.4(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -2262,8 +2262,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.3.2:
-    resolution: {integrity: sha512-99VsAOuP2iAPn9Sz08v8agFia9QXvL5QRWjLB2VWMFffblNDtGf8wMf4XbBnx09UtXev2qpwTNpC9X/8z6vr8Q==}
+  maz-ui@4.3.3:
+    resolution: {integrity: sha512-oFHdDV/dJA16qUE6/Mdf30CgVmShMPQqz7le8taZzBeFD+53okIykzF6eABGehzD3pppLx9qp9sRhG5wxm0PKw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3202,8 +3202,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  valibot@1.1.0:
-    resolution: {integrity: sha512-Nk8lX30Qhu+9txPYTwM0cFlWLdPFsFr6LblzqIySfbZph9+BFsAHsNvHOymEviUepeIW6KFHzpX8TKhbptBXXw==}
+  valibot@1.2.0:
+    resolution: {integrity: sha512-mm1rxUsmOxzrwnX5arGS+U4T25RdvpPjPN4yR0u9pUBov9+zGVtO84tif1eY4r6zWxVxu3KzIyknJy3rxfRZZg==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -5743,7 +5743,7 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.3.2(typescript@5.9.3)(vue-router@4.6.4(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3)):
+  maz-ui@4.3.3(typescript@5.9.3)(vue-router@4.6.4(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.9(vue@3.5.25(typescript@5.9.3))
       '@maz-ui/cli': 4.3.2(typescript@5.9.3)
@@ -5754,7 +5754,7 @@ snapshots:
       chart.js: 4.5.1
       dayjs: 1.11.19
       libphonenumber-js: 1.12.31
-      valibot: 1.1.0(typescript@5.9.3)
+      valibot: 1.2.0(typescript@5.9.3)
       vue: 3.5.25(typescript@5.9.3)
       vue-chartjs: 5.3.3(chart.js@4.5.1)(vue@3.5.25(typescript@5.9.3))
     optionalDependencies:
@@ -6633,7 +6633,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  valibot@1.1.0(typescript@5.9.3):
+  valibot@1.2.0(typescript@5.9.3):
     optionalDependencies:
       typescript: 5.9.3
 
