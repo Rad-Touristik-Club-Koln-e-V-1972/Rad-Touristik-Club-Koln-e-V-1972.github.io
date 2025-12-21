@@ -2,8 +2,8 @@
   <q-card flat>
     <q-card-section class="bg-primary text-accent text-h6">Der RTC Köln e.V. bietet euch {{ permanents.length }} Permanente</q-card-section>
     <q-card-section class="text-subtitle1">
-      Wir haben {{ permanents.length }} anspruchsvolle und landschaftlich reizvolle Strecken ausgearbeitet, die in der Rennradsaison (auch im Winter) alleine oder in der Gruppe und nach eigenem Einschätzungsvermögen
-      abgefahren werden können.
+      Wir haben {{ permanents.length }} anspruchsvolle und landschaftlich reizvolle Strecke{{ permanents.length > 1 ? 'n' : '' }} ausgearbeitet, die in der Rennradsaison (auch im Winter) alleine oder in der Gruppe und
+      nach eigenem Einschätzungsvermögen abgefahren werden k{{ permanents.length > 1 ? 'önne' : 'an' }}n.
     </q-card-section>
     <q-card-section>
       <div class="justify-center q-gutter-lg row">
