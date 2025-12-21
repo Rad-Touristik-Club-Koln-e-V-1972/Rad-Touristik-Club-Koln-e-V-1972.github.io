@@ -10,8 +10,13 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
+      .setId('03d757b9-f598-430d-9550-c0979d4a8c51')
+      .setImage(new GalleryEntryBuilder().setId('48e2c0f8-b016-4203-9e34-c4e55a396c56').setImageUrl('content.rtc-koeln.de/pages/news/signal-2025-12-17-192330.jpeg.avif').buildGalleryEntry())
+      .setShowUntil('2025-12-31')
+      .buildNewsEntry(),
+    new NewsEntryBuilder()
       .setId('2a95ee4f-7eda-4b4f-a7d3-1bf158aa10a3')
-      .setImage(new GalleryEntryBuilder().setId('c4654ba8-16c1-48f9-8947-dc3f1e454818').setImageUrl('content.rtc-koeln.de/pages/home/news/signal-2025-11-03-193008.jpeg.avif').buildGalleryEntry())
+      .setImage(new GalleryEntryBuilder().setId('c4654ba8-16c1-48f9-8947-dc3f1e454818').setImageUrl('content.rtc-koeln.de/pages/news/signal-2025-11-03-193008.jpeg.avif').buildGalleryEntry())
       .setShowUntil('2025-12-31')
       .setText(
         `🎄 Weihnachtsfeier des RTC Köln  🚴‍♀️
