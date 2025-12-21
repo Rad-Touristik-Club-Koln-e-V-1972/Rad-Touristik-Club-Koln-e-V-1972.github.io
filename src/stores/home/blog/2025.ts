@@ -2,6 +2,62 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('0468dfa8-2cbf-4952-997a-389a8370710f')
+    .setDate('2025-12-06')
+    .setId('ab95089c-d9c3-4dcc-9675-45c684cba407')
+    .setText(
+      `Liebe RTCler:innen,
+
+gestern, am 6. Dezember, durften wir unsere diesjährige Weihnachtsfeier im wunderschön dekorierten Café Uferglück in Köln-Poll feiern.
+47 folgten unserer Einladung.
+Und als dann noch der Nikolaus dazukam, waren wir insgesamt 48 Personen.
+Wir waren sogar so viele, dass einige Plätze auf der Terrasse genutzt wurden.
+Zum Glück war es nicht zu kalt – und irgendwie hatte das Ganze sogar etwas wunderbar Romantisches.
+
+Gleich zu Beginn stimmte uns Frank in der Rolle des Knecht Ruprecht mit ein paar herzlichen Worten ein.
+Anschließend durfte ich meine Rede halten, in der ich über Dankbarkeit sprach.
+Und das bin ich wirklich.
+Ich habe in diesem Jahr gespürt, wie wertvoll unsere Gemeinschaft ist: Wir stehen füreinander ein.
+Für dieses Miteinander bin ich zutiefst dankbar.
+
+Danach blickte ich auf einige Highlights unseres RTC-Jahres zurück, bevor ich an unseren Sportwart Manni übergab.
+
+Doch dann passierte etwas „völlig Unerwartetes“💫: Kaum wollte Manni mit seiner Rede beginnen, ertönte eine laute Glocke – und der Nikolaus betrat das Café! Es war schließlich der 6. Dezember.😍
+Der Nikolaus – in Wahrheit der lieber Willi, ein Schauspieler mit Herz und Humor – übernahm die Vorstellung der Vereinsmeisterschaft.
+Mit seiner herrlich witzigen und kurzweiligen Art ehrte er die Plätze 20 bis 1. Ein absolutes Highlight des Abends!
+
+*Vereinsmeister 2025 wurde Jürgen Kosmalla* – herzlichen Glückwunsch, lieber Jürgen, du hast dir diesen Titel wirklich verdient!🏆🥇
+Die weiteren Podiumsplätze gingen an *Diana, Manni, Tobias und Albert* – auch euch (und mir 🙈🤣) herzlichen Glückwunsch!🍾
+
+Im Anschluss wurde der *Preis des Sportwarts* verliehen.
+Ich war fest überzeugt, dass eine liebe Radsportkollegin diesen Preis erhalten würde – so wurde es mir auch vorher von Manni gesagt.
+Umso überraschter, verblüffter und tief berührter war ich, als plötzlich ich aufgerufen wurde.
+Damit hatte ich wirklich überhaupt nicht gerechnet.
+Danke von Herzen für diese besondere Anerkennung, lieber Manni.🫶
+
+Danach durfte ich selbst den *Preis der Präsidentin* vergeben – an einen Menschen, der sich auf herzige, stille und beständige Weise für unser Vereinsleben engagiert:
+*Liebe Uschi, dieser Preis gehört dir.* 🍾
+
+Nach ein paar abschließenden Worten wurde das köstliche dreigängige Menü serviert – teilweise sogar liebevoll in unseren Vereinsfarben Orange und Schwarz.
+😉 ist das jemanden aufgefallen? 🤔
+
+Das Café - so denke ich - war bis ins Detail stimmungsvoll geschmückt und mit viel Liebe vorbereitet.
+
+Für mich persönlich war dieser Abend etwas ganz Besonderes.
+Dass so viele liebe Menschen gekommen sind – und dass ihr mir so viele warme und wertschätzende Worte geschenkt habt über die Dekoration, die Vorbereitungen und die vielen kleinen Details – hat mich tief berührt.🧡
+Es fühlte sich an wie eine Anerkennung für die Arbeit des gesamten Vorstands im vergangenen Jahr.
+Auch dafür bin ich von Herzen dankbar.
+
+Es war ein wunderschöner, herzlicher Weihnachtsabend – voller Lachen, Wärme und echter Gemeinschaft.
+
+Danke an euch alle.
+Eure 1. Vorsitzende
+D. 🫶
+`,
+    )
+    .setTitle('Weihnachtsfeier RTC Köln e.V. 🎄')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('8a9a949d-20b8-4a7f-9534-5ed955fe59ab')
     .setDate('2025-07-13')
     .setId('92891e75-910a-495f-9455-bab699f1c4b9')
