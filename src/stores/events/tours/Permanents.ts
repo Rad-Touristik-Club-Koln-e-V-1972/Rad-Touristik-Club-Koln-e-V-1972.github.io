@@ -67,7 +67,7 @@ Highlights:
 Die Startgebühr beträgt 5 Euro.
 Diese kann über den Bezahlbutton gezahlt werden.
 
-Und anschließend gefahrene Strecke und GC-Tourenapp Mailadresse an den Verantwortlichen zweiter.vorsitz@rtc-koeln.de schicken.
+Und anschließend gefahrene Strecke und GC-Tourenapp Mailadresse an den Verantwortlichen radchaot@gmail.com schicken.
 
 Schnapp dir dein Rennrad und entdecke eine der schönsten Strecken der Region!
 
