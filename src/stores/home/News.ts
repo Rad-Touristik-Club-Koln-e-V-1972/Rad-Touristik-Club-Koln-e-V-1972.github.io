@@ -10,24 +10,37 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
-      .setId('03d757b9-f598-430d-9550-c0979d4a8c51')
-      .setImage(new GalleryEntryBuilder().setId('48e2c0f8-b016-4203-9e34-c4e55a396c56').setImageUrl('content.rtc-koeln.de/pages/news/signal-2025-12-17-192330.jpeg.avif').buildGalleryEntry())
-      .setShowUntil('2025-12-31')
+      .setId('c42771dc-b94a-4ff0-94c3-b4e518e874cd')
+      .setImage(new GalleryEntryBuilder().setId('3dbb3b2b-3c8d-4874-8994-a6eff62ab39b').setImageUrl('content.rtc-koeln.de/pages/news/IMG_0102.jpg.avif').buildGalleryEntry())
+      .setShowUntil('2026-01-31')
       .buildNewsEntry(),
     new NewsEntryBuilder()
-      .setId('2a95ee4f-7eda-4b4f-a7d3-1bf158aa10a3')
-      .setImage(new GalleryEntryBuilder().setId('c4654ba8-16c1-48f9-8947-dc3f1e454818').setImageUrl('content.rtc-koeln.de/pages/news/signal-2025-11-03-193008.jpeg.avif').buildGalleryEntry())
-      .setShowUntil('2025-12-31')
+      .setId('f1105474-db24-499f-97f1-bb1b4b72612e')
+      .setImage(new GalleryEntryBuilder().setId('bb07de97-b2d8-4075-b2b2-337c229faebe').setImageUrl('content.rtc-koeln.de/pages/news/signal-2026-01-01-165641.jpg.avif').buildGalleryEntry())
+      .setShowUntil('2026-05-31')
       .setText(
-        `🎄 Weihnachtsfeier des RTC Köln  🚴‍♀️
+        `NEU ab 1. Januar 2026 – 3 RTC-Köln-Touren fahren & 100 €-Gutschein gewinnen!
 
-Am 6. Dezember 2025 feiert der RTC Köln seine traditionelle Weihnachtsfeier – wieder im stimmungsvollen Café Uferglück.
-In liebevoller Atmosphäre lassen wir gemeinsam die Saison ausklingen, genießen ein festliches Menü und blicken auf viele schöne Touren, Erlebnisse und sportliche Highlights des Jahres zurück.
+Ein Highlight am Breitensporthimmel!
 
-Wie immer steht der Abend ganz im Zeichen unserer starken Gemeinschaft – mit guten Gesprächen, viel Lachen und dem ein oder anderen Rückblick auf die Höhepunkte der Saison.
+Der RTC Köln e.V. präsentiert die TRIPLE RIDE TROPHY – ein einzigartiges Rennrad-Abenteuer:
+👉 Fahre unsere 2 RTC-Permanenten
+👉 Starte bei der FORSBACHTOUR am 31.05.2026
+👉 Belohnt werden!
 
-Wir freuen uns auf ein gemütliches Beisammensein mit unseren Vereinsmitgliedern, Partnerinnen und Partnern – und sagen schon jetzt:
-Danke für ein tolles Jahr voller Teamgeist, Leidenschaft und Rennradliebe! ❤️🚴‍♂️`,
+So nimmst du teil:
+✅ Fahre vom 1.1. bis 30.5.2026 unsere beiden Permanenten
+✅ Nimm am 31.05.2026 an unserer RTF FORSBACHTOUR teil
+✅ Reiche deinen Nachweis ein
+
+Unter allen, die unsere TRIPLE RIDE TROPHY meistern, verlosen wir einen 100 €-Gutschein für ein Radsportgeschäft.
+
+UND: Jede*r, der alle drei Touren fährt, erhält einen Preis (solange der Vorrat reicht; ohne Gewähr)
+
+📍 Fragen?
+Diana.vialon@rtc-koeln.de
+
+#RTCköln #TRIPLERIDETROPHY #FORSBACHTOUR #RTF2026 #RennradLiebe #Permanente #BreitensportNeu`,
       )
       .buildNewsEntry(),
   ])
