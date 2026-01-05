@@ -30,8 +30,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
       jspdf:
-        specifier: 3.0.4
-        version: 3.0.4
+        specifier: 4.0.0
+        version: 4.0.0
       libphonenumber-js:
         specifier: 1.12.33
         version: 1.12.33
@@ -2167,8 +2167,8 @@ packages:
     resolution: {integrity: sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==}
     engines: {'0': node >= 0.2.0}
 
-  jspdf@3.0.4:
-    resolution: {integrity: sha512-dc6oQ8y37rRcHn316s4ngz/nOjayLF/FFxBF4V9zamQKRqXxyiH1zagkCdktdWhtoQId5K20xt1lB90XzkB+hQ==}
+  jspdf@4.0.0:
+    resolution: {integrity: sha512-w12U97Z6edKd2tXDn3LzTLg7C7QLJlx0BPfM3ecjK2BckUl9/81vZ+r5gK4/3KQdhAcEZhENUxRhtgYBj75MqQ==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -5651,7 +5651,7 @@ snapshots:
 
   jsonparse@1.3.1: {}
 
-  jspdf@3.0.4:
+  jspdf@4.0.0:
     dependencies:
       '@babel/runtime': 7.28.4
       fast-png: 6.4.0
