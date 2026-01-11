@@ -8,9 +8,7 @@
     </q-card-section>
     <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-subtitle2">{{ props.modelValue.title }}</q-card-section>
     <q-card-section v-if="props.modelValue.text || props.modelValue.images?.length">
-      <div v-if="props.modelValue.text">
-        <span class="text-pre-wrap" v-html="props.modelValue.text" />
-      </div>
+      <div v-if="props.modelValue.text" class="text-pre-wrap" v-html="props.modelValue.text" />
       <c-slideshow v-if="props.modelValue.images?.length" :gallery-entries="props.modelValue.images" />
     </q-card-section>
     <q-expansion-item v-if="props.modelValue.answer" class="text-secondary" expand-separator label="Details">
