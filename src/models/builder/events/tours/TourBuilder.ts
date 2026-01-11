@@ -3,6 +3,7 @@ import type Donation from 'src/models/entities/Donation'
 import type Control from 'src/models/entities/events/tours/Control'
 import Tour from 'src/models/entities/events/tours/Tour'
 import type EEvent from 'src/models/enums/EEvent'
+import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class TourBuilder extends ABuilder {
   private tour = new Tour()
@@ -29,6 +30,12 @@ export default class TourBuilder extends ABuilder {
 
   setDonations = (...value: Donation[]): this => {
     this.tour.donations = value
+
+    return this
+  }
+
+  setImageUrls = (value: Record<string, string>): this => {
+    for (const [key, data] of Object.entries(value)) this.tour.images.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
 
     return this
   }

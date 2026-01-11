@@ -60,7 +60,8 @@
       <q-separator />
       <q-expansion-item label="Details">
         <q-card-section>
-          <span class="text-pre-wrap" v-html="props.modelValue.text" />
+          <div class="text-pre-wrap" v-html="props.modelValue.text" />
+          <c-slideshow v-if="props.modelValue.images?.length" :gallery-entries="props.modelValue.images" />
         </q-card-section>
       </q-expansion-item>
     </q-card>
@@ -69,6 +70,7 @@
 
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
+import CSlideshow from 'components/pages/CSlideshow.vue'
 import DDonation from 'components/pages/DDonation.vue'
 import type Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
