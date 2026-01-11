@@ -40,13 +40,14 @@
               </td>
             </tr>
             <tr v-if="Object.keys(props.modelValue.urls).length">
-              <td class="text-right">Links:</td>
+              <td class="text-right">Link{{ Object.keys(props.modelValue.urls).length > 1 ? 's' : '' }}:</td>
               <td colspan="2">
-                <ul class="mt-1">
+                <ul v-if="Object.keys(props.modelValue.urls).length > 1" class="mt-1">
                   <li v-for="(it, key) in props.modelValue.urls" :key class="mb-1">
                     <a :href="it.toString()" target="_blank">{{ key }}</a>
                   </li>
                 </ul>
+                <a v-else :href="Object.values(props.modelValue.urls).toString()" target="_blank">{{ Object.keys(props.modelValue.urls)[0] }}</a>
               </td>
             </tr>
             <tr>
