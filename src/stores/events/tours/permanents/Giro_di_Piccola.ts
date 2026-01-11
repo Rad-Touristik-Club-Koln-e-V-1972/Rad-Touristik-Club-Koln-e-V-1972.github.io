@@ -35,7 +35,7 @@ BIC: GENODED1BRS`,
   })
   .setLastChange('2026-01-11')
   .setLength(85)
-  .setProfile(EProfile.Bergisch)
+  .setProfile(EProfile.Bergig)
   .setUrls({ 'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/Giro_di_Piccola_Tour.gpx') })
   .setText(
     `Der Giro di Piccola startet  an der Gelateria Piccola in Rath/Heumar, direkt gegenüber der Schmitzebud.

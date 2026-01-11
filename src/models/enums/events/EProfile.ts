@@ -1,5 +1,5 @@
 enum EProfile {
-  Bergisch = 'Bergisch',
+  Bergig = 'Bergig',
   Flach = 'Flach',
   Normal = 'Normal',
   Huegelig = 'hügelig',
