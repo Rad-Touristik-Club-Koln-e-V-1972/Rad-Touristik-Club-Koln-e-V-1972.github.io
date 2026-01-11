@@ -15,9 +15,9 @@
           <q-tab-panels v-model="tab">
             <q-tab-panel v-for="it in props.modelValue" :key="it.id" :name="it.id">
               <span v-if="it.text" v-html="it.text" />
-              <div v-else-if="it.imageUrl" :class="it.url ? 'cursor-pointer' : ''" @click="it.url ? openURL(it.url.toString()) : undefined">
+              <div v-else-if="it.url" class="cursor-pointer" @click="openURL(it.url.toString())">
                 <span class="text-center" v-if="it.url">Scannen oder anklicken</span>
-                <q-img :src="it.imageUrl.toString()" />
+                <c-q-r-code :url="it.url" />
               </div>
             </q-tab-panel>
           </q-tab-panels>
@@ -31,6 +31,7 @@
 import { ref } from 'vue'
 import { openURL } from 'quasar'
 import { mdiAccountCreditCard, mdiClose } from '@quasar/extras/mdi-v7'
+import CQRCode from 'components/pages/CQRCode.vue'
 import type Donation from 'src/models/entities/Donation'
 
 const props = defineProps<{ modelValue: Donation[] }>()

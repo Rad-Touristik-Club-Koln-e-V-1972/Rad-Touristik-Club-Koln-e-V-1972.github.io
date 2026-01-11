@@ -12,12 +12,6 @@ export default class DonationBuilder extends ABuilder {
     return this
   }
 
-  setImageUrl = (value: string): this => {
-    this.donation.imageUrl = new URL(`https://${value}`)
-
-    return this
-  }
-
   setText = (value: string): this => {
     this.donation.text = value.replaceAll('\n', '<br>')
 
