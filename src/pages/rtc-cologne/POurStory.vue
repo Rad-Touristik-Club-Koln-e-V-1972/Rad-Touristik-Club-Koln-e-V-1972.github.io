@@ -8,7 +8,7 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="bilder">
-          <c-slideshow :gallery-entries="StartZiel['Start & Ziel']" height="200px" />
+          <c-slideshow :gallery-entries="StartZiel['Start & Ziel']" />
         </q-tab-panel>
         <q-tab-panel name="videos">
           <q-video :ratio="16 / 9" src="https://www.youtube-nocookie.com/embed/bx0zAC-A-fg" />

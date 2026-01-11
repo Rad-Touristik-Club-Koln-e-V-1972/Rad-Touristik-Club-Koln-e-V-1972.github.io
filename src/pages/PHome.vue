@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col">
-        <c-slideshow :gallery-entries="useSlideshowStore().all" height="200px" />
+        <c-slideshow :gallery-entries="useSlideshowStore().all" />
       </div>
     </div>
     <div class="row">

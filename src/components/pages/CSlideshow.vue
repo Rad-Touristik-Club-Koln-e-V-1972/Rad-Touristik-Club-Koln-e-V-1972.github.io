@@ -21,7 +21,7 @@ import { QCarousel } from 'quasar'
 import { mdiArrowLeft, mdiArrowRight } from '@quasar/extras/mdi-v7'
 import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
-const { entryID = undefined, galleryEntries = [] as GalleryEntry[], height = '100%', infinite = true } = defineProps<{ entryID?: string; galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>()
+const { entryID = undefined, galleryEntries = [] as GalleryEntry[], height = '200px', infinite = true } = defineProps<{ entryID?: string; galleryEntries: GalleryEntry[]; height?: string; infinite?: boolean }>()
 
 const carouselRef = useTemplateRef<InstanceType<typeof QCarousel>>('carousel')
 

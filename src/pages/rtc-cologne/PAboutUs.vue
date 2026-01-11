@@ -2,7 +2,7 @@
   <q-card flat>
     <q-card-section class="bg-primary text-accent text-h6">Willkommen beim RTC Köln e.V.: Gemeinschaft und Radfahren für alle!</q-card-section>
     <q-card-section>
-      <c-slideshow :gallery-entries="imageUrls" height="200px" />
+      <c-slideshow :gallery-entries="imageUrls" />
     </q-card-section>
     <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
       <q-tab :icon="mdiBike" label="Über uns" name="about-us" />
