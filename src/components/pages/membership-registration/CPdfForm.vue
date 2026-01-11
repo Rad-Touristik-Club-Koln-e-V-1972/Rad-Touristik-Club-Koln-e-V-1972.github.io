@@ -254,7 +254,7 @@ const addPage2 = (params: { leftMargin: number; topMargin: number; leftMarginCen
 
   _topMargin += addRadioButtons({
     leftMargin: params.leftMargin,
-    options: ['Bar', 'Lastschrifteinzug'],
+    options: ['Überweisung', 'Lastschrifteinzug'],
     text: 'Zahlungsweise (zutreffendes bitte ankreuzen):',
     topMargin: _topMargin,
     value: props.modelValue.membershipFee.paymentMethod,

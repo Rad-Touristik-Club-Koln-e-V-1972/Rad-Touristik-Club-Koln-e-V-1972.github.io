@@ -5,7 +5,7 @@
         <div class="q-px-sm">Zahlungsweise (zutreffendes bitte ankreuzen):</div>
         <div class="q-gutter-sm">
           <q-radio v-model="modelValue.paymentMethod" label="Lastschrifteinzug" val="Lastschrifteinzug" />
-          <q-radio v-model="modelValue.paymentMethod" label="Bar" val="Bar" />
+          <q-radio v-model="modelValue.paymentMethod" label="Überweisung" val="Überweisung" />
         </div>
       </div>
     </div>
