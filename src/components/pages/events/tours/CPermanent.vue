@@ -22,7 +22,7 @@
               <td colspan="2">{{ props.modelValue.profile }}</td>
             </tr>
             <tr>
-              <td class="text-right">Kontrollen:</td>
+              <td class="text-right">Einkehrmöglichkeiten:</td>
               <td colspan="2">
                 <dl class="my-1">
                   <div v-for="it in props.modelValue.controls" :key="it.id">
