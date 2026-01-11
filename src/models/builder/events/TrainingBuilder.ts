@@ -25,8 +25,8 @@ export default class TrainingBuilder extends ABuilder {
     return this
   }
 
-  setImageUrls = (value: Record<string, string>): this => {
-    for (const [key, data] of Object.entries(value)) this.training.imageUrls.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
+  setImages = (value: Record<string, string>): this => {
+    for (const [key, data] of Object.entries(value)) this.training.images.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
 
     return this
   }

@@ -5,7 +5,7 @@ export default class Training extends AEntity {
   alternativeDay!: string
   day!: string
   departure!: string
-  imageUrls: GalleryEntry[] = []
+  images: GalleryEntry[] = []
   length!: string
   location!: string
   speed!: string

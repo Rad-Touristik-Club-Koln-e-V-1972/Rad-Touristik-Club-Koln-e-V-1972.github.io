@@ -7,11 +7,11 @@
       <div v-if="!isCategoryRTC">Event: {{ EEvent[props.modelValue.category] }}</div>
     </q-card-section>
     <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-subtitle2">{{ props.modelValue.title }}</q-card-section>
-    <q-card-section v-if="props.modelValue.text || props.modelValue.imageUrls?.length">
+    <q-card-section v-if="props.modelValue.text || props.modelValue.images?.length">
       <div v-if="props.modelValue.text">
         <span class="text-pre-wrap" v-html="props.modelValue.text" />
       </div>
-      <c-slideshow v-if="props.modelValue.imageUrls?.length" :gallery-entries="props.modelValue.imageUrls" height="200px" />
+      <c-slideshow v-if="props.modelValue.images?.length" :gallery-entries="props.modelValue.images" height="200px" />
     </q-card-section>
     <q-expansion-item v-if="props.modelValue.answer" class="text-secondary" expand-separator label="Details">
       <q-card flat>

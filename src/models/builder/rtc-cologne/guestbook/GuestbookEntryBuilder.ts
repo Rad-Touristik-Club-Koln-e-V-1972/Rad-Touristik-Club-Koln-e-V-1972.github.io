@@ -27,8 +27,8 @@ export default class GuestbookEntryBuilder extends ABuilder {
     return this
   }
 
-  setImageUrls = (value: Record<string, string>): this => {
-    for (const [key, data] of Object.entries(value)) this.guestbookEntry.imageUrls.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
+  setImages = (value: Record<string, string>): this => {
+    for (const [key, data] of Object.entries(value)) this.guestbookEntry.images.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
 
     return this
   }

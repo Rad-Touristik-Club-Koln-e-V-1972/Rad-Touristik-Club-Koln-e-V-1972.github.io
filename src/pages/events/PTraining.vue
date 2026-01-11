@@ -2,7 +2,7 @@
   <div>
     <q-card>
       <q-card-section>
-        <c-slideshow :gallery-entries="value.imageUrls" height="200px" />
+        <c-slideshow :gallery-entries="value.images" height="200px" />
       </q-card-section>
       <q-card-section class="bg-primary text-accent text-h6">{{ value.title }}</q-card-section>
     </q-card>

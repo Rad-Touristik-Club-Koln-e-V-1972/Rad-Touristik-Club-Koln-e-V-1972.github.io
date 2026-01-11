@@ -8,7 +8,7 @@ export default defineStore('training', () => {
       .setDay('Donnerstag')
       .setDeparture('18 Uhr')
       .setId('aa0ecce0-a8a6-46a5-a161-f48f608b7c32')
-      .setImageUrls({
+      .setImages({
         'd631d58b-865c-4ee4-a468-e9a7414546a7': 'content.rtc-koeln.de/pages/events/training/Wintertraining.jpg.avif',
         'fc5db804-222f-478c-b47e-d27ea3317374': 'content.rtc-koeln.de/pages/events/training/Wintertraining2.jpg.avif',
       })
