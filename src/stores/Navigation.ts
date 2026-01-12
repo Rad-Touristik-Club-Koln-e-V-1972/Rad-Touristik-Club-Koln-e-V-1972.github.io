@@ -34,6 +34,8 @@ export default defineStore('navigation', () => {
   return {
     allNavigation: ref<Navigation[]>([
       new NavigationBuilder().setIcon(mdiAccountMultiplePlus).setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0').setTitle('Mitgliedschaft beantragen').setTo('membership-registration').buildNavigation(),
+      new NavigationBuilder().setIcon(mdiCalendarAlert).setId('516fe40e-dfa1-4082-93e5-9323c7655941').setTitle('RTF / Forsbach-Tour').setTo('events-tours-rtfs').buildNavigation(),
+      new NavigationBuilder().setIcon(mdiGoKartTrack).setId('ec9a422a-397b-4e2c-ad0b-0e64d5ec4c2f').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),
       new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('home').buildNavigation(),
       new NavigationBuilder()
         .setChildren(
