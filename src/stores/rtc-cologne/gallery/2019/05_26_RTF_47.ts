@@ -12,6 +12,6 @@ export default new GalleryBuilder()
     new GalleryEntryBuilder().setId('8ec4e937-51e8-494e-ac1f-092c3dc2f2a6').setImageUrl('content.rtc-koeln.de/pages/gallery/2019/05_26_RTF_47/rtc-forsbach-tour-flyer2-2019.jpg.avif').buildGalleryEntry(),
   ])
   .setLocation('Rösrath-Forsbach')
-  .setTitle('47. Forsbach-Tour')
+  .setTitle('47. Forsbachtour')
   .setTitleImageUrl('content.rtc-koeln.de/pages/gallery/2019/05_26_RTF_47/rtc-forsbach-tour-flyer-2019.jpg.avif')
   .buildGallery()

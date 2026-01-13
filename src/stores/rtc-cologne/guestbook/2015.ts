@@ -341,7 +341,7 @@ Das spricht für ein tolles Klima im Team RTC Köln e. V. 1972 !!
 Bis zum nächsten Jahr 😊
 `,
     )
-    .setTitle('Kommentar zu Schnappschüssen / Impressionen von der K5 auf der Forsbach-Tour 2015')
+    .setTitle('Kommentar zu Schnappschüssen / Impressionen von der K5 auf der Forsbachtour 2015')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF)

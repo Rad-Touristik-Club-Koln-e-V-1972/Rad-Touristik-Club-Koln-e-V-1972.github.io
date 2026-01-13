@@ -61,7 +61,7 @@ Euer RTC Köln e.V`,
       new TimeBuilder().setId('904b6941-8a8b-4450-973c-3f5b336b5276').setName('Start').setTime('07:30').buildTime(),
       new TimeBuilder().setId('b8cdb12d-037b-4522-894e-48425a8218c0').setName('Kontrollschluss am Ziel').setTime('17:00').buildTime(),
     )
-    .setTitle('Die Forsbach-Tour')
+    .setTitle('Die Forsbachtour')
     .setTracks(
       new TrackBuilder()
         .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')

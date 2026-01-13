@@ -34,7 +34,7 @@ export default defineStore('navigation', () => {
   return {
     allNavigation: ref<Navigation[]>([
       new NavigationBuilder().setIcon(mdiAccountMultiplePlus).setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0').setTitle('Mitgliedschaft beantragen').setTo('membership-registration').buildNavigation(),
-      new NavigationBuilder().setIcon(mdiCalendarAlert).setId('516fe40e-dfa1-4082-93e5-9323c7655941').setTitle('RTF / Forsbach-Tour').setTo('events-tours-rtfs').buildNavigation(),
+      new NavigationBuilder().setIcon(mdiCalendarAlert).setId('516fe40e-dfa1-4082-93e5-9323c7655941').setTitle('RTF / Forsbachtour').setTo('events-tours-rtfs').buildNavigation(),
       new NavigationBuilder().setIcon(mdiGoKartTrack).setId('ec9a422a-397b-4e2c-ad0b-0e64d5ec4c2f').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),
       new NavigationBuilder().setIcon(mdiHome).setId('19e9c467-2c82-4894-a1d3-620565f56826').setTitle('Startseite').setTo('home').buildNavigation(),
       new NavigationBuilder()
@@ -42,7 +42,7 @@ export default defineStore('navigation', () => {
           new NavigationBuilder().setIcon(mdiCalendarClockOutline).setId('c4455a48-63ee-4e62-b140-f2686d7d71ce').setTitle('Vereinskalender').setTo('events-calendar').buildNavigation(),
           new NavigationBuilder()
             .setChildren(
-              new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbach-Tour').setTo('events-tours-rtfs').buildNavigation(),
+              new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbachtour').setTo('events-tours-rtfs').buildNavigation(),
               new NavigationBuilder().setIcon(mdiHumanMaleFemaleChild).setId('55829ef0-c2ab-4e51-94fa-3a6d5c5d9dc1').setTitle('Family Tour').setTo('events-tours-rtfs-family').buildNavigation(),
               new NavigationBuilder().setIcon(mdiBikeFast).setId('b53d7f6a-296d-45b6-b061-8a590bf89a20').setTitle('Training').setTo('events-training').buildNavigation(),
               new NavigationBuilder().setIcon(mdiGoKartTrack).setId('c6c800fb-7e14-4651-a7a7-e230b96ddadc').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),

@@ -34,7 +34,7 @@
       <br />
       Von 1978 bis 1982 führte der RTC Köln die Deutschland-Rundfahrt durch.<br />
       <br />
-      2012 wurde – zu unserem 40-jährigen Jubiläum - die Forsbach-Tour um eine MarathonStrecke erweitert, die bis ins Wendener Land bei Olpe führt.
+      2012 wurde – zu unserem 40-jährigen Jubiläum - die Forsbachtour um eine MarathonStrecke erweitert, die bis ins Wendener Land bei Olpe führt.
     </q-card-section>
     <q-card-section>
       In den Gründungsjahren wurden die Auszeichnungen für RTF-Fahrer:innen noch deutschlandweit vergeben.<br />

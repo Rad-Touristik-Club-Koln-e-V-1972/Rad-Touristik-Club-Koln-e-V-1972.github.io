@@ -138,7 +138,7 @@ Marco Gerlach
     .setOrganization('www.scan.bike`')
     .setSource(ESource['E-Mail'])
     .setText(
-      `Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbach-Tour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
+      `Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbachtour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
 - aber auch ein schöner Tag!
 
 Bereits um 5:10 Uhr, mit kurzer Verspätung, öffneten sich die Türen der Sporthalle in der Heerstraße in Zündorf und blitzartig verteilten sich die helfenden Hände,
@@ -156,7 +156,7 @@ Auch für den Veranstalter wird es leichter, wenn nach und nach immer mehr Sport
 und auch die langen Schlangen bei der Anmeldung entfallen durch die um ein Vielfaches kürzere Zeit des Einzelnen am Schalter.
 Scannen, Kassieren, Klicken - Scannen, Kassieren, Klicken - Scannen, Kassieren, Klicken,â€¦ so geht scan&bike!
 
-Die jährliche Forsbach-Tour ist immer ein weiteres Highlight im RTF Kalender, bei besonders gutem Wetter wird die viele professionelle Arbeit des Vereins
+Die jährliche Forsbachtour ist immer ein weiteres Highlight im RTF Kalender, bei besonders gutem Wetter wird die viele professionelle Arbeit des Vereins
 und seiner Mitglieder auch mit hohen Teilnehmerzahlen belohnt - mit scan&bike sind wir auf dem richtigen Weg die morgendliche Wartezeit zu minimieren
 und mit zum guten Gelingen einer Veranstaltung beizutragen.
 
