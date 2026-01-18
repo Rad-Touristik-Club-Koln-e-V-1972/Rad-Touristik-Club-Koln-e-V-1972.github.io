@@ -16,6 +16,7 @@ export default defineStore('news', () => {
       .buildNewsEntry(),
     new NewsEntryBuilder()
       .setId('f1105474-db24-499f-97f1-bb1b4b72612e')
+      // TODO Also delete from PPermanents.vue
       .setImage(new GalleryEntryBuilder().setId('bb07de97-b2d8-4075-b2b2-337c229faebe').setImageUrl('content.rtc-koeln.de/pages/news/signal-2026-01-01-165641.jpg.avif').buildGalleryEntry())
       .setShowUntil('2026-05-31')
       .setText(
