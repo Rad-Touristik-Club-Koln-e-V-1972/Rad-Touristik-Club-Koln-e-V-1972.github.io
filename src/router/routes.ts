@@ -10,6 +10,7 @@ export default [
           {
             children: [
               { component: () => import('pages/events/tours/PPermanents.vue'), name: 'events-tours-permanents', path: 'permanents' },
+              { component: () => import('pages/events/tours/PStageRace.vue'), name: 'events-tours-stagerace', path: 'stagerace' },
               {
                 children: [
                   { component: () => import('pages/events/tours/rtfs/PIndex.vue'), name: 'events-tours-rtfs', path: '' },
