@@ -10,11 +10,6 @@ export default defineStore('news', () => {
 
   const all = ref<NewsEntry[]>([
     new NewsEntryBuilder()
-      .setId('c42771dc-b94a-4ff0-94c3-b4e518e874cd')
-      .setImage(new GalleryEntryBuilder().setId('3dbb3b2b-3c8d-4874-8994-a6eff62ab39b').setImageUrl('content.rtc-koeln.de/pages/news/IMG_0102.jpg.avif').buildGalleryEntry())
-      .setShowUntil('2026-01-31')
-      .buildNewsEntry(),
-    new NewsEntryBuilder()
       .setId('f1105474-db24-499f-97f1-bb1b4b72612e')
       // TODO Also delete from PPermanents.vue
       .setImage(new GalleryEntryBuilder().setId('bb07de97-b2d8-4075-b2b2-337c229faebe').setImageUrl('content.rtc-koeln.de/pages/news/signal-2026-01-01-165641.jpg.avif').buildGalleryEntry())
