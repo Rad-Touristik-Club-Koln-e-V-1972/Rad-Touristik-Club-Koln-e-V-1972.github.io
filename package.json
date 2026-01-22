@@ -5,7 +5,7 @@
   "productName": "RTC Köln e.V. 1972",
   "author": "Martin Dünkelmann <nc-duenkekl3@netcologne.de>",
   "type": "module",
-  "packageManager": "pnpm@10.28.0+sha256.9b0b04e6e79945566917f8411bb6f65fd2f3e1590426904e8500e1acc4b33561",
+  "packageManager": "pnpm@10.28.1+sha512.7d7dbbca9e99447b7c3bf7a73286afaaf6be99251eb9498baefa7d406892f67b879adb3a1d7e687fc4ccc1a388c7175fbaae567a26ab44d1067b54fcb0d6a316",
   "private": true,
   "scripts": {
     "build": "quasar build",
