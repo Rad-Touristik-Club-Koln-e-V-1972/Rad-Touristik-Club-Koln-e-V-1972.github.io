@@ -20,7 +20,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@maz-ui/themes": "4.3.0",
+    "@maz-ui/themes": "4.4.0",
     "@maz-ui/translations": "4.3.0",
     "@quasar/extras": "1.17.0",
     "@quasar/quasar-ui-qcalendar": "4.1.2",
