@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@maz-ui/themes':
-        specifier: 4.3.0
-        version: 4.3.0(vue@3.5.27(typescript@5.9.3))
+        specifier: 4.4.0
+        version: 4.4.0(vue@3.5.27(typescript@5.9.3))
       '@maz-ui/translations':
         specifier: 4.3.0
         version: 4.3.0(vue@3.5.27(typescript@5.9.3))
@@ -540,6 +540,12 @@ packages:
 
   '@maz-ui/themes@4.3.0':
     resolution: {integrity: sha512-Og3rUnXlZ1dHnmhmzqHCCcwjBfvximpP4RrflHVa9sSGokyE/jijg4CnYrWQMKRLPBF8xqKPuYnUzPMNX/U8Xw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@maz-ui/themes@4.4.0':
+    resolution: {integrity: sha512-pzBzSP0Jbn1kn8WhfckUFJaonJUaXoYjzookHm7BY5MrXpRaEYTsIUkwiP3Qt80z+9POMl22NxyyQqkv9pTTzA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: ^3.5.0
@@ -3923,6 +3929,11 @@ snapshots:
       figlet: 1.9.4
 
   '@maz-ui/themes@4.3.0(vue@3.5.27(typescript@5.9.3))':
+    dependencies:
+      '@maz-ui/utils': 4.3.0
+      vue: 3.5.27(typescript@5.9.3)
+
+  '@maz-ui/themes@4.4.0(vue@3.5.27(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.3.0
       vue: 3.5.27(typescript@5.9.3)
