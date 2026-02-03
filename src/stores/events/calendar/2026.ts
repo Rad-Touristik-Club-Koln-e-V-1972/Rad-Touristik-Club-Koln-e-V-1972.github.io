@@ -95,7 +95,7 @@ export default [
     .setName('RTC-Vereinsabend (Garten)')
     .buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-08-09').setId('89c6effd-88bd-4e8a-a2fd-c6a80e7046bc').setName('Hennef').buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-08-14', '2026-08-16').setId('14c36ab0-29f2-4e3d-b6e9-000435046ed6').setKilometer(200).setName('RTC-Etappenfahrt nach Maastricht').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-08-14', '2026-08-16').setId('14c36ab0-29f2-4e3d-b6e9-000435046ed6').setKilometer(200).setName('RTC-Etappenfahrt an die Mosel').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-08-23').setId('f2e1d66b-dfd8-488f-94e1-0ccc505a7e4e').setName('St. Augustin').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-08-28').setId('c67066ea-9e5a-4fda-9d18-966a1171d44b').setName('Campus Bonn').buildEvent(),
   new EventBuilder().setCategory(EEvent.Permanente).setDate('2026-08-30').setId('69392744-0701-4b8e-b4cd-5603a7a197fb').setKilometer(200).setName('Sahrbach Panoramarunde').buildEvent(),
@@ -109,6 +109,7 @@ export default [
     .buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-06').setId('a15717d2-2bbe-4082-9478-8f3f833222a4').setName('Malefinkbach + Rheinbach').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-12').setId('b32f311d-9ff7-4ab4-87f6-9d0f21c6a3e3').setName('Ladies Only Ride').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-19', '2026-09-20').setId('f3628e3c-d408-442e-8e2d-0fbdbb19f72d').setKilometer(200).setName('RTC-Etappenfahrt nach Maastricht').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-27').setId('8a148c10-568d-418a-bc25-36e2d404240d').setName('Essen').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-10-03').setId('9e7652fe-e08d-4027-952f-c20f4996b677').setName('Büttgen').buildEvent(),
   new EventBuilder()
