@@ -12,8 +12,8 @@ importers:
         specifier: 4.6.1
         version: 4.6.1(vue@3.5.28(typescript@5.9.3))
       '@maz-ui/translations':
-        specifier: 4.5.0
-        version: 4.5.0(vue@3.5.28(typescript@5.9.3))
+        specifier: 4.6.1
+        version: 4.6.1(vue@3.5.28(typescript@5.9.3))
       '@quasar/extras':
         specifier: 1.17.0
         version: 1.17.0
@@ -707,21 +707,11 @@ packages:
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
 
-  '@maz-ui/translations@4.5.0':
-    resolution: {integrity: sha512-Yx9WzJCeJN7qU55ENYZmRzTRLnn7ECxbwtI8e302UErUTL8xGmGZvPM1Ru9IaMRic6AIdddeYoIO6zAgahysIA==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: ^3.5.0
-
   '@maz-ui/translations@4.6.1':
     resolution: {integrity: sha512-e1GWQX2iXwCvqHUOiyh3HZ/LrOGN7KNAD05CJvE2fkBq1xH6NoMCr545OFCZTnp8CbD+hoJmILK0YyCDfoPkaA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
-
-  '@maz-ui/utils@4.3.0':
-    resolution: {integrity: sha512-f1qHDQy5JA2ESqSna4LRvzWNJYfjvORR8eZcORiMF1WyyDDrdBxdupOOSGjqA55G2JVWZlDmbla27i0IuM+NBw==}
-    engines: {node: '>=18.0.0'}
 
   '@maz-ui/utils@4.6.1':
     resolution: {integrity: sha512-gzFzDPi3RrG+DO4A8m5sgFJwD0kVuzsfBRla0/MNxThSJcYC40QC3br4uGp8M262wHRhkeDobLMG/jqamIEsQA==}
@@ -4264,17 +4254,10 @@ snapshots:
       '@maz-ui/utils': 4.6.1
       vue: 3.5.28(typescript@5.9.3)
 
-  '@maz-ui/translations@4.5.0(vue@3.5.28(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.3.0
-      vue: 3.5.28(typescript@5.9.3)
-
   '@maz-ui/translations@4.6.1(vue@3.5.28(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.6.1
       vue: 3.5.28(typescript@5.9.3)
-
-  '@maz-ui/utils@4.3.0': {}
 
   '@maz-ui/utils@4.6.1': {}
 
