@@ -166,7 +166,7 @@ Da hatte ich bei der erste Anfahrt einen Cheesburger bestellt. Als ich zur dritt
     .setText('War echt super. Hoffentlich 2018 wieder ...')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-29 20:30')
     .setId('d3a00f24-cd3e-4772-b842-a5be6a0f7c41')
     .setName('Jochen Güttes')
@@ -179,7 +179,7 @@ Es war wieder super bei euch.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-29 20:30')
     .setId('8ad6aa92-2374-41fb-bd3c-eae3556855c7')
     .setName('Roland Liffers')
@@ -192,7 +192,7 @@ Danke dafür!
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-29 20:30')
     .setId('1a92a753-f4d1-481d-af9a-8cbdf0a976bc')
     .setName('Horst Voll')
@@ -200,7 +200,7 @@ Danke dafür!
     .setText('Vielen Dank für die heutige Betreuung.... war TippiToppi.')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-29 20:30')
     .setId('848eede7-086e-4679-9770-23fd96e7ce50')
     .setName('Uli Fritzsche')
@@ -208,7 +208,7 @@ Danke dafür!
     .setText('Und wir danken für die tolle Orga!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-28 20:30')
     .setId('e137479f-1ef4-4866-a4f9-83648e8ee745')
     .setName('Frank Müller')
@@ -220,7 +220,7 @@ Vielen Dank
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-28 20:30')
     .setId('4e2794d8-2969-4d37-8aa6-b04ebda6d6ad')
     .setName('Mika Kali')
@@ -233,7 +233,7 @@ Die Ortsdurchsfahrt Much war auch in diesem Jahr wieder Horror. Da wird durch Au
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2017-05-28 20:57')
     .setId('9d8a4e46-de83-4b23-add3-a25a9ca99d38')
     .setName('Dirk Oliver Heppert')

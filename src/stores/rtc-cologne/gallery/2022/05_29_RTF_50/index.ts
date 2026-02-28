@@ -9,7 +9,7 @@ import K6 from './K6'
 import StartZiel from './Start_Ziel'
 
 export default new GalleryBuilder()
-  .setCategory(EEvent.RTF)
+  .setCategory(EEvent.RTF_RTC)
   .setDate('2022-05-29')
   .setId('6c8d3c67-203c-4cf1-b1da-ef8c3b7dc868')
   .setImages([

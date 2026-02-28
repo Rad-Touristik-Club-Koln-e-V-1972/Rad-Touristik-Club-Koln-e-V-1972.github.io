@@ -134,7 +134,7 @@ Wir sehen uns dann 2017.
     .setText('Schöne Tour bei bestem Wetter')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-31 1:34')
     .setId('61939443-7afb-40d1-abf9-67675c7f252c')
     .setName('Gunter Maier')
@@ -166,7 +166,7 @@ Ich wollte es trotzdem loswerden, da wir uns gestern schon auf der Strecke darü
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-30')
     .setId('e6c33fac-bdda-4947-ad99-8edd3c3ce4b0')
     .setName('Lutz Schröder')
@@ -180,7 +180,7 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
     .setTitle('Wo bleiben die Vegetarier?')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-30')
     .setId('6a90d41a-c613-48ea-a33b-1424e6e67701')
     .setName('Andreas Klemt')
@@ -188,7 +188,7 @@ Ansonsten vielen Dank für die tolle Organisation und die schöne Strecke.
     .setText('Sehr gut: Der Reiskuchen!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-30 14:46')
     .setId('bbf709d8-ffd0-4a15-a6c3-ba810b6a10c9')
     .setName('Martin Holtzmann')
@@ -205,7 +205,7 @@ LG Martin
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-30 13:04')
     .setId('c1bcb03d-0553-4075-be7a-4798898d0b69')
     .setLocation('Ruhrstadt Bochum')
@@ -235,7 +235,7 @@ Ruhrstadt Bochum
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 23:00')
     .setId('60a42e13-814d-446e-96f2-a3d299e7f013')
     .setName('Andreas Tilles')
@@ -249,7 +249,7 @@ Ohne Nachschlag gingen Hermann und ich da nicht wieder auf die Strecke.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 21:21')
     .setId('b8d9a4fa-fd23-49af-b1d1-7da7fe6251b2')
     .setName('Volker Pütz')
@@ -263,7 +263,7 @@ Danke an alle Helfer und das Orga Team!
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 20:50')
     .setId('6bdabba7-cd61-48f6-bd40-e0d75018dcbf')
     .setName('Alexandra Raj')
@@ -272,7 +272,7 @@ Danke an alle Helfer und das Orga Team!
     .setText('Herrliche Strecke ')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 20:33')
     .setId('300304e9-0496-47c1-a291-5ea57fb2dbf7')
     .setName('Roland Liffers')
@@ -285,7 +285,7 @@ Nächstes Jahr wird wieder die 1000er Marke geknackt 😀
     .setTitle('Tolle Stullen, die 2.')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 20:20')
     .setId('6b102718-2509-468b-9c38-1d8d428e96a5')
     .setName('Ludger Thier')
@@ -305,7 +305,7 @@ Bis nächstes Jahr!
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 19:46')
     .setId('fdf78baa-d6f1-4862-acee-e04d31594b22')
     .setName('Angela Maja')
@@ -320,7 +320,7 @@ Ich freute mich, dass ich heute weder auf der 160 km Strecke noch auf dem anschl
     .setTitle('Fabelhaft ...')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 19:11')
     .setId('412ea377-e10f-411c-973b-d2b32c1fd8c5')
     .setName('David Pandya')
@@ -337,7 +337,7 @@ Chapeau!
     .setTitle('Tolle Stullen ...')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('db7409a5-7eab-4c1c-b799-5886b0a382a0')
     .setLocation('Hürth Berrenrath')
@@ -347,7 +347,7 @@ Chapeau!
     .setText('Wie gut ,dass ich den Apps heute nicht getraut habe und bei euch war 😀')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('e2df0c47-aaf9-4167-b90a-88427492566f')
     .setName('Petra Ba')
@@ -355,7 +355,7 @@ Chapeau!
     .setText('Ein super Tag, und super Wetter ...')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 17:38')
     .setId('f886a323-6d8b-49f7-a3b1-61a7a90d3537')
     .setName('Bernd Doelp')
@@ -363,7 +363,7 @@ Chapeau!
     .setText('Das war eine schöne und anspruchsvolle Veranstaltung, vielen Dank.')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('e0bd7b68-f295-48d9-b4c1-66c33889a574')
     .setName('Steffi Brockenhexe')
@@ -377,7 +377,7 @@ Super Wetter mit reichlich Sonne auf knapp 200km ...
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 16:12')
     .setId('ddd22b35-a39f-4ce5-9f28-e5d9e5a6d351')
     .setName('Horst Voll')
@@ -390,7 +390,7 @@ Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 16:06')
     .setId('a65594f9-cf24-455e-8505-8c4594b4c6c3')
     .setName('Horst Paesch')
@@ -406,7 +406,7 @@ Die 200er war geil und, Nudeln mit Gulasch waren echt lecker ...
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('4eee5347-45f1-4c3b-8f35-5bc03a687891')
     .setName('Mario Schmitt')
@@ -420,7 +420,7 @@ Top! 👍
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('209682db-cc60-4e51-ba01-9ac9bd432929')
     .setName('Volker Schmitz')
@@ -435,7 +435,7 @@ Top! 👍
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29')
     .setId('8c926930-7a69-4432-b196-1af55fe8a172')
     .setName('Se Sandra')
@@ -450,7 +450,7 @@ Was ist das? 😉
     .setTitle('Tadel gibt es keinen!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 14:36')
     .setId('c52dd25b-36a9-4833-8d18-2b7ff4498578')
     .setName('Ros Si')
@@ -464,7 +464,7 @@ Vielen Dank an den RTC.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 14:00')
     .setId('437fecf0-2196-488a-9889-68b5382d4df1')
     .setName('Patrock Cyclista')
@@ -472,7 +472,7 @@ Vielen Dank an den RTC.
     .setText('Danke für heute. Super Orga, schöne Strecke, gerne wieder.')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2016-05-29 13:52')
     .setId('1f12cccd-c51f-4dbd-aecd-73db641500dc')
     .setName('Jochen Güttes')

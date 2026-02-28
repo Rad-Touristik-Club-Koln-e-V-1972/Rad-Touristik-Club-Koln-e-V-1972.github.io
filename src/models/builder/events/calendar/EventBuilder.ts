@@ -72,6 +72,7 @@ export default class EventBuilder extends ABuilder {
         color = 'red-14'
         break
       case EEvent.RTF:
+      case EEvent.RTF_RTC:
         color = 'deep-purple'
         break
       case EEvent.Veranstaltung:

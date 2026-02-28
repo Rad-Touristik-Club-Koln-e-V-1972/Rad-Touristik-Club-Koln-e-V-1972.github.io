@@ -27,7 +27,7 @@ www.cardiofitness.de
     .setTitle('Ein großes Dankeschöööööön')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-06-01')
     .setId('56a46de9-57c2-45a5-acca-6eaa66ac33cf')
     .setName('Ursula Koepp')
@@ -52,7 +52,7 @@ Ursula Koepp
     .setTitle('... ganz herzlichen Dank für die schöne RTF am Sonntag!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-06-01')
     .setId('e3929bd7-aeb2-46ac-8fd1-e5d1ae0b7a4a')
     .setName('Günter')
@@ -83,7 +83,7 @@ Günter
     .setTitle('10 Punkte und die Krone für eure schöne RTF!!!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-06-01')
     .setId('fba00c9f-749a-4b25-9c27-b55f5763901a')
     .setName('Dieter Reich')
@@ -106,7 +106,7 @@ Dieter Reich
     .setTitle('Danke für die gut ausgearbeitete Tour am 20.05.12')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-06-01')
     .setId('7cfe3d32-e791-4094-a2ca-189914a0003c')
     .setLocation('Monheim')
@@ -129,7 +129,7 @@ Elke und Dieter
     .setTitle('... eine tolle Forsbachtour 2012')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-05-01')
     .setId('b5eebf24-6933-4462-9dd3-80a9b483b8a0')
     .setName('Josef Witt')
@@ -157,7 +157,7 @@ Josef Witt
     .setTitle('Verpflegungsengpässe, sonst war es eine sehr gute Veranstaltung!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-05-01')
     .setId('f2467981-d242-4910-88aa-9317dee646c0')
     .setLocation('Kierspe')
@@ -219,7 +219,7 @@ Aus Kierspe
     .setTitle('... eine super gelungene RTF !!!')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-05-01')
     .setId('fb26c72c-2baf-4a13-8446-2d1831ecb0cb')
     .setLocation('Libur')
@@ -252,7 +252,7 @@ Matthias Zimmer
     .setTitle('Lärmbelästigung und Raserei')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2012-05-01')
     .setId('ce0f70e9-b404-46b4-be0c-c309db066f4e')
     .setName('Monika und Helmut Moosmann')

@@ -4,7 +4,7 @@ import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
 
 export default [
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2023-05-28 21:48')
     .setId('b98ee39c-9336-44aa-b64e-a9617b0dcc72')
     .setName('Marius Risch')

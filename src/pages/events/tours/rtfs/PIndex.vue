@@ -1,5 +1,5 @@
 <template>
-  <c-tour disabled="disabled" :model-value="useTourStore().getBy(EEvent.RTF)" />
+  <c-tour :model-value="useTourStore().getBy(EEvent.RTF_RTC)" disabled="disabled" />
   <q-dialog :model-value="true" persistent>
     <!-- TODO Remove code until next Forsbachtour in 2026 -->
     <q-card>

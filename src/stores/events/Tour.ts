@@ -20,7 +20,7 @@ export default defineStore('tour', () => {
       const tmp = getBy(EEvent.Familientour)
 
       if (tmp && !tmp.tracks.find((it) => it.length === 22)) {
-        const familyTourTrack = getBy(EEvent.RTF)?.tracks.find((it) => it.length === 22)
+        const familyTourTrack = getBy(EEvent.RTF_RTC)?.tracks.find((it) => it.length === 22)
 
         if (familyTourTrack) {
           tmp.tracks.push(familyTourTrack)

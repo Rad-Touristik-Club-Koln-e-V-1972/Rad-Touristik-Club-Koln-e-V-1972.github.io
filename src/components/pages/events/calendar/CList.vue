@@ -14,7 +14,7 @@
         </div>
       </div>
     </q-toolbar>
-    <q-table :columns :filter :filter-method :pagination :rows="useCalendarStore().all" separator="horizontal" :table-row-class-fn="getClass" :table-row-style-fn="getStyle">
+    <q-table :columns :filter :filter-method :pagination :rows="useCalendarStore().all" :table-row-class-fn="getClass" :table-row-style-fn="getStyle" separator="horizontal">
       <template #body-cell-name="props">
         <q-td :props="props">
           <a :class="getClass(props.row)" :href="props.row.url?.toString()" target="_blank">{{ props.row.name }}</a>
@@ -94,7 +94,7 @@ const columns: QTableColumn<Event>[] = [
 ]
 
 const filter = ref<Filter>({
-  categories: [EEvent.CTF, EEvent.Marathon, EEvent.Mitgliederversammlung, EEvent.Permanente, EEvent.RTC, EEvent.RTF, EEvent.Veranstaltung, EEvent.Vereinsfahrt],
+  categories: [EEvent.CTF, EEvent.Marathon, EEvent.Mitgliederversammlung, EEvent.Permanente, EEvent.RTC, EEvent.RTF, EEvent.RTF_RTC, EEvent.Veranstaltung, EEvent.Vereinsfahrt],
   dateRange: { from: `01.01.${dateTime.today.value.getFullYear().toFixed()}`, to: `31.12.${(dateTime.today.value.getFullYear() + 1).toFixed()}` },
   search: '',
 })

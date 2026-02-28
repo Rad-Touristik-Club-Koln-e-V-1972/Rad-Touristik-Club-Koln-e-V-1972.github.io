@@ -22,7 +22,7 @@ Helga
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-28 12:36')
     .setId('471b891d-03a2-49b5-8bca-236e961a8e8e')
     .setName('Jessica Bosen')
@@ -62,7 +62,7 @@ Jessica
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-27 13:10')
     .setId('10728640-a1ae-4950-9e62-3e15901b6f06')
     .setName('velotoerist')
@@ -94,7 +94,7 @@ velotoerist
     .setTitle('RM')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-27 12:59')
     .setId('02e4a5a9-dd53-4eb6-9067-38b576f8d11c')
     .setName('Helmut Hane')
@@ -110,7 +110,7 @@ Helmut Hane
     .setTitle('Prima RTF')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-27 9:28')
     .setId('e123b000-8402-431e-b3af-caac3ba6c1d0')
     .setName('Marco Gerlach')
@@ -131,7 +131,7 @@ Marco Gerlach
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-27 9:26')
     .setId('edee7e54-4bd3-43ee-b79f-90b8616e0eae')
     .setName('Jörg Homann')
@@ -167,7 +167,7 @@ http://scan.bike
     .setTitle('erfolgreicher Einsatz von scan&bike')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-27 6:49')
     .setId('57b9ada2-9724-4a1c-98d1-479e6f96b36b')
     .setName('Norbert Priefert')
@@ -200,7 +200,7 @@ Norbert
     .setTitle('Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder .')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 20:16')
     .setId('84c5d745-e305-4740-87d2-267d4c8b36b6')
     .setLocation('Recklinghausen')
@@ -219,7 +219,7 @@ Jörg
     .setTitle('Marathon')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 16:57')
     .setId('7f968e2e-2e29-44b9-b12a-4a11b2d5934a')
     .setName('Markus Reckter')
@@ -240,7 +240,7 @@ RTF Koblenz
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 13:08')
     .setId('e50262da-d32b-4ea9-82ae-b175efae4c34')
     .setName('Claudia Braun')
@@ -262,7 +262,7 @@ Union Biesfeld Triathlon
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 12:50')
     .setId('68a6c338-33e8-413c-8e40-887138e74067')
     .setName('Angela Schmilewski')
@@ -283,7 +283,7 @@ Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regenerat
     .setTitle('Wunderbare Veranstaltung')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 12:43')
     .setId('f87bb180-5493-4886-aa36-a6440efeee46')
     .setName('Dirk Brieden')
@@ -305,7 +305,7 @@ PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Me
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 10:55')
     .setId('b0664d30-78ba-46f6-9642-9aff068f0c09')
     .setName('Dirk Brieden')
@@ -341,7 +341,7 @@ Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 10:49')
     .setId('f89a9f7c-d52f-456a-adf7-9fb52c7aaaca')
     .setName('Michaela Packebusch')
@@ -359,7 +359,7 @@ vom VfB Polch Abtl. Radsport.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 10:33')
     .setId('b100c8ca-78a5-4ee5-8952-34ed884b81b9')
     .setName('Frank Stöcker')
@@ -390,7 +390,7 @@ Frank
     .setTitle('Feedback wegen Forsbach Tour 24.05.14')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 8:54')
     .setId('3c728a87-84c5-4343-9358-ff433be98ed2')
     .setName('Reiche')
@@ -405,7 +405,7 @@ vielen Dank für die Orga und die Auswahl der schönen Strecke.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 8:15')
     .setId('f19c8dd4-6e87-48cc-9018-124993aec557')
     .setName('Max Christian Obst')
@@ -420,7 +420,7 @@ nächstes Jahr will ich wieder meine Banane bekommen ;)
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 7:24')
     .setId('a1e6ee38-dfb1-4374-b784-6f5812d0c354')
     .setLocation('Berrenrath')
@@ -441,7 +441,7 @@ Stefan Schneider
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-26 7:06')
     .setId('42d4f02f-736c-4f88-8179-ba7cb54eeadd')
     .setName('Norbert Priefert')
@@ -468,7 +468,7 @@ Norbert
     .setTitle('Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen...')
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2014-05-25 19:44')
     .setId('3932917a-932b-499d-9b43-f6b41417754a')
     .setName('Jürgen Ruttkowski')

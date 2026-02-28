@@ -5,7 +5,7 @@ import _0330Streckenbesichtigung from './03_30_Streckenbesichtigung'
 import Tour from './Tour'
 
 export default new GalleryBuilder()
-  .setCategory(EEvent.RTF)
+  .setCategory(EEvent.RTF_RTC)
   .setDate('2014-05-25')
   .setId('adfb799b-4249-4355-96fa-8eafe9859087')
   .setImages({

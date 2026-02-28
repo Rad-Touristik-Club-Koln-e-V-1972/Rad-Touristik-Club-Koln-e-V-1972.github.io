@@ -27,6 +27,6 @@ export default defineStore('calendar', () => {
         .sort((a, b) => a.start.getTime() - b.start.getTime())
         .slice(0, 2),
     ),
-    nextRTF: computed(() => allFuture.value.find((it) => it.category === EEvent.RTF)),
+    nextRTF: computed(() => allFuture.value.find((it) => it.category === EEvent.RTF_RTC)),
   }
 })

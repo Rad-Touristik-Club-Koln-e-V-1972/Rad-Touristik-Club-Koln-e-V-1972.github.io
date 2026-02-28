@@ -58,7 +58,7 @@ export default [
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-23').setId('60317e4f-e521-4473-b1c5-6ef239b6999c').setName('Wuppertal').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-25').setId('5e11acd9-e2c0-40bd-9e9c-9e171b5a913d').setName('Mehlem').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-30').setId('1de0f5a0-2c54-416b-9db1-dee817ce1896').setKilometer(500).setName('Aufbau FBT').buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-31').setId('18220f49-dbe4-4387-9ef3-189850dcc3b5').setKilometer(500).setName('Forsbachtour').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTF_RTC).setDate('2026-05-31').setId('18220f49-dbe4-4387-9ef3-189850dcc3b5').setKilometer(500).setName('Forsbachtour').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
@@ -113,7 +113,7 @@ export default [
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-27').setId('8a148c10-568d-418a-bc25-36e2d404240d').setName('Essen').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-10-03').setId('9e7652fe-e08d-4027-952f-c20f4996b677').setName('Büttgen').buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setDate('2026-10-04')
     .setId('7fd55682-f9a9-4c5a-be0c-9fe142e0ee1e')
     .setKilometer(500)

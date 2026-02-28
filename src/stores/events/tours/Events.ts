@@ -8,7 +8,7 @@ import EProfile from 'src/models/enums/events/EProfile'
 
 export default [
   new EventBuilder()
-    .setCategory(EEvent.RTF)
+    .setCategory(EEvent.RTF_RTC)
     .setFees(
       new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
       new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(7).buildFee(),
