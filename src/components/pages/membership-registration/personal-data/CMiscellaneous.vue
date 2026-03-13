@@ -6,12 +6,12 @@
       </div>
       <div class="col-1" />
       <div class="col">
-        <q-select v-model="modelValue.tShirtSize" label="T-Shirt Größe" :options="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']" />
+        <q-select v-model="modelValue.tShirtSize" :options="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']" label="T-Shirt Größe" />
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <c-date-picker v-model="modelValue.entryDate" label="Eintritt (Datum)" :max="date.addToDate(new Date(), { month: 1 })" :min="date.buildDate({ year: 1972, month: 10, date: 30 })" />
+        <c-date-picker v-model="modelValue.entryDate" :max="date.addToDate(new Date(), { month: 1 })" :min="date.buildDate({ year: 1972, month: 10, date: 30 })" label="Eintritt (Datum)" />
       </div>
       <div class="col-1" />
       <div class="col">

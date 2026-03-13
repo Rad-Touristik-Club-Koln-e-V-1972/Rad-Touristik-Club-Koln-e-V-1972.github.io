@@ -1,12 +1,12 @@
 <template>
   <div class="q-pa-md">
-    <q-input dense :label="props.label" :model-value="modelValue ? useDateTime().format(new Date(modelValue), undefined, true) : ''" readonly>
+    <q-input :label="props.label" :model-value="modelValue ? useDateTime().format(new Date(modelValue), undefined, true) : ''" dense readonly>
       <template #append>
-        <q-icon class="cursor-pointer" :name="mdiCalendar">
+        <q-icon :name="mdiCalendar" class="cursor-pointer">
           <q-popup-proxy cover transition-hide="scale" transition-show="scale">
             <q-date v-model="modelValue" :navigation-max-year-month="date.formatDate(props.max, 'YYYY/MM')" :navigation-min-year-month="date.formatDate(props.min, 'YYYY/MM')">
               <div class="items-center justify-end row">
-                <q-btn v-close-popup label="Close" color="primary" flat />
+                <q-btn v-close-popup color="primary" flat label="Close" />
               </div>
             </q-date>
           </q-popup-proxy>
