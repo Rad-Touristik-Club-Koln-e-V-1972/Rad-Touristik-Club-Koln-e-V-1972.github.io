@@ -4,15 +4,15 @@
     <q-card-section class="text-subtitle1">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</q-card-section>
     <q-card-section>
       <q-card class="row" flat>
-        <d-view-image class="col-auto" :model-value="imageUrls" style="margin: 10px; width: 20em" />
+        <d-view-image :model-value="imageUrls" class="col-auto" style="margin: 10px; width: 20em" />
         <q-card-section class="col-auto text-subtitle2">
           Der Vorstand vom RTC Köln e.V. (von links):
           <br />
-          Matthias (Kassenwart), Frank (2. Vorsitzender & Geschäftsführung), Manni (Sportwart) und Diana (1. Vorsitzende).
+          Frank (Sportwart), Manni (2. Vorsitzender), Diana (1. Vorsitzende), Matthias (Kassenwart), Tobias (Geschäftsführung)
         </q-card-section>
       </q-card>
       <div class="row">
-        <c-contact v-for="it in useContactsStore().all" :key="it.id" class="col-auto" :model-value="it" style="margin: 10px; width: 20em" />
+        <c-contact v-for="it in useContactsStore().all" :key="it.id" :model-value="it" class="col-auto" style="margin: 10px; width: 20em" />
       </div>
     </q-card-section>
   </q-card>
