@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.39
         version: 1.12.39
       maz-ui:
-        specifier: 4.7.2
-        version: 4.7.2(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3))
+        specifier: 4.7.3
+        version: 4.7.3(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -161,11 +161,11 @@ packages:
   '@bufbuild/protobuf@2.6.3':
     resolution: {integrity: sha512-w/gJKME9mYN7ZoUAmSMAWXk4hkVpxRKvEJCb3dV5g9wwWdxTJJ0ayOJAVcNxtdqaxDyFuC0uz4RSGVacJ030PQ==}
 
-  '@clack/core@1.0.1':
-    resolution: {integrity: sha512-WKeyK3NOBwDOzagPR5H08rFk9D/WuN705yEbuZvKqlkmoLM2woKtXb10OO2k1NoSU4SFG947i2/SCYh+2u5e4g==}
+  '@clack/core@1.1.0':
+    resolution: {integrity: sha512-SVcm4Dqm2ukn64/8Gub2wnlA5nS2iWJyCkdNHcvNHPIeBTGojpdJ+9cZKwLfmqy7irD4N5qLteSilJlE0WLAtA==}
 
-  '@clack/prompts@1.0.1':
-    resolution: {integrity: sha512-/42G73JkuYdyWZ6m8d/CJtBrGl1Hegyc7Fy78m5Ob+jF85TOUmLR5XLce/U3LxYAw0kJ8CT5aI99RIvPHcGp/Q==}
+  '@clack/prompts@1.1.0':
+    resolution: {integrity: sha512-pkqbPGtohJAvm4Dphs2M8xE29ggupihHdy1x84HNojZuMtFsHiUlRvqD24tM2+XmI+61LlfNceM3Wr7U5QES5g==}
 
   '@commitlint/cli@20.4.3':
     resolution: {integrity: sha512-Z37EMoDT7+Upg500vlr/vZrgRsb6Xc5JAA3Tv7BYbobnN/ZpqUeZnSLggBg2+1O+NptRDtyujr2DD1CPV2qwhA==}
@@ -611,17 +611,17 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@floating-ui/core@1.7.4':
-    resolution: {integrity: sha512-C3HlIdsBxszvm5McXlB8PeOEWfBhcGBTZGkGlWc2U0KFY5IwG5OQEuQ8rq52DZmcHDlPLd+YFBK+cZcytwIFWg==}
+  '@floating-ui/core@1.7.5':
+    resolution: {integrity: sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==}
 
-  '@floating-ui/dom@1.7.5':
-    resolution: {integrity: sha512-N0bD2kIPInNHUHehXhMke1rBGs1dwqvC9O9KYMyyjK7iXt7GAhnro7UlcuYcGdS/yYOlq0MAVgrow8IbWJwyqg==}
+  '@floating-ui/dom@1.7.6':
+    resolution: {integrity: sha512-9gZSAI5XM36880PPMm//9dfiEngYoC6Am2izES1FF406YFsjvyBMmeJ2g4SAju3xWwtuynNRFL2s9hgxpLI5SQ==}
 
-  '@floating-ui/utils@0.2.10':
-    resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
+  '@floating-ui/utils@0.2.11':
+    resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
 
-  '@floating-ui/vue@1.1.10':
-    resolution: {integrity: sha512-vdf8f6rHnFPPLRsmL4p12wYl+Ux4mOJOkjzKEMYVnwdf7UFdvBtHlLvQyx8iKG5vhPRbDRgZxdtpmyigDPjzYg==}
+  '@floating-ui/vue@1.1.11':
+    resolution: {integrity: sha512-HzHKCNVxnGS35r9fCHBc3+uCnjw9IWIlCPL683cGgM9Kgj2BiAl8x1mS7vtvP6F9S/e/q4O6MApwSHj8hNLGfw==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -679,8 +679,8 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@maz-ui/cli@4.7.2':
-    resolution: {integrity: sha512-h95xbfrEzs3kN5xbPMy11i1pTEMAG+jBWKcKaVhDBGmM3SqytYEm0GS2IjKlCcWWkFt/rvNfDTT162DhwQc4XQ==}
+  '@maz-ui/cli@4.7.3':
+    resolution: {integrity: sha512-7fTR29GUOpXsfNCKq/zj32IMBLsGEdS/0evVjxj/SyT/+UzWj+fkNTZ8v+yABSPrSv2JdWcIrQnhWqa9KpQM+A==}
     hasBin: true
 
   '@maz-ui/icons@4.7.2':
@@ -698,20 +698,8 @@ packages:
     resolution: {integrity: sha512-0iKI1R7WPbk0BRfLLYE6Hkkwsg3W/nDpOx4lEPtixHVI+G86UDle8TEwsf5DZ+Hcf1IkcjlHGRWBlRvMfF9rig==}
     engines: {node: '>=18.0.0'}
 
-  '@maz-ui/themes@4.7.2':
-    resolution: {integrity: sha512-QV/0puFFBZXxhUNjaHOwnX4B8ghiP/EqPWRHN1carLsLKobDZQkVT8b8FV1ZWUCdOknBCHIaakVgyBcWQ10F8g==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: '>=3.5.0 <4.0.0'
-
   '@maz-ui/themes@4.7.3':
     resolution: {integrity: sha512-z4jNmZpwQtAjIFjGBxQjODLofdQ/38GPJnrtpQDBKu4sU+5CsOKLmYVGUjSZayV4+k82fBtcmbWXgeccXOey+g==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: '>=3.5.0 <4.0.0'
-
-  '@maz-ui/translations@4.7.2':
-    resolution: {integrity: sha512-ybCTECHWUPlUGR6kaq3LImYoFjo+cC8IvMh0AClnk4jcryc1ExD21u91GKjihtKJk8XeWUaryeWA2tod3QmLTg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
@@ -721,10 +709,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
-
-  '@maz-ui/utils@4.7.2':
-    resolution: {integrity: sha512-rc1ifDXIe/c9tNpxaXW/cCzQV7hipyFBHfO4x4oaFYVVobKuct4mzMnw2d/ySnRQrdnmcJHT3HCGvhRLctVSfA==}
-    engines: {node: '>=18.0.0'}
 
   '@maz-ui/utils@4.7.3':
     resolution: {integrity: sha512-aW6UuJdCMqZwuZLmX2lTMBHXl9rI4b8rhh0oY8aMii0cs5Be5vOClVeAOBVJ9VDS3QklKayjbyFOJbHV+uJOEA==}
@@ -1676,15 +1660,6 @@ packages:
       cosmiconfig: '>=9'
       typescript: '>=5'
 
-  cosmiconfig@9.0.0:
-    resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      typescript: '>=4.9.5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   cosmiconfig@9.0.1:
     resolution: {integrity: sha512-hr4ihw+DBqcvrsEDioRO31Z17x71pUYoNe/4h6Z0wB72p7MU7/9gH8Q3s12NFhHPfYBBOV3qyfUxmr/Yn3shnQ==}
     engines: {node: '>=14'}
@@ -2514,8 +2489,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.7.2:
-    resolution: {integrity: sha512-1xTPY2m+hPUCFWQ4/9ug7zea5oyS15mFxaPC8yz8VEm9kUKK4PrTIdZgkF3K6KgsuKpTUaRgNy2et0R9KR2mkw==}
+  maz-ui@4.7.3:
+    resolution: {integrity: sha512-QKXtkTHddSpMUyjnVBXkwqUbf+Pd85/kbseUTBp1Ghsrjz0x++zMGLeJufCys/r88Y8Tma35djFrqUM3PsEKwQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3812,15 +3787,13 @@ snapshots:
 
   '@bufbuild/protobuf@2.6.3': {}
 
-  '@clack/core@1.0.1':
+  '@clack/core@1.1.0':
     dependencies:
-      picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@clack/prompts@1.0.1':
+  '@clack/prompts@1.1.0':
     dependencies:
-      '@clack/core': 1.0.1
-      picocolors: 1.1.1
+      '@clack/core': 1.1.0
       sisteransi: 1.0.5
 
   '@commitlint/cli@20.4.3(@types/node@24.12.0)(typescript@5.9.3)':
@@ -4161,21 +4134,21 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@floating-ui/core@1.7.4':
+  '@floating-ui/core@1.7.5':
     dependencies:
-      '@floating-ui/utils': 0.2.10
+      '@floating-ui/utils': 0.2.11
 
-  '@floating-ui/dom@1.7.5':
+  '@floating-ui/dom@1.7.6':
     dependencies:
-      '@floating-ui/core': 1.7.4
-      '@floating-ui/utils': 0.2.10
+      '@floating-ui/core': 1.7.5
+      '@floating-ui/utils': 0.2.11
 
-  '@floating-ui/utils@0.2.10': {}
+  '@floating-ui/utils@0.2.11': {}
 
-  '@floating-ui/vue@1.1.10(vue@3.5.29(typescript@5.9.3))':
+  '@floating-ui/vue@1.1.11(vue@3.5.29(typescript@5.9.3))':
     dependencies:
-      '@floating-ui/dom': 1.7.5
-      '@floating-ui/utils': 0.2.10
+      '@floating-ui/dom': 1.7.6
+      '@floating-ui/utils': 0.2.11
       vue-demi: 0.14.10(vue@3.5.29(typescript@5.9.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4238,12 +4211,12 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@maz-ui/cli@4.7.2(typescript@5.9.3)':
+  '@maz-ui/cli@4.7.3(typescript@5.9.3)':
     dependencies:
-      '@clack/prompts': 1.0.1
+      '@clack/prompts': 1.1.0
       '@maz-ui/node': 4.6.1
       commander: 14.0.3
-      cosmiconfig: 9.0.0(typescript@5.9.3)
+      cosmiconfig: 9.0.1(typescript@5.9.3)
       figlet: 1.10.0
       tinycolor2: 1.6.0
     transitivePeerDependencies:
@@ -4259,27 +4232,15 @@ snapshots:
       consola: 3.4.2
       figlet: 1.10.0
 
-  '@maz-ui/themes@4.7.2(vue@3.5.29(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.7.2
-      vue: 3.5.29(typescript@5.9.3)
-
   '@maz-ui/themes@4.7.3(vue@3.5.29(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.3
-      vue: 3.5.29(typescript@5.9.3)
-
-  '@maz-ui/translations@4.7.2(vue@3.5.29(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.7.2
       vue: 3.5.29(typescript@5.9.3)
 
   '@maz-ui/translations@4.7.3(vue@3.5.29(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.3
       vue: 3.5.29(typescript@5.9.3)
-
-  '@maz-ui/utils@4.7.2': {}
 
   '@maz-ui/utils@4.7.3': {}
 
@@ -5363,15 +5324,6 @@ snapshots:
       jiti: 2.5.1
       typescript: 5.9.3
 
-  cosmiconfig@9.0.0(typescript@5.9.3):
-    dependencies:
-      env-paths: 2.2.1
-      import-fresh: 3.3.1
-      js-yaml: 4.1.1
-      parse-json: 5.2.0
-    optionalDependencies:
-      typescript: 5.9.3
-
   cosmiconfig@9.0.1(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
@@ -6219,14 +6171,14 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.7.2(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)):
+  maz-ui@4.7.3(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)):
     dependencies:
-      '@floating-ui/vue': 1.1.10(vue@3.5.29(typescript@5.9.3))
-      '@maz-ui/cli': 4.7.2(typescript@5.9.3)
+      '@floating-ui/vue': 1.1.11(vue@3.5.29(typescript@5.9.3))
+      '@maz-ui/cli': 4.7.3(typescript@5.9.3)
       '@maz-ui/icons': 4.7.2(vue@3.5.29(typescript@5.9.3))
-      '@maz-ui/themes': 4.7.2(vue@3.5.29(typescript@5.9.3))
-      '@maz-ui/translations': 4.7.2(vue@3.5.29(typescript@5.9.3))
-      '@maz-ui/utils': 4.7.2
+      '@maz-ui/themes': 4.7.3(vue@3.5.29(typescript@5.9.3))
+      '@maz-ui/translations': 4.7.3(vue@3.5.29(typescript@5.9.3))
+      '@maz-ui/utils': 4.7.3
       chart.js: 4.5.1
       dayjs: 1.11.19
       libphonenumber-js: 1.12.39
