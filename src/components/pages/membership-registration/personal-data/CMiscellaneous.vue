@@ -2,7 +2,7 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        <c-date-picker v-model="modelValue.birthdate" label="Geburtsdatum" :max="new Date()" :min="date.addToDate(new Date(), { years: -100 })" />
+        <c-date-picker v-model="modelValue.birthdate" :max="date.subtractFromDate(new Date(), { months: 1, years: 1 })" :min="date.subtractFromDate(new Date(), { years: 100 })" label="Geburtsdatum" />
       </div>
       <div class="col-1" />
       <div class="col">
