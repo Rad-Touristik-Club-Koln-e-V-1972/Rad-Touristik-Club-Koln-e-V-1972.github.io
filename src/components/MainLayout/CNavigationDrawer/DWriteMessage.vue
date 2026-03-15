@@ -1,18 +1,18 @@
 <template>
   <div>
-    <q-btn class="full-width" color="primary" :icon="mdiCellphoneMessage" text-color="accent" @click="dialog = true">Nachricht schreiben</q-btn>
+    <q-btn :icon="mdiCellphoneMessage" class="full-width" color="primary" text-color="accent" @click="dialog = true">Nachricht schreiben</q-btn>
     <q-dialog v-model="dialog" persistent>
       <q-card>
         <q-card-section class="bg-primary text-accent text-h6">Nachricht schreiben</q-card-section>
         <q-card-section>
-          <q-select v-model="selectedContact" bottom-slots filled label="Empfänger" :option-label="(it) => `${it.position} ${it.name}`" :options="contacts">
-            <template v-slot:before>
+          <q-select v-model="selectedContact" :option-label="(it) => `${it.position} ${it.name}`" :options="contacts" bottom-slots filled label="Empfänger">
+            <template #before>
               <q-avatar>
                 <img v-if="selectedContact?.imageUrl" :src="selectedContact.imageUrl.toString()" />
               </q-avatar>
             </template>
-            <template v-slot:after>
-              <q-btn dense flat :icon="mdiSend" round @click="sendMessage()" />
+            <template #after>
+              <q-btn :icon="mdiSend" dense flat round @click="sendMessage()" />
             </template>
           </q-select>
         </q-card-section>

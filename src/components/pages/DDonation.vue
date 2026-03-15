@@ -1,12 +1,12 @@
 <template>
   <div>
-    <q-btn color="blue" label="Bezahlen" @click="dialog = true" :icon="mdiAccountCreditCard" no-wrap />
+    <q-btn :icon="mdiAccountCreditCard" color="blue" label="Bezahlen" no-wrap @click="dialog = true" />
     <q-dialog v-model="dialog" persistent>
       <q-card flat>
         <q-card-section class="bg-primary text-accent row">
           <div class="text-h6">Bezahlen</div>
           <q-space />
-          <q-btn v-close-popup dense flat :icon="mdiClose" round text-color="accent" />
+          <q-btn v-close-popup :icon="mdiClose" dense flat round text-color="accent" />
         </q-card-section>
         <q-card-section>
           <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-orange-1" indicator-color="secondary">
@@ -16,7 +16,7 @@
             <q-tab-panel v-for="it in props.modelValue" :key="it.id" :name="it.id">
               <span v-if="it.text" v-html="it.text" />
               <div v-else-if="it.url" class="cursor-pointer" @click="openURL(it.url.toString())">
-                <span class="text-center" v-if="it.url">Scannen oder anklicken</span>
+                <span v-if="it.url" class="text-center">Scannen oder anklicken</span>
                 <c-q-r-code :url="it.url" />
               </div>
             </q-tab-panel>

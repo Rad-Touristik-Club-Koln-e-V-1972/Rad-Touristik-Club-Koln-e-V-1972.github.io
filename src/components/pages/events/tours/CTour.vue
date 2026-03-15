@@ -3,18 +3,18 @@
     <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
     <q-card-section>
       <span>Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</span>
-      <div class="text-subtitle1" v-if="calendarStore.nextRTF">
+      <div v-if="calendarStore.nextRTF" class="text-subtitle1">
         Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
       </div>
       <i>Wir unterstützen den neuen Kids-Cup in der Radsport-Region Köln-Bonn-Aachen für Kinder und Jugendliche in den Altersklassen 2012-2015 und 2016-2019.</i>
     </q-card-section>
     <q-card-actions align="left">
-      <q-btn class="bg-secondary" v-if="route.name === 'events-tours-rtfs'" color="primary" label="Zur Family Tour" :to="{ name: 'events-tours-rtfs-family' }" />
-      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" label="Zur RTF" :to="{ name: 'events-tours-rtfs' }" />
-      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" label="Zum Gothaer Kids-Cup 2025" href="https://www.svmalefinkbach.de/gothaer-kids-cup-2025/" target="_blank" />
+      <q-btn v-if="route.name === 'events-tours-rtfs'" :to="{ name: 'events-tours-rtfs-family' }" class="bg-secondary" color="primary" label="Zur Family Tour" />
+      <q-btn v-if="route.name === 'events-tours-rtfs-family'" :to="{ name: 'events-tours-rtfs' }" class="bg-secondary" color="primary" label="Zur RTF" />
+      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" href="https://www.svmalefinkbach.de/gothaer-kids-cup-2025/" label="Zum Gothaer Kids-Cup 2025" target="_blank" />
     </q-card-actions>
     <q-card-section>
-      <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent" :vertical="$q.platform.is.mobile">
+      <q-tabs v-model="tab" :vertical="$q.platform.is.mobile" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
         <q-tab :icon="mdiBike" label="Allgemein" name="general" />
         <q-tab :icon="mdiInformation" label="Info" name="info" />
         <q-tab :icon="mdiGoKartTrack" label="Strecken" name="tracks" />

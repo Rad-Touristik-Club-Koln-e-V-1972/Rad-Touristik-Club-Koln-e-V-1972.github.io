@@ -12,7 +12,7 @@ export default defineConfigWithVueTs(
   },
   ...pluginQuasar.configs.recommended(),
   js.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
+  ...pluginVue.configs['flat/recommended'],
   {
     files: ['**/*.ts', '**/*.vue'],
     rules: {
@@ -27,7 +27,7 @@ export default defineConfigWithVueTs(
       sourceType: 'module',
       globals: {
         ...globals.browser,
-        ...globals.es2025,
+        ...globals.es2026,
         ...globals.nodeBuiltin,
         process: 'readonly', // process.env.*
         ga: 'readonly', // Google Analytics
@@ -39,7 +39,6 @@ export default defineConfigWithVueTs(
       parserOptions: {
         ecmaVersion: 'latest',
         extraFileExtensions: ['.vue'],
-        project: true,
         sourceType: 'module',
       },
     },

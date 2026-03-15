@@ -1,0 +1,29 @@
+// TODO: Workaround for https://github.com/fi3ework/vite-plugin-checker/issues/647
+//  Support ESLint v10.x
+diff --git a/dist/checkers/eslint/main.js b/dist/checkers/eslint/main.js
+index 27a775515049aa60f23c2778632b86d2db6d3513..95a9e3bcbd5b4e9a1b39fa3955545f59226e9048 100644
+--- a/dist/checkers/eslint/main.js
++++ b/dist/checkers/eslint/main.js
+@@ -60,19 +60,9 @@ const createDiagnostic = (pluginConfig) => {
+       };
+       let eslint;
+       if (pluginConfig.eslint.useFlatConfig) {
+-        const {
+-          FlatESLint,
+-          shouldUseFlatConfig
+-        } = require2("eslint/use-at-your-own-risk");
+-        if (shouldUseFlatConfig == null ? void 0 : shouldUseFlatConfig()) {
+-          eslint = new FlatESLint({
+-            cwd: root
+-          });
+-        } else {
+-          throw Error(
+-            "Please upgrade your eslint to latest version to use `useFlatConfig` option."
+-          );
+-        }
++        eslint = new ESLint({
++          cwd: root
++        });
+       } else {
+         eslint = new ESLint(eslintOptions);
+       }
