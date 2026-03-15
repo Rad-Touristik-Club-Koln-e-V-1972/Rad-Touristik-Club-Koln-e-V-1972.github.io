@@ -11,7 +11,7 @@
                                 & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
               <masonry-wall :column-width="280" :gap="16" :items="it.images">
                 <template #default="{ index }">
-                  <d-view :start-index="index" :model-value="it.images" />
+                  <d-view :model-value="it.images" :start-index="index" />
                 </template>
               </masonry-wall>
             </q-card-section>
@@ -24,6 +24,7 @@
 
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
+import { MasonryWall } from '@yeger/vue-masonry-wall'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import usePressReportsStore from 'stores/rtc-cologne/PressReports'
 import useDateTime from 'src/utils/DateTime'

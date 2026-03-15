@@ -27,6 +27,7 @@
 </template>
 
 <script lang="ts" setup>
+import { MasonryWall } from '@yeger/vue-masonry-wall'
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
 import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'

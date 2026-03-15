@@ -2,7 +2,7 @@
   <div>
     <q-card v-if="value" flat>
       <q-toolbar class="bg-primary">
-        <q-btn dense flat :icon="mdiClose" round @click="close" />
+        <q-btn :icon="mdiClose" dense flat round @click="close" />
         <q-toolbar-title class="text-accent">{{ value.title }}</q-toolbar-title>
       </q-toolbar>
       <q-card-section class="text-subtitle1">{{ useDateTime().format(value.start, value.end) }} bei {{ value.location }}</q-card-section>
@@ -22,7 +22,7 @@
                                 & https://github.com/w3c/csswg-drafts/issues?q=is%3Aopen+label%3Acss-grid-3+masonry -->
                 <masonry-wall :column-width="280" :gap="16" :items="item">
                   <template #default="{ index }">
-                    <d-view :start-index="index" :model-value="item" />
+                    <d-view :model-value="item" :start-index="index" />
                   </template>
                 </masonry-wall>
               </q-tab-panel>
@@ -49,6 +49,7 @@ import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuasar } from 'quasar'
 import { mdiClose } from '@quasar/extras/mdi-v7'
+import { MasonryWall } from '@yeger/vue-masonry-wall'
 import DView from 'components/pages/rtc-cologne/galleries/album/DView.vue'
 import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 import useGalleryStore from 'stores/rtc-cologne/Gallery'

@@ -3,12 +3,12 @@
     <q-card-section class="bg-primary text-accent text-h6">Gästebuch</q-card-section>
     <q-card-section>
       <q-btn
-        text-color="accent"
+        :icon="mdiEmailArrowRight"
         color="primary"
         href="mailto:PR@rtc-koeln.de?subject=G%C3%A4stebuch%20-%20Thema
                 &body=Hallo%20RTC%20K%C3%B6ln%2C%0D%0A%0D%0APlatzhalter%20f%C3%BCr%20den%20G%C3%A4stebucheintrag"
-        :icon="mdiEmailArrowRight"
         label="Gästebucheintrag hinzufügen"
+        text-color="accent"
       />
     </q-card-section>
     <q-card-section class="text-subtitle1">Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083 Köln</q-card-section>
@@ -42,6 +42,7 @@
 
 <script lang="ts" setup>
 import { mdiEmailArrowRight } from '@quasar/extras/mdi-v7'
+import { MasonryWall } from '@yeger/vue-masonry-wall'
 import CGuestbook from 'components/pages/rtc-cologne/CGuestbook.vue'
 import type GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
 import useGuestbookStore from 'stores/rtc-cologne/Guestbook'
