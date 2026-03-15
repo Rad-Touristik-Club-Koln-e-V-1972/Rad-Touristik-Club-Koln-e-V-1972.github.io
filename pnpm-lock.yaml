@@ -36,8 +36,8 @@ importers:
         specifier: 1.12.39
         version: 1.12.39
       maz-ui:
-        specifier: 4.7.3
-        version: 4.7.3(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3))
+        specifier: 4.7.5
+        version: 4.7.5(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3))
       mime:
         specifier: 4.1.0
         version: 4.1.0
@@ -710,20 +710,8 @@ packages:
     resolution: {integrity: sha512-0iKI1R7WPbk0BRfLLYE6Hkkwsg3W/nDpOx4lEPtixHVI+G86UDle8TEwsf5DZ+Hcf1IkcjlHGRWBlRvMfF9rig==}
     engines: {node: '>=18.0.0'}
 
-  '@maz-ui/themes@4.7.3':
-    resolution: {integrity: sha512-z4jNmZpwQtAjIFjGBxQjODLofdQ/38GPJnrtpQDBKu4sU+5CsOKLmYVGUjSZayV4+k82fBtcmbWXgeccXOey+g==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: '>=3.5.0 <4.0.0'
-
   '@maz-ui/themes@4.7.4':
     resolution: {integrity: sha512-P5d/aX+m2H6Sojllt45/hs9K9VSQWo+Gx73tBgdKqgDjZefepiZyZKxEKlqVlEF6ON50UhnDhdUJZhmPXRt4Vg==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      vue: '>=3.5.0 <4.0.0'
-
-  '@maz-ui/translations@4.7.3':
-    resolution: {integrity: sha512-kb6v3n9pYCECathQu/ARgo9DH2ZnQR/HyrAJddlWdGW5iB93e8Ur1/gLToJRHMzIDn32LKSNrwvyxcT3O4AuTw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
@@ -733,10 +721,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
-
-  '@maz-ui/utils@4.7.3':
-    resolution: {integrity: sha512-aW6UuJdCMqZwuZLmX2lTMBHXl9rI4b8rhh0oY8aMii0cs5Be5vOClVeAOBVJ9VDS3QklKayjbyFOJbHV+uJOEA==}
-    engines: {node: '>=18.0.0'}
 
   '@maz-ui/utils@4.7.4':
     resolution: {integrity: sha512-SbLOposiQTz2ZUR1WG2NoWu9e8z9Cq8miY1IQ3ftyI8YxBekIZXEzU1M7QwKYViG03EbC4vMDOVCFRX0HaR19w==}
@@ -2516,8 +2500,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  maz-ui@4.7.3:
-    resolution: {integrity: sha512-QKXtkTHddSpMUyjnVBXkwqUbf+Pd85/kbseUTBp1Ghsrjz0x++zMGLeJufCys/r88Y8Tma35djFrqUM3PsEKwQ==}
+  maz-ui@4.7.5:
+    resolution: {integrity: sha512-1pHVFL94Tzjbg/IB0Y4OwJToL4UFkmv9jZ9CfLJpceDElVByzAbiYniJm7FGijpgw1tjBUKpYbIbE3rFEv9w6w==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4268,27 +4252,15 @@ snapshots:
       consola: 3.4.2
       figlet: 1.10.0
 
-  '@maz-ui/themes@4.7.3(vue@3.5.30(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.7.3
-      vue: 3.5.30(typescript@5.9.3)
-
   '@maz-ui/themes@4.7.4(vue@3.5.30(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.4
-      vue: 3.5.30(typescript@5.9.3)
-
-  '@maz-ui/translations@4.7.3(vue@3.5.30(typescript@5.9.3))':
-    dependencies:
-      '@maz-ui/utils': 4.7.3
       vue: 3.5.30(typescript@5.9.3)
 
   '@maz-ui/translations@4.7.4(vue@3.5.30(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.4
       vue: 3.5.30(typescript@5.9.3)
-
-  '@maz-ui/utils@4.7.3': {}
 
   '@maz-ui/utils@4.7.4': {}
 
@@ -6225,14 +6197,14 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  maz-ui@4.7.3(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)):
+  maz-ui@4.7.5(typescript@5.9.3)(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3)):
     dependencies:
       '@floating-ui/vue': 1.1.11(vue@3.5.30(typescript@5.9.3))
       '@maz-ui/cli': 4.7.3(typescript@5.9.3)
       '@maz-ui/icons': 4.7.2(vue@3.5.30(typescript@5.9.3))
-      '@maz-ui/themes': 4.7.3(vue@3.5.30(typescript@5.9.3))
-      '@maz-ui/translations': 4.7.3(vue@3.5.30(typescript@5.9.3))
-      '@maz-ui/utils': 4.7.3
+      '@maz-ui/themes': 4.7.4(vue@3.5.30(typescript@5.9.3))
+      '@maz-ui/translations': 4.7.4(vue@3.5.30(typescript@5.9.3))
+      '@maz-ui/utils': 4.7.4
       chart.js: 4.5.1
       dayjs: 1.11.19
       libphonenumber-js: 1.12.39
