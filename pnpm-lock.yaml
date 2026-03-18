@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@maz-ui/themes':
-        specifier: 4.7.6
-        version: 4.7.6(vue@3.5.30(typescript@5.9.3))
+        specifier: 4.7.9
+        version: 4.7.9(vue@3.5.30(typescript@5.9.3))
       '@maz-ui/translations':
         specifier: 4.7.6
         version: 4.7.6(vue@3.5.30(typescript@5.9.3))
@@ -723,6 +723,12 @@ packages:
 
   '@maz-ui/themes@4.7.6':
     resolution: {integrity: sha512-rVzgPs6m97rRN5ruNxMh4/V60b45oar31i/ix7iPDBC8XZcCaMJ4ECIkzq+38dBZfX2LbhJupJ3wpZHW6+SI1Q==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: '>=3.5.0 <4.0.0'
+
+  '@maz-ui/themes@4.7.9':
+    resolution: {integrity: sha512-/sW+EUj13IsyqIFveM2xVdmjR2gtMIFumJNbjfKm7EuwX9Hs4BzF4XG1+FgXw6q+sy2DqQMM6o+VTjVbbVfseA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
@@ -4286,6 +4292,11 @@ snapshots:
       figlet: 1.11.0
 
   '@maz-ui/themes@4.7.6(vue@3.5.30(typescript@5.9.3))':
+    dependencies:
+      '@maz-ui/utils': 4.7.6
+      vue: 3.5.30(typescript@5.9.3)
+
+  '@maz-ui/themes@4.7.9(vue@3.5.30(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.6
       vue: 3.5.30(typescript@5.9.3)
