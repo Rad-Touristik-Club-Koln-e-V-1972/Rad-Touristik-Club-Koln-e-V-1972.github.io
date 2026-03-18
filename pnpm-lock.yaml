@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@maz-ui/themes':
-        specifier: 4.7.4
-        version: 4.7.4(vue@3.5.30(typescript@5.9.3))
+        specifier: 4.7.6
+        version: 4.7.6(vue@3.5.30(typescript@5.9.3))
       '@maz-ui/translations':
         specifier: 4.7.4
         version: 4.7.4(vue@3.5.30(typescript@5.9.3))
@@ -727,6 +727,12 @@ packages:
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
 
+  '@maz-ui/themes@4.7.6':
+    resolution: {integrity: sha512-rVzgPs6m97rRN5ruNxMh4/V60b45oar31i/ix7iPDBC8XZcCaMJ4ECIkzq+38dBZfX2LbhJupJ3wpZHW6+SI1Q==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: '>=3.5.0 <4.0.0'
+
   '@maz-ui/translations@4.7.4':
     resolution: {integrity: sha512-kWX0SRhUp2eTNt9teds8RDbHlyxbi23AUC7Q4aoK+PuoGr+Xl2HAwMDvYZr01fxY/24TfgrFNG93x7hhpbfdmA==}
     engines: {node: '>=18.0.0'}
@@ -735,6 +741,10 @@ packages:
 
   '@maz-ui/utils@4.7.4':
     resolution: {integrity: sha512-SbLOposiQTz2ZUR1WG2NoWu9e8z9Cq8miY1IQ3ftyI8YxBekIZXEzU1M7QwKYViG03EbC4vMDOVCFRX0HaR19w==}
+    engines: {node: '>=18.0.0'}
+
+  '@maz-ui/utils@4.7.6':
+    resolution: {integrity: sha512-H74uvxSzJyQbXSFbEurhXbAkHIMIeuMnTGfjXRrrCocQaBz1Cftf6yVehISnJZw1vfdqiFYjry5oOSNNqToSvg==}
     engines: {node: '>=18.0.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -4290,12 +4300,19 @@ snapshots:
       '@maz-ui/utils': 4.7.4
       vue: 3.5.30(typescript@5.9.3)
 
+  '@maz-ui/themes@4.7.6(vue@3.5.30(typescript@5.9.3))':
+    dependencies:
+      '@maz-ui/utils': 4.7.6
+      vue: 3.5.30(typescript@5.9.3)
+
   '@maz-ui/translations@4.7.4(vue@3.5.30(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.4
       vue: 3.5.30(typescript@5.9.3)
 
   '@maz-ui/utils@4.7.4': {}
+
+  '@maz-ui/utils@4.7.6': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
