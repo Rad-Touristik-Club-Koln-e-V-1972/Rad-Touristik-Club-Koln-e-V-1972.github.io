@@ -17,8 +17,8 @@ importers:
         specifier: 4.8.0
         version: 4.8.0(vue@3.5.30(typescript@5.9.3))
       '@maz-ui/translations':
-        specifier: 4.7.6
-        version: 4.7.6(vue@3.5.30(typescript@5.9.3))
+        specifier: 4.8.0
+        version: 4.8.0(vue@3.5.30(typescript@5.9.3))
       '@quasar/extras':
         specifier: 1.17.0
         version: 1.17.0
@@ -709,6 +709,12 @@ packages:
 
   '@maz-ui/translations@4.7.6':
     resolution: {integrity: sha512-otXgPxgg4hy0C9atn6lY6Ty5W3FCnG/w6AazQwZvc0Hv4aNm4VsnPQc3OCG1rbvJNfO44iia8fS6TuLWmLhxmA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: '>=3.5.0 <4.0.0'
+
+  '@maz-ui/translations@4.8.0':
+    resolution: {integrity: sha512-u99aDVyzLmwF6GIA0EtQ5Xqhazu0A1Ay9mNxtmsnQUcmVyLh4mUv96cEyMw3lvaT9ZYEM2jxOtLN4aYgjLlfrw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       vue: '>=3.5.0 <4.0.0'
@@ -4412,6 +4418,11 @@ snapshots:
       vue: 3.5.30(typescript@5.9.3)
 
   '@maz-ui/translations@4.7.6(vue@3.5.30(typescript@5.9.3))':
+    dependencies:
+      '@maz-ui/utils': 4.7.6
+      vue: 3.5.30(typescript@5.9.3)
+
+  '@maz-ui/translations@4.8.0(vue@3.5.30(typescript@5.9.3))':
     dependencies:
       '@maz-ui/utils': 4.7.6
       vue: 3.5.30(typescript@5.9.3)
