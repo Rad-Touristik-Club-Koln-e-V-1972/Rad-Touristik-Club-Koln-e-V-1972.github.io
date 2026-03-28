@@ -1,11 +1,10 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import ContactBuilder from 'src/models/builder/rtc-cologne/ContactBuilder'
-import type Contact from 'src/models/entities/rtc-cologne/Contact'
 
 export default defineStore('rtc-cologne-contacts', () => {
   return {
-    all: ref<Contact[]>([
+    all: ref([
       new ContactBuilder().setEMail('erster.vorsitz@rtc-koeln.de').setId('4c5aea1e-a6b7-4319-ab3d-854529d8a476').setName('Diana Vialon').setPosition('Erster Vorsitz').buildContact(),
       new ContactBuilder().setEMail('zweiter.vorsitz@rtc-koeln.de').setId('2c8afbe2-8774-42b0-8788-5a5b29e41568').setName('Manfred Türk-Vialon').setPosition('Zweiter Vorsitz').buildContact(),
       new ContactBuilder().setEMail('geschaeftsfuehrung@rtc-koeln.de').setId('ca74ca7f-79e3-4548-b851-8757a4ee17f7').setName('Tobias Heying').setPosition('Geschäftsführung').buildContact(),

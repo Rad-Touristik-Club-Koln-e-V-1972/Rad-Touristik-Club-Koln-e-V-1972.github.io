@@ -1,7 +1,6 @@
 import { type Ref, ref } from 'vue'
 import { defineStore } from 'pinia'
 import type Event from 'src/models/entities/events/tours/Event'
-import type Permanent from 'src/models/entities/events/tours/Permanent'
 import EEvent from 'src/models/enums/EEvent'
 import Events from './tours/Events'
 import Permanents from './tours/Permanents'
@@ -12,7 +11,7 @@ export default defineStore('tour', () => {
   const getBy = (category: EEvent) => events.value.find((it) => it.category === category)
 
   return {
-    permanents: ref<Permanent[]>(Permanents),
+    permanents: ref(Permanents),
     getBy,
     getFamily: () => {
       // TODO This is a workaround until the db got converted to pina-orm.

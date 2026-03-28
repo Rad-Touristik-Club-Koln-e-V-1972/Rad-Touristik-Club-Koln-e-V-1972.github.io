@@ -1,11 +1,10 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
-import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
 
 export default defineStore('slideshow', () => {
   return {
-    all: ref<GalleryEntry[]>([
+    all: ref([
       new GalleryEntryBuilder().setId('6ba09e8e-48f0-4c9f-8642-696246a44911').setImageUrl('content.rtc-koeln.de/pages/gallery/2025/07_13_Condor_Flug/c38c7429-ce40-4ae0-99a8-df505fa21a39.avif').buildGalleryEntry(),
       new GalleryEntryBuilder().setId('86ec0d68-3161-4dfd-8663-19bc5d6bc672').setImageUrl('content.rtc-koeln.de/pages/gallery/2025/07_13_Condor_Flug/cce83759-06ae-4489-9696-a0b8e89e2e35.avif').buildGalleryEntry(),
       new GalleryEntryBuilder().setId('94a83c62-61c9-4a82-87ee-64350bc06bb2').setImageUrl('content.rtc-koeln.de/pages/gallery/2025/07_13_Condor_Flug/IMG_4752.avif').buildGalleryEntry(),

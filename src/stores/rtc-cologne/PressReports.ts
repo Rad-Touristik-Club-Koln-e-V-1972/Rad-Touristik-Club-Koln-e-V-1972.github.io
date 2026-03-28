@@ -2,11 +2,10 @@ import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import PressReportBuilder from 'src/models/builder/rtc-cologne/PressReportBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
-import type PressReport from 'src/models/entities/rtc-cologne/PressReport'
 
 export default defineStore('rtc-cologne-press-reports', () => {
   return {
-    all: ref<PressReport[]>([
+    all: ref([
       new PressReportBuilder()
         .setDate('2023-05-10')
         .setId('00045bd5-14c1-49a8-8d49-055b9d9652e5')

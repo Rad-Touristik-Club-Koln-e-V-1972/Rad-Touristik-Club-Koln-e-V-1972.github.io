@@ -1,11 +1,10 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import SuggestionBuilder from 'src/models/builder/events/tours/SuggestionBuilder'
-import type Suggestion from 'src/models/entities/events/tours/Suggestion'
 
 export default defineStore('suggestion', () => {
   return {
-    all: ref<Suggestion[]>([
+    all: ref([
       new SuggestionBuilder().setId('ba680dd5-bbbd-4b55-9b40-891ab4cb831f').setText('').setTitle('Bimbach').setUrl('rhoen-radmarathon.de').buildSuggestion(),
       new SuggestionBuilder().setId('4827480f-cbee-40e0-956a-6bd84cff6e9c').setText('').setTitle('St. Vith').setUrl('www.rsv.be/3laenderfahrt').buildSuggestion(),
       new SuggestionBuilder().setId('b7b8490d-f2b0-414f-acc8-5d9d43b6ca79').setText('').setTitle('Ochtendung').setUrl('djk-ochtendung.de/94.html').buildSuggestion(),

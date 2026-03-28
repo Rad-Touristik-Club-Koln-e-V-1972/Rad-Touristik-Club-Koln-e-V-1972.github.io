@@ -1,11 +1,10 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import FeeBuilder from 'src/models/builder/membership-registration/FeeBuilder'
-import type Fee from 'src/models/entities/membership-registration/Fee'
 
 export default defineStore('membershipRegistration', () => {
   return {
-    fees: ref<Fee[]>([
+    fees: ref([
       new FeeBuilder().setId('75b6e71d-d3ce-42ed-abe2-c2feaaadaf23').setName('Aufnahmegebühr, einmalig').setPrice('40,00').buildFee(),
       new FeeBuilder().setId('66d7227d-23c3-4a1f-818b-c367c44c1353').setName('Kinder- und Jugendliche bis 18 Jahre').buildFee(),
       new FeeBuilder().setId('e99cd2d9-6ee6-473d-9892-078a0e77ca59').setName('Erwachsene ab 18 Jahre').setPrice('60,00').buildFee(),

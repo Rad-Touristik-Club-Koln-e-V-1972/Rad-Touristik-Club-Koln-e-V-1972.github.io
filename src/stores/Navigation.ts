@@ -29,11 +29,10 @@ import {
   mdiYoutube,
 } from '@quasar/extras/mdi-v7'
 import NavigationBuilder from 'src/models/builder/NavigationBuilder'
-import type Navigation from 'src/models/entities/navigation/Navigation'
 
 export default defineStore('navigation', () => {
   return {
-    allNavigation: ref<Navigation[]>([
+    allNavigation: ref([
       new NavigationBuilder().setIcon(mdiAccountMultiplePlus).setId('4405cecb-c29a-41d2-ac22-0d58af4e3ed0').setTitle('Mitgliedschaft beantragen').setTo('membership-registration').buildNavigation(),
       new NavigationBuilder().setIcon(mdiCalendarAlert).setId('516fe40e-dfa1-4082-93e5-9323c7655941').setTitle('RTF / Forsbachtour').setTo('events-tours-rtfs').buildNavigation(),
       new NavigationBuilder().setIcon(mdiGoKartTrack).setId('ec9a422a-397b-4e2c-ad0b-0e64d5ec4c2f').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),

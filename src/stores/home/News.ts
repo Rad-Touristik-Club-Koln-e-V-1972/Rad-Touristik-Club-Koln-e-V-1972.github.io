@@ -1,6 +1,5 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import type NewsEntry from 'src/models/entities/home/NewsEntry'
 import NewsEntryBuilder from 'src/models/builder/home/NewsEntryBuilder'
 import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 import useDateTime from 'src/utils/DateTime'
@@ -8,7 +7,7 @@ import useDateTime from 'src/utils/DateTime'
 export default defineStore('news', () => {
   const dateTime = useDateTime()
 
-  const all = ref<NewsEntry[]>([
+  const all = ref([
     new NewsEntryBuilder()
       .setId('f1105474-db24-499f-97f1-bb1b4b72612e')
       // TODO Also delete from PPermanents.vue
