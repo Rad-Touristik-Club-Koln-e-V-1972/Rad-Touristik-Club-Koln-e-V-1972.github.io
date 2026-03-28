@@ -24,7 +24,7 @@ jobs:
           node-version: 'latest'
       - name: Setup Pages
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Restore cache
         if: ${{ !github.event.issue.pull_request && github.event.action != 'opened' && github.event.action != 'synchronize' }}
         uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
