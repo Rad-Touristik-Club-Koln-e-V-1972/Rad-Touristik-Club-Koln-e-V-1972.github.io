@@ -20,8 +20,8 @@ importers:
         specifier: 4.8.0
         version: 4.8.0(vue@3.5.32(typescript@5.9.3))
       '@quasar/extras':
-        specifier: 1.17.0
-        version: 1.17.0
+        specifier: 1.18.0
+        version: 1.18.0
       '@quasar/quasar-ui-qcalendar':
         specifier: 4.1.2
         version: 4.1.2
@@ -894,8 +894,8 @@ packages:
       workbox-build:
         optional: true
 
-  '@quasar/extras@1.17.0':
-    resolution: {integrity: sha512-KqAHdSJfIDauiR1nJ8rqHWT0diqD0QradZKoVIZJAilHAvgwyPIY7MbyR2z4RIMkUIMUSqBZcbshMpEw+9A30w==}
+  '@quasar/extras@1.18.0':
+    resolution: {integrity: sha512-hIqqw56sKGujWA3sTIT1ItlVglD+eA3hAWDVxY4qjA4/BSgYJDHk6ymJCbsDPIJFT7DJsG/F3A67vELXbBAIvA==}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.2':
     resolution: {integrity: sha512-uhZ0k8znOQg8pGl+vc9VW+np72znuzaIMGsdGgI1pY/0/pSZ1rzsBT8xALX5T0oQXJkOT9OHwSrsw7WJxFGD9A==}
@@ -4587,7 +4587,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@quasar/extras@1.17.0': {}
+  '@quasar/extras@1.18.0': {}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.2':
     dependencies:
