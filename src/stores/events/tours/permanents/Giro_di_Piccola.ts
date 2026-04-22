@@ -32,8 +32,14 @@ BIC: GENODED1BRS`,
     '4ca7f38d-037c-4162-80c9-3bb30f33dec0': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_006.jpeg.avif',
     'dc7d0015-ab5c-405c-93de-40b3e697005d': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_004.jpeg.avif',
     'd90b588e-48f9-4077-a4fc-e9240b36fe9f': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510.jpeg.avif',
+    'a1b2c3d4-e5f6-7890-abcd-ef1234567890': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_004.jpeg.avif',
+    'b2c3d4e5-f6a7-8901-bcde-f12345678901': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_002.jpeg.avif',
+    'c3d4e5f6-a7b8-9012-cdef-123456789012': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_005.jpeg.avif',
+    'd4e5f6a7-b8c9-0123-defa-234567890123': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007.jpeg.avif',
+    'e5f6a7b8-c9d0-1234-efab-345678901234': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_003.jpeg.avif',
+    'f6a7b8c9-d0e1-2345-fabc-456789012345': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_006.jpeg.avif',
   })
-  .setLastChange('2026-01-11')
+  .setLastChange('2026-04-22')
   .setLength(85)
   .setProfile(EProfile.Bergig)
   .setUrls({ 'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/Giro_di_Piccola_Tour.gpx') })
