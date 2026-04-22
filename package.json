@@ -5,7 +5,7 @@
   "productName": "RTC Köln e.V. 1972",
   "author": "Martin Dünkelmann <nc-duenkekl3@netcologne.de>",
   "type": "module",
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "packageManager": "pnpm@10.33.1+sha256.98cd34847cc7b1f0d4df66250c88b11b68f2405fabad874279182d2a8713b578",
   "private": true,
   "scripts": {
     "build": "quasar build",
@@ -44,7 +44,7 @@
     "@eslint/js": "10.0.1",
     "@quasar/app-vite": "2.6.0",
     "@quasar/quasar-app-extension-qcalendar": "4.1.2",
-    "@types/node": "24.12.2",
+    "@types/node": "25.6.0",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.7.0",
     "@vue/language-server": "3.2.7",
