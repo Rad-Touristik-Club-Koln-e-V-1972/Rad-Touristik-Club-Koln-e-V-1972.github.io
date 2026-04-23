@@ -18,7 +18,7 @@ export default [
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2025-05-20')
+    .setLastChange('2026-04-23')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -37,11 +37,10 @@ Die Forsbachtour startet im Schulzentrum in Porz-Zündorf.
 „Frühaufsteher“, die die 150 km fahren möchten, können von 7:30 Uhr bis 8:30 Uhr starten.
 „Langschläfer“ können bis 11:00 Uhr starten – je nach Streckenlänge.
 
-Wir bieten Euch vier RTF-Strecken, eine Familientour und zwei begleitete Touren an:
+Wir bieten Euch vier RTF-Strecken, eine Familientour und eine begleitete Tour an:
 22 km, 52 km, 82 km, 125 km und 150 km
 
 <ul style='list-style-position: inside; list-style-type: "82 km - "; margin-bottom: -50px; margin-top: -35px'>
-  <li style='margin-bottom: -15px'><b>Begleitete Ladies-Tour</b></li>
   <li><b>Begleitete gemischte Tour</b></li>
 </ul>
 
@@ -67,11 +66,9 @@ Euer RTC Köln e.V`,
         .setId('cda07bd6-6643-4f3e-b942-48ad69cc0de6')
         .setName('Hinweis')
         .setText(
-          `Wir bieten in diesem Jahr <b>zwei begleitete Touren</b> (82 km) für Neueinsteiger:innen an!
+          `Wir bieten in diesem Jahr <b>eine begleitete Tour</b> (82 km) für Neueinsteiger:innen an!
 
-Begleitete Ladies only-Tour (82 km) mit den beiden Guides Verena und Christine.
-
-Begleitete gemischte Tour (82 km) mit den beiden Guides Birgit und Peter.
+Begleitete gemischte Tour (82 km) mit den beiden Guides Verena und Uwe.
 
 Tempo: max. 20er Schnitt
 Der/die langsamste Fahrer:in bestimmt die Geschwindigkeit.
@@ -118,9 +115,7 @@ Damit ihr euren Kohlehydratspeicher wieder aufladen könnt, bieten wir neben sel
 
 Und wer dazu noch ein Kaltgetränk möchte, dem wird auch geholfen.
 
-Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.
-
-Auch dieses Jahr haben wieder ein Glücksrad mit fantastischen Radsportpreisen.`,
+Platz zum Zusammensitzen und Plauschen gibt es, je nach Wetterlage, draußen (am liebsten) auf dem Schulgelände oder drinnen in der Aula.`,
         )
         .buildTrack(),
       new TrackBuilder()
@@ -238,18 +233,6 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
       new TrackBuilder()
         .setControls(2)
         .setHeight(780)
-        .setId('5ea56b54-1d06-41bb-bc93-3dd54452b58c')
-        .setLength(82)
-        .setName('Die begleitete 82er', '(Ladies only, inkl. Guides)')
-        .setProfile(EProfile.Wellig)
-        .setTime('09:30')
-        .setUrls({
-          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471438'),
-        })
-        .buildTrack(),
-      new TrackBuilder()
-        .setControls(2)
-        .setHeight(780)
         .setId('519dbc00-5493-42cd-b852-e53bdacc74df')
         .setLength(82)
         .setName('Die begleitete 82er', '(Gemischte Tour)')
@@ -296,7 +279,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2025-04-23')
+    .setLastChange('2026-04-23')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
