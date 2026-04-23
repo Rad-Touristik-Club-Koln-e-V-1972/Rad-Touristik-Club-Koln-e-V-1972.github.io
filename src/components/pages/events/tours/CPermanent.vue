@@ -61,7 +61,9 @@
       <q-expansion-item label="Details">
         <q-card-section>
           <div class="text-pre-wrap" v-html="props.modelValue.text" />
-          <c-slideshow v-if="props.modelValue.images?.length" :gallery-entries="props.modelValue.images" />
+          <div v-if="Object.keys(props.modelValue.albumIDs).length">
+            <c-gallery v-for="gallery in galleryStore.findByIds(...Object.keys(props.modelValue.albumIDs))" :key="gallery.id" :album="props.modelValue.albumIDs[gallery.id]" :model-value="gallery" />
+          </div>
         </q-card-section>
       </q-expansion-item>
     </q-card>
@@ -70,13 +72,16 @@
 
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
-import CSlideshow from 'components/pages/CSlideshow.vue'
 import DDonation from 'components/pages/DDonation.vue'
+import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
 import type Permanent from 'src/models/entities/events/tours/Permanent'
 import useDateTime from 'src/utils/DateTime'
+import useGalleryStore from 'stores/rtc-cologne/Gallery'
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar()
 
 const props = defineProps<{ modelValue: Permanent }>()
+
+const galleryStore = useGalleryStore()
 </script>

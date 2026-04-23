@@ -3,7 +3,6 @@ import type Donation from 'src/models/entities/Donation'
 import type Control from 'src/models/entities/events/tours/Control'
 import Tour from 'src/models/entities/events/tours/Tour'
 import type EEvent from 'src/models/enums/EEvent'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
 
 export default class TourBuilder extends ABuilder {
   private tour = new Tour()
@@ -12,6 +11,18 @@ export default class TourBuilder extends ABuilder {
 
   setActive = (value: boolean): this => {
     this.tour.active = value
+
+    return this
+  }
+
+  setAlbumIDs = (value: Record<string, string> | string[] | string): this => {
+    if (Array.isArray(value))
+      this.tour.albumIDs = value.reduce<Record<string, string>>((map, it) => {
+        map[it] = ''
+        return map
+      }, {})
+    else if (value.constructor === String) this.tour.albumIDs = { [value]: '' }
+    else this.tour.albumIDs = Object.assign(this.tour.albumIDs, value as Record<string, string>)
 
     return this
   }
@@ -30,12 +41,6 @@ export default class TourBuilder extends ABuilder {
 
   setDonations = (...value: Donation[]): this => {
     this.tour.donations = value
-
-    return this
-  }
-
-  setImageUrls = (value: Record<string, string>): this => {
-    for (const [key, data] of Object.entries(value)) this.tour.images.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
 
     return this
   }

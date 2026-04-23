@@ -1,6 +1,7 @@
 import { computed, type ComputedRef } from 'vue'
 import { defineStore } from 'pinia'
 import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import _1972 from './gallery/1972/Gallery'
 import _2009 from './gallery/2009/Gallery'
 import _2010 from './gallery/2010/Gallery'
 import _2011 from './gallery/2011/Gallery'
@@ -40,6 +41,7 @@ export default defineStore('gallery', () => {
     2011: sortByDate(_2011),
     2010: sortByDate(_2010),
     2009: sortByDate(_2009),
+    1972: sortByDate(_1972),
   }))
 
   const all: ComputedRef<Gallery[]> = computed(() =>

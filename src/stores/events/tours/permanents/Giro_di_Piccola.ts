@@ -6,6 +6,7 @@ import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
 import EProfile from 'src/models/enums/events/EProfile'
 
 export default new PermanentBuilder()
+  .setAlbumIDs('e248bd2d-6b39-46a3-8f24-1134b5bc0d36')
   .setControls(
     new ControlBuilder().setCity('Köln').setId('9618c580-baec-4213-8282-8f1f675c9f1c').setStreet('Rather Mauspfad 19').setTitle('Start/Ziel Piccola Gelateria').setZipCode('51107').buildControl(),
     new ControlBuilder().setCity('Lindlar').setId('9a29c0bf-8379-4c3c-9a7c-09c447243daf').setStreet('Kölner Str. 16A').setTitle('Kamps Bäckerei').setZipCode('51789').buildControl(),
@@ -25,21 +26,7 @@ BIC: GENODED1BRS`,
   )
   .setHeight(950)
   .setId('e90f024a-43c8-467e-a8aa-5e8765594d68')
-  .setImageUrls({
-    'a26c4c14-3f0b-4b40-a405-672b8efeab7a': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_002.jpeg.avif',
-    'aab7ac21-5d83-4a49-93d9-713d8f029126': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_005.jpeg.avif',
-    'e189bbab-4fce-47a2-9f1a-0a976cdfd110': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_003.jpeg.avif',
-    '4ca7f38d-037c-4162-80c9-3bb30f33dec0': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_006.jpeg.avif',
-    'dc7d0015-ab5c-405c-93de-40b3e697005d': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510_004.jpeg.avif',
-    'd90b588e-48f9-4077-a4fc-e9240b36fe9f': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-01-09-162510.jpeg.avif',
-    'a1b2c3d4-e5f6-7890-abcd-ef1234567890': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_004.jpeg.avif',
-    'b2c3d4e5-f6a7-8901-bcde-f12345678901': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_002.jpeg.avif',
-    'c3d4e5f6-a7b8-9012-cdef-123456789012': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_005.jpeg.avif',
-    'd4e5f6a7-b8c9-0123-defa-234567890123': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007.jpeg.avif',
-    'e5f6a7b8-c9d0-1234-efab-345678901234': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_003.jpeg.avif',
-    'f6a7b8c9-d0e1-2345-fabc-456789012345': 'content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/signal-2026-04-19-170007_006.jpeg.avif',
-  })
-  .setLastChange('2026-04-22')
+  .setLastChange('2026-04-23')
   .setLength(85)
   .setProfile(EProfile.Bergig)
   .setUrls({ 'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Giro_di_Piccola/Giro_di_Piccola_Tour.gpx') })
