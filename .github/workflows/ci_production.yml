@@ -26,7 +26,7 @@ jobs:
       - name: Run static website generator
         run: pnpm build
       - name: Deploy to website
-        uses: SamKirkland/FTP-Deploy-Action@a51268f67f6605236975928ae28b0f7e9971d50a # v4.3.6
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           local-dir: dist/spa/
           password: ${{ secrets.OVH_SFTP_PASSWORD }}
