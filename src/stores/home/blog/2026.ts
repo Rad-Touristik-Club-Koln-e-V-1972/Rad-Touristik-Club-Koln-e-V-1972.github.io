@@ -2,6 +2,109 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('479e41df-d17e-4c66-8a02-c9c846193cb4')
+    .setDate('2026-03-22')
+    .setId('35407ace-27ff-4c53-b5d0-9dd6c1d80043')
+    .setText(
+      `Was für ein verrücktes Wetter heute:
+      Morgens musste ich noch die Autoscheiben freikratzen 🥶 – und mittags saßen wir bei 18 °C in der Sonne!
+Besser kann ein Radtag kaum starten und enden.
+Heute stand die RTF „Zwischen Rhein und Ruhr“ vom Verein Düsseldorf-Rath/Ratingen auf dem Plan.
+Um 8:30 Uhr ging’s für Tobi, Eric und Diana an den Start – und anfangs war es wirklich noch richtig frisch!
+Wir haben uns die 113-km-Strecke vorgenommen und sind sie ziemlich flott gefahren.
+
+Die Route war abwechslungsreich:
+TEils durch Ortschaften, teils über offene Felder, vorbei am Baldeneysee und entlang der Ruhr.
+Landschaftlich oft richtig schön – zwischendurch aber auch etwas städtischer.
+Genau das gehört bei „Zwischen Rhein und Ruhr“ eben dazu – ein bisschen Ruhrgebietscharme darf da nicht fehlen 😉 Mit rund 500–600 Höhenmetern insgesamt eher eine flache RTF.
+
+Nach der letzten Kontrolle wartete noch ein Highlight:
+der Anstieg „Esel“ in Essen – noch mal ordentlich Druck auf die Beine! 💪
+
+Unsere Formation war meist klar:
+Eric vorne, Diana in der Mitte und Tobi hinten.
+Besonders stark – Tobi hat sich immer wieder vor Diana gesetzt und sie unterstützt, wenn es mal schwerer wurde und die Lücke zu groß war.
+Windschatten at its best! 🙌
+
+Auch die Organisation war top:
+Sowohl im Startbereich als auch an den drei Kontrollen waren alle super nett, und die Verpflegung richtig gut 👍
+Außerdem waren alle Strecken komplett ausgeschildert!
+Ein großes Lob an den Düsseldorfer Verein.
+Leider kamen nur etwa 380 TN.
+
+Das Wetter hätte insgesamt kaum besser sein können:
+Strahlend blauer Himmel und Sonne pur.
+Im Ziel haben wir dann noch Helmut getroffen, der die 80-km-Runde solo gefahren ist – Respekt! 👏
+
+Zur Belohnung gab’s leider nur noch Getränke – die Würstchen waren schon ausverkauft.
+Da hätten wir wohl noch ein bisschen schneller fahren müssen… 25,5 km/h im Schnitt hat dafür scheinbar nicht ganz gereicht 😄
+
+Was den Tag aber wirklich besonders gemacht hat:
+Es war durchweg harmonisch, wir hatten richtig viel Spaß – und genau so kann die Saison weitergehen.
+Wir freuen uns auf alles, was noch kommt! 🚴‍♀️🧡
+
+PS:
+Ines ist heute natürlich auch gefahren.
+Sie möchte sich definitiv nicht die Vereinsmeisterschaft streitig machen lassen.
+
+Go Ines, Go!! 👏👏👏`,
+    )
+    .setTitle('RTF Düsseldorf-Rath/Ratingen – 113 km ☀️🚴‍♂️')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
+    .setAlbumIDs('950f9a01-fbf4-49f8-871c-6102aea22460')
+    .setDate('2026-03-22')
+    .setId('2337d1a6-b9f1-434c-8438-f6a291ad7228')
+    .setText(
+      `Bei bestem Wetter waren heute vier RTCler beim „NEULAND HAMBACH Gravelride – Auf der Sophienhöhe“ unterwegs.
+Wolfgang fuhr die 44 km Runde mit knapp 400 Höhenmetern auf seinem E-Bike.
+
+Verena & Jürgen entschieden sich für die 56 km Runde mit 670 Höhenmetern.
+
+Tobias nahm die große Strecke in Angriff:
+76 km mit über 1000 Höhenmetern 💪
+
+Die Sophienhöhe als Abraumhalde liegt bis zu 200 m über dem Umland und bietet viele Anstiege sowie schöne Aussichtspunkte.
+Die vier Gravel-Fahrer sind bis zur Streckentrennung zusammen gefahren, genossen die tollen Strecken, die viel Natur und beste Bedingungen boten.
+
+Die Organisation war sehr gut:
+Alle Strecken waren ausgeschildert, und bis zu fünf Verpflegungsstellen ließen keine Wünsche offen.
+Im Ziel kamen wir noch einmal alle auf die obligatorische Bratwurst zusammen und konnten auch Klaus begrüßen, der eine Sternfahrt zum Startort in Niederzier mit insgesamt starken 100 km zurückgelegt hat – Chapeau!
+
+Rund 800 weitere Teilnehmer  haben das Rheinische Braunkohlerevier bei Kaiserwetter erkundet.
+
+Wir gratulieren dem SV Malefinkbach zu dieser gelungenen GTF – ein rundum gelungener Tag für alle. 👏👏👏`,
+    )
+    .setTitle('Sommerfeeling auf der Sophienhöhe – NEULAND HAMBACH Gravelride 🚴‍♀️☀️')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
+    .setAlbumIDs('1b5bd945-a8b7-4eec-b5a7-bd684a2c5d15')
+    .setDate('2026-03-14')
+    .setId('5b935a72-23f4-4ebe-823b-2f5917865f19')
+    .setText(
+      `14.3.: Alle freuen sich auf den Start in die Saison … und dann das: Regen ohne Ende.
+Leider fiel die Saisoneröffnung sprichwörtlich ins Wasser.
+
+Trotzdem machten sich drei RTC Kölner – Manni, Tobi und Diana – auf den Weg und fuhren im Regen zum Start, um den RC Mistral zu unterstützen.
+Schließlich sind wir Kölner Nachbarvereine. 🚴‍♂️🌧️
+
+Ein etwas anderer Saisonauftakt also.
+Sportwart Rudi konnte leider weniger als 50 Teilnehmer begrüßen.
+Das ist bitter.
+
+Helmut und Klaus kamen immerhin noch in Zivil vorbei und stärkten sich mit Kaffee und Kuchen. ☕🍰
+
+Besonders schön war es, trotz des Wetters auch schon die ersten vertrauten Gesichter wiederzusehen:
+Caro aus Lövenich und Uschi aus Huchem-Stammeln.
+Da merkt man gleich wieder, wie klein und herzlich unsere Radsportgemeinschaft ist. 😊
+
+Für uns drei ging es anschließend wieder mit dem Rad nach Hause – an einem ziemlich usseligen Tag.
+
+Vielen Dank an alle, die sich bei Mistral für eine der Strecken angemeldet und damit den kleinen Verein unterstützt haben. 👏️`,
+    )
+    .setTitle('Saisoneröffnung beim RC Mistral e.V.')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('d2637e26-9cab-4757-a189-0d7c51630a9c')
     .setDate('2026-03-06')
     .setId('9a3e14e9-4e55-4118-9cd0-cc1237e4a96b')
