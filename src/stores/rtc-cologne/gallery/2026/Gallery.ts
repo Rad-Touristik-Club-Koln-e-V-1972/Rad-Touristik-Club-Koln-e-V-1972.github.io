@@ -1,0 +1,3 @@
+import _03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude from './03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude'
+
+export default [_03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude]
