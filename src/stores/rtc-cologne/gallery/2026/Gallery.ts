@@ -2,5 +2,12 @@ import _03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude from './03_06_Neue
 import _03_14_Saisoneroeffnung_beim_RC_Mistral_e_V from './03_14_Saisoneroeffnung_beim_RC_Mistral_e_V'
 import _03_22_Sommerfeeling_auf_der_Sophienhoehe from './03_22_Sommerfeeling_auf_der_Sophienhoehe'
 import _03_22_RTF_Duesseldorf_Rath_Ratingen_113_km from './03_22_RTF_Duesseldorf_Rath_Ratingen_113_km'
+import _04_11_Vortour_zur_Forsbachtour from './04_11_Vortour_zur_Forsbachtour'
 
-export default [_03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude, _03_14_Saisoneroeffnung_beim_RC_Mistral_e_V, _03_22_Sommerfeeling_auf_der_Sophienhoehe, _03_22_RTF_Duesseldorf_Rath_Ratingen_113_km]
+export default [
+  _03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude,
+  _03_14_Saisoneroeffnung_beim_RC_Mistral_e_V,
+  _03_22_Sommerfeeling_auf_der_Sophienhoehe,
+  _03_22_RTF_Duesseldorf_Rath_Ratingen_113_km,
+  _04_11_Vortour_zur_Forsbachtour,
+]

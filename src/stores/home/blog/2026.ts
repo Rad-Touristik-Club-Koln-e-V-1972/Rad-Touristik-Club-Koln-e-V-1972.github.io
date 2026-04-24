@@ -2,6 +2,16 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('e8fe7eff-ab36-4504-9032-e3afe7ebb311')
+    .setDate('2026-04-11')
+    .setId('e844c22f-6543-4beb-94d9-0edc385194c7')
+    .setText(
+      `Der RTC Köln …eine tolle Truppe.
+Heute sind wir die Vortour zur Forsbachtour (31. Mai) gefahren.`,
+    )
+    .setTitle('Vortour zur Forsbachtour')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('479e41df-d17e-4c66-8a02-c9c846193cb4')
     .setDate('2026-03-22')
     .setId('35407ace-27ff-4c53-b5d0-9dd6c1d80043')
