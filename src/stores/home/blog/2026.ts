@@ -2,6 +2,52 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('b9ff1d74-6dbb-42f9-b28f-c0a7a27c4d86')
+    .setDate('2026-04-25')
+    .setId('f804ae7b-6f92-4738-83bb-64d38fcf5ede')
+    .setText(
+      `Der 25.4. stand für den RTC Köln unter einem guten Stern – auch wenn wir ihn morgens um 07:30 Uhr vor lauter Nebel noch nicht sehen konnten, als Tobi, Manni und ich uns auf den Weg zur RTF in Grefrath machten.
+
+Zuvor wurde die Wetter-App intensiv studiert:
+16–18 Grad waren angekündigt.
+
+Ein Versprechen?
+
+Eher ein Versprecher – so kalt war es, als wir mit Marijke, Helmut, Jürgen und Gast Peter um 09:30 Uhr starteten.
+Die Optimisten unter uns waren unten zu kurz und oben „zu dünn“ angezogen.
+Ich zählte dazu und dachte schon früh an die heiße Dusche am Nachmittag.
+
+Doch Versprechen wollen eingelöst werden:
+Der Nebel verzog sich, und es wurde ein wunderschöner Apriltag.
+Rund 140 km führte uns die Strecke durch flache, aber abwechslungsreiche Landschaften – über Felder, durch Wälder, vorbei an Pferdekoppeln und herrlich duftenden Rapsfeldern.
+Teilweise ging es sogar durch die Niederlande.
+
+Bei Kilometer 114 dann der magische Moment:
+Marijke riss den Arm hoch – ihr wurde klar, dass sie einen neuen persönlichen Rekord aufstellen würde.
+Ein großartiger Augenblick, den wir alle mit ihr gefeiert haben.
+
+Auch die anderen Leistungen können sich sehen lassen:
+Jürgen schloss sich an der K1 den Lövenichern an und absolvierte eine schnelle 100-km-Runde – Respekt!
+Ines fuhr im Rahmen einer Sternfahrt starke 80 km nach Grefrath.
+
+Auf der Rückfahrt nach Poll waren wir uns einig:
+Nebel – egal welcher Art – muss sich erst verziehen, dann wird es richtig schön.
+Genau wie unser Tag auf dem Rad.
+
+Ein lieber Dank geht an die Veranstalter, die wunderschöne Strecken ausgearbeitet haben und sehr, sehr nett waren.
+Es war sehr schön bei und mit Euch.
+
+Und ja, es bleibt beim Plural:
+Rekorde!
+
+Mit unseren heutigen Touren belegt unser kleiner Verein aktuell den 10. Platz in der bundesweiten Rangliste.
+Darauf können wir wirklich stolz sein.
+
+Eure Diana`,
+    )
+    .setTitle('Neue Rekorde aufgestellt')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('e8fe7eff-ab36-4504-9032-e3afe7ebb311')
     .setDate('2026-04-11')
     .setId('e844c22f-6543-4beb-94d9-0edc385194c7')
