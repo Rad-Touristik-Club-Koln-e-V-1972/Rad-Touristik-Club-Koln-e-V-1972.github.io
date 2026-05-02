@@ -11,14 +11,14 @@ export default [
     .setCategory(EEvent.RTF_RTC)
     .setFees(
       new FeeBuilder().setId('705e22a4-891a-406b-88ba-c4e104d6d2d3').setName('<b>Bike Rebels</b><br/>(Jugendliche bis 18 Jahre)').setPrice(0).buildFee(),
-      new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(7).buildFee(),
-      new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(9).buildFee(),
-      new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(12).buildFee(),
+      new FeeBuilder().setId('f7116627-33c3-4b87-a77e-fed528bafa63').setName('<b>Team-Biker <i>mit</i>&ensp;Breitensportlizenz</b><br/>(BDR-Mitglieder mit Breitensportlizenz)').setPrice(8).buildFee(),
+      new FeeBuilder().setId('38c2d89f-813c-4e8a-ae46-4f378a7209b5').setName('<b>Team-Biker <i>ohne</i>&ensp;Breitensportlizenz</b><br/>(sonstige BDR-Mitglieder)').setPrice(10).buildFee(),
+      new FeeBuilder().setId('b71ffe1b-6d34-4b98-af51-ad0a59fd9b22').setName('<b>After Work-Bikers</b><br/>(Gastfahrer)').setPrice(13).buildFee(),
       new FeeBuilder().setId('b3be3c22-e784-4650-b27c-f151056faf88').setGroup('Family Tour').setName('<b>Jugendliche bis 18 Jahre</b>').setPrice(0).buildFee(),
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2026-04-23')
+    .setLastChange('2026-05-02')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
