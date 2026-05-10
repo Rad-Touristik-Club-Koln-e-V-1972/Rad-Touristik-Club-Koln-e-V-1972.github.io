@@ -18,7 +18,7 @@ export default [
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2026-05-02')
+    .setLastChange('2026-05-10')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -50,7 +50,7 @@ Was sich nicht ändert ist unsere – über Kölns Grenzen hinweg bekannte – s
 An den Kontrollen und auf dem Platz.
 Es gibt ein frisch gekochtes <b>vegetarisches</b> Gericht, selbstgemachte Salate und natürlich die obligatorische leckere Bratwurst.
 
-Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 25.05.2025 stattfindet.
+Mehr Infos gibt es hier, auf Instagram und Facebook kurz vor der Forsbachtour, die am 31.05.2025 stattfindet.
 
 Wir wünschen Euch viel Spaß bei der Forsbachtour, die wir mit viel Engagement und Liebe für Euch ausrichten.
 
@@ -237,7 +237,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setLength(82)
         .setName('Die begleitete 82er', '(Gemischte Tour)')
         .setProfile(EProfile.Wellig)
-        .setTime('09:30')
+        .setTime('10:00')
         .setUrls({
           Komoot: new URL('https://www.komoot.com/de-de/tour/2050471438?ref'),
         })
