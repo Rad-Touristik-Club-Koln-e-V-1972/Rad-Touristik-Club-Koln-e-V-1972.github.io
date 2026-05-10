@@ -36,7 +36,6 @@
         </q-card>
       </div>
     </div>
-    <d-r-t-f-popup />
   </div>
 </template>
 
@@ -44,7 +43,6 @@
 import { useQuasar } from 'quasar'
 import CSlideshow from 'components/pages/CSlideshow.vue'
 import CNews from 'components/pages/home/CNews.vue'
-import DRTFPopup from 'components/pages/home/DRTFPopup.vue'
 import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
 import useBlogStore from 'stores/home/Blog'
 import useSlideshowStore from 'stores/home/Slideshow'
