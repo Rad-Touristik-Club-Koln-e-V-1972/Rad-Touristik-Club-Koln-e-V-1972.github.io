@@ -11,7 +11,6 @@
     <q-card-actions align="left">
       <q-btn v-if="route.name === 'events-tours-rtfs'" :to="{ name: 'events-tours-rtfs-family' }" class="bg-secondary" color="primary" label="Zur Family Tour" />
       <q-btn v-if="route.name === 'events-tours-rtfs-family'" :to="{ name: 'events-tours-rtfs' }" class="bg-secondary" color="primary" label="Zur RTF" />
-      <q-btn v-if="route.name === 'events-tours-rtfs-family'" class="bg-secondary" color="primary" href="https://www.svmalefinkbach.de/gothaer-kids-cup-2025/" label="Zum Gothaer Kids-Cup 2025" target="_blank" />
     </q-card-actions>
     <q-card-section>
       <q-tabs v-model="tab" :vertical="$q.platform.is.mobile" active-bg-color="primary" active-color="accent" class="bg-primary" indicator-color="accent">
