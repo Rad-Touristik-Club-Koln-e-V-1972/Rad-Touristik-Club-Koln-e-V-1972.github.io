@@ -6,9 +6,6 @@
         Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am <b>{{ dateTime.format(calendarStore.nextRTF.start) }}.</b>
       </q-card-section>
       <q-card-section>
-        <b>Weitere Informationen folgen!</b>
-      </q-card-section>
-      <q-card-section>
         <div>Wir freuen uns auf Euch!</div>
         <br />
         <div>Euer RTC Köln e.V.</div>
