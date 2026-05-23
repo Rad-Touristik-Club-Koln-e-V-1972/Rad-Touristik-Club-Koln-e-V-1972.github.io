@@ -18,7 +18,7 @@ export default [
       new FeeBuilder().setId('a59c97cf-cfcc-43aa-bb7c-774bf80f79e9').setGroup('Family Tour').setName('<b>Erwachsene</b><br/>(zzgl. Fährfahrten)').setPrice(6).buildFee(),
     )
     .setId('2048a7f0-315a-43d7-885a-23f388601052')
-    .setLastChange('2026-05-10')
+    .setLastChange('2026-05-23')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
@@ -140,7 +140,7 @@ Für alle anderen läuft die Anmeldung „analog“ an den Starttischen vor Ort.
         .setHeight(70)
         .setId('71029e5d-5f30-4cf0-b2fa-abf0468d3864')
         .setLength(22)
-        .setName('Die 22er')
+        .setName('Kids-Krokodil-Abenteuerrunde')
         .setProfile(EProfile.Flach)
         .setText(
           `Vom Start weg fahren wir immer den RTC-Schildern nach an Rolfs Streichelzoo vorbei,
@@ -211,7 +211,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setHeight(390)
         .setId('c1934b4b-2058-4100-946e-77c264533c76')
         .setLength(52)
-        .setName('Die 52er')
+        .setName('Rookie Power-Runde')
         .setTime('07:30', '11:00')
         .setUrls({
           'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
@@ -223,7 +223,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setHeight(780)
         .setId('383d8d76-1e23-42bf-983c-aeaf54672755')
         .setLength(82)
-        .setName('Die 82er')
+        .setName('Bergische Einstiegsrunde')
         .setProfile(EProfile.Wellig)
         .setTime('07:30', '11:00')
         .setUrls({
@@ -247,7 +247,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setHeight(1500)
         .setId('e075e4fb-e46a-4505-b935-8acfe1368265')
         .setLength(125)
-        .setName('Die 125er')
+        .setName('Bergische Horizonte')
         .setProfile(EProfile.Huegelig)
         .setTime('07:30', '10:00')
         .setUrls({
@@ -259,7 +259,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setHeight(1800)
         .setId('3e252d86-e452-43f3-9f93-440eeb792338')
         .setLength(150)
-        .setName('Die 150er')
+        .setName('Bergische Höhenrunde')
         .setProfile(EProfile.Huegelig)
         .setTime('07:30', '08:30')
         .setUrls({
@@ -279,7 +279,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
       new FeeBuilder().setGroup('Fährpreise*').setId('0cf846ff-0717-4828-af8d-b068e000f47a').setName('Zuschlag Lastenrad, Anhänger etc.').setPrice(2).buildFee(),
     )
     .setId('75072ccb-fbf8-4449-ab94-5d746e32ce69')
-    .setLastChange('2026-05-10')
+    .setLastChange('2026-05-23')
     .setLocation(
       new ControlBuilder()
         .setCity('Köln-Zündorf')
