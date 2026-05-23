@@ -214,8 +214,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setName('Rookie Power-Runde')
         .setTime('07:30', '11:00')
         .setUrls({
-          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2024-02-07_1433738920_51143 RTC-Köln 02.06.2024 52km RTF 52. Forsbach-Tour.gpx'),
-          Komoot: new URL('https://www.komoot.com/de-de/tour/2255113981?ref'),
+          Komoot: new URL('https://www.komoot.com/de-de/tour/2255113981'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -251,7 +250,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setProfile(EProfile.Huegelig)
         .setTime('07:30', '10:00')
         .setUrls({
-          Komoot: new URL('https://www.komoot.com/de-de/tour/2050471146?ref'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-05-19_Forsbach-120.gpx'),
         })
         .buildTrack(),
       new TrackBuilder()
@@ -263,7 +262,7 @@ Nun kann der gemütliche Teil beginnen mit einer tollen Verpflegung und der ein 
         .setProfile(EProfile.Huegelig)
         .setTime('07:30', '08:30')
         .setUrls({
-          Komoot: new URL('https://www.komoot.com/de-de/tour/2050184984?ref'),
+          'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-05-19_Forsbach-150.gpx'),
         })
         .buildTrack(),
     )
