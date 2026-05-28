@@ -39,14 +39,16 @@
             <thead v-if="first">
               <tr>
                 <th :id="first" colspan="2">
-                  <div class="text-bold text-body2">{{ first }}</div>
+                  <div class="text-bold text-body2" v-html="first" />
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="{ id, name, price } in second" :key="id">
                 <td>{{ price }}€</td>
-                <td class="text-left" v-html="name" />
+                <td class="text-left">
+                  <div v-html="name" />
+                </td>
               </tr>
             </tbody>
           </q-markup-table>

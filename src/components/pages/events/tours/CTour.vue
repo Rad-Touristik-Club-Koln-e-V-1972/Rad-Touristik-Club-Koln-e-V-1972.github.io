@@ -1,5 +1,5 @@
 <template>
-  <q-card v-if="props.modelValue" flat>
+  <q-card v-if="props.modelValue" :class="modelValue?.active ? '' : 'disabled'" flat>
     <q-card-section class="bg-primary text-accent text-h6">{{ props.modelValue.title }}</q-card-section>
     <q-card-section>
       <span>Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</span>
@@ -9,7 +9,7 @@
       <i>Wir unterstützen den neuen Kids-Cup in der Radsport-Region Köln-Bonn-Aachen für Kinder und Jugendliche in den Altersklassen 2012-2015 und 2016-2019.</i>
     </q-card-section>
     <q-card-actions align="left">
-      <q-btn v-if="route.name === 'events-tours-rtfs'" :to="{ name: 'events-tours-rtfs-family' }" class="bg-secondary" color="primary" label="Zur Family Tour" />
+      <q-btn v-if="route.name === 'events-tours-rtfs'" :to="{ name: 'events-tours-rtfs-family' }" class="bg-secondary" color="primary" disable label="Zur Family Tour" />
       <q-btn v-if="route.name === 'events-tours-rtfs-family'" :to="{ name: 'events-tours-rtfs' }" class="bg-secondary" color="primary" label="Zur RTF" />
     </q-card-actions>
     <q-card-section>

@@ -44,7 +44,7 @@ export default defineStore('navigation', () => {
           new NavigationBuilder()
             .setChildren(
               new NavigationBuilder().setIcon(mdiCalendarAlert).setId('f8e0d57e-459b-429c-b671-9a3feeae6991').setTitle('RTF / Forsbachtour').setTo('events-tours-rtfs').buildNavigation(),
-              new NavigationBuilder().setIcon(mdiHumanMaleFemaleChild).setId('55829ef0-c2ab-4e51-94fa-3a6d5c5d9dc1').setTitle('Family Tour').setTo('events-tours-rtfs-family').buildNavigation(),
+              new NavigationBuilder().setIcon(mdiHumanMaleFemaleChild).setId('55829ef0-c2ab-4e51-94fa-3a6d5c5d9dc1').setTitle('<s>Family Tour</s>').setTo('events-tours-rtfs-family').buildNavigation(),
               new NavigationBuilder().setIcon(mdiBikeFast).setId('b53d7f6a-296d-45b6-b061-8a590bf89a20').setTitle('Training').setTo('events-training').buildNavigation(),
               new NavigationBuilder().setIcon(mdiGoKartTrack).setId('c6c800fb-7e14-4651-a7a7-e230b96ddadc').setTitle('Permanente').setTo('events-tours-permanents').buildNavigation(),
               new NavigationBuilder().setIcon(mdiStateMachine).setId('b40b2143-ea94-4de5-9064-d65f8d839795').setTitle('Etappenfahrt').setTo('events-tours-stagerace').buildNavigation(),

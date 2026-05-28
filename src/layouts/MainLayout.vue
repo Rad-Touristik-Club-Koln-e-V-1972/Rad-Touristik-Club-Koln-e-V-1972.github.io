@@ -2,7 +2,7 @@
   <q-layout id="app" view="hHh Lpr lFf">
     <q-header class="bg-accent border text-secondary">
       <q-toolbar>
-        <q-btn aria-label="Menu" dense flat :icon="mdiMenu" round @click="navDrawer = !navDrawer" />
+        <q-btn :icon="mdiMenu" aria-label="Menu" dense flat round @click="navDrawer = !navDrawer" />
         <q-toolbar-title class="text-center text-h5">
           Herzlich willkommen beim
           <br class="xs" />
@@ -23,7 +23,7 @@
       <div class="justify-evenly md-hide row sm-hide xs-hide">
         <q-card v-for="it in useSponsorStore().all" :key="it.id" class="col-auto" flat>
           <a :href="it.url?.toString()" target="_blank">
-            <q-img fit="contain" height="36px" :src="it.imageUrl?.toString()" width="100px" />
+            <q-img :src="it.imageUrl?.toString()" fit="contain" height="36px" width="100px" />
           </a>
         </q-card>
       </div>
@@ -33,12 +33,29 @@
           2021 - {{ new Date().getFullYear() }} RTC Köln e.V. 1972
         </div>
         <div class="col-auto">
-          <q-btn flat :to="{ name: 'imprint' }">Impressum</q-btn>
-          <q-btn flat :to="{ name: 'privacy-and-security' }">Datenschutz</q-btn>
+          <q-btn :to="{ name: 'imprint' }" flat>Impressum</q-btn>
+          <q-btn :to="{ name: 'privacy-and-security' }" flat>Datenschutz</q-btn>
         </div>
       </div>
     </q-footer>
   </q-layout>
+  <q-dialog :model-value="true" persistent>
+    <!-- TODO Remove code after 01.06.2026 -->
+    <q-card>
+      <q-card-section class="bg-primary text-accent text-h6">🌩Family Tour abgesagt🌩</q-card-section>
+      <q-card-section>
+        🌩️Die <u><b>Family Tour</b></u> wurde leider wetterbedingt in diesem Jahr abgesagt.🌩️
+        <br />
+        🌩️Aufgrund der schlechten Wettervorhersage, entschieden wir uns dazu aus Sicherheitsgründen.🌩️
+        <br />
+        <br />
+        🌩️Euer RTC KÖLN e.V. 1972🌩️</q-card-section
+      >
+      <q-card-actions align="right">
+        <q-btn v-close-popup color="primary" label="Schließen" />
+      </q-card-actions>
+    </q-card>
+  </q-dialog>
 </template>
 
 <script lang="ts" setup>
