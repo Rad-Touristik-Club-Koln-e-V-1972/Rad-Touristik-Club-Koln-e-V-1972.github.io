@@ -44,6 +44,8 @@
     <q-card>
       <q-card-section class="bg-primary text-accent text-h6">🌩Family Tour abgesagt🌩</q-card-section>
       <q-card-section>
+        <b>Die Forsbachtour findet regulär statt!</b>
+        <br />
         🌩️Die <u><b>Family Tour</b></u> wurde leider wetterbedingt in diesem Jahr abgesagt.🌩️
         <br />
         🌩️Aufgrund der schlechten Wettervorhersage, entschieden wir uns dazu aus Sicherheitsgründen.🌩️
