@@ -42,17 +42,15 @@
   <q-dialog :model-value="true" persistent>
     <!-- TODO Remove code after 01.06.2026 -->
     <q-card>
-      <q-card-section class="bg-primary text-accent text-h6">🌩Family Tour abgesagt🌩</q-card-section>
+      <q-card-section class="bg-primary text-accent text-h6">!Forsbachtour News!</q-card-section>
       <q-card-section>
-        <b>Die Forsbachtour findet regulär statt!</b>
+        <b>Die Forsbachtour samt Family Tour findet statt!</b>
         <br />
-        🌩️Die <u><b>Family Tour</b></u> wurde leider wetterbedingt in diesem Jahr abgesagt.🌩️
-        <br />
-        🌩️Aufgrund der schlechten Wettervorhersage, entschieden wir uns dazu aus Sicherheitsgründen.🌩️
+        Die Anmeldung für die 80er Strecke ist bis 12 Uhr geöffnet!
         <br />
         <br />
-        🌩️Euer RTC KÖLN e.V. 1972🌩️</q-card-section
-      >
+        Euer RTC KÖLN e.V. 1972
+      </q-card-section>
       <q-card-actions align="right">
         <q-btn v-close-popup color="primary" label="Schließen" />
       </q-card-actions>
