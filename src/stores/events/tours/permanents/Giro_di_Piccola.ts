@@ -1,5 +1,4 @@
-import { mdiBank } from '@quasar/extras/mdi-v7'
-import { mdiPaypal } from '@quasar/extras/mdi-v4'
+import { mdiBank, mdiCreditCardOutline } from '@quasar/extras/mdi-v7'
 import DonationBuilder from 'src/models/builder/DonationBuilder'
 import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
 import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
@@ -22,7 +21,7 @@ BIC: GENODED1BRS`,
       )
       .setTitle('Bankverbindung')
       .buildDonation(),
-    new DonationBuilder().setIcon(mdiPaypal).setId('85b44277-671f-433e-b23f-3a2fe540d22d').setTitle('PayPal').setUrl('www.paypal.com/ncp/payment/4MGHM6L3PQVU8').buildDonation(),
+    new DonationBuilder().setIcon(mdiCreditCardOutline).setId('85b44277-671f-433e-b23f-3a2fe540d22d').setTitle('PayPal').setUrl('www.paypal.com/ncp/payment/4MGHM6L3PQVU8').buildDonation(),
   )
   .setHeight(950)
   .setId('e90f024a-43c8-467e-a8aa-5e8765594d68')
