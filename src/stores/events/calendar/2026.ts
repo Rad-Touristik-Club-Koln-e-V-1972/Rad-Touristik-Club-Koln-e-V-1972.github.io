@@ -59,15 +59,15 @@ export default [
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-25').setId('5e11acd9-e2c0-40bd-9e9c-9e171b5a913d').setName('Mehlem').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-05-30').setId('1de0f5a0-2c54-416b-9db1-dee817ce1896').setKilometer(500).setName('Aufbau FBT').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF_RTC).setDate('2026-05-31').setId('18220f49-dbe4-4387-9ef3-189850dcc3b5').setKilometer(500).setName('Forsbachtour').buildEvent(),
+  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-06-07').setId('fcc3cf72-fa48-4627-a644-ee78a001532c').setName('Buchholz').buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
-    .setDate('2026-06-05')
+    .setDate('2026-06-12')
     .setId('31777fbe-4302-4ee6-b9c5-05a2b2754450')
     .setKilometer(50)
     .setName('RTC-Vereinsabend (Garten)')
     .buildEvent(),
-  new EventBuilder().setCategory(EEvent.RTF).setDate('2026-06-07').setId('fcc3cf72-fa48-4627-a644-ee78a001532c').setName('Buchholz').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-06-13').setId('8d562fa1-524a-4013-96cb-35dbfae21dc1').setName('Neandertal').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-06-14').setId('62358284-b7c5-4fd2-b507-569dc2f9a4a2').setName('Lülsdorf').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-06-21').setId('f33502af-e62e-494a-9497-3caf638795d0').setName('Rodenkirchen').buildEvent(),
