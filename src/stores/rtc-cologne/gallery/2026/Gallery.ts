@@ -4,6 +4,7 @@ import _03_22_Sommerfeeling_auf_der_Sophienhoehe from './03_22_Sommerfeeling_auf
 import _03_22_RTF_Duesseldorf_Rath_Ratingen_113_km from './03_22_RTF_Duesseldorf_Rath_Ratingen_113_km'
 import _04_11_Vortour_zur_Forsbachtour from './04_11_Vortour_zur_Forsbachtour'
 import _04_25_Neue_Rekorde_aufgestellt from './04_25_Neue_Rekorde_aufgestellt'
+import _05_31_Forsbachtour from './05_31_Forsbachtour'
 
 export default [
   _03_06_Neuer_Vorstand_viele_Ideen_und_große_Vorfreude,
@@ -12,4 +13,5 @@ export default [
   _03_22_RTF_Duesseldorf_Rath_Ratingen_113_km,
   _04_11_Vortour_zur_Forsbachtour,
   _04_25_Neue_Rekorde_aufgestellt,
+  _05_31_Forsbachtour,
 ]

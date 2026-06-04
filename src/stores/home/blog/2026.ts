@@ -2,6 +2,70 @@ import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs('20cb2cde-e83b-45f3-b72a-7d582c2f6b2f')
+    .setDate('2026-05-31')
+    .setId('e16c384e-e4b5-4822-abaf-90c3c9d5c5f3')
+    .setText(
+      `Manchmal beginnt ein erfolgreicher Tag mit einer gehörigen Portion Nervenkitzel.
+So war es auch bei unserer Forsbachtour 2026.
+
+Der Vorstand hatte es in diesem Jahr wirklich nicht leicht.
+Die Wetter-Apps sorgten für reichlich Unsicherheit und stellten unsere Planung immer wieder auf die Probe.
+Von „Es bleibt trocken“ bis „Den ganzen Tag Gewitter“ war alles dabei. 🙈
+Entsprechend mussten wir unsere Planungen gleich mehrfach anpassen.
+
+Sogar die Familientour haben wir zunächst aufgrund der angekündigten Gewitter abgesagt und einen halben Tag später wieder freigegeben.
+Da musste die Orga noch mal angepasst werden.
+
+Trotz aller Fragezeichen wollten wir die Forsbachtour stattfinden lassen – und das war genau die richtige Entscheidung. 👏
+
+Als gegen 9:30 Uhr der Regen aufhörte, kehrte die Hoffnung zurück.
+Nach und nach trafen die Fahrerinnen und Fahrer ein, Familien kamen mit ihren Kindern, und plötzlich füllte sich der Platz mit Leben, Lachen und guter Stimmung.
+
+Was diesen Tag aber besonders gemacht hat, waren die Menschen, die ihn möglich gemacht haben.
+Jede einzelne RTClerin und jeder einzelne RTCler hat mit Herzblut, Engagement und ganz viel Liebe zum Detail dazu beigetragen, dass unsere Gäste einen wunderschönen Tag erleben konnten.
+An jeder Station war zu spüren, wie viel Einsatz, Freude und Gemeinschaft in unserer Forsbachtour steckt.
+Ob an den Kontrollstellen, am Grill, bei Kaffee und Kuchen, bei der Anmeldung, bei unseren Durstlöschern, am Glücksrad oder im Hintergrund
+– überall waren Vereinsmitglieder am Werk, die mit Begeisterung dabei waren und unsere Gäste herzlich empfangen haben.
+
+Jede Station wurde mit viel Liebe begleitet.
+Genau das haben unsere Gäste gespürt und genau das macht die besondere Atmosphäre unserer Forsbachtour aus. 🧡
+
+Besonders stolz sind wir darauf, dass in diesem Jahr sieben neue Vereinsmitglieder zum ersten Mal bei der Ausrichtung unserer Forsbachtour mitgewirkt haben🫶.
+Für viele war alles neu, doch sie haben sich mit großem Einsatz eingebracht und ihre Aufgaben mit Bravour gemeistert. 👏Es war schön zu sehen, wie selbstverständlich sie Teil unseres Teams geworden sind.
+Ihr habt das großartig gemacht.
+
+Wir hatten auch eine begleitete Tour, die wir aufgrund des Wetters von 10:00 Uhr auf 11:00 Uhr verlegt haben.
+Zwei begeisterte Fahrer:innen sind mit auf die Strecke gegangen und waren von unserer Begleitung sehr angetan.
+
+Im Laufe des Tages zeigte sich sogar die Sonne. ☀️
+So konnten alle draußen sitzen, leckere Kuchen, frische Salate und Grillwürstchen genießen und bei einem kühlen Getränk gemütlich zusammensitzen.
+
+Ein echtes Highlight war wieder unser Glücksrad.
+Mehr als 100-mal wurde es gedreht und sorgte für strahlende Gesichter.
+Besonders die Kinder waren begeistert und hatten großen Spaß daran. 🎡😊
+
+Am Ende durften wir statt der erhofften 500–600 Teilnehmer:innen rund 200 glückliche Teilnehmerinnen und Teilnehmer begrüßen.
+Die vielen positiven Rückmeldungen, die wir im Laufe des Tages erhalten haben, haben uns sehr berührt.
+Sie zeigen, dass sich die viele Arbeit, die Vorbereitung und das Engagement aller Helferinnen und Helfer gelohnt haben.
+
+Traditionell haben wir den Tag in großer Runde gegen 17:00 Uhr gemeinsam ausklingen lassen, bevor die Fahrzeuge beladen wurden und die letzten Arbeiten begannen.
+Für eine kleine Gruppe endete der Abend sogar erst nach 21:00 Uhr.
+Müde, aber glücklich.💪
+
+Ein ganz besonderer Dank gilt auch den Vereinen, die uns besucht und unterstützt haben.
+Gerade weil wir in den vergangenen Jahren so oft vom Wetter ausgebremst wurden, bedeutet uns eure Unterstützung sehr viel.
+
+Die Forsbachtour 2026 hat einmal mehr gezeigt, was den RTC Köln ausmacht:
+Zusammenhalt, Hilfsbereitschaft, Leidenschaft und ganz viel Herz.
+
+Danke an jede einzelne RTClerin und jeden einzelnen RTCler.
+Ihr habt diesen Tag zu etwas ganz Besonderem gemacht.
+Ohne euch gäbe es keine Forsbachtour.🧡`,
+    )
+    .setTitle('Forsbachtour 2026 – Gemeinsam haben wir einen besonderen Tag geschaffen')
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs('b9ff1d74-6dbb-42f9-b28f-c0a7a27c4d86')
     .setDate('2026-04-25')
     .setId('f804ae7b-6f92-4738-83bb-64d38fcf5ede')
