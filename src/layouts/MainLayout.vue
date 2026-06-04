@@ -39,14 +39,11 @@
       </div>
     </q-footer>
   </q-layout>
-  <q-dialog :model-value="true" persistent>
-    <!-- TODO Remove code after 01.06.2026 -->
+  <q-dialog v-if="nextRTF" :model-value="isNextRTFSoon" persistent>
     <q-card>
       <q-card-section class="bg-primary text-accent text-h6">!Forsbachtour News!</q-card-section>
       <q-card-section>
-        <b>Die Forsbachtour samt Family Tour findet statt!</b>
-        <br />
-        Die Anmeldung für die 80er Strecke ist bis 12 Uhr geöffnet!
+        Die Forsbachtour ist am {{ dateTime.format(nextRTF.start) }}!
         <br />
         <br />
         Euer RTC KÖLN e.V. 1972
@@ -64,8 +61,15 @@ import { mdiCopyright, mdiMenu } from '@quasar/extras/mdi-v7'
 import CNavigationDrawer from 'components/MainLayout/CNavigationDrawer.vue'
 import DAccessibility from 'components/MainLayout/DAccessibility.vue'
 import useSponsorStore from 'stores/Sponsor'
+import useCalendarStore from 'stores/events/Calendar'
+import useDateTime from 'src/utils/DateTime'
 
 const navDrawer = ref(false)
+
+const dateTime = useDateTime()
+
+const nextRTF = useCalendarStore().nextRTF
+const isNextRTFSoon = nextRTF ? dateTime.isInTheNextDays(nextRTF.start, 30) : false
 </script>
 
 <style lang="scss" scoped>

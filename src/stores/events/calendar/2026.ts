@@ -113,13 +113,6 @@ export default [
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-09-27').setId('8a148c10-568d-418a-bc25-36e2d404240d').setName('Essen').buildEvent(),
   new EventBuilder().setCategory(EEvent.RTF).setDate('2026-10-03').setId('9e7652fe-e08d-4027-952f-c20f4996b677').setName('Büttgen').buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.RTF_RTC)
-    .setDate('2026-10-04')
-    .setId('7fd55682-f9a9-4c5a-be0c-9fe142e0ee1e')
-    .setKilometer(500)
-    .setName('Ausweichtermin Forsbachtour: nur 40er und 70er als Abschlussveranstaltung des Bezirks Köln')
-    .buildEvent(),
-  new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact('Diana Vialon')
     .setDate('2026-10-09')
