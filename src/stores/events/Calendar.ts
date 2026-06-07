@@ -16,17 +16,19 @@ export default defineStore('calendar', () => {
 
   const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))
   const allFuture = computed(() => all.value.filter((it) => it.start > dateTime.today.value))
+  const nextRTF = computed(() => allFuture.value.find((it) => it.category === EEvent.RTF_RTC))
 
   return {
     all,
     allFuture,
     allNotCancelled: computed(() => all.value.filter((it) => it.category !== EEvent.Abgesagt)),
+    isNextRtfInDays: (days: number) => (nextRTF.value ? useDateTime().isInTheNextDays(nextRTF.value.start, days) : false),
     nextEvents: computed(() =>
       allFuture.value
         .filter((it) => ![EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung].includes(it.category))
         .sort((a, b) => a.start.getTime() - b.start.getTime())
         .slice(0, 2),
     ),
-    nextRTF: computed(() => allFuture.value.find((it) => it.category === EEvent.RTF_RTC)),
+    nextRTF,
   }
 })

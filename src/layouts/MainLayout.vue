@@ -43,7 +43,7 @@
     <q-card>
       <q-card-section class="bg-primary text-accent text-h6">!Forsbachtour News!</q-card-section>
       <q-card-section>
-        Die Forsbachtour ist am {{ dateTime.format(nextRTF.start) }}!
+        Die Forsbachtour ist am {{ useDateTime().format(nextRTF.start) }}!
         <br />
         <br />
         Euer RTC KÖLN e.V. 1972
@@ -66,10 +66,10 @@ import useDateTime from 'src/utils/DateTime'
 
 const navDrawer = ref(false)
 
-const dateTime = useDateTime()
+const calendarStore = useCalendarStore()
 
-const nextRTF = useCalendarStore().nextRTF
-const isNextRTFSoon = nextRTF ? dateTime.isInTheNextDays(nextRTF.start, 30) : false
+const nextRTF = calendarStore.nextRTF
+const isNextRTFSoon = calendarStore.isNextRtfInDays(30)
 </script>
 
 <style lang="scss" scoped>

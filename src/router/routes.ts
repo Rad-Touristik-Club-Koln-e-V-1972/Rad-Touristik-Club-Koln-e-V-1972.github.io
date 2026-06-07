@@ -1,9 +1,7 @@
 export default [
   {
     children: [
-      // TODO Am 01.06.2026 wieder auf den alten Stand bringen.
-      //{ path: '/', redirect: { name: 'home' } },
-      { path: '/', redirect: { name: 'events-tours-rtfs' } },
+      { path: '/', redirect: { name: 'home' } },
       { component: () => import('pages/PHome.vue'), name: 'home', path: 'home' },
       { component: () => import('pages/PImprint.vue'), name: 'imprint', path: 'imprint' },
       {

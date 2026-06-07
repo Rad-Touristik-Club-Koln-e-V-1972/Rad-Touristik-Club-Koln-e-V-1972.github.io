@@ -1,5 +1,6 @@
 import { defineRouter } from '#q-app/wrappers'
 import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import useCalendarStore from 'stores/events/Calendar'
 
 import routes from './routes'
 
@@ -14,8 +15,9 @@ import routes from './routes'
 
 export default defineRouter(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER ? createMemoryHistory : process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory
+  const isNextRTFSoon = useCalendarStore().isNextRtfInDays(30)
 
-  return createRouter({
+  const router = createRouter({
     // Leave this as is and make changes in quasar.conf.js instead!
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
@@ -23,4 +25,10 @@ export default defineRouter(function (/* { store, ssrContext } */) {
     routes,
     scrollBehavior: () => ({ left: 0, top: 0 }),
   })
+
+  router.beforeEach((to, from) => {
+    return !from.name && to.name === 'home' && isNextRTFSoon ? { name: 'events-tours-rtfs' } : true
+  })
+
+  return router
 })
