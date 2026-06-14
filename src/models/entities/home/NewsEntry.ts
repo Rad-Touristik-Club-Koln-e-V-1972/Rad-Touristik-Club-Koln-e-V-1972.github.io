@@ -1,8 +1,8 @@
 import AEntity from 'src/models/entities/AEntity'
-import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 
 export default class NewsEntry extends AEntity {
-  image!: GalleryEntry
+  gallery?: Gallery
   showUntil?: Date
   text?: string
   url?: URL

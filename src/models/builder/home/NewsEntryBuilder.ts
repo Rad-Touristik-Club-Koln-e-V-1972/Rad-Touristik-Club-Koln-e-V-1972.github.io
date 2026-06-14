@@ -1,14 +1,14 @@
 import ABuilder from 'src/models/builder/ABuilder'
 import NewsEntry from 'src/models/entities/home/NewsEntry'
-import type GalleryEntry from 'src/models/entities/rtc-cologne/gallery/GalleryEntry'
+import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
 
 export default class NewsEntryBuilder extends ABuilder {
   private newsEntry = new NewsEntry()
 
   buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
 
-  setImage = (value: GalleryEntry): this => {
-    this.newsEntry.image = value
+  setGallery = (value: Gallery): this => {
+    this.newsEntry.gallery = value
 
     return this
   }

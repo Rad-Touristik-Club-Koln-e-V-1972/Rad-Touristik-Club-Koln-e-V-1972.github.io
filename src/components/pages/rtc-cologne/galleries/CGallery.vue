@@ -8,10 +8,10 @@
       {{ props.modelValue.location }}
     </q-card-section>
     <q-card-section>
-      <q-img eager :src="props.modelValue?.titleImageUrl?.toString()" style="cursor: pointer" @click="open" />
+      <q-img :src="props.modelValue.titleImageUrl.toString()" eager style="cursor: pointer" @click="open" />
     </q-card-section>
     <q-inner-loading :showing="isLoading">
-      <q-spinner-gears size="50px" color="primary" />
+      <q-spinner-gears color="primary" size="50px" />
     </q-inner-loading>
   </q-card>
 </template>
@@ -31,6 +31,6 @@ const isLoading = ref(false)
 const open = async () => {
   isLoading.value = true
 
-  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album ? props.album : Object.keys(props.modelValue.images)[0], id: props.modelValue.id } })
+  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album, id: props.modelValue.id } })
 }
 </script>
