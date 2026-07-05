@@ -15,8 +15,8 @@ importers:
         specifier: 4.9.2
         version: 4.9.2(vue@3.5.39(typescript@6.0.3))
       '@quasar/extras':
-        specifier: 2.0.1
-        version: 2.0.1
+        specifier: 2.0.2
+        version: 2.0.2
       '@quasar/quasar-ui-qcalendar':
         specifier: 4.1.2
         version: 4.1.2
@@ -71,7 +71,7 @@ importers:
         version: 10.0.1(eslint@10.6.0(jiti@2.6.1))
       '@quasar/app-vite':
         specifier: 2.6.2
-        version: 2.6.2(@quasar/extras@2.0.1)(@types/node@25.9.4)(eslint@10.6.0(jiti@2.6.1))(jiti@2.6.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.20.3)(rolldown@1.0.3)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(vite@8.0.16(@types/node@25.9.4)(esbuild@0.27.7)(jiti@2.6.1)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
+        version: 2.6.2(@quasar/extras@2.0.2)(@types/node@25.9.4)(eslint@10.6.0(jiti@2.6.1))(jiti@2.6.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.20.3)(rolldown@1.0.3)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(vite@8.0.16(@types/node@25.9.4)(esbuild@0.27.7)(jiti@2.6.1)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
       '@quasar/quasar-app-extension-qcalendar':
         specifier: 4.1.2
         version: 4.1.2
@@ -922,8 +922,8 @@ packages:
       workbox-build:
         optional: true
 
-  '@quasar/extras@2.0.1':
-    resolution: {integrity: sha512-gieBBROuXkVhvqXtbcVg4pHR5FDcaK+F9PaY2K2t8+EuK8OB/0aJq306DeF5+/Bqv8ixIXT9KhpRZj0HotaOew==}
+  '@quasar/extras@2.0.2':
+    resolution: {integrity: sha512-BkH/iBISDbLNl5qAdsVNpa/0hxHbd1VwfML4dRwTUb8oGeLqlr00yjYM648KGYB1C8plwhU7LyGziE1JpSa6ZA==}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.2':
     resolution: {integrity: sha512-uhZ0k8znOQg8pGl+vc9VW+np72znuzaIMGsdGgI1pY/0/pSZ1rzsBT8xALX5T0oQXJkOT9OHwSrsw7WJxFGD9A==}
@@ -4573,7 +4573,7 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@quasar/app-vite@2.6.2(@quasar/extras@2.0.1)(@types/node@25.9.4)(eslint@10.6.0(jiti@2.6.1))(jiti@2.6.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.20.3)(rolldown@1.0.3)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(vite@8.0.16(@types/node@25.9.4)(esbuild@0.27.7)(jiti@2.6.1)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)':
+  '@quasar/app-vite@2.6.2(@quasar/extras@2.0.2)(@types/node@25.9.4)(eslint@10.6.0(jiti@2.6.1))(jiti@2.6.1)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.20.3)(rolldown@1.0.3)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(vite@8.0.16(@types/node@25.9.4)(esbuild@0.27.7)(jiti@2.6.1)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)':
     dependencies:
       '@quasar/render-ssr-error': 1.0.4
       '@quasar/ssl-certificate': 2.0.0
@@ -4616,7 +4616,7 @@ snapshots:
       vue-router: 5.1.0(@vue/compiler-sfc@3.5.39)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(vite@8.0.16(@types/node@25.9.4)(esbuild@0.27.7)(jiti@2.6.1)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3))
       webpack-merge: 6.0.1
     optionalDependencies:
-      '@quasar/extras': 2.0.1
+      '@quasar/extras': 2.0.2
       eslint: 10.6.0(jiti@2.6.1)
       pinia: 3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3))
       typescript: 6.0.3
@@ -4638,7 +4638,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@quasar/extras@2.0.1': {}
+  '@quasar/extras@2.0.2': {}
 
   '@quasar/quasar-app-extension-qcalendar@4.1.2':
     dependencies:
