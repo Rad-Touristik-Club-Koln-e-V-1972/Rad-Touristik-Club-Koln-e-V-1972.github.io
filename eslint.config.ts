@@ -1,11 +1,11 @@
 import js from '@eslint/js'
 import pluginQuasar from '@quasar/app-vite/eslint'
 import vueEslintConfigPrettier from '@vue/eslint-config-prettier'
-import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
+import { withVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-export default defineConfigWithVueTs(
+export default withVueTs(
   {
     name: 'ignores',
     ignores: ['.github/**', '.husky/**', '.idea/**', 'patches/**'],
