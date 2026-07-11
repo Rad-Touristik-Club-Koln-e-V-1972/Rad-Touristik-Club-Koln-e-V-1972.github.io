@@ -3,13 +3,21 @@
   <div class="justify-center q-gutter-lg row">
     <div v-if="props.category === EEvent.RTF_RTC" class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Für Breitensportlizenzinhaber:innen (digitale Anmeldung)</q-card-section>
-        <q-card-section>Die Anmeldung läuft über die GC Touren-App für Lizenzinhaber:innen.</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Für Breitensportlizenzinhaber:innen (digitale
+          Anmeldung)</q-card-section
+        >
+        <q-card-section
+          >Die Anmeldung läuft über die GC Touren-App für
+          Lizenzinhaber:innen.</q-card-section
+        >
       </q-card>
     </div>
     <div v-if="props.category === EEvent.RTF_RTC" class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Oder ohne Smartphone (manuelle Anmeldung)</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Oder ohne Smartphone (manuelle Anmeldung)</q-card-section
+        >
         <q-card-section>
           Gastfahrer:innen können sich analog anmelden.
           <ol>
@@ -23,7 +31,9 @@
     </div>
     <div v-if="props.category === EEvent.Familientour" class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Ohne Smartphone (manuelle Anmeldung)</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Ohne Smartphone (manuelle Anmeldung)</q-card-section
+        >
         <q-card-section>
           <ol>
             <li>Anmeldeformular ausfüllen</li>
@@ -36,13 +46,20 @@
     </div>
     <div v-if="props.category === EEvent.Familientour" class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Oder für Breitensportlizenzinhaber:innen (digitale Anmeldung)</q-card-section>
-        <q-card-section>Die Veranstaltung muss in der BDR-App gebucht werden.</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Oder für Breitensportlizenzinhaber:innen (digitale
+          Anmeldung)</q-card-section
+        >
+        <q-card-section
+          >Die Veranstaltung muss in der BDR-App gebucht werden.</q-card-section
+        >
       </q-card>
     </div>
     <div v-if="props.category === EEvent.RTF_RTC" class="col-auto">
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Sternfahrtmodus</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Sternfahrtmodus</q-card-section
+        >
         <q-card-section>
           Dieser Modus gilt weiterhin.<br />
           Dafür kann man im Ziel die nächst längere Strecke einscannen.
@@ -53,7 +70,7 @@
 </template>
 
 <script lang="ts" setup>
-import EEvent from 'src/models/enums/EEvent'
+import EEvent from "@/models/enums/EEvent";
 
-const props = defineProps<{ category: EEvent }>()
+const props = defineProps<{ category: EEvent }>();
 </script>

@@ -1,39 +1,39 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import NewsEntry from 'src/models/entities/home/NewsEntry'
-import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import ABuilder from "@/models/builder/ABuilder";
+import NewsEntry from "@/models/entities/home/NewsEntry";
+import type Gallery from "@/models/entities/rtc-cologne/gallery/Gallery";
 
 export default class NewsEntryBuilder extends ABuilder {
-  private newsEntry = new NewsEntry()
+  private newsEntry = new NewsEntry();
 
-  buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity())
+  buildNewsEntry = () => Object.assign(this.newsEntry, this.buildAEntity());
 
   setGallery = (value: Gallery): this => {
-    this.newsEntry.gallery = value
+    this.newsEntry.gallery = value;
 
-    return this
-  }
+    return this;
+  };
 
   setShowUntil = (value: string): this => {
-    this.newsEntry.showUntil = new Date(value)
+    this.newsEntry.showUntil = new Date(value);
 
-    return this
-  }
+    return this;
+  };
 
   setText = (value: string): this => {
-    this.newsEntry.text = value.replaceAll('\n', '<br>')
+    this.newsEntry.text = value.replaceAll("\n", "<br>");
 
-    return this
-  }
+    return this;
+  };
 
   setUrl = (value: string): this => {
-    this.newsEntry.url = new URL(`https://${value}`)
+    this.newsEntry.url = new URL(`https://${value}`);
 
-    return this
-  }
+    return this;
+  };
 
   setYoutubeVideoId = (value: string): this => {
-    this.newsEntry.youtubeVideoId = value
+    this.newsEntry.youtubeVideoId = value;
 
-    return this
-  }
+    return this;
+  };
 }

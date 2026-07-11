@@ -1,8 +1,12 @@
-import { defineRouter } from '#q-app/wrappers'
-import { createMemoryHistory, createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-import useCalendarStore from 'stores/events/Calendar'
-
-import routes from './routes'
+import {
+  createMemoryHistory,
+  createRouter,
+  createWebHashHistory,
+  createWebHistory
+} from "vue-router";
+import { routes, handleHotUpdate } from "vue-router/auto-routes";
+import { defineRouter } from "#q-app";
+import useCalendarStore from "@/stores/events/Calendar";
 
 /*
  * If not building with SSR mode, you can
@@ -13,23 +17,42 @@ import routes from './routes'
  * with the Router instance.
  */
 
-export default defineRouter(function (/* { store, ssrContext } */) {
-  const webHistory = process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory
-  const history = process.env.SERVER ? createMemoryHistory : webHistory
-  const isNextRTFSoon = useCalendarStore().isNextRtfInDays(30)
+export default defineRouter((/* { store, ssrContext } */) => {
+  const createWebHistoryHelper = () =>
+    import.meta.env.QUASAR_VUE_ROUTER_MODE === "history"
+      ? createWebHistory
+      : createWebHashHistory;
+  const createHistory = import.meta.env.QUASAR_SERVER
+    ? createMemoryHistory
+    : createWebHistoryHelper();
+
+  const isNextRTFSoon = useCalendarStore().isNextRtfInDays(30);
 
   const router = createRouter({
+    scrollBehavior: () => ({ left: 0, top: 0 }),
+    routes,
+
     // Leave this as is and make changes in quasar.conf.js instead!
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
-    history: history(),
-    routes,
-    scrollBehavior: () => ({ left: 0, top: 0 }),
-  })
+    history: createHistory(import.meta.env.QUASAR_VUE_ROUTER_BASE)
+  });
 
-  router.beforeEach((to, from) => {
-    return !from.name && to.name === 'home' && isNextRTFSoon ? { name: 'events-tours-rtfs' } : true
-  })
+  router.onError(error => {
+    console.error("Router Error caught:", error);
+    return { path: "/error500" };
+  });
 
-  return router
-})
+  router.beforeEach(async (to, from) => {
+    if (!from.name && to.name === "home" && isNextRTFSoon) {
+      return { path: "/events/tours/rtfs" };
+    }
+  });
+
+  // enable HMR for it
+  if (import.meta.hot) {
+    handleHotUpdate(router);
+  }
+
+  return router;
+});

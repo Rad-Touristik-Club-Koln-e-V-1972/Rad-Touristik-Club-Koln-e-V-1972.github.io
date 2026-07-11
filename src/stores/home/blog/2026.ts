@@ -1,10 +1,10 @@
-import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
+import BlogEntryBuilder from "@/models/builder/home/BlogEntryBuilder";
 
 export default [
   new BlogEntryBuilder()
-    .setAlbumIDs('20cb2cde-e83b-45f3-b72a-7d582c2f6b2f')
-    .setDate('2026-05-31')
-    .setId('e16c384e-e4b5-4822-abaf-90c3c9d5c5f3')
+    .setAlbumIDs("20cb2cde-e83b-45f3-b72a-7d582c2f6b2f")
+    .setDate("2026-05-31")
+    .setId("e16c384e-e4b5-4822-abaf-90c3c9d5c5f3")
     .setText(
       `Manchmal beginnt ein erfolgreicher Tag mit einer gehörigen Portion Nervenkitzel.
 So war es auch bei unserer Forsbachtour 2026.
@@ -61,14 +61,16 @@ Zusammenhalt, Hilfsbereitschaft, Leidenschaft und ganz viel Herz.
 
 Danke an jede einzelne RTClerin und jeden einzelnen RTCler.
 Ihr habt diesen Tag zu etwas ganz Besonderem gemacht.
-Ohne euch gäbe es keine Forsbachtour.🧡`,
+Ohne euch gäbe es keine Forsbachtour.🧡`
     )
-    .setTitle('Forsbachtour 2026 – Gemeinsam haben wir einen besonderen Tag geschaffen')
+    .setTitle(
+      "Forsbachtour 2026 – Gemeinsam haben wir einen besonderen Tag geschaffen"
+    )
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('b9ff1d74-6dbb-42f9-b28f-c0a7a27c4d86')
-    .setDate('2026-04-25')
-    .setId('f804ae7b-6f92-4738-83bb-64d38fcf5ede')
+    .setAlbumIDs("b9ff1d74-6dbb-42f9-b28f-c0a7a27c4d86")
+    .setDate("2026-04-25")
+    .setId("f804ae7b-6f92-4738-83bb-64d38fcf5ede")
     .setText(
       `Der 25.4. stand für den RTC Köln unter einem guten Stern – auch wenn wir ihn morgens um 07:30 Uhr vor lauter Nebel noch nicht sehen konnten, als Tobi, Manni und ich uns auf den Weg zur RTF in Grefrath machten.
 
@@ -107,24 +109,24 @@ Rekorde!
 Mit unseren heutigen Touren belegt unser kleiner Verein aktuell den 10. Platz in der bundesweiten Rangliste.
 Darauf können wir wirklich stolz sein.
 
-Eure Diana`,
+Eure Diana`
     )
-    .setTitle('Neue Rekorde aufgestellt')
+    .setTitle("Neue Rekorde aufgestellt")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('e8fe7eff-ab36-4504-9032-e3afe7ebb311')
-    .setDate('2026-04-11')
-    .setId('e844c22f-6543-4beb-94d9-0edc385194c7')
+    .setAlbumIDs("e8fe7eff-ab36-4504-9032-e3afe7ebb311")
+    .setDate("2026-04-11")
+    .setId("e844c22f-6543-4beb-94d9-0edc385194c7")
     .setText(
       `Der RTC Köln …eine tolle Truppe.
-Heute sind wir die Vortour zur Forsbachtour (31. Mai) gefahren.`,
+Heute sind wir die Vortour zur Forsbachtour (31. Mai) gefahren.`
     )
-    .setTitle('Vortour zur Forsbachtour')
+    .setTitle("Vortour zur Forsbachtour")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('479e41df-d17e-4c66-8a02-c9c846193cb4')
-    .setDate('2026-03-22')
-    .setId('35407ace-27ff-4c53-b5d0-9dd6c1d80043')
+    .setAlbumIDs("479e41df-d17e-4c66-8a02-c9c846193cb4")
+    .setDate("2026-03-22")
+    .setId("35407ace-27ff-4c53-b5d0-9dd6c1d80043")
     .setText(
       `Was für ein verrücktes Wetter heute:
       Morgens musste ich noch die Autoscheiben freikratzen 🥶 – und mittags saßen wir bei 18 °C in der Sonne!
@@ -167,14 +169,14 @@ PS:
 Ines ist heute natürlich auch gefahren.
 Sie möchte sich definitiv nicht die Vereinsmeisterschaft streitig machen lassen.
 
-Go Ines, Go!! 👏👏👏`,
+Go Ines, Go!! 👏👏👏`
     )
-    .setTitle('RTF Düsseldorf-Rath/Ratingen – 113 km ☀️🚴‍♂️')
+    .setTitle("RTF Düsseldorf-Rath/Ratingen – 113 km ☀️🚴‍♂️")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('950f9a01-fbf4-49f8-871c-6102aea22460')
-    .setDate('2026-03-22')
-    .setId('2337d1a6-b9f1-434c-8438-f6a291ad7228')
+    .setAlbumIDs("950f9a01-fbf4-49f8-871c-6102aea22460")
+    .setDate("2026-03-22")
+    .setId("2337d1a6-b9f1-434c-8438-f6a291ad7228")
     .setText(
       `Bei bestem Wetter waren heute vier RTCler beim „NEULAND HAMBACH Gravelride – Auf der Sophienhöhe“ unterwegs.
 Wolfgang fuhr die 44 km Runde mit knapp 400 Höhenmetern auf seinem E-Bike.
@@ -193,14 +195,16 @@ Im Ziel kamen wir noch einmal alle auf die obligatorische Bratwurst zusammen und
 
 Rund 800 weitere Teilnehmer  haben das Rheinische Braunkohlerevier bei Kaiserwetter erkundet.
 
-Wir gratulieren dem SV Malefinkbach zu dieser gelungenen GTF – ein rundum gelungener Tag für alle. 👏👏👏`,
+Wir gratulieren dem SV Malefinkbach zu dieser gelungenen GTF – ein rundum gelungener Tag für alle. 👏👏👏`
     )
-    .setTitle('Sommerfeeling auf der Sophienhöhe – NEULAND HAMBACH Gravelride 🚴‍♀️☀️')
+    .setTitle(
+      "Sommerfeeling auf der Sophienhöhe – NEULAND HAMBACH Gravelride 🚴‍♀️☀️"
+    )
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('1b5bd945-a8b7-4eec-b5a7-bd684a2c5d15')
-    .setDate('2026-03-14')
-    .setId('5b935a72-23f4-4ebe-823b-2f5917865f19')
+    .setAlbumIDs("1b5bd945-a8b7-4eec-b5a7-bd684a2c5d15")
+    .setDate("2026-03-14")
+    .setId("5b935a72-23f4-4ebe-823b-2f5917865f19")
     .setText(
       `14.3.: Alle freuen sich auf den Start in die Saison … und dann das: Regen ohne Ende.
 Leider fiel die Saisoneröffnung sprichwörtlich ins Wasser.
@@ -220,14 +224,14 @@ Da merkt man gleich wieder, wie klein und herzlich unsere Radsportgemeinschaft i
 
 Für uns drei ging es anschließend wieder mit dem Rad nach Hause – an einem ziemlich usseligen Tag.
 
-Vielen Dank an alle, die sich bei Mistral für eine der Strecken angemeldet und damit den kleinen Verein unterstützt haben. 👏️`,
+Vielen Dank an alle, die sich bei Mistral für eine der Strecken angemeldet und damit den kleinen Verein unterstützt haben. 👏️`
     )
-    .setTitle('Saisoneröffnung beim RC Mistral e.V.')
+    .setTitle("Saisoneröffnung beim RC Mistral e.V.")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('d2637e26-9cab-4757-a189-0d7c51630a9c')
-    .setDate('2026-03-06')
-    .setId('9a3e14e9-4e55-4118-9cd0-cc1237e4a96b')
+    .setAlbumIDs("d2637e26-9cab-4757-a189-0d7c51630a9c")
+    .setDate("2026-03-06")
+    .setId("9a3e14e9-4e55-4118-9cd0-cc1237e4a96b")
     .setText(
       `Am 6. März 2025 fand unsere Jahreshauptversammlung des RTC Köln im Café Uferglück statt.
 
@@ -259,8 +263,8 @@ Der erste Teil der Vorbereitung für das neue Jahr ist geschafft.
 Und die schönste Nachricht, die wir verkünden konnten:
 Für 2026 haben wir mit Verica und Uschi bereits zwei super nette Ladies für den RTC Köln gewinnen können.
 
-Wir freuen uns sehr auf alles, was kommt! 🚴‍♀️`,
+Wir freuen uns sehr auf alles, was kommt! 🚴‍♀️`
     )
-    .setTitle('Neuer Vorstand, viele Ideen und große Vorfreude')
-    .buildBlogEntry(),
-]
+    .setTitle("Neuer Vorstand, viele Ideen und große Vorfreude")
+    .buildBlogEntry()
+];

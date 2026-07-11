@@ -17,7 +17,13 @@
         transition-next="slide-left"
         transition-prev="slide-right"
       >
-        <q-carousel-slide v-for="it in items" :key="it.id" :fullscreen="false" :name="it.id" class="column flex-center no-wrap">
+        <q-carousel-slide
+          v-for="it in items"
+          :key="it.id"
+          :fullscreen="false"
+          :name="it.id"
+          class="column flex-center no-wrap"
+        >
           <q-card flat>
             <q-card-section>
               <span class="text-pre-wrap" v-html="it.text" />
@@ -31,11 +37,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import DNewsDetails from './DNewsDetails.vue'
-import useNewsStore from 'stores/home/News'
+import { ref } from "vue";
+import DNewsDetails from "./DNewsDetails.vue";
+import useNewsStore from "@/stores/home/News";
 
-const items = useNewsStore().allValid
+const items = useNewsStore().allValid;
 
-const slide = ref(items[0]?.id)
+const slide = ref(items[0]?.id);
 </script>

@@ -1,89 +1,89 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import EEvent from 'src/models/enums/EEvent'
-import Event from 'src/models/entities/events/calendar/Event'
+import ABuilder from "@/models/builder/ABuilder";
+import EEvent from "@/models/enums/EEvent";
+import Event from "@/models/entities/events/calendar/Event";
 
 export default class EventBuilder extends ABuilder {
-  private event = new Event()
+  private event = new Event();
 
-  buildEvent = () => Object.assign(this.event, this.buildAEntity())
+  buildEvent = () => Object.assign(this.event, this.buildAEntity());
 
   setAllDay = (value: boolean): this => {
-    this.event.allDay = value
+    this.event.allDay = value;
 
-    return this
-  }
+    return this;
+  };
 
   setCategory = (value: EEvent): this => {
-    this.event.category = value
-    this.event.color = this.getColor(value)
+    this.event.category = value;
+    this.event.color = this.getColor(value);
 
-    return this
-  }
+    return this;
+  };
 
   setContact = (value: string): this => {
-    this.event.contact = value
+    this.event.contact = value;
 
-    return this
-  }
+    return this;
+  };
 
   setDate = (start: Date | string, end: Date | string | null = null): this => {
-    if (end) this.event.end = new Date(end)
-    this.event.start = new Date(start)
+    if (end) this.event.end = new Date(end);
+    this.event.start = new Date(start);
 
-    return this
-  }
+    return this;
+  };
 
   setKilometer = (value: number): this => {
-    this.event.kilometer = value
+    this.event.kilometer = value;
 
-    return this
-  }
+    return this;
+  };
 
   setName = (value: string): this => {
-    this.event.name = value
+    this.event.name = value;
 
-    return this
-  }
+    return this;
+  };
 
   setUrl = (value: string): this => {
-    this.event.url = new URL(`https://${value}`)
+    this.event.url = new URL(`https://${value}`);
 
-    return this
-  }
+    return this;
+  };
 
   private getColor = (value: EEvent) => {
-    let color
+    let color;
 
     switch (value) {
       case EEvent.Abgesagt:
-        color = 'grey'
-        break
+        color = "grey";
+        break;
       case EEvent.CTF:
       case EEvent.Marathon:
-        color = 'blue'
-        break
+        color = "blue";
+        break;
       case EEvent.Feiertag:
-        color = 'secondary'
-        break
+        color = "secondary";
+        break;
       case EEvent.Mitgliederversammlung:
-        color = 'green'
-        break
+        color = "green";
+        break;
       case EEvent.Permanente:
-        color = 'red-14'
-        break
+        color = "red-14";
+        break;
       case EEvent.RTF:
       case EEvent.RTF_RTC:
-        color = 'deep-purple'
-        break
+        color = "deep-purple";
+        break;
       case EEvent.Veranstaltung:
-        color = 'pink-3'
-        break
+        color = "pink-3";
+        break;
       case EEvent.RTC:
       case EEvent.Vereinsfahrt:
       default:
-        color = 'primary'
+        color = "primary";
     }
 
-    return color
-  }
+    return color;
+  };
 }

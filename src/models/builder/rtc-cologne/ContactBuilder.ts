@@ -1,32 +1,32 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import Contact from 'src/models/entities/rtc-cologne/Contact'
+import ABuilder from "@/models/builder/ABuilder";
+import Contact from "@/models/entities/rtc-cologne/Contact";
 
 export default class ContactBuilder extends ABuilder {
-  private contact = new Contact()
+  private contact = new Contact();
 
-  buildContact = () => Object.assign(this.contact, this.buildAEntity())
+  buildContact = () => Object.assign(this.contact, this.buildAEntity());
 
   setEMail = (value: string): this => {
-    this.contact.eMail = value
+    this.contact.eMail = value;
 
-    return this
-  }
+    return this;
+  };
 
   setImageUrl = (value: string): this => {
-    this.contact.imageUrl = new URL(`https://${value}`)
+    this.contact.imageUrl = new URL(`https://${value}`);
 
-    return this
-  }
+    return this;
+  };
 
   setName = (value: string): this => {
-    this.contact.name = value
+    this.contact.name = value;
 
-    return this
-  }
+    return this;
+  };
 
   setPosition = (value: string): this => {
-    this.contact.position = value
+    this.contact.position = value;
 
-    return this
-  }
+    return this;
+  };
 }

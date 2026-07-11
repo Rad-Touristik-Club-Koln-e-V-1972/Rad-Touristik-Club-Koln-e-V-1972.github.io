@@ -1,10 +1,10 @@
 // https://github.com/michael-ciniawsky/postcss-load-config
-import autoprefixer from 'autoprefixer'
+import autoprefixer from "autoprefixer";
 
 export default {
   plugins: [
     // https://github.com/postcss/autoprefixer
-    autoprefixer,
+    autoprefixer
 
     // https://github.com/elchininet/postcss-rtlcss
     // If you want to support RTL css, then
@@ -12,5 +12,5 @@ export default {
     // 2. optionally set quasar.config.js > framework > lang to an RTL language
     // 3. uncomment the following line:
     // require('postcss-rtlcss')
-  ],
-}
+  ]
+};

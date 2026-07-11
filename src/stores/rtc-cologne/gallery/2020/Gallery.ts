@@ -1,3 +1,3 @@
-import _2020Rueckblick from './Rueckblick'
+import _2020Rueckblick from "./Rueckblick";
 
-export default [_2020Rueckblick]
+export default [_2020Rueckblick];

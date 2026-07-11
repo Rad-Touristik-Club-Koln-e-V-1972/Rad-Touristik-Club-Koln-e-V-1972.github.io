@@ -1,22 +1,57 @@
 <template>
   <div>
-    <q-btn :icon="mdiAccountCreditCard" color="blue" label="Bezahlen" no-wrap @click="dialog = true" />
+    <q-btn
+      :icon="mdiAccountCreditCard"
+      color="blue"
+      label="Bezahlen"
+      no-wrap
+      @click="dialog = true"
+    />
     <q-dialog v-model="dialog" persistent>
       <q-card flat>
         <q-card-section class="bg-primary text-accent row">
           <div class="text-h6">Bezahlen</div>
           <q-space />
-          <q-btn v-close-popup :icon="mdiClose" dense flat round text-color="accent" />
+          <q-btn
+            v-close-popup
+            :icon="mdiClose"
+            dense
+            flat
+            round
+            text-color="accent"
+          />
         </q-card-section>
         <q-card-section>
-          <q-tabs v-model="tab" active-bg-color="primary" active-color="accent" class="bg-orange-1" indicator-color="secondary">
-            <q-tab v-for="it in props.modelValue" :key="it.id" :icon="it.icon" :label="it.title" :name="it.id" />
+          <q-tabs
+            v-model="tab"
+            active-bg-color="primary"
+            active-color="accent"
+            class="bg-orange-1"
+            indicator-color="secondary"
+          >
+            <q-tab
+              v-for="it in props.modelValue"
+              :key="it.id"
+              :icon="it.icon"
+              :label="it.title"
+              :name="it.id"
+            />
           </q-tabs>
           <q-tab-panels v-model="tab">
-            <q-tab-panel v-for="it in props.modelValue" :key="it.id" :name="it.id">
+            <q-tab-panel
+              v-for="it in props.modelValue"
+              :key="it.id"
+              :name="it.id"
+            >
               <span v-if="it.text" v-html="it.text" />
-              <div v-else-if="it.url" class="cursor-pointer" @click="openURL(it.url.toString())">
-                <span v-if="it.url" class="text-center">Scannen oder anklicken</span>
+              <div
+                v-else-if="it.url"
+                class="cursor-pointer"
+                @click="openURL(it.url.toString())"
+              >
+                <span v-if="it.url" class="text-center"
+                  >Scannen oder anklicken</span
+                >
                 <c-q-r-code :url="it.url" />
               </div>
             </q-tab-panel>
@@ -28,14 +63,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { openURL } from 'quasar'
-import { mdiAccountCreditCard, mdiClose } from '@quasar/extras/mdi-v7'
-import CQRCode from 'components/pages/CQRCode.vue'
-import type Donation from 'src/models/entities/Donation'
+import { ref } from "vue";
+import { openURL } from "quasar";
+import { mdiAccountCreditCard, mdiClose } from "@quasar/extras/mdi-v7";
+import CQRCode from "@/components/pages/CQRCode.vue";
+import type Donation from "@/models/entities/Donation";
 
-const props = defineProps<{ modelValue: Donation[] }>()
+const props = defineProps<{ modelValue: Donation[] }>();
 
-const dialog = ref(false)
-const tab = ref(props.modelValue[0]?.id)
+const dialog = ref(false);
+const tab = ref(props.modelValue[0]?.id);
 </script>

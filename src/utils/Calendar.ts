@@ -1,15 +1,24 @@
-import type * as DateHolidays from 'date-holidays'
-import Holidays from 'date-holidays'
-import EventBuilder from 'src/models/builder/events/calendar/EventBuilder'
-import type Event from 'src/models/entities/events/calendar/Event'
-import EEvent from 'src/models/enums/EEvent'
+import type * as DateHolidays from "date-holidays";
+import Holidays from "date-holidays";
+import EventBuilder from "@/models/builder/events/calendar/EventBuilder";
+import type Event from "@/models/entities/events/calendar/Event";
+import EEvent from "@/models/enums/EEvent";
 
 export default function useCalendar() {
-  const holidays = new Holidays('DE', { languages: ['de'] })
+  const holidays = new Holidays("DE", { languages: ["de"] });
 
   return {
     getHolidays(year: number): Event[] {
-      return holidays.getHolidays(year).map((it: DateHolidays.HolidaysTypes.Holiday) => new EventBuilder().setCategory(EEvent.Feiertag).setDate(it.date).setId(`${it.date}${it.name}`).setName(it.name).buildEvent())
-    },
-  }
+      return holidays
+        .getHolidays(year)
+        .map((it: DateHolidays.HolidaysTypes.Holiday) =>
+          new EventBuilder()
+            .setCategory(EEvent.Feiertag)
+            .setDate(it.date)
+            .setId(`${it.date}${it.name}`)
+            .setName(it.name)
+            .buildEvent()
+        );
+    }
+  };
 }

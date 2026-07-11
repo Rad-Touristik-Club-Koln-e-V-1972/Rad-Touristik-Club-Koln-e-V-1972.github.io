@@ -1,6 +1,10 @@
 <template>
   <q-card style="width: 40em">
-    <q-card-section v-if="!props.modelValue.active" class="justify-center text-primary text-h6">! Zur Zeit nicht verfügbar !</q-card-section>
+    <q-card-section
+      v-if="!props.modelValue.active"
+      class="justify-center text-primary text-h6"
+      >! Zur Zeit nicht verfügbar !</q-card-section
+    >
     <q-card :class="props.modelValue.active ? '' : 'disabled'">
       <q-card-section class="bg-primary text-accent text-h6">
         {{ props.modelValue.title }}
@@ -11,7 +15,9 @@
             <tr>
               <td class="text-right">Strecke:</td>
               <td>{{ props.modelValue.length }} km</td>
-              <td class="text-right"><d-donation :model-value="props.modelValue.donations" /></td>
+              <td class="text-right"
+                ><d-donation :model-value="props.modelValue.donations"
+              /></td>
             </tr>
             <tr>
               <td class="text-right">Höhenmeter:</td>
@@ -27,7 +33,9 @@
                 <dl class="my-1">
                   <div v-for="it in props.modelValue.controls" :key="it.id">
                     <dt>
-                      <a :href="it.url?.toString()" target="_blank">{{ it.title }}</a>
+                      <a :href="it.url?.toString()" target="_blank">{{
+                        it.title
+                      }}</a>
                     </dt>
                     <dd>
                       <ul style="list-style: none">
@@ -40,19 +48,37 @@
               </td>
             </tr>
             <tr v-if="Object.keys(props.modelValue.urls).length">
-              <td class="text-right">Link{{ Object.keys(props.modelValue.urls).length > 1 ? 's' : '' }}:</td>
+              <td class="text-right"
+                >Link{{
+                  Object.keys(props.modelValue.urls).length > 1 ? "s" : ""
+                }}:</td
+              >
               <td colspan="2">
-                <ul v-if="Object.keys(props.modelValue.urls).length > 1" class="mt-1">
-                  <li v-for="(it, key) in props.modelValue.urls" :key class="mb-1">
+                <ul
+                  v-if="Object.keys(props.modelValue.urls).length > 1"
+                  class="mt-1"
+                >
+                  <li
+                    v-for="(it, key) in props.modelValue.urls"
+                    :key
+                    class="mb-1"
+                  >
                     <a :href="it.toString()" target="_blank">{{ key }}</a>
                   </li>
                 </ul>
-                <a v-else :href="Object.values(props.modelValue.urls).toString()" target="_blank">{{ Object.keys(props.modelValue.urls)[0] }}</a>
+                <a
+                  v-else
+                  :href="Object.values(props.modelValue.urls).toString()"
+                  target="_blank"
+                  >{{ Object.keys(props.modelValue.urls)[0] }}</a
+                >
               </td>
             </tr>
             <tr>
               <td class="text-no-wrap text-right">Letzte Änderung:</td>
-              <td colspan="2">{{ useDateTime().format(props.modelValue.lastChange) }}</td>
+              <td colspan="2">{{
+                useDateTime().format(props.modelValue.lastChange)
+              }}</td>
             </tr>
           </tbody>
         </q-markup-table>
@@ -62,7 +88,14 @@
         <q-card-section>
           <div class="text-pre-wrap" v-html="props.modelValue.text" />
           <div v-if="Object.keys(props.modelValue.albumIDs).length">
-            <c-gallery v-for="gallery in galleryStore.findByIds(...Object.keys(props.modelValue.albumIDs))" :key="gallery.id" :album="props.modelValue.albumIDs[gallery.id]" :model-value="gallery" />
+            <c-gallery
+              v-for="gallery in galleryStore.findByIds(
+                ...Object.keys(props.modelValue.albumIDs)
+              )"
+              :key="gallery.id"
+              :album="props.modelValue.albumIDs[gallery.id]"
+              :model-value="gallery"
+            />
           </div>
         </q-card-section>
       </q-expansion-item>
@@ -71,17 +104,17 @@
 </template>
 
 <script lang="ts" setup>
-import { useQuasar } from 'quasar'
-import DDonation from 'components/pages/DDonation.vue'
-import CGallery from 'components/pages/rtc-cologne/galleries/CGallery.vue'
-import type Permanent from 'src/models/entities/events/tours/Permanent'
-import useDateTime from 'src/utils/DateTime'
-import useGalleryStore from 'stores/rtc-cologne/Gallery'
+import { useQuasar } from "quasar";
+import DDonation from "@/components/pages/DDonation.vue";
+import CGallery from "@/components/pages/rtc-cologne/galleries/CGallery.vue";
+import type Permanent from "@/models/entities/events/tours/Permanent";
+import useDateTime from "@/utils/DateTime";
+import useGalleryStore from "@/stores/rtc-cologne/Gallery";
 
 // noinspection LocalVariableNamingConventionJS
-const $q = useQuasar()
+const $q = useQuasar();
 
-const props = defineProps<{ modelValue: Permanent }>()
+const props = defineProps<{ modelValue: Permanent }>();
 
-const galleryStore = useGalleryStore()
+const galleryStore = useGalleryStore();
 </script>

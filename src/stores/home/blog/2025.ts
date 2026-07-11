@@ -1,10 +1,10 @@
-import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
+import BlogEntryBuilder from "@/models/builder/home/BlogEntryBuilder";
 
 export default [
   new BlogEntryBuilder()
-    .setAlbumIDs('0468dfa8-2cbf-4952-997a-389a8370710f')
-    .setDate('2025-12-06')
-    .setId('ab95089c-d9c3-4dcc-9675-45c684cba407')
+    .setAlbumIDs("0468dfa8-2cbf-4952-997a-389a8370710f")
+    .setDate("2025-12-06")
+    .setId("ab95089c-d9c3-4dcc-9675-45c684cba407")
     .setText(
       `Liebe RTCler:innen,
 
@@ -53,14 +53,14 @@ Es war ein wunderschöner, herzlicher Weihnachtsabend – voller Lachen, Wärme 
 Danke an euch alle.
 Eure 1. Vorsitzende
 D. 🫶
-`,
+`
     )
-    .setTitle('Weihnachtsfeier RTC Köln e.V. 🎄')
+    .setTitle("Weihnachtsfeier RTC Köln e.V. 🎄")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('8a9a949d-20b8-4a7f-9534-5ed955fe59ab')
-    .setDate('2025-07-13')
-    .setId('92891e75-910a-495f-9455-bab699f1c4b9')
+    .setAlbumIDs("8a9a949d-20b8-4a7f-9534-5ed955fe59ab")
+    .setDate("2025-07-13")
+    .setId("92891e75-910a-495f-9455-bab699f1c4b9")
     .setText(
       `Marathon – das ist die Königsdisziplin im Breitensport.
 Über 200 Kilometer mit knapp 2000 Höhenmetern im Sattel – das schafft man nicht mal eben so.
@@ -116,14 +116,14 @@ Ein perfekter Radsporttag.
 
 Ein Marathon ist mehr als eine lange Strecke – er ist ein Meilenstein in der persönlichen Radsportgeschichte. Das erste Mal vergisst man nicht.
 Helmut, Tobias, Eric: Willkommen in der Königsdisziplin!
-Wir sind stolz auf euch. 👑`,
+Wir sind stolz auf euch. 👑`
     )
-    .setTitle('Condor-Flug des TSV Immendorf – ein Tag für die Königsklasse 👑')
+    .setTitle("Condor-Flug des TSV Immendorf – ein Tag für die Königsklasse 👑")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('a1413718-228f-45b0-bc6a-f1f530c2c857')
-    .setDate('2025-07-05')
-    .setId('bc61d50b-a7e0-4487-a16c-76b26ab51435')
+    .setAlbumIDs("a1413718-228f-45b0-bc6a-f1f530c2c857")
+    .setDate("2025-07-05")
+    .setId("bc61d50b-a7e0-4487-a16c-76b26ab51435")
     .setText(
       `Was für ein Tag!
 Wir waren bei der RTF des jungen Vereins aus Uckerath unterwegs – und können nur sagen: Chapeau! 👏
@@ -164,8 +164,8 @@ So geht moderne, sympathische RTF-Kultur! 🙌❤️
 
 ✨ Ihr möchtet mal mit dem RTC KÖLN mitfahren? Sehr gerne!
 Wir haben dienstags ein offenes Training – meldet euch einfach bei pr@rtc-koeln.de
-Feel free! 🧡🚴‍♂️🚴‍♀️`,
+Feel free! 🧡🚴‍♂️🚴‍♀️`
     )
-    .setTitle('🚴‍♀️ RTF „Die Mauer von Uckerath“ – jung, frisch, fordernd! 🚴‍♂️')
-    .buildBlogEntry(),
-]
+    .setTitle("🚴‍♀️ RTF „Die Mauer von Uckerath“ – jung, frisch, fordernd! 🚴‍♂️")
+    .buildBlogEntry()
+];

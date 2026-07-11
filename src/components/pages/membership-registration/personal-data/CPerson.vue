@@ -20,7 +20,11 @@
     </div>
     <div class="row">
       <div class="col-3">
-        <q-input v-model="modelValue.zipCode" label="Postleitzahl" @change="updateCity" />
+        <q-input
+          v-model="modelValue.zipCode"
+          label="Postleitzahl"
+          @change="updateCity"
+        />
       </div>
       <div class="col-1" />
       <div class="col">
@@ -33,10 +37,13 @@
 <script lang="ts" setup>
 // TODO Workaround for https://github.com/florianchrometz/german-metadata/issues/6
 // @ts-expect-error TypeScriptCheckImport
-import * as germanMetadata from 'german-metadata/german-metadata'
-import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import * as germanMetadata from "german-metadata/german-metadata";
+import type PersonalData from "@/models/entities/membership-registration/PersonalData";
 
-const modelValue = defineModel<PersonalData>({ required: true })
+const modelValue = defineModel<PersonalData>({ required: true });
 
-const updateCity = () => (modelValue.value.city = germanMetadata.citiesByPostalCode(modelValue.value.zipCode)?.[0]?.name ?? '')
+const updateCity = () =>
+  (modelValue.value.city =
+    germanMetadata.citiesByPostalCode(modelValue.value.zipCode)?.[0]?.name ??
+    "");
 </script>

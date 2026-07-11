@@ -1,45 +1,46 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import MembershipFee from 'src/models/entities/membership-registration/MembershipFee'
-import type Signature from 'src/models/entities/membership-registration/Signature'
+import ABuilder from "@/models/builder/ABuilder";
+import MembershipFee from "@/models/entities/membership-registration/MembershipFee";
+import type Signature from "@/models/entities/membership-registration/Signature";
 
 export default class MembershipFeeBuilder extends ABuilder {
-  private membershipFee = new MembershipFee()
+  private membershipFee = new MembershipFee();
 
-  buildMembershipFee = () => Object.assign(this.membershipFee, this.buildAEntity())
+  buildMembershipFee = () =>
+    Object.assign(this.membershipFee, this.buildAEntity());
 
   setBankholder = (value: string): this => {
-    this.membershipFee.bankholder = value
+    this.membershipFee.bankholder = value;
 
-    return this
-  }
+    return this;
+  };
 
   setBic = (value: string): this => {
-    this.membershipFee.bic = value
+    this.membershipFee.bic = value;
 
-    return this
-  }
+    return this;
+  };
 
   setCreditInstitute = (value: string): this => {
-    this.membershipFee.creditInstitute = value
+    this.membershipFee.creditInstitute = value;
 
-    return this
-  }
+    return this;
+  };
 
   setIban = (value: string): this => {
-    this.membershipFee.iban = value
+    this.membershipFee.iban = value;
 
-    return this
-  }
+    return this;
+  };
 
   setPaymentMethod = (value: string): this => {
-    this.membershipFee.paymentMethod = value
+    this.membershipFee.paymentMethod = value;
 
-    return this
-  }
+    return this;
+  };
 
   setSignature = (value: Signature): this => {
-    this.membershipFee.signature = value
+    this.membershipFee.signature = value;
 
-    return this
-  }
+    return this;
+  };
 }

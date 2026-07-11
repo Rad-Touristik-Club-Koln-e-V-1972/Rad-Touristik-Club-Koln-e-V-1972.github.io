@@ -1,111 +1,112 @@
-import type { CountryCode } from 'libphonenumber-js'
-import ABuilder from 'src/models/builder/ABuilder'
-import PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import type { CountryCode } from "libphonenumber-js";
+import ABuilder from "@/models/builder/ABuilder";
+import PersonalData from "@/models/entities/membership-registration/PersonalData";
 
 export default class PersonalDataBuilder extends ABuilder {
-  private personalData = new PersonalData()
+  private personalData = new PersonalData();
 
-  buildPersonalData = () => Object.assign(this.personalData, this.buildAEntity())
+  buildPersonalData = () =>
+    Object.assign(this.personalData, this.buildAEntity());
 
   setBirthdate = (value: string): this => {
-    this.personalData.birthdate = value
+    this.personalData.birthdate = value;
 
-    return this
-  }
+    return this;
+  };
 
   setCity = (value: string): this => {
-    this.personalData.city = value
+    this.personalData.city = value;
 
-    return this
-  }
+    return this;
+  };
 
   setEmail = (value: string): this => {
-    this.personalData.email = value
+    this.personalData.email = value;
 
-    return this
-  }
+    return this;
+  };
 
   setEntryDate = (value: string): this => {
-    this.personalData.entryDate = value
+    this.personalData.entryDate = value;
 
-    return this
-  }
+    return this;
+  };
 
   setFirstName = (value: string): this => {
-    this.personalData.firstName = value
+    this.personalData.firstName = value;
 
-    return this
-  }
+    return this;
+  };
 
   setLastName = (value: string): this => {
-    this.personalData.lastName = value
+    this.personalData.lastName = value;
 
-    return this
-  }
+    return this;
+  };
 
   setMobilePhoneCountryCode = (value: CountryCode): this => {
-    this.personalData.mobilePhoneCountryCode = value
+    this.personalData.mobilePhoneCountryCode = value;
 
-    return this
-  }
+    return this;
+  };
 
   setMobilePhoneNumber = (value: string): this => {
-    this.personalData.mobilePhoneNumber = value
+    this.personalData.mobilePhoneNumber = value;
 
-    return this
-  }
+    return this;
+  };
 
   setStreet = (value: string): this => {
-    this.personalData.street = value
+    this.personalData.street = value;
 
-    return this
-  }
+    return this;
+  };
 
   setStreetNumber = (value: string): this => {
-    this.personalData.streetNumber = value
+    this.personalData.streetNumber = value;
 
-    return this
-  }
+    return this;
+  };
 
   setSpecialNeeds = (value: string): this => {
-    this.personalData.specialNeeds = value
+    this.personalData.specialNeeds = value;
 
-    return this
-  }
+    return this;
+  };
 
   setTelePhoneCountryCode = (value: CountryCode): this => {
-    this.personalData.telePhoneCountryCode = value
+    this.personalData.telePhoneCountryCode = value;
 
-    return this
-  }
+    return this;
+  };
 
   setTelePhoneNumber = (value: string): this => {
-    this.personalData.telePhoneNumber = value
+    this.personalData.telePhoneNumber = value;
 
-    return this
-  }
+    return this;
+  };
 
   setTShirtSize = (value: string): this => {
-    this.personalData.tShirtSize = value
+    this.personalData.tShirtSize = value;
 
-    return this
-  }
+    return this;
+  };
 
   setWantsAmateursportslicense = (value: boolean): this => {
-    this.personalData.wantsAmateursportslicense = value
+    this.personalData.wantsAmateursportslicense = value;
 
-    return this
-  }
+    return this;
+  };
 
   setWantsBdrMembership = (value: boolean): this => {
-    this.personalData.wantsBdrMembership = value
+    this.personalData.wantsBdrMembership = value;
 
-    return this
-  }
+    return this;
+  };
 
   setZipCode = (value: string): this => {
-    this.personalData.zipCode = value
+    this.personalData.zipCode = value;
 
-    return this
-  }
+    return this;
+  };
 }

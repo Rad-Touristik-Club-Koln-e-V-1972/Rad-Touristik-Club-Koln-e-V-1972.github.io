@@ -1,8 +1,8 @@
-import AEntity from 'src/models/entities/AEntity'
+import AEntity from "@/models/entities/AEntity";
 
 export default class Donation extends AEntity {
-  icon?: string
-  text?: string
-  title!: string
-  url?: URL
+  icon?: string | undefined;
+  text?: string | undefined;
+  title!: string;
+  url?: URL | undefined;
 }

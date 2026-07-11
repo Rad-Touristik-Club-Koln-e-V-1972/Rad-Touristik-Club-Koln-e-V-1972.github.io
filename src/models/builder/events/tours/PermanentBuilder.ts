@@ -1,27 +1,27 @@
-import Permanent from 'src/models/entities/events/tours/Permanent'
-import TourBuilder from 'src/models/builder/events/tours/TourBuilder'
-import type EProfile from 'src/models/enums/events/EProfile'
+import Permanent from "@/models/entities/events/tours/Permanent";
+import TourBuilder from "@/models/builder/events/tours/TourBuilder";
+import type EProfile from "@/models/enums/events/EProfile";
 
 export default class PermanentBuilder extends TourBuilder {
-  private permanent = new Permanent()
+  private permanent = new Permanent();
 
-  buildPermanent = () => Object.assign(this.permanent, this.buildTour())
+  buildPermanent = () => Object.assign(this.permanent, this.buildTour());
 
   setHeight = (value: number): this => {
-    this.permanent.height = value
+    this.permanent.height = value;
 
-    return this
-  }
+    return this;
+  };
 
   setLength = (value: number): this => {
-    this.permanent.length = value
+    this.permanent.length = value;
 
-    return this
-  }
+    return this;
+  };
 
   setProfile = (value: EProfile): this => {
-    this.permanent.profile = value
+    this.permanent.profile = value;
 
-    return this
-  }
+    return this;
+  };
 }

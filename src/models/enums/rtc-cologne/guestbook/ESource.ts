@@ -1,9 +1,9 @@
 enum ESource {
   Brief,
-  'E-Mail',
+  "E-Mail",
   Facebook,
   Instagram,
-  Google,
+  Google
 }
 
-export default ESource
+export default ESource;

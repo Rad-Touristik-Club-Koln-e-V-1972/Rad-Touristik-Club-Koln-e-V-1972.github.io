@@ -2,20 +2,37 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        <c-date-picker v-model="modelValue.birthdate" :max="date.subtractFromDate(new Date(), { months: 1, years: 1 })" :min="date.subtractFromDate(new Date(), { years: 100 })" label="Geburtsdatum" />
+        <c-date-picker
+          v-model="modelValue.birthdate"
+          :max="date.subtractFromDate(new Date(), { months: 1, years: 1 })"
+          :min="date.subtractFromDate(new Date(), { years: 100 })"
+          label="Geburtsdatum"
+        />
       </div>
       <div class="col-1" />
       <div class="col">
-        <q-select v-model="modelValue.tShirtSize" :options="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']" label="T-Shirt Größe" />
+        <q-select
+          v-model="modelValue.tShirtSize"
+          :options="['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']"
+          label="T-Shirt Größe"
+        />
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <c-date-picker v-model="modelValue.entryDate" :max="date.addToDate(new Date(), { month: 1 })" :min="date.buildDate({ year: 1972, month: 10, date: 30 })" label="Eintritt (Datum)" />
+        <c-date-picker
+          v-model="modelValue.entryDate"
+          :max="date.addToDate(new Date(), { month: 1 })"
+          :min="date.buildDate({ year: 1972, month: 10, date: 30 })"
+          label="Eintritt (Datum)"
+        />
       </div>
       <div class="col-1" />
       <div class="col">
-        <q-checkbox v-model="modelValue.wantsBdrMembership" label="BDR-Beitritt" />
+        <q-checkbox
+          v-model="modelValue.wantsBdrMembership"
+          label="BDR-Beitritt"
+        />
       </div>
     </div>
     <div class="row">
@@ -26,16 +43,19 @@
     </div>
     <div class="row">
       <div class="col">
-        <q-checkbox v-model="modelValue.wantsAmateursportslicense" label="Ich beantrage hiermit die Breitensportlizenz (für die Teilnahme an den RTF)." />
+        <q-checkbox
+          v-model="modelValue.wantsAmateursportslicense"
+          label="Ich beantrage hiermit die Breitensportlizenz (für die Teilnahme an den RTF)."
+        />
       </div>
     </div>
   </q-card-section>
 </template>
 
 <script lang="ts" setup>
-import { date } from 'quasar'
-import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import { date } from "quasar";
+import CDatePicker from "@/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue";
+import type PersonalData from "@/models/entities/membership-registration/PersonalData";
 
-const modelValue = defineModel<PersonalData>({ required: true })
+const modelValue = defineModel<PersonalData>({ required: true });
 </script>

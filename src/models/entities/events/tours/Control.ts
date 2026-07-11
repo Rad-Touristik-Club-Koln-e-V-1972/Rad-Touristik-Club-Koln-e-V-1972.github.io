@@ -1,9 +1,9 @@
-import AEntity from 'src/models/entities/AEntity'
+import AEntity from "@/models/entities/AEntity";
 
 export default class Control extends AEntity {
-  city!: string
-  street!: string
-  url?: URL
-  title!: string
-  zipCode!: string
+  city!: string;
+  street!: string;
+  url?: URL | undefined;
+  title!: string;
+  zipCode!: string;
 }

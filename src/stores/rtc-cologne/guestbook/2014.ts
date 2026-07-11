@@ -1,13 +1,13 @@
-import GuestbookEntryBuilder from 'src/models/builder/rtc-cologne/guestbook/GuestbookEntryBuilder'
-import EEvent from 'src/models/enums/EEvent'
-import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
+import GuestbookEntryBuilder from "@/models/builder/rtc-cologne/guestbook/GuestbookEntryBuilder";
+import EEvent from "@/models/enums/EEvent";
+import ESource from "@/models/enums/rtc-cologne/guestbook/ESource";
 
 export default [
   new GuestbookEntryBuilder()
-    .setDate('2014-06-19 18:43')
-    .setId('502cc4e8-bb89-433d-af64-2a535b778d32')
-    .setName('Helga Hasberg')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-06-19 18:43")
+    .setId("502cc4e8-bb89-433d-af64-2a535b778d32")
+    .setName("Helga Hasberg")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -18,15 +18,15 @@ Ich wünsche euch weiterhin für die Zukunft viel Erfolg und bei allen Touren gu
 Viele liebe Grüße
 
 Helga
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-28 12:36')
-    .setId('471b891d-03a2-49b5-8bca-236e961a8e8e')
-    .setName('Jessica Bosen')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-28 12:36")
+    .setId("471b891d-03a2-49b5-8bca-236e961a8e8e")
+    .setName("Jessica Bosen")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -58,15 +58,15 @@ Ein großes Kompliment an das Team, das trotz des großen Ansturms, sehr gut in 
 
 Bis zum nächsten Jahr
 Jessica
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-27 13:10')
-    .setId('10728640-a1ae-4950-9e62-3e15901b6f06')
-    .setName('velotoerist')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-27 13:10")
+    .setId("10728640-a1ae-4950-9e62-3e15901b6f06")
+    .setName("velotoerist")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -89,32 +89,32 @@ Ansonsten: Weiter so! :-)
 
 Beste Grüße
 velotoerist
-`,
+`
     )
-    .setTitle('RM')
+    .setTitle("RM")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-27 12:59')
-    .setId('02e4a5a9-dd53-4eb6-9067-38b576f8d11c')
-    .setName('Helmut Hane')
-    .setOrganization('www.sportlich-radeln.de')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-27 12:59")
+    .setId("02e4a5a9-dd53-4eb6-9067-38b576f8d11c")
+    .setName("Helmut Hane")
+    .setOrganization("www.sportlich-radeln.de")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Prima RTF am vergangenen Sonntag.
 Bericht über meine Fahrt auf der 150er Strecke jetzt auf meiner Website www.sportlich-radeln.de
 
 Helmut Hane
-`,
+`
     )
-    .setTitle('Prima RTF')
+    .setTitle("Prima RTF")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-27 9:28')
-    .setId('e123b000-8402-431e-b3af-caac3ba6c1d0')
-    .setName('Marco Gerlach')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-27 9:28")
+    .setId("e123b000-8402-431e-b3af-caac3ba6c1d0")
+    .setName("Marco Gerlach")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -127,16 +127,16 @@ Danke, hat wirklich Spaß gemacht!
 
 Gruß
 Marco Gerlach
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-27 9:26')
-    .setId('edee7e54-4bd3-43ee-b79f-90b8616e0eae')
-    .setName('Jörg Homann')
-    .setOrganization('www.scan.bike`')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-27 9:26")
+    .setId("edee7e54-4bd3-43ee-b79f-90b8616e0eae")
+    .setName("Jörg Homann")
+    .setOrganization("www.scan.bike`")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Ein langer Tag, nicht nur für die Fahrer auf den langen Strecken der Forsbachtour 2014, nein, auch für die Helfer des veranstaltenden Vereins RTC Köln 1972 e.V.
 - aber auch ein schöner Tag!
@@ -162,16 +162,16 @@ und mit zum guten Gelingen einer Veranstaltung beizutragen.
 
 Jörg Homann
 http://scan.bike
-`,
+`
     )
-    .setTitle('erfolgreicher Einsatz von scan&bike')
+    .setTitle("erfolgreicher Einsatz von scan&bike")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-27 6:49')
-    .setId('57b9ada2-9724-4a1c-98d1-479e6f96b36b')
-    .setName('Norbert Priefert')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-27 6:49")
+    .setId("57b9ada2-9724-4a1c-98d1-479e6f96b36b")
+    .setName("Norbert Priefert")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Jetzt muss man hier aber mal einen Punkt machen und in die Bresche springen.
 Kritik ist durchaus erlaubt, aber man muss, wenn man das macht, auch alle Umstände mit einbeziehen.
@@ -195,17 +195,19 @@ Auch wenn am Ende alles ausging, aus nachvollziehbarem Grund, die Veranstaltung 
 
 mit sportlich fairen Grüßen
 Norbert
-`,
+`
     )
-    .setTitle('Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder .')
+    .setTitle(
+      "Feedback auf die Generalkritk  ....wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ."
+    )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 20:16')
-    .setId('84c5d745-e305-4740-87d2-267d4c8b36b6')
-    .setLocation('Recklinghausen')
-    .setName('Jörg Freitag')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 20:16")
+    .setId("84c5d745-e305-4740-87d2-267d4c8b36b6")
+    .setLocation("Recklinghausen")
+    .setName("Jörg Freitag")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo lieber RTC,
 
@@ -214,17 +216,17 @@ Es war eine sehr sehenswerte Strecke, ausrechend Verpflegung und sehr nette Stat
 Mir hat sehr gut gefallen und ich werde auf jeden Fall wiederkommen.
 Gruß aus Recklinghausen
 Jörg
-`,
+`
     )
-    .setTitle('Marathon')
+    .setTitle("Marathon")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 16:57')
-    .setId('7f968e2e-2e29-44b9-b12a-4a11b2d5934a')
-    .setName('Markus Reckter')
-    .setOrganization('www.rtf-koblenz.de')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 16:57")
+    .setId("7f968e2e-2e29-44b9-b12a-4a11b2d5934a")
+    .setName("Markus Reckter")
+    .setOrganization("www.rtf-koblenz.de")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Sehr geehrtes Team,
 die Streckenwahl des Marathon war sehr schön, über verkehrsarme Straßen und durch landschaftliche Highlights perfekt gewählt.
@@ -236,16 +238,16 @@ Vielleicht sollte, wie bei den Radmarathon Deutschland Veranstaltungen, die Verp
 liebe Grüße aus Koblenz
 M.Reckter
 RTF Koblenz
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 13:08')
-    .setId('e50262da-d32b-4ea9-82ae-b175efae4c34')
-    .setName('Claudia Braun')
-    .setOrganization('Union Biesfeld Triathlon')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 13:08")
+    .setId("e50262da-d32b-4ea9-82ae-b175efae4c34")
+    .setName("Claudia Braun")
+    .setOrganization("Union Biesfeld Triathlon")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -258,16 +260,16 @@ Dank an die Jungs vom RC Schmitter fürs Ziehen :-)
 Sportliche Grüsse
 Claudia Braun
 Union Biesfeld Triathlon
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 12:50')
-    .setId('68a6c338-33e8-413c-8e40-887138e74067')
-    .setName('Angela Schmilewski')
-    .setOrganization('Fachwart RTC Mehlem')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 12:50")
+    .setId("68a6c338-33e8-413c-8e40-887138e74067")
+    .setName("Angela Schmilewski")
+    .setOrganization("Fachwart RTC Mehlem")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Liebe Orga des RTC Köln,
 
@@ -278,16 +280,16 @@ Landschaftlich einfach nur herrlich und sehr verkehrsberuhigte Strecken bei wund
 Ich fand reichhaltige Verpflegungsstellen vor – von der 1. bis zur 4. - sowie freundliche Orga und Helfer – sowohl auf der Strecke als auch im Start- und Zielbereich.
 
 Ein herzliches Dankeschön an Orga und Helfer und Euch allen eine gute Regeneration – die habt Ihr Euch jetzt verdient….
-`,
+`
     )
-    .setTitle('Wunderbare Veranstaltung')
+    .setTitle("Wunderbare Veranstaltung")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 12:43')
-    .setId('f87bb180-5493-4886-aa36-a6440efeee46')
-    .setName('Dirk Brieden')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 12:43")
+    .setId("f87bb180-5493-4886-aa36-a6440efeee46")
+    .setName("Dirk Brieden")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -301,15 +303,15 @@ Habt ihr Angst vor Kritik?
 Dirk
 
 PS: Hätte schon gedruckt werden müssen, da in der Zwischenzeit schon 2 neue Meinungen „reingestellt“ wurden.
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 10:55')
-    .setId('b0664d30-78ba-46f6-9642-9aff068f0c09')
-    .setName('Dirk Brieden')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 10:55")
+    .setId("b0664d30-78ba-46f6-9642-9aff068f0c09")
+    .setName("Dirk Brieden")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Wir sind gestern euren Marathon gefahren.
 
@@ -337,16 +339,16 @@ Nachdem wir alle von eurem Team angesprochen hatten und alle Mitarbeiter suchten
 
 <u><b>Fazit:</b>></u>
 Wir sind enttäuscht von eurer Veranstaltung und kommen nicht nochmal wieder ☹
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 10:49')
-    .setId('f89a9f7c-d52f-456a-adf7-9fb52c7aaaca')
-    .setName('Michaela Packebusch')
-    .setOrganization('VfB Polch Abtl. Radsport')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 10:49")
+    .setId("f89a9f7c-d52f-456a-adf7-9fb52c7aaaca")
+    .setName("Michaela Packebusch")
+    .setOrganization("VfB Polch Abtl. Radsport")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -355,15 +357,15 @@ ich/wir wollte/n nur sagen, dass ... vielen Dank für die tolle Organisation und
 Nochmals vielen Dank an den Fahrer des Besenwagens, in dem ich leider sitzen musste als mein Material defekt war.
 LG Michaela
 vom VfB Polch Abtl. Radsport.
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 10:33')
-    .setId('b100c8ca-78a5-4ee5-8952-34ed884b81b9')
-    .setName('Frank Stöcker')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 10:33")
+    .setId("b100c8ca-78a5-4ee5-8952-34ed884b81b9")
+    .setName("Frank Stöcker")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -385,48 +387,48 @@ Im Ziel - Ihr könnt es Euch denken auch ziemlich tote Hose.
 Das ist für 12,- Euro für 2 Personen ein bisschen dürftig und hätte zumindest im Ziel in Form von Würstchen, Kuchen oder Teilerstattung ausgeglichen werden können.
 
 Frank
-`,
+`
     )
-    .setTitle('Feedback wegen Forsbach Tour 24.05.14')
+    .setTitle("Feedback wegen Forsbach Tour 24.05.14")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 8:54')
-    .setId('3c728a87-84c5-4343-9358-ff433be98ed2')
-    .setName('Reiche')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 8:54")
+    .setId("3c728a87-84c5-4343-9358-ff433be98ed2")
+    .setName("Reiche")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
 ich/wir wollte/n nur sagen, dass ...
 
 vielen Dank für die Orga und die Auswahl der schönen Strecke.
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 8:15')
-    .setId('f19c8dd4-6e87-48cc-9018-124993aec557')
-    .setName('Max Christian Obst')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 8:15")
+    .setId("f19c8dd4-6e87-48cc-9018-124993aec557")
+    .setName("Max Christian Obst")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 Die RTF gestern war mal wieder klasse was die Strecke und das Wetter anging.
 Für den schlechten Straßenbelag teilweise könnt ihr ja nix.
 Aber eine RTF wo es keine Bananen an den Verpflegungsstellen gibt, das geht gaaaaar nicht :D:D
 nächstes Jahr will ich wieder meine Banane bekommen ;)
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 7:24')
-    .setId('a1e6ee38-dfb1-4374-b784-6f5812d0c354')
-    .setLocation('Berrenrath')
-    .setName('Stefan Schneider')
-    .setOrganization('RV Morgenstern')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 7:24")
+    .setId("a1e6ee38-dfb1-4374-b784-6f5812d0c354")
+    .setLocation("Berrenrath")
+    .setName("Stefan Schneider")
+    .setOrganization("RV Morgenstern")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo Sportskollegen vom RTC Köln.
 Ich möchte euch ein großes Lob zu eurer gestrigen Veranstaltung aussprechen.
@@ -437,16 +439,16 @@ Mit Sportlichem Gruß,
 
 Stefan Schneider
 1.Vorsitzender RV Morgenstern Berrenrath
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-26 7:06')
-    .setId('42d4f02f-736c-4f88-8179-ba7cb54eeadd')
-    .setName('Norbert Priefert')
-    .setOrganization('www.rtc-rodenkirchen.de')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-26 7:06")
+    .setId("42d4f02f-736c-4f88-8179-ba7cb54eeadd")
+    .setName("Norbert Priefert")
+    .setOrganization("www.rtc-rodenkirchen.de")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC Köln´ner,
 
@@ -463,16 +465,18 @@ Also dann, bis Samstag, 14.06.2014 am Bildungswerk in Köln-Sürth, mit ebenfall
 
 Bis denne,
 Norbert
-`,
+`
     )
-    .setTitle('Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen...')
+    .setTitle(
+      "Feedback wegen RTF 2014 -..eigenlich kann man das gar nicht toppen..."
+    )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
     .setCategory(EEvent.RTF_RTC)
-    .setDate('2014-05-25 19:44')
-    .setId('3932917a-932b-499d-9b43-f6b41417754a')
-    .setName('Jürgen Ruttkowski')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-05-25 19:44")
+    .setId("3932917a-932b-499d-9b43-f6b41417754a")
+    .setName("Jürgen Ruttkowski")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -484,14 +488,14 @@ die Forsbachtour am 25.05.2014, bei bestem Wetter, ein voller Erfolg war und die
 Viele Grüße und den besten Dank an alle die zum Gelingen beigetragen haben
 
 Jürgen Ruttkowski
-`,
+`
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setDate('2014-01-17 11:09')
-    .setId('5fd0a8c3-e1b3-43d3-8926-adae665ced29')
-    .setName('Roland Schultz')
-    .setSource(ESource['E-Mail'])
+    .setDate("2014-01-17 11:09")
+    .setId("5fd0a8c3-e1b3-43d3-8926-adae665ced29")
+    .setName("Roland Schultz")
+    .setSource(ESource["E-Mail"])
     .setText(
       `Hallo RTC,
 
@@ -513,8 +517,8 @@ Unser RTC-Trikot habe ich voriges Jahr auf 2000 m Höhe auf einen ehemaligen Vul
 
 mit einem "All Heil"
 Roland Schultz
-`,
+`
     )
-    .setTitle('Feedback wegen ... Roland Schultz')
-    .buildGuestbookEntry(),
-]
+    .setTitle("Feedback wegen ... Roland Schultz")
+    .buildGuestbookEntry()
+];

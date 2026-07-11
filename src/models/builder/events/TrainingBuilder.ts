@@ -1,63 +1,69 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import GalleryEntryBuilder from 'src/models/builder/rtc-cologne/gallery/GalleryEntryBuilder'
-import Training from 'src/models/entities/events/Training'
+import ABuilder from "@/models/builder/ABuilder";
+import GalleryEntryBuilder from "@/models/builder/rtc-cologne/gallery/GalleryEntryBuilder";
+import Training from "@/models/entities/events/Training";
 
 export default class TrainingBuilder extends ABuilder {
-  private training = new Training()
+  private training = new Training();
 
-  buildTraining = () => Object.assign(this.training, this.buildAEntity())
+  buildTraining = () => Object.assign(this.training, this.buildAEntity());
 
   setAlternativeDay = (value: string): this => {
-    this.training.alternativeDay = value
+    this.training.alternativeDay = value;
 
-    return this
-  }
+    return this;
+  };
 
   setDay = (value: string): this => {
-    this.training.day = value
+    this.training.day = value;
 
-    return this
-  }
+    return this;
+  };
 
   setDeparture = (value: string): this => {
-    this.training.departure = value
+    this.training.departure = value;
 
-    return this
-  }
+    return this;
+  };
 
   setImages = (value: Record<string, string>): this => {
-    for (const [key, data] of Object.entries(value)) this.training.images.push(new GalleryEntryBuilder().setId(key).setImageUrl(data).buildGalleryEntry())
+    for (const [key, data] of Object.entries(value))
+      this.training.images.push(
+        new GalleryEntryBuilder()
+          .setId(key)
+          .setImageUrl(data)
+          .buildGalleryEntry()
+      );
 
-    return this
-  }
+    return this;
+  };
 
   setLength = (value: string): this => {
-    this.training.length = value
+    this.training.length = value;
 
-    return this
-  }
+    return this;
+  };
 
   setLocation = (value: string): this => {
-    this.training.location = value
+    this.training.location = value;
 
-    return this
-  }
+    return this;
+  };
 
   setSpeed = (value: string): this => {
-    this.training.speed = value
+    this.training.speed = value;
 
-    return this
-  }
+    return this;
+  };
 
   setText = (value: string): this => {
-    this.training.text = value.replaceAll('\n', '<br>')
+    this.training.text = value.replaceAll("\n", "<br>");
 
-    return this
-  }
+    return this;
+  };
 
   setTitle = (value: string): this => {
-    this.training.title = value
+    this.training.title = value;
 
-    return this
-  }
+    return this;
+  };
 }

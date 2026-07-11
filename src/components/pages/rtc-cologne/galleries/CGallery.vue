@@ -8,7 +8,12 @@
       {{ props.modelValue.location }}
     </q-card-section>
     <q-card-section>
-      <q-img :src="props.modelValue.titleImageUrl.toString()" eager style="cursor: pointer" @click="open" />
+      <q-img
+        :src="props.modelValue.titleImageUrl.toString()"
+        eager
+        style="cursor: pointer"
+        @click="open"
+      />
     </q-card-section>
     <q-inner-loading :showing="isLoading">
       <q-spinner-gears color="primary" size="50px" />
@@ -17,20 +22,29 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
-import useDateTime from 'src/utils/DateTime'
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import type Gallery from "@/models/entities/rtc-cologne/gallery/Gallery";
+import useDateTime from "@/utils/DateTime";
 
-const props = defineProps<{ album?: string; modelValue: Gallery }>()
+const props = defineProps<{
+  album?: string | undefined;
+  modelValue: Gallery;
+}>();
 
-const router = useRouter()
+const router = useRouter();
 
-const isLoading = ref(false)
+const isLoading = ref(false);
 
 const open = async () => {
-  isLoading.value = true
+  isLoading.value = true;
 
-  await router.push({ name: 'rtc-cologne-galleries-album', params: { album: props.album, id: props.modelValue.id } })
-}
+  await router.push({
+    name: "//rtc-cologne/galleries/[id]_[[album]]",
+    params: { id: props.modelValue.id },
+    query: {
+      album: props.album || undefined
+    }
+  });
+};
 </script>

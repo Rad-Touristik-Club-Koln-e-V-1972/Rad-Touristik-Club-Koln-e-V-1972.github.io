@@ -1,7 +1,7 @@
-import AEntity from 'src/models/entities/AEntity'
+import AEntity from "@/models/entities/AEntity";
 
 export default class Time extends AEntity {
-  end?: string
-  name!: string
-  start!: string
+  end?: string | undefined;
+  name!: string;
+  start!: string;
 }

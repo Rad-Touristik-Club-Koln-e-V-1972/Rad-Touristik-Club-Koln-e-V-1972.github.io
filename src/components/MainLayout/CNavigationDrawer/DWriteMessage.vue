@@ -1,14 +1,33 @@
 <template>
   <div>
-    <q-btn :icon="mdiCellphoneMessage" class="full-width" color="primary" text-color="accent" @click="dialog = true">Nachricht schreiben</q-btn>
+    <q-btn
+      :icon="mdiCellphoneMessage"
+      class="full-width"
+      color="primary"
+      text-color="accent"
+      @click="dialog = true"
+      >Nachricht schreiben</q-btn
+    >
     <q-dialog v-model="dialog" persistent>
       <q-card>
-        <q-card-section class="bg-primary text-accent text-h6">Nachricht schreiben</q-card-section>
+        <q-card-section class="bg-primary text-accent text-h6"
+          >Nachricht schreiben</q-card-section
+        >
         <q-card-section>
-          <q-select v-model="selectedContact" :option-label="(it) => `${it.position} ${it.name}`" :options="contacts" bottom-slots filled label="Empfänger">
+          <q-select
+            v-model="selectedContact"
+            :option-label="it => `${it.position} ${it.name}`"
+            :options="contacts"
+            bottom-slots
+            filled
+            label="Empfänger"
+          >
             <template #before>
               <q-avatar>
-                <img v-if="selectedContact?.imageUrl" :src="selectedContact.imageUrl.toString()" />
+                <img
+                  v-if="selectedContact?.imageUrl"
+                  :src="selectedContact.imageUrl.toString()"
+                />
               </q-avatar>
             </template>
             <template #after>
@@ -25,17 +44,19 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { openURL } from 'quasar'
-import { mdiCellphoneMessage, mdiSend } from '@quasar/extras/mdi-v7'
-import useContactsStore from 'stores/rtc-cologne/Contacts'
+import { ref } from "vue";
+import { openURL } from "quasar";
+import { mdiCellphoneMessage, mdiSend } from "@quasar/extras/mdi-v7";
+import useContactsStore from "@/stores/rtc-cologne/Contacts";
 
-const dialog = ref(false)
-const contacts = useContactsStore().all
-const selectedContact = ref(contacts[0])
+const dialog = ref(false);
+const contacts = useContactsStore().all;
+const selectedContact = ref(contacts[0]);
 
 const sendMessage = () => {
   if (selectedContact.value)
-    openURL(`mailto:${selectedContact.value.eMail}?subject=Mein%20Anliegen%20Beispieltitel&body=Hallo+${selectedContact.value.name}%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20beispielhaft%20Fragen?`)
-}
+    openURL(
+      `mailto:${selectedContact.value.eMail}?subject=Mein%20Anliegen%20Beispieltitel&body=Hallo+${selectedContact.value.name}%2C%0D%0A%0D%0Agerne%20w%C3%BCrde%20ich%20beispielhaft%20Fragen?`
+    );
+};
 </script>

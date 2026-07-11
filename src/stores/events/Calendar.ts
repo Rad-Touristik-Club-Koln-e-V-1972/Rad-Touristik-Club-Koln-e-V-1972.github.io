@@ -1,34 +1,52 @@
-import { computed, ref } from 'vue'
-import { defineStore } from 'pinia'
-import _2026 from './calendar/2026'
-import EEvent from 'src/models/enums/EEvent'
-import type Event from 'src/models/entities/events/calendar/Event'
-import useCalendar from 'src/utils/Calendar'
-import useDateTime from 'src/utils/DateTime'
+import { computed, ref } from "vue";
+import { defineStore } from "pinia";
+import _2026 from "./calendar/2026";
+import EEvent from "@/models/enums/EEvent";
+import type Event from "@/models/entities/events/calendar/Event";
+import useCalendar from "@/utils/Calendar";
+import useDateTime from "@/utils/DateTime";
 
-export default defineStore('calendar', () => {
-  const calendar = useCalendar()
-  const dateTime = useDateTime()
+export default defineStore("calendar", () => {
+  const calendar = useCalendar();
+  const dateTime = useDateTime();
 
   const events = ref<Record<string, Event[]>>({
-    2026: [..._2026, ...calendar.getHolidays(2026)],
-  })
+    2026: [..._2026, ...calendar.getHolidays(2026)]
+  });
 
-  const all = computed(() => Object.values(events.value).flatMap((it) => it.flatMap((it) => it)))
-  const allFuture = computed(() => all.value.filter((it) => it.start > dateTime.today.value))
-  const nextRTF = computed(() => allFuture.value.find((it) => it.category === EEvent.RTF_RTC))
+  const all = computed(() =>
+    Object.values(events.value).flatMap(it => it.flatMap(it => it))
+  );
+  const allFuture = computed(() =>
+    all.value.filter(it => it.start > dateTime.today.value)
+  );
+  const nextRTF = computed(() =>
+    allFuture.value.find(it => it.category === EEvent.RTF_RTC)
+  );
 
   return {
     all,
     allFuture,
-    allNotCancelled: computed(() => all.value.filter((it) => it.category !== EEvent.Abgesagt)),
-    isNextRtfInDays: (days: number) => (nextRTF.value ? useDateTime().isInTheNextDays(nextRTF.value.start, days) : false),
+    allNotCancelled: computed(() =>
+      all.value.filter(it => it.category !== EEvent.Abgesagt)
+    ),
+    isNextRtfInDays: (days: number) =>
+      nextRTF.value
+        ? useDateTime().isInTheNextDays(nextRTF.value.start, days)
+        : false,
     nextEvents: computed(() =>
       allFuture.value
-        .filter((it) => ![EEvent.Abgesagt, EEvent.Feiertag, EEvent.Mitgliederversammlung].includes(it.category))
+        .filter(
+          it =>
+            ![
+              EEvent.Abgesagt,
+              EEvent.Feiertag,
+              EEvent.Mitgliederversammlung
+            ].includes(it.category)
+        )
         .sort((a, b) => a.start.getTime() - b.start.getTime())
-        .slice(0, 2),
+        .slice(0, 2)
     ),
-    nextRTF,
-  }
-})
+    nextRTF
+  };
+});

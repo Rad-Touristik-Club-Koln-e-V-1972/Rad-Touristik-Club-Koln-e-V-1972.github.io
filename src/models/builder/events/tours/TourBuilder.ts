@@ -1,77 +1,81 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import type Donation from 'src/models/entities/Donation'
-import type Control from 'src/models/entities/events/tours/Control'
-import Tour from 'src/models/entities/events/tours/Tour'
-import type EEvent from 'src/models/enums/EEvent'
+import ABuilder from "@/models/builder/ABuilder";
+import type Donation from "@/models/entities/Donation";
+import type Control from "@/models/entities/events/tours/Control";
+import Tour from "@/models/entities/events/tours/Tour";
+import type EEvent from "@/models/enums/EEvent";
 
 export default class TourBuilder extends ABuilder {
-  private tour = new Tour()
+  private tour = new Tour();
 
-  buildTour = () => Object.assign(this.tour, this.buildAEntity())
+  buildTour = () => Object.assign(this.tour, this.buildAEntity());
 
   setActive = (value: boolean): this => {
-    this.tour.active = value
+    this.tour.active = value;
 
-    return this
-  }
+    return this;
+  };
 
   setAlbumIDs = (value: Record<string, string> | string[] | string): this => {
     if (Array.isArray(value))
       this.tour.albumIDs = value.reduce<Record<string, string>>((map, it) => {
-        map[it] = ''
-        return map
-      }, {})
-    else if (value.constructor === String) this.tour.albumIDs = { [value]: '' }
-    else this.tour.albumIDs = Object.assign(this.tour.albumIDs, value as Record<string, string>)
+        map[it] = "";
+        return map;
+      }, {});
+    else if (value.constructor === String) this.tour.albumIDs = { [value]: "" };
+    else
+      this.tour.albumIDs = Object.assign(
+        this.tour.albumIDs,
+        value as Record<string, string>
+      );
 
-    return this
-  }
+    return this;
+  };
 
   setCategory = (value: EEvent): this => {
-    this.tour.category = value
+    this.tour.category = value;
 
-    return this
-  }
+    return this;
+  };
 
   setControls = (...value: Control[]): this => {
-    this.tour.controls = value
+    this.tour.controls = value;
 
-    return this
-  }
+    return this;
+  };
 
   setDonations = (...value: Donation[]): this => {
-    this.tour.donations = value
+    this.tour.donations = value;
 
-    return this
-  }
+    return this;
+  };
 
   setLastChange = (value: string): this => {
-    this.tour.lastChange = new Date(value)
+    this.tour.lastChange = new Date(value);
 
-    return this
-  }
+    return this;
+  };
 
   setLocation = (value: Control): this => {
-    this.tour.location = value
+    this.tour.location = value;
 
-    return this
-  }
+    return this;
+  };
 
   setText = (value: string): this => {
-    this.tour.text = value.replaceAll('\n', '<br>')
+    this.tour.text = value.replaceAll("\n", "<br>");
 
-    return this
-  }
+    return this;
+  };
 
   setTitle = (value: string): this => {
-    this.tour.title = value
+    this.tour.title = value;
 
-    return this
-  }
+    return this;
+  };
 
   setUrls = (value: Record<string, URL>): this => {
-    this.tour.urls = value
+    this.tour.urls = value;
 
-    return this
-  }
+    return this;
+  };
 }

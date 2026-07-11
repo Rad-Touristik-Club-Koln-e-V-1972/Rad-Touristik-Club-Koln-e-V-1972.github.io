@@ -1,5 +1,13 @@
 <template>
-  <q-input :model-value="stringDate" clearable dense hide-hint label="Datenbereich" @click="popup = true" @clear="clear">
+  <q-input
+    :model-value="stringDate"
+    clearable
+    dense
+    hide-hint
+    label="Datenbereich"
+    @click="popup = true"
+    @clear="clear"
+  >
     <template #append>
       <q-icon class="cursor-pointer" :name="mdiCalendar">
         <q-popup-proxy v-model="popup" cover>
@@ -16,20 +24,24 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { is } from 'quasar'
-import { mdiCalendar } from '@quasar/extras/mdi-v7'
+import { ref } from "vue";
+import { is } from "quasar";
+import { mdiCalendar } from "@quasar/extras/mdi-v7";
 
-const modelValue = defineModel<string | { from: string; to: string }>({ required: true })
+const modelValue = defineModel<string | { from: string; to: string }>({
+  required: true
+});
 
-const popup = ref(false)
-const stringDate = ref('')
+const popup = ref(false);
+const stringDate = ref("");
 
 const clear = () => {
-  modelValue.value = ''
-  stringDate.value = ''
-}
+  modelValue.value = "";
+  stringDate.value = "";
+};
 const save = () => {
-  stringDate.value = is.object(modelValue.value) ? `${modelValue.value.from} - ${modelValue.value.to}` : modelValue.value
-}
+  stringDate.value = is.object(modelValue.value)
+    ? `${modelValue.value.from} - ${modelValue.value.to}`
+    : modelValue.value;
+};
 </script>

@@ -1,15 +1,15 @@
-import AEntity from 'src/models/entities/AEntity'
+import AEntity from "@/models/entities/AEntity";
 
 export default abstract class ABuilder {
-  private aEntity = new AEntity()
+  private aEntity = new AEntity();
 
   setId = (value: string): this => {
-    this.aEntity.id = value
+    this.aEntity.id = value;
 
-    return this
-  }
+    return this;
+  };
 
   buildAEntity() {
-    return this.aEntity
+    return this.aEntity;
   }
 }

@@ -1,5 +1,12 @@
 <template>
-  <q-input v-model="modelValue" clearable debounce="500" dense hide-hint label="Suche">
+  <q-input
+    v-model="modelValue"
+    clearable
+    debounce="500"
+    dense
+    hide-hint
+    label="Suche"
+  >
     <template #append>
       <q-icon :name="mdiMagnify" />
     </template>
@@ -7,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { mdiMagnify } from '@quasar/extras/mdi-v7'
+import { mdiMagnify } from "@quasar/extras/mdi-v7";
 
-const modelValue = defineModel<string | number | null>()
+const modelValue = defineModel<string | number | null>();
 </script>

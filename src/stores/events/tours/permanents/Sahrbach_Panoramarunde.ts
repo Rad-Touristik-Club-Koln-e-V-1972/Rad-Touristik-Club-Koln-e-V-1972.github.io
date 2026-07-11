@@ -1,48 +1,57 @@
-import { mdiBank, mdiCreditCardOutline } from '@quasar/extras/mdi-v7'
-import DonationBuilder from 'src/models/builder/DonationBuilder'
-import ControlBuilder from 'src/models/builder/events/tours/ControlBuilder'
-import PermanentBuilder from 'src/models/builder/events/tours/PermanentBuilder'
-import EProfile from 'src/models/enums/events/EProfile'
+import { mdiBank, mdiCreditCardOutline } from "@quasar/extras/mdi-v7";
+import DonationBuilder from "@/models/builder/DonationBuilder";
+import ControlBuilder from "@/models/builder/events/tours/ControlBuilder";
+import PermanentBuilder from "@/models/builder/events/tours/PermanentBuilder";
+import EProfile from "@/models/enums/events/EProfile";
 
 export default new PermanentBuilder()
-  .setAlbumIDs('79b52701-56cf-477e-aacd-7a219d2d3822')
+  .setAlbumIDs("79b52701-56cf-477e-aacd-7a219d2d3822")
   .setControls(
     new ControlBuilder()
-      .setCity('Rheinbach')
-      .setId('ab35dd0e-d37b-409a-b2c5-e71ae47f854f')
-      .setStreet('Bahnhofstraße 39')
-      .setTitle('Bäckerei am Rheinbacher Bahnhof')
-      .setUrl('kamps.de/standort/kamps-baeckerei-rheinbach-bahnhofstrasse-39')
-      .setZipCode('53359')
+      .setCity("Rheinbach")
+      .setId("ab35dd0e-d37b-409a-b2c5-e71ae47f854f")
+      .setStreet("Bahnhofstraße 39")
+      .setTitle("Bäckerei am Rheinbacher Bahnhof")
+      .setUrl("kamps.de/standort/kamps-baeckerei-rheinbach-bahnhofstrasse-39")
+      .setZipCode("53359")
       .buildControl(),
     new ControlBuilder()
-      .setCity('Rheinbach-Hilberath')
-      .setId('cab9adaf-2553-4570-9f4d-17992056aed8')
-      .setStreet('Hilberather Straße 27')
-      .setTitle('Café in der alten Scheune & Hofladen Sampels')
-      .setUrl('www.scheunencafe.de')
-      .setZipCode('53359')
-      .buildControl(),
+      .setCity("Rheinbach-Hilberath")
+      .setId("cab9adaf-2553-4570-9f4d-17992056aed8")
+      .setStreet("Hilberather Straße 27")
+      .setTitle("Café in der alten Scheune & Hofladen Sampels")
+      .setUrl("www.scheunencafe.de")
+      .setZipCode("53359")
+      .buildControl()
   )
   .setDonations(
     new DonationBuilder()
       .setIcon(mdiBank)
-      .setId('5889e9e2-83e7-4a52-b79f-522a9b1aacdf')
+      .setId("5889e9e2-83e7-4a52-b79f-522a9b1aacdf")
       .setText(
         `Volksbank Köln Bonn eG
 IBAN: DE73 3806 0186 66011910 14
-BIC: GENODED1BRS`,
+BIC: GENODED1BRS`
       )
-      .setTitle('Bankverbindung')
+      .setTitle("Bankverbindung")
       .buildDonation(),
-    new DonationBuilder().setIcon(mdiCreditCardOutline).setId('a8811f0f-2468-4035-a5de-983617e127d4').setTitle('PayPal').setUrl('www.paypal.com/ncp/payment/QKZ3XRRMLZ56E').buildDonation(),
+    new DonationBuilder()
+      .setIcon(mdiCreditCardOutline)
+      .setId("a8811f0f-2468-4035-a5de-983617e127d4")
+      .setTitle("PayPal")
+      .setUrl("www.paypal.com/ncp/payment/QKZ3XRRMLZ56E")
+      .buildDonation()
   )
   .setHeight(1000)
-  .setId('c9632c9a-dcdb-4d41-a621-c6a0badc1435')
-  .setLastChange('2026-04-23')
+  .setId("c9632c9a-dcdb-4d41-a621-c6a0badc1435")
+  .setLastChange("2026-04-23")
   .setLength(130)
   .setProfile(EProfile.Bergig)
-  .setUrls({ 'GPX-Datei': new URL('https://content.rtc-koeln.de/pages/events/tours/permanents/Sahrbach_Panoramarunde/Sahrbach_Panoramarunde_Tour.gpx') })
+  .setUrls({
+    "GPX-Datei": new URL(
+      "https://content.rtc-koeln.de/pages/events/tours/permanents/Sahrbach_Panoramarunde/Sahrbach_Panoramarunde_Tour.gpx"
+    )
+  })
   .setText(
     `Unsere Permanente „Sahrbach Panoramarunde“! 🚴‍♀️
 
@@ -63,7 +72,7 @@ Und anschließend gefahrene Strecke und GC-Tourenapp Mailadresse an den Verantwo
 
 Schnapp dir dein Rennrad und entdecke eine der schönsten Strecken der Region!
 
-Viel Spaß auf der Sahrbach Panoramarunde!`,
+Viel Spaß auf der Sahrbach Panoramarunde!`
   )
-  .setTitle('Sahrbach Panoramarunde')
-  .buildPermanent()
+  .setTitle("Sahrbach Panoramarunde")
+  .buildPermanent();

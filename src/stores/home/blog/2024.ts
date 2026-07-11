@@ -1,10 +1,10 @@
-import BlogEntryBuilder from 'src/models/builder/home/BlogEntryBuilder'
+import BlogEntryBuilder from "@/models/builder/home/BlogEntryBuilder";
 
 export default [
   new BlogEntryBuilder()
-    .setAlbumIDs('9a17d9c6-eebe-4f72-830f-8eb69e6c33a5')
-    .setDate('2024-12-07')
-    .setId('d8b09d83-e5e1-4792-a5f0-e9267289fdd1')
+    .setAlbumIDs("9a17d9c6-eebe-4f72-830f-8eb69e6c33a5")
+    .setDate("2024-12-07")
+    .setId("d8b09d83-e5e1-4792-a5f0-e9267289fdd1")
     .setText(
       `7. Dezember 2024 – Ein Abend voller Glanz, Gemeinschaft und Ehrungen
 
@@ -58,14 +58,14 @@ Gleichzeitig blicken wir mit Vorfreude auf das kommende Jahr, das uns sicherlich
 
 Ich freue mich schon auf die neuen Geschichten, die wir alle zusammen in 2025 schreiben werden. ❤️
 
-Eure Diana`,
+Eure Diana`
     )
-    .setTitle('Weihnachtsfeier RTC Köln e.V. 🎄')
+    .setTitle("Weihnachtsfeier RTC Köln e.V. 🎄")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('285ea40c-908c-4581-a073-b78a4e9adc5d')
-    .setDate('2024-07-14')
-    .setId('be977c58-c637-47ab-87b0-4ebe6d063fb0')
+    .setAlbumIDs("285ea40c-908c-4581-a073-b78a4e9adc5d")
+    .setDate("2024-07-14")
+    .setId("be977c58-c637-47ab-87b0-4ebe6d063fb0")
     .setText(
       `Gibt es ein schöneres Hobby als unseres?
 Ja – es ist ein teures Hobby, wir geben viel Geld für Material aus, aber warum?
@@ -96,14 +96,14 @@ Die 2000 Höhenmeter waren fast alle auf den ersten 100 Kilometern, so dass man 
 
 Danke, Ihr Lieben vom TSV Immendorf, es war großartig bei Euch.
 
-Euer RTC Köln e.V. 1972`,
+Euer RTC Köln e.V. 1972`
     )
-    .setTitle('30. Condor-Flug')
+    .setTitle("30. Condor-Flug")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('08672431-07a7-4d6a-8b0b-e96c3fb5775a')
-    .setDate('2024-06-02')
-    .setId('071dcbc3-7384-4778-8dac-bc3f495182e2')
+    .setAlbumIDs("08672431-07a7-4d6a-8b0b-e96c3fb5775a")
+    .setDate("2024-06-02")
+    .setId("071dcbc3-7384-4778-8dac-bc3f495182e2")
     .setText(
       `Schön war’s.
 Richtig schön.
@@ -128,14 +128,14 @@ Darüber haben wir uns darüber gefreut.  🫶
 Alle Fotos findet Ihr in Kürze auf unserer Website.
 🔜  <a href="https://www.rtc-koeln.de" target="_blank">https://www.rtc-koeln.de</a> 🎉
 
-Euer RTC Köln e.V. 1972`,
+Euer RTC Köln e.V. 1972`
     )
-    .setTitle('Unsere 52. FORSBACHTOUR')
+    .setTitle("Unsere 52. FORSBACHTOUR")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('b30fba5c-671a-4e93-9097-85ffff6df973')
-    .setDate('2024-03-16')
-    .setId('1987494b-cc43-4a7a-93ab-ddaee31c87a6')
+    .setAlbumIDs("b30fba5c-671a-4e93-9097-85ffff6df973")
+    .setDate("2024-03-16")
+    .setId("1987494b-cc43-4a7a-93ab-ddaee31c87a6")
     .setText(
       `Wem Shimano TL-CM42, Befestigungsbolzen oder 11/34 etwas sagt, kann sich vielleicht vorstellen, was 9 RTClerinnen und RTCler heute Nachmittag gemacht haben:
 GELERNT. ⚒️🥳
@@ -151,14 +151,14 @@ Fazit: War toll! Wiederholung folgt. ⚒️🚴‍♂️
 
 Den Kuchen könntest du bitte als Eyecatcher nehmen.😃
 
-LG Diana`,
+LG Diana`
     )
-    .setTitle('Schrauber-Workshop beim RTC Köln e.V.')
+    .setTitle("Schrauber-Workshop beim RTC Köln e.V.")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('ff8c6c3f-f246-418f-a17d-077a81c0ca82')
-    .setDate('2024-03-09')
-    .setId('9080735c-8f6d-4257-b3fa-5ebed7ddb27f')
+    .setAlbumIDs("ff8c6c3f-f246-418f-a17d-077a81c0ca82")
+    .setDate("2024-03-09")
+    .setId("9080735c-8f6d-4257-b3fa-5ebed7ddb27f")
     .setText(
       `17 RTCler:innen kamen zum Start zu Mistral.
 Wow! Was für ein wunderschönes Bild. 😍
@@ -178,20 +178,20 @@ Und ich bin ganz stolz auf mich, weil ich heute einen richtig guten Mood und ein
 Am Ende hatten Manni und ich je 132 km auf dem Tacho.
 Am 9. März - unglaublich. 🥰
 
-Eure Diana`,
+Eure Diana`
     )
-    .setTitle('Dem alten RTC Köln auf der Spur 🧡')
+    .setTitle("Dem alten RTC Köln auf der Spur 🧡")
     .buildBlogEntry(),
   new BlogEntryBuilder()
-    .setAlbumIDs('288bbe8e-aa03-492f-b206-8e6932e7c45d')
-    .setDate('2024-03-01')
-    .setId('3d9915bc-63a2-45d2-a0e6-b54de977e068')
+    .setAlbumIDs("288bbe8e-aa03-492f-b206-8e6932e7c45d")
+    .setDate("2024-03-01")
+    .setId("3d9915bc-63a2-45d2-a0e6-b54de977e068")
     .setText(
       `Der neue Vorstand vom RTC Köln e.V. (von links):
 
             Judith (Geschäftsführerin), Diana (1. Vorsitzende),
-            Matthias (Kassenwart), Manni (Sportwart) und Frank (2. Vorsitzender).`,
+            Matthias (Kassenwart), Manni (Sportwart) und Frank (2. Vorsitzender).`
     )
-    .setTitle('Neuer Vorstand beim RTC Köln e.V. 1972')
-    .buildBlogEntry(),
-]
+    .setTitle("Neuer Vorstand beim RTC Köln e.V. 1972")
+    .buildBlogEntry()
+];

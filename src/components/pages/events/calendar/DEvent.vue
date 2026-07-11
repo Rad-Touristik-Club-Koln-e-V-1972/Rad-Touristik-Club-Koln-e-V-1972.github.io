@@ -4,7 +4,14 @@
       <q-card-section :class="`bg-${selectedEvent.color}`" class="row">
         <div class="text-accent text-h6">{{ selectedEvent?.name }}</div>
         <q-space />
-        <q-btn v-close-popup dense flat :icon="mdiClose" round text-color="accent" />
+        <q-btn
+          v-close-popup
+          dense
+          flat
+          :icon="mdiClose"
+          round
+          text-color="accent"
+        />
       </q-card-section>
       <q-card-section>
         <q-markup-table flat wrap-cells>
@@ -33,22 +40,25 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
-import { mdiClose } from '@quasar/extras/mdi-v7'
-import type Event from 'src/models/entities/events/calendar/Event'
-import EEvent from 'src/models/enums/EEvent'
-import useDateTime from 'src/utils/DateTime'
+import { computed, ref } from "vue";
+import { mdiClose } from "@quasar/extras/mdi-v7";
+import type Event from "@/models/entities/events/calendar/Event";
+import EEvent from "@/models/enums/EEvent";
+import useDateTime from "@/utils/DateTime";
 
-const dialog = ref(false)
-const selectedEvent = ref<Event>()
+const dialog = ref(false);
+const selectedEvent = ref<Event>();
 
-const isEventMitgliederversammlung = computed(() => selectedEvent.value?.category === EEvent.Mitgliederversammlung)
+const isEventMitgliederversammlung = computed(
+  () => selectedEvent.value?.category === EEvent.Mitgliederversammlung
+);
 
-const getDate = (event: Event) => useDateTime().format(event.start, event.end, event.allDay)
+const getDate = (event: Event) =>
+  useDateTime().format(event.start, event.end, event.allDay);
 const showEvent = (event: Event) => {
-  selectedEvent.value = event
-  dialog.value = true
-}
+  selectedEvent.value = event;
+  dialog.value = true;
+};
 
-defineExpose({ showEvent })
+defineExpose({ showEvent });
 </script>

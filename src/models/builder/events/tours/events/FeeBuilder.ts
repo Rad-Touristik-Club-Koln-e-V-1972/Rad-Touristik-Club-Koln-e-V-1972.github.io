@@ -1,33 +1,33 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import Fee from 'src/models/entities/events/tours/events/Fee'
-import type EEvent from 'src/models/enums/EEvent'
+import ABuilder from "@/models/builder/ABuilder";
+import Fee from "@/models/entities/events/tours/events/Fee";
+import type EEvent from "@/models/enums/EEvent";
 
 export default class FeeBuilder extends ABuilder {
-  private fee = new Fee()
+  private fee = new Fee();
 
-  buildFee = () => Object.assign(this.fee, this.buildAEntity())
+  buildFee = () => Object.assign(this.fee, this.buildAEntity());
 
   setCategory = (value: EEvent): this => {
-    this.fee.category = value
+    this.fee.category = value;
 
-    return this
-  }
+    return this;
+  };
 
   setGroup = (value: string): this => {
-    this.fee.group = value
+    this.fee.group = value;
 
-    return this
-  }
+    return this;
+  };
 
   setName = (value: string): this => {
-    this.fee.name = value
+    this.fee.name = value;
 
-    return this
-  }
+    return this;
+  };
 
   setPrice = (value: number): this => {
-    this.fee.price = value
+    this.fee.price = value;
 
-    return this
-  }
+    return this;
+  };
 }

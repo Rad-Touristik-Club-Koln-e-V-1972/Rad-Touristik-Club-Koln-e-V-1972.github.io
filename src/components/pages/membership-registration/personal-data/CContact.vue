@@ -2,11 +2,19 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        <maz-input-phone-number v-model="modelValue.telePhoneNumber" v-model:country-code="modelValue.telePhoneCountryCode" no-flags />
+        <maz-input-phone-number
+          v-model="modelValue.telePhoneNumber"
+          v-model:country-code="modelValue.telePhoneCountryCode"
+          no-flags
+        />
       </div>
       <div class="col-1" />
       <div class="col">
-        <maz-input-phone-number v-model="modelValue.mobilePhoneNumber" v-model:country-code="modelValue.mobilePhoneCountryCode" no-flags />
+        <maz-input-phone-number
+          v-model="modelValue.mobilePhoneNumber"
+          v-model:country-code="modelValue.mobilePhoneCountryCode"
+          no-flags
+        />
       </div>
     </div>
     <div class="row">
@@ -18,8 +26,8 @@
 </template>
 
 <script lang="ts" setup>
-import { MazInputPhoneNumber } from 'maz-ui/components'
-import type PersonalData from 'src/models/entities/membership-registration/PersonalData'
+import { MazInputPhoneNumber } from "maz-ui/components";
+import type PersonalData from "@/models/entities/membership-registration/PersonalData";
 
-const modelValue = defineModel<PersonalData>({ required: true })
+const modelValue = defineModel<PersonalData>({ required: true });
 </script>

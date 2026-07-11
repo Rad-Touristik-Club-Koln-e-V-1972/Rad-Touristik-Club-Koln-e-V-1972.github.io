@@ -1,10 +1,10 @@
-import AEntity from 'src/models/entities/AEntity'
-import type Gallery from 'src/models/entities/rtc-cologne/gallery/Gallery'
+import AEntity from "@/models/entities/AEntity";
+import type Gallery from "@/models/entities/rtc-cologne/gallery/Gallery";
 
 export default class NewsEntry extends AEntity {
-  gallery?: Gallery
-  showUntil?: Date
-  text?: string
-  url?: URL
-  youtubeVideoId?: string
+  gallery?: Gallery | undefined;
+  showUntil?: Date | undefined;
+  text?: string | undefined;
+  url?: URL | undefined;
+  youtubeVideoId?: string | undefined;
 }

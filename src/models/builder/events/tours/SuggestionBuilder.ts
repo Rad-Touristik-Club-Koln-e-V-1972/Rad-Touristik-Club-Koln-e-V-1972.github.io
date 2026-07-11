@@ -1,26 +1,26 @@
-import ABuilder from 'src/models/builder/ABuilder'
-import Suggestion from 'src/models/entities/events/tours/Suggestion'
+import ABuilder from "@/models/builder/ABuilder";
+import Suggestion from "@/models/entities/events/tours/Suggestion";
 
 export default class SuggestionBuilder extends ABuilder {
-  private suggestion = new Suggestion()
+  private suggestion = new Suggestion();
 
-  buildSuggestion = () => Object.assign(this.suggestion, this.buildAEntity())
+  buildSuggestion = () => Object.assign(this.suggestion, this.buildAEntity());
 
   setText = (value: string): this => {
-    this.suggestion.text = value.replaceAll('\n', '<br>')
+    this.suggestion.text = value.replaceAll("\n", "<br>");
 
-    return this
-  }
+    return this;
+  };
 
   setTitle = (value: string): this => {
-    this.suggestion.title = value
+    this.suggestion.title = value;
 
-    return this
-  }
+    return this;
+  };
 
   setUrl = (value: string): this => {
-    this.suggestion.url = new URL(`https://${value}`)
+    this.suggestion.url = new URL(`https://${value}`);
 
-    return this
-  }
+    return this;
+  };
 }

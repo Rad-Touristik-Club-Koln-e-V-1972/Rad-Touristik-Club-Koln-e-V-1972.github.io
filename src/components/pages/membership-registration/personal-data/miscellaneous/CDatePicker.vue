@@ -1,10 +1,23 @@
 <template>
   <div class="q-pa-md">
-    <q-input :label="props.label" :model-value="modelValue ? useDateTime().format(new Date(modelValue), undefined, true) : ''" dense readonly>
+    <q-input
+      :label="props.label"
+      :model-value="
+        modelValue
+          ? useDateTime().format(new Date(modelValue), undefined, true)
+          : ''
+      "
+      dense
+      readonly
+    >
       <template #append>
         <q-icon :name="mdiCalendar" class="cursor-pointer">
           <q-popup-proxy cover transition-hide="scale" transition-show="scale">
-            <q-date v-model="modelValue" :navigation-max-year-month="date.formatDate(props.max, 'YYYY/MM')" :navigation-min-year-month="date.formatDate(props.min, 'YYYY/MM')">
+            <q-date
+              v-model="modelValue"
+              :navigation-max-year-month="date.formatDate(props.max, 'YYYY/MM')"
+              :navigation-min-year-month="date.formatDate(props.min, 'YYYY/MM')"
+            >
               <div class="items-center justify-end row">
                 <q-btn v-close-popup color="primary" flat label="Close" />
               </div>
@@ -17,10 +30,14 @@
 </template>
 
 <script lang="ts" setup>
-import { date } from 'quasar'
-import { mdiCalendar } from '@quasar/extras/mdi-v7'
-import useDateTime from 'src/utils/DateTime'
+import { date } from "quasar";
+import { mdiCalendar } from "@quasar/extras/mdi-v7";
+import useDateTime from "@/utils/DateTime";
 
-const modelValue = defineModel<string>({ required: true })
-const props = defineProps<{ label?: string; max?: Date; min?: Date }>()
+const modelValue = defineModel<string>({ required: true });
+const props = defineProps<{
+  label?: string | undefined;
+  max?: Date | undefined;
+  min?: Date | undefined;
+}>();
 </script>

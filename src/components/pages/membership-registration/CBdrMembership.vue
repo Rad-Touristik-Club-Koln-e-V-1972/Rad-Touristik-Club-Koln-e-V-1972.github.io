@@ -2,7 +2,10 @@
   <q-card-section>
     <div class="row">
       <div class="col">
-        <q-checkbox v-model="modelValue.isMember" label="Ich bin bereits Mitglied beim Bund Deutscher Radfahrer (bei Vereinswechsel bitte unbedingt angeben)" />
+        <q-checkbox
+          v-model="modelValue.isMember"
+          label="Ich bin bereits Mitglied beim Bund Deutscher Radfahrer (bei Vereinswechsel bitte unbedingt angeben)"
+        />
       </div>
     </div>
     <div class="row">
@@ -17,8 +20,8 @@
 </template>
 
 <script lang="ts" setup>
-import CDatePicker from 'components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue'
-import type BdrMembership from 'src/models/entities/membership-registration/BdrMembership'
+import CDatePicker from "@/components/pages/membership-registration/personal-data/miscellaneous/CDatePicker.vue";
+import type BdrMembership from "@/models/entities/membership-registration/BdrMembership";
 
-const modelValue = defineModel<BdrMembership>({ required: true })
+const modelValue = defineModel<BdrMembership>({ required: true });
 </script>

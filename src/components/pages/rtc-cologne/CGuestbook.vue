@@ -1,17 +1,44 @@
 <template>
   <q-card>
     <q-card-section class="bg-secondary text-accent text-subtitle2">
-      <div v-if="props.modelValue.date">{{ useDateTime().format(props.modelValue.date) }}</div>
-      {{ props.modelValue.name }} via {{ ESource[props.modelValue.source] }}<br />
-      {{ [props.modelValue.organization, props.modelValue.location].filter((it) => it).join(', ') }}
-      <div v-if="!isCategoryRTC">Event: {{ EEvent[props.modelValue.category] }}</div>
+      <div v-if="props.modelValue.date">{{
+        useDateTime().format(props.modelValue.date)
+      }}</div>
+      {{ props.modelValue.name }} via {{ ESource[props.modelValue.source]
+      }}<br />
+      {{
+        [props.modelValue.organization, props.modelValue.location]
+          .filter(it => it)
+          .join(", ")
+      }}
+      <div v-if="!isCategoryRTC"
+        >Event: {{ EEvent[props.modelValue.category] }}</div
+      >
     </q-card-section>
-    <q-card-section v-if="props.modelValue.title" class="bg-primary text-accent text-subtitle2">{{ props.modelValue.title }}</q-card-section>
-    <q-card-section v-if="props.modelValue.text || props.modelValue.images?.length">
-      <div v-if="props.modelValue.text" class="text-pre-wrap" v-html="props.modelValue.text" />
-      <c-slideshow v-if="props.modelValue.images?.length" :gallery-entries="props.modelValue.images" />
+    <q-card-section
+      v-if="props.modelValue.title"
+      class="bg-primary text-accent text-subtitle2"
+      >{{ props.modelValue.title }}</q-card-section
+    >
+    <q-card-section
+      v-if="props.modelValue.text || props.modelValue.images?.length"
+    >
+      <div
+        v-if="props.modelValue.text"
+        class="text-pre-wrap"
+        v-html="props.modelValue.text"
+      />
+      <c-slideshow
+        v-if="props.modelValue.images?.length"
+        :gallery-entries="props.modelValue.images"
+      />
     </q-card-section>
-    <q-expansion-item v-if="props.modelValue.answer" class="text-secondary" expand-separator label="Details">
+    <q-expansion-item
+      v-if="props.modelValue.answer"
+      class="text-secondary"
+      expand-separator
+      label="Details"
+    >
       <q-card flat>
         <q-card-section>
           <span class="text-pre-wrap">
@@ -24,14 +51,14 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-import CSlideshow from 'components/pages/CSlideshow.vue'
-import type GuestbookEntry from 'src/models/entities/rtc-cologne/guestbook/GuestbookEntry'
-import EEvent from 'src/models/enums/EEvent'
-import ESource from 'src/models/enums/rtc-cologne/guestbook/ESource'
-import useDateTime from 'src/utils/DateTime'
+import { computed } from "vue";
+import CSlideshow from "@/components/pages/CSlideshow.vue";
+import type GuestbookEntry from "@/models/entities/rtc-cologne/guestbook/GuestbookEntry";
+import EEvent from "@/models/enums/EEvent";
+import ESource from "@/models/enums/rtc-cologne/guestbook/ESource";
+import useDateTime from "@/utils/DateTime";
 
-const props = defineProps<{ modelValue: GuestbookEntry }>()
+const props = defineProps<{ modelValue: GuestbookEntry }>();
 
-const isCategoryRTC = computed(() => props.modelValue.category === EEvent.RTC)
+const isCategoryRTC = computed(() => props.modelValue.category === EEvent.RTC);
 </script>
