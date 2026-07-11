@@ -73,8 +73,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1(@types/node@25.9.5)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.21.1)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(vite@8.1.3(@types/node@25.9.5)(esbuild@0.27.7)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
       '@quasar/quasar-app-extension-qcalendar':
-        specifier: 4.1.2
-        version: 4.1.2
+        specifier: 5.0.0
+        version: 5.0.0(@quasar/app-vite@3.0.1(@types/node@25.9.5)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.21.1)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(vite@8.1.3(@types/node@25.9.5)(esbuild@0.27.7)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))
       '@types/node':
         specifier: 25.9.5
         version: 25.9.5
@@ -786,12 +786,11 @@ packages:
   '@quasar/extras@2.0.2':
     resolution: {integrity: sha512-BkH/iBISDbLNl5qAdsVNpa/0hxHbd1VwfML4dRwTUb8oGeLqlr00yjYM648KGYB1C8plwhU7LyGziE1JpSa6ZA==}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.2':
-    resolution: {integrity: sha512-uhZ0k8znOQg8pGl+vc9VW+np72znuzaIMGsdGgI1pY/0/pSZ1rzsBT8xALX5T0oQXJkOT9OHwSrsw7WJxFGD9A==}
-    engines: {node: ^28 || ^26 || ^24 || ^22 || ^20 || ^18, npm: '>= 6.13.4', yarn: '>= 1.21.1'}
-
-  '@quasar/quasar-ui-qcalendar@4.1.2':
-    resolution: {integrity: sha512-z4ZesDZbHvA0w6CvB8Sm5rsUhyUNO+7F9fO32wYssjX3m4oBi0OzRxWZRkOD/s7wtx0WxUZEllHP2UEx/whaBg==}
+  '@quasar/quasar-app-extension-qcalendar@5.0.0':
+    resolution: {integrity: sha512-fzTiqYnCGQNNA6qf5h3DbtH3P66D7pN9BJtbmCwbcGb4IM/DancEZ0yVl42OxWfh4il087yV1u8K1gCFGZ1DuA==}
+    engines: {node: '>=22.13', pnpm: '>=11.3.0'}
+    peerDependencies:
+      '@quasar/app-vite': '>=3.0.0'
 
   '@quasar/quasar-ui-qcalendar@5.0.0':
     resolution: {integrity: sha512-O0fVBm5zX/p51nKoUuF5jBUWzRkEwotUq9LPgiHExDsK7rEBY8yahRjMzP5kLYokZTChqNzk+x9SjanBeIMAlg==}
@@ -3866,11 +3865,10 @@ snapshots:
 
   '@quasar/extras@2.0.2': {}
 
-  '@quasar/quasar-app-extension-qcalendar@4.1.2':
+  '@quasar/quasar-app-extension-qcalendar@5.0.0(@quasar/app-vite@3.0.1(@types/node@25.9.5)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.21.1)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(vite@8.1.3(@types/node@25.9.5)(esbuild@0.27.7)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0))':
     dependencies:
-      '@quasar/quasar-ui-qcalendar': 4.1.2
-
-  '@quasar/quasar-ui-qcalendar@4.1.2': {}
+      '@quasar/app-vite': 3.0.1(@types/node@25.9.5)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(quasar@2.21.1)(sass@1.100.0)(terser@5.48.0)(typescript@6.0.3)(vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(esbuild@0.27.7)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.39(typescript@6.0.3)))(rolldown@1.1.4)(vite@8.1.3(@types/node@25.9.5)(esbuild@0.27.7)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)))(vue@3.5.39(typescript@6.0.3))(yaml@2.9.0)
+      '@quasar/quasar-ui-qcalendar': 5.0.0
 
   '@quasar/quasar-ui-qcalendar@5.0.0':
     dependencies:
