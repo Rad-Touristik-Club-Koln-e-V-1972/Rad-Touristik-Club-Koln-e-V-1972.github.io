@@ -112,6 +112,7 @@ import {
   mdiTableCog
 } from "@quasar/extras/mdi-v7";
 import { QCalendar } from "@quasar/quasar-ui-qcalendar";
+import "@quasar/quasar-ui-qcalendar/index.css";
 import CList from "@/components/pages/events/calendar/CList.vue";
 import DEvent from "@/components/pages/events/calendar/DEvent.vue";
 import type Event from "@/models/entities/events/calendar/Event";
