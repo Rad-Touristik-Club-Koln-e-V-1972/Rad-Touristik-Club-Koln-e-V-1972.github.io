@@ -44,7 +44,7 @@
     "@quasar/quasar-app-extension-qcalendar": "5.0.0",
     "@types/node": "26.1.1",
     "@vue/language-server": "3.3.7",
-    "autoprefixer": "10.5.3",
+    "autoprefixer": "10.5.4",
     "commitlint": "21.2.1",
     "husky": "9.1.7",
     "lint-staged": "17.0.8",
