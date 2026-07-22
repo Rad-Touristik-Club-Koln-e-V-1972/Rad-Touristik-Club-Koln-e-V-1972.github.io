@@ -15,9 +15,9 @@
             <tr>
               <td class="text-right">Strecke:</td>
               <td>{{ props.modelValue.length }} km</td>
-              <td class="text-right"
-                ><d-donation :model-value="props.modelValue.donations"
-              /></td>
+              <td class="text-right">
+                <d-donation :model-value="props.modelValue.donations" />
+              </td>
             </tr>
             <tr>
               <td class="text-right">Höhenmeter:</td>
@@ -33,9 +33,9 @@
                 <dl class="my-1">
                   <div v-for="it in props.modelValue.controls" :key="it.id">
                     <dt>
-                      <a :href="it.url?.toString()" target="_blank">{{
-                        it.title
-                      }}</a>
+                      <a :href="it.url?.toString()" target="_blank">
+                        {{ it.title }}
+                      </a>
                     </dt>
                     <dd>
                       <ul style="list-style: none">
