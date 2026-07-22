@@ -248,7 +248,7 @@ export default [
     .buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.RTF)
-    .setDate("2026-08-14", "2026-08-16")
+    .setDate("2026-08-15", "2026-08-16")
     .setId("14c36ab0-29f2-4e3d-b6e9-000435046ed6")
     .setKilometer(200)
     .setName("RTC-Etappenfahrt an die Mosel")
