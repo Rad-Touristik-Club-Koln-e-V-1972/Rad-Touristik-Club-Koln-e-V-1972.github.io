@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <q-btn
       :icon="mdiAccountCreditCard"
       color="blue"

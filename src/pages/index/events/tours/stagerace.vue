@@ -4,15 +4,18 @@
       <q-toolbar>
         Etappenfahrt an die Mosel
         <q-space />
-        <q-btn
-          :icon="mdiCrosshairsGps"
-          color="accent"
-          href="https://content.rtc-koeln.de/pages/events/tours/stagerace/Etappenfahrt_an_die_Mosel.gpx"
-          label="Download GPS-Tour"
-          square
-          target="_blank"
-          text-color="primary"
-        />
+        <div class="row q-gutter-sm">
+          <q-btn
+            :icon="mdiCrosshairsGps"
+            color="accent"
+            href="https://content.rtc-koeln.de/pages/events/tours/stagerace/Etappenfahrt_an_die_Mosel.gpx"
+            label="Download GPS-Tour"
+            no-wrap
+            target="_blank"
+            text-color="primary"
+          />
+          <d-donation :model-value="donations" />
+        </div>
       </q-toolbar>
     </q-card-section>
     <q-card-section class="text-subtitle1">
@@ -94,5 +97,32 @@
 </template>
 
 <script lang="ts" setup>
-import { mdiCrosshairsGps } from "@quasar/extras/mdi-v7";
+import {
+  mdiBank,
+  mdiCreditCardOutline,
+  mdiCrosshairsGps
+} from "@quasar/extras/mdi-v7";
+import DDonation from "@/components/pages/DDonation.vue";
+import DonationBuilder from "@/models/builder/DonationBuilder";
+
+let donations = [
+  new DonationBuilder()
+    .setIcon(mdiBank)
+    .setId("824b1d08-d353-4c2b-95e5-1c32aed6598f")
+    .setText(
+      `Preis: 39 €
+
+Volksbank Köln Bonn eG
+IBAN: DE73 3806 0186 66011910 14
+BIC: GENODED1BRS`
+    )
+    .setTitle("Bankverbindung")
+    .buildDonation(),
+  new DonationBuilder()
+    .setIcon(mdiCreditCardOutline)
+    .setId("85b44277-671f-433e-b23f-3a2fe540d22d")
+    .setTitle("PayPal")
+    .setUrl("www.paypal.com/ncp/payment/8WRWVMJZKKQNA")
+    .buildDonation()
+];
 </script>
