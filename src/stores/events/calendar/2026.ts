@@ -320,9 +320,18 @@ export default [
     .setName("RTC-Vereinsabend (Garten)")
     .buildEvent(),
   new EventBuilder()
+    .setCategory(EEvent.RTF_RTC)
+    .setDate("2026-10-10")
+    .setId("51059e93-f032-42bf-b2e5-4a94a434e735")
+    .setKilometer(500)
+    .setName(
+      "RTC Saisonfinale mit Saisonabschlussparty ( Achtung! Neuer Startplatz!)"
+    )
+    .buildEvent(),
+  new EventBuilder()
     .setCategory(EEvent.Mitgliederversammlung)
     .setContact("Diana Vialon")
-    .setDate("2026-10-10", "2026-10-11")
+    .setDate("2026-10-12", "2026-10-16")
     .setId("ce48b9b9-dbed-4b30-92eb-827731a4b4cb")
     .setKilometer(150)
     .setName("Zeltabbau im Garten (je nach Wetter)")
