@@ -42,7 +42,7 @@
     "@commitlint/config-conventional": "21.2.0",
     "@quasar/app-vite": "3.5.0",
     "@quasar/quasar-app-extension-qcalendar": "5.2.0",
-    "@types/node": "26.1.2",
+    "@types/node": "26.2.0",
     "@vue/language-server": "3.3.9",
     "autoprefixer": "10.5.4",
     "commitlint": "21.2.1",
