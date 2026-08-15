@@ -22,7 +22,7 @@
     "@maz-ui/themes": "4.9.2",
     "@maz-ui/translations": "4.9.2",
     "@quasar/extras": "2.0.3",
-    "@quasar/quasar-ui-qcalendar": "5.2.1",
+    "@quasar/quasar-ui-qcalendar": "5.2.2",
     "@yeger/vue-masonry-wall": "6.1.4",
     "date-holidays": "3.34.1",
     "german-metadata": "2.0.1",
