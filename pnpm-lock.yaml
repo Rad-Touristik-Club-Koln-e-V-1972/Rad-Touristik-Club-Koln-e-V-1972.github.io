@@ -18,8 +18,8 @@ importers:
         specifier: 2.0.3
         version: 2.0.3
       '@quasar/quasar-ui-qcalendar':
-        specifier: 5.2.1
-        version: 5.2.1
+        specifier: 5.2.2
+        version: 5.2.2
       '@yeger/vue-masonry-wall':
         specifier: 6.1.4
         version: 6.1.4(vue@3.5.41(typescript@7.0.2))
@@ -802,10 +802,6 @@ packages:
     peerDependencies:
       '@quasar/app-vite': '>=3.0.0'
 
-  '@quasar/quasar-ui-qcalendar@5.2.1':
-    resolution: {integrity: sha512-dk3d90ovFgVA4KZIn1i0Ndvb/TRfEtS5uXlse2VkkMbrH+k3xucK025eU7hbqpxVTMggpDPX5qrD0OC9j3H5Zg==}
-    engines: {node: '>=22.13', pnpm: '>=11.3.0'}
-
   '@quasar/quasar-ui-qcalendar@5.2.2':
     resolution: {integrity: sha512-YHr9cUqpXGBBu8v6bYVTlDoY5GT98x9d94iC7Im/j4rSMFRJ53vUfRWzG/hLN2PibjeUJKgLV7ucswkUneSY6A==}
     engines: {node: '>=22.13', pnpm: '>=11.3.0'}
@@ -927,10 +923,6 @@ packages:
   '@simple-libs/stream-utils@2.0.0':
     resolution: {integrity: sha512-fCTuZK4QBa+39Oz9l4OGfJfz+GpwCp3AqO7Zch3to99xHPgstVsRFpeQ8LNd2o1Gv8raL2mCFwiaHh7bFSp5DQ==}
     engines: {node: '>=22'}
-
-  '@timestamp-js/core@0.1.0-rc.5':
-    resolution: {integrity: sha512-UA+xWllEmYdCAb9xkKKtgxe7Y89+YjvOBBkVkuNT3/YAzi+GoQJKfiUzQOjXjqwmYjjyPPK0GHHd0OCC/9JNeg==}
-    engines: {node: '>=22.13', pnpm: '>=11.5.0'}
 
   '@timestamp-js/core@1.0.0':
     resolution: {integrity: sha512-Wed8du4NBL/j4fItmrn1TCXedFdUse//nTVlWiJzJzs3vXFbTCbxFaWQd0xQQkzGor+lrQTKw7xJSUwsr1/N5g==}
@@ -3499,10 +3491,6 @@ snapshots:
       '@quasar/app-vite': 3.5.0(@types/node@26.2.0)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)))(quasar@2.24.0)(sass@1.100.0)(supports-color@8.1.1)(terser@5.49.2)(typescript@7.0.2)(vue-router@5.2.0(@vue/compiler-sfc@3.5.41)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)))(rolldown@1.2.3)(vite@8.2.1(@types/node@26.2.0)(jiti@2.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(terser@5.49.2)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2)))(vue@3.5.41(typescript@7.0.2))(yaml@2.9.0)
       '@quasar/quasar-ui-qcalendar': 5.2.2
 
-  '@quasar/quasar-ui-qcalendar@5.2.1':
-    dependencies:
-      '@timestamp-js/core': 0.1.0-rc.5
-
   '@quasar/quasar-ui-qcalendar@5.2.2':
     dependencies:
       '@timestamp-js/core': 1.0.0
@@ -3572,8 +3560,6 @@ snapshots:
       '@simple-libs/stream-utils': 2.0.0
 
   '@simple-libs/stream-utils@2.0.0': {}
-
-  '@timestamp-js/core@0.1.0-rc.5': {}
 
   '@timestamp-js/core@1.0.0': {}
 
