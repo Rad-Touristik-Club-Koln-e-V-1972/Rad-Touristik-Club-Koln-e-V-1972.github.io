@@ -1,12 +1,8 @@
 <template>
   <q-card flat>
-    <q-card-section class="bg-primary text-accent text-h6"
-      >Kontakte</q-card-section
-    >
-    <q-card-section class="text-subtitle1"
-      >Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083
-      Köln</q-card-section
-    >
+    <q-card-section class="bg-primary text-accent text-h6">
+      Kontakte
+    </q-card-section>
     <q-card-section>
       <q-card class="row" flat>
         <d-view-image
@@ -14,7 +10,7 @@
           class="col-auto"
           style="margin: 10px; width: 20em"
         />
-        <q-card-section class="col-auto text-subtitle2">
+        <q-card-section class="col-auto text-subtitle1">
           Der Vorstand vom RTC Köln e.V. (von links):
           <br />
           Frank (Sportwart), Manni (2. Vorsitzender), Diana (1. Vorsitzende),

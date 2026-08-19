@@ -1,8 +1,8 @@
 <template>
   <q-card flat>
-    <q-card-section class="bg-primary text-accent text-h6"
-      >Gästebuch</q-card-section
-    >
+    <q-card-section class="bg-primary text-accent text-h6">
+      Gästebuch
+    </q-card-section>
     <q-card-section>
       <q-btn
         :icon="mdiEmailArrowRight"
@@ -13,11 +13,7 @@
         text-color="accent"
       />
     </q-card-section>
-    <q-card-section class="text-subtitle1"
-      >Briefpost bitte immer an: RTC Köln, Postfach 990103, 51083
-      Köln</q-card-section
-    >
-    <q-card-section class="text-subtitle2">
+    <q-card-section class="text-subtitle1">
       Lob, nette Grüße, positive oder konstruktive Kritik, Anregungen oder was
       auch immer ihr uns schon immer sagen wolltet, werden 1:1 mit Eurem Namen
       veröffentlicht.

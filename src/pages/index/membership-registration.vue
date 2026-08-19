@@ -32,8 +32,6 @@
             <div class="col-auto q-mt-sm">
               RTC Köln e.V. 1972
               <br />
-              Postfach 99 01 03
-              <br />
               51083 Köln
               <br />
               Volksbank Köln Bonn eG
