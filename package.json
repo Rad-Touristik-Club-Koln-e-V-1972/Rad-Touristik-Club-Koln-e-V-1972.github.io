@@ -40,7 +40,7 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.2",
     "@commitlint/config-conventional": "21.2.2",
-    "@quasar/app-vite": "3.5.0",
+    "@quasar/app-vite": "3.6.1",
     "@quasar/quasar-app-extension-qcalendar": "5.2.2",
     "@types/node": "26.2.0",
     "@vue/language-server": "3.3.10",
