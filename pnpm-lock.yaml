@@ -18,8 +18,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4
       '@quasar/quasar-ui-qcalendar':
-        specifier: 5.2.2
-        version: 5.2.2
+        specifier: 5.3.0
+        version: 5.3.0
       '@yeger/vue-masonry-wall':
         specifier: 6.1.4
         version: 6.1.4(vue@3.5.41(typescript@7.0.2))
@@ -811,10 +811,6 @@ packages:
     engines: {node: '>=22.13', pnpm: '>=11.5.0'}
     peerDependencies:
       '@quasar/app-vite': '>=3.0.0'
-
-  '@quasar/quasar-ui-qcalendar@5.2.2':
-    resolution: {integrity: sha512-YHr9cUqpXGBBu8v6bYVTlDoY5GT98x9d94iC7Im/j4rSMFRJ53vUfRWzG/hLN2PibjeUJKgLV7ucswkUneSY6A==}
-    engines: {node: '>=22.13', pnpm: '>=11.3.0'}
 
   '@quasar/quasar-ui-qcalendar@5.3.0':
     resolution: {integrity: sha512-i8sp5GFLYW7Szy0ZLmsfITvChnkMEThdollAEsHFx4BdtgxvOZ3Q4KtQlJ6/rwl8mkp6v9ejxPLwatwz//Aw6Q==}
@@ -3510,10 +3506,6 @@ snapshots:
     dependencies:
       '@quasar/app-vite': 3.8.1(@types/node@26.3.0)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)))(quasar@2.26.0)(sass@1.103.1)(supports-color@8.1.1)(terser@5.50.0)(typescript@7.0.2)(vue-router@5.2.0(@vue/compiler-sfc@3.5.41)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)))(rolldown@1.2.5)(vite@8.2.2(@types/node@26.3.0)(jiti@2.7.0)(sass-embedded@1.103.1)(sass@1.103.1)(terser@5.50.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2)))(vue@3.5.41(typescript@7.0.2))(yaml@2.9.0)
       '@quasar/quasar-ui-qcalendar': 5.3.0
-
-  '@quasar/quasar-ui-qcalendar@5.2.2':
-    dependencies:
-      '@timestamp-js/core': 1.0.0
 
   '@quasar/quasar-ui-qcalendar@5.3.0':
     dependencies:
