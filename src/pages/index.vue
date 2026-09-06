@@ -66,15 +66,22 @@
   <q-dialog v-if="nextRTF" :model-value="isNextRTFSoon" persistent>
     <q-card>
       <q-card-section class="bg-primary text-accent text-h6"
-        >!Forsbachtour News!</q-card-section
+        >!RTF News!</q-card-section
       >
       <q-card-section>
-        Die Forsbachtour ist am {{ useDateTime().format(nextRTF.start) }}!
+        Die RTF ist am {{ useDateTime().format(nextRTF.start) }}!
         <br />
         <br />
         Euer RTC KÖLN e.V. 1972
       </q-card-section>
       <q-card-actions align="right">
+        <q-btn
+          v-close-popup
+          :to="{ path: '/events/tours/rtfs' }"
+          class="bg-secondary"
+          color="primary"
+          label="Zur RTF"
+        />
         <q-btn v-close-popup color="primary" label="Schließen" />
       </q-card-actions>
     </q-card>
@@ -95,7 +102,7 @@ const navDrawer = ref(false);
 const calendarStore = useCalendarStore();
 
 const nextRTF = calendarStore.nextRTF;
-const isNextRTFSoon = calendarStore.isNextRtfInDays(30);
+const isNextRTFSoon = calendarStore.isNextRtfInDays(35);
 </script>
 
 <style lang="scss" scoped>

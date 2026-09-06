@@ -23,6 +23,7 @@
     </q-card-section>
     <q-card-actions align="left">
       <q-btn
+        disable
         v-if="route.path === '/events/tours/rtfs'"
         :to="{ path: '/events/tours/rtfs/family' }"
         class="bg-secondary"
