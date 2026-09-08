@@ -109,12 +109,10 @@
           <div class="text-h6">Strecken</div>
           <div class="text-subtitle2">
             Alle drei Strecken werden ausgeschildert.
-            <br />
-            Die GPX-Daten veröffentlichen wir rechtzeitig vor der Veranstaltung.
           </div>
-          <div v-if="$q.platform.is.mobile" class="text-subtitle2"
-            >Bitte horizontal scrollen</div
-          >
+          <div v-if="$q.platform.is.mobile" class="text-subtitle2">
+            Bitte horizontal scrollen
+          </div>
         </q-card-section>
         <q-card-section>
           <q-markup-table flat>
