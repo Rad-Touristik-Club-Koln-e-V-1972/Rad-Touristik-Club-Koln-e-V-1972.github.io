@@ -161,7 +161,7 @@
         </q-card-section>
         <q-card-section>
           Auf den Strecken erwarten Euch weitere RTC Köln-Ladies bei zwei
-          liebevoll betreute Verpflegungsstellen:
+          liebevoll betreuten Verpflegungsstellen:
           <ul>
             <li>Heimerzheim</li>
             <li>Hilberath</li>
@@ -226,6 +226,16 @@
           <b>Essen und Trinken:</b> für die angemeldeten Teilnehmer steht eine
           kleines kölsches Angebot an Speisen und Getränken bereit, sodass sich
           jeder selbst versorgen kann.
+          <br />
+          <br />
+          <b>Externe Party-Gäste / Nicht-Mitglieder:</b> Die Anmeldung für
+          Gäste, die nicht Mitglied im RTC Köln e.V. 1972 sind, ist ab dem
+          21.09.2026 möglich – vorbehaltlich der noch verfügbaren Plätze.
+          <br />
+          Da die Teilnehmerzahl auf 70 Personen begrenzt ist, werden die Plätze
+          nach Eingang der Anmeldungen vergeben.
+          <br />
+          Daher gebt bitte Eure E-Mail-Adresse an. Vielen lieben Dank.
           <br />
           <br />
           Wir freuen uns auf eine schöne RTF und einen tollen Saisonabschluss

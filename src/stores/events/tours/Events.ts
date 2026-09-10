@@ -129,6 +129,7 @@ Wir freuen uns auf Euch!
     )
     .buildEvent(),
   new EventBuilder()
+    .setActive(false)
     .setCategory(EEvent.Familientour)
     .setFees(
       new FeeBuilder()

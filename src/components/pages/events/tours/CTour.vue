@@ -5,26 +5,32 @@
     flat
   >
     <q-card-section class="bg-primary text-accent text-h6">{{
-      props.modelValue.title
+      props.modelValue?.title
     }}</q-card-section>
     <q-card-section>
-      <span
-        >Stand: {{ useDateTime().format(props.modelValue.lastChange) }}</span
-      >
+      <span>
+        Stand:
+        {{
+          props.modelValue
+            ? useDateTime().format(props.modelValue.lastChange)
+            : ""
+        }}
+      </span>
       <div v-if="calendarStore.nextRTF" class="text-subtitle1">
-        Unsere <b>{{ calendarStore.nextRTF.name }}</b> ist am
-        <b>{{ useDateTime().format(calendarStore.nextRTF.start) }}.</b>
+        Unsere <b>{{ calendarStore.nextRTF?.name }}</b> ist am
+        <b>
+          {{
+            calendarStore.nextRTF
+              ? useDateTime().format(calendarStore.nextRTF.start)
+              : ""
+          }}.
+        </b>
       </div>
-      <i
-        >Wir unterstützen den neuen Kids-Cup in der Radsport-Region
-        Köln-Bonn-Aachen für Kinder und Jugendliche in den Altersklassen
-        2012-2015 und 2016-2019.</i
-      >
     </q-card-section>
     <q-card-actions align="left">
       <q-btn
-        disable
         v-if="route.path === '/events/tours/rtfs'"
+        v-show="false"
         :to="{ path: '/events/tours/rtfs/family' }"
         class="bg-secondary"
         color="primary"
@@ -69,7 +75,7 @@
           <c-tracks :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="registration">
-          <c-registration :category="props.modelValue?.category" />
+          <c-registration :category="props.modelValue.category" />
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>

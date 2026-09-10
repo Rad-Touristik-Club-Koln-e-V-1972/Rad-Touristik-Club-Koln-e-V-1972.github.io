@@ -4,6 +4,18 @@
     <div v-if="props.category === EEvent.RTF_RTC" class="col-auto">
       <q-card>
         <q-card-section class="bg-primary text-accent text-h6">
+          Voranmeldung
+        </q-card-section>
+        <q-card-section>
+          <a href="https://forms.cloud.microsoft/r/1TDgiRcueR" target="_blank">
+            Die Voranmeldung findet du hier.
+          </a>
+        </q-card-section>
+      </q-card>
+    </div>
+    <div v-if="props.category === EEvent.RTF_RTC" class="col-auto">
+      <q-card>
+        <q-card-section class="bg-primary text-accent text-h6">
           Für Breitensportlizenzinhaber:innen (digitale Anmeldung)
         </q-card-section>
         <q-card-section>
@@ -95,7 +107,15 @@
             <li>
               PayPal
               <br />
-              PayPal-Adresse: Wird noch bekannt gegeben!
+              NAME VORNAME (bitte einfügen)
+              <br />
+              STARTORT (bitte einfügen)
+              <ul>
+                <li>Poller Fischerhaus</li>
+                <li>Heimerzheim</li>
+                <li>Hilberath</li>
+              </ul>
+              PayPal-Adresse: dcmvialon@gmail.com
             </li>
             <li>
               Kontoüberweisung
