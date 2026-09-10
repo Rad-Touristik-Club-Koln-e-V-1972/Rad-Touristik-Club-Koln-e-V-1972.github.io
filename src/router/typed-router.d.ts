@@ -157,8 +157,8 @@ declare module 'vue-router/auto-routes' {
     '//rtc-cologne/galleries/[id]_[[album]]': RouteRecordInfo<
       '//rtc-cologne/galleries/[id]_[[album]]',
       '/rtc-cologne/galleries/:id()_:album?',
-      { id: ParamValue<true>, album?: ParamValueZeroOrOne<true> },
-      { id: ParamValue<false>, album?: ParamValueZeroOrOne<false> },
+      { album?: ParamValueZeroOrOne<true>, id: ParamValue<true> },
+      { album?: ParamValueZeroOrOne<false>, id: ParamValue<false> },
       | never
     >,
     '//rtc-cologne/guestbook': RouteRecordInfo<
