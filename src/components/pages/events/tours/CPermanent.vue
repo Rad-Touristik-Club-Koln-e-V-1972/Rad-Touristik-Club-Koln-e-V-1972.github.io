@@ -3,8 +3,9 @@
     <q-card-section
       v-if="!props.modelValue.active"
       class="justify-center text-primary text-h6"
-      >! Zur Zeit nicht verfügbar !</q-card-section
     >
+      ! Zur Zeit nicht verfügbar !
+    </q-card-section>
     <q-card :class="props.modelValue.active ? '' : 'disabled'">
       <q-card-section class="bg-primary text-accent text-h6">
         {{ props.modelValue.title }}
@@ -48,11 +49,11 @@
               </td>
             </tr>
             <tr v-if="Object.keys(props.modelValue.urls).length">
-              <td class="text-right"
-                >Link{{
+              <td class="text-right">
+                Link{{
                   Object.keys(props.modelValue.urls).length > 1 ? "s" : ""
-                }}:</td
-              >
+                }}:
+              </td>
               <td colspan="2">
                 <ul
                   v-if="Object.keys(props.modelValue.urls).length > 1"
@@ -70,8 +71,9 @@
                   v-else
                   :href="Object.values(props.modelValue.urls).toString()"
                   target="_blank"
-                  >{{ Object.keys(props.modelValue.urls)[0] }}</a
                 >
+                  {{ Object.keys(props.modelValue.urls)[0] }}
+                </a>
               </td>
             </tr>
             <tr>

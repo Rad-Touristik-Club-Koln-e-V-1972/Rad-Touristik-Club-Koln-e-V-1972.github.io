@@ -60,15 +60,16 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="general">
-          <c-general :text="props.modelValue.text" />
+          <c-general
+            :location="props.modelValue.location"
+            :text="props.modelValue.text"
+          />
         </q-tab-panel>
         <q-tab-panel name="info">
           <c-info
             :fee-hints="props.feeHints"
             :fees="props.modelValue.fees"
-            :location="props.modelValue.location"
             :times="props.modelValue.times"
-            :tracks="props.modelValue.tracks"
           />
         </q-tab-panel>
         <q-tab-panel name="tracks">
@@ -112,5 +113,5 @@ const route = useRoute();
 
 const calendarStore = useCalendarStore();
 
-const tab = ref("info");
+const tab = ref("general");
 </script>

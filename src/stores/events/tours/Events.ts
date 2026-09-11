@@ -26,7 +26,7 @@ export default [
         .buildFee()
     )
     .setId("2048a7f0-315a-43d7-885a-23f388601052")
-    .setLastChange("2026-09-08")
+    .setLastChange("2026-09-11")
     .setLocation(
       new ControlBuilder()
         .setCity("Köln-Poll")
@@ -42,7 +42,7 @@ export default [
 am 10. Oktober steigt unser Saisonfinale:
 mit RTF, Tombola und Abschlussparty am Poller Fischerhaus in Köln-Poll – organisiert von der geballten Frauenpower unseres Vereins, als Dankeschön an die Community und unsere Radsport-Männer.
 
-<div class='text-primary'>Um Voranmeldung für RTF und Party wird bis zum 02.10.2026 gebeten.</div>
+<span class='text-primary'>Um Voranmeldung für RTF und Party wird bis zum 02.10.2026 gebeten.</span>
 
 Wir freuen uns auf Euch!
 
