@@ -294,13 +294,6 @@ export default [
     .buildEvent(),
   new EventBuilder()
     .setCategory(EEvent.RTF)
-    .setDate("2026-09-19", "2026-09-20")
-    .setId("f3628e3c-d408-442e-8e2d-0fbdbb19f72d")
-    .setKilometer(200)
-    .setName("RTC-Etappenfahrt nach Maastricht")
-    .buildEvent(),
-  new EventBuilder()
-    .setCategory(EEvent.RTF)
     .setDate("2026-09-27")
     .setId("8a148c10-568d-418a-bc25-36e2d404240d")
     .setName("Essen")
