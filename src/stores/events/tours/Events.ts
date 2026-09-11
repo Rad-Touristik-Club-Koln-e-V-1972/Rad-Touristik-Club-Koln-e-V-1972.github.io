@@ -76,7 +76,7 @@ Wir freuen uns auf Euch!
     .setTracks(
       new TrackBuilder()
         .setControls(2)
-        .setHeight(0)
+        .setHeight(250)
         .setId("c1934b4b-2058-4100-946e-77c264533c76")
         .setLength(55)
         .setName("55 km")
@@ -89,7 +89,7 @@ Wir freuen uns auf Euch!
         .buildTrack(),
       new TrackBuilder()
         .setControls(2)
-        .setHeight(0)
+        .setHeight(280)
         .setId("d9e54ab9-a0ec-4e82-ac62-ede4a3deecfb")
         .setLength(78)
         .setName("78 km")
@@ -102,7 +102,7 @@ Wir freuen uns auf Euch!
         .buildTrack(),
       new TrackBuilder()
         .setControls(2)
-        .setHeight(0)
+        .setHeight(280)
         .setId("2338bdd3-a6e5-405d-bf23-0bf208c13d8e")
         .setLength(78)
         .setName("78 km (begleitete Tour)")
@@ -115,7 +115,7 @@ Wir freuen uns auf Euch!
         .buildTrack(),
       new TrackBuilder()
         .setControls(3)
-        .setHeight(0)
+        .setHeight(500)
         .setId("a29754a2-b763-41c4-843b-45ae99b7bba6")
         .setLength(104)
         .setName("104 km")
