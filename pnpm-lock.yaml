@@ -191,8 +191,8 @@ importers:
         specifier: 4.2.1
         version: 4.2.1
       libphonenumber-js:
-        specifier: 1.13.12
-        version: 1.13.12
+        specifier: 1.13.13
+        version: 1.13.13
       maz-ui:
         specifier: 4.9.3
         version: 4.9.3(typescript@7.0.2)(vue-router@5.3.1(@vue/compiler-sfc@3.5.42)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.42(typescript@7.0.2)))(rolldown@1.2.8)(vite@8.2.2(@types/node@26.5.1)(jiti@2.7.0)(sass-embedded@1.104.0)(sass@1.104.0)(terser@5.51.2)(yaml@2.9.0))(vue@3.5.42(typescript@7.0.2)))(vue@3.5.42(typescript@7.0.2))
@@ -1980,8 +1980,8 @@ packages:
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
-  libphonenumber-js@1.13.12:
-    resolution: {integrity: sha512-uLVeV1c9OTk6qkdqnj+mpMD+ZdnZ0szVyWu58HwMmpwkHA1gCEkyjd3veZQXDnuw9KEwSRjcc9B1pS9XKIN1fA==}
+  libphonenumber-js@1.13.13:
+    resolution: {integrity: sha512-hV6SmWnyQ8U1QXhhqbqYBHIStNnscG7A5XbGodgdHhf/8N5PwhYpJA5U/yHDjYwPYTd8uNGXqq416XctuvK2PA==}
 
   lightningcss-android-arm64@1.33.0:
     resolution: {integrity: sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==}
@@ -4557,7 +4557,7 @@ snapshots:
 
   kolorist@1.8.0: {}
 
-  libphonenumber-js@1.13.12: {}
+  libphonenumber-js@1.13.13: {}
 
   lightningcss-android-arm64@1.33.0:
     optional: true
@@ -4652,7 +4652,7 @@ snapshots:
       '@maz-ui/utils': 4.7.6
       chart.js: 4.5.1
       dayjs: 1.11.23
-      libphonenumber-js: 1.13.12
+      libphonenumber-js: 1.13.13
       valibot: 1.5.0(typescript@7.0.2)
       vue: 3.5.42(typescript@7.0.2)
       vue-chartjs: 5.3.4(chart.js@4.5.1)(vue@3.5.42(typescript@7.0.2))
