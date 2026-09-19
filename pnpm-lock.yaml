@@ -173,8 +173,8 @@ importers:
         specifier: 4.9.2
         version: 4.9.2(vue@3.5.42(typescript@7.0.2))
       '@quasar/extras':
-        specifier: 2.0.4
-        version: 2.0.4
+        specifier: 2.1.0
+        version: 2.1.0
       '@quasar/quasar-ui-qcalendar':
         specifier: 5.3.0
         version: 5.3.0
@@ -940,8 +940,8 @@ packages:
   '@quasar/art@1.0.0':
     resolution: {integrity: sha512-IAV8Qg2QM3U2alywUcCELyOlHCUNbJYmiVDRTLgcgmyBlQwo3Wk33eHAyT9cpnV5CqlmuYXe6UZt0Ybi1m0lMA==}
 
-  '@quasar/extras@2.0.4':
-    resolution: {integrity: sha512-JWls5J+xkgEn6u86NSBLRUXf92RSTlImmYNcF77JtbOwuZgQfQTg7RpLskqRTmzpU3Kkpd3TLDcVT0xwWwiphA==}
+  '@quasar/extras@2.1.0':
+    resolution: {integrity: sha512-WCqHXr3loA9bP1DUuzmCwuNXnHa9GKosAtjwJnr1DpngO68a0JoiyVuoXzc760tCBArdFLD/YAUHvItPbk6V2Q==}
 
   '@quasar/quasar-app-extension-qcalendar@5.3.0':
     resolution: {integrity: sha512-oH/W3pMO6OWNV/U1mx5uLXFzGkNmLHNxcm1HWJQT0Tqyvd4T0hfYvh3Oqgq5t0GEwN84aOepwCJQqtR5akSLCA==}
@@ -3605,7 +3605,7 @@ snapshots:
 
   '@quasar/art@1.0.0': {}
 
-  '@quasar/extras@2.0.4': {}
+  '@quasar/extras@2.1.0': {}
 
   '@quasar/quasar-app-extension-qcalendar@5.3.0(@quasar/app-vite@3.8.4(@types/node@26.6.1)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.42(typescript@7.0.2)))(quasar@2.32.3)(sass@1.104.1)(supports-color@8.1.1)(terser@5.51.2)(typescript@7.0.2)(vue-router@5.3.1(@vue/compiler-sfc@3.5.42)(pinia@3.0.4(typescript@7.0.2)(vue@3.5.42(typescript@7.0.2)))(rolldown@1.2.8)(vite@8.3.0(@types/node@26.6.1)(jiti@2.7.0)(sass-embedded@1.104.1)(sass@1.104.1)(terser@5.51.2)(yaml@2.9.1))(vue@3.5.42(typescript@7.0.2)))(vue@3.5.42(typescript@7.0.2))(yaml@2.9.1))':
     dependencies:
