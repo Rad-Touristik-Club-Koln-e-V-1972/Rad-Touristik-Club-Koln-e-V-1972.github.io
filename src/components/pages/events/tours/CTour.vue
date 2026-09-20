@@ -55,15 +55,11 @@
       </q-tabs>
       <q-tab-panels v-model="tab">
         <q-tab-panel name="general">
-          <c-general
-            :location="props.modelValue.location"
-            :text="props.modelValue.text"
-          />
+          <c-general :text="props.modelValue.text" />
         </q-tab-panel>
         <q-tab-panel name="info">
           <c-info
-            :fee-hints="props.feeHints"
-            :fees="props.modelValue.fees"
+            :location="props.modelValue.location"
             :times="props.modelValue.times"
           />
         </q-tab-panel>
@@ -71,7 +67,11 @@
           <c-tracks :tracks="props.modelValue.tracks" />
         </q-tab-panel>
         <q-tab-panel name="registration">
-          <c-registration :category="props.modelValue.category" />
+          <c-registration
+            :category="props.modelValue.category"
+            :fee-hints="props.feeHints"
+            :fees="props.modelValue.fees"
+          />
         </q-tab-panel>
       </q-tab-panels>
     </q-card-section>
