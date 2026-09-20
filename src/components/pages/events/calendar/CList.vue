@@ -122,7 +122,9 @@ const filter = ref<Filter>({
     EEvent.Permanente,
     EEvent.RTC,
     EEvent.RTF,
-    EEvent.RTF_RTC,
+    EEvent.RTF_Family_Tour,
+    EEvent.RTF_Forsbach_Tour,
+    EEvent.RTF_Saison_Finale,
     EEvent.Veranstaltung,
     EEvent.Vereinsfahrt
   ],

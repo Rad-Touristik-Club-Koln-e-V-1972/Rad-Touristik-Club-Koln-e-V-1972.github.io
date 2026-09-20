@@ -4,10 +4,11 @@ import FeeBuilder from "@/models/builder/events/tours/events/FeeBuilder";
 import TimeBuilder from "@/models/builder/events/tours/events/TimeBuilder";
 import TrackBuilder from "@/models/builder/events/tours/events/TrackBuilder";
 import EEvent from "@/models/enums/EEvent";
+import useCalendarStore from "@/stores/events/Calendar";
 
 export default new EventBuilder()
-  .setActive(false)
-  .setCategory(EEvent.Familientour)
+  .setActive(!!useCalendarStore().getNextRTF(EEvent.RTF_Forsbach_Tour))
+  .setCategory(EEvent.RTF_Family_Tour)
   .setFees(
     new FeeBuilder()
       .setGroup("Gebühren")
@@ -101,7 +102,7 @@ Euer RTC Köln e.V.`
       .setText(
         `<div class='q-gutter-md row'>
   <div class='col-3'>
-    <img alt="Fährchips" src="https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-19-49-39-748a.jpg.avif" style='width: 100%' />
+    <img alt="Fährchips" src="https://content.rtc-koeln.de/pages/events/tours/rtfs/familytour/2024-05-24-19-49-39-748a.jpg.avif" style='width: 100%' />
   </div>
   <div class='col'>
     Auf dem Schulgelände sind ausreichend Parkmöglichkeiten vorhanden.
@@ -120,7 +121,7 @@ Euer RTC Köln e.V.`
       .setName("Während der Tour")
       .setText(
         `Bei der Tour fahrt Ihr immer den gelben Schildern mit dem Krokodil nach. Sie führen euch sicher ins Ziel. Bei Richtungswechseln kommt der RTC-Pfeil hinzu.
-<img alt="Streckenmarkierung" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/family/2024-05-24-10-30-41-726.jpg.avif' style='width: 50%' />
+<img alt="Streckenmarkierung" src='https://content.rtc-koeln.de/pages/events/tours/rtfs/familytour/2024-05-24-10-30-41-726.jpg.avif' style='width: 50%' />
 
 Auf unserer Kontrollstelle am Wesselinger Fähranleger steht für euch eine vielfältige Verpflegung zur Verfügung,
 damit ihr das Schulzentrum in Zündorf garantiert ohne Hungerast erreicht.

@@ -1,6 +1,6 @@
 <template>
   <c-tour
-    :model-value="useTourStore().getFamily()"
+    :model-value="useTourStore().getFamilyTour()"
     fee-hints="* Die Fahrkarten werden als verschiedenfarbige Chips am Start ausgegeben."
   />
 </template>

@@ -14,13 +14,13 @@ export default defineStore("tour", () => {
   return {
     permanents: ref(Permanents),
     getBy,
-    getFamily: () => {
+    getFamilyTour: () => {
       // TODO This is a workaround until the db got converted to pina-orm.
       //  And somehow this function gets executed 3 times.
-      const tmp = getBy(EEvent.Familientour);
+      const tmp = getBy(EEvent.RTF_Family_Tour);
 
       if (tmp && !tmp.tracks.find(it => it.length === 22)) {
-        const familyTourTrack = getBy(EEvent.RTF_RTC)?.tracks.find(
+        const familyTourTrack = getBy(EEvent.RTF_Forsbach_Tour)?.tracks.find(
           it => it.length === 22
         );
 

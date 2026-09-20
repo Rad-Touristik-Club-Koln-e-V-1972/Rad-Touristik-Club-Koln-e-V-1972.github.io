@@ -1,12 +1,12 @@
 <template>
   <q-card style="width: 40em">
     <q-card-section
-      v-if="!props.modelValue.active"
+      v-if="!props.modelValue.isActive"
       class="justify-center text-primary text-h6"
     >
       ! Zur Zeit nicht verfügbar !
     </q-card-section>
-    <q-card :class="props.modelValue.active ? '' : 'disabled'">
+    <q-card :class="props.modelValue.isActive ? '' : 'disabled'">
       <q-card-section class="bg-primary text-accent text-h6">
         {{ props.modelValue.title }}
       </q-card-section>

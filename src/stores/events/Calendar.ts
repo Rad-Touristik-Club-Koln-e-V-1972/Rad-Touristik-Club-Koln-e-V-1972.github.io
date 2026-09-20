@@ -17,12 +17,32 @@ export default defineStore("calendar", () => {
   const all = computed(() =>
     Object.values(events.value).flatMap(it => it.flatMap(it => it))
   );
+
   const allFuture = computed(() =>
     all.value.filter(it => it.start > dateTime.today.value)
   );
-  const nextRTF = computed(() =>
-    allFuture.value.find(it => it.category === EEvent.RTF_RTC)
-  );
+
+  function getNextRTF(...category: EEvent[]): Event | null;
+  function getNextRTF(days: number, ...category: EEvent[]): Event | null;
+
+  function getNextRTF(firstParam: any, ...restParams: any[]): Event | null {
+    let days = -1;
+    let categories: EEvent[] = [];
+
+    if (typeof firstParam === "number") {
+      days = firstParam;
+      categories = restParams;
+    } else if (firstParam !== undefined) {
+      categories = [firstParam, ...restParams];
+    }
+
+    let nextRTF = allFuture.value.find(it => categories.includes(it.category));
+
+    return nextRTF &&
+      (days < 0 || useDateTime().isInTheNextDays(nextRTF.start, days))
+      ? nextRTF
+      : null;
+  }
 
   return {
     all,
@@ -30,10 +50,6 @@ export default defineStore("calendar", () => {
     allNotCancelled: computed(() =>
       all.value.filter(it => it.category !== EEvent.Abgesagt)
     ),
-    isNextRtfInDays: (days: number) =>
-      nextRTF.value
-        ? useDateTime().isInTheNextDays(nextRTF.value.start, days)
-        : false,
     nextEvents: computed(() =>
       allFuture.value
         .filter(
@@ -47,6 +63,6 @@ export default defineStore("calendar", () => {
         .sort((a, b) => a.start.getTime() - b.start.getTime())
         .slice(0, 2)
     ),
-    nextRTF
+    getNextRTF
   };
 });

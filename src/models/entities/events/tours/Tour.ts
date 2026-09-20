@@ -4,7 +4,6 @@ import type Control from "@/models/entities/events/tours/Control";
 import EEvent from "@/models/enums/EEvent";
 
 export default class Tour extends AEntity {
-  active = true;
   albumIDs: Record<string, string> = {};
   category = EEvent.Vereinsfahrt;
   controls: Control[] = [];

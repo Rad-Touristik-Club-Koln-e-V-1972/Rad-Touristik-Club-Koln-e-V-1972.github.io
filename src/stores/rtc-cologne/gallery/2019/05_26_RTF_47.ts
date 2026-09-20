@@ -3,7 +3,7 @@ import GalleryEntryBuilder from "@/models/builder/rtc-cologne/gallery/GalleryEnt
 import EEvent from "@/models/enums/EEvent";
 
 export default new GalleryBuilder()
-  .setCategory(EEvent.RTF_RTC)
+  .setCategory(EEvent.RTF_Forsbach_Tour)
   .setDate("2019-05-26")
   .setId("f3b20d5f-3c1b-467f-a233-ccaf9eb787b6")
   .setImages([

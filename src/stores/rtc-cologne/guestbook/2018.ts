@@ -50,7 +50,7 @@ Bernd
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-28 17:00")
     .setId("2d014d35-a8b0-497a-bb55-a5ef884962b1")
     .setName("Profitrise Sports")
@@ -58,7 +58,7 @@ Bernd
     .setText("Und danke an den RTC Köln e. V. 1972 für die tolle RTF heute!")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-28 17:00")
     .setId("3573a1e5-d9c4-45ce-b05a-721057bc7c09")
     .setName("Petra Humbach")
@@ -68,7 +68,7 @@ Bernd
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-28 17:00")
     .setId("38acb459-e74b-43ef-9f1c-b0db85c43e77")
     .setName("Jochen Güttes")
@@ -81,7 +81,7 @@ Danke für die Gastfreundschaft.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-28 17:00")
     .setId("d6d53163-22da-43ba-ad1f-bfafa1f30b96")
     .setName("Ros Si")
@@ -98,7 +98,7 @@ Nächstes Jahr wieder.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-28 17:00")
     .setId("1031b52e-ffaf-49dd-8ee9-361419b26194")
     .setName("Angela Maja")
@@ -112,7 +112,7 @@ Alles bestens.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-27 17:01")
     .setId("50414668-679a-4984-9612-7b8a8082d4c8")
     .setName("Harald Seidenberg")
@@ -133,7 +133,7 @@ Harry
     .setTitle("Feedback wegen ... RTF 27.05.2018")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2018-05-27 13:54")
     .setId("fd11ec0b-9c00-4aae-84ca-8c958ea6070d")
     .setName("Dirk Oliver Heppert")

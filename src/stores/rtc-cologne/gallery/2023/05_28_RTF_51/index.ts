@@ -6,7 +6,7 @@ import StartZiel from "./Start_Ziel";
 import Vorbereitungen from "./Vorbereitungen";
 
 export default new GalleryBuilder()
-  .setCategory(EEvent.RTF_RTC)
+  .setCategory(EEvent.RTF_Forsbach_Tour)
   .setDate("2023-05-28")
   .setId("6ee17200-d1d3-4273-8777-885a3f946912")
   .setImages(Vorbereitungen)

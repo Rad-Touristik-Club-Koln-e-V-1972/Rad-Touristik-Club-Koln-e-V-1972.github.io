@@ -39,7 +39,8 @@ declare module 'vue-router/auto-routes' {
       | '//events/calendar'
       | '//events/tours/permanents'
       | '//events/tours/rtfs/(index)'
-      | '//events/tours/rtfs/family'
+      | '//events/tours/rtfs/familytour'
+      | '//events/tours/rtfs/saisonfinale'
       | '//events/tours/rtfs/suggestions'
       | '//events/tours/stagerace'
       | '//events/training'
@@ -84,9 +85,16 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '//events/tours/rtfs/family': RouteRecordInfo<
-      '//events/tours/rtfs/family',
-      '/events/tours/rtfs/family',
+    '//events/tours/rtfs/familytour': RouteRecordInfo<
+      '//events/tours/rtfs/familytour',
+      '/events/tours/rtfs/familytour',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '//events/tours/rtfs/saisonfinale': RouteRecordInfo<
+      '//events/tours/rtfs/saisonfinale',
+      '/events/tours/rtfs/saisonfinale',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -222,7 +230,8 @@ declare module 'vue-router/auto-routes' {
         | '//events/calendar'
         | '//events/tours/permanents'
         | '//events/tours/rtfs/(index)'
-        | '//events/tours/rtfs/family'
+        | '//events/tours/rtfs/familytour'
+        | '//events/tours/rtfs/saisonfinale'
         | '//events/tours/rtfs/suggestions'
         | '//events/tours/stagerace'
         | '//events/training'
@@ -275,9 +284,17 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'src/pages/index/events/tours/rtfs/family.vue': {
+    'src/pages/index/events/tours/rtfs/familytour.vue': {
       routes:
-        | '//events/tours/rtfs/family'
+        | '//events/tours/rtfs/familytour'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/index/events/tours/rtfs/saisonfinale.vue': {
+      routes:
+        | '//events/tours/rtfs/saisonfinale'
       views:
         | never
       pathParamNames:

@@ -9,12 +9,6 @@ export default class TourBuilder extends ABuilder {
 
   buildTour = () => Object.assign(this.tour, this.buildAEntity());
 
-  setActive = (value: boolean): this => {
-    this.tour.active = value;
-
-    return this;
-  };
-
   setAlbumIDs = (value: Record<string, string> | string[] | string): this => {
     if (Array.isArray(value))
       this.tour.albumIDs = value.reduce<Record<string, string>>((map, it) => {

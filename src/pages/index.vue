@@ -63,17 +63,14 @@
       </div>
     </q-footer>
   </q-layout>
-  <q-dialog
-    v-model="dialog"
-    v-if="nextRTF && isNextRTFSoon && !isAlreadyOnPage"
-    persistent
-  >
+  <q-dialog v-model="dialog" v-if="nextRTF && !isAlreadyOnPage" persistent>
     <q-card>
       <q-card-section class="bg-primary text-accent text-h6">
         !RTF News!
       </q-card-section>
       <q-card-section>
-        Die RTF ist am {{ useDateTime().format(nextRTF.start) }}!
+        Die RTF {{ nextRTF.name }} ist am
+        {{ useDateTime().format(nextRTF.start) }}!
         <br />
         <br />
         Euer RTC KÖLN e.V. 1972
@@ -81,7 +78,7 @@
       <q-card-actions align="right">
         <q-btn
           v-close-popup
-          :to="{ path: '/events/tours/rtfs' }"
+          :to="{ path: rtfRoute }"
           class="bg-secondary"
           color="primary"
           label="Zur RTF"
@@ -98,6 +95,7 @@ import { useRoute } from "vue-router";
 import { mdiCopyright, mdiMenu } from "@quasar/extras/mdi-v7";
 import CNavigationDrawer from "@/components/MainLayout/CNavigationDrawer.vue";
 import DAccessibility from "@/components/MainLayout/DAccessibility.vue";
+import EEvent from "@/models/enums/EEvent";
 import useSponsorStore from "@/stores/Sponsor";
 import useCalendarStore from "@/stores/events/Calendar";
 import useDateTime from "@/utils/DateTime";
@@ -109,9 +107,15 @@ const navDrawer = ref(false);
 
 const calendarStore = useCalendarStore();
 
-const nextRTF = calendarStore.nextRTF;
-const isNextRTFSoon = calendarStore.isNextRtfInDays(35);
-const isAlreadyOnPage = route.path === "/events/tours/rtfs";
+const nextRTF = calendarStore.getNextRTF(
+  35,
+  EEvent.RTF_Forsbach_Tour,
+  EEvent.RTF_Saison_Finale
+);
+
+let rtfRoute = `/events/tours/rtfs${nextRTF?.category === EEvent.RTF_Saison_Finale ? "/saisonfinale" : ""}`;
+
+const isAlreadyOnPage = route.path === rtfRoute;
 </script>
 
 <style lang="scss" scoped>

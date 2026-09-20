@@ -10,7 +10,7 @@ import StartZiel from "./Start_Ziel";
 import Tour from "./Tour";
 
 export default new GalleryBuilder()
-  .setCategory(EEvent.RTF_RTC)
+  .setCategory(EEvent.RTF_Forsbach_Tour)
   .setDate("2015-05-31")
   .setId("991a9f19-cb22-43f3-991d-a3b8ddaa7ec8")
   .setImages({

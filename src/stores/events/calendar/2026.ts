@@ -144,7 +144,7 @@ export default [
     .setName("Aufbau FBT")
     .buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2026-05-31")
     .setId("18220f49-dbe4-4387-9ef3-189850dcc3b5")
     .setKilometer(500)
@@ -305,12 +305,12 @@ export default [
     .setName("Büttgen")
     .buildEvent(),
   new EventBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Saison_Finale)
     .setDate("2026-10-10")
     .setId("51059e93-f032-42bf-b2e5-4a94a434e735")
     .setKilometer(500)
     .setName(
-      "RTC Saisonfinale mit Saisonabschlussparty ( Achtung! Neuer Startplatz!)"
+      "RTC Saisonfinale mit Saisonabschlussparty (Achtung! Neuer Startplatz!)"
     )
     .buildEvent(),
   new EventBuilder()

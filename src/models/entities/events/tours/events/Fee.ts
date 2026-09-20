@@ -3,7 +3,7 @@ import EEvent from "@/models/enums/EEvent";
 
 // noinspection JSClassNamingConvention
 export default class Fee extends AEntity {
-  category = EEvent.RTF_RTC;
+  category = EEvent.RTF_Forsbach_Tour;
   group: string = "";
   name!: string;
   price?: number | undefined;

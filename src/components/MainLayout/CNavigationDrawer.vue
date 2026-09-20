@@ -8,6 +8,7 @@
           <q-list>
             <c-navigation-entry
               v-for="it in navigationStore.allNavigation"
+              v-show="it.isVisible"
               :key="it.id"
               :model-value="it"
             />

@@ -19,6 +19,7 @@ import {
   mdiImageMultiple,
   mdiInformationOutline,
   mdiInstagram,
+  mdiLeafMaple,
   mdiMessageDraw,
   mdiStateMachine,
   mdiTimelineClockOutline,
@@ -29,8 +30,15 @@ import {
   mdiYoutube
 } from "@quasar/extras/mdi-v7";
 import NavigationBuilder from "@/models/builder/NavigationBuilder";
+import EEvent from "@/models/enums/EEvent";
+import useCalendarStore from "@/stores/events/Calendar";
 
 export default defineStore("navigation", () => {
+  const nextRTF = useCalendarStore().getNextRTF(
+    EEvent.RTF_Forsbach_Tour,
+    EEvent.RTF_Saison_Finale
+  );
+
   return {
     allNavigation: ref([
       new NavigationBuilder()
@@ -42,8 +50,16 @@ export default defineStore("navigation", () => {
       new NavigationBuilder()
         .setIcon(mdiCalendarAlert)
         .setId("516fe40e-dfa1-4082-93e5-9323c7655941")
-        .setTitle("RTF / Forsbachtour")
+        .setTitle("RTF Forsbachtour")
         .setTo("/events/tours/rtfs")
+        .setVisible(nextRTF?.category === EEvent.RTF_Forsbach_Tour)
+        .buildNavigation(),
+      new NavigationBuilder()
+        .setIcon(mdiLeafMaple)
+        .setId("02f71972-9ee5-462d-a679-e7129d6343a0")
+        .setTitle("RTF Saison Finale")
+        .setTo("/events/tours/rtfs/saisonfinale")
+        .setVisible(nextRTF?.category === EEvent.RTF_Saison_Finale)
         .buildNavigation(),
       new NavigationBuilder()
         .setIcon(mdiGoKartTrack)
@@ -76,14 +92,20 @@ export default defineStore("navigation", () => {
               new NavigationBuilder()
                 .setIcon(mdiCalendarAlert)
                 .setId("f8e0d57e-459b-429c-b671-9a3feeae6991")
-                .setTitle("RTF / Forsbachtour")
+                .setTitle("RTF Forsbachtour")
                 .setTo("/events/tours/rtfs")
                 .buildNavigation(),
               new NavigationBuilder()
                 .setIcon(mdiHumanMaleFemaleChild)
                 .setId("55829ef0-c2ab-4e51-94fa-3a6d5c5d9dc1")
-                .setTitle("Family Tour")
-                .setTo("/events/tours/rtfs/family")
+                .setTitle("RTF Family Tour")
+                .setTo("/events/tours/rtfs/familytour")
+                .buildNavigation(),
+              new NavigationBuilder()
+                .setIcon(mdiLeafMaple)
+                .setId("e604f5b3-01bd-490d-a4e6-854bd3d1e17c")
+                .setTitle("RTF Saison Finale")
+                .setTo("/events/tours/rtfs/saisonfinale")
                 .buildNavigation(),
               new NavigationBuilder()
                 .setIcon(mdiBikeFast)

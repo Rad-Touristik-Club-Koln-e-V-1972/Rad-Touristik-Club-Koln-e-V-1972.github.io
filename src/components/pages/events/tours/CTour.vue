@@ -1,7 +1,7 @@
 <template>
   <q-card
     v-if="props.modelValue"
-    :class="modelValue?.active ? '' : 'disabled'"
+    :class="modelValue?.isActive ? '' : 'disabled'"
     flat
   >
     <q-card-section class="bg-primary text-accent text-h6">{{
@@ -16,28 +16,23 @@
             : ""
         }}
       </span>
-      <div v-if="calendarStore.nextRTF" class="text-subtitle1">
-        Unsere <b>{{ calendarStore.nextRTF?.name }}</b> ist am
-        <b>
-          {{
-            calendarStore.nextRTF
-              ? useDateTime().format(calendarStore.nextRTF.start)
-              : ""
-          }}.
-        </b>
+      <div v-if="modelValue?.isActive && nextRTF" class="text-subtitle1">
+        Unsere
+        <b>{{ nextRTF.name }}</b>
+        ist am
+        <b>{{ nextRTF ? useDateTime().format(nextRTF.start) : "" }}.</b>
       </div>
     </q-card-section>
     <q-card-actions align="left">
       <q-btn
         v-if="route.path === '/events/tours/rtfs'"
-        v-show="false"
-        :to="{ path: '/events/tours/rtfs/family' }"
+        :to="{ path: '/events/tours/rtfs/familytour' }"
         class="bg-secondary"
         color="primary"
         label="Zur Family Tour"
       />
       <q-btn
-        v-if="route.path === '/events/tours/rtfs/family'"
+        v-if="route.path === '/events/tours/rtfs/familytour'"
         :to="{ path: '/events/tours/rtfs' }"
         class="bg-secondary"
         color="primary"
@@ -98,6 +93,7 @@ import CInfo from "@/components/pages/events/tours/CInfo.vue";
 import CRegistration from "@/components/pages/events/tours/CRegistration.vue";
 import CTracks from "@/components/pages/events/tours/CTracks.vue";
 import type Event from "@/models/entities/events/tours/Event";
+import EEvent from "@/models/enums/EEvent";
 import useCalendarStore from "@/stores/events/Calendar";
 import useDateTime from "@/utils/DateTime";
 
@@ -114,4 +110,9 @@ const route = useRoute();
 const calendarStore = useCalendarStore();
 
 const tab = ref("general");
+
+const nextRTF = calendarStore.getNextRTF(
+  EEvent.RTF_Forsbach_Tour,
+  EEvent.RTF_Saison_Finale
+);
 </script>

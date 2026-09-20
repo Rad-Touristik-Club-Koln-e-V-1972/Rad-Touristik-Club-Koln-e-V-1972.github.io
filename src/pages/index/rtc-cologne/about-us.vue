@@ -156,6 +156,7 @@ import { useQuasar } from "quasar";
 import { mdiArrowRight, mdiBike, mdiInformation } from "@quasar/extras/mdi-v7";
 import CSlideshow from "@/components/pages/CSlideshow.vue";
 import GalleryEntryBuilder from "@/models/builder/rtc-cologne/gallery/GalleryEntryBuilder";
+import EEvent from "@/models/enums/EEvent";
 import useCalendarStore from "@/stores/events/Calendar";
 import useDateTime from "@/utils/DateTime";
 
@@ -183,12 +184,15 @@ const imageUrls = ref([
     .buildGalleryEntry()
 ]);
 
-const nextRTF = useCalendarStore().nextRTF;
+const nextRTF = useCalendarStore().getNextRTF(
+  EEvent.RTF_Forsbach_Tour,
+  EEvent.RTF_Saison_Finale
+);
 
 const nextRTFDate = computed(() =>
   nextRTF
-    ? `Bitte schon mal vormerken: Die Forsbachtour ist am ${useDateTime().format(nextRTF.start)}.`
-    : "Die nächste Forsbachtour wird noch geplant."
+    ? `Bitte schon mal vormerken: Die RTF ${nextRTF.name} ist am ${useDateTime().format(nextRTF.start)}.`
+    : "Die nächste RTF wird noch geplant."
 );
 
 const statutesUrl =

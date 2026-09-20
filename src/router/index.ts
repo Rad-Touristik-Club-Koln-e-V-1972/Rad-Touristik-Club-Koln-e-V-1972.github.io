@@ -7,6 +7,7 @@ import {
 import { routes, handleHotUpdate } from "vue-router/auto-routes";
 import { defineRouter } from "#q-app";
 import useCalendarStore from "@/stores/events/Calendar";
+import EEvent from "@/models/enums/EEvent";
 
 /*
  * If not building with SSR mode, you can
@@ -26,7 +27,11 @@ export default defineRouter((/* { store, ssrContext } */) => {
     ? createMemoryHistory
     : createWebHistoryHelper();
 
-  const isNextRTFSoon = useCalendarStore().isNextRtfInDays(30);
+  const nextRTF = useCalendarStore().getNextRTF(
+    30,
+    EEvent.RTF_Forsbach_Tour,
+    EEvent.RTF_Saison_Finale
+  );
 
   const router = createRouter({
     scrollBehavior: () => ({ left: 0, top: 0 }),
@@ -44,8 +49,10 @@ export default defineRouter((/* { store, ssrContext } */) => {
   });
 
   router.beforeEach(async (to, from) => {
-    if (!from.name && to.name === "home" && isNextRTFSoon) {
-      return { path: "/events/tours/rtfs" };
+    if (!from.name && to.name === "home" && nextRTF) {
+      return {
+        path: `/events/tours/rtfs${nextRTF.category === EEvent.RTF_Saison_Finale ? "/saisonfinale" : ""}`
+      };
     }
   });
 

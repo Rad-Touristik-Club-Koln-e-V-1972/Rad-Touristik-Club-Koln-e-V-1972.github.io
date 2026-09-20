@@ -281,7 +281,7 @@ Stephan
     .setTitle("Wahnbachtal Tour")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-03 20:16")
     .setId("e33bf8ab-4500-4149-b4c4-fc0cdb3c6aa0")
     .setName("Guido Faßbender")
@@ -303,7 +303,7 @@ Grenzfahrer e.V.
     .setTitle("Feedback wegen Marathon")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-03 12:36")
     .setId("3339c97b-e392-4216-8653-dce28bc9c6cd")
     .setName("Frank Koch")
@@ -319,7 +319,7 @@ mfg Frank
     .setTitle("Re: RTF")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-03 9:31")
     .setId("0ce53a69-f135-4793-b93e-502a51be682f")
     .setName("Frank Koch")
@@ -339,7 +339,7 @@ schöne Grüße aus Troisdorf Frank 😊
     .setTitle("RTF")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-02 10:45")
     .setId("7ac16201-c7e3-4dda-a200-6005a42d857f")
     .setName("Frank Oesterheld")
@@ -356,7 +356,7 @@ Bis zum nächsten Jahr 😊
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-01 22:47")
     .setId("eb50ce8f-8009-48c7-a1d1-b53212b20b18")
     .setName("Gerhard Veeh")
@@ -370,7 +370,7 @@ Danke Euch für die tolle Organisation.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-01 20:33")
     .setId("ecefada5-64cc-4d8e-bb37-d0dd9606cac6")
     .setName("Fam Rossol")
@@ -386,7 +386,7 @@ Die Radsportfreunde vom 1. RTW-Sankt Augustin-Menden
     .setTitle("Danke ...")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-01 15:57")
     .setId("be7be1d5-e7a6-4a8d-8104-1ddaa0136d14")
     .setName("Christof Mourikis")
@@ -415,7 +415,7 @@ Beste Marathon-Veranstaltung, die ich bisher gefahren bin (und das sind nicht we
     .setTitle("Feedback wegen 43. Marathon am 31.05.2015")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-01 14:14")
     .setId("a47dd1ac-091e-44a5-a856-1caedea83025")
     .setName("Yvonne Basinski")
@@ -429,7 +429,7 @@ Wir sind nächstes Jahr wieder dabei.
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-06-01 9:05")
     .setId("e5a70497-78d7-43bc-ac68-08d82d0080bb")
     .setName("Marc Grewe")
@@ -466,7 +466,7 @@ Marc
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-05-31 20:30")
     .setId("3ccc4f04-1123-4756-9d4d-bbcdbcd7f6e0")
     .setName("Petra Ak")
@@ -474,7 +474,7 @@ Marc
     .setText("Vielen Dank für's Organisieren, war super !")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-05-31 20:19")
     .setId("4190886c-613c-4369-b1d0-fbbd8a8e54b3")
     .setName("Thomas Mühl")
@@ -485,7 +485,7 @@ Marc
     )
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-05-31 20:11")
     .setId("bde02868-dfb7-45fc-879a-0f239805fedb")
     .setName("Michael Kalisch")
@@ -493,7 +493,7 @@ Marc
     .setTitle("top top top 😊")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-05-31 20:10")
     .setId("ee86939c-fad7-4ceb-80a3-a27491a351ab")
     .setName("Horst Voll")
@@ -501,7 +501,7 @@ Marc
     .setText("War geil und sehr anstrengend ! 👍")
     .buildGuestbookEntry(),
   new GuestbookEntryBuilder()
-    .setCategory(EEvent.RTF_RTC)
+    .setCategory(EEvent.RTF_Forsbach_Tour)
     .setDate("2015-05-31 19:29")
     .setImages({
       "adcf2e39-6df6-4969-83cb-befa73b59b68":

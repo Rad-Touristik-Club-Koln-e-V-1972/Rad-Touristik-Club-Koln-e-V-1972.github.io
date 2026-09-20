@@ -9,6 +9,18 @@ export default abstract class ABuilder {
     return this;
   };
 
+  setActive = (value: boolean): this => {
+    this.aEntity.isActive = value;
+
+    return this;
+  };
+
+  setVisible = (value: boolean): this => {
+    this.aEntity.isVisible = value;
+
+    return this;
+  };
+
   buildAEntity() {
     return this.aEntity;
   }
