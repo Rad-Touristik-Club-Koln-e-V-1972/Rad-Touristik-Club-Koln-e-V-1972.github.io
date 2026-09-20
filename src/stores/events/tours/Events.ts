@@ -26,7 +26,7 @@ export default [
         .buildFee()
     )
     .setId("2048a7f0-315a-43d7-885a-23f388601052")
-    .setLastChange("2026-09-11")
+    .setLastChange("2026-09-20")
     .setLocation(
       new ControlBuilder()
         .setCity("Köln-Poll")
@@ -80,7 +80,7 @@ Wir freuen uns auf Euch!
         .setId("c1934b4b-2058-4100-946e-77c264533c76")
         .setLength(55)
         .setName("55 km")
-        .setTime("09:00", "17:00")
+        .setTime("09:00", "11:00")
         .setUrls({
           "GPX-Datei": new URL(
             "https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-09-08_Abschlusstour_55km.gpx"
@@ -93,7 +93,7 @@ Wir freuen uns auf Euch!
         .setId("d9e54ab9-a0ec-4e82-ac62-ede4a3deecfb")
         .setLength(78)
         .setName("78 km")
-        .setTime("09:00", "17:00")
+        .setTime("09:00", "11:00")
         .setUrls({
           "GPX-Datei": new URL(
             "https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-09-08_Abschlusstour_78km.gpx"
@@ -106,7 +106,7 @@ Wir freuen uns auf Euch!
         .setId("2338bdd3-a6e5-405d-bf23-0bf208c13d8e")
         .setLength(78)
         .setName("78 km (begleitete Tour)")
-        .setTime("10:00", "17:00")
+        .setTime("10:00")
         .setUrls({
           "GPX-Datei": new URL(
             "https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-09-08_Abschlusstour_78km.gpx"
@@ -119,7 +119,7 @@ Wir freuen uns auf Euch!
         .setId("a29754a2-b763-41c4-843b-45ae99b7bba6")
         .setLength(104)
         .setName("104 km")
-        .setTime("09:00", "17:00")
+        .setTime("09:00", "11:00")
         .setUrls({
           "GPX-Datei": new URL(
             "https://content.rtc-koeln.de/pages/events/tours/rtfs/2026-09-08_Abschlusstour_104km.gpx"

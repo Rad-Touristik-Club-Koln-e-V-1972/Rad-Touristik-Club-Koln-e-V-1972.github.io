@@ -13,9 +13,9 @@
         <q-toolbar-title class="text-center text-h5">
           Herzlich willkommen beim
           <br class="xs" />
-          <span class="text-bold"
-            >RTC Köln e.V. <span class="text-primary">1972</span></span
-          >
+          <span class="text-bold">
+            RTC Köln e.V. <span class="text-primary">1972</span>
+          </span>
         </q-toolbar-title>
         <d-accessibility />
       </q-toolbar>
@@ -63,11 +63,15 @@
       </div>
     </q-footer>
   </q-layout>
-  <q-dialog v-if="nextRTF" :model-value="isNextRTFSoon" persistent>
+  <q-dialog
+    v-model="dialog"
+    v-if="nextRTF && isNextRTFSoon && !isAlreadyOnPage"
+    persistent
+  >
     <q-card>
-      <q-card-section class="bg-primary text-accent text-h6"
-        >!RTF News!</q-card-section
-      >
+      <q-card-section class="bg-primary text-accent text-h6">
+        !RTF News!
+      </q-card-section>
       <q-card-section>
         Die RTF ist am {{ useDateTime().format(nextRTF.start) }}!
         <br />
@@ -90,6 +94,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 import { mdiCopyright, mdiMenu } from "@quasar/extras/mdi-v7";
 import CNavigationDrawer from "@/components/MainLayout/CNavigationDrawer.vue";
 import DAccessibility from "@/components/MainLayout/DAccessibility.vue";
@@ -97,12 +102,16 @@ import useSponsorStore from "@/stores/Sponsor";
 import useCalendarStore from "@/stores/events/Calendar";
 import useDateTime from "@/utils/DateTime";
 
+const route = useRoute();
+
+const dialog = ref(true);
 const navDrawer = ref(false);
 
 const calendarStore = useCalendarStore();
 
 const nextRTF = calendarStore.nextRTF;
 const isNextRTFSoon = calendarStore.isNextRtfInDays(35);
+const isAlreadyOnPage = route.path === "/events/tours/rtfs";
 </script>
 
 <style lang="scss" scoped>
