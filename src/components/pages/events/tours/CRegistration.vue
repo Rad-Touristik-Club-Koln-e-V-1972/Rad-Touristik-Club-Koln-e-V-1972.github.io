@@ -51,25 +51,6 @@
               Zahlungsmodalitäten bei Voranmeldung
               <ul style="list-style-type: &quot;➡️&quot;">
                 <li>
-                  PayPal
-                  <br />
-                  dcmvialon@gmail.com
-                  <br />
-                  Bitte im Betreff angeben:
-                  <ul>
-                    <li>Vorname und Nachname</li>
-                    <li>
-                      Startort
-                      <ul>
-                        <li>Poller Fischerhaus</li>
-                        <li>Heimerzheim</li>
-                        <li>Hilberath</li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <br />
-                </li>
-                <li>
                   Banküberweisung
                   <br />
                   RTC Köln e.V. 1972
@@ -99,7 +80,6 @@
               Zahlungsmodalitäten am Veranstaltungstag
               <ul>
                 <li>Barzahlung</li>
-                <li>PayPal</li>
                 <li>Kontoüberweisung</li>
               </ul>
               <br />

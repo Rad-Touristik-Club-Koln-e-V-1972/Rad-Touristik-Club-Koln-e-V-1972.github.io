@@ -27,7 +27,7 @@ export default new EventBuilder()
       .buildFee()
   )
   .setId("2048a7f0-315a-43d7-885a-23f388601052")
-  .setLastChange("2026-09-20")
+  .setLastChange("2026-09-25")
   .setLocation(
     new ControlBuilder()
       .setCity("Köln-Poll")
