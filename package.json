@@ -49,7 +49,7 @@
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
     "oxfmt": "0.70.0",
-    "oxlint": "1.83.0",
+    "oxlint": "1.85.0",
     "oxlint-tsgolint": "7.0.2002",
     "ts-node": "10.9.2",
     "typescript": "7.0.2",
