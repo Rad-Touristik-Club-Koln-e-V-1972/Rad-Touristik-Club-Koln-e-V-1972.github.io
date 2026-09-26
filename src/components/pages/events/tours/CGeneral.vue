@@ -40,7 +40,7 @@
           <b>Beginn:</b> ab 17 Uhr
           <br />
           <b>Anmeldung:</b> ja, bitte meldet Euch unter Angabe der Anzahl der
-          teilnehmenden Personen bis zum <b>02.10.2026</b> verbindlich per Mail
+          teilnehmenden Personen bis zum <b>07.10.2026</b> verbindlich per Mail
           bei Diana an (<a href="mailto:dcmvialon@gmail.com">
             dcmvialon@gmail.com
           </a>
