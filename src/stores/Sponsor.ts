@@ -23,6 +23,11 @@ export default defineStore("sponsor", () => {
           "content.rtc-koeln.de/pages/sponsor/VolksbankKölnBonneG_RGB.svg"
         )
         .setUrl("www.volksbank-koeln-bonn.de")
+        .buildSponsor(),
+      new SponsorBuilder()
+        .setId("d7380e02-c9b1-4c27-97c5-18d946e5acae")
+        .setImageUrl("content.rtc-koeln.de/pages/sponsor/Cyclewerx_100mm.svg")
+        .setUrl("www.cyclewerx.de")
         .buildSponsor()
     ])
   };
