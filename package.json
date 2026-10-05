@@ -43,7 +43,7 @@
     "@quasar/app-vite": "3.10.1",
     "@quasar/quasar-app-extension-qcalendar": "5.3.1",
     "@types/node": "26.6.4",
-    "@vue/language-server": "3.3.11",
+    "@vue/language-server": "3.3.12",
     "autoprefixer": "10.6.1",
     "commitlint": "21.2.3",
     "husky": "9.1.7",
@@ -54,7 +54,7 @@
     "ts-node": "10.9.2",
     "typescript": "7.0.2",
     "vite-plugin-sitemap": "0.8.2",
-    "vue-tsc": "3.3.11"
+    "vue-tsc": "3.3.12"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
