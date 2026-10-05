@@ -62,15 +62,15 @@
 <script lang="ts" setup>
 import { ref, useTemplateRef } from "vue";
 import { date } from "quasar";
-import type { QCalendar as QCalendarRef } from "@quasar/quasar-ui-qcalendar";
-import type { QCalendar } from "@quasar/quasar-ui-qcalendar/QCalendar";
+import { QCalendar as QCalendarRef } from "@quasar/quasar-ui-qcalendar";
 import DEvent from "@/components/pages/events/calendar/DEvent.vue";
 import type Event from "@/models/entities/events/calendar/Event";
 import ECalendar from "@/models/enums/events/ECalendar";
 import useCalendarStore from "@/stores/events/Calendar";
 import useDateTime from "@/utils/DateTime";
 
-const calendarRef = useTemplateRef<QCalendarRef>("calendarRef");
+const calendarRef =
+  useTemplateRef<InstanceType<typeof QCalendarRef>>("calendarRef");
 
 const emit = defineEmits<{
   (e: "change", title: string): void;
