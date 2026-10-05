@@ -27,7 +27,7 @@ export default new EventBuilder()
       .buildFee()
   )
   .setId("2048a7f0-315a-43d7-885a-23f388601052")
-  .setLastChange("2026-09-26")
+  .setLastChange("2026-10-05")
   .setLocation(
     new ControlBuilder()
       .setCity("Köln-Poll")
@@ -84,7 +84,7 @@ Wir freuen uns auf Euch!
       .setTime("09:00", "11:00")
       .setUrls({
         "GPX-Datei": new URL(
-          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/2026-09-08_Abschlusstour_55km.gpx"
+          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/Abschlusstour_55km.gpx"
         )
       })
       .buildTrack(),
@@ -97,7 +97,7 @@ Wir freuen uns auf Euch!
       .setTime("09:00", "11:00")
       .setUrls({
         "GPX-Datei": new URL(
-          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/2026-09-08_Abschlusstour_78km.gpx"
+          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/Abschlusstour_78km.gpx"
         )
       })
       .buildTrack(),
@@ -110,7 +110,7 @@ Wir freuen uns auf Euch!
       .setTime("10:00")
       .setUrls({
         "GPX-Datei": new URL(
-          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/2026-09-08_Abschlusstour_78km.gpx"
+          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/Abschlusstour_78km.gpx"
         )
       })
       .buildTrack(),
@@ -123,7 +123,7 @@ Wir freuen uns auf Euch!
       .setTime("09:00", "11:00")
       .setUrls({
         "GPX-Datei": new URL(
-          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/2026-09-08_Abschlusstour_104km.gpx"
+          "https://content.rtc-koeln.de/pages/events/tours/rtfs/saisonfinale/Abschlusstour_104km.gpx"
         )
       })
       .buildTrack()
