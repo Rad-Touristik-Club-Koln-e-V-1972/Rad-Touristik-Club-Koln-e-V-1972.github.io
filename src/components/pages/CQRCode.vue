@@ -5,8 +5,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 import { useQuasar } from "quasar";
-import QRCodeStyling from "qr-code-styling";
-import { DrawType } from "qr-code-styling/lib/types";
+import QRCodeStyling, { type DrawType } from "qr-code-styling";
 
 // noinspection LocalVariableNamingConventionJS
 const $q = useQuasar();
