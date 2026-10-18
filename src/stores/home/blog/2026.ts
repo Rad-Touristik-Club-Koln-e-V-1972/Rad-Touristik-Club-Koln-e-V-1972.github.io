@@ -2,6 +2,77 @@ import BlogEntryBuilder from "@/models/builder/home/BlogEntryBuilder";
 
 export default [
   new BlogEntryBuilder()
+    .setAlbumIDs("8a61c2ce-1c97-4b29-a495-8ce16f4c2d02")
+    .setDate("2026-10-10")
+    .setId("025faf21-258c-4309-8875-96efb7f69ac8")
+    .setText(
+      `Was für ein Tag!
+Am 10. Oktober haben wir vom RTC Köln zum ersten Mal unser Kölner Saisonfinale veranstaltet.
+
+Knapp 250 Teilnehmerinnen und Teilnehmer waren dabei und haben unser Debüt zu einer rundum gelungenen Veranstaltung gemacht.
+
+Zehn Frauen aus unserem Verein haben die Organisation und Durchführung übernommen.
+Von der Anmeldung über die beiden Verpflegungsstellen in Heimerzheim und Hilberath bis hin zu vielen planerischen Aufgaben im Hintergrund lag das Event in Frauenhand.
+
+Einige unserer RTC-Männer haben uns im Vorfeld beim Ausschildern der Strecken und beim Bereitstellen des Equipments unterstützt.
+Dafür ein herzliches Dankeschön!
+
+Das Wetter meinte es insgesamt gut mit uns, auch wenn es zwischendurch ganz schön frisch wurde.
+Besonders an den Kontrollen pfiff der Wind den Helferinnen um die Ohren.
+Aber was soll's: Kalte Nasen lassen sich mit guter Laune und einer Tasse Kaffee schließlich ganz gut ausgleichen.
+
+Drei ausgeschilderte Strecken, viele nette Begegnungen und eine gemütliche Atmosphäre machten den Tag aus.
+Es wurde gefahren, getöttert und gelacht – und genau so hatten wir uns das vorgestellt.
+
+Besonders gefreut hat uns – neben dem sehr positiven Feedback am Start – das viele Lob für unsere beiden Verpflegungsstellen in Heimerzheim und Hilberath.
+Vielen Dank dafür!
+
+Und dann waten da noch unsere begehrten Power-Riegel.
+Ihr Geheimrezept bleibt natürlich streng unter Verschluss.
+Wir verraten nur so viel: Bei der Forsbachtour könnt ihr sie wieder genießen.
+Für die Rezeptur braucht ihr also keine Bestechungsversuche zu starten – es gibt sie ganz legal an der Kontrolle.
+
+Auch unsere Losaktion mit 25 tollen Preisen kam richtig gut an.
+Und das war nur Dank unserer großzügigen Sponsoren Sanct Bernhard Sport und CycleWerx möglich,  wofür wir mehr als dankbar sind.
+Die glücklichen Gewinnerinnen und Gewinner freutn sich sehr über ihre Gewinne – das war für viele ein besonderes Highlight.
+Schön, wenn nicht nur die Beine etwas gewinnen, sondern auch das Glück mitfährt!
+
+Ein besonders herzliches Dankeschön geht an die Vereine mit den meisten Teilnehmerinnen und Teilnehmern:
+RSV Staubwolke Refrath 1952 e.V., RV Komet-Delia 09 Köln e.V. und RSV Viktoria Lövenich 1975 e.V.
+Schön, dass ihr so zahlreich bei uns wart!
+Eure RTFs stehen für uns im nächsten Jahr schon fest im Kalender.
+Wir freuen uns auf ein Wiedersehen bei euch!
+
+Ein großes Dankeschön geht auch an Linda und ihr Team vom Poller Fischerhaus, die uns großartig unterstützt und mit einem leckeren Frühstücksbuffet für einen gelungenen Start gesorgt haben.
+
+Unser Konzept, eine RTF gemeinsam mit einem Gastronomiebetrieb auszurichten, hat sich für uns bewährt.
+Statt eine komplette Veranstaltung mit hohem Personalaufwand auf einem Vereinsgelände zu stemmen, konnten wir die vorhandene Infrastruktur nutzen und einen gemütlichen Treffpunkt für alle schaffen.
+Das reduziert den organisatorischen Aufwand und eröffnet gerade kleineren Vereinen neue Möglichkeiten, eine RTF auf die Beine zu stellen.
+Für uns ein spannender Ansatz, der gezeigt hat, dass es auch einmal anders gehen darf.
+
+Abgerundet wurde das Ganze durch Harry Schmitz von VERGE, unserem Partner für Radsportbekleidung und Trikots, sowie Dorit Engel mit ihrem FitLine-Stand rund um Nahrungsergänzungsmittel.
+Beide waren eine schöne Ergänzung unseres Angebots und haben zum gelungenen Gesamtbild beigetragen.
+Vielen Dank, dass ihr dabei wart!
+
+Die vielen positiven Rückmeldungen haben uns riesig gefreut.
+Natürlich nehmen wir auch eure Anregungen mit – schließlich war es unser Debüt, und ein bisschen Luft nach oben gibt es immer.
+
+Nach dem sportlichen Teil war für uns noch lange nicht Schluss: Am Abend ließen wir den Tag gemeinsam mit einigen Sportlerinnen und Sportlern gemütlich im Poller Fischerhaus ausklingen.
+Zeit zum Zusammensitzen, Erzählen und Lachen – ein schöner Abschluss für einen rundum gelungenen Tag.
+
+Wir zehn Ladies sind stolz, dieses Event gemeinsam auf die Beine gestellt zu haben.
+Vor allem aber sagen wir von Herzen Danke an alle, die dabei waren, geholfen und diesen Tag mit Leben gefüllt haben.
+
+Und jetzt seid ihr gefragt: Sollen wir das Kölner Saisonfinale wiederholen? Schreibt uns in die Kommentare, wie es euch gefallen hat und was wir beim nächsten Mal vielleicht noch besser machen können.
+Wir freuen uns auf eure Rückmeldungen!
+
+Unsere traditionelle RTF, die Forsbachtour, findet übrigens am 30. Mai 2027 statt.
+Dann sind wir wieder in voller Frauen- und Männerstärke für euch da.
+Termin schon mal vormerken – die Power-Riegel warten schließlich nicht ewig!`
+    )
+    .setTitle("Kölner Saisonfinale – unser RTC Köln-Debüt in Frauenhand")
+    .buildBlogEntry(),
+  new BlogEntryBuilder()
     .setAlbumIDs("20cb2cde-e83b-45f3-b72a-7d582c2f6b2f")
     .setDate("2026-05-31")
     .setId("e16c384e-e4b5-4822-abaf-90c3c9d5c5f3")
