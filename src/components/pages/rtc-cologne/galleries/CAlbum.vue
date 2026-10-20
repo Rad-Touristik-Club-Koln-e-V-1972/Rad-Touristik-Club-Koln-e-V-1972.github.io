@@ -86,13 +86,12 @@ const tab = ref("Bilder");
 const tabPictures = ref(
   props.album ? props.album : Object.keys(props.modelValue.images)[0]
 );
-const value = ref<Gallery>();
 
 const tabs = computed(() => {
   const tabs: string[] = [];
 
-  if (Object.keys(value.value?.images ?? {}).length) tabs.push("Bilder");
-  if (value.value?.youtubeVideoIds.length) tabs.push("Videos");
+  if (Object.keys(props.modelValue?.images ?? {}).length) tabs.push("Bilder");
+  if (props.modelValue?.youtubeVideoIds.length) tabs.push("Videos");
 
   return tabs;
 });
