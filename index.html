@@ -13,9 +13,14 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://content.rtc-koeln.de https://i.ytimg.com;<% if (ctx.dev) { %> connect-src 'self' ws://localhost:*; worker-src 'self' blob:;<% } %>"
+      content="default-src 'self';
+      <% if (ctx.dev) { %>connect-src 'self' ws://localhost:*;<% } %>
+      frame-src 'self' https://www.youtube-nocookie.com;
+      img-src 'self' data: https://content.rtc-koeln.de https://i.ytimg.com;
+      script-src 'self';
+      style-src 'self' 'unsafe-inline';
+      <% if (ctx.dev) { %>worker-src 'self' blob:;<% } %>"
     />
-
     <link rel="icon" type="image/ico" href="favicon.ico" />
   </head>
   <body>
