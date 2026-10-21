@@ -38,14 +38,14 @@
     "vue-router": "5.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.2.3",
-    "@commitlint/config-conventional": "21.2.3",
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
     "@quasar/app-vite": "3.10.3",
     "@quasar/quasar-app-extension-qcalendar": "5.3.1",
     "@types/node": "26.6.5",
     "@vue/language-server": "3.3.13",
     "autoprefixer": "10.6.1",
-    "commitlint": "21.2.3",
+    "commitlint": "21.2.4",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
     "oxfmt": "0.73.0",
