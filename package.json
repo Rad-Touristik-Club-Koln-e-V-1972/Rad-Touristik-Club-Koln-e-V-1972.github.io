@@ -19,7 +19,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@maz-ui/themes": "4.9.2",
+    "@maz-ui/themes": "5.0.0",
     "@maz-ui/translations": "4.9.2",
     "@quasar/extras": "2.1.0",
     "@quasar/quasar-ui-qcalendar": "5.3.1",
