@@ -50,7 +50,7 @@
     "lint-staged": "17.6.0",
     "oxfmt": "0.76.0",
     "oxlint": "1.91.0",
-    "oxlint-tsgolint": "7.0.2005",
+    "oxlint-tsgolint": "7.0.2006",
     "ts-node": "10.9.2",
     "typescript": "7.0.2",
     "vite-plugin-sitemap": "0.8.2",
