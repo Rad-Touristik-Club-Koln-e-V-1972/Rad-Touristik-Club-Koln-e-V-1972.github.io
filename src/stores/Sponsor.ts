@@ -28,6 +28,11 @@ export default defineStore("sponsor", () => {
         .setId("d7380e02-c9b1-4c27-97c5-18d946e5acae")
         .setImageUrl("content.rtc-koeln.de/pages/sponsor/Cyclewerx_100mm.svg")
         .setUrl("www.cyclewerx.de")
+        .buildSponsor(),
+      new SponsorBuilder()
+        .setId("15c484d7-6e03-46f5-a63e-61fba35d0728")
+        .setImageUrl("content.rtc-koeln.de/pages/sponsor/Logo_artsurprise.svg")
+        .setUrl("artsurprise.de")
         .buildSponsor()
     ])
   };
