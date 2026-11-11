@@ -182,8 +182,8 @@ importers:
         specifier: 6.1.4
         version: 6.1.4(vue@3.5.45(typescript@7.0.2))
       date-holidays:
-        specifier: 3.38.1
-        version: 3.38.1
+        specifier: 3.39.1
+        version: 3.39.1
       german-metadata:
         specifier: 2.0.1
         version: 2.0.1
@@ -455,6 +455,10 @@ packages:
 
   '@floating-ui/vue@1.1.11':
     resolution: {integrity: sha512-HzHKCNVxnGS35r9fCHBc3+uCnjw9IWIlCPL683cGgM9Kgj2BiAl8x1mS7vtvP6F9S/e/q4O6MApwSHj8hNLGfw==}
+
+  '@hnw/date-tibetan@1.0.2':
+    resolution: {integrity: sha512-BlN5wLlbjuBso/D7JbpRC5nizJkXi2WXmayZOJL3dc9R3a6RoCeIFp0aowqMdIcuETF2qpOM1OBoP6rUgW1eBg==}
+    engines: {node: '>=12.0.0'}
 
   '@johnsoncodehk/pug-beautify@0.2.2':
     resolution: {integrity: sha512-qqNS/YD0Nck5wtQLCPHAfGVgWbbGafxSPjNh0ekYPFSNNqnDH2kamnduzYly8IiADmeVx/MfAE1njMEjVeHTMA==}
@@ -1560,8 +1564,8 @@ packages:
     resolution: {integrity: sha512-KzvoxDfXNz2Gm8KYLh47K3qcY3Zza3WKOuh2xoqa7LBu6MDKWAZLovJtU9DuAd/Er+rhQHCRn619lHS5U+qmhw==}
     engines: {node: ^22.18.0 || >=24.11.0}
 
-  astronomia@4.2.0:
-    resolution: {integrity: sha512-mTvpBGyXB80aSsDhAAiuwza5VqAyqmj5yzhjBrFhRy17DcWDzJrb8Vdl4Sm+g276S+mY7bk/5hi6akZ5RQFeHg==}
+  astronomia@4.3.0:
+    resolution: {integrity: sha512-kD87oezczQTJYp6SW07l9X/fyssEg4/GSFmxBN1Xk8TRN7h4tkQddRK/VJnlHkbzmK1w16s/7dUtUO4EUKLDpA==}
     engines: {node: '>=12.0.0'}
 
   autoprefixer@10.6.2:
@@ -1726,24 +1730,24 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  date-bengali-revised@2.0.2:
-    resolution: {integrity: sha512-q9iDru4+TSA9k4zfm0CFHJj6nBsxP7AYgWC/qodK/i7oOIlj5K2z5IcQDtESfs/Qwqt/xJYaP86tkazd/vRptg==}
+  date-bengali-revised@2.1.0:
+    resolution: {integrity: sha512-A/+Bo0lQY8ZaOjIgqxF+qii3b5911HyBGzfYkjQpa3EWsH+kj8gks675D73vzTp4XIuEQqtTg4h+7pJh0sHbuw==}
     engines: {node: '>=12.0.0'}
 
-  date-chinese@2.1.4:
-    resolution: {integrity: sha512-WY+6+Qw92ZGWFvGtStmNQHEYpNa87b8IAQ5T8VKt4wqrn24lBXyyBnWI5jAIyy7h/KVwJZ06bD8l/b7yss82Ww==}
+  date-chinese@2.2.0:
+    resolution: {integrity: sha512-P8F1dvF6p1jCAl6JcErKFEMi9elaMmxs2LHySO2kYi2i4OoqpRg23L8vEjxRl6Mbx/UKq29vIElJ/UCBfzEJqA==}
     engines: {node: '>=12.0.0'}
 
-  date-easter@1.0.3:
-    resolution: {integrity: sha512-aOViyIgpM4W0OWUiLqivznwTtuMlD/rdUWhc5IatYnplhPiWrLv75cnifaKYhmQwUBLAMWLNG4/9mlLIbXoGBQ==}
+  date-easter@1.1.0:
+    resolution: {integrity: sha512-uy13sHOXDrw9ewFdBhHWdLOcDOE3Hk08Bn5DrVYGdcCPy524D86BaaDtKKlpW7IqfI5btOzsTYxnCq+eZQe+Gg==}
     engines: {node: '>=12.0.0'}
 
-  date-holidays-parser@3.4.7:
-    resolution: {integrity: sha512-h09ZEtM6u5cYM6m1bX+1Ny9f+nLO9KVZUKNPEnH7lhbXYTfqZogaGTnhONswGeIJFF91UImIftS3CdM9HLW5oQ==}
+  date-holidays-parser@3.7.0:
+    resolution: {integrity: sha512-41qmuFwuiOE7qwIQCbmF+/WyHc7+eeBWje/3yMiT8pGdSXs+RpXAfY1i6ZD+/6x4ZJPiorwd8V2B4jbjQL09iw==}
     engines: {node: '>=12.0.0'}
 
-  date-holidays@3.38.1:
-    resolution: {integrity: sha512-8KCm5dJWa5qH60w9QpTOMwPPV1B0sMtZU3+C14OyFgjrwZh4iPi6MfrGMxTaHsS85r+Hxsgcr1DFtv7D/thO4A==}
+  date-holidays@3.39.1:
+    resolution: {integrity: sha512-/eJPKI84IZ+DFydE/kMnRNp0WfAVEoqCCVL6vTYOQ7z7r/y1oTJrRp1AP8l0goso67vaUVLWBU/skZXVbc2e8A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -2072,8 +2076,9 @@ packages:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
 
-  jalaali-js@1.2.8:
-    resolution: {integrity: sha512-Jl/EwY84JwjW2wsWqeU4pNd22VNQ7EkjI36bDuLw31wH98WQW4fPjD0+mG7cdCK+Y8D6s9R3zLiQ3LaKu6bD8A==}
+  jalaali-js@2.0.1:
+    resolution: {integrity: sha512-qzTmjw6lZ3V4znyNA8ceYoGgFR+CcF+xEfIYZNcK2ZR0mzdMpMZ6iAcdRPvMgxUVdPMh6QLWCANpTcCJow2U+Q==}
+    engines: {node: '>=20'}
 
   jiti@2.7.0:
     resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
@@ -2265,9 +2270,6 @@ packages:
 
   mlly@1.8.2:
     resolution: {integrity: sha512-d+ObxMQFmbt10sretNDytwt85VrbkhhUA/JBGm1MPaWJ65Cl4wOgLaB1NYvJSZ0Ef03MMEU/0xpPMXUIQ29UfA==}
-
-  moment-timezone@0.5.48:
-    resolution: {integrity: sha512-f22b8LV1gbTO2ms2j2z13MuPogNoh5UzxL3nzNAYKGraILnbGc9NEE6dyiiiLv46DGRb8A4kg8UKWLjPthxBHw==}
 
   moment-timezone@0.6.6:
     resolution: {integrity: sha512-LF5AAYsMduXFW2ungr/D9JqNq9ykZyhWgYG6wFtdGZW5ZlBDTBgTUFqW8EC7Fa+Dvs3IMZxlWkSR09sW2D/+0w==}
@@ -3376,6 +3378,10 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@hnw/date-tibetan@1.0.2':
+    dependencies:
+      astronomia: 4.3.0
+
   '@johnsoncodehk/pug-beautify@0.2.2': {}
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -4287,7 +4293,7 @@ snapshots:
       '@babel/types': 8.1.0
       ast-kit: 3.0.1
 
-  astronomia@4.2.0: {}
+  astronomia@4.3.0: {}
 
   autoprefixer@10.6.2(postcss@8.5.32):
     dependencies:
@@ -4453,28 +4459,29 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  date-bengali-revised@2.0.2: {}
+  date-bengali-revised@2.1.0: {}
 
-  date-chinese@2.1.4:
+  date-chinese@2.2.0:
     dependencies:
-      astronomia: 4.2.0
+      astronomia: 4.3.0
 
-  date-easter@1.0.3: {}
+  date-easter@1.1.0: {}
 
-  date-holidays-parser@3.4.7:
+  date-holidays-parser@3.7.0:
     dependencies:
-      astronomia: 4.2.0
+      '@hnw/date-tibetan': 1.0.2
+      astronomia: 4.3.0
       caldate: 2.1.0
-      date-bengali-revised: 2.0.2
-      date-chinese: 2.1.4
-      date-easter: 1.0.3
+      date-bengali-revised: 2.1.0
+      date-chinese: 2.2.0
+      date-easter: 1.1.0
       deepmerge: 4.3.1
-      jalaali-js: 1.2.8
-      moment-timezone: 0.5.48
+      jalaali-js: 2.0.1
+      moment-timezone: 0.6.6
 
-  date-holidays@3.38.1:
+  date-holidays@3.39.1:
     dependencies:
-      date-holidays-parser: 3.4.7
+      date-holidays-parser: 3.7.0
       js-yaml: 5.5.0
       lodash: 4.18.1
       prepin: 1.0.3
@@ -4757,7 +4764,7 @@ snapshots:
 
   isobject@3.0.1: {}
 
-  jalaali-js@1.2.8: {}
+  jalaali-js@2.0.1: {}
 
   jiti@2.7.0: {}
 
@@ -4925,10 +4932,6 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.4
-
-  moment-timezone@0.5.48:
-    dependencies:
-      moment: 2.31.0
 
   moment-timezone@0.6.6:
     dependencies:
