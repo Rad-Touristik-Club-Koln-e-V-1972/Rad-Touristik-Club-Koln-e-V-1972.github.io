@@ -188,8 +188,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0
       '@yeger/vue-masonry-wall':
-        specifier: 6.1.4
-        version: 6.1.4(vue@3.5.45(typescript@7.0.2))
+        specifier: 6.1.5
+        version: 6.1.5(vue@3.5.45(typescript@7.0.2))
       date-holidays:
         specifier: 3.39.2
         version: 3.39.2
@@ -1409,11 +1409,11 @@ packages:
   '@vue/typescript-plugin@3.3.14':
     resolution: {integrity: sha512-+PUukA0VmMDWqNcuGEhoW6aoc1vgMHGkOMVVdYjgDV1jdJJPqqMIPHy23GHM1Lb+VHZqiGIrchvhqg6kDjQpqw==}
 
-  '@yeger/debounce@2.0.20':
-    resolution: {integrity: sha512-vvHS5wMR2MHCXLGcOzcbYR//ZVKpy16LAjzWh9ZLO2ozre8BlF60W7eDGFR/F+pCGPBsLQHzX6pGvt73IQQasA==}
+  '@yeger/debounce@2.0.21':
+    resolution: {integrity: sha512-luamlZAVXNiVB+OBJt0+RMXg3E9G6t9zZIHfSli8wiU7vcWHkUXNSjCk1lGk4yNfbrVQY8SFRJsQuF2g5Xs+pA==}
 
-  '@yeger/vue-masonry-wall@6.1.4':
-    resolution: {integrity: sha512-ApJO9NRuYOT8GvjNfz3RHiJ28E1gNPycn5e8liDPhtv8JM8q74UPDWCZ8CVBNvXju6SYELAMAG/svbK7mpV24A==}
+  '@yeger/vue-masonry-wall@6.1.5':
+    resolution: {integrity: sha512-Y9Jez4ULZztJS30BPqKmAkkwzjvt8BvvLOi/gaHqFlXzRBjXYsh+ffxdBcJXdSYnbdALXw20/CcGnXDT8xroZQ==}
     peerDependencies:
       vue: ^3.5.19
 
@@ -4105,11 +4105,11 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@yeger/debounce@2.0.20': {}
+  '@yeger/debounce@2.0.21': {}
 
-  '@yeger/vue-masonry-wall@6.1.4(vue@3.5.45(typescript@7.0.2))':
+  '@yeger/vue-masonry-wall@6.1.5(vue@3.5.45(typescript@7.0.2))':
     dependencies:
-      '@yeger/debounce': 2.0.20
+      '@yeger/debounce': 2.0.21
       vue: 3.5.45(typescript@7.0.2)
 
   acorn-walk@8.3.5:
