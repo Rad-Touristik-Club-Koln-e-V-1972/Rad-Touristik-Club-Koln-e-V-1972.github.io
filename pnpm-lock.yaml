@@ -228,8 +228,8 @@ importers:
         specifier: 2.35.6
         version: 2.35.6
       signature_pad:
-        specifier: 5.1.5
-        version: 5.1.5
+        specifier: 5.1.6
+        version: 5.1.6
       vue:
         specifier: 3.5.46
         version: 3.5.46(typescript@7.0.2)
@@ -2607,8 +2607,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  signature_pad@5.1.5:
-    resolution: {integrity: sha512-0KuciUW0OJKnWJQ2N+6HvmgUWug1vrK7FihLrGYA5uyJ8yq/2XMLzYHlmoSo3ntG2oNwJzUQhHf/rQ/bCHV1dw==}
+  signature_pad@5.1.6:
+    resolution: {integrity: sha512-LRIUy9/eLJ1hYnplIeTY7peoxOlpnS4YPK/6yRRSZwt1qq6kmwbfMXgkOCRjrOGdzP2gIrzdBIpnzRXpgyF/rg==}
 
   sisteransi@2.0.0:
     resolution: {integrity: sha512-2WCqLdt12eN6ehLI50S2/ZxoowXU3DD1KVPRyVP0WEsFahrGZZmCdq1K59qjJljMRIDTwx1D9YaRK+hDneBUMg==}
@@ -5235,7 +5235,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  signature_pad@5.1.5: {}
+  signature_pad@5.1.6: {}
 
   sisteransi@2.0.0: {}
 
